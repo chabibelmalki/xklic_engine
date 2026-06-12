@@ -1,0 +1,45 @@
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { getConfig, getDefaultSlug, siteLocales, defaultLocale } from "@/lib/config-loader";
+import { MentionsLegalesPage } from "@/components/MentionsLegalesPage";
+import { buildLegalMetadata } from "@/lib/seo";
+import { isLocale, buildLocaleBasePath } from "@/lib/i18n";
+
+/** Mentions légales en LANGUE non-défaut du site par défaut : "/en/mentions-legales". */
+export const dynamicParams = false;
+export const revalidate = 3600;
+
+export function generateStaticParams() {
+  const slug = getDefaultSlug();
+  const def = defaultLocale(slug);
+  return siteLocales(slug)
+    .filter((l) => l !== def)
+    .map((seg) => ({ seg }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ seg: string }>;
+}): Promise<Metadata> {
+  const { seg } = await params;
+  const slug = getDefaultSlug();
+  if (!isLocale(seg, siteLocales(slug), defaultLocale(slug))) return {};
+  const cfg = getConfig(slug, seg);
+  return cfg ? buildLegalMetadata(cfg, seg) : {};
+}
+
+export default async function LocaleLegal({ params }: { params: Promise<{ seg: string }> }) {
+  const { seg } = await params;
+  const slug = getDefaultSlug();
+  if (!isLocale(seg, siteLocales(slug), defaultLocale(slug))) notFound();
+  const cfg = getConfig(slug, seg);
+  if (!cfg) notFound();
+  return (
+    <MentionsLegalesPage
+      config={cfg}
+      locale={seg}
+      basePath={buildLocaleBasePath("", seg, defaultLocale(slug))}
+    />
+  );
+}

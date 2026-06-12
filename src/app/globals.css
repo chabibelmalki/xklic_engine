@@ -1,0 +1,251 @@
+@import "tailwindcss";
+
+/*
+  SYSTÈME DE THÈMES par variables CSS, sélectionné par `config.theme`.
+  Chaque thème ne redéfinit que des tokens sémantiques (échelle brand/accent +
+  neutres tokenisés). Les composants n'utilisent QUE ces tokens
+  (`bg-brand-600`, `text-ink`, `bg-alt`, `border-border`…). Ajouter un thème =
+  ajouter un bloc `[data-theme="…"]` (additif, ne casse rien).
+*/
+
+@theme inline {
+  /* Marque */
+  --color-brand-50: var(--brand-50);
+  --color-brand-100: var(--brand-100);
+  --color-brand-200: var(--brand-200);
+  --color-brand-300: var(--brand-300);
+  --color-brand-400: var(--brand-400);
+  --color-brand-500: var(--brand-500);
+  --color-brand-600: var(--brand-600);
+  --color-brand-700: var(--brand-700);
+  --color-brand-800: var(--brand-800);
+  --color-brand-contrast: var(--brand-contrast);
+
+  /* Accent (valeur / économies / mise en avant) */
+  --color-accent-50: var(--accent-50);
+  --color-accent-500: var(--accent-500);
+  --color-accent-600: var(--accent-600);
+  --color-accent-contrast: var(--accent-contrast);
+
+  /* Texte */
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-muted: var(--muted);
+  --color-muted-2: var(--muted-2);
+
+  /* Surfaces */
+  --color-bg: var(--bg);
+  --color-alt: var(--alt);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+
+  --radius-theme: var(--radius);
+
+  --font-display: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ---------- Défaut = pro-bleu-nuit (fallback si pas de data-theme) ---------- */
+:root,
+[data-theme="pro-bleu-nuit"] {
+  --brand-50: #eff6ff;
+  --brand-100: #dbeafe;
+  --brand-200: #bfdbfe;
+  --brand-300: #93c5fd;
+  --brand-400: #60a5fa;
+  --brand-500: #3b82f6;
+  --brand-600: #2563eb;
+  --brand-700: #1d4ed8;
+  --brand-800: #1e3a8a;
+  --brand-contrast: #ffffff;
+
+  --accent-50: #fffbeb;
+  --accent-500: #f59e0b;
+  --accent-600: #d97706;
+  --accent-contrast: #ffffff;
+
+  --ink: #0f172a;
+  --ink-soft: #334155;
+  --muted: #475569;
+  --muted-2: #64748b;
+
+  --bg: #ffffff;
+  --alt: #f4f7fb;
+  --surface: #ffffff;
+  --surface-2: #eef4fc;
+  --border: #e2e8f0;
+
+  --radius: 0.9rem;
+}
+
+/* ---------- Douceur beige : chaleureux, premium artisanal ---------- */
+[data-theme="douceur-beige"] {
+  --brand-50: #faf3ee;
+  --brand-100: #f3e5d8;
+  --brand-200: #e8ceb6;
+  --brand-300: #d9ad8a;
+  --brand-400: #cb8f62;
+  --brand-500: #c17a4f;
+  --brand-600: #a9633a;
+  --brand-700: #884f2e;
+  --brand-800: #6c3f26;
+  --brand-contrast: #fffaf4;
+
+  --accent-50: #f9f5e9;
+  --accent-500: #b58a26;
+  --accent-600: #8f6c1a;
+  --accent-contrast: #ffffff;
+
+  --ink: #392f27;
+  --ink-soft: #5c4f42;
+  --muted: #7c6c5a;
+  --muted-2: #94806b;
+
+  --bg: #fdf9f3;
+  --alt: #f6ecdf;
+  --surface: #ffffff;
+  --surface-2: #f8f0e5;
+  --border: #ebdfce;
+
+  --radius: 1.1rem;
+}
+
+/* ---------- Fraîcheur teal : « frais & propre » (ménage, services) ---------- */
+[data-theme="fraicheur-teal"] {
+  --brand-50: #f0fdfa;
+  --brand-100: #ccfbf1;
+  --brand-200: #99f6e4;
+  --brand-300: #5eead4;
+  --brand-400: #2dd4bf;
+  --brand-500: #14b8a6;
+  --brand-600: #0d9488;
+  --brand-700: #0f766e;
+  --brand-800: #115e59;
+  --brand-contrast: #ffffff;
+
+  --accent-50: #fffbeb;
+  --accent-500: #f59e0b;
+  --accent-600: #d97706;
+  --accent-contrast: #ffffff;
+
+  --ink: #0f172a;
+  --ink-soft: #334155;
+  --muted: #475569;
+  --muted-2: #64748b;
+
+  --bg: #ffffff;
+  --alt: #f8fafc;
+  --surface: #ffffff;
+  --surface-2: #f1f5f9;
+  --border: #e2e8f0;
+
+  --radius: 1.25rem;
+}
+
+/* ---------- Énergie corail : punchy, jeune, conversion ---------- */
+[data-theme="energie-corail"] {
+  --brand-50: #fff1f0;
+  --brand-100: #ffe0dd;
+  --brand-200: #ffc6c1;
+  --brand-300: #ff9b93;
+  --brand-400: #fd7a78;
+  --brand-500: #fb5a63;
+  --brand-600: #ee4452;
+  --brand-700: #cf2c3d;
+  --brand-800: #a82230;
+  --brand-contrast: #ffffff;
+
+  --accent-50: #e9fbf6;
+  --accent-500: #0e9d8c;
+  --accent-600: #0b7d70;
+  --accent-contrast: #ffffff;
+
+  --ink: #1d222d;
+  --ink-soft: #3c4451;
+  --muted: #565e6c;
+  --muted-2: #6b7280;
+
+  --bg: #ffffff;
+  --alt: #fff5f3;
+  --surface: #ffffff;
+  --surface-2: #fff0ec;
+  --border: #ededf2;
+
+  --radius: 0.85rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+::selection {
+  background: var(--brand-200);
+  color: var(--brand-800);
+}
+
+/* Curseur de range stylé pour le simulateur (accent marque) */
+input[type="range"] {
+  accent-color: var(--brand-600);
+}
+
+/* Dégradés de marque réutilisables */
+.bg-brand-gradient {
+  background-image: linear-gradient(135deg, var(--brand-600) 0%, var(--brand-800) 100%);
+}
+.text-gradient {
+  background-image: linear-gradient(120deg, var(--brand-600), var(--brand-500));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Maillage radial décoratif (fond de hero / CTA) */
+.hero-mesh {
+  background-image:
+    radial-gradient(36rem 36rem at 82% -10%, color-mix(in srgb, var(--brand-500) 22%, transparent), transparent 60%),
+    radial-gradient(28rem 28rem at 0% 18%, color-mix(in srgb, var(--brand-600) 16%, transparent), transparent 55%),
+    radial-gradient(32rem 32rem at 50% 120%, color-mix(in srgb, var(--accent-500) 12%, transparent), transparent 60%);
+}
+
+/* Apparition au scroll (composant Reveal). État par défaut = VISIBLE :
+   le contenu n'est jamais bloqué invisible (no-JS, JS lent, SEO). L'animation
+   d'entrée n'est appliquée que si l'utilisateur n'a pas demandé un mouvement
+   réduit. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.is-revealed {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Respect des préférences de mouvement réduit (sécurité globale) */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

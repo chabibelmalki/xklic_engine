@@ -1,0 +1,785 @@
+{
+  "slug": "souadtazya",
+  "theme": "fraicheur-teal",
+  "domain": "www.sanadclean.fr",
+  "i18n": { "default": "fr", "languages": ["fr", "en", "ar"] },
+  "branding": {
+    "tagline": "تنظيف · نيم"
+  },
+  "entreprise": {
+    "nom": "SANAD CLEAN",
+    "statut": "EI",
+    "siret": "98087254300018",
+    "ape": "81.21Z",
+    "apeLabel": "التنظيف الاعتيادي للمباني",
+    "tva": { "regime": "franchise" },
+    "dirigeant": "Souad Tazya",
+    "siege": "20 rue Général Delestraint, 30000 Nîmes"
+  },
+  "seo": {
+    "schemaType": "HousekeepingService",
+    "ville": "Nîmes"
+  },
+  "meta": {
+    "title": "SANAD CLEAN — تنظيف منزلي وتنظيف احترافي في نيم",
+    "description": "SANAD CLEAN، شركة تنظيف في نيم: تنظيف منزلي (خصم ضريبي 50%، أي 15 €/س عليك)، تنظيف المحلات المهنية، إعادة التأهيل ومكافحة الآفات. تقدير مجاني.",
+    "keywords": [
+      "تنظيف منزلي نيم",
+      "عاملة تنظيف نيم",
+      "تنظيف نيم",
+      "خصم ضريبي تنظيف",
+      "تنظيف مكاتب نيم",
+      "إعادة تأهيل نيم",
+      "مكافحة بق الفراش نيم",
+      "خدمات منزلية نيم"
+    ]
+  },
+  "forms": {
+    "to": "sanadclean30@gmail.com"
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "الرئيسية",
+      "navHidden": true,
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "carte",
+          "content": {
+            "eyebrow": "شركة تنظيف في نيم",
+            "titre": "منزل لا تشوبه شائبة،",
+            "titreAccent": "ابتداءً من 15 €/س",
+            "accroche": "تنظيف منزلي مع خصم ضريبي بنسبة 50%، تنظيف المحلات، إعادة التأهيل ومكافحة الآفات في نيم. نتكفل بكل شيء.",
+            "trust": [
+              { "icone": "Receipt", "label": "خصم ضريبي 50%" },
+              { "icone": "Clock", "label": "متاحون 24 ساعة على مدار 7 أيام" },
+              { "icone": "ShieldCheck", "label": "محترفون جديرون بالثقة" },
+              { "icone": "MapPin", "label": "نيم وضواحيها" }
+            ],
+            "card": {
+              "label": "تنظيف منزلي",
+              "prix": "15 €",
+              "unite": "/ ساعة",
+              "mention": "بعد الخصم الضريبي",
+              "prixBarre": "30 €/س",
+              "points": [
+                "متاحون 24 ساعة على مدار 7 أيام",
+                "تقدير مجاني خلال 24 ساعة",
+                "طاقم جدير بالثقة",
+                "منتجات ملائمة لمنزلك",
+                "الدفع بنظام CESU مقبول"
+              ],
+              "rating": { "label": "عملاء راضون في نيم" }
+            },
+            "ctaPrimaire": { "label": "اطلب تقديراً مجانياً", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "eyebrow": "خدماتنا",
+            "titre": "مزوّد واحد لتنظيف كل شيء",
+            "intro": "تنظيف، إعادة تأهيل، زجاج، آفات، مكاتب: كل احتياجاتك في نيم، مع جهة اتصال واحدة.",
+            "items": [
+              { "nom": "التنظيف والعناية", "emoji": "🧹", "badge": "خصم ضريبي 50%", "priceHint": "ابتداءً من 30 €/س", "description": "صيانة منتظمة لمنزلك أو تنظيف ربيعي شامل.", "href": "/tarifs" },
+              { "nom": "إعادة التأهيل", "emoji": "🏠", "badge": "خصم ضريبي 50%", "priceHint": "ابتداءً من 250 €", "description": "تنظيف عميق بعد الأشغال أو الانتقال أو قبل معاينة الحالة.", "href": "/tarifs" },
+              { "nom": "تنظيف الزجاج", "emoji": "🪟", "badge": "خصم ضريبي 50%", "priceHint": "ابتداءً من 90 €", "description": "زجاج ونوافذ ومرايا لا تشوبها شائبة، دون آثار، من الداخل والخارج.", "href": "/tarifs" },
+              { "nom": "الكنب والأرائك", "emoji": "🛋️", "badge": "خصم ضريبي 50%", "priceHint": "ابتداءً من 60 €", "description": "تنظيف وإزالة الأوساخ المتراكمة من كنبكم وأرائككم ومنسوجاتكم.", "href": "/tarifs" },
+              { "nom": "الشرفة والمساحات الخارجية", "emoji": "🌿", "badge": "خصم ضريبي 50%", "priceHint": "ابتداءً من 90 €", "description": "تنظيف وإزالة الدهون من شرفاتكم وأرضياتكم الخارجية.", "href": "/tarifs" },
+              { "nom": "تنظيف المكاتب", "emoji": "🏢", "badge": "حسب التقدير", "priceHint": "ابتداءً من 90 €", "description": "صيانة منتظمة لمكاتبكم ومحلاتكم التجارية ومقراتكم المهنية.", "href": "/tarifs" }
+            ],
+            "cta": { "label": "عرض جميع خدماتنا", "href": "/services" }
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "montage",
+          "content": {
+            "eyebrow": "قبل / بعد",
+            "titre": "نتائج تتحدث عن نفسها",
+            "intro": "لمحة عن مشاريع التنظيف وإعادة التأهيل التي أنجزناها.",
+            "pastille": "قبل / بعد",
+            "ratio": "3/4",
+            "images": [
+              { "image": { "url": "/sites/souadtazya/1781211164446.jpg", "alt": "قبل / بعد: درج حجري متسخ ثم تم تنظيفه وإزالة الدهون عنه بواسطة SANAD CLEAN" }, "titre": "درج حجري أعيد إلى حالته الأصلية" },
+              { "image": { "url": "/sites/souadtazya/1781211162273.jpg", "alt": "قبل / بعد: غرفة أرضيتها مغطاة بالأوساخ ثم أعيد تأهيلها بالكامل" }, "titre": "غرفة أعيد تأهيلها بعد الإخلاء" },
+              { "image": { "url": "/sites/souadtazya/file_00000000ff2c71f4b37da4aee2ca8d13.jpg", "alt": "قبل / بعد: حمام متسخ ثم تم تنظيفه وتعقيمه" }, "titre": "حمام تم تنظيفه وتعقيمه" }
+            ]
+          }
+        },
+        {
+          "type": "simulateur",
+          "content": {
+            "eyebrow": "الخدمات المنزلية",
+            "argumentaireTitre": "التنظيف المنزلي يكلفك",
+            "argumentaireAccent": "نصف الثمن",
+            "argumentaire": "للتنظيف في منزلك: 30 €/س تُحتسب، و15 €/س فقط على عاتقك فعلياً.",
+            "points": [
+              "خصم ضريبي بنسبة 50% على التنظيف المنزلي",
+              "السلفة الفورية: لا تدفع الآن سوى النصف",
+              "الدفع بنظام CESU مقبول"
+            ],
+            "cardTitre": "محاكي الخصم الضريبي",
+            "cardIntro": "قدّر تكلفتك الفعلية بعد خصم ضريبي بنسبة 50%.",
+            "curseurLabel": "ساعات التنظيف أسبوعياً",
+            "unite": "س",
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "defaut": 3,
+            "prixPlein": 30,
+            "prixNet": 15,
+            "facteurMensuel": 4.33,
+            "plafondAnnuel": 12000,
+            "note": "تقدير إرشادي. الخصم الضريبي عبر تعاونية Accès SAP، على الخدمات المنزلية.",
+            "cta": { "label": "اطلب تقديراً مجانياً", "href": "/devis" },
+            "ctaSecondaire": { "label": "اعرف المزيد", "href": "/credit-impot" }
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "بسيط وسريع",
+            "titre": "كيف تتم العملية",
+            "items": [
+              { "icone": "ClipboardList", "titre": "طلبك", "texte": "تصف لنا احتياجك عبر نموذج التقدير الإلكتروني أو الهاتف أو واتساب." },
+              { "icone": "CalendarCheck", "titre": "الموعد", "texte": "نتفق على موعد يناسبك ونحدد تفاصيل الخدمة." },
+              { "icone": "Sparkles", "titre": "أصبح نظيفاً", "texte": "نتدخل بعناية. وللمنزل، تستفيد من خصم ضريبي بنسبة 50%." }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "في نيم وفي كامل منطقة غار الرونية",
+            "intro": "نتدخل في نيم والبلدات المجاورة. تحقق من منطقتك أو تواصل معنا مباشرة.",
+            "rayonKm": 20,
+            "villes": [
+              "Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons",
+              "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis",
+              "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"
+            ]
+          }
+        },
+        {
+          "type": "avis",
+          "content": {
+            "eyebrow": "يثقون بنا",
+            "titre": "ماذا يقول عملاؤنا",
+            "items": [
+              { "auteur": "Nadia B.", "ville": "Nîmes", "note": 5, "texte": "محترفة ودقيقة جداً. لم يكن منزلي نظيفاً بهذا القدر من قبل، والخصم الضريبي يجعل الخدمة في المتناول حقاً." },
+              { "auteur": "Julien M.", "ville": "Caissargues", "note": 5, "texte": "تدخّل لإعادة التأهيل بعد أشغالنا: لا تشوبه شائبة وسريع. أنصح به دون تردد." },
+              { "auteur": "Cabinet Lestra", "ville": "Nîmes", "note": 5, "texte": "نستعين بـ SANAD CLEAN لتنظيف مكاتبنا كل أسبوع. جدية والتزام بالمواعيد وإتقان." }
+            ],
+            "disclaimer": "شهادات معروضة على سبيل المثال — تُستبدل بآراء عملاء حقيقية (Google)."
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "كل ما تحتاج معرفته قبل البدء",
+            "items": [
+              { "question": "كيف يعمل الخصم الضريبي بنسبة 50%؟", "reponse": "للتنظيف في منزلك، تستفيد من خصم ضريبي يساوي 50% من المبالغ المدفوعة (بحد أقصى 12000 € سنوياً لكل أسرة). عملياً، الساعة التي تُحتسب بـ 30 € لا تكلفك فعلياً سوى 15 €. تعمل SANAD CLEAN عبر تعاونية Accès SAP، المسجّلة كخدمات منزلية، مما يمنحك هذا الحق." },
+              { "question": "ما هي السلفة الفورية؟", "reponse": "بفضل السلفة الفورية للخصم الضريبي (URSSAF)، لا تدفع الآن سوى النصف المتبقي على عاتقك، دون انتظار إقرارك الضريبي للعام التالي. يُدار هذا النظام عبر تعاونية Accès SAP." },
+              { "question": "هل ينطبق الخصم الضريبي على تنظيف المكاتب؟", "reponse": "لا. يتعلق الخصم الضريبي بنسبة 50% فقط بالخدمات المنجزة في منزل شخص خاص. أما تنظيف المقرات المهنية وإعادة التأهيل ومكافحة الآفات فتُحتسب حسب التقدير، دون خصم ضريبي." },
+              { "question": "في أي بلدات تتدخلون؟", "reponse": "نتدخل في نيم والبلدات المجاورة (Caissargues، Marguerittes، Saint-Gilles، Bouillargues، Manduel، Milhaud…). تواصل معنا لتأكيد منطقتك." }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "هل أنت مستعد لاستعادة منزل لا تشوبه شائبة؟",
+            "sousTitre": "تقدير مجاني وبدون التزام. رد سريع عبر الهاتف أو واتساب أو البريد الإلكتروني.",
+            "ctaPrimaire": { "label": "اطلب تقديراً مجانياً", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" },
+            "lien": { "label": "أو راسلنا على واتساب ←", "href": "https://wa.me/33767029762" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "الخدمات",
+      "meta": {
+        "title": "خدمات التنظيف في نيم",
+        "description": "تنظيف منزلي (خصم ضريبي 50%)، تنظيف شامل، إعادة تأهيل، زجاج، مكافحة الآفات وتنظيف المكاتب في نيم."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "خدماتنا",
+            "titre": "كل أعمال التنظيف، مزوّد واحد",
+            "intro": "من التنظيف المنتظم إلى مكافحة الآفات، تغطي SANAD CLEAN جميع احتياجاتك في نيم — مع أو بدون خصم ضريبي حسب الخدمة.",
+            "ctaPrimaire": { "label": "أنشئ تقديري", "href": "/devis" },
+            "ctaSecondaire": { "label": "عرض الأسعار", "href": "/tarifs" }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "eyebrow": "في المنزل · خصم ضريبي 50%",
+            "titre": "خدمات في منزلك",
+            "intro": "تُنجَز لدى الأفراد، وتمنح هذه الخدمات الحق في خصم ضريبي بنسبة 50% (عبر Accès SAP).",
+            "items": [
+              { "nom": "التنظيف والعناية", "emoji": "🧹", "badge": "خصم ضريبي 50%", "priceHint": "ابتداءً من 30 €/س", "description": "صيانة منتظمة لمنزلك أو تنظيف ربيعي شامل.", "href": "/tarifs" },
+              { "nom": "إعادة التأهيل", "emoji": "🏠", "badge": "خصم ضريبي 50%", "priceHint": "ابتداءً من 250 €", "description": "تنظيف عميق بعد الأشغال أو الانتقال أو قبل معاينة الحالة.", "href": "/tarifs" },
+              { "nom": "تنظيف الزجاج", "emoji": "🪟", "badge": "خصم ضريبي 50%", "priceHint": "ابتداءً من 90 €", "description": "زجاج ونوافذ ومرايا لا تشوبها شائبة، دون آثار، من الداخل والخارج.", "href": "/tarifs" },
+              { "nom": "الكنب والأرائك", "emoji": "🛋️", "badge": "خصم ضريبي 50%", "priceHint": "ابتداءً من 60 €", "description": "تنظيف وإزالة الأوساخ المتراكمة من كنبكم وأرائككم ومنسوجاتكم.", "href": "/tarifs" },
+              { "nom": "الشرفة والمساحات الخارجية", "emoji": "🌿", "badge": "خصم ضريبي 50%", "priceHint": "ابتداءً من 90 €", "description": "تنظيف وإزالة الدهون من شرفاتكم وأرضياتكم الخارجية.", "href": "/tarifs" },
+              { "nom": "متلازمة ديوجين", "emoji": "♻️", "badge": "خصم ضريبي 50%", "priceHint": "ابتداءً من 600 €", "description": "إخلاء وتنظيف وتعقيم كامل للمنازل شديدة الازدحام.", "href": "/tarifs" }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "eyebrow": "حسب التقدير",
+            "titre": "معالجات متخصصة ومهنية",
+            "intro": "المقرات المهنية ومكافحة الآفات: تُحتسب حسب التقدير، دون خصم ضريبي.",
+            "items": [
+              { "nom": "تنظيف المكاتب", "emoji": "🏢", "badge": "حسب التقدير", "priceHint": "ابتداءً من 90 €", "description": "صيانة منتظمة لمكاتبكم ومحلاتكم التجارية ومقراتكم المهنية.", "href": "/tarifs" },
+              { "nom": "بق الفراش", "emoji": "🛏️", "badge": "حسب التقدير", "priceHint": "ابتداءً من 250 €", "description": "معالجة احترافية لبق الفراش، غرفة بغرفة.", "href": "/tarifs" },
+              { "nom": "مكافحة الصراصير", "emoji": "🐜", "badge": "حسب التقدير", "priceHint": "ابتداءً من 140 €", "description": "مكافحة موجّهة ضد الصراصير والصراصير الأمريكية.", "href": "/tarifs" }
+            ],
+            "cta": { "label": "أنشئ تقديري إلكترونياً", "href": "/devis" }
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "لديك حاجة محددة؟ أنشئ تقديرك",
+            "sousTitre": "اختر خدماتك واحصل على تقدير فوري، بعد خصم الخصم الضريبي.",
+            "ctaPrimaire": { "label": "أنشئ تقديري", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" },
+            "lien": { "label": "أو راسلنا على واتساب ←", "href": "https://wa.me/33767029762" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "realisations",
+      "label": "الأعمال المنجزة",
+      "meta": {
+        "title": "الأعمال المنجزة — قبل / بعد",
+        "description": "اكتشف بالصور مشاريع التنظيف وإعادة التأهيل التي أنجزتها SANAD CLEAN في نيم وضواحيها."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "الأعمال المنجزة",
+            "titre": "نتائج تتحدث عن نفسها",
+            "intro": "بعض مشاريع التنظيف وإعادة التأهيل، بالصور. قبل / بعد، دون أي تعديل."
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "montage",
+          "content": {
+            "pastille": "قبل / بعد",
+            "ratio": "3/4",
+            "images": [
+              { "image": { "url": "/sites/souadtazya/1781211164446.jpg", "alt": "قبل / بعد: درج حجري متسخ ثم تم تنظيفه وإزالة الدهون عنه بواسطة SANAD CLEAN" }, "titre": "درج حجري أعيد إلى حالته الأصلية" },
+              { "image": { "url": "/sites/souadtazya/1781211162273.jpg", "alt": "قبل / بعد: غرفة أرضيتها مغطاة بالأوساخ ثم أعيد تأهيلها بالكامل" }, "titre": "غرفة أعيد تأهيلها بعد الإخلاء" },
+              { "image": { "url": "/sites/souadtazya/file_00000000ff2c71f4b37da4aee2ca8d13.jpg", "alt": "قبل / بعد: حمام متسخ ثم تم تنظيفه وتعقيمه" }, "titre": "حمام تم تنظيفه وتعقيمه" },
+              { "image": { "url": "/sites/souadtazya/1781211328317.jpg", "alt": "قبل / بعد: مرحاض شديد الترسبات الكلسية ثم تمت إزالة الترسبات وتعقيمه" }, "titre": "مرافق صحية أزيلت ترسباتها وعُقّمت" },
+              { "image": { "url": "/sites/souadtazya/1781211223539.jpg", "alt": "قبل / بعد: غرفة تقنية مكدسة بالحطام ثم تم إخلاؤها وتنظيفها" }, "titre": "غرفة تقنية تم إخلاؤها وتنظيفها" },
+              { "image": { "url": "/sites/souadtazya/1781211277499.jpg", "alt": "قبل / بعد: قبو مغطى بالأنقاض ثم تم إخلاؤه وتنظيف أرضيته" }, "titre": "قبو تم إخلاؤه وتنظيف أرضيته" }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "ترغب في الحصول على النتيجة ذاتها في منزلك؟",
+            "sousTitre": "تقدير مجاني وبدون التزام، رد سريع.",
+            "ctaPrimaire": { "label": "اطلب تقديراً", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tarifs",
+      "label": "الأسعار",
+      "meta": {
+        "title": "أسعار التنظيف والعناية في نيم",
+        "description": "أسعار SANAD CLEAN: تنظيف 30 €/س (15 €/س بعد الخصم الضريبي)، إعادة تأهيل، زجاج، مكاتب، آفات. أنشئ تقديرك إلكترونياً."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "الأسعار والتقدير الإلكتروني",
+            "titre": "أنشئ تقديرك ببضع نقرات",
+            "intro": "اختر خدماتك، اضبط الكميات واحصل على تقدير فوري — مع خصم الخصم الضريبي للمنزل."
+          }
+        },
+        {
+          "type": "serviceQuoteBuilder",
+          "content": {
+            "creditRate": 0.5,
+            "creditCeiling": 12000,
+            "creditLabelOff": "السعر العادي",
+            "creditLabelOn": "بعد الخصم الضريبي −50%",
+            "telephone": "07 67 02 97 62",
+            "whatsapp": "07 67 02 97 62",
+            "confidentialiteHref": "/confidentialite",
+            "villes": [
+              "Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons",
+              "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis",
+              "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"
+            ],
+            "notes": [
+              "🚗 التنقل مجاني في نيم وضمن نطاق 20 كم حولها.",
+              "📋 تقدير مجاني خلال 24 ساعة، بدون التزام."
+            ],
+            "categories": [
+              {
+                "id": "menage",
+                "emoji": "🧹",
+                "titre": "التنظيف والعناية",
+                "description": "صيانة منتظمة أو تنظيف شامل لمنزلك.",
+                "creditImpot": true,
+                "prestations": [
+                  { "nom": "تنظيف منتظم", "type": "horaire", "tauxHoraire": 30, "supplementMateriel": 5, "heuresMin": 1, "heuresMax": 40, "heuresDefaut": 2 },
+                  { "nom": "تنظيف ربيعي شامل", "type": "tiers", "tiers": [
+                    { "label": "استوديو / غرفة واحدة", "prix": 150 },
+                    { "label": "غرفتان", "prix": 220 },
+                    { "label": "ثلاث غرف", "prix": 290 },
+                    { "label": "أربع غرف", "prix": 380 }
+                  ] }
+                ]
+              },
+              {
+                "id": "remise-en-etat",
+                "emoji": "🏠",
+                "titre": "إعادة التأهيل",
+                "description": "بعد الأشغال أو الانتقال أو قبل معاينة الحالة.",
+                "creditImpot": true,
+                "prestations": [
+                  { "nom": "إعادة التأهيل", "type": "tiers", "tiers": [
+                    { "label": "استوديو / غرفة واحدة", "prix": 250, "prefixe": "ابتداءً من" },
+                    { "label": "غرفتان", "prix": 350, "prefixe": "ابتداءً من" },
+                    { "label": "ثلاث غرف", "prix": 450, "prefixe": "ابتداءً من" },
+                    { "label": "أربع غرف فأكثر", "prix": 600, "prefixe": "ابتداءً من" }
+                  ] }
+                ]
+              },
+              {
+                "id": "vitres",
+                "emoji": "🪟",
+                "titre": "تنظيف الزجاج",
+                "description": "زجاج ونوافذ ومرايا دون آثار، من الداخل والخارج.",
+                "creditImpot": true,
+                "prestations": [
+                  { "nom": "أعمال الزجاج", "type": "tiers", "tiers": [
+                    { "label": "شقة", "prix": 90, "prefixe": "ابتداءً من" },
+                    { "label": "منزل", "prix": 140, "prefixe": "ابتداءً من" },
+                    { "label": "فيلا", "prix": 180, "prefixe": "ابتداءً من" }
+                  ] }
+                ]
+              },
+              {
+                "id": "canape",
+                "emoji": "🛋️",
+                "titre": "الكنب والأرائك",
+                "description": "تنظيف وإزالة الأوساخ المتراكمة من منسوجات الأثاث.",
+                "creditImpot": true,
+                "prestations": [
+                  { "nom": "المنسوجات", "type": "tiers", "tiers": [
+                    { "label": "أريكة", "prix": 60 },
+                    { "label": "كنبة بمقعدين", "prix": 90 },
+                    { "label": "كنبة بثلاثة مقاعد", "prix": 120 },
+                    { "label": "كنبة زاوية", "prix": 150 }
+                  ] }
+                ]
+              },
+              {
+                "id": "terrasse",
+                "emoji": "🌿",
+                "titre": "الشرفة والمساحات الخارجية",
+                "description": "تنظيف وإزالة الدهون من الشرفات والأرضيات الخارجية.",
+                "creditImpot": true,
+                "prestations": [
+                  { "nom": "الشرفة", "type": "tiers", "tiers": [
+                    { "label": "حتى 20 م²", "prix": 90 },
+                    { "label": "من 20 إلى 50 م²", "prix": 120 },
+                    { "label": "أكثر من 50 م²", "prix": 150, "prefixe": "ابتداءً من" }
+                  ] }
+                ]
+              },
+              {
+                "id": "diogene",
+                "emoji": "♻️",
+                "titre": "متلازمة ديوجين",
+                "description": "إخلاء وتنظيف وتعقيم المنازل شديدة الازدحام.",
+                "creditImpot": true,
+                "prestations": [
+                  { "nom": "تنظيف بالغ الصعوبة", "type": "tiers", "tiers": [
+                    { "label": "استوديو / غرفة واحدة", "prix": 600, "prefixe": "ابتداءً من" },
+                    { "label": "غرفتان", "prix": 800, "prefixe": "ابتداءً من" },
+                    { "label": "ثلاث غرف", "prix": 1000, "prefixe": "ابتداءً من" },
+                    { "label": "أربع غرف فأكثر", "prix": 1200, "prefixe": "ابتداءً من" }
+                  ] }
+                ]
+              },
+              {
+                "id": "bureaux",
+                "emoji": "🏢",
+                "titre": "تنظيف المكاتب",
+                "description": "صيانة المكاتب والمحلات التجارية والمقرات المهنية.",
+                "creditImpot": false,
+                "prestations": [
+                  { "nom": "المقرات المهنية", "type": "tiers", "tiers": [
+                    { "label": "حتى 50 م²", "prix": 90, "prefixe": "ابتداءً من" },
+                    { "label": "من 50 إلى 100 م²", "prix": 120, "prefixe": "ابتداءً من" },
+                    { "label": "أكثر من 100 م²", "prix": 150, "prefixe": "ابتداءً من" }
+                  ] }
+                ]
+              },
+              {
+                "id": "cafards",
+                "emoji": "🐜",
+                "titre": "مكافحة الصراصير",
+                "description": "مكافحة موجّهة ضد الصراصير والصراصير الأمريكية.",
+                "creditImpot": false,
+                "prestations": [
+                  { "nom": "مكافحة الصراصير", "type": "tiers", "tiers": [
+                    { "label": "استوديو / غرفة واحدة", "prix": 140 },
+                    { "label": "غرفتان", "prix": 180 },
+                    { "label": "ثلاث غرف", "prix": 240 },
+                    { "label": "أربع غرف", "prix": 300 }
+                  ] }
+                ]
+              },
+              {
+                "id": "punaises",
+                "emoji": "🛏️",
+                "titre": "بق الفراش",
+                "description": "معالجة احترافية لبق الفراش.",
+                "creditImpot": false,
+                "prestations": [
+                  { "nom": "معالجة البق", "type": "tiers", "tiers": [
+                    { "label": "غرفة واحدة", "prix": 250, "prefixe": "ابتداءً من" },
+                    { "label": "غرفتان", "prix": 350, "prefixe": "ابتداءً من" },
+                    { "label": "المنزل كاملاً", "prix": 490, "prefixe": "ابتداءً من" }
+                  ] }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "لديك حاجة خاصة أو مشروع كبير؟",
+            "sousTitre": "تواصل معنا للحصول على تقدير مخصص، مجاني وبدون التزام.",
+            "ctaPrimaire": { "label": "تواصل معنا", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "credit-impot",
+      "label": "الخصم الضريبي",
+      "meta": {
+        "title": "خصم ضريبي 50% للتنظيف المنزلي",
+        "description": "مع SANAD CLEAN و Accès SAP، استفد من خصم ضريبي بنسبة 50% والسلفة الفورية على التنظيف المنزلي في نيم. التكلفة الفعلية: 15 €/س."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "الخدمات المنزلية",
+            "titre": "التنظيف المنزلي، مقسوماً على اثنين",
+            "intro": "خصم ضريبي بنسبة 50%، سلفة فورية، الدفع بنظام CESU: تنظيفك المنزلي لا يكلفك فعلياً سوى 15 €/س."
+          }
+        },
+        {
+          "type": "simulateur",
+          "content": {
+            "argumentaireTitre": "أنت تدفع النصف،",
+            "argumentaireAccent": "والدولة تدفع الباقي",
+            "argumentaire": "يغطي الخصم الضريبي 50% من التنظيف المنزلي، في حدود 12000 € سنوياً لكل أسرة.",
+            "points": [
+              "خصم ضريبي بنسبة 50% على التنظيف المنزلي",
+              "السلفة الفورية: لا تدفع الآن سوى النصف",
+              "الدفع بنظام CESU مقبول",
+              "يُدار عبر تعاونية Accès SAP (الخدمات المنزلية)"
+            ],
+            "cardTitre": "محاكي الخصم الضريبي",
+            "cardIntro": "قدّر تكلفتك الفعلية بعد خصم ضريبي بنسبة 50%.",
+            "curseurLabel": "ساعات التنظيف أسبوعياً",
+            "unite": "س",
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "defaut": 3,
+            "prixPlein": 30,
+            "prixNet": 15,
+            "facteurMensuel": 4.33,
+            "plafondAnnuel": 12000,
+            "note": "تقدير إرشادي. الخصم الضريبي عبر تعاونية Accès SAP، على الخدمات المنزلية.",
+            "cta": { "label": "اطلب تقديراً مجانياً", "href": "/devis" }
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "الخصم الضريبي: أسئلتك",
+            "items": [
+              { "question": "كيف يعمل الخصم الضريبي بنسبة 50%؟", "reponse": "للتنظيف في منزلك، تستفيد من خصم ضريبي يساوي 50% من المبالغ المدفوعة (بحد أقصى 12000 € سنوياً لكل أسرة). عملياً، الساعة التي تُحتسب بـ 30 € لا تكلفك فعلياً سوى 15 €. تعمل SANAD CLEAN عبر تعاونية Accès SAP، المسجّلة كخدمات منزلية، مما يمنحك هذا الحق." },
+              { "question": "ما هي السلفة الفورية؟", "reponse": "بفضل السلفة الفورية للخصم الضريبي (URSSAF)، لا تدفع الآن سوى النصف المتبقي على عاتقك، دون انتظار إقرارك الضريبي للعام التالي. يُدار هذا النظام عبر تعاونية Accès SAP." },
+              { "question": "هل ينطبق الخصم الضريبي على تنظيف المكاتب؟", "reponse": "لا. يتعلق الخصم الضريبي بنسبة 50% فقط بالخدمات المنجزة في منزل شخص خاص. أما تنظيف المقرات المهنية وإعادة التأهيل ومكافحة الآفات فتُحتسب حسب التقدير، دون خصم ضريبي." },
+              { "question": "هل يمكنني الدفع بنظام CESU؟", "reponse": "نعم، الدفع بنظام CESU مقبول للتنظيف المنزلي. ومع الخصم الضريبي، تعود تكلفتك الفعلية إلى 15 €/س." }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "استفد من الخصم الضريبي منذ خدمتك الأولى",
+            "sousTitre": "تقدير مجاني وبدون التزام. سلفة فورية عبر Accès SAP.",
+            "ctaPrimaire": { "label": "اطلب تقديراً", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "اتصل بنا",
+      "meta": {
+        "title": "اتصل بنا",
+        "description": "تواصل مع SANAD CLEAN في نيم: الهاتف، البريد الإلكتروني، واتساب. طلب تدخّل إلكتروني، رد سريع، تقدير مجاني."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "اتصل بنا",
+            "titre": "لنتحدث عن حاجتك",
+            "intro": "سؤال أو طلب تدخّل؟ راسلنا أو اتصل أو تواصل عبر واتساب — رد سريع، تقدير مجاني."
+          }
+        },
+        {
+          "type": "contact",
+          "content": {
+            "titre": "طلب تدخّل",
+            "intro": "صف حاجتك: الخدمة والمنطقة والتاريخ المرغوب. سنعاود الاتصال بك سريعاً مع تقدير.",
+            "form": true,
+            "formMode": "demande-intervention",
+            "telephone": "07 67 02 97 62",
+            "whatsapp": "07 67 02 97 62",
+            "email": "sanadclean30@gmail.com",
+            "adresse": "20 rue Général Delestraint, 30000 Nîmes",
+            "horaires": [
+              { "jour": "الإثنين – الأحد", "heures": "متاحون 24 ساعة على مدار 7 أيام" }
+            ],
+            "services": [
+              "تنظيف منزلي",
+              "كي الملابس",
+              "تنظيف المحلات / المكاتب",
+              "إعادة التأهيل (بعد الأشغال)",
+              "مكافحة الآفات",
+              "أخرى / لا أعرف"
+            ],
+            "villes": [
+              "Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons",
+              "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis",
+              "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"
+            ],
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8367%2C4.3601",
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "a-propos",
+      "label": "من نحن",
+      "navHidden": true,
+      "meta": {
+        "title": "من نحن — SANAD CLEAN",
+        "description": "SANAD CLEAN، شركة تنظيف في نيم أسستها Souad Tazya: خدمة جديرة بالثقة، متقنة وملتزمة بالمواعيد، في المنزل كما في الشركة."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "من نحن",
+            "titre": "SANAD CLEAN، التنظيف الجدير بالثقة في نيم",
+            "intro": "أسستها Souad Tazya، وتضع SANAD CLEAN العناية والإصغاء والتكتم في صميم كل تدخّل — لدى الأفراد كما في الشركات."
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "قيمنا",
+            "titre": "ما يوجّه كل تدخّل",
+            "items": [
+              { "icone": "ShieldCheck", "titre": "الثقة", "texte": "طاقم جاد ومتكتم، احترام لمنزلك وممتلكاتك." },
+              { "icone": "Heart", "titre": "العناية", "texte": "عمل دقيق، متقن في التفاصيل، كما لو كان في منزلنا." },
+              { "icone": "Leaf", "titre": "الإصغاء", "texte": "منتجات وأساليب ملائمة لتفضيلاتك وأطفالك وحيواناتك." },
+              { "icone": "Clock", "titre": "الالتزام بالمواعيد", "texte": "مواعيد محترمة وتوفر 24 ساعة على مدار 7 أيام." }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "ترغب في أن تعهد إلينا بمنزلك؟",
+            "sousTitre": "تقدير مجاني وبدون التزام، رد سريع.",
+            "ctaPrimaire": { "label": "اطلب تقديراً", "href": "/devis" },
+            "ctaSecondaire": { "label": "تواصل معنا", "href": "/contact" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "zone-intervention",
+      "label": "نطاق التدخّل",
+      "navHidden": true,
+      "meta": {
+        "title": "نطاق التدخّل في نيم وضواحيها",
+        "description": "تتدخل SANAD CLEAN في نيم، Caissargues، Marguerittes، Saint-Gilles، Bouillargues، Manduel، Milhaud وفي كامل منطقة غار الرونية."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "نطاق التدخّل",
+            "titre": "نتدخل في نيم وفي غار",
+            "intro": "نيم والبلدات المجاورة، ضمن نطاق نحو 20 كم. التنقل مجاني في المنطقة."
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "البلدات المخدومة",
+            "intro": "تحقق من منطقتك أدناه أو تواصل معنا مباشرة للتأكيد.",
+            "rayonKm": 20,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8367%2C4.3601",
+            "villes": [
+              "Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons",
+              "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis",
+              "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "هل بلدتك ضمن القائمة؟",
+            "sousTitre": "اطلب تقديرك المجاني، ونحن نأتي إليك.",
+            "ctaPrimaire": { "label": "اطلب تقديراً", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "faq",
+      "label": "الأسئلة الشائعة",
+      "navHidden": true,
+      "meta": {
+        "title": "الأسئلة الشائعة",
+        "description": "الخصم الضريبي، السلفة الفورية، CESU، نطاق التدخّل، المنتجات، التقدير: كل الإجابات حول التنظيف والعناية مع SANAD CLEAN."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "الأسئلة الشائعة",
+            "titre": "أسئلتك، إجاباتنا"
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "كل ما تحتاج معرفته قبل البدء",
+            "items": [
+              { "question": "كيف يعمل الخصم الضريبي بنسبة 50%؟", "reponse": "للتنظيف في منزلك، تستفيد من خصم ضريبي يساوي 50% من المبالغ المدفوعة (بحد أقصى 12000 € سنوياً لكل أسرة). عملياً، الساعة التي تُحتسب بـ 30 € لا تكلفك فعلياً سوى 15 €. تعمل SANAD CLEAN عبر تعاونية Accès SAP، المسجّلة كخدمات منزلية، مما يمنحك هذا الحق." },
+              { "question": "ما هي السلفة الفورية؟", "reponse": "بفضل السلفة الفورية للخصم الضريبي (URSSAF)، لا تدفع الآن سوى النصف المتبقي على عاتقك، دون انتظار إقرارك الضريبي للعام التالي. يُدار هذا النظام عبر تعاونية Accès SAP." },
+              { "question": "هل ينطبق الخصم الضريبي على تنظيف المكاتب؟", "reponse": "لا. يتعلق الخصم الضريبي بنسبة 50% فقط بالخدمات المنجزة في منزل شخص خاص. أما تنظيف المقرات المهنية وإعادة التأهيل ومكافحة الآفات فتُحتسب حسب التقدير، دون خصم ضريبي." },
+              { "question": "في أي بلدات تتدخلون؟", "reponse": "نتدخل في نيم والبلدات المجاورة (Caissargues، Marguerittes، Saint-Gilles، Bouillargues، Manduel، Milhaud…). تواصل معنا لتأكيد منطقتك." },
+              { "question": "هل يمكنني الدفع بنظام CESU؟", "reponse": "نعم، الدفع بنظام CESU مقبول للتنظيف المنزلي. ومع الخصم الضريبي، تعود تكلفتك الفعلية إلى 15 €/س." },
+              { "question": "هل تستخدمون منتجات صديقة للبيئة؟", "reponse": "نلائم المنتجات مع تفضيلاتك، ويمكننا استخدام منتجات صديقة للبيئة عند الطلب، خاصة في وجود أطفال أو حيوانات." }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "لديك سؤال آخر؟",
+            "sousTitre": "اتصل بنا أو راسلنا: نرد عليك سريعاً.",
+            "ctaPrimaire": { "label": "تواصل معنا", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "devis",
+      "label": "تقدير مجاني",
+      "navHidden": true,
+      "meta": {
+        "title": "طلب تقدير مجاني",
+        "description": "اطلب تقديرك المجاني وبدون التزام من SANAD CLEAN: تنظيف، إعادة تأهيل، زجاج، مكاتب، آفات في نيم."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "تقدير مجاني",
+            "titre": "اطلب تقديرك في دقيقة واحدة",
+            "intro": "حدّد حاجتك: سنعاود الاتصال بك سريعاً مع تقدير ملائم، مجاني وبدون التزام.",
+            "ctaSecondaire": { "label": "أنشئ إلكترونياً", "href": "/tarifs" }
+          }
+        },
+        {
+          "type": "contact",
+          "content": {
+            "titre": "طلب التقدير الخاص بك",
+            "intro": "بعض المعلومات تكفي لنعدّ لك تقديراً.",
+            "form": true,
+            "formMode": "devis",
+            "telephone": "07 67 02 97 62",
+            "whatsapp": "07 67 02 97 62",
+            "email": "sanadclean30@gmail.com",
+            "adresse": "20 rue Général Delestraint, 30000 Nîmes",
+            "horaires": [
+              { "jour": "الإثنين – الأحد", "heures": "متاحون 24 ساعة على مدار 7 أيام" }
+            ],
+            "services": [
+              "تنظيف منزلي",
+              "كي الملابس",
+              "تنظيف المحلات / المكاتب",
+              "إعادة التأهيل (بعد الأشغال)",
+              "مكافحة الآفات",
+              "أخرى / لا أعرف"
+            ],
+            "villes": [
+              "Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons",
+              "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis",
+              "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"
+            ],
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8367%2C4.3601",
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    }
+  ]
+}

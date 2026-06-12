@@ -1,0 +1,151 @@
+import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
+import type { ContactContent } from "@/types/config";
+import type { ContactMode } from "@/lib/contact-schema";
+import type { BlockComponentProps } from "./types";
+import { Section, toneForIndex } from "@/components/ui/Section";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Button } from "@/components/ui/Button";
+import { Reveal } from "@/components/ui/Reveal";
+import { ContactForm } from "@/components/ContactForm";
+import { telHref, waHref, withBase } from "@/lib/utils";
+
+/**
+ * Contact. Coordonnées cliquables (tel/mail/WhatsApp) + horaires + carte, et —
+ * si `content.form` est vrai — un FORMULAIRE opérationnel (POST /api/contact).
+ * Le mode (`simple` | `demande-intervention` | `devis` | `contact`) pilote les
+ * champs affichés.
+ */
+export function Contact({
+  block,
+  config,
+  index,
+  basePath = "",
+  strings,
+}: BlockComponentProps<ContactContent>) {
+  const c = block.content;
+  const tone = toneForIndex(index);
+  const mode: ContactMode = (c.formMode ?? c.formType ?? "simple") as ContactMode;
+  const turnstileSiteKey = config.forms?.turnstile
+    ? process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
+    : undefined;
+
+  // Lien de confidentialité résolu par rapport au basePath (preview vs prod).
+  const rawConf = c.confidentialiteHref ?? "/confidentialite";
+  const confidentialiteHref = rawConf.startsWith("http") ? rawConf : `${basePath}${rawConf}`;
+
+  const rows = [
+    c.telephone && { icon: Phone, label: c.telephone, href: telHref(c.telephone) },
+    c.whatsapp && { icon: MessageCircle, label: strings.contact.whatsapp, href: waHref(c.whatsapp) },
+    c.email && { icon: Mail, label: c.email, href: `mailto:${c.email}` },
+    c.adresse && { icon: MapPin, label: c.adresse, href: undefined },
+  ].filter(Boolean) as { icon: typeof Phone; label: string; href?: string }[];
+
+  const infoCard = (
+    <div className="space-y-6">
+      <div className="rounded-theme border border-border bg-surface p-6 shadow-sm">
+        <ul className="space-y-4">
+          {rows.map((r, i) => {
+            const Inner = (
+              <span className="flex items-center gap-3 text-ink">
+                <span className="inline-flex size-10 items-center justify-center rounded-full bg-brand-50 text-brand-600">
+                  <r.icon className="size-5" />
+                </span>
+                <span className="font-medium">{r.label}</span>
+              </span>
+            );
+            return (
+              <li key={i}>
+                {r.href ? (
+                  <a
+                    href={r.href}
+                    className="transition-opacity hover:opacity-80"
+                    {...(r.href.startsWith("http")
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : {})}
+                  >
+                    {Inner}
+                  </a>
+                ) : (
+                  Inner
+                )}
+              </li>
+            );
+          })}
+        </ul>
+
+        {c.horaires?.length ? (
+          <div className="mt-6 border-t border-border pt-5">
+            <p className="mb-3 flex items-center gap-2 text-sm font-semibold text-ink">
+              <Clock className="size-4 text-brand-600" /> {strings.contact.hours}
+            </p>
+            <ul className="space-y-1.5 text-sm text-muted">
+              {c.horaires.map((h) => (
+                <li key={h.jour} className="flex justify-between gap-4">
+                  <span>{h.jour}</span>
+                  <span className="text-ink">{h.heures}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+      </div>
+
+      {c.mapEmbedUrl && (
+        <div className="overflow-hidden rounded-theme border border-border shadow-sm">
+          <iframe
+            src={c.mapEmbedUrl}
+            title={`Localisation — ${config.entreprise.nom}`}
+            loading="lazy"
+            className="aspect-[16/10] w-full"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+      )}
+    </div>
+  );
+
+  return (
+    <Section id="contact" tone={tone}>
+      <Reveal>
+        <SectionHeading
+          eyebrow={strings.nav.contact}
+          title={c.titre ?? "Parlons de votre projet"}
+          intro={c.intro}
+        />
+      </Reveal>
+
+      {c.form ? (
+        <div className="mt-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+          <Reveal>{infoCard}</Reveal>
+          <Reveal delay={0.1}>
+            <ContactForm
+              mode={mode}
+              site={config.entreprise.nom}
+              siteSlug={config.slug}
+              services={c.services}
+              villes={c.villes}
+              telephone={c.telephone}
+              whatsapp={c.whatsapp}
+              confidentialiteHref={confidentialiteHref}
+              turnstileSiteKey={turnstileSiteKey}
+              strings={strings.form}
+            />
+          </Reveal>
+        </div>
+      ) : (
+        <div className="mt-12 grid items-start gap-10 lg:grid-cols-2">
+          <Reveal>
+            <div>
+              {c.cta && (
+                <Button href={withBase(basePath, c.cta.href)} size="lg">
+                  {c.cta.label}
+                </Button>
+              )}
+            </div>
+          </Reveal>
+          <Reveal delay={0.1}>{infoCard}</Reveal>
+        </div>
+      )}
+    </Section>
+  );
+}

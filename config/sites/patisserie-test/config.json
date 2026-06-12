@@ -1,0 +1,126 @@
+{
+  "slug": "patisserie-test",
+  "theme": "energie-corail",
+  "branding": {
+    "logo": "https://picsum.photos/seed/patisserie-logo/160/48",
+    "logoAlt": "Maison Léa"
+  },
+  "entreprise": {
+    "nom": "Maison Léa",
+    "statut": "SAS",
+    "siret": "91077665400031",
+    "tva": { "regime": "reel", "numero": "FR91910776654" },
+    "capital": 10000,
+    "rcs": "Lyon",
+    "dirigeant": "Léa Fontaine",
+    "siege": "27 rue de la Croix-Rousse, 69004 Lyon"
+  },
+  "seo": {
+    "schemaType": "Bakery",
+    "ville": "Lyon"
+  },
+  "meta": {
+    "title": "Maison Léa — Pâtisserie artisanale et créations sur mesure à Lyon",
+    "description": "Pâtisserie artisanale à Lyon : entremets, pièces montées et gâteaux personnalisés réalisés sur commande. Produits frais, fait maison, sur réservation.",
+    "keywords": ["pâtisserie Lyon", "gâteau sur mesure Lyon", "entremets artisanal", "pièce montée Lyon"]
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "variant": "centre",
+      "content": {
+        "sousTitre": "Pâtisserie artisanale",
+        "titre": "Des douceurs qui font l'événement",
+        "accroche": "Entremets délicats, pièces montées et gâteaux sur mesure, façonnés à la main avec des produits frais et de saison. Chaque création raconte votre occasion.",
+        "image": {
+          "url": "https://picsum.photos/seed/patisserie-hero/1000/750",
+          "alt": "Entremets pâtissier soigneusement dressé"
+        },
+        "badges": ["Fait maison", "Produits de saison", "Sur commande"],
+        "ctaPrimaire": { "label": "Commander une création", "href": "#contact" },
+        "ctaSecondaire": { "label": "Voir la galerie", "href": "#galerie" }
+      }
+    },
+    {
+      "type": "services",
+      "variant": "images",
+      "content": {
+        "titre": "Nos créations",
+        "intro": "Pour un anniversaire, un mariage ou simplement l'envie d'un beau dessert.",
+        "items": [
+          {
+            "nom": "Entremets signature",
+            "description": "Mousses, croustillants et inserts fruités, sublimés par un glaçage miroir.",
+            "image": { "url": "https://picsum.photos/seed/patisserie-entremets/640/400", "alt": "Entremets glaçage miroir" }
+          },
+          {
+            "nom": "Gâteaux sur mesure",
+            "description": "Layer cakes et number cakes personnalisés à vos couleurs et vos goûts.",
+            "image": { "url": "https://picsum.photos/seed/patisserie-cake/640/400", "alt": "Layer cake décoré" }
+          },
+          {
+            "nom": "Pièces montées",
+            "description": "Choux croustillants montés en pyramide pour vos grandes occasions.",
+            "image": { "url": "https://picsum.photos/seed/patisserie-piece/640/400", "alt": "Pièce montée de choux" }
+          }
+        ]
+      }
+    },
+    {
+      "type": "galerie",
+      "variant": "produits",
+      "content": {
+        "titre": "La vitrine",
+        "intro": "Un aperçu de nos dernières créations gourmandes.",
+        "images": [
+          { "image": { "url": "https://picsum.photos/seed/patisserie-tarte/600/450", "alt": "Tarte aux fruits frais" }, "titre": "Tarte fine aux fruits", "description": "Pâte sablée, crème d'amande, fruits de saison." },
+          { "image": { "url": "https://picsum.photos/seed/patisserie-eclair/600/450", "alt": "Éclairs au chocolat" }, "titre": "Éclairs", "description": "Vanille de Madagascar ou chocolat grand cru." },
+          { "image": { "url": "https://picsum.photos/seed/patisserie-macaron/600/450", "alt": "Assortiment de macarons" }, "titre": "Macarons", "description": "Boîtes assorties, parfums au choix." },
+          { "image": { "url": "https://picsum.photos/seed/patisserie-paris/600/450", "alt": "Paris-Brest" }, "titre": "Paris-Brest", "description": "Praliné maison, à la commande." },
+          { "image": { "url": "https://picsum.photos/seed/patisserie-fraisier/600/450", "alt": "Fraisier" }, "titre": "Fraisier", "description": "Génoise, crème mousseline, fraises Gariguette." },
+          { "image": { "url": "https://picsum.photos/seed/patisserie-choux/600/450", "alt": "Choux garnis" }, "titre": "Choux garnis", "description": "Craquelin croustillant, cœur crémeux." }
+        ]
+      }
+    },
+    {
+      "type": "avis",
+      "content": {
+        "titre": "Vos retours gourmands",
+        "noteGlobale": 5.0,
+        "nombre": 58,
+        "items": [
+          { "auteur": "Camille V.", "note": 5, "texte": "Le gâteau de mariage était à couper le souffle, et encore meilleur qu'il n'était beau. Bravo Léa !" },
+          { "auteur": "Antoine G.", "note": 5, "texte": "Des entremets dignes d'un grand restaurant. Le glaçage miroir était parfait." },
+          { "auteur": "Sarah K.", "note": 5, "texte": "Commande d'anniversaire personnalisée jusqu'au moindre détail. Tout le monde s'est régalé." }
+        ]
+      }
+    },
+    {
+      "type": "faq",
+      "content": {
+        "items": [
+          { "question": "Quel délai pour passer commande ?", "reponse": "Comptez 72 h pour un gâteau sur mesure et une semaine pour une pièce montée ou une commande de mariage, afin de garantir la fraîcheur." },
+          { "question": "Proposez-vous des options sans gluten ou sans lactose ?", "reponse": "Oui, plusieurs de nos recettes existent en version sans gluten ou sans lactose. Précisez-le à la commande, nous vous conseillons." },
+          { "question": "Peut-on retirer la commande en boutique ?", "reponse": "Bien sûr. Le retrait se fait à l'atelier de la Croix-Rousse au créneau convenu ; une livraison sur Lyon est possible pour les grandes pièces." }
+        ]
+      }
+    },
+    {
+      "type": "contact",
+      "content": {
+        "titre": "Commandez votre création",
+        "intro": "Dites-nous l'occasion, le nombre de parts et vos envies : nous composons ensemble la pâtisserie idéale.",
+        "telephone": "04 78 00 00 00",
+        "whatsapp": "06 98 76 54 32",
+        "email": "bonjour@maison-lea.fr",
+        "adresse": "27 rue de la Croix-Rousse, 69004 Lyon",
+        "horaires": [
+          { "jour": "Mar – Sam", "heures": "9 h – 19 h" },
+          { "jour": "Dimanche", "heures": "9 h – 13 h" },
+          { "jour": "Lundi", "heures": "Fermé" }
+        ],
+        "cta": { "label": "Passer commande", "href": "#contact" }
+      }
+    }
+  ]
+}
