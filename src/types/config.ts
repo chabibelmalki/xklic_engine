@@ -20,6 +20,7 @@ export type ThemeId =
   | "energie-corail"
   | "pro-bleu-nuit"
   | "fraicheur-teal"
+  | "rose-poudre"
   | (string & {});
 
 // ----------------------------------------------------------------------------
@@ -318,6 +319,75 @@ export interface GalerieContent {
   ratio?: string;
 }
 
+// --- produits (catalogue de vente : photo + nom + prix) ---
+/** Un article à la vente : photo, nom, prix (nombre ou libellé), badge. */
+export interface ProduitItem {
+  nom: string;
+  image?: ImageRef;
+  /** Emoji affiché en pastille si aucune photo (carte produit sans image). */
+  emoji?: string;
+  /** Prix en euros (nombre formaté) ou libellé libre ("2 €/kg", "Sur commande"). */
+  prix?: number | string;
+  /** Unité affichée à côté d'un prix numérique (ex. "/kg", "la part"). */
+  unite?: string;
+  description?: string;
+  /** Pastille en coin de carte (ex. "Sur commande", "Best-seller"). */
+  badge?: string;
+  /** Met l'article en avant (carte surlignée). */
+  populaire?: boolean;
+}
+/** Un rayon du catalogue (ex. "Viennoiseries", "Pâtisseries orientales"). */
+export interface ProduitCategorie {
+  titre?: string;
+  description?: string;
+  items: ProduitItem[];
+}
+/**
+ * Contenu du bloc `produits` : grille de cartes « photo + nom + prix »,
+ * regroupables par catégorie. Pour la VENTE d'articles, là où `tarifs` (prix
+ * sans photo) et `galerie` (photo sans prix) ne conviennent pas.
+ */
+export interface ProduitsContent {
+  titre?: string;
+  intro?: string;
+  eyebrow?: string;
+  /** Catalogue par rayons. Si absent, on utilise `items` (grille à plat). */
+  categories?: ProduitCategorie[];
+  /** Grille à plat (alternative à `categories`). */
+  items?: ProduitItem[];
+  /** Active la visionneuse plein écran sur les photos (défaut: true). */
+  lightbox?: boolean;
+  /** Note de bas (délais de commande, conditions…). */
+  note?: string;
+  cta?: CTA;
+}
+
+// --- boutique (catalogue e-commerce : cartes produit + panier) ---
+/**
+ * Contenu du bloc `boutique` : grille de cartes produit (photo + nom + prix +
+ * bouton « + Ajouter »/pas-à-pas) avec un panier « Votre sélection » (quantités,
+ * total) et un formulaire de commande intégré (POST /api/contact, mode "devis").
+ * Les articles à prix numérique sont sommés ; ceux à prix texte ("Sur devis")
+ * sont ajoutés à la demande sans être chiffrés. Réutilise `ProduitItem`.
+ */
+export interface BoutiqueContent {
+  titre?: string;
+  intro?: string;
+  eyebrow?: string;
+  /** Rayons du catalogue. Si absent, on utilise `items` (grille à plat). */
+  categories?: ProduitCategorie[];
+  items?: ProduitItem[];
+  /** Notes de bas (délais, conditions de commande…). */
+  notes?: string[];
+  // panier + formulaire intégré :
+  villes?: string[];
+  telephone?: string;
+  whatsapp?: string;
+  confidentialiteHref?: string;
+  /** Libellé du bouton d'envoi (défaut: « Demander une intervention »). */
+  submitLabel?: string;
+}
+
 // --- avis ---
 export interface AvisItem {
   auteur: string;
@@ -428,6 +498,12 @@ export interface ServiceQuoteBuilderContent {
   titre?: string;
   intro?: string;
   eyebrow?: string;
+  /**
+   * Affiche la bascule crédit d'impôt + les pastilles d'éligibilité par
+   * catégorie. `false` => configurateur de devis/commande NEUTRE (produits,
+   * traiteur, pâtisserie…), sans aucune mention de crédit d'impôt. Défaut: true.
+   */
+  credit?: boolean;
   /** Taux de crédit d'impôt (0.5 = 50 %). */
   creditRate?: number;
   /** Plafond annuel de l'aide (ex. 12000). */
@@ -441,6 +517,8 @@ export interface ServiceQuoteBuilderContent {
   telephone?: string;
   whatsapp?: string;
   confidentialiteHref?: string;
+  /** Libellé du bouton d'envoi (défaut: « Demander une intervention »). */
+  submitLabel?: string;
 }
 
 // ----------------------------------------------------------------------------
@@ -456,6 +534,8 @@ export interface BlockContentMap {
   simulateur: SimulateurContent;
   tarifs: TarifsContent;
   serviceQuoteBuilder: ServiceQuoteBuilderContent;
+  produits: ProduitsContent;
+  boutique: BoutiqueContent;
   zone: ZoneContent;
   faq: FaqContent;
   galerie: GalerieContent;

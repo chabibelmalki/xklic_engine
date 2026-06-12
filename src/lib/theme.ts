@@ -10,6 +10,7 @@ export const THEMES: { id: ThemeId; label: string }[] = [
   { id: "energie-corail", label: "Énergie corail" },
   { id: "pro-bleu-nuit", label: "Pro bleu nuit" },
   { id: "fraicheur-teal", label: "Fraîcheur teal" },
+  { id: "rose-poudre", label: "Rose poudré" },
 ];
 
 export const DEFAULT_THEME: ThemeId = "pro-bleu-nuit";

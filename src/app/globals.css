@@ -175,6 +175,38 @@
   --radius: 0.85rem;
 }
 
+/* ---------- Rose poudré : doux, féminin, élégant (pâtisserie, beauté) ---------- */
+[data-theme="rose-poudre"] {
+  --brand-50: #fdf2f8;
+  --brand-100: #fce7f3;
+  --brand-200: #fbcfe8;
+  --brand-300: #f9a8d4;
+  --brand-400: #f072b0;
+  --brand-500: #e84d96;
+  --brand-600: #c2185b;
+  --brand-700: #a3154c;
+  --brand-800: #831843;
+  --brand-contrast: #ffffff;
+
+  --accent-50: #fbf6e9;
+  --accent-500: #c08a2e;
+  --accent-600: #9a6d1f;
+  --accent-contrast: #ffffff;
+
+  --ink: #2d1b25;
+  --ink-soft: #4f3a45;
+  --muted: #6f5862;
+  --muted-2: #8a7079;
+
+  --bg: #fffafc;
+  --alt: #fdf0f5;
+  --surface: #ffffff;
+  --surface-2: #fdeef4;
+  --border: #f3dbe6;
+
+  --radius: 1.1rem;
+}
+
 html {
   scroll-behavior: smooth;
 }

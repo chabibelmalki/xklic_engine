@@ -196,26 +196,30 @@ function CategoryCard({
   categorie,
   onAdd,
   devis,
+  showCredit,
 }: {
   categorie: DevisCategorie;
   onAdd: (line: Omit<SelLine, "qty">) => void;
   devis: UIStrings["devis"];
+  showCredit: boolean;
 }) {
   return (
     <div className="rounded-2xl border border-border bg-surface p-5 shadow-sm">
       <div className="flex flex-wrap items-center gap-3">
         {categorie.emoji && <span className="text-2xl">{categorie.emoji}</span>}
         <h3 className="font-display text-lg font-bold text-ink">{categorie.titre}</h3>
-        <span
-          className={cn(
-            "ms-auto rounded-full px-3 py-1 text-xs font-semibold",
-            categorie.creditImpot
-              ? "bg-accent-50 text-accent-600"
-              : "bg-surface-2 text-muted",
-          )}
-        >
-          {categorie.creditImpot ? devis.creditBadge : devis.notEligible}
-        </span>
+        {showCredit && (
+          <span
+            className={cn(
+              "ms-auto rounded-full px-3 py-1 text-xs font-semibold",
+              categorie.creditImpot
+                ? "bg-accent-50 text-accent-600"
+                : "bg-surface-2 text-muted",
+            )}
+          >
+            {categorie.creditImpot ? devis.creditBadge : devis.notEligible}
+          </span>
+        )}
       </div>
       {categorie.description && <p className="mt-2 text-sm text-muted">{categorie.description}</p>}
 
@@ -288,10 +292,11 @@ export function ServiceQuoteBuilder({
   const devis = strings.devis;
   const form = strings.form;
   const tone = toneForIndex(index);
+  const showCredit = c.credit !== false;
   const creditRate = c.creditRate ?? 0.5;
   const ceiling = c.creditCeiling;
 
-  const [withCredit, setWithCredit] = useState(true);
+  const [withCredit, setWithCredit] = useState(showCredit);
   const [selection, setSelection] = useState<SelLine[]>([]);
   const [done, setDone] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -400,25 +405,27 @@ export function ServiceQuoteBuilder({
         </Reveal>
       )}
 
-      {/* Bascule crédit d'impôt */}
-      <div className="mx-auto mt-10 flex max-w-md items-center rounded-full border border-border bg-surface p-1 shadow-sm">
-        {[
-          { v: false, label: c.creditLabelOff ?? devis.priceNormal },
-          { v: true, label: c.creditLabelOn ?? devis.priceCredit },
-        ].map((opt) => (
-          <button
-            key={String(opt.v)}
-            type="button"
-            onClick={() => setWithCredit(opt.v)}
-            className={cn(
-              "flex-1 rounded-full px-4 py-2 text-sm font-semibold transition-colors",
-              withCredit === opt.v ? "bg-brand-600 text-brand-contrast shadow" : "text-muted hover:text-ink",
-            )}
-          >
-            {opt.label}
-          </button>
-        ))}
-      </div>
+      {/* Bascule crédit d'impôt (masquée pour les configurateurs neutres) */}
+      {showCredit && (
+        <div className="mx-auto mt-10 flex max-w-md items-center rounded-full border border-border bg-surface p-1 shadow-sm">
+          {[
+            { v: false, label: c.creditLabelOff ?? devis.priceNormal },
+            { v: true, label: c.creditLabelOn ?? devis.priceCredit },
+          ].map((opt) => (
+            <button
+              key={String(opt.v)}
+              type="button"
+              onClick={() => setWithCredit(opt.v)}
+              className={cn(
+                "flex-1 rounded-full px-4 py-2 text-sm font-semibold transition-colors",
+                withCredit === opt.v ? "bg-brand-600 text-brand-contrast shadow" : "text-muted hover:text-ink",
+              )}
+            >
+              {opt.label}
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* Barre total épinglée (mobile) — compteur + total, clic = aller au formulaire.
           Laisse la place aux boutons flottants WhatsApp/appel (right-[5.5rem]). */}
@@ -446,7 +453,7 @@ export function ServiceQuoteBuilder({
         {/* Catalogue */}
         <div className="space-y-6">
           {c.categories.map((cat, i) => (
-            <CategoryCard key={cat.id ?? i} categorie={cat} onAdd={addLine} devis={devis} />
+            <CategoryCard key={cat.id ?? i} categorie={cat} onAdd={addLine} devis={devis} showCredit={showCredit} />
           ))}
           {c.notes?.length ? (
             <ul className="space-y-1.5 text-sm text-muted">
@@ -641,7 +648,7 @@ export function ServiceQuoteBuilder({
                       <Loader2 className="size-5 animate-spin" /> {form.sending}
                     </>
                   ) : (
-                    form.requestIntervention
+                    c.submitLabel ?? form.requestIntervention
                   )}
                 </Button>
               </form>

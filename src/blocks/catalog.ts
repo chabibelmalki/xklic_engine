@@ -7,6 +7,8 @@ import { Etapes } from "./Etapes";
 import { Simulateur } from "./Simulateur";
 import { Tarifs } from "./Tarifs";
 import { ServiceQuoteBuilder } from "./ServiceQuoteBuilder";
+import { Produits } from "./Produits";
+import { Boutique } from "./Boutique";
 import { Zone } from "./Zone";
 import { Faq } from "./Faq";
 import { Galerie } from "./Galerie";
@@ -31,6 +33,8 @@ const registry: Record<string, ComponentType<BlockComponentProps<any>>> = {
   simulateur: Simulateur,
   tarifs: Tarifs,
   serviceQuoteBuilder: ServiceQuoteBuilder,
+  produits: Produits,
+  boutique: Boutique,
   zone: Zone,
   faq: Faq,
   galerie: Galerie,
