@@ -11,6 +11,24 @@ const nextConfig: NextConfig = {
     // configs. Aucune image n'est commitée : on autorise les URLs HTTPS.
     remotePatterns: [{ protocol: "https", hostname: "**" }],
   },
+  // L'URL publique du sitemap par site reste /sitemap.xml (réécrite par le
+  // proxy sous-domaine vers /sites/<slug>/sitemap.xml). En interne, le Route
+  // Handler vit sous `seo-sitemap` pour éviter la convention metadata réservée
+  // `sitemap.xml`, dont la machinerie de « source route » casse au build sous
+  // segment dynamique. On rebranche donc l'URL interne vers ce handler.
+  // `beforeFiles` : prioritaire sur le match du segment dynamique `[seg]`.
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: "/sites/:slug/sitemap.xml",
+          destination: "/sites/:slug/seo-sitemap",
+        },
+      ],
+      afterFiles: [],
+      fallback: [],
+    };
+  },
 };
 
 export default nextConfig;

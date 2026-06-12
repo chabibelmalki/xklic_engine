@@ -1,6 +1,13 @@
 import { getConfig, listSlugs } from "@/lib/config-loader";
 import { buildSitemapXml } from "@/lib/seo-files";
 
+// NB : ce segment s'appelle `seo-sitemap` (et NON `sitemap.xml`) volontairement.
+// Sous un segment dynamique (`[slug]`), un Route Handler nommé `sitemap.xml` est
+// happé par la convention metadata « sitemap » de Next ; sa machinerie de
+// « source route » (pour generateSitemaps) casse au prerender côté build Vercel
+// (Invariant: failed to find source route .../sitemap.xml). On sert donc le XML
+// depuis ce nom neutre, et un rewrite next.config expose l'URL publique
+// /sites/[slug]/sitemap.xml -> /sites/[slug]/seo-sitemap.
 export const dynamic = "force-static";
 
 export function generateStaticParams() {
