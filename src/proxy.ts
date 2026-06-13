@@ -1,34 +1,48 @@
 import { NextResponse, type NextRequest } from "next/server";
+import { SITE_SLUG_SET } from "@/lib/sites-manifest";
 
 /**
  * Routage multi-tenant par SOUS-DOMAINE (prod).
  *
- * fatima.mondomaine.fr/<path>  ->  réécrit vers  /sites/fatima/<path>
+ * fatima.xklic.com/<path>  ->  réécrit vers  /sites/fatima/<path>
  * (réécriture interne : l'URL visible reste le sous-domaine, le rendu /sites
  * statique est servi -> SSG/ISR préservé).
  *
- * Apex / www / localhost sans sous-domaine : pas de réécriture, la racine sert
- * le site par défaut (env SITE). Le dev passe par /preview/[slug] (non réécrit).
+ * Slug INCONNU sous le domaine racine  ->  redirect 308 vers https://xklic.com
+ * (la liste des slugs valides vient du MANIFESTE statique src/lib/sites-manifest.ts,
+ * régénéré en pre(build|dev) — le proxy ne lit jamais le disque).
  *
- * Edge runtime : pas d'accès fs. On ne valide pas l'existence du slug ici ; un
- * sous-domaine inconnu retombe sur le 404 de /sites/[slug].
+ * NE TOUCHE PAS : apex (xklic.com), www, *.localhost (dev), *.vercel.app, et les
+ * chemins /preview (et /sites, déjà ciblé). Ceux-ci passent en NextResponse.next().
  */
-function getSubdomain(host: string): string | null {
+const FALLBACK_HOST =
+  process.env.NEXT_PUBLIC_ROOT_DOMAIN?.trim() || "xklic.com";
+
+/**
+ * Extrait le sous-domaine + indique si un fallback (redirect) est légitime.
+ *
+ * `fallbackable` n'est vrai que sous le VRAI domaine racine de prod : en dev
+ * (`*.localhost`) on ne redirige jamais vers xklic.com, et apex/www/vercel.app
+ * ne produisent pas de sous-domaine du tout.
+ */
+function parseHost(host: string): { sub: string | null; fallbackable: boolean } {
   const hostname = host.split(":")[0];
 
-  // Dev : *.localhost (ex. fatima.localhost:3000)
+  // Dev : *.localhost (ex. fatima.localhost:3000) — jamais de redirect.
   if (hostname.endsWith(".localhost")) {
     const sub = hostname.slice(0, -".localhost".length);
-    return sub && sub !== "www" ? sub : null;
+    return { sub: sub && sub !== "www" ? sub : null, fallbackable: false };
   }
 
+  // Prod : *.<NEXT_PUBLIC_ROOT_DOMAIN>. www et apex -> pas de sous-domaine.
   const root = process.env.NEXT_PUBLIC_ROOT_DOMAIN?.trim();
   if (root && hostname.endsWith(`.${root}`) && hostname !== `www.${root}`) {
     const sub = hostname.slice(0, -(root.length + 1));
-    return sub && sub !== "www" ? sub : null;
+    return { sub: sub && sub !== "www" ? sub : null, fallbackable: true };
   }
 
-  return null;
+  // apex, www, *.vercel.app, et tout le reste : on ne touche pas.
+  return { sub: null, fallbackable: false };
 }
 
 export function proxy(req: NextRequest) {
@@ -39,9 +53,17 @@ export function proxy(req: NextRequest) {
     return NextResponse.next();
   }
 
-  const sub = getSubdomain(req.headers.get("host") ?? "");
+  const { sub, fallbackable } = parseHost(req.headers.get("host") ?? "");
+
+  // Apex / www / localhost-racine / *.vercel.app : comportement par défaut.
   if (!sub) return NextResponse.next();
 
+  // Sous-domaine de prod qui ne correspond à AUCUN site : redirect 308 -> apex.
+  if (fallbackable && !SITE_SLUG_SET.has(sub)) {
+    return NextResponse.redirect(`https://${FALLBACK_HOST}`, 308);
+  }
+
+  // Slug connu (prod) ou sous-domaine de dev : réécriture interne vers /sites.
   const url = req.nextUrl.clone();
   url.pathname = `/sites/${sub}${pathname === "/" ? "" : pathname}`;
   return NextResponse.rewrite(url);

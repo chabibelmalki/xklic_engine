@@ -1,12 +1,14 @@
 import { NextResponse } from "next/server";
 import { leadSchema } from "@/lib/lead-schema";
+import { getConfig } from "@/lib/config-loader";
 
 /**
  * Réception des leads (devis / contact). Repli gracieux : sans `RESEND_API_KEY`,
  * on log côté serveur et on renvoie OK (le parcours marche sans config e-mail).
  *
- * Mutualisé entre tous les sites : `RESEND_FROM` (domaine d'agence) est commun ;
- * `LEAD_TO` peut être surchargé par site via la variable d'env du déploiement.
+ * Destinataire = e-mail du CLIENT, lu depuis la config du site courant
+ * (`config.forms.to` via `siteSlug`), avec repli env `LEAD_TO`. `RESEND_FROM`
+ * (domaine d'agence vérifié) est mutualisé entre tous les sites.
  */
 export async function POST(request: Request) {
   let body: unknown;
@@ -62,7 +64,10 @@ export async function POST(request: Request) {
 
   const fromEnv = process.env.RESEND_FROM ?? "onboarding@resend.dev";
   const from = fromEnv.includes("<") ? fromEnv : `${siteName} <${fromEnv}>`;
-  const to = process.env.LEAD_TO ?? process.env.RESEND_FROM ?? "onboarding@resend.dev";
+  // Destinataire = e-mail du client depuis la config du site (sinon repli env).
+  const config = data.siteSlug ? getConfig(data.siteSlug) : null;
+  const to =
+    config?.forms?.to ?? process.env.LEAD_TO ?? process.env.RESEND_FROM ?? "onboarding@resend.dev";
 
   try {
     const { Resend } = await import("resend");

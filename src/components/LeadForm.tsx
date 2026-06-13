@@ -21,6 +21,7 @@ const errorClass = "mt-1 text-xs font-medium text-red-500";
 export function LeadForm({
   type = "devis",
   site,
+  siteSlug,
   services,
   villes,
   telephone,
@@ -29,6 +30,8 @@ export function LeadForm({
 }: {
   type?: "devis" | "contact";
   site: string;
+  /** Slug du site : achemine le lead vers le destinataire `config.forms.to`. */
+  siteSlug?: string;
   services?: string[];
   villes?: string[];
   telephone?: string;
@@ -44,7 +47,7 @@ export function LeadForm({
     formState: { errors, isSubmitting },
   } = useForm<LeadInput>({
     resolver: zodResolver(leadSchema),
-    defaultValues: { type, consent: false, site },
+    defaultValues: { type, consent: false, site, siteSlug },
   });
 
   async function onSubmit(values: LeadInput) {
@@ -100,6 +103,7 @@ export function LeadForm({
     >
       <input type="hidden" {...register("type")} value={type} />
       <input type="hidden" {...register("site")} value={site} />
+      {siteSlug && <input type="hidden" {...register("siteSlug")} value={siteSlug} />}
 
       {/* Honeypot anti-spam */}
       <div className="absolute left-[-9999px]" aria-hidden>

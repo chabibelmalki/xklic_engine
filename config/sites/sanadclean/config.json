@@ -2,7 +2,14 @@
   "slug": "souadtazya",
   "theme": "fraicheur-teal",
   "domain": "www.sanadclean.fr",
-  "i18n": { "default": "fr", "languages": ["fr", "en", "ar"] },
+  "i18n": {
+    "default": "fr",
+    "languages": [
+      "fr",
+      "en",
+      "ar"
+    ]
+  },
   "branding": {
     "tagline": "Nettoyage · Nîmes"
   },
@@ -12,7 +19,9 @@
     "siret": "98087254300018",
     "ape": "81.21Z",
     "apeLabel": "Nettoyage courant des bâtiments",
-    "tva": { "regime": "franchise" },
+    "tva": {
+      "regime": "franchise"
+    },
     "dirigeant": "Souad Tazya",
     "siege": "20 rue Général Delestraint, 30000 Nîmes"
   },
@@ -35,7 +44,7 @@
     ]
   },
   "forms": {
-    "to": "sanadclean30@gmail.com"
+    "to": "flp.chabib@gmail.com"
   },
   "pages": [
     {
@@ -52,10 +61,22 @@
             "titreAccent": "à partir de 15 €/h",
             "accroche": "Ménage à domicile avec crédit d'impôt de 50 %, nettoyage de locaux, remise en état et traitement des nuisibles à Nîmes. On s'occupe de tout.",
             "trust": [
-              { "icone": "Receipt", "label": "Crédit d'impôt 50 %" },
-              { "icone": "Clock", "label": "Disponible 24h/24, 7j/7" },
-              { "icone": "ShieldCheck", "label": "Pro de confiance" },
-              { "icone": "MapPin", "label": "Nîmes & alentours" }
+              {
+                "icone": "Receipt",
+                "label": "Crédit d'impôt 50 %"
+              },
+              {
+                "icone": "Clock",
+                "label": "Disponible 24h/24, 7j/7"
+              },
+              {
+                "icone": "ShieldCheck",
+                "label": "Pro de confiance"
+              },
+              {
+                "icone": "MapPin",
+                "label": "Nîmes & alentours"
+              }
             ],
             "card": {
               "label": "Ménage à domicile",
@@ -70,10 +91,18 @@
                 "Produits adaptés à votre logement",
                 "Paiement CESU accepté"
               ],
-              "rating": { "label": "Clients satisfaits à Nîmes" }
+              "rating": {
+                "label": "Clients satisfaits à Nîmes"
+              }
             },
-            "ctaPrimaire": { "label": "Demander un devis gratuit", "href": "/devis" },
-            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
           }
         },
         {
@@ -84,14 +113,59 @@
             "titre": "Un seul prestataire pour tout nettoyer",
             "intro": "Ménage, remise en état, vitres, nuisibles, bureaux : tous vos besoins à Nîmes, avec un seul interlocuteur.",
             "items": [
-              { "nom": "Ménage & nettoyage", "emoji": "🧹", "badge": "Crédit d'impôt 50 %", "priceHint": "dès 30 €/h", "description": "Entretien régulier de votre logement ou grand nettoyage de printemps.", "href": "/tarifs" },
-              { "nom": "Remise en état", "emoji": "🏠", "badge": "Crédit d'impôt 50 %", "priceHint": "dès 250 €", "description": "Nettoyage en profondeur après travaux, déménagement ou avant état des lieux.", "href": "/tarifs" },
-              { "nom": "Nettoyage de vitres", "emoji": "🪟", "badge": "Crédit d'impôt 50 %", "priceHint": "dès 90 €", "description": "Vitres, baies et miroirs impeccables, sans traces, intérieur et extérieur.", "href": "/tarifs" },
-              { "nom": "Canapé & fauteuil", "emoji": "🛋️", "badge": "Crédit d'impôt 50 %", "priceHint": "dès 60 €", "description": "Nettoyage et désincrustation de vos canapés, fauteuils et textiles.", "href": "/tarifs" },
-              { "nom": "Terrasse & extérieur", "emoji": "🌿", "badge": "Crédit d'impôt 50 %", "priceHint": "dès 90 €", "description": "Nettoyage et dégraissage de vos terrasses et sols extérieurs.", "href": "/tarifs" },
-              { "nom": "Nettoyage de bureaux", "emoji": "🏢", "badge": "Sur devis", "priceHint": "dès 90 €", "description": "Entretien régulier de vos bureaux, commerces et locaux professionnels.", "href": "/tarifs" }
+              {
+                "nom": "Ménage & nettoyage",
+                "emoji": "🧹",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 30 €/h",
+                "description": "Entretien régulier de votre logement ou grand nettoyage de printemps.",
+                "href": "/tarifs"
+              },
+              {
+                "nom": "Remise en état",
+                "emoji": "🏠",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 250 €",
+                "description": "Nettoyage en profondeur après travaux, déménagement ou avant état des lieux.",
+                "href": "/tarifs"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "emoji": "🪟",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 90 €",
+                "description": "Vitres, baies et miroirs impeccables, sans traces, intérieur et extérieur.",
+                "href": "/tarifs"
+              },
+              {
+                "nom": "Canapé & fauteuil",
+                "emoji": "🛋️",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 60 €",
+                "description": "Nettoyage et désincrustation de vos canapés, fauteuils et textiles.",
+                "href": "/tarifs"
+              },
+              {
+                "nom": "Terrasse & extérieur",
+                "emoji": "🌿",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 90 €",
+                "description": "Nettoyage et dégraissage de vos terrasses et sols extérieurs.",
+                "href": "/tarifs"
+              },
+              {
+                "nom": "Nettoyage de bureaux",
+                "emoji": "🏢",
+                "badge": "Sur devis",
+                "priceHint": "dès 90 €",
+                "description": "Entretien régulier de vos bureaux, commerces et locaux professionnels.",
+                "href": "/tarifs"
+              }
             ],
-            "cta": { "label": "Voir toutes nos prestations", "href": "/services" }
+            "cta": {
+              "label": "Voir toutes nos prestations",
+              "href": "/services"
+            }
           }
         },
         {
@@ -104,9 +178,27 @@
             "pastille": "Avant / Après",
             "ratio": "3/4",
             "images": [
-              { "image": { "url": "/sites/souadtazya/1781211164446.jpg", "alt": "Avant / après : escalier en pierre encrassé puis nettoyé et dégraissé par SANAD CLEAN" }, "titre": "Escalier en pierre redonné à neuf" },
-              { "image": { "url": "/sites/souadtazya/1781211162273.jpg", "alt": "Avant / après : pièce au sol couvert de saletés puis entièrement remise en état" }, "titre": "Pièce remise en état après débarras" },
-              { "image": { "url": "/sites/souadtazya/file_00000000ff2c71f4b37da4aee2ca8d13.jpg", "alt": "Avant / après : salle de bain encrassée puis nettoyée et désinfectée" }, "titre": "Salle de bain nettoyée et désinfectée" }
+              {
+                "image": {
+                  "url": "/sites/souadtazya/1781211164446.jpg",
+                  "alt": "Avant / après : escalier en pierre encrassé puis nettoyé et dégraissé par SANAD CLEAN"
+                },
+                "titre": "Escalier en pierre redonné à neuf"
+              },
+              {
+                "image": {
+                  "url": "/sites/souadtazya/1781211162273.jpg",
+                  "alt": "Avant / après : pièce au sol couvert de saletés puis entièrement remise en état"
+                },
+                "titre": "Pièce remise en état après débarras"
+              },
+              {
+                "image": {
+                  "url": "/sites/souadtazya/file_00000000ff2c71f4b37da4aee2ca8d13.jpg",
+                  "alt": "Avant / après : salle de bain encrassée puis nettoyée et désinfectée"
+                },
+                "titre": "Salle de bain nettoyée et désinfectée"
+              }
             ]
           }
         },
@@ -135,8 +227,14 @@
             "facteurMensuel": 4.33,
             "plafondAnnuel": 12000,
             "note": "Estimation indicative. Crédit d'impôt via la coopérative Accès SAP, sur les prestations à domicile.",
-            "cta": { "label": "Demander un devis gratuit", "href": "/devis" },
-            "ctaSecondaire": { "label": "En savoir plus", "href": "/credit-impot" }
+            "cta": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "En savoir plus",
+              "href": "/credit-impot"
+            }
           }
         },
         {
@@ -145,9 +243,21 @@
             "eyebrow": "Simple et rapide",
             "titre": "Comment ça se passe",
             "items": [
-              { "icone": "ClipboardList", "titre": "Votre demande", "texte": "Vous nous décrivez votre besoin via le devis en ligne, par téléphone ou WhatsApp." },
-              { "icone": "CalendarCheck", "titre": "Le rendez-vous", "texte": "Nous convenons d'un créneau qui vous arrange et fixons les détails de la prestation." },
-              { "icone": "Sparkles", "titre": "C'est propre", "texte": "Nous intervenons avec soin. Pour le domicile, vous profitez du crédit d'impôt de 50 %." }
+              {
+                "icone": "ClipboardList",
+                "titre": "Votre demande",
+                "texte": "Vous nous décrivez votre besoin via le devis en ligne, par téléphone ou WhatsApp."
+              },
+              {
+                "icone": "CalendarCheck",
+                "titre": "Le rendez-vous",
+                "texte": "Nous convenons d'un créneau qui vous arrange et fixons les détails de la prestation."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "C'est propre",
+                "texte": "Nous intervenons avec soin. Pour le domicile, vous profitez du crédit d'impôt de 50 %."
+              }
             ]
           }
         },
@@ -159,9 +269,24 @@
             "intro": "Nous intervenons à Nîmes et dans les communes voisines. Vérifiez votre secteur ou contactez-nous directement.",
             "rayonKm": 20,
             "villes": [
-              "Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons",
-              "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis",
-              "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"
+              "Nîmes",
+              "Caissargues",
+              "Bouillargues",
+              "Rodilhan",
+              "Marguerittes",
+              "Garons",
+              "Saint-Gervasy",
+              "Poulx",
+              "Caveirac",
+              "Clarensac",
+              "Milhaud",
+              "Bernis",
+              "Manduel",
+              "Saint-Gilles",
+              "Uchaud",
+              "Vergèze",
+              "Générac",
+              "Vauvert"
             ]
           }
         },
@@ -171,9 +296,24 @@
             "eyebrow": "Ils nous font confiance",
             "titre": "Ce que disent nos clients",
             "items": [
-              { "auteur": "Nadia B.", "ville": "Nîmes", "note": 5, "texte": "Très professionnelle et minutieuse. Ma maison n'a jamais été aussi propre, et le crédit d'impôt rend le service vraiment accessible." },
-              { "auteur": "Julien M.", "ville": "Caissargues", "note": 5, "texte": "Intervention de remise en état après nos travaux : impeccable et rapide. Je recommande sans hésiter." },
-              { "auteur": "Cabinet Lestra", "ville": "Nîmes", "note": 5, "texte": "Nous faisons appel à SANAD CLEAN pour nos bureaux chaque semaine. Sérieux, ponctuel et soigné." }
+              {
+                "auteur": "Nadia B.",
+                "ville": "Nîmes",
+                "note": 5,
+                "texte": "Très professionnelle et minutieuse. Ma maison n'a jamais été aussi propre, et le crédit d'impôt rend le service vraiment accessible."
+              },
+              {
+                "auteur": "Julien M.",
+                "ville": "Caissargues",
+                "note": 5,
+                "texte": "Intervention de remise en état après nos travaux : impeccable et rapide. Je recommande sans hésiter."
+              },
+              {
+                "auteur": "Cabinet Lestra",
+                "ville": "Nîmes",
+                "note": 5,
+                "texte": "Nous faisons appel à SANAD CLEAN pour nos bureaux chaque semaine. Sérieux, ponctuel et soigné."
+              }
             ],
             "disclaimer": "Témoignages présentés à titre d'exemple — à remplacer par de vrais avis clients (Google)."
           }
@@ -183,10 +323,22 @@
           "content": {
             "titre": "Tout savoir avant de commencer",
             "items": [
-              { "question": "Comment fonctionne le crédit d'impôt de 50 % ?", "reponse": "Pour le ménage à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées (plafond de 12 000 € par an et par foyer). Concrètement, une heure facturée 30 € ne vous coûte réellement que 15 €. SANAD CLEAN travaille via la coopérative Accès SAP, déclarée services à la personne, ce qui vous ouvre ce droit." },
-              { "question": "Qu'est-ce que l'avance immédiate ?", "reponse": "Grâce à l'avance immédiate de crédit d'impôt (URSSAF), vous ne payez tout de suite que la moitié restant à votre charge, sans attendre votre déclaration d'impôts de l'année suivante. Le dispositif est géré via la coopérative Accès SAP." },
-              { "question": "Le crédit d'impôt s'applique-t-il au nettoyage de bureaux ?", "reponse": "Non. Le crédit d'impôt de 50 % concerne uniquement les prestations réalisées au domicile d'un particulier. Le nettoyage de locaux professionnels, la remise en état et le traitement des nuisibles sont facturés sur devis, sans crédit d'impôt." },
-              { "question": "Dans quelles communes intervenez-vous ?", "reponse": "Nous intervenons à Nîmes et dans les communes alentours (Caissargues, Marguerittes, Saint-Gilles, Bouillargues, Manduel, Milhaud…). Contactez-nous pour confirmer votre secteur." }
+              {
+                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
+                "reponse": "Pour le ménage à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées (plafond de 12 000 € par an et par foyer). Concrètement, une heure facturée 30 € ne vous coûte réellement que 15 €. SANAD CLEAN travaille via la coopérative Accès SAP, déclarée services à la personne, ce qui vous ouvre ce droit."
+              },
+              {
+                "question": "Qu'est-ce que l'avance immédiate ?",
+                "reponse": "Grâce à l'avance immédiate de crédit d'impôt (URSSAF), vous ne payez tout de suite que la moitié restant à votre charge, sans attendre votre déclaration d'impôts de l'année suivante. Le dispositif est géré via la coopérative Accès SAP."
+              },
+              {
+                "question": "Le crédit d'impôt s'applique-t-il au nettoyage de bureaux ?",
+                "reponse": "Non. Le crédit d'impôt de 50 % concerne uniquement les prestations réalisées au domicile d'un particulier. Le nettoyage de locaux professionnels, la remise en état et le traitement des nuisibles sont facturés sur devis, sans crédit d'impôt."
+              },
+              {
+                "question": "Dans quelles communes intervenez-vous ?",
+                "reponse": "Nous intervenons à Nîmes et dans les communes alentours (Caissargues, Marguerittes, Saint-Gilles, Bouillargues, Manduel, Milhaud…). Contactez-nous pour confirmer votre secteur."
+              }
             ]
           }
         },
@@ -195,9 +347,18 @@
           "content": {
             "titre": "Prêt à retrouver un intérieur impeccable ?",
             "sousTitre": "Devis gratuit et sans engagement. Réponse rapide par téléphone, WhatsApp ou e-mail.",
-            "ctaPrimaire": { "label": "Demander un devis gratuit", "href": "/devis" },
-            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" },
-            "lien": { "label": "ou écrivez-nous sur WhatsApp →", "href": "https://wa.me/33767029762" }
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            },
+            "lien": {
+              "label": "ou écrivez-nous sur WhatsApp →",
+              "href": "https://wa.me/33767029762"
+            }
           }
         }
       ]
@@ -216,8 +377,14 @@
             "eyebrow": "Nos prestations",
             "titre": "Tout le nettoyage, un seul prestataire",
             "intro": "Du ménage régulier au traitement des nuisibles, SANAD CLEAN couvre tous vos besoins à Nîmes — avec ou sans crédit d'impôt selon la prestation.",
-            "ctaPrimaire": { "label": "Composer mon devis", "href": "/devis" },
-            "ctaSecondaire": { "label": "Voir les tarifs", "href": "/tarifs" }
+            "ctaPrimaire": {
+              "label": "Composer mon devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Voir les tarifs",
+              "href": "/tarifs"
+            }
           }
         },
         {
@@ -228,12 +395,54 @@
             "titre": "Prestations à votre domicile",
             "intro": "Réalisées chez les particuliers, ces prestations ouvrent droit au crédit d'impôt de 50 % (via Accès SAP).",
             "items": [
-              { "nom": "Ménage & nettoyage", "emoji": "🧹", "badge": "Crédit d'impôt 50 %", "priceHint": "dès 30 €/h", "description": "Entretien régulier de votre logement ou grand nettoyage de printemps.", "href": "/tarifs" },
-              { "nom": "Remise en état", "emoji": "🏠", "badge": "Crédit d'impôt 50 %", "priceHint": "dès 250 €", "description": "Nettoyage en profondeur après travaux, déménagement ou avant état des lieux.", "href": "/tarifs" },
-              { "nom": "Nettoyage de vitres", "emoji": "🪟", "badge": "Crédit d'impôt 50 %", "priceHint": "dès 90 €", "description": "Vitres, baies et miroirs impeccables, sans traces, intérieur et extérieur.", "href": "/tarifs" },
-              { "nom": "Canapé & fauteuil", "emoji": "🛋️", "badge": "Crédit d'impôt 50 %", "priceHint": "dès 60 €", "description": "Nettoyage et désincrustation de vos canapés, fauteuils et textiles.", "href": "/tarifs" },
-              { "nom": "Terrasse & extérieur", "emoji": "🌿", "badge": "Crédit d'impôt 50 %", "priceHint": "dès 90 €", "description": "Nettoyage et dégraissage de vos terrasses et sols extérieurs.", "href": "/tarifs" },
-              { "nom": "Syndrome de Diogène", "emoji": "♻️", "badge": "Crédit d'impôt 50 %", "priceHint": "dès 600 €", "description": "Débarras, nettoyage et désinfection complets des logements très encombrés.", "href": "/tarifs" }
+              {
+                "nom": "Ménage & nettoyage",
+                "emoji": "🧹",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 30 €/h",
+                "description": "Entretien régulier de votre logement ou grand nettoyage de printemps.",
+                "href": "/tarifs"
+              },
+              {
+                "nom": "Remise en état",
+                "emoji": "🏠",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 250 €",
+                "description": "Nettoyage en profondeur après travaux, déménagement ou avant état des lieux.",
+                "href": "/tarifs"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "emoji": "🪟",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 90 €",
+                "description": "Vitres, baies et miroirs impeccables, sans traces, intérieur et extérieur.",
+                "href": "/tarifs"
+              },
+              {
+                "nom": "Canapé & fauteuil",
+                "emoji": "🛋️",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 60 €",
+                "description": "Nettoyage et désincrustation de vos canapés, fauteuils et textiles.",
+                "href": "/tarifs"
+              },
+              {
+                "nom": "Terrasse & extérieur",
+                "emoji": "🌿",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 90 €",
+                "description": "Nettoyage et dégraissage de vos terrasses et sols extérieurs.",
+                "href": "/tarifs"
+              },
+              {
+                "nom": "Syndrome de Diogène",
+                "emoji": "♻️",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 600 €",
+                "description": "Débarras, nettoyage et désinfection complets des logements très encombrés.",
+                "href": "/tarifs"
+              }
             ]
           }
         },
@@ -245,11 +454,35 @@
             "titre": "Traitements spécialisés & professionnels",
             "intro": "Locaux professionnels et traitement des nuisibles : facturés sur devis, sans crédit d'impôt.",
             "items": [
-              { "nom": "Nettoyage de bureaux", "emoji": "🏢", "badge": "Sur devis", "priceHint": "dès 90 €", "description": "Entretien régulier de vos bureaux, commerces et locaux professionnels.", "href": "/tarifs" },
-              { "nom": "Punaises de lit", "emoji": "🛏️", "badge": "Sur devis", "priceHint": "dès 250 €", "description": "Traitement professionnel des punaises de lit, chambre par chambre.", "href": "/tarifs" },
-              { "nom": "Traitement des cafards", "emoji": "🐜", "badge": "Sur devis", "priceHint": "dès 140 €", "description": "Désinsectisation ciblée contre les cafards et blattes.", "href": "/tarifs" }
+              {
+                "nom": "Nettoyage de bureaux",
+                "emoji": "🏢",
+                "badge": "Sur devis",
+                "priceHint": "dès 90 €",
+                "description": "Entretien régulier de vos bureaux, commerces et locaux professionnels.",
+                "href": "/tarifs"
+              },
+              {
+                "nom": "Punaises de lit",
+                "emoji": "🛏️",
+                "badge": "Sur devis",
+                "priceHint": "dès 250 €",
+                "description": "Traitement professionnel des punaises de lit, chambre par chambre.",
+                "href": "/tarifs"
+              },
+              {
+                "nom": "Traitement des cafards",
+                "emoji": "🐜",
+                "badge": "Sur devis",
+                "priceHint": "dès 140 €",
+                "description": "Désinsectisation ciblée contre les cafards et blattes.",
+                "href": "/tarifs"
+              }
             ],
-            "cta": { "label": "Composer mon devis en ligne", "href": "/devis" }
+            "cta": {
+              "label": "Composer mon devis en ligne",
+              "href": "/devis"
+            }
           }
         },
         {
@@ -257,9 +490,18 @@
           "content": {
             "titre": "Un besoin précis ? Composez votre devis",
             "sousTitre": "Sélectionnez vos prestations et obtenez une estimation immédiate, crédit d'impôt déduit.",
-            "ctaPrimaire": { "label": "Composer mon devis", "href": "/devis" },
-            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" },
-            "lien": { "label": "ou écrivez-nous sur WhatsApp →", "href": "https://wa.me/33767029762" }
+            "ctaPrimaire": {
+              "label": "Composer mon devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            },
+            "lien": {
+              "label": "ou écrivez-nous sur WhatsApp →",
+              "href": "https://wa.me/33767029762"
+            }
           }
         }
       ]
@@ -287,12 +529,48 @@
             "pastille": "Avant / Après",
             "ratio": "3/4",
             "images": [
-              { "image": { "url": "/sites/souadtazya/1781211164446.jpg", "alt": "Avant / après : escalier en pierre encrassé puis nettoyé et dégraissé par SANAD CLEAN" }, "titre": "Escalier en pierre redonné à neuf" },
-              { "image": { "url": "/sites/souadtazya/1781211162273.jpg", "alt": "Avant / après : pièce au sol couvert de saletés puis entièrement remise en état" }, "titre": "Pièce remise en état après débarras" },
-              { "image": { "url": "/sites/souadtazya/file_00000000ff2c71f4b37da4aee2ca8d13.jpg", "alt": "Avant / après : salle de bain encrassée puis nettoyée et désinfectée" }, "titre": "Salle de bain nettoyée et désinfectée" },
-              { "image": { "url": "/sites/souadtazya/1781211328317.jpg", "alt": "Avant / après : WC fortement entartrés puis détartrés et désinfectés" }, "titre": "Sanitaires détartrés et désinfectés" },
-              { "image": { "url": "/sites/souadtazya/1781211223539.jpg", "alt": "Avant / après : local technique encombré de débris puis dégagé et nettoyé" }, "titre": "Local technique dégagé et nettoyé" },
-              { "image": { "url": "/sites/souadtazya/1781211277499.jpg", "alt": "Avant / après : cave jonchée de gravats puis débarrassée et sol nettoyé" }, "titre": "Cave débarrassée, sol nettoyé" }
+              {
+                "image": {
+                  "url": "/sites/souadtazya/1781211164446.jpg",
+                  "alt": "Avant / après : escalier en pierre encrassé puis nettoyé et dégraissé par SANAD CLEAN"
+                },
+                "titre": "Escalier en pierre redonné à neuf"
+              },
+              {
+                "image": {
+                  "url": "/sites/souadtazya/1781211162273.jpg",
+                  "alt": "Avant / après : pièce au sol couvert de saletés puis entièrement remise en état"
+                },
+                "titre": "Pièce remise en état après débarras"
+              },
+              {
+                "image": {
+                  "url": "/sites/souadtazya/file_00000000ff2c71f4b37da4aee2ca8d13.jpg",
+                  "alt": "Avant / après : salle de bain encrassée puis nettoyée et désinfectée"
+                },
+                "titre": "Salle de bain nettoyée et désinfectée"
+              },
+              {
+                "image": {
+                  "url": "/sites/souadtazya/1781211328317.jpg",
+                  "alt": "Avant / après : WC fortement entartrés puis détartrés et désinfectés"
+                },
+                "titre": "Sanitaires détartrés et désinfectés"
+              },
+              {
+                "image": {
+                  "url": "/sites/souadtazya/1781211223539.jpg",
+                  "alt": "Avant / après : local technique encombré de débris puis dégagé et nettoyé"
+                },
+                "titre": "Local technique dégagé et nettoyé"
+              },
+              {
+                "image": {
+                  "url": "/sites/souadtazya/1781211277499.jpg",
+                  "alt": "Avant / après : cave jonchée de gravats puis débarrassée et sol nettoyé"
+                },
+                "titre": "Cave débarrassée, sol nettoyé"
+              }
             ]
           }
         },
@@ -301,8 +579,14 @@
           "content": {
             "titre": "Envie du même résultat chez vous ?",
             "sousTitre": "Devis gratuit et sans engagement, réponse rapide.",
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
-            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
           }
         }
       ]
@@ -334,9 +618,24 @@
             "whatsapp": "07 67 02 97 62",
             "confidentialiteHref": "/confidentialite",
             "villes": [
-              "Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons",
-              "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis",
-              "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"
+              "Nîmes",
+              "Caissargues",
+              "Bouillargues",
+              "Rodilhan",
+              "Marguerittes",
+              "Garons",
+              "Saint-Gervasy",
+              "Poulx",
+              "Caveirac",
+              "Clarensac",
+              "Milhaud",
+              "Bernis",
+              "Manduel",
+              "Saint-Gilles",
+              "Uchaud",
+              "Vergèze",
+              "Générac",
+              "Vauvert"
             ],
             "notes": [
               "🚗 Déplacement offert sur Nîmes et 20 km alentours.",
@@ -350,13 +649,37 @@
                 "description": "Entretien régulier ou grand nettoyage de votre logement.",
                 "creditImpot": true,
                 "prestations": [
-                  { "nom": "Ménage régulier", "type": "horaire", "tauxHoraire": 30, "supplementMateriel": 5, "heuresMin": 1, "heuresMax": 40, "heuresDefaut": 2 },
-                  { "nom": "Grand nettoyage de printemps", "type": "tiers", "tiers": [
-                    { "label": "Studio / T1", "prix": 150 },
-                    { "label": "T2", "prix": 220 },
-                    { "label": "T3", "prix": 290 },
-                    { "label": "T4", "prix": 380 }
-                  ] }
+                  {
+                    "nom": "Ménage régulier",
+                    "type": "horaire",
+                    "tauxHoraire": 30,
+                    "supplementMateriel": 5,
+                    "heuresMin": 1,
+                    "heuresMax": 40,
+                    "heuresDefaut": 2
+                  },
+                  {
+                    "nom": "Grand nettoyage de printemps",
+                    "type": "tiers",
+                    "tiers": [
+                      {
+                        "label": "Studio / T1",
+                        "prix": 150
+                      },
+                      {
+                        "label": "T2",
+                        "prix": 220
+                      },
+                      {
+                        "label": "T3",
+                        "prix": 290
+                      },
+                      {
+                        "label": "T4",
+                        "prix": 380
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -366,12 +689,32 @@
                 "description": "Après travaux, déménagement ou avant état des lieux.",
                 "creditImpot": true,
                 "prestations": [
-                  { "nom": "Remise en état", "type": "tiers", "tiers": [
-                    { "label": "Studio / T1", "prix": 250, "prefixe": "dès" },
-                    { "label": "T2", "prix": 350, "prefixe": "dès" },
-                    { "label": "T3", "prix": 450, "prefixe": "dès" },
-                    { "label": "T4 et +", "prix": 600, "prefixe": "dès" }
-                  ] }
+                  {
+                    "nom": "Remise en état",
+                    "type": "tiers",
+                    "tiers": [
+                      {
+                        "label": "Studio / T1",
+                        "prix": 250,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "T2",
+                        "prix": 350,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "T3",
+                        "prix": 450,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "T4 et +",
+                        "prix": 600,
+                        "prefixe": "dès"
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -381,11 +724,27 @@
                 "description": "Vitres, baies et miroirs sans traces, intérieur et extérieur.",
                 "creditImpot": true,
                 "prestations": [
-                  { "nom": "Vitrerie", "type": "tiers", "tiers": [
-                    { "label": "Appartement", "prix": 90, "prefixe": "dès" },
-                    { "label": "Maison", "prix": 140, "prefixe": "dès" },
-                    { "label": "Villa", "prix": 180, "prefixe": "dès" }
-                  ] }
+                  {
+                    "nom": "Vitrerie",
+                    "type": "tiers",
+                    "tiers": [
+                      {
+                        "label": "Appartement",
+                        "prix": 90,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "Maison",
+                        "prix": 140,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "Villa",
+                        "prix": 180,
+                        "prefixe": "dès"
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -395,12 +754,28 @@
                 "description": "Nettoyage et désincrustation des textiles d'ameublement.",
                 "creditImpot": true,
                 "prestations": [
-                  { "nom": "Textiles", "type": "tiers", "tiers": [
-                    { "label": "Fauteuil", "prix": 60 },
-                    { "label": "Canapé 2 places", "prix": 90 },
-                    { "label": "Canapé 3 places", "prix": 120 },
-                    { "label": "Canapé d'angle", "prix": 150 }
-                  ] }
+                  {
+                    "nom": "Textiles",
+                    "type": "tiers",
+                    "tiers": [
+                      {
+                        "label": "Fauteuil",
+                        "prix": 60
+                      },
+                      {
+                        "label": "Canapé 2 places",
+                        "prix": 90
+                      },
+                      {
+                        "label": "Canapé 3 places",
+                        "prix": 120
+                      },
+                      {
+                        "label": "Canapé d'angle",
+                        "prix": 150
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -410,11 +785,25 @@
                 "description": "Nettoyage et dégraissage des terrasses et sols extérieurs.",
                 "creditImpot": true,
                 "prestations": [
-                  { "nom": "Terrasse", "type": "tiers", "tiers": [
-                    { "label": "Jusqu'à 20 m²", "prix": 90 },
-                    { "label": "20 à 50 m²", "prix": 120 },
-                    { "label": "Plus de 50 m²", "prix": 150, "prefixe": "dès" }
-                  ] }
+                  {
+                    "nom": "Terrasse",
+                    "type": "tiers",
+                    "tiers": [
+                      {
+                        "label": "Jusqu'à 20 m²",
+                        "prix": 90
+                      },
+                      {
+                        "label": "20 à 50 m²",
+                        "prix": 120
+                      },
+                      {
+                        "label": "Plus de 50 m²",
+                        "prix": 150,
+                        "prefixe": "dès"
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -424,12 +813,32 @@
                 "description": "Débarras, nettoyage et désinfection des logements très encombrés.",
                 "creditImpot": true,
                 "prestations": [
-                  { "nom": "Nettoyage extrême", "type": "tiers", "tiers": [
-                    { "label": "Studio / T1", "prix": 600, "prefixe": "dès" },
-                    { "label": "T2", "prix": 800, "prefixe": "dès" },
-                    { "label": "T3", "prix": 1000, "prefixe": "dès" },
-                    { "label": "T4 et +", "prix": 1200, "prefixe": "dès" }
-                  ] }
+                  {
+                    "nom": "Nettoyage extrême",
+                    "type": "tiers",
+                    "tiers": [
+                      {
+                        "label": "Studio / T1",
+                        "prix": 600,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "T2",
+                        "prix": 800,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "T3",
+                        "prix": 1000,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "T4 et +",
+                        "prix": 1200,
+                        "prefixe": "dès"
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -439,11 +848,27 @@
                 "description": "Entretien de bureaux, commerces et locaux professionnels.",
                 "creditImpot": false,
                 "prestations": [
-                  { "nom": "Locaux professionnels", "type": "tiers", "tiers": [
-                    { "label": "Jusqu'à 50 m²", "prix": 90, "prefixe": "dès" },
-                    { "label": "50 à 100 m²", "prix": 120, "prefixe": "dès" },
-                    { "label": "Plus de 100 m²", "prix": 150, "prefixe": "dès" }
-                  ] }
+                  {
+                    "nom": "Locaux professionnels",
+                    "type": "tiers",
+                    "tiers": [
+                      {
+                        "label": "Jusqu'à 50 m²",
+                        "prix": 90,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "50 à 100 m²",
+                        "prix": 120,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "Plus de 100 m²",
+                        "prix": 150,
+                        "prefixe": "dès"
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -453,12 +878,28 @@
                 "description": "Désinsectisation ciblée contre les cafards et blattes.",
                 "creditImpot": false,
                 "prestations": [
-                  { "nom": "Désinsectisation cafards", "type": "tiers", "tiers": [
-                    { "label": "Studio / T1", "prix": 140 },
-                    { "label": "T2", "prix": 180 },
-                    { "label": "T3", "prix": 240 },
-                    { "label": "T4", "prix": 300 }
-                  ] }
+                  {
+                    "nom": "Désinsectisation cafards",
+                    "type": "tiers",
+                    "tiers": [
+                      {
+                        "label": "Studio / T1",
+                        "prix": 140
+                      },
+                      {
+                        "label": "T2",
+                        "prix": 180
+                      },
+                      {
+                        "label": "T3",
+                        "prix": 240
+                      },
+                      {
+                        "label": "T4",
+                        "prix": 300
+                      }
+                    ]
+                  }
                 ]
               },
               {
@@ -468,11 +909,27 @@
                 "description": "Traitement professionnel des punaises de lit.",
                 "creditImpot": false,
                 "prestations": [
-                  { "nom": "Traitement punaises", "type": "tiers", "tiers": [
-                    { "label": "1 chambre", "prix": 250, "prefixe": "dès" },
-                    { "label": "2 chambres", "prix": 350, "prefixe": "dès" },
-                    { "label": "Logement complet", "prix": 490, "prefixe": "dès" }
-                  ] }
+                  {
+                    "nom": "Traitement punaises",
+                    "type": "tiers",
+                    "tiers": [
+                      {
+                        "label": "1 chambre",
+                        "prix": 250,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "2 chambres",
+                        "prix": 350,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "Logement complet",
+                        "prix": 490,
+                        "prefixe": "dès"
+                      }
+                    ]
+                  }
                 ]
               }
             ]
@@ -483,8 +940,14 @@
           "content": {
             "titre": "Un besoin particulier ou un grand chantier ?",
             "sousTitre": "Contactez-nous pour un devis personnalisé, gratuit et sans engagement.",
-            "ctaPrimaire": { "label": "Nous contacter", "href": "/contact" },
-            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+            "ctaPrimaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
           }
         }
       ]
@@ -530,7 +993,10 @@
             "facteurMensuel": 4.33,
             "plafondAnnuel": 12000,
             "note": "Estimation indicative. Crédit d'impôt via la coopérative Accès SAP, sur les prestations à domicile.",
-            "cta": { "label": "Demander un devis gratuit", "href": "/devis" }
+            "cta": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            }
           }
         },
         {
@@ -538,10 +1004,22 @@
           "content": {
             "titre": "Crédit d'impôt : vos questions",
             "items": [
-              { "question": "Comment fonctionne le crédit d'impôt de 50 % ?", "reponse": "Pour le ménage à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées (plafond de 12 000 € par an et par foyer). Concrètement, une heure facturée 30 € ne vous coûte réellement que 15 €. SANAD CLEAN travaille via la coopérative Accès SAP, déclarée services à la personne, ce qui vous ouvre ce droit." },
-              { "question": "Qu'est-ce que l'avance immédiate ?", "reponse": "Grâce à l'avance immédiate de crédit d'impôt (URSSAF), vous ne payez tout de suite que la moitié restant à votre charge, sans attendre votre déclaration d'impôts de l'année suivante. Le dispositif est géré via la coopérative Accès SAP." },
-              { "question": "Le crédit d'impôt s'applique-t-il au nettoyage de bureaux ?", "reponse": "Non. Le crédit d'impôt de 50 % concerne uniquement les prestations réalisées au domicile d'un particulier. Le nettoyage de locaux professionnels, la remise en état et le traitement des nuisibles sont facturés sur devis, sans crédit d'impôt." },
-              { "question": "Puis-je payer en CESU ?", "reponse": "Oui, le paiement en CESU est accepté pour le ménage à domicile. Avec le crédit d'impôt, votre coût réel revient à 15 €/h." }
+              {
+                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
+                "reponse": "Pour le ménage à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées (plafond de 12 000 € par an et par foyer). Concrètement, une heure facturée 30 € ne vous coûte réellement que 15 €. SANAD CLEAN travaille via la coopérative Accès SAP, déclarée services à la personne, ce qui vous ouvre ce droit."
+              },
+              {
+                "question": "Qu'est-ce que l'avance immédiate ?",
+                "reponse": "Grâce à l'avance immédiate de crédit d'impôt (URSSAF), vous ne payez tout de suite que la moitié restant à votre charge, sans attendre votre déclaration d'impôts de l'année suivante. Le dispositif est géré via la coopérative Accès SAP."
+              },
+              {
+                "question": "Le crédit d'impôt s'applique-t-il au nettoyage de bureaux ?",
+                "reponse": "Non. Le crédit d'impôt de 50 % concerne uniquement les prestations réalisées au domicile d'un particulier. Le nettoyage de locaux professionnels, la remise en état et le traitement des nuisibles sont facturés sur devis, sans crédit d'impôt."
+              },
+              {
+                "question": "Puis-je payer en CESU ?",
+                "reponse": "Oui, le paiement en CESU est accepté pour le ménage à domicile. Avec le crédit d'impôt, votre coût réel revient à 15 €/h."
+              }
             ]
           }
         },
@@ -550,8 +1028,14 @@
           "content": {
             "titre": "Profitez du crédit d'impôt dès votre première prestation",
             "sousTitre": "Devis gratuit et sans engagement. Avance immédiate via Accès SAP.",
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
-            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
           }
         }
       ]
@@ -584,7 +1068,10 @@
             "email": "sanadclean30@gmail.com",
             "adresse": "20 rue Général Delestraint, 30000 Nîmes",
             "horaires": [
-              { "jour": "Lun – Dim", "heures": "Disponible 24h/24, 7j/7" }
+              {
+                "jour": "Lun – Dim",
+                "heures": "Disponible 24h/24, 7j/7"
+              }
             ],
             "services": [
               "Ménage à domicile",
@@ -595,9 +1082,24 @@
               "Autre / je ne sais pas"
             ],
             "villes": [
-              "Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons",
-              "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis",
-              "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"
+              "Nîmes",
+              "Caissargues",
+              "Bouillargues",
+              "Rodilhan",
+              "Marguerittes",
+              "Garons",
+              "Saint-Gervasy",
+              "Poulx",
+              "Caveirac",
+              "Clarensac",
+              "Milhaud",
+              "Bernis",
+              "Manduel",
+              "Saint-Gilles",
+              "Uchaud",
+              "Vergèze",
+              "Générac",
+              "Vauvert"
             ],
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8367%2C4.3601",
             "confidentialiteHref": "/confidentialite"
@@ -628,10 +1130,26 @@
             "eyebrow": "Nos valeurs",
             "titre": "Ce qui guide chaque intervention",
             "items": [
-              { "icone": "ShieldCheck", "titre": "Confiance", "texte": "Personnel sérieux et discret, respect de votre logement et de vos affaires." },
-              { "icone": "Heart", "titre": "Soin", "texte": "Un travail minutieux, fini dans le détail, comme si c'était chez nous." },
-              { "icone": "Leaf", "titre": "Écoute", "texte": "Produits et méthodes adaptés à vos préférences, enfants et animaux." },
-              { "icone": "Clock", "titre": "Ponctualité", "texte": "Des créneaux respectés et une disponibilité 24h/24, 7j/7." }
+              {
+                "icone": "ShieldCheck",
+                "titre": "Confiance",
+                "texte": "Personnel sérieux et discret, respect de votre logement et de vos affaires."
+              },
+              {
+                "icone": "Heart",
+                "titre": "Soin",
+                "texte": "Un travail minutieux, fini dans le détail, comme si c'était chez nous."
+              },
+              {
+                "icone": "Leaf",
+                "titre": "Écoute",
+                "texte": "Produits et méthodes adaptés à vos préférences, enfants et animaux."
+              },
+              {
+                "icone": "Clock",
+                "titre": "Ponctualité",
+                "texte": "Des créneaux respectés et une disponibilité 24h/24, 7j/7."
+              }
             ]
           }
         },
@@ -640,8 +1158,14 @@
           "content": {
             "titre": "Envie de nous confier votre intérieur ?",
             "sousTitre": "Devis gratuit et sans engagement, réponse rapide.",
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
-            "ctaSecondaire": { "label": "Nous contacter", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            }
           }
         }
       ]
@@ -672,9 +1196,24 @@
             "rayonKm": 20,
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8367%2C4.3601",
             "villes": [
-              "Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons",
-              "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis",
-              "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"
+              "Nîmes",
+              "Caissargues",
+              "Bouillargues",
+              "Rodilhan",
+              "Marguerittes",
+              "Garons",
+              "Saint-Gervasy",
+              "Poulx",
+              "Caveirac",
+              "Clarensac",
+              "Milhaud",
+              "Bernis",
+              "Manduel",
+              "Saint-Gilles",
+              "Uchaud",
+              "Vergèze",
+              "Générac",
+              "Vauvert"
             ]
           }
         },
@@ -683,8 +1222,14 @@
           "content": {
             "titre": "Votre commune est dans la liste ?",
             "sousTitre": "Demandez votre devis gratuit, nous nous déplaçons.",
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
-            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
           }
         }
       ]
@@ -710,12 +1255,30 @@
           "content": {
             "titre": "Tout savoir avant de commencer",
             "items": [
-              { "question": "Comment fonctionne le crédit d'impôt de 50 % ?", "reponse": "Pour le ménage à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées (plafond de 12 000 € par an et par foyer). Concrètement, une heure facturée 30 € ne vous coûte réellement que 15 €. SANAD CLEAN travaille via la coopérative Accès SAP, déclarée services à la personne, ce qui vous ouvre ce droit." },
-              { "question": "Qu'est-ce que l'avance immédiate ?", "reponse": "Grâce à l'avance immédiate de crédit d'impôt (URSSAF), vous ne payez tout de suite que la moitié restant à votre charge, sans attendre votre déclaration d'impôts de l'année suivante. Le dispositif est géré via la coopérative Accès SAP." },
-              { "question": "Le crédit d'impôt s'applique-t-il au nettoyage de bureaux ?", "reponse": "Non. Le crédit d'impôt de 50 % concerne uniquement les prestations réalisées au domicile d'un particulier. Le nettoyage de locaux professionnels, la remise en état et le traitement des nuisibles sont facturés sur devis, sans crédit d'impôt." },
-              { "question": "Dans quelles communes intervenez-vous ?", "reponse": "Nous intervenons à Nîmes et dans les communes alentours (Caissargues, Marguerittes, Saint-Gilles, Bouillargues, Manduel, Milhaud…). Contactez-nous pour confirmer votre secteur." },
-              { "question": "Puis-je payer en CESU ?", "reponse": "Oui, le paiement en CESU est accepté pour le ménage à domicile. Avec le crédit d'impôt, votre coût réel revient à 15 €/h." },
-              { "question": "Utilisez-vous des produits écologiques ?", "reponse": "Nous adaptons les produits à vos préférences et pouvons utiliser des produits respectueux de l'environnement sur demande, notamment en présence d'enfants ou d'animaux." }
+              {
+                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
+                "reponse": "Pour le ménage à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées (plafond de 12 000 € par an et par foyer). Concrètement, une heure facturée 30 € ne vous coûte réellement que 15 €. SANAD CLEAN travaille via la coopérative Accès SAP, déclarée services à la personne, ce qui vous ouvre ce droit."
+              },
+              {
+                "question": "Qu'est-ce que l'avance immédiate ?",
+                "reponse": "Grâce à l'avance immédiate de crédit d'impôt (URSSAF), vous ne payez tout de suite que la moitié restant à votre charge, sans attendre votre déclaration d'impôts de l'année suivante. Le dispositif est géré via la coopérative Accès SAP."
+              },
+              {
+                "question": "Le crédit d'impôt s'applique-t-il au nettoyage de bureaux ?",
+                "reponse": "Non. Le crédit d'impôt de 50 % concerne uniquement les prestations réalisées au domicile d'un particulier. Le nettoyage de locaux professionnels, la remise en état et le traitement des nuisibles sont facturés sur devis, sans crédit d'impôt."
+              },
+              {
+                "question": "Dans quelles communes intervenez-vous ?",
+                "reponse": "Nous intervenons à Nîmes et dans les communes alentours (Caissargues, Marguerittes, Saint-Gilles, Bouillargues, Manduel, Milhaud…). Contactez-nous pour confirmer votre secteur."
+              },
+              {
+                "question": "Puis-je payer en CESU ?",
+                "reponse": "Oui, le paiement en CESU est accepté pour le ménage à domicile. Avec le crédit d'impôt, votre coût réel revient à 15 €/h."
+              },
+              {
+                "question": "Utilisez-vous des produits écologiques ?",
+                "reponse": "Nous adaptons les produits à vos préférences et pouvons utiliser des produits respectueux de l'environnement sur demande, notamment en présence d'enfants ou d'animaux."
+              }
             ]
           }
         },
@@ -724,8 +1287,14 @@
           "content": {
             "titre": "Une autre question ?",
             "sousTitre": "Appelez-nous ou écrivez : nous vous répondons rapidement.",
-            "ctaPrimaire": { "label": "Nous contacter", "href": "/contact" },
-            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+            "ctaPrimaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
           }
         }
       ]
@@ -745,7 +1314,10 @@
             "eyebrow": "Devis gratuit",
             "titre": "Demandez votre devis en 1 minute",
             "intro": "Renseignez votre besoin : nous revenons vers vous rapidement avec une estimation adaptée, gratuite et sans engagement.",
-            "ctaSecondaire": { "label": "Composer en ligne", "href": "/tarifs" }
+            "ctaSecondaire": {
+              "label": "Composer en ligne",
+              "href": "/tarifs"
+            }
           }
         },
         {
@@ -760,7 +1332,10 @@
             "email": "sanadclean30@gmail.com",
             "adresse": "20 rue Général Delestraint, 30000 Nîmes",
             "horaires": [
-              { "jour": "Lun – Dim", "heures": "Disponible 24h/24, 7j/7" }
+              {
+                "jour": "Lun – Dim",
+                "heures": "Disponible 24h/24, 7j/7"
+              }
             ],
             "services": [
               "Ménage à domicile",
@@ -771,9 +1346,24 @@
               "Autre / je ne sais pas"
             ],
             "villes": [
-              "Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons",
-              "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis",
-              "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"
+              "Nîmes",
+              "Caissargues",
+              "Bouillargues",
+              "Rodilhan",
+              "Marguerittes",
+              "Garons",
+              "Saint-Gervasy",
+              "Poulx",
+              "Caveirac",
+              "Clarensac",
+              "Milhaud",
+              "Bernis",
+              "Manduel",
+              "Saint-Gilles",
+              "Uchaud",
+              "Vergèze",
+              "Générac",
+              "Vauvert"
             ],
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8367%2C4.3601",
             "confidentialiteHref": "/confidentialite"

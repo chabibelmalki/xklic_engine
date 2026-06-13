@@ -12,8 +12,10 @@ export const leadSchema = z.object({
   city: z.string().optional().or(z.literal("")),
   service: z.string().optional().or(z.literal("")),
   message: z.string().optional().or(z.literal("")),
-  // Nom de l'entreprise du site (pour router le lead côté serveur).
+  // Nom de l'entreprise du site (affichage) + slug (pour router le lead vers le
+  // destinataire du site via config.forms.to côté serveur).
   site: z.string().optional(),
+  siteSlug: z.string().optional(),
   consent: z.boolean().refine((v) => v === true, "Veuillez accepter pour continuer"),
   // Anti-spam (honeypot) : doit rester vide.
   company: z.string().max(0).optional().or(z.literal("")),

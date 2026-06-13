@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/generate-sites-manifest.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/generate-sites-manifest.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "domains:sync": "node scripts/sync-domains.mjs",
+    "domains:sync:dry": "node scripts/sync-domains.mjs --dry-run"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
