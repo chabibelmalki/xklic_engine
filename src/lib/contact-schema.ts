@@ -33,7 +33,11 @@ export const contactSchema = z
     service: z.string().optional().or(z.literal("")),
     /** Zone / adresse d'intervention. */
     zone: z.string().optional().or(z.literal("")),
-    /** Ville (sélecteur). */
+    /** Adresse (n° + rue) — commande/devis produits. */
+    address: z.string().max(200).optional().or(z.literal("")),
+    /** Code postal — commande/devis produits. */
+    postalCode: z.string().max(12).optional().or(z.literal("")),
+    /** Ville / commune (champ libre ou sélecteur selon le formulaire). */
     city: z.string().optional().or(z.literal("")),
     /** Date souhaitée (intervention). */
     date: z.string().optional().or(z.literal("")),

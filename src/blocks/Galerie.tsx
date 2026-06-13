@@ -31,7 +31,7 @@ function ratioClass(ratio?: string, fallback = "aspect-[4/3]") {
  */
 export function Galerie({ block, index, locale, strings }: BlockComponentProps<GalerieContent>) {
   const c = block.content;
-  const variant = (block.variant as GalerieVariant | "montage") ?? "grille";
+  const variant = (block.variant as GalerieVariant | "montage" | "masonry") ?? "grille";
   const images: GalerieImageItem[] = c.images ?? [];
   const lightboxOn = c.lightbox !== false && variant !== "avant-apres" && images.length > 0;
   const pastille = c.pastille ?? (variant === "montage" ? strings.galerie.beforeAfter : undefined);
@@ -130,6 +130,41 @@ export function Galerie({ block, index, locale, strings }: BlockComponentProps<G
               </figure>
             </Reveal>
           ))}
+        </div>
+      ) : variant === "masonry" ? (
+        <div className="mt-12 columns-1 gap-5 sm:columns-2 lg:columns-3 [&>*]:mb-5">
+          {images.map((item, i) => {
+            const r = ["aspect-[3/4]", "aspect-[4/3]", "aspect-square", "aspect-[4/5]"][i % 4];
+            const tile = (
+              <div className={`relative ${r}`}>
+                <Image
+                  src={item.image.url}
+                  alt={item.image.alt ?? item.titre ?? "Réalisation"}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 33vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                />
+              </div>
+            );
+            return (
+              <div key={i} className="break-inside-avoid">
+                {lightboxOn ? (
+                  <button
+                    type="button"
+                    onClick={() => setOpen(i)}
+                    aria-label={`Agrandir : ${item.titre ?? "réalisation"}`}
+                    className="group block w-full overflow-hidden rounded-theme border border-border bg-surface-2 shadow-sm transition-shadow hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2"
+                  >
+                    {tile}
+                  </button>
+                ) : (
+                  <figure className="group overflow-hidden rounded-theme border border-border bg-surface shadow-sm">
+                    {tile}
+                  </figure>
+                )}
+              </div>
+            );
+          })}
         </div>
       ) : (
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

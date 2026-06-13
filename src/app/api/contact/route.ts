@@ -53,6 +53,8 @@ function formatLead(data: ContactInput): { subject: string; lines: string[] } {
     data.phone ? `Téléphone : ${data.phone}` : null,
     data.email ? `E-mail : ${data.email}` : null,
     data.service ? `Prestation : ${data.service}` : null,
+    data.address ? `Adresse : ${data.address}` : null,
+    data.postalCode ? `Code postal : ${data.postalCode}` : null,
     data.city ? `Ville : ${data.city}` : null,
     data.zone ? `Zone / adresse : ${data.zone}` : null,
     data.date ? `Date souhaitée : ${data.date}` : null,

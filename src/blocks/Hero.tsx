@@ -11,8 +11,10 @@ import { withBase } from "@/lib/utils";
 
 /**
  * Hero. variant : "carte" (texte + carte de prix flottante) · "split" (texte +
- * image) · "centre" (texte centré). Le H1 porte la ville (SEO local) : si le
- * titre ne la contient pas et qu'aucun accent n'est fourni, on ajoute " à <ville>".
+ * image) · "centre" (texte centré) · "plein" (image plein écran + overlay,
+ * texte clair) · "asymetrique" (colonnes décalées 7/5, image inclinée). Le H1
+ * porte la ville (SEO local) : si le titre ne la contient pas et qu'aucun accent
+ * n'est fourni, on ajoute " à <ville>".
  */
 export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroContent>) {
   const c = block.content;
@@ -22,7 +24,7 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
   const showVilleSuffix = !c.titreAccent && !titleHasVille;
 
   const heading = (
-    <h1 className="font-display text-4xl font-extrabold leading-[1.07] tracking-tight text-ink sm:text-5xl lg:text-6xl">
+    <h1 className="pack-heading font-display text-4xl font-extrabold leading-[1.07] tracking-tight text-ink sm:text-5xl lg:text-6xl">
       {c.titre}
       {c.titreAccent && (
         <>
@@ -148,8 +150,8 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
           {textColumn}
           <Reveal delay={0.15}>
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              <div className="absolute -inset-4 -z-10 rounded-[2.5rem] bg-brand-200/40 blur-2xl" />
-              <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/60 shadow-2xl shadow-brand-700/10">
+              <div className="pack-halo absolute -inset-4 -z-10 rounded-[2.5rem] bg-brand-200/40 blur-2xl" />
+              <div className="pack-image relative aspect-[4/5] overflow-hidden border border-white/60">
                 <Image
                   src={c.image.url}
                   alt={c.image.alt ?? c.titre}
@@ -166,6 +168,107 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
     );
   }
 
+  // ---- variant "plein" (image plein écran + overlay, texte clair) ----
+  if (variant === "plein" && c.image) {
+    return (
+      <header className="relative isolate overflow-hidden">
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src={c.image.url}
+            alt={c.image.alt ?? c.titre}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/55 to-ink/25" />
+        </div>
+        <Container className="flex min-h-[78vh] flex-col justify-end py-20 sm:min-h-[86vh]">
+          <div className="max-w-2xl text-white">
+            {(c.eyebrow || c.sousTitre) && (
+              <Reveal>
+                <Badge variant="accent" className="mb-5">
+                  <Sparkles className="size-3.5" />
+                  {c.eyebrow ?? c.sousTitre}
+                </Badge>
+              </Reveal>
+            )}
+            <Reveal delay={0.05}>
+              <h1 className="pack-heading font-display text-4xl font-extrabold leading-[1.05] text-white sm:text-5xl lg:text-6xl">
+                {c.titre}
+                {c.titreAccent && (
+                  <>
+                    {" "}
+                    <span className="text-accent-500">{c.titreAccent}</span>
+                  </>
+                )}
+                {showVilleSuffix && <span className="text-accent-500"> à {ville}</span>}
+              </h1>
+            </Reveal>
+            {c.accroche && (
+              <Reveal delay={0.1}>
+                <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85">{c.accroche}</p>
+              </Reveal>
+            )}
+            {ctas && (
+              <Reveal delay={0.15}>
+                <div className="mt-8">{ctas}</div>
+              </Reveal>
+            )}
+            {c.trust?.length ? (
+              <Reveal delay={0.2}>
+                <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-3">
+                  {c.trust.map((t) => (
+                    <li key={t.label} className="flex items-center gap-2 text-sm font-medium text-white/90">
+                      <Icon name={t.icone} className="size-4 text-accent-500" />
+                      {t.label}
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+            ) : null}
+          </div>
+        </Container>
+      </header>
+    );
+  }
+
+  // ---- variant "asymetrique" (colonnes décalées 7/5, image inclinée) ----
+  if (variant === "asymetrique") {
+    return (
+      <header className="hero-mesh relative overflow-hidden">
+        <Container className="py-16 lg:py-24">
+          <div className="grid items-center gap-10 lg:grid-cols-12">
+            <div className="lg:col-span-7">{textColumn}</div>
+            <div className="lg:col-span-5">
+              <Reveal delay={0.15}>
+                {c.image ? (
+                  <div className="relative mx-auto max-w-sm rotate-2 lg:max-w-none">
+                    <div className="pack-image relative aspect-[4/5] overflow-hidden border border-white/60">
+                      <Image
+                        src={c.image.url}
+                        alt={c.image.alt ?? c.titre}
+                        fill
+                        priority
+                        sizes="(max-width: 1024px) 100vw, 40vw"
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                ) : (
+                  <div className="pack-card -rotate-1 border border-border bg-surface p-8">
+                    <p className="font-display text-2xl font-extrabold text-ink">{c.titreAccent ?? c.titre}</p>
+                    {c.accroche && <p className="mt-3 text-sm leading-relaxed text-muted">{c.accroche}</p>}
+                  </div>
+                )}
+              </Reveal>
+            </div>
+          </div>
+        </Container>
+      </header>
+    );
+  }
+
   // ---- variant "carte" (carte de prix flottante) ----
   const card = c.card;
   return (
@@ -175,8 +278,8 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
         {card && (
           <Reveal delay={0.15}>
             <div className="relative mx-auto max-w-md">
-              <div className="absolute -inset-4 -z-10 rounded-[2.5rem] bg-brand-200/40 blur-2xl" />
-              <div className="overflow-hidden rounded-[2rem] border border-white/60 bg-surface/80 shadow-2xl shadow-brand-700/10 backdrop-blur">
+              <div className="pack-halo absolute -inset-4 -z-10 rounded-[2.5rem] bg-brand-200/40 blur-2xl" />
+              <div className="pack-card overflow-hidden border border-white/60 bg-surface/80 backdrop-blur">
                 <div className="bg-brand-gradient p-8 text-brand-contrast">
                   {card.label && <p className="text-sm font-medium opacity-90">{card.label}</p>}
                   <div className="mt-2 flex items-baseline gap-2">

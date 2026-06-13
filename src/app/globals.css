@@ -41,9 +41,11 @@
   --color-border: var(--border);
 
   --radius-theme: var(--radius);
+  --radius-btn-theme: var(--radius-btn);
+  --radius-card-theme: var(--radius-card);
 
-  --font-display: var(--font-display), ui-sans-serif, system-ui, sans-serif;
-  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--pack-font-display, var(--font-poppins)), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--pack-font-sans, var(--font-inter)), ui-sans-serif, system-ui, sans-serif;
 }
 
 /* ---------- Défaut = pro-bleu-nuit (fallback si pas de data-theme) ---------- */
@@ -227,6 +229,14 @@ h3,
   letter-spacing: -0.02em;
 }
 
+/* Voix typographique pilotée par le pack : tracking + casse appliqués aux
+   titres « signature » (hero, en-têtes de section) UNIQUEMENT, pour ne pas
+   toucher les libellés utilitaires (footer en majuscules, pages légales). */
+.pack-heading {
+  letter-spacing: var(--display-tracking, -0.02em);
+  text-transform: var(--display-case, none);
+}
+
 ::selection {
   background: var(--brand-200);
   color: var(--brand-800);
@@ -263,10 +273,10 @@ input[type="range"] {
 @media (prefers-reduced-motion: no-preference) {
   .reveal {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(var(--motion-distance, 24px));
     transition:
-      opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
-      transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+      opacity var(--motion-duration, 0.55s) var(--motion-ease, cubic-bezier(0.22, 1, 0.36, 1)),
+      transform var(--motion-duration, 0.55s) var(--motion-ease, cubic-bezier(0.22, 1, 0.36, 1));
     will-change: opacity, transform;
   }
   .reveal.is-revealed {
@@ -280,4 +290,326 @@ input[type="range"] {
   html {
     scroll-behavior: auto;
   }
+}
+
+/* ============================================================================
+   STYLE PACKS — design systems complets, sélectionnés par `config.stylePack`
+   et posés en `data-pack` sur le conteneur racine (à côté de `data-theme`).
+
+   Un pack bundle : pairing typographique, rythme d'espacement, rayons (bouton /
+   carte / image), style d'ombres, traitement de fond du hero, et motion. La
+   PALETTE est portée par `data-theme` pour le pack `base` (rétro-compat des
+   sites existants) ; les packs « signés » embarquent leur propre palette et,
+   placés APRÈS les blocs `[data-theme]`, gagnent dans la cascade.
+
+   Les règles ci-dessous sont volontairement HORS @layer : non-layered l'emporte
+   sur les utilitaires Tailwind, donc `.btn` / `.pack-image` / `.pack-heading`
+   priment sur `rounded-full`, `rounded-[2rem]`, `tracking-tight`… sans !important.
+   ============================================================================ */
+
+/* ---- Tokens par défaut = pack `base` (rendu historique inchangé) ---- */
+:root,
+[data-pack="base"] {
+  --pack-font-display: var(--font-poppins);
+  --pack-font-sans: var(--font-inter);
+  --display-tracking: -0.02em;
+  --display-case: none;
+
+  --radius-btn: 9999px;
+  --radius-card: 1.5rem;
+  --radius-image: 2rem;
+  --border-width: 1px;
+
+  --shadow-card: 0 10px 30px -12px rgb(15 23 42 / 0.15);
+  --shadow-pop: 0 24px 50px -12px rgb(15 23 42 / 0.22);
+
+  --section-py: 5rem;
+  --motion-distance: 24px;
+  --motion-duration: 0.55s;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ---- Crochets de tokens partagés par tous les packs ---- */
+.btn {
+  border-radius: var(--radius-btn);
+}
+.pack-image {
+  border-radius: var(--radius-image);
+  box-shadow: var(--shadow-pop);
+}
+.pack-card {
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-pop);
+}
+
+/* ======================= Maison · Premium élégant ======================= */
+[data-pack="maison-premium"] {
+  --pack-font-display: var(--font-playfair);
+  --pack-font-sans: var(--font-inter);
+  --display-tracking: -0.01em;
+  --display-case: none;
+
+  --radius-btn: 0.4rem;
+  --radius-card: 0.6rem;
+  --radius-image: 0.5rem;
+  --border-width: 1px;
+  --radius: 0.5rem;
+
+  --shadow-card: 0 24px 60px -30px rgb(61 42 32 / 0.30);
+  --shadow-pop: 0 44px 80px -34px rgb(61 42 32 / 0.32);
+
+  --section-py: 7rem;
+  --motion-distance: 14px;
+  --motion-duration: 0.75s;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Palette : ivoire + encre chaude + or sobre */
+  --brand-50: #f6f6f5;
+  --brand-100: #e8e6e2;
+  --brand-200: #cdc9c1;
+  --brand-300: #aaa498;
+  --brand-400: #847d6f;
+  --brand-500: #625b4f;
+  --brand-600: #46413a;
+  --brand-700: #322e29;
+  --brand-800: #211f1b;
+  --brand-contrast: #fffaf3;
+  --accent-50: #faf3e1;
+  --accent-500: #b0863a;
+  --accent-600: #8f6a26;
+  --accent-contrast: #ffffff;
+  --ink: #26221c;
+  --ink-soft: #4a4339;
+  --muted: #6b6357;
+  --muted-2: #8a8175;
+  --bg: #fbf8f3;
+  --alt: #f3ece1;
+  --surface: #ffffff;
+  --surface-2: #f7f1e7;
+  --border: #e7ddcd;
+}
+[data-pack="maison-premium"] .hero-mesh {
+  background-image:
+    linear-gradient(180deg, var(--alt), var(--bg) 62%),
+    radial-gradient(42rem 26rem at 80% -22%, color-mix(in srgb, var(--accent-500) 16%, transparent), transparent 60%);
+}
+[data-pack="maison-premium"] .pack-halo {
+  display: none;
+}
+
+/* ======================= Atelier · Bold industriel ======================= */
+[data-pack="atelier-industriel"] {
+  --pack-font-display: var(--font-oswald);
+  --pack-font-sans: var(--font-inter);
+  --display-tracking: 0.02em;
+  --display-case: uppercase;
+
+  --radius-btn: 0;
+  --radius-card: 0;
+  --radius-image: 0;
+  --border-width: 2px;
+  --radius: 0;
+
+  --shadow-card: 0 0 0 2px var(--border);
+  --shadow-pop: 10px 10px 0 0 var(--ink);
+
+  --section-py: 4rem;
+  --motion-distance: 10px;
+  --motion-duration: 0.35s;
+  --motion-ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Palette : anthracite + orange électrique, contraste fort */
+  --brand-50: #f1f5f9;
+  --brand-100: #e2e8f0;
+  --brand-200: #cbd5e1;
+  --brand-300: #94a3b8;
+  --brand-400: #64748b;
+  --brand-500: #334155;
+  --brand-600: #1e293b;
+  --brand-700: #131c2b;
+  --brand-800: #0b111c;
+  --brand-contrast: #ffffff;
+  --accent-50: #fff3e8;
+  --accent-500: #f97316;
+  --accent-600: #ea580c;
+  --accent-contrast: #ffffff;
+  --ink: #0b111c;
+  --ink-soft: #283549;
+  --muted: #475569;
+  --muted-2: #64748b;
+  --bg: #ffffff;
+  --alt: #f1f4f7;
+  --surface: #ffffff;
+  --surface-2: #eef1f5;
+  --border: #d3dae2;
+}
+[data-pack="atelier-industriel"] .hero-mesh {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(30rem 20rem at 100% 0%, color-mix(in srgb, var(--accent-500) 12%, transparent), transparent 55%),
+    repeating-linear-gradient(0deg, transparent 0 39px, color-mix(in srgb, var(--ink) 5%, transparent) 39px 40px),
+    repeating-linear-gradient(90deg, transparent 0 39px, color-mix(in srgb, var(--ink) 5%, transparent) 39px 40px);
+}
+/* CTA industriels : Oswald condensé, majuscules, plats */
+[data-pack="atelier-industriel"] .btn {
+  box-shadow: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-family: var(--font-display);
+}
+[data-pack="atelier-industriel"] .pack-halo {
+  display: none;
+}
+
+/* ======================= Clair · Frais & clean ======================= */
+[data-pack="clair-frais"] {
+  --pack-font-display: var(--font-jakarta);
+  --pack-font-sans: var(--font-inter);
+  --display-tracking: -0.02em;
+  --display-case: none;
+
+  --radius-btn: 9999px;
+  --radius-card: 1.5rem;
+  --radius-image: 1.5rem;
+  --border-width: 1px;
+  --radius: 1.25rem;
+
+  --shadow-card: 0 14px 40px -22px rgb(13 148 136 / 0.28);
+  --shadow-pop: 0 32px 60px -30px rgb(13 148 136 / 0.24);
+
+  --section-py: 6rem;
+  --motion-distance: 24px;
+  --motion-duration: 0.55s;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Palette : teal frais + ambre */
+  --brand-50: #f0fdfa;
+  --brand-100: #ccfbf1;
+  --brand-200: #99f6e4;
+  --brand-300: #5eead4;
+  --brand-400: #2dd4bf;
+  --brand-500: #14b8a6;
+  --brand-600: #0d9488;
+  --brand-700: #0f766e;
+  --brand-800: #115e59;
+  --brand-contrast: #ffffff;
+  --accent-50: #fffbeb;
+  --accent-500: #f59e0b;
+  --accent-600: #d97706;
+  --accent-contrast: #ffffff;
+  --ink: #0f172a;
+  --ink-soft: #334155;
+  --muted: #475569;
+  --muted-2: #64748b;
+  --bg: #ffffff;
+  --alt: #f4fbfa;
+  --surface: #ffffff;
+  --surface-2: #effaf8;
+  --border: #dcefec;
+}
+
+/* ======================= Pop · Fun moderne ======================= */
+[data-pack="pop-moderne"] {
+  --pack-font-display: var(--font-bricolage);
+  --pack-font-sans: var(--font-dmsans);
+  --display-tracking: -0.03em;
+  --display-case: none;
+
+  --radius-btn: 9999px;
+  --radius-card: 1.75rem;
+  --radius-image: 1.5rem;
+  --border-width: 2px;
+  --radius: 1.5rem;
+
+  --shadow-card: 6px 6px 0 0 var(--brand-200);
+  --shadow-pop: 12px 12px 0 0 var(--brand-600);
+
+  --section-py: 5.5rem;
+  --motion-distance: 40px;
+  --motion-duration: 0.6s;
+  --motion-ease: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Palette : violet + lime, vifs */
+  --brand-50: #f5f0ff;
+  --brand-100: #e9dcff;
+  --brand-200: #d4bbff;
+  --brand-300: #b78dff;
+  --brand-400: #9a5cff;
+  --brand-500: #7c3aed;
+  --brand-600: #6d28d9;
+  --brand-700: #5b21b6;
+  --brand-800: #4c1d95;
+  --brand-contrast: #ffffff;
+  --accent-50: #f7ffe5;
+  --accent-500: #84cc16;
+  --accent-600: #65a30d;
+  --accent-contrast: #1a2e05;
+  --ink: #1e1b2e;
+  --ink-soft: #3b3556;
+  --muted: #5a5378;
+  --muted-2: #6b6391;
+  --bg: #fffdfb;
+  --alt: #fbf2ff;
+  --surface: #ffffff;
+  --surface-2: #f6ecff;
+  --border: #ece0fb;
+}
+[data-pack="pop-moderne"] .hero-mesh {
+  background-image:
+    radial-gradient(30rem 30rem at 10% -12%, color-mix(in srgb, var(--accent-500) 38%, transparent), transparent 55%),
+    radial-gradient(34rem 34rem at 96% -4%, color-mix(in srgb, var(--brand-500) 42%, transparent), transparent 55%),
+    radial-gradient(30rem 30rem at 60% 118%, color-mix(in srgb, #fb5a63 32%, transparent), transparent 55%);
+}
+
+/* ======================= Terra · Naturel & organique ======================= */
+[data-pack="terra-naturel"] {
+  --pack-font-display: var(--font-fraunces);
+  --pack-font-sans: var(--font-nunito);
+  --display-tracking: -0.01em;
+  --display-case: none;
+
+  --radius-btn: 9999px;
+  --radius-card: 2rem;
+  --radius-image: 1.75rem;
+  --border-width: 1px;
+  --radius: 1.75rem;
+
+  --shadow-card: 0 20px 50px -28px rgb(70 102 58 / 0.30);
+  --shadow-pop: 0 38px 70px -32px rgb(70 102 58 / 0.26);
+
+  --section-py: 6.5rem;
+  --motion-distance: 18px;
+  --motion-duration: 0.7s;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Palette : sauge + terracotta + crème */
+  --brand-50: #f3f6f1;
+  --brand-100: #e3ecde;
+  --brand-200: #c6d8bd;
+  --brand-300: #9fbb91;
+  --brand-400: #789a66;
+  --brand-500: #5b7f4a;
+  --brand-600: #46663a;
+  --brand-700: #38512f;
+  --brand-800: #2c3f26;
+  --brand-contrast: #fbfdf8;
+  --accent-50: #fbf0ea;
+  --accent-500: #c4663f;
+  --accent-600: #a4502e;
+  --accent-contrast: #ffffff;
+  --ink: #2c2a23;
+  --ink-soft: #4c4a3f;
+  --muted: #6b6857;
+  --muted-2: #87836f;
+  --bg: #faf8f1;
+  --alt: #f1efe2;
+  --surface: #ffffff;
+  --surface-2: #f4f1e6;
+  --border: #e4e0cf;
+}
+[data-pack="terra-naturel"] .hero-mesh {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(38rem 28rem at 82% -12%, color-mix(in srgb, var(--brand-400) 20%, transparent), transparent 60%),
+    radial-gradient(28rem 28rem at -6% 28%, color-mix(in srgb, var(--accent-500) 14%, transparent), transparent 55%);
 }

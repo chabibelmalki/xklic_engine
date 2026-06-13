@@ -25,6 +25,7 @@ export function Contact({
   const c = block.content;
   const tone = toneForIndex(index);
   const mode: ContactMode = (c.formMode ?? c.formType ?? "simple") as ContactMode;
+  const variant = block.variant ?? "split-form-carte";
   const turnstileSiteKey = config.forms?.turnstile
     ? process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
     : undefined;
@@ -46,11 +47,11 @@ export function Contact({
         <ul className="space-y-4">
           {rows.map((r, i) => {
             const Inner = (
-              <span className="flex items-center gap-3 text-ink">
-                <span className="inline-flex size-10 items-center justify-center rounded-full bg-brand-50 text-brand-600">
+              <span className="flex min-w-0 items-center gap-3 text-ink">
+                <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-brand-50 text-brand-600">
                   <r.icon className="size-5" />
                 </span>
-                <span className="font-medium">{r.label}</span>
+                <span className="min-w-0 break-words font-medium">{r.label}</span>
               </span>
             );
             return (
@@ -104,36 +105,116 @@ export function Contact({
     </div>
   );
 
+  const form = (
+    <ContactForm
+      mode={mode}
+      site={config.entreprise.nom}
+      siteSlug={config.slug}
+      services={c.services}
+      villes={c.villes}
+      telephone={c.telephone}
+      whatsapp={c.whatsapp}
+      confidentialiteHref={confidentialiteHref}
+      turnstileSiteKey={turnstileSiteKey}
+      strings={strings.form}
+    />
+  );
+
+  // Cartes de coordonnées (variant "coordonnees-cartes").
+  const coordCards = (
+    <div className="mt-12 grid grid-cols-1 gap-5 [&>*]:min-w-0 sm:grid-cols-2 lg:grid-cols-4">
+      {rows.map((r, i) => {
+        const Inner = (
+          <>
+            <span className="mx-auto inline-flex size-12 items-center justify-center rounded-full bg-brand-50 text-brand-600">
+              <r.icon className="size-5" />
+            </span>
+            <p className="mt-3 break-words font-medium text-ink">{r.label}</p>
+          </>
+        );
+        const cls =
+          "block rounded-theme border border-border bg-surface p-6 text-center shadow-sm transition-shadow hover:shadow-md";
+        return r.href ? (
+          <Reveal key={i} delay={(i % 4) * 0.05}>
+            <a
+              href={r.href}
+              className={cls}
+              {...(r.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+            >
+              {Inner}
+            </a>
+          </Reveal>
+        ) : (
+          <Reveal key={i} delay={(i % 4) * 0.05}>
+            <div className={cls}>{Inner}</div>
+          </Reveal>
+        );
+      })}
+    </div>
+  );
+
+  const header = (
+    <Reveal>
+      <SectionHeading
+        eyebrow={strings.nav.contact}
+        title={c.titre ?? "Parlons de votre projet"}
+        intro={c.intro}
+      />
+    </Reveal>
+  );
+
+  if (variant === "coordonnees-cartes") {
+    return (
+      <Section id="contact" tone={tone}>
+        {header}
+        {coordCards}
+        {(c.horaires?.length || c.mapEmbedUrl || c.form) && (
+          <div className="mt-10 grid grid-cols-1 gap-8 [&>*]:min-w-0 lg:grid-cols-2">
+            <Reveal>{infoCard}</Reveal>
+            {c.form && <Reveal delay={0.1}>{form}</Reveal>}
+          </div>
+        )}
+      </Section>
+    );
+  }
+
+  if (variant === "centre") {
+    return (
+      <Section id="contact" tone={tone}>
+        {header}
+        {c.form ? (
+          <Reveal delay={0.05}>
+            <div className="mx-auto mt-12 max-w-xl">{form}</div>
+          </Reveal>
+        ) : (
+          <div className="mx-auto mt-10 max-w-xl">
+            <Reveal>{infoCard}</Reveal>
+            {c.cta && (
+              <Reveal delay={0.1}>
+                <div className="mt-8 text-center">
+                  <Button href={withBase(basePath, c.cta.href)} size="lg">
+                    {c.cta.label}
+                  </Button>
+                </div>
+              </Reveal>
+            )}
+          </div>
+        )}
+      </Section>
+    );
+  }
+
+  // split-form-carte (défaut)
   return (
     <Section id="contact" tone={tone}>
-      <Reveal>
-        <SectionHeading
-          eyebrow={strings.nav.contact}
-          title={c.titre ?? "Parlons de votre projet"}
-          intro={c.intro}
-        />
-      </Reveal>
-
+      {header}
       {c.form ? (
-        <div className="mt-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+        <div className="mt-12 grid grid-cols-1 gap-8 [&>*]:min-w-0 lg:grid-cols-[0.85fr_1.15fr]">
           <Reveal>{infoCard}</Reveal>
-          <Reveal delay={0.1}>
-            <ContactForm
-              mode={mode}
-              site={config.entreprise.nom}
-              siteSlug={config.slug}
-              services={c.services}
-              villes={c.villes}
-              telephone={c.telephone}
-              whatsapp={c.whatsapp}
-              confidentialiteHref={confidentialiteHref}
-              turnstileSiteKey={turnstileSiteKey}
-              strings={strings.form}
-            />
-          </Reveal>
+          <Reveal delay={0.1}>{form}</Reveal>
         </div>
       ) : (
-        <div className="mt-12 grid items-start gap-10 lg:grid-cols-2">
+        <div className="mt-12 grid grid-cols-1 items-start gap-10 [&>*]:min-w-0 lg:grid-cols-2">
           <Reveal>
             <div>
               {c.cta && (

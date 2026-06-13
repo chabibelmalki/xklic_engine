@@ -106,7 +106,7 @@ export function LeadForm({
       {siteSlug && <input type="hidden" {...register("siteSlug")} value={siteSlug} />}
 
       {/* Honeypot anti-spam */}
-      <div className="absolute left-[-9999px]" aria-hidden>
+      <div className="sr-only" aria-hidden>
         <label>
           Ne pas remplir
           <input tabIndex={-1} autoComplete="off" {...register("company")} />
@@ -227,7 +227,7 @@ export function LeadForm({
         <p className="mt-4 rounded-xl bg-red-50 px-4 py-3 text-sm text-red-600">{serverError}</p>
       )}
 
-      <Button type="submit" size="lg" disabled={isSubmitting} className="mt-6 w-full">
+      <Button type="submit" size="lg" disabled={isSubmitting} className="mt-6 h-auto min-h-14 w-full whitespace-normal py-3 text-center leading-tight">
         {isSubmitting ? (
           <>
             <Loader2 className="size-5 animate-spin" /> Envoi…

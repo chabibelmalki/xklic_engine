@@ -58,6 +58,8 @@ function PriceCard({ item, mode }: { item: TarifItem; mode: TarifsMode }) {
 export function Tarifs({ block, index, basePath = "", strings }: BlockComponentProps<TarifsContent>) {
   const c = block.content;
   const mode = (block.mode as TarifsMode) ?? "grille";
+  // variant "mise-en-avant" : la carte `populaire` est surélevée/agrandie.
+  const emphasize = block.variant === "mise-en-avant";
 
   return (
     <Section id="tarifs" tone={toneForIndex(index)}>
@@ -86,9 +88,18 @@ export function Tarifs({ block, index, basePath = "", strings }: BlockComponentP
         </Reveal>
       ) : (
         <>
-          <div className="mt-12 grid items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div
+            className={cn(
+              "mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3",
+              emphasize ? "items-center" : "items-stretch",
+            )}
+          >
             {(c.items ?? []).map((item, i) => (
-              <Reveal key={item.nom} delay={(i % 3) * 0.05}>
+              <Reveal
+                key={item.nom}
+                delay={(i % 3) * 0.05}
+                className={emphasize && item.populaire ? "lg:scale-[1.05]" : undefined}
+              >
                 <PriceCard item={item} mode={mode} />
               </Reveal>
             ))}

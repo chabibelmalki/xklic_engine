@@ -1,0 +1,126 @@
+{
+  "$comment": "CATALOGUE du moteur agence_website — surface disponible pour la GÉNÉRATION de configs. Sert au prompt (NEWCLIENT.md) : il dit quels STYLE PACKS et quelles VARIANTES de blocs existent, et lesquels vont bien ensemble (curation). Source de vérité du code : src/lib/packs.ts (packs), src/blocks/catalog.ts (registre des blocs), src/types/config.ts (schéma). Tenir ce fichier à jour quand on ajoute un pack / un bloc / une variante.",
+
+  "stylePacks": {
+    "$role": "Champ `stylePack` au niveau site (data-pack). Design system COMPLET : typo + formes + ombres + motion + fond + palette. Absent => `base` (palette pilotée par `theme`). 1 pack par site.",
+    "items": [
+      {
+        "id": "base",
+        "label": "Base (historique)",
+        "ambiance": "Rendu d'origine du moteur. La palette vient de `theme` (douceur-beige, energie-corail, pro-bleu-nuit, fraicheur-teal, rose-poudre).",
+        "fonts": { "display": "Poppins", "sans": "Inter" }
+      },
+      {
+        "id": "maison-premium",
+        "label": "Maison · Premium élégant",
+        "ambiance": "Serif haute, ivoire/encre/or, ombres douces, très aéré. Artisanat haut de gamme (pâtisserie, traiteur, bijoutier, hôtellerie).",
+        "fonts": { "display": "Playfair Display", "sans": "Inter" },
+        "recommendedVariants": {
+          "hero": ["plein", "split"],
+          "services": ["lignes-alternees", "grille-cartes"],
+          "produits": ["vitrine", "rayons"],
+          "galerie": ["masonry", "grille"],
+          "avis": ["vedette", "grille"],
+          "tarifs": ["liste-simple", "grille"],
+          "etapes": ["timeline-verticale"],
+          "faq": ["deux-colonnes", "accordeon"],
+          "contact": ["split-form-carte"],
+          "cta": ["encadre", "bande"]
+        }
+      },
+      {
+        "id": "atelier-industriel",
+        "label": "Atelier · Bold industriel",
+        "ambiance": "Typo condensée en MAJUSCULES, anthracite + orange électrique, bords carrés, bordures épaisses, contraste fort. Garage, BTP, métallerie, déménagement.",
+        "fonts": { "display": "Oswald", "sans": "Inter" },
+        "recommendedVariants": {
+          "hero": ["split", "asymetrique"],
+          "services": ["grille-icones", "mosaique"],
+          "produits": ["grille", "liste"],
+          "galerie": ["grille", "avant-apres"],
+          "avis": ["grille", "carrousel"],
+          "tarifs": ["colonnes-comparatif", "grille"],
+          "etapes": ["ligne-horizontale", "cartes-numerotees"],
+          "faq": ["accordeon"],
+          "contact": ["coordonnees-cartes", "split-form-carte"],
+          "cta": ["bande", "plein"]
+        }
+      },
+      {
+        "id": "clair-frais",
+        "label": "Clair · Frais & clean",
+        "ambiance": "Clair et aéré, teal/ciel, coins très arrondis, boutons pill, ombres légères. Confiance et propreté (ménage, garde d'enfants, dentiste, pressing).",
+        "fonts": { "display": "Plus Jakarta Sans", "sans": "Inter" },
+        "recommendedVariants": {
+          "hero": ["centre", "split"],
+          "services": ["grille-cartes", "liste-icones"],
+          "produits": ["grille", "vitrine"],
+          "galerie": ["grille", "avant-apres"],
+          "avis": ["grille", "carrousel"],
+          "tarifs": ["grille", "mise-en-avant"],
+          "etapes": ["cartes-numerotees", "timeline-verticale"],
+          "faq": ["accordeon", "deux-colonnes"],
+          "contact": ["split-form-carte", "centre"],
+          "cta": ["bande", "encadre"]
+        }
+      },
+      {
+        "id": "pop-moderne",
+        "label": "Pop · Fun moderne",
+        "ambiance": "Couleurs vives violet/lime/corail, gros type, ombres dures décalées, motion joueur, cadres inclinés. Coaching, food, événementiel, agence créative.",
+        "fonts": { "display": "Bricolage Grotesque", "sans": "DM Sans" },
+        "recommendedVariants": {
+          "hero": ["asymetrique", "centre"],
+          "services": ["mosaique", "grille-cartes"],
+          "produits": ["vitrine", "grille"],
+          "galerie": ["masonry", "carrousel"],
+          "avis": ["carrousel", "vedette"],
+          "tarifs": ["mise-en-avant", "grille"],
+          "etapes": ["ligne-horizontale", "cartes-numerotees"],
+          "faq": ["liste-ouverte", "accordeon"],
+          "contact": ["centre", "split-form-carte"],
+          "cta": ["plein", "encadre"]
+        }
+      },
+      {
+        "id": "terra-naturel",
+        "label": "Terra · Naturel & organique",
+        "ambiance": "Soft-serif, sauge/terracotta/crème, formes très arrondies, texture organique, motion lent. Paysagiste, bien-être, bio, yoga, écoconstruction.",
+        "fonts": { "display": "Fraunces", "sans": "Nunito Sans" },
+        "recommendedVariants": {
+          "hero": ["split", "centre"],
+          "services": ["lignes-alternees", "grille-cartes"],
+          "produits": ["rayons", "grille"],
+          "galerie": ["masonry", "grille"],
+          "avis": ["vedette", "carrousel"],
+          "tarifs": ["liste-simple", "grille"],
+          "etapes": ["timeline-verticale", "cartes-numerotees"],
+          "faq": ["deux-colonnes", "accordeon"],
+          "contact": ["split-form-carte", "centre"],
+          "cta": ["encadre", "bande"]
+        }
+      }
+    ]
+  },
+
+  "blocks": {
+    "$role": "Types de blocs (champ `type`) composables et ordonnables dans `pages[].blocks[]`. Chaque bloc accepte `variant` (mise en page) et/ou `mode`. Choisir les variantes via la curation du pack ci-dessus. Une variante inconnue retombe sur le défaut.",
+    "items": [
+      { "type": "hero", "role": "En-tête d'accueil, conversion.", "variants": ["centre (texte centré)", "split (texte + image)", "carte (texte + carte de prix flottante)", "plein (image plein écran + overlay, texte clair — NÉCESSITE content.image)", "asymetrique (colonnes décalées 7/5, image inclinée)"] },
+      { "type": "pageHero", "role": "En-tête de page intérieure (eyebrow + fil d'ariane + titre).", "variants": [] },
+      { "type": "services", "role": "Prestations.", "variants": ["cartes (icône/emoji + badge + indice de prix, défaut)", "images (vignette photo)", "grille-icones (lignes icône + texte, épuré)", "mosaique (grille asymétrique, 1re tuile mise en avant)"] },
+      { "type": "etapes", "role": "« Comment ça se passe ».", "variants": ["cartes-numerotees (défaut)", "timeline-verticale (fil vertical)", "ligne-horizontale (nœuds alignés)"] },
+      { "type": "simulateur", "role": "Calcul d'économie / crédit d'impôt interactif.", "variants": [] },
+      { "type": "tarifs", "role": "Grille de prix / forfaits.", "modes": ["grille", "a-partir-de", "sur-devis"], "variants": ["grille (défaut)", "mise-en-avant (carte populaire surélevée)"] },
+      { "type": "serviceQuoteBuilder", "role": "Configurateur de devis (panier de prix). Option crédit d'impôt.", "variants": [] },
+      { "type": "produits", "role": "Catalogue de VENTE (photo + nom + prix), regroupable par rayons. Lightbox.", "variants": ["grille (3 colonnes, défaut)", "vitrine (2 colonnes, grandes cartes, effet présentoir)"] },
+      { "type": "boutique", "role": "Catalogue e-commerce + panier « Votre sélection » + formulaire de commande.", "variants": [] },
+      { "type": "zone", "role": "Zone d'intervention (SEO local).", "modes": ["liste (pastilles, défaut)", "carte (pastilles + iframe)", "aucune (masqué)"], "variants": [] },
+      { "type": "faq", "role": "Questions fréquentes (alimente JSON-LD FAQPage).", "variants": ["accordeon (replié animé, défaut)", "deux-colonnes (Q/R dépliées, 2 colonnes)", "liste-ouverte (Q/R dépliées empilées)"] },
+      { "type": "galerie", "role": "Réalisations / photos. Lightbox.", "variants": ["grille (défaut)", "masonry (colonnes décalées)", "avant-apres (paires)", "produits / montage"] },
+      { "type": "avis", "role": "Témoignages (alimente la note globale JSON-LD).", "variants": ["grille (défaut)", "carrousel (rangée défilante)", "vedette (1 grand + appoint)"] },
+      { "type": "cta", "role": "Bande d'appel à l'action.", "variants": ["bande (carte dégradée arrondie, défaut)", "encadre (carte claire bordée, sobre)", "plein (section dégradée pleine largeur)"] },
+      { "type": "contact", "role": "Coordonnées + formulaire opérationnel (POST /api/contact).", "modes": ["simple", "demande-intervention", "devis", "contact"], "variants": ["split-form-carte (infos + formulaire, défaut)", "coordonnees-cartes (cartes de coordonnées)", "centre (colonne centrée)"] }
+    ]
+  }
+}

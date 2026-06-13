@@ -6,9 +6,11 @@
 // en amont du rendu sans accès au système de fichiers.
 
 export const SITE_SLUGS: string[] = [
-  "meca-confiance",
-  "patisserie-chabib",
+  "atelier-douceur",
+  "eclat-maison",
+  "meca-atlas",
   "sanadclean",
+  "vibe-coaching",
 ];
 
 /** Lookup O(1) pour le proxy. */

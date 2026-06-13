@@ -10,21 +10,61 @@ import { Reveal } from "@/components/ui/Reveal";
 import { cn } from "@/lib/utils";
 
 /**
- * FAQ — accordéon animé (grid-rows transition), accessible (aria-expanded).
- * Le JSON-LD FAQPage est injecté séparément (SEO). Première entrée ouverte.
+ * FAQ. variant : "accordeon" (replié animé, défaut) · "deux-colonnes" (Q/R
+ * dépliées sur 2 colonnes) · "liste-ouverte" (Q/R dépliées empilées). Le JSON-LD
+ * FAQPage est injecté séparément (SEO).
  */
 export function Faq({ block, index, strings }: BlockComponentProps<FaqContent>) {
   const c = block.content;
+  const variant = block.variant ?? "accordeon";
   const [open, setOpen] = useState<number | null>(0);
+
+  const header = (
+    <Reveal>
+      <SectionHeading
+        eyebrow={c.titre ? strings.faq.eyebrow : strings.faq.defaultTitle}
+        title={c.titre ?? strings.faq.defaultTitle}
+      />
+    </Reveal>
+  );
+
+  if (variant === "deux-colonnes") {
+    return (
+      <Section id="faq" tone={toneForIndex(index)} containerClassName="max-w-5xl">
+        {header}
+        <div className="mt-10 grid gap-x-10 gap-y-8 md:grid-cols-2">
+          {c.items.map((q, i) => (
+            <Reveal key={q.question} delay={(i % 2) * 0.05}>
+              <h3 className="font-display text-lg font-bold text-ink">{q.question}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted">{q.reponse}</p>
+            </Reveal>
+          ))}
+        </div>
+      </Section>
+    );
+  }
+
+  if (variant === "liste-ouverte") {
+    return (
+      <Section id="faq" tone={toneForIndex(index)} containerClassName="max-w-3xl">
+        {header}
+        <div className="mt-10 divide-y divide-border border-y border-border">
+          {c.items.map((q, i) => (
+            <Reveal key={q.question} delay={(i % 4) * 0.04}>
+              <div className="py-5">
+                <h3 className="font-display text-lg font-bold text-ink">{q.question}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted">{q.reponse}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </Section>
+    );
+  }
 
   return (
     <Section id="faq" tone={toneForIndex(index)} containerClassName="max-w-3xl">
-      <Reveal>
-        <SectionHeading
-          eyebrow={c.titre ? strings.faq.eyebrow : strings.faq.defaultTitle}
-          title={c.titre ?? strings.faq.defaultTitle}
-        />
-      </Reveal>
+      {header}
       <Reveal delay={0.05}>
         <div className="mt-10 divide-y divide-border overflow-hidden rounded-theme border border-border bg-surface">
           {c.items.map((q, i) => {

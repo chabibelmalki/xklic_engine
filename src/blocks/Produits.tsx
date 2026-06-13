@@ -32,6 +32,11 @@ export function Produits({
 }: BlockComponentProps<ProduitsContent>) {
   const c = block.content;
   const lightboxOn = c.lightbox !== false;
+  // variant "vitrine" : cartes plus grandes (2 colonnes max), photos plus larges
+  // — effet boutique/présentoir. "grille" (défaut) : 3 colonnes.
+  const isVitrine = block.variant === "vitrine";
+  const gridCls = isVitrine ? "grid gap-7 sm:grid-cols-2" : "grid gap-6 sm:grid-cols-2 lg:grid-cols-3";
+  const imgAspect = isVitrine ? "aspect-[3/2]" : "aspect-[4/3]";
   const isRtl = localeDir(locale) === "rtl";
   const PrevIcon = isRtl ? ChevronRight : ChevronLeft;
   const NextIcon = isRtl ? ChevronLeft : ChevronRight;
@@ -124,7 +129,7 @@ export function Produits({
                 </div>
               </Reveal>
             )}
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className={gridCls}>
               {cat.items.map((item, ii) => {
                 const price = priceLabel(item.prix);
                 const pIdx = photoIndex.get(`${ci}-${ii}`);
@@ -143,7 +148,7 @@ export function Produits({
                             type="button"
                             onClick={() => setOpen(pIdx!)}
                             aria-label={item.nom}
-                            className="relative block aspect-[4/3] w-full overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
+                            className={`relative block ${imgAspect} w-full overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500`}
                           >
                             <Image
                               src={item.image.url}
@@ -162,7 +167,7 @@ export function Produits({
                             )}
                           </button>
                         ) : (
-                          <div className="relative aspect-[4/3] w-full overflow-hidden">
+                          <div className={`relative ${imgAspect} w-full overflow-hidden`}>
                             <Image
                               src={item.image.url}
                               alt={item.image.alt ?? item.nom}

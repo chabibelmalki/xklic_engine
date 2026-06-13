@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/Button";
 
 const labelClass = "block text-sm font-medium text-ink-soft";
 const inputClass =
-  "mt-1.5 w-full rounded-xl border border-border bg-surface px-4 py-2.5 text-sm text-ink shadow-sm outline-none transition-colors placeholder:text-muted-2 focus:border-brand-300 focus:ring-2 focus:ring-brand-100";
+  "mt-1.5 w-full min-w-0 rounded-xl border border-border bg-surface px-4 py-2.5 text-sm text-ink shadow-sm outline-none transition-colors placeholder:text-muted-2 focus:border-brand-300 focus:ring-2 focus:ring-brand-100";
 const errorClass = "mt-1 text-xs font-medium text-red-500";
 
 export interface ContactFormProps {
@@ -172,15 +172,18 @@ export function ContactForm({
       <input type="hidden" {...register("site")} value={site} />
       {siteSlug && <input type="hidden" {...register("siteSlug")} value={siteSlug} />}
 
-      {/* Honeypot anti-spam */}
-      <div className="absolute left-[-9999px]" aria-hidden>
+      {/* Honeypot anti-spam — `sr-only` : invisible aux humains, présent pour les
+          bots, et SANS décalage négatif (un `left:-9999px` provoquait un
+          débordement horizontal de la page sur mobile, poussant les boutons
+          flottants hors écran). */}
+      <div className="sr-only" aria-hidden>
         <label>
           {s.doNotFill}
           <input tabIndex={-1} autoComplete="off" {...register("company")} />
         </label>
       </div>
 
-      <div className="grid gap-5 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-5 [&>div]:min-w-0 sm:grid-cols-2">
         <div className={showPhone ? "" : "sm:col-span-2"}>
           <label htmlFor="cf-name" className={labelClass}>
             {s.nameLabel} *
@@ -323,7 +326,12 @@ export function ContactForm({
         <p className="mt-4 rounded-xl bg-red-50 px-4 py-3 text-sm text-red-600">{serverError}</p>
       )}
 
-      <Button type="submit" size="lg" disabled={isSubmitting} className="mt-6 w-full">
+      <Button
+        type="submit"
+        size="lg"
+        disabled={isSubmitting}
+        className="mt-6 h-auto min-h-14 w-full whitespace-normal py-3 text-center leading-tight"
+      >
         {isSubmitting ? (
           <>
             <Loader2 className="size-5 animate-spin" /> {s.sending}

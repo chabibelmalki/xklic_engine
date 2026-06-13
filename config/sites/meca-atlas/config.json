@@ -1,0 +1,262 @@
+{
+  "slug": "meca-atlas",
+  "theme": "pro-bleu-nuit",
+  "stylePack": "atelier-industriel",
+  "branding": {
+    "tagline": "Garage multimarque · Argenteuil"
+  },
+  "entreprise": {
+    "nom": "Garage Méca Atlas",
+    "statut": "SARL",
+    "siret": "88419275300026",
+    "ape": "45.20A",
+    "apeLabel": "Entretien et réparation de véhicules automobiles légers",
+    "tva": { "regime": "reel", "numero": "FR42884192753" },
+    "capital": 8000,
+    "rcs": "Pontoise",
+    "dirigeant": "Karim Atlas",
+    "siege": "112 avenue Gabriel Péri, 95100 Argenteuil"
+  },
+  "seo": {
+    "schemaType": "AutoRepair",
+    "ville": "Argenteuil"
+  },
+  "meta": {
+    "title": "Garage Méca Atlas — Entretien & réparation auto multimarque à Argenteuil",
+    "description": "Garage Méca Atlas à Argenteuil (95) : révision, freinage, distribution, pneus et diagnostic toutes marques. Devis clair avant intervention, rendez-vous sous 48 h. Forfaits transparents.",
+    "keywords": [
+      "garage Argenteuil",
+      "révision voiture Argenteuil",
+      "changement plaquettes Argenteuil",
+      "garage multimarque 95",
+      "diagnostic auto Argenteuil"
+    ]
+  },
+  "forms": { "to": "flp.chabib@gmail.com" },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Accueil",
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "split",
+          "content": {
+            "eyebrow": "Garage indépendant · toutes marques",
+            "titre": "L'entretien auto sans",
+            "titreAccent": "mauvaise surprise",
+            "accroche": "Révision, freinage, distribution, pneus et diagnostic. On établit un devis clair AVANT de toucher à votre véhicule, et on vous reçoit sous 48 h.",
+            "image": {
+              "url": "https://loremflickr.com/1000/1250/car,mechanic?lock=41",
+              "alt": "Mécanicien au travail dans un atelier"
+            },
+            "ctaPrimaire": { "label": "Prendre rendez-vous", "href": "/contact" },
+            "ctaSecondaire": { "label": "Voir les forfaits", "href": "/tarifs" },
+            "trust": [
+              { "icone": "Wrench", "label": "Toutes marques" },
+              { "icone": "ShieldCheck", "label": "Devis avant travaux" },
+              { "icone": "Clock", "label": "RDV sous 48 h" },
+              { "icone": "Gauge", "label": "Diagnostic offert" }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "ligne-horizontale",
+          "content": {
+            "eyebrow": "Simple et carré",
+            "titre": "Comment ça se passe",
+            "items": [
+              { "icone": "CalendarCheck", "titre": "Rendez-vous", "texte": "En ligne ou par téléphone, sous 48 h." },
+              { "icone": "Gauge", "titre": "Diagnostic", "texte": "On identifie précisément ce qui doit être fait." },
+              { "icone": "FileText", "titre": "Devis validé", "texte": "Rien n'est lancé sans votre accord écrit." },
+              { "icone": "Wrench", "titre": "Réparation", "texte": "Travail soigné, véhicule rendu propre et testé." }
+            ]
+          }
+        },
+        {
+          "type": "avis",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "Avis clients",
+            "titre": "Ce que disent nos clients",
+            "noteGlobale": 4.8,
+            "nombre": 214,
+            "items": [
+              { "auteur": "Thomas R.", "ville": "Argenteuil", "note": 5, "texte": "Devis clair, prix tenu, aucune réparation inutile poussée. Ça change. Je recommande." },
+              { "auteur": "Nadia M.", "ville": "Bezons", "note": 5, "texte": "Pris en charge rapidement pour mes freins. Travail nickel et explications honnêtes." },
+              { "auteur": "Olivier P.", "ville": "Cormeilles-en-Parisis", "note": 4, "texte": "Bon rapport qualité-prix sur la distribution. Délai respecté." },
+              { "auteur": "Sandrine L.", "ville": "Sartrouville", "note": 5, "texte": "Diagnostic offert qui m'a évité un changement de pièce inutile conseillé ailleurs." },
+              { "auteur": "Kévin D.", "ville": "Argenteuil", "note": 5, "texte": "Équipe pro et sympa, atelier propre. Mon garage attitré maintenant." },
+              { "auteur": "Fatou S.", "ville": "Colombes", "note": 5, "texte": "Pneus changés et géométrie au top, voiture qui ne tire plus. Merci." }
+            ],
+            "disclaimer": "Note moyenne issue des avis vérifiés de nos clients."
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un bruit, un voyant, une révision à faire ?",
+            "sousTitre": "Ne laissez pas traîner. Diagnostic offert avant tout devis.",
+            "ctaPrimaire": { "label": "Voir nos prestations", "href": "/prestations" },
+            "ctaSecondaire": { "label": "Appeler le garage", "href": "tel:0139478215" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "prestations",
+      "label": "Prestations",
+      "meta": {
+        "title": "Prestations — entretien & réparation auto à Argenteuil",
+        "description": "Vidange, freinage, distribution, pneus, diagnostic et climatisation toutes marques au Garage Méca Atlas à Argenteuil."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Prestations",
+            "titre": "Ce qu'on prend en charge",
+            "intro": "De l'entretien courant à la panne, un atelier équipé et des pièces de qualité d'origine ou équivalentes.",
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" },
+            "ctaSecondaire": { "label": "Voir les forfaits", "href": "/tarifs" }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "items": [
+              { "icone": "Droplet", "nom": "Vidange & révision", "description": "Huile, filtres et contrôle des 30 points de sécurité.", "priceHint": "dès 89 €" },
+              { "icone": "Disc", "nom": "Freinage", "description": "Plaquettes, disques et purge du liquide de frein.", "priceHint": "dès 119 €" },
+              { "icone": "Settings", "nom": "Distribution", "description": "Courroie ou chaîne, galets et pompe à eau.", "priceHint": "sur devis" },
+              { "icone": "CircleDot", "nom": "Pneumatiques", "description": "Montage, équilibrage et géométrie toutes dimensions.", "priceHint": "dès 25 €" },
+              { "icone": "Gauge", "nom": "Diagnostic électronique", "description": "Lecture des défauts et plan de réparation chiffré.", "badge": "Offert avant devis" },
+              { "icone": "Snowflake", "nom": "Climatisation", "description": "Recharge, contrôle d'étanchéité et désinfection.", "priceHint": "dès 69 €" }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Vos questions",
+            "items": [
+              { "question": "Faut-il prendre rendez-vous ?", "reponse": "C'est conseillé pour garantir un créneau sous 48 h, mais nous acceptons les dépannages selon les disponibilités du jour." },
+              { "question": "Travaillez-vous toutes les marques ?", "reponse": "Oui, nous intervenons sur tous les véhicules légers, essence, diesel et hybrides, toutes marques européennes et asiatiques." },
+              { "question": "Le diagnostic est-il vraiment offert ?", "reponse": "Le diagnostic électronique est offert si la réparation est réalisée chez nous. Sinon, il est facturé 39 €." },
+              { "question": "Puis-je fournir mes propres pièces ?", "reponse": "C'est possible pour certaines opérations, après validation de la compatibilité. La garantie ne couvre alors que la main-d'œuvre." }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Une intervention en tête ?",
+            "sousTitre": "On vous répond vite, avec une estimation claire.",
+            "ctaPrimaire": { "label": "Prendre rendez-vous", "href": "/contact" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tarifs",
+      "label": "Tarifs",
+      "meta": {
+        "title": "Forfaits & tarifs — Garage Méca Atlas Argenteuil",
+        "description": "Forfaits transparents (vidange, freinage, pré-contrôle technique) main-d'œuvre comprise au Garage Méca Atlas à Argenteuil."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Tarifs",
+            "titre": "Des forfaits transparents",
+            "intro": "Prix affichés main-d'œuvre comprise pour les véhicules courants. Devis précis après diagnostic."
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "a-partir-de",
+          "variant": "grille",
+          "content": {
+            "items": [
+              {
+                "nom": "Forfait Vidange",
+                "prix": 89,
+                "unite": "TTC",
+                "description": "Citadines & compactes essence/diesel.",
+                "inclus": ["Huile constructeur", "Filtre à huile", "Contrôle 30 points", "Mise à zéro vidange"]
+              },
+              {
+                "nom": "Forfait Freinage avant",
+                "prix": 119,
+                "unite": "TTC",
+                "populaire": true,
+                "description": "Le plus demandé pour rouler en sécurité.",
+                "inclus": ["Plaquettes avant", "Contrôle disques", "Purge si nécessaire", "Essai routier"]
+              },
+              {
+                "nom": "Forfait Pré-contrôle technique",
+                "prix": 45,
+                "unite": "TTC",
+                "description": "Avant le passage au CT.",
+                "inclus": ["Points de sécurité", "Éclairage & pneus", "Liste des corrections", "Devis chiffré"]
+              }
+            ],
+            "note": "Tarifs indicatifs au 2026. Pièces premium ou utilitaires : supplément sur devis.",
+            "cta": { "label": "Demander un devis précis", "href": "/contact" }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un devis sur mesure ?",
+            "sousTitre": "Décrivez votre besoin, on chiffre précisément après diagnostic.",
+            "ctaPrimaire": { "label": "Prendre rendez-vous", "href": "/contact" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Contact & rendez-vous — Garage Méca Atlas",
+        "description": "Prenez rendez-vous au Garage Méca Atlas à Argenteuil : entretien, réparation et diagnostic toutes marques sous 48 h."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Contact",
+            "titre": "Prenez rendez-vous",
+            "intro": "Décrivez votre besoin, on vous rappelle avec un créneau et une estimation."
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "coordonnees-cartes",
+          "content": {
+            "telephone": "01 39 47 82 15",
+            "email": "contact@meca-atlas.fr",
+            "whatsapp": "06 74 09 51 38",
+            "adresse": "112 avenue Gabriel Péri, 95100 Argenteuil",
+            "horaires": [
+              { "jour": "Lundi – Vendredi", "heures": "8 h – 18 h 30" },
+              { "jour": "Samedi", "heures": "9 h – 12 h" }
+            ],
+            "form": true,
+            "formMode": "demande-intervention",
+            "services": ["Vidange / révision", "Freinage", "Distribution", "Pneus", "Diagnostic", "Climatisation"],
+            "villes": ["Argenteuil", "Bezons", "Cormeilles-en-Parisis", "Sartrouville", "Colombes"],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    }
+  ]
+}

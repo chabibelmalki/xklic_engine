@@ -1,0 +1,291 @@
+{
+  "slug": "atelier-douceur",
+  "theme": "douceur-beige",
+  "stylePack": "maison-premium",
+  "branding": {
+    "tagline": "Pâtisserie de création · Saint-Germain-en-Laye"
+  },
+  "entreprise": {
+    "nom": "Atelier Douceur",
+    "statut": "micro",
+    "siret": "92847163500018",
+    "ape": "10.71D",
+    "apeLabel": "Pâtisserie",
+    "tva": { "regime": "franchise" },
+    "dirigeant": "Camille Verdier",
+    "siege": "8 rue de la Salle, 78100 Saint-Germain-en-Laye"
+  },
+  "seo": {
+    "schemaType": "Bakery",
+    "ville": "Saint-Germain-en-Laye"
+  },
+  "meta": {
+    "title": "Atelier Douceur — Pâtisserie de création & wedding cakes à Saint-Germain-en-Laye",
+    "description": "Atelier Douceur, pâtisserie de création à Saint-Germain-en-Laye (78) : wedding cakes, pièces montées et entremets sur mesure, viennoiseries et macarons à commander en ligne. Créations maison, ingrédients nobles.",
+    "keywords": [
+      "wedding cake Saint-Germain-en-Laye",
+      "pâtisserie sur mesure 78",
+      "macarons Saint-Germain-en-Laye",
+      "pièce montée mariage Yvelines",
+      "commander gâteau en ligne 78"
+    ]
+  },
+  "forms": { "to": "flp.chabib@gmail.com" },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Accueil",
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "plein",
+          "content": {
+            "eyebrow": "Pâtisserie de création · sur rendez-vous",
+            "titre": "L'art du sucre pour",
+            "titreAccent": "vos plus grands jours",
+            "accroche": "Wedding cakes à étages, pièces montées et entremets dessinés avec vous, façonnés maison à partir d'ingrédients nobles. Et chaque matin, viennoiseries et macarons à emporter.",
+            "image": {
+              "url": "https://loremflickr.com/1600/1000/wedding,cake?lock=21",
+              "alt": "Wedding cake à étages décoré de fleurs"
+            },
+            "ctaPrimaire": { "label": "Commander en ligne", "href": "/boutique" },
+            "ctaSecondaire": { "label": "Voir les créations", "href": "/galerie" },
+            "trust": [
+              { "icone": "ChefHat", "label": "Fait maison" },
+              { "icone": "Award", "label": "Sur mesure" },
+              { "icone": "Sparkles", "label": "Dégustation offerte" },
+              { "icone": "Star", "label": "Avis 5 / 5" }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "timeline-verticale",
+          "content": {
+            "eyebrow": "Notre méthode",
+            "titre": "De l'idée au chef-d'œuvre",
+            "items": [
+              { "icone": "MessageCircle", "titre": "On échange", "texte": "Vous nous racontez l'événement, le nombre d'invités et vos envies de parfums et de décor." },
+              { "icone": "PencilRuler", "titre": "On dessine", "texte": "Nous proposons un croquis et un devis détaillé, puis une dégustation pour valider les goûts." },
+              { "icone": "ChefHat", "titre": "On crée", "texte": "La pièce est façonnée maison dans les 48 h précédant le jour J pour une fraîcheur parfaite." },
+              { "icone": "Truck", "titre": "On livre", "texte": "Installation sur place le jour de la cérémonie, prête à être admirée puis dégustée." }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "masonry",
+          "content": {
+            "eyebrow": "Portfolio",
+            "titre": "Créations récentes",
+            "intro": "Un aperçu de pièces réalisées pour des mariages, baptêmes et anniversaires.",
+            "images": [
+              { "image": { "url": "https://loremflickr.com/800/1000/wedding,cake?lock=31", "alt": "Wedding cake fleuri" }, "titre": "Mariage champêtre" },
+              { "image": { "url": "https://loremflickr.com/800/600/pastry?lock=32", "alt": "Pièce montée classique" }, "titre": "Baptême" },
+              { "image": { "url": "https://loremflickr.com/800/800/birthday,cake?lock=33", "alt": "Number cake doré" }, "titre": "Anniversaire" },
+              { "image": { "url": "https://loremflickr.com/800/1000/chocolate,cake?lock=34", "alt": "Entremets miroir" }, "titre": "Entremets chocolat" }
+            ]
+          }
+        },
+        {
+          "type": "avis",
+          "variant": "vedette",
+          "content": {
+            "eyebrow": "Témoignages",
+            "titre": "Ils nous ont fait confiance",
+            "noteGlobale": 5,
+            "nombre": 38,
+            "items": [
+              { "auteur": "Inès & Mathieu", "ville": "Le Vésinet", "note": 5, "texte": "Notre wedding cake était à couper le souffle, et aussi bon que beau. La dégustation en amont nous a mis en confiance, tout était parfait le jour J. Un immense merci." },
+              { "auteur": "Sarah B.", "ville": "Saint-Germain-en-Laye", "note": 5, "texte": "Number cake d'anniversaire sublime et délicieux. Camille a parfaitement saisi le thème." },
+              { "auteur": "Famille Lemoine", "ville": "Marly-le-Roi", "note": 5, "texte": "Pièce montée du baptême magnifique, livrée et installée sans aucun stress pour nous." }
+            ],
+            "disclaimer": "Témoignages publiés avec l'accord de nos clients."
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Une date en tête ?",
+            "sousTitre": "Commandez en ligne, ou réservez un rendez-vous création pour vos grandes occasions.",
+            "ctaPrimaire": { "label": "Voir la boutique", "href": "/boutique" },
+            "ctaSecondaire": { "label": "Nous contacter", "href": "/contact" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "boutique",
+      "label": "Boutique",
+      "meta": {
+        "title": "Boutique en ligne — viennoiseries, macarons & gâteaux",
+        "description": "Commandez en ligne vos viennoiseries, macarons, entremets et gâteaux sur mesure de l'Atelier Douceur. Retrait à Saint-Germain-en-Laye ou livraison dans les Yvelines."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Boutique",
+            "titre": "Commandez vos douceurs en ligne",
+            "intro": "Ajoutez vos envies au panier, choisissez le retrait ou la livraison, et envoyez votre commande. On vous confirme tout sous 24 h."
+          }
+        },
+        {
+          "type": "boutique",
+          "content": {
+            "eyebrow": "Le présentoir",
+            "titre": "Notre carte",
+            "intro": "Prix à l'unité, sauf mention. Les grandes pièces sont sur devis après échange.",
+            "categories": [
+              {
+                "titre": "Viennoiseries",
+                "items": [
+                  { "nom": "Croissant pur beurre", "image": { "url": "https://loremflickr.com/600/450/croissant?lock=61", "alt": "Croissant pur beurre" }, "prix": 1.3, "unite": "pièce" },
+                  { "nom": "Pain au chocolat", "image": { "url": "https://loremflickr.com/600/450/pain,chocolate?lock=62", "alt": "Pain au chocolat" }, "prix": 1.5, "unite": "pièce" },
+                  { "nom": "Chausson aux pommes", "image": { "url": "https://loremflickr.com/600/450/apple,pastry?lock=63", "alt": "Chausson aux pommes" }, "prix": 1.6, "unite": "pièce" }
+                ]
+              },
+              {
+                "titre": "Macarons & petites douceurs",
+                "items": [
+                  { "nom": "Boîte de 6 macarons", "image": { "url": "https://loremflickr.com/600/450/macaron?lock=64", "alt": "Boîte de 6 macarons" }, "prix": 9, "badge": "Best-seller", "populaire": true },
+                  { "nom": "Boîte de 12 macarons", "image": { "url": "https://loremflickr.com/600/450/macarons?lock=65", "alt": "Boîte de 12 macarons" }, "prix": 16 },
+                  { "nom": "Financiers (x6)", "image": { "url": "https://loremflickr.com/600/450/financier,cake?lock=66", "alt": "Financiers" }, "prix": 7 }
+                ]
+              },
+              {
+                "titre": "Gâteaux de l'atelier",
+                "items": [
+                  { "nom": "Tarte du jour (6 parts)", "image": { "url": "https://loremflickr.com/600/450/tart?lock=67", "alt": "Tarte aux fruits" }, "prix": 18 },
+                  { "nom": "Entremets (6 parts)", "image": { "url": "https://loremflickr.com/600/450/entremets,cake?lock=68", "alt": "Entremets" }, "prix": 26 },
+                  { "nom": "Number / layer cake personnalisé", "image": { "url": "https://loremflickr.com/600/450/birthday,cake?lock=69", "alt": "Layer cake personnalisé" }, "prix": "Sur devis", "badge": "Sur commande" }
+                ]
+              },
+              {
+                "titre": "Grandes pièces (sur commande)",
+                "description": "Pour mariages, baptêmes et réceptions — devis après rendez-vous et dégustation.",
+                "items": [
+                  { "nom": "Wedding cake à étages", "image": { "url": "https://loremflickr.com/600/450/wedding,cake?lock=70", "alt": "Wedding cake" }, "prix": "Sur devis", "badge": "Signature" },
+                  { "nom": "Pièce montée en nougatine", "image": { "url": "https://loremflickr.com/600/450/croquembouche?lock=71", "alt": "Pièce montée" }, "prix": "Sur devis" }
+                ]
+              }
+            ],
+            "notes": [
+              "Commandes à passer au moins 48 h à l'avance (10 jours pour les grandes pièces).",
+              "Retrait gratuit à la boutique, livraison possible dans les Yvelines (frais selon distance)."
+            ],
+            "villes": ["Saint-Germain-en-Laye", "Le Vésinet", "Marly-le-Roi", "Chambourcy", "Le Pecq"],
+            "telephone": "07 81 24 63 09",
+            "whatsapp": "07 81 24 63 09",
+            "confidentialiteHref": "/confidentialite",
+            "submitLabel": "Envoyer ma commande"
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              { "question": "Combien de temps à l'avance commander ?", "reponse": "48 h pour la carte courante, et au moins 10 jours pour les gâteaux personnalisés et grandes pièces avec dégustation." },
+              { "question": "Proposez-vous une dégustation ?", "reponse": "Oui, une dégustation est offerte pour toute commande de wedding cake afin de choisir parfums et textures." },
+              { "question": "Gérez-vous les allergies et régimes ?", "reponse": "Nous adaptons nos recettes (sans gluten, sans fruits à coque…) selon vos contraintes, à préciser à la commande." },
+              { "question": "Comment se passe le paiement ?", "reponse": "La commande en ligne est une demande : nous la confirmons sous 24 h, puis le règlement se fait au retrait ou à la livraison." }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un projet sur mesure ?",
+            "sousTitre": "Parlons-en : nous dessinons la pièce de vos rêves.",
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "galerie",
+      "label": "Galerie",
+      "meta": {
+        "title": "Galerie — nos créations pâtissières",
+        "description": "Découvrez les wedding cakes, pièces montées et gâteaux personnalisés réalisés par l'Atelier Douceur à Saint-Germain-en-Laye."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Portfolio",
+            "titre": "Nos créations",
+            "intro": "Une sélection de pièces réalisées pour des mariages, baptêmes et anniversaires."
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "masonry",
+          "content": {
+            "images": [
+              { "image": { "url": "https://loremflickr.com/800/1000/wedding,cake?lock=31", "alt": "Wedding cake fleuri" }, "titre": "Mariage champêtre" },
+              { "image": { "url": "https://loremflickr.com/800/600/pastry?lock=32", "alt": "Pièce montée classique" }, "titre": "Baptême" },
+              { "image": { "url": "https://loremflickr.com/800/800/birthday,cake?lock=33", "alt": "Number cake doré" }, "titre": "Anniversaire" },
+              { "image": { "url": "https://loremflickr.com/800/1000/chocolate,cake?lock=34", "alt": "Entremets miroir" }, "titre": "Entremets chocolat" },
+              { "image": { "url": "https://loremflickr.com/800/600/macaron?lock=35", "alt": "Macarons colorés" }, "titre": "Buffet de mignardises" },
+              { "image": { "url": "https://loremflickr.com/800/800/cupcake?lock=36", "alt": "Layer cake pastel" }, "titre": "Baby-shower" },
+              { "image": { "url": "https://loremflickr.com/800/600/wedding,cake?lock=37", "alt": "Pièce de mariage" }, "titre": "Mariage classique" },
+              { "image": { "url": "https://loremflickr.com/800/1000/cake?lock=38", "alt": "Gâteau personnalisé" }, "titre": "Anniversaire enfant" }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Envie d'une pièce comme celles-ci ?",
+            "sousTitre": "Racontez-nous votre événement, on imagine la création parfaite.",
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" },
+            "ctaSecondaire": { "label": "Voir la boutique", "href": "/boutique" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Contact & devis — Atelier Douceur",
+        "description": "Contactez l'Atelier Douceur à Saint-Germain-en-Laye pour un devis de wedding cake, pièce montée ou gâteau personnalisé."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Contact",
+            "titre": "Parlons de votre événement",
+            "intro": "Décrivez votre projet, nous revenons vers vous sous 24 h avec une proposition."
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "telephone": "07 81 24 63 09",
+            "email": "bonjour@atelier-douceur.fr",
+            "whatsapp": "07 81 24 63 09",
+            "adresse": "8 rue de la Salle, 78100 Saint-Germain-en-Laye",
+            "horaires": [
+              { "jour": "Mardi – Samedi", "heures": "9 h – 19 h" },
+              { "jour": "Dimanche – Lundi", "heures": "Sur rendez-vous" }
+            ],
+            "form": true,
+            "formMode": "devis",
+            "services": ["Wedding cake", "Pièce montée", "Number / layer cake", "Macarons & viennoiseries", "Autre"],
+            "villes": ["Saint-Germain-en-Laye", "Le Vésinet", "Marly-le-Roi", "Chambourcy", "Le Pecq"],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    }
+  ]
+}

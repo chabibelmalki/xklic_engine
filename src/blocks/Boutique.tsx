@@ -225,6 +225,8 @@ export function Boutique({
           name,
           phone,
           email: String(fd.get("email") ?? ""),
+          address: String(fd.get("address") ?? ""),
+          postalCode: String(fd.get("postalCode") ?? ""),
           city: String(fd.get("city") ?? ""),
           message: String(fd.get("message") ?? ""),
           consent: true,
@@ -414,7 +416,7 @@ export function Boutique({
 
               {/* Formulaire de commande intégré */}
               <form id="boutique-form" onSubmit={submit} noValidate className="mt-5 space-y-3 border-t border-border pt-4">
-                <div className="absolute left-[-9999px]" aria-hidden>
+                <div className="sr-only" aria-hidden>
                   <input tabIndex={-1} autoComplete="off" name="company" />
                 </div>
                 <div>
@@ -435,22 +437,26 @@ export function Boutique({
                   </label>
                   <input id="bq-email" name="email" type="email" className={inputClass} placeholder={form.emailPlaceholder} />
                 </div>
-                {c.villes?.length ? (
+                <div>
+                  <label htmlFor="bq-address" className={labelClass}>
+                    {form.addressLabel}
+                  </label>
+                  <input id="bq-address" name="address" autoComplete="street-address" className={inputClass} placeholder={form.addressPlaceholder} />
+                </div>
+                <div className="grid grid-cols-[7.5rem_1fr] gap-3">
+                  <div>
+                    <label htmlFor="bq-postal" className={labelClass}>
+                      {form.postalCodeLabel}
+                    </label>
+                    <input id="bq-postal" name="postalCode" inputMode="numeric" autoComplete="postal-code" className={inputClass} placeholder={form.postalCodePlaceholder} />
+                  </div>
                   <div>
                     <label htmlFor="bq-city" className={labelClass}>
                       {form.cityLabel}
                     </label>
-                    <select id="bq-city" name="city" className={inputClass} defaultValue="">
-                      <option value="">{form.cityPlaceholder}</option>
-                      {c.villes.map((v) => (
-                        <option key={v} value={v}>
-                          {v}
-                        </option>
-                      ))}
-                      <option value={form.otherCity}>{form.otherCity}</option>
-                    </select>
+                    <input id="bq-city" name="city" autoComplete="address-level2" className={inputClass} placeholder={form.communePlaceholder} />
                   </div>
-                ) : null}
+                </div>
                 <div>
                   <label htmlFor="bq-message" className={labelClass}>
                     {form.precisionsLabel}
@@ -481,7 +487,7 @@ export function Boutique({
 
                 {error && <p className="rounded-xl bg-red-50 px-4 py-2.5 text-sm text-red-600">{error}</p>}
 
-                <Button type="submit" size="lg" disabled={submitting} className="w-full">
+                <Button type="submit" size="lg" disabled={submitting} className="h-auto min-h-14 w-full whitespace-normal py-3 text-center leading-tight">
                   {submitting ? (
                     <>
                       <Loader2 className="size-5 animate-spin" /> {form.sending}

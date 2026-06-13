@@ -23,6 +23,22 @@ export type ThemeId =
   | "rose-poudre"
   | (string & {});
 
+/**
+ * STYLE PACK — design system complet (typo + formes + ombres + motion + fond +
+ * palette), au niveau site. Plus riche que `theme` (qui ne pilote que la
+ * couleur). `base` = rendu historique (palette portée par `theme`). Les packs
+ * « signés » embarquent leur propre palette. Absent => `base` (rétro-compat).
+ * `(string & {})` laisse la porte ouverte à de nouveaux packs.
+ */
+export type StylePackId =
+  | "base"
+  | "maison-premium"
+  | "atelier-industriel"
+  | "clair-frais"
+  | "pop-moderne"
+  | "terra-naturel"
+  | (string & {});
+
 // ----------------------------------------------------------------------------
 // Entreprise & statut juridique
 // ----------------------------------------------------------------------------
@@ -607,6 +623,12 @@ export interface SiteConfig {
   /** Identifiant unique = sous-domaine + nom de fichier (config/sites/<slug>.json). */
   slug: string;
   theme: ThemeId;
+  /**
+   * Style pack (design system complet : typo, formes, ombres, motion, fond,
+   * palette). Absent => `base` (la palette vient alors de `theme`). Posé en
+   * `data-pack` sur le conteneur racine (voir SiteRenderer + globals.css).
+   */
+  stylePack?: StylePackId;
   branding: Branding;
   entreprise: Entreprise;
   seo: Seo;

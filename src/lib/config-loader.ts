@@ -42,12 +42,17 @@ function parseFile(fullPath: string): SiteConfig {
   }
 }
 
+// En production (SSG/ISR) les fichiers ne changent pas pendant l'exécution :
+// on met en cache. En développement on relit à chaque appel pour qu'une édition
+// de config soit prise en compte SANS redémarrer le serveur.
+const USE_CACHE = process.env.NODE_ENV === "production";
+
 function readAll(): Map<string, SiteEntry> {
-  if (_cache) return _cache;
+  if (_cache && USE_CACHE) return _cache;
   const map = new Map<string, SiteEntry>();
 
   if (!fs.existsSync(SITES_DIR)) {
-    _cache = map;
+    if (USE_CACHE) _cache = map;
     return map;
   }
 
@@ -87,7 +92,7 @@ function readAll(): Map<string, SiteEntry> {
     map.set(slug, { default: def, languages, byLocale });
   }
 
-  _cache = map;
+  if (USE_CACHE) _cache = map;
   return map;
 }
 

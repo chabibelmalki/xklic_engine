@@ -18,6 +18,23 @@ langue sélectionnée). <slug> dérivé du nom commercial. Config valide contre 
 QUALITÉ
 Même soin que souadtazya : complet, crédible, responsive, SEO propre, contenu 100 % original.
 
+STYLE-AWARE : RENDS CHAQUE SITE DISTINCT (lis catalog.json)
+Deux sites ne doivent PAS se ressembler. La différence vient surtout de la TYPO, du
+LAYOUT et du MOTION — pas que de la couleur. Trois leviers, à varier d'un client à l'autre :
+1. `stylePack` (niveau site) : choisis le pack dont l'ambiance colle au métier
+   (voir catalog.json > stylePacks). Ex. pâtisserie → maison-premium, garage →
+   atelier-industriel, ménage → clair-frais, coach/food → pop-moderne, paysagiste/
+   bien-être → terra-naturel. Le pack porte sa propre palette : `theme` devient
+   secondaire (laisse-le cohérent, ou omets-le).
+2. `variant` (par bloc) : pour CHAQUE bloc, prends une variante dans la curation du
+   pack (catalog.json > stylePacks[].recommendedVariants). Reste dans les variantes
+   recommandées du pack pour ne pas casser l'harmonie. La liste complète des
+   variantes par bloc est dans catalog.json > blocks.
+3. ORDRE & COMPOSITION (`pages[].blocks[]`) : choisis QUELS blocs et dans QUEL ORDRE.
+   Deux clients doivent avoir un squelette différent (pas toujours hero → services →
+   tarifs → avis → contact). Adapte au métier.
+Garde mobile-first, contrastes AA, et le contenu passe toujours par l'i18n.
+
 SI UN BESOIN N'EST PAS COUVERT PAR LE MOTEUR
 Ne bricole jamais. Exemple : une pâtisserie veut afficher ses produits avec photos + prix,
 mais le bloc `tarifs` actuel est pensé pour le ménage et ne convient pas. Dans ce cas :

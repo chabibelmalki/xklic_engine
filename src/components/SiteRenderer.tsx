@@ -1,6 +1,7 @@
 import type { SiteConfig, ContactContent } from "@/types/config";
 import { getBlockComponent } from "@/blocks/catalog";
 import { resolveTheme } from "@/lib/theme";
+import { resolvePack } from "@/lib/packs";
 import { buildJsonLd } from "@/lib/jsonld";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SiteHeader } from "@/components/layout/SiteHeader";
@@ -49,6 +50,7 @@ export function SiteRenderer({
   locale?: string;
 }) {
   const theme = resolveTheme(config.theme);
+  const pack = resolvePack(config.stylePack);
   const current = page ?? getHomePage(config);
   // Coordonnées sourcées sur TOUT le site (la page contact peut être ailleurs).
   const contact = findBlock<ContactContent>(config, "contact")?.content;
@@ -61,6 +63,7 @@ export function SiteRenderer({
   return (
     <div
       data-theme={theme}
+      data-pack={pack}
       lang={htmlLang(locale)}
       dir={localeDir(locale)}
       className="flex min-h-screen flex-col bg-bg text-ink"
@@ -75,7 +78,10 @@ export function SiteRenderer({
         defaultLocale={defaultLocale}
         strings={t}
       />
-      <main className="flex-1">
+      {/* overflow-x-clip : garde-fou anti-débordement horizontal SUR LE CONTENU
+          uniquement. Posé ici (et pas sur <html>/<body>/conteneur racine) pour
+          ne PAS casser le `position: sticky` de l'en-tête, qui vit hors de <main>. */}
+      <main className="flex-1 overflow-x-clip">
         {current.blocks.map((block, i) => {
           const Cmp = getBlockComponent(block.type);
           const isSection =
