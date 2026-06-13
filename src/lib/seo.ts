@@ -3,6 +3,7 @@ import type { SiteConfig, HeroContent, PageHeroContent, Meta, Seo } from "@/type
 import { siteOrigin } from "@/lib/urls";
 import { getHomePage, type ResolvedPage } from "@/lib/pages";
 import { htmlLang, ogLocale, localizedPath } from "@/lib/i18n";
+import { buildIcons } from "@/lib/favicon";
 
 /**
  * Alternates hreflang d'un chemin (relatifs ; `metadataBase` les rend absolus).
@@ -112,6 +113,7 @@ export function buildMetadata(config: SiteConfig, page?: ResolvedPage, locale?: 
     title,
     description,
     keywords: meta.keywords,
+    icons: buildIcons(config),
     alternates: { canonical, languages: localeAlternates(config, p.path) },
     robots: p.noindex ? { index: false, follow: true } : undefined,
     openGraph: {
@@ -141,6 +143,7 @@ export function buildLegalMetadata(config: SiteConfig, locale?: string): Metadat
     metadataBase: new URL(siteOrigin(config)),
     title: `Mentions légales — ${config.entreprise.nom}`,
     description: `Mentions légales de ${config.entreprise.nom} (${config.seo.ville}).`,
+    icons: buildIcons(config),
     alternates: {
       canonical: localizedPath("/mentions-legales", loc, def),
       languages: localeAlternates(config, "/mentions-legales"),
@@ -157,6 +160,7 @@ export function buildConfidentialiteMetadata(config: SiteConfig, locale?: string
     metadataBase: new URL(siteOrigin(config)),
     title: `Politique de confidentialité — ${config.entreprise.nom}`,
     description: `Politique de confidentialité de ${config.entreprise.nom} (${config.seo.ville}).`,
+    icons: buildIcons(config),
     alternates: {
       canonical: localizedPath("/confidentialite", loc, def),
       languages: localeAlternates(config, "/confidentialite"),

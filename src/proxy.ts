@@ -48,8 +48,16 @@ function parseHost(host: string): { sub: string | null; fallbackable: boolean } 
 export function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
-  // Ne jamais réécrire ce qui est déjà ciblé, ni la zone de preview dev.
-  if (pathname.startsWith("/sites/") || pathname.startsWith("/preview")) {
+  // Ne jamais réécrire :
+  //  - /sites (déjà ciblé) ni /preview (zone dev),
+  //  - /api/* : routes GLOBALES (src/app/api/...). Le slug du site voyage dans
+  //    le body (`siteSlug`), pas dans l'URL. Les réécrire vers /sites/<slug>/api
+  //    casserait les formulaires en 404.
+  if (
+    pathname.startsWith("/sites/") ||
+    pathname.startsWith("/preview") ||
+    pathname.startsWith("/api/")
+  ) {
     return NextResponse.next();
   }
 

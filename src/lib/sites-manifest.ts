@@ -6,11 +6,8 @@
 // en amont du rendu sans accès au système de fichiers.
 
 export const SITE_SLUGS: string[] = [
-  "fatima",
-  "garage-test",
   "meca-confiance",
   "patisserie-chabib",
-  "patisserie-test",
   "sanadclean",
 ];
 
