@@ -30,37 +30,6 @@ Une fois validé : tu l'ajoutes au moteur + au catalogue, puis tu l'utilises dan
 
 ----------------------------------------
 FORMULAIRE DU CLIENT :
-SECTION 1 — VOTRE ACTIVITÉ
-- Nom de l'entreprise : MÉCA CONFIANCE
-- Votre métier : garage automobile — entretien et réparation toutes marques, mécanique générale
-- Ville et déplacement : atelier à Cergy (95), les clients viennent au garage ;
-  dépannage/remorquage possible dans tout le Val-d'Oise (~30 km)
-
-SECTION 2 — VOS PRESTATIONS ET PRIX (en vrac)
-Vidange à partir de 69€. Révision complète dès 149€. Plaquettes de frein dès 120€.
-Montage pneus 15€ le pneu. Diagnostic électronique 49€. Recharge clim 79€.
-Pré-contrôle technique offert. Courroie de distribution sur devis. Embrayage sur devis.
-Dépannage et remorquage sur devis.
-Crédit d'impôt / CESU : Non
-
-SECTION 3 — COMMENT VOUS JOINDRE
-- Téléphone : 06 12 34 56 78
-- WhatsApp : même numéro
-- Email : contact@mecaconfiance.fr
-- Adresse : 14 rue de l'Industrie, 95000 Cergy
-- Disponibilités : Lun–Sam 8h–19h
-
-SECTION 4 — VOTRE ENTREPRISE
-- SIRET : 90112233400025  (exemple — la raison sociale SARL, l'APE et le siège remontent via SIRENE)
-
-SECTION 5 — PHOTOS & LOGO
-- Photos : pas de photo
-- Logo : a créer
-
-SECTION 6 — VOS AVIS CLIENTS
-- "Rapide et honnête, devis respecté au centime près. Je ne vais plus ailleurs." — Karim, Cergy
-- "Diagnostic clair, prix justes, équipe sympa. Enfin un garage de confiance." — Sophie, Pontoise
-
-SECTION 7 — LANGUES & STYLE
-- Langues : Français et arabe
-- Ambiance : sérieux et rassurant, plutôt bleu foncé, look pro
+2026-06-12T20:58:55.046Z	Chabib	Patisserie	Osny	les-deux	"Je réalise des pâtisseries sur commande pour vos événements. Pièces montées (choux / nougatine) pour mariages et baptêmes
+  sur devis, à partir de 4€ la part. Gâteaux d'anniversaire personnalisés (layer cake, number cake) sur devis selon le nombre de parts et
+  le décor. Wedding cakes à étages sur devis avec dégustation préalable. Sur place ou en livraison."	[{"id":"1d54827b-dc6d-4bc0-871e-3386c8cab46a","title":"Corne de gazelle","description":"","price":"2euros le kilo","category":"","photos":[{"name":"images.jfif","url":"https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/images-SUwvZ50KLQK16whZispXx5SpVyZbo8.jfif"}]},{"id":"2ac15fe6-b6a3-414d-80cb-e0c835c07c01","title":"croissant","description":"","price":"1.2","category":"","photos":[{"name":"Croissant-Petr_Kratochvil.jpg","url":"https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/Croissant-Petr_Kratochvil-TYolS8YBPDnLiAk5jiRuFp7UFNJpyd.jpg"}]}]	698998869	chabib.elmalki@gmail.com	698998869	17 Rue de Moscou		fr, es, en, ar	rose, feminin		
