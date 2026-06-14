@@ -9,5 +9,7 @@ sync subdomains
 node --env-file=.env.local scripts/sync-domains.mjs --dry-run
 node --env-file=.env.local scripts/sync-domains.mjs
 
-
+sitemap
+npm run sitemaps:sync:dry
+npm run sitemaps:sync
  
