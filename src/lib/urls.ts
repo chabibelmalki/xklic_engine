@@ -1,9 +1,16 @@
 import type { SiteConfig } from "@/types/config";
 
 /**
- * Calcule l'URL canonique (origin) d'un site.
- * Priorité : `config.domain` -> `<slug>.<NEXT_PUBLIC_ROOT_DOMAIN>` -> localhost.
- * En prod, chaque site est servi sur son sous-domaine (voir middleware.ts).
+ * SOURCE DE VÉRITÉ UNIQUE de l'URL publique (origin) d'un site = là où il est
+ * RÉELLEMENT servi. Réutilisée par canonical, hreflang, OpenGraph, sitemap ET
+ * JSON-LD (aucune logique de domaine dupliquée ailleurs).
+ *
+ * RÈGLE :
+ *   - `config.domain` présent  → `https://<domain>`  (domaine perso, voir le
+ *     commentaire de `SiteConfig.domain` : à câbler réellement sur Vercel + DNS) ;
+ *   - sinon                     → `https://<slug>.<NEXT_PUBLIC_ROOT_DOMAIN>`
+ *     (= `<slug>.xklic.com` en prod) ;
+ *   - dev / env absent          → `http://localhost:3000`.
  */
 export function siteOrigin(config: SiteConfig): string {
   if (config.domain) {

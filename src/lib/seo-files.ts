@@ -9,7 +9,7 @@ import { siteOrigin } from "@/lib/urls";
 import { statutLabel } from "@/lib/legal";
 import { formatEUR } from "@/lib/utils";
 import { resolvePages, findBlock } from "@/lib/pages";
-import { localizedPath } from "@/lib/i18n";
+import { localizedPath, htmlLang } from "@/lib/i18n";
 
 /** Pages publiques indexables d'un site (relatives à l'origin) + mentions. */
 function sitePaths(config: SiteConfig): { path: string; priority: string }[] {
@@ -27,23 +27,46 @@ function content<T>(config: SiteConfig, type: string): T | undefined {
   return findBlock<T>(config, type)?.content;
 }
 
-/** sitemap.xml d'un site (toutes les pages × toutes les langues). */
+/**
+ * sitemap.xml d'un site (toutes les pages × toutes les langues). Pour un site
+ * multilingue, chaque `<url>` porte les annotations `xhtml:link rel="alternate"`
+ * hreflang vers TOUTES les versions linguistiques de la page + `x-default`
+ * (cohérent avec le hreflang du <head>). Monolingue → aucune annotation
+ * (comportement inchangé).
+ */
 export function buildSitemapXml(config: SiteConfig): string {
   const origin = siteOrigin(config);
-  // Monolingue → [default] (préfixe vide, comportement inchangé).
   const def = config.i18n?.default ?? "fr";
   const langs = config.i18n?.languages ?? [def];
+  const multi = langs.length > 1;
+  const abs = (lp: string) => (lp === "/" ? origin : `${origin}${lp}`);
+
   const urls = sitePaths(config)
-    .flatMap(({ path, priority }) =>
-      langs.map((lang) => {
-        const lp = localizedPath(path, lang, def);
-        const loc = lp === "/" ? origin : `${origin}${lp}`;
-        return `  <url><loc>${loc}</loc><changefreq>weekly</changefreq><priority>${priority}</priority></url>`;
-      }),
-    )
+    .flatMap(({ path, priority }) => {
+      // Bloc d'alternates partagé par toutes les URLs localisées de CE chemin.
+      const alternates = multi
+        ? [
+            ...langs.map(
+              (l) =>
+                `    <xhtml:link rel="alternate" hreflang="${htmlLang(l)}" href="${abs(localizedPath(path, l, def))}"/>`,
+            ),
+            `    <xhtml:link rel="alternate" hreflang="x-default" href="${abs(localizedPath(path, def, def))}"/>`,
+          ].join("\n")
+        : "";
+      return langs.map((lang) => {
+        const loc = abs(localizedPath(path, lang, def));
+        return `  <url>
+    <loc>${loc}</loc>
+    <changefreq>weekly</changefreq>
+    <priority>${priority}</priority>${alternates ? `\n${alternates}` : ""}
+  </url>`;
+      });
+    })
     .join("\n");
+
+  const xhtmlNs = multi ? ` xmlns:xhtml="http://www.w3.org/1999/xhtml"` : "";
   return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"${xhtmlNs}>
 ${urls}
 </urlset>`;
 }

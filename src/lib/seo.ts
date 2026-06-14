@@ -57,6 +57,38 @@ function heroImageOf(page: ResolvedPage): string | undefined {
   return undefined;
 }
 
+/** 1re URL d'image dans une structure de blocs (ImageRef = objet `{ url }`). */
+function findFirstImageUrl(val: unknown): string | undefined {
+  if (!val || typeof val !== "object") return undefined;
+  if (Array.isArray(val)) {
+    for (const v of val) {
+      const u = findFirstImageUrl(v);
+      if (u) return u;
+    }
+    return undefined;
+  }
+  const o = val as Record<string, unknown>;
+  if (typeof o.url === "string" && /^https?:\/\//.test(o.url)) return o.url;
+  for (const k of Object.keys(o)) {
+    const u = findFirstImageUrl(o[k]);
+    if (u) return u;
+  }
+  return undefined;
+}
+
+/**
+ * Visuel OG d'une page : hero de la page → 1re image de la page (galerie,
+ * produits, services…) → 1re image de l'accueil (le site a en général un visuel
+ * « vitrine »). Garantit un `og:image` dès que le site contient une image.
+ */
+function pageImage(config: SiteConfig, page: ResolvedPage): string | undefined {
+  return (
+    heroImageOf(page) ??
+    findFirstImageUrl(page.blocks) ??
+    findFirstImageUrl(getHomePage(config).blocks)
+  );
+}
+
 function effective(config: SiteConfig, page: ResolvedPage): { meta: Meta; seo: Seo } {
   return {
     meta: { ...config.meta, ...(page.meta ?? {}) },
@@ -104,7 +136,7 @@ export function buildMetadata(config: SiteConfig, page?: ResolvedPage, locale?: 
   const loc = locale ?? def;
   const title = pageTitle(config, p);
   const description = pageDescription(config, p);
-  const image = meta.ogImage || heroImageOf(p) || config.branding.logo;
+  const image = meta.ogImage || pageImage(config, p) || config.branding.logo;
   const canonical = localizedPath(p.path, loc, def);
   const others = (config.i18n?.languages ?? []).filter((l) => l !== loc);
 

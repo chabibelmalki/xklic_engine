@@ -26,10 +26,21 @@ const DEFAULT_LOCALE = "fr";
 
 let _cache: Map<string, SiteEntry> | null = null;
 
+// Rappel (une fois par slug) : un `domain` perso doit être réellement câblé,
+// sinon canonical/hreflang/OG/sitemap pointent vers un domaine qui ne sert pas
+// le site. Voir le commentaire de `SiteConfig.domain`.
+const warnedDomains = new Set<string>();
+
 function normalize(parsed: SiteConfig, slug: string): SiteConfig {
   parsed.slug = slug;
   // Défensif : un site multi-page peut ne pas définir `blocks` au niveau racine.
   if (!Array.isArray(parsed.blocks)) parsed.blocks = [];
+  if (parsed.domain && !warnedDomains.has(slug)) {
+    warnedDomains.add(slug);
+    console.warn(
+      `[config] ${slug} : champ "domain" = "${parsed.domain}". L'URL publique du site sera https://${parsed.domain} — vérifiez que ce domaine est BIEN câblé (Vercel + DNS). Sinon, retirez "domain" pour servir sur ${slug}.<NEXT_PUBLIC_ROOT_DOMAIN>.`,
+    );
+  }
   return parsed;
 }
 

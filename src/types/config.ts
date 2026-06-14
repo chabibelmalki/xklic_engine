@@ -640,8 +640,19 @@ export interface SiteConfig {
   /** Acheminement des formulaires (e-mail / webhook). */
   forms?: FormsConfig;
   /**
-   * Domaine canonique du site (ex. "fatima-menage.fr"). Optionnel : sinon
-   * dérivé de `<slug>.<NEXT_PUBLIC_ROOT_DOMAIN>` pour canonical / sitemap / OG.
+   * Domaine PERSO du site = là où il est RÉELLEMENT servi.
+   *
+   * RÈGLE (voir `siteOrigin` dans lib/urls.ts) : l'URL publique du site est
+   *   - `https://<domain>`                          si ce champ est présent ;
+   *   - `https://<slug>.<NEXT_PUBLIC_ROOT_DOMAIN>`   sinon (ex. `<slug>.xklic.com`).
+   * Cette URL pilote canonical, hreflang, OpenGraph, sitemap ET JSON-LD.
+   *
+   * ⚠️ NE renseigner `domain` QUE lorsqu'un domaine personnalisé est EFFECTIVEMENT
+   * câblé (ajouté au projet Vercel + DNS pointant dessus). Sinon le canonical
+   * pointe vers un domaine qui ne sert pas le site → mauvaise indexation.
+   * Par défaut, laisser ce champ ABSENT : le site vit sur son sous-domaine
+   * `<slug>.<NEXT_PUBLIC_ROOT_DOMAIN>`. Un `domain` présent déclenche un warning
+   * au chargement (rappel qu'il doit être réellement branché).
    */
   domain?: string;
   /**

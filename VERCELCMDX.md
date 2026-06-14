@@ -8,3 +8,6 @@ vercel certs issue "*.xklic.com" --scope elmalkifamily16-2202s-projects
 sync subdomains
 node --env-file=.env.local scripts/sync-domains.mjs --dry-run
 node --env-file=.env.local scripts/sync-domains.mjs
+
+
+ 
