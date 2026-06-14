@@ -1,17 +1,17 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   Plus,
   Minus,
   Check,
   Trash2,
-  Loader2,
   CheckCircle2,
   Phone,
   MessageCircle,
   Info,
-  ArrowDown,
+  ArrowRight,
+  ArrowLeft,
 } from "lucide-react";
 import type {
   ServiceQuoteBuilderContent,
@@ -25,6 +25,7 @@ import { Section, toneForIndex } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
+import { QuoteForm } from "@/components/ui/QuoteForm";
 import { cn, formatEUR, telHref, waHref } from "@/lib/utils";
 
 interface SelLine {
@@ -256,10 +257,6 @@ function CategoryCard({
   );
 }
 
-const labelClass = "block text-sm font-medium text-ink-soft";
-const inputClass =
-  "mt-1.5 w-full rounded-xl border border-border bg-surface px-4 py-2.5 text-sm text-ink shadow-sm outline-none transition-colors placeholder:text-muted-2 focus:border-brand-300 focus:ring-2 focus:ring-brand-100";
-
 /**
  * ServiceQuoteBuilder — « configurateur de devis » pour métiers de SERVICES.
  *
@@ -299,8 +296,10 @@ export function ServiceQuoteBuilder({
   const [withCredit, setWithCredit] = useState(showCredit);
   const [selection, setSelection] = useState<SelLine[]>([]);
   const [done, setDone] = useState(false);
+  const [step, setStep] = useState<1 | 2>(1);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const stepTopRef = useRef<HTMLDivElement>(null);
 
   const rawConf = c.confidentialiteHref ?? "/confidentialite";
   const confidentialiteHref = rawConf.startsWith("http") ? rawConf : `${basePath}${rawConf}`;
@@ -342,9 +341,15 @@ export function ServiceQuoteBuilder({
   const overCeiling = ceiling != null && totals.credit * 12 > ceiling;
   const itemCount = selection.reduce((n, l) => n + l.qty, 0);
 
-  function scrollToForm() {
-    document.getElementById("devis-form")?.scrollIntoView({ behavior: "smooth", block: "center" });
-  }
+  // Si la sélection se vide à l'étape 2, on revient au catalogue.
+  useEffect(() => {
+    if (step === 2 && selection.length === 0) setStep(1);
+  }, [step, selection.length]);
+
+  // À l'arrivée sur l'étape 2, on positionne la vue sur les coordonnées.
+  useEffect(() => {
+    if (step === 2) stepTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [step]);
 
   async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -391,6 +396,7 @@ export function ServiceQuoteBuilder({
         const data = await res.json().catch(() => ({}));
         throw new Error(data.error ?? form.genericError);
       }
+      setStep(1);
       setDone(true);
     } catch (err) {
       setError(err instanceof Error ? err.message : form.genericError);
@@ -398,6 +404,92 @@ export function ServiceQuoteBuilder({
       setSubmitting(false);
     }
   }
+
+  // Récapitulatif réutilisé à l'étape 1 (avec CTA) et à l'étape 2 (contexte).
+  const recapCard = (footer?: React.ReactNode) => (
+    <div className="rounded-theme border border-border bg-surface p-5 shadow-sm">
+      <div className="flex items-center justify-between">
+        <h3 className="font-display text-lg font-bold text-ink">{devis.yourSelection}</h3>
+        <span className="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-bold text-brand-700">
+          {itemCount}
+        </span>
+      </div>
+
+      {selection.length === 0 ? (
+        <p className="mt-4 text-sm text-muted">{devis.addPrompt}</p>
+      ) : (
+        <ul className="mt-4 max-h-64 space-y-2 overflow-y-auto pe-1">
+          {selection.map((l) => (
+            <li key={l.id} className="flex items-start justify-between gap-2 text-sm">
+              <div className="min-w-0">
+                <p className="text-ink">{l.label}</p>
+                <p className="text-xs text-muted">
+                  {l.surDevis || l.billed == null ? devis.onQuote : formatEUR(l.billed * l.qty)}
+                </p>
+              </div>
+              <div className="flex shrink-0 items-center gap-1">
+                <button
+                  type="button"
+                  aria-label={devis.decrease}
+                  onClick={() => setQty(l.id, -1)}
+                  className="grid size-6 place-items-center rounded-full hover:bg-surface-2"
+                >
+                  <Minus className="size-3.5" />
+                </button>
+                <span className="w-5 text-center text-xs font-bold tabular-nums">{l.qty}</span>
+                <button
+                  type="button"
+                  aria-label={devis.increase}
+                  onClick={() => setQty(l.id, 1)}
+                  className="grid size-6 place-items-center rounded-full hover:bg-surface-2"
+                >
+                  <Plus className="size-3.5" />
+                </button>
+                <button
+                  type="button"
+                  aria-label={devis.remove}
+                  onClick={() => removeLine(l.id)}
+                  className="ms-1 grid size-6 place-items-center rounded-full text-muted hover:bg-red-50 hover:text-red-500"
+                >
+                  <Trash2 className="size-3.5" />
+                </button>
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {selection.length > 0 && (
+        <div className="mt-4 space-y-1.5 border-t border-border pt-4 text-sm">
+          <div className="flex justify-between text-muted">
+            <span>{devis.subtotal}</span>
+            <span className="text-ink">{formatEUR(totals.billed)}</span>
+          </div>
+          {withCredit && totals.credit > 0 && (
+            <div className="flex justify-between text-brand-700">
+              <span>{devis.taxCredit} (−{Math.round(creditRate * 100)} %)</span>
+              <span>−{formatEUR(totals.credit)}</span>
+            </div>
+          )}
+          <div className="flex justify-between font-display text-base font-extrabold text-ink">
+            <span>{withCredit ? devis.toPay : devis.total}</span>
+            <span>{formatEUR(totals.net)}</span>
+          </div>
+          {totals.hasDevis && <p className="text-xs text-muted">{devis.quoteItemsNote}</p>}
+          {overCeiling && (
+            <p className="mt-2 flex items-start gap-1.5 rounded-lg bg-accent-50 px-2.5 py-2 text-xs text-accent-600">
+              <Info className="mt-0.5 size-3.5 shrink-0" />
+              {devis.ceilingBefore}
+              {ceiling != null ? formatEUR(ceiling) : ""}
+              {devis.ceilingAfter}
+            </p>
+          )}
+        </div>
+      )}
+
+      {footer}
+    </div>
+  );
 
   return (
     <Section id="devis" tone={tone}>
@@ -407,8 +499,8 @@ export function ServiceQuoteBuilder({
         </Reveal>
       )}
 
-      {/* Bascule crédit d'impôt (masquée pour les configurateurs neutres) */}
-      {showCredit && (
+      {/* Bascule crédit d'impôt (masquée pour les configurateurs neutres) — étape 1 */}
+      {!done && step === 1 && showCredit && (
         <div className="mx-auto mt-10 flex max-w-md items-center rounded-full border border-border bg-surface p-1 shadow-sm">
           {[
             { v: false, label: c.creditLabelOff ?? devis.priceNormal },
@@ -431,10 +523,10 @@ export function ServiceQuoteBuilder({
 
       {/* Barre total épinglée (mobile) — compteur + total, clic = aller au formulaire.
           Laisse la place aux boutons flottants WhatsApp/appel (right-[5.5rem]). */}
-      {!done && selection.length > 0 && (
+      {!done && step === 1 && selection.length > 0 && (
         <button
           type="button"
-          onClick={scrollToForm}
+          onClick={() => setStep(2)}
           aria-label={devis.goToForm}
           className="fixed bottom-5 start-4 end-[5.5rem] z-40 flex items-center justify-between gap-3 rounded-full bg-brand-600 px-5 py-3 text-brand-contrast shadow-xl transition-transform active:scale-95 sm:end-[6rem] lg:hidden"
         >
@@ -446,222 +538,95 @@ export function ServiceQuoteBuilder({
           </span>
           <span className="flex items-center gap-1.5 text-sm font-bold">
             {formatEUR(totals.net)}
-            <ArrowDown className="size-4" />
+            <ArrowRight className="size-4" />
           </span>
         </button>
       )}
 
-      <div className="mt-10 grid gap-8 pb-20 lg:grid-cols-[1fr_360px] lg:pb-0">
-        {/* Catalogue */}
-        <div className="space-y-6">
-          {c.categories.map((cat, i) => (
-            <CategoryCard key={cat.id ?? i} categorie={cat} onAdd={addLine} devis={devis} showCredit={showCredit} />
-          ))}
-          {c.notes?.length ? (
-            <ul className="space-y-1.5 text-sm text-muted">
-              {c.notes.map((n, i) => (
-                <li key={i}>{n}</li>
-              ))}
-            </ul>
-          ) : null}
+      {done ? (
+        /* Confirmation */
+        <div className="mx-auto mt-10 max-w-md rounded-theme border border-brand-200 bg-brand-50/60 p-8 text-center">
+          <span className="mx-auto grid size-14 place-items-center rounded-full bg-brand-600 text-brand-contrast">
+            <CheckCircle2 className="size-7" />
+          </span>
+          <h3 className="mt-4 font-display text-xl font-bold text-ink">{form.quoteSuccessTitle}</h3>
+          <p className="mt-2 text-sm text-muted">{form.quoteSuccessBody}</p>
+          <div className="mt-5 flex flex-col gap-2.5">
+            {c.telephone && (
+              <Button href={telHref(c.telephone)} variant="outline">
+                <Phone className="size-4" /> {c.telephone}
+              </Button>
+            )}
+            {c.whatsapp && (
+              <Button href={waHref(c.whatsapp)} variant="whatsapp">
+                <MessageCircle className="size-4" /> {form.whatsapp}
+              </Button>
+            )}
+          </div>
         </div>
+      ) : step === 1 ? (
+        /* Étape 1 — configurateur + sélection */
+        <div className="mt-10 grid gap-8 pb-20 lg:grid-cols-[1fr_360px] lg:pb-0">
+          <div className="space-y-6">
+            {c.categories.map((cat, i) => (
+              <CategoryCard key={cat.id ?? i} categorie={cat} onAdd={addLine} devis={devis} showCredit={showCredit} />
+            ))}
+            {c.notes?.length ? (
+              <ul className="space-y-1.5 text-sm text-muted">
+                {c.notes.map((n, i) => (
+                  <li key={i}>{n}</li>
+                ))}
+              </ul>
+            ) : null}
+          </div>
 
-        {/* Récapitulatif (sticky en desktop) */}
-        <div className="lg:sticky lg:top-24 lg:self-start">
-          {done ? (
-            <div className="rounded-theme border border-brand-200 bg-brand-50/60 p-8 text-center">
-              <span className="mx-auto grid size-14 place-items-center rounded-full bg-brand-600 text-brand-contrast">
-                <CheckCircle2 className="size-7" />
-              </span>
-              <h3 className="mt-4 font-display text-xl font-bold text-ink">{form.quoteSuccessTitle}</h3>
-              <p className="mt-2 text-sm text-muted">{form.quoteSuccessBody}</p>
-              <div className="mt-5 flex flex-col gap-2.5">
-                {c.telephone && (
-                  <Button href={telHref(c.telephone)} variant="outline">
-                    <Phone className="size-4" /> {c.telephone}
-                  </Button>
-                )}
-                {c.whatsapp && (
-                  <Button href={waHref(c.whatsapp)} variant="whatsapp">
-                    <MessageCircle className="size-4" /> {form.whatsapp}
-                  </Button>
-                )}
-              </div>
-            </div>
-          ) : (
-            <div className="rounded-theme border border-border bg-surface p-5 shadow-sm">
-              <div className="flex items-center justify-between">
-                <h3 className="font-display text-lg font-bold text-ink">{devis.yourSelection}</h3>
-                <span className="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-bold text-brand-700">
-                  {itemCount}
-                </span>
-              </div>
-
-              {selection.length === 0 ? (
-                <p className="mt-4 text-sm text-muted">{devis.addPrompt}</p>
-              ) : (
-                <ul className="mt-4 max-h-64 space-y-2 overflow-y-auto pe-1">
-                  {selection.map((l) => (
-                    <li key={l.id} className="flex items-start justify-between gap-2 text-sm">
-                      <div className="min-w-0">
-                        <p className="text-ink">{l.label}</p>
-                        <p className="text-xs text-muted">
-                          {l.surDevis || l.billed == null
-                            ? devis.onQuote
-                            : formatEUR(l.billed * l.qty)}
-                        </p>
-                      </div>
-                      <div className="flex shrink-0 items-center gap-1">
-                        <button
-                          type="button"
-                          aria-label={devis.decrease}
-                          onClick={() => setQty(l.id, -1)}
-                          className="grid size-6 place-items-center rounded-full hover:bg-surface-2"
-                        >
-                          <Minus className="size-3.5" />
-                        </button>
-                        <span className="w-5 text-center text-xs font-bold tabular-nums">{l.qty}</span>
-                        <button
-                          type="button"
-                          aria-label={devis.increase}
-                          onClick={() => setQty(l.id, 1)}
-                          className="grid size-6 place-items-center rounded-full hover:bg-surface-2"
-                        >
-                          <Plus className="size-3.5" />
-                        </button>
-                        <button
-                          type="button"
-                          aria-label={devis.remove}
-                          onClick={() => removeLine(l.id)}
-                          className="ms-1 grid size-6 place-items-center rounded-full text-muted hover:bg-red-50 hover:text-red-500"
-                        >
-                          <Trash2 className="size-3.5" />
-                        </button>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              )}
-
-              {selection.length > 0 && (
-                <div className="mt-4 space-y-1.5 border-t border-border pt-4 text-sm">
-                  <div className="flex justify-between text-muted">
-                    <span>{devis.subtotal}</span>
-                    <span className="text-ink">{formatEUR(totals.billed)}</span>
-                  </div>
-                  {withCredit && totals.credit > 0 && (
-                    <div className="flex justify-between text-brand-700">
-                      <span>{devis.taxCredit} (−{Math.round(creditRate * 100)} %)</span>
-                      <span>−{formatEUR(totals.credit)}</span>
-                    </div>
-                  )}
-                  <div className="flex justify-between font-display text-base font-extrabold text-ink">
-                    <span>{withCredit ? devis.toPay : devis.total}</span>
-                    <span>{formatEUR(totals.net)}</span>
-                  </div>
-                  {totals.hasDevis && (
-                    <p className="text-xs text-muted">{devis.quoteItemsNote}</p>
-                  )}
-                  {overCeiling && (
-                    <p className="mt-2 flex items-start gap-1.5 rounded-lg bg-accent-50 px-2.5 py-2 text-xs text-accent-600">
-                      <Info className="mt-0.5 size-3.5 shrink-0" />
-                      {devis.ceilingBefore}
-                      {ceiling != null ? formatEUR(ceiling) : ""}
-                      {devis.ceilingAfter}
-                    </p>
-                  )}
-                </div>
-              )}
-
-              {/* Formulaire intégré */}
-              <form id="devis-form" onSubmit={submit} noValidate className="mt-5 space-y-3 border-t border-border pt-4">
-                <div className="sr-only" aria-hidden>
-                  <input tabIndex={-1} autoComplete="off" name="company" />
-                </div>
-                <div>
-                  <label htmlFor="db-name" className={labelClass}>
-                    {form.nameLabel} *
-                  </label>
-                  <input id="db-name" name="name" className={inputClass} placeholder="Prénom Nom" />
-                </div>
-                <div>
-                  <label htmlFor="db-phone" className={labelClass}>
-                    {form.phoneLabel} *
-                  </label>
-                  <input id="db-phone" name="phone" type="tel" className={inputClass} placeholder="06 12 34 56 78" />
-                </div>
-                <div>
-                  <label htmlFor="db-email" className={labelClass}>
-                    {form.emailLabel}
-                  </label>
-                  <input id="db-email" name="email" type="email" className={inputClass} placeholder="vous@exemple.fr" />
-                </div>
-                <div>
-                  <label htmlFor="db-address" className={labelClass}>
-                    {form.addressLabel}
-                  </label>
-                  <input id="db-address" name="address" autoComplete="street-address" className={inputClass} placeholder={form.addressPlaceholder} />
-                </div>
-                <div className="grid grid-cols-[7.5rem_1fr] gap-3">
-                  <div>
-                    <label htmlFor="db-postal" className={labelClass}>
-                      {form.postalCodeLabel}
-                    </label>
-                    <input id="db-postal" name="postalCode" inputMode="numeric" autoComplete="postal-code" className={inputClass} placeholder={form.postalCodePlaceholder} />
-                  </div>
-                  <div>
-                    <label htmlFor="db-city" className={labelClass}>
-                      {form.cityLabel}
-                    </label>
-                    <input id="db-city" name="city" autoComplete="address-level2" className={inputClass} placeholder={form.communePlaceholder} />
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="db-message" className={labelClass}>
-                    {form.precisionsLabel}
-                  </label>
-                  <textarea
-                    id="db-message"
-                    name="message"
-                    rows={3}
-                    className={cn(inputClass, "resize-y")}
-                    placeholder={form.precisionsPlaceholder}
-                  />
-                </div>
-                <label className="flex items-start gap-2 text-xs text-muted">
-                  <input
-                    type="checkbox"
-                    name="consent"
-                    className="mt-0.5 size-4 rounded border-border text-brand-600 focus:ring-brand-500"
-                  />
-                  <span>
-                    {form.consentBefore}
-                    {form.consentMiddle}
-                    <a href={confidentialiteHref} className="font-medium text-brand-700 hover:underline">
-                      {form.consentLink}
-                    </a>
-                    . *
-                  </span>
-                </label>
-
-                {error && (
-                  <p className="rounded-xl bg-red-50 px-4 py-2.5 text-sm text-red-600">{error}</p>
-                )}
-
-                <Button type="submit" size="lg" disabled={submitting} className="h-auto min-h-14 w-full whitespace-normal py-3 text-center leading-tight">
-                  {submitting ? (
-                    <>
-                      <Loader2 className="size-5 animate-spin" /> {form.sending}
-                    </>
-                  ) : (
-                    c.submitLabel ?? form.requestIntervention
-                  )}
+          <div className="lg:sticky lg:top-24 lg:self-start">
+            {recapCard(
+              selection.length > 0 && (
+                <Button
+                  type="button"
+                  onClick={() => setStep(2)}
+                  size="lg"
+                  className="mt-5 h-auto min-h-14 w-full whitespace-normal py-3 text-center leading-tight"
+                >
+                  {c.submitLabel ?? form.requestIntervention}
+                  <ArrowRight className="size-5" />
                 </Button>
-              </form>
-            </div>
-          )}
+              ),
+            )}
+          </div>
         </div>
-      </div>
+      ) : (
+        /* Étape 2 — coordonnées (même bloc) */
+        <div ref={stepTopRef} className="mt-10 scroll-mt-24">
+          <button
+            type="button"
+            onClick={() => setStep(1)}
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-700 hover:text-brand-800"
+          >
+            <ArrowLeft className="size-4" /> {devis.editSelection}
+          </button>
+
+          <div className="mt-6 grid gap-8 lg:grid-cols-[1fr_360px]">
+            <div className="lg:order-1">
+              <div className="rounded-theme border border-border bg-surface p-5 shadow-sm sm:p-6">
+                <h3 className="mb-4 font-display text-lg font-bold text-ink">{devis.finalizeTitle}</h3>
+                <QuoteForm
+                  onSubmit={submit}
+                  submitting={submitting}
+                  error={error}
+                  form={form}
+                  confidentialiteHref={confidentialiteHref}
+                  submitLabel={c.submitLabel ?? form.requestIntervention}
+                  idPrefix="db"
+                />
+              </div>
+            </div>
+
+            <div className="lg:order-2 lg:sticky lg:top-24 lg:self-start">{recapCard()}</div>
+          </div>
+        </div>
+      )}
     </Section>
   );
 }

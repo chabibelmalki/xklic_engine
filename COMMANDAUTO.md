@@ -13,3 +13,7 @@ sitemap
 npm run sitemaps:sync:dry
 npm run sitemaps:sync
  
+
+  npm run deploy            # push prod + attente READY + syncs réels
+  npm run deploy:dry        # aucun push, diffs domaines + sitemaps (sûr)
+  npm run deploy:sync-only  # après un push déjà fait : syncs uniquement

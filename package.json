@@ -12,7 +12,10 @@
     "domains:sync": "node scripts/sync-domains.mjs",
     "domains:sync:dry": "node scripts/sync-domains.mjs --dry-run",
     "sitemaps:sync": "node scripts/sync-sitemaps.mjs",
-    "sitemaps:sync:dry": "node scripts/sync-sitemaps.mjs --dry-run"
+    "sitemaps:sync:dry": "node scripts/sync-sitemaps.mjs --dry-run",
+    "deploy": "node scripts/deploy.mjs",
+    "deploy:dry": "node scripts/deploy.mjs --dry-run",
+    "deploy:sync-only": "node scripts/deploy.mjs --skip-deploy"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",

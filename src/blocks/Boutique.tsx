@@ -1,17 +1,17 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import {
   Plus,
   Minus,
   Trash2,
-  Loader2,
   CheckCircle2,
   Phone,
   MessageCircle,
   ShoppingBag,
-  ArrowDown,
+  ArrowRight,
+  ArrowLeft,
 } from "lucide-react";
 import type { BoutiqueContent, ProduitItem, ProduitCategorie } from "@/types/config";
 import type { UIStrings } from "@/i18n/ui";
@@ -20,6 +20,7 @@ import { Section, toneForIndex } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
+import { QuoteForm } from "@/components/ui/QuoteForm";
 import { cn, formatEUR, telHref, waHref } from "@/lib/utils";
 
 interface SelLine {
@@ -126,10 +127,6 @@ function ProductCard({
   );
 }
 
-const labelClass = "block text-sm font-medium text-ink-soft";
-const inputClass =
-  "mt-1.5 w-full rounded-xl border border-border bg-surface px-4 py-2.5 text-sm text-ink shadow-sm outline-none transition-colors placeholder:text-muted-2 focus:border-brand-300 focus:ring-2 focus:ring-brand-100";
-
 /**
  * Boutique — catalogue façon e-commerce : on ajoute des produits au panier
  * depuis leur carte (photo + prix + bouton « + »), on ajuste les quantités dans
@@ -153,8 +150,10 @@ export function Boutique({
 
   const [selection, setSelection] = useState<SelLine[]>([]);
   const [done, setDone] = useState(false);
+  const [step, setStep] = useState<1 | 2>(1);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const stepTopRef = useRef<HTMLDivElement>(null);
 
   const rawConf = c.confidentialiteHref ?? "/confidentialite";
   const confidentialiteHref = rawConf.startsWith("http") ? rawConf : `${basePath}${rawConf}`;
@@ -199,9 +198,15 @@ export function Boutique({
 
   const itemCount = selection.reduce((n, l) => n + l.qty, 0);
 
-  function scrollToForm() {
-    document.getElementById("boutique-form")?.scrollIntoView({ behavior: "smooth", block: "center" });
-  }
+  // Si la sélection se vide à l'étape 2, on revient au catalogue.
+  useEffect(() => {
+    if (step === 2 && selection.length === 0) setStep(1);
+  }, [step, selection.length]);
+
+  // À l'arrivée sur l'étape 2, on positionne la vue sur les coordonnées.
+  useEffect(() => {
+    if (step === 2) stepTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [step]);
 
   async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -246,6 +251,7 @@ export function Boutique({
         const data = await res.json().catch(() => ({}));
         throw new Error(data.error ?? form.genericError);
       }
+      setStep(1);
       setDone(true);
     } catch (err) {
       setError(err instanceof Error ? err.message : form.genericError);
@@ -253,6 +259,76 @@ export function Boutique({
       setSubmitting(false);
     }
   }
+
+  // Récapitulatif réutilisé à l'étape 1 (avec CTA) et à l'étape 2 (contexte).
+  const recapCard = (footer?: React.ReactNode) => (
+    <div className="rounded-theme border border-border bg-surface p-5 shadow-sm">
+      <div className="flex items-center justify-between">
+        <h3 className="flex items-center gap-2 font-display text-lg font-bold text-ink">
+          <ShoppingBag className="size-5 text-brand-600" /> {devis.yourSelection}
+        </h3>
+        <span className="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-bold text-brand-700">
+          {itemCount}
+        </span>
+      </div>
+
+      {selection.length === 0 ? (
+        <p className="mt-4 text-sm text-muted">{devis.addPrompt}</p>
+      ) : (
+        <ul className="mt-4 max-h-64 space-y-2 overflow-y-auto pe-1">
+          {selection.map((l) => (
+            <li key={l.id} className="flex items-start justify-between gap-2 text-sm">
+              <div className="min-w-0">
+                <p className="text-ink">{l.label}</p>
+                <p className="text-xs text-muted">
+                  {l.surDevis || l.billed == null ? devis.onQuote : formatEUR(l.billed * l.qty)}
+                </p>
+              </div>
+              <div className="flex shrink-0 items-center gap-1">
+                <button
+                  type="button"
+                  aria-label={devis.decrease}
+                  onClick={() => decItem(l.id)}
+                  className="grid size-6 place-items-center rounded-full hover:bg-surface-2"
+                >
+                  <Minus className="size-3.5" />
+                </button>
+                <span className="w-5 text-center text-xs font-bold tabular-nums">{l.qty}</span>
+                <button
+                  type="button"
+                  aria-label={devis.increase}
+                  onClick={() => addItem(Number(l.id.split("::")[0]), { nom: l.label, prix: l.billed })}
+                  className="grid size-6 place-items-center rounded-full hover:bg-surface-2"
+                >
+                  <Plus className="size-3.5" />
+                </button>
+                <button
+                  type="button"
+                  aria-label={devis.remove}
+                  onClick={() => removeLine(l.id)}
+                  className="ms-1 grid size-6 place-items-center rounded-full text-muted hover:bg-red-50 hover:text-red-500"
+                >
+                  <Trash2 className="size-3.5" />
+                </button>
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {selection.length > 0 && (
+        <div className="mt-4 space-y-1.5 border-t border-border pt-4 text-sm">
+          <div className="flex justify-between font-display text-base font-extrabold text-ink">
+            <span>{devis.total}</span>
+            <span>{formatEUR(totals.billed)}</span>
+          </div>
+          {totals.hasDevis && <p className="text-xs text-muted">{devis.quoteItemsNote}</p>}
+        </div>
+      )}
+
+      {footer}
+    </div>
+  );
 
   return (
     <Section id="boutique" tone={toneForIndex(index)}>
@@ -262,11 +338,11 @@ export function Boutique({
         </Reveal>
       )}
 
-      {/* Barre panier épinglée (mobile) */}
-      {!done && selection.length > 0 && (
+      {/* Barre panier épinglée (mobile) — étape 1 uniquement */}
+      {!done && step === 1 && selection.length > 0 && (
         <button
           type="button"
-          onClick={scrollToForm}
+          onClick={() => setStep(2)}
           aria-label={devis.goToForm}
           className="fixed bottom-5 start-4 end-[5.5rem] z-40 flex items-center justify-between gap-3 rounded-full bg-brand-600 px-5 py-3 text-brand-contrast shadow-xl transition-transform active:scale-95 sm:end-[6rem] lg:hidden"
         >
@@ -278,229 +354,122 @@ export function Boutique({
           </span>
           <span className="flex items-center gap-1.5 text-sm font-bold">
             {formatEUR(totals.billed)}
-            <ArrowDown className="size-4" />
+            <ArrowRight className="size-4" />
           </span>
         </button>
       )}
 
-      <div className="mt-10 grid gap-8 pb-20 lg:grid-cols-[1fr_360px] lg:pb-0">
-        {/* Catalogue */}
-        <div className="space-y-10">
-          {categories.map((cat, ci) => (
-            <div key={ci}>
-              {(cat.titre || cat.description) && (
-                <Reveal>
-                  <div className="mb-5 border-s-2 border-brand-200 ps-4">
-                    {cat.titre && (
-                      <h3 className="font-display text-xl font-bold text-ink">{cat.titre}</h3>
-                    )}
-                    {cat.description && <p className="mt-1 text-sm text-muted">{cat.description}</p>}
-                  </div>
-                </Reveal>
-              )}
-              <div className="grid gap-5 sm:grid-cols-2">
-                {cat.items.map((item, ii) => {
-                  const id = itemId(ci, item);
-                  return (
-                    <Reveal key={item.nom} delay={(ii % 2) * 0.05}>
-                      <ProductCard
-                        item={item}
-                        qty={qtyOf(id)}
-                        onAdd={() => addItem(ci, item)}
-                        onDec={() => decItem(id)}
-                        devis={devis}
-                      />
-                    </Reveal>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
-          {c.notes?.length ? (
-            <ul className="space-y-1.5 text-sm text-muted">
-              {c.notes.map((n, i) => (
-                <li key={i}>{n}</li>
-              ))}
-            </ul>
-          ) : null}
+      {done ? (
+        /* Confirmation */
+        <div className="mx-auto mt-10 max-w-md rounded-theme border border-brand-200 bg-brand-50/60 p-8 text-center">
+          <span className="mx-auto grid size-14 place-items-center rounded-full bg-brand-600 text-brand-contrast">
+            <CheckCircle2 className="size-7" />
+          </span>
+          <h3 className="mt-4 font-display text-xl font-bold text-ink">{form.quoteSuccessTitle}</h3>
+          <p className="mt-2 text-sm text-muted">{form.quoteSuccessBody}</p>
+          <div className="mt-5 flex flex-col gap-2.5">
+            {c.telephone && (
+              <Button href={telHref(c.telephone)} variant="outline">
+                <Phone className="size-4" /> {c.telephone}
+              </Button>
+            )}
+            {c.whatsapp && (
+              <Button href={waHref(c.whatsapp)} variant="whatsapp">
+                <MessageCircle className="size-4" /> {form.whatsapp}
+              </Button>
+            )}
+          </div>
         </div>
-
-        {/* Panier (sticky en desktop) */}
-        <div className="lg:sticky lg:top-24 lg:self-start">
-          {done ? (
-            <div className="rounded-theme border border-brand-200 bg-brand-50/60 p-8 text-center">
-              <span className="mx-auto grid size-14 place-items-center rounded-full bg-brand-600 text-brand-contrast">
-                <CheckCircle2 className="size-7" />
-              </span>
-              <h3 className="mt-4 font-display text-xl font-bold text-ink">{form.quoteSuccessTitle}</h3>
-              <p className="mt-2 text-sm text-muted">{form.quoteSuccessBody}</p>
-              <div className="mt-5 flex flex-col gap-2.5">
-                {c.telephone && (
-                  <Button href={telHref(c.telephone)} variant="outline">
-                    <Phone className="size-4" /> {c.telephone}
-                  </Button>
+      ) : step === 1 ? (
+        /* Étape 1 — catalogue + sélection */
+        <div className="mt-10 grid gap-8 pb-20 lg:grid-cols-[1fr_360px] lg:pb-0">
+          <div className="space-y-10">
+            {categories.map((cat, ci) => (
+              <div key={ci}>
+                {(cat.titre || cat.description) && (
+                  <Reveal>
+                    <div className="mb-5 border-s-2 border-brand-200 ps-4">
+                      {cat.titre && (
+                        <h3 className="font-display text-xl font-bold text-ink">{cat.titre}</h3>
+                      )}
+                      {cat.description && <p className="mt-1 text-sm text-muted">{cat.description}</p>}
+                    </div>
+                  </Reveal>
                 )}
-                {c.whatsapp && (
-                  <Button href={waHref(c.whatsapp)} variant="whatsapp">
-                    <MessageCircle className="size-4" /> {form.whatsapp}
-                  </Button>
-                )}
+                <div className="grid gap-5 sm:grid-cols-2">
+                  {cat.items.map((item, ii) => {
+                    const id = itemId(ci, item);
+                    return (
+                      <Reveal key={item.nom} delay={(ii % 2) * 0.05}>
+                        <ProductCard
+                          item={item}
+                          qty={qtyOf(id)}
+                          onAdd={() => addItem(ci, item)}
+                          onDec={() => decItem(id)}
+                          devis={devis}
+                        />
+                      </Reveal>
+                    );
+                  })}
+                </div>
               </div>
-            </div>
-          ) : (
-            <div className="rounded-theme border border-border bg-surface p-5 shadow-sm">
-              <div className="flex items-center justify-between">
-                <h3 className="flex items-center gap-2 font-display text-lg font-bold text-ink">
-                  <ShoppingBag className="size-5 text-brand-600" /> {devis.yourSelection}
-                </h3>
-                <span className="rounded-full bg-brand-50 px-2.5 py-0.5 text-xs font-bold text-brand-700">
-                  {itemCount}
-                </span>
-              </div>
+            ))}
+            {c.notes?.length ? (
+              <ul className="space-y-1.5 text-sm text-muted">
+                {c.notes.map((n, i) => (
+                  <li key={i}>{n}</li>
+                ))}
+              </ul>
+            ) : null}
+          </div>
 
-              {selection.length === 0 ? (
-                <p className="mt-4 text-sm text-muted">{devis.addPrompt}</p>
-              ) : (
-                <ul className="mt-4 max-h-64 space-y-2 overflow-y-auto pe-1">
-                  {selection.map((l) => (
-                    <li key={l.id} className="flex items-start justify-between gap-2 text-sm">
-                      <div className="min-w-0">
-                        <p className="text-ink">{l.label}</p>
-                        <p className="text-xs text-muted">
-                          {l.surDevis || l.billed == null
-                            ? devis.onQuote
-                            : formatEUR(l.billed * l.qty)}
-                        </p>
-                      </div>
-                      <div className="flex shrink-0 items-center gap-1">
-                        <button
-                          type="button"
-                          aria-label={devis.decrease}
-                          onClick={() => decItem(l.id)}
-                          className="grid size-6 place-items-center rounded-full hover:bg-surface-2"
-                        >
-                          <Minus className="size-3.5" />
-                        </button>
-                        <span className="w-5 text-center text-xs font-bold tabular-nums">{l.qty}</span>
-                        <button
-                          type="button"
-                          aria-label={devis.increase}
-                          onClick={() => addItem(Number(l.id.split("::")[0]), { nom: l.label, prix: l.billed })}
-                          className="grid size-6 place-items-center rounded-full hover:bg-surface-2"
-                        >
-                          <Plus className="size-3.5" />
-                        </button>
-                        <button
-                          type="button"
-                          aria-label={devis.remove}
-                          onClick={() => removeLine(l.id)}
-                          className="ms-1 grid size-6 place-items-center rounded-full text-muted hover:bg-red-50 hover:text-red-500"
-                        >
-                          <Trash2 className="size-3.5" />
-                        </button>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              )}
-
-              {selection.length > 0 && (
-                <div className="mt-4 space-y-1.5 border-t border-border pt-4 text-sm">
-                  <div className="flex justify-between font-display text-base font-extrabold text-ink">
-                    <span>{devis.total}</span>
-                    <span>{formatEUR(totals.billed)}</span>
-                  </div>
-                  {totals.hasDevis && <p className="text-xs text-muted">{devis.quoteItemsNote}</p>}
-                </div>
-              )}
-
-              {/* Formulaire de commande intégré */}
-              <form id="boutique-form" onSubmit={submit} noValidate className="mt-5 space-y-3 border-t border-border pt-4">
-                <div className="sr-only" aria-hidden>
-                  <input tabIndex={-1} autoComplete="off" name="company" />
-                </div>
-                <div>
-                  <label htmlFor="bq-name" className={labelClass}>
-                    {form.nameLabel} *
-                  </label>
-                  <input id="bq-name" name="name" className={inputClass} placeholder={form.namePlaceholder} />
-                </div>
-                <div>
-                  <label htmlFor="bq-phone" className={labelClass}>
-                    {form.phoneLabel} *
-                  </label>
-                  <input id="bq-phone" name="phone" type="tel" className={inputClass} placeholder={form.phonePlaceholder} />
-                </div>
-                <div>
-                  <label htmlFor="bq-email" className={labelClass}>
-                    {form.emailLabel}
-                  </label>
-                  <input id="bq-email" name="email" type="email" className={inputClass} placeholder={form.emailPlaceholder} />
-                </div>
-                <div>
-                  <label htmlFor="bq-address" className={labelClass}>
-                    {form.addressLabel}
-                  </label>
-                  <input id="bq-address" name="address" autoComplete="street-address" className={inputClass} placeholder={form.addressPlaceholder} />
-                </div>
-                <div className="grid grid-cols-[7.5rem_1fr] gap-3">
-                  <div>
-                    <label htmlFor="bq-postal" className={labelClass}>
-                      {form.postalCodeLabel}
-                    </label>
-                    <input id="bq-postal" name="postalCode" inputMode="numeric" autoComplete="postal-code" className={inputClass} placeholder={form.postalCodePlaceholder} />
-                  </div>
-                  <div>
-                    <label htmlFor="bq-city" className={labelClass}>
-                      {form.cityLabel}
-                    </label>
-                    <input id="bq-city" name="city" autoComplete="address-level2" className={inputClass} placeholder={form.communePlaceholder} />
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="bq-message" className={labelClass}>
-                    {form.precisionsLabel}
-                  </label>
-                  <textarea
-                    id="bq-message"
-                    name="message"
-                    rows={3}
-                    className={cn(inputClass, "resize-y")}
-                    placeholder={form.precisionsPlaceholder}
-                  />
-                </div>
-                <label className="flex items-start gap-2 text-xs text-muted">
-                  <input
-                    type="checkbox"
-                    name="consent"
-                    className="mt-0.5 size-4 rounded border-border text-brand-600 focus:ring-brand-500"
-                  />
-                  <span>
-                    {form.consentBefore}
-                    {form.consentMiddle}
-                    <a href={confidentialiteHref} className="font-medium text-brand-700 hover:underline">
-                      {form.consentLink}
-                    </a>
-                    . *
-                  </span>
-                </label>
-
-                {error && <p className="rounded-xl bg-red-50 px-4 py-2.5 text-sm text-red-600">{error}</p>}
-
-                <Button type="submit" size="lg" disabled={submitting} className="h-auto min-h-14 w-full whitespace-normal py-3 text-center leading-tight">
-                  {submitting ? (
-                    <>
-                      <Loader2 className="size-5 animate-spin" /> {form.sending}
-                    </>
-                  ) : (
-                    c.submitLabel ?? form.submitDevis
-                  )}
+          <div className="lg:sticky lg:top-24 lg:self-start">
+            {recapCard(
+              selection.length > 0 && (
+                <Button
+                  type="button"
+                  onClick={() => setStep(2)}
+                  size="lg"
+                  className="mt-5 h-auto min-h-14 w-full whitespace-normal py-3 text-center leading-tight"
+                >
+                  {c.submitLabel ?? form.submitDevis}
+                  <ArrowRight className="size-5" />
                 </Button>
-              </form>
-            </div>
-          )}
+              ),
+            )}
+          </div>
         </div>
-      </div>
+      ) : (
+        /* Étape 2 — coordonnées (même bloc) */
+        <div ref={stepTopRef} className="mt-10 scroll-mt-24">
+          <button
+            type="button"
+            onClick={() => setStep(1)}
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-700 hover:text-brand-800"
+          >
+            <ArrowLeft className="size-4" /> {devis.editSelection}
+          </button>
+
+          <div className="mt-6 grid gap-8 lg:grid-cols-[1fr_360px]">
+            <div className="lg:order-1">
+              <div className="rounded-theme border border-border bg-surface p-5 shadow-sm sm:p-6">
+                <h3 className="mb-4 font-display text-lg font-bold text-ink">{devis.finalizeTitle}</h3>
+                <QuoteForm
+                  onSubmit={submit}
+                  submitting={submitting}
+                  error={error}
+                  form={form}
+                  confidentialiteHref={confidentialiteHref}
+                  submitLabel={c.submitLabel ?? form.submitDevis}
+                  idPrefix="bq"
+                />
+              </div>
+            </div>
+
+            <div className="lg:order-2 lg:sticky lg:top-24 lg:self-start">{recapCard()}</div>
+          </div>
+        </div>
+      )}
     </Section>
   );
 }
