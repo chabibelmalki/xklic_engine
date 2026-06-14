@@ -10,6 +10,7 @@
     { "platform": "google", "url": "https://g.page/garage-meca-atlas" },
     { "platform": "whatsapp", "url": "06 74 09 51 38" }
   ],
+  "googleReviewUrl": "https://search.google.com/local/writereview?placeid=ChIJexampleMecaAtlas",
   "entreprise": {
     "nom": "Garage Méca Atlas",
     "statut": "SARL",

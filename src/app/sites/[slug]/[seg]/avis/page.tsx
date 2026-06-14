@@ -1,0 +1,50 @@
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { getConfig, listSlugs, siteLocales, defaultLocale } from "@/lib/config-loader";
+import { AvisPage } from "@/components/AvisPage";
+import { buildAvisMetadata } from "@/lib/seo";
+import { isLocale, buildLocaleBasePath } from "@/lib/i18n";
+
+/** Avis en langue non-défaut d'un site tenant : "/sites/<slug>/en/avis". */
+export const dynamicParams = false;
+export const revalidate = 3600;
+
+export function generateStaticParams() {
+  return listSlugs().flatMap((slug) => {
+    if (!getConfig(slug)?.googleReviewUrl) return [];
+    const def = defaultLocale(slug);
+    return siteLocales(slug)
+      .filter((l) => l !== def)
+      .map((seg) => ({ slug, seg }));
+  });
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string; seg: string }>;
+}): Promise<Metadata> {
+  const { slug, seg } = await params;
+  if (!isLocale(seg, siteLocales(slug), defaultLocale(slug))) return {};
+  const cfg = getConfig(slug, seg);
+  return cfg?.googleReviewUrl ? buildAvisMetadata(cfg, seg) : {};
+}
+
+export default async function TenantLocaleAvis({
+  params,
+}: {
+  params: Promise<{ slug: string; seg: string }>;
+}) {
+  const { slug, seg } = await params;
+  if (!isLocale(seg, siteLocales(slug), defaultLocale(slug))) notFound();
+  const cfg = getConfig(slug, seg);
+  if (!cfg?.googleReviewUrl) notFound();
+  return (
+    <AvisPage
+      config={cfg}
+      reviewUrl={cfg.googleReviewUrl}
+      locale={seg}
+      basePath={buildLocaleBasePath("", seg, defaultLocale(slug))}
+    />
+  );
+}

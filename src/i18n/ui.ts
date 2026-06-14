@@ -112,6 +112,16 @@ export const UI = {
     },
     avis: {
       defaultTitle: "Ils nous font confiance",
+      leaveReview: "Laisser un avis",
+      pageTitle: "Votre avis compte",
+      pageIntro:
+        "Votre retour nous aide à nous améliorer et guide d'autres clients. Laissez-nous un avis en un clic, ou scannez le QR code.",
+      openGoogle: "Laisser un avis sur Google",
+      orScan: "Ou scannez ce code",
+      scanCaption: "Scannez pour laisser votre avis",
+      scanHint: "Ouvrez l'appareil photo de votre téléphone et visez le QR code.",
+      thanks: "Merci pour votre confiance",
+      metaDescription: "Laissez votre avis sur Google en un clic, ou scannez le QR code.",
     },
     tarifs: {
       defaultTitle: "Nos tarifs",
@@ -259,6 +269,16 @@ export const UI = {
     },
     avis: {
       defaultTitle: "They trust us",
+      leaveReview: "Leave a review",
+      pageTitle: "Your review matters",
+      pageIntro:
+        "Your feedback helps us improve and guides other customers. Leave us a review in one click, or scan the QR code.",
+      openGoogle: "Leave a review on Google",
+      orScan: "Or scan this code",
+      scanCaption: "Scan to leave your review",
+      scanHint: "Open your phone camera and point it at the QR code.",
+      thanks: "Thank you for your trust",
+      metaDescription: "Leave your Google review in one click, or scan the QR code.",
     },
     tarifs: {
       defaultTitle: "Our pricing",
@@ -406,6 +426,16 @@ export const UI = {
     },
     avis: {
       defaultTitle: "يثقون بنا",
+      leaveReview: "اترك تقييمًا",
+      pageTitle: "رأيك يهمّنا",
+      pageIntro:
+        "ملاحظاتك تساعدنا على التحسّن وتوجّه العملاء الآخرين. اترك لنا تقييمًا بنقرة واحدة، أو امسح رمز الاستجابة السريعة.",
+      openGoogle: "اترك تقييمًا على Google",
+      orScan: "أو امسح هذا الرمز",
+      scanCaption: "امسح لترك تقييمك",
+      scanHint: "افتح كاميرا هاتفك ووجّهها نحو رمز QR.",
+      thanks: "شكرًا لثقتكم",
+      metaDescription: "اترك تقييمك على Google بنقرة واحدة، أو امسح رمز QR.",
     },
     tarifs: {
       defaultTitle: "أسعارنا",
@@ -553,6 +583,16 @@ export const UI = {
     },
     avis: {
       defaultTitle: "Confían en nosotros",
+      leaveReview: "Dejar una opinión",
+      pageTitle: "Tu opinión cuenta",
+      pageIntro:
+        "Tu opinión nos ayuda a mejorar y orienta a otros clientes. Déjanos una reseña en un clic, o escanea el código QR.",
+      openGoogle: "Dejar una opinión en Google",
+      orScan: "O escanea este código",
+      scanCaption: "Escanea para dejar tu opinión",
+      scanHint: "Abre la cámara de tu teléfono y apúntala al código QR.",
+      thanks: "Gracias por tu confianza",
+      metaDescription: "Deja tu opinión en Google en un clic, o escanea el código QR.",
     },
     tarifs: {
       defaultTitle: "Nuestros precios",

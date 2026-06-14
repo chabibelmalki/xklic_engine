@@ -4,6 +4,7 @@ import { siteOrigin } from "@/lib/urls";
 import { getHomePage, type ResolvedPage } from "@/lib/pages";
 import { htmlLang, ogLocale, localizedPath } from "@/lib/i18n";
 import { buildIcons } from "@/lib/favicon";
+import { ui } from "@/i18n/ui";
 
 /**
  * Alternates hreflang d'un chemin (relatifs ; `metadataBase` les rend absolus).
@@ -198,5 +199,22 @@ export function buildConfidentialiteMetadata(config: SiteConfig, locale?: string
       languages: localeAlternates(config, "/confidentialite"),
     },
     robots: { index: false, follow: true },
+  };
+}
+
+/** Métadonnées de la page « Laissez un avis » d'un site (localisée). */
+export function buildAvisMetadata(config: SiteConfig, locale?: string): Metadata {
+  const def = config.i18n?.default ?? "fr";
+  const loc = locale ?? def;
+  const t = ui(loc);
+  return {
+    metadataBase: new URL(siteOrigin(config)),
+    title: `${t.avis.pageTitle} — ${config.entreprise.nom}`,
+    description: t.avis.metaDescription,
+    icons: buildIcons(config),
+    alternates: {
+      canonical: localizedPath("/avis", loc, def),
+      languages: localeAlternates(config, "/avis"),
+    },
   };
 }

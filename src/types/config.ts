@@ -661,6 +661,13 @@ export interface SiteConfig {
    * URLs dans toutes les locales. Absent / vide => aucune icône affichée.
    */
   social?: SocialLink[];
+  /**
+   * Lien « Laissez un avis » Google (page d'avis du client, ex.
+   * `https://g.page/r/<id>/review` ou `https://search.google.com/local/writereview?placeid=<id>`).
+   * ABSENT => la fonctionnalité avis est ENTIÈREMENT masquée (aucun bouton dans le
+   * hero, page `/avis` en 404). Même valeur dans toutes les locales.
+   */
+  googleReviewUrl?: string;
   entreprise: Entreprise;
   seo: Seo;
   meta: Meta;

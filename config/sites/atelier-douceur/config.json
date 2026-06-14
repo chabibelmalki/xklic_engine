@@ -11,6 +11,7 @@
     { "platform": "tiktok", "url": "https://tiktok.com/@atelier.douceur" },
     { "platform": "whatsapp", "url": "07 81 24 63 09" }
   ],
+  "googleReviewUrl": "https://search.google.com/local/writereview?placeid=ChIJexampleAtelierDouceur",
   "entreprise": {
     "nom": "Atelier Douceur",
     "statut": "micro",
