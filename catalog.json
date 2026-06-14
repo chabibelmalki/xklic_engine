@@ -122,5 +122,21 @@
       { "type": "cta", "role": "Bande d'appel à l'action.", "variants": ["bande (carte dégradée arrondie, défaut)", "encadre (carte claire bordée, sobre)", "plein (section dégradée pleine largeur)"] },
       { "type": "contact", "role": "Coordonnées + formulaire opérationnel (POST /api/contact).", "modes": ["simple", "demande-intervention", "devis", "contact"], "variants": ["split-form-carte (infos + formulaire, défaut)", "coordonnees-cartes (cartes de coordonnées)", "centre (colonne centrée)"] }
     ]
+  },
+
+  "social": {
+    "$role": "Champ `social` au niveau site : liste des réseaux du client. Affiché en icônes dans le footer (et dans le hero si `hero.showSocial: true`) + injecté en `sameAs` dans le JSON-LD LocalBusiness (sauf whatsapp). Mêmes URLs dans toutes les locales. Absent/vide => rien affiché.",
+    "shape": "social: [{ platform, url, label? }]",
+    "platforms": ["facebook", "instagram", "tiktok", "linkedin", "whatsapp", "youtube", "x", "google", "(autre → icône globe générique)"],
+    "rules": [
+      "url = lien public du profil (https). Un domaine sans protocole est toléré.",
+      "whatsapp : url accepte une URL wa.me OU un simple NUMÉRO (converti en lien wa.me).",
+      "Ne remplir que les réseaux réellement fournis par le brief d'onboarding ; ne rien inventer.",
+      "Pour afficher les icônes dans le hero : ajouter `showSocial: true` au content du bloc hero."
+    ],
+    "example": [
+      { "platform": "instagram", "url": "https://instagram.com/atelier.douceur" },
+      { "platform": "whatsapp", "url": "07 81 24 63 09" }
+    ]
   }
 }

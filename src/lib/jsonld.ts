@@ -7,6 +7,7 @@ import type {
 } from "@/types/config";
 import { siteOrigin } from "@/lib/urls";
 import { findBlock } from "@/lib/pages";
+import { socialSameAs } from "@/lib/social";
 
 /**
  * JSON-LD par site. Le `@type` du LocalBusiness vient de `seo.schemaType`
@@ -54,6 +55,10 @@ export function buildJsonLd(config: SiteConfig): object[] {
   if (contact?.email) business.email = contact.email;
   if (e.siret) business.vatID = e.tva.numero;
   if (e.siret) business.identifier = e.siret;
+
+  // Profils sociaux du client -> sameAs (renforce l'entité dans le Knowledge Graph).
+  const sameAs = socialSameAs(config);
+  if (sameAs.length) business.sameAs = sameAs;
 
   // Zone d'intervention -> areaServed
   if (zone && zoneBlock?.mode !== "aucune") {

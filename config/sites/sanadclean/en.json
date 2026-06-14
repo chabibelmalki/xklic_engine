@@ -5,6 +5,9 @@
   "branding": {
     "tagline": "Cleaning · Nîmes"
   },
+  "social": [
+    { "platform": "tiktok", "url": "https://www.tiktok.com/@souadtazya1" }
+  ],
   "entreprise": {
     "nom": "SANAD CLEAN",
     "statut": "EI",

@@ -5,6 +5,11 @@
   "branding": {
     "tagline": "Garage multimarque · Argenteuil"
   },
+  "social": [
+    { "platform": "facebook", "url": "https://facebook.com/garagemecaatlas" },
+    { "platform": "google", "url": "https://g.page/garage-meca-atlas" },
+    { "platform": "whatsapp", "url": "06 74 09 51 38" }
+  ],
   "entreprise": {
     "nom": "Garage Méca Atlas",
     "statut": "SARL",

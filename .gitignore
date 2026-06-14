@@ -44,3 +44,9 @@ next-env.d.ts
 server.log
 *.log
 .claude/settings.local.json
+
+# clé(s) de compte de service Google (GSC_SERVICE_ACCOUNT_KEY) — JAMAIS commité
+gsc-service-account*.json
+*-service-account*.json
+gsc-service-account.json
+xklic-499414-f1d6dc73d4a5.json

@@ -8,6 +8,8 @@ import { Badge } from "@/components/ui/Badge";
 import { Reveal } from "@/components/ui/Reveal";
 import { Icon } from "@/components/ui/Icon";
 import { withBase } from "@/lib/utils";
+import { resolveSocials } from "@/lib/social";
+import { SocialLinks } from "@/components/layout/SocialLinks";
 
 /**
  * Hero. variant : "carte" (texte + carte de prix flottante) · "split" (texte +
@@ -16,12 +18,30 @@ import { withBase } from "@/lib/utils";
  * porte la ville (SEO local) : si le titre ne la contient pas et qu'aucun accent
  * n'est fourni, on ajoute " à <ville>".
  */
-export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroContent>) {
+export function Hero({ block, config, basePath = "", strings }: BlockComponentProps<HeroContent>) {
   const c = block.content;
   const variant = block.variant ?? (c.card ? "carte" : c.image ? "split" : "centre");
   const ville = config.seo.ville;
   const titleHasVille = ville && c.titre.toLowerCase().includes(ville.toLowerCase());
   const showVilleSuffix = !c.titreAccent && !titleHasVille;
+
+  // Icônes réseaux dans le hero (optionnel, piloté par `content.showSocial`).
+  const socials = c.showSocial ? resolveSocials(config) : [];
+  const socialRow = (opts: { onDark?: boolean; center?: boolean } = {}) =>
+    socials.length > 0 ? (
+      <Reveal delay={0.25}>
+        <SocialLinks
+          socials={socials}
+          className={opts.center ? "mt-8 justify-center" : "mt-8"}
+          ariaLabel={strings.footer.social}
+          linkClassName={
+            opts.onDark
+              ? "size-10 bg-white/15 text-white hover:bg-white/25"
+              : "size-10 bg-surface text-ink-soft ring-1 ring-border hover:text-brand-700"
+          }
+        />
+      </Reveal>
+    ) : null;
 
   const heading = (
     <h1 className="pack-heading font-display text-4xl font-extrabold leading-[1.07] tracking-tight text-ink sm:text-5xl lg:text-6xl">
@@ -94,6 +114,7 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
         </Reveal>
       )}
       <Reveal delay={0.2}>{trust}</Reveal>
+      {socialRow()}
     </div>
   );
 
@@ -136,6 +157,7 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
                 </ul>
               </Reveal>
             ) : null}
+            {socialRow({ center: true })}
           </div>
         </Container>
       </header>
@@ -227,6 +249,7 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
                 </ul>
               </Reveal>
             ) : null}
+            {socialRow({ onDark: true })}
           </div>
         </Container>
       </header>

@@ -113,6 +113,30 @@ export interface Meta {
   keywords?: string[];
 }
 
+/** Plateformes sociales reconnues (icône dédiée). Élargi par `(string & {})`. */
+export type SocialPlatform =
+  | "facebook"
+  | "instagram"
+  | "tiktok"
+  | "linkedin"
+  | "whatsapp"
+  | "youtube"
+  | "x"
+  | "google"
+  | (string & {});
+
+/**
+ * Un réseau social du client. `url` = lien public du profil. Pour `whatsapp`,
+ * `url` accepte soit une URL `wa.me`, soit un NUMÉRO (converti en lien wa.me).
+ * Une plateforme inconnue dégrade sur une icône générique (globe).
+ */
+export interface SocialLink {
+  platform: SocialPlatform;
+  url: string;
+  /** Libellé d'accessibilité (défaut : nom de la plateforme). */
+  label?: string;
+}
+
 export interface Branding {
   /** URL du logo (object storage). */
   logo?: string;
@@ -177,6 +201,8 @@ export interface HeroContent {
   badges?: string[];
   ctaPrimaire?: CTA;
   ctaSecondaire?: CTA;
+  /** Affiche les icônes réseaux (config.social) dans le hero. Défaut : false. */
+  showSocial?: boolean;
 }
 
 // --- services ---
@@ -630,6 +656,11 @@ export interface SiteConfig {
    */
   stylePack?: StylePackId;
   branding: Branding;
+  /**
+   * Réseaux sociaux du site (footer + option hero + `sameAs` JSON-LD). Mêmes
+   * URLs dans toutes les locales. Absent / vide => aucune icône affichée.
+   */
+  social?: SocialLink[];
   entreprise: Entreprise;
   seo: Seo;
   meta: Meta;

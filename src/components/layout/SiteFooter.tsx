@@ -5,6 +5,8 @@ import { Logo } from "./Logo";
 import { statutLabel, legalName, siretToSiren } from "@/lib/legal";
 import { telHref, waHref } from "@/lib/utils";
 import { resolvePages, isMultiPage, findBlock } from "@/lib/pages";
+import { resolveSocials } from "@/lib/social";
+import { SocialLinks } from "./SocialLinks";
 import { ui } from "@/i18n/ui";
 
 export function SiteFooter({
@@ -21,6 +23,7 @@ export function SiteFooter({
   const e = config.entreprise;
   const contact = findBlock<ContactContent>(config, "contact")?.content;
   const services = findBlock<ServicesContent>(config, "services")?.content;
+  const socials = resolveSocials(config);
   const t = ui(locale);
   const year = new Date().getFullYear();
 
@@ -64,6 +67,14 @@ export function SiteFooter({
                 {config.seo.ville}
               </span>
             </div>
+            {socials.length > 0 && (
+              <SocialLinks
+                socials={socials}
+                className="mt-6"
+                ariaLabel={t.footer.social}
+                linkClassName="size-9 bg-white/10 text-white/70 hover:bg-white/15 hover:text-white"
+              />
+            )}
           </div>
 
           {/* Liens */}

@@ -10,7 +10,9 @@
     "start": "next start",
     "lint": "eslint",
     "domains:sync": "node scripts/sync-domains.mjs",
-    "domains:sync:dry": "node scripts/sync-domains.mjs --dry-run"
+    "domains:sync:dry": "node scripts/sync-domains.mjs --dry-run",
+    "sitemaps:sync": "node scripts/sync-sitemaps.mjs",
+    "sitemaps:sync:dry": "node scripts/sync-sitemaps.mjs --dry-run"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",

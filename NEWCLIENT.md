@@ -35,6 +35,15 @@ LAYOUT et du MOTION — pas que de la couleur. Trois leviers, à varier d'un cli
    tarifs → avis → contact). Adapte au métier.
 Garde mobile-first, contrastes AA, et le contenu passe toujours par l'i18n.
 
+RÉSEAUX SOCIAUX (champ `social`, voir catalog.json > social)
+Si le brief fournit des réseaux, renseigne `social: [{ platform, url }]` au niveau du
+site (mêmes URLs dans toutes les locales). Plateformes : facebook, instagram, tiktok,
+linkedin, whatsapp, youtube, x, google. WhatsApp accepte une URL wa.me ou un numéro.
+N'invente JAMAIS de profil : n'ajoute que ceux réellement fournis. Les icônes sortent
+au footer (et au hero si tu mets `showSocial: true` dans le content du hero), et les
+profils alimentent automatiquement le `sameAs` du JSON-LD (SEO). Aucun réseau → champ
+absent (rien ne s'affiche).
+
 SI UN BESOIN N'EST PAS COUVERT PAR LE MOTEUR
 Ne bricole jamais. Exemple : une pâtisserie veut afficher ses produits avec photos + prix,
 mais le bloc `tarifs` actuel est pensé pour le ménage et ne convient pas. Dans ce cas :

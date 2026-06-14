@@ -140,6 +140,7 @@ export const UI = {
     footer: {
       siteHeading: "Le site",
       contactHeading: "Contact",
+      social: "Réseaux sociaux",
       navAria: "Navigation du site",
       legal: "Mentions légales",
       confidentialite: "Confidentialité",
@@ -284,6 +285,7 @@ export const UI = {
     footer: {
       siteHeading: "The site",
       contactHeading: "Contact",
+      social: "Social media",
       navAria: "Site navigation",
       legal: "Legal notice",
       confidentialite: "Privacy",
@@ -428,6 +430,7 @@ export const UI = {
     footer: {
       siteHeading: "الموقع",
       contactHeading: "اتصل بنا",
+      social: "وسائل التواصل الاجتماعي",
       navAria: "تصفّح الموقع",
       legal: "الإشعارات القانونية",
       confidentialite: "الخصوصية",
@@ -572,6 +575,7 @@ export const UI = {
     footer: {
       siteHeading: "El sitio",
       contactHeading: "Contacto",
+      social: "Redes sociales",
       navAria: "Navegación del sitio",
       legal: "Aviso legal",
       confidentialite: "Privacidad",

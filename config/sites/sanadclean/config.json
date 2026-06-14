@@ -1,5 +1,5 @@
 {
-  "slug": "souadtazya",
+  "slug": "sanadclean",
   "theme": "fraicheur-teal",
   "i18n": {
     "default": "fr",
@@ -12,6 +12,12 @@
   "branding": {
     "tagline": "Nettoyage · Nîmes"
   },
+  "social": [
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@souadtazya1"
+    }
+  ],
   "entreprise": {
     "nom": "SANAD CLEAN",
     "statut": "EI",

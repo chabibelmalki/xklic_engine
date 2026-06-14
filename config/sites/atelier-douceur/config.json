@@ -5,6 +5,12 @@
   "branding": {
     "tagline": "Pâtisserie de création · Saint-Germain-en-Laye"
   },
+  "social": [
+    { "platform": "instagram", "url": "https://instagram.com/atelier.douceur" },
+    { "platform": "facebook", "url": "https://facebook.com/atelierdouceur" },
+    { "platform": "tiktok", "url": "https://tiktok.com/@atelier.douceur" },
+    { "platform": "whatsapp", "url": "07 81 24 63 09" }
+  ],
   "entreprise": {
     "nom": "Atelier Douceur",
     "statut": "micro",
@@ -41,6 +47,7 @@
           "variant": "plein",
           "content": {
             "eyebrow": "Pâtisserie de création · sur rendez-vous",
+            "showSocial": true,
             "titre": "L'art du sucre pour",
             "titreAccent": "vos plus grands jours",
             "accroche": "Wedding cakes à étages, pièces montées et entremets dessinés avec vous, façonnés maison à partir d'ingrédients nobles. Et chaque matin, viennoiseries et macarons à emporter.",
