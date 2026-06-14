@@ -49,6 +49,7 @@
           "type": "hero",
           "variant": "carte",
           "content": {
+            "showSocial": true,
             "eyebrow": "Cleaning company in Nîmes",
             "titre": "A spotless home,",
             "titreAccent": "from €15/h",

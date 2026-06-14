@@ -61,6 +61,7 @@
           "type": "hero",
           "variant": "carte",
           "content": {
+            "showSocial": true,
             "eyebrow": "Entreprise de nettoyage à Nîmes",
             "titre": "Un intérieur impeccable,",
             "titreAccent": "à partir de 15 €/h",

@@ -49,6 +49,7 @@
           "type": "hero",
           "variant": "carte",
           "content": {
+            "showSocial": true,
             "eyebrow": "شركة تنظيف في نيم",
             "titre": "منزل لا تشوبه شائبة،",
             "titreAccent": "ابتداءً من 15 €/س",
