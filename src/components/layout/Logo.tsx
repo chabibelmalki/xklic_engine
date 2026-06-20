@@ -23,17 +23,19 @@ export function Logo({
   const { logo, logoAlt, tagline, logoTwoTone } = config.branding;
   const light = variant === "light";
 
-  // Wordmark deux tons (style de marque, ex. « SANAD CLEAN » de l'OG) : 1er mot
-  // en teinte foncée, le reste en teinte claire. Réservé au rendu clair (le
-  // footer sombre garde le nom en blanc, lisible).
+  // Wordmark deux tons (couleurs de marque exactes, ex. « SANAD CLEAN » de l'OG) :
+  // 1er mot dans `first`, le reste dans `rest`. Réservé au rendu clair (le footer
+  // sombre garde le nom en blanc, lisible).
   let nameNode: ReactNode = config.entreprise.nom;
   if (logoTwoTone && !light) {
     const parts = config.entreprise.nom.trim().split(/\s+/);
     const first = parts.shift() ?? "";
     nameNode = (
       <>
-        <span className="text-brand-700">{first}</span>
-        {parts.length > 0 && <span className="text-brand-500">{` ${parts.join(" ")}`}</span>}
+        <span style={{ color: logoTwoTone.first }}>{first}</span>
+        {parts.length > 0 && (
+          <span style={{ color: logoTwoTone.rest }}>{` ${parts.join(" ")}`}</span>
+        )}
       </>
     );
   }
@@ -61,7 +63,8 @@ export function Logo({
       <span className="flex min-w-0 flex-col leading-none">
         <span
           className={cn(
-            "truncate font-display text-lg font-extrabold tracking-tight",
+            "truncate font-display text-lg tracking-tight",
+            logoTwoTone ? "font-semibold" : "font-extrabold",
             light ? "text-white" : "text-ink",
           )}
         >
