@@ -619,6 +619,19 @@ export type Block = KnownBlock | UnknownBlock;
  *
  * Rétro-compat : un site SANS `pages` reste un one-pager basé sur `blocks`.
  */
+
+/** Décrit la page comme une PRESTATION -> JSON-LD schema.org/Service. Optionnel. */
+export interface PageService {
+  /** Nom de la prestation (défaut: titre du pageHero, sinon page.label). */
+  name?: string;
+  /** Description courte (défaut: intro du pageHero). */
+  description?: string;
+  /** schema.org serviceType, ex. "Nettoyage de vitres". */
+  serviceType?: string;
+  /** Prix d'appel : nombre = EUR (Offer/lowPrice), ou libellé ("Sur devis"). */
+  priceFrom?: number | string;
+}
+
 export interface PageConfig {
   /** "" (ou "index"/"/") pour l'accueil ; sinon "services", "tarifs", "contact"… */
   slug: string;
@@ -629,6 +642,8 @@ export interface PageConfig {
   meta?: Meta;
   /** Surcharge SEO de page (rare : schemaType/ville). Sinon hérités du site. */
   seo?: Partial<Seo>;
+  /** Marque la page comme une prestation (JSON-LD Service). */
+  service?: PageService;
   /** Exclut la page de la navigation principale (ex. mentions légales, devis). */
   navHidden?: boolean;
   /** Désindexe la page (robots noindex) — ex. pages légales. */

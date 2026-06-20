@@ -3,16 +3,18 @@ import type {
   ContactContent,
   ZoneContent,
   FaqContent,
+  PageHeroContent,
 } from "@/types/config";
 import { siteOrigin } from "@/lib/urls";
-import { findBlock } from "@/lib/pages";
+import { findBlock, type ResolvedPage } from "@/lib/pages";
 import { socialSameAs } from "@/lib/social";
 
 /**
- * JSON-LD par site. Le `@type` du LocalBusiness vient de `seo.schemaType`
- * (HousekeepingService, AutoRepair, Bakery, HairSalon, Restaurant…) : aucun
- * type métier codé en dur. NAP + ville + avis + zone alimentent le graphe.
- * Les blocs sont cherchés sur l'ENSEMBLE des pages (multi-page).
+ * JSON-LD par site ET par page. Le `@type` du LocalBusiness vient de
+ * `seo.schemaType` (HousekeepingService, AutoRepair, Bakery, HairSalon,
+ * Restaurant…) : aucun type métier codé en dur. NAP + ville + zone alimentent
+ * le graphe site-wide. Quand une `page` est fournie, la FAQPage est tirée de la
+ * page COURANTE et un `Service` est émis si la page est marquée `service`.
  */
 
 function block<T>(config: SiteConfig, type: string): T | null {
@@ -24,13 +26,32 @@ function heroImage(config: SiteConfig): string | undefined {
   return url ?? config.branding.logo;
 }
 
-/** Construit le tableau d'objets JSON-LD (LocalBusiness + FAQPage). */
-export function buildJsonLd(config: SiteConfig): object[] {
-  const e = config.entreprise;
-  const contact = block<ContactContent>(config, "contact");
+/** Premier bloc d'un type donné sur la PAGE fournie (et non tout le site). */
+function pageBlock<T>(page: ResolvedPage, type: string): T | null {
+  for (const b of page.blocks) {
+    if (b.type === type) return (b.content ?? null) as T | null;
+  }
+  return null;
+}
+
+/**
+ * `areaServed` partagé par LocalBusiness et Service : les villes de la zone
+ * (mode ≠ "aucune"), sinon la ville unique du SEO.
+ */
+function areaServed(config: SiteConfig): object {
   const zoneBlock = findBlock<ZoneContent>(config, "zone");
   const zone = zoneBlock?.content ?? undefined;
-  const faq = block<FaqContent>(config, "faq");
+  if (zone && zoneBlock?.mode !== "aucune") {
+    const villes = zone.villes ?? [config.seo.ville];
+    return villes.map((v) => ({ "@type": "City", name: v }));
+  }
+  return { "@type": "City", name: config.seo.ville };
+}
+
+/** Construit le tableau d'objets JSON-LD (LocalBusiness + Service + FAQPage). */
+export function buildJsonLd(config: SiteConfig, page?: ResolvedPage): object[] {
+  const e = config.entreprise;
+  const contact = block<ContactContent>(config, "contact");
   const origin = siteOrigin(config);
 
   const business: Record<string, unknown> = {
@@ -58,13 +79,8 @@ export function buildJsonLd(config: SiteConfig): object[] {
   const sameAs = socialSameAs(config);
   if (sameAs.length) business.sameAs = sameAs;
 
-  // Zone d'intervention -> areaServed
-  if (zone && zoneBlock?.mode !== "aucune") {
-    const villes = zone.villes ?? [config.seo.ville];
-    business.areaServed = villes.map((v) => ({ "@type": "City", name: v }));
-  } else {
-    business.areaServed = { "@type": "City", name: config.seo.ville };
-  }
+  // Zone d'intervention -> areaServed (helper partagé avec Service)
+  business.areaServed = areaServed(config);
 
   // Avis volontairement ABSENTS du JSON-LD : depuis 2019 Google ignore les avis
   // « self-serving » (sur l'entreprise, hébergés sur son propre site, type
@@ -80,7 +96,43 @@ export function buildJsonLd(config: SiteConfig): object[] {
 
   const graph: object[] = [business];
 
-  // FAQPage
+  // Service (par page) : émis quand la page courante est marquée `service`.
+  if (page?.service) {
+    const svc = page.service;
+    const hero = pageBlock<PageHeroContent>(page, "pageHero");
+    const name = svc.name || hero?.titre || page.label;
+    const description = svc.description || hero?.intro;
+
+    const service: Record<string, unknown> = {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      provider: { "@id": `${origin}/#business` },
+      areaServed: areaServed(config),
+    };
+    if (name) service.name = name;
+    if (description) service.description = description;
+    if (svc.serviceType) service.serviceType = svc.serviceType;
+
+    // priceFrom : nombre => Offer/PriceSpecification ; texte non vide => « sur devis » (pas d'offers).
+    if (typeof svc.priceFrom === "number") {
+      service.offers = {
+        "@type": "Offer",
+        priceCurrency: "EUR",
+        price: svc.priceFrom,
+        priceSpecification: {
+          "@type": "PriceSpecification",
+          minPrice: svc.priceFrom,
+          priceCurrency: "EUR",
+        },
+        availability: "https://schema.org/InStock",
+      };
+    }
+
+    graph.push(service);
+  }
+
+  // FAQPage : la PAGE courante prime ; sinon repli site-wide (accueil / one-pager).
+  const faq = (page && pageBlock<FaqContent>(page, "faq")) || block<FaqContent>(config, "faq");
   if (faq && faq.items.length) {
     graph.push({
       "@context": "https://schema.org",

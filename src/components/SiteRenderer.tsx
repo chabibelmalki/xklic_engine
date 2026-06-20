@@ -68,7 +68,7 @@ export function SiteRenderer({
       dir={localeDir(locale)}
       className="flex min-h-screen flex-col bg-bg text-ink"
     >
-      <JsonLd data={buildJsonLd(config)} />
+      <JsonLd data={buildJsonLd(config, current)} />
       <SiteHeader
         config={config}
         basePath={basePath}
