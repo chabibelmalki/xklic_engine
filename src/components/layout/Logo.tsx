@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { Sparkles } from "lucide-react";
 import type { SiteConfig } from "@/types/config";
 import { cn } from "@/lib/utils";
@@ -19,8 +20,23 @@ export function Logo({
   variant?: "default" | "light";
   className?: string;
 }) {
-  const { logo, logoAlt, tagline } = config.branding;
+  const { logo, logoAlt, tagline, logoTwoTone } = config.branding;
   const light = variant === "light";
+
+  // Wordmark deux tons (style de marque, ex. « SANAD CLEAN » de l'OG) : 1er mot
+  // en teinte foncée, le reste en teinte claire. Réservé au rendu clair (le
+  // footer sombre garde le nom en blanc, lisible).
+  let nameNode: ReactNode = config.entreprise.nom;
+  if (logoTwoTone && !light) {
+    const parts = config.entreprise.nom.trim().split(/\s+/);
+    const first = parts.shift() ?? "";
+    nameNode = (
+      <>
+        <span className="text-brand-700">{first}</span>
+        {parts.length > 0 && <span className="text-brand-500">{` ${parts.join(" ")}`}</span>}
+      </>
+    );
+  }
 
   return (
     <Link
@@ -49,7 +65,7 @@ export function Logo({
             light ? "text-white" : "text-ink",
           )}
         >
-          {config.entreprise.nom}
+          {nameNode}
         </span>
         {tagline && (
           <span

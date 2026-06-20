@@ -6,7 +6,8 @@
     "logo": "/sites/sanadclean/logo.png",
     "icon": "/sites/sanadclean/icon.png",
     "logoAlt": "SANAD CLEAN — خدمات التنظيف في نيم",
-    "tagline": "تنظيف · نيم"
+    "logoTwoTone": true,
+    "tagline": "خدمات التنظيف"
   },
   "social": [
     { "platform": "instagram", "url": "https://www.instagram.com/sanad_clean/" },

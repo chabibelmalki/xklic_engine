@@ -6,7 +6,8 @@
     "logo": "/sites/sanadclean/logo.png",
     "icon": "/sites/sanadclean/icon.png",
     "logoAlt": "SANAD CLEAN — cleaning services in Nîmes",
-    "tagline": "Cleaning · Nîmes"
+    "logoTwoTone": true,
+    "tagline": "Cleaning services"
   },
   "social": [
     { "platform": "instagram", "url": "https://www.instagram.com/sanad_clean/" },

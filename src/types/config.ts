@@ -147,6 +147,12 @@ export interface Branding {
   icon?: string;
   /** Texte alternatif du logo (sinon le nom de l'entreprise). */
   logoAlt?: string;
+  /**
+   * Affiche le nom en wordmark DEUX TONS (1er mot en teinte de marque foncée,
+   * le reste en teinte claire) — reproduit un logotype type « SANAD CLEAN ».
+   * N'affecte que le rendu clair (header) ; le footer sombre garde le blanc.
+   */
+  logoTwoTone?: boolean;
   /** Petite ligne sous le nom (ex. "Nettoyage · Nîmes"). */
   tagline?: string;
 }
