@@ -125,7 +125,7 @@
                 "badge": "Crédit d'impôt 50 %",
                 "priceHint": "dès 30 €/h",
                 "description": "Entretien régulier de votre logement ou grand nettoyage de printemps.",
-                "href": "/tarifs"
+                "href": "/menage-domicile"
               },
               {
                 "nom": "Remise en état",
@@ -133,7 +133,7 @@
                 "badge": "Crédit d'impôt 50 %",
                 "priceHint": "dès 250 €",
                 "description": "Nettoyage en profondeur après travaux, déménagement ou avant état des lieux.",
-                "href": "/tarifs"
+                "href": "/remise-en-etat"
               },
               {
                 "nom": "Nettoyage de vitres",
@@ -141,7 +141,7 @@
                 "badge": "Crédit d'impôt 50 %",
                 "priceHint": "dès 90 €",
                 "description": "Vitres, baies et miroirs impeccables, sans traces, intérieur et extérieur.",
-                "href": "/tarifs"
+                "href": "/nettoyage-vitres"
               },
               {
                 "nom": "Canapé & fauteuil",
@@ -149,7 +149,7 @@
                 "badge": "Crédit d'impôt 50 %",
                 "priceHint": "dès 60 €",
                 "description": "Nettoyage et désincrustation de vos canapés, fauteuils et textiles.",
-                "href": "/tarifs"
+                "href": "/nettoyage-canape"
               },
               {
                 "nom": "Terrasse & extérieur",
@@ -157,7 +157,7 @@
                 "badge": "Crédit d'impôt 50 %",
                 "priceHint": "dès 90 €",
                 "description": "Nettoyage et dégraissage de vos terrasses et sols extérieurs.",
-                "href": "/tarifs"
+                "href": "/nettoyage-terrasse"
               },
               {
                 "nom": "Nettoyage de bureaux",
@@ -165,7 +165,7 @@
                 "badge": "Sur devis",
                 "priceHint": "dès 90 €",
                 "description": "Entretien régulier de vos bureaux, commerces et locaux professionnels.",
-                "href": "/tarifs"
+                "href": "/nettoyage-bureaux"
               }
             ],
             "cta": {
@@ -407,7 +407,7 @@
                 "badge": "Crédit d'impôt 50 %",
                 "priceHint": "dès 30 €/h",
                 "description": "Entretien régulier de votre logement ou grand nettoyage de printemps.",
-                "href": "/tarifs"
+                "href": "/menage-domicile"
               },
               {
                 "nom": "Remise en état",
@@ -415,7 +415,7 @@
                 "badge": "Crédit d'impôt 50 %",
                 "priceHint": "dès 250 €",
                 "description": "Nettoyage en profondeur après travaux, déménagement ou avant état des lieux.",
-                "href": "/tarifs"
+                "href": "/remise-en-etat"
               },
               {
                 "nom": "Nettoyage de vitres",
@@ -423,7 +423,7 @@
                 "badge": "Crédit d'impôt 50 %",
                 "priceHint": "dès 90 €",
                 "description": "Vitres, baies et miroirs impeccables, sans traces, intérieur et extérieur.",
-                "href": "/tarifs"
+                "href": "/nettoyage-vitres"
               },
               {
                 "nom": "Canapé & fauteuil",
@@ -431,7 +431,7 @@
                 "badge": "Crédit d'impôt 50 %",
                 "priceHint": "dès 60 €",
                 "description": "Nettoyage et désincrustation de vos canapés, fauteuils et textiles.",
-                "href": "/tarifs"
+                "href": "/nettoyage-canape"
               },
               {
                 "nom": "Terrasse & extérieur",
@@ -439,7 +439,7 @@
                 "badge": "Crédit d'impôt 50 %",
                 "priceHint": "dès 90 €",
                 "description": "Nettoyage et dégraissage de vos terrasses et sols extérieurs.",
-                "href": "/tarifs"
+                "href": "/nettoyage-terrasse"
               },
               {
                 "nom": "Syndrome de Diogène",
@@ -447,7 +447,7 @@
                 "badge": "Crédit d'impôt 50 %",
                 "priceHint": "dès 600 €",
                 "description": "Débarras, nettoyage et désinfection complets des logements très encombrés.",
-                "href": "/tarifs"
+                "href": "/syndrome-diogene"
               }
             ]
           }
@@ -466,7 +466,7 @@
                 "badge": "Sur devis",
                 "priceHint": "dès 90 €",
                 "description": "Entretien régulier de vos bureaux, commerces et locaux professionnels.",
-                "href": "/tarifs"
+                "href": "/nettoyage-bureaux"
               },
               {
                 "nom": "Punaises de lit",
@@ -474,7 +474,7 @@
                 "badge": "Sur devis",
                 "priceHint": "dès 250 €",
                 "description": "Traitement professionnel des punaises de lit, chambre par chambre.",
-                "href": "/tarifs"
+                "href": "/traitement-punaises-de-lit"
               },
               {
                 "nom": "Traitement des cafards",
@@ -482,7 +482,7 @@
                 "badge": "Sur devis",
                 "priceHint": "dès 140 €",
                 "description": "Désinsectisation ciblée contre les cafards et blattes.",
-                "href": "/tarifs"
+                "href": "/traitement-cafards"
               }
             ],
             "cta": {
@@ -1373,6 +1373,1682 @@
             ],
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8367%2C4.3601",
             "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "menage-domicile",
+      "label": "Ménage à domicile",
+      "navHidden": true,
+      "meta": {
+        "title": "Ménage à domicile à Nîmes — dès 15 €/h après crédit d'impôt",
+        "description": "Ménage et nettoyage à domicile à Nîmes et dans le Gard : entretien régulier ou grand ménage, dès 30 €/h soit 15 €/h après crédit d'impôt de 50 %. Devis gratuit.",
+        "keywords": [
+          "ménage à domicile Nîmes",
+          "ménage à domicile Gard",
+          "femme de ménage Nîmes",
+          "entretien logement Nîmes",
+          "aide ménagère crédit d'impôt"
+        ]
+      },
+      "service": {
+        "name": "Ménage & nettoyage à domicile",
+        "description": "Entretien régulier ou grand ménage du logement à Nîmes, avec crédit d'impôt de 50 %.",
+        "serviceType": "Ménage à domicile",
+        "priceFrom": 30
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Crédit d'impôt 50 %",
+            "titre": "Ménage à domicile à Nîmes — dès 30 €/h",
+            "intro": "SANAD CLEAN assure le ménage et le nettoyage de votre logement à Nîmes et dans le Gard : entretien hebdomadaire ou grand ménage de printemps. Grâce au crédit d'impôt de 50 %, votre heure facturée 30 € ne vous coûte réellement que 15 €.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Ménage à domicile" }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Pourquoi choisir SANAD CLEAN",
+            "items": [
+              {
+                "icone": "badge-euro",
+                "nom": "15 €/h après crédit d'impôt",
+                "description": "Le ménage à domicile ouvre droit au crédit d'impôt de 50 %, avec avance immédiate possible."
+              },
+              {
+                "icone": "shield-check",
+                "nom": "Personnel de confiance",
+                "description": "Une intervenante sérieuse et discrète, qui respecte votre logement et vos habitudes."
+              },
+              {
+                "icone": "sparkles",
+                "nom": "Travail soigné",
+                "description": "Sols, sanitaires, cuisine, poussières : un résultat impeccable, fini dans le détail."
+              },
+              {
+                "icone": "leaf",
+                "nom": "Produits adaptés",
+                "description": "Produits choisis selon vos préférences, en présence d'enfants ou d'animaux."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "Comment se déroule votre ménage à domicile",
+            "items": [
+              {
+                "icone": "clipboard-list",
+                "titre": "Votre demande",
+                "texte": "Vous décrivez votre logement et la fréquence souhaitée. Devis gratuit sous 24 h."
+              },
+              {
+                "icone": "calendar-check",
+                "titre": "Le rendez-vous",
+                "texte": "Nous fixons un créneau régulier ou ponctuel qui s'adapte à votre emploi du temps."
+              },
+              {
+                "icone": "sparkles",
+                "titre": "L'intervention",
+                "texte": "Nous réalisons le ménage avec soin et vous bénéficiez du crédit d'impôt de 50 %."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Intervention à Nîmes et dans le Gard",
+            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
+            "rayonKm": 20,
+            "villes": [
+              "Nîmes",
+              "Caissargues",
+              "Bouillargues",
+              "Rodilhan",
+              "Marguerittes",
+              "Garons",
+              "Saint-Gervasy",
+              "Poulx",
+              "Caveirac",
+              "Clarensac",
+              "Milhaud",
+              "Bernis",
+              "Manduel",
+              "Saint-Gilles",
+              "Uchaud",
+              "Vergèze",
+              "Générac",
+              "Vauvert"
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Combien coûte le ménage à domicile à Nîmes ?",
+                "reponse": "Le ménage régulier est facturé 30 €/h. Avec le crédit d'impôt de 50 %, votre coût réel revient à 15 €/h. Le grand nettoyage de printemps est proposé au forfait selon la taille du logement, à partir de 150 €."
+              },
+              {
+                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
+                "reponse": "Le ménage réalisé à votre domicile ouvre droit à un crédit d'impôt égal à 50 % des sommes versées (plafond de 12 000 € par an et par foyer). SANAD CLEAN travaille via la coopérative Accès SAP, déclarée services à la personne."
+              },
+              {
+                "question": "Puis-je payer en CESU ?",
+                "reponse": "Oui, le paiement en CESU est accepté pour le ménage à domicile, en complément de l'avance immédiate de crédit d'impôt."
+              },
+              {
+                "question": "Faut-il fournir le matériel et les produits ?",
+                "reponse": "Nous pouvons utiliser votre matériel ou apporter le nôtre (supplément matériel). Les produits sont adaptés à vos préférences, notamment en présence d'enfants ou d'animaux."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Nos autres prestations",
+            "items": [
+              {
+                "nom": "Remise en état",
+                "description": "Nettoyage en profondeur après travaux, déménagement ou avant état des lieux.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "description": "Vitres, baies et miroirs sans traces, intérieur et extérieur.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Canapé & fauteuil",
+                "description": "Nettoyage par injection-extraction de vos textiles d'ameublement.",
+                "href": "/nettoyage-canape"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Besoin d'un devis pour le ménage à domicile à Nîmes ?",
+            "sousTitre": "Devis gratuit et sans engagement, crédit d'impôt déduit. Réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "remise-en-etat",
+      "label": "Remise en état",
+      "navHidden": true,
+      "meta": {
+        "title": "Remise en état à Nîmes — nettoyage après travaux dès 250 €",
+        "description": "Remise en état à Nîmes et dans le Gard : nettoyage profond après travaux, déménagement ou avant état des lieux, dès 250 €. Crédit d'impôt 50 % à domicile. Devis gratuit.",
+        "keywords": [
+          "remise en état Nîmes",
+          "remise en état Gard",
+          "nettoyage après travaux Nîmes",
+          "nettoyage fin de chantier Nîmes",
+          "nettoyage avant état des lieux"
+        ]
+      },
+      "service": {
+        "name": "Remise en état",
+        "description": "Nettoyage profond après travaux, déménagement ou avant état des lieux à Nîmes.",
+        "serviceType": "Nettoyage de remise en état",
+        "priceFrom": 250
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Crédit d'impôt 50 %",
+            "titre": "Remise en état à Nîmes — dès 250 €",
+            "intro": "Après des travaux, un déménagement ou avant un état des lieux, SANAD CLEAN remet votre logement à neuf à Nîmes et dans le Gard. Poussière de chantier, traces et résidus disparaissent pour un rendu impeccable.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Remise en état" }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Pourquoi choisir SANAD CLEAN",
+            "items": [
+              {
+                "icone": "sparkles",
+                "nom": "Nettoyage en profondeur",
+                "description": "Sols, murs, plinthes, vitres et sanitaires débarrassés de la poussière de chantier."
+              },
+              {
+                "icone": "clock",
+                "nom": "Intervention rapide",
+                "description": "Disponibles 7j/7 pour respecter vos délais de livraison ou de remise des clés."
+              },
+              {
+                "icone": "badge-euro",
+                "nom": "Crédit d'impôt 50 %",
+                "description": "Réalisée chez un particulier, la remise en état ouvre droit au crédit d'impôt de 50 %."
+              },
+              {
+                "icone": "check-circle",
+                "nom": "Rendu prêt à vivre",
+                "description": "Un logement propre, désinfecté et prêt à être habité ou rendu sans réserve."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "Comment se déroule votre remise en état",
+            "items": [
+              {
+                "icone": "clipboard-list",
+                "titre": "État des lieux",
+                "texte": "Nous évaluons la surface et l'état du logement pour un devis gratuit et précis."
+              },
+              {
+                "icone": "spray-can",
+                "titre": "Nettoyage intégral",
+                "texte": "Dépoussiérage, dégraissage, détartrage et désinfection de toutes les pièces."
+              },
+              {
+                "icone": "thumbs-up",
+                "titre": "Contrôle final",
+                "texte": "Nous vérifions chaque pièce avec vous pour garantir un résultat irréprochable."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Intervention à Nîmes et dans le Gard",
+            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
+            "rayonKm": 20,
+            "villes": [
+              "Nîmes",
+              "Caissargues",
+              "Bouillargues",
+              "Rodilhan",
+              "Marguerittes",
+              "Garons",
+              "Saint-Gervasy",
+              "Poulx",
+              "Caveirac",
+              "Clarensac",
+              "Milhaud",
+              "Bernis",
+              "Manduel",
+              "Saint-Gilles",
+              "Uchaud",
+              "Vergèze",
+              "Générac",
+              "Vauvert"
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Combien coûte une remise en état à Nîmes ?",
+                "reponse": "La remise en état démarre à 250 € pour un studio ou T1, 350 € pour un T2, 450 € pour un T3 et 600 € pour un T4 et plus. Le tarif exact dépend de la surface et de l'état du logement."
+              },
+              {
+                "question": "La remise en état donne-t-elle droit au crédit d'impôt ?",
+                "reponse": "Oui, lorsqu'elle est réalisée au domicile d'un particulier, la remise en état ouvre droit au crédit d'impôt de 50 % via la coopérative Accès SAP."
+              },
+              {
+                "question": "Intervenez-vous après des travaux ou un déménagement ?",
+                "reponse": "Oui. Nous prenons en charge le nettoyage de fin de chantier, l'après-déménagement et la préparation avant état des lieux, avec un matériel adapté à la poussière de travaux."
+              },
+              {
+                "question": "Sous quel délai pouvez-vous intervenir ?",
+                "reponse": "Nous sommes disponibles 7j/7 et nous nous adaptons à vos contraintes de livraison ou de remise des clés. Contactez-nous pour un créneau rapide."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Nos autres prestations",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "description": "Entretien régulier ou grand ménage de votre logement, dès 15 €/h après crédit d'impôt.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Syndrome de Diogène",
+                "description": "Débarras, nettoyage et désinfection des logements très encombrés.",
+                "href": "/syndrome-diogene"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "description": "Vitres, baies et miroirs sans traces, intérieur et extérieur.",
+                "href": "/nettoyage-vitres"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Besoin d'un devis pour une remise en état à Nîmes ?",
+            "sousTitre": "Devis gratuit et sans engagement, crédit d'impôt déduit. Réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Nettoyage de vitres",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de vitres à Nîmes — vitres sans traces dès 90 €",
+        "description": "Nettoyage de vitres à Nîmes et dans le Gard : vitres, baies et miroirs sans traces, intérieur et extérieur, dès 90 €. Crédit d'impôt 50 % à domicile. Devis gratuit.",
+        "keywords": [
+          "nettoyage de vitres Nîmes",
+          "nettoyage de vitres Gard",
+          "lavage de vitres Nîmes",
+          "vitrier nettoyage Nîmes",
+          "nettoyage baies vitrées"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage de vitres",
+        "description": "Vitres, baies et miroirs sans traces, intérieur et extérieur, à Nîmes.",
+        "serviceType": "Nettoyage de vitres",
+        "priceFrom": 90
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Crédit d'impôt 50 %",
+            "titre": "Nettoyage de vitres à Nîmes — dès 90 €",
+            "intro": "SANAD CLEAN redonne de la clarté à vos vitres, baies vitrées et miroirs à Nîmes et dans le Gard. Intérieur comme extérieur, un nettoyage sans traces qui laisse entrer la lumière.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Nettoyage de vitres" }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Pourquoi choisir SANAD CLEAN",
+            "items": [
+              {
+                "icone": "sparkles",
+                "nom": "Vitres sans traces",
+                "description": "Un résultat net et lumineux, sans auréole ni trace, jusque dans les angles."
+              },
+              {
+                "icone": "droplets",
+                "nom": "Intérieur & extérieur",
+                "description": "Vitres, baies, fenêtres et miroirs nettoyés des deux côtés."
+              },
+              {
+                "icone": "badge-euro",
+                "nom": "Crédit d'impôt 50 %",
+                "description": "Réalisé chez un particulier, le nettoyage de vitres ouvre droit au crédit d'impôt."
+              },
+              {
+                "icone": "check-circle",
+                "nom": "Matériel professionnel",
+                "description": "Raclettes, perches et produits adaptés pour un nettoyage efficace et durable."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "Comment se déroule votre nettoyage de vitres",
+            "items": [
+              {
+                "icone": "clipboard-list",
+                "titre": "Votre demande",
+                "texte": "Vous indiquez le nombre de fenêtres ou baies à traiter. Devis gratuit sous 24 h."
+              },
+              {
+                "icone": "droplets",
+                "titre": "Le nettoyage",
+                "texte": "Nous lavons vitres, encadrements et rebords, intérieur et extérieur."
+              },
+              {
+                "icone": "thumbs-up",
+                "titre": "Contrôle lumière",
+                "texte": "Nous vérifions chaque surface à contre-jour pour un rendu parfaitement net."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Intervention à Nîmes et dans le Gard",
+            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
+            "rayonKm": 20,
+            "villes": [
+              "Nîmes",
+              "Caissargues",
+              "Bouillargues",
+              "Rodilhan",
+              "Marguerittes",
+              "Garons",
+              "Saint-Gervasy",
+              "Poulx",
+              "Caveirac",
+              "Clarensac",
+              "Milhaud",
+              "Bernis",
+              "Manduel",
+              "Saint-Gilles",
+              "Uchaud",
+              "Vergèze",
+              "Générac",
+              "Vauvert"
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Combien coûte le nettoyage de vitres à Nîmes ?",
+                "reponse": "Le nettoyage de vitres démarre à 90 € pour un appartement, 140 € pour une maison et 180 € pour une villa. Le tarif dépend du nombre et de l'accessibilité des fenêtres."
+              },
+              {
+                "question": "Le nettoyage de vitres ouvre-t-il droit au crédit d'impôt ?",
+                "reponse": "Oui, lorsqu'il est réalisé au domicile d'un particulier, le nettoyage de vitres ouvre droit au crédit d'impôt de 50 % via la coopérative Accès SAP."
+              },
+              {
+                "question": "Nettoyez-vous aussi les vitres extérieures et en hauteur ?",
+                "reponse": "Oui, nous nettoyons l'intérieur et l'extérieur, y compris les baies vitrées. Pour les vitres difficiles d'accès, nous utilisons un matériel adapté."
+              },
+              {
+                "question": "Les encadrements et rebords sont-ils inclus ?",
+                "reponse": "Oui, nous nettoyons les vitres ainsi que les encadrements et les rebords pour un rendu complet et soigné."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Nos autres prestations",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "description": "Entretien régulier ou grand ménage de votre logement, dès 15 €/h après crédit d'impôt.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Terrasse & extérieur",
+                "description": "Dégraissage et démoussage de vos terrasses et sols extérieurs.",
+                "href": "/nettoyage-terrasse"
+              },
+              {
+                "nom": "Canapé & fauteuil",
+                "description": "Nettoyage par injection-extraction de vos textiles d'ameublement.",
+                "href": "/nettoyage-canape"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Besoin d'un devis pour le nettoyage de vitres à Nîmes ?",
+            "sousTitre": "Devis gratuit et sans engagement, crédit d'impôt déduit. Réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-canape",
+      "label": "Canapé & fauteuil",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage canapé & fauteuil à Nîmes — dès 60 €",
+        "description": "Nettoyage de canapé, fauteuil et matelas à Nîmes et dans le Gard par injection-extraction, dès 60 €. Crédit d'impôt 50 % à domicile. Devis gratuit.",
+        "keywords": [
+          "nettoyage canapé Nîmes",
+          "nettoyage canapé Gard",
+          "nettoyage fauteuil Nîmes",
+          "nettoyage matelas Nîmes",
+          "injection extraction textile"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage canapé & fauteuil",
+        "description": "Nettoyage par injection-extraction de canapés, fauteuils et matelas à Nîmes.",
+        "serviceType": "Nettoyage de textiles d'ameublement",
+        "priceFrom": 60
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Crédit d'impôt 50 %",
+            "titre": "Nettoyage canapé & fauteuil à Nîmes — dès 60 €",
+            "intro": "SANAD CLEAN ravive vos canapés, fauteuils et matelas à Nîmes et dans le Gard. Par injection-extraction, nous désincrustons taches, poussières et acariens pour des textiles sains et comme neufs.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Canapé & fauteuil" }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Pourquoi choisir SANAD CLEAN",
+            "items": [
+              {
+                "icone": "sofa",
+                "nom": "Injection-extraction",
+                "description": "Une méthode en profondeur qui désincruste les taches et la saleté des fibres."
+              },
+              {
+                "icone": "droplets",
+                "nom": "Textiles assainis",
+                "description": "Élimination des acariens et des odeurs pour un canapé sain et frais."
+              },
+              {
+                "icone": "badge-euro",
+                "nom": "Crédit d'impôt 50 %",
+                "description": "Réalisé à domicile, le nettoyage de textiles ouvre droit au crédit d'impôt."
+              },
+              {
+                "icone": "check-circle",
+                "nom": "Séchage rapide",
+                "description": "Un matériel professionnel qui limite l'humidité et accélère le séchage."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "Comment se déroule votre nettoyage de canapé",
+            "items": [
+              {
+                "icone": "clipboard-list",
+                "titre": "Votre demande",
+                "texte": "Vous précisez le type de textile (fauteuil, canapé, matelas). Devis gratuit sous 24 h."
+              },
+              {
+                "icone": "spray-can",
+                "titre": "Le traitement",
+                "texte": "Détachage puis injection-extraction pour nettoyer les fibres en profondeur."
+              },
+              {
+                "icone": "thumbs-up",
+                "titre": "Contrôle & séchage",
+                "texte": "Nous vérifions le rendu et optimisons le séchage avant de quitter les lieux."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Intervention à Nîmes et dans le Gard",
+            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
+            "rayonKm": 20,
+            "villes": [
+              "Nîmes",
+              "Caissargues",
+              "Bouillargues",
+              "Rodilhan",
+              "Marguerittes",
+              "Garons",
+              "Saint-Gervasy",
+              "Poulx",
+              "Caveirac",
+              "Clarensac",
+              "Milhaud",
+              "Bernis",
+              "Manduel",
+              "Saint-Gilles",
+              "Uchaud",
+              "Vergèze",
+              "Générac",
+              "Vauvert"
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Combien coûte le nettoyage d'un canapé à Nîmes ?",
+                "reponse": "Comptez 60 € pour un fauteuil, 90 € pour un canapé 2 places, 120 € pour un 3 places et 150 € pour un canapé d'angle. Le matelas est traité sur le même principe."
+              },
+              {
+                "question": "Le nettoyage de canapé ouvre-t-il droit au crédit d'impôt ?",
+                "reponse": "Oui, réalisé au domicile d'un particulier, le nettoyage de textiles d'ameublement ouvre droit au crédit d'impôt de 50 % via la coopérative Accès SAP."
+              },
+              {
+                "question": "Quelle est la méthode utilisée ?",
+                "reponse": "Nous utilisons l'injection-extraction : un produit nettoyant est injecté dans les fibres puis aspiré avec la saleté, pour un nettoyage en profondeur."
+              },
+              {
+                "question": "Combien de temps faut-il pour le séchage ?",
+                "reponse": "Le séchage prend généralement quelques heures. Notre matériel limite l'humidité résiduelle pour accélérer le processus."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Nos autres prestations",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "description": "Entretien régulier ou grand ménage de votre logement, dès 15 €/h après crédit d'impôt.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "description": "Vitres, baies et miroirs sans traces, intérieur et extérieur.",
+                "href": "/nettoyage-vitres"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Besoin d'un devis pour le nettoyage de canapé à Nîmes ?",
+            "sousTitre": "Devis gratuit et sans engagement, crédit d'impôt déduit. Réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-terrasse",
+      "label": "Terrasse & extérieur",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage terrasse & extérieur à Nîmes — dès 90 €",
+        "description": "Nettoyage de terrasse et de sols extérieurs à Nîmes et dans le Gard : dégraissage et démoussage, dès 90 €. Crédit d'impôt 50 % à domicile. Devis gratuit.",
+        "keywords": [
+          "nettoyage terrasse Nîmes",
+          "nettoyage terrasse Gard",
+          "démoussage terrasse Nîmes",
+          "nettoyage sol extérieur Nîmes",
+          "dégraissage terrasse"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage terrasse & extérieur",
+        "description": "Dégraissage et démoussage de terrasses et sols extérieurs à Nîmes.",
+        "serviceType": "Nettoyage de terrasse",
+        "priceFrom": 90
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Crédit d'impôt 50 %",
+            "titre": "Nettoyage terrasse & extérieur à Nîmes — dès 90 €",
+            "intro": "SANAD CLEAN redonne vie à vos terrasses et sols extérieurs à Nîmes et dans le Gard. Dégraissage, démoussage et nettoyage en profondeur pour des extérieurs propres et accueillants.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Terrasse & extérieur" }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Pourquoi choisir SANAD CLEAN",
+            "items": [
+              {
+                "icone": "sun",
+                "nom": "Démoussage complet",
+                "description": "Élimination des mousses, lichens et dépôts verts sur dallages et carrelages."
+              },
+              {
+                "icone": "droplets",
+                "nom": "Dégraissage en profondeur",
+                "description": "Taches de gras, traces de barbecue et salissures incrustées éliminées."
+              },
+              {
+                "icone": "badge-euro",
+                "nom": "Crédit d'impôt 50 %",
+                "description": "Réalisé chez un particulier, le nettoyage extérieur ouvre droit au crédit d'impôt."
+              },
+              {
+                "icone": "check-circle",
+                "nom": "Tous revêtements",
+                "description": "Carrelage, pierre, béton, bois : un traitement adapté à votre terrasse."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "Comment se déroule votre nettoyage de terrasse",
+            "items": [
+              {
+                "icone": "clipboard-list",
+                "titre": "Votre demande",
+                "texte": "Vous indiquez la surface et le type de revêtement. Devis gratuit sous 24 h."
+              },
+              {
+                "icone": "spray-can",
+                "titre": "Le nettoyage",
+                "texte": "Démoussage, dégraissage et rinçage avec un matériel adapté au revêtement."
+              },
+              {
+                "icone": "thumbs-up",
+                "titre": "Contrôle final",
+                "texte": "Nous vérifions l'uniformité du résultat sur toute la surface traitée."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Intervention à Nîmes et dans le Gard",
+            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
+            "rayonKm": 20,
+            "villes": [
+              "Nîmes",
+              "Caissargues",
+              "Bouillargues",
+              "Rodilhan",
+              "Marguerittes",
+              "Garons",
+              "Saint-Gervasy",
+              "Poulx",
+              "Caveirac",
+              "Clarensac",
+              "Milhaud",
+              "Bernis",
+              "Manduel",
+              "Saint-Gilles",
+              "Uchaud",
+              "Vergèze",
+              "Générac",
+              "Vauvert"
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Combien coûte le nettoyage d'une terrasse à Nîmes ?",
+                "reponse": "Comptez 90 € jusqu'à 20 m², 120 € de 20 à 50 m² et à partir de 150 € au-delà de 50 m². Le tarif dépend de la surface et de l'état de la terrasse."
+              },
+              {
+                "question": "Le nettoyage de terrasse ouvre-t-il droit au crédit d'impôt ?",
+                "reponse": "Oui, réalisé au domicile d'un particulier, le nettoyage de terrasse et de sols extérieurs ouvre droit au crédit d'impôt de 50 % via la coopérative Accès SAP."
+              },
+              {
+                "question": "Traitez-vous tous les types de revêtements ?",
+                "reponse": "Oui, nous adaptons la méthode au carrelage, à la pierre, au béton ou au bois pour préserver votre revêtement tout en le nettoyant efficacement."
+              },
+              {
+                "question": "Le démoussage est-il durable ?",
+                "reponse": "Notre traitement élimine les mousses et lichens visibles et ralentit leur réapparition. Un entretien régulier prolonge le résultat."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Nos autres prestations",
+            "items": [
+              {
+                "nom": "Nettoyage de vitres",
+                "description": "Vitres, baies et miroirs sans traces, intérieur et extérieur.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Remise en état",
+                "description": "Nettoyage en profondeur après travaux, déménagement ou avant état des lieux.",
+                "href": "/remise-en-etat"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Besoin d'un devis pour le nettoyage de terrasse à Nîmes ?",
+            "sousTitre": "Devis gratuit et sans engagement, crédit d'impôt déduit. Réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "syndrome-diogene",
+      "label": "Syndrome de Diogène",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage syndrome de Diogène à Nîmes — débarras & désinfection",
+        "description": "Nettoyage syndrome de Diogène à Nîmes et dans le Gard : débarras, nettoyage et désinfection de logements très encombrés, en toute discrétion. Devis gratuit sur place.",
+        "keywords": [
+          "syndrome de Diogène Nîmes",
+          "syndrome de Diogène Gard",
+          "nettoyage extrême Nîmes",
+          "débarras logement insalubre Nîmes",
+          "désinfection logement encombré"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage syndrome de Diogène",
+        "description": "Débarras, nettoyage et désinfection de logements très encombrés à Nîmes.",
+        "serviceType": "Débarras et désinfection",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Débarras et désinfection · Nîmes",
+            "titre": "Nettoyage syndrome de Diogène à Nîmes",
+            "intro": "SANAD CLEAN prend en charge les logements très encombrés à Nîmes et dans le Gard : débarras, nettoyage et désinfection complets, avec discrétion et bienveillance. Chaque situation est traitée sans jugement.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Syndrome de Diogène" }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Pourquoi choisir SANAD CLEAN",
+            "items": [
+              {
+                "icone": "trash-2",
+                "nom": "Débarras complet",
+                "description": "Évacuation des encombrants et des déchets, pièce par pièce, jusqu'au tri final."
+              },
+              {
+                "icone": "spray-can",
+                "nom": "Désinfection",
+                "description": "Nettoyage et désinfection en profondeur pour un logement de nouveau sain."
+              },
+              {
+                "icone": "shield-check",
+                "nom": "Discrétion totale",
+                "description": "Une intervention respectueuse, sans jugement, dans la plus grande confidentialité."
+              },
+              {
+                "icone": "check-circle",
+                "nom": "Logement remis à neuf",
+                "description": "Un espace assaini, désodorisé et prêt à être réinvesti ou remis en location."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "Comment se déroule votre intervention",
+            "items": [
+              {
+                "icone": "clipboard-list",
+                "titre": "Visite & devis",
+                "texte": "Nous évaluons la situation sur place, en toute confidentialité, pour un devis adapté."
+              },
+              {
+                "icone": "trash-2",
+                "titre": "Débarras & nettoyage",
+                "texte": "Tri, évacuation des déchets puis nettoyage et désinfection de chaque pièce."
+              },
+              {
+                "icone": "thumbs-up",
+                "titre": "Remise en état",
+                "texte": "Le logement est désodorisé et contrôlé avant de vous être restitué."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Intervention à Nîmes et dans le Gard",
+            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
+            "rayonKm": 20,
+            "villes": [
+              "Nîmes",
+              "Caissargues",
+              "Bouillargues",
+              "Rodilhan",
+              "Marguerittes",
+              "Garons",
+              "Saint-Gervasy",
+              "Poulx",
+              "Caveirac",
+              "Clarensac",
+              "Milhaud",
+              "Bernis",
+              "Manduel",
+              "Saint-Gilles",
+              "Uchaud",
+              "Vergèze",
+              "Générac",
+              "Vauvert"
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Combien coûte le nettoyage d'un logement Diogène ?",
+                "reponse": "Le tarif est établi sur devis après une visite, car chaque situation est unique. À titre indicatif, l'intervention démarre autour de 600 € pour un studio et augmente selon le volume à débarrasser et l'état du logement."
+              },
+              {
+                "question": "L'intervention est-elle confidentielle ?",
+                "reponse": "Oui, la discrétion est au cœur de notre démarche. Nous intervenons sans jugement et dans le plus grand respect de la personne et du logement."
+              },
+              {
+                "question": "Prenez-vous en charge le débarras des encombrants ?",
+                "reponse": "Oui, nous assurons le tri, l'évacuation des déchets et des encombrants, puis le nettoyage et la désinfection complète des lieux."
+              },
+              {
+                "question": "Le logement est-il désinfecté après le débarras ?",
+                "reponse": "Oui, après le débarras, nous procédons à un nettoyage en profondeur, à la désinfection et à la désodorisation pour rendre le logement de nouveau sain."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Nos autres prestations",
+            "items": [
+              {
+                "nom": "Remise en état",
+                "description": "Nettoyage en profondeur après travaux, déménagement ou avant état des lieux.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Traitement des punaises de lit",
+                "description": "Traitement professionnel des punaises de lit, chambre par chambre.",
+                "href": "/traitement-punaises-de-lit"
+              },
+              {
+                "nom": "Traitement des cafards",
+                "description": "Désinsectisation ciblée contre les cafards et blattes.",
+                "href": "/traitement-cafards"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Besoin d'un devis pour un nettoyage syndrome de Diogène à Nîmes ?",
+            "sousTitre": "Devis gratuit et confidentiel, sans engagement. Réponse rapide et bienveillante.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-bureaux",
+      "label": "Nettoyage de bureaux",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de bureaux à Nîmes — locaux pros dès 90 €",
+        "description": "Nettoyage de bureaux, commerces et locaux professionnels à Nîmes et dans le Gard : entretien régulier et soigné, dès 90 €. Sur devis, sans engagement. Devis gratuit.",
+        "keywords": [
+          "nettoyage de bureaux Nîmes",
+          "nettoyage de bureaux Gard",
+          "nettoyage locaux professionnels Nîmes",
+          "entretien commerce Nîmes",
+          "société de nettoyage Nîmes"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage de bureaux & locaux professionnels",
+        "description": "Entretien régulier de bureaux, commerces et locaux professionnels à Nîmes.",
+        "serviceType": "Nettoyage de bureaux",
+        "priceFrom": 90
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nettoyage de bureaux · Nîmes",
+            "titre": "Nettoyage de bureaux à Nîmes — dès 90 €",
+            "intro": "SANAD CLEAN entretient vos bureaux, commerces et locaux professionnels à Nîmes et dans le Gard. Un environnement de travail propre et accueillant, avec un prestataire sérieux et ponctuel.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Nettoyage de bureaux" }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Pourquoi choisir SANAD CLEAN",
+            "items": [
+              {
+                "icone": "building-2",
+                "nom": "Entretien régulier",
+                "description": "Quotidien, hebdomadaire ou ponctuel : un rythme adapté à votre activité."
+              },
+              {
+                "icone": "clock",
+                "nom": "Horaires flexibles",
+                "description": "Intervention avant ouverture ou après fermeture pour ne pas gêner votre activité."
+              },
+              {
+                "icone": "shield-check",
+                "nom": "Prestataire de confiance",
+                "description": "Une intervenante sérieuse et discrète, qui respecte vos locaux et votre matériel."
+              },
+              {
+                "icone": "check-circle",
+                "nom": "Locaux impeccables",
+                "description": "Bureaux, sanitaires, espaces communs et vitres : un rendu net et professionnel."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "Comment se déroule votre nettoyage de bureaux",
+            "items": [
+              {
+                "icone": "clipboard-list",
+                "titre": "Visite & devis",
+                "texte": "Nous évaluons vos locaux et vos besoins pour un devis gratuit et un planning sur mesure."
+              },
+              {
+                "icone": "calendar-check",
+                "titre": "Planning défini",
+                "texte": "Nous convenons des créneaux et de la fréquence qui conviennent à votre activité."
+              },
+              {
+                "icone": "sparkles",
+                "titre": "Entretien régulier",
+                "texte": "Nous intervenons avec rigueur et constance pour des locaux toujours propres."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Intervention à Nîmes et dans le Gard",
+            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
+            "rayonKm": 20,
+            "villes": [
+              "Nîmes",
+              "Caissargues",
+              "Bouillargues",
+              "Rodilhan",
+              "Marguerittes",
+              "Garons",
+              "Saint-Gervasy",
+              "Poulx",
+              "Caveirac",
+              "Clarensac",
+              "Milhaud",
+              "Bernis",
+              "Manduel",
+              "Saint-Gilles",
+              "Uchaud",
+              "Vergèze",
+              "Générac",
+              "Vauvert"
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Combien coûte le nettoyage de bureaux à Nîmes ?",
+                "reponse": "Le nettoyage de locaux professionnels démarre à 90 € jusqu'à 50 m², 120 € de 50 à 100 m² et à partir de 150 € au-delà. Le tarif dépend de la surface et de la fréquence d'entretien."
+              },
+              {
+                "question": "Le nettoyage de bureaux donne-t-il droit au crédit d'impôt ?",
+                "reponse": "Non. Le crédit d'impôt de 50 % concerne uniquement les prestations réalisées au domicile d'un particulier. Le nettoyage de locaux professionnels est facturé sur devis, sans crédit d'impôt."
+              },
+              {
+                "question": "Pouvez-vous intervenir en dehors des heures d'ouverture ?",
+                "reponse": "Oui, nous adaptons nos créneaux pour intervenir avant l'ouverture ou après la fermeture, sans perturber votre activité."
+              },
+              {
+                "question": "Proposez-vous un entretien régulier ?",
+                "reponse": "Oui, nous mettons en place un planning quotidien, hebdomadaire ou ponctuel selon vos besoins, avec un prestataire stable et de confiance."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Nos autres prestations",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "description": "Entretien régulier ou grand ménage de votre logement, dès 15 €/h après crédit d'impôt.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "description": "Vitres, baies et miroirs sans traces, intérieur et extérieur.",
+                "href": "/nettoyage-vitres"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Besoin d'un devis pour le nettoyage de bureaux à Nîmes ?",
+            "sousTitre": "Devis gratuit et sans engagement, planning sur mesure. Réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "traitement-punaises-de-lit",
+      "label": "Punaises de lit",
+      "navHidden": true,
+      "meta": {
+        "title": "Traitement punaises de lit à Nîmes — désinsectisation pro",
+        "description": "Traitement des punaises de lit à Nîmes et dans le Gard : désinsectisation professionnelle chambre par chambre, traitement ciblé et durable. Devis gratuit, intervention rapide.",
+        "keywords": [
+          "traitement punaises de lit Nîmes",
+          "punaises de lit Gard",
+          "désinsectisation punaises Nîmes",
+          "anti punaises de lit Nîmes",
+          "extermination punaises de lit"
+        ]
+      },
+      "service": {
+        "name": "Traitement des punaises de lit",
+        "description": "Désinsectisation professionnelle des punaises de lit, chambre par chambre, à Nîmes.",
+        "serviceType": "Désinsectisation punaises de lit",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Désinsectisation punaises de lit · Nîmes",
+            "titre": "Traitement des punaises de lit à Nîmes",
+            "intro": "SANAD CLEAN élimine les punaises de lit à Nîmes et dans le Gard avec un traitement professionnel, chambre par chambre. Une intervention ciblée et durable pour retrouver des nuits sereines.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Punaises de lit" }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Pourquoi choisir SANAD CLEAN",
+            "items": [
+              {
+                "icone": "bug",
+                "nom": "Traitement ciblé",
+                "description": "Inspection puis traitement chambre par chambre, des matelas aux plinthes."
+              },
+              {
+                "icone": "shield-check",
+                "nom": "Méthode professionnelle",
+                "description": "Produits et techniques adaptés pour éliminer œufs et adultes durablement."
+              },
+              {
+                "icone": "clock",
+                "nom": "Intervention rapide",
+                "description": "Disponibles 7j/7 pour agir vite et limiter la propagation."
+              },
+              {
+                "icone": "check-circle",
+                "nom": "Suivi recommandé",
+                "description": "Conseils et contrôle de suivi pour confirmer la disparition de l'infestation."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "Comment se déroule votre traitement",
+            "items": [
+              {
+                "icone": "clipboard-list",
+                "titre": "Diagnostic",
+                "texte": "Nous identifions l'ampleur de l'infestation pour un devis adapté."
+              },
+              {
+                "icone": "spray-can",
+                "titre": "Traitement",
+                "texte": "Désinsectisation ciblée des zones infestées, chambre par chambre."
+              },
+              {
+                "icone": "thumbs-up",
+                "titre": "Suivi",
+                "texte": "Conseils de prévention et contrôle de suivi pour valider l'éradication."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Intervention à Nîmes et dans le Gard",
+            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
+            "rayonKm": 20,
+            "villes": [
+              "Nîmes",
+              "Caissargues",
+              "Bouillargues",
+              "Rodilhan",
+              "Marguerittes",
+              "Garons",
+              "Saint-Gervasy",
+              "Poulx",
+              "Caveirac",
+              "Clarensac",
+              "Milhaud",
+              "Bernis",
+              "Manduel",
+              "Saint-Gilles",
+              "Uchaud",
+              "Vergèze",
+              "Générac",
+              "Vauvert"
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Combien coûte un traitement contre les punaises de lit à Nîmes ?",
+                "reponse": "Le tarif est établi sur devis selon l'ampleur de l'infestation. À titre indicatif, le traitement démarre autour de 250 € pour une chambre, 350 € pour deux chambres et 490 € pour un logement complet."
+              },
+              {
+                "question": "Le traitement des punaises ouvre-t-il droit au crédit d'impôt ?",
+                "reponse": "Non. La désinsectisation n'entre pas dans le champ du crédit d'impôt services à la personne. Elle est facturée sur devis."
+              },
+              {
+                "question": "Faut-il préparer le logement avant l'intervention ?",
+                "reponse": "Oui, nous vous donnons des consignes (lavage du linge à haute température, dégagement des zones à traiter) pour optimiser l'efficacité du traitement."
+              },
+              {
+                "question": "Une seule intervention suffit-elle ?",
+                "reponse": "Selon l'infestation, un contrôle de suivi peut être recommandé pour s'assurer de l'éradication complète des punaises et de leurs œufs."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Nos autres prestations",
+            "items": [
+              {
+                "nom": "Traitement des cafards",
+                "description": "Désinsectisation ciblée contre les cafards et blattes.",
+                "href": "/traitement-cafards"
+              },
+              {
+                "nom": "Syndrome de Diogène",
+                "description": "Débarras, nettoyage et désinfection des logements très encombrés.",
+                "href": "/syndrome-diogene"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Besoin d'un devis pour un traitement des punaises de lit à Nîmes ?",
+            "sousTitre": "Devis gratuit et sans engagement, intervention rapide. Réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "traitement-cafards",
+      "label": "Traitement des cafards",
+      "navHidden": true,
+      "meta": {
+        "title": "Traitement des cafards à Nîmes — désinsectisation ciblée",
+        "description": "Traitement des cafards et blattes à Nîmes et dans le Gard : désinsectisation professionnelle et ciblée, intervention rapide et durable. Devis gratuit, sans engagement.",
+        "keywords": [
+          "traitement des cafards Nîmes",
+          "cafards Gard",
+          "désinsectisation cafards Nîmes",
+          "anti blattes Nîmes",
+          "extermination cafards Nîmes"
+        ]
+      },
+      "service": {
+        "name": "Traitement des cafards",
+        "description": "Désinsectisation ciblée contre les cafards et blattes à Nîmes.",
+        "serviceType": "Désinsectisation cafards",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Désinsectisation cafards · Nîmes",
+            "titre": "Traitement des cafards à Nîmes",
+            "intro": "SANAD CLEAN débarrasse votre logement ou votre local des cafards et blattes à Nîmes et dans le Gard. Une désinsectisation ciblée et durable, des cuisines aux gaines techniques.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Traitement des cafards" }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Pourquoi choisir SANAD CLEAN",
+            "items": [
+              {
+                "icone": "bug",
+                "nom": "Désinsectisation ciblée",
+                "description": "Traitement des points sensibles : cuisine, sanitaires, gaines et recoins."
+              },
+              {
+                "icone": "shield-check",
+                "nom": "Méthode professionnelle",
+                "description": "Produits adaptés pour éliminer les cafards et casser leur cycle de reproduction."
+              },
+              {
+                "icone": "clock",
+                "nom": "Intervention rapide",
+                "description": "Disponibles 7j/7 pour agir vite et stopper la prolifération."
+              },
+              {
+                "icone": "check-circle",
+                "nom": "Résultat durable",
+                "description": "Conseils de prévention pour éviter une nouvelle infestation."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "Comment se déroule votre traitement",
+            "items": [
+              {
+                "icone": "clipboard-list",
+                "titre": "Diagnostic",
+                "texte": "Nous localisons les foyers d'infestation pour un devis adapté."
+              },
+              {
+                "icone": "spray-can",
+                "titre": "Traitement",
+                "texte": "Application ciblée de gel et produits sur les zones de passage et de nidification."
+              },
+              {
+                "icone": "thumbs-up",
+                "titre": "Prévention",
+                "texte": "Conseils d'hygiène et de prévention pour un résultat durable."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Intervention à Nîmes et dans le Gard",
+            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
+            "rayonKm": 20,
+            "villes": [
+              "Nîmes",
+              "Caissargues",
+              "Bouillargues",
+              "Rodilhan",
+              "Marguerittes",
+              "Garons",
+              "Saint-Gervasy",
+              "Poulx",
+              "Caveirac",
+              "Clarensac",
+              "Milhaud",
+              "Bernis",
+              "Manduel",
+              "Saint-Gilles",
+              "Uchaud",
+              "Vergèze",
+              "Générac",
+              "Vauvert"
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Combien coûte un traitement contre les cafards à Nîmes ?",
+                "reponse": "Le tarif est établi sur devis selon la surface et l'ampleur de l'infestation. À titre indicatif, le traitement démarre autour de 140 € pour un studio ou T1 et augmente selon la taille du logement."
+              },
+              {
+                "question": "Le traitement des cafards ouvre-t-il droit au crédit d'impôt ?",
+                "reponse": "Non. La désinsectisation n'entre pas dans le champ du crédit d'impôt services à la personne. Elle est facturée sur devis."
+              },
+              {
+                "question": "Combien de temps avant de voir les résultats ?",
+                "reponse": "Les premiers effets apparaissent en quelques jours. Le gel agit progressivement sur l'ensemble de la colonie, y compris les individus cachés."
+              },
+              {
+                "question": "Intervenez-vous aussi dans les locaux professionnels ?",
+                "reponse": "Oui, nous traitons les logements comme les commerces, restaurants et locaux professionnels à Nîmes et dans le Gard."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Nos autres prestations",
+            "items": [
+              {
+                "nom": "Traitement des punaises de lit",
+                "description": "Traitement professionnel des punaises de lit, chambre par chambre.",
+                "href": "/traitement-punaises-de-lit"
+              },
+              {
+                "nom": "Syndrome de Diogène",
+                "description": "Débarras, nettoyage et désinfection des logements très encombrés.",
+                "href": "/syndrome-diogene"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Besoin d'un devis pour un traitement des cafards à Nîmes ?",
+            "sousTitre": "Devis gratuit et sans engagement, intervention rapide. Réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
           }
         }
       ]

@@ -87,12 +87,12 @@
             "titre": "A single provider for all your cleaning",
             "intro": "Cleaning, deep cleaning, windows, pests, offices: all your needs in Nîmes, with a single point of contact.",
             "items": [
-              { "nom": "Cleaning & housekeeping", "emoji": "🧹", "badge": "50% tax credit", "priceHint": "from €30/h", "description": "Regular upkeep of your home or a thorough spring cleaning.", "href": "/tarifs" },
-              { "nom": "Deep cleaning", "emoji": "🏠", "badge": "50% tax credit", "priceHint": "from €250", "description": "Deep cleaning after renovation work, a move or before a check-out inspection.", "href": "/tarifs" },
-              { "nom": "Window cleaning", "emoji": "🪟", "badge": "50% tax credit", "priceHint": "from €90", "description": "Streak-free windows, bay doors and mirrors, inside and out.", "href": "/tarifs" },
-              { "nom": "Sofa & armchair", "emoji": "🛋️", "badge": "50% tax credit", "priceHint": "from €60", "description": "Deep cleaning and stain removal for your sofas, armchairs and textiles.", "href": "/tarifs" },
-              { "nom": "Terrace & outdoors", "emoji": "🌿", "badge": "50% tax credit", "priceHint": "from €90", "description": "Cleaning and degreasing of your terraces and outdoor surfaces.", "href": "/tarifs" },
-              { "nom": "Office cleaning", "emoji": "🏢", "badge": "On quote", "priceHint": "from €90", "description": "Regular upkeep of your offices, shops and commercial premises.", "href": "/tarifs" }
+              { "nom": "Cleaning & housekeeping", "emoji": "🧹", "badge": "50% tax credit", "priceHint": "from €30/h", "description": "Regular upkeep of your home or a thorough spring cleaning.", "href": "/menage-domicile" },
+              { "nom": "Deep cleaning", "emoji": "🏠", "badge": "50% tax credit", "priceHint": "from €250", "description": "Deep cleaning after renovation work, a move or before a check-out inspection.", "href": "/remise-en-etat" },
+              { "nom": "Window cleaning", "emoji": "🪟", "badge": "50% tax credit", "priceHint": "from €90", "description": "Streak-free windows, bay doors and mirrors, inside and out.", "href": "/nettoyage-vitres" },
+              { "nom": "Sofa & armchair", "emoji": "🛋️", "badge": "50% tax credit", "priceHint": "from €60", "description": "Deep cleaning and stain removal for your sofas, armchairs and textiles.", "href": "/nettoyage-canape" },
+              { "nom": "Terrace & outdoors", "emoji": "🌿", "badge": "50% tax credit", "priceHint": "from €90", "description": "Cleaning and degreasing of your terraces and outdoor surfaces.", "href": "/nettoyage-terrasse" },
+              { "nom": "Office cleaning", "emoji": "🏢", "badge": "On quote", "priceHint": "from €90", "description": "Regular upkeep of your offices, shops and commercial premises.", "href": "/nettoyage-bureaux" }
             ],
             "cta": { "label": "See all our services", "href": "/services" }
           }
@@ -231,12 +231,12 @@
             "titre": "Services in your home",
             "intro": "Carried out in private homes, these services qualify for the 50% tax credit (via Accès SAP).",
             "items": [
-              { "nom": "Cleaning & housekeeping", "emoji": "🧹", "badge": "50% tax credit", "priceHint": "from €30/h", "description": "Regular upkeep of your home or a thorough spring cleaning.", "href": "/tarifs" },
-              { "nom": "Deep cleaning", "emoji": "🏠", "badge": "50% tax credit", "priceHint": "from €250", "description": "Deep cleaning after renovation work, a move or before a check-out inspection.", "href": "/tarifs" },
-              { "nom": "Window cleaning", "emoji": "🪟", "badge": "50% tax credit", "priceHint": "from €90", "description": "Streak-free windows, bay doors and mirrors, inside and out.", "href": "/tarifs" },
-              { "nom": "Sofa & armchair", "emoji": "🛋️", "badge": "50% tax credit", "priceHint": "from €60", "description": "Deep cleaning and stain removal for your sofas, armchairs and textiles.", "href": "/tarifs" },
-              { "nom": "Terrace & outdoors", "emoji": "🌿", "badge": "50% tax credit", "priceHint": "from €90", "description": "Cleaning and degreasing of your terraces and outdoor surfaces.", "href": "/tarifs" },
-              { "nom": "Diogenes syndrome", "emoji": "♻️", "badge": "50% tax credit", "priceHint": "from €600", "description": "Complete clearing, cleaning and disinfection of severely cluttered homes.", "href": "/tarifs" }
+              { "nom": "Cleaning & housekeeping", "emoji": "🧹", "badge": "50% tax credit", "priceHint": "from €30/h", "description": "Regular upkeep of your home or a thorough spring cleaning.", "href": "/menage-domicile" },
+              { "nom": "Deep cleaning", "emoji": "🏠", "badge": "50% tax credit", "priceHint": "from €250", "description": "Deep cleaning after renovation work, a move or before a check-out inspection.", "href": "/remise-en-etat" },
+              { "nom": "Window cleaning", "emoji": "🪟", "badge": "50% tax credit", "priceHint": "from €90", "description": "Streak-free windows, bay doors and mirrors, inside and out.", "href": "/nettoyage-vitres" },
+              { "nom": "Sofa & armchair", "emoji": "🛋️", "badge": "50% tax credit", "priceHint": "from €60", "description": "Deep cleaning and stain removal for your sofas, armchairs and textiles.", "href": "/nettoyage-canape" },
+              { "nom": "Terrace & outdoors", "emoji": "🌿", "badge": "50% tax credit", "priceHint": "from €90", "description": "Cleaning and degreasing of your terraces and outdoor surfaces.", "href": "/nettoyage-terrasse" },
+              { "nom": "Diogenes syndrome", "emoji": "♻️", "badge": "50% tax credit", "priceHint": "from €600", "description": "Complete clearing, cleaning and disinfection of severely cluttered homes.", "href": "/syndrome-diogene" }
             ]
           }
         },
@@ -248,9 +248,9 @@
             "titre": "Specialised & professional treatments",
             "intro": "Commercial premises and pest control: billed on quote, without a tax credit.",
             "items": [
-              { "nom": "Office cleaning", "emoji": "🏢", "badge": "On quote", "priceHint": "from €90", "description": "Regular upkeep of your offices, shops and commercial premises.", "href": "/tarifs" },
-              { "nom": "Bed bugs", "emoji": "🛏️", "badge": "On quote", "priceHint": "from €250", "description": "Professional bed bug treatment, room by room.", "href": "/tarifs" },
-              { "nom": "Cockroach treatment", "emoji": "🐜", "badge": "On quote", "priceHint": "from €140", "description": "Targeted pest control against cockroaches and roaches.", "href": "/tarifs" }
+              { "nom": "Office cleaning", "emoji": "🏢", "badge": "On quote", "priceHint": "from €90", "description": "Regular upkeep of your offices, shops and commercial premises.", "href": "/nettoyage-bureaux" },
+              { "nom": "Bed bugs", "emoji": "🛏️", "badge": "On quote", "priceHint": "from €250", "description": "Professional bed bug treatment, room by room.", "href": "/traitement-punaises-de-lit" },
+              { "nom": "Cockroach treatment", "emoji": "🐜", "badge": "On quote", "priceHint": "from €140", "description": "Targeted pest control against cockroaches and roaches.", "href": "/traitement-cafards" }
             ],
             "cta": { "label": "Build my quote online", "href": "/devis" }
           }
@@ -263,6 +263,856 @@
             "ctaPrimaire": { "label": "Build my quote", "href": "/devis" },
             "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" },
             "lien": { "label": "or message us on WhatsApp →", "href": "https://wa.me/33767029762" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "menage-domicile",
+      "label": "Home cleaning",
+      "navHidden": true,
+      "service": { "name": "Home cleaning & housekeeping", "description": "Regular upkeep or deep spring-clean of your home, with 50% tax credit", "serviceType": "Home cleaning", "priceFrom": 30 },
+      "meta": {
+        "title": "Home cleaning in Nîmes — from €30/hr (€15 net)",
+        "description": "Home cleaning and housekeeping in Nîmes and the Gard. Regular upkeep or a deep spring-clean, with the 50% tax credit (€15/hr net). Free quote.",
+        "keywords": ["home cleaning Nîmes", "housekeeper Nîmes", "house cleaning Gard", "home help Nîmes", "spring cleaning Nîmes"]
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "50% tax credit",
+            "titre": "Home cleaning in Nîmes — from €30/hr",
+            "intro": "SANAD CLEAN takes care of your home cleaning and housekeeping in Nîmes and across the Gard. Whether you need regular weekly upkeep or a one-off deep spring-clean, our trusted team works with care. With the 50% home-help tax credit, your real cost drops to €15/hr.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Home cleaning" }
+            ],
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Why choose SANAD CLEAN",
+            "items": [
+              { "icone": "badge-euro", "nom": "Real cost of €15/hr", "description": "The 50% tax credit cuts your bill in half, with the instant advance via Accès SAP." },
+              { "icone": "shield-check", "nom": "Trusted, vetted staff", "description": "Discreet, reliable people who respect your home and your belongings." },
+              { "icone": "clock", "nom": "Available 7 days a week", "description": "Flexible slots that fit your schedule, including evenings and weekends." },
+              { "icone": "sparkles", "nom": "Tailored products", "description": "Methods and products adapted to your home, your children and your pets." }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "How your home cleaning works",
+            "items": [
+              { "icone": "calendar-check", "titre": "Your request", "texte": "Tell us your needs and preferred slots by phone, WhatsApp or the online quote form." },
+              { "icone": "home", "titre": "The cleaning visit", "texte": "Our cleaner comes to your home in Nîmes and works through your checklist with care." },
+              { "icone": "thumbs-up", "titre": "Quality check", "texte": "We make sure everything is spotless and adjust to your feedback for next time." }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Serving Nîmes and the Gard",
+            "intro": "We clean homes in Nîmes and the surrounding towns within about 20 km.",
+            "rayonKm": 20,
+            "villes": ["Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons", "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis", "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Frequently asked questions",
+            "items": [
+              { "question": "How much does home cleaning really cost?", "reponse": "Cleaning is billed at €30/hr, but the 50% home-help tax credit brings your real cost down to €15/hr. With the instant advance via Accès SAP, you only pay the €15 half straight away." },
+              { "question": "Do you bring your own cleaning products?", "reponse": "Yes, we can supply suitable products for a small materials supplement, or use yours if you prefer — including eco-friendly products around children and pets." },
+              { "question": "Can I book a regular weekly clean?", "reponse": "Absolutely. We set up a recurring slot that suits you in Nîmes or the Gard, with the same trusted cleaner whenever possible." },
+              { "question": "Is the same person sent each time?", "reponse": "We aim for continuity so your cleaner gets to know your home and your preferences, which makes each visit faster and more thorough." }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Our other services",
+            "items": [
+              { "nom": "Deep cleaning", "description": "Deep clean after building work, a move or before a check-out.", "href": "/remise-en-etat" },
+              { "nom": "Window cleaning", "description": "Streak-free windows, bays and mirrors, inside and out.", "href": "/nettoyage-vitres" },
+              { "nom": "Sofa & armchair cleaning", "description": "Hot-water extraction of sofas, armchairs and mattresses.", "href": "/nettoyage-canape" }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Need a quote for home cleaning in Nîmes?",
+            "sousTitre": "Free, no-obligation quote. Quick reply by phone, WhatsApp or email.",
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "remise-en-etat",
+      "label": "Deep cleaning",
+      "navHidden": true,
+      "service": { "name": "Deep restorative cleaning", "description": "Deep clean after building work, a move or before a check-out", "serviceType": "Restorative cleaning", "priceFrom": 250 },
+      "meta": {
+        "title": "Deep cleaning in Nîmes — from €250 (50% credit)",
+        "description": "Deep restorative cleaning in Nîmes and the Gard after building work, a move or before a check-out. Qualifies for the 50% tax credit. Free quote.",
+        "keywords": ["deep cleaning Nîmes", "after-works cleaning Nîmes", "end of tenancy cleaning Gard", "move-out cleaning Nîmes", "restorative cleaning Gard"]
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "50% tax credit",
+            "titre": "Deep cleaning in Nîmes — from €250",
+            "intro": "After building work, a move or before a check-out inspection, SANAD CLEAN brings your home back to a like-new state in Nîmes and across the Gard. We tackle dust, plaster, grease and limescale top to bottom. As an at-home service, it qualifies for the 50% tax credit.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Deep cleaning" }
+            ],
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Why choose SANAD CLEAN",
+            "items": [
+              { "icone": "sparkles", "nom": "Like-new finish", "description": "We remove dust, paint splashes, plaster, grease and limescale down to the last detail." },
+              { "icone": "badge-euro", "nom": "50% tax credit", "description": "Carried out in your home, the deep clean halves your real cost via Accès SAP." },
+              { "icone": "clock", "nom": "Fast turnaround", "description": "Ready for your move-in, handover or check-out on time, even on tight deadlines." },
+              { "icone": "shield-check", "nom": "Careful, equipped team", "description": "Professional equipment and a meticulous team that respect finishes and surfaces." }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "How your deep cleaning works",
+            "items": [
+              { "icone": "calendar-check", "titre": "Assessment & quote", "texte": "We assess the property in Nîmes, agree on scope and send a clear quote within 24 h." },
+              { "icone": "spray-can", "titre": "Top-to-bottom clean", "texte": "We deep-clean every room, surface, kitchen and bathroom, including hard-to-reach areas." },
+              { "icone": "thumbs-up", "titre": "Final inspection", "texte": "We walk through the property with you to make sure it is ready for handover." }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Serving Nîmes and the Gard",
+            "intro": "We carry out deep cleans in Nîmes and the surrounding towns within about 20 km.",
+            "rayonKm": 20,
+            "villes": ["Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons", "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis", "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Frequently asked questions",
+            "items": [
+              { "question": "What does a deep clean include?", "reponse": "A full top-to-bottom clean: floors, walls, skirting, kitchen, bathrooms, windows, fixtures and removal of post-works dust, grease and limescale, so the home is move-in ready." },
+              { "question": "Does it qualify for the tax credit?", "reponse": "Yes. As a service carried out in a private home, deep cleaning qualifies for the 50% tax credit via the Accès SAP cooperative, halving your real cost." },
+              { "question": "How much does it cost?", "reponse": "From €250 for a studio or one-room flat, rising with the size of the property. We send a precise quote after assessing the job." },
+              { "question": "Can you clean before a rental check-out?", "reponse": "Yes, end-of-tenancy and check-out cleans are one of our specialities — we help you hand the property back spotless." }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Our other services",
+            "items": [
+              { "nom": "Home cleaning & housekeeping", "description": "Regular upkeep or a deep spring-clean of your home.", "href": "/menage-domicile" },
+              { "nom": "Diogenes syndrome clean-out", "description": "Clearing, cleaning and disinfecting heavily cluttered homes.", "href": "/syndrome-diogene" },
+              { "nom": "Window cleaning", "description": "Streak-free windows, bays and mirrors, inside and out.", "href": "/nettoyage-vitres" }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Need a quote for deep cleaning in Nîmes?",
+            "sousTitre": "Free, no-obligation quote. Quick reply by phone, WhatsApp or email.",
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Window cleaning",
+      "navHidden": true,
+      "service": { "name": "Window cleaning", "description": "Streak-free windows, bays and mirrors, inside and out", "serviceType": "Window cleaning", "priceFrom": 90 },
+      "meta": {
+        "title": "Window cleaning in Nîmes — from €90 (50% credit)",
+        "description": "Window cleaning in Nîmes and the Gard: streak-free windows, bays and mirrors, inside and out. Qualifies for the 50% tax credit. Free quote.",
+        "keywords": ["window cleaning Nîmes", "window cleaner Gard", "glass cleaning Nîmes", "bay window cleaning Nîmes", "streak-free windows Gard"]
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "50% tax credit",
+            "titre": "Window cleaning in Nîmes — from €90",
+            "intro": "SANAD CLEAN makes your windows, bay doors and mirrors crystal clear in Nîmes and across the Gard. We clean inside and out, frames and sills included, for a streak-free finish. As an at-home service, it qualifies for the 50% tax credit.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Window cleaning" }
+            ],
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Why choose SANAD CLEAN",
+            "items": [
+              { "icone": "droplets", "nom": "Streak-free shine", "description": "Professional technique and products for perfectly clear glass with no marks." },
+              { "icone": "sparkles", "nom": "Inside and out", "description": "We clean both sides plus frames and sills so every window looks brand new." },
+              { "icone": "badge-euro", "nom": "50% tax credit", "description": "As an at-home service, your real cost is halved via Accès SAP." },
+              { "icone": "shield-check", "nom": "Safe and careful", "description": "Suitable equipment for bays and higher windows, with respect for your home." }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "How your window cleaning works",
+            "items": [
+              { "icone": "calendar-check", "titre": "Your request", "texte": "Tell us the number and type of windows and book a slot that suits you." },
+              { "icone": "droplets", "titre": "The cleaning visit", "texte": "We clean each pane, frame and sill, inside and out, in Nîmes or the Gard." },
+              { "icone": "thumbs-up", "titre": "Quality check", "texte": "We check every window in the light for a flawless, streak-free result." }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Serving Nîmes and the Gard",
+            "intro": "We clean windows in Nîmes and the surrounding towns within about 20 km.",
+            "rayonKm": 20,
+            "villes": ["Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons", "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis", "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Frequently asked questions",
+            "items": [
+              { "question": "Do you clean both sides of the windows?", "reponse": "Yes, we clean the inside and outside of every pane, along with frames and sills, for a complete result." },
+              { "question": "Does window cleaning qualify for the tax credit?", "reponse": "Yes. Carried out in your home, window cleaning qualifies for the 50% tax credit via Accès SAP, halving your real cost." },
+              { "question": "How much does it cost?", "reponse": "From €90 for an apartment, more for houses and villas depending on the number of windows. We send a clear quote in advance." },
+              { "question": "Can you reach high or large bay windows?", "reponse": "Yes, we have suitable equipment for tall windows and large bay doors, while working safely." }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Our other services",
+            "items": [
+              { "nom": "Home cleaning & housekeeping", "description": "Regular upkeep or a deep spring-clean of your home.", "href": "/menage-domicile" },
+              { "nom": "Terrace & outdoor cleaning", "description": "Degreasing and de-mossing terraces and outdoor floors.", "href": "/nettoyage-terrasse" },
+              { "nom": "Sofa & armchair cleaning", "description": "Hot-water extraction of sofas, armchairs and mattresses.", "href": "/nettoyage-canape" }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Need a quote for window cleaning in Nîmes?",
+            "sousTitre": "Free, no-obligation quote. Quick reply by phone, WhatsApp or email.",
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-canape",
+      "label": "Sofa cleaning",
+      "navHidden": true,
+      "service": { "name": "Sofa & armchair cleaning", "description": "Hot-water extraction of sofas, armchairs and mattresses", "serviceType": "Upholstery cleaning", "priceFrom": 60 },
+      "meta": {
+        "title": "Sofa cleaning in Nîmes — from €60 (50% credit)",
+        "description": "Sofa, armchair and mattress cleaning in Nîmes and the Gard by hot-water extraction. Stains and dust mites removed. 50% tax credit. Free quote.",
+        "keywords": ["sofa cleaning Nîmes", "upholstery cleaning Gard", "armchair cleaning Nîmes", "mattress cleaning Nîmes", "deep sofa clean Gard"]
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "50% tax credit",
+            "titre": "Sofa & armchair cleaning in Nîmes — from €60",
+            "intro": "SANAD CLEAN revives your sofas, armchairs and mattresses in Nîmes and across the Gard with deep hot-water extraction. We lift stains, dust mites and odours from the fabric. As an at-home service, it qualifies for the 50% tax credit.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Sofa cleaning" }
+            ],
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Why choose SANAD CLEAN",
+            "items": [
+              { "icone": "sofa", "nom": "Deep extraction", "description": "Hot-water extraction reaches deep into the fibres to lift dirt and stains." },
+              { "icone": "droplets", "nom": "Stains & odours gone", "description": "We treat marks, dust mites and odours to refresh your upholstery." },
+              { "icone": "badge-euro", "nom": "50% tax credit", "description": "Done in your home, the service is halved in cost via Accès SAP." },
+              { "icone": "leaf", "nom": "Gentle on fabrics", "description": "Products suited to your textiles, safe around children and pets." }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "How your sofa cleaning works",
+            "items": [
+              { "icone": "calendar-check", "titre": "Your request", "texte": "Tell us what needs cleaning — sofa, armchairs, mattress — and book a slot." },
+              { "icone": "sofa", "titre": "The cleaning visit", "texte": "We treat and extract each item at your home in Nîmes or the Gard." },
+              { "icone": "thumbs-up", "titre": "Quality check", "texte": "We make sure stains are lifted and the fabric is fresh before we leave." }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Serving Nîmes and the Gard",
+            "intro": "We clean upholstery in Nîmes and the surrounding towns within about 20 km.",
+            "rayonKm": 20,
+            "villes": ["Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons", "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis", "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Frequently asked questions",
+            "items": [
+              { "question": "How long does a sofa take to dry?", "reponse": "After hot-water extraction, upholstery is usually touch-dry within a few hours and fully dry the same day with good ventilation." },
+              { "question": "Can you remove old or stubborn stains?", "reponse": "We treat most common stains — food, drinks, body oils and pet marks. Very old or set-in stains may lighten rather than vanish completely." },
+              { "question": "Does it qualify for the tax credit?", "reponse": "Yes. As an at-home service, upholstery cleaning qualifies for the 50% tax credit via Accès SAP, halving your real cost." },
+              { "question": "Do you also clean mattresses?", "reponse": "Yes, we clean and refresh mattresses using the same extraction method to remove dust mites and odours." }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Our other services",
+            "items": [
+              { "nom": "Home cleaning & housekeeping", "description": "Regular upkeep or a deep spring-clean of your home.", "href": "/menage-domicile" },
+              { "nom": "Window cleaning", "description": "Streak-free windows, bays and mirrors, inside and out.", "href": "/nettoyage-vitres" }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Need a quote for sofa cleaning in Nîmes?",
+            "sousTitre": "Free, no-obligation quote. Quick reply by phone, WhatsApp or email.",
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-terrasse",
+      "label": "Terrace cleaning",
+      "navHidden": true,
+      "service": { "name": "Terrace & outdoor cleaning", "description": "Degreasing and de-mossing terraces and outdoor floors", "serviceType": "Terrace cleaning", "priceFrom": 90 },
+      "meta": {
+        "title": "Terrace cleaning in Nîmes — from €90 (50% credit)",
+        "description": "Terrace and outdoor cleaning in Nîmes and the Gard: degreasing and de-mossing of terraces and outdoor floors. 50% tax credit. Free quote.",
+        "keywords": ["terrace cleaning Nîmes", "outdoor cleaning Gard", "de-mossing terrace Nîmes", "patio cleaning Nîmes", "terrace degreasing Gard"]
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "50% tax credit",
+            "titre": "Terrace & outdoor cleaning in Nîmes — from €90",
+            "intro": "SANAD CLEAN cleans, degreases and de-mosses your terraces and outdoor floors in Nîmes and across the Gard. We restore tiles, stone and decking so your outdoor space is ready to enjoy. As an at-home service, it qualifies for the 50% tax credit.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Terrace cleaning" }
+            ],
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Why choose SANAD CLEAN",
+            "items": [
+              { "icone": "sun", "nom": "Outdoor specialists", "description": "We restore terraces, patios and outdoor floors whatever the surface." },
+              { "icone": "droplets", "nom": "Degreasing & de-mossing", "description": "We remove grease, moss, algae and ground-in dirt for a clean finish." },
+              { "icone": "badge-euro", "nom": "50% tax credit", "description": "Carried out at your home, the service is halved in cost via Accès SAP." },
+              { "icone": "leaf", "nom": "Surface-safe products", "description": "Methods adapted to tiles, stone or decking to protect your surfaces." }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "How your terrace cleaning works",
+            "items": [
+              { "icone": "calendar-check", "titre": "Your request", "texte": "Tell us the surface area and type of flooring and book a convenient slot." },
+              { "icone": "droplets", "titre": "The cleaning visit", "texte": "We degrease and de-moss your terrace at your home in Nîmes or the Gard." },
+              { "icone": "thumbs-up", "titre": "Quality check", "texte": "We make sure the surface is clean, even and ready to use." }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Serving Nîmes and the Gard",
+            "intro": "We clean terraces in Nîmes and the surrounding towns within about 20 km.",
+            "rayonKm": 20,
+            "villes": ["Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons", "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis", "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Frequently asked questions",
+            "items": [
+              { "question": "What surfaces can you clean?", "reponse": "We clean tiled, stone, concrete and wooden-deck terraces, as well as outdoor floors and steps, adapting our method to each." },
+              { "question": "Can you remove moss and green algae?", "reponse": "Yes, de-mossing and removing green algae is part of the service, leaving the surface clean and less slippery." },
+              { "question": "Does it qualify for the tax credit?", "reponse": "Yes. As a service carried out at your home, terrace cleaning qualifies for the 50% tax credit via Accès SAP, halving your real cost." },
+              { "question": "How much does it cost?", "reponse": "From €90 for terraces up to 20 m², increasing with surface area. We give you a precise quote beforehand." }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Our other services",
+            "items": [
+              { "nom": "Window cleaning", "description": "Streak-free windows, bays and mirrors, inside and out.", "href": "/nettoyage-vitres" },
+              { "nom": "Deep cleaning", "description": "Deep clean after building work, a move or before a check-out.", "href": "/remise-en-etat" }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Need a quote for terrace cleaning in Nîmes?",
+            "sousTitre": "Free, no-obligation quote. Quick reply by phone, WhatsApp or email.",
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "syndrome-diogene",
+      "label": "Diogenes clean-out",
+      "navHidden": true,
+      "service": { "name": "Diogenes syndrome clean-out", "description": "Clearing, cleaning and disinfecting heavily cluttered homes", "serviceType": "Clearance & disinfection", "priceFrom": "On quote" },
+      "meta": {
+        "title": "Diogenes syndrome clean-out in Nîmes",
+        "description": "Diogenes syndrome clean-out in Nîmes and the Gard: discreet clearing, deep cleaning and disinfection of heavily cluttered homes. Free quote.",
+        "keywords": ["Diogenes syndrome cleaning Nîmes", "extreme cleaning Gard", "hoarder clean-out Nîmes", "house clearance Nîmes", "disinfection cleaning Gard"]
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Clearance & disinfection · Nîmes",
+            "titre": "Diogenes syndrome clean-out in Nîmes",
+            "intro": "SANAD CLEAN handles the complete clearing, deep cleaning and disinfection of heavily cluttered homes in Nîmes and across the Gard. We work with discretion, respect and the right equipment to make a home liveable again, whatever the situation.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Diogenes clean-out" }
+            ],
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Why choose SANAD CLEAN",
+            "items": [
+              { "icone": "shield-check", "nom": "Discreet & respectful", "description": "We handle sensitive situations with empathy, confidentiality and no judgement." },
+              { "icone": "trash-2", "nom": "Full clearance", "description": "Clearing, sorting and removal of clutter and waste from the entire home." },
+              { "icone": "spray-can", "nom": "Deep disinfection", "description": "Thorough cleaning and disinfection to restore a healthy, liveable space." },
+              { "icone": "clock", "nom": "Equipped team", "description": "Protective equipment and the right products for demanding interventions." }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "How your clean-out works",
+            "items": [
+              { "icone": "calendar-check", "titre": "Confidential assessment", "texte": "We visit discreetly in Nîmes to assess the home and prepare a tailored quote." },
+              { "icone": "trash-2", "titre": "Clearing & cleaning", "texte": "We clear, sort and remove clutter, then deep-clean every room." },
+              { "icone": "spray-can", "titre": "Disinfection & check", "texte": "We disinfect the home and make sure it is healthy and liveable again." }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Serving Nîmes and the Gard",
+            "intro": "We carry out clean-outs in Nîmes and the surrounding towns within about 20 km.",
+            "rayonKm": 20,
+            "villes": ["Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons", "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis", "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Frequently asked questions",
+            "items": [
+              { "question": "Is the intervention confidential?", "reponse": "Absolutely. We work with complete discretion and respect, both during the assessment and the clean-out, with no judgement." },
+              { "question": "Do you remove the clutter and waste?", "reponse": "Yes, we clear, sort and remove the contents, then deep-clean and disinfect the whole home." },
+              { "question": "How is the price set?", "reponse": "Every situation is different, so we price on quote after a confidential visit, based on the volume and condition of the home." },
+              { "question": "Does it qualify for the tax credit?", "reponse": "Clearance and disinfection work of this kind is billed on quote and is not eligible for the home-help tax credit." }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Our other services",
+            "items": [
+              { "nom": "Deep cleaning", "description": "Deep clean after building work, a move or before a check-out.", "href": "/remise-en-etat" },
+              { "nom": "Bed bug treatment", "description": "Professional room-by-room bed bug treatment.", "href": "/traitement-punaises-de-lit" },
+              { "nom": "Cockroach treatment", "description": "Targeted control of cockroaches and roaches.", "href": "/traitement-cafards" }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Need a quote for a Diogenes syndrome clean-out in Nîmes?",
+            "sousTitre": "Free, no-obligation quote. Quick, discreet reply by phone, WhatsApp or email.",
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-bureaux",
+      "label": "Office cleaning",
+      "navHidden": true,
+      "service": { "name": "Office & commercial cleaning", "description": "Regular upkeep of offices, shops and business premises", "serviceType": "Office cleaning", "priceFrom": 90 },
+      "meta": {
+        "title": "Office cleaning in Nîmes — from €90",
+        "description": "Office and commercial cleaning in Nîmes and the Gard: reliable, regular upkeep of offices, shops and business premises. Free quote.",
+        "keywords": ["office cleaning Nîmes", "commercial cleaning Gard", "business premises cleaning Nîmes", "shop cleaning Nîmes", "professional cleaning Gard"]
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Office cleaning · Nîmes",
+            "titre": "Office & commercial cleaning in Nîmes — from €90",
+            "intro": "SANAD CLEAN keeps your offices, shops and business premises spotless in Nîmes and across the Gard. We offer reliable, regular upkeep on a schedule that fits your business, with discreet staff who work around your team.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Office cleaning" }
+            ],
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Why choose SANAD CLEAN",
+            "items": [
+              { "icone": "building-2", "nom": "Tailored to your business", "description": "Offices, shops or premises — a cleaning plan adapted to your needs." },
+              { "icone": "clock", "nom": "Flexible scheduling", "description": "Before opening, after hours or at weekends, around your activity." },
+              { "icone": "shield-check", "nom": "Reliable & discreet", "description": "Punctual, trustworthy staff who respect your workplace and equipment." },
+              { "icone": "sparkles", "nom": "Consistent quality", "description": "A thorough, dependable result at every visit, week after week." }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "How your office cleaning works",
+            "items": [
+              { "icone": "calendar-check", "titre": "Needs assessment", "texte": "We assess your premises in Nîmes and agree on scope, frequency and timing." },
+              { "icone": "building-2", "titre": "Regular upkeep", "texte": "Our team carries out the cleaning on schedule, around your business hours." },
+              { "icone": "thumbs-up", "titre": "Quality follow-up", "texte": "We stay in touch and adjust the plan to keep your premises consistently clean." }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Serving Nîmes and the Gard",
+            "intro": "We clean business premises in Nîmes and the surrounding towns within about 20 km.",
+            "rayonKm": 20,
+            "villes": ["Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons", "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis", "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Frequently asked questions",
+            "items": [
+              { "question": "Can you clean outside working hours?", "reponse": "Yes, we work before opening, after hours or at weekends so cleaning never disrupts your business." },
+              { "question": "Do you offer regular contracts?", "reponse": "Yes, we set up daily, weekly or custom schedules with consistent staff for your premises in Nîmes and the Gard." },
+              { "question": "Is office cleaning eligible for the tax credit?", "reponse": "No. The 50% tax credit only applies to services in a private home. Commercial cleaning is billed on quote without a tax credit." },
+              { "question": "How much does it cost?", "reponse": "From €90 for premises up to 50 m², increasing with surface area and frequency. We send a tailored quote." }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Our other services",
+            "items": [
+              { "nom": "Home cleaning & housekeeping", "description": "Regular upkeep or a deep spring-clean of your home.", "href": "/menage-domicile" },
+              { "nom": "Window cleaning", "description": "Streak-free windows, bays and mirrors, inside and out.", "href": "/nettoyage-vitres" }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Need a quote for office cleaning in Nîmes?",
+            "sousTitre": "Free, no-obligation quote. Quick reply by phone, WhatsApp or email.",
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "traitement-punaises-de-lit",
+      "label": "Bed bug treatment",
+      "navHidden": true,
+      "service": { "name": "Bed bug treatment", "description": "Professional room-by-room bed bug treatment", "serviceType": "Bed bug pest control", "priceFrom": "On quote" },
+      "meta": {
+        "title": "Bed bug treatment in Nîmes — pest control",
+        "description": "Professional bed bug treatment in Nîmes and the Gard, room by room. Effective, discreet pest control to eradicate bed bugs. Free quote.",
+        "keywords": ["bed bug treatment Nîmes", "bed bug pest control Gard", "bed bug extermination Nîmes", "get rid of bed bugs Nîmes", "bed bugs Gard"]
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Bed bug pest control · Nîmes",
+            "titre": "Bed bug treatment in Nîmes",
+            "intro": "SANAD CLEAN provides professional bed bug treatment in Nîmes and across the Gard, room by room. We locate the infestation and apply an effective, targeted treatment to eradicate bed bugs and stop them coming back.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Bed bug treatment" }
+            ],
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Why choose SANAD CLEAN",
+            "items": [
+              { "icone": "bug", "nom": "Targeted treatment", "description": "We identify nests and treat room by room for thorough eradication." },
+              { "icone": "shield-check", "nom": "Discreet & professional", "description": "Fast, discreet intervention with the right products and equipment." },
+              { "icone": "check-circle", "nom": "Lasting results", "description": "We advise on follow-up so bed bugs do not return." },
+              { "icone": "clock", "nom": "Quick response", "description": "We act fast because bed bugs spread quickly if left untreated." }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "How your bed bug treatment works",
+            "items": [
+              { "icone": "calendar-check", "titre": "Inspection & quote", "texte": "We inspect the affected rooms in Nîmes and send a tailored quote." },
+              { "icone": "bug", "titre": "The treatment", "texte": "We apply a targeted treatment room by room to eradicate the infestation." },
+              { "icone": "check-circle", "titre": "Follow-up", "texte": "We advise on prevention and any follow-up visit to confirm the result." }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Serving Nîmes and the Gard",
+            "intro": "We treat bed bugs in Nîmes and the surrounding towns within about 20 km.",
+            "rayonKm": 20,
+            "villes": ["Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons", "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis", "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Frequently asked questions",
+            "items": [
+              { "question": "How do I know if I have bed bugs?", "reponse": "Typical signs are small itchy bites in a line, dark spots on the mattress and tiny bugs in seams and bed frames. We can confirm during the inspection." },
+              { "question": "How many treatments are needed?", "reponse": "Depending on the level of infestation, one or more visits may be needed. We advise you after the inspection and plan any follow-up." },
+              { "question": "How should I prepare the room?", "reponse": "We give you clear instructions before the visit, such as washing bedding at high temperature and decluttering, to make the treatment more effective." },
+              { "question": "How is the price set?", "reponse": "Bed bug treatment is priced on quote, based on the number of rooms affected and the severity of the infestation." }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Our other services",
+            "items": [
+              { "nom": "Cockroach treatment", "description": "Targeted control of cockroaches and roaches.", "href": "/traitement-cafards" },
+              { "nom": "Diogenes syndrome clean-out", "description": "Clearing, cleaning and disinfecting heavily cluttered homes.", "href": "/syndrome-diogene" }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Need a quote for bed bug treatment in Nîmes?",
+            "sousTitre": "Free, no-obligation quote. Quick reply by phone, WhatsApp or email.",
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "traitement-cafards",
+      "label": "Cockroach treatment",
+      "navHidden": true,
+      "service": { "name": "Cockroach treatment", "description": "Targeted control of cockroaches and roaches", "serviceType": "Cockroach pest control", "priceFrom": "On quote" },
+      "meta": {
+        "title": "Cockroach treatment in Nîmes — pest control",
+        "description": "Professional cockroach treatment in Nîmes and the Gard: targeted pest control to eliminate cockroaches and roaches for good. Free quote.",
+        "keywords": ["cockroach treatment Nîmes", "cockroach pest control Gard", "roach extermination Nîmes", "get rid of cockroaches Nîmes", "cockroaches Gard"]
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Cockroach pest control · Nîmes",
+            "titre": "Cockroach treatment in Nîmes",
+            "intro": "SANAD CLEAN delivers targeted cockroach and roach treatment in Nîmes and across the Gard. We locate the source of the infestation and apply an effective treatment to eliminate cockroaches and keep them from coming back.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Cockroach treatment" }
+            ],
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Why choose SANAD CLEAN",
+            "items": [
+              { "icone": "bug", "nom": "Targeted control", "description": "We treat the source and the hiding spots to wipe out the colony." },
+              { "icone": "shield-check", "nom": "Safe & professional", "description": "Effective products applied with care for your home and family." },
+              { "icone": "check-circle", "nom": "Lasting protection", "description": "Advice on hygiene and prevention so roaches do not return." },
+              { "icone": "clock", "nom": "Fast intervention", "description": "We respond quickly to stop the infestation from spreading." }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "How your cockroach treatment works",
+            "items": [
+              { "icone": "calendar-check", "titre": "Inspection & quote", "texte": "We inspect the premises in Nîmes to find the source and send a quote." },
+              { "icone": "bug", "titre": "The treatment", "texte": "We apply a targeted treatment to nests, hiding spots and access points." },
+              { "icone": "check-circle", "titre": "Prevention advice", "texte": "We share hygiene tips and plan any follow-up to keep roaches away." }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Serving Nîmes and the Gard",
+            "intro": "We treat cockroaches in Nîmes and the surrounding towns within about 20 km.",
+            "rayonKm": 20,
+            "villes": ["Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons", "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis", "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Frequently asked questions",
+            "items": [
+              { "question": "Why do I have cockroaches?", "reponse": "Cockroaches are drawn to warmth, moisture and food. They often arrive through pipes, shared walls or packaging and spread quickly if untreated." },
+              { "question": "Is one treatment enough?", "reponse": "For light infestations one visit can be enough; heavier infestations may need a follow-up. We advise you after the inspection." },
+              { "question": "Is the treatment safe for my family?", "reponse": "Yes, we apply professional products with care and give you clear safety instructions for during and after the treatment." },
+              { "question": "How is the price set?", "reponse": "Cockroach treatment is priced on quote, based on the size of the home and the extent of the infestation." }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Our other services",
+            "items": [
+              { "nom": "Bed bug treatment", "description": "Professional room-by-room bed bug treatment.", "href": "/traitement-punaises-de-lit" },
+              { "nom": "Diogenes syndrome clean-out", "description": "Clearing, cleaning and disinfecting heavily cluttered homes.", "href": "/syndrome-diogene" }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Need a quote for cockroach treatment in Nîmes?",
+            "sousTitre": "Free, no-obligation quote. Quick reply by phone, WhatsApp or email.",
+            "ctaPrimaire": { "label": "Free quote", "href": "/devis" },
+            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
           }
         }
       ]
