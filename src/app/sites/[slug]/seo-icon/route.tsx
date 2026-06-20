@@ -3,10 +3,11 @@ import { getConfig, listSlugs } from "@/lib/config-loader";
 import { iconInitials, iconBrandColor } from "@/lib/favicon";
 
 // Favicon PNG généré PAR SITE — crawlable par Google (contrairement à un
-// data-URI inline). Nom de segment `seo-icon` (et NON `icon`) volontaire : sous
-// un segment dynamique, un fichier/route nommé `icon` est happé par la
-// convention metadata « icon » de Next. Un rewrite next.config expose l'URL
-// publique /sites/[slug]/icon.png -> /sites/[slug]/seo-icon (cf. seo-sitemap).
+// data-URI inline). Servi à l'URL publique SANS extension `/seo-icon` : le
+// proxy sous-domaine réécrit `<slug>.xklic.com/seo-icon` -> ce handler. On
+// évite `.png` car le matcher du proxy (src/proxy.ts) exclut les chemins en
+// `.png` (servis comme assets statiques) -> ils ne seraient jamais réécrits.
+// Nom `seo-icon` (et NON `icon`) : évite aussi la convention metadata de Next.
 export const dynamic = "force-static";
 
 const SIZE = 128;

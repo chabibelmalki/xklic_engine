@@ -8,7 +8,13 @@ import { siteOrigin } from "@/lib/urls";
  *
  *  - Si le client a un logo (`branding.logo`) → on l'utilise tel quel.
  *  - Sinon → on génère une icône (initiales blanches sur fond de marque) servie
- *    en PNG par la route `/icon.png` (handler `seo-icon`).
+ *    en PNG par la route `/seo-icon`.
+ *
+ * NB : l'URL est SANS extension (`/seo-icon`, pas `/icon.png`). Le proxy
+ * sous-domaine (src/proxy.ts) exclut de son matcher les chemins en `.png`
+ * (et autres assets) — un `/icon.png` ne serait donc jamais réécrit vers le
+ * site et tomberait en 404. Le type est porté par l'en-tête `Content-Type`
+ * (image/png) de la route + l'attribut `type` du <link> ci-dessous.
  *
  * IMPORTANT (SEO) : le favicon affiché par Google DOIT être un FICHIER crawlable
  * à une URL stable. Un data-URI inline (`<link rel="icon" href="data:…">`) est
@@ -47,6 +53,12 @@ export function iconBrandColor(config: SiteConfig): string {
  * (cf. note SEO ci-dessus). Utilisé par toutes les pages via `src/lib/seo.ts`.
  */
 export function buildIcons(config: SiteConfig): Metadata["icons"] {
-  const href = config.branding.logo?.trim() || `${siteOrigin(config)}/icon.png`;
-  return { icon: href, shortcut: href, apple: href };
+  const logo = config.branding.logo?.trim();
+  if (logo) return { icon: logo, shortcut: logo, apple: logo };
+  const href = `${siteOrigin(config)}/seo-icon`;
+  return {
+    icon: [{ url: href, type: "image/png", sizes: "128x128" }],
+    shortcut: href,
+    apple: href,
+  };
 }
