@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/Badge";
 import { Reveal } from "@/components/ui/Reveal";
 import { Icon } from "@/components/ui/Icon";
 import { withBase } from "@/lib/utils";
+import { resolveHeroSecondary } from "@/lib/hero-cta";
 import { resolveSocials } from "@/lib/social";
 import { SocialLinks } from "@/components/layout/SocialLinks";
 
@@ -56,25 +57,22 @@ export function Hero({ block, config, basePath = "", strings }: BlockComponentPr
     </h1>
   );
 
-  // Bouton « Laissez un avis » : présent uniquement si le site a un lien d'avis
-  // Google configuré. Mène à la page dédiée /avis (localisée via basePath).
-  const reviewHref = config.googleReviewUrl ? withBase(basePath, "/avis") : null;
+  // CTA secondaire unifié : jamais un canal de contact (tél/WhatsApp/mail) — le
+  // téléphone vit dans le header + le bouton flottant. Le bouton « avis » n'est
+  // PAS dans le hero (mauvaise audience : on sollicite des avis à des prospects)
+  // → il vit dans le footer + la page /avis + le QR. Voir resolveHeroSecondary.
+  const secondary = resolveHeroSecondary(config, c.ctaSecondaire);
 
-  const ctas = (c.ctaPrimaire || c.ctaSecondaire || reviewHref) && (
+  const ctas = (c.ctaPrimaire || secondary) && (
     <div className="flex flex-col gap-3 sm:flex-row">
       {c.ctaPrimaire && (
         <Button href={withBase(basePath, c.ctaPrimaire.href)} size="lg">
           {c.ctaPrimaire.label}
         </Button>
       )}
-      {c.ctaSecondaire && (
-        <Button href={withBase(basePath, c.ctaSecondaire.href)} variant="outline" size="lg">
-          {c.ctaSecondaire.label}
-        </Button>
-      )}
-      {reviewHref && (
-        <Button href={reviewHref} variant="outline" size="lg">
-          <Star className="size-4 fill-current" /> {strings.avis.leaveReview}
+      {secondary && (
+        <Button href={withBase(basePath, secondary.href)} variant="outline" size="lg">
+          {secondary.label}
         </Button>
       )}
     </div>

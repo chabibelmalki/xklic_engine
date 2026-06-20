@@ -7,14 +7,17 @@ import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { withBase } from "@/lib/utils";
+import { resolveHeroSecondary } from "@/lib/hero-cta";
 import { localeDir } from "@/lib/i18n";
 
 /**
  * En-tête de page intérieure : fil d'ariane + eyebrow + H1 + intro + CTA.
  * Pose le H1 unique de la page (les autres titres de page sont des H2).
  */
-export function PageHero({ block, basePath = "", locale, strings }: BlockComponentProps<PageHeroContent>) {
+export function PageHero({ block, config, basePath = "", locale, strings }: BlockComponentProps<PageHeroContent>) {
   const c = block.content;
+  // Même règle que le hero d'accueil : pas de canal de contact en CTA secondaire.
+  const secondary = resolveHeroSecondary(config, c.ctaSecondaire);
   const crumbs = c.breadcrumb ?? [{ label: strings.pageHero.home, href: "/" }, { label: c.titre }];
   const Sep = localeDir(locale) === "rtl" ? ChevronLeft : ChevronRight;
 
@@ -59,16 +62,16 @@ export function PageHero({ block, basePath = "", locale, strings }: BlockCompone
           </h1>
           {c.intro && <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">{c.intro}</p>}
 
-          {(c.ctaPrimaire || c.ctaSecondaire) && (
+          {(c.ctaPrimaire || secondary) && (
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               {c.ctaPrimaire && (
                 <Button href={withBase(basePath, c.ctaPrimaire.href)} size="lg">
                   {c.ctaPrimaire.label}
                 </Button>
               )}
-              {c.ctaSecondaire && (
-                <Button href={withBase(basePath, c.ctaSecondaire.href)} variant="outline" size="lg">
-                  {c.ctaSecondaire.label}
+              {secondary && (
+                <Button href={withBase(basePath, secondary.href)} variant="outline" size="lg">
+                  {secondary.label}
                 </Button>
               )}
             </div>

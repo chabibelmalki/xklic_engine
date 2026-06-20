@@ -84,7 +84,7 @@
               "rating": { "label": "Satisfied clients in Nîmes" }
             },
             "ctaPrimaire": { "label": "Request a free quote", "href": "/devis" },
-            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+            "ctaSecondaire": { "label": "See our services", "href": "/services" }
           }
         },
         {

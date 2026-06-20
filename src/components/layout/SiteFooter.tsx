@@ -156,6 +156,11 @@ export function SiteFooter({
             {e.ape ? ` · APE ${e.ape}` : ""}
           </p>
           <div className="flex flex-wrap gap-x-5 gap-y-2">
+            {config.googleReviewUrl && (
+              <Link href={`${basePath}/avis`} className="hover:text-white/80">
+                {t.nav.avis}
+              </Link>
+            )}
             <Link href={`${basePath}/mentions-legales`} className="hover:text-white/80">
               {t.footer.legal}
             </Link>

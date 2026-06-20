@@ -120,8 +120,8 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 67 02 97 62",
-              "href": "tel:+33767029762"
+              "label": "Voir nos prestations",
+              "href": "/services"
             }
           }
         },

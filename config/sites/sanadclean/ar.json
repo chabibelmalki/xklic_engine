@@ -84,7 +84,7 @@
               "rating": { "label": "عملاء راضون في نيم" }
             },
             "ctaPrimaire": { "label": "اطلب تقديراً مجانياً", "href": "/devis" },
-            "ctaSecondaire": { "label": "07 67 02 97 62", "href": "tel:+33767029762" }
+            "ctaSecondaire": { "label": "اطّلع على خدماتنا", "href": "/services" }
           }
         },
         {
