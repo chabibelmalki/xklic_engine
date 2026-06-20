@@ -96,6 +96,19 @@ export function buildJsonLd(config: SiteConfig, page?: ResolvedPage): object[] {
 
   const graph: object[] = [business];
 
+  // WebSite (page d'accueil uniquement) : principal signal du « nom du site »
+  // affiché par Google dans les résultats. Sans lui, Google retombe sur le
+  // domaine (ex. « xklic » pour un sous-domaine de xklic.com). Posé sur l'accueil
+  // (`page` absent = rendu accueil par défaut), là où Google l'attend.
+  if (!page || page.isHome) {
+    graph.unshift({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: e.nom,
+      url: `${origin}/`,
+    });
+  }
+
   // Service (par page) : émis quand la page courante est marquée `service`.
   if (page?.service) {
     const svc = page.service;
