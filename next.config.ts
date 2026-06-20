@@ -24,6 +24,13 @@ const nextConfig: NextConfig = {
           source: "/sites/:slug/sitemap.xml",
           destination: "/sites/:slug/seo-sitemap",
         },
+        // Favicon PNG généré : exposé sous un nom de fichier conventionnel
+        // (/icon.png) tout en évitant la convention metadata `icon` de Next
+        // (handler interne `seo-icon`). Même logique que `seo-sitemap`.
+        {
+          source: "/sites/:slug/icon.png",
+          destination: "/sites/:slug/seo-icon",
+        },
       ],
       afterFiles: [],
       fallback: [],
