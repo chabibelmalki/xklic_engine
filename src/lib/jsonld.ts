@@ -1,7 +1,6 @@
 import type {
   SiteConfig,
   ContactContent,
-  AvisContent,
   ZoneContent,
   FaqContent,
 } from "@/types/config";
@@ -29,7 +28,6 @@ function heroImage(config: SiteConfig): string | undefined {
 export function buildJsonLd(config: SiteConfig): object[] {
   const e = config.entreprise;
   const contact = block<ContactContent>(config, "contact");
-  const avis = block<AvisContent>(config, "avis");
   const zoneBlock = findBlock<ZoneContent>(config, "zone");
   const zone = zoneBlock?.content ?? undefined;
   const faq = block<FaqContent>(config, "faq");
@@ -68,26 +66,12 @@ export function buildJsonLd(config: SiteConfig): object[] {
     business.areaServed = { "@type": "City", name: config.seo.ville };
   }
 
-  // Avis -> aggregateRating + review
-  if (avis && avis.items.length) {
-    if (avis.noteGlobale) {
-      business.aggregateRating = {
-        "@type": "AggregateRating",
-        ratingValue: avis.noteGlobale,
-        reviewCount: avis.nombre ?? avis.items.length,
-        bestRating: 5,
-      };
-    }
-    business.review = avis.items.slice(0, 10).map((a) => ({
-      "@type": "Review",
-      author: { "@type": "Person", name: a.auteur },
-      reviewBody: a.texte,
-      ...(a.note
-        ? { reviewRating: { "@type": "Rating", ratingValue: a.note, bestRating: 5 } }
-        : {}),
-      ...(a.date ? { datePublished: a.date } : {}),
-    }));
-  }
+  // Avis volontairement ABSENTS du JSON-LD : depuis 2019 Google ignore les avis
+  // « self-serving » (sur l'entreprise, hébergés sur son propre site, type
+  // LocalBusiness/Organization) -> aucune étoile affichée, et Search Console
+  // remonte « Type d'objet non valide pour <parent_node> » + « avis multiples
+  // sans aggregateRating ». Les vraies étoiles viennent du profil Google Business.
+  // Les témoignages restent affichés via le bloc Avis (UI), pas en structured data.
 
   // Horaires
   if (contact?.horaires?.length) {
