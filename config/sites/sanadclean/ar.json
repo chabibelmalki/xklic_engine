@@ -9,7 +9,9 @@
     "tagline": "تنظيف · نيم"
   },
   "social": [
-    { "platform": "tiktok", "url": "https://www.tiktok.com/@souadtazya1" }
+    { "platform": "instagram", "url": "https://www.instagram.com/sanad_clean/" },
+    { "platform": "tiktok", "url": "https://www.tiktok.com/@souadtazya1" },
+    { "platform": "google", "url": "https://www.google.com/maps?kgmid=/g/11z90t2902" }
   ],
   "entreprise": {
     "nom": "SANAD CLEAN",

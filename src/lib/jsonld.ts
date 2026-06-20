@@ -7,7 +7,7 @@ import type {
 } from "@/types/config";
 import { siteOrigin } from "@/lib/urls";
 import { findBlock, type ResolvedPage } from "@/lib/pages";
-import { socialSameAs } from "@/lib/social";
+import { socialSameAs, resolveSocials } from "@/lib/social";
 
 /**
  * JSON-LD par site ET par page. Le `@type` du LocalBusiness vient de
@@ -78,6 +78,11 @@ export function buildJsonLd(config: SiteConfig, page?: ResolvedPage): object[] {
   // Profils sociaux du client -> sameAs (renforce l'entité dans le Knowledge Graph).
   const sameAs = socialSameAs(config);
   if (sameAs.length) business.sameAs = sameAs;
+
+  // Fiche Google (lien réseau « google ») -> hasMap : relie l'entité du site à sa
+  // fiche Google Business / Maps (signal local fort, source des vraies étoiles).
+  const googleProfile = resolveSocials(config).find((s) => s.platform === "google");
+  if (googleProfile) business.hasMap = googleProfile.href;
 
   // Zone d'intervention -> areaServed (helper partagé avec Service)
   business.areaServed = areaServed(config);
