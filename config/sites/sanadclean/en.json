@@ -1353,6 +1353,7 @@
     {
       "slug": "credit-impot",
       "label": "Tax credit",
+      "navHidden": true,
       "meta": {
         "title": "50% tax credit for home cleaning",
         "description": "With SANAD CLEAN and Accès SAP, enjoy the 50% tax credit and the instant advance on home cleaning in Nîmes. Real cost: €15/h."

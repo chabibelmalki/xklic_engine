@@ -27,11 +27,14 @@ export function SiteFooter({
   const t = ui(locale);
   const year = new Date().getFullYear();
 
-  const navLinks: { href: string; label: string }[] = [];
+  // Liens du footer scindés : pages principales (« Le site ») d'un côté, pages
+  // de prestation (champ `service`) de l'autre — évite une colonne unique
+  // démesurée quand le site a beaucoup de pages services.
+  const mainLinks: { href: string; label: string }[] = [];
+  const serviceLinks: { href: string; label: string }[] = [];
   if (isMultiPage(config)) {
-    // Footer plus riche : toutes les pages (hors accueil), même celles masquées du header.
     for (const p of resolvePages(config).filter((x) => !x.isHome)) {
-      navLinks.push({ href: `${basePath}${p.path}`, label: p.label });
+      (p.service ? serviceLinks : mainLinks).push({ href: `${basePath}${p.path}`, label: p.label });
     }
   } else {
     const navTypes = t.nav as Record<string, string>;
@@ -39,7 +42,7 @@ export function SiteFooter({
     for (const b of config.blocks) {
       if (b.type in navTypes && !seen.has(b.type) && !(b.type === "zone" && b.mode === "aucune")) {
         seen.add(b.type);
-        navLinks.push({ href: `${basePath}/#${b.type}`, label: navTypes[b.type] });
+        mainLinks.push({ href: `${basePath}/#${b.type}`, label: navTypes[b.type] });
       }
     }
   }
@@ -52,7 +55,13 @@ export function SiteFooter({
   return (
     <footer className="bg-ink text-white/70">
       <div className="mx-auto w-full max-w-6xl px-5 py-16 sm:px-8">
-        <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr_1.2fr]">
+        <div
+          className={
+            serviceLinks.length
+              ? "grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.1fr]"
+              : "grid gap-12 lg:grid-cols-[1.5fr_1fr_1.2fr]"
+          }
+        >
           {/* Marque */}
           <div>
             <Logo config={config} href={basePath || "/"} variant="light" />
@@ -77,13 +86,13 @@ export function SiteFooter({
             )}
           </div>
 
-          {/* Liens */}
+          {/* Le site */}
           <nav aria-label={t.footer.navAria}>
             <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-white">
               {t.footer.siteHeading}
             </h3>
             <ul className="mt-4 space-y-3 text-sm">
-              {navLinks.map((l) => (
+              {mainLinks.map((l) => (
                 <li key={l.label}>
                   <a href={l.href} className="text-white/55 transition-colors hover:text-brand-300">
                     {l.label}
@@ -91,7 +100,7 @@ export function SiteFooter({
                 </li>
               ))}
             </ul>
-            {services?.items.length ? (
+            {!serviceLinks.length && services?.items.length ? (
               <ul className="mt-5 space-y-2 text-xs text-white/40">
                 {services.items.slice(0, 5).map((s) => (
                   <li key={s.nom}>{s.nom}</li>
@@ -99,6 +108,24 @@ export function SiteFooter({
               </ul>
             ) : null}
           </nav>
+
+          {/* Nos prestations : pages services dédiées (colonne séparée) */}
+          {serviceLinks.length > 0 && (
+            <nav aria-label={t.nav.services}>
+              <h3 className="font-display text-sm font-semibold uppercase tracking-wider text-white">
+                {t.nav.services}
+              </h3>
+              <ul className="mt-4 space-y-3 text-sm">
+                {serviceLinks.map((l) => (
+                  <li key={l.label}>
+                    <a href={l.href} className="text-white/55 transition-colors hover:text-brand-300">
+                      {l.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
 
           {/* Contact */}
           <div>

@@ -975,6 +975,7 @@
     {
       "slug": "credit-impot",
       "label": "Crédit d'impôt",
+      "navHidden": true,
       "meta": {
         "title": "Crédit d'impôt 50 % pour le ménage à domicile",
         "description": "Avec SANAD CLEAN et Accès SAP, profitez du crédit d'impôt de 50 % et de l'avance immédiate sur le ménage à domicile à Nîmes. Coût réel : 15 €/h."
