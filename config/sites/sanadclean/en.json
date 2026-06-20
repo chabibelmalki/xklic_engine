@@ -3,6 +3,9 @@
   "theme": "fraicheur-teal",
   "i18n": { "default": "fr", "languages": ["fr", "en", "ar"] },
   "branding": {
+    "logo": "/sites/sanadclean/logo.png",
+    "icon": "/sites/sanadclean/icon.png",
+    "logoAlt": "SANAD CLEAN — cleaning services in Nîmes",
     "tagline": "Cleaning · Nîmes"
   },
   "social": [
@@ -23,6 +26,7 @@
     "ville": "Nîmes"
   },
   "meta": {
+    "ogImage": "/sites/sanadclean/og.png",
     "title": "SANAD CLEAN — Home cleaning & professional cleaning in Nîmes",
     "description": "SANAD CLEAN, a cleaning company in Nîmes: home cleaning (50% tax credit, i.e. €15/h for you), commercial premises cleaning, deep cleaning and pest control. Free quote.",
     "keywords": [

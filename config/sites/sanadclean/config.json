@@ -10,6 +10,9 @@
     ]
   },
   "branding": {
+    "logo": "/sites/sanadclean/logo.png",
+    "icon": "/sites/sanadclean/icon.png",
+    "logoAlt": "SANAD CLEAN — services de nettoyage à Nîmes",
     "tagline": "Nettoyage · Nîmes"
   },
   "social": [
@@ -35,6 +38,7 @@
     "ville": "Nîmes"
   },
   "meta": {
+    "ogImage": "/sites/sanadclean/og.png",
     "title": "SANAD CLEAN — Ménage à domicile & nettoyage professionnel à Nîmes",
     "description": "SANAD CLEAN, entreprise de nettoyage à Nîmes : ménage à domicile (crédit d'impôt 50 %, soit 15 €/h pour vous), nettoyage de locaux professionnels, remise en état et traitement des nuisibles. Devis gratuit.",
     "keywords": [

@@ -4,22 +4,25 @@ import { resolveTheme } from "@/lib/theme";
 import { siteOrigin } from "@/lib/urls";
 
 /**
- * Favicon (icône d'onglet ET icône des résultats Google) PAR SITE.
+ * Favicon (icône d'onglet ET icône des résultats Google) PAR SITE. Priorité :
  *
- *  - Si le client a un logo (`branding.logo`) → on l'utilise tel quel.
- *  - Sinon → on génère une icône (initiales blanches sur fond de marque) servie
- *    en PNG par la route `/seo-icon`.
+ *  1. `branding.icon` → icône CARRÉE dédiée (idéale pour un favicon).
+ *  2. sinon `branding.logo` → le logo du client (peut être large, moins idéal).
+ *  3. sinon → icône GÉNÉRÉE (initiales sur fond de marque) servie en PNG par la
+ *     route `/seo-icon` (URL absolue sur l'origin du site).
  *
- * NB : l'URL est SANS extension (`/seo-icon`, pas `/icon.png`). Le proxy
- * sous-domaine (src/proxy.ts) exclut de son matcher les chemins en `.png`
- * (et autres assets) — un `/icon.png` ne serait donc jamais réécrit vers le
- * site et tomberait en 404. Le type est porté par l'en-tête `Content-Type`
- * (image/png) de la route + l'attribut `type` du <link> ci-dessous.
+ * Cas 1 & 2 : on référence le chemin/URL du config TEL QUEL. Un chemin racine
+ * (`/sites/<slug>/icon.png`) résout côté navigateur ET pour le crawl Google
+ * (relatif à la page) — et fonctionne aussi en local.
+ *
+ * Cas 3 : l'URL générée est SANS extension (`/seo-icon`, pas `/icon.png`). Le
+ * proxy sous-domaine (src/proxy.ts) exclut de son matcher les chemins en `.png`
+ * (et autres assets) — un `/icon.png` ne serait jamais réécrit vers le site et
+ * tomberait en 404. Le type est porté par le `Content-Type` de la route.
  *
  * IMPORTANT (SEO) : le favicon affiché par Google DOIT être un FICHIER crawlable
  * à une URL stable. Un data-URI inline (`<link rel="icon" href="data:…">`) est
  * IGNORÉ par Google (rien à récupérer → globe par défaut dans les résultats).
- * On référence donc toujours une URL ABSOLUE sur l'origin du site.
  */
 
 /** Couleur de marque (`--brand-600` de globals.css) par thème, côté serveur. */
@@ -48,13 +51,25 @@ export function iconBrandColor(config: SiteConfig): string {
 }
 
 /**
- * Champ `icons` de Metadata pour un site : logo du client si présent, sinon
- * l'icône générée servie en PNG (`/icon.png`). URL ABSOLUE dans les deux cas
- * (cf. note SEO ci-dessus). Utilisé par toutes les pages via `src/lib/seo.ts`.
+ * Champ `icons` de Metadata pour un site (cf. priorité dans l'en-tête du module).
+ * Utilisé par toutes les pages via `src/lib/seo.ts`.
  */
 export function buildIcons(config: SiteConfig): Metadata["icons"] {
-  const logo = config.branding.logo?.trim();
-  if (logo) return { icon: logo, shortcut: logo, apple: logo };
+  // 1. icône carrée dédiée, sinon 2. logo du client — référencés tels quels.
+  const provided = config.branding.icon?.trim() || config.branding.logo?.trim();
+  if (provided) {
+    const type = provided.endsWith(".png")
+      ? "image/png"
+      : provided.endsWith(".svg")
+        ? "image/svg+xml"
+        : undefined;
+    return {
+      icon: type ? [{ url: provided, type }] : provided,
+      shortcut: provided,
+      apple: provided,
+    };
+  }
+  // 3. icône générée (initiales), servie en PNG par la route /seo-icon.
   const href = `${siteOrigin(config)}/seo-icon`;
   return {
     icon: [{ url: href, type: "image/png", sizes: "128x128" }],

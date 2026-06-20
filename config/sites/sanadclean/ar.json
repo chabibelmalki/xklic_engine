@@ -3,6 +3,9 @@
   "theme": "fraicheur-teal",
   "i18n": { "default": "fr", "languages": ["fr", "en", "ar"] },
   "branding": {
+    "logo": "/sites/sanadclean/logo.png",
+    "icon": "/sites/sanadclean/icon.png",
+    "logoAlt": "SANAD CLEAN — خدمات التنظيف في نيم",
     "tagline": "تنظيف · نيم"
   },
   "social": [
@@ -23,6 +26,7 @@
     "ville": "Nîmes"
   },
   "meta": {
+    "ogImage": "/sites/sanadclean/og.png",
     "title": "SANAD CLEAN — تنظيف منزلي وتنظيف احترافي في نيم",
     "description": "SANAD CLEAN، شركة تنظيف في نيم: تنظيف منزلي (خصم ضريبي 50%، أي 15 €/س عليك)، تنظيف المحلات المهنية، إعادة التأهيل ومكافحة الآفات. تقدير مجاني.",
     "keywords": [

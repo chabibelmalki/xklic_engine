@@ -140,6 +140,11 @@ export interface SocialLink {
 export interface Branding {
   /** URL du logo (object storage). */
   logo?: string;
+  /**
+   * Icône CARRÉE dédiée au favicon / app icon (sinon `logo`, sinon icône
+   * générée). Idéale ~256×256 : un logo large rend mal en favicon.
+   */
+  icon?: string;
   /** Texte alternatif du logo (sinon le nom de l'entreprise). */
   logoAlt?: string;
   /** Petite ligne sous le nom (ex. "Nettoyage · Nîmes"). */
