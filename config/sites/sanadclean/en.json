@@ -11,7 +11,7 @@
   "social": [
     { "platform": "instagram", "url": "https://www.instagram.com/sanad_clean/" },
     { "platform": "tiktok", "url": "https://www.tiktok.com/@souadtazya1" },
-    { "platform": "google", "url": "https://www.google.com/maps?kgmid=/g/11z90t2902" }
+    { "platform": "google", "url": "https://www.google.com/maps?cid=7425669669325950623" }
   ],
   "entreprise": {
     "nom": "SANAD CLEAN",
@@ -27,6 +27,7 @@
     "schemaType": "HousekeepingService",
     "ville": "Nîmes"
   },
+  "geo": { "lat": 43.8451919, "lng": 4.3883404 },
   "meta": {
     "ogImage": "/sites/sanadclean/og.png",
     "title": "SANAD CLEAN — Home cleaning & professional cleaning in Nîmes",
@@ -1458,7 +1459,7 @@
               "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis",
               "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"
             ],
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8367%2C4.3601",
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8451919%2C4.3883404",
             "confidentialiteHref": "/confidentialite"
           }
         }
@@ -1529,7 +1530,7 @@
             "titre": "Towns we serve",
             "intro": "Check your area below or contact us directly to confirm.",
             "rayonKm": 20,
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8367%2C4.3601",
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8451919%2C4.3883404",
             "villes": [
               "Nîmes", "Caissargues", "Bouillargues", "Rodilhan", "Marguerittes", "Garons",
               "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis",
@@ -1634,7 +1635,7 @@
               "Saint-Gervasy", "Poulx", "Caveirac", "Clarensac", "Milhaud", "Bernis",
               "Manduel", "Saint-Gilles", "Uchaud", "Vergèze", "Générac", "Vauvert"
             ],
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8367%2C4.3601",
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8451919%2C4.3883404",
             "confidentialiteHref": "/confidentialite"
           }
         }

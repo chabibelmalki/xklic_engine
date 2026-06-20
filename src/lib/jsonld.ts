@@ -75,6 +75,15 @@ export function buildJsonLd(config: SiteConfig, page?: ResolvedPage): object[] {
   if (e.siret) business.vatID = e.tva.numero;
   if (e.siret) business.identifier = e.siret;
 
+  // Coordonnées GPS exactes (issues de la fiche Google) -> GeoCoordinates (SEO local).
+  if (config.geo) {
+    business.geo = {
+      "@type": "GeoCoordinates",
+      latitude: config.geo.lat,
+      longitude: config.geo.lng,
+    };
+  }
+
   // Profils sociaux du client -> sameAs (renforce l'entité dans le Knowledge Graph).
   const sameAs = socialSameAs(config);
   if (sameAs.length) business.sameAs = sameAs;

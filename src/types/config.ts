@@ -690,6 +690,8 @@ export interface SiteConfig {
   googleReviewUrl?: string;
   entreprise: Entreprise;
   seo: Seo;
+  /** Coordonnées GPS du point principal (issues de la fiche Google) -> JSON-LD GeoCoordinates. */
+  geo?: { lat: number; lng: number };
   meta: Meta;
   /** Blocs de l'accueil (one-pager) — utilisé si `pages` est absent. */
   blocks: Block[];

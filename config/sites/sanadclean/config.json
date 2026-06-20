@@ -26,7 +26,7 @@
     },
     {
       "platform": "google",
-      "url": "https://www.google.com/maps?kgmid=/g/11z90t2902"
+      "url": "https://www.google.com/maps?cid=7425669669325950623"
     }
   ],
   "entreprise": {
@@ -45,6 +45,7 @@
     "schemaType": "HousekeepingService",
     "ville": "Nîmes"
   },
+  "geo": { "lat": 43.8451919, "lng": 4.3883404 },
   "meta": {
     "ogImage": "/sites/sanadclean/og.png",
     "title": "SANAD CLEAN — Ménage à domicile & nettoyage professionnel à Nîmes",
@@ -1119,7 +1120,7 @@
               "Générac",
               "Vauvert"
             ],
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8367%2C4.3601",
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8451919%2C4.3883404",
             "confidentialiteHref": "/confidentialite"
           }
         }
@@ -1212,7 +1213,7 @@
             "titre": "Communes desservies",
             "intro": "Vérifiez votre secteur ci-dessous ou contactez-nous directement pour confirmer.",
             "rayonKm": 20,
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8367%2C4.3601",
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8451919%2C4.3883404",
             "villes": [
               "Nîmes",
               "Caissargues",
@@ -1383,7 +1384,7 @@
               "Générac",
               "Vauvert"
             ],
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8367%2C4.3601",
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8451919%2C4.3883404",
             "confidentialiteHref": "/confidentialite"
           }
         }
