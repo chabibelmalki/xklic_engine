@@ -158,6 +158,26 @@ export function buildJsonLd(config: SiteConfig, page?: ResolvedPage): object[] {
     graph.push(service);
   }
 
+  // BreadcrumbList (par page) : le fil d'ariane du pageHero en données
+  // structurées -> rich result Google (chemin affiché sous le titre) et signal
+  // de hiérarchie qui renforce les silos de pages services. Tiré de la page
+  // courante ; ignoré si moins de 2 niveaux (un seul item n'a pas d'intérêt).
+  const heroBreadcrumb = page ? pageBlock<PageHeroContent>(page, "pageHero")?.breadcrumb : null;
+  if (heroBreadcrumb && heroBreadcrumb.length > 1) {
+    const abs = (href: string) => (href === "/" ? `${origin}/` : `${origin}${href}`);
+    graph.push({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: heroBreadcrumb.map((b, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: b.label,
+        // Le dernier maillon (page courante) n'a pas de href -> on pointe sa propre URL.
+        item: abs(b.href ?? page!.path),
+      })),
+    });
+  }
+
   // FAQPage : la PAGE courante prime ; sinon repli site-wide (accueil / one-pager).
   const faq = (page && pageBlock<FaqContent>(page, "faq")) || block<FaqContent>(config, "faq");
   if (faq && faq.items.length) {

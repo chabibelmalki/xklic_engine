@@ -122,7 +122,10 @@ export function buildLlmsTxt(config: SiteConfig): string {
     lines.push("");
     lines.push("## Services");
     for (const s of services.items) {
-      lines.push(`- ${s.nom}${s.description ? ` : ${s.description}` : ""}`);
+      // URL de la page dédiée quand elle existe (href interne) -> les IA citent
+      // la bonne page silo, pas seulement l'accueil (GEO).
+      const url = s.href?.startsWith("/") ? ` (${origin}${s.href})` : "";
+      lines.push(`- ${s.nom}${s.description ? ` : ${s.description}` : ""}${url}`);
     }
   }
 
