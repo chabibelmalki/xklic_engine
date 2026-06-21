@@ -64,7 +64,8 @@
     ]
   },
   "forms": {
-    "to": "sanadclean30@gmail.com"
+    "to": "sanadclean30@gmail.com",
+    "turnstile": true
   },
   "pages": [
     {

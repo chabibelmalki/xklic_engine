@@ -37,7 +37,7 @@
       "commander gâteau en ligne 78"
     ]
   },
-  "forms": { "to": "flp.chabib@gmail.com" },
+  "forms": { "to": "flp.chabib@gmail.com", "turnstile": true },
   "pages": [
     {
       "slug": "",

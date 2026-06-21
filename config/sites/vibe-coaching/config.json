@@ -30,7 +30,7 @@
       "remise en forme Lyon"
     ]
   },
-  "forms": { "to": "flp.chabib@gmail.com" },
+  "forms": { "to": "flp.chabib@gmail.com", "turnstile": true },
   "pages": [
     {
       "slug": "",

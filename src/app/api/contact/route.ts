@@ -101,14 +101,17 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  // Turnstile (si activé via env).
-  const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? null;
-  if (!(await verifyTurnstile(data.turnstileToken, ip))) {
-    return NextResponse.json({ error: "Vérification anti-robot échouée." }, { status: 403 });
-  }
-
-  // Config du site (surcharge destinataire / webhook).
+  // Config du site (surcharge destinataire / webhook + activation Turnstile).
   const config = data.siteSlug ? getConfig(data.siteSlug) : null;
+
+  // Turnstile : vérifié seulement si le site l'a activé (forms.turnstile). Ainsi
+  // définir la clé secrète globalement ne casse pas les sites non opt-in.
+  if (config?.forms?.turnstile) {
+    const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? null;
+    if (!(await verifyTurnstile(data.turnstileToken, ip))) {
+      return NextResponse.json({ error: "Vérification anti-robot échouée." }, { status: 403 });
+    }
+  }
   const { subject, lines } = formatLead(data);
   const text = lines.join("\n");
 

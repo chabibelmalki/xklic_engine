@@ -304,6 +304,11 @@ export function ServiceQuoteBuilder({
   const rawConf = c.confidentialiteHref ?? "/confidentialite";
   const confidentialiteHref = rawConf.startsWith("http") ? rawConf : `${basePath}${rawConf}`;
 
+  // Anti-robot Turnstile activé par site via config.forms.turnstile.
+  const turnstileSiteKey = config.forms?.turnstile
+    ? process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
+    : undefined;
+
   function addLine(line: Omit<SelLine, "qty">) {
     setSelection((prev) => {
       const existing = prev.find((l) => l.id === line.id);
@@ -362,6 +367,8 @@ export function ServiceQuoteBuilder({
     if (phone.length < 8) return setError("Un téléphone valide est requis.");
     if (!consent) return setError("Veuillez accepter pour continuer.");
     if (String(fd.get("company") ?? "")) return; // honeypot
+    const turnstileToken = String(fd.get("cf-turnstile-response") ?? "");
+    if (turnstileSiteKey && !turnstileToken) return setError(form.antirobot);
 
     setSubmitting(true);
     try {
@@ -378,6 +385,7 @@ export function ServiceQuoteBuilder({
           city: String(fd.get("city") ?? ""),
           message: String(fd.get("message") ?? ""),
           consent: true,
+          turnstileToken: turnstileToken || undefined,
           site: config.entreprise.nom,
           siteSlug: config.slug,
           withCredit,
@@ -619,6 +627,7 @@ export function ServiceQuoteBuilder({
                   confidentialiteHref={confidentialiteHref}
                   submitLabel={c.submitLabel ?? form.requestIntervention}
                   idPrefix="db"
+                  turnstileSiteKey={turnstileSiteKey}
                 />
               </div>
             </div>

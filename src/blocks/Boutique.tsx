@@ -158,6 +158,11 @@ export function Boutique({
   const rawConf = c.confidentialiteHref ?? "/confidentialite";
   const confidentialiteHref = rawConf.startsWith("http") ? rawConf : `${basePath}${rawConf}`;
 
+  // Anti-robot Turnstile activé par site via config.forms.turnstile.
+  const turnstileSiteKey = config.forms?.turnstile
+    ? process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
+    : undefined;
+
   function addItem(ci: number, item: ProduitItem) {
     const id = itemId(ci, item);
     const billable = typeof item.prix === "number";
@@ -219,6 +224,8 @@ export function Boutique({
     if (phone.length < 8) return setError(form.genericError);
     if (!consent) return setError(form.antirobot);
     if (String(fd.get("company") ?? "")) return; // honeypot
+    const turnstileToken = String(fd.get("cf-turnstile-response") ?? "");
+    if (turnstileSiteKey && !turnstileToken) return setError(form.antirobot);
 
     setSubmitting(true);
     try {
@@ -235,6 +242,7 @@ export function Boutique({
           city: String(fd.get("city") ?? ""),
           message: String(fd.get("message") ?? ""),
           consent: true,
+          turnstileToken: turnstileToken || undefined,
           site: config.entreprise.nom,
           siteSlug: config.slug,
           estimateBilled: Math.round(totals.billed),
@@ -462,6 +470,7 @@ export function Boutique({
                   confidentialiteHref={confidentialiteHref}
                   submitLabel={c.submitLabel ?? form.submitDevis}
                   idPrefix="bq"
+                  turnstileSiteKey={turnstileSiteKey}
                 />
               </div>
             </div>

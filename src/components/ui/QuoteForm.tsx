@@ -1,6 +1,7 @@
 import { Loader2 } from "lucide-react";
 import type { UIStrings } from "@/i18n/ui";
 import { Button } from "@/components/ui/Button";
+import { Turnstile } from "@/components/ui/Turnstile";
 import { cn } from "@/lib/utils";
 
 const labelClass = "block text-sm font-medium text-ink-soft";
@@ -17,6 +18,8 @@ interface QuoteFormProps {
   submitLabel: React.ReactNode;
   /** Préfixe des id de champs, unique entre instances. */
   idPrefix: string;
+  /** Clé publique Cloudflare Turnstile : affiche l'anti-robot si présente. */
+  turnstileSiteKey?: string;
 }
 
 /**
@@ -34,6 +37,7 @@ export function QuoteForm({
   confidentialiteHref,
   submitLabel,
   idPrefix,
+  turnstileSiteKey,
 }: QuoteFormProps) {
   return (
     <form onSubmit={onSubmit} noValidate className="space-y-3">
@@ -105,6 +109,10 @@ export function QuoteForm({
           . *
         </span>
       </label>
+
+      {/* Anti-robot : le widget injecte un champ caché `cf-turnstile-response`
+          dans ce <form>, lu via FormData par le handler du bloc parent. */}
+      <Turnstile siteKey={turnstileSiteKey} className="pt-1" />
 
       {error && <p className="rounded-xl bg-red-50 px-4 py-2.5 text-sm text-red-600">{error}</p>}
 
