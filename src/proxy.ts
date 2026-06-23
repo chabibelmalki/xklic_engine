@@ -63,14 +63,21 @@ function rewriteToSite(req: NextRequest, slug: string, pathname: string) {
 }
 
 /**
- * Cible canonique d'une redirection 301. La HOME est SANS slash final, pour
+ * Redirection 301 vers le domaine canonique. La HOME est SANS slash final, pour
  * coïncider STRICTEMENT avec `siteOrigin()` (sitemap/canonical/OG/JSON-LD, qui
  * émettent tous `https://<apex>` sans slash). Les sous-pages gardent leur chemin
  * tel quel (sans slash — convention Next par défaut, déjà cohérente).
+ *
+ * Le header `Location` est posé À LA MAIN : `NextResponse.redirect()` construit
+ * un `new URL()` qui normalise un host nu en `host/` (spec WHATWG URL), rajoutant
+ * le slash qu'on veut justement éviter sur la home.
  */
-function canonicalRedirect(canon: string, pathname: string, search: string): string {
+function canonical301(canon: string, pathname: string, search: string): NextResponse {
   const path = pathname === "/" ? "" : pathname;
-  return `https://${canon}${path}${search}`;
+  return new NextResponse(null, {
+    status: 301,
+    headers: { Location: `https://${canon}${path}${search}` },
+  });
 }
 
 export function proxy(req: NextRequest) {
@@ -98,7 +105,7 @@ export function proxy(req: NextRequest) {
     const canon = CANONICAL_DOMAIN[customSlug];
     // Variante non canonique (www, alias) -> apex : 301 (path + query préservés).
     if (canon && hostname !== canon) {
-      return NextResponse.redirect(canonicalRedirect(canon, pathname, search), 301);
+      return canonical301(canon, pathname, search);
     }
     return rewriteToSite(req, customSlug, pathname);
   }
@@ -119,7 +126,7 @@ export function proxy(req: NextRequest) {
   //    (`fallbackable`) — en dev *.localhost on garde la réécriture locale.
   const canon = CANONICAL_DOMAIN[sub];
   if (fallbackable && canon) {
-    return NextResponse.redirect(canonicalRedirect(canon, pathname, search), 301);
+    return canonical301(canon, pathname, search);
   }
 
   // 4) Slug connu (prod) ou sous-domaine de dev : réécriture interne vers /sites.
