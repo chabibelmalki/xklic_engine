@@ -62,6 +62,17 @@ function rewriteToSite(req: NextRequest, slug: string, pathname: string) {
   return NextResponse.rewrite(url);
 }
 
+/**
+ * Cible canonique d'une redirection 301. La HOME est SANS slash final, pour
+ * coïncider STRICTEMENT avec `siteOrigin()` (sitemap/canonical/OG/JSON-LD, qui
+ * émettent tous `https://<apex>` sans slash). Les sous-pages gardent leur chemin
+ * tel quel (sans slash — convention Next par défaut, déjà cohérente).
+ */
+function canonicalRedirect(canon: string, pathname: string, search: string): string {
+  const path = pathname === "/" ? "" : pathname;
+  return `https://${canon}${path}${search}`;
+}
+
 export function proxy(req: NextRequest) {
   const { pathname, search } = req.nextUrl;
 
@@ -87,7 +98,7 @@ export function proxy(req: NextRequest) {
     const canon = CANONICAL_DOMAIN[customSlug];
     // Variante non canonique (www, alias) -> apex : 301 (path + query préservés).
     if (canon && hostname !== canon) {
-      return NextResponse.redirect(`https://${canon}${pathname}${search}`, 301);
+      return NextResponse.redirect(canonicalRedirect(canon, pathname, search), 301);
     }
     return rewriteToSite(req, customSlug, pathname);
   }
@@ -108,7 +119,7 @@ export function proxy(req: NextRequest) {
   //    (`fallbackable`) — en dev *.localhost on garde la réécriture locale.
   const canon = CANONICAL_DOMAIN[sub];
   if (fallbackable && canon) {
-    return NextResponse.redirect(`https://${canon}${pathname}${search}`, 301);
+    return NextResponse.redirect(canonicalRedirect(canon, pathname, search), 301);
   }
 
   // 4) Slug connu (prod) ou sous-domaine de dev : réécriture interne vers /sites.
