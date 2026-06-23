@@ -10,6 +10,7 @@ import { statutLabel } from "@/lib/legal";
 import { formatEUR } from "@/lib/utils";
 import { resolvePages, findBlock } from "@/lib/pages";
 import { localizedPath, htmlLang } from "@/lib/i18n";
+import { allZoneVilles } from "@/lib/zone";
 
 /** Pages publiques indexables d'un site (relatives à l'origin) + mentions. */
 function sitePaths(config: SiteConfig): { path: string; priority: string }[] {
@@ -150,7 +151,7 @@ export function buildLlmsTxt(config: SiteConfig): string {
   if (zone && zoneBlock?.mode !== "aucune") {
     lines.push("");
     lines.push("## Zone d'intervention");
-    lines.push(`- ${(zone.villes ?? [config.seo.ville]).join(", ")}`);
+    lines.push(`- ${(allZoneVilles(zone).length ? allZoneVilles(zone) : [config.seo.ville]).join(", ")}`);
     if (zone.rayonKm) lines.push(`- Rayon : ${zone.rayonKm} km`);
   }
 

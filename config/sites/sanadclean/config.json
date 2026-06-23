@@ -14,7 +14,10 @@
     "logo": "/sites/sanadclean/logo.png",
     "icon": "/sites/sanadclean/icon.png",
     "logoAlt": "SANAD CLEAN — services de nettoyage à Nîmes",
-    "logoTwoTone": { "first": "#034373", "rest": "#06B6B5" },
+    "logoTwoTone": {
+      "first": "#034373",
+      "rest": "#06B6B5"
+    },
     "tagline": "Services de nettoyage"
   },
   "social": [
@@ -47,7 +50,10 @@
     "schemaType": "HousekeepingService",
     "ville": "Nîmes"
   },
-  "geo": { "lat": 43.8451919, "lng": 4.3883404 },
+  "geo": {
+    "lat": 43.8451919,
+    "lng": 4.3883404
+  },
   "googleReviewUrl": "https://g.page/r/CZ_OkKs4Rw1nEBM/review",
   "meta": {
     "ogImage": "/sites/sanadclean/og.png",
@@ -288,28 +294,73 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "À Nîmes et dans tout le Gard rhodanien",
-            "intro": "Nous intervenons à Nîmes et dans les communes voisines. Vérifiez votre secteur ou contactez-nous directement.",
-            "rayonKm": 20,
-            "villes": [
-              "Nîmes",
-              "Caissargues",
-              "Bouillargues",
-              "Rodilhan",
-              "Marguerittes",
-              "Garons",
-              "Saint-Gervasy",
-              "Poulx",
-              "Caveirac",
-              "Clarensac",
-              "Milhaud",
-              "Bernis",
-              "Manduel",
-              "Saint-Gilles",
-              "Uchaud",
-              "Vergèze",
-              "Générac",
-              "Vauvert"
+            "titre": "À Nîmes, Montpellier, Marseille et leurs environs",
+            "intro": "Nous intervenons autour de Nîmes, Montpellier et Marseille. Vérifiez votre secteur ou contactez-nous directement.",
+            "zones": [
+              {
+                "region": "Gard — autour de Nîmes",
+                "principale": "Nîmes",
+                "villes": [
+                  "Nîmes",
+                  "Caissargues",
+                  "Bouillargues",
+                  "Rodilhan",
+                  "Marguerittes",
+                  "Garons",
+                  "Saint-Gervasy",
+                  "Poulx",
+                  "Caveirac",
+                  "Clarensac",
+                  "Milhaud",
+                  "Bernis",
+                  "Manduel",
+                  "Saint-Gilles",
+                  "Uchaud",
+                  "Vergèze",
+                  "Générac",
+                  "Vauvert"
+                ]
+              },
+              {
+                "region": "Hérault — autour de Montpellier",
+                "principale": "Montpellier",
+                "villes": [
+                  "Montpellier",
+                  "Lattes",
+                  "Castelnau-le-Lez",
+                  "Pérols",
+                  "Le Crès",
+                  "Jacou",
+                  "Clapiers",
+                  "Montferrier-sur-Lez",
+                  "Saint-Jean-de-Védas",
+                  "Lavérune",
+                  "Juvignac",
+                  "Grabels",
+                  "Castries",
+                  "Mauguio",
+                  "Vendargues",
+                  "Palavas-les-Flots"
+                ]
+              },
+              {
+                "region": "Bouches-du-Rhône — autour de Marseille",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Aubagne",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "La Penne-sur-Huveaune",
+                  "Septèmes-les-Vallons",
+                  "Marignane",
+                  "Vitrolles",
+                  "Aix-en-Provence",
+                  "Gémenos",
+                  "Cassis",
+                  "Carnoux-en-Provence"
+                ]
+              }
             ]
           }
         },
@@ -360,7 +411,7 @@
               },
               {
                 "question": "Dans quelles communes intervenez-vous ?",
-                "reponse": "Nous intervenons à Nîmes et dans les communes alentours (Caissargues, Marguerittes, Saint-Gilles, Bouillargues, Manduel, Milhaud…). Contactez-nous pour confirmer votre secteur."
+                "reponse": "Nous intervenons sur trois secteurs : autour de Nîmes (Gard), autour de Montpellier (Hérault) et autour de Marseille (Bouches-du-Rhône), ainsi que les communes voisines. Vérifiez votre secteur sur la page d'accueil ou contactez-nous pour confirmer."
               }
             ]
           }
@@ -1217,27 +1268,72 @@
           "content": {
             "titre": "Communes desservies",
             "intro": "Vérifiez votre secteur ci-dessous ou contactez-nous directement pour confirmer.",
-            "rayonKm": 20,
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8451919%2C4.3883404",
-            "villes": [
-              "Nîmes",
-              "Caissargues",
-              "Bouillargues",
-              "Rodilhan",
-              "Marguerittes",
-              "Garons",
-              "Saint-Gervasy",
-              "Poulx",
-              "Caveirac",
-              "Clarensac",
-              "Milhaud",
-              "Bernis",
-              "Manduel",
-              "Saint-Gilles",
-              "Uchaud",
-              "Vergèze",
-              "Générac",
-              "Vauvert"
+            "zones": [
+              {
+                "region": "Gard — autour de Nîmes",
+                "principale": "Nîmes",
+                "villes": [
+                  "Nîmes",
+                  "Caissargues",
+                  "Bouillargues",
+                  "Rodilhan",
+                  "Marguerittes",
+                  "Garons",
+                  "Saint-Gervasy",
+                  "Poulx",
+                  "Caveirac",
+                  "Clarensac",
+                  "Milhaud",
+                  "Bernis",
+                  "Manduel",
+                  "Saint-Gilles",
+                  "Uchaud",
+                  "Vergèze",
+                  "Générac",
+                  "Vauvert"
+                ]
+              },
+              {
+                "region": "Hérault — autour de Montpellier",
+                "principale": "Montpellier",
+                "villes": [
+                  "Montpellier",
+                  "Lattes",
+                  "Castelnau-le-Lez",
+                  "Pérols",
+                  "Le Crès",
+                  "Jacou",
+                  "Clapiers",
+                  "Montferrier-sur-Lez",
+                  "Saint-Jean-de-Védas",
+                  "Lavérune",
+                  "Juvignac",
+                  "Grabels",
+                  "Castries",
+                  "Mauguio",
+                  "Vendargues",
+                  "Palavas-les-Flots"
+                ]
+              },
+              {
+                "region": "Bouches-du-Rhône — autour de Marseille",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Aubagne",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "La Penne-sur-Huveaune",
+                  "Septèmes-les-Vallons",
+                  "Marignane",
+                  "Vitrolles",
+                  "Aix-en-Provence",
+                  "Gémenos",
+                  "Cassis",
+                  "Carnoux-en-Provence"
+                ]
+              }
             ]
           }
         },
@@ -1293,7 +1389,7 @@
               },
               {
                 "question": "Dans quelles communes intervenez-vous ?",
-                "reponse": "Nous intervenons à Nîmes et dans les communes alentours (Caissargues, Marguerittes, Saint-Gilles, Bouillargues, Manduel, Milhaud…). Contactez-nous pour confirmer votre secteur."
+                "reponse": "Nous intervenons sur trois secteurs : autour de Nîmes (Gard), autour de Montpellier (Hérault) et autour de Marseille (Bouches-du-Rhône), ainsi que les communes voisines. Vérifiez votre secteur sur la page d'accueil ou contactez-nous pour confirmer."
               },
               {
                 "question": "Puis-je payer en CESU ?",
@@ -1424,9 +1520,17 @@
             "titre": "Ménage à domicile à Nîmes — dès 30 €/h",
             "intro": "SANAD CLEAN assure le ménage et le nettoyage de votre logement à Nîmes et dans le Gard : entretien hebdomadaire ou grand ménage de printemps. Grâce au crédit d'impôt de 50 %, votre heure facturée 30 € ne vous coûte réellement que 15 €.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Ménage à domicile" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage à domicile"
+              }
             ],
             "ctaPrimaire": {
               "label": "Devis gratuit",
@@ -1494,28 +1598,73 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "Intervention à Nîmes et dans le Gard",
-            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
-            "rayonKm": 20,
-            "villes": [
-              "Nîmes",
-              "Caissargues",
-              "Bouillargues",
-              "Rodilhan",
-              "Marguerittes",
-              "Garons",
-              "Saint-Gervasy",
-              "Poulx",
-              "Caveirac",
-              "Clarensac",
-              "Milhaud",
-              "Bernis",
-              "Manduel",
-              "Saint-Gilles",
-              "Uchaud",
-              "Vergèze",
-              "Générac",
-              "Vauvert"
+            "titre": "Intervention à Nîmes, Montpellier et Marseille",
+            "intro": "Nous intervenons autour de Nîmes, Montpellier et Marseille.",
+            "zones": [
+              {
+                "region": "Gard — autour de Nîmes",
+                "principale": "Nîmes",
+                "villes": [
+                  "Nîmes",
+                  "Caissargues",
+                  "Bouillargues",
+                  "Rodilhan",
+                  "Marguerittes",
+                  "Garons",
+                  "Saint-Gervasy",
+                  "Poulx",
+                  "Caveirac",
+                  "Clarensac",
+                  "Milhaud",
+                  "Bernis",
+                  "Manduel",
+                  "Saint-Gilles",
+                  "Uchaud",
+                  "Vergèze",
+                  "Générac",
+                  "Vauvert"
+                ]
+              },
+              {
+                "region": "Hérault — autour de Montpellier",
+                "principale": "Montpellier",
+                "villes": [
+                  "Montpellier",
+                  "Lattes",
+                  "Castelnau-le-Lez",
+                  "Pérols",
+                  "Le Crès",
+                  "Jacou",
+                  "Clapiers",
+                  "Montferrier-sur-Lez",
+                  "Saint-Jean-de-Védas",
+                  "Lavérune",
+                  "Juvignac",
+                  "Grabels",
+                  "Castries",
+                  "Mauguio",
+                  "Vendargues",
+                  "Palavas-les-Flots"
+                ]
+              },
+              {
+                "region": "Bouches-du-Rhône — autour de Marseille",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Aubagne",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "La Penne-sur-Huveaune",
+                  "Septèmes-les-Vallons",
+                  "Marignane",
+                  "Vitrolles",
+                  "Aix-en-Provence",
+                  "Gémenos",
+                  "Cassis",
+                  "Carnoux-en-Provence"
+                ]
+              }
             ]
           }
         },
@@ -1613,9 +1762,17 @@
             "titre": "Remise en état à Nîmes — dès 250 €",
             "intro": "Après des travaux, un déménagement ou avant un état des lieux, SANAD CLEAN remet votre logement à neuf à Nîmes et dans le Gard. Poussière de chantier, traces et résidus disparaissent pour un rendu impeccable.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Remise en état" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Remise en état"
+              }
             ],
             "ctaPrimaire": {
               "label": "Devis gratuit",
@@ -1683,28 +1840,73 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "Intervention à Nîmes et dans le Gard",
-            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
-            "rayonKm": 20,
-            "villes": [
-              "Nîmes",
-              "Caissargues",
-              "Bouillargues",
-              "Rodilhan",
-              "Marguerittes",
-              "Garons",
-              "Saint-Gervasy",
-              "Poulx",
-              "Caveirac",
-              "Clarensac",
-              "Milhaud",
-              "Bernis",
-              "Manduel",
-              "Saint-Gilles",
-              "Uchaud",
-              "Vergèze",
-              "Générac",
-              "Vauvert"
+            "titre": "Intervention à Nîmes, Montpellier et Marseille",
+            "intro": "Nous intervenons autour de Nîmes, Montpellier et Marseille.",
+            "zones": [
+              {
+                "region": "Gard — autour de Nîmes",
+                "principale": "Nîmes",
+                "villes": [
+                  "Nîmes",
+                  "Caissargues",
+                  "Bouillargues",
+                  "Rodilhan",
+                  "Marguerittes",
+                  "Garons",
+                  "Saint-Gervasy",
+                  "Poulx",
+                  "Caveirac",
+                  "Clarensac",
+                  "Milhaud",
+                  "Bernis",
+                  "Manduel",
+                  "Saint-Gilles",
+                  "Uchaud",
+                  "Vergèze",
+                  "Générac",
+                  "Vauvert"
+                ]
+              },
+              {
+                "region": "Hérault — autour de Montpellier",
+                "principale": "Montpellier",
+                "villes": [
+                  "Montpellier",
+                  "Lattes",
+                  "Castelnau-le-Lez",
+                  "Pérols",
+                  "Le Crès",
+                  "Jacou",
+                  "Clapiers",
+                  "Montferrier-sur-Lez",
+                  "Saint-Jean-de-Védas",
+                  "Lavérune",
+                  "Juvignac",
+                  "Grabels",
+                  "Castries",
+                  "Mauguio",
+                  "Vendargues",
+                  "Palavas-les-Flots"
+                ]
+              },
+              {
+                "region": "Bouches-du-Rhône — autour de Marseille",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Aubagne",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "La Penne-sur-Huveaune",
+                  "Septèmes-les-Vallons",
+                  "Marignane",
+                  "Vitrolles",
+                  "Aix-en-Provence",
+                  "Gémenos",
+                  "Cassis",
+                  "Carnoux-en-Provence"
+                ]
+              }
             ]
           }
         },
@@ -1802,9 +2004,17 @@
             "titre": "Nettoyage de vitres à Nîmes — dès 90 €",
             "intro": "SANAD CLEAN redonne de la clarté à vos vitres, baies vitrées et miroirs à Nîmes et dans le Gard. Intérieur comme extérieur, un nettoyage sans traces qui laisse entrer la lumière.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Nettoyage de vitres" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage de vitres"
+              }
             ],
             "ctaPrimaire": {
               "label": "Devis gratuit",
@@ -1872,28 +2082,73 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "Intervention à Nîmes et dans le Gard",
-            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
-            "rayonKm": 20,
-            "villes": [
-              "Nîmes",
-              "Caissargues",
-              "Bouillargues",
-              "Rodilhan",
-              "Marguerittes",
-              "Garons",
-              "Saint-Gervasy",
-              "Poulx",
-              "Caveirac",
-              "Clarensac",
-              "Milhaud",
-              "Bernis",
-              "Manduel",
-              "Saint-Gilles",
-              "Uchaud",
-              "Vergèze",
-              "Générac",
-              "Vauvert"
+            "titre": "Intervention à Nîmes, Montpellier et Marseille",
+            "intro": "Nous intervenons autour de Nîmes, Montpellier et Marseille.",
+            "zones": [
+              {
+                "region": "Gard — autour de Nîmes",
+                "principale": "Nîmes",
+                "villes": [
+                  "Nîmes",
+                  "Caissargues",
+                  "Bouillargues",
+                  "Rodilhan",
+                  "Marguerittes",
+                  "Garons",
+                  "Saint-Gervasy",
+                  "Poulx",
+                  "Caveirac",
+                  "Clarensac",
+                  "Milhaud",
+                  "Bernis",
+                  "Manduel",
+                  "Saint-Gilles",
+                  "Uchaud",
+                  "Vergèze",
+                  "Générac",
+                  "Vauvert"
+                ]
+              },
+              {
+                "region": "Hérault — autour de Montpellier",
+                "principale": "Montpellier",
+                "villes": [
+                  "Montpellier",
+                  "Lattes",
+                  "Castelnau-le-Lez",
+                  "Pérols",
+                  "Le Crès",
+                  "Jacou",
+                  "Clapiers",
+                  "Montferrier-sur-Lez",
+                  "Saint-Jean-de-Védas",
+                  "Lavérune",
+                  "Juvignac",
+                  "Grabels",
+                  "Castries",
+                  "Mauguio",
+                  "Vendargues",
+                  "Palavas-les-Flots"
+                ]
+              },
+              {
+                "region": "Bouches-du-Rhône — autour de Marseille",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Aubagne",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "La Penne-sur-Huveaune",
+                  "Septèmes-les-Vallons",
+                  "Marignane",
+                  "Vitrolles",
+                  "Aix-en-Provence",
+                  "Gémenos",
+                  "Cassis",
+                  "Carnoux-en-Provence"
+                ]
+              }
             ]
           }
         },
@@ -1991,9 +2246,17 @@
             "titre": "Nettoyage canapé & fauteuil à Nîmes — dès 60 €",
             "intro": "SANAD CLEAN ravive vos canapés, fauteuils et matelas à Nîmes et dans le Gard. Par injection-extraction, nous désincrustons taches, poussières et acariens pour des textiles sains et comme neufs.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Canapé & fauteuil" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Canapé & fauteuil"
+              }
             ],
             "ctaPrimaire": {
               "label": "Devis gratuit",
@@ -2061,28 +2324,73 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "Intervention à Nîmes et dans le Gard",
-            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
-            "rayonKm": 20,
-            "villes": [
-              "Nîmes",
-              "Caissargues",
-              "Bouillargues",
-              "Rodilhan",
-              "Marguerittes",
-              "Garons",
-              "Saint-Gervasy",
-              "Poulx",
-              "Caveirac",
-              "Clarensac",
-              "Milhaud",
-              "Bernis",
-              "Manduel",
-              "Saint-Gilles",
-              "Uchaud",
-              "Vergèze",
-              "Générac",
-              "Vauvert"
+            "titre": "Intervention à Nîmes, Montpellier et Marseille",
+            "intro": "Nous intervenons autour de Nîmes, Montpellier et Marseille.",
+            "zones": [
+              {
+                "region": "Gard — autour de Nîmes",
+                "principale": "Nîmes",
+                "villes": [
+                  "Nîmes",
+                  "Caissargues",
+                  "Bouillargues",
+                  "Rodilhan",
+                  "Marguerittes",
+                  "Garons",
+                  "Saint-Gervasy",
+                  "Poulx",
+                  "Caveirac",
+                  "Clarensac",
+                  "Milhaud",
+                  "Bernis",
+                  "Manduel",
+                  "Saint-Gilles",
+                  "Uchaud",
+                  "Vergèze",
+                  "Générac",
+                  "Vauvert"
+                ]
+              },
+              {
+                "region": "Hérault — autour de Montpellier",
+                "principale": "Montpellier",
+                "villes": [
+                  "Montpellier",
+                  "Lattes",
+                  "Castelnau-le-Lez",
+                  "Pérols",
+                  "Le Crès",
+                  "Jacou",
+                  "Clapiers",
+                  "Montferrier-sur-Lez",
+                  "Saint-Jean-de-Védas",
+                  "Lavérune",
+                  "Juvignac",
+                  "Grabels",
+                  "Castries",
+                  "Mauguio",
+                  "Vendargues",
+                  "Palavas-les-Flots"
+                ]
+              },
+              {
+                "region": "Bouches-du-Rhône — autour de Marseille",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Aubagne",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "La Penne-sur-Huveaune",
+                  "Septèmes-les-Vallons",
+                  "Marignane",
+                  "Vitrolles",
+                  "Aix-en-Provence",
+                  "Gémenos",
+                  "Cassis",
+                  "Carnoux-en-Provence"
+                ]
+              }
             ]
           }
         },
@@ -2175,9 +2483,17 @@
             "titre": "Nettoyage terrasse & extérieur à Nîmes — dès 90 €",
             "intro": "SANAD CLEAN redonne vie à vos terrasses et sols extérieurs à Nîmes et dans le Gard. Dégraissage, démoussage et nettoyage en profondeur pour des extérieurs propres et accueillants.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Terrasse & extérieur" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Terrasse & extérieur"
+              }
             ],
             "ctaPrimaire": {
               "label": "Devis gratuit",
@@ -2245,28 +2561,73 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "Intervention à Nîmes et dans le Gard",
-            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
-            "rayonKm": 20,
-            "villes": [
-              "Nîmes",
-              "Caissargues",
-              "Bouillargues",
-              "Rodilhan",
-              "Marguerittes",
-              "Garons",
-              "Saint-Gervasy",
-              "Poulx",
-              "Caveirac",
-              "Clarensac",
-              "Milhaud",
-              "Bernis",
-              "Manduel",
-              "Saint-Gilles",
-              "Uchaud",
-              "Vergèze",
-              "Générac",
-              "Vauvert"
+            "titre": "Intervention à Nîmes, Montpellier et Marseille",
+            "intro": "Nous intervenons autour de Nîmes, Montpellier et Marseille.",
+            "zones": [
+              {
+                "region": "Gard — autour de Nîmes",
+                "principale": "Nîmes",
+                "villes": [
+                  "Nîmes",
+                  "Caissargues",
+                  "Bouillargues",
+                  "Rodilhan",
+                  "Marguerittes",
+                  "Garons",
+                  "Saint-Gervasy",
+                  "Poulx",
+                  "Caveirac",
+                  "Clarensac",
+                  "Milhaud",
+                  "Bernis",
+                  "Manduel",
+                  "Saint-Gilles",
+                  "Uchaud",
+                  "Vergèze",
+                  "Générac",
+                  "Vauvert"
+                ]
+              },
+              {
+                "region": "Hérault — autour de Montpellier",
+                "principale": "Montpellier",
+                "villes": [
+                  "Montpellier",
+                  "Lattes",
+                  "Castelnau-le-Lez",
+                  "Pérols",
+                  "Le Crès",
+                  "Jacou",
+                  "Clapiers",
+                  "Montferrier-sur-Lez",
+                  "Saint-Jean-de-Védas",
+                  "Lavérune",
+                  "Juvignac",
+                  "Grabels",
+                  "Castries",
+                  "Mauguio",
+                  "Vendargues",
+                  "Palavas-les-Flots"
+                ]
+              },
+              {
+                "region": "Bouches-du-Rhône — autour de Marseille",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Aubagne",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "La Penne-sur-Huveaune",
+                  "Septèmes-les-Vallons",
+                  "Marignane",
+                  "Vitrolles",
+                  "Aix-en-Provence",
+                  "Gémenos",
+                  "Cassis",
+                  "Carnoux-en-Provence"
+                ]
+              }
             ]
           }
         },
@@ -2359,9 +2720,17 @@
             "titre": "Nettoyage syndrome de Diogène à Nîmes",
             "intro": "SANAD CLEAN prend en charge les logements très encombrés à Nîmes et dans le Gard : débarras, nettoyage et désinfection complets, avec discrétion et bienveillance. Chaque situation est traitée sans jugement.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Syndrome de Diogène" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Syndrome de Diogène"
+              }
             ],
             "ctaPrimaire": {
               "label": "Devis gratuit",
@@ -2429,28 +2798,73 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "Intervention à Nîmes et dans le Gard",
-            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
-            "rayonKm": 20,
-            "villes": [
-              "Nîmes",
-              "Caissargues",
-              "Bouillargues",
-              "Rodilhan",
-              "Marguerittes",
-              "Garons",
-              "Saint-Gervasy",
-              "Poulx",
-              "Caveirac",
-              "Clarensac",
-              "Milhaud",
-              "Bernis",
-              "Manduel",
-              "Saint-Gilles",
-              "Uchaud",
-              "Vergèze",
-              "Générac",
-              "Vauvert"
+            "titre": "Intervention à Nîmes, Montpellier et Marseille",
+            "intro": "Nous intervenons autour de Nîmes, Montpellier et Marseille.",
+            "zones": [
+              {
+                "region": "Gard — autour de Nîmes",
+                "principale": "Nîmes",
+                "villes": [
+                  "Nîmes",
+                  "Caissargues",
+                  "Bouillargues",
+                  "Rodilhan",
+                  "Marguerittes",
+                  "Garons",
+                  "Saint-Gervasy",
+                  "Poulx",
+                  "Caveirac",
+                  "Clarensac",
+                  "Milhaud",
+                  "Bernis",
+                  "Manduel",
+                  "Saint-Gilles",
+                  "Uchaud",
+                  "Vergèze",
+                  "Générac",
+                  "Vauvert"
+                ]
+              },
+              {
+                "region": "Hérault — autour de Montpellier",
+                "principale": "Montpellier",
+                "villes": [
+                  "Montpellier",
+                  "Lattes",
+                  "Castelnau-le-Lez",
+                  "Pérols",
+                  "Le Crès",
+                  "Jacou",
+                  "Clapiers",
+                  "Montferrier-sur-Lez",
+                  "Saint-Jean-de-Védas",
+                  "Lavérune",
+                  "Juvignac",
+                  "Grabels",
+                  "Castries",
+                  "Mauguio",
+                  "Vendargues",
+                  "Palavas-les-Flots"
+                ]
+              },
+              {
+                "region": "Bouches-du-Rhône — autour de Marseille",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Aubagne",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "La Penne-sur-Huveaune",
+                  "Septèmes-les-Vallons",
+                  "Marignane",
+                  "Vitrolles",
+                  "Aix-en-Provence",
+                  "Gémenos",
+                  "Cassis",
+                  "Carnoux-en-Provence"
+                ]
+              }
             ]
           }
         },
@@ -2548,9 +2962,17 @@
             "titre": "Nettoyage de bureaux à Nîmes — dès 90 €",
             "intro": "SANAD CLEAN entretient vos bureaux, commerces et locaux professionnels à Nîmes et dans le Gard. Un environnement de travail propre et accueillant, avec un prestataire sérieux et ponctuel.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Nettoyage de bureaux" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage de bureaux"
+              }
             ],
             "ctaPrimaire": {
               "label": "Devis gratuit",
@@ -2618,28 +3040,73 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "Intervention à Nîmes et dans le Gard",
-            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
-            "rayonKm": 20,
-            "villes": [
-              "Nîmes",
-              "Caissargues",
-              "Bouillargues",
-              "Rodilhan",
-              "Marguerittes",
-              "Garons",
-              "Saint-Gervasy",
-              "Poulx",
-              "Caveirac",
-              "Clarensac",
-              "Milhaud",
-              "Bernis",
-              "Manduel",
-              "Saint-Gilles",
-              "Uchaud",
-              "Vergèze",
-              "Générac",
-              "Vauvert"
+            "titre": "Intervention à Nîmes, Montpellier et Marseille",
+            "intro": "Nous intervenons autour de Nîmes, Montpellier et Marseille.",
+            "zones": [
+              {
+                "region": "Gard — autour de Nîmes",
+                "principale": "Nîmes",
+                "villes": [
+                  "Nîmes",
+                  "Caissargues",
+                  "Bouillargues",
+                  "Rodilhan",
+                  "Marguerittes",
+                  "Garons",
+                  "Saint-Gervasy",
+                  "Poulx",
+                  "Caveirac",
+                  "Clarensac",
+                  "Milhaud",
+                  "Bernis",
+                  "Manduel",
+                  "Saint-Gilles",
+                  "Uchaud",
+                  "Vergèze",
+                  "Générac",
+                  "Vauvert"
+                ]
+              },
+              {
+                "region": "Hérault — autour de Montpellier",
+                "principale": "Montpellier",
+                "villes": [
+                  "Montpellier",
+                  "Lattes",
+                  "Castelnau-le-Lez",
+                  "Pérols",
+                  "Le Crès",
+                  "Jacou",
+                  "Clapiers",
+                  "Montferrier-sur-Lez",
+                  "Saint-Jean-de-Védas",
+                  "Lavérune",
+                  "Juvignac",
+                  "Grabels",
+                  "Castries",
+                  "Mauguio",
+                  "Vendargues",
+                  "Palavas-les-Flots"
+                ]
+              },
+              {
+                "region": "Bouches-du-Rhône — autour de Marseille",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Aubagne",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "La Penne-sur-Huveaune",
+                  "Septèmes-les-Vallons",
+                  "Marignane",
+                  "Vitrolles",
+                  "Aix-en-Provence",
+                  "Gémenos",
+                  "Cassis",
+                  "Carnoux-en-Provence"
+                ]
+              }
             ]
           }
         },
@@ -2732,9 +3199,17 @@
             "titre": "Traitement des punaises de lit à Nîmes",
             "intro": "SANAD CLEAN élimine les punaises de lit à Nîmes et dans le Gard avec un traitement professionnel, chambre par chambre. Une intervention ciblée et durable pour retrouver des nuits sereines.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Punaises de lit" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Punaises de lit"
+              }
             ],
             "ctaPrimaire": {
               "label": "Devis gratuit",
@@ -2802,28 +3277,73 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "Intervention à Nîmes et dans le Gard",
-            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
-            "rayonKm": 20,
-            "villes": [
-              "Nîmes",
-              "Caissargues",
-              "Bouillargues",
-              "Rodilhan",
-              "Marguerittes",
-              "Garons",
-              "Saint-Gervasy",
-              "Poulx",
-              "Caveirac",
-              "Clarensac",
-              "Milhaud",
-              "Bernis",
-              "Manduel",
-              "Saint-Gilles",
-              "Uchaud",
-              "Vergèze",
-              "Générac",
-              "Vauvert"
+            "titre": "Intervention à Nîmes, Montpellier et Marseille",
+            "intro": "Nous intervenons autour de Nîmes, Montpellier et Marseille.",
+            "zones": [
+              {
+                "region": "Gard — autour de Nîmes",
+                "principale": "Nîmes",
+                "villes": [
+                  "Nîmes",
+                  "Caissargues",
+                  "Bouillargues",
+                  "Rodilhan",
+                  "Marguerittes",
+                  "Garons",
+                  "Saint-Gervasy",
+                  "Poulx",
+                  "Caveirac",
+                  "Clarensac",
+                  "Milhaud",
+                  "Bernis",
+                  "Manduel",
+                  "Saint-Gilles",
+                  "Uchaud",
+                  "Vergèze",
+                  "Générac",
+                  "Vauvert"
+                ]
+              },
+              {
+                "region": "Hérault — autour de Montpellier",
+                "principale": "Montpellier",
+                "villes": [
+                  "Montpellier",
+                  "Lattes",
+                  "Castelnau-le-Lez",
+                  "Pérols",
+                  "Le Crès",
+                  "Jacou",
+                  "Clapiers",
+                  "Montferrier-sur-Lez",
+                  "Saint-Jean-de-Védas",
+                  "Lavérune",
+                  "Juvignac",
+                  "Grabels",
+                  "Castries",
+                  "Mauguio",
+                  "Vendargues",
+                  "Palavas-les-Flots"
+                ]
+              },
+              {
+                "region": "Bouches-du-Rhône — autour de Marseille",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Aubagne",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "La Penne-sur-Huveaune",
+                  "Septèmes-les-Vallons",
+                  "Marignane",
+                  "Vitrolles",
+                  "Aix-en-Provence",
+                  "Gémenos",
+                  "Cassis",
+                  "Carnoux-en-Provence"
+                ]
+              }
             ]
           }
         },
@@ -2916,9 +3436,17 @@
             "titre": "Traitement des cafards à Nîmes",
             "intro": "SANAD CLEAN débarrasse votre logement ou votre local des cafards et blattes à Nîmes et dans le Gard. Une désinsectisation ciblée et durable, des cuisines aux gaines techniques.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Traitement des cafards" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Traitement des cafards"
+              }
             ],
             "ctaPrimaire": {
               "label": "Devis gratuit",
@@ -2986,28 +3514,73 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "Intervention à Nîmes et dans le Gard",
-            "intro": "Nous intervenons à Nîmes et dans les communes voisines, dans un rayon d'environ 20 km.",
-            "rayonKm": 20,
-            "villes": [
-              "Nîmes",
-              "Caissargues",
-              "Bouillargues",
-              "Rodilhan",
-              "Marguerittes",
-              "Garons",
-              "Saint-Gervasy",
-              "Poulx",
-              "Caveirac",
-              "Clarensac",
-              "Milhaud",
-              "Bernis",
-              "Manduel",
-              "Saint-Gilles",
-              "Uchaud",
-              "Vergèze",
-              "Générac",
-              "Vauvert"
+            "titre": "Intervention à Nîmes, Montpellier et Marseille",
+            "intro": "Nous intervenons autour de Nîmes, Montpellier et Marseille.",
+            "zones": [
+              {
+                "region": "Gard — autour de Nîmes",
+                "principale": "Nîmes",
+                "villes": [
+                  "Nîmes",
+                  "Caissargues",
+                  "Bouillargues",
+                  "Rodilhan",
+                  "Marguerittes",
+                  "Garons",
+                  "Saint-Gervasy",
+                  "Poulx",
+                  "Caveirac",
+                  "Clarensac",
+                  "Milhaud",
+                  "Bernis",
+                  "Manduel",
+                  "Saint-Gilles",
+                  "Uchaud",
+                  "Vergèze",
+                  "Générac",
+                  "Vauvert"
+                ]
+              },
+              {
+                "region": "Hérault — autour de Montpellier",
+                "principale": "Montpellier",
+                "villes": [
+                  "Montpellier",
+                  "Lattes",
+                  "Castelnau-le-Lez",
+                  "Pérols",
+                  "Le Crès",
+                  "Jacou",
+                  "Clapiers",
+                  "Montferrier-sur-Lez",
+                  "Saint-Jean-de-Védas",
+                  "Lavérune",
+                  "Juvignac",
+                  "Grabels",
+                  "Castries",
+                  "Mauguio",
+                  "Vendargues",
+                  "Palavas-les-Flots"
+                ]
+              },
+              {
+                "region": "Bouches-du-Rhône — autour de Marseille",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Aubagne",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "La Penne-sur-Huveaune",
+                  "Septèmes-les-Vallons",
+                  "Marignane",
+                  "Vitrolles",
+                  "Aix-en-Provence",
+                  "Gémenos",
+                  "Cassis",
+                  "Carnoux-en-Provence"
+                ]
+              }
             ]
           }
         },

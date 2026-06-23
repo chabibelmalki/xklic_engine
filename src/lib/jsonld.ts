@@ -7,6 +7,7 @@ import type {
 } from "@/types/config";
 import { siteOrigin } from "@/lib/urls";
 import { findBlock, type ResolvedPage } from "@/lib/pages";
+import { allZoneVilles } from "@/lib/zone";
 import { socialSameAs, resolveSocials } from "@/lib/social";
 
 /**
@@ -42,8 +43,9 @@ function areaServed(config: SiteConfig): object {
   const zoneBlock = findBlock<ZoneContent>(config, "zone");
   const zone = zoneBlock?.content ?? undefined;
   if (zone && zoneBlock?.mode !== "aucune") {
-    const villes = zone.villes ?? [config.seo.ville];
-    return villes.map((v) => ({ "@type": "City", name: v }));
+    const villes = allZoneVilles(zone);
+    const list = villes.length ? villes : [config.seo.ville];
+    return list.map((v) => ({ "@type": "City", name: v }));
   }
   return { "@type": "City", name: config.seo.ville };
 }
