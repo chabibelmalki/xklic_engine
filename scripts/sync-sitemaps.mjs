@@ -8,8 +8,8 @@
  *
  * SOURCE DE VÉRITÉ = les dossiers config/sites/*. L'URL publique de chaque site
  * (origin) est calculée par la MÊME règle que le reste du moteur (siteOrigin,
- * voir src/lib/urls.ts) : domaine perso `config.domain` si présent, sinon
- * `https://<config.slug>.<NEXT_PUBLIC_ROOT_DOMAIN>`.
+ * voir src/lib/urls.ts) : domaine perso canonique (`customDomains[0]`, sinon
+ * `domain`) si présent, sinon `https://<config.slug>.<NEXT_PUBLIC_ROOT_DOMAIN>`.
  *
  * La propriété GSC est de type DOMAINE -> siteUrl = "sc-domain:xklic.com",
  * qui couvre xklic.com et tous ses sous-domaines.
@@ -91,19 +91,25 @@ const PROPERTY = process.env.GSC_PROPERTY?.trim();
 // ⚠️ MIROIR de `siteOrigin` (src/lib/urls.ts). Node 20 ne peut pas importer le
 // .ts (pas de résolution de l'alias `@/`, pas de strip TS natif), donc on
 // réplique la règle à l'identique. Toute évolution de siteOrigin doit être
-// reportée ici (même contrat : domain perso, sinon <slug>.<root>).
-/** @param {{ slug: string, domain?: string }} config */
+// reportée ici (même contrat : domaine perso canonique, sinon <slug>.<root>).
+/** Réduit une valeur de domaine à un host nu (mirror lib/urls.ts:bareHost). */
+function bareHost(raw) {
+  return String(raw)
+    .trim()
+    .replace(/^https?:\/\//, "")
+    .replace(/\/.*$/, "")
+    .replace(/:\d+$/, "")
+    .toLowerCase();
+}
+/** @param {{ slug: string, customDomains?: string[], domain?: string }} config */
 function siteOrigin(config) {
-  if (config.domain) {
-    return config.domain.startsWith("http")
-      ? config.domain.replace(/\/$/, "")
-      : `https://${config.domain}`;
-  }
+  const raw = config.customDomains?.[0]?.trim() || config.domain?.trim();
+  if (raw) return `https://${bareHost(raw)}`;
   return `https://${config.slug}.${ROOT_DOMAIN}`;
 }
 
 // --- sites locaux (mêmes règles que config-loader / generate-manifest) ----
-/** @returns {{ dir: string, slug: string, domain?: string, sitemap: string }[]} */
+/** @returns {{ dir: string, slug: string, sitemap: string }[]} */
 function readLocalSites() {
   if (!fs.existsSync(SITES_DIR)) return [];
   const sites = [];
@@ -111,16 +117,15 @@ function readLocalSites() {
     if (!entry.isDirectory()) continue; // un client = un DOSSIER
     const cfgPath = path.join(SITES_DIR, entry.name, BASE_FILE);
     if (!fs.existsSync(cfgPath)) continue;
-    /** @type {{ slug?: string, domain?: string }} */
+    /** @type {{ slug?: string, customDomains?: string[], domain?: string }} */
     const cfg = JSON.parse(fs.readFileSync(cfgPath, "utf8"));
     // `slug` du JSON pilote l'origin (peut différer du nom de dossier) ; on
     // retombe sur le dossier par sécurité s'il manque.
     const slug = cfg.slug?.trim() || entry.name;
-    const config = { slug, domain: cfg.domain };
+    const config = { slug, customDomains: cfg.customDomains, domain: cfg.domain };
     sites.push({
       dir: entry.name,
       slug,
-      domain: cfg.domain,
       sitemap: `${siteOrigin(config)}/sitemap.xml`,
     });
   }

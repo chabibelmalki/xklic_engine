@@ -1,16 +1,26 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { SITE_SLUG_SET } from "@/lib/sites-manifest";
+import {
+  SITE_SLUG_SET,
+  CUSTOM_DOMAINS,
+  CANONICAL_DOMAIN,
+} from "@/lib/sites-manifest";
 
 /**
- * Routage multi-tenant par SOUS-DOMAINE (prod).
+ * Routage multi-tenant : DOMAINE PERSO d'abord, puis SOUS-DOMAINE (prod).
  *
- * fatima.xklic.com/<path>  ->  réécrit vers  /sites/fatima/<path>
- * (réécriture interne : l'URL visible reste le sous-domaine, le rendu /sites
+ * sanadclean.fr/<path>     ->  réécrit vers  /sites/sanadclean/<path>  (domaine perso)
+ * fatima.xklic.com/<path>  ->  réécrit vers  /sites/fatima/<path>      (sous-domaine)
+ * (réécriture interne : l'URL visible reste celle d'entrée, le rendu /sites
  * statique est servi -> SSG/ISR préservé).
  *
- * Slug INCONNU sous le domaine racine  ->  redirect 308 vers https://xklic.com
- * (la liste des slugs valides vient du MANIFESTE statique src/lib/sites-manifest.ts,
- * régénéré en pre(build|dev) — le proxy ne lit jamais le disque).
+ * Canonicalisation SEO (301) — consolide les signaux vers l'apex perso :
+ *   - variante d'un domaine perso (www, alias) -> apex (= customDomains[0]) ;
+ *   - <slug>.xklic.com -> apex perso, quand le site a un customDomain.
+ *
+ * Slug INCONNU sous le domaine racine  ->  redirect 308 vers https://xklic.com.
+ * Les maps (slugs + domaines perso) viennent du MANIFESTE statique
+ * src/lib/sites-manifest.ts, régénéré en pre(build|dev) — le proxy ne lit
+ * jamais le disque.
  *
  * NE TOUCHE PAS : apex (xklic.com), www, *.localhost (dev), *.vercel.app, et les
  * chemins /preview (et /sites, déjà ciblé). Ceux-ci passent en NextResponse.next().
@@ -45,8 +55,15 @@ function parseHost(host: string): { sub: string | null; fallbackable: boolean } 
   return { sub: null, fallbackable: false };
 }
 
+/** Réécriture interne (invisible) du Host d'entrée vers /sites/<slug>/<path>. */
+function rewriteToSite(req: NextRequest, slug: string, pathname: string) {
+  const url = req.nextUrl.clone();
+  url.pathname = `/sites/${slug}${pathname === "/" ? "" : pathname}`;
+  return NextResponse.rewrite(url);
+}
+
 export function proxy(req: NextRequest) {
-  const { pathname } = req.nextUrl;
+  const { pathname, search } = req.nextUrl;
 
   // Ne jamais réécrire :
   //  - /sites (déjà ciblé) ni /preview (zone dev),
@@ -61,7 +78,22 @@ export function proxy(req: NextRequest) {
     return NextResponse.next();
   }
 
-  const { sub, fallbackable } = parseHost(req.headers.get("host") ?? "");
+  const hostHeader = req.headers.get("host") ?? "";
+  const hostname = hostHeader.split(":")[0].toLowerCase();
+
+  // 1) DOMAINE PERSO : résolution directe par Host complet (apex + variantes).
+  const customSlug = CUSTOM_DOMAINS[hostname];
+  if (customSlug) {
+    const canon = CANONICAL_DOMAIN[customSlug];
+    // Variante non canonique (www, alias) -> apex : 301 (path + query préservés).
+    if (canon && hostname !== canon) {
+      return NextResponse.redirect(`https://${canon}${pathname}${search}`, 301);
+    }
+    return rewriteToSite(req, customSlug, pathname);
+  }
+
+  // 2) SOUS-DOMAINE (logique historique, inchangée).
+  const { sub, fallbackable } = parseHost(hostHeader);
 
   // Apex / www / localhost-racine / *.vercel.app : comportement par défaut.
   if (!sub) return NextResponse.next();
@@ -71,10 +103,17 @@ export function proxy(req: NextRequest) {
     return NextResponse.redirect(`https://${FALLBACK_HOST}`, 308);
   }
 
-  // Slug connu (prod) ou sous-domaine de dev : réécriture interne vers /sites.
-  const url = req.nextUrl.clone();
-  url.pathname = `/sites/${sub}${pathname === "/" ? "" : pathname}`;
-  return NextResponse.rewrite(url);
+  // 3) Canonicalisation SEO : si ce site a un domaine perso, son sous-domaine
+  //    xklic.com redirige (301) vers l'apex perso. Prod réelle uniquement
+  //    (`fallbackable`) — en dev *.localhost on garde la réécriture locale.
+  const canon = CANONICAL_DOMAIN[sub];
+  if (fallbackable && canon) {
+    return NextResponse.redirect(`https://${canon}${pathname}${search}`, 301);
+  }
+
+  // 4) Slug connu (prod) ou sous-domaine de dev : réécriture interne vers /sites.
+  //    Inchangé pour les tenants SANS domaine perso.
+  return rewriteToSite(req, sub, pathname);
 }
 
 export const config = {

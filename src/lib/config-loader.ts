@@ -26,19 +26,22 @@ const DEFAULT_LOCALE = "fr";
 
 let _cache: Map<string, SiteEntry> | null = null;
 
-// Rappel (une fois par slug) : un `domain` perso doit être réellement câblé,
-// sinon canonical/hreflang/OG/sitemap pointent vers un domaine qui ne sert pas
-// le site. Voir le commentaire de `SiteConfig.domain`.
+// Rappel (une fois par slug) : un domaine perso (`customDomains`/`domain`) doit
+// être réellement câblé, sinon canonical/hreflang/OG/sitemap pointent vers un
+// domaine qui ne sert pas le site — ET le proxy y route les requêtes entrantes.
+// Voir le commentaire de `SiteConfig.customDomains`.
 const warnedDomains = new Set<string>();
 
 function normalize(parsed: SiteConfig, slug: string): SiteConfig {
   parsed.slug = slug;
   // Défensif : un site multi-page peut ne pas définir `blocks` au niveau racine.
   if (!Array.isArray(parsed.blocks)) parsed.blocks = [];
-  if (parsed.domain && !warnedDomains.has(slug)) {
+  const customDomains =
+    parsed.customDomains?.length ? parsed.customDomains : parsed.domain ? [parsed.domain] : [];
+  if (customDomains.length && !warnedDomains.has(slug)) {
     warnedDomains.add(slug);
     console.warn(
-      `[config] ${slug} : champ "domain" = "${parsed.domain}". L'URL publique du site sera https://${parsed.domain} — vérifiez que ce domaine est BIEN câblé (Vercel + DNS). Sinon, retirez "domain" pour servir sur ${slug}.<NEXT_PUBLIC_ROOT_DOMAIN>.`,
+      `[config] ${slug} : domaine(s) perso = [${customDomains.join(", ")}]. L'URL publique (canonical) sera https://${customDomains[0]} et le proxy y route le trafic — vérifiez que CHAQUE host est BIEN câblé (Vercel + DNS) et régénérez le manifeste. Sinon, retirez ces champs pour servir sur ${slug}.<NEXT_PUBLIC_ROOT_DOMAIN>.`,
     );
   }
   return parsed;

@@ -1,5 +1,6 @@
 {
   "slug": "sanadclean",
+  "customDomains": ["sanadclean.fr", "www.sanadclean.fr"],
   "theme": "fraicheur-teal",
   "i18n": {
     "default": "fr",

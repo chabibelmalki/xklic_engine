@@ -325,10 +325,22 @@ export interface TarifsContent {
 
 // --- zone ---
 export type ZoneMode = "carte" | "liste" | "aucune";
+/** Un groupe de communes desservies, rattaché à une région / un département. */
+export interface ZoneRegion {
+  /** Libellé du groupe, ex. "Gard — autour de Nîmes". */
+  region: string;
+  /** Ville principale mise en avant (sinon la 1re de `villes`). */
+  principale?: string;
+  /** Communes desservies dans cette zone. */
+  villes: string[];
+}
 export interface ZoneContent {
   titre?: string;
   intro?: string;
+  /** Communes à plat (rétro-compat). Si `zones` est fourni, il prime à l'affichage. */
   villes?: string[];
+  /** Communes regroupées par région/département (affichage propre + multi-zones). */
+  zones?: ZoneRegion[];
   rayonKm?: number;
   /** URL d'iframe de carte (Google Maps / OSM) pour mode "carte". */
   mapEmbedUrl?: string;
@@ -721,6 +733,24 @@ export interface SiteConfig {
    * au chargement (rappel qu'il doit être réellement branché).
    */
   domain?: string;
+  /**
+   * Domaines PERSO du site (apex + variantes, ex.
+   * `["sanadclean.fr", "www.sanadclean.fr"]`).
+   *
+   * Le PREMIER élément est le domaine CANONIQUE (apex) : il pilote
+   * canonical/hreflang/OpenGraph/sitemap/JSON-LD (via `siteOrigin`, lib/urls.ts)
+   * et reçoit les redirections 301 émises par le proxy depuis (a) les autres
+   * variantes listées ici (ex. `www` → apex) et (b) le sous-domaine
+   * `<slug>.<NEXT_PUBLIC_ROOT_DOMAIN>` (consolidation des signaux SEO).
+   *
+   * ⚠️ Ne lister QUE des hosts RÉELLEMENT câblés (projet Vercel + DNS) : chaque
+   * host listé est routé vers ce site par le proxy. Un host câblé mais ABSENT
+   * d'ici (ex. `www` oublié) ne sera pas résolu. Régénère le manifeste
+   * (`predev`/`prebuild`) après modification.
+   *
+   * Remplace l'ancien champ `domain` (mono-host), toujours accepté en repli.
+   */
+  customDomains?: string[];
   /**
    * Internationalisation. ABSENT = site monolingue (aucun préfixe d'URL, aucun
    * sélecteur de langue). PRÉSENT = la langue `default` reste sans préfixe ; les
