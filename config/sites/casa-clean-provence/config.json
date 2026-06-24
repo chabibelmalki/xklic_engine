@@ -2,6 +2,7 @@
   "slug": "casa-clean-provence",
   "theme": "douceur-beige",
   "stylePack": "terra-naturel",
+  "customDomains": ["www.casacleanprovence.fr", "casacleanprovence.fr"],
   "branding": {
     "logo": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/casa-clean-provence/icon.png",
     "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/casa-clean-provence/icon.png",
