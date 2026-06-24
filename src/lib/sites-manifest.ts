@@ -20,9 +20,7 @@ export const SITE_SLUG_SET: ReadonlySet<string> = new Set(SITE_SLUGS);
  * Sert à la RÉSOLUTION entrante du tenant par Host complet dans le proxy.
  */
 export const CUSTOM_DOMAINS: Readonly<Record<string, string>> = {
-  "casacleanprovence.fr": "casa-clean-provence",
   "sanadclean.fr": "sanadclean",
-  "www.casacleanprovence.fr": "casa-clean-provence",
   "www.sanadclean.fr": "sanadclean",
 };
 
@@ -31,6 +29,5 @@ export const CUSTOM_DOMAINS: Readonly<Record<string, string>> = {
  * Sert aux redirections 301 SEO (variante/sous-domaine -> apex).
  */
 export const CANONICAL_DOMAIN: Readonly<Record<string, string>> = {
-  "casa-clean-provence": "casacleanprovence.fr",
   "sanadclean": "sanadclean.fr",
 };
