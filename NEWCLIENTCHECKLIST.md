@@ -147,3 +147,13 @@ Un `.fr` neuf repart de zéro côté autorité → "Crawled - currently not inde
 | Client | Domaine | Titulaire | Expiration | Renouvellement auto |
 |--------|---------|-----------|------------|---------------------|
 | Sanad Clean | sanadclean.fr | (xklic, à transférer) | _à compléter_ | _à vérifier_ |
+
+
+
+achat ovh
+ajout dans vercel
+config ovh / vercel
+claude code a fait un truc manifest je ne sais plus
+Google search console : domaine : mis a jours ovh txt @ code google, puis validation google.
+soumission sitemap dans gsc
+ajout url dans turnsile
