@@ -98,6 +98,7 @@ export function Services({
 }: BlockComponentProps<ServicesContent>) {
   const c = block.content;
   const variant = block.variant ?? "cartes";
+  const Fwd = localeDir(locale) === "rtl" ? ArrowLeft : ArrowRight;
 
   return (
     <Section id="services" tone={toneForIndex(index)}>
@@ -110,9 +111,14 @@ export function Services({
       </Reveal>
       {variant === "grille-icones" ? (
         <div className="mt-12 grid gap-x-8 gap-y-7 sm:grid-cols-2">
-          {c.items.map((s, i) => (
-            <Reveal key={s.nom} delay={(i % 2) * 0.05}>
-              <div className="flex gap-4 border-s-2 border-brand-200 ps-5">
+          {c.items.map((s, i) => {
+            const row = (
+              <div
+                className={cn(
+                  "group flex gap-4 border-s-2 border-brand-200 ps-5",
+                  s.href && "transition-colors hover:border-brand-400",
+                )}
+              >
                 <span className="grid size-12 shrink-0 place-items-center rounded-theme bg-brand-50 text-2xl text-brand-600">
                   {s.emoji ? s.emoji : <Icon name={s.icone} className="size-6" />}
                 </span>
@@ -131,50 +137,84 @@ export function Services({
                   {s.priceHint && (
                     <p className="mt-1.5 text-sm font-semibold text-brand-700">{s.priceHint}</p>
                   )}
+                  {s.href && (
+                    <span className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-muted transition-colors group-hover:text-brand-700">
+                      {strings.services.see} <Fwd className="size-4" />
+                    </span>
+                  )}
                 </div>
               </div>
-            </Reveal>
-          ))}
+            );
+            return (
+              <Reveal key={s.nom} delay={(i % 2) * 0.05}>
+                {s.href ? (
+                  <Link href={withBase(basePath, s.href)} className="block">
+                    {row}
+                  </Link>
+                ) : (
+                  row
+                )}
+              </Reveal>
+            );
+          })}
         </div>
       ) : variant === "mosaique" ? (
         <div className="mt-12 grid auto-rows-[minmax(0,1fr)] gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {c.items.map((s, i) => {
             // 1re tuile mise en avant (large + colorée), les autres en surface.
             const feature = i === 0;
-            return (
-              <Reveal key={s.nom} delay={(i % 3) * 0.05} className={feature ? "lg:col-span-2 lg:row-span-2" : ""}>
-                <article
+            const tileCls = cn(
+              "group flex h-full flex-col justify-between gap-6 rounded-theme border p-6 transition-transform duration-300 hover:-translate-y-1",
+              feature
+                ? "border-transparent bg-brand-gradient text-brand-contrast lg:p-9"
+                : "border-border bg-surface text-ink shadow-sm",
+            );
+            const tileInner = (
+              <>
+                <span
                   className={cn(
-                    "flex h-full flex-col justify-between gap-6 rounded-theme border p-6 transition-transform duration-300 hover:-translate-y-1",
-                    feature
-                      ? "border-transparent bg-brand-gradient text-brand-contrast lg:p-9"
-                      : "border-border bg-surface text-ink shadow-sm",
+                    "grid size-12 place-items-center rounded-theme text-2xl",
+                    feature ? "bg-white/15 text-brand-contrast" : "bg-brand-50 text-brand-600",
                   )}
                 >
-                  <span
-                    className={cn(
-                      "grid size-12 place-items-center rounded-theme text-2xl",
-                      feature ? "bg-white/15 text-brand-contrast" : "bg-brand-50 text-brand-600",
-                    )}
-                  >
-                    {s.emoji ? s.emoji : <Icon name={s.icone} className="size-6" />}
-                  </span>
-                  <div>
-                    <h3 className={cn("font-display font-bold", feature ? "text-2xl lg:text-3xl" : "text-lg")}>
-                      {s.nom}
-                    </h3>
-                    {s.description && (
-                      <p className={cn("mt-2 text-sm leading-relaxed", feature ? "text-brand-contrast/85" : "text-muted")}>
-                        {s.description}
-                      </p>
-                    )}
-                    {s.priceHint && (
-                      <p className={cn("mt-3 text-sm font-semibold", feature ? "text-brand-contrast" : "text-brand-700")}>
-                        {s.priceHint}
-                      </p>
-                    )}
-                  </div>
-                </article>
+                  {s.emoji ? s.emoji : <Icon name={s.icone} className="size-6" />}
+                </span>
+                <div>
+                  <h3 className={cn("font-display font-bold", feature ? "text-2xl lg:text-3xl" : "text-lg")}>
+                    {s.nom}
+                  </h3>
+                  {s.description && (
+                    <p className={cn("mt-2 text-sm leading-relaxed", feature ? "text-brand-contrast/85" : "text-muted")}>
+                      {s.description}
+                    </p>
+                  )}
+                  {s.priceHint && (
+                    <p className={cn("mt-3 text-sm font-semibold", feature ? "text-brand-contrast" : "text-brand-700")}>
+                      {s.priceHint}
+                    </p>
+                  )}
+                  {s.href && (
+                    <span
+                      className={cn(
+                        "mt-3 inline-flex items-center gap-1 text-sm font-semibold transition-opacity",
+                        feature ? "text-brand-contrast/90" : "text-muted group-hover:text-brand-700",
+                      )}
+                    >
+                      {strings.services.see} <Fwd className="size-4" />
+                    </span>
+                  )}
+                </div>
+              </>
+            );
+            return (
+              <Reveal key={s.nom} delay={(i % 3) * 0.05} className={feature ? "lg:col-span-2 lg:row-span-2" : ""}>
+                {s.href ? (
+                  <Link href={withBase(basePath, s.href)} className={tileCls}>
+                    {tileInner}
+                  </Link>
+                ) : (
+                  <article className={tileCls}>{tileInner}</article>
+                )}
               </Reveal>
             );
           })}

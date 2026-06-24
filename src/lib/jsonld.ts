@@ -27,6 +27,18 @@ function heroImage(config: SiteConfig): string | undefined {
   return url ?? config.branding.logo;
 }
 
+/**
+ * Rend une URL d'asset ABSOLUE sur l'origin du site. Indispensable en JSON-LD :
+ * contrairement à `og:image` (rendu absolu par `metadataBase` de Next), les URL
+ * d'un script JSON-LD ne sont relatives à rien — Google IGNORE un `logo` relatif
+ * (consignes « Logo » : URL absolue exigée). Une URL déjà absolue est conservée.
+ */
+function absUrl(origin: string, url?: string): string | undefined {
+  if (!url) return undefined;
+  if (/^https?:\/\//i.test(url)) return url;
+  return url.startsWith("/") ? `${origin}${url}` : `${origin}/${url}`;
+}
+
 /** Premier bloc d'un type donné sur la PAGE fournie (et non tout le site). */
 function pageBlock<T>(page: ResolvedPage, type: string): T | null {
   for (const b of page.blocks) {
@@ -62,8 +74,8 @@ export function buildJsonLd(config: SiteConfig, page?: ResolvedPage): object[] {
     "@id": `${origin}/#business`,
     name: e.nom,
     url: origin,
-    image: heroImage(config),
-    logo: config.branding.logo,
+    image: absUrl(origin, heroImage(config)),
+    logo: absUrl(origin, config.branding.logo),
     address: {
       "@type": "PostalAddress",
       addressLocality: config.seo.ville,
