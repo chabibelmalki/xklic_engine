@@ -54,7 +54,8 @@
     ]
   },
   "forms": {
-    "to": "rachida.mazzour9@gmail.com"
+    "to": "rachida.mazzour9@gmail.com",
+    "turnstile": true
   },
   "pages": [
     {
