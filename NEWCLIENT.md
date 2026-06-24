@@ -165,8 +165,8 @@ prestations transformées en pages silo, et **tout manque ou hypothèse signalé
 
 ---
 
-## FORMULAIRE DU CLIENT (colle UNE ligne de l'Excel, séparée par des tabulations) :
+## FORMULAIRE DU CLIENT :
 
 ```
-<<< COLLE ICI LA LIGNE >>>
+2026-06-23T21:13:06.290Z	payé	google	Casa Clean Provence	nettoyage	Marseille	services	oui	50 KM	la même chose que sanad clean	oui		641875327	oui	rachida.mazzour9@gmail.com	non		du lundi au samedi, 8h30-18H		non	fr											intervention d 'urgence 10 pour cent de plus 		
 ```
