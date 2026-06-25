@@ -346,15 +346,16 @@
 }
 
 [data-theme="bleu-azur"] {
-  --brand-50: #eaf4ff;
-  --brand-100: #d2e8ff;
-  --brand-200: #a9d2ff;
-  --brand-300: #74b6ff;
-  --brand-400: #3d97ff;
-  --brand-500: #1478f0;
-  --brand-600: #0a5fd0;
-  --brand-700: #0b4ea8;
-  --brand-800: #103f84;
+  /* Échelle calée sur le bleu du logo Adelnet (#327cb7, médian-foncé). */
+  --brand-50: #eef5fb;
+  --brand-100: #d6e7f4;
+  --brand-200: #aecfe8;
+  --brand-300: #7eb3da;
+  --brand-400: #4f93c5;
+  --brand-500: #327cb7;
+  --brand-600: #2c67a5;
+  --brand-700: #234f80;
+  --brand-800: #1b3d63;
   --brand-contrast: #ffffff;
   --accent-50: #fff5e9;
   --accent-500: #f59e0b;
