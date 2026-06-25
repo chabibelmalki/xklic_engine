@@ -10,6 +10,10 @@ complet, crédible et **unique**, propre au métier et à la ville du client.
 
 - Tu ne copies **aucun** site existant : ni structure, ni contenu, ni design, ni
   mots, ni palette.
+- **« Prestations : comme [un autre client] »** (ex. « comme sanad clean ») ne
+  vise QUE le **périmètre des services**. Tu n'en reprends **ni** la structure,
+  **ni** le design, **ni** les prix, **ni** les mots, **ni** la palette : tu
+  inventes les tiens. Référencer un client par son nom = piège à clone.
 - Tu peux lire les configs existantes (`config/sites/*`) **uniquement** pour
   comprendre le schéma et les conventions techniques — **jamais comme modèle à
   imiter**. Aucun site n'est une référence privilégiée.
@@ -22,9 +26,10 @@ complet, crédible et **unique**, propre au métier et à la ville du client.
 ## ENRICHISSEMENT (si SIREN/SIRET renseigné)
 
 Si un SIREN/SIRET est fourni, déduis et recoupe les données légales de
-l'entreprise (raison sociale, forme juridique, dirigeant, adresse, statut) en
-croisant **societe.com** et **pappers.fr**. N'utilise que ce qui est concordant ;
-signale tout écart ou doute.
+l'entreprise (raison sociale, forme juridique, dirigeant, adresse, statut, GPS).
+Source fiable et gratuite : `recherche-entreprises.api.gouv.fr/search?q=<siret>`
+(`societe.com` et `pappers.fr` renvoient souvent 403 à la récupération auto).
+N'utilise que ce qui est concordant ; signale tout écart ou doute.
 
 ---
 
@@ -67,7 +72,7 @@ diverger sur la couleur, la typo, le hero ET l'ordre des blocs — pas juste l'u
 3. **`variant`** (par bloc) — `recommendedVariants` n'est qu'une suggestion de
    combinaisons saines, pas une contrainte : mélange librement.
 4. **ORDRE & COMPOSITION** (`pages[].blocks[]`) — invente une structure propre.
-   Ne reproduis **aucun** squelette existant (surtout pas celui de sanadclean).
+   Ne reproduis **aucun** squelette d'un site existant (accueil ET pages internes).
 
 Toujours : mobile-first, contrastes AA, tout le texte via i18n.
 
@@ -75,11 +80,18 @@ Toujours : mobile-first, contrastes AA, tout le texte via i18n.
 
 ## SILOS DE SERVICES (activité de services)
 
-Pas de one-pager. À partir des prestations, crée **une page dédiée par
-prestation** : `meta` propre, `pageHero` + `breadcrumb` (→ `BreadcrumbList`
-JSON-LD), bloc `service` (→ `Service` JSON-LD), FAQ ciblée, bloc `zone`, maillage
-interne, `navHidden: true`. Plus une page `services` qui les regroupe, et `tarifs`
-(`serviceQuoteBuilder`) si pertinent.
+Pas de one-pager : crée **une page dédiée par prestation**. Le **minimum SEO** de
+chaque silo (à respecter, mais ce n'est PAS un gabarit à recopier) : `meta` propre,
+`pageHero` + `breadcrumb` (→ `BreadcrumbList`), bloc `service` (→ `Service`
+JSON-LD), `navHidden: true`, et du maillage interne. Plus une page `services` qui
+les regroupe, et `tarifs` (`serviceQuoteBuilder`) si pertinent.
+
+⚠️ **Le silo n'impose aucune composition figée.** Au-delà de ce minimum, **varie**
+les blocs, leurs variantes et leur ordre — d'un silo à l'autre ET d'un client à
+l'autre. Deux sites de services ne doivent PAS partager le même squelette de pages
+internes (c'est le piège du clone). Choisis les blocs selon le sens de la
+prestation (FAQ ciblée, `zone`, `galerie`, `etapes`, `avis`… quand c'est utile),
+pas par habitude.
 
 ---
 
@@ -108,54 +120,10 @@ prestations en pages silo, et **tout manque ou hypothèse signalé**.
 
 ---
 
-## DONNÉES DU CLIENT   :
+## DONNÉES DU CLIENT :
 
-```
-"{
-  ""Date"": ""2026-06-25T12:35:17.626Z"",
-  ""Statut"": ""payé"",
-  ""Formule"": ""haut-google"",
-  ""Entreprise"": ""Adelnet"",
-  ""Metier"": ""Aide ménagère"",
-  ""Ville"": ""Saint-Étienne"",
-  ""Type"": ""services"",
-  ""Se deplace"": ""oui"",
-  ""Zone deplacement"": ""Saint Étienne  ,Lyon et alentours"",
-  ""Prestations"": ""Comme sanad clean (sanadclean)"",
-  ""Credit impot"": ""oui"",
-  ""Produits"": """",
-  ""Telephone"": ""760153853"",
-  ""WhatsApp"": ""oui"",
-  ""Email"": ""khadijaselhami00@gmail.com"",
-  ""Local/Boutique"": ""non"",
-  ""Adresse"": """",
-  ""Disponibilites"": ""Lundi au dimanche 7h - 22h"",
-  ""SIRET"": ""10336611800018"",
-  ""SIRET en cours"": ""non"",
-  ""Langues"": ""fr"",
-  ""Styles"": ""Pro & rassurant, Moderne & dynamique, Naturel"",
-  ""Couleur"": ""bleu"",
-  ""Ambiance"": """",
-  ""Logo"": """",
-  ""Photos"": """",
-  ""Facebook"": """",
-  ""Instagram"": """",
-  ""TikTok"": """",
-  ""X"": """",
-  ""Google"": """",
-  ""Extra"": """",
-  ""Mode"": ""Formulaire complet"",
-  ""Montant"": ""179.80"",
-  ""CodePromo"": ""SOUAD3"",
-  ""OrderId"": ""1ce12265-07bd-4e60-8d0e-58b93a6d1f13"",
-  ""SessionStripe"": ""cs_live_b15PlQ2FGpDeX9Fa9Z3ZNe8AUCFKX1rUy33AjoQqMxOPkHwuX3LdqnW5fv"",
-  ""AbonnementStripe"": ""sub_1TmCUtBKXDIyeh9aBYWA7KGe"",
-  ""nom domaine"": """",
-  ""fournisseur"": """",
-  ""date fin"": """",
-  ""G-Lien"": """",
-  ""MAIL PRO 2"": """",
-  ""lien fiche google"": """",
-  ""Commentaire"": ""Modifier le nom commercial de la société par \""Adelnet\""""
-}"
-```
+<!--
+Coller ici les données du nouveau client (en-têtes + valeurs du formulaire d'onboarding).
+⚠️ NE JAMAIS committer de données client réelles ni de secrets dans ce fichier
+   (clés Stripe `cs_live_…` / `sub_…`, e-mails, téléphone, OrderId, etc.).
+-->
