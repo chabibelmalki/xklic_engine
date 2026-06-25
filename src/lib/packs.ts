@@ -7,6 +7,11 @@ import type { StylePackId } from "@/types/config";
  * `data-pack` sur le conteneur racine du site (voir SiteRenderer) ; un pack
  * inconnu retombe sur `base` sans casser.
  *
+ * AUCUN pack n'est lié à un métier ou un secteur : tout pack peut habiller
+ * n'importe quel client. Le choix se fait sur l'AMBIANCE visuelle voulue, jamais
+ * sur l'activité. Pack (structure/typo/motion) et theme (couleur) sont deux axes
+ * à combiner librement (cf. le découplage de palette en cours).
+ *
  * `variants` = CURATION : par type de bloc, les variantes de layout que le pack
  * recommande (la 1re sert de défaut « propre » pour ce pack). Sert au prompt de
  * génération (catalog.json) pour éviter les combinaisons moches/cassées. Le
@@ -35,7 +40,7 @@ export const PACKS: StylePack[] = [
     id: "maison-premium",
     label: "Maison · Premium élégant",
     ambiance:
-      "Serif haute, tons ivoire/encre/or, ombres douces, beaucoup d'air. Artisanat haut de gamme.",
+      "Serif haute, tons ivoire/encre/or, ombres douces, beaucoup d'air.",
     fonts: { display: "Playfair Display", sans: "Inter" },
     variants: {
       hero: ["plein", "split"],
@@ -54,7 +59,7 @@ export const PACKS: StylePack[] = [
     id: "rose-noir-premium",
     label: "Rose & Noir · Premium élégant",
     ambiance:
-      "Serif haute, encre noire chaude + rose profond, fond ivoire rosé, ombres douces, coins nets, beaucoup d'air. Élégant, épuré, féminin haut de gamme (ménage premium, beauté, bijoux, mode).",
+      "Serif haute, encre noire chaude + rose profond, fond ivoire rosé, ombres douces, coins nets, beaucoup d'air. Élégant, épuré.",
     fonts: { display: "Playfair Display", sans: "Inter" },
     variants: {
       hero: ["plein", "split"],
@@ -92,7 +97,7 @@ export const PACKS: StylePack[] = [
     id: "clair-frais",
     label: "Clair · Frais & clean",
     ambiance:
-      "Clair et aéré, teal/ciel, coins très arrondis, boutons pill, ombres légères. Confiance et propreté.",
+      "Clair et aéré, teal/ciel, coins très arrondis, boutons pill, ombres légères.",
     fonts: { display: "Plus Jakarta Sans", sans: "Inter" },
     variants: {
       hero: ["centre", "split"],
@@ -130,7 +135,7 @@ export const PACKS: StylePack[] = [
     id: "terra-naturel",
     label: "Terra · Naturel & organique",
     ambiance:
-      "Soft-serif, sauge/terracotta/crème, formes très arrondies, texture organique, motion lent. Bien-être, extérieur.",
+      "Soft-serif, sauge/terracotta/crème, formes très arrondies, texture organique, motion lent.",
     fonts: { display: "Fraunces", sans: "Nunito Sans" },
     variants: {
       hero: ["split", "centre"],

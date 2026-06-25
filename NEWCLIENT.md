@@ -47,11 +47,27 @@ signale tout écart ou doute.
 Deux clients ne se ressemblent pas. La différence vient surtout de la **TYPO**, du
 **LAYOUT** et du **MOTION** — pas seulement de la couleur.
 
-1. **`stylePack`** (`catalog.json > stylePacks.items`) — choisis selon métier +
-   ambiance. Deux clients du même métier doivent quand même se démarquer.
-2. **`variant`** (par bloc) — dans `recommendedVariants` du pack.
-3. **ORDRE & COMPOSITION** (`pages[].blocks[]`) — adapté au métier. Ne reproduis
-   aucun squelette existant.
+**RÈGLE ABSOLUE — aucun pack/thème n'est réservé à un métier.** Ne choisis JAMAIS
+le design « par secteur » (« ménage → tel pack »). C'est ce réflexe qui produit
+des clones. Le `stylePack` (structure/typo/motion) et le `theme` (couleur) sont
+**deux axes indépendants à combiner librement** : tu peux mettre n'importe quelle
+couleur sous n'importe quelle typo. Pioche dans **toute** la palette de packs ×
+thèmes selon l'**ambiance** voulue et le **style demandé par le client**.
+
+**AVANT de choisir : regarde les sites déjà en prod** (`config/sites/*`) et prends
+sciemment un pack, un thème, un hero et une composition **différents** des clients
+du même métier. Si un voisin proche existe (ex. autre site de ménage), tu DOIS
+diverger sur la couleur, la typo, le hero ET l'ordre des blocs — pas juste l'un.
+
+1. **`stylePack`** (`catalog.json > stylePacks.items`) — choisis selon l'**ambiance**
+   et le style client, jamais selon le métier. Vérifie qu'aucun site existant
+   n'utilise déjà ce pack pour ce métier.
+2. **`theme`** (couleur) — choisi indépendamment du pack, selon la couleur demandée
+   par le client.
+3. **`variant`** (par bloc) — `recommendedVariants` n'est qu'une suggestion de
+   combinaisons saines, pas une contrainte : mélange librement.
+4. **ORDRE & COMPOSITION** (`pages[].blocks[]`) — invente une structure propre.
+   Ne reproduis **aucun** squelette existant (surtout pas celui de sanadclean).
 
 Toujours : mobile-first, contrastes AA, tout le texte via i18n.
 

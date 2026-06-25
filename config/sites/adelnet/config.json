@@ -1,0 +1,1773 @@
+{
+  "slug": "adelnet",
+  "theme": "bleu-azur",
+  "stylePack": "clair-frais",
+  "branding": {
+    "logoAlt": "Adelnet — ménage et repassage à domicile à Saint-Étienne",
+    "logoTwoTone": {
+      "first": "#2563eb",
+      "rest": "#0f172a"
+    },
+    "tagline": "Ménage & repassage à domicile · Saint-Étienne"
+  },
+  "entreprise": {
+    "nom": "Adelnet",
+    "statut": "EI",
+    "siret": "10336611800018",
+    "ape": "81.21Z",
+    "apeLabel": "Nettoyage courant des bâtiments",
+    "tva": {
+      "regime": "franchise"
+    },
+    "dirigeant": "Khadija Selhami",
+    "siege": "20 place du Forum, 42000 Saint-Étienne"
+  },
+  "seo": {
+    "schemaType": "HousekeepingService",
+    "ville": "Saint-Étienne"
+  },
+  "geo": {
+    "lat": 45.4695347,
+    "lng": 4.4030955
+  },
+  "meta": {
+    "title": "Adelnet — Ménage & repassage à domicile à Saint-Étienne (crédit d'impôt 50 %)",
+    "description": "Adelnet, aide ménagère à Saint-Étienne et Lyon : ménage à domicile, repassage, grand nettoyage, vitres et entretien de bureaux. Crédit d'impôt de 50 %, soit 14 €/h réellement à votre charge. Devis gratuit, 7j/7.",
+    "keywords": [
+      "aide ménagère Saint-Étienne",
+      "ménage à domicile Saint-Étienne",
+      "femme de ménage Saint-Étienne",
+      "repassage à domicile Saint-Étienne",
+      "ménage à domicile Lyon",
+      "crédit d'impôt ménage Loire",
+      "nettoyage de bureaux Saint-Étienne",
+      "services à la personne Saint-Étienne"
+    ]
+  },
+  "forms": {
+    "to": "khadijaselhami00@gmail.com",
+    "turnstile": true
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Accueil",
+      "navHidden": true,
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "centre",
+          "content": {
+            "eyebrow": "Aide ménagère à Saint-Étienne & Lyon",
+            "titre": "Reprenez votre temps,",
+            "titreAccent": "on s'occupe du ménage",
+            "accroche": "Ménage régulier, repassage et grand nettoyage à domicile — à Saint-Étienne, Lyon et alentours. Avec le crédit d'impôt de 50 %, votre heure revient à 14 € au lieu de 28 €.",
+            "trust": [
+              {
+                "icone": "Receipt",
+                "label": "Crédit d'impôt 50 %"
+              },
+              {
+                "icone": "CalendarClock",
+                "label": "7j/7, de 7h à 22h"
+              },
+              {
+                "icone": "ShieldCheck",
+                "label": "Intervenante attitrée"
+              },
+              {
+                "icone": "Car",
+                "label": "Saint-Étienne & Lyon"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Voir les prestations",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "timeline-verticale",
+          "content": {
+            "eyebrow": "En toute simplicité",
+            "titre": "De votre appel à un intérieur impeccable",
+            "items": [
+              {
+                "icone": "PhoneCall",
+                "titre": "On échange",
+                "texte": "Vous décrivez votre besoin par téléphone, WhatsApp ou via le devis en ligne. Réponse sous 24 h."
+              },
+              {
+                "icone": "CalendarCheck",
+                "titre": "On planifie",
+                "texte": "On fixe un créneau régulier ou ponctuel, avec la même intervenante à chaque passage."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "On s'occupe de tout",
+                "texte": "Vous profitez d'un logement propre — et du crédit d'impôt de 50 % sur les prestations à domicile."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "eyebrow": "Nos prestations",
+            "titre": "Un intérieur entretenu, sans y penser",
+            "intro": "Du ménage hebdomadaire au repassage en passant par le grand nettoyage : un service régulier et soigné à Saint-Étienne, Lyon et leurs environs.",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "emoji": "🧽",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 28 €/h",
+                "description": "Entretien régulier de votre logement : sols, cuisine, salle de bain, poussières.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Repassage à domicile",
+                "emoji": "👕",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 26 €/h",
+                "description": "Linge repassé, plié et rangé avec soin, chez vous ou sur le même créneau que le ménage.",
+                "href": "/repassage"
+              },
+              {
+                "nom": "Grand nettoyage",
+                "emoji": "✨",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 180 €",
+                "description": "Nettoyage en profondeur de printemps ou avant l'arrivée d'invités, pièce par pièce.",
+                "href": "/grand-menage"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "emoji": "🪟",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 80 €",
+                "description": "Vitres, baies vitrées et miroirs sans traces, à l'intérieur comme à l'extérieur.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Bureaux & locaux",
+                "emoji": "🏢",
+                "badge": "Sur devis",
+                "priceHint": "dès 90 €",
+                "description": "Entretien régulier de bureaux, cabinets et commerces, en horaires décalés si besoin.",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Fin de chantier",
+                "emoji": "🧰",
+                "badge": "Sur devis",
+                "priceHint": "dès 220 €",
+                "description": "Remise en propre après travaux ou rénovation : poussières fines, traces et résidus.",
+                "href": "/nettoyage-fin-chantier"
+              }
+            ],
+            "cta": {
+              "label": "Voir toutes les prestations",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "simulateur",
+          "content": {
+            "eyebrow": "Services à la personne",
+            "argumentaireTitre": "Votre ménage à domicile vous coûte",
+            "argumentaireAccent": "moitié prix",
+            "argumentaire": "Pour le ménage et le repassage chez vous : 28 €/h facturés, mais seulement 14 €/h réellement à votre charge après le crédit d'impôt de 50 %.",
+            "points": [
+              "50 % de crédit d'impôt sur le ménage et le repassage à domicile",
+              "Avance immédiate : ne réglez tout de suite que la moitié",
+              "Paiement en CESU accepté"
+            ],
+            "cardTitre": "Simulateur crédit d'impôt",
+            "cardIntro": "Estimez en quelques secondes votre coût réel, crédit d'impôt déduit.",
+            "curseurLabel": "Heures à domicile par semaine",
+            "unite": "h",
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "defaut": 2,
+            "prixPlein": 28,
+            "prixNet": 14,
+            "facteurMensuel": 4.33,
+            "plafondAnnuel": 12000,
+            "note": "Estimation indicative. Crédit d'impôt via la coopérative Accès SAP (services à la personne), sur les prestations réalisées à votre domicile.",
+            "cta": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Comment ça marche",
+              "href": "/credit-impot"
+            }
+          }
+        },
+        {
+          "type": "avis",
+          "variant": "carrousel",
+          "content": {
+            "eyebrow": "Elles nous font confiance",
+            "titre": "Ce que disent nos clients",
+            "items": [
+              {
+                "auteur": "Sandrine P.",
+                "ville": "Saint-Étienne",
+                "note": 5,
+                "texte": "Khadija est ponctuelle, discrète et très minutieuse. Avec le crédit d'impôt, le service devient vraiment accessible. Je recommande les yeux fermés."
+              },
+              {
+                "auteur": "Marc & Hélène",
+                "ville": "Saint-Priest-en-Jarez",
+                "note": 5,
+                "texte": "Ménage et repassage sur le même créneau, c'est un vrai gain de temps. Toujours la même personne, on a totalement confiance."
+              },
+              {
+                "auteur": "Cabinet Vernay",
+                "ville": "Lyon",
+                "note": 5,
+                "texte": "Nous confions l'entretien de nos bureaux à Adelnet chaque semaine. Sérieux, soigné et flexible sur les horaires."
+              }
+            ],
+            "disclaimer": "Témoignages présentés à titre d'exemple — à remplacer par de vrais avis clients."
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "À Saint-Étienne, Lyon et tout autour",
+            "intro": "Nous nous déplaçons chez vous dans la Loire et le Rhône. Vérifiez votre commune ou contactez-nous directement.",
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.30%2C45.35%2C4.95%2C45.82&layer=mapnik&marker=45.4695347%2C4.4030955",
+            "zones": [
+              {
+                "region": "Loire — autour de Saint-Étienne",
+                "principale": "Saint-Étienne",
+                "villes": [
+                  "Saint-Étienne",
+                  "Saint-Priest-en-Jarez",
+                  "Villars",
+                  "La Talaudière",
+                  "Sorbiers",
+                  "Saint-Chamond",
+                  "Saint-Genest-Lerpt",
+                  "Roche-la-Molière",
+                  "La Ricamarie",
+                  "Le Chambon-Feugerolles",
+                  "Firminy",
+                  "Unieux",
+                  "La Fouillouse",
+                  "Andrézieux-Bouthéon",
+                  "Saint-Just-Saint-Rambert",
+                  "Veauche",
+                  "Rive-de-Gier"
+                ]
+              },
+              {
+                "region": "Rhône — autour de Lyon",
+                "principale": "Lyon",
+                "villes": [
+                  "Lyon",
+                  "Villeurbanne",
+                  "Vénissieux",
+                  "Saint-Priest",
+                  "Bron",
+                  "Caluire-et-Cuire",
+                  "Oullins",
+                  "Sainte-Foy-lès-Lyon",
+                  "Saint-Genis-Laval",
+                  "Givors",
+                  "Vaulx-en-Velin",
+                  "Décines-Charpieu",
+                  "Saint-Fons",
+                  "Mions"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Les questions que l'on nous pose souvent",
+            "items": [
+              {
+                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
+                "reponse": "Pour le ménage et le repassage réalisés à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées (plafond de 12 000 € par an et par foyer). Concrètement, une heure facturée 28 € ne vous coûte réellement que 14 €. Adelnet travaille via la coopérative Accès SAP, déclarée services à la personne, ce qui vous ouvre ce droit."
+              },
+              {
+                "question": "Qu'est-ce que l'avance immédiate ?",
+                "reponse": "Grâce à l'avance immédiate de crédit d'impôt (URSSAF), vous ne réglez tout de suite que la moitié restant à votre charge, sans attendre votre déclaration d'impôts. Le dispositif est géré via la coopérative Accès SAP."
+              },
+              {
+                "question": "Aurai-je toujours la même intervenante ?",
+                "reponse": "Oui, dans la mesure du possible vous gardez la même intervenante à chaque passage. C'est essentiel pour la confiance, la régularité et la qualité du travail."
+              },
+              {
+                "question": "Le crédit d'impôt s'applique-t-il au nettoyage de bureaux ?",
+                "reponse": "Non. Le crédit d'impôt de 50 % ne concerne que les prestations réalisées au domicile d'un particulier. Le nettoyage de bureaux, de locaux professionnels et la fin de chantier sont facturés sur devis, sans crédit d'impôt."
+              },
+              {
+                "question": "Dans quelles communes intervenez-vous ?",
+                "reponse": "Nous intervenons autour de Saint-Étienne (Loire) et autour de Lyon (Rhône), ainsi que dans les communes voisines. Vérifiez votre secteur sur la page d'accueil ou contactez-nous pour confirmer."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Prête à vous libérer des corvées ?",
+            "sousTitre": "Devis gratuit et sans engagement. Réponse rapide par téléphone, WhatsApp ou e-mail.",
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 60 15 38 53",
+              "href": "tel:+33760153853"
+            },
+            "lien": {
+              "label": "ou écrivez-nous sur WhatsApp →",
+              "href": "https://wa.me/33760153853"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Services",
+      "meta": {
+        "title": "Services de ménage & repassage à Saint-Étienne et Lyon",
+        "description": "Ménage à domicile, repassage, grand nettoyage, vitres, bureaux et fin de chantier à Saint-Étienne, Lyon et alentours. Crédit d'impôt 50 % sur les prestations à domicile."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nos prestations",
+            "titre": "Tout l'entretien de votre quotidien",
+            "intro": "Du ménage régulier au repassage, du grand nettoyage à l'entretien de vos bureaux : Adelnet couvre vos besoins à Saint-Étienne et Lyon — avec crédit d'impôt sur les prestations à domicile.",
+            "ctaPrimaire": {
+              "label": "Composer mon devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Voir les tarifs",
+              "href": "/tarifs"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "À domicile · crédit d'impôt 50 %",
+            "titre": "Prestations à votre domicile",
+            "intro": "Réalisées chez les particuliers, ces prestations ouvrent droit au crédit d'impôt de 50 % via la coopérative Accès SAP.",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "emoji": "🧽",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 28 €/h",
+                "description": "Entretien régulier de votre logement : sols, cuisine, salle de bain, poussières.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Repassage à domicile",
+                "emoji": "👕",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 26 €/h",
+                "description": "Linge repassé, plié et rangé, chez vous ou sur le même créneau que le ménage.",
+                "href": "/repassage"
+              },
+              {
+                "nom": "Grand nettoyage",
+                "emoji": "✨",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 180 €",
+                "description": "Nettoyage en profondeur de printemps ou avant un événement, pièce par pièce.",
+                "href": "/grand-menage"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "emoji": "🪟",
+                "badge": "Crédit d'impôt 50 %",
+                "priceHint": "dès 80 €",
+                "description": "Vitres, baies et miroirs sans traces, intérieur et extérieur.",
+                "href": "/nettoyage-vitres"
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Sur devis",
+            "titre": "Professionnels & chantiers",
+            "intro": "Bureaux, locaux et remise en propre après travaux : facturés sur devis, sans crédit d'impôt.",
+            "items": [
+              {
+                "nom": "Bureaux & locaux",
+                "emoji": "🏢",
+                "badge": "Sur devis",
+                "priceHint": "dès 90 €",
+                "description": "Entretien régulier de bureaux, cabinets et commerces, en horaires décalés si besoin.",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Fin de chantier",
+                "emoji": "🧰",
+                "badge": "Sur devis",
+                "priceHint": "dès 220 €",
+                "description": "Remise en propre après travaux ou rénovation : poussières fines, traces et résidus.",
+                "href": "/nettoyage-fin-chantier"
+              }
+            ],
+            "cta": {
+              "label": "Composer mon devis en ligne",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Un besoin précis ? Composez votre devis",
+            "sousTitre": "Sélectionnez vos prestations et obtenez une estimation immédiate, crédit d'impôt déduit.",
+            "ctaPrimaire": {
+              "label": "Composer mon devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 60 15 38 53",
+              "href": "tel:+33760153853"
+            },
+            "lien": {
+              "label": "ou écrivez-nous sur WhatsApp →",
+              "href": "https://wa.me/33760153853"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tarifs",
+      "label": "Tarifs",
+      "meta": {
+        "title": "Tarifs ménage & repassage à Saint-Étienne",
+        "description": "Tarifs Adelnet : ménage 28 €/h (14 €/h après crédit d'impôt), repassage, grand nettoyage, vitres, bureaux et fin de chantier. Composez votre devis en ligne."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Tarifs & devis en ligne",
+            "titre": "Composez votre devis en quelques clics",
+            "intro": "Choisissez vos prestations, ajustez les quantités et obtenez une estimation immédiate — crédit d'impôt déduit pour les prestations à domicile."
+          }
+        },
+        {
+          "type": "serviceQuoteBuilder",
+          "content": {
+            "creditRate": 0.5,
+            "creditCeiling": 12000,
+            "creditLabelOff": "Prix normal",
+            "creditLabelOn": "Après crédit d'impôt −50 %",
+            "telephone": "+33 7 60 15 38 53",
+            "whatsapp": "+33 7 60 15 38 53",
+            "confidentialiteHref": "/confidentialite",
+            "villes": [
+              "Saint-Étienne",
+              "Saint-Priest-en-Jarez",
+              "Villars",
+              "La Talaudière",
+              "Sorbiers",
+              "Saint-Chamond",
+              "Saint-Genest-Lerpt",
+              "Roche-la-Molière",
+              "Firminy",
+              "La Fouillouse",
+              "Andrézieux-Bouthéon",
+              "Saint-Just-Saint-Rambert",
+              "Rive-de-Gier",
+              "Lyon",
+              "Villeurbanne",
+              "Vénissieux",
+              "Saint-Priest",
+              "Bron",
+              "Oullins",
+              "Givors"
+            ],
+            "notes": [
+              "🚗 Déplacement compris sur Saint-Étienne et son agglomération.",
+              "📋 Devis gratuit sous 24 h, sans engagement."
+            ],
+            "categories": [
+              {
+                "id": "menage",
+                "emoji": "🧽",
+                "titre": "Ménage à domicile",
+                "description": "Entretien régulier de votre logement.",
+                "creditImpot": true,
+                "prestations": [
+                  {
+                    "nom": "Ménage régulier",
+                    "type": "horaire",
+                    "tauxHoraire": 28,
+                    "supplementMateriel": 4,
+                    "supplementMaterielLabel": "Produits & matériel fournis",
+                    "heuresMin": 1,
+                    "heuresMax": 40,
+                    "heuresDefaut": 2
+                  }
+                ]
+              },
+              {
+                "id": "repassage",
+                "emoji": "👕",
+                "titre": "Repassage à domicile",
+                "description": "Linge repassé, plié et rangé.",
+                "creditImpot": true,
+                "prestations": [
+                  {
+                    "nom": "Repassage",
+                    "type": "horaire",
+                    "tauxHoraire": 26,
+                    "heuresMin": 1,
+                    "heuresMax": 20,
+                    "heuresDefaut": 2
+                  }
+                ]
+              },
+              {
+                "id": "grand-menage",
+                "emoji": "✨",
+                "titre": "Grand nettoyage",
+                "description": "Nettoyage en profondeur, pièce par pièce.",
+                "creditImpot": true,
+                "prestations": [
+                  {
+                    "nom": "Grand nettoyage",
+                    "type": "tiers",
+                    "tiers": [
+                      {
+                        "label": "Studio / T1",
+                        "prix": 180,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "T2",
+                        "prix": 250,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "T3",
+                        "prix": 320,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "T4 et +",
+                        "prix": 400,
+                        "prefixe": "dès"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "vitres",
+                "emoji": "🪟",
+                "titre": "Nettoyage de vitres",
+                "description": "Vitres, baies et miroirs sans traces.",
+                "creditImpot": true,
+                "prestations": [
+                  {
+                    "nom": "Vitrerie",
+                    "type": "tiers",
+                    "tiers": [
+                      {
+                        "label": "Appartement",
+                        "prix": 80,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "Maison",
+                        "prix": 130,
+                        "prefixe": "dès"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "bureaux",
+                "emoji": "🏢",
+                "titre": "Bureaux & locaux",
+                "description": "Entretien de bureaux, cabinets et commerces.",
+                "creditImpot": false,
+                "prestations": [
+                  {
+                    "nom": "Locaux professionnels",
+                    "type": "tiers",
+                    "tiers": [
+                      {
+                        "label": "Jusqu'à 50 m²",
+                        "prix": 90,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "50 à 100 m²",
+                        "prix": 130,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "Plus de 100 m²",
+                        "prix": 170,
+                        "prefixe": "dès"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "fin-chantier",
+                "emoji": "🧰",
+                "titre": "Fin de chantier",
+                "description": "Remise en propre après travaux ou rénovation.",
+                "creditImpot": false,
+                "prestations": [
+                  {
+                    "nom": "Nettoyage après travaux",
+                    "type": "tiers",
+                    "tiers": [
+                      {
+                        "label": "Studio / T1",
+                        "prix": 220,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "T2 / T3",
+                        "prix": 340,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "T4 et +",
+                        "prix": 480,
+                        "prefixe": "dès"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Un grand chantier ou un besoin sur mesure ?",
+            "sousTitre": "Contactez-nous pour un devis personnalisé, gratuit et sans engagement.",
+            "ctaPrimaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 60 15 38 53",
+              "href": "tel:+33760153853"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "credit-impot",
+      "label": "Crédit d'impôt",
+      "navHidden": true,
+      "meta": {
+        "title": "Crédit d'impôt 50 % sur le ménage à domicile à Saint-Étienne",
+        "description": "Avec Adelnet et la coopérative Accès SAP, profitez du crédit d'impôt de 50 % et de l'avance immédiate sur le ménage et le repassage à domicile à Saint-Étienne. Coût réel : 14 €/h."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Services à la personne",
+            "titre": "Le ménage à domicile, divisé par deux",
+            "intro": "Crédit d'impôt de 50 %, avance immédiate, paiement CESU : le ménage et le repassage à votre domicile ne vous coûtent réellement que 14 €/h."
+          }
+        },
+        {
+          "type": "simulateur",
+          "content": {
+            "argumentaireTitre": "Vous payez la moitié,",
+            "argumentaireAccent": "l'État paie le reste",
+            "argumentaire": "Le crédit d'impôt couvre 50 % du ménage et du repassage à domicile, dans la limite de 12 000 € par an et par foyer.",
+            "points": [
+              "50 % de crédit d'impôt sur les prestations à domicile",
+              "Avance immédiate : ne réglez tout de suite que la moitié",
+              "Paiement en CESU accepté",
+              "Géré via la coopérative Accès SAP (services à la personne)"
+            ],
+            "cardTitre": "Simulateur crédit d'impôt",
+            "cardIntro": "Estimez votre coût réel après les 50 % de crédit d'impôt.",
+            "curseurLabel": "Heures à domicile par semaine",
+            "unite": "h",
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "defaut": 2,
+            "prixPlein": 28,
+            "prixNet": 14,
+            "facteurMensuel": 4.33,
+            "plafondAnnuel": 12000,
+            "note": "Estimation indicative. Crédit d'impôt via la coopérative Accès SAP, sur les prestations réalisées à votre domicile.",
+            "cta": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Crédit d'impôt : vos questions",
+            "items": [
+              {
+                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
+                "reponse": "Pour le ménage et le repassage à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées (plafond de 12 000 € par an et par foyer). Une heure facturée 28 € ne vous coûte donc réellement que 14 €. Adelnet travaille via la coopérative Accès SAP, déclarée services à la personne, ce qui vous ouvre ce droit."
+              },
+              {
+                "question": "Qu'est-ce que l'avance immédiate ?",
+                "reponse": "Grâce à l'avance immédiate de crédit d'impôt (URSSAF), vous ne réglez tout de suite que la moitié restant à votre charge, sans attendre votre déclaration d'impôts. Le dispositif est géré via la coopérative Accès SAP."
+              },
+              {
+                "question": "Le crédit d'impôt s'applique-t-il aux bureaux ?",
+                "reponse": "Non. Le crédit d'impôt de 50 % concerne uniquement les prestations réalisées au domicile d'un particulier. Le nettoyage de bureaux, de locaux et la fin de chantier sont facturés sur devis, sans crédit d'impôt."
+              },
+              {
+                "question": "Puis-je payer en CESU ?",
+                "reponse": "Oui, le paiement en CESU est accepté pour les prestations à domicile. Avec le crédit d'impôt, votre coût réel revient à 14 €/h."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Profitez du crédit d'impôt dès la première prestation",
+            "sousTitre": "Devis gratuit et sans engagement. Avance immédiate via Accès SAP.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 60 15 38 53",
+              "href": "tel:+33760153853"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "zone-intervention",
+      "label": "Zone d'intervention",
+      "navHidden": true,
+      "meta": {
+        "title": "Zone d'intervention : Saint-Étienne, Lyon et alentours",
+        "description": "Adelnet intervient à Saint-Étienne, Saint-Chamond, Firminy, Andrézieux-Bouthéon, Lyon, Villeurbanne, Vénissieux et dans toute la Loire et le Rhône."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Zone d'intervention",
+            "titre": "Nous venons jusqu'à chez vous",
+            "intro": "De Saint-Étienne à Lyon, dans la Loire et le Rhône. Vérifiez votre commune ci-dessous ou contactez-nous pour confirmer."
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "Communes desservies",
+            "intro": "Nous nous déplaçons dans toute l'agglomération stéphanoise et la métropole de Lyon.",
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.30%2C45.35%2C4.95%2C45.82&layer=mapnik&marker=45.4695347%2C4.4030955",
+            "zones": [
+              {
+                "region": "Loire — autour de Saint-Étienne",
+                "principale": "Saint-Étienne",
+                "villes": [
+                  "Saint-Étienne",
+                  "Saint-Priest-en-Jarez",
+                  "Villars",
+                  "La Talaudière",
+                  "Sorbiers",
+                  "Saint-Chamond",
+                  "Saint-Genest-Lerpt",
+                  "Roche-la-Molière",
+                  "La Ricamarie",
+                  "Le Chambon-Feugerolles",
+                  "Firminy",
+                  "Unieux",
+                  "La Fouillouse",
+                  "Andrézieux-Bouthéon",
+                  "Saint-Just-Saint-Rambert",
+                  "Veauche",
+                  "Rive-de-Gier"
+                ]
+              },
+              {
+                "region": "Rhône — autour de Lyon",
+                "principale": "Lyon",
+                "villes": [
+                  "Lyon",
+                  "Villeurbanne",
+                  "Vénissieux",
+                  "Saint-Priest",
+                  "Bron",
+                  "Caluire-et-Cuire",
+                  "Oullins",
+                  "Sainte-Foy-lès-Lyon",
+                  "Saint-Genis-Laval",
+                  "Givors",
+                  "Vaulx-en-Velin",
+                  "Décines-Charpieu",
+                  "Saint-Fons",
+                  "Mions"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Votre commune figure dans la liste ?",
+            "sousTitre": "Demandez votre devis gratuit, nous nous déplaçons.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 60 15 38 53",
+              "href": "tel:+33760153853"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "a-propos",
+      "label": "À propos",
+      "navHidden": true,
+      "meta": {
+        "title": "À propos d'Adelnet",
+        "description": "Adelnet, aide ménagère à Saint-Étienne fondée par Khadija Selhami : un service de proximité, soigné et de confiance, à domicile comme en entreprise."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "À propos",
+            "titre": "Adelnet, l'aide ménagère de confiance à Saint-Étienne",
+            "intro": "Fondée par Khadija Selhami, Adelnet met la régularité, le soin et la discrétion au cœur de chaque intervention — chez les particuliers comme dans les entreprises."
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "Nos engagements",
+            "titre": "Ce qui guide chaque intervention",
+            "items": [
+              {
+                "icone": "ShieldCheck",
+                "titre": "Confiance",
+                "texte": "Une intervenante sérieuse et discrète, qui respecte votre logement et vos habitudes."
+              },
+              {
+                "icone": "Repeat",
+                "titre": "Régularité",
+                "texte": "La même personne à chaque passage, sur des créneaux fixés ensemble et tenus."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "Soin du détail",
+                "texte": "Un travail minutieux, fini dans les recoins, comme si c'était chez nous."
+              },
+              {
+                "icone": "Leaf",
+                "titre": "Écoute",
+                "texte": "Produits et méthodes adaptés à vos préférences, en présence d'enfants ou d'animaux."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Envie de nous confier votre intérieur ?",
+            "sousTitre": "Devis gratuit et sans engagement, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Contact",
+        "description": "Contactez Adelnet à Saint-Étienne : téléphone, e-mail, WhatsApp. Demande d'intervention en ligne, réponse rapide, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Contact",
+            "titre": "Parlons de votre besoin",
+            "intro": "Une question, une demande d'intervention ? Écrivez-nous, appelez ou passez par WhatsApp — réponse rapide, devis gratuit."
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Demande d'intervention",
+            "intro": "Décrivez votre besoin : prestation, commune et date souhaitée. Nous revenons vers vous rapidement avec une estimation.",
+            "form": true,
+            "formMode": "demande-intervention",
+            "telephone": "+33 7 60 15 38 53",
+            "whatsapp": "+33 7 60 15 38 53",
+            "email": "khadijaselhami00@gmail.com",
+            "horaires": [
+              {
+                "jour": "Lun – Dim",
+                "heures": "7h – 22h"
+              }
+            ],
+            "services": [
+              "Ménage à domicile",
+              "Repassage",
+              "Grand nettoyage",
+              "Nettoyage de vitres",
+              "Bureaux / locaux professionnels",
+              "Fin de chantier",
+              "Autre / je ne sais pas"
+            ],
+            "villes": [
+              "Saint-Étienne",
+              "Saint-Priest-en-Jarez",
+              "Villars",
+              "La Talaudière",
+              "Sorbiers",
+              "Saint-Chamond",
+              "Firminy",
+              "Andrézieux-Bouthéon",
+              "Rive-de-Gier",
+              "Lyon",
+              "Villeurbanne",
+              "Vénissieux",
+              "Saint-Priest",
+              "Bron",
+              "Oullins",
+              "Givors"
+            ],
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.30%2C45.35%2C4.95%2C45.82&layer=mapnik&marker=45.4695347%2C4.4030955",
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "devis",
+      "label": "Devis gratuit",
+      "navHidden": true,
+      "meta": {
+        "title": "Demande de devis gratuit",
+        "description": "Demandez votre devis gratuit et sans engagement à Adelnet : ménage, repassage, grand nettoyage, vitres et bureaux à Saint-Étienne et Lyon."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Devis gratuit",
+            "titre": "Demandez votre devis en 1 minute",
+            "intro": "Renseignez votre besoin : nous revenons vers vous rapidement avec une estimation adaptée, gratuite et sans engagement.",
+            "ctaSecondaire": {
+              "label": "Composer en ligne",
+              "href": "/tarifs"
+            }
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Votre demande de devis",
+            "intro": "Quelques informations suffisent pour vous établir une estimation.",
+            "form": true,
+            "formMode": "devis",
+            "telephone": "+33 7 60 15 38 53",
+            "whatsapp": "+33 7 60 15 38 53",
+            "email": "khadijaselhami00@gmail.com",
+            "horaires": [
+              {
+                "jour": "Lun – Dim",
+                "heures": "7h – 22h"
+              }
+            ],
+            "services": [
+              "Ménage à domicile",
+              "Repassage",
+              "Grand nettoyage",
+              "Nettoyage de vitres",
+              "Bureaux / locaux professionnels",
+              "Fin de chantier",
+              "Autre / je ne sais pas"
+            ],
+            "villes": [
+              "Saint-Étienne",
+              "Saint-Priest-en-Jarez",
+              "Villars",
+              "La Talaudière",
+              "Sorbiers",
+              "Saint-Chamond",
+              "Firminy",
+              "Andrézieux-Bouthéon",
+              "Rive-de-Gier",
+              "Lyon",
+              "Villeurbanne",
+              "Vénissieux",
+              "Saint-Priest",
+              "Bron",
+              "Oullins",
+              "Givors"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "faq",
+      "label": "FAQ",
+      "navHidden": true,
+      "meta": {
+        "title": "Questions fréquentes",
+        "description": "Crédit d'impôt, avance immédiate, CESU, zone d'intervention, régularité, devis : toutes les réponses sur le ménage et le repassage avec Adelnet."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "FAQ",
+            "titre": "Vos questions, nos réponses"
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Tout savoir avant de commencer",
+            "items": [
+              {
+                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
+                "reponse": "Pour le ménage et le repassage à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées (plafond de 12 000 € par an et par foyer). Une heure facturée 28 € ne vous coûte donc réellement que 14 €. Adelnet travaille via la coopérative Accès SAP, déclarée services à la personne."
+              },
+              {
+                "question": "Qu'est-ce que l'avance immédiate ?",
+                "reponse": "Grâce à l'avance immédiate de crédit d'impôt (URSSAF), vous ne réglez tout de suite que la moitié restant à votre charge, sans attendre votre déclaration d'impôts. Le dispositif est géré via la coopérative Accès SAP."
+              },
+              {
+                "question": "Aurai-je toujours la même intervenante ?",
+                "reponse": "Oui, dans la mesure du possible vous gardez la même intervenante à chaque passage, pour la confiance et la régularité du service."
+              },
+              {
+                "question": "Le crédit d'impôt s'applique-t-il aux bureaux ?",
+                "reponse": "Non. Le crédit d'impôt de 50 % ne concerne que les prestations réalisées au domicile d'un particulier. Le nettoyage de bureaux, de locaux et la fin de chantier sont facturés sur devis, sans crédit d'impôt."
+              },
+              {
+                "question": "Dans quelles communes intervenez-vous ?",
+                "reponse": "Nous intervenons autour de Saint-Étienne (Loire) et autour de Lyon (Rhône), ainsi que dans les communes voisines. Contactez-nous pour confirmer votre secteur."
+              },
+              {
+                "question": "Quels sont vos horaires ?",
+                "reponse": "Nous sommes joignables et intervenons 7j/7, de 7h à 22h, pour s'adapter à votre emploi du temps."
+              },
+              {
+                "question": "Utilisez-vous des produits écologiques ?",
+                "reponse": "Nous adaptons les produits à vos préférences et pouvons utiliser des produits respectueux de l'environnement sur demande, notamment en présence d'enfants ou d'animaux."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Une autre question ?",
+            "sousTitre": "Appelez-nous ou écrivez : nous vous répondons rapidement.",
+            "ctaPrimaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 60 15 38 53",
+              "href": "tel:+33760153853"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "menage-domicile",
+      "label": "Ménage à domicile",
+      "navHidden": true,
+      "meta": {
+        "title": "Ménage à domicile à Saint-Étienne — dès 14 €/h après crédit d'impôt",
+        "description": "Ménage et entretien à domicile à Saint-Étienne, Lyon et alentours : entretien régulier ou ponctuel, dès 28 €/h soit 14 €/h après crédit d'impôt de 50 %. Devis gratuit.",
+        "keywords": [
+          "ménage à domicile Saint-Étienne",
+          "aide ménagère Saint-Étienne",
+          "femme de ménage Saint-Étienne",
+          "entretien logement Loire",
+          "ménage crédit d'impôt"
+        ]
+      },
+      "service": {
+        "name": "Ménage à domicile",
+        "description": "Entretien régulier ou ponctuel du logement à Saint-Étienne, avec crédit d'impôt de 50 %.",
+        "serviceType": "Ménage à domicile",
+        "priceFrom": 28
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Crédit d'impôt 50 %",
+            "titre": "Ménage à domicile à Saint-Étienne — dès 28 €/h",
+            "intro": "Adelnet assure l'entretien régulier de votre logement à Saint-Étienne, Lyon et alentours : sols, cuisine, sanitaires, poussières. Grâce au crédit d'impôt de 50 %, votre heure facturée 28 € ne vous coûte réellement que 14 €.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage à domicile"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 60 15 38 53",
+              "href": "tel:+33760153853"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Pourquoi choisir Adelnet",
+            "items": [
+              {
+                "icone": "badge-euro",
+                "nom": "14 €/h après crédit d'impôt",
+                "description": "Le ménage à domicile ouvre droit au crédit d'impôt de 50 %, avec avance immédiate possible."
+              },
+              {
+                "icone": "repeat",
+                "nom": "La même intervenante",
+                "description": "Une personne attitrée à chaque passage, sur des créneaux réguliers tenus."
+              },
+              {
+                "icone": "sparkles",
+                "nom": "Travail soigné",
+                "description": "Sols, sanitaires, cuisine, poussières : un résultat impeccable, fini dans le détail."
+              },
+              {
+                "icone": "leaf",
+                "nom": "Produits adaptés",
+                "description": "Produits choisis selon vos préférences, en présence d'enfants ou d'animaux."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "titre": "Comment se déroule votre ménage à domicile",
+            "items": [
+              {
+                "icone": "clipboard-list",
+                "titre": "Votre demande",
+                "texte": "Vous décrivez votre logement et la fréquence souhaitée. Devis gratuit sous 24 h."
+              },
+              {
+                "icone": "calendar-check",
+                "titre": "Le rendez-vous",
+                "texte": "Nous fixons un créneau régulier ou ponctuel qui s'adapte à votre emploi du temps."
+              },
+              {
+                "icone": "sparkles",
+                "titre": "L'intervention",
+                "texte": "Nous réalisons le ménage avec soin et vous bénéficiez du crédit d'impôt de 50 %."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Ménage à domicile à Saint-Étienne, Lyon et alentours",
+            "intro": "Nous nous déplaçons dans la Loire et le Rhône.",
+            "zones": [
+              {
+                "region": "Loire — autour de Saint-Étienne",
+                "principale": "Saint-Étienne",
+                "villes": [
+                  "Saint-Étienne",
+                  "Saint-Priest-en-Jarez",
+                  "Villars",
+                  "La Talaudière",
+                  "Sorbiers",
+                  "Saint-Chamond",
+                  "Firminy",
+                  "Andrézieux-Bouthéon",
+                  "Rive-de-Gier"
+                ]
+              },
+              {
+                "region": "Rhône — autour de Lyon",
+                "principale": "Lyon",
+                "villes": [
+                  "Lyon",
+                  "Villeurbanne",
+                  "Vénissieux",
+                  "Saint-Priest",
+                  "Bron",
+                  "Oullins",
+                  "Givors"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Envie d'un logement toujours impeccable ?",
+            "sousTitre": "Devis gratuit et sans engagement. Crédit d'impôt de 50 % à domicile.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Composer en ligne",
+              "href": "/tarifs"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "repassage",
+      "label": "Repassage à domicile",
+      "navHidden": true,
+      "meta": {
+        "title": "Repassage à domicile à Saint-Étienne — dès 13 €/h après crédit d'impôt",
+        "description": "Repassage à domicile à Saint-Étienne et Lyon : linge repassé, plié et rangé, dès 26 €/h soit 13 €/h après crédit d'impôt de 50 %. Sur le même créneau que le ménage.",
+        "keywords": [
+          "repassage à domicile Saint-Étienne",
+          "service repassage Loire",
+          "repassage crédit d'impôt",
+          "aide ménagère repassage Lyon"
+        ]
+      },
+      "service": {
+        "name": "Repassage à domicile",
+        "description": "Linge repassé, plié et rangé à votre domicile à Saint-Étienne, avec crédit d'impôt de 50 %.",
+        "serviceType": "Repassage à domicile",
+        "priceFrom": 26
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Crédit d'impôt 50 %",
+            "titre": "Repassage à domicile à Saint-Étienne — dès 26 €/h",
+            "intro": "Adelnet repasse, plie et range votre linge à domicile, seul ou sur le même créneau que le ménage. Grâce au crédit d'impôt de 50 %, l'heure facturée 26 € ne vous coûte réellement que 13 €.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Repassage à domicile"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 60 15 38 53",
+              "href": "tel:+33760153853"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Un linge soigné, sans effort",
+            "items": [
+              {
+                "icone": "shirt",
+                "nom": "Repassé et plié",
+                "description": "Chemises, draps, nappes : un linge net, plié et rangé là où vous le souhaitez."
+              },
+              {
+                "icone": "clock",
+                "nom": "Sur votre créneau",
+                "description": "Combinable avec le ménage sur le même passage pour optimiser votre temps."
+              },
+              {
+                "icone": "badge-euro",
+                "nom": "13 €/h après crédit d'impôt",
+                "description": "Prestation à domicile éligible au crédit d'impôt de 50 %, avance immédiate possible."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Fini la pile de linge à repasser",
+            "sousTitre": "Devis gratuit et sans engagement. Crédit d'impôt de 50 % à domicile.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 60 15 38 53",
+              "href": "tel:+33760153853"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "grand-menage",
+      "label": "Grand nettoyage",
+      "navHidden": true,
+      "meta": {
+        "title": "Grand nettoyage à domicile à Saint-Étienne — crédit d'impôt 50 %",
+        "description": "Grand nettoyage de printemps ou avant événement à Saint-Étienne et Lyon : nettoyage en profondeur pièce par pièce, dès 180 €, crédit d'impôt de 50 % à domicile.",
+        "keywords": [
+          "grand nettoyage Saint-Étienne",
+          "nettoyage de printemps Loire",
+          "nettoyage en profondeur domicile",
+          "ménage complet crédit d'impôt"
+        ]
+      },
+      "service": {
+        "name": "Grand nettoyage à domicile",
+        "description": "Nettoyage en profondeur du logement, pièce par pièce, à Saint-Étienne, avec crédit d'impôt de 50 %.",
+        "serviceType": "Grand nettoyage",
+        "priceFrom": 180
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Crédit d'impôt 50 %",
+            "titre": "Grand nettoyage à domicile — dès 180 €",
+            "intro": "Nettoyage de printemps, remise en propre avant l'arrivée d'invités ou après une longue absence : Adelnet nettoie votre logement en profondeur, pièce par pièce. Prestation à domicile éligible au crédit d'impôt de 50 %.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Grand nettoyage"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Composer en ligne",
+              "href": "/tarifs"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Ce que comprend le grand nettoyage",
+            "items": [
+              {
+                "icone": "sparkles",
+                "nom": "De fond en comble",
+                "description": "Plinthes, intérieurs de placards, électroménager, traces et calcaire : on ne laisse rien."
+              },
+              {
+                "icone": "home",
+                "nom": "Pièce par pièce",
+                "description": "Cuisine et salle de bain dégraissées, sols traités, vitres intérieures incluses sur demande."
+              },
+              {
+                "icone": "badge-euro",
+                "nom": "Crédit d'impôt 50 %",
+                "description": "Réalisé à votre domicile, le grand nettoyage ouvre droit au crédit d'impôt de 50 %."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Un logement comme neuf, en une intervention",
+            "sousTitre": "Devis gratuit et sans engagement, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 60 15 38 53",
+              "href": "tel:+33760153853"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Nettoyage de vitres",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de vitres à domicile à Saint-Étienne — crédit d'impôt 50 %",
+        "description": "Nettoyage de vitres à Saint-Étienne et Lyon : vitres, baies et miroirs sans traces, intérieur et extérieur, dès 80 €. Crédit d'impôt de 50 % à domicile.",
+        "keywords": [
+          "nettoyage vitres Saint-Étienne",
+          "lavage vitres domicile Loire",
+          "nettoyage baies vitrées Lyon",
+          "vitres crédit d'impôt"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage de vitres",
+        "description": "Vitres, baies et miroirs sans traces à votre domicile à Saint-Étienne, avec crédit d'impôt de 50 %.",
+        "serviceType": "Nettoyage de vitres",
+        "priceFrom": 80
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Crédit d'impôt 50 %",
+            "titre": "Nettoyage de vitres à domicile — dès 80 €",
+            "intro": "Adelnet redonne de la lumière à votre intérieur : vitres, baies vitrées et miroirs nettoyés sans traces, à l'intérieur comme à l'extérieur. Prestation à domicile éligible au crédit d'impôt de 50 %.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage de vitres"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 60 15 38 53",
+              "href": "tel:+33760153853"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Des vitres nettes, dedans comme dehors",
+            "items": [
+              {
+                "icone": "sun",
+                "nom": "Sans traces",
+                "description": "Vitres, baies et miroirs nettoyés intérieur et extérieur, jusqu'aux encadrements."
+              },
+              {
+                "icone": "sparkles",
+                "nom": "Plus de lumière",
+                "description": "Un intérieur plus clair et plus accueillant, en une intervention soignée."
+              },
+              {
+                "icone": "badge-euro",
+                "nom": "Crédit d'impôt 50 %",
+                "description": "Réalisé à votre domicile, le nettoyage de vitres ouvre droit au crédit d'impôt de 50 %."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Retrouvez des vitres impeccables",
+            "sousTitre": "Devis gratuit et sans engagement, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 60 15 38 53",
+              "href": "tel:+33760153853"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-bureaux",
+      "label": "Bureaux & locaux",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de bureaux à Saint-Étienne & Lyon — sur devis",
+        "description": "Entretien de bureaux, cabinets et commerces à Saint-Étienne et Lyon : prestations régulières en horaires décalés, dès 90 €. Devis gratuit, sans crédit d'impôt.",
+        "keywords": [
+          "nettoyage bureaux Saint-Étienne",
+          "entretien locaux professionnels Loire",
+          "nettoyage commerces Lyon",
+          "société de nettoyage bureaux"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage de bureaux & locaux",
+        "description": "Entretien régulier de bureaux, cabinets et commerces à Saint-Étienne et Lyon.",
+        "serviceType": "Nettoyage de locaux professionnels",
+        "priceFrom": 90
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Professionnels",
+            "titre": "Entretien de bureaux & locaux — sur devis",
+            "intro": "Adelnet entretient bureaux, cabinets et commerces à Saint-Étienne et Lyon : sols, sanitaires, points de contact et espaces communs, en horaires décalés si nécessaire. Facturé sur devis, sans crédit d'impôt.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Bureaux & locaux"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 60 15 38 53",
+              "href": "tel:+33760153853"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Un cadre de travail toujours net",
+            "items": [
+              {
+                "icone": "building-2",
+                "nom": "Bureaux & commerces",
+                "description": "Open spaces, cabinets, boutiques : entretien adapté à votre activité."
+              },
+              {
+                "icone": "clock",
+                "nom": "Horaires décalés",
+                "description": "Interventions tôt le matin ou en soirée pour ne pas gêner votre activité."
+              },
+              {
+                "icone": "calendar-check",
+                "nom": "Au rythme choisi",
+                "description": "Passage quotidien, hebdomadaire ou ponctuel, selon vos besoins."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Un devis pour vos locaux ?",
+            "sousTitre": "Contactez-nous pour une estimation gratuite et sans engagement.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 60 15 38 53",
+              "href": "tel:+33760153853"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-fin-chantier",
+      "label": "Fin de chantier",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de fin de chantier à Saint-Étienne & Lyon — sur devis",
+        "description": "Nettoyage après travaux et fin de chantier à Saint-Étienne et Lyon : poussières fines, traces de peinture et résidus, dès 220 €. Devis gratuit, sans crédit d'impôt.",
+        "keywords": [
+          "nettoyage fin de chantier Saint-Étienne",
+          "nettoyage après travaux Loire",
+          "remise en propre rénovation Lyon",
+          "nettoyage post-chantier"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage de fin de chantier",
+        "description": "Remise en propre après travaux ou rénovation à Saint-Étienne et Lyon.",
+        "serviceType": "Nettoyage après travaux",
+        "priceFrom": 220
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Après travaux",
+            "titre": "Nettoyage de fin de chantier — sur devis",
+            "intro": "Après des travaux ou une rénovation, Adelnet remet votre bien en propre : poussières fines, traces de peinture, résidus de plâtre, sols et vitres. Facturé sur devis, sans crédit d'impôt.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Fin de chantier"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 60 15 38 53",
+              "href": "tel:+33760153853"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Du chantier au logement prêt à vivre",
+            "items": [
+              {
+                "icone": "brush-cleaning",
+                "nom": "Poussières fines",
+                "description": "Élimination des poussières de ponçage et de plâtre sur toutes les surfaces."
+              },
+              {
+                "icone": "sparkles",
+                "nom": "Traces & résidus",
+                "description": "Traces de peinture, colle et étiquettes retirées, sols et vitres nettoyés."
+              },
+              {
+                "icone": "key-round",
+                "nom": "Prêt à emménager",
+                "description": "Un logement net et sain, prêt à être habité ou remis en location."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Vos travaux sont finis ? On s'occupe du reste",
+            "sousTitre": "Devis gratuit et sans engagement, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 60 15 38 53",
+              "href": "tel:+33760153853"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

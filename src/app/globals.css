@@ -209,6 +209,169 @@
   --radius: 1.1rem;
 }
 
+/* ---------- Thèmes promus depuis les ex-palettes de packs (découplage couleur↔pack) + bleu-azur (Adelnet) ---------- */
+[data-theme="maison-ivoire"] {
+  --brand-50: #f6f6f5;
+  --brand-100: #e8e6e2;
+  --brand-200: #cdc9c1;
+  --brand-300: #aaa498;
+  --brand-400: #847d6f;
+  --brand-500: #625b4f;
+  --brand-600: #46413a;
+  --brand-700: #322e29;
+  --brand-800: #211f1b;
+  --brand-contrast: #fffaf3;
+  --accent-50: #faf3e1;
+  --accent-500: #b0863a;
+  --accent-600: #8f6a26;
+  --accent-contrast: #ffffff;
+  --ink: #26221c;
+  --ink-soft: #4a4339;
+  --muted: #6b6357;
+  --muted-2: #8a8175;
+  --bg: #fbf8f3;
+  --alt: #f3ece1;
+  --surface: #ffffff;
+  --surface-2: #f7f1e7;
+  --border: #e7ddcd;
+  --radius: 1.1rem;
+}
+
+[data-theme="terra-sauge"] {
+  --brand-50: #f3f6f1;
+  --brand-100: #e3ecde;
+  --brand-200: #c6d8bd;
+  --brand-300: #9fbb91;
+  --brand-400: #789a66;
+  --brand-500: #5b7f4a;
+  --brand-600: #46663a;
+  --brand-700: #38512f;
+  --brand-800: #2c3f26;
+  --brand-contrast: #fbfdf8;
+  --accent-50: #fbf0ea;
+  --accent-500: #c4663f;
+  --accent-600: #a4502e;
+  --accent-contrast: #ffffff;
+  --ink: #2c2a23;
+  --ink-soft: #4c4a3f;
+  --muted: #6b6857;
+  --muted-2: #87836f;
+  --bg: #faf8f1;
+  --alt: #f1efe2;
+  --surface: #ffffff;
+  --surface-2: #f4f1e6;
+  --border: #e4e0cf;
+  --radius: 1.1rem;
+}
+
+[data-theme="acier-anthracite"] {
+  --brand-50: #f1f5f9;
+  --brand-100: #e2e8f0;
+  --brand-200: #cbd5e1;
+  --brand-300: #94a3b8;
+  --brand-400: #64748b;
+  --brand-500: #334155;
+  --brand-600: #1e293b;
+  --brand-700: #131c2b;
+  --brand-800: #0b111c;
+  --brand-contrast: #ffffff;
+  --accent-50: #fff3e8;
+  --accent-500: #f97316;
+  --accent-600: #ea580c;
+  --accent-contrast: #ffffff;
+  --ink: #0b111c;
+  --ink-soft: #283549;
+  --muted: #475569;
+  --muted-2: #64748b;
+  --bg: #ffffff;
+  --alt: #f1f4f7;
+  --surface: #ffffff;
+  --surface-2: #eef1f5;
+  --border: #d3dae2;
+  --radius: 0.9rem;
+}
+
+[data-theme="rose-cuivre"] {
+  --brand-50: #faf1ec;
+  --brand-100: #f4ddd2;
+  --brand-200: #e9bfae;
+  --brand-300: #db9c84;
+  --brand-400: #cb8268;
+  --brand-500: #b96c52;
+  --brand-600: #9d5740;
+  --brand-700: #7c4533;
+  --brand-800: #4a2c22;
+  --brand-contrast: #fff8f4;
+  --accent-50: #faf1ec;
+  --accent-500: #b96c52;
+  --accent-600: #9d5740;
+  --accent-contrast: #ffffff;
+  --ink: #1a1416;
+  --ink-soft: #463a37;
+  --muted: #6f5b54;
+  --muted-2: #8c7a73;
+  --bg: #fdf8f5;
+  --alt: #f7ece4;
+  --surface: #ffffff;
+  --surface-2: #f9f0ea;
+  --border: #ecdcd1;
+  --radius: 1.1rem;
+}
+
+[data-theme="pop-violet"] {
+  --brand-50: #f5f0ff;
+  --brand-100: #e9dcff;
+  --brand-200: #d4bbff;
+  --brand-300: #b78dff;
+  --brand-400: #9a5cff;
+  --brand-500: #7c3aed;
+  --brand-600: #6d28d9;
+  --brand-700: #5b21b6;
+  --brand-800: #4c1d95;
+  --brand-contrast: #ffffff;
+  --accent-50: #f7ffe5;
+  --accent-500: #84cc16;
+  --accent-600: #65a30d;
+  --accent-contrast: #1a2e05;
+  --ink: #1e1b2e;
+  --ink-soft: #3b3556;
+  --muted: #5a5378;
+  --muted-2: #6b6391;
+  --bg: #fffdfb;
+  --alt: #fbf2ff;
+  --surface: #ffffff;
+  --surface-2: #f6ecff;
+  --border: #ece0fb;
+  --radius: 0.85rem;
+}
+
+[data-theme="bleu-azur"] {
+  --brand-50: #eaf4ff;
+  --brand-100: #d2e8ff;
+  --brand-200: #a9d2ff;
+  --brand-300: #74b6ff;
+  --brand-400: #3d97ff;
+  --brand-500: #1478f0;
+  --brand-600: #0a5fd0;
+  --brand-700: #0b4ea8;
+  --brand-800: #103f84;
+  --brand-contrast: #ffffff;
+  --accent-50: #fff5e9;
+  --accent-500: #f59e0b;
+  --accent-600: #d97706;
+  --accent-contrast: #2a1a05;
+  --ink: #0b1b2e;
+  --ink-soft: #3c5169;
+  --muted: #64788f;
+  --muted-2: #93a6ba;
+  --bg: #ffffff;
+  --alt: #eef6ff;
+  --surface: #ffffff;
+  --surface-2: #e6f1ff;
+  --border: #d3e4f7;
+  --radius: 0.9rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -364,29 +527,6 @@ input[type="range"] {
   --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
 
   /* Palette : ivoire + encre chaude + or sobre */
-  --brand-50: #f6f6f5;
-  --brand-100: #e8e6e2;
-  --brand-200: #cdc9c1;
-  --brand-300: #aaa498;
-  --brand-400: #847d6f;
-  --brand-500: #625b4f;
-  --brand-600: #46413a;
-  --brand-700: #322e29;
-  --brand-800: #211f1b;
-  --brand-contrast: #fffaf3;
-  --accent-50: #faf3e1;
-  --accent-500: #b0863a;
-  --accent-600: #8f6a26;
-  --accent-contrast: #ffffff;
-  --ink: #26221c;
-  --ink-soft: #4a4339;
-  --muted: #6b6357;
-  --muted-2: #8a8175;
-  --bg: #fbf8f3;
-  --alt: #f3ece1;
-  --surface: #ffffff;
-  --surface-2: #f7f1e7;
-  --border: #e7ddcd;
 }
 [data-pack="maison-premium"] .hero-mesh {
   background-image:
@@ -420,29 +560,6 @@ input[type="range"] {
   --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
 
   /* Palette : rose gold / cuivre rosé + encre noire chaude + ivoire (carte de visite) */
-  --brand-50: #faf1ec;
-  --brand-100: #f4ddd2;
-  --brand-200: #e9bfae;
-  --brand-300: #db9c84;
-  --brand-400: #cb8268;
-  --brand-500: #b96c52;
-  --brand-600: #9d5740;
-  --brand-700: #7c4533;
-  --brand-800: #4a2c22;
-  --brand-contrast: #fff8f4;
-  --accent-50: #faf1ec;
-  --accent-500: #b96c52;
-  --accent-600: #9d5740;
-  --accent-contrast: #ffffff;
-  --ink: #1a1416;
-  --ink-soft: #463a37;
-  --muted: #6f5b54;
-  --muted-2: #8c7a73;
-  --bg: #fdf8f5;
-  --alt: #f7ece4;
-  --surface: #ffffff;
-  --surface-2: #f9f0ea;
-  --border: #ecdcd1;
 }
 [data-pack="rose-noir-premium"] .hero-mesh {
   background-image:
@@ -614,29 +731,6 @@ input[type="range"] {
   --motion-ease: cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Palette : anthracite + orange électrique, contraste fort */
-  --brand-50: #f1f5f9;
-  --brand-100: #e2e8f0;
-  --brand-200: #cbd5e1;
-  --brand-300: #94a3b8;
-  --brand-400: #64748b;
-  --brand-500: #334155;
-  --brand-600: #1e293b;
-  --brand-700: #131c2b;
-  --brand-800: #0b111c;
-  --brand-contrast: #ffffff;
-  --accent-50: #fff3e8;
-  --accent-500: #f97316;
-  --accent-600: #ea580c;
-  --accent-contrast: #ffffff;
-  --ink: #0b111c;
-  --ink-soft: #283549;
-  --muted: #475569;
-  --muted-2: #64748b;
-  --bg: #ffffff;
-  --alt: #f1f4f7;
-  --surface: #ffffff;
-  --surface-2: #eef1f5;
-  --border: #d3dae2;
 }
 [data-pack="atelier-industriel"] .hero-mesh {
   background-color: var(--bg);
@@ -678,29 +772,6 @@ input[type="range"] {
   --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
 
   /* Palette : teal frais + ambre */
-  --brand-50: #f0fdfa;
-  --brand-100: #ccfbf1;
-  --brand-200: #99f6e4;
-  --brand-300: #5eead4;
-  --brand-400: #2dd4bf;
-  --brand-500: #14b8a6;
-  --brand-600: #0d9488;
-  --brand-700: #0f766e;
-  --brand-800: #115e59;
-  --brand-contrast: #ffffff;
-  --accent-50: #fffbeb;
-  --accent-500: #f59e0b;
-  --accent-600: #d97706;
-  --accent-contrast: #ffffff;
-  --ink: #0f172a;
-  --ink-soft: #334155;
-  --muted: #475569;
-  --muted-2: #64748b;
-  --bg: #ffffff;
-  --alt: #f4fbfa;
-  --surface: #ffffff;
-  --surface-2: #effaf8;
-  --border: #dcefec;
 }
 
 /* ======================= Pop · Fun moderne ======================= */
@@ -725,29 +796,6 @@ input[type="range"] {
   --motion-ease: cubic-bezier(0.34, 1.56, 0.64, 1);
 
   /* Palette : violet + lime, vifs */
-  --brand-50: #f5f0ff;
-  --brand-100: #e9dcff;
-  --brand-200: #d4bbff;
-  --brand-300: #b78dff;
-  --brand-400: #9a5cff;
-  --brand-500: #7c3aed;
-  --brand-600: #6d28d9;
-  --brand-700: #5b21b6;
-  --brand-800: #4c1d95;
-  --brand-contrast: #ffffff;
-  --accent-50: #f7ffe5;
-  --accent-500: #84cc16;
-  --accent-600: #65a30d;
-  --accent-contrast: #1a2e05;
-  --ink: #1e1b2e;
-  --ink-soft: #3b3556;
-  --muted: #5a5378;
-  --muted-2: #6b6391;
-  --bg: #fffdfb;
-  --alt: #fbf2ff;
-  --surface: #ffffff;
-  --surface-2: #f6ecff;
-  --border: #ece0fb;
 }
 [data-pack="pop-moderne"] .hero-mesh {
   background-image:
@@ -778,29 +826,6 @@ input[type="range"] {
   --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
 
   /* Palette : sauge + terracotta + crème */
-  --brand-50: #f3f6f1;
-  --brand-100: #e3ecde;
-  --brand-200: #c6d8bd;
-  --brand-300: #9fbb91;
-  --brand-400: #789a66;
-  --brand-500: #5b7f4a;
-  --brand-600: #46663a;
-  --brand-700: #38512f;
-  --brand-800: #2c3f26;
-  --brand-contrast: #fbfdf8;
-  --accent-50: #fbf0ea;
-  --accent-500: #c4663f;
-  --accent-600: #a4502e;
-  --accent-contrast: #ffffff;
-  --ink: #2c2a23;
-  --ink-soft: #4c4a3f;
-  --muted: #6b6857;
-  --muted-2: #87836f;
-  --bg: #faf8f1;
-  --alt: #f1efe2;
-  --surface: #ffffff;
-  --surface-2: #f4f1e6;
-  --border: #e4e0cf;
 }
 [data-pack="terra-naturel"] .hero-mesh {
   background-color: var(--bg);

@@ -1,6 +1,6 @@
 {
   "slug": "parfait-menage-26",
-  "theme": "rose-poudre",
+  "theme": "rose-cuivre",
   "stylePack": "rose-noir-premium",
   "branding": {
     "logo": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/parfait-menage-26/logo-4a3AkWLCNdkfjeFeGpsyZbmvQbcdXm.png",
@@ -73,10 +73,22 @@
             "titreAccent": "notre priorité",
             "accroche": "Un appartement ou une maison très sale après des travaux, un déménagement ou des locataires peu soigneux ? Spécialisée dans le ménage difficile et le nettoyage de fin de chantier, Parfait Ménage 26 vous propose une solution rapide, professionnelle et soignée.",
             "trust": [
-              { "icone": "Sparkles", "label": "Travail fiable, rapide & minutieux" },
-              { "icone": "ShieldCheck", "label": "Auto-entreprise déclarée" },
-              { "icone": "BadgeCheck", "label": "Devis gratuit, sans engagement" },
-              { "icone": "PackageOpen", "label": "Matériel adapté à chaque intervention" }
+              {
+                "icone": "Sparkles",
+                "label": "Travail fiable, rapide & minutieux"
+              },
+              {
+                "icone": "ShieldCheck",
+                "label": "Auto-entreprise déclarée"
+              },
+              {
+                "icone": "BadgeCheck",
+                "label": "Devis gratuit, sans engagement"
+              },
+              {
+                "icone": "PackageOpen",
+                "label": "Matériel adapté à chaque intervention"
+              }
             ],
             "ctaPrimaire": {
               "label": "Demander un devis gratuit",
@@ -416,7 +428,10 @@
             "email": "hourriwarda@gmail.com",
             "adresse": "5 boulevard Pierre et Marie Curie, 26700 Pierrelatte",
             "horaires": [
-              { "jour": "Lun – Sam", "heures": "9h – 18h" }
+              {
+                "jour": "Lun – Sam",
+                "heures": "9h – 18h"
+              }
             ],
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.685%2C44.373%2C4.720%2C44.393&layer=mapnik&marker=44.3829857%2C4.7016543",
             "services": [
@@ -482,7 +497,10 @@
             "email": "hourriwarda@gmail.com",
             "adresse": "5 boulevard Pierre et Marie Curie, 26700 Pierrelatte",
             "horaires": [
-              { "jour": "Lun – Sam", "heures": "9h – 18h" }
+              {
+                "jour": "Lun – Sam",
+                "heures": "9h – 18h"
+              }
             ],
             "services": [
               "Logement très sale / remise en état",
@@ -768,12 +786,26 @@
             "titre": "Ménage à domicile à Pierrelatte",
             "intro": "Parfait Ménage 26 assure l'entretien de votre logement à Pierrelatte et dans un rayon de 40 km : intervention régulière ou ponctuelle, sols, sanitaires, cuisine et poussières. Un travail soigné, fini dans le détail.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Ménage à domicile" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage à domicile"
+              }
             ],
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
-            "ctaSecondaire": { "label": "+33 6 68 99 04 80", "href": "tel:+33668990480" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 6 68 99 04 80",
+              "href": "tel:+33668990480"
+            }
           }
         },
         {
@@ -899,8 +931,14 @@
           "content": {
             "titre": "Besoin d'un devis pour le ménage à domicile à Pierrelatte ?",
             "sousTitre": "Devis gratuit et sans engagement. Réponse rapide.",
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
-            "ctaSecondaire": { "label": "+33 6 68 99 04 80", "href": "tel:+33668990480" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 6 68 99 04 80",
+              "href": "tel:+33668990480"
+            }
           }
         }
       ]
@@ -933,12 +971,26 @@
             "titre": "Remise en état à Pierrelatte",
             "intro": "Logement laissé très sale, départ de locataires peu soigneux, après-déménagement ou avant un état des lieux : Parfait Ménage 26 remet votre logement à neuf à Pierrelatte et alentour. Saletés incrustées, traces et résidus disparaissent.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Remise en état" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Remise en état"
+              }
             ],
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
-            "ctaSecondaire": { "label": "+33 6 68 99 04 80", "href": "tel:+33668990480" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 6 68 99 04 80",
+              "href": "tel:+33668990480"
+            }
           }
         },
         {
@@ -1064,8 +1116,14 @@
           "content": {
             "titre": "Besoin d'un devis pour une remise en état à Pierrelatte ?",
             "sousTitre": "Devis gratuit et sans engagement. Réponse rapide.",
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
-            "ctaSecondaire": { "label": "+33 6 68 99 04 80", "href": "tel:+33668990480" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 6 68 99 04 80",
+              "href": "tel:+33668990480"
+            }
           }
         }
       ]
@@ -1098,12 +1156,26 @@
             "titre": "Nettoyage de fin de chantier à Pierrelatte",
             "intro": "Après des travaux, une rénovation ou un chantier, Parfait Ménage 26 débarrasse les lieux de la poussière de chantier, des traces de peinture, de colle et de plâtre, pour un logement ou un local prêt à être livré.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Fin de chantier" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Fin de chantier"
+              }
             ],
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
-            "ctaSecondaire": { "label": "+33 6 68 99 04 80", "href": "tel:+33668990480" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 6 68 99 04 80",
+              "href": "tel:+33668990480"
+            }
           }
         },
         {
@@ -1215,8 +1287,14 @@
           "content": {
             "titre": "Un chantier à nettoyer à Pierrelatte ?",
             "sousTitre": "Devis gratuit et sans engagement. Réponse rapide.",
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
-            "ctaSecondaire": { "label": "+33 6 68 99 04 80", "href": "tel:+33668990480" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 6 68 99 04 80",
+              "href": "tel:+33668990480"
+            }
           }
         }
       ]
@@ -1249,12 +1327,26 @@
             "titre": "Entretien locatif & Airbnb à Pierrelatte",
             "intro": "Pour vos locations courte durée, vos appartements à remettre en état entre deux locataires et vos résidences secondaires, Parfait Ménage 26 assure un ménage de rotation fiable, rapide et soigné, prêt pour la prochaine arrivée.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Entretien locatif & Airbnb" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Entretien locatif & Airbnb"
+              }
             ],
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
-            "ctaSecondaire": { "label": "+33 6 68 99 04 80", "href": "tel:+33668990480" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 6 68 99 04 80",
+              "href": "tel:+33668990480"
+            }
           }
         },
         {
@@ -1366,8 +1458,14 @@
           "content": {
             "titre": "Une location à entretenir à Pierrelatte ?",
             "sousTitre": "Devis gratuit et sans engagement. Réponse rapide.",
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
-            "ctaSecondaire": { "label": "+33 6 68 99 04 80", "href": "tel:+33668990480" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 6 68 99 04 80",
+              "href": "tel:+33668990480"
+            }
           }
         }
       ]

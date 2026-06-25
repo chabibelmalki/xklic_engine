@@ -2,7 +2,7 @@
   "$comment": "CATALOGUE du moteur agence_website — surface disponible pour la GÉNÉRATION de configs. Sert au prompt (NEWCLIENT.md) : il dit quels STYLE PACKS et quelles VARIANTES de blocs existent, et lesquels vont bien ensemble (curation). Source de vérité du code : src/lib/packs.ts (packs), src/blocks/catalog.ts (registre des blocs), src/types/config.ts (schéma). Tenir ce fichier à jour quand on ajoute un pack / un bloc / une variante.",
 
   "stylePacks": {
-    "$role": "Champ `stylePack` au niveau site (data-pack). Design system COMPLET : typo + formes + ombres + motion + fond + palette. Absent => `base` (palette pilotée par `theme`). 1 pack par site.",
+    "$role": "Champ `stylePack` au niveau site (data-pack). Design system COMPLET : typo + formes + ombres + motion + fond + palette. Absent => `base` (palette pilotée par `theme`). 1 pack par site. AUCUN pack n'est réservé à un métier ou un secteur : tout pack peut habiller tout client — choisis-le sur l'AMBIANCE visuelle voulue (typo, formes, motion), jamais sur l'activité. Le pack porte la STRUCTURE/TYPO, le `theme` porte la COULEUR : combine-les librement.",
     "items": [
       {
         "id": "base",
@@ -13,7 +13,7 @@
       {
         "id": "maison-premium",
         "label": "Maison · Premium élégant",
-        "ambiance": "Serif haute, ivoire/encre/or, ombres douces, très aéré. Artisanat haut de gamme (pâtisserie, traiteur, bijoutier, hôtellerie).",
+        "ambiance": "Serif haute, ivoire/encre/or, ombres douces, très aéré.",
         "fonts": { "display": "Playfair Display", "sans": "Inter" },
         "recommendedVariants": {
           "hero": ["plein", "split"],
@@ -31,7 +31,7 @@
       {
         "id": "rose-noir-premium",
         "label": "Rose & Noir · Premium calligraphié",
-        "ambiance": "Titres en calligraphie (Great Vibes), sous-titres serif (Playfair), texte Inter. Rose gold/cuivre sur ivoire chaud, encre noire, pied de page noir, coins nets, très aéré. Féminin haut de gamme (ménage premium, beauté/esthétique, onglerie, bijoux, mariage, fleuriste).",
+        "ambiance": "Titres en calligraphie (Great Vibes), sous-titres serif (Playfair), texte Inter. Rose gold/cuivre sur ivoire chaud, encre noire, pied de page noir, coins nets, très aéré.",
         "fonts": { "display": "Great Vibes (titres) + Playfair Display (sous-titres)", "sans": "Inter" },
         "recommendedVariants": {
           "hero": ["centre", "split"],
@@ -49,7 +49,7 @@
       {
         "id": "atelier-industriel",
         "label": "Atelier · Bold industriel",
-        "ambiance": "Typo condensée en MAJUSCULES, anthracite + orange électrique, bords carrés, bordures épaisses, contraste fort. Garage, BTP, métallerie, déménagement.",
+        "ambiance": "Typo condensée en MAJUSCULES, anthracite + orange électrique, bords carrés, bordures épaisses, contraste fort.",
         "fonts": { "display": "Oswald", "sans": "Inter" },
         "recommendedVariants": {
           "hero": ["split", "asymetrique"],
@@ -67,7 +67,7 @@
       {
         "id": "clair-frais",
         "label": "Clair · Frais & clean",
-        "ambiance": "Clair et aéré, teal/ciel, coins très arrondis, boutons pill, ombres légères. Confiance et propreté (ménage, garde d'enfants, dentiste, pressing).",
+        "ambiance": "Clair et aéré, teal/ciel, coins très arrondis, boutons pill, ombres légères.",
         "fonts": { "display": "Plus Jakarta Sans", "sans": "Inter" },
         "recommendedVariants": {
           "hero": ["centre", "split"],
@@ -85,7 +85,7 @@
       {
         "id": "pop-moderne",
         "label": "Pop · Fun moderne",
-        "ambiance": "Couleurs vives violet/lime/corail, gros type, ombres dures décalées, motion joueur, cadres inclinés. Coaching, food, événementiel, agence créative.",
+        "ambiance": "Couleurs vives violet/lime/corail, gros type, ombres dures décalées, motion joueur, cadres inclinés.",
         "fonts": { "display": "Bricolage Grotesque", "sans": "DM Sans" },
         "recommendedVariants": {
           "hero": ["asymetrique", "centre"],
@@ -103,7 +103,7 @@
       {
         "id": "terra-naturel",
         "label": "Terra · Naturel & organique",
-        "ambiance": "Soft-serif, sauge/terracotta/crème, formes très arrondies, texture organique, motion lent. Paysagiste, bien-être, bio, yoga, écoconstruction.",
+        "ambiance": "Soft-serif, sauge/terracotta/crème, formes très arrondies, texture organique, motion lent.",
         "fonts": { "display": "Fraunces", "sans": "Nunito Sans" },
         "recommendedVariants": {
           "hero": ["split", "centre"],
@@ -121,8 +121,25 @@
     ]
   },
 
+  "themes": {
+    "$role": "Champ `theme` au niveau site (data-theme) = AXE COULEUR, totalement INDÉPENDANT du `stylePack` (qui ne porte plus que typo/formes/ombres/motion). N'importe quel theme se combine avec n'importe quel pack. Choisis la couleur selon la demande client / l'ambiance, jamais selon le métier.",
+    "items": [
+      { "id": "pro-bleu-nuit", "couleur": "Bleu roi #2563eb, accent ambre." },
+      { "id": "bleu-azur", "couleur": "Azur vif #0a5fd0 + fonds bleutés, accent ambre — bleu moderne & dynamique." },
+      { "id": "fraicheur-teal", "couleur": "Teal #0d9488, accent ambre." },
+      { "id": "terra-sauge", "couleur": "Vert sauge/olive #46663a, accent terracotta." },
+      { "id": "douceur-beige", "couleur": "Terracotta doux #a9633a sur beige." },
+      { "id": "maison-ivoire", "couleur": "Encre chaude #46413a sur ivoire, accent or." },
+      { "id": "rose-poudre", "couleur": "Rose vif #c2185b." },
+      { "id": "rose-cuivre", "couleur": "Cuivre/rose profond #9d5740 sur ivoire rosé." },
+      { "id": "pop-violet", "couleur": "Violet vif #6d28d9, accent lime." },
+      { "id": "energie-corail", "couleur": "Corail #ee4452." },
+      { "id": "acier-anthracite", "couleur": "Anthracite #1e293b, accent orange." }
+    ]
+  },
+
   "blocks": {
-    "$role": "Types de blocs (champ `type`) composables et ordonnables dans `pages[].blocks[]`. Chaque bloc accepte `variant` (mise en page) et/ou `mode`. Choisir les variantes via la curation du pack ci-dessus. Une variante inconnue retombe sur le défaut.",
+    "$role": "Types de blocs (champ `type`) composables et ordonnables dans `pages[].blocks[]`. Chaque bloc accepte `variant` (mise en page) et/ou `mode`. `recommendedVariants` du pack n'est qu'une suggestion de combinaisons saines, pas une contrainte : mélange librement. Une variante inconnue retombe sur le défaut.",
     "items": [
       { "type": "hero", "role": "En-tête d'accueil, conversion.", "variants": ["centre (texte centré)", "split (texte + image)", "carte (texte + carte de prix flottante)", "plein (image plein écran + overlay, texte clair — NÉCESSITE content.image)", "asymetrique (colonnes décalées 7/5, image inclinée)"] },
       { "type": "pageHero", "role": "En-tête de page intérieure (eyebrow + fil d'ariane + titre).", "variants": [] },

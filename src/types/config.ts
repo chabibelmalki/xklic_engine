@@ -21,6 +21,14 @@ export type ThemeId =
   | "pro-bleu-nuit"
   | "fraicheur-teal"
   | "rose-poudre"
+  // Palettes promues depuis les ex-couleurs des packs (découplage couleur↔pack) :
+  // utilisables avec N'IMPORTE QUEL pack.
+  | "maison-ivoire"
+  | "terra-sauge"
+  | "acier-anthracite"
+  | "rose-cuivre"
+  | "pop-violet"
+  | "bleu-azur"
   | (string & {});
 
 /**

@@ -1,6 +1,6 @@
 {
   "slug": "vibe-coaching",
-  "theme": "energie-corail",
+  "theme": "pop-violet",
   "stylePack": "pop-moderne",
   "branding": {
     "tagline": "Coaching sportif personnalisé · Lyon"
@@ -11,7 +11,9 @@
     "siret": "90472815600017",
     "ape": "85.51Z",
     "apeLabel": "Enseignement de disciplines sportives et d'activités de loisirs",
-    "tva": { "regime": "franchise" },
+    "tva": {
+      "regime": "franchise"
+    },
     "dirigeant": "Yanis Cohen",
     "siege": "25 rue de la République, 69002 Lyon"
   },
@@ -30,7 +32,10 @@
       "remise en forme Lyon"
     ]
   },
-  "forms": { "to": "flp.chabib@gmail.com", "turnstile": true },
+  "forms": {
+    "to": "flp.chabib@gmail.com",
+    "turnstile": true
+  },
   "pages": [
     {
       "slug": "",
@@ -48,13 +53,31 @@
               "url": "https://loremflickr.com/1000/1250/fitness,workout?lock=51",
               "alt": "Séance de coaching sportif"
             },
-            "ctaPrimaire": { "label": "Séance d'essai offerte", "href": "/contact" },
-            "ctaSecondaire": { "label": "Voir les formules", "href": "/offres" },
+            "ctaPrimaire": {
+              "label": "Séance d'essai offerte",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir les formules",
+              "href": "/offres"
+            },
             "trust": [
-              { "icone": "Dumbbell", "label": "Programmes perso" },
-              { "icone": "Flame", "label": "Résultats visibles" },
-              { "icone": "Video", "label": "En visio aussi" },
-              { "icone": "Trophy", "label": "Coach diplômé d'État" }
+              {
+                "icone": "Dumbbell",
+                "label": "Programmes perso"
+              },
+              {
+                "icone": "Flame",
+                "label": "Résultats visibles"
+              },
+              {
+                "icone": "Video",
+                "label": "En visio aussi"
+              },
+              {
+                "icone": "Trophy",
+                "label": "Coach diplômé d'État"
+              }
             ]
           }
         },
@@ -65,10 +88,26 @@
             "eyebrow": "Ton parcours",
             "titre": "Comment on démarre",
             "items": [
-              { "icone": "ClipboardList", "titre": "Bilan", "texte": "On fait le point sur tes objectifs, ton niveau et tes contraintes." },
-              { "icone": "Target", "titre": "Programme", "texte": "Un plan d'entraînement et de nutrition rien que pour toi." },
-              { "icone": "Activity", "titre": "Action", "texte": "Des séances cadrées, motivantes et progressives." },
-              { "icone": "TrendingUp", "titre": "Progression", "texte": "On mesure, on ajuste, tu avances sans plateau." }
+              {
+                "icone": "ClipboardList",
+                "titre": "Bilan",
+                "texte": "On fait le point sur tes objectifs, ton niveau et tes contraintes."
+              },
+              {
+                "icone": "Target",
+                "titre": "Programme",
+                "texte": "Un plan d'entraînement et de nutrition rien que pour toi."
+              },
+              {
+                "icone": "Activity",
+                "titre": "Action",
+                "texte": "Des séances cadrées, motivantes et progressives."
+              },
+              {
+                "icone": "TrendingUp",
+                "titre": "Progression",
+                "texte": "On mesure, on ajuste, tu avances sans plateau."
+              }
             ]
           }
         },
@@ -80,11 +119,36 @@
             "titre": "Choisis ton terrain de jeu",
             "intro": "Salle partenaire, ton salon ou ton écran : on s'adapte à ta vie, pas l'inverse.",
             "items": [
-              { "icone": "Dumbbell", "emoji": "💪", "nom": "Coaching en salle", "description": "Séances individuelles en salle partenaire, matériel complet et programmation experte pour viser le résultat." },
-              { "icone": "Home", "emoji": "🏠", "nom": "À domicile", "description": "Ton coach vient chez toi, sans matériel nécessaire." },
-              { "icone": "Video", "emoji": "💻", "nom": "En visio", "description": "Où que tu sois, en direct, avec correction en temps réel." },
-              { "icone": "Salad", "emoji": "🥗", "nom": "Suivi nutrition", "description": "Des repères simples, pas de régime punitif." },
-              { "icone": "Users", "emoji": "👥", "nom": "Small group", "description": "À 2 ou 3 amis, plus fun et plus accessible." }
+              {
+                "icone": "Dumbbell",
+                "emoji": "💪",
+                "nom": "Coaching en salle",
+                "description": "Séances individuelles en salle partenaire, matériel complet et programmation experte pour viser le résultat."
+              },
+              {
+                "icone": "Home",
+                "emoji": "🏠",
+                "nom": "À domicile",
+                "description": "Ton coach vient chez toi, sans matériel nécessaire."
+              },
+              {
+                "icone": "Video",
+                "emoji": "💻",
+                "nom": "En visio",
+                "description": "Où que tu sois, en direct, avec correction en temps réel."
+              },
+              {
+                "icone": "Salad",
+                "emoji": "🥗",
+                "nom": "Suivi nutrition",
+                "description": "Des repères simples, pas de régime punitif."
+              },
+              {
+                "icone": "Users",
+                "emoji": "👥",
+                "nom": "Small group",
+                "description": "À 2 ou 3 amis, plus fun et plus accessible."
+              }
             ]
           }
         },
@@ -97,11 +161,36 @@
             "noteGlobale": 5,
             "nombre": 64,
             "items": [
-              { "auteur": "Marine", "ville": "Lyon 3e", "note": 5, "texte": "−8 kg en 4 mois sans me priver de tout. Yanis adapte chaque séance à mon énergie du jour, je me suis jamais sentie aussi forte." },
-              { "auteur": "Greg", "ville": "Villeurbanne", "note": 5, "texte": "Je reprends le sport après 10 ans. Zéro jugement, que de la progression. Les séances en visio me sauvent les semaines chargées." },
-              { "auteur": "Sonia", "ville": "Lyon 6e", "note": 5, "texte": "Le small group avec deux copines : motivant et abordable. On ne lâche plus !" },
-              { "auteur": "Hugo", "ville": "Caluire", "note": 5, "texte": "Programme nutrition simple à suivre, enfin des résultats qui tiennent dans la durée." },
-              { "auteur": "Léa", "ville": "Lyon 7e", "note": 5, "texte": "Coach à domicile au top, plus d'excuse pour ne pas s'y mettre. Bienveillant et exigeant." }
+              {
+                "auteur": "Marine",
+                "ville": "Lyon 3e",
+                "note": 5,
+                "texte": "−8 kg en 4 mois sans me priver de tout. Yanis adapte chaque séance à mon énergie du jour, je me suis jamais sentie aussi forte."
+              },
+              {
+                "auteur": "Greg",
+                "ville": "Villeurbanne",
+                "note": 5,
+                "texte": "Je reprends le sport après 10 ans. Zéro jugement, que de la progression. Les séances en visio me sauvent les semaines chargées."
+              },
+              {
+                "auteur": "Sonia",
+                "ville": "Lyon 6e",
+                "note": 5,
+                "texte": "Le small group avec deux copines : motivant et abordable. On ne lâche plus !"
+              },
+              {
+                "auteur": "Hugo",
+                "ville": "Caluire",
+                "note": 5,
+                "texte": "Programme nutrition simple à suivre, enfin des résultats qui tiennent dans la durée."
+              },
+              {
+                "auteur": "Léa",
+                "ville": "Lyon 7e",
+                "note": 5,
+                "texte": "Coach à domicile au top, plus d'excuse pour ne pas s'y mettre. Bienveillant et exigeant."
+              }
             ],
             "disclaimer": "Témoignages publiés avec l'accord de nos client·es."
           }
@@ -112,8 +201,14 @@
           "content": {
             "titre": "Ta meilleure version t'attend",
             "sousTitre": "Première séance offerte, sans engagement. Il suffit de te lancer.",
-            "ctaPrimaire": { "label": "Je réserve mon essai", "href": "/contact" },
-            "ctaSecondaire": { "label": "Voir les formules", "href": "/offres" }
+            "ctaPrimaire": {
+              "label": "Je réserve mon essai",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir les formules",
+              "href": "/offres"
+            }
           }
         }
       ]
@@ -132,7 +227,10 @@
             "eyebrow": "Offres",
             "titre": "Des formules qui matchent",
             "intro": "Sans engagement, résiliables à tout moment. La première séance est offerte.",
-            "ctaPrimaire": { "label": "Réserver ma séance d'essai", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Réserver ma séance d'essai",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -146,7 +244,11 @@
                 "prix": 45,
                 "unite": "/ séance",
                 "description": "Pour tester et démarrer.",
-                "inclus": ["1 séance individuelle", "Bilan de forme", "Conseils nutrition"]
+                "inclus": [
+                  "1 séance individuelle",
+                  "Bilan de forme",
+                  "Conseils nutrition"
+                ]
               },
               {
                 "nom": "Transformation",
@@ -154,18 +256,31 @@
                 "unite": "/ mois",
                 "populaire": true,
                 "description": "Le pack qui change tout.",
-                "inclus": ["2 séances / semaine", "Programme sur mesure", "Suivi nutrition", "Messagerie avec ton coach"]
+                "inclus": [
+                  "2 séances / semaine",
+                  "Programme sur mesure",
+                  "Suivi nutrition",
+                  "Messagerie avec ton coach"
+                ]
               },
               {
                 "nom": "Premium",
                 "prix": 540,
                 "unite": "/ mois",
                 "description": "Accompagnement maximal.",
-                "inclus": ["3 séances / semaine", "Suivi quotidien", "Plan nutrition détaillé", "Bilan mensuel complet"]
+                "inclus": [
+                  "3 séances / semaine",
+                  "Suivi quotidien",
+                  "Plan nutrition détaillé",
+                  "Bilan mensuel complet"
+                ]
               }
             ],
             "note": "Tarifs TTC. Crédit d'impôt 50 % possible pour le coaching à domicile (services à la personne).",
-            "cta": { "label": "Réserver ma séance d'essai", "href": "/contact" }
+            "cta": {
+              "label": "Réserver ma séance d'essai",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -174,10 +289,22 @@
           "content": {
             "titre": "Les questions qu'on nous pose",
             "items": [
-              { "question": "Je suis débutant·e, c'est pour moi ?", "reponse": "Totalement. Tout part de ton niveau actuel : on construit progressivement, sans te dégoûter ni te blesser." },
-              { "question": "Faut-il du matériel à domicile ?", "reponse": "Non. Les séances à domicile sont conçues au poids du corps ou avec un minimum de matériel que le coach apporte." },
-              { "question": "La séance d'essai est-elle vraiment offerte ?", "reponse": "Oui, la première séance individuelle est gratuite et sans engagement, pour voir si le courant passe." },
-              { "question": "Le coaching à domicile donne-t-il droit au crédit d'impôt ?", "reponse": "Le coaching sportif à domicile relève des services à la personne et peut ouvrir droit à 50 % de crédit d'impôt. On t'explique tout au bilan." }
+              {
+                "question": "Je suis débutant·e, c'est pour moi ?",
+                "reponse": "Totalement. Tout part de ton niveau actuel : on construit progressivement, sans te dégoûter ni te blesser."
+              },
+              {
+                "question": "Faut-il du matériel à domicile ?",
+                "reponse": "Non. Les séances à domicile sont conçues au poids du corps ou avec un minimum de matériel que le coach apporte."
+              },
+              {
+                "question": "La séance d'essai est-elle vraiment offerte ?",
+                "reponse": "Oui, la première séance individuelle est gratuite et sans engagement, pour voir si le courant passe."
+              },
+              {
+                "question": "Le coaching à domicile donne-t-il droit au crédit d'impôt ?",
+                "reponse": "Le coaching sportif à domicile relève des services à la personne et peut ouvrir droit à 50 % de crédit d'impôt. On t'explique tout au bilan."
+              }
             ]
           }
         },
@@ -187,7 +314,10 @@
           "content": {
             "titre": "On commence quand ?",
             "sousTitre": "Première séance offerte. Choisis ton format, on s'occupe du reste.",
-            "ctaPrimaire": { "label": "Je réserve mon essai", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Je réserve mon essai",
+              "href": "/contact"
+            }
           }
         }
       ]
@@ -213,12 +343,48 @@
           "variant": "masonry",
           "content": {
             "images": [
-              { "image": { "url": "https://loremflickr.com/800/1000/gym,fitness?lock=52", "alt": "Entraînement haltères" }, "titre": "Renforcement" },
-              { "image": { "url": "https://loremflickr.com/800/600/running?lock=53", "alt": "Course en extérieur" }, "titre": "Cardio outdoor" },
-              { "image": { "url": "https://loremflickr.com/800/800/yoga?lock=54", "alt": "Étirements" }, "titre": "Mobilité" },
-              { "image": { "url": "https://loremflickr.com/800/1000/fitness?lock=55", "alt": "Séance en visio" }, "titre": "Coaching visio" },
-              { "image": { "url": "https://loremflickr.com/800/600/boxing?lock=56", "alt": "Box training" }, "titre": "Boxe" },
-              { "image": { "url": "https://loremflickr.com/800/800/gym,workout?lock=57", "alt": "Small group" }, "titre": "Small group" }
+              {
+                "image": {
+                  "url": "https://loremflickr.com/800/1000/gym,fitness?lock=52",
+                  "alt": "Entraînement haltères"
+                },
+                "titre": "Renforcement"
+              },
+              {
+                "image": {
+                  "url": "https://loremflickr.com/800/600/running?lock=53",
+                  "alt": "Course en extérieur"
+                },
+                "titre": "Cardio outdoor"
+              },
+              {
+                "image": {
+                  "url": "https://loremflickr.com/800/800/yoga?lock=54",
+                  "alt": "Étirements"
+                },
+                "titre": "Mobilité"
+              },
+              {
+                "image": {
+                  "url": "https://loremflickr.com/800/1000/fitness?lock=55",
+                  "alt": "Séance en visio"
+                },
+                "titre": "Coaching visio"
+              },
+              {
+                "image": {
+                  "url": "https://loremflickr.com/800/600/boxing?lock=56",
+                  "alt": "Box training"
+                },
+                "titre": "Boxe"
+              },
+              {
+                "image": {
+                  "url": "https://loremflickr.com/800/800/gym,workout?lock=57",
+                  "alt": "Small group"
+                },
+                "titre": "Small group"
+              }
             ]
           }
         },
@@ -228,8 +394,14 @@
           "content": {
             "titre": "Envie d'en être ?",
             "sousTitre": "Première séance offerte, viens voir l'ambiance.",
-            "ctaPrimaire": { "label": "Je réserve mon essai", "href": "/contact" },
-            "ctaSecondaire": { "label": "Voir les formules", "href": "/offres" }
+            "ctaPrimaire": {
+              "label": "Je réserve mon essai",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir les formules",
+              "href": "/offres"
+            }
           }
         }
       ]

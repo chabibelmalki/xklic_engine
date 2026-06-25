@@ -32,6 +32,13 @@ const BRAND_600: Record<ThemeId, string> = {
   "fraicheur-teal": "#0d9488",
   "energie-corail": "#ee4452",
   "rose-poudre": "#c2185b",
+  // Thèmes promus depuis les ex-palettes de packs + bleu-azur :
+  "maison-ivoire": "#46413a",
+  "terra-sauge": "#46663a",
+  "acier-anthracite": "#1e293b",
+  "rose-cuivre": "#9d5740",
+  "pop-violet": "#6d28d9",
+  "bleu-azur": "#0a5fd0",
 };
 
 /** Repli si le thème n'est pas (encore) présent dans la table ci-dessus. */

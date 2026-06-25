@@ -11,6 +11,13 @@ export const THEMES: { id: ThemeId; label: string }[] = [
   { id: "pro-bleu-nuit", label: "Pro bleu nuit" },
   { id: "fraicheur-teal", label: "Fraîcheur teal" },
   { id: "rose-poudre", label: "Rose poudré" },
+  // Palettes promues depuis les ex-couleurs des packs (découplage couleur↔pack) :
+  { id: "maison-ivoire", label: "Maison ivoire" },
+  { id: "terra-sauge", label: "Terra sauge" },
+  { id: "acier-anthracite", label: "Acier anthracite" },
+  { id: "rose-cuivre", label: "Rose cuivre" },
+  { id: "pop-violet", label: "Pop violet" },
+  { id: "bleu-azur", label: "Bleu azur" },
 ];
 
 export const DEFAULT_THEME: ThemeId = "pro-bleu-nuit";

@@ -15,7 +15,8 @@
     "sitemaps:sync:dry": "node scripts/sync-sitemaps.mjs --dry-run",
     "deploy": "node scripts/deploy.mjs",
     "deploy:dry": "node scripts/deploy.mjs --dry-run",
-    "deploy:sync-only": "node scripts/deploy.mjs --skip-deploy"
+    "deploy:sync-only": "node scripts/deploy.mjs --skip-deploy",
+    "onboard": "node scripts/onboard/index.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
