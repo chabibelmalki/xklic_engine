@@ -547,15 +547,38 @@ input[type="range"] {
   border-bottom: 1px solid var(--border);
 }
 
-/* Boutons primaires : rose gold métallique qui s'ÉCLAIRCIT (au lieu de foncer
-   vers le brun). Texte en encre sombre pour le contraste sur rose gold clair. */
-[data-pack="rose-noir-premium"] .btn.bg-brand-600 {
-  background-color: var(--brand-400);
-  background-image: linear-gradient(135deg, var(--brand-500) 0%, var(--brand-300) 100%);
-  color: var(--ink);
+/* Boutons primaires + bouton d'appel flottant : noir du logo, texte ivoire
+   (s'éclaircit légèrement au survol). Cible .btn (CTA, envoi de formulaire) et
+   a.bg-brand-600 (téléphone flottant) ; PAS les numéros d'étapes (span/div). */
+[data-pack="rose-noir-premium"] .btn.bg-brand-600,
+[data-pack="rose-noir-premium"] a.bg-brand-600 {
+  background-color: var(--ink);
+  background-image: none;
+  color: var(--brand-contrast);
+  box-shadow: 0 10px 30px -12px rgb(26 20 22 / 0.45);
 }
-[data-pack="rose-noir-premium"] .btn.bg-brand-600:hover {
-  background-image: linear-gradient(135deg, var(--brand-400) 0%, var(--brand-200) 100%);
+[data-pack="rose-noir-premium"] .btn.bg-brand-600:hover,
+[data-pack="rose-noir-premium"] a.bg-brand-600:hover {
+  background-color: #2c2226;
+  background-image: none;
+}
+
+/* Bande CTA (bg-brand-gradient) : fond NOIR comme le logo, titre en rose clair,
+   texte en ivoire. On neutralise le voile hero-mesh clair qui éclaircissait le bloc. */
+[data-pack="rose-noir-premium"] .bg-brand-gradient {
+  background-color: #0b0b0c;
+  background-image: radial-gradient(38rem 22rem at 78% -25%, color-mix(in srgb, var(--brand-400) 24%, transparent), transparent 62%);
+}
+[data-pack="rose-noir-premium"] .bg-brand-gradient .hero-mesh {
+  display: none;
+}
+[data-pack="rose-noir-premium"] .bg-brand-gradient h2.font-display {
+  color: var(--brand-300);
+}
+
+/* Panneau de coordonnées (contact, variant panneau-sombre) : fond NOIR comme le logo. */
+[data-pack="rose-noir-premium"] #contact .bg-ink {
+  background-color: #0b0b0c;
 }
 
 /* Logo d'en-tête agrandi (emblème rond), sans toucher le logo du pied de page */

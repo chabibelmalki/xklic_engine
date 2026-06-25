@@ -102,7 +102,8 @@ export function Zone({ block, config, index, basePath }: BlockComponentProps<Zon
                   src={c.mapEmbedUrl}
                   title={`Zone d'intervention — ${config.entreprise.nom}`}
                   loading="lazy"
-                  className="aspect-[16/10] w-full"
+                  className="block w-full border-0"
+                  style={{ minHeight: 360, aspectRatio: "16 / 10" }}
                   referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>

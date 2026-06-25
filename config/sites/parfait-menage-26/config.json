@@ -40,8 +40,8 @@
     "lng": 4.7016543
   },
   "meta": {
-    "title": "Parfait Ménage 26 — Ménage & remise en état à Pierrelatte",
-    "description": "Parfait Ménage 26 : ménage à domicile (crédit d'impôt 50 %, soit 14 €/h pour vous), remise en état des logements très sales, nettoyage de fin de chantier et entretien locatif à Pierrelatte et dans un rayon de 40 km. Devis gratuit.",
+    "title": "Parfait Ménage 26 — Ménage professionnel à Pierrelatte et alentours",
+    "description": "Parfait Ménage 26 : ménage difficile, remise en état des logements très sales, nettoyage de fin de chantier, entretien locatif et Airbnb à Pierrelatte et dans un rayon de 40 km. Travail fiable, rapide et minutieux. Devis gratuit, sans engagement.",
     "keywords": [
       "ménage à domicile Pierrelatte",
       "femme de ménage Pierrelatte",
@@ -49,7 +49,7 @@
       "remise en état Pierrelatte",
       "nettoyage après travaux Pierrelatte",
       "nettoyage fin de chantier Drôme",
-      "crédit d'impôt ménage",
+      "ménage logement très sale",
       "ménage Drôme provençale"
     ]
   },
@@ -68,23 +68,23 @@
           "variant": "centre",
           "content": {
             "showSocial": false,
-            "eyebrow": "Ménage premium · Pierrelatte & Drôme provençale",
+            "eyebrow": "Ménage professionnel · Pierrelatte et alentours",
             "titre": "Votre intérieur,",
             "titreAccent": "notre priorité",
-            "accroche": "Du ménage régulier au logement laissé très sale après des travaux, un départ de locataire ou un déménagement : Parfait Ménage 26 remet tout en ordre, avec soin et discrétion. Le ménage à domicile bénéficie du crédit d'impôt de 50 %.",
+            "accroche": "Un appartement ou une maison très sale après des travaux, un déménagement ou des locataires peu soigneux ? Spécialisée dans le ménage difficile et le nettoyage de fin de chantier, Parfait Ménage 26 vous propose une solution rapide, professionnelle et soignée.",
             "trust": [
-              { "icone": "Receipt", "label": "Crédit d'impôt −50 % à domicile" },
-              { "icone": "Sparkles", "label": "Travail minutieux & soigné" },
+              { "icone": "Sparkles", "label": "Travail fiable, rapide & minutieux" },
               { "icone": "ShieldCheck", "label": "Auto-entreprise déclarée" },
-              { "icone": "MapPin", "label": "Pierrelatte & 40 km" }
+              { "icone": "BadgeCheck", "label": "Devis gratuit, sans engagement" },
+              { "icone": "PackageOpen", "label": "Matériel adapté à chaque intervention" }
             ],
             "ctaPrimaire": {
-              "label": "Devis gratuit en 2 min",
+              "label": "Demander un devis gratuit",
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "Voir nos tarifs",
-              "href": "/tarifs"
+              "label": "Voir nos prestations",
+              "href": "/services"
             }
           }
         },
@@ -94,79 +94,42 @@
           "content": {
             "eyebrow": "Nos prestations",
             "titre": "Le ménage difficile, notre spécialité",
-            "intro": "Un seul interlocuteur pour l'entretien de votre intérieur comme pour les situations les plus exigeantes : après travaux, après location ou avant un état des lieux.",
+            "intro": "Spécialisée dans le ménage difficile et le nettoyage de fin de chantier, Parfait Ménage 26 intervient dans tout type de situation.",
             "items": [
               {
-                "nom": "Ménage à domicile",
-                "emoji": "🧹",
-                "badge": "Crédit d'impôt 50 %",
-                "priceHint": "dès 28 €/h",
-                "description": "Entretien régulier ou intervention ponctuelle de votre logement, à votre rythme. Sols, sanitaires, cuisine, poussières : un résultat soigné, fini dans le détail.",
-                "href": "/menage-domicile"
-              },
-              {
-                "nom": "Remise en état",
-                "emoji": "🏠",
-                "badge": "Crédit d'impôt 50 %",
-                "priceHint": "dès 250 €",
-                "description": "Logements laissés très sales, grand nettoyage après déménagement ou avant état des lieux.",
+                "nom": "Logements très sales ou en mauvais état",
+                "description": "Logements laissés en mauvais état ou fortement encrassés : nous remettons tout d'aplomb, même les situations les plus difficiles.",
                 "href": "/remise-en-etat"
               },
               {
-                "nom": "Fin de chantier",
-                "emoji": "🧱",
-                "badge": "Sur devis",
-                "priceHint": "dès 300 €",
-                "description": "Après travaux, rénovation ou chantier : poussière, traces et résidus éliminés.",
+                "nom": "Nettoyage après travaux, rénovation ou chantier",
+                "description": "Poussière de chantier, traces de peinture, de colle et de plâtre éliminées après vos travaux.",
                 "href": "/nettoyage-fin-chantier"
               },
               {
-                "nom": "Entretien locatif & Airbnb",
-                "emoji": "🔑",
-                "badge": "Sur devis",
-                "priceHint": "dès 60 €",
-                "description": "Remise en état entre deux locations, Airbnb et résidences secondaires.",
+                "nom": "Remise en état après location",
+                "description": "Appartements à remettre en état après le départ de locataires, prêts à relouer.",
                 "href": "/nettoyage-location-airbnb"
+              },
+              {
+                "nom": "Airbnb et résidences secondaires",
+                "description": "Ménage de rotation entre deux séjours et entretien de résidences secondaires.",
+                "href": "/nettoyage-location-airbnb"
+              },
+              {
+                "nom": "Ménage avant / après déménagement",
+                "description": "Logement nettoyé de fond en comble avant l'emménagement ou après le départ.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Entretien ponctuel ou régulier",
+                "description": "Entretien de votre intérieur à la fréquence qui vous convient, ou en intervention unique.",
+                "href": "/menage-domicile"
               }
             ],
             "cta": {
-              "label": "Voir toutes nos prestations",
-              "href": "/services"
-            }
-          }
-        },
-        {
-          "type": "simulateur",
-          "content": {
-            "eyebrow": "Services à la personne",
-            "argumentaireTitre": "Le ménage à domicile vous coûte",
-            "argumentaireAccent": "2 fois moins cher",
-            "argumentaire": "Pour l'entretien de votre logement : 28 €/h facturés, 14 €/h réellement à votre charge après le crédit d'impôt de 50 %.",
-            "points": [
-              "50 % de crédit d'impôt sur le ménage à domicile",
-              "Avance immédiate possible : ne réglez tout de suite que la moitié",
-              "Devis gratuit, sans engagement"
-            ],
-            "cardTitre": "Simulateur crédit d'impôt",
-            "cardIntro": "Estimez votre coût réel après les 50 % de crédit d'impôt.",
-            "curseurLabel": "Heures de ménage par semaine",
-            "unite": "h",
-            "min": 1,
-            "max": 15,
-            "step": 1,
-            "defaut": 3,
-            "prixPlein": 28,
-            "prixNet": 14,
-            "facteurMensuel": 4.33,
-            "plafondAnnuel": 12000,
-            "note": "Estimation indicative. Le crédit d'impôt de 50 % s'applique aux prestations réalisées au domicile d'un particulier.",
-            "cta": {
               "label": "Demander un devis gratuit",
               "href": "/devis"
-            },
-            "ctaSecondaire": {
-              "label": "En savoir plus",
-              "href": "/credit-impot"
             }
           }
         },
@@ -195,7 +158,7 @@
               {
                 "icone": "Sparkles",
                 "titre": "Un résultat impeccable",
-                "texte": "Nous intervenons avec le matériel adapté. À domicile, le crédit d'impôt de 50 % s'applique."
+                "texte": "Nous intervenons avec le matériel adapté pour un logement remis à neuf."
               }
             ]
           }
@@ -204,10 +167,10 @@
           "type": "zone",
           "mode": "carte",
           "content": {
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.45%2C44.20%2C4.95%2C44.55&layer=mapnik&marker=44.3829857%2C4.7016543",
             "titre": "À Pierrelatte et jusqu'à 40 km",
             "intro": "Nous nous déplaçons dans la Drôme provençale, la vallée du Rhône et les communes limitrophes du Vaucluse, du Gard et de l'Ardèche. Vérifiez votre secteur ou contactez-nous directement.",
             "rayonKm": 40,
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.45%2C44.20%2C4.95%2C44.55&layer=mapnik&marker=44.3829857%2C4.7016543",
             "zones": [
               {
                 "region": "Drôme provençale — autour de Pierrelatte",
@@ -271,16 +234,16 @@
                 "reponse": "Oui, c'est notre spécialité. Logements laissés en mauvais état, fin de chantier, appartements à remettre en état après une location : nous arrivons avec un matériel adapté à chaque situation pour un résultat irréprochable."
               },
               {
-                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
-                "reponse": "Pour le ménage réalisé à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées (plafond de 12 000 € par an et par foyer). Une heure facturée 28 € ne vous coûte donc réellement que 14 €."
-              },
-              {
                 "question": "Dans quel secteur vous déplacez-vous ?",
-                "reponse": "Nous intervenons à Pierrelatte et dans un rayon d'environ 40 km : Saint-Paul-Trois-Châteaux, Donzère, Grignan, Montélimar, Bollène, Pont-Saint-Esprit et les communes voisines."
+                "reponse": "Nous intervenons à Pierrelatte et dans un rayon d'environ 40 km : Saint-Paul-Trois-Châteaux, Donzère, Grignan, Malataverne, Montélimar, Bollène, Pont-Saint-Esprit et les communes voisines."
               },
               {
                 "question": "Le devis est-il gratuit ?",
                 "reponse": "Oui, le devis est gratuit et sans engagement. Décrivez-nous votre besoin et l'état du logement : nous revenons vers vous rapidement avec une estimation claire."
+              },
+              {
+                "question": "Fournissez-vous le matériel et les produits ?",
+                "reponse": "Oui, nous pouvons venir avec notre matériel et nos produits, adaptés au type d'intervention. Nous pouvons aussi utiliser les vôtres si vous le préférez."
               }
             ]
           }
@@ -312,7 +275,7 @@
       "label": "Services",
       "meta": {
         "title": "Nos prestations de ménage et remise en état à Pierrelatte",
-        "description": "Ménage à domicile (crédit d'impôt 50 %), remise en état des logements très sales, nettoyage de fin de chantier et entretien locatif à Pierrelatte et dans un rayon de 40 km."
+        "description": "Ménage difficile, remise en état des logements très sales, nettoyage de fin de chantier, entretien locatif et Airbnb à Pierrelatte et dans un rayon de 40 km. Devis gratuit, sans engagement."
       },
       "blocks": [
         {
@@ -320,14 +283,14 @@
           "content": {
             "eyebrow": "Nos prestations",
             "titre": "Du ménage régulier au nettoyage difficile",
-            "intro": "Parfait Ménage 26 couvre tous vos besoins à Pierrelatte et alentour, avec ou sans crédit d'impôt selon la nature de la prestation.",
+            "intro": "Parfait Ménage 26 couvre tous vos besoins à Pierrelatte et alentour : ménage difficile, remise en état, fin de chantier et entretien locatif. Pour chaque situation, un devis gratuit et sans engagement.",
             "ctaPrimaire": {
-              "label": "Composer mon devis",
-              "href": "/tarifs"
-            },
-            "ctaSecondaire": {
               "label": "Demander un devis",
               "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 6 68 99 04 80",
+              "href": "tel:+33668990480"
             }
           }
         },
@@ -337,39 +300,37 @@
           "content": {
             "eyebrow": "Tout le ménage, un seul prestataire",
             "titre": "Nos prestations en détail",
-            "intro": "Le ménage à domicile et la remise en état ouvrent droit au crédit d'impôt de 50 %. La fin de chantier et l'entretien locatif sont facturés sur devis.",
+            "intro": "Spécialisée dans le ménage difficile et le nettoyage de fin de chantier, Parfait Ménage 26 intervient dans tout type de situation.",
             "items": [
               {
-                "nom": "Ménage à domicile",
-                "emoji": "🧹",
-                "badge": "Crédit d'impôt 50 %",
-                "priceHint": "dès 28 €/h",
-                "description": "Entretien régulier ou ponctuel de votre logement : sols, sanitaires, cuisine, poussières. Dès 14 €/h après crédit d'impôt.",
-                "href": "/menage-domicile"
-              },
-              {
-                "nom": "Remise en état",
-                "emoji": "🏠",
-                "badge": "Crédit d'impôt 50 %",
-                "priceHint": "dès 250 €",
-                "description": "Logements très sales, grand nettoyage après déménagement ou avant un état des lieux.",
+                "nom": "Logements très sales ou en mauvais état",
+                "description": "Logements laissés en mauvais état ou fortement encrassés : nous remettons tout d'aplomb, même les situations les plus difficiles.",
                 "href": "/remise-en-etat"
               },
               {
-                "nom": "Nettoyage de fin de chantier",
-                "emoji": "🧱",
-                "badge": "Sur devis",
-                "priceHint": "dès 300 €",
-                "description": "Après travaux, rénovation ou chantier : dépoussiérage complet, traces de peinture et résidus.",
+                "nom": "Nettoyage après travaux, rénovation ou chantier",
+                "description": "Poussière de chantier, traces de peinture, de colle et de plâtre éliminées après vos travaux.",
                 "href": "/nettoyage-fin-chantier"
               },
               {
-                "nom": "Entretien locatif & Airbnb",
-                "emoji": "🔑",
-                "badge": "Sur devis",
-                "priceHint": "dès 60 €",
-                "description": "Remise en état entre deux locataires, ménage de rotation Airbnb et résidences secondaires.",
+                "nom": "Remise en état après location",
+                "description": "Appartements à remettre en état après le départ de locataires, prêts à relouer.",
                 "href": "/nettoyage-location-airbnb"
+              },
+              {
+                "nom": "Airbnb et résidences secondaires",
+                "description": "Ménage de rotation entre deux séjours et entretien de résidences secondaires.",
+                "href": "/nettoyage-location-airbnb"
+              },
+              {
+                "nom": "Ménage avant / après déménagement",
+                "description": "Logement nettoyé de fond en comble avant l'emménagement ou après le départ.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Entretien ponctuel ou régulier",
+                "description": "Entretien de votre intérieur à la fréquence qui vous convient, ou en intervention unique.",
+                "href": "/menage-domicile"
               }
             ]
           }
@@ -399,7 +360,7 @@
               {
                 "icone": "Sparkles",
                 "titre": "Résultat impeccable",
-                "texte": "Intervention soignée, crédit d'impôt de 50 % à domicile."
+                "texte": "Intervention soignée, avec le matériel adapté."
               }
             ]
           }
@@ -408,11 +369,11 @@
           "type": "cta",
           "variant": "bande",
           "content": {
-            "titre": "Un besoin précis ? Composez votre devis",
-            "sousTitre": "Sélectionnez vos prestations et obtenez une estimation immédiate, crédit d'impôt déduit pour le domicile.",
+            "titre": "Un besoin précis ?",
+            "sousTitre": "Décrivez-nous votre situation : nous établissons un devis gratuit et sans engagement, rapidement.",
             "ctaPrimaire": {
-              "label": "Composer mon devis",
-              "href": "/tarifs"
+              "label": "Demander un devis",
+              "href": "/devis"
             },
             "ctaSecondaire": {
               "label": "+33 6 68 99 04 80",
@@ -421,239 +382,6 @@
             "lien": {
               "label": "ou écrivez-nous sur WhatsApp →",
               "href": "https://wa.me/33668990480"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "slug": "tarifs",
-      "label": "Tarifs",
-      "meta": {
-        "title": "Tarifs ménage & remise en état à Pierrelatte",
-        "description": "Tarifs Parfait Ménage 26 : ménage à domicile 28 €/h (14 €/h après crédit d'impôt), remise en état, fin de chantier et entretien locatif. Composez votre devis en ligne."
-      },
-      "blocks": [
-        {
-          "type": "pageHero",
-          "content": {
-            "eyebrow": "Tarifs & devis en ligne",
-            "titre": "Composez votre devis en quelques clics",
-            "intro": "Choisissez vos prestations, ajustez les quantités et obtenez une estimation immédiate — crédit d'impôt déduit pour le domicile."
-          }
-        },
-        {
-          "type": "serviceQuoteBuilder",
-          "content": {
-            "creditRate": 0.5,
-            "creditCeiling": 12000,
-            "creditLabelOff": "Prix normal",
-            "creditLabelOn": "Après crédit d'impôt −50 %",
-            "telephone": "+33 6 68 99 04 80",
-            "whatsapp": "+33 6 68 99 04 80",
-            "confidentialiteHref": "/confidentialite",
-            "villes": [
-              "Pierrelatte",
-              "Saint-Paul-Trois-Châteaux",
-              "Donzère",
-              "La Garde-Adhémar",
-              "Grignan",
-              "Montélimar",
-              "Malataverne",
-              "Bollène",
-              "Suze-la-Rousse",
-              "Tulette",
-              "Pont-Saint-Esprit",
-              "Bourg-Saint-Andéol",
-              "Viviers"
-            ],
-            "notes": [
-              "🚗 Déplacement inclus à Pierrelatte et jusqu'à 40 km alentour.",
-              "📋 Devis gratuit, sans engagement. Tarifs indicatifs ajustés selon l'état du logement.",
-              "ℹ️ Le crédit d'impôt de 50 % s'applique uniquement aux prestations réalisées au domicile d'un particulier."
-            ],
-            "categories": [
-              {
-                "id": "menage",
-                "emoji": "🧹",
-                "titre": "Ménage à domicile",
-                "description": "Entretien régulier ou ponctuel de votre logement.",
-                "creditImpot": true,
-                "prestations": [
-                  {
-                    "nom": "Ménage régulier ou ponctuel",
-                    "type": "horaire",
-                    "tauxHoraire": 28,
-                    "supplementMateriel": 5,
-                    "supplementMaterielLabel": "Produits & matériel fournis",
-                    "heuresMin": 2,
-                    "heuresMax": 40,
-                    "heuresDefaut": 3
-                  }
-                ]
-              },
-              {
-                "id": "remise-en-etat",
-                "emoji": "🏠",
-                "titre": "Remise en état",
-                "description": "Logements très sales, après déménagement ou avant état des lieux.",
-                "creditImpot": true,
-                "prestations": [
-                  {
-                    "nom": "Remise en état du logement",
-                    "type": "tiers",
-                    "tiers": [
-                      { "label": "Studio / T1", "prix": 250, "prefixe": "dès" },
-                      { "label": "T2", "prix": 350, "prefixe": "dès" },
-                      { "label": "T3", "prix": 450, "prefixe": "dès" },
-                      { "label": "T4 et +", "prix": 600, "prefixe": "dès" }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "fin-chantier",
-                "emoji": "🧱",
-                "titre": "Nettoyage de fin de chantier",
-                "description": "Après travaux, rénovation ou chantier (locaux comme logements).",
-                "creditImpot": false,
-                "prestations": [
-                  {
-                    "nom": "Fin de chantier",
-                    "type": "tiers",
-                    "tiers": [
-                      { "label": "Appartement", "prix": 300, "prefixe": "dès" },
-                      { "label": "Maison", "prix": 450, "prefixe": "dès" },
-                      { "label": "Grand chantier", "surDevis": true }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "location-airbnb",
-                "emoji": "🔑",
-                "titre": "Entretien locatif & Airbnb",
-                "description": "Ménage de rotation entre deux locations et résidences secondaires.",
-                "creditImpot": false,
-                "prestations": [
-                  {
-                    "nom": "Ménage de rotation",
-                    "type": "tiers",
-                    "tiers": [
-                      { "label": "Studio / T1", "prix": 60, "prefixe": "dès" },
-                      { "label": "T2", "prix": 80, "prefixe": "dès" },
-                      { "label": "T3 et +", "prix": 110, "prefixe": "dès" }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "type": "cta",
-          "variant": "encadre",
-          "content": {
-            "titre": "Un grand chantier ou une situation particulière ?",
-            "sousTitre": "Contactez-nous pour un devis personnalisé, gratuit et sans engagement.",
-            "ctaPrimaire": {
-              "label": "Nous contacter",
-              "href": "/contact"
-            },
-            "ctaSecondaire": {
-              "label": "+33 6 68 99 04 80",
-              "href": "tel:+33668990480"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "slug": "credit-impot",
-      "label": "Crédit d'impôt",
-      "navHidden": true,
-      "meta": {
-        "title": "Crédit d'impôt 50 % pour le ménage à domicile à Pierrelatte",
-        "description": "Avec Parfait Ménage 26, le ménage à votre domicile ouvre droit au crédit d'impôt de 50 %. Coût réel : 14 €/h au lieu de 28 €/h. Avance immédiate possible."
-      },
-      "blocks": [
-        {
-          "type": "pageHero",
-          "content": {
-            "eyebrow": "Services à la personne",
-            "titre": "Le ménage à domicile, divisé par deux",
-            "intro": "Crédit d'impôt de 50 % et avance immédiate : l'entretien de votre logement ne vous coûte réellement que 14 €/h."
-          }
-        },
-        {
-          "type": "simulateur",
-          "content": {
-            "argumentaireTitre": "Vous payez la moitié,",
-            "argumentaireAccent": "l'État paie le reste",
-            "argumentaire": "Le crédit d'impôt couvre 50 % du ménage réalisé à votre domicile, dans la limite de 12 000 € par an et par foyer.",
-            "points": [
-              "50 % de crédit d'impôt sur le ménage à domicile",
-              "Avance immédiate : ne réglez tout de suite que la moitié",
-              "Plafond de 12 000 € de dépenses par an et par foyer",
-              "Valable pour les particuliers, à leur résidence"
-            ],
-            "cardTitre": "Simulateur crédit d'impôt",
-            "cardIntro": "Estimez votre coût réel après les 50 % de crédit d'impôt.",
-            "curseurLabel": "Heures de ménage par semaine",
-            "unite": "h",
-            "min": 1,
-            "max": 15,
-            "step": 1,
-            "defaut": 3,
-            "prixPlein": 28,
-            "prixNet": 14,
-            "facteurMensuel": 4.33,
-            "plafondAnnuel": 12000,
-            "note": "Estimation indicative. Le crédit d'impôt de 50 % s'applique aux prestations à domicile chez un particulier.",
-            "cta": {
-              "label": "Demander un devis",
-              "href": "/devis"
-            }
-          }
-        },
-        {
-          "type": "faq",
-          "variant": "liste-ouverte",
-          "content": {
-            "titre": "Crédit d'impôt : vos questions",
-            "items": [
-              {
-                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
-                "reponse": "Le ménage réalisé à votre domicile ouvre droit à un crédit d'impôt égal à 50 % des sommes versées, dans la limite de 12 000 € par an et par foyer. Concrètement, une heure facturée 28 € ne vous coûte réellement que 14 €."
-              },
-              {
-                "question": "Qu'est-ce que l'avance immédiate ?",
-                "reponse": "L'avance immédiate de crédit d'impôt (dispositif URSSAF) vous permet de ne régler tout de suite que la moitié restant à votre charge, sans attendre votre déclaration d'impôts de l'année suivante."
-              },
-              {
-                "question": "La fin de chantier ouvre-t-elle droit au crédit d'impôt ?",
-                "reponse": "Non. Le crédit d'impôt de 50 % concerne uniquement les prestations réalisées au domicile d'un particulier. Le nettoyage de fin de chantier ainsi que l'entretien de locations Airbnb ou de locaux sont facturés sur devis, sans crédit d'impôt."
-              },
-              {
-                "question": "La remise en état est-elle éligible ?",
-                "reponse": "Oui, lorsqu'elle est réalisée au domicile d'un particulier (logement très sale, après déménagement, avant état des lieux), la remise en état ouvre droit au crédit d'impôt de 50 %."
-              }
-            ]
-          }
-        },
-        {
-          "type": "cta",
-          "variant": "encadre",
-          "content": {
-            "titre": "Profitez du crédit d'impôt dès votre première prestation",
-            "sousTitre": "Devis gratuit et sans engagement.",
-            "ctaPrimaire": {
-              "label": "Demander un devis",
-              "href": "/devis"
-            },
-            "ctaSecondaire": {
-              "label": "+33 6 68 99 04 80",
-              "href": "tel:+33668990480"
             }
           }
         }
@@ -692,11 +420,12 @@
             ],
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.685%2C44.373%2C4.720%2C44.393&layer=mapnik&marker=44.3829857%2C4.7016543",
             "services": [
-              "Ménage à domicile (régulier ou ponctuel)",
-              "Remise en état (logement très sale)",
-              "Nettoyage après déménagement / avant état des lieux",
-              "Nettoyage de fin de chantier",
-              "Entretien locatif / Airbnb",
+              "Logement très sale / remise en état",
+              "Nettoyage après travaux ou chantier",
+              "Remise en état après location",
+              "Airbnb / résidence secondaire",
+              "Ménage avant / après déménagement",
+              "Entretien ponctuel ou régulier",
               "Autre / je ne sais pas"
             ],
             "villes": [
@@ -725,7 +454,7 @@
       "navHidden": true,
       "meta": {
         "title": "Demande de devis gratuit — Parfait Ménage 26",
-        "description": "Demandez votre devis gratuit et sans engagement à Parfait Ménage 26 : ménage, remise en état, fin de chantier et entretien locatif à Pierrelatte et alentour."
+        "description": "Demandez votre devis gratuit et sans engagement à Parfait Ménage 26 : ménage difficile, remise en état, fin de chantier et entretien locatif à Pierrelatte et alentour."
       },
       "blocks": [
         {
@@ -735,8 +464,8 @@
             "titre": "Demandez votre devis en 1 minute",
             "intro": "Renseignez votre besoin : nous revenons vers vous rapidement avec une estimation adaptée, gratuite et sans engagement.",
             "ctaSecondaire": {
-              "label": "Composer en ligne",
-              "href": "/tarifs"
+              "label": "Voir nos prestations",
+              "href": "/services"
             }
           }
         },
@@ -756,11 +485,12 @@
               { "jour": "Lun – Sam", "heures": "9h – 18h" }
             ],
             "services": [
-              "Ménage à domicile (régulier ou ponctuel)",
-              "Remise en état (logement très sale)",
-              "Nettoyage après déménagement / avant état des lieux",
-              "Nettoyage de fin de chantier",
-              "Entretien locatif / Airbnb",
+              "Logement très sale / remise en état",
+              "Nettoyage après travaux ou chantier",
+              "Remise en état après location",
+              "Airbnb / résidence secondaire",
+              "Ménage avant / après déménagement",
+              "Entretien ponctuel ou régulier",
               "Autre / je ne sais pas"
             ],
             "villes": [
@@ -884,7 +614,7 @@
       "navHidden": true,
       "meta": {
         "title": "Questions fréquentes — Parfait Ménage 26",
-        "description": "Crédit d'impôt, logements très sales, fin de chantier, zone d'intervention, devis : toutes les réponses sur le ménage et la remise en état avec Parfait Ménage 26."
+        "description": "Logements très sales, fin de chantier, zone d'intervention, devis gratuit : toutes les réponses sur le ménage et la remise en état avec Parfait Ménage 26."
       },
       "blocks": [
         {
@@ -905,16 +635,16 @@
                 "reponse": "Oui, c'est notre spécialité. Logements laissés en mauvais état, après des travaux, après le départ de locataires peu soigneux : nous arrivons avec un matériel adapté à chaque situation pour un résultat impeccable."
               },
               {
-                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
-                "reponse": "Le ménage réalisé à votre domicile ouvre droit à un crédit d'impôt égal à 50 % des sommes versées (plafond de 12 000 € par an et par foyer). Une heure facturée 28 € ne vous coûte réellement que 14 €."
-              },
-              {
-                "question": "Le crédit d'impôt s'applique-t-il à toutes les prestations ?",
-                "reponse": "Non. Il concerne uniquement les prestations réalisées au domicile d'un particulier (ménage, remise en état). Le nettoyage de fin de chantier et l'entretien de locations Airbnb sont facturés sur devis, sans crédit d'impôt."
+                "question": "Quelles prestations proposez-vous ?",
+                "reponse": "Ménage difficile et remise en état des logements très sales, nettoyage après travaux ou chantier, remise en état après location, Airbnb et résidences secondaires, ménage avant/après déménagement, et entretien ponctuel ou régulier."
               },
               {
                 "question": "Dans quelles communes intervenez-vous ?",
-                "reponse": "À Pierrelatte et dans un rayon d'environ 40 km : Saint-Paul-Trois-Châteaux, Donzère, Grignan, Montélimar, Malataverne, Bollène, Pont-Saint-Esprit, Bourg-Saint-Andéol et les communes voisines."
+                "reponse": "À Pierrelatte et dans un rayon d'environ 40 km : Saint-Paul-Trois-Châteaux, Donzère, Grignan, Malataverne, Montélimar, Bollène, Pont-Saint-Esprit, Bourg-Saint-Andéol et les communes voisines."
+              },
+              {
+                "question": "Comment obtenir un devis ?",
+                "reponse": "Décrivez-nous votre besoin et l'état du logement par téléphone, WhatsApp ou via le formulaire : nous revenons vers vous rapidement avec une estimation gratuite et sans engagement."
               },
               {
                 "question": "Fournissez-vous le matériel et les produits ?",
@@ -985,9 +715,9 @@
                 "texte": "Devis gratuit rapide et intervention adaptée à vos délais, y compris en urgence."
               },
               {
-                "icone": "Receipt",
+                "icone": "BadgeCheck",
                 "titre": "Transparence",
-                "texte": "Des tarifs clairs et le crédit d'impôt de 50 % sur le ménage à domicile."
+                "texte": "Un devis gratuit et clair, sans engagement ni surprise."
               }
             ]
           }
@@ -1015,35 +745,34 @@
       "label": "Ménage à domicile",
       "navHidden": true,
       "meta": {
-        "title": "Ménage à domicile à Pierrelatte — dès 14 €/h après crédit d'impôt",
-        "description": "Ménage et entretien à domicile à Pierrelatte et dans un rayon de 40 km : régulier ou ponctuel, dès 28 €/h soit 14 €/h après crédit d'impôt de 50 %. Devis gratuit.",
+        "title": "Ménage à domicile à Pierrelatte — entretien régulier ou ponctuel",
+        "description": "Ménage et entretien à domicile à Pierrelatte et dans un rayon de 40 km : intervention régulière ou ponctuelle, travail soigné. Devis gratuit, sans engagement.",
         "keywords": [
           "ménage à domicile Pierrelatte",
           "aide ménagère Pierrelatte",
           "femme de ménage Pierrelatte",
           "entretien logement Drôme",
-          "ménage crédit d'impôt Pierrelatte"
+          "ménage régulier Pierrelatte"
         ]
       },
       "service": {
         "name": "Ménage à domicile",
-        "description": "Entretien régulier ou ponctuel du logement à Pierrelatte, avec crédit d'impôt de 50 %.",
-        "serviceType": "Ménage à domicile",
-        "priceFrom": 28
+        "description": "Entretien régulier ou ponctuel du logement à Pierrelatte.",
+        "serviceType": "Ménage à domicile"
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Crédit d'impôt 50 %",
-            "titre": "Ménage à domicile à Pierrelatte — dès 28 €/h",
-            "intro": "Parfait Ménage 26 assure l'entretien de votre logement à Pierrelatte et dans un rayon de 40 km : intervention régulière ou ponctuelle. Grâce au crédit d'impôt de 50 %, votre heure facturée 28 € ne vous coûte réellement que 14 €.",
+            "eyebrow": "Entretien régulier ou ponctuel",
+            "titre": "Ménage à domicile à Pierrelatte",
+            "intro": "Parfait Ménage 26 assure l'entretien de votre logement à Pierrelatte et dans un rayon de 40 km : intervention régulière ou ponctuelle, sols, sanitaires, cuisine et poussières. Un travail soigné, fini dans le détail.",
             "breadcrumb": [
               { "label": "Accueil", "href": "/" },
               { "label": "Services", "href": "/services" },
               { "label": "Ménage à domicile" }
             ],
-            "ctaPrimaire": { "label": "Devis gratuit", "href": "/devis" },
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
             "ctaSecondaire": { "label": "+33 6 68 99 04 80", "href": "tel:+33668990480" }
           }
         },
@@ -1053,11 +782,6 @@
           "content": {
             "titre": "Pourquoi choisir Parfait Ménage 26",
             "items": [
-              {
-                "icone": "badge-euro",
-                "nom": "14 €/h après crédit d'impôt",
-                "description": "Le ménage à domicile ouvre droit au crédit d'impôt de 50 %, avec avance immédiate possible."
-              },
               {
                 "icone": "sparkles",
                 "nom": "Travail minutieux",
@@ -1072,6 +796,11 @@
                 "icone": "calendar-check",
                 "nom": "Régulier ou ponctuel",
                 "description": "À la fréquence qui vous convient, ou en intervention unique selon le besoin."
+              },
+              {
+                "icone": "badge-check",
+                "nom": "Devis gratuit",
+                "description": "Une estimation claire et gratuite avant toute intervention, sans engagement."
               }
             ]
           }
@@ -1095,7 +824,7 @@
               {
                 "icone": "sparkles",
                 "titre": "L'intervention",
-                "texte": "Nous réalisons le ménage avec soin et vous bénéficiez du crédit d'impôt de 50 %."
+                "texte": "Nous réalisons le ménage avec soin, avec le matériel adapté à votre logement."
               }
             ]
           }
@@ -1107,12 +836,8 @@
             "titre": "Questions fréquentes",
             "items": [
               {
-                "question": "Combien coûte le ménage à domicile à Pierrelatte ?",
-                "reponse": "Le ménage est facturé 28 €/h. Avec le crédit d'impôt de 50 %, votre coût réel revient à 14 €/h. Le matériel et les produits peuvent être fournis pour un léger supplément."
-              },
-              {
-                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
-                "reponse": "Le ménage réalisé à votre domicile ouvre droit à un crédit d'impôt égal à 50 % des sommes versées (plafond de 12 000 € par an et par foyer)."
+                "question": "Comment obtenir un devis pour le ménage à domicile ?",
+                "reponse": "Décrivez-nous votre logement et la fréquence souhaitée, par téléphone, WhatsApp ou via le formulaire : nous établissons un devis gratuit et sans engagement, rapidement."
               },
               {
                 "question": "Proposez-vous un entretien régulier ?",
@@ -1120,7 +845,11 @@
               },
               {
                 "question": "Faut-il fournir le matériel et les produits ?",
-                "reponse": "Au choix : nous pouvons venir équipés (supplément matériel) ou utiliser les vôtres. Nous adaptons les produits à votre logement."
+                "reponse": "Au choix : nous pouvons venir équipés ou utiliser les vôtres. Nous adaptons les produits à votre logement."
+              },
+              {
+                "question": "Dans quel secteur intervenez-vous ?",
+                "reponse": "À Pierrelatte et dans un rayon d'environ 40 km : Drôme provençale, vallée du Rhône et communes limitrophes."
               }
             ]
           }
@@ -1169,8 +898,8 @@
           "variant": "encadre",
           "content": {
             "titre": "Besoin d'un devis pour le ménage à domicile à Pierrelatte ?",
-            "sousTitre": "Devis gratuit et sans engagement, crédit d'impôt déduit. Réponse rapide.",
-            "ctaPrimaire": { "label": "Devis gratuit", "href": "/devis" },
+            "sousTitre": "Devis gratuit et sans engagement. Réponse rapide.",
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
             "ctaSecondaire": { "label": "+33 6 68 99 04 80", "href": "tel:+33668990480" }
           }
         }
@@ -1181,8 +910,8 @@
       "label": "Remise en état",
       "navHidden": true,
       "meta": {
-        "title": "Remise en état à Pierrelatte — logement très sale dès 250 €",
-        "description": "Remise en état à Pierrelatte et dans un rayon de 40 km : logements très sales, après déménagement ou avant état des lieux, dès 250 €. Crédit d'impôt 50 % à domicile. Devis gratuit.",
+        "title": "Remise en état à Pierrelatte — logements très sales & après déménagement",
+        "description": "Remise en état à Pierrelatte et dans un rayon de 40 km : logements très sales, après déménagement ou avant état des lieux. Travail minutieux. Devis gratuit, sans engagement.",
         "keywords": [
           "remise en état Pierrelatte",
           "nettoyage logement très sale Drôme",
@@ -1194,22 +923,21 @@
       "service": {
         "name": "Remise en état",
         "description": "Nettoyage en profondeur des logements très sales, après déménagement ou avant état des lieux, à Pierrelatte.",
-        "serviceType": "Nettoyage de remise en état",
-        "priceFrom": 250
+        "serviceType": "Nettoyage de remise en état"
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Crédit d'impôt 50 %",
-            "titre": "Remise en état à Pierrelatte — dès 250 €",
+            "eyebrow": "Logements très sales & déménagement",
+            "titre": "Remise en état à Pierrelatte",
             "intro": "Logement laissé très sale, départ de locataires peu soigneux, après-déménagement ou avant un état des lieux : Parfait Ménage 26 remet votre logement à neuf à Pierrelatte et alentour. Saletés incrustées, traces et résidus disparaissent.",
             "breadcrumb": [
               { "label": "Accueil", "href": "/" },
               { "label": "Services", "href": "/services" },
               { "label": "Remise en état" }
             ],
-            "ctaPrimaire": { "label": "Devis gratuit", "href": "/devis" },
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
             "ctaSecondaire": { "label": "+33 6 68 99 04 80", "href": "tel:+33668990480" }
           }
         },
@@ -1230,9 +958,9 @@
                 "description": "Nous nous adaptons à vos délais de remise des clés ou d'état des lieux."
               },
               {
-                "icone": "badge-euro",
-                "nom": "Crédit d'impôt 50 %",
-                "description": "Réalisée chez un particulier, la remise en état ouvre droit au crédit d'impôt de 50 %."
+                "icone": "package-open",
+                "nom": "Matériel adapté",
+                "description": "Un équipement et des produits choisis selon le type et l'état du logement."
               },
               {
                 "icone": "check-circle",
@@ -1273,16 +1001,16 @@
             "titre": "Questions fréquentes",
             "items": [
               {
-                "question": "Combien coûte une remise en état à Pierrelatte ?",
-                "reponse": "La remise en état démarre à 250 € pour un studio ou T1, 350 € pour un T2, 450 € pour un T3 et 600 € pour un T4 et plus. Le tarif exact dépend de la surface et de l'état du logement."
+                "question": "Comment est établi le devis d'une remise en état ?",
+                "reponse": "Selon la surface et l'état du logement, après description de votre besoin ou une visite. Le devis est gratuit et sans engagement."
               },
               {
                 "question": "Intervenez-vous sur les logements vraiment très sales ?",
                 "reponse": "Oui, c'est notre spécialité. Nous prenons en charge les logements laissés en mauvais état, avec un matériel adapté à chaque situation."
               },
               {
-                "question": "La remise en état donne-t-elle droit au crédit d'impôt ?",
-                "reponse": "Oui, lorsqu'elle est réalisée au domicile d'un particulier, la remise en état ouvre droit au crédit d'impôt de 50 %."
+                "question": "Intervenez-vous après un déménagement ou avant un état des lieux ?",
+                "reponse": "Oui. Nous remettons le logement à neuf après le départ, ou avant l'emménagement, ainsi qu'avant un état des lieux de sortie."
               },
               {
                 "question": "Sous quel délai pouvez-vous intervenir ?",
@@ -1335,8 +1063,8 @@
           "variant": "encadre",
           "content": {
             "titre": "Besoin d'un devis pour une remise en état à Pierrelatte ?",
-            "sousTitre": "Devis gratuit et sans engagement, crédit d'impôt déduit. Réponse rapide.",
-            "ctaPrimaire": { "label": "Devis gratuit", "href": "/devis" },
+            "sousTitre": "Devis gratuit et sans engagement. Réponse rapide.",
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
             "ctaSecondaire": { "label": "+33 6 68 99 04 80", "href": "tel:+33668990480" }
           }
         }
@@ -1347,7 +1075,7 @@
       "label": "Fin de chantier",
       "navHidden": true,
       "meta": {
-        "title": "Nettoyage de fin de chantier à Pierrelatte — dès 300 €",
+        "title": "Nettoyage de fin de chantier à Pierrelatte — après travaux",
         "description": "Nettoyage de fin de chantier à Pierrelatte et dans un rayon de 40 km : après travaux, rénovation ou chantier. Poussière, traces de peinture et résidus éliminés. Devis gratuit.",
         "keywords": [
           "nettoyage fin de chantier Pierrelatte",
@@ -1360,22 +1088,21 @@
       "service": {
         "name": "Nettoyage de fin de chantier",
         "description": "Nettoyage complet après travaux, rénovation ou chantier à Pierrelatte et alentour.",
-        "serviceType": "Nettoyage de fin de chantier",
-        "priceFrom": 300
+        "serviceType": "Nettoyage de fin de chantier"
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Sur devis",
-            "titre": "Nettoyage de fin de chantier à Pierrelatte — dès 300 €",
+            "eyebrow": "Après travaux, rénovation ou chantier",
+            "titre": "Nettoyage de fin de chantier à Pierrelatte",
             "intro": "Après des travaux, une rénovation ou un chantier, Parfait Ménage 26 débarrasse les lieux de la poussière de chantier, des traces de peinture, de colle et de plâtre, pour un logement ou un local prêt à être livré.",
             "breadcrumb": [
               { "label": "Accueil", "href": "/" },
               { "label": "Services", "href": "/services" },
               { "label": "Fin de chantier" }
             ],
-            "ctaPrimaire": { "label": "Devis gratuit", "href": "/devis" },
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
             "ctaSecondaire": { "label": "+33 6 68 99 04 80", "href": "tel:+33668990480" }
           }
         },
@@ -1439,20 +1166,20 @@
             "titre": "Questions fréquentes",
             "items": [
               {
-                "question": "Combien coûte un nettoyage de fin de chantier ?",
-                "reponse": "Comptez à partir de 300 € pour un appartement et 450 € pour une maison. Le tarif dépend de la surface et de l'ampleur des travaux. Un devis gratuit vous est établi après description du chantier."
+                "question": "Comment obtenir un devis de fin de chantier ?",
+                "reponse": "Indiquez-nous la surface et l'ampleur des travaux : nous établissons un devis gratuit et sans engagement après description du chantier."
               },
               {
-                "question": "Le nettoyage de fin de chantier ouvre-t-il droit au crédit d'impôt ?",
-                "reponse": "Non. Le crédit d'impôt de 50 % concerne uniquement les prestations réalisées au domicile d'un particulier. Le nettoyage de fin de chantier est facturé sur devis, sans crédit d'impôt."
-              },
-              {
-                "question": "Intervenez-vous pour les professionnels ?",
+                "question": "Intervenez-vous pour les particuliers et les professionnels ?",
                 "reponse": "Oui, nous intervenons aussi bien chez les particuliers que pour les artisans, entreprises et locaux professionnels après rénovation."
               },
               {
                 "question": "Quel matériel utilisez-vous ?",
                 "reponse": "Un matériel adapté à la poussière de chantier et aux résidus de travaux, pour un résultat efficace sans abîmer les surfaces neuves."
+              },
+              {
+                "question": "Sous quel délai pouvez-vous intervenir ?",
+                "reponse": "Nous nous adaptons à vos contraintes de livraison ou de remise des clés. Contactez-nous pour un créneau rapide."
               }
             ]
           }
@@ -1488,7 +1215,7 @@
           "content": {
             "titre": "Un chantier à nettoyer à Pierrelatte ?",
             "sousTitre": "Devis gratuit et sans engagement. Réponse rapide.",
-            "ctaPrimaire": { "label": "Devis gratuit", "href": "/devis" },
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
             "ctaSecondaire": { "label": "+33 6 68 99 04 80", "href": "tel:+33668990480" }
           }
         }
@@ -1499,7 +1226,7 @@
       "label": "Entretien locatif & Airbnb",
       "navHidden": true,
       "meta": {
-        "title": "Entretien locatif & ménage Airbnb à Pierrelatte — dès 60 €",
+        "title": "Entretien locatif & ménage Airbnb à Pierrelatte",
         "description": "Ménage de rotation Airbnb, remise en état entre deux locations et résidences secondaires à Pierrelatte et dans un rayon de 40 km. Intervention fiable et rapide. Devis gratuit.",
         "keywords": [
           "ménage Airbnb Pierrelatte",
@@ -1512,22 +1239,21 @@
       "service": {
         "name": "Entretien locatif & Airbnb",
         "description": "Ménage de rotation Airbnb, remise en état entre deux locations et résidences secondaires à Pierrelatte.",
-        "serviceType": "Ménage de location saisonnière",
-        "priceFrom": 60
+        "serviceType": "Ménage de location saisonnière"
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Sur devis",
-            "titre": "Entretien locatif & Airbnb à Pierrelatte — dès 60 €",
+            "eyebrow": "Locations, Airbnb & résidences secondaires",
+            "titre": "Entretien locatif & Airbnb à Pierrelatte",
             "intro": "Pour vos locations courte durée, vos appartements à remettre en état entre deux locataires et vos résidences secondaires, Parfait Ménage 26 assure un ménage de rotation fiable, rapide et soigné, prêt pour la prochaine arrivée.",
             "breadcrumb": [
               { "label": "Accueil", "href": "/" },
               { "label": "Services", "href": "/services" },
               { "label": "Entretien locatif & Airbnb" }
             ],
-            "ctaPrimaire": { "label": "Devis gratuit", "href": "/devis" },
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
             "ctaSecondaire": { "label": "+33 6 68 99 04 80", "href": "tel:+33668990480" }
           }
         },
@@ -1591,12 +1317,8 @@
             "titre": "Questions fréquentes",
             "items": [
               {
-                "question": "Combien coûte un ménage de rotation Airbnb ?",
-                "reponse": "Comptez à partir de 60 € pour un studio ou T1, 80 € pour un T2 et 110 € pour un T3 et plus. Le tarif dépend du logement et de la fréquence des rotations."
-              },
-              {
-                "question": "Le ménage Airbnb ouvre-t-il droit au crédit d'impôt ?",
-                "reponse": "Non. L'entretien d'une location courte durée est une activité commerciale : il est facturé sur devis, sans crédit d'impôt, contrairement au ménage réalisé à votre propre domicile."
+                "question": "Comment fonctionne le devis pour un Airbnb ?",
+                "reponse": "Selon le logement et la fréquence des rotations : nous établissons un devis gratuit et sans engagement après description de votre besoin."
               },
               {
                 "question": "Gérez-vous le linge et les consommables ?",
@@ -1605,6 +1327,10 @@
               {
                 "question": "Pouvez-vous intervenir en l'absence du propriétaire ?",
                 "reponse": "Oui, après remise d'un accès convenu ensemble. Nous intervenons en toute autonomie et discrétion entre deux locations."
+              },
+              {
+                "question": "Intervenez-vous aussi sur les résidences secondaires ?",
+                "reponse": "Oui, pour l'ouverture, la fermeture ou l'entretien ponctuel de votre résidence secondaire à Pierrelatte et alentour."
               }
             ]
           }
@@ -1640,7 +1366,7 @@
           "content": {
             "titre": "Une location à entretenir à Pierrelatte ?",
             "sousTitre": "Devis gratuit et sans engagement. Réponse rapide.",
-            "ctaPrimaire": { "label": "Devis gratuit", "href": "/devis" },
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
             "ctaSecondaire": { "label": "+33 6 68 99 04 80", "href": "tel:+33668990480" }
           }
         }

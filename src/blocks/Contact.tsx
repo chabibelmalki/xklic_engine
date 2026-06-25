@@ -100,7 +100,8 @@ export function Contact({
             src={c.mapEmbedUrl}
             title={`Localisation — ${config.entreprise.nom}`}
             loading="lazy"
-            className="aspect-[16/10] w-full"
+            className="block w-full border-0"
+            style={{ minHeight: 300, aspectRatio: "16 / 10" }}
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
@@ -256,7 +257,8 @@ export function Contact({
                 src={c.mapEmbedUrl}
                 title={`Localisation — ${config.entreprise.nom}`}
                 loading="lazy"
-                className="aspect-[21/8] w-full"
+                className="block w-full border-0"
+                style={{ minHeight: 260, aspectRatio: "21 / 8" }}
                 referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
