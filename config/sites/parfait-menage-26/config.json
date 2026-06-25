@@ -261,6 +261,43 @@
           }
         },
         {
+          "type": "avis",
+          "variant": "vedette",
+          "content": {
+            "eyebrow": "Avis Google",
+            "titre": "Ce que disent nos clients",
+            "noteGlobale": 5,
+            "items": [
+              {
+                "auteur": "Camille François",
+                "note": 5,
+                "texte": "Un énorme merci à Madame Zakia, notre femme de ménage ! Elle a fait un travail de très grande qualité dans l'intégralité de la maison. Je voulais particulièrement souligner sa douceur et sa bienveillance alors que j'étais franchement malade — c'était vraiment très apprécié ! Nous la recommandons vivement pour son sérieux, son professionnalisme et sa disponibilité. Vous pouvez avoir toute confiance en elle."
+              },
+              {
+                "auteur": "Laurane Levêque",
+                "note": 5,
+                "texte": "Zakia est une prestataire exceptionnelle : professionnelle, ponctuelle, humaine et toujours attentive aux moindres détails. Je travaille avec elle sur plusieurs gîtes que j'ai en gestion et c'est un vrai soulagement de pouvoir compter sur quelqu'un d'aussi fiable et impliqué. Une véritable épaule sur qui l'on peut s'appuyer."
+              },
+              {
+                "auteur": "Annick Gonnet",
+                "note": 5,
+                "texte": "Je suis ravie d'avoir trouvé Zakia pour intervenir chez ma mère de 96 ans, qui en est très contente. Zakia est bienveillante, disponible, toujours prête à rendre service, et très arrangeante sur nos besoins qui évoluent selon les jours. Vraiment top de pouvoir me reposer sur elle pour le confort de ma mère : je suis très rassurée."
+              },
+              {
+                "auteur": "Dalila Saïd",
+                "note": 5,
+                "texte": "J'ai fait appel à Parfait Ménage 26 pour un grand ménage de printemps et j'en suis vraiment ravie ! Ponctualité et sérieux : l'intervention a débuté à l'heure convenue et tout a été fait dans les délais. Chaque recoin a été parfaitement nettoyé, la cuisine est impeccable et les sanitaires étincelants. La prestation s'est déroulée dans la bonne humeur, avec beaucoup de soin. Je recommande sans hésiter !"
+              },
+              {
+                "auteur": "Nathalie Molines",
+                "note": 5,
+                "texte": "Zakia fait un travail remarquable ! Elle est rapide, très soigneuse et rigoureuse, et la maison est impeccable ! Je recommande +++"
+              }
+            ],
+            "disclaimer": "Avis authentiques publiés par nos clients sur notre fiche Google."
+          }
+        },
+        {
           "type": "cta",
           "variant": "bande",
           "content": {
