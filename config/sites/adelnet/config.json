@@ -4,6 +4,9 @@
   "stylePack": "clair-frais",
   "branding": {
     "logoAlt": "Adelnet — ménage et repassage à domicile à Saint-Étienne",
+    "colors": {
+      "brand": "#327cb7"
+    },
     "logoTwoTone": {
       "first": "#327cb7",
       "rest": "#0f172a"

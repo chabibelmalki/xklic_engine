@@ -1,6 +1,7 @@
 import type { SiteConfig } from "@/types/config";
 import type { MentionsLegales } from "@/lib/legal";
 import { resolveTheme } from "@/lib/theme";
+import { brandColorStyle } from "@/lib/colors";
 import { resolvePack } from "@/lib/packs";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
@@ -25,6 +26,7 @@ export function LegalDocPage({
   locale?: string;
 }) {
   const theme = resolveTheme(config.theme);
+  const colorStyle = brandColorStyle(config.branding.colors);
   const pack = resolvePack(config.stylePack);
   const locales = config.i18n?.languages ?? [locale];
   const defaultLocale = config.i18n?.default ?? locale;
@@ -33,6 +35,7 @@ export function LegalDocPage({
     <div
       data-theme={theme}
       data-pack={pack}
+      style={colorStyle}
       lang={htmlLang(locale)}
       dir={localeDir(locale)}
       className="min-h-screen bg-bg text-ink"

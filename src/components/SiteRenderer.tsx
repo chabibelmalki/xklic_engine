@@ -1,6 +1,7 @@
 import type { SiteConfig, ContactContent } from "@/types/config";
 import { getBlockComponent } from "@/blocks/catalog";
 import { resolveTheme } from "@/lib/theme";
+import { brandColorStyle } from "@/lib/colors";
 import { resolvePack } from "@/lib/packs";
 import { buildJsonLd } from "@/lib/jsonld";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -50,6 +51,7 @@ export function SiteRenderer({
   locale?: string;
 }) {
   const theme = resolveTheme(config.theme);
+  const colorStyle = brandColorStyle(config.branding.colors);
   const pack = resolvePack(config.stylePack);
   const current = page ?? getHomePage(config);
   // Coordonnées sourcées sur TOUT le site (la page contact peut être ailleurs).
@@ -64,6 +66,7 @@ export function SiteRenderer({
     <div
       data-theme={theme}
       data-pack={pack}
+      style={colorStyle}
       lang={htmlLang(locale)}
       dir={localeDir(locale)}
       className="flex min-h-screen flex-col bg-bg text-ink"

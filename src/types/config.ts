@@ -146,6 +146,22 @@ export interface SocialLink {
   label?: string;
 }
 
+/**
+ * Couleurs de marque pilotées par la config (découplage couleur↔code).
+ * Si présent, le moteur GÉNÈRE tout le système de tokens depuis ces graines
+ * (échelle 50→800, accent, neutres, contrastes) et l'injecte en inline, sans
+ * toucher au code ni à globals.css. Absent → on retombe sur le thème nommé.
+ * Voir `src/lib/colors.ts`.
+ */
+export interface BrandColors {
+  /** Couleur principale (graine). Hex, ex. "#327cb7". */
+  brand: string;
+  /** Accent / CTA. Hex. Défaut : ambre (#f59e0b) si absent. */
+  accent?: string;
+  /** Tonalité des neutres (gris/fonds). Défaut : teinté par `brand`. */
+  neutral?: "warm" | "cool";
+}
+
 export interface Branding {
   /** URL du logo (object storage). */
   logo?: string;
@@ -164,6 +180,11 @@ export interface Branding {
   logoTwoTone?: { first: string; rest: string };
   /** Petite ligne sous le nom (ex. "Nettoyage · Nîmes"). */
   tagline?: string;
+  /**
+   * Couleurs de marque (graines). Si défini, génère et injecte la palette
+   * complète et prend le pas sur le thème nommé. Voir `BrandColors`.
+   */
+  colors?: BrandColors;
 }
 
 // ----------------------------------------------------------------------------
