@@ -373,6 +373,38 @@
   --radius: 0.9rem;
 }
 
+/* ---------- noir-cuivre : thème SOMBRE (noir chaud + cuivre / rose-gold) ----------
+   Seul thème dark du moteur. L'échelle brand est « inversée pour le sombre » :
+   50→200 = fonds cuivrés profonds (tints, bordures), 600→800 = cuivres CLAIRS
+   destinés au texte/aux icônes posés sur le fond noir. Les neutres sont chauds
+   et le texte (`--ink`) est crème. À combiner avec le pack `rose-noir-premium`. */
+[data-theme="noir-cuivre"] {
+  --brand-50: #2a1c16;
+  --brand-100: #3a271e;
+  --brand-200: #4f3729;
+  --brand-300: #ecc1a8;
+  --brand-400: #e3ac8b;
+  --brand-500: #d0926f;
+  --brand-600: #db9e7c;
+  --brand-700: #e8b194;
+  --brand-800: #f2c8b0;
+  --brand-contrast: #1b1310;
+  --accent-50: #2a1c16;
+  --accent-500: #d0926f;
+  --accent-600: #e3ac8b;
+  --accent-contrast: #1b1310;
+  --ink: #f4ebe3;
+  --ink-soft: #dac9bd;
+  --muted: #ad9c90;
+  --muted-2: #897568;
+  --bg: #15110f;
+  --alt: #1d1714;
+  --surface: #211a16;
+  --surface-2: #281f1a;
+  --border: #392d26;
+  --radius: 0.5rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -708,6 +740,84 @@ input[type="range"] {
   [data-pack="rose-noir-premium"] header a img {
     height: 3.75rem;
   }
+}
+
+/* ---- Variante SOMBRE du pack (data-theme="noir-cuivre") ----
+   Durcissements spécifiques au fond noir. La spécificité [data-pack][data-theme]
+   (2 attributs) surclasse les règles claires ci-dessus (1 attribut) sans les
+   supprimer : le pack reste utilisable en clair pour un futur site. */
+
+/* Titres en serif Playfair NETTE — on neutralise la calligraphie Great Vibes,
+   trop « mariage », que la cliente n'a pas aimée. */
+[data-pack="rose-noir-premium"][data-theme="noir-cuivre"] .pack-heading,
+[data-pack="rose-noir-premium"][data-theme="noir-cuivre"] h1.font-display,
+[data-pack="rose-noir-premium"][data-theme="noir-cuivre"] h2.font-display {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: -0.015em;
+  line-height: 1.08;
+}
+
+/* Bouton primaire : pill rose-gold clair à texte foncé (comme la maquette). */
+[data-pack="rose-noir-premium"][data-theme="noir-cuivre"] .btn.bg-brand-600,
+[data-pack="rose-noir-premium"][data-theme="noir-cuivre"] a.bg-brand-600 {
+  background-color: var(--brand-800);
+  background-image: linear-gradient(135deg, var(--brand-800), var(--brand-400));
+  color: var(--brand-contrast);
+  box-shadow: 0 14px 34px -16px rgb(224 172 137 / 0.5);
+}
+[data-pack="rose-noir-premium"][data-theme="noir-cuivre"] .btn.bg-brand-600:hover,
+[data-pack="rose-noir-premium"][data-theme="noir-cuivre"] a.bg-brand-600:hover {
+  background-color: var(--brand-700);
+  background-image: linear-gradient(135deg, var(--brand-800), var(--brand-500));
+}
+
+/* Bouton "white" (CTA primaire posé sur la bande noire) : texte foncé lisible. */
+[data-pack="rose-noir-premium"][data-theme="noir-cuivre"] .btn.bg-white {
+  color: var(--brand-contrast);
+}
+[data-pack="rose-noir-premium"][data-theme="noir-cuivre"] .btn.bg-white:hover {
+  background-color: #f7ece4;
+}
+
+/* Pied de page : rester NOIR (sinon bg-ink = crème sous le thème sombre). */
+[data-pack="rose-noir-premium"][data-theme="noir-cuivre"] footer.bg-ink {
+  background-color: #100c0a;
+}
+
+/* Bande CTA (.bg-brand-gradient, forcée en quasi-noir par le pack) : le sous-titre
+   et le lien utilisent `text-brand-contrast`, qui est FONCÉ dans le thème sombre
+   (texte foncé pour les pills cuivre clair) → invisible sur la bande noire. On
+   repasse ce texte secondaire en clair. Les boutons (.btn) gardent leur couleur. */
+[data-pack="rose-noir-premium"][data-theme="noir-cuivre"] .bg-brand-gradient p {
+  color: color-mix(in srgb, var(--ink) 88%, transparent);
+}
+[data-pack="rose-noir-premium"][data-theme="noir-cuivre"] .bg-brand-gradient a:not(.btn) {
+  color: var(--brand-300);
+}
+
+/* Cadre photo du hero : filet cuivre discret au lieu du blanc franc. */
+[data-pack="rose-noir-premium"][data-theme="noir-cuivre"] .pack-image {
+  border-color: color-mix(in srgb, var(--brand-400) 35%, transparent);
+}
+
+/* Hero : glow cuivre plus présent (top-right, derrière la photo) + filet
+   cuivre sous le H1 aligné à gauche (variant split). */
+[data-pack="rose-noir-premium"][data-theme="noir-cuivre"] .hero-mesh {
+  background-image:
+    repeating-linear-gradient(90deg, transparent 0 calc(100% / 12 - 1px), color-mix(in srgb, var(--brand-200) 42%, transparent) calc(100% / 12 - 1px) calc(100% / 12)),
+    radial-gradient(46rem 30rem at 84% -16%, color-mix(in srgb, var(--brand-500) 26%, transparent), transparent 62%),
+    linear-gradient(180deg, var(--alt), var(--bg) 60%);
+  border-bottom: 1px solid var(--border);
+}
+[data-pack="rose-noir-premium"][data-theme="noir-cuivre"] .hero-mesh .grid h1.pack-heading::after {
+  content: "";
+  display: block;
+  width: 4.5rem;
+  height: 1px;
+  margin: 1.5rem 0 0;
+  background: linear-gradient(90deg, var(--brand-500), transparent);
 }
 
 /* ======================= Atelier · Bold industriel ======================= */

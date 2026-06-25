@@ -1,14 +1,14 @@
 {
   "slug": "parfait-menage-26",
-  "theme": "rose-cuivre",
+  "theme": "noir-cuivre",
   "stylePack": "rose-noir-premium",
   "branding": {
     "logo": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/parfait-menage-26/logo-4a3AkWLCNdkfjeFeGpsyZbmvQbcdXm.png",
     "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/parfait-menage-26/logo-4a3AkWLCNdkfjeFeGpsyZbmvQbcdXm.png",
     "logoAlt": "Parfait Ménage 26 — ménage et remise en état à Pierrelatte",
     "logoTwoTone": {
-      "first": "#b96c52",
-      "rest": "#1a1416"
+      "first": "#d49a78",
+      "rest": "#f2e7df"
     },
     "tagline": "Ménage & remise en état · Pierrelatte"
   },
@@ -61,13 +61,16 @@
     {
       "slug": "",
       "label": "Accueil",
-      "navHidden": true,
       "blocks": [
         {
           "type": "hero",
-          "variant": "centre",
+          "variant": "split",
           "content": {
             "showSocial": false,
+            "image": {
+              "url": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1100&q=80",
+              "alt": "Intérieur soigné et impeccable — ménage haut de gamme à Pierrelatte"
+            },
             "eyebrow": "Ménage professionnel · Pierrelatte et alentours",
             "titre": "Votre intérieur,",
             "titreAccent": "notre priorité",
@@ -102,7 +105,7 @@
         },
         {
           "type": "services",
-          "variant": "index",
+          "variant": "cartes",
           "content": {
             "eyebrow": "Nos prestations",
             "titre": "Le ménage difficile, notre spécialité",
@@ -111,32 +114,38 @@
               {
                 "nom": "Logements très sales ou en mauvais état",
                 "description": "Logements laissés en mauvais état ou fortement encrassés : nous remettons tout d'aplomb, même les situations les plus difficiles.",
-                "href": "/remise-en-etat"
+                "href": "/remise-en-etat",
+                "icone": "SprayCan"
               },
               {
                 "nom": "Nettoyage après travaux, rénovation ou chantier",
                 "description": "Poussière de chantier, traces de peinture, de colle et de plâtre éliminées après vos travaux.",
-                "href": "/nettoyage-fin-chantier"
+                "href": "/nettoyage-fin-chantier",
+                "icone": "HardHat"
               },
               {
                 "nom": "Remise en état après location",
                 "description": "Appartements à remettre en état après le départ de locataires, prêts à relouer.",
-                "href": "/nettoyage-location-airbnb"
+                "href": "/nettoyage-location-airbnb",
+                "icone": "KeyRound"
               },
               {
                 "nom": "Airbnb et résidences secondaires",
                 "description": "Ménage de rotation entre deux séjours et entretien de résidences secondaires.",
-                "href": "/nettoyage-location-airbnb"
+                "href": "/nettoyage-location-airbnb",
+                "icone": "BedDouble"
               },
               {
                 "nom": "Ménage avant / après déménagement",
                 "description": "Logement nettoyé de fond en comble avant l'emménagement ou après le départ.",
-                "href": "/remise-en-etat"
+                "href": "/remise-en-etat",
+                "icone": "Truck"
               },
               {
                 "nom": "Entretien ponctuel ou régulier",
                 "description": "Entretien de votre intérieur à la fréquence qui vous convient, ou en intervention unique.",
-                "href": "/menage-domicile"
+                "href": "/menage-domicile",
+                "icone": "CalendarCheck"
               }
             ],
             "cta": {
@@ -345,7 +354,7 @@
         },
         {
           "type": "services",
-          "variant": "index",
+          "variant": "cartes",
           "content": {
             "eyebrow": "Tout le ménage, un seul prestataire",
             "titre": "Nos prestations en détail",
@@ -354,32 +363,38 @@
               {
                 "nom": "Logements très sales ou en mauvais état",
                 "description": "Logements laissés en mauvais état ou fortement encrassés : nous remettons tout d'aplomb, même les situations les plus difficiles.",
-                "href": "/remise-en-etat"
+                "href": "/remise-en-etat",
+                "icone": "SprayCan"
               },
               {
                 "nom": "Nettoyage après travaux, rénovation ou chantier",
                 "description": "Poussière de chantier, traces de peinture, de colle et de plâtre éliminées après vos travaux.",
-                "href": "/nettoyage-fin-chantier"
+                "href": "/nettoyage-fin-chantier",
+                "icone": "HardHat"
               },
               {
                 "nom": "Remise en état après location",
                 "description": "Appartements à remettre en état après le départ de locataires, prêts à relouer.",
-                "href": "/nettoyage-location-airbnb"
+                "href": "/nettoyage-location-airbnb",
+                "icone": "KeyRound"
               },
               {
                 "nom": "Airbnb et résidences secondaires",
                 "description": "Ménage de rotation entre deux séjours et entretien de résidences secondaires.",
-                "href": "/nettoyage-location-airbnb"
+                "href": "/nettoyage-location-airbnb",
+                "icone": "BedDouble"
               },
               {
                 "nom": "Ménage avant / après déménagement",
                 "description": "Logement nettoyé de fond en comble avant l'emménagement ou après le départ.",
-                "href": "/remise-en-etat"
+                "href": "/remise-en-etat",
+                "icone": "Truck"
               },
               {
                 "nom": "Entretien ponctuel ou régulier",
                 "description": "Entretien de votre intérieur à la fréquence qui vous convient, ou en intervention unique.",
-                "href": "/menage-domicile"
+                "href": "/menage-domicile",
+                "icone": "CalendarCheck"
               }
             ]
           }
@@ -431,6 +446,136 @@
             "lien": {
               "label": "ou écrivez-nous sur WhatsApp →",
               "href": "https://wa.me/33668990480"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "a-propos",
+      "label": "À propos",
+      "meta": {
+        "title": "À propos de Parfait Ménage 26",
+        "description": "Parfait Ménage 26, spécialiste du ménage difficile et de la remise en état à Pierrelatte : un travail fiable, rapide et minutieux, à domicile comme en fin de chantier."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "À propos",
+            "titre": "Le ménage difficile, fait avec soin",
+            "intro": "Parfait Ménage 26 est spécialisée dans le ménage exigeant et la remise en état : logements très sales, fin de chantier, après-déménagement. Un travail fiable, rapide et minutieux, à Pierrelatte et alentour."
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "ligne-horizontale",
+          "content": {
+            "eyebrow": "Nos engagements",
+            "titre": "Ce qui guide chaque intervention",
+            "items": [
+              {
+                "icone": "ShieldCheck",
+                "titre": "Fiabilité",
+                "texte": "Auto-entreprise déclarée, créneaux respectés et discrétion à chaque intervention."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "Minutie",
+                "texte": "Un travail soigné, fini dans le détail, même sur les situations les plus difficiles."
+              },
+              {
+                "icone": "Zap",
+                "titre": "Réactivité",
+                "texte": "Devis gratuit rapide et intervention adaptée à vos délais, y compris en urgence."
+              },
+              {
+                "icone": "BadgeCheck",
+                "titre": "Transparence",
+                "texte": "Un devis gratuit et clair, sans engagement ni surprise."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Envie de nous confier votre logement ?",
+            "sousTitre": "Devis gratuit et sans engagement, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "faq",
+      "label": "FAQ",
+      "meta": {
+        "title": "Questions fréquentes — Parfait Ménage 26",
+        "description": "Logements très sales, fin de chantier, zone d'intervention, devis gratuit : toutes les réponses sur le ménage et la remise en état avec Parfait Ménage 26."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "FAQ",
+            "titre": "Vos questions, nos réponses"
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "liste-ouverte",
+          "content": {
+            "titre": "Tout savoir avant de commencer",
+            "items": [
+              {
+                "question": "Intervenez-vous sur les logements très sales ?",
+                "reponse": "Oui, c'est notre spécialité. Logements laissés en mauvais état, après des travaux, après le départ de locataires peu soigneux : nous arrivons avec un matériel adapté à chaque situation pour un résultat impeccable."
+              },
+              {
+                "question": "Quelles prestations proposez-vous ?",
+                "reponse": "Ménage difficile et remise en état des logements très sales, nettoyage après travaux ou chantier, remise en état après location, Airbnb et résidences secondaires, ménage avant/après déménagement, et entretien ponctuel ou régulier."
+              },
+              {
+                "question": "Dans quelles communes intervenez-vous ?",
+                "reponse": "À Pierrelatte et dans un rayon d'environ 40 km : Saint-Paul-Trois-Châteaux, Donzère, Grignan, Malataverne, Montélimar, Bollène, Pont-Saint-Esprit, Bourg-Saint-Andéol et les communes voisines."
+              },
+              {
+                "question": "Comment obtenir un devis ?",
+                "reponse": "Décrivez-nous votre besoin et l'état du logement par téléphone, WhatsApp ou via le formulaire : nous revenons vers vous rapidement avec une estimation gratuite et sans engagement."
+              },
+              {
+                "question": "Fournissez-vous le matériel et les produits ?",
+                "reponse": "Oui, nous pouvons venir avec notre matériel et nos produits, adaptés au type d'intervention. Nous pouvons aussi utiliser les vôtres si vous le préférez."
+              },
+              {
+                "question": "Proposez-vous un entretien régulier ?",
+                "reponse": "Oui. Au-delà des interventions ponctuelles, nous assurons un entretien régulier de votre logement, à la fréquence qui vous convient (hebdomadaire, bimensuel…)."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Une autre question ?",
+            "sousTitre": "Appelez-nous ou écrivez : nous vous répondons rapidement.",
+            "ctaPrimaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 6 68 99 04 80",
+              "href": "tel:+33668990480"
             }
           }
         }
@@ -658,138 +803,6 @@
             "ctaSecondaire": {
               "label": "+33 6 68 99 04 80",
               "href": "tel:+33668990480"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "slug": "faq",
-      "label": "FAQ",
-      "navHidden": true,
-      "meta": {
-        "title": "Questions fréquentes — Parfait Ménage 26",
-        "description": "Logements très sales, fin de chantier, zone d'intervention, devis gratuit : toutes les réponses sur le ménage et la remise en état avec Parfait Ménage 26."
-      },
-      "blocks": [
-        {
-          "type": "pageHero",
-          "content": {
-            "eyebrow": "FAQ",
-            "titre": "Vos questions, nos réponses"
-          }
-        },
-        {
-          "type": "faq",
-          "variant": "liste-ouverte",
-          "content": {
-            "titre": "Tout savoir avant de commencer",
-            "items": [
-              {
-                "question": "Intervenez-vous sur les logements très sales ?",
-                "reponse": "Oui, c'est notre spécialité. Logements laissés en mauvais état, après des travaux, après le départ de locataires peu soigneux : nous arrivons avec un matériel adapté à chaque situation pour un résultat impeccable."
-              },
-              {
-                "question": "Quelles prestations proposez-vous ?",
-                "reponse": "Ménage difficile et remise en état des logements très sales, nettoyage après travaux ou chantier, remise en état après location, Airbnb et résidences secondaires, ménage avant/après déménagement, et entretien ponctuel ou régulier."
-              },
-              {
-                "question": "Dans quelles communes intervenez-vous ?",
-                "reponse": "À Pierrelatte et dans un rayon d'environ 40 km : Saint-Paul-Trois-Châteaux, Donzère, Grignan, Malataverne, Montélimar, Bollène, Pont-Saint-Esprit, Bourg-Saint-Andéol et les communes voisines."
-              },
-              {
-                "question": "Comment obtenir un devis ?",
-                "reponse": "Décrivez-nous votre besoin et l'état du logement par téléphone, WhatsApp ou via le formulaire : nous revenons vers vous rapidement avec une estimation gratuite et sans engagement."
-              },
-              {
-                "question": "Fournissez-vous le matériel et les produits ?",
-                "reponse": "Oui, nous pouvons venir avec notre matériel et nos produits, adaptés au type d'intervention. Nous pouvons aussi utiliser les vôtres si vous le préférez."
-              },
-              {
-                "question": "Proposez-vous un entretien régulier ?",
-                "reponse": "Oui. Au-delà des interventions ponctuelles, nous assurons un entretien régulier de votre logement, à la fréquence qui vous convient (hebdomadaire, bimensuel…)."
-              }
-            ]
-          }
-        },
-        {
-          "type": "cta",
-          "variant": "encadre",
-          "content": {
-            "titre": "Une autre question ?",
-            "sousTitre": "Appelez-nous ou écrivez : nous vous répondons rapidement.",
-            "ctaPrimaire": {
-              "label": "Nous contacter",
-              "href": "/contact"
-            },
-            "ctaSecondaire": {
-              "label": "+33 6 68 99 04 80",
-              "href": "tel:+33668990480"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "slug": "a-propos",
-      "label": "À propos",
-      "navHidden": true,
-      "meta": {
-        "title": "À propos de Parfait Ménage 26",
-        "description": "Parfait Ménage 26, spécialiste du ménage difficile et de la remise en état à Pierrelatte : un travail fiable, rapide et minutieux, à domicile comme en fin de chantier."
-      },
-      "blocks": [
-        {
-          "type": "pageHero",
-          "content": {
-            "eyebrow": "À propos",
-            "titre": "Le ménage difficile, fait avec soin",
-            "intro": "Parfait Ménage 26 est spécialisée dans le ménage exigeant et la remise en état : logements très sales, fin de chantier, après-déménagement. Un travail fiable, rapide et minutieux, à Pierrelatte et alentour."
-          }
-        },
-        {
-          "type": "etapes",
-          "variant": "ligne-horizontale",
-          "content": {
-            "eyebrow": "Nos engagements",
-            "titre": "Ce qui guide chaque intervention",
-            "items": [
-              {
-                "icone": "ShieldCheck",
-                "titre": "Fiabilité",
-                "texte": "Auto-entreprise déclarée, créneaux respectés et discrétion à chaque intervention."
-              },
-              {
-                "icone": "Sparkles",
-                "titre": "Minutie",
-                "texte": "Un travail soigné, fini dans le détail, même sur les situations les plus difficiles."
-              },
-              {
-                "icone": "Zap",
-                "titre": "Réactivité",
-                "texte": "Devis gratuit rapide et intervention adaptée à vos délais, y compris en urgence."
-              },
-              {
-                "icone": "BadgeCheck",
-                "titre": "Transparence",
-                "texte": "Un devis gratuit et clair, sans engagement ni surprise."
-              }
-            ]
-          }
-        },
-        {
-          "type": "cta",
-          "variant": "encadre",
-          "content": {
-            "titre": "Envie de nous confier votre logement ?",
-            "sousTitre": "Devis gratuit et sans engagement, réponse rapide.",
-            "ctaPrimaire": {
-              "label": "Demander un devis",
-              "href": "/devis"
-            },
-            "ctaSecondaire": {
-              "label": "Nous contacter",
-              "href": "/contact"
             }
           }
         }

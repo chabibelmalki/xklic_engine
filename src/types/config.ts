@@ -27,6 +27,7 @@ export type ThemeId =
   | "terra-sauge"
   | "acier-anthracite"
   | "rose-cuivre"
+  | "noir-cuivre"
   | "pop-violet"
   | "bleu-azur"
   | (string & {});

@@ -16,6 +16,7 @@ export const THEMES: { id: ThemeId; label: string }[] = [
   { id: "terra-sauge", label: "Terra sauge" },
   { id: "acier-anthracite", label: "Acier anthracite" },
   { id: "rose-cuivre", label: "Rose cuivre" },
+  { id: "noir-cuivre", label: "Noir cuivre (sombre)" },
   { id: "pop-violet", label: "Pop violet" },
   { id: "bleu-azur", label: "Bleu azur" },
 ];

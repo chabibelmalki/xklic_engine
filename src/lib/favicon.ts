@@ -37,6 +37,7 @@ const BRAND_600: Record<ThemeId, string> = {
   "terra-sauge": "#46663a",
   "acier-anthracite": "#1e293b",
   "rose-cuivre": "#9d5740",
+  "noir-cuivre": "#c08862",
   "pop-violet": "#6d28d9",
   "bleu-azur": "#0a5fd0",
 };
