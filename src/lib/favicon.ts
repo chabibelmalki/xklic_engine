@@ -50,13 +50,27 @@ export function iconBrandColor(config: SiteConfig): string {
   return BRAND_600[resolveTheme(config.theme)] ?? FALLBACK_BRAND;
 }
 
+/** Icône fournie par le client : 1. `branding.icon` (carrée, idéale), sinon 2. `branding.logo`. */
+export function brandIconSource(config: SiteConfig): string | undefined {
+  return config.branding.icon?.trim() || config.branding.logo?.trim();
+}
+
+/**
+ * URL de l'icône PRINCIPALE d'un site (même priorité que `buildIcons`) : icône
+ * fournie par le client, sinon l'icône GÉNÉRÉE `/seo-icon` (URL absolue sur
+ * l'origin). Consommée par la route `/favicon.ico` par tenant (via le proxy).
+ */
+export function faviconHref(config: SiteConfig): string {
+  return brandIconSource(config) || `${siteOrigin(config)}/seo-icon`;
+}
+
 /**
  * Champ `icons` de Metadata pour un site (cf. priorité dans l'en-tête du module).
  * Utilisé par toutes les pages via `src/lib/seo.ts`.
  */
 export function buildIcons(config: SiteConfig): Metadata["icons"] {
   // 1. icône carrée dédiée, sinon 2. logo du client — référencés tels quels.
-  const provided = config.branding.icon?.trim() || config.branding.logo?.trim();
+  const provided = brandIconSource(config);
   if (provided) {
     const type = provided.endsWith(".png")
       ? "image/png"

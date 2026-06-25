@@ -58,7 +58,15 @@ function parseHost(host: string): { sub: string | null; fallbackable: boolean } 
 /** Réécriture interne (invisible) du Host d'entrée vers /sites/<slug>/<path>. */
 function rewriteToSite(req: NextRequest, slug: string, pathname: string) {
   const url = req.nextUrl.clone();
-  url.pathname = `/sites/${slug}${pathname === "/" ? "" : pathname}`;
+  // /favicon.ico (requêté EN DUR par les navigateurs/crawlers) -> route par tenant
+  // qui redirige vers l'icône du site (cf. src/app/sites/[slug]/seo-favicon).
+  const path =
+    pathname === "/favicon.ico"
+      ? "/seo-favicon"
+      : pathname === "/"
+        ? ""
+        : pathname;
+  url.pathname = `/sites/${slug}${path}`;
   return NextResponse.rewrite(url);
 }
 
@@ -136,8 +144,10 @@ export function proxy(req: NextRequest) {
 
 export const config = {
   // Exclut les internes Next et les assets statiques, mais laisse passer les
-  // fichiers SEO (.xml/.txt) pour qu'ils soient servis par site.
+  // fichiers SEO (.xml/.txt) ET /favicon.ico (réécrit par tenant vers
+  // /sites/<slug>/seo-favicon — d'où l'absence de `favicon.ico|` et de `ico|`
+  // dans l'exclusion ci-dessous, sinon il ne traverserait jamais le proxy).
   matcher: [
-    "/((?!_next/|favicon.ico|.*\\.(?:png|jpg|jpeg|gif|svg|ico|webp|avif|css|js|woff2?|ttf|map)$).*)",
+    "/((?!_next/|.*\\.(?:png|jpg|jpeg|gif|svg|webp|avif|css|js|woff2?|ttf|map)$).*)",
   ],
 };
