@@ -16,7 +16,8 @@
     "deploy": "node scripts/deploy.mjs",
     "deploy:dry": "node scripts/deploy.mjs --dry-run",
     "deploy:sync-only": "node scripts/deploy.mjs --skip-deploy",
-    "onboard": "node scripts/onboard/index.mjs"
+    "onboard": "node scripts/onboard/index.mjs",
+    "logo:upload": "node scripts/upload-logo.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",

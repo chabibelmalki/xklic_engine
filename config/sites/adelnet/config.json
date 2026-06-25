@@ -8,7 +8,9 @@
       "first": "#2563eb",
       "rest": "#0f172a"
     },
-    "tagline": "Ménage & repassage à domicile · Saint-Étienne"
+    "tagline": "Ménage & repassage à domicile · Saint-Étienne",
+    "logo": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/adelnet/logo.png",
+    "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/adelnet/logo.png"
   },
   "entreprise": {
     "nom": "Adelnet",
