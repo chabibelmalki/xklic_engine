@@ -131,6 +131,18 @@ export function Hero({ block, config, basePath = "", strings }: BlockComponentPr
       <header className="hero-mesh relative overflow-hidden">
         <Container className="py-20 text-center sm:py-28">
           <div className="mx-auto max-w-3xl">
+            {c.image && (
+              <Reveal>
+                <Image
+                  src={c.image.url}
+                  alt={c.image.alt ?? c.titre}
+                  width={584}
+                  height={223}
+                  priority
+                  className="mx-auto mb-7 h-auto w-auto max-w-[20rem] rounded-2xl shadow-lg"
+                />
+              </Reveal>
+            )}
             {(c.eyebrow || c.sousTitre) && (
               <Reveal>
                 <Badge variant="accent" className="mb-5">

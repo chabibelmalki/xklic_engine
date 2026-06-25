@@ -9,6 +9,7 @@ import {
   DM_Sans,
   Fraunces,
   Nunito_Sans,
+  Great_Vibes,
 } from "next/font/google";
 import "./globals.css";
 
@@ -64,8 +65,16 @@ const fraunces = Fraunces({
   preload: false,
 });
 const nunito = Nunito_Sans({ variable: "--font-nunito", subsets: ["latin"], display: "swap", preload: false });
+// Calligraphie (titres uniquement) — pack rose-noir-premium.
+const greatVibes = Great_Vibes({
+  variable: "--font-greatvibes",
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+  preload: false,
+});
 
-const fontVars = [poppins, inter, playfair, oswald, jakarta, bricolage, dmSans, fraunces, nunito]
+const fontVars = [poppins, inter, playfair, oswald, jakarta, bricolage, dmSans, fraunces, nunito, greatVibes]
   .map((f) => f.variable)
   .join(" ");
 

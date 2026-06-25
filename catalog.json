@@ -29,6 +29,24 @@
         }
       },
       {
+        "id": "rose-noir-premium",
+        "label": "Rose & Noir · Premium calligraphié",
+        "ambiance": "Titres en calligraphie (Great Vibes), sous-titres serif (Playfair), texte Inter. Rose gold/cuivre sur ivoire chaud, encre noire, pied de page noir, coins nets, très aéré. Féminin haut de gamme (ménage premium, beauté/esthétique, onglerie, bijoux, mariage, fleuriste).",
+        "fonts": { "display": "Great Vibes (titres) + Playfair Display (sous-titres)", "sans": "Inter" },
+        "recommendedVariants": {
+          "hero": ["centre", "split"],
+          "services": ["index", "grille-icones"],
+          "produits": ["vitrine", "rayons"],
+          "galerie": ["masonry", "grille"],
+          "avis": ["vedette", "grille"],
+          "tarifs": ["liste-simple", "grille"],
+          "etapes": ["timeline-verticale"],
+          "faq": ["deux-colonnes", "accordeon"],
+          "contact": ["panneau-sombre", "split-form-carte"],
+          "cta": ["encadre", "bande"]
+        }
+      },
+      {
         "id": "atelier-industriel",
         "label": "Atelier · Bold industriel",
         "ambiance": "Typo condensée en MAJUSCULES, anthracite + orange électrique, bords carrés, bordures épaisses, contraste fort. Garage, BTP, métallerie, déménagement.",
@@ -108,7 +126,7 @@
     "items": [
       { "type": "hero", "role": "En-tête d'accueil, conversion.", "variants": ["centre (texte centré)", "split (texte + image)", "carte (texte + carte de prix flottante)", "plein (image plein écran + overlay, texte clair — NÉCESSITE content.image)", "asymetrique (colonnes décalées 7/5, image inclinée)"] },
       { "type": "pageHero", "role": "En-tête de page intérieure (eyebrow + fil d'ariane + titre).", "variants": [] },
-      { "type": "services", "role": "Prestations.", "variants": ["cartes (icône/emoji + badge + indice de prix, défaut)", "images (vignette photo)", "grille-icones (lignes icône + texte, épuré)", "mosaique (grille asymétrique, 1re tuile mise en avant)"] },
+      { "type": "services", "role": "Prestations.", "variants": ["cartes (icône/emoji + badge + indice de prix, défaut)", "images (vignette photo)", "grille-icones (lignes icône + texte, épuré)", "mosaique (grille asymétrique, 1re tuile mise en avant)", "index (liste éditoriale numérotée : grand numéro + nom + prix + flèche, filets fins, façon sommaire de magazine — sans icône ni image)"] },
       { "type": "etapes", "role": "« Comment ça se passe ».", "variants": ["cartes-numerotees (défaut)", "timeline-verticale (fil vertical)", "ligne-horizontale (nœuds alignés)"] },
       { "type": "simulateur", "role": "Calcul d'économie / crédit d'impôt interactif.", "variants": [] },
       { "type": "tarifs", "role": "Grille de prix / forfaits.", "modes": ["grille", "a-partir-de", "sur-devis"], "variants": ["grille (défaut)", "mise-en-avant (carte populaire surélevée)"] },
@@ -120,7 +138,7 @@
       { "type": "galerie", "role": "Réalisations / photos. Lightbox.", "variants": ["grille (défaut)", "masonry (colonnes décalées)", "avant-apres (paires)", "produits / montage"] },
       { "type": "avis", "role": "Témoignages (alimente la note globale JSON-LD).", "variants": ["grille (défaut)", "carrousel (rangée défilante)", "vedette (1 grand + appoint)"] },
       { "type": "cta", "role": "Bande d'appel à l'action.", "variants": ["bande (carte dégradée arrondie, défaut)", "encadre (carte claire bordée, sobre)", "plein (section dégradée pleine largeur)"] },
-      { "type": "contact", "role": "Coordonnées + formulaire opérationnel (POST /api/contact).", "modes": ["simple", "demande-intervention", "devis", "contact"], "variants": ["split-form-carte (infos + formulaire, défaut)", "coordonnees-cartes (cartes de coordonnées)", "centre (colonne centrée)"] }
+      { "type": "contact", "role": "Coordonnées + formulaire opérationnel (POST /api/contact).", "modes": ["simple", "demande-intervention", "devis", "contact"], "variants": ["split-form-carte (infos + formulaire, défaut)", "coordonnees-cartes (cartes de coordonnées)", "centre (colonne centrée)", "panneau-sombre (coordonnées rose gold sur panneau noir + formulaire, carte pleine largeur dessous — façon carte de visite)"] }
     ]
   },
 

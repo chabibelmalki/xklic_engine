@@ -50,3 +50,6 @@ gsc-service-account*.json
 *-service-account*.json
 gsc-service-account.json
 xklic-499414-f1d6dc73d4a5.json
+
+# dossier de dépôt temporaire (images sources avant upload Blob) — jamais commité
+.temp/

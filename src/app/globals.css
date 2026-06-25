@@ -397,6 +397,178 @@ input[type="range"] {
   display: none;
 }
 
+/* ======================= Rose & Noir · Premium élégant ======================= */
+[data-pack="rose-noir-premium"] {
+  --pack-font-display: var(--font-playfair);
+  --pack-font-sans: var(--font-inter);
+  --pack-font-script: var(--font-greatvibes);
+  --display-tracking: -0.01em;
+  --display-case: none;
+
+  --radius-btn: 0.35rem;
+  --radius-card: 0.55rem;
+  --radius-image: 0.5rem;
+  --border-width: 1px;
+  --radius: 0.5rem;
+
+  --shadow-card: 0 24px 60px -32px rgb(26 20 22 / 0.30);
+  --shadow-pop: 0 44px 84px -36px rgb(26 20 22 / 0.34);
+
+  --section-py: 7rem;
+  --motion-distance: 14px;
+  --motion-duration: 0.75s;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Palette : rose gold / cuivre rosé + encre noire chaude + ivoire (carte de visite) */
+  --brand-50: #faf1ec;
+  --brand-100: #f4ddd2;
+  --brand-200: #e9bfae;
+  --brand-300: #db9c84;
+  --brand-400: #cb8268;
+  --brand-500: #b96c52;
+  --brand-600: #9d5740;
+  --brand-700: #7c4533;
+  --brand-800: #4a2c22;
+  --brand-contrast: #fff8f4;
+  --accent-50: #faf1ec;
+  --accent-500: #b96c52;
+  --accent-600: #9d5740;
+  --accent-contrast: #ffffff;
+  --ink: #1a1416;
+  --ink-soft: #463a37;
+  --muted: #6f5b54;
+  --muted-2: #8c7a73;
+  --bg: #fdf8f5;
+  --alt: #f7ece4;
+  --surface: #ffffff;
+  --surface-2: #f9f0ea;
+  --border: #ecdcd1;
+}
+[data-pack="rose-noir-premium"] .hero-mesh {
+  background-image:
+    linear-gradient(180deg, var(--alt), var(--bg) 62%),
+    radial-gradient(42rem 26rem at 80% -22%, color-mix(in srgb, var(--accent-500) 14%, transparent), transparent 60%);
+}
+[data-pack="rose-noir-premium"] .pack-halo {
+  display: none;
+}
+
+/* ---- Signature éditoriale rose-noir : kickers à filet, règles sous titres, rythme aéré ---- */
+/* Eyebrows (<Badge>) -> kicker plat MAJUSCULE espacé précédé d'un filet rose. Ne touche que
+   les Badge (inline-flex), pas les pastilles de cartes (span sans inline-flex). */
+[data-pack="rose-noir-premium"] .inline-flex.rounded-full.text-xs.font-semibold {
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  --tw-ring-color: transparent;
+  padding-block: 0;
+  padding-inline: 0 0;
+  padding-inline-start: 2.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: var(--brand-600);
+  position: relative;
+}
+[data-pack="rose-noir-premium"] .inline-flex.rounded-full.text-xs.font-semibold::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 50%;
+  width: 2rem;
+  height: 1px;
+  background: var(--brand-500);
+}
+[data-pack="rose-noir-premium"] .inline-flex.rounded-full.text-xs.font-semibold > svg,
+[data-pack="rose-noir-premium"] .inline-flex.rounded-full.text-xs.font-semibold > span.rounded-full {
+  display: none;
+}
+
+/* ---- Calligraphie (Great Vibes) UNIQUEMENT sur les grands titres : H1 hero,
+   H1 de page intérieure et H2 de section. Les sous-titres (h3) restent en Playfair,
+   le texte courant en Inter. ---- */
+[data-pack="rose-noir-premium"] .pack-heading,
+[data-pack="rose-noir-premium"] h1.font-display,
+[data-pack="rose-noir-premium"] h2.font-display {
+  font-family: var(--pack-font-script), var(--font-playfair), cursive;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.2;
+}
+/* Le mot d'accent du hero garde le dégradé rose gold (la calligraphie est déjà cursive) */
+[data-pack="rose-noir-premium"] .hero-mesh .pack-heading span {
+  font-style: normal;
+}
+/* Règle rose sous le H1 du hero centré */
+[data-pack="rose-noir-premium"] .hero-mesh .text-center .pack-heading::after {
+  content: "";
+  display: block;
+  width: 4.5rem;
+  height: 1px;
+  margin: 1.5rem auto 0;
+  background: linear-gradient(90deg, transparent, var(--brand-500), transparent);
+}
+
+/* Court filet rose sous chaque titre de section (aligné au bloc) */
+[data-pack="rose-noir-premium"] .text-center > h2.font-display::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  margin: 1rem auto 0;
+  background: var(--brand-500);
+}
+[data-pack="rose-noir-premium"] .text-start > h2.font-display::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  margin: 1rem 0 0;
+  background: var(--brand-500);
+}
+
+/* Rythme vertical éditorial + filet entre plages de tons (Section.tsx code en dur py-16/20) */
+[data-pack="rose-noir-premium"] main section {
+  padding-block: clamp(5rem, 9vw, 7.5rem);
+}
+[data-pack="rose-noir-premium"] .bg-bg + .bg-alt,
+[data-pack="rose-noir-premium"] .bg-alt + .bg-bg {
+  border-top: 1px solid var(--border);
+}
+
+/* Fond de hero couture : trame 12 colonnes en filets fins par-dessus le mesh d'origine */
+[data-pack="rose-noir-premium"] .hero-mesh {
+  background-image:
+    repeating-linear-gradient(90deg, transparent 0 calc(100% / 12 - 1px), color-mix(in srgb, var(--brand-200) 26%, transparent) calc(100% / 12 - 1px) calc(100% / 12)),
+    linear-gradient(180deg, var(--alt), var(--bg) 62%),
+    radial-gradient(42rem 26rem at 80% -22%, color-mix(in srgb, var(--accent-500) 12%, transparent), transparent 60%);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Boutons primaires : rose gold métallique qui s'ÉCLAIRCIT (au lieu de foncer
+   vers le brun). Texte en encre sombre pour le contraste sur rose gold clair. */
+[data-pack="rose-noir-premium"] .btn.bg-brand-600 {
+  background-color: var(--brand-400);
+  background-image: linear-gradient(135deg, var(--brand-500) 0%, var(--brand-300) 100%);
+  color: var(--ink);
+}
+[data-pack="rose-noir-premium"] .btn.bg-brand-600:hover {
+  background-image: linear-gradient(135deg, var(--brand-400) 0%, var(--brand-200) 100%);
+}
+
+/* Logo d'en-tête agrandi (emblème rond), sans toucher le logo du pied de page */
+[data-pack="rose-noir-premium"] header a img {
+  height: 3.25rem;
+  max-width: none;
+}
+@media (min-width: 1024px) {
+  [data-pack="rose-noir-premium"] header a img {
+    height: 3.75rem;
+  }
+}
+
 /* ======================= Atelier · Bold industriel ======================= */
 [data-pack="atelier-industriel"] {
   --pack-font-display: var(--font-oswald);

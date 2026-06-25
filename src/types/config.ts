@@ -33,6 +33,7 @@ export type ThemeId =
 export type StylePackId =
   | "base"
   | "maison-premium"
+  | "rose-noir-premium"
   | "atelier-industriel"
   | "clair-frais"
   | "pop-moderne"

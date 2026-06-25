@@ -51,6 +51,25 @@ export const PACKS: StylePack[] = [
     },
   },
   {
+    id: "rose-noir-premium",
+    label: "Rose & Noir · Premium élégant",
+    ambiance:
+      "Serif haute, encre noire chaude + rose profond, fond ivoire rosé, ombres douces, coins nets, beaucoup d'air. Élégant, épuré, féminin haut de gamme (ménage premium, beauté, bijoux, mode).",
+    fonts: { display: "Playfair Display", sans: "Inter" },
+    variants: {
+      hero: ["plein", "split"],
+      services: ["lignes-alternees", "grille-cartes"],
+      produits: ["vitrine", "rayons"],
+      galerie: ["masonry", "grille"],
+      avis: ["vedette", "grille"],
+      tarifs: ["liste-simple", "grille"],
+      etapes: ["timeline-verticale"],
+      faq: ["deux-colonnes", "accordeon"],
+      contact: ["split-form-carte"],
+      cta: ["encadre", "bande"],
+    },
+  },
+  {
     id: "atelier-industriel",
     label: "Atelier · Bold industriel",
     ambiance:

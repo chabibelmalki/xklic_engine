@@ -8,6 +8,7 @@ export const SITE_SLUGS: string[] = [
   "atelier-douceur",
   "casa-clean-provence",
   "meca-atlas",
+  "parfait-menage-26",
   "sanadclean",
   "vibe-coaching",
 ];

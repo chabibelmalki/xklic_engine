@@ -14,6 +14,9 @@ import { telHref, waHref, withBase } from "@/lib/utils";
  * si `content.form` est vrai — un FORMULAIRE opérationnel (POST /api/contact).
  * Le mode (`simple` | `demande-intervention` | `devis` | `contact`) pilote les
  * champs affichés.
+ * variant : `split-form-carte` (défaut) · `coordonnees-cartes` · `centre` ·
+ * `panneau-sombre` (coordonnées rose gold sur panneau noir + formulaire, carte
+ * pleine largeur dessous — façon carte de visite).
  */
 export function Contact({
   block,
@@ -162,6 +165,106 @@ export function Contact({
       />
     </Reveal>
   );
+
+  // Panneau sombre "carte de visite" (variant "panneau-sombre") : coordonnées en
+  // rose gold sur fond noir, à côté du formulaire ; carte pleine largeur dessous.
+  if (variant === "panneau-sombre") {
+    return (
+      <Section id="contact" tone={tone}>
+        {header}
+        <div className="mt-12 grid grid-cols-1 gap-6 [&>*]:min-w-0 lg:grid-cols-[0.9fr_1.1fr]">
+          <Reveal>
+            <div className="flex h-full flex-col gap-8 rounded-theme bg-ink p-7 text-white sm:p-9">
+              <ul className="space-y-5">
+                {rows.map((r, i) => {
+                  const Inner = (
+                    <span className="flex min-w-0 items-center gap-4">
+                      <span className="inline-flex size-11 shrink-0 items-center justify-center rounded-full bg-white/10 text-brand-300 ring-1 ring-inset ring-white/15">
+                        <r.icon className="size-5" />
+                      </span>
+                      <span className="min-w-0 break-words font-medium text-white/90">{r.label}</span>
+                    </span>
+                  );
+                  return (
+                    <li key={i}>
+                      {r.href ? (
+                        <a
+                          href={r.href}
+                          className="transition-colors hover:text-brand-300"
+                          {...(r.href.startsWith("http")
+                            ? { target: "_blank", rel: "noopener noreferrer" }
+                            : {})}
+                        >
+                          {Inner}
+                        </a>
+                      ) : (
+                        Inner
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+
+              {c.horaires?.length ? (
+                <div className="border-t border-white/15 pt-6">
+                  <p className="mb-3 flex items-center gap-2 text-sm font-semibold text-white">
+                    <Clock className="size-4 text-brand-300" /> {strings.contact.hours}
+                  </p>
+                  <ul className="space-y-1.5 text-sm text-white/65">
+                    {c.horaires.map((h) => (
+                      <li key={h.jour} className="flex justify-between gap-4">
+                        <span>{h.jour}</span>
+                        <span className="text-white">{h.heures}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+
+              {c.whatsapp && (
+                <a
+                  href={waHref(c.whatsapp)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-auto inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-sm font-semibold text-white transition-transform hover:scale-[1.02]"
+                >
+                  <MessageCircle className="size-4" /> {strings.contact.whatsapp}
+                </a>
+              )}
+            </div>
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            {c.form ? (
+              form
+            ) : (
+              <div className="flex h-full flex-col justify-center rounded-theme border border-border bg-surface p-8 shadow-sm">
+                {c.cta && (
+                  <Button href={withBase(basePath, c.cta.href)} size="lg">
+                    {c.cta.label}
+                  </Button>
+                )}
+              </div>
+            )}
+          </Reveal>
+        </div>
+
+        {c.mapEmbedUrl && (
+          <Reveal delay={0.15}>
+            <div className="mt-6 overflow-hidden rounded-theme border border-border shadow-sm">
+              <iframe
+                src={c.mapEmbedUrl}
+                title={`Localisation — ${config.entreprise.nom}`}
+                loading="lazy"
+                className="aspect-[21/8] w-full"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+          </Reveal>
+        )}
+      </Section>
+    );
+  }
 
   if (variant === "coordonnees-cartes") {
     return (

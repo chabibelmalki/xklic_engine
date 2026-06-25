@@ -42,7 +42,7 @@ aucun fichier à créer dans `public/`.
 
 ## MAPPING DES COLONNES EXCEL (ordre exact, séparées par des TABULATIONS)
 
-La ligne contient ces 32 colonnes, dans cet ordre. Découpe sur les tabulations.
+La ligne contient ces 45 colonnes, dans cet ordre. Découpe sur les tabulations.
 
 | # | Colonne | Où ça va dans la config |
 |---|---|---|
@@ -78,8 +78,22 @@ La ligne contient ces 32 colonnes, dans cet ordre. Découpe sur les tabulations.
 | 30 | **X** | idem `x`. |
 | 31 | **Google** | idem `google` (fiche Google → `hasMap` + source des vraies étoiles). |
 | 32 | **Extra** | Demande libre / précisions → à prendre en compte ou à signaler si hors moteur. |
+| 33 | **Mode** | Mode de paiement (test/live…). Ignorer (métadonnée commerciale). |
+| 34 | **Montant** | Montant payé. Ignorer (facturation). |
+| 35 | **CodePromo** | Code promo appliqué. Ignorer (facturation). |
+| 36 | **OrderId** | Identifiant de commande. Ignorer (pipeline commercial). |
+| 37 | **SessionStripe** | ID session Stripe Checkout. Ignorer (facturation). |
+| 38 | **AbonnementStripe** | ID abonnement Stripe. Ignorer (facturation). |
+| 39 | **nom domaine** | Domaine custom souhaité (ex. `casaclean.fr`) → `seo.canonicalHost`/URL canonique du site si fourni ; sinon `<slug>.xklic.com`. Le branchement réel du domaine sur Vercel est une opération manuelle — **signale-le**. |
+| 40 | **fournisseur** | Registrar du domaine (OVH, Gandi…). Ignorer (ops/infra, hors config). |
+| 41 | **date fin** | Date de fin d'abonnement/domaine. Ignorer (pipeline commercial). |
+| 42 | **G-Lien** | Lien court Google (fiche/avis). Même usage que `Google` (`hasMap`, source des vraies étoiles) si fourni. |
+| 43 | **MAIL PRO 2** | Email pro secondaire → 2e adresse `forms.to`/`contact.email` si pertinent. Sinon ignorer. |
+| 44 | **lien fiche google** | URL fiche Google Business → `hasMap` + source des vrais avis/coordonnées (à recouper avec `Google`/`G-Lien`). |
+| 45 | **Commentaire** | Note interne / précisions libres → même traitement que `Extra` (prendre en compte ou signaler si hors moteur). |
 
 Colonne vide = champ absent. **Tu ne fais que ce que la ligne demande, ni plus ni moins.**
+Les colonnes 33-41 (Mode→date fin) sont des **métadonnées commerciales/ops** : elles n'influent jamais sur le contenu du site, sauf `nom domaine` (URL canonique).
 
 ---
 

@@ -14,7 +14,9 @@ import { localeDir } from "@/lib/i18n";
 
 /**
  * Services. variant : "cartes" (icône/emoji + badge + indice de prix, défaut) ·
- * "images" (vignette photo). Survol soigné, CTA optionnel sous la grille.
+ * "images" (vignette photo) · "grille-icones" (liste à filet) · "mosaique"
+ * (1re tuile XXL colorée) · "index" (liste éditoriale numérotée : grand numéro +
+ * nom + prix, filets fins — façon sommaire de magazine). Survol soigné, CTA optionnel.
  */
 function Card({
   s,
@@ -147,6 +149,56 @@ export function Services({
             );
             return (
               <Reveal key={s.nom} delay={(i % 2) * 0.05}>
+                {s.href ? (
+                  <Link href={withBase(basePath, s.href)} className="block">
+                    {row}
+                  </Link>
+                ) : (
+                  row
+                )}
+              </Reveal>
+            );
+          })}
+        </div>
+      ) : variant === "index" ? (
+        <div className="mt-12 border-t border-border">
+          {c.items.map((s, i) => {
+            const row = (
+              <div className="group grid grid-cols-[auto_1fr] items-baseline gap-x-6 border-b border-border py-7 transition-colors hover:bg-alt/50 sm:gap-x-10 sm:py-9">
+                <span className="font-display text-4xl font-bold leading-none text-brand-400 tabular-nums sm:text-6xl">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-baseline sm:justify-between sm:gap-10">
+                  <div className="sm:max-w-2xl">
+                    <h3 className="flex flex-wrap items-center gap-x-3 gap-y-1 font-display text-2xl font-bold text-ink sm:text-3xl">
+                      {s.nom}
+                      {s.badge && (
+                        <span className="rounded-full bg-accent-50 px-2.5 py-1 text-xs font-semibold text-accent-600 ring-1 ring-inset ring-accent-500/30">
+                          {s.badge}
+                        </span>
+                      )}
+                    </h3>
+                    {s.description && (
+                      <p className="mt-2 text-sm leading-relaxed text-muted sm:text-base">{s.description}</p>
+                    )}
+                  </div>
+                  <div className="flex shrink-0 items-center gap-5">
+                    {s.priceHint && (
+                      <span className="whitespace-nowrap text-sm font-semibold text-brand-700 sm:text-base">
+                        {s.priceHint}
+                      </span>
+                    )}
+                    {s.href && (
+                      <span className="inline-flex size-11 items-center justify-center rounded-full border border-border text-muted transition-all group-hover:border-brand-400 group-hover:bg-brand-50 group-hover:text-brand-700">
+                        <Fwd className="size-4" />
+                      </span>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+            return (
+              <Reveal key={s.nom} delay={(i % 4) * 0.05}>
                 {s.href ? (
                   <Link href={withBase(basePath, s.href)} className="block">
                     {row}
