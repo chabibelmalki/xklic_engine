@@ -1,6 +1,7 @@
 import type { SiteConfig } from "@/types/config";
 import type { MentionsLegales } from "@/lib/legal";
 import { resolveTheme } from "@/lib/theme";
+import { resolvePack } from "@/lib/packs";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { Container } from "@/components/ui/Container";
@@ -24,12 +25,14 @@ export function LegalDocPage({
   locale?: string;
 }) {
   const theme = resolveTheme(config.theme);
+  const pack = resolvePack(config.stylePack);
   const locales = config.i18n?.languages ?? [locale];
   const defaultLocale = config.i18n?.default ?? locale;
 
   return (
     <div
       data-theme={theme}
+      data-pack={pack}
       lang={htmlLang(locale)}
       dir={localeDir(locale)}
       className="min-h-screen bg-bg text-ink"

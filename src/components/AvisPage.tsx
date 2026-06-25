@@ -2,6 +2,7 @@ import QRCode from "qrcode";
 import { Star, QrCode, ExternalLink } from "lucide-react";
 import type { SiteConfig } from "@/types/config";
 import { resolveTheme } from "@/lib/theme";
+import { resolvePack } from "@/lib/packs";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { Container } from "@/components/ui/Container";
@@ -32,6 +33,7 @@ export async function AvisPage({
   locale?: string;
 }) {
   const theme = resolveTheme(config.theme);
+  const pack = resolvePack(config.stylePack);
   const locales = config.i18n?.languages ?? [locale];
   const defaultLocale = config.i18n?.default ?? locale;
   const t = ui(locale);
@@ -56,6 +58,7 @@ export async function AvisPage({
   return (
     <div
       data-theme={theme}
+      data-pack={pack}
       lang={htmlLang(locale)}
       dir={localeDir(locale)}
       className="min-h-screen bg-bg text-ink print:bg-white"
