@@ -63,3 +63,47 @@ modif de config, pas de conversion tant que le design n'est pas figé.
 
 URLs Blob créées, champs de config modifiés, confirmation du nettoyage des fichiers
 locaux, et tout manque/hypothèse signalé.
+
+---
+
+## ANNEXE — UPLOAD VERCEL BLOB (procédure vérifiée · « héberge le logo et nettoie »)
+
+> ⚠️ Corrige le point 3 de la Phase 2 : un **token EST nécessaire** — le store
+> n'est PAS auto-résolu par le simple lien du projet (`vercel blob put` échoue
+> sinon avec *« No Vercel Blob credentials found »*).
+
+**Store** : `blob-agency` (`store_wie1kGknSzlO37fW`) → host public
+`wie1kgknszlo37fw.public.blob.vercel-storage.com`. Projet Vercel lié : `agence-website`.
+
+**Token** : `BLOB_READ_WRITE_TOKEN` (clé RW du store) est marqué *Sensitive* côté
+Vercel → **non récupérable** par `vercel env pull` (renvoie vide) ni par OIDC
+(désactivé pour `development`). Il vit dans **`xklic_engine/.env.local`** (gitignoré).
+S'il est absent : demander au propriétaire de l'ajouter, ne pas bricoler avec OIDC.
+
+**Commande qui marche** (depuis `xklic_engine/`) :
+
+```bash
+# .env.local contient AUSSI BLOB_STORE_ID : si on exporte tout, le CLI croit
+# qu'on veut de l'OIDC et refuse. On extrait donc juste le token et on le passe
+# explicitement via --rw-token.
+TOKEN=$(grep '^BLOB_READ_WRITE_TOKEN=' ./.env.local | cut -d= -f2- | tr -d '"')
+
+vercel blob put <fichier_local.png> \
+  --pathname <slug>/logo.png \
+  --access public --allow-overwrite true \
+  --rw-token "$TOKEN"
+```
+
+- L'URL publique est renvoyée après `Success!`. ⚠️ `--add-random-suffix false`
+  n'empêche PAS le suffixe aléatoire (`…/logo-XXXX.png`) — sans importance, l'URL
+  est stable et permanente : **utiliser l'URL EXACTE renvoyée**.
+- `next.config.ts` autorise déjà tout host https (`remotePatterns: hostname "**"`)
+  → rien à configurer côté images.
+
+**Ensuite :**
+1. `config/sites/<slug>/config.json` → `branding.logo` ET `branding.icon` = l'URL Blob.
+2. **Nettoyer le local** : `rm -rf public/sites/<slug>` (seule source d'image = l'URL Blob).
+   Laisser `.temp/` (zone de dépôt de l'utilisateur, gitignorée).
+3. `node scripts/generate-sites-manifest.mjs` puis `npx tsc --noEmit` (doit être clean).
+4. Vérifier le rendu : la home référence `blob.vercel-storage.com`, plus aucun
+   chemin local `/sites/<slug>/`.
