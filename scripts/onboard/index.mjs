@@ -22,12 +22,14 @@ import { fileURLToPath } from "node:url";
 import { c, loadEnvLocal, bareHost, die, stepHeader, MissingTokenError } from "./util.mjs";
 import { STEPS, STEP_ORDER } from "./steps.mjs";
 
+const ONLY_TARGETS = Object.keys(STEPS); // inclut "gsc-human" (hors pipeline auto)
+
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
 loadEnvLocal(ROOT);
 
 // --- parsing args ---------------------------------------------------------
 function parseArgs(argv) {
-  const out = { apply: false, only: null, slug: null, domain: null };
+  const out = { apply: false, only: null, slug: null, domain: null, humanToken: null };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--apply" || a === "--no-dry-run") out.apply = true;
@@ -35,9 +37,11 @@ function parseArgs(argv) {
     else if (a === "--only") out.only = argv[++i];
     else if (a === "--slug") out.slug = argv[++i];
     else if (a === "--domain") out.domain = argv[++i];
+    else if (a === "--human-token") out.humanToken = argv[++i];
     else if (a.startsWith("--slug=")) out.slug = a.slice(7);
     else if (a.startsWith("--domain=")) out.domain = a.slice(9);
     else if (a.startsWith("--only=")) out.only = a.slice(7);
+    else if (a.startsWith("--human-token=")) out.humanToken = a.slice(14);
     else die(`Argument inconnu : ${a}`);
   }
   return out;
@@ -47,8 +51,11 @@ async function main() {
   const args = parseArgs(process.argv.slice(2));
   if (!args.slug) die("--slug <slug> requis.");
   if (!args.domain) die("--domain <domaine> requis.");
-  if (args.only && !STEP_ORDER.includes(args.only)) {
-    die(`--only inconnu : "${args.only}". Valeurs : ${STEP_ORDER.join(", ")}.`);
+  if (args.only && !ONLY_TARGETS.includes(args.only)) {
+    die(`--only inconnu : "${args.only}". Valeurs : ${ONLY_TARGETS.join(", ")}.`);
+  }
+  if (args.only === "gsc-human" && !args.humanToken) {
+    die("--only gsc-human requiert --human-token <google-site-verification=…>.");
   }
 
   const apex = bareHost(args.domain);
@@ -60,6 +67,7 @@ async function main() {
     www: `www.${apex}`,
     dryRun: !args.apply,
     only: args.only,
+    humanToken: args.humanToken,
     root: ROOT,
     rootDomain: process.env.NEXT_PUBLIC_ROOT_DOMAIN?.trim() || "xklic.com",
   };

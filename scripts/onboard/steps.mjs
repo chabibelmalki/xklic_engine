@@ -11,7 +11,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { spawn } from "node:child_process";
+import { spawn, execFileSync } from "node:child_process";
 import {
   c, info, ok, willDo, skip, warn, manualAction, MissingTokenError,
 } from "./util.mjs";
@@ -248,7 +248,32 @@ export async function manifestStep(ctx) {
 }
 
 // ─────────────────────────────────────────────────────────────── deploy ────
+/**
+ * Committe les 2 fichiers d'onboarding (config du slug + manifeste) AVANT le
+ * push, car `deploy.mjs` pousse mais ne committe pas → sans ça, les changements
+ * ne partiraient pas dans le déploiement. Commit ciblé (uniquement ces 2 fichiers,
+ * jamais le reste du working tree). Convention repo : direct sur `main`.
+ * @returns {{committed:boolean, sha?:string}}
+ */
+function commitOnboardingFiles(ctx) {
+  const files = [path.join("config", "sites", ctx.slug, "config.json"), path.join("src", "lib", "sites-manifest.ts")];
+  const git = (args) => execFileSync("git", args, { cwd: ctx.root, encoding: "utf8" }).trim();
+  // Y a-t-il des changements sur CES fichiers précisément ?
+  const dirty = git(["status", "--porcelain", "--", ...files]).length > 0;
+  if (!dirty) { skip("config + manifeste déjà committés — rien à committer."); return { committed: false }; }
+  const msg = `${ctx.slug}: branche le domaine custom ${ctx.apex}\n\ncustomDomains + manifeste régénéré (onboarding automatisé via scripts/onboard).\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>`;
+  if (ctx.dryRun) { willDo(`git commit (sur main) : ${files.join(", ")}`); return { committed: false }; }
+  git(["add", "--", ...files]);
+  git(["commit", "-m", msg]);
+  const sha = git(["rev-parse", "--short", "HEAD"]);
+  ok(`commit ${sha} (config + manifeste) sur main.`);
+  return { committed: true, sha };
+}
+
 export async function deployStep(ctx) {
+  // 1. commit ciblé des artefacts d'onboarding (sinon non déployés).
+  commitOnboardingFiles(ctx);
+  // 2. push + attente READY + syncs.
   if (ctx.dryRun) { willDo("npm run deploy (push + attente READY + sync domaines + sync sitemaps)"); info("aperçu réel possible : npm run deploy:dry"); return; }
   await run("npm", ["run", "deploy"]);
   ok("déploiement terminé.");
@@ -326,8 +351,14 @@ export async function gscStep(ctx) {
         if (!ovh.isConfigured()) warn("OVH non configuré → ce TXT devra être posé à la main.");
       }
     }
-    willDo(`ajouter la propriété ${property} à Search Console`);
-    willDo(`soumettre le sitemap ${sitemap}`);
+    // Sonde l'état réel : la propriété existe-t-elle, le sitemap est-il soumis ?
+    // (listSubmittedSitemaps échoue si la propriété n'existe pas encore.)
+    let propExists = false;
+    let sitemaps = new Set();
+    try { sitemaps = await google.listSubmittedSitemaps(token, property); propExists = true; }
+    catch { propExists = false; }
+    (propExists ? skip : willDo)(`${propExists ? "propriété déjà présente" : "ajouter la propriété"} ${property}`);
+    (propExists && sitemaps.has(sitemap) ? skip : willDo)(`${propExists && sitemaps.has(sitemap) ? "sitemap déjà soumis" : "soumettre le sitemap"} : ${sitemap}`);
     info(c.dim("« Demander l'indexation » = manuel (pas d'API)."));
     return;
   }
@@ -369,6 +400,47 @@ export async function gscStep(ctx) {
   info(c.dim("Rappel : « Demander l'indexation » = manuel (pas d'API)."));
 }
 
+// ─────────────────────────────────────────────────────────── gsc-human ─────
+/**
+ * Pose le TXT de vérification d'un PROPRIÉTAIRE HUMAIN (ex. contact@xklic.com)
+ * sur le DNS du domaine, pour qu'il VOIE la propriété dans son dashboard GSC.
+ *
+ * Pourquoi à part : l'API Google ne permet pas d'ajouter un humain à une
+ * propriété (UI-only), et un compte de service ne peut pas opérer l'interface.
+ * Chaque propriétaire d'une propriété Domaine se vérifie via SON propre TXT.
+ *
+ * Le token (`--human-token`, valeur affichée par GSC « Ajouter une propriété »)
+ * est posé en ADDITIF : il cohabite avec le TXT du compte de service et tout SPF.
+ * La VALIDATION (« Vérifier ») se fait côté UI par l'humain — pas d'API ici.
+ */
+export async function gscHumanStep(ctx) {
+  const raw = (ctx.humanToken || "").trim();
+  if (!raw) throw new Error("--human-token requis (la valeur google-site-verification=… affichée par GSC).");
+  const value = raw.startsWith("google-site-verification=") ? raw : `google-site-verification=${raw}`;
+  const hash = value.split("=")[1];
+
+  if (!ovh.isConfigured()) {
+    manualAction("Poser le TXT propriétaire humain à la main", [
+      `OVH zone ${ctx.apex} : TXT  @  → ${value}   (additif, ne pas écraser le SPF / les autres TXT)`,
+      `Puis, dans GSC (compte humain) : « Vérifier ».`,
+    ]);
+    throw new MissingTokenError("OVH non configuré — TXT humain à poser à la main.");
+  }
+
+  const txtApex = (await ovh.listAllRecords(ctx.apex)).filter((r) => r.fieldType === "TXT" && r.subDomain === "");
+  if (txtApex.some((r) => r.target.includes(hash))) {
+    skip(`TXT humain déjà présent (${hash.slice(0, 16)}…)`);
+  } else {
+    willDo(`poser TXT @ → ${c.bold(value)} (additif, SPF + TXT compte de service préservés)`);
+    if (!ctx.dryRun) {
+      await ovh.createRecord(ctx.apex, { fieldType: "TXT", subDomain: "", target: value });
+      await ovh.refreshZone(ctx.apex);
+      ok("TXT humain posé sur OVH @.");
+    }
+  }
+  info(c.dim(`→ Dans GSC (le compte humain), clique « Vérifier » sur ${ctx.apex}. La validation est UI-only.`));
+}
+
 // ────────────────────────────────────────────────────────── turnstile ──────
 export async function turnstileStep(ctx) {
   const hosts = [ctx.apex, ctx.www];
@@ -400,5 +472,8 @@ export const STEPS = {
   verify: verifyStep,
   gsc: gscStep,
   turnstile: turnstileStep,
+  "gsc-human": gscHumanStep,
 };
+// Pipeline standard (full run). `gsc-human` en est EXCLU : c'est un geste à la
+// demande (--only gsc-human --human-token …), pas une étape du parcours auto.
 export const STEP_ORDER = ["vercel", "dns", "ssl", "config", "manifest", "deploy", "verify", "gsc", "turnstile"];

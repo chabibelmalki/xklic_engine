@@ -49,7 +49,9 @@ server.log
 gsc-service-account*.json
 *-service-account*.json
 gsc-service-account.json
+xklic-*.json
 xklic-499414-f1d6dc73d4a5.json
+xklic-500220-5d5bf8d0b3b8.json
 
 # dossier de dépôt temporaire (images sources avant upload Blob) — jamais commité
 .temp/
