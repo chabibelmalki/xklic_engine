@@ -1,5 +1,6 @@
 {
   "slug": "adelnet",
+  "customDomains": ["adel-net.fr", "www.adel-net.fr"],
   "theme": "bleu-azur",
   "stylePack": "clair-frais",
   "branding": {
