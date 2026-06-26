@@ -18,7 +18,8 @@
     "deploy:sync-only": "node scripts/deploy.mjs --skip-deploy",
     "onboard": "node scripts/onboard/index.mjs",
     "logo:upload": "node scripts/upload-logo.mjs",
-    "blob:upload": "node scripts/upload-blob.mjs"
+    "blob:upload": "node scripts/upload-blob.mjs",
+    "dossier:get": "node scripts/get-dossier.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.4.0",
