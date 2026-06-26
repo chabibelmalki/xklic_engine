@@ -359,6 +359,12 @@ export async function gscStep(ctx) {
     catch { propExists = false; }
     (propExists ? skip : willDo)(`${propExists ? "propriété déjà présente" : "ajouter la propriété"} ${property}`);
     (propExists && sitemaps.has(sitemap) ? skip : willDo)(`${propExists && sitemaps.has(sitemap) ? "sitemap déjà soumis" : "soumettre le sitemap"} : ${sitemap}`);
+    const human = process.env.GSC_HUMAN_OWNER?.trim();
+    if (human) {
+      let owners = null;
+      try { owners = (await google.getPropertyOwners(token, ctx.apex))?.owners ?? null; } catch { /* pas encore vérifié */ }
+      (owners?.includes(human) ? skip : willDo)(`${owners?.includes(human) ? "propriétaire humain déjà présent" : "ajouter le propriétaire humain (API, sans hash)"} : ${human}`);
+    }
     info(c.dim("« Demander l'indexation » = manuel (pas d'API)."));
     return;
   }
@@ -397,6 +403,16 @@ export async function gscStep(ctx) {
   const submitted = await google.listSubmittedSitemaps(token, property).catch(() => new Set());
   if (submitted.has(sitemap)) skip(`sitemap déjà soumis : ${sitemap}`);
   else { await google.submitSitemap(token, property, sitemap); ok(`sitemap soumis : ${sitemap}`); }
+
+  // Visibilité humaine SANS UI/hash : ajoute GSC_HUMAN_OWNER (ex. contact@xklic.com)
+  // comme propriétaire délégué via l'API. Idempotent.
+  const human = process.env.GSC_HUMAN_OWNER?.trim();
+  if (human) {
+    const r = await google.addPropertyOwner(token, ctx.apex, human);
+    (r.added ? ok : skip)(`propriétaire humain ${human} ${r.added ? "ajouté" : "déjà présent"} → visible dans son dashboard GSC.`);
+  } else {
+    info(c.dim("(GSC_HUMAN_OWNER non défini → pas de propriétaire humain auto ; cf. --only gsc-human)"));
+  }
   info(c.dim("Rappel : « Demander l'indexation » = manuel (pas d'API)."));
 }
 

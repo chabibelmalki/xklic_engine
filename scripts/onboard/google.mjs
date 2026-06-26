@@ -149,6 +149,43 @@ export async function listSubmittedSitemaps(token, property) {
   return new Set((body?.sitemap ?? []).map((s) => s.path).filter(Boolean));
 }
 
+// --- propriétaires d'une propriété (visibilité humaine sans UI/hash) -------
+// L'API Site Verification expose la LISTE des propriétaires d'un webResource :
+//   GET /webResource/{id}      -> { id, site, owners:[email,…] }
+//   PUT /webResource/{id}      -> remplace owners (on ré-émet la liste augmentée)
+// {id} = "dns://<domaine>" URL-encodé (ex. dns%3A%2F%2Fadel-net.fr).
+// Le compte de service authentifié doit être propriétaire VÉRIFIÉ ; il peut alors
+// ajouter des propriétaires DÉLÉGUÉS (ex. contact@xklic.com) — qui voient dès lors
+// la propriété dans LEUR Search Console, sans toucher au DNS ni à l'UI.
+const webResourceId = (domain) => encodeURIComponent(`dns://${domain}`);
+
+/** @returns {Promise<{ id:string, site:any, owners:string[] } | null>} null si pas (encore) de webResource. */
+export async function getPropertyOwners(token, domain) {
+  const id = webResourceId(domain);
+  const { res, body } = await gapi(token, `${SV_API}/webResource/${id}`);
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`webResource.get ${domain} -> ${res.status} ${body?.error?.message ?? res.statusText}`);
+  return { id, site: body.site, owners: body.owners ?? [] };
+}
+
+/**
+ * Ajoute un propriétaire délégué (idempotent). Le compte de service doit déjà
+ * être propriétaire vérifié du domaine.
+ * @returns {Promise<{ added:boolean, owners:string[] }>}
+ */
+export async function addPropertyOwner(token, domain, email) {
+  const cur = await getPropertyOwners(token, domain);
+  if (!cur) throw new Error(`webResource ${domain} introuvable — le compte de service en est-il propriétaire vérifié ? (lancer l'étape gsc d'abord)`);
+  if (cur.owners.includes(email)) return { added: false, owners: cur.owners };
+  const { res, body } = await gapi(token, `${SV_API}/webResource/${cur.id}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ site: cur.site, owners: [...cur.owners, email] }),
+  });
+  if (!res.ok) throw new Error(`webResource.update ${domain} -> ${res.status} ${body?.error?.message ?? res.statusText}`);
+  return { added: true, owners: body.owners ?? [...cur.owners, email] };
+}
+
 /** Soumet un sitemap. */
 export async function submitSitemap(token, property, sitemapUrl) {
   const url = `${SC_API}/sites/${encodeURIComponent(property)}/sitemaps/${encodeURIComponent(sitemapUrl)}`;
