@@ -143,6 +143,7 @@
     "items": [
       { "type": "hero", "role": "En-tête d'accueil, conversion.", "variants": ["centre (texte centré)", "split (texte + image)", "carte (texte + carte de prix flottante)", "plein (image plein écran + overlay, texte clair — NÉCESSITE content.image)", "asymetrique (colonnes décalées 7/5, image inclinée)"] },
       { "type": "pageHero", "role": "En-tête de page intérieure (eyebrow + fil d'ariane + titre).", "variants": [] },
+      { "type": "contenu", "role": "Récit éditorial libre : titre + paragraphes multiples (chacun son <p>) + image optionnelle côte à côte. Idéal page « à propos / notre histoire ». Sans image => prose centrée. Champs : eyebrow, titre, titreAccent, paragraphes[], image, imagePosition (left|right), ctaPrimaire, ctaSecondaire.", "variants": [] },
       { "type": "services", "role": "Prestations.", "variants": ["cartes (icône/emoji + badge + indice de prix, défaut)", "images (vignette photo)", "grille-icones (lignes icône + texte, épuré)", "mosaique (grille asymétrique, 1re tuile mise en avant)", "index (liste éditoriale numérotée : grand numéro + nom + prix + flèche, filets fins, façon sommaire de magazine — sans icône ni image)"] },
       { "type": "etapes", "role": "« Comment ça se passe ».", "variants": ["cartes-numerotees (défaut)", "timeline-verticale (fil vertical)", "ligne-horizontale (nœuds alignés)"] },
       { "type": "simulateur", "role": "Calcul d'économie / crédit d'impôt interactif.", "variants": [] },

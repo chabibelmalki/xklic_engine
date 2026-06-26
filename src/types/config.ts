@@ -558,6 +558,26 @@ export interface PageHeroContent {
   ctaSecondaire?: CTA;
 }
 
+// --- contenu (texte éditorial libre, multi-paragraphes, + image optionnelle) ---
+/**
+ * Bloc de récit/éditorial : un titre, plusieurs paragraphes (chacun rendu dans
+ * son propre <p>, respiration préservée) et une image optionnelle côte à côte.
+ * Pensé pour les pages « à propos / notre histoire » de n'importe quel client.
+ */
+export interface ContenuContent {
+  eyebrow?: string;
+  titre?: string;
+  /** Fin du titre mise en valeur (dégradé) — comme le hero. */
+  titreAccent?: string;
+  /** Corps de texte : un élément = un paragraphe. */
+  paragraphes: string[];
+  image?: ImageRef;
+  /** Côté de l'image en desktop. Défaut : "right". */
+  imagePosition?: "left" | "right";
+  ctaPrimaire?: CTA;
+  ctaSecondaire?: CTA;
+}
+
 // --- devis-builder (panier de prix interactif) ---
 export interface DevisTier {
   label: string;
@@ -625,6 +645,7 @@ export interface ServiceQuoteBuilderContent {
 export interface BlockContentMap {
   hero: HeroContent;
   pageHero: PageHeroContent;
+  contenu: ContenuContent;
   services: ServicesContent;
   etapes: EtapesContent;
   simulateur: SimulateurContent;

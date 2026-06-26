@@ -55,7 +55,7 @@
     ]
   },
   "forms": {
-    "to": "hourriwarda@gmail.com",
+    "to": "Parfaitmenage26@gmail.com",
     "turnstile": true
   },
   "pages": [
@@ -92,6 +92,10 @@
               {
                 "icone": "PackageOpen",
                 "label": "Matériel adapté à chaque intervention"
+              },
+              {
+                "icone": "BadgePercent",
+                "label": "Crédit d'impôt de 50 %"
               }
             ],
             "ctaPrimaire": {
@@ -464,8 +468,22 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "À propos",
-            "titre": "Le ménage difficile, fait avec soin",
-            "intro": "Parfait Ménage 26 est spécialisée dans le ménage exigeant et la remise en état : logements très sales, fin de chantier, après-déménagement. Un travail fiable, rapide et minutieux, à Pierrelatte et alentour."
+            "titre": "Le soin du détail, le cœur en plus"
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Parfait Ménage 26 · Pierrelatte",
+            "image": {
+              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/parfait-menage-26/apropos.png",
+              "alt": "Une intervenante Parfait Ménage 26, tablier floqué, en plein entretien d'un salon à Pierrelatte"
+            },
+            "paragraphes": [
+              "Spécialisée dans les prestations de ménage et d'aide à domicile, Parfait Ménage 26 incarne à merveille la rigueur professionnelle, la confiance, mais aussi la chaleur humaine que l'on attend d'une entreprise de proximité. Fondée au printemps 2025 par madame Boukersanna, cette jeune société a déjà conquis de nombreux particuliers et professionnels dans un rayon de 30 km autour de Pierrelatte où elle est basée, grâce à la qualité de ses prestations et à son sens aigu du service.",
+              "Chez Parfait Ménage 26, chaque client est unique. Qu'il s'agisse de l'entretien d'une résidence principale, d'un gîte ou d'un logement Airbnb, de la remise en état après travaux ou d'un ménage courant, aide aux courses et aux travaux chez les personnes âgées, madame Boukersanna et sa petite équipe s'adaptent à chaque situation et anticipent chaque besoin avec une attention toute particulière. Ce sens du détail, allié à une vraie écoute, fait toute la différence, comme en témoignent les avis clients unanimement élogieux.",
+              "La petite entreprise a ainsi bâti sa réputation sur le bouche-à-oreille et sur des valeurs essentielles que sont la fiabilité, la discrétion et l'engagement. Derrière chaque intervention, il y a une même exigence : un travail soigné, des finitions impeccables, un intérieur rendu impeccable jusque dans les moindres recoins. Des prestations éligibles au crédit d'impôt de 50 %, permettant à chacun de bénéficier d'un service professionnel à coût allégé. Conjuguant confiance, efficacité et humanité, Parfait Ménage 26 porte décidément bien son nom."
+            ]
           }
         },
         {
@@ -554,6 +572,10 @@
                 "reponse": "Décrivez-nous votre besoin et l'état du logement par téléphone, WhatsApp ou via le formulaire : nous revenons vers vous rapidement avec une estimation gratuite et sans engagement."
               },
               {
+                "question": "Vos prestations donnent-elles droit au crédit d'impôt ?",
+                "reponse": "Oui. Nos prestations de ménage et d'entretien à domicile sont éligibles au crédit d'impôt de 50 % au titre des services à la personne : la moitié des sommes engagées vous est remboursée ou déduite de vos impôts. Concrètement, un service facturé 100 € ne vous coûte réellement que 50 €."
+              },
+              {
                 "question": "Fournissez-vous le matériel et les produits ?",
                 "reponse": "Oui, nous pouvons venir avec notre matériel et nos produits, adaptés au type d'intervention. Nous pouvons aussi utiliser les vôtres si vous le préférez."
               },
@@ -608,7 +630,7 @@
             "formMode": "demande-intervention",
             "telephone": "+33 6 68 99 04 80",
             "whatsapp": "+33 6 68 99 04 80",
-            "email": "hourriwarda@gmail.com",
+            "email": "Parfaitmenage26@gmail.com",
             "adresse": "5 boulevard Pierre et Marie Curie, 26700 Pierrelatte",
             "horaires": [
               {
@@ -677,7 +699,7 @@
             "formMode": "devis",
             "telephone": "+33 6 68 99 04 80",
             "whatsapp": "+33 6 68 99 04 80",
-            "email": "hourriwarda@gmail.com",
+            "email": "Parfaitmenage26@gmail.com",
             "adresse": "5 boulevard Pierre et Marie Curie, 26700 Pierrelatte",
             "horaires": [
               {

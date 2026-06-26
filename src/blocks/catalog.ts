@@ -2,6 +2,7 @@ import type { ComponentType } from "react";
 import type { BlockComponentProps } from "./types";
 import { Hero } from "./Hero";
 import { PageHero } from "./PageHero";
+import { Contenu } from "./Contenu";
 import { Services } from "./Services";
 import { Etapes } from "./Etapes";
 import { Simulateur } from "./Simulateur";
@@ -28,6 +29,7 @@ import { Unknown } from "./Unknown";
 const registry: Record<string, ComponentType<BlockComponentProps<any>>> = {
   hero: Hero,
   pageHero: PageHero,
+  contenu: Contenu,
   services: Services,
   etapes: Etapes,
   simulateur: Simulateur,
