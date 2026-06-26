@@ -409,7 +409,8 @@ export async function gscStep(ctx) {
   const human = process.env.GSC_HUMAN_OWNER?.trim();
   if (human) {
     const r = await google.addPropertyOwner(token, ctx.apex, human);
-    (r.added ? ok : skip)(`propriétaire humain ${human} ${r.added ? "ajouté" : "déjà présent"} → visible dans son dashboard GSC.`);
+    (r.added ? ok : skip)(`propriétaire humain ${human} ${r.added ? "ajouté" : "déjà présent"}.`);
+    info(c.dim(`→ pour le voir dans GSC (${human}) : « Ajouter propriété → Domaine → ${ctx.apex} » se valide INSTANTANÉMENT (déjà propriétaire, aucun DNS). Ce clic reste manuel (lié à ta session).`));
   } else {
     info(c.dim("(GSC_HUMAN_OWNER non défini → pas de propriétaire humain auto ; cf. --only gsc-human)"));
   }
