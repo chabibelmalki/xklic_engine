@@ -123,8 +123,3 @@ ne tourne pas sur Vercel).
 - **`README.md`** — architecture du moteur (rendu, blocs, thèmes, déploiement). **Vivant.**
 - **`NEWCLIENT.md`** — playbook de création de la config d'un site. **Vivant** (compléter
   par : données via `dossier:get`, domaine perso via `customDomains` + `onboard`).
-- `COMMANDAUTO.md`, `NEWCLIENTCHECKLIST.md`, `LOGO_GENERATOR.md` — **partiellement
-  obsolètes** : antérieurs aux scripts `onboard`/`upload-logo` et au renouvellement
-  SSL auto par Vercel. Les **commandes npm ci-dessus font foi**.
-- `FORMULAIRE.md` — schéma de l'**ancien** formulaire (flux Sheets/n8n) ; gardé pour
-  référence des données attendues, mais la collecte passe désormais par Baserow.
