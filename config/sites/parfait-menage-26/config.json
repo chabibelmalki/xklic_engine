@@ -136,7 +136,7 @@
               },
               {
                 "nom": "Airbnb et résidences secondaires",
-                "description": "Ménage de rotation entre deux séjours et entretien de résidences secondaires.",
+                "description": "Ménage de rotation entre deux séjours, gîtes et résidences secondaires entretenus avec soin.",
                 "href": "/nettoyage-location-airbnb",
                 "icone": "BedDouble"
               },
@@ -151,6 +151,13 @@
                 "description": "Entretien de votre intérieur à la fréquence qui vous convient, ou en intervention unique.",
                 "href": "/menage-domicile",
                 "icone": "CalendarCheck"
+              },
+              {
+                "nom": "Crédit d'impôt de 50 %",
+                "description": "Prestations de ménage et d'entretien à domicile éligibles au crédit d'impôt : la moitié de la dépense vous est remboursée ou déduite de vos impôts.",
+                "href": "/credit-impot",
+                "icone": "BadgePercent",
+                "badge": "−50 %"
               }
             ],
             "cta": {
@@ -385,7 +392,7 @@
               },
               {
                 "nom": "Airbnb et résidences secondaires",
-                "description": "Ménage de rotation entre deux séjours et entretien de résidences secondaires.",
+                "description": "Ménage de rotation entre deux séjours, gîtes et résidences secondaires entretenus avec soin.",
                 "href": "/nettoyage-location-airbnb",
                 "icone": "BedDouble"
               },
@@ -400,6 +407,13 @@
                 "description": "Entretien de votre intérieur à la fréquence qui vous convient, ou en intervention unique.",
                 "href": "/menage-domicile",
                 "icone": "CalendarCheck"
+              },
+              {
+                "nom": "Crédit d'impôt de 50 %",
+                "description": "Prestations de ménage et d'entretien à domicile éligibles au crédit d'impôt : la moitié de la dépense vous est remboursée ou déduite de vos impôts.",
+                "href": "/credit-impot",
+                "icone": "BadgePercent",
+                "badge": "−50 %"
               }
             ]
           }
@@ -643,7 +657,7 @@
               "Logement très sale / remise en état",
               "Nettoyage après travaux ou chantier",
               "Remise en état après location",
-              "Airbnb / résidence secondaire",
+              "Airbnb, gîte / résidence secondaire",
               "Ménage avant / après déménagement",
               "Entretien ponctuel ou régulier",
               "Autre / je ne sais pas"
@@ -711,7 +725,7 @@
               "Logement très sale / remise en état",
               "Nettoyage après travaux ou chantier",
               "Remise en état après location",
-              "Airbnb / résidence secondaire",
+              "Airbnb, gîte / résidence secondaire",
               "Ménage avant / après déménagement",
               "Entretien ponctuel ou régulier",
               "Autre / je ne sais pas"
@@ -1374,31 +1388,32 @@
     },
     {
       "slug": "nettoyage-location-airbnb",
-      "label": "Entretien locatif & Airbnb",
+      "label": "Entretien locatif, Airbnb & Gîtes",
       "navHidden": true,
       "meta": {
-        "title": "Entretien locatif & ménage Airbnb à Pierrelatte",
-        "description": "Ménage de rotation Airbnb, remise en état entre deux locations et résidences secondaires à Pierrelatte et dans un rayon de 40 km. Intervention fiable et rapide. Devis gratuit.",
+        "title": "Entretien locatif, ménage Airbnb & gîtes à Pierrelatte",
+        "description": "Ménage de rotation Airbnb et gîtes, remise en état entre deux locations et résidences secondaires à Pierrelatte et dans un rayon de 40 km. Intervention fiable et rapide. Devis gratuit.",
         "keywords": [
           "ménage Airbnb Pierrelatte",
           "entretien locatif Pierrelatte",
+          "ménage gîte Drôme",
           "ménage location saisonnière Drôme",
           "nettoyage entre deux locations",
           "ménage résidence secondaire"
         ]
       },
       "service": {
-        "name": "Entretien locatif & Airbnb",
-        "description": "Ménage de rotation Airbnb, remise en état entre deux locations et résidences secondaires à Pierrelatte.",
+        "name": "Entretien locatif, Airbnb & gîtes",
+        "description": "Ménage de rotation Airbnb et gîtes, remise en état entre deux locations et résidences secondaires à Pierrelatte.",
         "serviceType": "Ménage de location saisonnière"
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Locations, Airbnb & résidences secondaires",
-            "titre": "Entretien locatif & Airbnb à Pierrelatte",
-            "intro": "Pour vos locations courte durée, vos appartements à remettre en état entre deux locataires et vos résidences secondaires, Parfait Ménage 26 assure un ménage de rotation fiable, rapide et soigné, prêt pour la prochaine arrivée.",
+            "eyebrow": "Locations, Airbnb, gîtes & résidences secondaires",
+            "titre": "Entretien locatif, Airbnb & Gîtes",
+            "intro": "Pour vos locations courte durée, vos appartements à remettre en état entre deux locataires, vos résidences secondaires et vos gîtes, Parfait Ménage 26 assure un ménage de rotation fiable, rapide et soigné, prêt pour la prochaine arrivée.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1409,7 +1424,7 @@
                 "href": "/services"
               },
               {
-                "label": "Entretien locatif & Airbnb"
+                "label": "Entretien locatif, Airbnb & Gîtes"
               }
             ],
             "ctaPrimaire": {
@@ -1445,8 +1460,8 @@
               },
               {
                 "icone": "check-circle",
-                "nom": "Locations & secondaires",
-                "description": "Airbnb, locations saisonnières et résidences secondaires entretenues avec soin."
+                "nom": "Locations, gîtes & secondaires",
+                "description": "Airbnb, gîtes, locations saisonnières et résidences secondaires entretenus avec soin."
               }
             ]
           }
@@ -1530,6 +1545,156 @@
           "variant": "encadre",
           "content": {
             "titre": "Une location à entretenir à Pierrelatte ?",
+            "sousTitre": "Devis gratuit et sans engagement. Réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 6 68 99 04 80",
+              "href": "tel:+33668990480"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "credit-impot",
+      "label": "Crédit d'impôt 50 %",
+      "navHidden": true,
+      "meta": {
+        "title": "Crédit d'impôt de 50 % — ménage à domicile à Pierrelatte",
+        "description": "Les prestations de ménage et d'entretien à domicile de Parfait Ménage 26 sont éligibles au crédit d'impôt de 50 % au titre des services à la personne. Un service facturé 100 € ne vous coûte réellement que 50 €.",
+        "keywords": [
+          "crédit d'impôt ménage Pierrelatte",
+          "services à la personne Drôme",
+          "ménage à domicile crédit d'impôt 50%",
+          "réduction d'impôt ménage Pierrelatte"
+        ]
+      },
+      "service": {
+        "name": "Crédit d'impôt de 50 %",
+        "description": "Prestations de ménage et d'entretien à domicile éligibles au crédit d'impôt de 50 % au titre des services à la personne, à Pierrelatte et alentour.",
+        "serviceType": "Services à la personne"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Services à la personne",
+            "titre": "Crédit d'impôt de 50 %",
+            "intro": "Les prestations de ménage et d'entretien réalisées à votre domicile sont éligibles au crédit d'impôt de 50 % au titre des services à la personne. Concrètement, un service facturé 100 € ne vous coûte réellement que 50 €.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Crédit d'impôt 50 %"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 6 68 99 04 80",
+              "href": "tel:+33668990480"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Comment ça marche",
+            "items": [
+              {
+                "icone": "BadgePercent",
+                "nom": "50 % remboursés",
+                "description": "La moitié des sommes versées vous est remboursée ou déduite de vos impôts."
+              },
+              {
+                "icone": "House",
+                "nom": "À votre domicile",
+                "description": "Crédit d'impôt sur les prestations de ménage et d'entretien réalisées chez vous."
+              },
+              {
+                "icone": "ShieldCheck",
+                "nom": "Services à la personne",
+                "description": "Parfait Ménage 26 intervient au titre des services à la personne, ce qui ouvre droit à l'avantage fiscal."
+              },
+              {
+                "icone": "FileText",
+                "nom": "Justificatif fourni",
+                "description": "Vous recevez une attestation annuelle à joindre à votre déclaration de revenus."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "timeline-verticale",
+          "content": {
+            "titre": "En profiter, étape par étape",
+            "items": [
+              {
+                "icone": "ClipboardList",
+                "titre": "Le devis",
+                "texte": "Nous établissons un devis gratuit et sans engagement pour votre ménage à domicile."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "L'intervention",
+                "texte": "Nous réalisons la prestation chez vous, avec soin et le matériel adapté."
+              },
+              {
+                "icone": "FileText",
+                "titre": "L'attestation",
+                "texte": "En début d'année, vous recevez une attestation fiscale récapitulant les sommes versées."
+              },
+              {
+                "icone": "BadgePercent",
+                "titre": "Le crédit d'impôt",
+                "texte": "50 % du montant vous est restitué par l'administration fiscale, dans la limite des plafonds en vigueur."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Crédit d'impôt : vos questions",
+            "items": [
+              {
+                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
+                "reponse": "Pour les prestations de ménage et d'entretien réalisées à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées, au titre des services à la personne. Un service facturé 100 € ne vous coûte donc réellement que 50 €."
+              },
+              {
+                "question": "Quelles prestations sont éligibles ?",
+                "reponse": "Les prestations de ménage et d'entretien réalisées au domicile d'un particulier, en résidence principale ou secondaire. Les interventions de remise en état après location ou en fin de chantier à usage professionnel sont, elles, facturées sur devis."
+              },
+              {
+                "question": "Que dois-je faire pour en bénéficier ?",
+                "reponse": "Rien de particulier : nous vous remettons en début d'année une attestation récapitulant les sommes versées, à reporter sur votre déclaration de revenus. Le crédit d'impôt est ensuite appliqué automatiquement, même si vous n'êtes pas imposable."
+              },
+              {
+                "question": "Y a-t-il un plafond ?",
+                "reponse": "Oui. Le crédit d'impôt s'applique dans la limite des plafonds annuels fixés par l'administration fiscale pour les services à la personne. Nous vous renseignons selon votre situation."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Profitez du crédit d'impôt sur votre ménage à domicile",
             "sousTitre": "Devis gratuit et sans engagement. Réponse rapide.",
             "ctaPrimaire": {
               "label": "Demander un devis",

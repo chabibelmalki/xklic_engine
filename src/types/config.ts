@@ -236,6 +236,12 @@ export interface HeroContent {
   eyebrow?: string;
   accroche?: string;
   image?: ImageRef;
+  /**
+   * Ratio du cadre image pour les variants "split" / "asymetrique" :
+   * "3/4" | "4/5" | "1/1" | "4/3" | "3/2" | "16/10". Défaut "4/5" (portrait).
+   * Mettre "3/2" ou "16/10" pour une photo PAYSAGE affichée sans recadrage agressif.
+   */
+  imageRatio?: string;
   /** Carte de prix flottante (variant "carte"). */
   card?: HeroCard;
   /** Badges de confiance avec icônes (sous les CTA). */
@@ -516,7 +522,8 @@ export interface Horaire {
  * Mode du formulaire de contact.
  * - `simple`               : nom, email, message.
  * - `demande-intervention` : nom, téléphone, service, zone/adresse, date, message.
- * - `devis` / `contact`    : modes historiques (rétro-compat, POST /api/devis).
+ * - `devis` / `contact`    : modes historiques (rétro-compat). Tous les modes
+ *   POSTent vers /api/contact.
  */
 export type ContactFormMode = "simple" | "demande-intervention" | "devis" | "contact";
 
@@ -574,6 +581,12 @@ export interface ContenuContent {
   image?: ImageRef;
   /** Côté de l'image en desktop. Défaut : "right". */
   imagePosition?: "left" | "right";
+  /**
+   * Ratio du cadre image : "3/4" | "4/5" | "1/1" | "4/3" | "16/10".
+   * Défaut "4/5" (portrait). Mettre "4/3" ou "16/10" pour une photo PAYSAGE
+   * affichée sans recadrage agressif.
+   */
+  imageRatio?: string;
   ctaPrimaire?: CTA;
   ctaSecondaire?: CTA;
 }

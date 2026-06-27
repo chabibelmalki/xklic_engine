@@ -12,10 +12,32 @@ import { resolveHeroSecondary } from "@/lib/hero-cta";
 import { resolveSocials } from "@/lib/social";
 import { SocialLinks } from "@/components/layout/SocialLinks";
 
+/** Classe d'aspect-ratio du cadre image (variants "split"/"asymetrique"). Défaut "4/5". */
+function heroRatioClass(ratio?: string) {
+  switch (ratio) {
+    case "3/4":
+      return "aspect-[3/4]";
+    case "1/1":
+      return "aspect-square";
+    case "4/3":
+      return "aspect-[4/3]";
+    case "3/2":
+      return "aspect-[3/2]";
+    case "16/10":
+      return "aspect-[16/10]";
+    case "4/5":
+      return "aspect-[4/5]";
+    default:
+      return "aspect-[4/5]";
+  }
+}
+
 /**
  * Hero. variant : "carte" (texte + carte de prix flottante) · "split" (texte +
  * image) · "centre" (texte centré) · "plein" (image plein écran + overlay,
- * texte clair) · "asymetrique" (colonnes décalées 7/5, image inclinée). Le H1
+ * texte clair) · "fondu" (photo plein cadre à droite, fondu dégradé vers un
+ * panneau de texte net à gauche) · "asymetrique" (colonnes décalées 7/5, image
+ * inclinée). Le H1
  * porte la ville (SEO local) : si le titre ne la contient pas et qu'aucun accent
  * n'est fourni, on ajoute " à <ville>".
  */
@@ -125,6 +147,38 @@ export function Hero({ block, config, basePath = "", strings }: BlockComponentPr
     </div>
   );
 
+  // ---- variant "fondu" (photo plein cadre calée à droite, fondu vers la gauche) ----
+  if (variant === "fondu" && c.image) {
+    return (
+      <header className="hero-mesh relative isolate overflow-hidden">
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src={c.image.url}
+            alt={c.image.alt ?? c.titre}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-[78%_center]"
+          />
+          {/* Fondu desktop : panneau net à gauche → photo révélée à droite */}
+          <div className="absolute inset-0 hidden bg-gradient-to-r from-surface from-30% via-surface/80 via-[58%] to-transparent lg:block" />
+          {/* Fondu mobile : texte lisible en haut → photo en bas */}
+          <div className="absolute inset-0 bg-gradient-to-b from-surface from-35% via-surface/85 to-surface/25 lg:hidden" />
+          {/* Légère teinte de marque pour la profondeur */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-brand-50/40 via-transparent to-transparent" />
+        </div>
+        {/* Halo de marque décoratif */}
+        <div
+          aria-hidden
+          className="pack-halo absolute -right-24 top-1/2 -z-10 hidden size-[34rem] -translate-y-1/2 rounded-full bg-brand-200/30 blur-3xl lg:block"
+        />
+        <Container className="flex min-h-[34rem] items-center py-20 sm:min-h-[38rem] lg:min-h-[42rem] lg:py-28">
+          <div className="max-w-xl">{textColumn}</div>
+        </Container>
+      </header>
+    );
+  }
+
   // ---- variant "centre" ----
   if (variant === "centre") {
     return (
@@ -192,7 +246,7 @@ export function Hero({ block, config, basePath = "", strings }: BlockComponentPr
           <Reveal delay={0.15}>
             <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="pack-halo absolute -inset-4 -z-10 rounded-[2.5rem] bg-brand-200/40 blur-2xl" />
-              <div className="pack-image relative aspect-[4/5] overflow-hidden border border-white/60">
+              <div className={`pack-image relative ${heroRatioClass(c.imageRatio)} overflow-hidden border border-white/60`}>
                 <Image
                   src={c.image.url}
                   alt={c.image.alt ?? c.titre}
@@ -286,7 +340,7 @@ export function Hero({ block, config, basePath = "", strings }: BlockComponentPr
               <Reveal delay={0.15}>
                 {c.image ? (
                   <div className="relative mx-auto max-w-sm rotate-2 lg:max-w-none">
-                    <div className="pack-image relative aspect-[4/5] overflow-hidden border border-white/60">
+                    <div className={`pack-image relative ${heroRatioClass(c.imageRatio)} overflow-hidden border border-white/60`}>
                       <Image
                         src={c.image.url}
                         alt={c.image.alt ?? c.titre}

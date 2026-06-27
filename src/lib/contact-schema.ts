@@ -46,6 +46,8 @@ export const contactSchema = z
     site: z.string().optional(),
     siteSlug: z.string().optional(),
     pageUrl: z.string().optional(),
+    /** UUID de session anonyme (non-PII) : dédup + lien vers le funnel `events`. */
+    session: z.string().max(100).optional(),
     // Devis-builder :
     items: z.array(devisItemSchema).optional(),
     estimateBilled: z.number().optional(),

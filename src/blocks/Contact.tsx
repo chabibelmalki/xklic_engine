@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { ContactForm } from "@/components/ContactForm";
 import { telHref, waHref, withBase } from "@/lib/utils";
+import { resolveTurnstileSiteKey } from "@/lib/runtime";
 
 /**
  * Contact. Coordonnées cliquables (tel/mail/WhatsApp) + horaires + carte, et —
@@ -29,9 +30,7 @@ export function Contact({
   const tone = toneForIndex(index);
   const mode: ContactMode = (c.formMode ?? c.formType ?? "simple") as ContactMode;
   const variant = block.variant ?? "split-form-carte";
-  const turnstileSiteKey = config.forms?.turnstile
-    ? process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
-    : undefined;
+  const turnstileSiteKey = resolveTurnstileSiteKey(config);
 
   // Lien de confidentialité résolu par rapport au basePath (preview vs prod).
   const rawConf = c.confidentialiteHref ?? "/confidentialite";

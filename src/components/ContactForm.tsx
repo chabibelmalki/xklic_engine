@@ -7,6 +7,7 @@ import { CheckCircle2, Loader2, Phone, MessageCircle } from "lucide-react";
 import { contactSchema, type ContactInput, type ContactMode } from "@/lib/contact-schema";
 import type { UIStrings } from "@/i18n/ui";
 import { cn, telHref, waHref } from "@/lib/utils";
+import { getSessionId } from "@/lib/session";
 import { Button } from "@/components/ui/Button";
 
 const labelClass = "block text-sm font-medium text-ink-soft";
@@ -117,6 +118,7 @@ export function ContactForm({
         body: JSON.stringify({
           ...values,
           pageUrl: typeof window !== "undefined" ? window.location.href : undefined,
+          session: getSessionId() || undefined,
           turnstileToken: turnstileToken || undefined,
         }),
       });

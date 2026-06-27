@@ -8,6 +8,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { FloatingActions } from "@/components/layout/FloatingActions";
+import { TrackClicks } from "@/components/TrackClicks";
 import { getHomePage, findBlock, type ResolvedPage } from "@/lib/pages";
 import { localeDir, htmlLang } from "@/lib/i18n";
 import { ui } from "@/i18n/ui";
@@ -110,6 +111,8 @@ export function SiteRenderer({
         entreprise={config.entreprise.nom}
         strings={t.floating}
       />
+      {/* Instrumentation Tier 1 : un seul listener délégué pour tout le site. */}
+      <TrackClicks siteSlug={config.slug} />
     </div>
   );
 }

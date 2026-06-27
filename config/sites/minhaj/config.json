@@ -1,0 +1,222 @@
+{
+  "slug": "minhaj",
+  "theme": "pro-bleu-nuit",
+  "stylePack": "pop-moderne",
+  "branding": {
+    "logoAlt": "Minhaj — Conseil & solutions informatiques",
+    "tagline": "Conseil & solutions informatiques · Osny"
+  },
+  "entreprise": {
+    "nom": "Minhaj",
+    "statut": "SAS",
+    "siret": "10630394400016",
+    "ape": "62.02A",
+    "apeLabel": "Conseil en systèmes et logiciels informatiques",
+    "rcs": "Pontoise",
+    "tva": {
+      "regime": "reel",
+      "numero": "FR94106303944"
+    },
+    "dirigeant": "Chabib El Malki",
+    "siege": "17 rue de Moscou, 95520 Osny"
+  },
+  "seo": {
+    "schemaType": "ProfessionalService",
+    "ville": "Osny"
+  },
+  "geo": {
+    "lat": 49.0707,
+    "lng": 2.0662
+  },
+  "meta": {
+    "title": "Minhaj — Conseil & solutions informatiques à Osny (Île-de-France)",
+    "description": "Minhaj accompagne les entreprises : conseil IT, intelligence artificielle, vente de solutions logicielles et formation à la conduite du changement. À Osny, en Île-de-France et à distance.",
+    "keywords": [
+      "conseil informatique Osny",
+      "intelligence artificielle entreprise",
+      "solutions logicielles PME",
+      "conduite du changement",
+      "conseil systèmes d'information Île-de-France"
+    ]
+  },
+  "forms": {
+    "to": "chabib.elmalki@gmail.com",
+    "turnstile": true
+  },
+  "blocks": [
+    {
+      "type": "hero",
+      "variant": "centre",
+      "content": {
+        "eyebrow": "Conseil & solutions informatiques",
+        "titre": "Vos systèmes d'information,",
+        "titreAccent": "structurés et augmentés par l'IA",
+        "accroche": "Minhaj accompagne les entreprises dans la structuration de leur système d'information, l'intégration de l'intelligence artificielle, le choix de leurs logiciels et la montée en compétences des équipes — à Osny, en Île-de-France et à distance.",
+        "trust": [
+          {
+            "icone": "Cpu",
+            "label": "Solutions d'IA sur mesure"
+          },
+          {
+            "icone": "Network",
+            "label": "Conseil & architecture SI"
+          },
+          {
+            "icone": "GraduationCap",
+            "label": "Formation & conduite du changement"
+          },
+          {
+            "icone": "MapPin",
+            "label": "Osny · Île-de-France"
+          }
+        ],
+        "ctaPrimaire": {
+          "label": "Nous contacter",
+          "href": "#contact"
+        },
+        "ctaSecondaire": {
+          "label": "Nos expertises",
+          "href": "#services"
+        }
+      }
+    },
+    {
+      "type": "services",
+      "variant": "grille-icones",
+      "content": {
+        "eyebrow": "Nos expertises",
+        "titre": "Quatre façons de faire avancer votre entreprise",
+        "intro": "Du cadrage stratégique à la formation des équipes, Minhaj couvre toute la chaîne de votre transformation numérique.",
+        "items": [
+          {
+            "icone": "Network",
+            "nom": "Conseil IT",
+            "description": "Accompagnement stratégique et technique pour structurer vos systèmes d'information."
+          },
+          {
+            "icone": "BrainCircuit",
+            "nom": "Intelligence artificielle",
+            "description": "Conception et intégration de solutions d'IA adaptées à vos métiers."
+          },
+          {
+            "icone": "ShoppingBag",
+            "nom": "Vente de solutions",
+            "description": "Sélection et déploiement des outils logiciels qui correspondent à vos besoins."
+          },
+          {
+            "icone": "GraduationCap",
+            "nom": "Formation",
+            "description": "Conduite du changement et montée en compétences sur les nouvelles technologies."
+          }
+        ]
+      }
+    },
+    {
+      "type": "services",
+      "variant": "cartes",
+      "content": {
+        "eyebrow": "Nos produits",
+        "titre": "Des outils que nous concevons",
+        "intro": "Au-delà du conseil, Minhaj édite ses propres solutions.",
+        "items": [
+          {
+            "icone": "Smartphone",
+            "nom": "hadn",
+            "description": "Application mobile de facturation et d'encaissement pour les indépendants et les PME."
+          },
+          {
+            "icone": "LayoutTemplate",
+            "nom": "xklic",
+            "description": "Création et gestion de sites web professionnels : hébergement, référencement et publicité."
+          }
+        ]
+      }
+    },
+    {
+      "type": "etapes",
+      "variant": "timeline-verticale",
+      "content": {
+        "eyebrow": "Notre approche",
+        "titre": "Une démarche claire, de l'idée à l'adoption",
+        "items": [
+          {
+            "icone": "MessageSquare",
+            "titre": "Échange",
+            "texte": "On comprend votre contexte, vos contraintes et vos objectifs."
+          },
+          {
+            "icone": "Search",
+            "titre": "Diagnostic",
+            "texte": "On analyse l'existant et on propose une feuille de route claire."
+          },
+          {
+            "icone": "Rocket",
+            "titre": "Mise en œuvre",
+            "texte": "On déploie les solutions et on intègre l'IA là où elle crée de la valeur."
+          },
+          {
+            "icone": "GraduationCap",
+            "titre": "Accompagnement",
+            "texte": "On forme vos équipes et on assure la conduite du changement."
+          }
+        ]
+      }
+    },
+    {
+      "type": "contenu",
+      "content": {
+        "eyebrow": "À propos",
+        "titre": "Minhaj, partenaire de votre transformation numérique",
+        "paragraphes": [
+          "Minhaj est une société de conseil et de solutions informatiques basée à Osny, dans le Val-d'Oise. Nous concevons des solutions d'intelligence artificielle, assurons la vente de solutions logicielles et accompagnons la conduite du changement.",
+          "Notre conviction : la technologie doit s'adapter à vos métiers, pas l'inverse. Nous la rendons utile, accessible et durable pour vos équipes."
+        ]
+      }
+    },
+    {
+      "type": "contact",
+      "variant": "split-form-carte",
+      "content": {
+        "titre": "Parlons de votre projet",
+        "intro": "Une question, un besoin précis ? Décrivez-nous votre projet : nous revenons vers vous rapidement.",
+        "form": true,
+        "formMode": "contact",
+        "telephone": "+33 6 98 99 88 69",
+        "whatsapp": "+33 6 98 99 88 69",
+        "email": "chabib.elmalki@gmail.com",
+        "adresse": "17 rue de Moscou, 95520 Osny",
+        "horaires": [
+          {
+            "jour": "Lun – Ven",
+            "heures": "9h – 18h"
+          }
+        ],
+        "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=2.02%2C49.05%2C2.11%2C49.09&layer=mapnik&marker=49.0707%2C2.0662",
+        "services": [
+          "Conseil IT",
+          "Intelligence artificielle",
+          "Vente de solutions logicielles",
+          "Formation / conduite du changement",
+          "Autre"
+        ],
+        "confidentialiteHref": "/confidentialite"
+      }
+    },
+    {
+      "type": "cta",
+      "variant": "bande",
+      "content": {
+        "titre": "Prêt à passer à l'étape suivante ?",
+        "sousTitre": "Discutons de votre projet IT ou IA — réponse rapide, sans engagement.",
+        "ctaPrimaire": {
+          "label": "Nous contacter",
+          "href": "#contact"
+        },
+        "ctaSecondaire": {
+          "label": "06 98 99 88 69",
+          "href": "tel:+33698998869"
+        }
+      }
+    }
+  ]
+}

@@ -22,6 +22,8 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { QuoteForm } from "@/components/ui/QuoteForm";
 import { cn, formatEUR, telHref, waHref } from "@/lib/utils";
+import { getSessionId } from "@/lib/session";
+import { resolveTurnstileSiteKey } from "@/lib/runtime";
 
 interface SelLine {
   id: string;
@@ -159,9 +161,7 @@ export function Boutique({
   const confidentialiteHref = rawConf.startsWith("http") ? rawConf : `${basePath}${rawConf}`;
 
   // Anti-robot Turnstile activé par site via config.forms.turnstile.
-  const turnstileSiteKey = config.forms?.turnstile
-    ? process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
-    : undefined;
+  const turnstileSiteKey = resolveTurnstileSiteKey(config);
 
   function addItem(ci: number, item: ProduitItem) {
     const id = itemId(ci, item);
@@ -203,10 +203,10 @@ export function Boutique({
 
   const itemCount = selection.reduce((n, l) => n + l.qty, 0);
 
-  // Si la sélection se vide à l'étape 2, on revient au catalogue.
-  useEffect(() => {
-    if (step === 2 && selection.length === 0) setStep(1);
-  }, [step, selection.length]);
+  // Si la sélection se vide à l'étape 2, on retombe au catalogue. Ajusté PENDANT
+  // le rendu (React ré-évalue immédiatement, sans commit) plutôt que via un effet
+  // — même résultat, sans le re-render en cascade signalé par set-state-in-effect.
+  if (step === 2 && selection.length === 0) setStep(1);
 
   // À l'arrivée sur l'étape 2, on positionne la vue sur les coordonnées.
   useEffect(() => {
@@ -253,6 +253,7 @@ export function Boutique({
             surDevis: l.surDevis,
           })),
           pageUrl: typeof window !== "undefined" ? window.location.href : undefined,
+          session: getSessionId() || undefined,
         }),
       });
       if (!res.ok) {

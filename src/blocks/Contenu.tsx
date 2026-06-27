@@ -6,6 +6,24 @@ import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { withBase } from "@/lib/utils";
 
+/** Classe d'aspect-ratio du cadre image. Défaut "4/5" (portrait). */
+function ratioClass(ratio?: string) {
+  switch (ratio) {
+    case "3/4":
+      return "aspect-[3/4]";
+    case "1/1":
+      return "aspect-square";
+    case "4/3":
+      return "aspect-[4/3]";
+    case "16/10":
+      return "aspect-[16/10]";
+    case "4/5":
+      return "aspect-[4/5]";
+    default:
+      return "aspect-[4/5]";
+  }
+}
+
 /**
  * Bloc "contenu" : récit éditorial (titre + paragraphes) avec une image
  * optionnelle côte à côte. Multi-paragraphes (chaque entrée = un <p>), pensé
@@ -65,7 +83,7 @@ export function Contenu({ block, index, basePath }: BlockComponentProps<ContenuC
     <Reveal delay={0.12}>
       <div className="relative mx-auto max-w-md lg:max-w-none">
         <div className="pack-halo absolute -inset-4 -z-10 rounded-[2.5rem] bg-brand-200/40 blur-2xl" />
-        <div className="pack-image relative aspect-[4/5] overflow-hidden border border-white/60">
+        <div className={`pack-image relative ${ratioClass(c.imageRatio)} overflow-hidden border border-white/60`}>
           <Image
             src={c.image.url}
             alt={c.image.alt ?? c.titre ?? ""}

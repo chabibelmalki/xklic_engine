@@ -62,8 +62,12 @@
       "blocks": [
         {
           "type": "hero",
-          "variant": "centre",
+          "variant": "fondu",
           "content": {
+            "image": {
+              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/adelnet/accueil.png",
+              "alt": "Intervenante Adelnet en tenue, entretien d'un appartement lumineux à Saint-Étienne"
+            },
             "eyebrow": "Aide ménagère à Saint-Étienne & Lyon",
             "titre": "Reprenez votre temps,",
             "titreAccent": "on s'occupe du ménage",
@@ -374,6 +378,27 @@
             "ctaSecondaire": {
               "label": "Voir les tarifs",
               "href": "/tarifs"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Une équipe à votre service",
+            "titre": "Du ménage soigné, par des intervenantes formées",
+            "imagePosition": "left",
+            "imageRatio": "4/3",
+            "image": {
+              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/adelnet/services-menage.png",
+              "alt": "Intervenante Adelnet en tenue nettoyant un appartement à Saint-Étienne"
+            },
+            "paragraphes": [
+              "Du ménage régulier au repassage, du grand nettoyage à l'entretien de vos locaux, Adelnet couvre tout l'entretien de votre quotidien à Saint-Étienne, Lyon et leurs environs.",
+              "Une intervenante attitrée, formée et de confiance, intervient dans le respect de vos habitudes — avec, pour les prestations à domicile, le crédit d'impôt de 50 %."
+            ],
+            "ctaPrimaire": {
+              "label": "Composer mon devis",
+              "href": "/devis"
             }
           }
         },
@@ -1638,6 +1663,27 @@
             "ctaSecondaire": {
               "label": "07 60 15 38 53",
               "href": "tel:+33760153853"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Propreté professionnelle",
+            "titre": "Des bureaux impeccables, sans gêner votre activité",
+            "imagePosition": "right",
+            "imageRatio": "4/3",
+            "image": {
+              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/adelnet/nettoyage-bureaux.png",
+              "alt": "Équipe Adelnet nettoyant un open space de bureaux"
+            },
+            "paragraphes": [
+              "Adelnet entretient vos bureaux, cabinets et commerces à Saint-Étienne et Lyon : sols, sanitaires, postes de travail et espaces communs, sur le créneau qui dérange le moins votre activité — tôt le matin, en soirée ou le week-end.",
+              "Un passage régulier ou ponctuel, réalisé avec sérieux et discrétion par une équipe attitrée."
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
             }
           }
         },
