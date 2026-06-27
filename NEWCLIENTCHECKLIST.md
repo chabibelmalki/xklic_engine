@@ -1,159 +1,98 @@
 # Onboarding domaine custom — Xklic Engine
 
-Procédure complète pour mettre un client sur son propre domaine (`.fr`) au lieu de `*.xklic.com`.
-Validé en prod sur **sanadclean.fr** (premier client).
+Mettre un client sur son propre domaine (`.fr`) au lieu de `*.xklic.com`.
+Validé en prod sur **sanadclean.fr** (premier client), puis automatisé.
+
+## TL;DR — chemin automatisé
+
+```bash
+npm run onboard -- --slug <slug> --domain <domaine>.fr --dry-run   # plan, ne touche à rien
+npm run onboard -- --slug <slug> --domain <domaine>.fr --apply     # exécute
+```
+
+Le CLI `scripts/onboard/` orchestre les étapes dans l'ordre
+`vercel → dns → ssl → config → manifest → deploy → verify → gsc → turnstile`.
+Chaque étape est **idempotente** (« déjà fait ? ») et, si un secret manque ou
+qu'une action humaine est requise (ex. TXT GSC), elle **s'arrête en imprimant les
+valeurs exactes à saisir** — jamais de bricolage silencieux. Lancer en `--dry-run`
+d'abord.
+
+## Prérequis (manuels, avant le CLI)
+
+1. **Achat domaine OVH** — paiement + titulaire `.fr`. Idéalement titulaire = client
+   (compromis actuel : acheté sous compte xklic, transférable plus tard). ⚠️ **Activer
+   le renouvellement auto** (sinon le site meurt à l'échéance). Attendre le statut
+   **« actif »** avant de lancer le CLI.
+2. **Secrets dans `.env.local`** : `VERCEL_TOKEN`/`VERCEL_PROJECT_ID`/`VERCEL_TEAM_ID`,
+   `OVH_APP_KEY`/`OVH_APP_SECRET`/`OVH_CONSUMER_KEY`/`OVH_ENDPOINT`,
+   `CLOUDFLARE_API_TOKEN`/`CLOUDFLARE_ACCOUNT_ID`, `GSC_SERVICE_ACCOUNT_KEY`/`GSC_PROPERTY`/`GSC_HUMAN_OWNER`.
+
+## Ce que le CLI automatise
+
+| Étape | Action |
+|-------|--------|
+| `vercel` | ajoute apex + `www` au projet (sans redirect) |
+| `dns` | pose `A @` + `CNAME www` chez OVH, supprime le parking |
+| `ssl` | attend le provisioning du certificat Vercel |
+| `config` | patch `config.json` (`customDomains`, apex en premier) |
+| `manifest` | régénère `src/lib/sites-manifest.ts` |
+| `deploy` | `npm run deploy` |
+| `verify` | joue les assertions curl (voir annexe) |
+| `gsc` | crée la propriété **Domaine** ; le TXT de vérification reste **human-in-the-loop** |
+| `turnstile` | ajoute le hostname au widget Cloudflare |
+
+## Étapes restant (semi-)manuelles
+
+- **GSC — vérification TXT** : ajouter le `google-site-verification=…` en `TXT` sur
+  `@` chez OVH (⚠️ **ne pas écraser le SPF** — plusieurs TXT cohabitent), puis valider
+  dans Search Console (si échec : propagation, attendre 15-30 min).
+- **GSC — sitemap** : soumettre `sitemap.xml` depuis Search Console.
+- **Contenu** : remplacer les faux témoignages, lancer la récolte d'avis Google.
 
 ---
 
-## Checklist complète
+## Annexe — référence DNS & vérifications
 
-| # | Étape | Automatisable ? |
-|---|-------|-----------------|
-| 1 | **Achat domaine OVH** | ❌ Manuel (paiement + titulaire `.fr`) |
-| 2 | **Config DNS OVH** (A apex + CNAME www, suppression parking/AAAA/TXT) | ✅ API OVH |
-| 3 | **Ajout domaine dans Vercel** (apex + www, projet `engine`, sans redirect) | ✅ Vercel Domains API |
-| 4 | **Récupération records DNS Vercel** → reportés dans OVH | ✅ (sortie API Vercel) |
-| 5 | **Attente SSL Vercel** (provisioning auto) | ✅ Auto (poll jusqu'à "valid") |
-| 6 | **`customDomains` dans `config.json`** du tenant | ✅ Le moteur génère le config |
-| 7 | **Régénération manifeste** (`CUSTOM_DOMAINS` + `CANONICAL_DOMAIN`) | ✅ Script predev/prebuild |
-| 8 | **Deploy** (`npm run deploy`) | ✅ Déjà scripté |
-| 9 | **Tests de validation** (4 curl) | ✅ Scriptable (curl + asserts) |
-| 10 | **GSC : propriété Domaine + TXT OVH + validation** | ✅ Site Verification API + DNS API |
-| 11 | **GSC : soumission sitemap** | ✅ Search Console API |
-| 12 | **Turnstile : ajout hostname** | ✅ API Cloudflare |
-| 13 | **Test formulaire en vert** | ⚠️ Semi (test e2e possible) |
-
----
-
-## Détail par étape
-
-### 1. Achat domaine OVH — MANUEL
-- Acheter le domaine dans OVH.
-- **Titulaire = le client** (idéalement), toi en contact technique. *(Compromis actuel : acheté sous compte xklic, transférable au client plus tard.)*
-- ⚠️ **Activer le renouvellement auto** — sinon le site client meurt silencieusement à l'échéance.
-- Attendre le statut **"actif"** (pas "en cours de création") avant de continuer.
-
-### 2-4. DNS OVH ↔ Vercel
-Records Vercel à récupérer (projet `engine`, **sans** "Redirect apex to www") :
+### Records DNS (projet `engine`, sans « Redirect apex to www »)
 
 | Type | Pour | Cible (exemple sanadclean) |
 |------|------|----------------------------|
 | **A** | apex `@` | `216.198.79.1` |
 | **CNAME** | `www` | `<hash>.vercel-dns-017.com.` |
 
-⚠️ **Toujours prendre les valeurs affichées par Vercel** — l'IP/CNAME peuvent changer.
+⚠️ **Toujours prendre les valeurs affichées par Vercel** (IP/CNAME peuvent changer).
 
-**Nettoyage zone DNS OVH neuve (parking) :**
-- **Modifier** le `A @` parking (`213.186.33.5`) → IP Vercel
-- **Supprimer** le `A www` parking → puis **créer** le CNAME www
-- **Supprimer** les TXT parking (`"1|..."` sur @, `"3|welcome"` sur www)
-- **Supprimer** le `AAAA` (IPv6 parking) s'il existe → sinon casse la résolution
-- **Laisser** : les 2 `NS` ovh.net, le `CNAME ftp`, le `SPF` + les 3 `MX` (mail)
+**Nettoyage d'une zone OVH neuve (parking)** : modifier le `A @` parking
+(`213.186.33.5`) → IP Vercel ; supprimer le `A www` parking puis créer le CNAME ;
+supprimer les TXT parking et le `AAAA` (IPv6) ; **laisser** les `NS` ovh.net, le
+`CNAME ftp`, le `SPF` et les `MX` (mail).
 
-> ⚠️ **Piège CNAME** : OVH refuse un CNAME `www` tant qu'un autre record (`A` ou `TXT`) existe sur `www`. Erreur *"CNAME and other data"*. → Supprimer TOUT ce qui est sur `www`, rafraîchir, **ensuite** créer le CNAME.
+> ⚠️ **Piège CNAME OVH** : OVH refuse un CNAME `www` tant qu'un autre record (`A`/`TXT`)
+> existe sur `www` (*« CNAME and other data »*). Tout supprimer sur `www`, rafraîchir,
+> **ensuite** créer le CNAME.
 
-### 5. Attente SSL
-- Vercel provisionne le certificat dès que le DNS résout (quelques min à ~1h).
-- Point de contrôle : domaines en ✅ **"Valid Configuration"** + cadenas HTTPS sur le site.
+### Les 4 curl de validation
 
-### 6-7. Config moteur + manifeste
-Dans `config/sites/<slug>/config.json` :
-```json
-"customDomains": ["sanadclean.fr", "www.sanadclean.fr"]
-```
-- **Apex en premier = canonique** (pilote canonical/hreflang/OG/sitemap/JSON-LD via `siteOrigin`).
-- Régénérer : `npm run predev` (ou `node scripts/generate-sites-manifest.mjs`).
-
-**Point de contrôle** — `src/lib/sites-manifest.ts` doit contenir :
-```js
-CUSTOM_DOMAINS = {
-  "sanadclean.fr": "sanadclean",
-  "www.sanadclean.fr": "sanadclean"
-}
-CANONICAL_DOMAIN = { "sanadclean": "sanadclean.fr" }
-```
-⚠️ Si les maps sont **vides** → le générateur n'a pas lu `customDomains` → rien ne marchera. Bloquant.
-
-### 8. Deploy
-```bash
-cd xklic_engine && npm run deploy
-```
-> `domains:sync` gère les `*.xklic.com`, **pas** l'apex perso → mapping Vercel manuel (déjà fait étape 3).
-
-### 9. Tests de validation (les 4 curl)
 ```bash
 curl -sI https://<slug>.xklic.com/ | grep -i location   # → location: https://<domaine>/
 curl -sI https://www.<domaine>/ | grep -i location       # → location: https://<domaine>/
-curl -s https://<domaine>/sitemap.xml | grep -m1 loc      # → doit contenir <domaine>, pas xklic.com
+curl -s https://<domaine>/sitemap.xml | grep -m1 loc      # → contient <domaine>, pas xklic.com
 curl -sI https://<domaine>/ | head -1                     # → HTTP/2 200
 ```
-Les 4 OK = custom domain pleinement câblé et SEO-cohérent.
 
-### 10-11. Google Search Console
-- **Ajouter une propriété → type "Domaine"** (pas "Préfixe URL") : couvre apex + www + sous-domaines d'un coup.
-- Google donne un TXT `google-site-verification=...`.
-- L'ajouter dans OVH : `TXT`, sous-domaine **vide** (`@`), valeur = le code. ⚠️ **Ne pas écraser le SPF** — plusieurs TXT sur `@` cohabitent, ajouter à côté.
-- **Valider** (si échec : propagation DNS, attendre 15-30 min et re-valider).
-- **Sitemaps** → ajouter `sitemap.xml` → Envoyer.
-> ⚠️ `sitemaps:sync` du deploy ignore le `.fr` si la propriété GSC est `xklic.com`. D'où la propriété Domaine dédiée au `.fr`.
+### Notes
 
-### 12. Turnstile (Cloudflare)
-- Dashboard Cloudflare → widget Turnstile → **ajouter `<domaine>` aux hostnames**.
-- **Critique** : sans ça, le formulaire de contact/devis casse sur le nouveau domaine → pas de leads.
+- **`customDomains`** : apex en premier (= canonique, pilote canonical/hreflang/OG/
+  sitemap/JSON-LD). Point de contrôle : `src/lib/sites-manifest.ts` doit contenir le
+  mapping `CUSTOM_DOMAINS` + `CANONICAL_DOMAIN` (vide = `customDomains` non lu → bloquant).
+- **Trailing slash** : tout le site est **sans slash final** (apex + sous-pages). Ne pas
+  réintroduire de `/` sur la home.
+- **Indexation** : un `.fr` neuf est « Crawled - currently not indexed » 2-6 semaines
+  (normal). Le 301 depuis `*.xklic.com` transfère les signaux. Leviers réels : avis
+  Google, vrais témoignages, 1-2 backlinks.
 
-### 13. Test formulaire
-- Charger `https://<domaine>`, soumettre le formulaire, vérifier widget **vert** + envoi OK.
-
----
-
-## Cohérence trailing slash
-Tout le site est aligné **sans slash final** (apex + sous-pages) : canonical, sitemap, proxy servent la même forme. Convention uniforme. Ne pas réintroduire de `/` sur la home seule.
-
----
-
-## Découpage manuel / auto
-
-```
-[MANUEL]  Achat OVH + titulaire + renouvellement auto
-   ↓
-[AUTO]    DNS OVH → Vercel → poll SSL → config+manifeste → deploy
-          → asserts curl → GSC (property+verify+sitemap) → Turnstile
-   ↓
-[MANUEL]  Vérif rapport + remplacer faux témoignages + récolte avis Google
-```
-
-**Irréductiblement manuel :** achat domaine, fiche Google Business + avis (vrai levier SEO local), backlinks.
-
----
-
-## Plan d'automatisation (à faire après 2-3 clients manuels)
-
-Cible : un script CLI `npm run onboard -- --slug X --domain X.fr` (PAS n8n pour l'infra).
-- Idempotent + reprenable (chaque étape vérifie "déjà fait ?").
-- Sous-commandes invocables : `onboard:dns`, `onboard:vercel`, `onboard:config`, `onboard:gsc`, `onboard:turnstile`.
-- n8n réservé à la couche **business** (webhook Stripe, avis Google, relances mail), pas à l'infra.
-
-**Ne pas automatiser avant d'avoir fait 2-3 clients à la main** et documenté chaque appel API (endpoint, payload, réponse).
-
----
-
-## Rappel indexation
-Un `.fr` neuf repart de zéro côté autorité → "Crawled - currently not indexed" pendant **2-6 semaines, normal**. Le 301 depuis `*.xklic.com` transfère les signaux. Leviers réels : avis Google, vrais témoignages, 1-2 backlinks.
-
----
-
-## Suivi des domaines (à tenir à jour)
+### Suivi des domaines
 
 | Client | Domaine | Titulaire | Expiration | Renouvellement auto |
 |--------|---------|-----------|------------|---------------------|
 | Sanad Clean | sanadclean.fr | (xklic, à transférer) | _à compléter_ | _à vérifier_ |
-
-
-
-achat ovh
-ajout dans vercel
-config ovh / vercel
-claude code a fait un truc manifest je ne sais plus
-Google search console : domaine : mis a jours ovh txt @ code google, puis validation google.
-soumission sitemap dans gsc
-ajout url dans turnsile

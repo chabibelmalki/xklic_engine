@@ -1,3 +1,9 @@
+> ℹ️ **Référence du schéma des questions client** (libellés grand public du formulaire).
+> La **collecte** ne passe plus par ce formulaire isolé : les données client arrivent
+> via la vitrine et vivent dans **Baserow** — les récupérer avec
+> `npm run dossier:get -- "<nom>"` (voir `CLAUDE.md`). Ce fichier reste utile comme
+> référence des champs attendus / de la formulation.
+
 SECTION 1 — VOTRE ACTIVITÉ
 - Le nom de votre entreprise ?              (court)   ex. SANAD CLEAN
 - Votre métier en quelques mots ?           (court)   ex. ménage à domicile et nettoyage de locaux
