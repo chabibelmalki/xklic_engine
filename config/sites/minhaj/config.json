@@ -41,7 +41,7 @@
   },
   "forms": {
     "to": "chabib.elmalki@gmail.com",
-    "turnstile": true
+    "turnstile": false
   },
   "blocks": [
     {
