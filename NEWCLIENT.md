@@ -1,8 +1,10 @@
 ## RÔLE
 
 Génère la config d'un NOUVEAU site client pour le moteur `agence_website`, à
-partir des DONNÉES collées en bas (en-têtes + valeurs). Le résultat : un site
-complet, crédible et **unique**, propre au métier et à la ville du client.
+partir du DOSSIER client **récupéré depuis Baserow** (voir « DOSSIER CLIENT » en
+bas : on te donne juste le nom ou la Ref, tu vas chercher les données toi-même
+avec le script). Le résultat : un site complet, crédible et **unique**, propre au
+métier et à la ville du client.
 
 ---
 
@@ -120,10 +122,29 @@ prestations en pages silo, et **tout manque ou hypothèse signalé**.
 
 ---
 
-## DONNÉES DU CLIENT :
+## DOSSIER CLIENT :
 
-<!--
-Coller ici les données du nouveau client (en-têtes + valeurs du formulaire d'onboarding).
-⚠️ NE JAMAIS committer de données client réelles ni de secrets dans ce fichier
-   (clés Stripe `cs_live_…` / `sub_…`, e-mails, téléphone, OrderId, etc.).
--->
+On te donne **uniquement le nom de l'entreprise ou la Ref** du dossier (ci-dessous).
+Tu ne colles JAMAIS de données client à la main : tu les récupères depuis Baserow
+avec le script dédié.
+
+```bash
+npm run dossier:get -- "<nom de l'entreprise | Ref | OrderId>"
+```
+
+- **stdout** = le JSON complet `{ dossier, paiements, production, notes, produits }`
+  (menus déroulants et liens aplatis en valeurs lisibles) : c'est la **SOURCE de
+  vérité** pour bâtir la config.
+- **stderr** = un résumé lisible (statuts commande/production, métier, ville,
+  e-mail, téléphone, nb d'éléments liés) — pour vérifier d'un coup d'œil.
+- Si **plusieurs dossiers** correspondent, le script liste les candidats avec leur
+  Ref : relance avec le **nom exact** ou la **Ref**.
+- Si un **SIREN/SIRET** figure au dossier → applique l'ENRICHISSEMENT ci-dessus.
+- Rappel : `dossier:get` lit `.env.local` (`BASEROW_TOKEN`, `BASEROW_TABLE_*`),
+  c'est un script **local de lecture** (distinct du token d'écriture de la prod).
+
+⚠️ Ne **jamais committer** la sortie du script (données client réelles, e-mails,
+téléphone, OrderId, secrets) — ni dans ce fichier, ni ailleurs dans le repo.
+
+<!-- Nom / Ref du dossier à traiter : -->
+
