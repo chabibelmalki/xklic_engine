@@ -121,6 +121,23 @@ export function Hero({ block, config, basePath = "", strings }: BlockComponentPr
     </div>
   ) : null;
 
+  // Images de confiance sur une ligne à part, côte à côte, sous les badges
+  // (ex. logo SAP + pastille crédit d'impôt). Même hauteur, proportions gardées.
+  const trustImageEl = c.trustImages?.length ? (
+    <div className="mt-6 flex flex-wrap items-center gap-4">
+      {c.trustImages.map((img) => (
+        <Image
+          key={img.url}
+          src={img.url}
+          alt={img.alt ?? "Crédit d'impôt 50 %"}
+          width={300}
+          height={300}
+          className="h-24 w-auto"
+        />
+      ))}
+    </div>
+  ) : null;
+
   const textColumn = (
     <div>
       {(c.eyebrow || c.sousTitre) && (
@@ -143,6 +160,7 @@ export function Hero({ block, config, basePath = "", strings }: BlockComponentPr
         </Reveal>
       )}
       <Reveal delay={0.2}>{trust}</Reveal>
+      {trustImageEl && <Reveal delay={0.25}>{trustImageEl}</Reveal>}
       {socialRow()}
     </div>
   );

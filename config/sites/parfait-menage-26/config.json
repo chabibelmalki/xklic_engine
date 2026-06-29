@@ -92,10 +92,16 @@
               {
                 "icone": "PackageOpen",
                 "label": "Matériel adapté à chaque intervention"
+              }
+            ],
+            "trustImages": [
+              {
+                "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/parfait-menage-26/sap-logo-officiel.png",
+                "alt": "Services à la personne"
               },
               {
-                "icone": "BadgePercent",
-                "label": "Crédit d'impôt de 50 %"
+                "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/parfait-menage-26/reduction-50-rond.png",
+                "alt": "50 % de réduction d'impôts"
               }
             ],
             "ctaPrimaire": {

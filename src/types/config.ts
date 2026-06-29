@@ -246,6 +246,12 @@ export interface HeroContent {
   card?: HeroCard;
   /** Badges de confiance avec icônes (sous les CTA). */
   trust?: HeroBadgeTrust[];
+  /**
+   * Images de confiance affichées côte à côte sur une ligne à part, sous les
+   * badges `trust` (ex. logo « Services à la personne » + pastille crédit
+   * d'impôt). Alignées sur une même hauteur, proportions conservées.
+   */
+  trustImages?: ImageRef[];
   badges?: string[];
   ctaPrimaire?: CTA;
   ctaSecondaire?: CTA;
