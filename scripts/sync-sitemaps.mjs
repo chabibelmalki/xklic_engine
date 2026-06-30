@@ -117,11 +117,12 @@ function readLocalSites() {
     if (!entry.isDirectory()) continue; // un client = un DOSSIER
     const cfgPath = path.join(SITES_DIR, entry.name, BASE_FILE);
     if (!fs.existsSync(cfgPath)) continue;
-    /** @type {{ slug?: string, customDomains?: string[], domain?: string, demo?: boolean }} */
+    /** @type {{ slug?: string, customDomains?: string[], domain?: string, noindexSite?: boolean }} */
     const cfg = JSON.parse(fs.readFileSync(cfgPath, "utf8"));
-    // Sites de DÉMONSTRATION / test (config `demo: true`) : jamais soumis à GSC.
-    // Voir SiteConfig.demo (src/types/config.ts).
-    if (cfg.demo === true) continue;
+    // Sites NON INDEXABLES (config `noindexSite: true`) : jamais soumis à GSC.
+    // Indépendant de `demo` (un site hors-portfolio mais indexable est soumis).
+    // Voir SiteConfig.noindexSite (src/types/config.ts).
+    if (cfg.noindexSite === true) continue;
     // `slug` du JSON pilote l'origin (peut différer du nom de dossier) ; on
     // retombe sur le dossier par sécurité s'il manque.
     const slug = cfg.slug?.trim() || entry.name;

@@ -75,10 +75,11 @@ ${urls}
 /** robots.txt d'un site (pointe sur son propre sitemap). */
 export function buildRobotsTxt(config: SiteConfig): string {
   const origin = siteOrigin(config);
-  // Site de DÉMONSTRATION (config `demo: true`) : interdit toute indexation — les
-  // démos « exemple » ne doivent pas remonter dans les moteurs. Voir SiteConfig.demo.
-  // Aucun sitemap exposé (cohérent avec l'exclusion GSC dans sync-sitemaps.mjs).
-  if (config.demo) {
+  // Site NON INDEXABLE (config `noindexSite: true`) : interdit toute indexation —
+  // démos « exemple » et sites de test ne doivent pas remonter dans les moteurs.
+  // Indépendant de `demo` (hors-portfolio ≠ non-indexé). Aucun sitemap exposé
+  // (cohérent avec l'exclusion GSC dans sync-sitemaps.mjs). Voir SiteConfig.
+  if (config.noindexSite) {
     return `User-agent: *
 Disallow: /
 `;

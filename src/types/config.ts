@@ -759,13 +759,19 @@ export interface SiteConfig {
   slug: string;
   /**
    * Site de DÉMONSTRATION / test interne (non-client). Absent/false => vrai client.
-   * Quand `true`, le site est servi normalement (rendu identique) mais EXCLU de
-   * toute vitrine/diffusion : il n'apparaît PAS dans le feed `/api/realisations`
-   * (portfolio de la vitrine) et son sitemap n'est PAS soumis à Google Search
-   * Console (`scripts/sync-sitemaps.mjs`). Sert à isoler les démos « exemple »
-   * par métier et les sites de test des vrais clients.
+   * Quand `true`, le site est servi normalement (rendu identique) mais EXCLU du
+   * feed `/api/realisations` (portfolio de la vitrine). N'affecte PAS l'indexation :
+   * un site peut être hors-portfolio TOUT EN restant indexé (ex. la vitrine conseil
+   * du dirigeant). Pour désindexer, voir `noindexSite`.
    */
   demo?: boolean;
+  /**
+   * Empêche l'indexation du site : robots.txt `Disallow: /` ET sitemap NON soumis
+   * à Google Search Console (`scripts/sync-sitemaps.mjs`). Indépendant de `demo`.
+   * Les démos « exemple » par métier et les sites de test portent les deux flags ;
+   * un site hors-portfolio mais à garder visible (ex. minhaj) porte `demo` seul.
+   */
+  noindexSite?: boolean;
   theme: ThemeId;
   /**
    * Style pack (design system complet : typo, formes, ombres, motion, fond,

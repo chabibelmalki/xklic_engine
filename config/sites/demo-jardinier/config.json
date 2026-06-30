@@ -1,6 +1,7 @@
 {
   "slug": "demo-jardinier",
   "demo": true,
+  "noindexSite": true,
   "theme": "terra-sauge",
   "stylePack": "terra-naturel",
   "customDomains": [

@@ -1,6 +1,7 @@
 {
   "slug": "atelier-douceur",
   "demo": true,
+  "noindexSite": true,
   "theme": "maison-ivoire",
   "stylePack": "maison-premium",
   "branding": {

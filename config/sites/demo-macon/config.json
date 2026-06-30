@@ -1,6 +1,7 @@
 {
   "slug": "demo-macon",
   "demo": true,
+  "noindexSite": true,
   "theme": "douceur-beige",
   "stylePack": "maison-premium",
   "customDomains": [

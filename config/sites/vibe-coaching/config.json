@@ -1,6 +1,7 @@
 {
   "slug": "vibe-coaching",
   "demo": true,
+  "noindexSite": true,
   "theme": "pop-violet",
   "stylePack": "pop-moderne",
   "branding": {

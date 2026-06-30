@@ -1,6 +1,7 @@
 {
   "slug": "demo-electricien",
   "demo": true,
+  "noindexSite": true,
   "theme": "energie-corail",
   "stylePack": "pop-moderne",
   "customDomains": [

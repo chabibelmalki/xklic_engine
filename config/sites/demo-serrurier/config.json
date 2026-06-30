@@ -1,6 +1,7 @@
 {
   "slug": "demo-serrurier",
   "demo": true,
+  "noindexSite": true,
   "theme": "acier-anthracite",
   "stylePack": "atelier-industriel",
   "customDomains": [
