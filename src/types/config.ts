@@ -757,6 +757,15 @@ export interface FormsConfig {
 export interface SiteConfig {
   /** Identifiant unique = sous-domaine + nom de fichier (config/sites/<slug>.json). */
   slug: string;
+  /**
+   * Site de DÉMONSTRATION / test interne (non-client). Absent/false => vrai client.
+   * Quand `true`, le site est servi normalement (rendu identique) mais EXCLU de
+   * toute vitrine/diffusion : il n'apparaît PAS dans le feed `/api/realisations`
+   * (portfolio de la vitrine) et son sitemap n'est PAS soumis à Google Search
+   * Console (`scripts/sync-sitemaps.mjs`). Sert à isoler les démos « exemple »
+   * par métier et les sites de test des vrais clients.
+   */
+  demo?: boolean;
   theme: ThemeId;
   /**
    * Style pack (design system complet : typo, formes, ombres, motion, fond,

@@ -1,0 +1,218 @@
+{
+  "slug": "demo-coiffeur",
+  "demo": true,
+  "theme": "rose-cuivre",
+  "stylePack": "rose-noir-premium",
+  "customDomains": [
+    "demo-coiffeur.xklic.com"
+  ],
+  "branding": {
+    "tagline": "Coiffure · démonstration"
+  },
+  "entreprise": {
+    "nom": "Démo — Salon de coiffure",
+    "statut": "micro",
+    "siret": "000 000 000 00000",
+    "tva": {
+      "regime": "franchise"
+    }
+  },
+  "seo": {
+    "schemaType": "HairSalon",
+    "ville": "Ville Exemple"
+  },
+  "meta": {
+    "title": "Démo — Salon de coiffure | Site de démonstration Xklic",
+    "description": "Site de démonstration Xklic pour le métier « coiffeur ». Contenu fictif présentant la mise en page, les blocs et le style. Aucune entreprise réelle."
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Accueil",
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "plein",
+          "content": {
+            "eyebrow": "Site de démonstration Xklic",
+            "titre": "Coiffure, exemple de",
+            "titreAccent": "site vitrine",
+            "accroche": "Site de démonstration. Illustration d'un site de salon de coiffure Xklic : coupe, couleur, soins et coiffure événementielle.",
+            "image": {
+              "url": "https://loremflickr.com/1000/1250/hair,salon?lock=140",
+              "alt": "Illustration de démonstration — coiffeur"
+            },
+            "ctaPrimaire": {
+              "label": "Demander un exemple de devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir les prestations",
+              "href": "/prestations"
+            },
+            "trust": [
+              {
+                "icone": "Scissors",
+                "label": "Exemple — coupe"
+              },
+              {
+                "icone": "Sparkles",
+                "label": "Exemple — couleur"
+              },
+              {
+                "icone": "Heart",
+                "label": "Exemple — soins"
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "index",
+          "content": {
+            "eyebrow": "Démonstration",
+            "titre": "Exemples de prestations",
+            "intro": "Cartes de prestations fictives, à titre d'illustration de la mise en page.",
+            "items": [
+              {
+                "icone": "Scissors",
+                "nom": "Coupe & brushing",
+                "description": "Exemple de prestation de démonstration."
+              },
+              {
+                "icone": "Palette",
+                "nom": "Coloration",
+                "description": "Exemple de prestation de démonstration."
+              },
+              {
+                "icone": "Sparkles",
+                "nom": "Soins & lissage",
+                "description": "Exemple de prestation de démonstration."
+              },
+              {
+                "icone": "Heart",
+                "nom": "Coiffure mariage",
+                "description": "Exemple de prestation de démonstration."
+              }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "Démonstration",
+            "titre": "Galerie d'exemple",
+            "intro": "Images de démonstration libres, à remplacer par les photos réelles du client.",
+            "images": [
+              {
+                "image": {
+                  "url": "https://loremflickr.com/600/450/haircut,salon?lock=141",
+                  "alt": "Image de démonstration — haircut,salon"
+                }
+              },
+              {
+                "image": {
+                  "url": "https://loremflickr.com/600/450/hairstyle?lock=142",
+                  "alt": "Image de démonstration — hairstyle"
+                }
+              },
+              {
+                "image": {
+                  "url": "https://loremflickr.com/600/450/barber,hair?lock=143",
+                  "alt": "Image de démonstration — barber,hair"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Ceci est un site de démonstration Xklic",
+            "sousTitre": "Le vrai site afficherait ici les coordonnées et la zone d'intervention de l'entreprise.",
+            "ctaPrimaire": {
+              "label": "Exemple de contact",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "prestations",
+      "label": "Prestations",
+      "meta": {
+        "title": "Prestations (démo) — Démo — Salon de coiffure",
+        "description": "Page de prestations de démonstration Xklic."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Démonstration",
+            "titre": "Exemples de prestations",
+            "intro": "Contenu fictif d'illustration."
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "items": [
+              {
+                "icone": "Scissors",
+                "nom": "Coupe & brushing",
+                "description": "Exemple de démonstration."
+              },
+              {
+                "icone": "Palette",
+                "nom": "Coloration",
+                "description": "Exemple de démonstration."
+              },
+              {
+                "icone": "Sparkles",
+                "nom": "Soins & lissage",
+                "description": "Exemple de démonstration."
+              },
+              {
+                "icone": "Heart",
+                "nom": "Coiffure mariage",
+                "description": "Exemple de démonstration."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Contact (démo) — Démo — Salon de coiffure",
+        "description": "Page de contact de démonstration Xklic."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Démonstration",
+            "titre": "Exemple de page contact",
+            "intro": "Aucune coordonnée réelle. Site de démonstration."
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "coordonnees-cartes",
+          "content": {
+            "intro": "Coordonnées fictives de démonstration.",
+            "telephone": "00 00 00 00 00",
+            "email": "exemple@demo.xklic.com",
+            "adresse": "Adresse d'exemple, Ville Exemple"
+          }
+        }
+      ]
+    }
+  ]
+}

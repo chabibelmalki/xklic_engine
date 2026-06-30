@@ -1,0 +1,222 @@
+{
+  "slug": "demo-macon",
+  "demo": true,
+  "theme": "douceur-beige",
+  "stylePack": "maison-premium",
+  "customDomains": [
+    "demo-macon.xklic.com"
+  ],
+  "branding": {
+    "tagline": "Maçonnerie · démonstration"
+  },
+  "entreprise": {
+    "nom": "Exemple — Maçonnerie",
+    "statut": "micro",
+    "siret": "000 000 000 00000",
+    "tva": {
+      "regime": "franchise"
+    }
+  },
+  "seo": {
+    "schemaType": "GeneralContractor",
+    "ville": "Ville Exemple"
+  },
+  "meta": {
+    "title": "Exemple — Maçonnerie | Site de démonstration Xklic",
+    "description": "Site de démonstration Xklic pour le métier « macon ». Contenu fictif présentant la mise en page, les blocs et le style. Aucune entreprise réelle."
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Accueil",
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "split",
+          "content": {
+            "eyebrow": "Site de démonstration Xklic",
+            "titre": "Maçonnerie, exemple de",
+            "titreAccent": "site démo",
+            "accroche": "Site de démonstration. Illustration d'un site de maçon Xklic : gros œuvre, extension, dallage et rénovation.",
+            "image": {
+              "url": "https://loremflickr.com/1000/1250/masonry,construction?lock=150",
+              "alt": "Illustration de démonstration — macon"
+            },
+            "ctaPrimaire": {
+              "label": "Demander un exemple de devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir les prestations",
+              "href": "/prestations"
+            },
+            "trust": [
+              {
+                "icone": "Hammer",
+                "label": "Exemple — gros œuvre"
+              },
+              {
+                "icone": "Building",
+                "label": "Exemple — extension"
+              },
+              {
+                "icone": "Ruler",
+                "label": "Exemple — dallage"
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "eyebrow": "Démonstration",
+            "titre": "Exemples de prestations",
+            "intro": "Cartes de prestations fictives, à titre d'illustration de la mise en page.",
+            "items": [
+              {
+                "icone": "Hammer",
+                "nom": "Gros œuvre",
+                "description": "Exemple de prestation de démonstration."
+              },
+              {
+                "icone": "Building2",
+                "nom": "Extension",
+                "description": "Exemple de prestation de démonstration."
+              },
+              {
+                "icone": "Grid3x3",
+                "nom": "Dallage & terrasse",
+                "description": "Exemple de prestation de démonstration."
+              },
+              {
+                "icone": "Wrench",
+                "nom": "Rénovation",
+                "description": "Exemple de prestation de démonstration."
+              }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "Démonstration",
+            "titre": "Galerie d'exemple",
+            "intro": "Images de démonstration libres, à remplacer par les photos réelles du client.",
+            "avantApres": [
+              {
+                "avant": {
+                  "url": "https://loremflickr.com/600/450/wall,old?lock=151",
+                  "alt": "Avant — démonstration"
+                },
+                "apres": {
+                  "url": "https://loremflickr.com/600/450/wall,new,brick?lock=152",
+                  "alt": "Après — démonstration"
+                },
+                "legende": "Avant / après (démonstration)"
+              },
+              {
+                "avant": {
+                  "url": "https://loremflickr.com/600/450/facade,old?lock=153",
+                  "alt": "Avant — démonstration"
+                },
+                "apres": {
+                  "url": "https://loremflickr.com/600/450/facade,renovated?lock=154",
+                  "alt": "Après — démonstration"
+                },
+                "legende": "Avant / après (démonstration)"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Ceci est un site de démonstration Xklic",
+            "sousTitre": "Le vrai site afficherait ici les coordonnées et la zone d'intervention de l'entreprise.",
+            "ctaPrimaire": {
+              "label": "Exemple de contact",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "prestations",
+      "label": "Prestations",
+      "meta": {
+        "title": "Prestations (démo) — Exemple — Maçonnerie",
+        "description": "Page de prestations de démonstration Xklic."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Démonstration",
+            "titre": "Exemples de prestations",
+            "intro": "Contenu fictif d'illustration."
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "items": [
+              {
+                "icone": "Hammer",
+                "nom": "Gros œuvre",
+                "description": "Exemple de démonstration."
+              },
+              {
+                "icone": "Building2",
+                "nom": "Extension",
+                "description": "Exemple de démonstration."
+              },
+              {
+                "icone": "Grid3x3",
+                "nom": "Dallage & terrasse",
+                "description": "Exemple de démonstration."
+              },
+              {
+                "icone": "Wrench",
+                "nom": "Rénovation",
+                "description": "Exemple de démonstration."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Contact (démo) — Exemple — Maçonnerie",
+        "description": "Page de contact de démonstration Xklic."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Démonstration",
+            "titre": "Exemple de page contact",
+            "intro": "Aucune coordonnée réelle. Site de démonstration."
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "coordonnees-cartes",
+          "content": {
+            "intro": "Coordonnées fictives de démonstration.",
+            "telephone": "00 00 00 00 00",
+            "email": "exemple@demo.xklic.com",
+            "adresse": "Adresse d'exemple, Ville Exemple"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -38,6 +38,9 @@ function deriveActivite(tagline: string | undefined, apeLabel?: string, schemaTy
 
 export async function GET() {
   const sites: RealisationDTO[] = getAllConfigs()
+    // Exclut les sites de DÉMONSTRATION / test (config `demo: true`) : seuls les
+    // vrais clients alimentent le portfolio de la vitrine. Voir SiteConfig.demo.
+    .filter((c) => !c.demo)
     .map((c) => ({
       slug: c.slug,
       nom: c.entreprise?.nom ?? c.slug,
