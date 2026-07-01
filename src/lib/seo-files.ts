@@ -111,6 +111,16 @@ export function buildLlmsTxt(config: SiteConfig): string {
   lines.push("");
   lines.push(`> ${e.nom} — ${config.seo.ville}. Type : ${config.seo.schemaType}.`);
   lines.push("");
+
+  // ## Pages — liens Markdown vers les pages indexables (structure canonique
+  // llms.txt : au moins un lien `[texte](url)`, requis par l'audit agentic).
+  const pages = resolvePages(config).filter((p) => !p.noindex);
+  if (pages.length) {
+    lines.push("## Pages");
+    for (const p of pages) lines.push(`- [${p.label}](${origin}${p.path})`);
+    lines.push("");
+  }
+
   lines.push("## Entreprise");
   lines.push(`- Nom : ${e.nom}`);
   lines.push(`- Statut : ${statutLabel(e.statut)}`);
@@ -132,10 +142,14 @@ export function buildLlmsTxt(config: SiteConfig): string {
     lines.push("");
     lines.push("## Services");
     for (const s of services.items) {
-      // URL de la page dédiée quand elle existe (href interne) -> les IA citent
-      // la bonne page silo, pas seulement l'accueil (GEO).
-      const url = s.href?.startsWith("/") ? ` (${origin}${s.href})` : "";
-      lines.push(`- ${s.nom}${s.description ? ` : ${s.description}` : ""}${url}`);
+      // Lien Markdown vers la page silo quand elle existe (href interne) -> les
+      // IA citent la bonne page, pas seulement l'accueil (GEO).
+      const desc = s.description ? ` : ${s.description}` : "";
+      lines.push(
+        s.href?.startsWith("/")
+          ? `- [${s.nom}](${origin}${s.href})${desc}`
+          : `- ${s.nom}${desc}`,
+      );
     }
   }
 
