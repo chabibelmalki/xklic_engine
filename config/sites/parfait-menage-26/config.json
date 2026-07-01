@@ -69,9 +69,11 @@
           "content": {
             "showSocial": false,
             "image": {
-              "url": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1100&q=80",
-              "alt": "Intérieur soigné et impeccable — ménage haut de gamme à Pierrelatte"
+              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/parfait-menage-26/hero.webp",
+              "alt": "L'équipe de Parfait Ménage 26 devant son véhicule, à Pierrelatte"
             },
+            "imageRatio": "3/2",
+            "imageWide": true,
             "eyebrow": "Ménage professionnel · Pierrelatte et alentours",
             "titre": "Votre intérieur,",
             "titreAccent": "notre priorité",

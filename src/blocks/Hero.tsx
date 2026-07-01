@@ -259,7 +259,7 @@ export function Hero({ block, config, basePath = "", strings }: BlockComponentPr
   if (variant === "split" && c.image) {
     return (
       <header className="hero-mesh relative overflow-hidden">
-        <Container className="grid items-center gap-12 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
+        <Container className={`grid items-center gap-12 py-16 lg:py-24 ${c.imageWide ? "lg:grid-cols-[0.9fr_1.1fr]" : "lg:grid-cols-[1.1fr_0.9fr]"}`}>
           {textColumn}
           <Reveal delay={0.15}>
             <div className="relative mx-auto max-w-md lg:max-w-none">

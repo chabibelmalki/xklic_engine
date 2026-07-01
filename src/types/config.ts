@@ -242,6 +242,11 @@ export interface HeroContent {
    * Mettre "3/2" ou "16/10" pour une photo PAYSAGE affichée sans recadrage agressif.
    */
   imageRatio?: string;
+  /**
+   * Variant "split" : agrandit la colonne image (image plus grande que le
+   * texte). Défaut false = colonnes 1.1/0.9 (texte dominant). Voir Hero.tsx.
+   */
+  imageWide?: boolean;
   /** Carte de prix flottante (variant "carte"). */
   card?: HeroCard;
   /** Badges de confiance avec icônes (sous les CTA). */
