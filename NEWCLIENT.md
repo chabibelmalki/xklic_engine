@@ -99,6 +99,13 @@ pas par habitude.
 
 ## RÈGLES PARTICULIÈRES
 
+- **Avis** : **vrais avis Google uniquement**, recopiés fidèlement (jamais reformulés).
+  **Jamais** de témoignages inventés — même signalés comme « exemple » / « à titre
+  d'illustration » : c'est visible en prod, ça détruit la confiance et c'est un risque
+  Google (faux avis / Helpful Content). Mention type *« Avis authentiques publiés par nos
+  clients sur notre fiche Google »*. **Pas de vrais avis → pas de bloc `avis`** (le moteur
+  ne rend rien si `items` est vide) ; la page « Laissez un avis » (`googleReviewUrl`)
+  sert à en collecter. Modèle de référence : `parfait-menage-26`.
 - **Formule** `google`/`haut-google` → SEO/GEO poussé au maximum.
 - **Crédit d'impôt** : simulateur + page `credit-impot` + badges 50 %, **uniquement**
   pour prestations au domicile d'un particulier. Jamais B2B / locaux pros / produits.
