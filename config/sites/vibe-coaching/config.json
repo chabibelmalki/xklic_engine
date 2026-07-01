@@ -155,49 +155,6 @@
           }
         },
         {
-          "type": "avis",
-          "variant": "carrousel",
-          "content": {
-            "eyebrow": "Ils l'ont fait",
-            "titre": "Des résultats, de vrais gens",
-            "noteGlobale": 5,
-            "nombre": 64,
-            "items": [
-              {
-                "auteur": "Marine",
-                "ville": "Lyon 3e",
-                "note": 5,
-                "texte": "−8 kg en 4 mois sans me priver de tout. Yanis adapte chaque séance à mon énergie du jour, je me suis jamais sentie aussi forte."
-              },
-              {
-                "auteur": "Greg",
-                "ville": "Villeurbanne",
-                "note": 5,
-                "texte": "Je reprends le sport après 10 ans. Zéro jugement, que de la progression. Les séances en visio me sauvent les semaines chargées."
-              },
-              {
-                "auteur": "Sonia",
-                "ville": "Lyon 6e",
-                "note": 5,
-                "texte": "Le small group avec deux copines : motivant et abordable. On ne lâche plus !"
-              },
-              {
-                "auteur": "Hugo",
-                "ville": "Caluire",
-                "note": 5,
-                "texte": "Programme nutrition simple à suivre, enfin des résultats qui tiennent dans la durée."
-              },
-              {
-                "auteur": "Léa",
-                "ville": "Lyon 7e",
-                "note": 5,
-                "texte": "Coach à domicile au top, plus d'excuse pour ne pas s'y mettre. Bienveillant et exigeant."
-              }
-            ],
-            "disclaimer": "Témoignages publiés avec l'accord de nos client·es."
-          }
-        },
-        {
           "type": "cta",
           "variant": "plein",
           "content": {

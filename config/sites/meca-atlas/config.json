@@ -132,55 +132,6 @@
           }
         },
         {
-          "type": "avis",
-          "variant": "grille",
-          "content": {
-            "eyebrow": "Avis clients",
-            "titre": "Ce que disent nos clients",
-            "noteGlobale": 4.8,
-            "nombre": 214,
-            "items": [
-              {
-                "auteur": "Thomas R.",
-                "ville": "Argenteuil",
-                "note": 5,
-                "texte": "Devis clair, prix tenu, aucune réparation inutile poussée. Ça change. Je recommande."
-              },
-              {
-                "auteur": "Nadia M.",
-                "ville": "Bezons",
-                "note": 5,
-                "texte": "Pris en charge rapidement pour mes freins. Travail nickel et explications honnêtes."
-              },
-              {
-                "auteur": "Olivier P.",
-                "ville": "Cormeilles-en-Parisis",
-                "note": 4,
-                "texte": "Bon rapport qualité-prix sur la distribution. Délai respecté."
-              },
-              {
-                "auteur": "Sandrine L.",
-                "ville": "Sartrouville",
-                "note": 5,
-                "texte": "Diagnostic offert qui m'a évité un changement de pièce inutile conseillé ailleurs."
-              },
-              {
-                "auteur": "Kévin D.",
-                "ville": "Argenteuil",
-                "note": 5,
-                "texte": "Équipe pro et sympa, atelier propre. Mon garage attitré maintenant."
-              },
-              {
-                "auteur": "Fatou S.",
-                "ville": "Colombes",
-                "note": 5,
-                "texte": "Pneus changés et géométrie au top, voiture qui ne tire plus. Merci."
-              }
-            ],
-            "disclaimer": "Note moyenne issue des avis vérifiés de nos clients."
-          }
-        },
-        {
           "type": "cta",
           "variant": "bande",
           "content": {

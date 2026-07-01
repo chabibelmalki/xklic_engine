@@ -173,37 +173,6 @@
           }
         },
         {
-          "type": "avis",
-          "variant": "vedette",
-          "content": {
-            "eyebrow": "Témoignages",
-            "titre": "Ils nous ont fait confiance",
-            "noteGlobale": 5,
-            "nombre": 38,
-            "items": [
-              {
-                "auteur": "Inès & Mathieu",
-                "ville": "Le Vésinet",
-                "note": 5,
-                "texte": "Notre wedding cake était à couper le souffle, et aussi bon que beau. La dégustation en amont nous a mis en confiance, tout était parfait le jour J. Un immense merci."
-              },
-              {
-                "auteur": "Sarah B.",
-                "ville": "Saint-Germain-en-Laye",
-                "note": 5,
-                "texte": "Number cake d'anniversaire sublime et délicieux. Camille a parfaitement saisi le thème."
-              },
-              {
-                "auteur": "Famille Lemoine",
-                "ville": "Marly-le-Roi",
-                "note": 5,
-                "texte": "Pièce montée du baptême magnifique, livrée et installée sans aucun stress pour nous."
-              }
-            ],
-            "disclaimer": "Témoignages publiés avec l'accord de nos clients."
-          }
-        },
-        {
           "type": "cta",
           "variant": "encadre",
           "content": {
