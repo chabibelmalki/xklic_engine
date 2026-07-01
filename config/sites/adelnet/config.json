@@ -224,35 +224,6 @@
           }
         },
         {
-          "type": "avis",
-          "variant": "carrousel",
-          "content": {
-            "eyebrow": "Elles nous font confiance",
-            "titre": "Ce que disent nos clients",
-            "items": [
-              {
-                "auteur": "Sandrine P.",
-                "ville": "Saint-Étienne",
-                "note": 5,
-                "texte": "Khadija est ponctuelle, discrète et très minutieuse. Avec le crédit d'impôt, le service devient vraiment accessible. Je recommande les yeux fermés."
-              },
-              {
-                "auteur": "Marc & Hélène",
-                "ville": "Saint-Priest-en-Jarez",
-                "note": 5,
-                "texte": "Ménage et repassage sur le même créneau, c'est un vrai gain de temps. Toujours la même personne, on a totalement confiance."
-              },
-              {
-                "auteur": "Cabinet Vernay",
-                "ville": "Lyon",
-                "note": 5,
-                "texte": "Nous confions l'entretien de nos bureaux à Adelnet chaque semaine. Sérieux, soigné et flexible sur les horaires."
-              }
-            ],
-            "disclaimer": "Témoignages présentés à titre d'exemple — à remplacer par de vrais avis clients."
-          }
-        },
-        {
           "type": "zone",
           "mode": "carte",
           "content": {
