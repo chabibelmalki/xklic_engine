@@ -87,7 +87,7 @@
             "showSocial": true,
             "eyebrow": "Entreprise de nettoyage à Nîmes",
             "titre": "Un intérieur impeccable,",
-            "titreAccent": "à partir de 15 €/h",
+            "titreAccent": "dès 30 €/h — 15 €/h après crédit d'impôt",
             "accroche": "Ménage à domicile avec crédit d'impôt de 50 %, nettoyage de locaux, remise en état et traitement des nuisibles à Nîmes. On s'occupe de tout.",
             "trust": [
               {
@@ -96,7 +96,7 @@
               },
               {
                 "icone": "Clock",
-                "label": "Disponible 24h/24, 7j/7"
+                "label": "7j/7 · urgences possibles"
               },
               {
                 "icone": "ShieldCheck",
@@ -111,10 +111,10 @@
               "label": "Ménage à domicile",
               "prix": "15 €",
               "unite": "/ heure",
-              "mention": "après crédit d'impôt",
+              "mention": "après crédit d'impôt (ménage à domicile)",
               "prixBarre": "30 €/h",
               "points": [
-                "Disponible 24h/24, 7j/7",
+                "Interventions 7j/7, 8h – 19h",
                 "Devis gratuit sous 24 h",
                 "Personnel de confiance",
                 "Produits adaptés à votre logement",
@@ -370,27 +370,35 @@
           "content": {
             "eyebrow": "Ils nous font confiance",
             "titre": "Ce que disent nos clients",
+            "noteGlobale": 5,
             "items": [
               {
-                "auteur": "Nadia B.",
-                "ville": "Nîmes",
+                "auteur": "Nina ZARBAN",
                 "note": 5,
-                "texte": "Très professionnelle et minutieuse. Ma maison n'a jamais été aussi propre, et le crédit d'impôt rend le service vraiment accessible."
+                "texte": "Je suis ravie d'avoir fait appel SANAD CLEAN. En plus d'un travail impeccable et conforme à mes attentes, le contact a été super agréable. Très réactif, ponctuel."
               },
               {
-                "auteur": "Julien M.",
-                "ville": "Caissargues",
+                "auteur": "Aziza EL",
                 "note": 5,
-                "texte": "Intervention de remise en état après nos travaux : impeccable et rapide. Je recommande sans hésiter."
+                "texte": "Je suis très satisfaite de votre travail. Vous êtes sérieuse, organisée et toujours ponctuelle. Le ménage a été effectué avec beaucoup de soin et de professionnalisme. Merci pour votre implication et la qualité de votre service."
               },
               {
-                "auteur": "Cabinet Lestra",
-                "ville": "Nîmes",
+                "auteur": "Maria Rayane",
                 "note": 5,
-                "texte": "Nous faisons appel à SANAD CLEAN pour nos bureaux chaque semaine. Sérieux, ponctuel et soigné."
+                "texte": "Je recommande vivement le travail de cette personne. Elle fait preuve d'un grand professionnalisme, une grande rigueur, et une vraie qualité dans tout ce qu'elle fait."
+              },
+              {
+                "auteur": "Manal Rachidi",
+                "note": 5,
+                "texte": "Très bonne expérience. J'avais fait appel à leurs services et tout s'est très bien passé. L'équipe est professionnelle et efficace. Je recommande."
+              },
+              {
+                "auteur": "Sarah Layachi",
+                "note": 5,
+                "texte": "Service de nettoyage très professionnel et efficace, très satisfaite, bravo madame."
               }
             ],
-            "disclaimer": "Témoignages présentés à titre d'exemple — à remplacer par de vrais avis clients (Google)."
+            "disclaimer": "Avis authentiques publiés par nos clients sur notre fiche Google."
           }
         },
         {
@@ -1146,10 +1154,11 @@
             "horaires": [
               {
                 "jour": "Lun – Dim",
-                "heures": "Disponible 24h/24, 7j/7"
+                "heures": "08:00 – 19:00"
               }
             ],
             "services": [
+              "🚨 Urgence (en dehors des horaires)",
               "Ménage à domicile",
               "Repassage",
               "Nettoyage de locaux / bureaux",
@@ -1224,7 +1233,7 @@
               {
                 "icone": "Clock",
                 "titre": "Ponctualité",
-                "texte": "Des créneaux respectés et une disponibilité 24h/24, 7j/7."
+                "texte": "Des créneaux respectés, une disponibilité 7j/7 de 8h à 19h et des urgences possibles en dehors des horaires."
               }
             ]
           }
@@ -1455,10 +1464,11 @@
             "horaires": [
               {
                 "jour": "Lun – Dim",
-                "heures": "Disponible 24h/24, 7j/7"
+                "heures": "08:00 – 19:00"
               }
             ],
             "services": [
+              "🚨 Urgence (en dehors des horaires)",
               "Ménage à domicile",
               "Repassage",
               "Nettoyage de locaux / bureaux",
