@@ -32,6 +32,11 @@ export function Avis({ block, index, strings }: BlockComponentProps<AvisContent>
   const c = block.content;
   const variant = block.variant ?? "grille";
 
+  // Garde-fou : un bloc avis sans témoignage ne s'affiche PAS (pas de titre
+  // orphelin, jamais de placeholder). Politique produit : vrais avis Google
+  // uniquement, sinon pas de bloc (cf. NEWCLIENT.md).
+  if (!c.items?.length) return null;
+
   const note = c.noteGlobale ? (
     <Reveal>
       <div className="mt-6 flex items-center justify-center gap-3 text-ink">
