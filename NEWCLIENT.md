@@ -112,6 +112,10 @@ pas par habitude.
 - **Géo** : `geo` (lat/lng) approximatif depuis la ville/adresse — **signale-le** à
   affiner avec les vraies coordonnées de la fiche Google.
 - **Légal** : mentions + confidentialité cohérentes, honnêteté des dispositifs.
+- **`llms.txt`** : **auto-généré** depuis la config (`buildLlmsTxt`, servi par domaine
+  comme le sitemap) — n'écris jamais de fichier `llms.txt` à la main. Il reflète nom,
+  services (avec liens vers les pages silo), zone, contact : une config propre = un
+  `llms.txt` propre.
 
 ---
 
