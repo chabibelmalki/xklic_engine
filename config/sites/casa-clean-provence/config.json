@@ -205,27 +205,35 @@
           "content": {
             "eyebrow": "Avis clients",
             "titre": "Des Marseillais déjà conquis",
+            "noteGlobale": 5,
             "items": [
               {
-                "auteur": "Sophie L.",
-                "ville": "Marseille 8e",
+                "auteur": "joel delery",
                 "note": 5,
-                "texte": "Travail très soigné et personne de confiance. Mon appartement est impeccable et le crédit d'impôt rend le service vraiment accessible."
+                "texte": "Latifa est merveilleuse, tous les vendredis nous retrouvons notre maison super propre. Le souci du détail et la qualité à tous les niveaux. Merci pour votre professionnalisme."
               },
               {
-                "auteur": "Karim B.",
-                "ville": "Aubagne",
+                "auteur": "Mami Mimi",
                 "note": 5,
-                "texte": "Remise en état après nos travaux : rapide et parfait. Je recommande les yeux fermés."
+                "texte": "Un travail de grande qualité, réalisé dans les délais. L'équipe est réactive, efficace et très respectueuse. Merci pour votre professionnalisme !"
               },
               {
-                "auteur": "Cabinet Vauban",
-                "ville": "Marseille 6e",
+                "auteur": "LATIFA MAZZOUR",
                 "note": 5,
-                "texte": "Nous faisons appel à Casa Clean Provence pour l'entretien de nos bureaux. Sérieux, ponctuel et discret."
+                "texte": "Je suis très satisfaite du service de nettoyage. L'équipe est ponctuelle, professionnelle et très efficace. Le travail est réalisé avec soin."
+              },
+              {
+                "auteur": "Aziz Mazzour",
+                "note": 5,
+                "texte": "Très bonne expérience avec cette entreprise de nettoyage. L'équipe est dynamique, discrète et attentive aux détails."
+              },
+              {
+                "auteur": "Reyou Reyou",
+                "note": 5,
+                "texte": "Des personnes très professionnel un travail irréprochable merci beaucoup."
               }
             ],
-            "disclaimer": "Avis d'illustration, à remplacer par vos vrais témoignages clients (Google)."
+            "disclaimer": "Avis authentiques publiés par nos clients sur notre fiche Google."
           }
         },
         {
