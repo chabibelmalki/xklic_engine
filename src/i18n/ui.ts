@@ -156,6 +156,7 @@ export const UI = {
       navAria: "Navigation du site",
       legal: "Mentions légales",
       confidentialite: "Confidentialité",
+      poweredBy: "Site créé par",
     },
     nav: {
       services: "Services",
@@ -313,6 +314,7 @@ export const UI = {
       navAria: "Site navigation",
       legal: "Legal notice",
       confidentialite: "Privacy",
+      poweredBy: "Website by",
     },
     nav: {
       services: "Services",
@@ -470,6 +472,7 @@ export const UI = {
       navAria: "تصفّح الموقع",
       legal: "الإشعارات القانونية",
       confidentialite: "الخصوصية",
+      poweredBy: "موقع من إنجاز",
     },
     nav: {
       services: "الخدمات",
@@ -627,6 +630,7 @@ export const UI = {
       navAria: "Navegación del sitio",
       legal: "Aviso legal",
       confidentialite: "Privacidad",
+      poweredBy: "Sitio creado por",
     },
     nav: {
       services: "Servicios",

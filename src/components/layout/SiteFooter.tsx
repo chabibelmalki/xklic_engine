@@ -194,6 +194,19 @@ export function SiteFooter({
             <Link href={`${basePath}/confidentialite`} className="hover:text-white/80">
               {t.footer.confidentialite}
             </Link>
+            {/* Crédit agence — lien follow assumé : chaque site client est un
+                backlink vers xklic.com (SEO marque). */}
+            <span>
+              {t.footer.poweredBy}{" "}
+              <a
+                href="https://xklic.com"
+                target="_blank"
+                rel="noopener"
+                className="font-medium text-white/70 hover:text-white"
+              >
+                xklic.com
+              </a>
+            </span>
           </div>
         </div>
       </div>
