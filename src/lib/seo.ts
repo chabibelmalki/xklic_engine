@@ -128,6 +128,22 @@ export function defaultDescription(config: SiteConfig): string {
   return pageDescription(config, getHomePage(config));
 }
 
+/**
+ * Directive robots EXPLICITE d'une page tenant — jamais `undefined`. Le layout
+ * racine pose `noindex, nofollow` (pages internes du moteur) et le merge
+ * Metadata de Next est superficiel : une page qui omet la clé `robots` hérite
+ * du noindex du layout et disparaît de Google en silence — le layout tenant
+ * (src/app/sites/[slug]/layout.tsx) pose ce défaut en filet de sécurité, et
+ * chaque builder le rend explicite par page. `noindexSite` met toutes les
+ * pages en noindex PAR COHÉRENCE avec robots.txt `Disallow: /` (qui porte la
+ * non-indexation effective des démos ; le meta seul ne suffirait pas — une
+ * URL bloquée au crawl mais liée de l'extérieur peut rester indexée en
+ * « URL seule »).
+ */
+export function pageRobots(config: SiteConfig, noindex?: boolean): Metadata["robots"] {
+  return { index: !(noindex || config.noindexSite), follow: true };
+}
+
 /** Construit l'objet Metadata Next pour une page (accueil par défaut), localisée. */
 export function buildMetadata(config: SiteConfig, page?: ResolvedPage, locale?: string): Metadata {
   const p = page ?? getHomePage(config);
@@ -148,7 +164,7 @@ export function buildMetadata(config: SiteConfig, page?: ResolvedPage, locale?: 
     keywords: meta.keywords,
     icons: buildIcons(config),
     alternates: { canonical, languages: localeAlternates(config, p.path) },
-    robots: p.noindex ? { index: false, follow: true } : undefined,
+    robots: pageRobots(config, p.noindex),
     openGraph: {
       type: "website",
       siteName: config.entreprise.nom,
@@ -181,7 +197,7 @@ export function buildLegalMetadata(config: SiteConfig, locale?: string): Metadat
       canonical: localizedPath("/mentions-legales", loc, def),
       languages: localeAlternates(config, "/mentions-legales"),
     },
-    robots: { index: false, follow: true },
+    robots: pageRobots(config, true),
   };
 }
 
@@ -198,7 +214,7 @@ export function buildConfidentialiteMetadata(config: SiteConfig, locale?: string
       canonical: localizedPath("/confidentialite", loc, def),
       languages: localeAlternates(config, "/confidentialite"),
     },
-    robots: { index: false, follow: true },
+    robots: pageRobots(config, true),
   };
 }
 
@@ -216,5 +232,7 @@ export function buildAvisMetadata(config: SiteConfig, locale?: string): Metadata
       canonical: localizedPath("/avis", loc, def),
       languages: localeAlternates(config, "/avis"),
     },
+    // Page utilitaire (dépôt d'avis via QR/lien direct) : hors index.
+    robots: pageRobots(config, true),
   };
 }

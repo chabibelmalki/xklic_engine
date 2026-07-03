@@ -65,6 +65,18 @@ export function navPages(config: SiteConfig): ResolvedPage[] {
   return resolvePages(config).filter((p) => !p.navHidden);
 }
 
+/**
+ * Pages INDEXABLES d'un site — l'unique source de vérité, consommée par le
+ * sitemap, le llms.txt et les metadata robots (`pageRobots`, lib/seo.ts).
+ * Cohérence stricte : une URL annoncée aux crawlers ne doit jamais porter de
+ * noindex, sinon GSC alerte « Exclue par la balise noindex ». Un site
+ * `noindexSite` (démos/tests) n'expose AUCUNE page indexable.
+ */
+export function indexablePages(config: SiteConfig): ResolvedPage[] {
+  if (config.noindexSite) return [];
+  return resolvePages(config).filter((p) => !p.noindex);
+}
+
 /** Slugs des pages NON-accueil (pour generateStaticParams des routes de page). */
 export function subPageSlugs(config: SiteConfig): string[] {
   return resolvePages(config)

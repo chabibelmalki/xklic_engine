@@ -17,7 +17,9 @@ export function generateStaticParams() {
 export async function GET(_req: Request, { params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const config = getConfig(slug);
-  if (!config) return new Response("Not found", { status: 404 });
+  // Site non indexable : pas de sitemap du tout (cohérent avec robots.txt
+  // `Disallow: /` sans ligne Sitemap, et avec l'exclusion GSC de sync-sitemaps).
+  if (!config || config.noindexSite) return new Response("Not found", { status: 404 });
   return new Response(buildSitemapXml(config), {
     headers: { "Content-Type": "application/xml" },
   });

@@ -8,20 +8,21 @@ import type {
 import { siteOrigin } from "@/lib/urls";
 import { statutLabel } from "@/lib/legal";
 import { formatEUR } from "@/lib/utils";
-import { resolvePages, findBlock } from "@/lib/pages";
+import { indexablePages, findBlock } from "@/lib/pages";
 import { localizedPath, htmlLang } from "@/lib/i18n";
 import { allZoneVilles } from "@/lib/zone";
 
-/** Pages publiques indexables d'un site (relatives à l'origin) + mentions. */
+/**
+ * Entrées du sitemap : STRICTEMENT `indexablePages` (lib/pages.ts, source de
+ * vérité partagée avec llms.txt et les metadata robots). Les pages légales
+ * (/mentions-legales, /confidentialite) et /avis sont en noindex (cf.
+ * pageRobots, lib/seo.ts) — donc jamais dans le sitemap.
+ */
 function sitePaths(config: SiteConfig): { path: string; priority: string }[] {
-  const pages = resolvePages(config)
-    .filter((p) => !p.noindex)
-    .map((p) => ({ path: p.path, priority: p.isHome ? "1.0" : "0.7" }));
-  return [
-    ...pages,
-    { path: "/mentions-legales", priority: "0.3" },
-    { path: "/confidentialite", priority: "0.3" },
-  ];
+  return indexablePages(config).map((p) => ({
+    path: p.path,
+    priority: p.isHome ? "1.0" : "0.7",
+  }));
 }
 
 function content<T>(config: SiteConfig, type: string): T | undefined {
@@ -114,7 +115,7 @@ export function buildLlmsTxt(config: SiteConfig): string {
 
   // ## Pages — liens Markdown vers les pages indexables (structure canonique
   // llms.txt : au moins un lien `[texte](url)`, requis par l'audit agentic).
-  const pages = resolvePages(config).filter((p) => !p.noindex);
+  const pages = indexablePages(config);
   if (pages.length) {
     lines.push("## Pages");
     for (const p of pages) lines.push(`- [${p.label}](${origin}${p.path})`);
