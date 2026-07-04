@@ -33,7 +33,7 @@ export function SiteFooter({
   const mainLinks: { href: string; label: string }[] = [];
   const serviceLinks: { href: string; label: string }[] = [];
   if (isMultiPage(config)) {
-    for (const p of resolvePages(config).filter((x) => !x.isHome)) {
+    for (const p of resolvePages(config).filter((x) => !x.isHome && !x.navHidden)) {
       (p.service ? serviceLinks : mainLinks).push({ href: `${basePath}${p.path}`, label: p.label });
     }
   } else {

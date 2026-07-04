@@ -10,6 +10,8 @@ import { Tarifs } from "./Tarifs";
 import { ServiceQuoteBuilder } from "./ServiceQuoteBuilder";
 import { Produits } from "./Produits";
 import { Boutique } from "./Boutique";
+import { CatalogueLive } from "./CatalogueLive";
+import { CommandeRecap } from "./CommandeRecap";
 import { Zone } from "./Zone";
 import { Faq } from "./Faq";
 import { Galerie } from "./Galerie";
@@ -37,6 +39,8 @@ const registry: Record<string, ComponentType<BlockComponentProps<any>>> = {
   serviceQuoteBuilder: ServiceQuoteBuilder,
   produits: Produits,
   boutique: Boutique,
+  catalogue: CatalogueLive,
+  commandeRecap: CommandeRecap,
   zone: Zone,
   faq: Faq,
   galerie: Galerie,

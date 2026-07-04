@@ -501,6 +501,42 @@ export interface BoutiqueContent {
   submitLabel?: string;
 }
 
+// --- catalogue (boutique EN LIGNE : données live du back-office + paiement) ---
+/**
+ * Contenu du bloc `catalogue` : boutique e-commerce LIVE. Contrairement à
+ * `boutique` (articles statiques dans la config, sortie en demande de devis),
+ * ce bloc charge produits/stock/prix depuis le back-office (via le proxy
+ * `/api/shop/catalog`) et envoie le panier vers un paiement Stripe hosted
+ * (via `/api/shop/checkout`). Nécessite `config.shop.enabled = true`.
+ * Le contenu ne porte QUE la présentation : les données produits vivent dans
+ * le back-office (source de vérité prix/stock, revalidée au paiement côté Go).
+ */
+export interface CatalogueContent {
+  titre?: string;
+  intro?: string;
+  eyebrow?: string;
+  /** Notes de bas (retrait, délais, conditions…). */
+  notes?: string[];
+  confidentialiteHref?: string;
+  /** Libellé du bouton de paiement (défaut : « Payer ma commande »). */
+  submitLabel?: string;
+  /** Message si le catalogue est vide (défaut : message générique). */
+  emptyMessage?: string;
+}
+
+// --- commandeRecap (page « merci » : récapitulatif après paiement) ---
+/**
+ * Contenu du bloc `commandeRecap` : lit `?session_id=` (posé par Stripe sur la
+ * success URL) et affiche le récapitulatif de la commande via le proxy
+ * `/api/shop/order`. Sans session_id, affiche un simple remerciement.
+ */
+export interface CommandeRecapContent {
+  titre?: string;
+  intro?: string;
+  /** Lien de retour (défaut : "/boutique"). */
+  retourHref?: string;
+}
+
 // --- avis ---
 export interface AvisItem {
   auteur: string;
@@ -677,6 +713,8 @@ export interface BlockContentMap {
   serviceQuoteBuilder: ServiceQuoteBuilderContent;
   produits: ProduitsContent;
   boutique: BoutiqueContent;
+  catalogue: CatalogueContent;
+  commandeRecap: CommandeRecapContent;
   zone: ZoneContent;
   faq: FaqContent;
   galerie: GalerieContent;
@@ -749,6 +787,19 @@ export interface PageConfig {
   noindex?: boolean;
 }
 
+/**
+ * Boutique en ligne (module e-commerce). ABSENT ou `enabled: false` => aucune
+ * fonctionnalité boutique (les blocs `catalogue`/`commandeRecap` affichent un
+ * message d'indisponibilité). L'engine ne parle qu'au back-office (API Go) via
+ * les proxys `/api/shop/*` — clé partagée `ENGINE_API_KEY` côté serveur
+ * uniquement, jamais de clé Stripe ici.
+ */
+export interface ShopConfig {
+  enabled: boolean;
+  /** Slug du tenant côté back-office (défaut : slug du site). */
+  tenant?: string;
+}
+
 /** Acheminement des leads (formulaires). Surcharge possible par site. */
 export interface FormsConfig {
   /** Destinataire des e-mails de lead (sinon env LEAD_TO). */
@@ -808,6 +859,8 @@ export interface SiteConfig {
   pages?: PageConfig[];
   /** Acheminement des formulaires (e-mail / webhook). */
   forms?: FormsConfig;
+  /** Boutique en ligne (catalogue live + paiement via le back-office). */
+  shop?: ShopConfig;
   /**
    * Domaine PERSO du site = là où il est RÉELLEMENT servi.
    *
