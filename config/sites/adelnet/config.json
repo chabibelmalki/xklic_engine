@@ -111,7 +111,8 @@
             "ctaSecondaire": {
               "label": "Voir les prestations",
               "href": "/services"
-            }
+            },
+            "showSocial": true
           }
         },
         {
