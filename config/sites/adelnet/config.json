@@ -16,6 +16,20 @@
     "logo": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/adelnet/logo.png",
     "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/adelnet/logo.png"
   },
+  "social": [
+    {
+      "platform": "facebook",
+      "url": "https://www.facebook.com/profile.php?id=61591494118755"
+    },
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/adelnet.fr/"
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@adelnet3"
+    }
+  ],
   "entreprise": {
     "nom": "Adelnet",
     "statut": "EI",
@@ -51,7 +65,7 @@
     ]
   },
   "forms": {
-    "to": "khadijaselhami00@gmail.com",
+    "to": "adelnet.contact@gmail.com",
     "turnstile": true
   },
   "pages": [
@@ -970,7 +984,7 @@
             "formMode": "demande-intervention",
             "telephone": "+33 7 60 15 38 53",
             "whatsapp": "+33 7 60 15 38 53",
-            "email": "khadijaselhami00@gmail.com",
+            "email": "adelnet.contact@gmail.com",
             "horaires": [
               {
                 "jour": "Lun – Dim",
@@ -1041,7 +1055,7 @@
             "formMode": "devis",
             "telephone": "+33 7 60 15 38 53",
             "whatsapp": "+33 7 60 15 38 53",
-            "email": "khadijaselhami00@gmail.com",
+            "email": "adelnet.contact@gmail.com",
             "horaires": [
               {
                 "jour": "Lun – Dim",
