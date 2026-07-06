@@ -2,7 +2,7 @@ import "server-only";
 import { z } from "zod";
 import type { SiteConfig } from "@/types/config";
 import { resolvePages } from "@/lib/pages";
-import { insertRow, BASEROW_TABLES } from "@/lib/baserow";
+import { postEvent } from "@/lib/backoffice";
 
 /**
  * Capture des INTENTIONS de contact (Tier 1) — table `events`, SANS PII.
@@ -113,9 +113,9 @@ export async function trackEvent(args: {
   session?: string;
 }): Promise<void> {
   if (!shouldEmit(args.type, args.siteSlug, args.session)) return;
-  await insertRow(BASEROW_TABLES.events(), {
+  await postEvent({
     type: args.type,
-    site: args.siteSlug,
+    site_slug: args.siteSlug,
     page: args.pagePath,
     session: args.session ?? "",
   });

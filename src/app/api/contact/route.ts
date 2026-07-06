@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { contactSchema, type ContactInput } from "@/lib/contact-schema";
 import { getConfig } from "@/lib/config-loader";
-import { insertRow, BASEROW_TABLES } from "@/lib/baserow";
+import { postLead } from "@/lib/backoffice";
 import { normalizePagePath, trackEvent } from "@/lib/events";
 import { isLocalTestMode, isDeliveryEnabled } from "@/lib/runtime";
 import type { SiteConfig } from "@/types/config";
@@ -84,11 +84,11 @@ function formatLead(data: ContactInput): { subject: string; lines: string[] } {
 }
 
 /**
- * Capture Baserow Tier 1 : écrit le lead (avec PII) dans la table `leads` ET
- * émet l'event `form_submit` (sans PII) dans `events`. Sink ADDITIONNEL, à côté
- * de Resend/webhook : fire-and-forget, n'altère jamais la réponse ni la livraison
- * e-mail existante. PII (nom/tél/e-mail/message) → `leads` UNIQUEMENT, jamais
- * dans `events`.
+ * Capture back-office Tier 1 : écrit le lead (avec PII) dans la table `leads`
+ * ET émet l'event `form_submit` (sans PII) dans `events` (API Go → Postgres).
+ * Sink ADDITIONNEL, à côté de Resend/webhook : fire-and-forget, n'altère jamais
+ * la réponse ni la livraison e-mail existante. PII (nom/tél/e-mail/message) →
+ * `leads` UNIQUEMENT, jamais dans `events`.
  */
 async function captureLead(data: ContactInput, config: SiteConfig | null): Promise<void> {
   const page = normalizePagePath(config, data.pageUrl);
@@ -102,8 +102,9 @@ async function captureLead(data: ContactInput, config: SiteConfig | null): Promi
         .join("\n")
     : "";
 
-  // leads : avec PII.
-  await insertRow(BASEROW_TABLES.leads(), {
+  // leads : avec PII. Montant estimé converti en CENTIMES (convention back-office).
+  await postLead({
+    site_slug: data.siteSlug ?? "",
     name: data.name,
     phone: data.phone ?? "",
     email: data.email ?? "",
@@ -111,11 +112,11 @@ async function captureLead(data: ContactInput, config: SiteConfig | null): Promi
     service: data.service ?? "",
     city: data.city ?? "",
     message: data.message ?? "",
-    site: data.siteSlug ?? "",
     site_name: data.site ?? "",
     page,
     session: data.session ?? "",
-    estimate: typeof data.estimateBilled === "number" ? data.estimateBilled : null,
+    estimate_cents:
+      typeof data.estimateBilled === "number" ? Math.round(data.estimateBilled * 100) : null,
     items: itemsSummary,
   });
 
@@ -163,7 +164,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Vérification anti-robot échouée." }, { status: 403 });
     }
   }
-  // Capture Baserow (leads + form_submit) — sink additionnel, fire-and-forget.
+  // Capture back-office (leads + form_submit) — sink additionnel, fire-and-forget.
   await captureLead(data, config);
 
   const { subject, lines } = formatLead(data);
@@ -174,7 +175,7 @@ export async function POST(request: Request) {
 
   // GARDE-FOU TEST : en LOCAL on ne livre JAMAIS au client (pas d'e-mail Resend,
   // pas de webhook) — éviter de spammer la vraie adresse client (config.forms.to)
-  // pendant les tests. La capture Baserow ci-dessus reste active. Override
+  // pendant les tests. La capture back-office ci-dessus reste active. Override
   // ponctuel possible via DEV_ALLOW_DELIVERY=true.
   const deliveryEnabled = isDeliveryEnabled();
 
@@ -228,7 +229,7 @@ export async function POST(request: Request) {
   }
 
   // Aucun canal de livraison actif (non configuré, OU désactivé en local/test) :
-  // repli gracieux (succès, on log). La capture Baserow a déjà eu lieu.
+  // repli gracieux (succès, on log). La capture back-office a déjà eu lieu.
   if (!webhookUrl && !apiKey) {
     const reason = deliveryEnabled
       ? "aucun canal configuré"

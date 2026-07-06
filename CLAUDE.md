@@ -4,7 +4,7 @@
 
 **Next.js 16** (App Router, React 19, Tailwind v4, TypeScript) qui **rend tous les
 sites clients** à partir de fichiers de configuration, plus une suite de **scripts
-Node `.mjs`** d'exploitation (déploiement, domaines, onboarding, Baserow). Un seul
+Node `.mjs`** d'exploitation (déploiement, domaines, onboarding, back-office). Un seul
 codebase sert N sites, routés par **sous-domaine `*.xklic.com`** et par **domaine
 personnalisé**. Le repo voisin `xklic_vitrine` est la vitrine + le tunnel de commande.
 
@@ -41,7 +41,7 @@ npx tsc --noEmit # typecheck (utilisé après édition d'une config/d'un bloc)
 
 ## Workflow nouveau client (de bout en bout)
 
-1. **Récupérer le dossier** depuis Baserow :
+1. **Récupérer le dossier** depuis le back-office :
    `npm run dossier:get -- "<nom entreprise>"` → JSON complet (fiche + Paiements +
    Production + Notes + Produits). C'est la source des données client.
 2. **Créer la config** `config/sites/<slug>/config.json` (voir `NEWCLIENT.md` pour
@@ -55,7 +55,7 @@ npx tsc --noEmit # typecheck (utilisé après édition d'une config/d'un bloc)
 ## Scripts d'exploitation (commandes npm — source de vérité)
 
 ```bash
-# Récupérer un dossier client depuis Baserow
+# Récupérer un dossier client depuis le back-office
 npm run dossier:get -- "<nom | Ref | OrderId>"
 
 # Déploiement
@@ -89,15 +89,25 @@ Lancer d'abord en `--dry-run`, puis `--apply`.
 > à un seul label sous `.xklic.com` ; jamais l'apex, le www, le wildcard, ni un
 > `*.vercel.app`. Liste de slugs vide → abort (anti-suppression massive).
 
-## Données Baserow
+## Données back-office (API Go → Postgres)
 
-`scripts/get-dossier.mjs` lit la base Baserow « xklic » : `Dossiers` (clé `Ref` =
-OrderId) liée à `Paiements` / `Production` / `Notes` / `Produits`. Sortie : résumé
-lisible sur **stderr**, **JSON aplati** (menus déroulants et liens résolus) sur
-**stdout** — prêt à exploiter pour bâtir une config client. `Statut commande`
-(lead/panier/payé, écrit par la vitrine) ≠ `Statut production` (kanban interne :
-Prospect → À faire → En prod → En ligne → SAV). Script **local** (lit `.env.local`,
-ne tourne pas sur Vercel).
+Le back-office (`xklic-backoffice`, API Go → Postgres) est la **source de
+vérité unique** des données clients (cf. le chantier de migration à la racine
+du dossier parent).
+
+- **Lecture** : `scripts/get-dossier.mjs` interroge
+  `GET /v1/public/agency/orders?q=` puis `GET /v1/public/agency/orders/{ref}` :
+  dossier (clé `Ref` = OrderId) + `Paiements` / `Production` / `Notes` /
+  `Produits`. Sortie : résumé lisible sur **stderr**, **JSON** sur **stdout**
+  avec les libellés historiques (`Ref`, `Entreprise`, `Statut commande`… ;
+  booléens → oui/non) — prêt à exploiter pour bâtir une config client.
+  `Statut commande` (lead/panier/payé, écrit par la vitrine) ≠ `Statut production`
+  (kanban interne : Prospect → À faire → En prod → En ligne → SAV). Script
+  **local** (lit `.env.local`, ne tourne pas sur Vercel).
+- **Écriture** (runtime serveur) : `src/lib/backoffice.ts` — `postLead()` →
+  `POST /v1/public/leads` (formulaires, PII) et `postEvent()` →
+  `POST /v1/public/events` (clics de contact, sans PII). Fire-and-forget strict
+  (timeout 3 s, jamais de throw), gating local via `isInsertEnabled()`.
 
 ## Variables d'environnement
 
@@ -111,8 +121,8 @@ ne tourne pas sur Vercel).
   `TURNSTILE_SECRET_KEY`, `NEXT_PUBLIC_TURNSTILE_SITE_KEY`.
 - **Google Search Console** : `GSC_SERVICE_ACCOUNT_KEY` (chemin du JSON),
   `GSC_PROPERTY`, `GSC_HUMAN_OWNER`.
-- **Baserow** : `BASEROW_TOKEN`, `BASEROW_API_URL` (défaut `https://api.baserow.io`),
-  `BASEROW_TABLE_{DOSSIERS,PAIEMENTS,PRODUCTION,NOTES,PRODUITS}`.
+- **Back-office** : `BACKOFFICE_API_URL` (base de l'API Go, sans slash final),
+  `BACKOFFICE_API_KEY` (= `ENGINE_API_KEY` côté back-office, header `X-API-Key`).
 - **Médias / mail** : `BLOB_READ_WRITE_TOKEN`, `RESEND_API_KEY`, `RESEND_FROM`,
   `LEAD_TO`, `LEAD_WEBHOOK_URL`.
 - **Divers** : `NEXT_PUBLIC_ROOT_DOMAIN` (défaut `xklic.com`),

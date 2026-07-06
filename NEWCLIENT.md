@@ -1,7 +1,7 @@
 ## RÔLE
 
 Génère la config d'un NOUVEAU site client pour le moteur `agence_website`, à
-partir du DOSSIER client **récupéré depuis Baserow** (voir « DOSSIER CLIENT » en
+partir du DOSSIER client **récupéré depuis le back-office** (voir « DOSSIER CLIENT » en
 bas : on te donne juste le nom ou la Ref, tu vas chercher les données toi-même
 avec le script). Le résultat : un site complet, crédible et **unique**, propre au
 métier et à la ville du client.
@@ -136,8 +136,8 @@ prestations en pages silo, et **tout manque ou hypothèse signalé**.
 ## DOSSIER CLIENT :
 
 On te donne **uniquement le nom de l'entreprise ou la Ref** du dossier (ci-dessous).
-Tu ne colles JAMAIS de données client à la main : tu les récupères depuis Baserow
-avec le script dédié.
+Tu ne colles JAMAIS de données client à la main : tu les récupères depuis le
+back-office avec le script dédié.
 
 ```bash
 npm run dossier:get -- "<nom de l'entreprise | Ref | OrderId>"
@@ -151,8 +151,9 @@ npm run dossier:get -- "<nom de l'entreprise | Ref | OrderId>"
 - Si **plusieurs dossiers** correspondent, le script liste les candidats avec leur
   Ref : relance avec le **nom exact** ou la **Ref**.
 - Si un **SIREN/SIRET** figure au dossier → applique l'ENRICHISSEMENT ci-dessus.
-- Rappel : `dossier:get` lit `.env.local` (`BASEROW_TOKEN`, `BASEROW_TABLE_*`),
-  c'est un script **local de lecture** (distinct du token d'écriture de la prod).
+- Rappel : `dossier:get` lit `.env.local` (`BACKOFFICE_API_URL`,
+  `BACKOFFICE_API_KEY`), c'est un script **local de lecture** (API Go du
+  back-office, distinct des écritures de la prod).
 
 ⚠️ Ne **jamais committer** la sortie du script (données client réelles, e-mails,
 téléphone, OrderId, secrets) — ni dans ce fichier, ni ailleurs dans le repo.

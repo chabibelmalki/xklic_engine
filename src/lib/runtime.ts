@@ -24,7 +24,7 @@ export function isDeliveryEnabled(): boolean {
 }
 
 /**
- * Écriture Baserow (events + leads) autorisée ? NON en local, SAUF override
+ * Écriture back-office (events + leads) autorisée ? NON en local, SAUF override
  * explicite `DEV_ALLOW_INSERT=true`. Évite de polluer les tables avec des lignes
  * de test pendant le dev. Serveur uniquement.
  */

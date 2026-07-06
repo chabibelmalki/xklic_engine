@@ -9,7 +9,7 @@ import { eventTypeSchema, normalizePagePath, trackEvent } from "@/lib/events";
  * `pagePath` reçu est normalisé puis validé contre la whitelist des routes du
  * site (jamais stocké brut). Fire-and-forget : on répond toujours 200 (un bot ou
  * un payload bancal ne doit pas générer de bruit côté visiteur), l'insert
- * Baserow échoue en silence si besoin.
+ * back-office échoue en silence si besoin.
  *
  * `form_submit` est émis CÔTÉ SERVEUR depuis /api/contact (succès du lead) ;
  * il reste accepté ici par cohérence d'enum, mais le listener client ne l'émet pas.
