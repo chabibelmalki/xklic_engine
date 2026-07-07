@@ -1,0 +1,1801 @@
+{
+  "slug": "mb-nettoyage",
+  "theme": "pro-bleu-nuit",
+  "stylePack": "marine-premium",
+  "i18n": {
+    "default": "fr",
+    "languages": ["fr", "en"]
+  },
+  "branding": {
+    "logo": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/5C18D0BB-FAE9-498D-BEAC-1569E20106FB-Fkylt8v3W7u1GI7LHyhL4gqQLzDx0s.jpeg",
+    "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/5C18D0BB-FAE9-498D-BEAC-1569E20106FB-Fkylt8v3W7u1GI7LHyhL4gqQLzDx0s.jpeg",
+    "logoAlt": "MB Nettoyage — nettoyage à domicile et professionnel à Marseille",
+    "logoTwoTone": {
+      "first": "#1e3a8a",
+      "rest": "#c9a227"
+    },
+    "tagline": "Nettoyage à domicile & professionnel · Marseille",
+    "colors": {
+      "brand": "#1e3a8a",
+      "accent": "#c9a227",
+      "neutral": "cool"
+    }
+  },
+  "social": [
+    {
+      "platform": "facebook",
+      "url": "https://www.facebook.com/share/18WbjXU7JB/?mibextid=wwXIfr"
+    },
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/mb.nettoyage13?igsh=MXhjam16c282dDlsNw%3D%3D&utm_source=qr"
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@mb.nettoyage13"
+    }
+  ],
+  "googleReviewUrl": "https://maps.app.goo.gl/Hz7ADyGiq8WAnj8U6?g_st=ic",
+  "entreprise": {
+    "nom": "MB Nettoyage",
+    "statut": "EI",
+    "siret": "99925386700017",
+    "ape": "81.21Z",
+    "apeLabel": "Nettoyage courant des bâtiments",
+    "tva": {
+      "regime": "franchise"
+    },
+    "dirigeant": "Meriem Bouhofrat",
+    "siege": "171 boulevard de Saint-Loup, 13011 Marseille"
+  },
+  "seo": {
+    "schemaType": "HousekeepingService",
+    "ville": "Marseille"
+  },
+  "geo": {
+    "lat": 43.2847572757835,
+    "lng": 5.4373811847503
+  },
+  "meta": {
+    "title": "MB Nettoyage — Ménage à domicile & nettoyage professionnel à Marseille",
+    "description": "MB Nettoyage : ménage à domicile, repassage, vitres, nettoyage de bureaux et post-chantier à Marseille et Aix-en-Provence. Produits naturels fournis, devis gratuit par téléphone, crédit d'impôt de 50 % pour les particuliers.",
+    "keywords": [
+      "ménage à domicile Marseille",
+      "femme de ménage Marseille",
+      "nettoyage professionnel Marseille",
+      "nettoyage bureaux Marseille",
+      "repassage à domicile Marseille",
+      "crédit d'impôt ménage Marseille",
+      "nettoyage Aix-en-Provence",
+      "nettoyage post-chantier Marseille"
+    ]
+  },
+  "forms": {
+    "to": "mb.nettoyage130@gmail.com",
+    "turnstile": true
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Accueil",
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "split",
+          "content": {
+            "showSocial": true,
+            "image": {
+              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
+              "alt": "Chambre entretenue avec soin par MB Nettoyage à Marseille"
+            },
+            "imageRatio": "4/5",
+            "eyebrow": "Ménage à domicile & nettoyage professionnel · Marseille, Aix-en-Provence",
+            "titre": "Un intérieur impeccable,",
+            "titreAccent": "signé MB Nettoyage",
+            "accroche": "Ménage régulier ou ponctuel, repassage, vitres, entretien de bureaux ou nettoyage après travaux : MB Nettoyage intervient chez les particuliers comme chez les professionnels à Marseille, Aix-en-Provence et jusqu'à 20 km alentour, avec du matériel et des produits naturels.",
+            "trust": [
+              {
+                "icone": "Leaf",
+                "label": "Matériel et produits naturels fournis"
+              },
+              {
+                "icone": "Clock",
+                "label": "Disponible 24h/24, 7j/7"
+              },
+              {
+                "icone": "PhoneCall",
+                "label": "Devis gratuit par téléphone"
+              },
+              {
+                "icone": "BadgePercent",
+                "label": "−15 % sur votre premier passage"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Découvrir nos prestations",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "lignes-alternees",
+          "content": {
+            "eyebrow": "Nos prestations",
+            "titre": "Particuliers et professionnels, un seul interlocuteur",
+            "intro": "MB Nettoyage accompagne aussi bien l'entretien de votre logement que celui de vos locaux professionnels, avec le même soin du détail.",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "description": "Entretien régulier ou ponctuel de votre logement, à la fréquence qui vous convient.",
+                "href": "/menage-domicile",
+                "icone": "Sparkles",
+                "priceHint": "dès 50 €/h",
+                "badge": "Crédit d'impôt 50 %"
+              },
+              {
+                "nom": "Grand ménage & état des lieux",
+                "description": "Remise en état complète avant ou après un état des lieux, un déménagement ou une location.",
+                "href": "/grand-menage-etat-des-lieux",
+                "icone": "KeyRound",
+                "priceHint": "Sur devis gratuit"
+              },
+              {
+                "nom": "Repassage à domicile",
+                "description": "Votre linge repassé avec soin, au kilo, à domicile.",
+                "href": "/repassage",
+                "icone": "Shirt",
+                "priceHint": "dès 10 €/kilo",
+                "badge": "Crédit d'impôt 50 %"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "description": "Vitres et baies vitrées lavées avec soin, pour les particuliers comme pour les professionnels.",
+                "href": "/nettoyage-vitres",
+                "icone": "Droplets",
+                "priceHint": "dès 10 €/vitre"
+              },
+              {
+                "nom": "Nettoyage de bureaux & commerces",
+                "description": "Entretien régulier de vos locaux professionnels : bureaux, commerces, boutiques.",
+                "href": "/nettoyage-bureaux-commerces",
+                "icone": "Building2",
+                "priceHint": "Sur devis"
+              },
+              {
+                "nom": "Nettoyage post-chantier",
+                "description": "Poussière de chantier, traces de peinture et résidus de travaux éliminés avant livraison.",
+                "href": "/nettoyage-fin-chantier",
+                "icone": "HardHat",
+                "priceHint": "Sur devis"
+              }
+            ],
+            "cta": {
+              "label": "Voir tous nos tarifs",
+              "href": "/tarifs"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "sentier-alterne",
+          "content": {
+            "eyebrow": "Simple et rapide",
+            "titre": "Comment ça se passe",
+            "items": [
+              {
+                "icone": "PhoneCall",
+                "titre": "Votre appel",
+                "texte": "Vous décrivez votre besoin par téléphone, WhatsApp ou via le formulaire : nous sommes joignables 24h/24, 7j/7."
+              },
+              {
+                "icone": "FileText",
+                "titre": "Devis gratuit",
+                "texte": "Une estimation claire et sans engagement, adaptée à votre logement ou à vos locaux."
+              },
+              {
+                "icone": "CalendarCheck",
+                "titre": "Le rendez-vous",
+                "texte": "Nous fixons ensemble un créneau, ponctuel ou régulier, à Marseille, Aix-en-Provence ou alentour."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "Un résultat soigné",
+                "texte": "Intervention avec du matériel et des produits naturels, pour un résultat impeccable."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "eyebrow": "Zone d'intervention",
+            "titre": "À Marseille, Aix-en-Provence et 20 km alentour",
+            "intro": "Nous nous déplaçons dans Marseille et ses quartiers, à Aix-en-Provence et dans les communes voisines. Vérifiez votre secteur ou contactez-nous directement.",
+            "rayonKm": 20,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=5.05%2C43.15%2C5.75%2C43.65&layer=mapnik&marker=43.2847572757835%2C5.4373811847503",
+            "zones": [
+              {
+                "region": "Marseille et ses environs",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "Septèmes-les-Vallons",
+                  "Les Pennes-Mirabeau",
+                  "Marignane",
+                  "Vitrolles"
+                ]
+              },
+              {
+                "region": "Aix-en-Provence et alentours",
+                "principale": "Aix-en-Provence",
+                "villes": [
+                  "Aix-en-Provence",
+                  "Gardanne",
+                  "Bouc-Bel-Air",
+                  "Cabriès",
+                  "Simiane-Collongue",
+                  "Éguilles",
+                  "Venelles"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Vos questions avant de commencer",
+            "items": [
+              {
+                "question": "Intervenez-vous chez les particuliers et les professionnels ?",
+                "reponse": "Oui. Ménage, repassage et vitres pour les particuliers ; entretien de bureaux, commerces et nettoyage post-chantier pour les professionnels."
+              },
+              {
+                "question": "Le devis est-il gratuit ?",
+                "reponse": "Oui, le devis est gratuit et se fait par téléphone : décrivez-nous votre besoin, nous vous répondons rapidement."
+              },
+              {
+                "question": "Fournissez-vous le matériel et les produits ?",
+                "reponse": "Oui, nous venons avec notre matériel et des produits naturels, adaptés à chaque intervention."
+              },
+              {
+                "question": "Vos prestations à domicile ouvrent-elles droit au crédit d'impôt ?",
+                "reponse": "Oui, pour le ménage, le repassage et les vitres réalisés au domicile d'un particulier : 50 % du montant vous est remboursé ou déduit de vos impôts."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un devis gratuit en quelques minutes ?",
+            "sousTitre": "Appelez-nous ou écrivez sur WhatsApp : réponse rapide, 7j/7.",
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            },
+            "lien": {
+              "label": "ou écrivez-nous sur WhatsApp →",
+              "href": "https://wa.me/33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Services",
+      "meta": {
+        "title": "Nos prestations de nettoyage à Marseille — MB Nettoyage",
+        "description": "Ménage à domicile, grand ménage, repassage, vitres, nettoyage de bureaux et post-chantier à Marseille et Aix-en-Provence. Devis gratuit par téléphone."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nos prestations",
+            "titre": "Du ménage régulier au nettoyage professionnel",
+            "intro": "MB Nettoyage couvre l'ensemble de vos besoins d'entretien à Marseille, Aix-en-Provence et alentour, chez les particuliers comme chez les professionnels.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Particuliers",
+            "titre": "Chez vous",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "description": "Entretien régulier ou ponctuel : sols, sanitaires, cuisine, poussières.",
+                "href": "/menage-domicile",
+                "icone": "Sparkles",
+                "priceHint": "dès 50 €/h",
+                "badge": "Crédit d'impôt 50 %"
+              },
+              {
+                "nom": "Grand ménage & état des lieux",
+                "description": "Remise en état complète avant emménagement, après déménagement ou avant un état des lieux.",
+                "href": "/grand-menage-etat-des-lieux",
+                "icone": "KeyRound",
+                "priceHint": "Sur devis gratuit"
+              },
+              {
+                "nom": "Repassage à domicile",
+                "description": "Votre linge trié, repassé et plié avec soin, au kilo.",
+                "href": "/repassage",
+                "icone": "Shirt",
+                "priceHint": "dès 10 €/kilo",
+                "badge": "Crédit d'impôt 50 %"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "description": "Vitres, baies et fenêtres lavées selon leur taille.",
+                "href": "/nettoyage-vitres",
+                "icone": "Droplets",
+                "priceHint": "10 à 15 €/vitre"
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Professionnels",
+            "titre": "Vos locaux",
+            "items": [
+              {
+                "nom": "Nettoyage de bureaux & commerces",
+                "description": "Entretien régulier de vos bureaux, commerces et boutiques, sur devis.",
+                "href": "/nettoyage-bureaux-commerces",
+                "icone": "Building2",
+                "priceHint": "Sur devis"
+              },
+              {
+                "nom": "Nettoyage post-chantier",
+                "description": "Nettoyage complet après travaux, rénovation ou construction.",
+                "href": "/nettoyage-fin-chantier",
+                "icone": "HardHat",
+                "priceHint": "Sur devis"
+              },
+              {
+                "nom": "Nettoyage de vitres professionnel",
+                "description": "Vitrines et façades vitrées de vos locaux, sur devis.",
+                "href": "/nettoyage-vitres",
+                "icone": "Droplets",
+                "priceHint": "Sur devis"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Une prestation qui ne figure pas ici ?",
+            "sousTitre": "Décrivez-nous votre besoin : nous établissons un devis gratuit et sans engagement.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tarifs",
+      "label": "Tarifs",
+      "meta": {
+        "title": "Tarifs — Ménage, repassage, vitres et nettoyage professionnel à Marseille",
+        "description": "Tarifs de MB Nettoyage à Marseille : ménage à domicile dès 50 €/h, repassage dès 10 €/kilo, vitres dès 10 €/vitre. Nettoyage professionnel sur devis. Crédit d'impôt 50 % pour les particuliers."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Tarifs",
+            "titre": "Des prix clairs, annoncés d'avance",
+            "intro": "Les tarifs ci-dessous s'appliquent aux prestations chez les particuliers. Pour les professionnels, un devis personnalisé est établi selon vos locaux."
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "grille",
+          "variant": "grille",
+          "content": {
+            "titre": "Particuliers",
+            "intro": "Prestations à domicile, éligibles au crédit d'impôt de 50 %.",
+            "items": [
+              {
+                "nom": "Ménage régulier",
+                "prix": 50,
+                "unite": "/h",
+                "description": "Entretien à fréquence régulière : hebdomadaire, bimensuelle ou mensuelle.",
+                "populaire": true,
+                "inclus": [
+                  "Sols, sanitaires, cuisine",
+                  "Dépoussiérage",
+                  "Matériel et produits naturels fournis"
+                ]
+              },
+              {
+                "nom": "Ménage ponctuel",
+                "prix": 60,
+                "unite": "/h",
+                "description": "Intervention unique, sans engagement.",
+                "inclus": [
+                  "Sols, sanitaires, cuisine",
+                  "Dépoussiérage",
+                  "Matériel et produits naturels fournis"
+                ]
+              },
+              {
+                "nom": "Repassage",
+                "prix": 10,
+                "unite": "/kilo",
+                "description": "Tarif dégressif à partir de 3 kilos."
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "prix": "10 à 15",
+                "unite": "/vitre",
+                "description": "Selon la taille de la vitre."
+              },
+              {
+                "nom": "Grand ménage / état des lieux",
+                "prix": "Sur devis",
+                "description": "Devis gratuit établi par téléphone, selon la surface et l'état du logement."
+              }
+            ],
+            "note": "Toutes ces prestations, réalisées au domicile d'un particulier, sont éligibles au crédit d'impôt de 50 %. −15 % sur votre premier passage. Offre de parrainage : −10 € pour vous et pour la personne parrainée.",
+            "cta": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "sur-devis",
+          "variant": "grille",
+          "content": {
+            "titre": "Professionnels",
+            "intro": "Commerces, bureaux et chantiers : chaque devis est établi sur mesure.",
+            "items": [
+              {
+                "nom": "Nettoyage de bureaux & commerces",
+                "prix": "Sur devis",
+                "description": "Selon la surface et la fréquence souhaitée."
+              },
+              {
+                "nom": "Nettoyage post-chantier",
+                "prix": "Sur devis",
+                "description": "Selon l'ampleur des travaux et la surface à traiter."
+              },
+              {
+                "nom": "Nettoyage de vitres professionnel",
+                "prix": "Sur devis",
+                "description": "Vitrines et façades vitrées."
+              }
+            ],
+            "cta": {
+              "label": "Demander un devis professionnel",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Une question sur nos tarifs ?",
+            "sousTitre": "Appelez-nous, nous vous répondons rapidement, 7j/7.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "a-propos",
+      "label": "À propos",
+      "meta": {
+        "title": "À propos de MB Nettoyage — Marseille",
+        "description": "MB Nettoyage, entreprise de nettoyage à Marseille : ménage à domicile et nettoyage professionnel, avec du matériel et des produits naturels."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "À propos",
+            "titre": "Un entretien soigné, pour chaque intérieur"
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "MB Nettoyage · Marseille",
+            "paragraphes": [
+              "MB Nettoyage est une entreprise de nettoyage basée à Marseille, fondée par Meriem Bouhofrat. Elle accompagne aussi bien les particuliers que les professionnels : ménage à domicile, repassage et vitres d'un côté, entretien de bureaux, de commerces et nettoyage post-chantier de l'autre.",
+              "Chaque intervention est réalisée avec du matériel et des produits naturels, dans le respect de votre logement, de vos meubles et de vos habitudes. L'objectif est simple : un résultat soigné et durable, sans compromis sur la qualité des produits utilisés.",
+              "MB Nettoyage intervient à Marseille, Aix-en-Provence et dans un rayon de 20 km, avec une disponibilité 24h/24 et 7j/7 pour s'adapter à vos contraintes d'emploi du temps. Une gamme de produits d'entretien complémentaire est en préparation, pour prolonger cette exigence de qualité au-delà des interventions."
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "Nos interventions",
+            "titre": "Un aperçu de notre travail",
+            "images": [
+              {
+                "image": {
+                  "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
+                  "alt": "Chambre entretenue avec soin, sols et literie impeccables"
+                },
+                "titre": "Ménage à domicile"
+              },
+              {
+                "image": {
+                  "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/F13C28AC-BA55-4A82-B466-AEF6457E8B0C-3a3IjqOYQAKKtdt8O1Svn90c7y9dod.jpeg",
+                  "alt": "Boutique nettoyée et rangée à Marseille"
+                },
+                "titre": "Nettoyage de commerce"
+              },
+              {
+                "image": {
+                  "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_4304-xw7ac4gbDYh8gjB8DZ1sozZcCjkswc.jpeg",
+                  "alt": "Pièce avant nettoyage de fin de chantier, matériel de travaux en place"
+                },
+                "titre": "Avant nettoyage post-chantier"
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "ligne-horizontale",
+          "content": {
+            "eyebrow": "Nos engagements",
+            "titre": "Ce qui guide chaque intervention",
+            "items": [
+              {
+                "icone": "Leaf",
+                "titre": "Produits naturels",
+                "texte": "Matériel et produits naturels fournis, respectueux de votre intérieur."
+              },
+              {
+                "icone": "ShieldCheck",
+                "titre": "Confiance",
+                "texte": "Discrétion et sérieux, chez les particuliers comme dans vos locaux professionnels."
+              },
+              {
+                "icone": "Clock",
+                "titre": "Disponibilité",
+                "texte": "Joignable 24h/24 et 7j/7, pour s'adapter à votre emploi du temps."
+              },
+              {
+                "icone": "BadgeCheck",
+                "titre": "Transparence",
+                "texte": "Des tarifs annoncés d'avance et un devis gratuit avant toute intervention."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Envie de nous confier votre entretien ?",
+            "sousTitre": "Devis gratuit par téléphone, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "faq",
+      "label": "FAQ",
+      "meta": {
+        "title": "Questions fréquentes — MB Nettoyage Marseille",
+        "description": "Tarifs, zone d'intervention, crédit d'impôt, produits utilisés : toutes les réponses sur les prestations de MB Nettoyage à Marseille."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "FAQ",
+            "titre": "Vos questions, nos réponses"
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "liste-ouverte",
+          "content": {
+            "titre": "Tout savoir avant de commencer",
+            "items": [
+              {
+                "question": "Quelles prestations proposez-vous ?",
+                "reponse": "Pour les particuliers : ménage régulier ou ponctuel, grand ménage, état des lieux, repassage et nettoyage de vitres. Pour les professionnels : entretien de bureaux et commerces, nettoyage de vitres et nettoyage post-chantier."
+              },
+              {
+                "question": "Dans quel secteur intervenez-vous ?",
+                "reponse": "À Marseille, Aix-en-Provence et dans un rayon d'environ 20 km autour de ces deux villes."
+              },
+              {
+                "question": "Comment obtenir un devis ?",
+                "reponse": "Par téléphone, WhatsApp ou via notre formulaire : le devis est gratuit et sans engagement, nous vous répondons rapidement, 7j/7."
+              },
+              {
+                "question": "Fournissez-vous le matériel et les produits ?",
+                "reponse": "Oui, nous venons avec notre matériel et des produits naturels, adaptés à chaque intervention."
+              },
+              {
+                "question": "Vos prestations donnent-elles droit au crédit d'impôt ?",
+                "reponse": "Oui, pour le ménage, le repassage et les vitres réalisés au domicile d'un particulier : 50 % du montant vous est remboursé ou déduit de vos impôts. Les prestations pour les professionnels sont facturées sur devis, hors crédit d'impôt."
+              },
+              {
+                "question": "Proposez-vous une réduction pour un premier rendez-vous ?",
+                "reponse": "Oui, −15 % sont appliqués sur votre premier passage. Une offre de parrainage vous fait également bénéficier de −10 €, ainsi qu'à la personne que vous parrainez."
+              },
+              {
+                "question": "Êtes-vous disponibles le week-end ?",
+                "reponse": "Oui, MB Nettoyage est disponible 24h/24 et 7j/7, pour s'adapter à vos contraintes d'emploi du temps."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Une autre question ?",
+            "sousTitre": "Appelez-nous ou écrivez-nous : nous répondons rapidement.",
+            "ctaPrimaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Contact — MB Nettoyage à Marseille",
+        "description": "Contactez MB Nettoyage : téléphone, e-mail, WhatsApp. Demande d'intervention à Marseille, Aix-en-Provence et alentour, réponse rapide, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Contact",
+            "titre": "Parlons de votre besoin",
+            "intro": "Une question, une demande d'intervention ? Écrivez-nous, appelez ou passez par WhatsApp — réponse rapide, devis gratuit, 24h/24 et 7j/7."
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Demande d'intervention",
+            "intro": "Décrivez votre besoin : type de prestation, commune et disponibilités. Nous revenons vers vous rapidement avec un devis.",
+            "form": true,
+            "formMode": "demande-intervention",
+            "telephone": "+33 7 66 65 14 29",
+            "telephoneHeader": "icone-popup",
+            "whatsapp": "+33 7 66 65 14 29",
+            "email": "mb.nettoyage130@gmail.com",
+            "horaires": [
+              {
+                "jour": "Lun – Dim",
+                "heures": "24h/24"
+              }
+            ],
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=5.05%2C43.15%2C5.75%2C43.65&layer=mapnik&marker=43.2847572757835%2C5.4373811847503",
+            "services": [
+              "Ménage à domicile",
+              "Grand ménage / état des lieux",
+              "Repassage",
+              "Nettoyage de vitres",
+              "Nettoyage de bureaux et commerces",
+              "Nettoyage post-chantier",
+              "Autre / je ne sais pas"
+            ],
+            "villes": [
+              "Marseille",
+              "Allauch",
+              "Plan-de-Cuques",
+              "Septèmes-les-Vallons",
+              "Les Pennes-Mirabeau",
+              "Marignane",
+              "Vitrolles",
+              "Aix-en-Provence",
+              "Gardanne",
+              "Bouc-Bel-Air",
+              "Cabriès",
+              "Simiane-Collongue",
+              "Éguilles",
+              "Venelles"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "devis",
+      "label": "Devis gratuit",
+      "navHidden": true,
+      "meta": {
+        "title": "Demande de devis gratuit — MB Nettoyage Marseille",
+        "description": "Demandez votre devis gratuit à MB Nettoyage : ménage, repassage, vitres, nettoyage de bureaux ou post-chantier à Marseille et alentour."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Devis gratuit",
+            "titre": "Demandez votre devis en 1 minute",
+            "intro": "Renseignez votre besoin : nous revenons vers vous rapidement avec une estimation adaptée, gratuite et sans engagement.",
+            "ctaSecondaire": {
+              "label": "Voir nos tarifs",
+              "href": "/tarifs"
+            }
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Votre demande de devis",
+            "intro": "Quelques informations suffisent pour vous établir une estimation.",
+            "form": true,
+            "formMode": "devis",
+            "telephone": "+33 7 66 65 14 29",
+            "whatsapp": "+33 7 66 65 14 29",
+            "email": "mb.nettoyage130@gmail.com",
+            "horaires": [
+              {
+                "jour": "Lun – Dim",
+                "heures": "24h/24"
+              }
+            ],
+            "services": [
+              "Ménage à domicile",
+              "Grand ménage / état des lieux",
+              "Repassage",
+              "Nettoyage de vitres",
+              "Nettoyage de bureaux et commerces",
+              "Nettoyage post-chantier",
+              "Autre / je ne sais pas"
+            ],
+            "villes": [
+              "Marseille",
+              "Allauch",
+              "Plan-de-Cuques",
+              "Septèmes-les-Vallons",
+              "Les Pennes-Mirabeau",
+              "Marignane",
+              "Vitrolles",
+              "Aix-en-Provence",
+              "Gardanne",
+              "Bouc-Bel-Air",
+              "Cabriès",
+              "Simiane-Collongue",
+              "Éguilles",
+              "Venelles"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "zone-intervention",
+      "label": "Zone d'intervention",
+      "navHidden": true,
+      "meta": {
+        "title": "Zone d'intervention — Marseille, Aix-en-Provence et 20 km alentour",
+        "description": "MB Nettoyage intervient à Marseille, Aix-en-Provence, Vitrolles, Marignane, Gardanne et dans toutes les communes dans un rayon de 20 km."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Zone d'intervention",
+            "titre": "Nous nous déplaçons jusqu'à 20 km",
+            "intro": "Marseille, Aix-en-Provence et les communes voisines, pour les particuliers comme pour les professionnels."
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "Communes desservies",
+            "intro": "Vérifiez votre secteur ci-dessous ou contactez-nous directement pour confirmer.",
+            "rayonKm": 20,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=5.05%2C43.15%2C5.75%2C43.65&layer=mapnik&marker=43.2847572757835%2C5.4373811847503",
+            "zones": [
+              {
+                "region": "Marseille et ses environs",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "Septèmes-les-Vallons",
+                  "Les Pennes-Mirabeau",
+                  "Marignane",
+                  "Vitrolles"
+                ]
+              },
+              {
+                "region": "Aix-en-Provence et alentours",
+                "principale": "Aix-en-Provence",
+                "villes": [
+                  "Aix-en-Provence",
+                  "Gardanne",
+                  "Bouc-Bel-Air",
+                  "Cabriès",
+                  "Simiane-Collongue",
+                  "Éguilles",
+                  "Venelles"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Votre commune est dans la liste ?",
+            "sousTitre": "Demandez votre devis gratuit, nous nous déplaçons.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "credit-impot",
+      "label": "Crédit d'impôt 50 %",
+      "navHidden": true,
+      "meta": {
+        "title": "Crédit d'impôt de 50 % — ménage à domicile à Marseille",
+        "description": "Les prestations de ménage, repassage et vitres de MB Nettoyage réalisées au domicile d'un particulier à Marseille sont éligibles au crédit d'impôt de 50 %.",
+        "keywords": [
+          "crédit d'impôt ménage Marseille",
+          "services à la personne Marseille",
+          "ménage à domicile crédit d'impôt 50%"
+        ]
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Services à la personne",
+            "titre": "Crédit d'impôt de 50 %",
+            "intro": "Le ménage, le repassage et le nettoyage de vitres réalisés à votre domicile sont éligibles au crédit d'impôt de 50 % au titre des services à la personne.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Tarifs", "href": "/tarifs" },
+              { "label": "Crédit d'impôt 50 %" }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "simulateur",
+          "content": {
+            "eyebrow": "Simulateur",
+            "titre": "Votre ménage à domicile vous coûte",
+            "argumentaireTitre": "Votre ménage à domicile vous coûte",
+            "argumentaireAccent": "deux fois moins cher",
+            "argumentaire": "Pour le ménage régulier chez vous : 50 €/h facturés, mais seulement 25 €/h réellement à votre charge après le crédit d'impôt de 50 %.",
+            "points": [
+              "50 % de crédit d'impôt sur le ménage, le repassage et les vitres à domicile",
+              "Une attestation fiscale vous est remise chaque année",
+              "Valable uniquement pour les prestations chez les particuliers"
+            ],
+            "cardTitre": "Simulateur crédit d'impôt",
+            "cardIntro": "Estimez en quelques secondes votre coût réel, crédit d'impôt déduit.",
+            "curseurLabel": "Heures de ménage par semaine",
+            "unite": "h",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "defaut": 3,
+            "prixPlein": 50,
+            "prixNet": 25,
+            "facteurMensuel": 4.33,
+            "plafondAnnuel": 12000,
+            "note": "Estimation indicative, dans la limite du plafond annuel fixé par l'administration fiscale pour les services à la personne.",
+            "cta": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Crédit d'impôt : vos questions",
+            "items": [
+              {
+                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
+                "reponse": "Pour le ménage, le repassage et les vitres réalisés à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées, au titre des services à la personne."
+              },
+              {
+                "question": "Cela s'applique-t-il aux prestations pour les professionnels ?",
+                "reponse": "Non. Le crédit d'impôt s'applique uniquement aux prestations réalisées au domicile d'un particulier. Le nettoyage de bureaux, de commerces et le nettoyage post-chantier sont facturés sur devis, hors crédit d'impôt."
+              },
+              {
+                "question": "Que dois-je faire pour en bénéficier ?",
+                "reponse": "Rien de particulier : une attestation récapitulant les sommes versées vous est remise chaque année, à reporter sur votre déclaration de revenus."
+              },
+              {
+                "question": "Y a-t-il un plafond ?",
+                "reponse": "Oui, le crédit d'impôt s'applique dans la limite des plafonds annuels fixés par l'administration fiscale pour les services à la personne."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Profitez du crédit d'impôt sur votre ménage à domicile",
+            "sousTitre": "Devis gratuit par téléphone, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "menage-domicile",
+      "label": "Ménage à domicile",
+      "navHidden": true,
+      "meta": {
+        "title": "Ménage à domicile à Marseille — entretien régulier ou ponctuel",
+        "description": "Ménage à domicile à Marseille et Aix-en-Provence : entretien régulier dès 50 €/h, ponctuel dès 60 €/h. Matériel et produits naturels fournis. Crédit d'impôt 50 %.",
+        "keywords": [
+          "ménage à domicile Marseille",
+          "femme de ménage Marseille",
+          "aide ménagère Marseille",
+          "ménage régulier Aix-en-Provence"
+        ]
+      },
+      "service": {
+        "name": "Ménage à domicile",
+        "description": "Entretien régulier ou ponctuel du logement à Marseille et Aix-en-Provence.",
+        "serviceType": "Ménage à domicile",
+        "priceFrom": 50
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Entretien régulier ou ponctuel",
+            "titre": "Ménage à domicile à Marseille",
+            "intro": "MB Nettoyage assure l'entretien de votre logement à Marseille, Aix-en-Provence et alentour : sols, sanitaires, cuisine et poussières, avec du matériel et des produits naturels.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Ménage à domicile" }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Pourquoi choisir MB Nettoyage",
+            "items": [
+              {
+                "icone": "Leaf",
+                "nom": "Produits naturels",
+                "description": "Matériel et produits naturels fournis, respectueux de votre logement."
+              },
+              {
+                "icone": "CalendarCheck",
+                "nom": "Régulier ou ponctuel",
+                "description": "À la fréquence qui vous convient, ou en intervention unique."
+              },
+              {
+                "icone": "BadgePercent",
+                "nom": "Crédit d'impôt 50 %",
+                "description": "La moitié de la dépense vous est remboursée ou déduite de vos impôts."
+              },
+              {
+                "icone": "Clock",
+                "nom": "Disponibilité 24h/24",
+                "description": "Joignable 24h/24 et 7j/7 pour s'adapter à votre emploi du temps."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "timeline-verticale",
+          "content": {
+            "titre": "Comment se déroule votre ménage à domicile",
+            "items": [
+              {
+                "icone": "PhoneCall",
+                "titre": "Votre appel",
+                "texte": "Vous décrivez votre logement et la fréquence souhaitée. Devis gratuit par téléphone."
+              },
+              {
+                "icone": "CalendarCheck",
+                "titre": "Le rendez-vous",
+                "texte": "Nous fixons un créneau régulier ou ponctuel, adapté à votre emploi du temps."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "L'intervention",
+                "texte": "Nous réalisons le ménage avec soin, matériel et produits naturels fournis."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Intervention à Marseille, Aix-en-Provence et 20 km alentour",
+            "rayonKm": 20,
+            "zones": [
+              {
+                "region": "Marseille et environs",
+                "principale": "Marseille",
+                "villes": ["Marseille", "Allauch", "Plan-de-Cuques", "Marignane", "Vitrolles"]
+              },
+              {
+                "region": "Aix-en-Provence et alentours",
+                "principale": "Aix-en-Provence",
+                "villes": ["Aix-en-Provence", "Gardanne", "Bouc-Bel-Air", "Cabriès"]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Quelle est la différence entre ménage régulier et ponctuel ?",
+                "reponse": "Le ménage régulier (50 €/h) correspond à un entretien récurrent, à fréquence fixe. Le ménage ponctuel (60 €/h) est une intervention unique, sans engagement."
+              },
+              {
+                "question": "Faut-il fournir le matériel et les produits ?",
+                "reponse": "Non, nous venons avec notre matériel et des produits naturels, adaptés à votre logement."
+              },
+              {
+                "question": "Le ménage à domicile ouvre-t-il droit au crédit d'impôt ?",
+                "reponse": "Oui, à hauteur de 50 % des sommes versées, dans la limite des plafonds fixés par l'administration fiscale."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Besoin d'un devis pour le ménage à domicile ?",
+            "sousTitre": "Devis gratuit par téléphone, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "grand-menage-etat-des-lieux",
+      "label": "Grand ménage & état des lieux",
+      "navHidden": true,
+      "meta": {
+        "title": "Grand ménage & état des lieux à Marseille — MB Nettoyage",
+        "description": "Grand ménage, remise en état avant ou après un état des lieux à Marseille et Aix-en-Provence. Devis gratuit établi par téléphone.",
+        "keywords": [
+          "grand ménage Marseille",
+          "nettoyage état des lieux Marseille",
+          "remise en état logement Marseille"
+        ]
+      },
+      "service": {
+        "name": "Grand ménage & état des lieux",
+        "description": "Remise en état complète avant ou après un état des lieux, un déménagement ou une location, à Marseille et alentour.",
+        "serviceType": "Grand ménage",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Avant ou après un état des lieux",
+            "titre": "Grand ménage & état des lieux à Marseille",
+            "intro": "Emménagement, départ de locataires ou état des lieux de sortie : MB Nettoyage remet votre logement à neuf à Marseille et alentour, sur devis gratuit établi par téléphone.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Grand ménage & état des lieux" }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Pourquoi choisir MB Nettoyage",
+            "items": [
+              {
+                "icone": "SprayCan",
+                "nom": "Nettoyage en profondeur",
+                "description": "Sols, sanitaires, cuisine et rangements traités en profondeur."
+              },
+              {
+                "icone": "Clock",
+                "nom": "Intervention rapide",
+                "description": "Adaptée à vos délais d'état des lieux ou de remise des clés."
+              },
+              {
+                "icone": "Leaf",
+                "nom": "Produits naturels",
+                "description": "Matériel et produits naturels adaptés à chaque type de logement."
+              },
+              {
+                "icone": "CheckCircle",
+                "nom": "Rendu prêt à vivre",
+                "description": "Un logement propre, prêt à être habité ou rendu sans réserve."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Comment est établi le devis ?",
+                "reponse": "Gratuitement, par téléphone, selon la surface et l'état du logement à traiter."
+              },
+              {
+                "question": "Intervenez-vous avant un emménagement ou après un déménagement ?",
+                "reponse": "Oui, dans les deux cas, ainsi qu'avant un état des lieux de sortie."
+              },
+              {
+                "question": "Ce service est-il éligible au crédit d'impôt ?",
+                "reponse": "Le grand ménage et l'état des lieux réalisés au domicile d'un particulier peuvent être éligibles : le devis vous précisera les conditions selon votre situation."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un logement à remettre en état à Marseille ?",
+            "sousTitre": "Devis gratuit par téléphone, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "repassage",
+      "label": "Repassage à domicile",
+      "navHidden": true,
+      "meta": {
+        "title": "Repassage à domicile à Marseille — dès 10 €/kilo",
+        "description": "Repassage à domicile à Marseille et Aix-en-Provence, dès 10 €/kilo (tarif dégressif à partir de 3 kilos). Crédit d'impôt de 50 % pour les particuliers.",
+        "keywords": [
+          "repassage à domicile Marseille",
+          "repassage au kilo Marseille",
+          "service repassage Aix-en-Provence"
+        ]
+      },
+      "service": {
+        "name": "Repassage à domicile",
+        "description": "Repassage de linge à domicile, au kilo, à Marseille et alentour.",
+        "serviceType": "Repassage",
+        "priceFrom": 10
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Au kilo, à domicile",
+            "titre": "Repassage à domicile à Marseille",
+            "intro": "Votre linge trié, repassé et plié avec soin, dès 10 €/kilo, avec un tarif dégressif à partir de 3 kilos.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Repassage à domicile" }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "grille",
+          "variant": "grille",
+          "content": {
+            "titre": "Tarif du repassage",
+            "items": [
+              {
+                "nom": "Repassage",
+                "prix": 10,
+                "unite": "/kilo",
+                "description": "Tarif dégressif à partir de 3 kilos.",
+                "inclus": ["Tri du linge", "Repassage", "Pliage"]
+              }
+            ],
+            "note": "Prestation à domicile, éligible au crédit d'impôt de 50 %.",
+            "cta": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Pourquoi choisir MB Nettoyage",
+            "items": [
+              {
+                "icone": "Shirt",
+                "nom": "Soin du linge",
+                "description": "Chaque pièce est repassée et pliée avec attention, selon la matière."
+              },
+              {
+                "icone": "BadgePercent",
+                "nom": "Tarif dégressif",
+                "description": "À partir de 3 kilos, le prix au kilo diminue."
+              },
+              {
+                "icone": "Clock",
+                "nom": "Disponibilité 24h/24",
+                "description": "Joignable à toute heure pour organiser votre repassage."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Comment est calculé le tarif du repassage ?",
+                "reponse": "Au poids du linge, à 10 €/kilo, avec un tarif dégressif à partir de 3 kilos."
+              },
+              {
+                "question": "Le repassage peut-il être associé au ménage ?",
+                "reponse": "Oui, ménage et repassage peuvent être combinés lors d'une même intervention."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Un panier de linge à repasser ?",
+            "sousTitre": "Devis gratuit par téléphone, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Nettoyage de vitres",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de vitres à Marseille — particuliers & professionnels",
+        "description": "Nettoyage de vitres à Marseille et Aix-en-Provence : dès 10 €/vitre pour les particuliers, sur devis pour les professionnels (vitrines, façades vitrées).",
+        "keywords": [
+          "nettoyage de vitres Marseille",
+          "laveur de vitres Marseille",
+          "nettoyage vitrine Marseille"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage de vitres",
+        "description": "Lavage de vitres pour particuliers et professionnels à Marseille et alentour.",
+        "serviceType": "Nettoyage de vitres",
+        "priceFrom": 10
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Particuliers & professionnels",
+            "titre": "Nettoyage de vitres à Marseille",
+            "intro": "Vitres, baies vitrées et vitrines lavées avec soin : dès 10 €/vitre chez les particuliers, sur devis pour les vitrines et façades professionnelles.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Nettoyage de vitres" }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "eyebrow": "Particuliers",
+            "titre": "Vos fenêtres, à partir de 10 €",
+            "items": [
+              {
+                "icone": "Droplets",
+                "nom": "Selon la taille",
+                "description": "De 10 à 15 € par vitre, selon les dimensions."
+              },
+              {
+                "icone": "Leaf",
+                "nom": "Produits naturels",
+                "description": "Un rendu sans traces, avec des produits respectueux de vos menuiseries."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "eyebrow": "Professionnels",
+            "titre": "Vitrines & façades vitrées",
+            "items": [
+              {
+                "icone": "Building2",
+                "nom": "Sur devis",
+                "description": "Vitrines de commerces et façades vitrées, à la fréquence de votre choix."
+              },
+              {
+                "icone": "CalendarCheck",
+                "nom": "Entretien régulier",
+                "description": "Un rendu impeccable pour l'image de votre commerce."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "ligne-horizontale",
+          "content": {
+            "titre": "Comment ça se passe",
+            "items": [
+              {
+                "icone": "PhoneCall",
+                "titre": "Votre demande",
+                "texte": "Le nombre et la taille des vitres, ou la surface vitrée de vos locaux."
+              },
+              {
+                "icone": "FileText",
+                "titre": "Devis",
+                "texte": "Un tarif clair, gratuit et sans engagement."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "Le nettoyage",
+                "texte": "Un rendu sans traces, intérieur et extérieur."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Des vitres à faire briller ?",
+            "sousTitre": "Devis gratuit par téléphone, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-bureaux-commerces",
+      "label": "Nettoyage de bureaux & commerces",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de bureaux et commerces à Marseille — MB Nettoyage",
+        "description": "Entretien professionnel de bureaux, commerces et boutiques à Marseille et Aix-en-Provence. Devis gratuit établi par téléphone selon vos locaux.",
+        "keywords": [
+          "nettoyage bureaux Marseille",
+          "nettoyage commerces Marseille",
+          "entreprise de nettoyage professionnel Marseille"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage de bureaux & commerces",
+        "description": "Entretien professionnel de bureaux, commerces et locaux à Marseille et alentour.",
+        "serviceType": "Nettoyage de locaux professionnels",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Professionnels",
+            "titre": "Nettoyage de bureaux & commerces à Marseille",
+            "intro": "MB Nettoyage entretient vos bureaux, commerces et boutiques à Marseille et alentour, avec la même exigence que pour les particuliers.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Nettoyage de bureaux & commerces" }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Une exigence, deux publics",
+            "titre": "Le même soin, pour vos locaux professionnels",
+            "paragraphes": [
+              "Boutiques, commerces, cabinets ou bureaux : MB Nettoyage applique à vos locaux professionnels la même exigence de propreté qu'à un domicile. Sols, vitrines, sanitaires et espaces d'accueil sont entretenus avec du matériel et des produits naturels.",
+              "Chaque devis est établi selon la surface, la fréquence souhaitée et les contraintes de votre activité, avec la possibilité d'intervenir en dehors de vos horaires d'ouverture."
+            ],
+            "image": {
+              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/F13C28AC-BA55-4A82-B466-AEF6457E8B0C-3a3IjqOYQAKKtdt8O1Svn90c7y9dod.jpeg",
+              "alt": "Boutique nettoyée et rangée, présentoirs et sols impeccables"
+            },
+            "imagePosition": "right"
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Pourquoi choisir MB Nettoyage",
+            "items": [
+              {
+                "icone": "Building2",
+                "nom": "Bureaux & commerces",
+                "description": "Boutiques, cabinets, bureaux : un entretien adapté à chaque type de local."
+              },
+              {
+                "icone": "CalendarCheck",
+                "nom": "Fréquence sur mesure",
+                "description": "Intervention ponctuelle ou régulière, selon vos besoins."
+              },
+              {
+                "icone": "Clock",
+                "nom": "Horaires adaptés",
+                "description": "Intervention possible en dehors de vos heures d'ouverture."
+              },
+              {
+                "icone": "Leaf",
+                "nom": "Produits naturels",
+                "description": "Matériel et produits naturels, respectueux de vos locaux et de vos équipes."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "titre": "Comment se déroule votre nettoyage professionnel",
+            "items": [
+              {
+                "icone": "PhoneCall",
+                "titre": "Votre demande",
+                "texte": "Vous nous indiquez la surface, l'activité et la fréquence souhaitée."
+              },
+              {
+                "icone": "FileText",
+                "titre": "Devis sur mesure",
+                "texte": "Une proposition claire, adaptée à votre budget et à vos contraintes."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "L'entretien",
+                "texte": "Une intervention soignée, ponctuelle ou récurrente."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Intervenez-vous en dehors des horaires d'ouverture ?",
+                "reponse": "Oui, nous nous adaptons à votre activité pour intervenir avant l'ouverture, après la fermeture ou pendant vos horaires creux."
+              },
+              {
+                "question": "Comment est établi le devis pour un local professionnel ?",
+                "reponse": "Selon la surface, la nature de l'activité et la fréquence souhaitée. Contactez-nous pour une estimation gratuite."
+              },
+              {
+                "question": "Ce service est-il éligible au crédit d'impôt ?",
+                "reponse": "Non, le crédit d'impôt de 50 % ne s'applique qu'aux prestations réalisées au domicile d'un particulier."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Des locaux professionnels à entretenir à Marseille ?",
+            "sousTitre": "Devis gratuit par téléphone, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-fin-chantier",
+      "label": "Nettoyage post-chantier",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage post-chantier à Marseille — après travaux",
+        "description": "Nettoyage post-chantier à Marseille et Aix-en-Provence : après travaux, rénovation ou construction. Devis gratuit établi par téléphone.",
+        "keywords": [
+          "nettoyage post-chantier Marseille",
+          "nettoyage après travaux Marseille",
+          "nettoyage fin de chantier Aix-en-Provence"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage post-chantier",
+        "description": "Nettoyage complet après travaux, rénovation ou construction à Marseille et alentour.",
+        "serviceType": "Nettoyage de fin de chantier",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Après travaux, rénovation ou construction",
+            "titre": "Nettoyage post-chantier à Marseille",
+            "intro": "Poussière de chantier, traces de peinture, de colle ou de plâtre : MB Nettoyage prépare vos locaux ou votre logement pour la livraison, sur devis gratuit.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Nettoyage post-chantier" }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Avant livraison",
+            "titre": "Un espace net, prêt à être livré",
+            "paragraphes": [
+              "Après des travaux, une rénovation ou une construction, la poussière fine et les résidus de chantier s'installent partout : sols, plinthes, menuiseries et vitres. MB Nettoyage intervient pour rendre le lieu propre et prêt à être habité, loué ou mis en service.",
+              "Chaque devis est établi selon la surface et l'ampleur des travaux, avec la possibilité d'intervenir dans des délais courts avant une livraison ou une remise des clés."
+            ],
+            "image": {
+              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_4304-xw7ac4gbDYh8gjB8DZ1sozZcCjkswc.jpeg",
+              "alt": "Pièce en travaux avant nettoyage de fin de chantier"
+            },
+            "imagePosition": "left"
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Pourquoi choisir MB Nettoyage",
+            "items": [
+              {
+                "icone": "SprayCan",
+                "nom": "Poussière de chantier maîtrisée",
+                "description": "Dépoussiérage complet des sols, surfaces, vitres et menuiseries."
+              },
+              {
+                "icone": "HardHat",
+                "nom": "Traces & résidus éliminés",
+                "description": "Peinture, colle et plâtre retirés avec des produits adaptés."
+              },
+              {
+                "icone": "Clock",
+                "nom": "Délais respectés",
+                "description": "Intervention avant votre livraison ou remise des clés."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Comment obtenir un devis de nettoyage post-chantier ?",
+                "reponse": "Indiquez-nous la surface et l'ampleur des travaux : nous établissons un devis gratuit par téléphone."
+              },
+              {
+                "question": "Intervenez-vous pour les particuliers et les professionnels ?",
+                "reponse": "Oui, aussi bien pour un logement après rénovation que pour des locaux professionnels après construction."
+              },
+              {
+                "question": "Ce service est-il éligible au crédit d'impôt ?",
+                "reponse": "Non, le nettoyage post-chantier est facturé sur devis, hors crédit d'impôt."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un chantier à nettoyer à Marseille ?",
+            "sousTitre": "Devis gratuit par téléphone, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

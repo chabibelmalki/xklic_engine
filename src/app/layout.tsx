@@ -10,6 +10,7 @@ import {
   Fraunces,
   Nunito_Sans,
   Great_Vibes,
+  Libre_Baskerville,
 } from "next/font/google";
 import "./globals.css";
 
@@ -73,8 +74,27 @@ const greatVibes = Great_Vibes({
   display: "swap",
   preload: false,
 });
+const libreBaskerville = Libre_Baskerville({
+  variable: "--font-librebaskerville",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+  preload: false,
+});
 
-const fontVars = [poppins, inter, playfair, oswald, jakarta, bricolage, dmSans, fraunces, nunito, greatVibes]
+const fontVars = [
+  poppins,
+  inter,
+  playfair,
+  oswald,
+  jakarta,
+  bricolage,
+  dmSans,
+  fraunces,
+  nunito,
+  greatVibes,
+  libreBaskerville,
+]
   .map((f) => f.variable)
   .join(" ");
 

@@ -944,3 +944,78 @@ input[type="range"] {
     radial-gradient(38rem 28rem at 82% -12%, color-mix(in srgb, var(--brand-400) 20%, transparent), transparent 60%),
     radial-gradient(28rem 28rem at -6% 28%, color-mix(in srgb, var(--accent-500) 14%, transparent), transparent 55%);
 }
+
+/* ======================= Marine · Élégant & posé ======================= */
+[data-pack="marine-premium"] {
+  --pack-font-display: var(--font-librebaskerville);
+  --pack-font-sans: var(--font-inter);
+  --display-tracking: -0.005em;
+  --display-case: none;
+
+  --radius-btn: 0.65rem;
+  --radius-card: 0.85rem;
+  --radius-image: 0.65rem;
+  --border-width: 1px;
+  --radius: 0.75rem;
+
+  --shadow-card: 0 22px 54px -30px rgb(15 26 58 / 0.32);
+  --shadow-pop: 0 40px 76px -34px rgb(15 26 58 / 0.30);
+
+  --section-py: 6rem;
+  --motion-distance: 16px;
+  --motion-duration: 0.6s;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Palette : marine + or, pilotée par branding.colors du site */
+}
+[data-pack="marine-premium"] .hero-mesh {
+  background-image:
+    linear-gradient(180deg, var(--alt), var(--bg) 62%),
+    radial-gradient(40rem 24rem at 82% -20%, color-mix(in srgb, var(--brand-500) 14%, transparent), transparent 60%);
+}
+[data-pack="marine-premium"] .pack-halo {
+  display: none;
+}
+
+/* Titres : Libre Baskerville posée en dur sur les gros titres — la variable
+   composite --font-display (@theme inline) ignore silencieusement le pack
+   quand aucune règle explicite ne la contourne (bug constaté sur plusieurs
+   packs) ; ce pack fournit donc sa propre règle, comme rose-noir-premium. */
+[data-pack="marine-premium"] .pack-heading,
+[data-pack="marine-premium"] h1.font-display,
+[data-pack="marine-premium"] h2.font-display {
+  font-family: var(--pack-font-display), Georgia, serif;
+}
+
+/* Kicker/eyebrow épuré : filet + puce or au lieu de la pastille pastel par
+   défaut (Badge.tsx), capitales espacées — signature du pack. */
+[data-pack="marine-premium"] .inline-flex.rounded-full.text-xs.font-semibold {
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  --tw-ring-color: transparent;
+  padding-block: 0;
+  padding-inline: 0 0;
+  padding-inline-start: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: var(--brand-700);
+  position: relative;
+}
+[data-pack="marine-premium"] .inline-flex.rounded-full.text-xs.font-semibold::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 50%;
+  translate: 0 -50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: var(--accent-500);
+}
+[data-pack="marine-premium"] .inline-flex.rounded-full.text-xs.font-semibold > svg,
+[data-pack="marine-premium"] .inline-flex.rounded-full.text-xs.font-semibold > span.rounded-full {
+  display: none;
+}

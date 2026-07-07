@@ -148,6 +148,9 @@ export const UI = {
       navAria: "Navigation principale",
       freeQuote: "Devis gratuit",
       language: "Langue",
+      callUs: "Appeler",
+      copyNumber: "Copier le numéro",
+      numberCopied: "Numéro copié",
     },
     footer: {
       siteHeading: "Le site",
@@ -306,6 +309,9 @@ export const UI = {
       navAria: "Main navigation",
       freeQuote: "Free quote",
       language: "Language",
+      callUs: "Call us",
+      copyNumber: "Copy number",
+      numberCopied: "Number copied",
     },
     footer: {
       siteHeading: "The site",
@@ -464,6 +470,9 @@ export const UI = {
       navAria: "التنقل الرئيسي",
       freeQuote: "عرض سعر مجاني",
       language: "اللغة",
+      callUs: "اتصل بنا",
+      copyNumber: "نسخ الرقم",
+      numberCopied: "تم نسخ الرقم",
     },
     footer: {
       siteHeading: "الموقع",
@@ -622,6 +631,9 @@ export const UI = {
       navAria: "Navegación principal",
       freeQuote: "Presupuesto gratis",
       language: "Idioma",
+      callUs: "Llamar",
+      copyNumber: "Copiar el número",
+      numberCopied: "Número copiado",
     },
     footer: {
       siteHeading: "El sitio",

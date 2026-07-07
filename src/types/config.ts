@@ -599,6 +599,13 @@ export interface ContactContent {
   mapEmbedUrl?: string;
   /** Lien vers la politique de confidentialité (consentement RGPD). */
   confidentialiteHref?: string;
+  /**
+   * Affichage du téléphone dans le HEADER (desktop + menu mobile). `"texte"`
+   * (défaut, rétro-compat) affiche le numéro en clair. `"icone-popup"` affiche
+   * une icône téléphone ; au clic, un popup présente le numéro (cliquable) et
+   * un bouton pour le copier. N'affecte que le rendu du header.
+   */
+  telephoneHeader?: "texte" | "icone-popup";
 }
 
 // --- pageHero (en-tête de page intérieure : eyebrow + fil d'ariane + titre) ---

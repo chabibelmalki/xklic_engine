@@ -1,0 +1,1801 @@
+{
+  "slug": "mb-nettoyage",
+  "theme": "pro-bleu-nuit",
+  "stylePack": "marine-premium",
+  "i18n": {
+    "default": "fr",
+    "languages": ["fr", "en"]
+  },
+  "branding": {
+    "logo": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/5C18D0BB-FAE9-498D-BEAC-1569E20106FB-Fkylt8v3W7u1GI7LHyhL4gqQLzDx0s.jpeg",
+    "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/5C18D0BB-FAE9-498D-BEAC-1569E20106FB-Fkylt8v3W7u1GI7LHyhL4gqQLzDx0s.jpeg",
+    "logoAlt": "MB Nettoyage — home and professional cleaning in Marseille",
+    "logoTwoTone": {
+      "first": "#1e3a8a",
+      "rest": "#c9a227"
+    },
+    "tagline": "Home & professional cleaning · Marseille",
+    "colors": {
+      "brand": "#1e3a8a",
+      "accent": "#c9a227",
+      "neutral": "cool"
+    }
+  },
+  "social": [
+    {
+      "platform": "facebook",
+      "url": "https://www.facebook.com/share/18WbjXU7JB/?mibextid=wwXIfr"
+    },
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/mb.nettoyage13?igsh=MXhjam16c282dDlsNw%3D%3D&utm_source=qr"
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@mb.nettoyage13"
+    }
+  ],
+  "googleReviewUrl": "https://maps.app.goo.gl/Hz7ADyGiq8WAnj8U6?g_st=ic",
+  "entreprise": {
+    "nom": "MB Nettoyage",
+    "statut": "EI",
+    "siret": "99925386700017",
+    "ape": "81.21Z",
+    "apeLabel": "General building cleaning",
+    "tva": {
+      "regime": "franchise"
+    },
+    "dirigeant": "Meriem Bouhofrat",
+    "siege": "171 boulevard de Saint-Loup, 13011 Marseille"
+  },
+  "seo": {
+    "schemaType": "HousekeepingService",
+    "ville": "Marseille"
+  },
+  "geo": {
+    "lat": 43.2847572757835,
+    "lng": 5.4373811847503
+  },
+  "meta": {
+    "title": "MB Nettoyage — Home & professional cleaning in Marseille",
+    "description": "MB Nettoyage: home cleaning, ironing, window cleaning, office and post-construction cleaning in Marseille and Aix-en-Provence. Natural products, free phone quote, 50% tax credit for individuals.",
+    "keywords": [
+      "home cleaning Marseille",
+      "cleaning lady Marseille",
+      "professional cleaning Marseille",
+      "office cleaning Marseille",
+      "ironing service Marseille",
+      "cleaning tax credit Marseille",
+      "cleaning Aix-en-Provence",
+      "post-construction cleaning Marseille"
+    ]
+  },
+  "forms": {
+    "to": "mb.nettoyage130@gmail.com",
+    "turnstile": true
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Home",
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "split",
+          "content": {
+            "showSocial": true,
+            "image": {
+              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
+              "alt": "Bedroom carefully cleaned by MB Nettoyage in Marseille"
+            },
+            "imageRatio": "4/5",
+            "eyebrow": "Home cleaning & professional cleaning · Marseille, Aix-en-Provence",
+            "titre": "A spotless home,",
+            "titreAccent": "signed MB Nettoyage",
+            "accroche": "Regular or one-off cleaning, ironing, windows, office cleaning or post-construction cleaning: MB Nettoyage works with both individuals and businesses in Marseille, Aix-en-Provence and up to 20 km around, using natural products.",
+            "trust": [
+              {
+                "icone": "Leaf",
+                "label": "Natural products and equipment supplied"
+              },
+              {
+                "icone": "Clock",
+                "label": "Available 24/7"
+              },
+              {
+                "icone": "PhoneCall",
+                "label": "Free quote by phone"
+              },
+              {
+                "icone": "BadgePercent",
+                "label": "−15% on your first visit"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a free quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Discover our services",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "lignes-alternees",
+          "content": {
+            "eyebrow": "Our services",
+            "titre": "Individuals and businesses, one single contact",
+            "intro": "MB Nettoyage takes care of your home as well as your business premises, with the same attention to detail.",
+            "items": [
+              {
+                "nom": "Home cleaning",
+                "description": "Regular or one-off cleaning of your home, at the frequency that suits you.",
+                "href": "/menage-domicile",
+                "icone": "Sparkles",
+                "priceHint": "from €50/h",
+                "badge": "50% tax credit"
+              },
+              {
+                "nom": "Deep cleaning & move-out cleaning",
+                "description": "Complete restoration before or after a move-out inspection, a move or a rental.",
+                "href": "/grand-menage-etat-des-lieux",
+                "icone": "KeyRound",
+                "priceHint": "Free quote"
+              },
+              {
+                "nom": "Home ironing",
+                "description": "Your laundry ironed with care, by the kilo, at home.",
+                "href": "/repassage",
+                "icone": "Shirt",
+                "priceHint": "from €10/kilo",
+                "badge": "50% tax credit"
+              },
+              {
+                "nom": "Window cleaning",
+                "description": "Windows and bay windows cleaned with care, for individuals and businesses alike.",
+                "href": "/nettoyage-vitres",
+                "icone": "Droplets",
+                "priceHint": "from €10/window"
+              },
+              {
+                "nom": "Office & shop cleaning",
+                "description": "Regular upkeep of your business premises: offices, shops, boutiques.",
+                "href": "/nettoyage-bureaux-commerces",
+                "icone": "Building2",
+                "priceHint": "Free quote"
+              },
+              {
+                "nom": "Post-construction cleaning",
+                "description": "Construction dust, paint marks and work residue removed before handover.",
+                "href": "/nettoyage-fin-chantier",
+                "icone": "HardHat",
+                "priceHint": "Free quote"
+              }
+            ],
+            "cta": {
+              "label": "See all our prices",
+              "href": "/tarifs"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "sentier-alterne",
+          "content": {
+            "eyebrow": "Simple and fast",
+            "titre": "How it works",
+            "items": [
+              {
+                "icone": "PhoneCall",
+                "titre": "Your call",
+                "texte": "You describe your needs by phone, WhatsApp or the form: we're reachable 24/7."
+              },
+              {
+                "icone": "FileText",
+                "titre": "Free quote",
+                "texte": "A clear, no-obligation estimate, tailored to your home or your premises."
+              },
+              {
+                "icone": "CalendarCheck",
+                "titre": "The appointment",
+                "texte": "We set a time together, one-off or recurring, in Marseille, Aix-en-Provence or nearby."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "A careful result",
+                "texte": "Service carried out with natural products and equipment, for a spotless result."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "eyebrow": "Service area",
+            "titre": "In Marseille, Aix-en-Provence and 20 km around",
+            "intro": "We travel across Marseille and its districts, to Aix-en-Provence and neighbouring towns. Check your area or contact us directly.",
+            "rayonKm": 20,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=5.05%2C43.15%2C5.75%2C43.65&layer=mapnik&marker=43.2847572757835%2C5.4373811847503",
+            "zones": [
+              {
+                "region": "Marseille and surrounding areas",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "Septèmes-les-Vallons",
+                  "Les Pennes-Mirabeau",
+                  "Marignane",
+                  "Vitrolles"
+                ]
+              },
+              {
+                "region": "Aix-en-Provence and surroundings",
+                "principale": "Aix-en-Provence",
+                "villes": [
+                  "Aix-en-Provence",
+                  "Gardanne",
+                  "Bouc-Bel-Air",
+                  "Cabriès",
+                  "Simiane-Collongue",
+                  "Éguilles",
+                  "Venelles"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Your questions before getting started",
+            "items": [
+              {
+                "question": "Do you work with both individuals and businesses?",
+                "reponse": "Yes. Cleaning, ironing and windows for individuals; office, shop upkeep and post-construction cleaning for businesses."
+              },
+              {
+                "question": "Is the quote free?",
+                "reponse": "Yes, the quote is free and done over the phone: tell us what you need, we'll get back to you quickly."
+              },
+              {
+                "question": "Do you supply the equipment and products?",
+                "reponse": "Yes, we bring our own equipment and natural products, suited to each job."
+              },
+              {
+                "question": "Do your home services qualify for the tax credit?",
+                "reponse": "Yes, for cleaning, ironing and windows carried out at an individual's home: 50% of the amount is refunded or deducted from your taxes."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "A free quote in a few minutes?",
+            "sousTitre": "Call us or write on WhatsApp: quick reply, 7 days a week.",
+            "ctaPrimaire": {
+              "label": "Request a free quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            },
+            "lien": {
+              "label": "or write to us on WhatsApp →",
+              "href": "https://wa.me/33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Services",
+      "meta": {
+        "title": "Our cleaning services in Marseille — MB Nettoyage",
+        "description": "Home cleaning, deep cleaning, ironing, windows, office and post-construction cleaning in Marseille and Aix-en-Provence. Free phone quote."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Our services",
+            "titre": "From regular cleaning to professional upkeep",
+            "intro": "MB Nettoyage covers all your cleaning needs in Marseille, Aix-en-Provence and beyond, for individuals and businesses alike.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Individuals",
+            "titre": "At home",
+            "items": [
+              {
+                "nom": "Home cleaning",
+                "description": "Regular or one-off cleaning: floors, bathrooms, kitchen, dusting.",
+                "href": "/menage-domicile",
+                "icone": "Sparkles",
+                "priceHint": "from €50/h",
+                "badge": "50% tax credit"
+              },
+              {
+                "nom": "Deep cleaning & move-out cleaning",
+                "description": "Full restoration before moving in, after moving out, or before a move-out inspection.",
+                "href": "/grand-menage-etat-des-lieux",
+                "icone": "KeyRound",
+                "priceHint": "Free quote"
+              },
+              {
+                "nom": "Home ironing",
+                "description": "Your laundry sorted, ironed and folded with care, by the kilo.",
+                "href": "/repassage",
+                "icone": "Shirt",
+                "priceHint": "from €10/kilo",
+                "badge": "50% tax credit"
+              },
+              {
+                "nom": "Window cleaning",
+                "description": "Windows and bay windows cleaned according to their size.",
+                "href": "/nettoyage-vitres",
+                "icone": "Droplets",
+                "priceHint": "€10 to €15/window"
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Businesses",
+            "titre": "Your premises",
+            "items": [
+              {
+                "nom": "Office & shop cleaning",
+                "description": "Regular upkeep of your offices, shops and boutiques, on quote.",
+                "href": "/nettoyage-bureaux-commerces",
+                "icone": "Building2",
+                "priceHint": "Free quote"
+              },
+              {
+                "nom": "Post-construction cleaning",
+                "description": "Full cleaning after building work, renovation or construction.",
+                "href": "/nettoyage-fin-chantier",
+                "icone": "HardHat",
+                "priceHint": "Free quote"
+              },
+              {
+                "nom": "Professional window cleaning",
+                "description": "Shop windows and glass façades of your premises, on quote.",
+                "href": "/nettoyage-vitres",
+                "icone": "Droplets",
+                "priceHint": "Free quote"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "A service you don't see here?",
+            "sousTitre": "Tell us what you need: we'll prepare a free, no-obligation quote.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Contact us",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tarifs",
+      "label": "Prices",
+      "meta": {
+        "title": "Prices — Cleaning, ironing, windows and professional cleaning in Marseille",
+        "description": "MB Nettoyage prices in Marseille: home cleaning from €50/h, ironing from €10/kilo, windows from €10 each. Professional cleaning on quote. 50% tax credit for individuals."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Prices",
+            "titre": "Clear prices, announced upfront",
+            "intro": "The prices below apply to services for individuals. For businesses, a custom quote is prepared based on your premises."
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "grille",
+          "variant": "grille",
+          "content": {
+            "titre": "Individuals",
+            "intro": "Home services, eligible for the 50% tax credit.",
+            "items": [
+              {
+                "nom": "Regular cleaning",
+                "prix": 50,
+                "unite": "/h",
+                "description": "Recurring upkeep: weekly, fortnightly or monthly.",
+                "populaire": true,
+                "inclus": [
+                  "Floors, bathrooms, kitchen",
+                  "Dusting",
+                  "Natural products and equipment supplied"
+                ]
+              },
+              {
+                "nom": "One-off cleaning",
+                "prix": 60,
+                "unite": "/h",
+                "description": "A single visit, no commitment.",
+                "inclus": [
+                  "Floors, bathrooms, kitchen",
+                  "Dusting",
+                  "Natural products and equipment supplied"
+                ]
+              },
+              {
+                "nom": "Ironing",
+                "prix": 10,
+                "unite": "/kilo",
+                "description": "Reduced rate from 3 kilos."
+              },
+              {
+                "nom": "Window cleaning",
+                "prix": "10 to 15",
+                "unite": "/window",
+                "description": "Depending on window size."
+              },
+              {
+                "nom": "Deep cleaning / move-out cleaning",
+                "prix": "Free quote",
+                "description": "Free quote by phone, based on the surface area and condition of the home."
+              }
+            ],
+            "note": "All these services, carried out at an individual's home, are eligible for the 50% tax credit. −15% on your first visit. Referral offer: −€10 for you and for the person you refer.",
+            "cta": {
+              "label": "Request a free quote",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "sur-devis",
+          "variant": "grille",
+          "content": {
+            "titre": "Businesses",
+            "intro": "Shops, offices and construction sites: every quote is custom-built.",
+            "items": [
+              {
+                "nom": "Office & shop cleaning",
+                "prix": "Free quote",
+                "description": "Based on surface area and desired frequency."
+              },
+              {
+                "nom": "Post-construction cleaning",
+                "prix": "Free quote",
+                "description": "Based on the scale of the work and the surface to treat."
+              },
+              {
+                "nom": "Professional window cleaning",
+                "prix": "Free quote",
+                "description": "Shop windows and glass façades."
+              }
+            ],
+            "cta": {
+              "label": "Request a business quote",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "A question about our prices?",
+            "sousTitre": "Call us, we reply quickly, 7 days a week.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "a-propos",
+      "label": "About",
+      "meta": {
+        "title": "About MB Nettoyage — Marseille",
+        "description": "MB Nettoyage, a cleaning company in Marseille: home cleaning and professional cleaning, using natural products and equipment."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "About",
+            "titre": "Careful cleaning, for every home"
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "MB Nettoyage · Marseille",
+            "paragraphes": [
+              "MB Nettoyage is a cleaning company based in Marseille, founded by Meriem Bouhofrat. It works with individuals and businesses alike: home cleaning, ironing and windows on one side, office, shop upkeep and post-construction cleaning on the other.",
+              "Every visit is carried out with natural products and equipment, respecting your home, your furniture and your habits. The goal is simple: a careful, lasting result, without compromising on the quality of the products used.",
+              "MB Nettoyage covers Marseille, Aix-en-Provence and a 20 km radius, available 24/7 to fit your schedule. A complementary range of cleaning products is in preparation, to extend this commitment to quality beyond each visit."
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "Our work",
+            "titre": "A look at our work",
+            "images": [
+              {
+                "image": {
+                  "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
+                  "alt": "Bedroom carefully cleaned, spotless floors and bedding"
+                },
+                "titre": "Home cleaning"
+              },
+              {
+                "image": {
+                  "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/F13C28AC-BA55-4A82-B466-AEF6457E8B0C-3a3IjqOYQAKKtdt8O1Svn90c7y9dod.jpeg",
+                  "alt": "Shop cleaned and tidied in Marseille"
+                },
+                "titre": "Shop cleaning"
+              },
+              {
+                "image": {
+                  "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_4304-xw7ac4gbDYh8gjB8DZ1sozZcCjkswc.jpeg",
+                  "alt": "Room before post-construction cleaning, work equipment in place"
+                },
+                "titre": "Before post-construction cleaning"
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "ligne-horizontale",
+          "content": {
+            "eyebrow": "Our commitments",
+            "titre": "What guides every visit",
+            "items": [
+              {
+                "icone": "Leaf",
+                "titre": "Natural products",
+                "texte": "Natural products and equipment supplied, respectful of your home."
+              },
+              {
+                "icone": "ShieldCheck",
+                "titre": "Trust",
+                "texte": "Discretion and reliability, at home as well as on your business premises."
+              },
+              {
+                "icone": "Clock",
+                "titre": "Availability",
+                "texte": "Reachable 24/7, to fit your schedule."
+              },
+              {
+                "icone": "BadgeCheck",
+                "titre": "Transparency",
+                "texte": "Prices announced upfront and a free quote before any visit."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Want to entrust us with your cleaning?",
+            "sousTitre": "Free quote by phone, quick reply.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Contact us",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "faq",
+      "label": "FAQ",
+      "meta": {
+        "title": "Frequently asked questions — MB Nettoyage Marseille",
+        "description": "Prices, service area, tax credit, products used: all the answers about MB Nettoyage's services in Marseille."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "FAQ",
+            "titre": "Your questions, our answers"
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "liste-ouverte",
+          "content": {
+            "titre": "Everything to know before getting started",
+            "items": [
+              {
+                "question": "What services do you offer?",
+                "reponse": "For individuals: regular or one-off cleaning, deep cleaning, move-out cleaning, ironing and window cleaning. For businesses: office and shop upkeep, window cleaning and post-construction cleaning."
+              },
+              {
+                "question": "What area do you cover?",
+                "reponse": "Marseille, Aix-en-Provence and roughly 20 km around these two towns."
+              },
+              {
+                "question": "How do I get a quote?",
+                "reponse": "By phone, WhatsApp or our form: the quote is free and with no obligation, we reply quickly, 7 days a week."
+              },
+              {
+                "question": "Do you supply the equipment and products?",
+                "reponse": "Yes, we bring our own equipment and natural products, suited to each visit."
+              },
+              {
+                "question": "Do your services qualify for the tax credit?",
+                "reponse": "Yes, for cleaning, ironing and windows carried out at an individual's home: 50% of the amount is refunded or deducted from your taxes. Services for businesses are billed on quote, and are not eligible."
+              },
+              {
+                "question": "Do you offer a discount for a first appointment?",
+                "reponse": "Yes, −15% applies to your first visit. A referral offer also gives you −€10, as well as the person you refer."
+              },
+              {
+                "question": "Are you available on weekends?",
+                "reponse": "Yes, MB Nettoyage is available 24/7, to fit your schedule."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Another question?",
+            "sousTitre": "Call us or write to us: we reply quickly.",
+            "ctaPrimaire": {
+              "label": "Contact us",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Contact — MB Nettoyage in Marseille",
+        "description": "Contact MB Nettoyage: phone, email, WhatsApp. Service request in Marseille, Aix-en-Provence and beyond, quick reply, free quote."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Contact",
+            "titre": "Let's talk about your needs",
+            "intro": "A question, a service request? Write to us, call, or reach us on WhatsApp — quick reply, free quote, 24/7."
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Service request",
+            "intro": "Describe your needs: type of service, town and availability. We'll get back to you quickly with a quote.",
+            "form": true,
+            "formMode": "demande-intervention",
+            "telephone": "+33 7 66 65 14 29",
+            "telephoneHeader": "icone-popup",
+            "whatsapp": "+33 7 66 65 14 29",
+            "email": "mb.nettoyage130@gmail.com",
+            "horaires": [
+              {
+                "jour": "Mon – Sun",
+                "heures": "24/7"
+              }
+            ],
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=5.05%2C43.15%2C5.75%2C43.65&layer=mapnik&marker=43.2847572757835%2C5.4373811847503",
+            "services": [
+              "Home cleaning",
+              "Deep cleaning / move-out cleaning",
+              "Ironing",
+              "Window cleaning",
+              "Office & shop cleaning",
+              "Post-construction cleaning",
+              "Other / not sure"
+            ],
+            "villes": [
+              "Marseille",
+              "Allauch",
+              "Plan-de-Cuques",
+              "Septèmes-les-Vallons",
+              "Les Pennes-Mirabeau",
+              "Marignane",
+              "Vitrolles",
+              "Aix-en-Provence",
+              "Gardanne",
+              "Bouc-Bel-Air",
+              "Cabriès",
+              "Simiane-Collongue",
+              "Éguilles",
+              "Venelles"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "devis",
+      "label": "Free quote",
+      "navHidden": true,
+      "meta": {
+        "title": "Free quote request — MB Nettoyage Marseille",
+        "description": "Request your free quote from MB Nettoyage: cleaning, ironing, windows, office or post-construction cleaning in Marseille and beyond."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Free quote",
+            "titre": "Request your quote in 1 minute",
+            "intro": "Tell us what you need: we'll get back to you quickly with a tailored, free, no-obligation estimate.",
+            "ctaSecondaire": {
+              "label": "See our prices",
+              "href": "/tarifs"
+            }
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Your quote request",
+            "intro": "A few details are enough for us to prepare an estimate.",
+            "form": true,
+            "formMode": "devis",
+            "telephone": "+33 7 66 65 14 29",
+            "whatsapp": "+33 7 66 65 14 29",
+            "email": "mb.nettoyage130@gmail.com",
+            "horaires": [
+              {
+                "jour": "Mon – Sun",
+                "heures": "24/7"
+              }
+            ],
+            "services": [
+              "Home cleaning",
+              "Deep cleaning / move-out cleaning",
+              "Ironing",
+              "Window cleaning",
+              "Office & shop cleaning",
+              "Post-construction cleaning",
+              "Other / not sure"
+            ],
+            "villes": [
+              "Marseille",
+              "Allauch",
+              "Plan-de-Cuques",
+              "Septèmes-les-Vallons",
+              "Les Pennes-Mirabeau",
+              "Marignane",
+              "Vitrolles",
+              "Aix-en-Provence",
+              "Gardanne",
+              "Bouc-Bel-Air",
+              "Cabriès",
+              "Simiane-Collongue",
+              "Éguilles",
+              "Venelles"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "zone-intervention",
+      "label": "Service area",
+      "navHidden": true,
+      "meta": {
+        "title": "Service area — Marseille, Aix-en-Provence and 20 km around",
+        "description": "MB Nettoyage covers Marseille, Aix-en-Provence, Vitrolles, Marignane, Gardanne and all towns within a 20 km radius."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Service area",
+            "titre": "We travel up to 20 km",
+            "intro": "Marseille, Aix-en-Provence and neighbouring towns, for individuals and businesses alike."
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "Towns covered",
+            "intro": "Check your area below or contact us directly to confirm.",
+            "rayonKm": 20,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=5.05%2C43.15%2C5.75%2C43.65&layer=mapnik&marker=43.2847572757835%2C5.4373811847503",
+            "zones": [
+              {
+                "region": "Marseille and surrounding areas",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "Septèmes-les-Vallons",
+                  "Les Pennes-Mirabeau",
+                  "Marignane",
+                  "Vitrolles"
+                ]
+              },
+              {
+                "region": "Aix-en-Provence and surroundings",
+                "principale": "Aix-en-Provence",
+                "villes": [
+                  "Aix-en-Provence",
+                  "Gardanne",
+                  "Bouc-Bel-Air",
+                  "Cabriès",
+                  "Simiane-Collongue",
+                  "Éguilles",
+                  "Venelles"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Is your town on the list?",
+            "sousTitre": "Request your free quote, we'll travel to you.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "credit-impot",
+      "label": "50% tax credit",
+      "navHidden": true,
+      "meta": {
+        "title": "50% tax credit — home cleaning in Marseille",
+        "description": "MB Nettoyage's cleaning, ironing and window services carried out at an individual's home in Marseille are eligible for the 50% tax credit.",
+        "keywords": [
+          "cleaning tax credit Marseille",
+          "home care services Marseille",
+          "home cleaning 50% tax credit"
+        ]
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Home care services",
+            "titre": "50% tax credit",
+            "intro": "Cleaning, ironing and window cleaning carried out at your home are eligible for the 50% tax credit under home care services rules.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Prices", "href": "/tarifs" },
+              { "label": "50% tax credit" }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "simulateur",
+          "content": {
+            "eyebrow": "Simulator",
+            "titre": "Your home cleaning costs",
+            "argumentaireTitre": "Your home cleaning costs",
+            "argumentaireAccent": "half as much",
+            "argumentaire": "For regular cleaning at home: €50/h billed, but only €25/h actually paid by you after the 50% tax credit.",
+            "points": [
+              "50% tax credit on home cleaning, ironing and windows",
+              "A tax certificate is issued to you every year",
+              "Only valid for services carried out at an individual's home"
+            ],
+            "cardTitre": "Tax credit simulator",
+            "cardIntro": "Estimate your real cost in a few seconds, tax credit deducted.",
+            "curseurLabel": "Cleaning hours per week",
+            "unite": "h",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "defaut": 3,
+            "prixPlein": 50,
+            "prixNet": 25,
+            "facteurMensuel": 4.33,
+            "plafondAnnuel": 12000,
+            "note": "Indicative estimate, within the annual cap set by the tax administration for home care services.",
+            "cta": {
+              "label": "Request a quote",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Tax credit: your questions",
+            "items": [
+              {
+                "question": "How does the 50% tax credit work?",
+                "reponse": "For cleaning, ironing and windows carried out at your home, you receive a tax credit equal to 50% of the amounts paid, under home care services rules."
+              },
+              {
+                "question": "Does this apply to services for businesses?",
+                "reponse": "No. The tax credit only applies to services carried out at an individual's home. Office, shop and post-construction cleaning are billed on quote, without tax credit."
+              },
+              {
+                "question": "What do I need to do to benefit from it?",
+                "reponse": "Nothing in particular: a certificate summarising the amounts paid is issued to you every year, to include in your tax return."
+              },
+              {
+                "question": "Is there a cap?",
+                "reponse": "Yes, the tax credit applies within the annual caps set by the tax administration for home care services."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Take advantage of the tax credit on your home cleaning",
+            "sousTitre": "Free quote by phone, quick reply.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "menage-domicile",
+      "label": "Home cleaning",
+      "navHidden": true,
+      "meta": {
+        "title": "Home cleaning in Marseille — regular or one-off",
+        "description": "Home cleaning in Marseille and Aix-en-Provence: regular from €50/h, one-off from €60/h. Natural products and equipment supplied. 50% tax credit.",
+        "keywords": [
+          "home cleaning Marseille",
+          "cleaning lady Marseille",
+          "home help Marseille",
+          "regular cleaning Aix-en-Provence"
+        ]
+      },
+      "service": {
+        "name": "Home cleaning",
+        "description": "Regular or one-off cleaning of the home in Marseille and Aix-en-Provence.",
+        "serviceType": "Home cleaning",
+        "priceFrom": 50
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Regular or one-off",
+            "titre": "Home cleaning in Marseille",
+            "intro": "MB Nettoyage takes care of your home in Marseille, Aix-en-Provence and beyond: floors, bathrooms, kitchen and dusting, with natural products and equipment.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Home cleaning" }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Why choose MB Nettoyage",
+            "items": [
+              {
+                "icone": "Leaf",
+                "nom": "Natural products",
+                "description": "Natural products and equipment supplied, respectful of your home."
+              },
+              {
+                "icone": "CalendarCheck",
+                "nom": "Regular or one-off",
+                "description": "At the frequency that suits you, or as a single visit."
+              },
+              {
+                "icone": "BadgePercent",
+                "nom": "50% tax credit",
+                "description": "Half of the expense is refunded or deducted from your taxes."
+              },
+              {
+                "icone": "Clock",
+                "nom": "24/7 availability",
+                "description": "Reachable 24/7 to fit your schedule."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "timeline-verticale",
+          "content": {
+            "titre": "How your home cleaning works",
+            "items": [
+              {
+                "icone": "PhoneCall",
+                "titre": "Your call",
+                "texte": "You describe your home and the frequency you want. Free quote by phone."
+              },
+              {
+                "icone": "CalendarCheck",
+                "titre": "The appointment",
+                "texte": "We set a regular or one-off time, fitting your schedule."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "The visit",
+                "texte": "We carry out the cleaning with care, natural products and equipment supplied."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Service in Marseille, Aix-en-Provence and 20 km around",
+            "rayonKm": 20,
+            "zones": [
+              {
+                "region": "Marseille and surroundings",
+                "principale": "Marseille",
+                "villes": ["Marseille", "Allauch", "Plan-de-Cuques", "Marignane", "Vitrolles"]
+              },
+              {
+                "region": "Aix-en-Provence and surroundings",
+                "principale": "Aix-en-Provence",
+                "villes": ["Aix-en-Provence", "Gardanne", "Bouc-Bel-Air", "Cabriès"]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Frequently asked questions",
+            "items": [
+              {
+                "question": "What's the difference between regular and one-off cleaning?",
+                "reponse": "Regular cleaning (€50/h) is recurring upkeep at a fixed frequency. One-off cleaning (€60/h) is a single visit, with no commitment."
+              },
+              {
+                "question": "Do I need to supply the equipment and products?",
+                "reponse": "No, we bring our own equipment and natural products, suited to your home."
+              },
+              {
+                "question": "Does home cleaning qualify for the tax credit?",
+                "reponse": "Yes, up to 50% of the amounts paid, within the caps set by the tax administration."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Need a quote for home cleaning?",
+            "sousTitre": "Free quote by phone, quick reply.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "grand-menage-etat-des-lieux",
+      "label": "Deep cleaning & move-out cleaning",
+      "navHidden": true,
+      "meta": {
+        "title": "Deep cleaning & move-out cleaning in Marseille — MB Nettoyage",
+        "description": "Deep cleaning and restoration before or after a move-out inspection in Marseille and Aix-en-Provence. Free quote by phone.",
+        "keywords": [
+          "deep cleaning Marseille",
+          "move-out cleaning Marseille",
+          "home restoration cleaning Marseille"
+        ]
+      },
+      "service": {
+        "name": "Deep cleaning & move-out cleaning",
+        "description": "Complete restoration before or after a move-out inspection, a move or a rental, in Marseille and beyond.",
+        "serviceType": "Deep cleaning",
+        "priceFrom": "Free quote"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Before or after a move-out inspection",
+            "titre": "Deep cleaning & move-out cleaning in Marseille",
+            "intro": "Moving in, tenants moving out, or a final inspection: MB Nettoyage restores your home in Marseille and beyond, with a free quote by phone.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Deep cleaning & move-out cleaning" }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Why choose MB Nettoyage",
+            "items": [
+              {
+                "icone": "SprayCan",
+                "nom": "Deep cleaning",
+                "description": "Floors, bathrooms, kitchen and storage thoroughly treated."
+              },
+              {
+                "icone": "Clock",
+                "nom": "Fast turnaround",
+                "description": "Fitting your move-out inspection or key handover deadlines."
+              },
+              {
+                "icone": "Leaf",
+                "nom": "Natural products",
+                "description": "Natural products and equipment suited to every type of home."
+              },
+              {
+                "icone": "CheckCircle",
+                "nom": "Move-in ready",
+                "description": "A clean home, ready to live in or hand back without reservation."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Frequently asked questions",
+            "items": [
+              {
+                "question": "How is the quote prepared?",
+                "reponse": "Free of charge, by phone, based on the surface area and condition of the home."
+              },
+              {
+                "question": "Do you work before moving in or after moving out?",
+                "reponse": "Yes, in both cases, as well as before a final move-out inspection."
+              },
+              {
+                "question": "Is this service eligible for the tax credit?",
+                "reponse": "Deep cleaning and move-out cleaning carried out at an individual's home may be eligible: the quote will clarify the conditions for your situation."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "A home to restore in Marseille?",
+            "sousTitre": "Free quote by phone, quick reply.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "repassage",
+      "label": "Home ironing",
+      "navHidden": true,
+      "meta": {
+        "title": "Home ironing in Marseille — from €10/kilo",
+        "description": "Home ironing in Marseille and Aix-en-Provence, from €10/kilo (reduced rate from 3 kilos). 50% tax credit for individuals.",
+        "keywords": [
+          "home ironing Marseille",
+          "ironing by the kilo Marseille",
+          "ironing service Aix-en-Provence"
+        ]
+      },
+      "service": {
+        "name": "Home ironing",
+        "description": "Laundry ironing at home, by the kilo, in Marseille and beyond.",
+        "serviceType": "Ironing",
+        "priceFrom": 10
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "By the kilo, at home",
+            "titre": "Home ironing in Marseille",
+            "intro": "Your laundry sorted, ironed and folded with care, from €10/kilo, with a reduced rate from 3 kilos.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Home ironing" }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "grille",
+          "variant": "grille",
+          "content": {
+            "titre": "Ironing price",
+            "items": [
+              {
+                "nom": "Ironing",
+                "prix": 10,
+                "unite": "/kilo",
+                "description": "Reduced rate from 3 kilos.",
+                "inclus": ["Sorting", "Ironing", "Folding"]
+              }
+            ],
+            "note": "Home service, eligible for the 50% tax credit.",
+            "cta": {
+              "label": "Request a quote",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Why choose MB Nettoyage",
+            "items": [
+              {
+                "icone": "Shirt",
+                "nom": "Care for your laundry",
+                "description": "Every piece is ironed and folded with attention, according to fabric."
+              },
+              {
+                "icone": "BadgePercent",
+                "nom": "Reduced rate",
+                "description": "From 3 kilos, the price per kilo goes down."
+              },
+              {
+                "icone": "Clock",
+                "nom": "24/7 availability",
+                "description": "Reachable at any time to organise your ironing."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Frequently asked questions",
+            "items": [
+              {
+                "question": "How is the ironing price calculated?",
+                "reponse": "By the weight of the laundry, at €10/kilo, with a reduced rate from 3 kilos."
+              },
+              {
+                "question": "Can ironing be combined with cleaning?",
+                "reponse": "Yes, cleaning and ironing can be combined during the same visit."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "A basket of laundry to iron?",
+            "sousTitre": "Free quote by phone, quick reply.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Window cleaning",
+      "navHidden": true,
+      "meta": {
+        "title": "Window cleaning in Marseille — individuals & businesses",
+        "description": "Window cleaning in Marseille and Aix-en-Provence: from €10/window for individuals, on quote for businesses (shop windows, glass façades).",
+        "keywords": [
+          "window cleaning Marseille",
+          "window cleaner Marseille",
+          "shop window cleaning Marseille"
+        ]
+      },
+      "service": {
+        "name": "Window cleaning",
+        "description": "Window cleaning for individuals and businesses in Marseille and beyond.",
+        "serviceType": "Window cleaning",
+        "priceFrom": 10
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Individuals & businesses",
+            "titre": "Window cleaning in Marseille",
+            "intro": "Windows, bay windows and shop windows cleaned with care: from €10/window for individuals, on quote for professional shop windows and façades.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Window cleaning" }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "eyebrow": "Individuals",
+            "titre": "Your windows, from €10",
+            "items": [
+              {
+                "icone": "Droplets",
+                "nom": "Depending on size",
+                "description": "From €10 to €15 per window, depending on dimensions."
+              },
+              {
+                "icone": "Leaf",
+                "nom": "Natural products",
+                "description": "A streak-free finish, with products respectful of your frames."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "eyebrow": "Businesses",
+            "titre": "Shop windows & glass façades",
+            "items": [
+              {
+                "icone": "Building2",
+                "nom": "On quote",
+                "description": "Shop windows and glass façades, at the frequency you choose."
+              },
+              {
+                "icone": "CalendarCheck",
+                "nom": "Regular upkeep",
+                "description": "A spotless finish for your shop's image."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "ligne-horizontale",
+          "content": {
+            "titre": "How it works",
+            "items": [
+              {
+                "icone": "PhoneCall",
+                "titre": "Your request",
+                "texte": "The number and size of windows, or the glass surface of your premises."
+              },
+              {
+                "icone": "FileText",
+                "titre": "Quote",
+                "texte": "A clear price, free and with no obligation."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "The cleaning",
+                "texte": "A streak-free finish, inside and out."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Windows to make shine?",
+            "sousTitre": "Free quote by phone, quick reply.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-bureaux-commerces",
+      "label": "Office & shop cleaning",
+      "navHidden": true,
+      "meta": {
+        "title": "Office and shop cleaning in Marseille — MB Nettoyage",
+        "description": "Professional cleaning of offices, shops and boutiques in Marseille and Aix-en-Provence. Free phone quote based on your premises.",
+        "keywords": [
+          "office cleaning Marseille",
+          "shop cleaning Marseille",
+          "professional cleaning company Marseille"
+        ]
+      },
+      "service": {
+        "name": "Office & shop cleaning",
+        "description": "Professional cleaning of offices, shops and premises in Marseille and beyond.",
+        "serviceType": "Commercial premises cleaning",
+        "priceFrom": "Free quote"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Businesses",
+            "titre": "Office & shop cleaning in Marseille",
+            "intro": "MB Nettoyage maintains your offices, shops and boutiques in Marseille and beyond, with the same standard as for individuals.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Office & shop cleaning" }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "One standard, two audiences",
+            "titre": "The same care, for your business premises",
+            "paragraphes": [
+              "Shops, boutiques, offices or practices: MB Nettoyage applies the same cleanliness standard to your business premises as to a private home. Floors, shop windows, bathrooms and reception areas are maintained with natural products and equipment.",
+              "Every quote is prepared based on the surface area, the desired frequency and your business constraints, with the option to work outside your opening hours."
+            ],
+            "image": {
+              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/F13C28AC-BA55-4A82-B466-AEF6457E8B0C-3a3IjqOYQAKKtdt8O1Svn90c7y9dod.jpeg",
+              "alt": "Shop cleaned and tidied, spotless displays and floors"
+            },
+            "imagePosition": "right"
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Why choose MB Nettoyage",
+            "items": [
+              {
+                "icone": "Building2",
+                "nom": "Offices & shops",
+                "description": "Boutiques, practices, offices: upkeep suited to each type of premises."
+              },
+              {
+                "icone": "CalendarCheck",
+                "nom": "Custom frequency",
+                "description": "One-off or regular visits, based on your needs."
+              },
+              {
+                "icone": "Clock",
+                "nom": "Flexible hours",
+                "description": "Available outside your opening hours."
+              },
+              {
+                "icone": "Leaf",
+                "nom": "Natural products",
+                "description": "Natural products and equipment, respectful of your premises and your staff."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "titre": "How your professional cleaning works",
+            "items": [
+              {
+                "icone": "PhoneCall",
+                "titre": "Your request",
+                "texte": "You tell us the surface area, activity and desired frequency."
+              },
+              {
+                "icone": "FileText",
+                "titre": "Custom quote",
+                "texte": "A clear proposal, suited to your budget and constraints."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "The upkeep",
+                "texte": "A careful, one-off or recurring visit."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Frequently asked questions",
+            "items": [
+              {
+                "question": "Do you work outside opening hours?",
+                "reponse": "Yes, we adapt to your business to work before opening, after closing, or during quiet hours."
+              },
+              {
+                "question": "How is the quote for a business premises prepared?",
+                "reponse": "Based on the surface area, the type of activity and the desired frequency. Contact us for a free estimate."
+              },
+              {
+                "question": "Is this service eligible for the tax credit?",
+                "reponse": "No, the 50% tax credit only applies to services carried out at an individual's home."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Business premises to maintain in Marseille?",
+            "sousTitre": "Free quote by phone, quick reply.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-fin-chantier",
+      "label": "Post-construction cleaning",
+      "navHidden": true,
+      "meta": {
+        "title": "Post-construction cleaning in Marseille — after building work",
+        "description": "Post-construction cleaning in Marseille and Aix-en-Provence: after building work, renovation or construction. Free phone quote.",
+        "keywords": [
+          "post-construction cleaning Marseille",
+          "after building work cleaning Marseille",
+          "end of construction cleaning Aix-en-Provence"
+        ]
+      },
+      "service": {
+        "name": "Post-construction cleaning",
+        "description": "Full cleaning after building work, renovation or construction in Marseille and beyond.",
+        "serviceType": "Post-construction cleaning",
+        "priceFrom": "Free quote"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "After building work, renovation or construction",
+            "titre": "Post-construction cleaning in Marseille",
+            "intro": "Construction dust, paint, glue or plaster marks: MB Nettoyage prepares your premises or your home for handover, with a free quote.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Post-construction cleaning" }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Before handover",
+            "titre": "A spotless space, ready for handover",
+            "paragraphes": [
+              "After building work, a renovation or a construction project, fine dust and site residue settle everywhere: floors, skirting boards, frames and windows. MB Nettoyage steps in to make the space clean and ready to live in, rent out or put into service.",
+              "Every quote is prepared based on the surface area and the scale of the work, with the option of a fast turnaround before a handover or key delivery."
+            ],
+            "image": {
+              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_4304-xw7ac4gbDYh8gjB8DZ1sozZcCjkswc.jpeg",
+              "alt": "Room under construction before post-construction cleaning"
+            },
+            "imagePosition": "left"
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Why choose MB Nettoyage",
+            "items": [
+              {
+                "icone": "SprayCan",
+                "nom": "Construction dust under control",
+                "description": "Thorough dusting of floors, surfaces, windows and frames."
+              },
+              {
+                "icone": "HardHat",
+                "nom": "Marks & residue removed",
+                "description": "Paint, glue and plaster removed with suitable products."
+              },
+              {
+                "icone": "Clock",
+                "nom": "Deadlines respected",
+                "description": "Service completed before your handover or key delivery."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Frequently asked questions",
+            "items": [
+              {
+                "question": "How do I get a post-construction cleaning quote?",
+                "reponse": "Tell us the surface area and the scale of the work: we'll prepare a free quote by phone."
+              },
+              {
+                "question": "Do you work for both individuals and businesses?",
+                "reponse": "Yes, for a home after renovation as well as for business premises after construction."
+              },
+              {
+                "question": "Is this service eligible for the tax credit?",
+                "reponse": "No, post-construction cleaning is billed on quote, without tax credit."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "A site to clean in Marseille?",
+            "sousTitre": "Free quote by phone, quick reply.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

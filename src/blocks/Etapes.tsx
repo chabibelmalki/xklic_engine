@@ -4,11 +4,13 @@ import { Section, toneForIndex } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Icon } from "@/components/ui/Icon";
+import { cn } from "@/lib/utils";
 
 /**
  * Bloc "comment ça marche". variant : "cartes-numerotees" (cartes, défaut) ·
  * "timeline-verticale" (fil vertical, pastilles numérotées) · "ligne-horizontale"
- * (étapes alignées sur une ligne, nœuds numérotés).
+ * (étapes alignées sur une ligne, nœuds numérotés) · "sentier-alterne" (fil
+ * central, cartes en quinconce gauche/droite — pack marine-premium).
  */
 export function Etapes({ block, index }: BlockComponentProps<EtapesContent>) {
   const c = block.content;
@@ -69,6 +71,52 @@ export function Etapes({ block, index }: BlockComponentProps<EtapesContent>) {
                 </Reveal>
               </li>
             ))}
+          </ol>
+        </div>
+      </Section>
+    );
+  }
+
+  if (variant === "sentier-alterne") {
+    return (
+      <Section id="etapes" tone={toneForIndex(index)}>
+        {header}
+        <div className="relative mx-auto mt-14 max-w-3xl">
+          <div className="absolute inset-y-2 start-4 w-px bg-border sm:start-1/2" aria-hidden />
+          <ol className="space-y-10 sm:space-y-16">
+            {c.items.map((step, i) => {
+              const onRight = i % 2 === 1;
+              return (
+                <li key={step.titre} className="relative ps-12 sm:ps-0">
+                  <Reveal delay={i * 0.08} className="relative">
+                    <span className="absolute start-4 top-1 z-10 grid size-9 -translate-x-1/2 place-items-center rounded-full border-2 border-bg bg-brand-600 font-display text-sm font-bold text-brand-contrast sm:start-1/2">
+                      {i + 1}
+                    </span>
+                    <div className="sm:grid sm:grid-cols-2 sm:items-start sm:gap-10">
+                      <div className={onRight ? "sm:col-start-2" : "sm:col-start-1 sm:row-start-1"}>
+                        <div
+                          className={cn(
+                            "rounded-theme border border-border bg-surface p-6",
+                            !onRight && "sm:text-end",
+                          )}
+                        >
+                          <span
+                            className={cn(
+                              "inline-grid size-10 place-items-center rounded-2xl bg-brand-50 text-brand-600",
+                              !onRight && "sm:ms-auto",
+                            )}
+                          >
+                            <Icon name={step.icone} className="size-5" />
+                          </span>
+                          <h3 className="mt-3 font-display text-lg font-bold text-ink">{step.titre}</h3>
+                          <p className="mt-2 text-sm leading-relaxed text-muted">{step.texte}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </Reveal>
+                </li>
+              );
+            })}
           </ol>
         </div>
       </Section>

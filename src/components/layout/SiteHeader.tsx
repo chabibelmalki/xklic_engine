@@ -7,6 +7,7 @@ import type { UIStrings } from "@/i18n/ui";
 import { Logo } from "./Logo";
 import { Button } from "@/components/ui/Button";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { HeaderPhonePopover } from "./HeaderPhonePopover";
 import { cn, telHref } from "@/lib/utils";
 import { navPages, isMultiPage, resolvePages, findBlock } from "@/lib/pages";
 
@@ -151,15 +152,23 @@ export function SiteHeader({
               ariaLabel={strings.header.language}
             />
           )}
-          {contact?.telephone && (
-            <a
-              href={telHref(contact.telephone)}
-              className="inline-flex items-center gap-2 text-sm font-semibold text-ink transition-colors hover:text-brand-700"
-            >
-              <Phone className="size-4 text-brand-600" />
-              {contact.telephone}
-            </a>
-          )}
+          {contact?.telephone &&
+            (contact.telephoneHeader === "icone-popup" ? (
+              <HeaderPhonePopover
+                telephone={contact.telephone}
+                callLabel={strings.header.callUs}
+                copyLabel={strings.header.copyNumber}
+                copiedLabel={strings.header.numberCopied}
+              />
+            ) : (
+              <a
+                href={telHref(contact.telephone)}
+                className="inline-flex items-center gap-2 text-sm font-semibold text-ink transition-colors hover:text-brand-700"
+              >
+                <Phone className="size-4 text-brand-600" />
+                {contact.telephone}
+              </a>
+            ))}
           {cta && (
             <Button href={cta.href} size="sm">
               {cta.label}

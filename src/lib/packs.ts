@@ -150,6 +150,25 @@ export const PACKS: StylePack[] = [
       cta: ["encadre", "bande"],
     },
   },
+  {
+    id: "marine-premium",
+    label: "Marine · Élégant & posé",
+    ambiance:
+      "Serif posée (Libre Baskerville), kicker à filet fin sans pastille, boutons moyennement arrondis, ombres teintées marine, motion sobre.",
+    fonts: { display: "Libre Baskerville", sans: "Inter" },
+    variants: {
+      hero: ["split", "centre"],
+      services: ["grille-icones", "grille-cartes"],
+      produits: ["grille", "vitrine"],
+      galerie: ["grille", "masonry"],
+      avis: ["grille", "vedette"],
+      tarifs: ["grille", "liste-simple"],
+      etapes: ["sentier-alterne", "timeline-verticale"],
+      faq: ["deux-colonnes", "accordeon"],
+      contact: ["split-form-carte", "panneau-sombre"],
+      cta: ["encadre", "bande"],
+    },
+  },
 ];
 
 export const DEFAULT_PACK: StylePackId = "base";
