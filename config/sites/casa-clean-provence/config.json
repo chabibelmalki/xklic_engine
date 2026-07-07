@@ -27,6 +27,7 @@
     "nom": "Casa Clean Provence",
     "statut": "micro",
     "siret": "99993869900017",
+    "dirigeant": "Latifa Mazzour",
     "ape": "81.21Z",
     "apeLabel": "Nettoyage courant des bâtiments",
     "tva": {
@@ -985,6 +986,7 @@
             "telephone": "+33 6 41 87 53 27",
             "whatsapp": "+33 6 41 87 53 27",
             "email": "casaclean.provence@gmail.com",
+            "adresse": "22 communes autour de Marseille",
             "horaires": [
               {
                 "jour": "Lun – Sam",
@@ -1063,6 +1065,7 @@
             "telephone": "+33 6 41 87 53 27",
             "whatsapp": "+33 6 41 87 53 27",
             "email": "casaclean.provence@gmail.com",
+            "adresse": "22 communes autour de Marseille",
             "horaires": [
               {
                 "jour": "Lun – Sam",
