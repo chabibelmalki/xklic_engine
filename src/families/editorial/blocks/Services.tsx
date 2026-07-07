@@ -1,6 +1,7 @@
 import type { ServicesContent } from "@/types/config";
 import type { BlockComponentProps } from "@/blocks/types";
 import { Button } from "@/components/ui/Button";
+import { Icon } from "@/components/ui/Icon";
 import { withBase } from "@/lib/utils";
 import { EditorialSection } from "../ui/Section";
 import { EditorialContainer } from "../ui/Container";
@@ -8,19 +9,24 @@ import { EditorialHeading } from "../ui/Heading";
 import { EditorialImage } from "../ui/Image";
 
 /**
- * SERVICES éditorial. Deux grammaires, JAMAIS de cartes à ombre douce :
+ * SERVICES éditorial. Trois grammaires, JAMAIS de cartes à ombre douce :
  * - si la plupart des items ont une photo → GRILLE PHOTO plein-bord (images
  *   nettes, titre + texte dessous, filet fin), style magazine.
+ * - si des items portent un `href` (fiches détaillées) → GRILLE DE CARTES à
+ *   filet (bordure fine, sans ombre) : numéro, icône/badge, texte, prix et
+ *   CTA « voir détail » ancrés en pied de carte pour éviter le vide.
  * - sinon → LISTE numérotée à filets (grands numéros, grande typo, beaucoup d'air).
  */
 export function Services({
   block,
   tone,
   basePath = "",
+  strings,
 }: BlockComponentProps<ServicesContent>) {
   const c = block.content;
   const items = c.items ?? [];
   const withImages = items.filter((s) => s.image?.url).length >= Math.ceil(items.length / 2);
+  const withLinks = !withImages && items.some((s) => s.href);
 
   return (
     <EditorialSection id="services" tone={tone}>
@@ -48,6 +54,47 @@ export function Services({
                   </div>
                   {s.description && (
                     <p className="mt-2 text-sm leading-relaxed text-muted">{s.description}</p>
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+        ) : withLinks ? (
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {items.map((s, i) => (
+              <article key={s.nom} className="flex h-full flex-col border border-border p-7">
+                <div className="flex items-start justify-between gap-3">
+                  <span className="font-display text-3xl font-semibold tabular-nums text-brand-200">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  {s.badge && (
+                    <span className="shrink-0 rounded-full bg-accent-50 px-2.5 py-1 text-xs font-semibold text-accent-600">
+                      {s.badge}
+                    </span>
+                  )}
+                </div>
+                {s.icone && (
+                  <span className="mt-4 grid size-11 place-items-center rounded-xl bg-brand-50 text-brand-600">
+                    <Icon name={s.icone} className="size-5" />
+                  </span>
+                )}
+                <h3 className="mt-4 font-display text-xl font-semibold text-ink">{s.nom}</h3>
+                {s.description && (
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{s.description}</p>
+                )}
+                <div className="mt-6 flex items-center justify-between gap-3 border-t border-border pt-5">
+                  {s.priceHint && (
+                    <span className="text-sm font-medium text-muted">{s.priceHint}</span>
+                  )}
+                  {s.href && (
+                    <Button
+                      href={withBase(basePath, s.href)}
+                      variant="outline"
+                      size="sm"
+                      className="ms-auto"
+                    >
+                      {strings.services.details}
+                    </Button>
                   )}
                 </div>
               </article>

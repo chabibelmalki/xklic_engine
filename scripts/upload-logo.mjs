@@ -174,7 +174,7 @@ function uploadToBlob(file, pathname, token) {
       "--rw-token",
       token,
     ],
-    { cwd: ROOT, env: childEnv, encoding: "utf8" },
+    { cwd: ROOT, env: childEnv, encoding: "utf8", shell: true },
   );
 
   // le CLI Vercel écrit « Success! <url> » sur stderr -> on lit les deux flux

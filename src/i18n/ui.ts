@@ -96,6 +96,7 @@ export const UI = {
     services: {
       defaultTitle: "Nos prestations",
       see: "Voir",
+      details: "Voir détail",
     },
     contact: {
       hours: "Horaires",
@@ -257,6 +258,7 @@ export const UI = {
     services: {
       defaultTitle: "Our services",
       see: "View",
+      details: "See details",
     },
     contact: {
       hours: "Opening hours",
@@ -418,6 +420,7 @@ export const UI = {
     services: {
       defaultTitle: "خدماتنا",
       see: "عرض",
+      details: "عرض التفاصيل",
     },
     contact: {
       hours: "ساعات العمل",
@@ -579,6 +582,7 @@ export const UI = {
     services: {
       defaultTitle: "Nuestros servicios",
       see: "Ver",
+      details: "Ver detalles",
     },
     contact: {
       hours: "Horario",

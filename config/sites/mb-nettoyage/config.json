@@ -4,11 +4,14 @@
   "stylePack": "marine-premium",
   "i18n": {
     "default": "fr",
-    "languages": ["fr", "en"]
+    "languages": [
+      "fr",
+      "en"
+    ]
   },
   "branding": {
-    "logo": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/5C18D0BB-FAE9-498D-BEAC-1569E20106FB-Fkylt8v3W7u1GI7LHyhL4gqQLzDx0s.jpeg",
-    "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/5C18D0BB-FAE9-498D-BEAC-1569E20106FB-Fkylt8v3W7u1GI7LHyhL4gqQLzDx0s.jpeg",
+    "logo": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/mb-nettoyage/logo.jpeg",
+    "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/mb-nettoyage/logo.jpeg",
     "logoAlt": "MB Nettoyage — nettoyage à domicile et professionnel à Marseille",
     "logoTwoTone": {
       "first": "#1e3a8a",
@@ -931,9 +934,17 @@
             "titre": "Crédit d'impôt de 50 %",
             "intro": "Le ménage, le repassage et le nettoyage de vitres réalisés à votre domicile sont éligibles au crédit d'impôt de 50 % au titre des services à la personne.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Tarifs", "href": "/tarifs" },
-              { "label": "Crédit d'impôt 50 %" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Tarifs",
+                "href": "/tarifs"
+              },
+              {
+                "label": "Crédit d'impôt 50 %"
+              }
             ],
             "ctaPrimaire": {
               "label": "Demander un devis",
@@ -1048,9 +1059,17 @@
             "titre": "Ménage à domicile à Marseille",
             "intro": "MB Nettoyage assure l'entretien de votre logement à Marseille, Aix-en-Provence et alentour : sols, sanitaires, cuisine et poussières, avec du matériel et des produits naturels.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Ménage à domicile" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage à domicile"
+              }
             ],
             "ctaPrimaire": {
               "label": "Demander un devis",
@@ -1125,12 +1144,23 @@
               {
                 "region": "Marseille et environs",
                 "principale": "Marseille",
-                "villes": ["Marseille", "Allauch", "Plan-de-Cuques", "Marignane", "Vitrolles"]
+                "villes": [
+                  "Marseille",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "Marignane",
+                  "Vitrolles"
+                ]
               },
               {
                 "region": "Aix-en-Provence et alentours",
                 "principale": "Aix-en-Provence",
-                "villes": ["Aix-en-Provence", "Gardanne", "Bouc-Bel-Air", "Cabriès"]
+                "villes": [
+                  "Aix-en-Provence",
+                  "Gardanne",
+                  "Bouc-Bel-Air",
+                  "Cabriès"
+                ]
               }
             ]
           }
@@ -1201,9 +1231,17 @@
             "titre": "Grand ménage & état des lieux à Marseille",
             "intro": "Emménagement, départ de locataires ou état des lieux de sortie : MB Nettoyage remet votre logement à neuf à Marseille et alentour, sur devis gratuit établi par téléphone.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Grand ménage & état des lieux" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Grand ménage & état des lieux"
+              }
             ],
             "ctaPrimaire": {
               "label": "Demander un devis",
@@ -1310,9 +1348,17 @@
             "titre": "Repassage à domicile à Marseille",
             "intro": "Votre linge trié, repassé et plié avec soin, dès 10 €/kilo, avec un tarif dégressif à partir de 3 kilos.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Repassage à domicile" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Repassage à domicile"
+              }
             ],
             "ctaPrimaire": {
               "label": "Demander un devis",
@@ -1336,7 +1382,11 @@
                 "prix": 10,
                 "unite": "/kilo",
                 "description": "Tarif dégressif à partir de 3 kilos.",
-                "inclus": ["Tri du linge", "Repassage", "Pliage"]
+                "inclus": [
+                  "Tri du linge",
+                  "Repassage",
+                  "Pliage"
+                ]
               }
             ],
             "note": "Prestation à domicile, éligible au crédit d'impôt de 50 %.",
@@ -1432,9 +1482,17 @@
             "titre": "Nettoyage de vitres à Marseille",
             "intro": "Vitres, baies vitrées et vitrines lavées avec soin : dès 10 €/vitre chez les particuliers, sur devis pour les vitrines et façades professionnelles.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Nettoyage de vitres" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage de vitres"
+              }
             ],
             "ctaPrimaire": {
               "label": "Demander un devis",
@@ -1555,9 +1613,17 @@
             "titre": "Nettoyage de bureaux & commerces à Marseille",
             "intro": "MB Nettoyage entretient vos bureaux, commerces et boutiques à Marseille et alentour, avec la même exigence que pour les particuliers.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Nettoyage de bureaux & commerces" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage de bureaux & commerces"
+              }
             ],
             "ctaPrimaire": {
               "label": "Demander un devis",
@@ -1704,9 +1770,17 @@
             "titre": "Nettoyage post-chantier à Marseille",
             "intro": "Poussière de chantier, traces de peinture, de colle ou de plâtre : MB Nettoyage prépare vos locaux ou votre logement pour la livraison, sur devis gratuit.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Nettoyage post-chantier" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage post-chantier"
+              }
             ],
             "ctaPrimaire": {
               "label": "Demander un devis",
