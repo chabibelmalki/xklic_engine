@@ -3,9 +3,8 @@ import { Star, QrCode, ExternalLink } from "lucide-react";
 import type { SiteConfig } from "@/types/config";
 import { resolveTheme } from "@/lib/theme";
 import { brandColorStyle } from "@/lib/colors";
-import { resolvePack } from "@/lib/packs";
-import { SiteHeader } from "@/components/layout/SiteHeader";
-import { SiteFooter } from "@/components/layout/SiteFooter";
+import { resolvePack, getPack } from "@/lib/packs";
+import { getFamily } from "@/families";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { localeDir, htmlLang } from "@/lib/i18n";
@@ -36,6 +35,7 @@ export async function AvisPage({
   const theme = resolveTheme(config.theme);
   const colorStyle = brandColorStyle(config.branding.colors);
   const pack = resolvePack(config.stylePack);
+  const { Header, Footer } = getFamily(getPack(config.stylePack).family).Chrome;
   const locales = config.i18n?.languages ?? [locale];
   const defaultLocale = config.i18n?.default ?? locale;
   const t = ui(locale);
@@ -67,7 +67,7 @@ export async function AvisPage({
       className="min-h-screen bg-bg text-ink print:bg-white"
     >
       <div className="print:hidden">
-        <SiteHeader
+        <Header
           config={config}
           basePath={basePath}
           locale={locale}
@@ -131,7 +131,7 @@ export async function AvisPage({
       </main>
 
       <div className="print:hidden">
-        <SiteFooter config={config} basePath={basePath} locale={locale} />
+        <Footer config={config} basePath={basePath} locale={locale} />
       </div>
     </div>
   );

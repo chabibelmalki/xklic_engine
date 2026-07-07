@@ -2,9 +2,8 @@ import type { SiteConfig } from "@/types/config";
 import type { MentionsLegales } from "@/lib/legal";
 import { resolveTheme } from "@/lib/theme";
 import { brandColorStyle } from "@/lib/colors";
-import { resolvePack } from "@/lib/packs";
-import { SiteHeader } from "@/components/layout/SiteHeader";
-import { SiteFooter } from "@/components/layout/SiteFooter";
+import { resolvePack, getPack } from "@/lib/packs";
+import { getFamily } from "@/families";
 import { Container } from "@/components/ui/Container";
 import { localeDir, htmlLang } from "@/lib/i18n";
 import { ui } from "@/i18n/ui";
@@ -28,6 +27,7 @@ export function LegalDocPage({
   const theme = resolveTheme(config.theme);
   const colorStyle = brandColorStyle(config.branding.colors);
   const pack = resolvePack(config.stylePack);
+  const { Header, Footer } = getFamily(getPack(config.stylePack).family).Chrome;
   const locales = config.i18n?.languages ?? [locale];
   const defaultLocale = config.i18n?.default ?? locale;
 
@@ -40,7 +40,7 @@ export function LegalDocPage({
       dir={localeDir(locale)}
       className="min-h-screen bg-bg text-ink"
     >
-      <SiteHeader
+      <Header
         config={config}
         basePath={basePath}
         locale={locale}
@@ -73,7 +73,7 @@ export function LegalDocPage({
           </div>
         </Container>
       </main>
-      <SiteFooter config={config} basePath={basePath} locale={locale} />
+      <Footer config={config} basePath={basePath} locale={locale} />
     </div>
   );
 }

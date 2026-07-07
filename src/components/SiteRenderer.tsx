@@ -1,16 +1,13 @@
 import { Fragment } from "react";
 import type { SiteConfig, ContactContent } from "@/types/config";
-import { getBlockComponent } from "@/blocks/catalog";
 import { resolveTheme } from "@/lib/theme";
 import { brandColorStyle } from "@/lib/colors";
 import { resolvePack, getPack } from "@/lib/packs";
+import { getFamily, getFamilyBlock } from "@/families";
 import { sectionTone } from "@/components/ui/Section";
 import { SectionDivider } from "@/components/ui/SectionDivider";
 import { buildJsonLd } from "@/lib/jsonld";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { SiteHeader } from "@/components/layout/SiteHeader";
-import { SiteFooter } from "@/components/layout/SiteFooter";
-import { FloatingActions } from "@/components/layout/FloatingActions";
 import { TrackClicks } from "@/components/TrackClicks";
 import { getHomePage, findBlock, type ResolvedPage } from "@/lib/pages";
 import { localeDir, htmlLang } from "@/lib/i18n";
@@ -58,6 +55,8 @@ export function SiteRenderer({
   const colorStyle = brandColorStyle(config.branding.colors);
   const pack = resolvePack(config.stylePack);
   const packDef = getPack(config.stylePack);
+  const family = getFamily(packDef.family);
+  const { Header, Footer, FloatingActions } = family.Chrome;
   const strategy = packDef.sectionStrategy;
   // La stratégie `bordered` force un filet entre sections, quel que soit le pack.
   const divider = strategy === "bordered" ? "rule" : packDef.sectionDivider;
@@ -84,7 +83,7 @@ export function SiteRenderer({
       className="flex min-h-screen flex-col bg-bg text-ink"
     >
       <JsonLd data={buildJsonLd(config, current)} />
-      <SiteHeader
+      <Header
         config={config}
         basePath={basePath}
         currentPath={current.path}
@@ -98,7 +97,7 @@ export function SiteRenderer({
           ne PAS casser le `position: sticky` de l'en-tête, qui vit hors de <main>. */}
       <main className="flex-1 overflow-x-clip">
         {current.blocks.map((block, i) => {
-          const Cmp = getBlockComponent(block.type);
+          const Cmp = getFamilyBlock(family, block.type);
           const isSection = isTonal(block);
           const index = isSection ? sectionIndex++ : i;
           const tone = sectionTone(strategy, index);
@@ -130,7 +129,7 @@ export function SiteRenderer({
           );
         })}
       </main>
-      <SiteFooter config={config} basePath={basePath} currentPath={current.path} locale={locale} />
+      <Footer config={config} basePath={basePath} currentPath={current.path} locale={locale} />
       <FloatingActions
         telephone={contact?.telephone}
         whatsapp={contact?.whatsapp}

@@ -21,14 +21,16 @@ import { Contact } from "./Contact";
 import { Unknown } from "./Unknown";
 
 /**
- * REGISTRE des blocs : type -> composant. C'est l'unique endroit à éditer pour
- * ajouter un bloc (créer le composant, l'importer, l'enregistrer ici).
+ * REGISTRE des blocs de la famille HISTORIQUE (classic) : type -> composant.
+ * C'est l'unique endroit à éditer pour ajouter un bloc (créer le composant,
+ * l'importer, l'enregistrer ici). Référencé tel quel par la famille `classic`
+ * (voir src/families/classic.ts).
  *
  * `getBlockComponent` renvoie le composant du type, ou `Unknown` (repli) si le
  * type n'est pas connu — un type inconnu ne casse jamais le rendu.
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const registry: Record<string, ComponentType<BlockComponentProps<any>>> = {
+export const blockRegistry: Record<string, ComponentType<BlockComponentProps<any>>> = {
   hero: Hero,
   pageHero: PageHero,
   contenu: Contenu,
@@ -53,9 +55,9 @@ export function getBlockComponent(
   type: string,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
 ): ComponentType<BlockComponentProps<any>> {
-  return registry[type] ?? Unknown;
+  return blockRegistry[type] ?? Unknown;
 }
 
 export function isKnownBlock(type: string): boolean {
-  return type in registry;
+  return type in blockRegistry;
 }

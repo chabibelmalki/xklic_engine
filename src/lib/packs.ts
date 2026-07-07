@@ -46,6 +46,12 @@ export interface StylePack {
   sectionStrategy: SectionStrategy;
   /** Découpe entre sections. Défaut `none` (rendu historique). */
   sectionDivider: SectionDivider;
+  /**
+   * Famille de template (jeu de composants blocs + chrome, voir src/families).
+   * ABSENT => "classic" (rendu historique). Champ `string` volontaire pour ne
+   * créer aucune dépendance packs → families. Résolu par `getFamily`.
+   */
+  family?: string;
   /** Variantes de layout recommandées par bloc (1re = défaut du pack). */
   variants: Record<string, string[]>;
 }
