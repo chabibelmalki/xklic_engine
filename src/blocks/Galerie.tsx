@@ -5,7 +5,7 @@ import Image from "next/image";
 import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 import type { GalerieContent, GalerieVariant, GalerieImageItem } from "@/types/config";
 import type { BlockComponentProps } from "./types";
-import { Section, toneForIndex } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { localeDir } from "@/lib/i18n";
@@ -29,7 +29,7 @@ function ratioClass(ratio?: string, fallback = "aspect-[4/3]") {
  * Galerie. variant : "avant-apres" (paires statiques) · "montage" / "produits" /
  * "grille" (vignettes cliquables -> visionneuse plein écran avec clavier).
  */
-export function Galerie({ block, index, locale, strings }: BlockComponentProps<GalerieContent>) {
+export function Galerie({ block, tone, locale, strings }: BlockComponentProps<GalerieContent>) {
   const c = block.content;
   const variant = (block.variant as GalerieVariant | "montage" | "masonry") ?? "grille";
   const images: GalerieImageItem[] = c.images ?? [];
@@ -94,7 +94,7 @@ export function Galerie({ block, index, locale, strings }: BlockComponentProps<G
   const current = open === null ? null : images[open];
 
   return (
-    <Section id="galerie" tone={toneForIndex(index)}>
+    <Section id="galerie" tone={tone}>
       <Reveal>
         <SectionHeading
           eyebrow={c.eyebrow ?? strings.galerie.defaultTitle}

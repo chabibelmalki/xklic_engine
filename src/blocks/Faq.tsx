@@ -4,7 +4,7 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import type { FaqContent } from "@/types/config";
 import type { BlockComponentProps } from "./types";
-import { Section, toneForIndex } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { cn } from "@/lib/utils";
@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
  * dépliées sur 2 colonnes) · "liste-ouverte" (Q/R dépliées empilées). Le JSON-LD
  * FAQPage est injecté séparément (SEO).
  */
-export function Faq({ block, index, strings }: BlockComponentProps<FaqContent>) {
+export function Faq({ block, tone, strings }: BlockComponentProps<FaqContent>) {
   const c = block.content;
   const variant = block.variant ?? "accordeon";
   const [open, setOpen] = useState<number | null>(0);
@@ -30,7 +30,7 @@ export function Faq({ block, index, strings }: BlockComponentProps<FaqContent>) 
 
   if (variant === "deux-colonnes") {
     return (
-      <Section id="faq" tone={toneForIndex(index)} containerClassName="max-w-5xl">
+      <Section id="faq" tone={tone} containerClassName="max-w-5xl">
         {header}
         <div className="mt-10 grid gap-x-10 gap-y-8 md:grid-cols-2">
           {c.items.map((q, i) => (
@@ -46,7 +46,7 @@ export function Faq({ block, index, strings }: BlockComponentProps<FaqContent>) 
 
   if (variant === "liste-ouverte") {
     return (
-      <Section id="faq" tone={toneForIndex(index)} containerClassName="max-w-3xl">
+      <Section id="faq" tone={tone} containerClassName="max-w-3xl">
         {header}
         <div className="mt-10 divide-y divide-border border-y border-border">
           {c.items.map((q, i) => (
@@ -63,7 +63,7 @@ export function Faq({ block, index, strings }: BlockComponentProps<FaqContent>) 
   }
 
   return (
-    <Section id="faq" tone={toneForIndex(index)} containerClassName="max-w-3xl">
+    <Section id="faq" tone={tone} containerClassName="max-w-3xl">
       {header}
       <Reveal delay={0.05}>
         <div className="mt-10 divide-y divide-border overflow-hidden rounded-theme border border-border bg-surface">

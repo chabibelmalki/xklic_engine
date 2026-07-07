@@ -1,7 +1,7 @@
 import { Quote } from "lucide-react";
 import type { AvisContent, AvisItem } from "@/types/config";
 import type { BlockComponentProps } from "./types";
-import { Section, toneForIndex } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Stars } from "@/components/ui/Stars";
 import { Reveal } from "@/components/ui/Reveal";
@@ -28,7 +28,7 @@ function AvisCard({ a, className = "" }: { a: AvisItem; className?: string }) {
  * défilante en scroll-snap) · "vedette" (1 témoignage en grand + le reste en
  * appoint). La note globale alimente aussi le JSON-LD.
  */
-export function Avis({ block, index, strings }: BlockComponentProps<AvisContent>) {
+export function Avis({ block, tone, strings }: BlockComponentProps<AvisContent>) {
   const c = block.content;
   const variant = block.variant ?? "grille";
 
@@ -62,7 +62,7 @@ export function Avis({ block, index, strings }: BlockComponentProps<AvisContent>
 
   if (variant === "carrousel") {
     return (
-      <Section id="avis" tone={toneForIndex(index)}>
+      <Section id="avis" tone={tone}>
         {header}
         {/* Défilement horizontal en CSS scroll-snap (pas de JS). */}
         <div className="mt-12 -mx-5 flex snap-x snap-mandatory gap-6 overflow-x-auto px-5 pb-4 sm:-mx-8 sm:px-8">
@@ -80,7 +80,7 @@ export function Avis({ block, index, strings }: BlockComponentProps<AvisContent>
   if (variant === "vedette" && c.items.length > 0) {
     const [lead, ...rest] = c.items;
     return (
-      <Section id="avis" tone={toneForIndex(index)}>
+      <Section id="avis" tone={tone}>
         {header}
         <Reveal>
           <figure className="mx-auto mt-12 max-w-3xl rounded-theme border border-border bg-surface p-8 text-center shadow-sm sm:p-12">
@@ -110,7 +110,7 @@ export function Avis({ block, index, strings }: BlockComponentProps<AvisContent>
   }
 
   return (
-    <Section id="avis" tone={toneForIndex(index)}>
+    <Section id="avis" tone={tone}>
       {header}
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {c.items.map((a, i) => (

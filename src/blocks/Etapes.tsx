@@ -1,6 +1,6 @@
 import type { EtapesContent } from "@/types/config";
 import type { BlockComponentProps } from "./types";
-import { Section, toneForIndex } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Icon } from "@/components/ui/Icon";
@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
  * (étapes alignées sur une ligne, nœuds numérotés) · "sentier-alterne" (fil
  * central, cartes en quinconce gauche/droite — pack marine-premium).
  */
-export function Etapes({ block, index }: BlockComponentProps<EtapesContent>) {
+export function Etapes({ block, tone }: BlockComponentProps<EtapesContent>) {
   const c = block.content;
   const variant = block.variant ?? "cartes-numerotees";
   const cols = c.items.length === 4 ? "md:grid-cols-4" : "md:grid-cols-3";
@@ -29,7 +29,7 @@ export function Etapes({ block, index }: BlockComponentProps<EtapesContent>) {
 
   if (variant === "timeline-verticale") {
     return (
-      <Section id="etapes" tone={toneForIndex(index)}>
+      <Section id="etapes" tone={tone}>
         {header}
         <ol className="relative mx-auto mt-12 max-w-2xl space-y-9 border-s-2 border-border ps-9">
           {c.items.map((step, i) => (
@@ -55,7 +55,7 @@ export function Etapes({ block, index }: BlockComponentProps<EtapesContent>) {
 
   if (variant === "ligne-horizontale") {
     return (
-      <Section id="etapes" tone={toneForIndex(index)}>
+      <Section id="etapes" tone={tone}>
         {header}
         <div className="relative mt-14">
           <div className="absolute inset-x-[12%] top-6 hidden h-0.5 bg-border md:block" aria-hidden />
@@ -79,7 +79,7 @@ export function Etapes({ block, index }: BlockComponentProps<EtapesContent>) {
 
   if (variant === "sentier-alterne") {
     return (
-      <Section id="etapes" tone={toneForIndex(index)}>
+      <Section id="etapes" tone={tone}>
         {header}
         <div className="relative mx-auto mt-14 max-w-3xl">
           <div className="absolute inset-y-2 start-4 w-px bg-border sm:start-1/2" aria-hidden />
@@ -124,7 +124,7 @@ export function Etapes({ block, index }: BlockComponentProps<EtapesContent>) {
   }
 
   return (
-    <Section id="etapes" tone={toneForIndex(index)}>
+    <Section id="etapes" tone={tone}>
       {header}
       <div className={`mt-12 grid gap-6 ${cols}`}>
         {c.items.map((step, i) => (

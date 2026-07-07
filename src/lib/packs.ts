@@ -17,6 +17,24 @@ import type { StylePackId } from "@/types/config";
  * génération (catalog.json) pour éviter les combinaisons moches/cassées. Le
  * moteur n'impose rien : une config peut toujours préciser une autre variante.
  */
+/**
+ * Stratégie de fond des sections (levier d'ambiance structurel). Lue au rendu
+ * SSR par le SiteRenderer pour décider le `tone` de chaque section — impossible à
+ * porter par une CSS var (non lisible côté serveur), d'où sa présence ici.
+ * - flat         : tout `bg` (aucune alternance)
+ * - striped      : alternance `bg`/`alt` — comportement HISTORIQUE (défaut)
+ * - surface-alt  : alternance `bg`/`surface`
+ * - brand-tinted : alternance `bg`/teinte de marque légère (`brand`)
+ * - bordered     : tout `bg` + filet séparateur entre sections (via SectionDivider)
+ */
+export type SectionStrategy = "flat" | "striped" | "surface-alt" | "brand-tinted" | "bordered";
+
+/**
+ * Découpe entre deux sections (SVG/filet), rendue par le SiteRenderer ENTRE les
+ * blocs. `none` = aucune (défaut, rétro-compat). Voir SectionDivider.
+ */
+export type SectionDivider = "none" | "rule" | "bevel" | "wave" | "arch";
+
 export interface StylePack {
   id: StylePackId;
   label: string;
@@ -24,6 +42,10 @@ export interface StylePack {
   ambiance: string;
   /** Pairing typographique affiché (display / texte). */
   fonts: { display: string; sans: string };
+  /** Stratégie de fond des sections. Défaut `striped` (rendu historique). */
+  sectionStrategy: SectionStrategy;
+  /** Découpe entre sections. Défaut `none` (rendu historique). */
+  sectionDivider: SectionDivider;
   /** Variantes de layout recommandées par bloc (1re = défaut du pack). */
   variants: Record<string, string[]>;
 }
@@ -32,6 +54,8 @@ export const PACKS: StylePack[] = [
   {
     id: "base",
     label: "Base (historique)",
+    sectionStrategy: "striped",
+    sectionDivider: "none",
     ambiance: "Rendu d'origine du moteur. La palette vient de `theme`.",
     fonts: { display: "Poppins", sans: "Inter" },
     variants: {},
@@ -39,6 +63,8 @@ export const PACKS: StylePack[] = [
   {
     id: "maison-premium",
     label: "Maison · Premium élégant",
+    sectionStrategy: "striped",
+    sectionDivider: "none",
     ambiance:
       "Serif haute, tons ivoire/encre/or, ombres douces, beaucoup d'air.",
     fonts: { display: "Playfair Display", sans: "Inter" },
@@ -58,6 +84,8 @@ export const PACKS: StylePack[] = [
   {
     id: "rose-noir-premium",
     label: "Rose & Noir · Premium élégant",
+    sectionStrategy: "striped",
+    sectionDivider: "none",
     ambiance:
       "Serif haute, encre noire chaude + rose profond, fond ivoire rosé, ombres douces, coins nets, beaucoup d'air. Élégant, épuré.",
     fonts: { display: "Playfair Display", sans: "Inter" },
@@ -77,6 +105,8 @@ export const PACKS: StylePack[] = [
   {
     id: "atelier-industriel",
     label: "Atelier · Bold industriel",
+    sectionStrategy: "striped",
+    sectionDivider: "none",
     ambiance:
       "Typo condensée en majuscules, contraste fort anthracite/orange, bords carrés, bordures épaisses.",
     fonts: { display: "Oswald", sans: "Inter" },
@@ -96,6 +126,8 @@ export const PACKS: StylePack[] = [
   {
     id: "clair-frais",
     label: "Clair · Frais & clean",
+    sectionStrategy: "striped",
+    sectionDivider: "none",
     ambiance:
       "Clair et aéré, teal/ciel, coins très arrondis, boutons pill, ombres légères.",
     fonts: { display: "Plus Jakarta Sans", sans: "Inter" },
@@ -115,6 +147,8 @@ export const PACKS: StylePack[] = [
   {
     id: "pop-moderne",
     label: "Pop · Fun moderne",
+    sectionStrategy: "striped",
+    sectionDivider: "none",
     ambiance:
       "Couleurs vives violet/lime/corail, gros type, ombres dures décalées, motion joueur, cadres inclinés.",
     fonts: { display: "Bricolage Grotesque", sans: "DM Sans" },
@@ -134,6 +168,8 @@ export const PACKS: StylePack[] = [
   {
     id: "terra-naturel",
     label: "Terra · Naturel & organique",
+    sectionStrategy: "striped",
+    sectionDivider: "none",
     ambiance:
       "Soft-serif, sauge/terracotta/crème, formes très arrondies, texture organique, motion lent.",
     fonts: { display: "Fraunces", sans: "Nunito Sans" },
@@ -153,6 +189,8 @@ export const PACKS: StylePack[] = [
   {
     id: "marine-premium",
     label: "Marine · Élégant & posé",
+    sectionStrategy: "striped",
+    sectionDivider: "none",
     ambiance:
       "Serif posée (Libre Baskerville), kicker à filet fin sans pastille, boutons moyennement arrondis, ombres teintées marine, motion sobre.",
     fonts: { display: "Libre Baskerville", sans: "Inter" },

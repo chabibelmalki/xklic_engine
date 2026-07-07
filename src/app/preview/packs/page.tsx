@@ -64,6 +64,7 @@ export default function PacksGalleryPage() {
               block={{ type: "hero", variant: "centre", content: NEUTRAL }}
               config={mockConfig()}
               index={0}
+              tone="bg"
               basePath=""
               locale="fr"
               strings={strings}

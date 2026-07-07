@@ -16,7 +16,7 @@ import {
 import type { BoutiqueContent, ProduitItem, ProduitCategorie } from "@/types/config";
 import type { UIStrings } from "@/i18n/ui";
 import type { BlockComponentProps } from "./types";
-import { Section, toneForIndex } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -138,7 +138,7 @@ function ProductCard({
 export function Boutique({
   block,
   config,
-  index,
+  tone,
   basePath = "",
   strings,
 }: BlockComponentProps<BoutiqueContent>) {
@@ -340,7 +340,7 @@ export function Boutique({
   );
 
   return (
-    <Section id="boutique" tone={toneForIndex(index)}>
+    <Section id="boutique" tone={tone}>
       {(c.titre || c.intro || c.eyebrow) && (
         <Reveal>
           <SectionHeading eyebrow={c.eyebrow} title={c.titre ?? devis.title} intro={c.intro} />

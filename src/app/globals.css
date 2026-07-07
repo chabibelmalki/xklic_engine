@@ -520,6 +520,7 @@ input[type="range"] {
   --shadow-pop: 0 24px 50px -12px rgb(15 23 42 / 0.22);
 
   --section-py: 5rem;
+  --content-max: 72rem;
   --motion-distance: 24px;
   --motion-duration: 0.55s;
   --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -555,6 +556,7 @@ input[type="range"] {
   --shadow-pop: 0 44px 80px -34px rgb(61 42 32 / 0.32);
 
   --section-py: 7rem;
+  --content-max: 72rem;
   --motion-distance: 14px;
   --motion-duration: 0.75s;
   --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -588,6 +590,7 @@ input[type="range"] {
   --shadow-pop: 0 44px 84px -36px rgb(26 20 22 / 0.34);
 
   --section-py: 7rem;
+  --content-max: 72rem;
   --motion-distance: 14px;
   --motion-duration: 0.75s;
   --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -679,10 +682,8 @@ input[type="range"] {
   background: var(--brand-500);
 }
 
-/* Rythme vertical éditorial + filet entre plages de tons (Section.tsx code en dur py-16/20) */
-[data-pack="rose-noir-premium"] main section {
-  padding-block: clamp(5rem, 9vw, 7.5rem);
-}
+/* Filet entre plages de tons. La densité verticale vient désormais du token
+   --section-py (branché dans Section.tsx), plus besoin d'override `main section`. */
 [data-pack="rose-noir-premium"] .bg-bg + .bg-alt,
 [data-pack="rose-noir-premium"] .bg-alt + .bg-bg {
   border-top: 1px solid var(--border);
@@ -837,6 +838,7 @@ input[type="range"] {
   --shadow-pop: 10px 10px 0 0 var(--ink);
 
   --section-py: 4rem;
+  --content-max: 72rem;
   --motion-distance: 10px;
   --motion-duration: 0.35s;
   --motion-ease: cubic-bezier(0.4, 0, 0.2, 1);
@@ -878,6 +880,7 @@ input[type="range"] {
   --shadow-pop: 0 32px 60px -30px rgb(13 148 136 / 0.24);
 
   --section-py: 6rem;
+  --content-max: 72rem;
   --motion-distance: 24px;
   --motion-duration: 0.55s;
   --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -902,6 +905,7 @@ input[type="range"] {
   --shadow-pop: 12px 12px 0 0 var(--brand-600);
 
   --section-py: 5.5rem;
+  --content-max: 72rem;
   --motion-distance: 40px;
   --motion-duration: 0.6s;
   --motion-ease: cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -932,6 +936,7 @@ input[type="range"] {
   --shadow-pop: 0 38px 70px -32px rgb(70 102 58 / 0.26);
 
   --section-py: 6.5rem;
+  --content-max: 72rem;
   --motion-distance: 18px;
   --motion-duration: 0.7s;
   --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);

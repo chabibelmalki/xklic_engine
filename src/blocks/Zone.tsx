@@ -1,7 +1,7 @@
 import { MapPin } from "lucide-react";
 import type { ZoneContent, ZoneMode, ZoneRegion } from "@/types/config";
 import type { BlockComponentProps } from "./types";
-import { Section, toneForIndex } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { SecteurChecker } from "@/components/SecteurChecker";
@@ -45,7 +45,7 @@ function ZoneCard({ zone }: { zone: ZoneRegion }) {
  * Zone d'intervention. mode : "carte" (zones + iframe) · "liste" (zones en
  * cartes, sinon communes en pastilles) · "aucune" (le bloc ne s'affiche pas).
  */
-export function Zone({ block, config, index, basePath }: BlockComponentProps<ZoneContent>) {
+export function Zone({ block, config, tone, basePath }: BlockComponentProps<ZoneContent>) {
   const c = block.content;
   const mode = (block.mode as ZoneMode) ?? "liste";
   if (mode === "aucune") return null;
@@ -70,7 +70,7 @@ export function Zone({ block, config, index, basePath }: BlockComponentProps<Zon
   );
 
   return (
-    <Section id="zone" tone={toneForIndex(index)}>
+    <Section id="zone" tone={tone}>
       <div className="grid items-start gap-10 lg:grid-cols-[1fr_1.2fr]">
         <Reveal>
           <div>

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Sparkles, TrendingDown, Check } from "lucide-react";
 import type { SimulateurContent } from "@/types/config";
 import type { BlockComponentProps } from "./types";
-import { Section, toneForIndex } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
@@ -15,7 +15,7 @@ import { formatEUR, withBase } from "@/lib/utils";
  * paramétré par la config : libellés, bornes du curseur, prix plein/net,
  * facteur mensuel, plafond. Calcul 100 % côté client, indicatif.
  */
-export function Simulateur({ block, index, basePath = "", strings }: BlockComponentProps<SimulateurContent>) {
+export function Simulateur({ block, tone, basePath = "", strings }: BlockComponentProps<SimulateurContent>) {
   const c = block.content;
   const [value, setValue] = useState(c.defaut);
 
@@ -27,7 +27,7 @@ export function Simulateur({ block, index, basePath = "", strings }: BlockCompon
   const overCeiling = c.plafondAnnuel ? billedMonthly * 12 > c.plafondAnnuel : false;
 
   return (
-    <Section id="simulateur" tone={toneForIndex(index)}>
+    <Section id="simulateur" tone={tone}>
       <div className="grid items-center gap-12 lg:grid-cols-2">
         {/* Argumentaire */}
         <Reveal>

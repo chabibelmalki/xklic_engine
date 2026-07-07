@@ -21,7 +21,7 @@ import type {
 } from "@/types/config";
 import type { UIStrings } from "@/i18n/ui";
 import type { BlockComponentProps } from "./types";
-import { Section, toneForIndex } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -282,7 +282,7 @@ function CategoryCard({
 export function ServiceQuoteBuilder({
   block,
   config,
-  index,
+  tone,
   basePath = "",
   locale,
   strings,
@@ -290,7 +290,6 @@ export function ServiceQuoteBuilder({
   const c = block.content;
   const devis = strings.devis;
   const form = strings.form;
-  const tone = toneForIndex(index);
   const showCredit = c.credit !== false;
   const creditRate = c.creditRate ?? 0.5;
   const ceiling = c.creditCeiling;

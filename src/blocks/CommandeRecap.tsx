@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { CheckCircle2, Clock, Loader2 } from "lucide-react";
 import type { CommandeRecapContent } from "@/types/config";
 import type { BlockComponentProps } from "./types";
-import { Section, toneForIndex } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { formatEUR } from "@/lib/utils";
 
@@ -38,7 +38,7 @@ const euros = (cents: number) => formatEUR(cents / 100);
 export function CommandeRecap({
   block,
   config,
-  index,
+  tone,
   basePath = "",
 }: BlockComponentProps<CommandeRecapContent>) {
   const c = block.content;
@@ -68,7 +68,7 @@ export function CommandeRecap({
   }, [config.slug]);
 
   return (
-    <Section id="commande" tone={toneForIndex(index)}>
+    <Section id="commande" tone={tone}>
       <div className="mx-auto max-w-xl">
         {state === "loading" && (
           <div className="grid place-items-center p-10 text-muted">

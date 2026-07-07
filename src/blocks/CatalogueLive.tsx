@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import type { CatalogueContent } from "@/types/config";
 import type { BlockComponentProps } from "./types";
-import { Section, toneForIndex } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -159,7 +159,7 @@ function ShopProductCard({
 export function CatalogueLive({
   block,
   config,
-  index,
+  tone,
   basePath = "",
 }: BlockComponentProps<CatalogueContent>) {
   const c = block.content;
@@ -393,7 +393,7 @@ export function CatalogueLive({
   );
 
   return (
-    <Section id="catalogue" tone={toneForIndex(index)}>
+    <Section id="catalogue" tone={tone}>
       {(c.titre || c.intro || c.eyebrow) && (
         <Reveal>
           <SectionHeading eyebrow={c.eyebrow} title={c.titre ?? "Notre boutique"} intro={c.intro} />

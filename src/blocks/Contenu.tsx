@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { ContenuContent } from "@/types/config";
 import type { BlockComponentProps } from "./types";
-import { Section, toneForIndex } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { withBase } from "@/lib/utils";
@@ -29,7 +29,7 @@ function ratioClass(ratio?: string) {
  * optionnelle côte à côte. Multi-paragraphes (chaque entrée = un <p>), pensé
  * pour les pages « à propos / notre histoire ». Sans image -> prose centrée.
  */
-export function Contenu({ block, index, basePath }: BlockComponentProps<ContenuContent>) {
+export function Contenu({ block, tone, basePath }: BlockComponentProps<ContenuContent>) {
   const c = block.content;
   const paragraphes = c.paragraphes ?? [];
   const imageLeft = c.imagePosition === "left";
@@ -72,7 +72,7 @@ export function Contenu({ block, index, basePath }: BlockComponentProps<ContenuC
   // ---- sans image : prose centrée ----
   if (!c.image) {
     return (
-      <Section tone={toneForIndex(index)} containerClassName="max-w-3xl">
+      <Section tone={tone} containerClassName="max-w-3xl">
         <Reveal>{texte}</Reveal>
       </Section>
     );
@@ -97,7 +97,7 @@ export function Contenu({ block, index, basePath }: BlockComponentProps<ContenuC
   );
 
   return (
-    <Section tone={toneForIndex(index)}>
+    <Section tone={tone}>
       <div className="grid items-center gap-12 lg:grid-cols-2">
         {imageLeft ? (
           <>

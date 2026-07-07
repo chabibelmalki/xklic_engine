@@ -5,7 +5,7 @@ import Image from "next/image";
 import { X, ChevronLeft, ChevronRight, ZoomIn, Star } from "lucide-react";
 import type { ProduitsContent, ProduitItem, ProduitCategorie } from "@/types/config";
 import type { BlockComponentProps } from "./types";
-import { Section, toneForIndex } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -25,7 +25,7 @@ function priceLabel(prix?: number | string): string | null {
  */
 export function Produits({
   block,
-  index,
+  tone,
   basePath = "",
   locale,
   strings,
@@ -105,7 +105,7 @@ export function Produits({
   const current = open === null ? null : withPhotos[open].item;
 
   return (
-    <Section id="produits" tone={toneForIndex(index)}>
+    <Section id="produits" tone={tone}>
       <Reveal>
         <SectionHeading
           eyebrow={c.eyebrow ?? strings.produits.defaultTitle}

@@ -1,7 +1,7 @@
 import { Check, FileText } from "lucide-react";
 import type { TarifsContent, TarifsMode, TarifItem } from "@/types/config";
 import type { BlockComponentProps } from "./types";
-import { Section, toneForIndex } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
@@ -55,14 +55,14 @@ function PriceCard({ item, mode }: { item: TarifItem; mode: TarifsMode }) {
  * "sur-devis" (panneau + CTA). La carte "populaire" porte une pastille solide,
  * centrée et surélevée — toujours parfaitement lisible.
  */
-export function Tarifs({ block, index, basePath = "", strings }: BlockComponentProps<TarifsContent>) {
+export function Tarifs({ block, tone, basePath = "", strings }: BlockComponentProps<TarifsContent>) {
   const c = block.content;
   const mode = (block.mode as TarifsMode) ?? "grille";
   // variant "mise-en-avant" : la carte `populaire` est surélevée/agrandie.
   const emphasize = block.variant === "mise-en-avant";
 
   return (
-    <Section id="tarifs" tone={toneForIndex(index)}>
+    <Section id="tarifs" tone={tone}>
       <Reveal>
         <SectionHeading eyebrow="Tarifs" title={c.titre ?? strings.tarifs.defaultTitle} intro={c.intro} />
       </Reveal>

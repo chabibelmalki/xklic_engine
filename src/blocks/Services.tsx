@@ -4,7 +4,7 @@ import { ArrowRight, ArrowLeft } from "lucide-react";
 import type { ServicesContent, ServiceItem } from "@/types/config";
 import type { UIStrings } from "@/i18n/ui";
 import type { BlockComponentProps } from "./types";
-import { Section, toneForIndex } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
@@ -93,7 +93,7 @@ function Card({
 
 export function Services({
   block,
-  index,
+  tone,
   basePath = "",
   locale,
   strings,
@@ -103,7 +103,7 @@ export function Services({
   const Fwd = localeDir(locale) === "rtl" ? ArrowLeft : ArrowRight;
 
   return (
-    <Section id="services" tone={toneForIndex(index)}>
+    <Section id="services" tone={tone}>
       <Reveal>
         <SectionHeading
           eyebrow={c.eyebrow ?? strings.services.defaultTitle}

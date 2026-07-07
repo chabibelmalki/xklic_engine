@@ -1,8 +1,11 @@
+import { Fragment } from "react";
 import type { SiteConfig, ContactContent } from "@/types/config";
 import { getBlockComponent } from "@/blocks/catalog";
 import { resolveTheme } from "@/lib/theme";
 import { brandColorStyle } from "@/lib/colors";
-import { resolvePack } from "@/lib/packs";
+import { resolvePack, getPack } from "@/lib/packs";
+import { sectionTone } from "@/components/ui/Section";
+import { SectionDivider } from "@/components/ui/SectionDivider";
 import { buildJsonLd } from "@/lib/jsonld";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SiteHeader } from "@/components/layout/SiteHeader";
@@ -54,6 +57,10 @@ export function SiteRenderer({
   const theme = resolveTheme(config.theme);
   const colorStyle = brandColorStyle(config.branding.colors);
   const pack = resolvePack(config.stylePack);
+  const packDef = getPack(config.stylePack);
+  const strategy = packDef.sectionStrategy;
+  // La stratégie `bordered` force un filet entre sections, quel que soit le pack.
+  const divider = strategy === "bordered" ? "rule" : packDef.sectionDivider;
   const current = page ?? getHomePage(config);
   // Coordonnées sourcées sur TOUT le site (la page contact peut être ailleurs).
   const contact = findBlock<ContactContent>(config, "contact")?.content;
@@ -62,6 +69,10 @@ export function SiteRenderer({
   const defaultLocale = config.i18n?.default ?? locale;
 
   let sectionIndex = 0;
+  // Une section est « tonale » (fond alterné) si son type est dans SECTION_TYPES,
+  // sauf une zone en mode "aucune" (non rendue).
+  const isTonal = (b?: { type: string; mode?: string }) =>
+    !!b && SECTION_TYPES.has(b.type) && !(b.type === "zone" && b.mode === "aucune");
 
   return (
     <div
@@ -88,19 +99,34 @@ export function SiteRenderer({
       <main className="flex-1 overflow-x-clip">
         {current.blocks.map((block, i) => {
           const Cmp = getBlockComponent(block.type);
-          const isSection =
-            SECTION_TYPES.has(block.type) && !(block.type === "zone" && block.mode === "aucune");
+          const isSection = isTonal(block);
           const index = isSection ? sectionIndex++ : i;
+          const tone = sectionTone(strategy, index);
+          // Divider UNIQUEMENT entre deux sections tonales ADJACENTES. Le ton de la
+          // section précédente = sectionTone(index - 1) (elle porte l'index tonal
+          // juste avant celui-ci, puisqu'elle est elle-même tonale et adjacente).
+          const prevIsSection = i > 0 && isTonal(current.blocks[i - 1]);
+          const div =
+            divider !== "none" && isSection && prevIsSection ? (
+              <SectionDivider
+                variant={divider}
+                fromTone={sectionTone(strategy, index - 1)}
+                toTone={tone}
+              />
+            ) : null;
           return (
-            <Cmp
-              key={`${block.type}-${i}`}
-              block={block as never}
-              config={config}
-              index={index}
-              basePath={basePath}
-              locale={locale}
-              strings={t}
-            />
+            <Fragment key={`${block.type}-${i}`}>
+              {div}
+              <Cmp
+                block={block as never}
+                config={config}
+                index={index}
+                tone={tone}
+                basePath={basePath}
+                locale={locale}
+                strings={t}
+              />
+            </Fragment>
           );
         })}
       </main>

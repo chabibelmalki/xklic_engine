@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import type { ContactContent } from "@/types/config";
 import type { ContactMode } from "@/lib/contact-schema";
 import type { BlockComponentProps } from "./types";
-import { Section, toneForIndex } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
@@ -22,12 +22,11 @@ import { resolveTurnstileSiteKey } from "@/lib/runtime";
 export function Contact({
   block,
   config,
-  index,
+  tone,
   basePath = "",
   strings,
 }: BlockComponentProps<ContactContent>) {
   const c = block.content;
-  const tone = toneForIndex(index);
   const mode: ContactMode = (c.formMode ?? c.formType ?? "simple") as ContactMode;
   const variant = block.variant ?? "split-form-carte";
   const turnstileSiteKey = resolveTurnstileSiteKey(config);
