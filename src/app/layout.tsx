@@ -12,6 +12,7 @@ import {
   Great_Vibes,
   Libre_Baskerville,
   Bodoni_Moda,
+  Cormorant_Garamond,
 } from "next/font/google";
 import "./globals.css";
 
@@ -90,6 +91,14 @@ const bodoni = Bodoni_Moda({
   display: "swap",
   preload: false,
 });
+// Serif haute contraste (titres display) — pack cotier-marine (famille littoral).
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  display: "swap",
+  preload: false,
+});
 
 const fontVars = [
   poppins,
@@ -104,6 +113,7 @@ const fontVars = [
   greatVibes,
   libreBaskerville,
   bodoni,
+  cormorant,
 ]
   .map((f) => f.variable)
   .join(" ");

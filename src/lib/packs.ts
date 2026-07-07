@@ -216,6 +216,31 @@ export const PACKS: StylePack[] = [
     },
   },
   {
+    id: "cotier-marine",
+    label: "Côtier · Marine immersif",
+    family: "littoral",
+    // Corps clair « bord de mer » : alternance blanc / écume azur (brand-tinted),
+    // dérivée du navy client. Les blocs immersifs (hero/pageHero/cta/footer)
+    // peignent leur propre nuit marine.
+    sectionStrategy: "brand-tinted",
+    sectionDivider: "none",
+    ambiance:
+      "Côtier premium immersif (dérivé du logo : maison sur la mer au soleil levant). Serif haute contraste (Cormorant), corps clair azur/blanc ponctué de bandes NUIT MARINE navy + soleil doré + vague signature. Parti pris fort, distinct.",
+    fonts: { display: "Cormorant Garamond", sans: "Inter" },
+    variants: {
+      hero: ["split", "centre"],
+      services: ["grille-cartes", "grille-icones"],
+      produits: ["grille", "vitrine"],
+      galerie: ["grille", "masonry"],
+      avis: ["grille", "vedette"],
+      tarifs: ["grille", "liste-simple"],
+      etapes: ["timeline-verticale", "sentier-alterne"],
+      faq: ["deux-colonnes", "accordeon"],
+      contact: ["split-form-carte", "panneau-sombre"],
+      cta: ["bande", "encadre"],
+    },
+  },
+  {
     id: "prestige-nuit",
     label: "Prestige · Nuit (luxe sombre)",
     family: "prestige",

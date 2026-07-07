@@ -1028,6 +1028,78 @@ input[type="range"] {
   display: none;
 }
 
+/* ===================== Côtier · Marine immersif =====================
+   Famille `littoral` (exclusif mb-nettoyage). Corps CLAIR bord de mer (blanc /
+   écume azur, alternance brand-tinted) ponctué de bandes NUIT MARINE peintes par
+   les blocs eux-mêmes (hero/pageHero/cta/footer en `brand-800`). Serif haute
+   contraste Cormorant. Palette 100 % pilotée par `branding.colors` du client. */
+[data-pack="cotier-marine"] {
+  --pack-font-display: var(--font-cormorant);
+  --pack-font-sans: var(--font-inter);
+  --display-tracking: -0.01em;
+  --display-case: none;
+
+  --radius-btn: 0.6rem;
+  --radius-card: 1rem;
+  --radius-image: 1rem;
+  --border-width: 1px;
+  --radius: 0.85rem;
+
+  --shadow-card: 0 22px 54px -30px rgb(15 26 58 / 0.30);
+  --shadow-pop: 0 40px 76px -34px rgb(15 26 58 / 0.28);
+
+  /* Respiration généreuse, mesure de corps posée. */
+  --section-py: 7rem;
+  --content-max: 68rem;
+  --motion-distance: 16px;
+  --motion-duration: 0.6s;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Titres display en Cormorant posée en dur (la var composite --font-display
+   ignore silencieusement le pack sans règle explicite — cf. marine/rose-noir). */
+[data-pack="cotier-marine"] .pack-heading,
+[data-pack="cotier-marine"] h1.font-display,
+[data-pack="cotier-marine"] h2.font-display,
+[data-pack="cotier-marine"] h3.font-display {
+  font-family: var(--pack-font-display), Georgia, serif;
+}
+
+/* Kicker/eyebrow signature (Badge.tsx des blocs empruntés à editorial) : point
+   doré + capitales espacées au lieu de la pastille pastel par défaut. Aligné sur
+   la signature de LittoralHeading pour une cohérence totale entre blocs propres
+   et blocs empruntés. */
+[data-pack="cotier-marine"] .inline-flex.rounded-full.text-xs.font-semibold {
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  --tw-ring-color: transparent;
+  padding-block: 0;
+  padding-inline: 0;
+  padding-inline-start: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: var(--brand-700);
+  position: relative;
+}
+[data-pack="cotier-marine"] .inline-flex.rounded-full.text-xs.font-semibold::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 50%;
+  translate: 0 -50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: var(--accent-500);
+}
+[data-pack="cotier-marine"] .inline-flex.rounded-full.text-xs.font-semibold > svg,
+[data-pack="cotier-marine"] .inline-flex.rounded-full.text-xs.font-semibold > span.rounded-full {
+  display: none;
+}
+
 /* ===================== Prestige · Nuit (luxe sombre immersif) =====================
    Famille `prestige`. Design system SOMBRE : les blocs peignent leurs propres
    surfaces near-black (--px-*), donc pack `flat` (aucune alternance/filet clair).

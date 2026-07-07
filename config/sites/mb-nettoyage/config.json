@@ -2,7 +2,7 @@
   "slug": "mb-nettoyage",
   "customDomains": ["mbnettoyage-marseille.fr", "www.mbnettoyage-marseille.fr"],
   "theme": "pro-bleu-nuit",
-  "stylePack": "marine-premium",
+  "stylePack": "cotier-marine",
   "i18n": {
     "default": "fr",
     "languages": [
@@ -15,13 +15,13 @@
     "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/mb-nettoyage/logo.jpeg",
     "logoAlt": "MB Nettoyage — nettoyage à domicile et professionnel à Marseille",
     "logoTwoTone": {
-      "first": "#1e3a8a",
-      "rest": "#c9a227"
+      "first": "#204485",
+      "rest": "#e8b44a"
     },
     "tagline": "Nettoyage à domicile & professionnel · Marseille",
     "colors": {
-      "brand": "#1e3a8a",
-      "accent": "#c9a227",
+      "brand": "#204485",
+      "accent": "#e8b44a",
       "neutral": "cool"
     }
   },
