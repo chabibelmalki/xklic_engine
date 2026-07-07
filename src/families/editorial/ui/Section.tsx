@@ -26,7 +26,9 @@ export function EditorialSection({
         : tone === "surface-2"
           ? "bg-surface-2"
           : tone === "brand"
-            ? "bg-brand-50"
+            ? // Lavis TRÈS pâle : ~6 % de marque dans le fond (bleu à peine perceptible).
+              // Piloté par la palette client (--brand-500 + --bg), pas de couleur en dur.
+              "bg-[color-mix(in_srgb,var(--brand-500)_6%,var(--bg))]"
             : "bg-bg";
   return (
     <section
