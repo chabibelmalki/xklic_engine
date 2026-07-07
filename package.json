@@ -17,6 +17,8 @@
     "deploy:dry": "node scripts/deploy.mjs --dry-run",
     "deploy:sync-only": "node scripts/deploy.mjs --skip-deploy",
     "onboard": "node scripts/onboard/index.mjs",
+    "reconcile": "node scripts/onboard/reconcile.mjs",
+    "reconcile:dry": "node scripts/onboard/reconcile.mjs --dry-run",
     "logo:upload": "node scripts/upload-logo.mjs",
     "blob:upload": "node scripts/upload-blob.mjs",
     "dossier:get": "node scripts/get-dossier.mjs"

@@ -11,10 +11,11 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { spawn, execFileSync } from "node:child_process";
+import { execFileSync } from "node:child_process";
 import {
   c, info, ok, willDo, skip, warn, manualAction, MissingTokenError,
 } from "./util.mjs";
+import { runCli } from "../lib/proc.mjs";
 import * as vercel from "./vercel.mjs";
 import * as ovh from "./ovh.mjs";
 import * as google from "./google.mjs";
@@ -27,15 +28,9 @@ const PARKING_TXT = /^"?\d+\|/;
 const isSpfLike = (t) => /v=spf1|v=DKIM1|v=DMARC1|google-site-verification/i.test(t);
 const stripDot = (s) => String(s).replace(/\.$/, "").toLowerCase();
 
-/** Lance une commande en sous-process, hérite de l'env. @returns {Promise<void>} */
+/** Lance un CLI en sous-process (portable Win/mac/Linux), hérite de l'env. @returns {Promise<void>} */
 function run(cmd, args) {
-  return new Promise((resolve, reject) => {
-    const child = spawn(cmd, args, { stdio: "inherit", env: process.env, shell: true });
-    child.on("error", reject);
-    child.on("close", (code) =>
-      code === 0 ? resolve() : reject(new Error(`${cmd} ${args.join(" ")} -> exit ${code}`)),
-    );
-  });
+  return runCli(cmd, args, { env: process.env });
 }
 
 // ───────────────────────────────────────────────────────────── vercel ──────
@@ -68,6 +63,26 @@ export async function vercelStep(ctx) {
 
 // ──────────────────────────────────────────────────────────────── dns ──────
 /**
+ * Diagnostic PUR du record A apex : compare les IP réellement posées à l'ensemble
+ * recommandé par Vercel. Aucune I/O. Source unique de la notion de « dérive A @ »,
+ * réutilisée par l'onboarding (`buildDnsPlan`) ET par la commande `reconcile`.
+ *
+ * @param {Array<{id:number,target:string}>} apexA  records A @ actuels (déjà filtrés apex)
+ * @param {string[]} vercelIPs  IP(s) recommandée(s) par Vercel pour l'apex
+ * @returns {{ aligned:boolean, have:string[], missing:string[], surplus:Array<{id:number,target:string}> }}
+ *   aligned : ensemble posé == ensemble recommandé ; missing : IP à créer ;
+ *   surplus : records A @ hors cible (à supprimer, parking/anciens compris).
+ */
+export function diffApexA(apexA, vercelIPs) {
+  const want = new Set(vercelIPs);
+  const have = apexA.map((r) => r.target);
+  const haveSet = new Set(have);
+  const missing = vercelIPs.filter((ip) => !haveSet.has(ip));
+  const surplus = apexA.filter((r) => !want.has(r.target));
+  return { aligned: missing.length === 0 && surplus.length === 0, have, missing, surplus };
+}
+
+/**
  * Construit le plan DNS OVH à partir des records actuels + cibles Vercel.
  * @param {Array<{id:number,fieldType:string,subDomain:string,target:string}>} records
  * @param {string[]} vercelIPs  une OU plusieurs IP A pour l'apex
@@ -83,15 +98,12 @@ function buildDnsPlan(records, vercelIPs, vercelCname) {
   // 1. A @ -> ensemble exact des IP recommandées par Vercel (souvent 2).
   //    On crée les IP manquantes et on supprime les A @ hors cible (parking/anciens).
   if (vercelIPs.length) {
-    const want = new Set(vercelIPs);
-    const have = new Set(apexA.map((r) => r.target));
-    const missing = vercelIPs.filter((ip) => !have.has(ip));
-    const surplus = apexA.filter((r) => !want.has(r.target));
-    if (missing.length === 0 && surplus.length === 0) {
+    const d = diffApexA(apexA, vercelIPs);
+    if (d.aligned) {
       plan.push({ kind: "skip", desc: `A @ déjà → ${vercelIPs.join(", ")}` });
     } else {
-      for (const r of surplus) plan.push({ kind: "delete", desc: `supprimer A @ hors cible (${r.target}${r.target === OVH_PARKING_IP ? " parking" : ""})`, exec: (z) => ovh.deleteRecord(z, r.id) });
-      for (const ip of missing) plan.push({ kind: "create", desc: `créer A @ → ${ip}`, exec: (z) => ovh.createRecord(z, { fieldType: "A", subDomain: "", target: ip }) });
+      for (const r of d.surplus) plan.push({ kind: "delete", desc: `supprimer A @ hors cible (${r.target}${r.target === OVH_PARKING_IP ? " parking" : ""})`, exec: (z) => ovh.deleteRecord(z, r.id) });
+      for (const ip of d.missing) plan.push({ kind: "create", desc: `créer A @ → ${ip}`, exec: (z) => ovh.createRecord(z, { fieldType: "A", subDomain: "", target: ip }) });
     }
   } else {
     plan.push({ kind: "blocked", desc: "IP Vercel inconnue → A @ non planifiable (lire dashboard Vercel)" });

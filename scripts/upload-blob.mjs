@@ -22,7 +22,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { spawnSync } from "node:child_process";
+import { runCliSync } from "./lib/proc.mjs";
 import { c, loadEnvLocal, die } from "./onboard/util.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -91,7 +91,7 @@ function uploadToBlob(file, pathname, token) {
   delete childEnv.BLOB_STORE_ID; // sinon le CLI exige le couple OIDC -> erreur
   delete childEnv.BLOB_READ_WRITE_TOKEN; // passé en --rw-token, pas via l'env
 
-  const res = spawnSync(
+  const res = runCliSync(
     "vercel",
     [
       "blob",

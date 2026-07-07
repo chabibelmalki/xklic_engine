@@ -1,0 +1,45 @@
+name: reconcile-dns
+
+# Contrôle hebdo : le record A @ (apex) de chaque domaine client est-il toujours
+# aligné sur l'IP recommandée par Vercel ? En DRY-RUN (aucune écriture DNS). Le job
+# ÉCHOUE si au moins un domaine est en dérive (ou si un domaine n'a pas pu être
+# vérifié) → GitHub notifie par mail. La correction reste MANUELLE :
+#   npm run reconcile -- --apply   (en local, cf. scripts/onboard/reconcile.mjs)
+
+on:
+  schedule:
+    - cron: "0 7 * * 1" # tous les lundis à 07:00 UTC
+  workflow_dispatch: {} # + lançable à la main depuis l'onglet Actions
+
+# Un seul run à la fois ; on ne coupe pas un run en cours.
+concurrency:
+  group: reconcile-dns
+  cancel-in-progress: false
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - run: npm ci
+
+      # Dry-run + --fail-on-drift : exit 1 dès qu'un domaine dérive ou ne peut
+      # être vérifié. Les secrets viennent des GitHub repo secrets (lecture seule).
+      - name: reconcile (dry-run, fail on drift)
+        run: npm run reconcile -- --fail-on-drift
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_TEAM_ID: ${{ secrets.VERCEL_TEAM_ID }}
+          OVH_APP_KEY: ${{ secrets.OVH_APP_KEY }}
+          OVH_APP_SECRET: ${{ secrets.OVH_APP_SECRET }}
+          OVH_CONSUMER_KEY: ${{ secrets.OVH_CONSUMER_KEY }}
+          OVH_ENDPOINT: ${{ secrets.OVH_ENDPOINT }}
