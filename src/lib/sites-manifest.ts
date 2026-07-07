@@ -26,10 +26,12 @@ export const SITE_SLUG_SET: ReadonlySet<string> = new Set(SITE_SLUGS);
 export const CUSTOM_DOMAINS: Readonly<Record<string, string>> = {
   "adel-net.fr": "adelnet",
   "casacleanprovence.fr": "casa-clean-provence",
+  "mbnettoyage-marseille.fr": "mb-nettoyage",
   "parfaitmenage26.fr": "parfait-menage-26",
   "sanadclean.fr": "sanadclean",
   "www.adel-net.fr": "adelnet",
   "www.casacleanprovence.fr": "casa-clean-provence",
+  "www.mbnettoyage-marseille.fr": "mb-nettoyage",
   "www.parfaitmenage26.fr": "parfait-menage-26",
   "www.sanadclean.fr": "sanadclean",
 };
@@ -41,6 +43,7 @@ export const CUSTOM_DOMAINS: Readonly<Record<string, string>> = {
 export const CANONICAL_DOMAIN: Readonly<Record<string, string>> = {
   "adelnet": "adel-net.fr",
   "casa-clean-provence": "www.casacleanprovence.fr",
+  "mb-nettoyage": "mbnettoyage-marseille.fr",
   "parfait-menage-26": "parfaitmenage26.fr",
   "sanadclean": "sanadclean.fr",
 };

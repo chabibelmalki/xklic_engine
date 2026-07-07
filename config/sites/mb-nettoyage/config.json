@@ -1,5 +1,6 @@
 {
   "slug": "mb-nettoyage",
+  "customDomains": ["mbnettoyage-marseille.fr", "www.mbnettoyage-marseille.fr"],
   "theme": "pro-bleu-nuit",
   "stylePack": "marine-premium",
   "i18n": {
