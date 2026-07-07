@@ -196,8 +196,9 @@ export const PACKS: StylePack[] = [
     id: "marine-premium",
     label: "Marine · Élégant & posé",
     family: "editorial",
-    sectionStrategy: "bordered",
-    sectionDivider: "rule",
+    // Sections alternées blanc / bleu très clair (brand-50, dérivé du navy client).
+    sectionStrategy: "brand-tinted",
+    sectionDivider: "none",
     ambiance:
       "Serif posée (Libre Baskerville), kicker à filet fin sans pastille, boutons moyennement arrondis, ombres teintées marine, motion sobre.",
     fonts: { display: "Libre Baskerville", sans: "Inter" },
