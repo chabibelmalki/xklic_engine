@@ -1,5 +1,6 @@
 import { Unknown } from "@/blocks/Unknown";
 import { CLASSIC } from "./classic";
+import { EDITORIAL } from "./editorial";
 import type { FamilyBlock, TemplateFamily } from "./types";
 
 export type { TemplateFamily, FamilyChrome, FamilyBlock } from "./types";
@@ -11,6 +12,7 @@ export type { TemplateFamily, FamilyChrome, FamilyBlock } from "./types";
  */
 const FAMILIES: Record<string, TemplateFamily> = {
   classic: CLASSIC,
+  editorial: EDITORIAL,
 };
 
 export const DEFAULT_FAMILY = CLASSIC;

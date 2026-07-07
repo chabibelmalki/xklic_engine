@@ -195,6 +195,7 @@ export const PACKS: StylePack[] = [
   {
     id: "marine-premium",
     label: "Marine · Élégant & posé",
+    family: "editorial",
     sectionStrategy: "bordered",
     sectionDivider: "rule",
     ambiance:
