@@ -4,6 +4,7 @@ import type { UIStrings } from "@/i18n/ui";
 import { Logo } from "@/components/layout/Logo";
 import { Button } from "@/components/ui/Button";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { HeaderPhonePopover } from "@/components/layout/HeaderPhonePopover";
 import { telHref, cn } from "@/lib/utils";
 import { navPages, isMultiPage, resolvePages, findBlock } from "@/lib/pages";
 
@@ -85,9 +86,9 @@ export function EditorialHeader({
       {/* Barre chrome : mesure LARGE dédiée (indépendante de --content-max, qui
           est la mesure ÉTROITE du corps de texte) → la nav tient sur une ligne. */}
       <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between gap-8 px-6 sm:px-10">
-        <Logo config={config} href={basePath || "/"} className="min-w-0 shrink-0" />
+        <Logo config={config} href={basePath || "/"} className="min-w-0" />
 
-        <nav className="hidden min-w-0 items-center gap-x-7 xl:gap-x-9 lg:flex">
+        <nav className="hidden shrink-0 items-center gap-x-6 lg:flex xl:gap-x-8">
           {nav.map((item) => (
             <a
               key={item.href}
@@ -114,13 +115,12 @@ export function EditorialHeader({
             />
           )}
           {contact?.telephone && (
-            <a
-              href={telHref(contact.telephone)}
-              className="inline-flex items-center gap-2 text-sm font-medium text-ink transition-colors hover:text-brand-700"
-            >
-              <Phone className="size-4 text-brand-600" />
-              {contact.telephone}
-            </a>
+            <HeaderPhonePopover
+              telephone={contact.telephone}
+              callLabel={strings.header.callUs}
+              copyLabel={strings.header.copyNumber}
+              copiedLabel={strings.header.numberCopied}
+            />
           )}
           {cta && (
             <Button href={cta.href} size="sm">
