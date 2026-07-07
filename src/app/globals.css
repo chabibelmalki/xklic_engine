@@ -1027,3 +1027,57 @@ input[type="range"] {
 [data-pack="marine-premium"] .inline-flex.rounded-full.text-xs.font-semibold > span.rounded-full {
   display: none;
 }
+
+/* ===================== Prestige · Nuit (luxe sombre immersif) =====================
+   Famille `prestige`. Design system SOMBRE : les blocs peignent leurs propres
+   surfaces near-black (--px-*), donc pack `flat` (aucune alternance/filet clair).
+   Les fonds noirs sont de l'INFRASTRUCTURE DE LECTURE (comme le scrim du hero
+   editorial) teintée par la palette CLIENT (--brand/--accent posés inline par le
+   SiteRenderer) : la marque s'exprime dans l'or (--accent) et la typo. Contraste
+   AA garanti (blanc/gris clairs sur near-black ≥ 8:1 ; or en gros titres, seuil 3:1). */
+[data-pack="prestige-nuit"] {
+  --pack-font-display: var(--font-bodoni);
+  --pack-font-sans: var(--font-inter);
+  --display-tracking: -0.01em;
+  --display-case: none;
+
+  /* Bords CARRÉS (luxe net), zéro ombre douce. */
+  --radius-btn: 0px;
+  --radius-card: 0px;
+  --radius-image: 0px;
+  --radius: 0px;
+  --border-width: 1px;
+  --shadow-card: none;
+  --shadow-pop: 0 40px 90px -40px rgb(0 0 0 / 0.8);
+
+  /* Immersif : sections hautes, mesure large. */
+  --section-py: 7rem;
+  --content-max: 78rem;
+  --motion-distance: 14px;
+  --motion-duration: 0.6s;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Surfaces sombres — noir de lecture teinté par --brand (palette client). */
+  --px-void: color-mix(in srgb, var(--brand-500) 5%, #08090b);
+  --px-panel: color-mix(in srgb, var(--brand-500) 8%, #101115);
+  --px-raised: color-mix(in srgb, var(--brand-500) 11%, #16181e);
+
+  /* Textes clairs (AA sur near-black). */
+  --px-ink: #ffffff;
+  --px-ink-soft: color-mix(in srgb, #ffffff 74%, transparent);
+  --px-muted: color-mix(in srgb, #ffffff 56%, transparent);
+
+  /* Or / filets métalliques — pilotés par --accent (palette client). */
+  --px-gold: var(--accent-500);
+  --px-hairline: color-mix(in srgb, var(--accent-500) 42%, transparent);
+  --px-line: color-mix(in srgb, #ffffff 13%, transparent);
+}
+
+/* Titres display en Bodoni posée en dur (la var composite --font-display ignore
+   silencieusement le pack sans règle explicite — cf. marine/rose-noir). */
+[data-pack="prestige-nuit"] .pack-heading,
+[data-pack="prestige-nuit"] h1.font-display,
+[data-pack="prestige-nuit"] h2.font-display,
+[data-pack="prestige-nuit"] h3.font-display {
+  font-family: var(--pack-font-display), "Didot", "Bodoni MT", Georgia, serif;
+}

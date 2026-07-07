@@ -215,6 +215,24 @@ export const PACKS: StylePack[] = [
       cta: ["encadre", "bande"],
     },
   },
+  {
+    id: "prestige-nuit",
+    label: "Prestige · Nuit (luxe sombre)",
+    family: "prestige",
+    // Registre sombre immersif : les sections peignent leurs propres surfaces
+    // near-black (--px-*), donc aucune alternance/filet clair du moteur.
+    sectionStrategy: "flat",
+    sectionDivider: "none",
+    ambiance:
+      "Luxe sombre immersif : fond noir/anthracite teinté marque, or métallique, typo display massive (Bodoni), bandes pleine largeur, gros chiffres, filets fins, numéro de réservation géant. Taxi de luxe / chauffeur classe.",
+    fonts: { display: "Bodoni Moda", sans: "Inter" },
+    variants: {
+      hero: ["plein"],
+      services: ["liste-filets"],
+      zone: ["liste"],
+      cta: ["bande"],
+    },
+  },
 ];
 
 export const DEFAULT_PACK: StylePackId = "base";

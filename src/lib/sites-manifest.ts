@@ -13,6 +13,7 @@ export const SITE_SLUGS: string[] = [
   "minhaj",
   "parfait-menage-26",
   "sanadclean",
+  "taxi-concept",
   "vibe-coaching",
 ];
 
