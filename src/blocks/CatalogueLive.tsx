@@ -204,11 +204,15 @@ export function CatalogueLive({
   }
 
   useEffect(() => {
+    // loadCatalog ne pose l'état qu'APRÈS `await fetch` (microtâche) : pas de
+    // rendu en cascade synchrone, la règle set-state-in-effect est ici un faux
+    // positif (chargement asynchrone légitime au montage).
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     void loadCatalog();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [config.slug]);
 
-  const products = catalog?.products ?? [];
+  const products = useMemo(() => catalog?.products ?? [], [catalog]);
   const byId = useMemo(() => new Map(products.map((p) => [p.id, p])), [products]);
 
   // Regroupement par catégorie (catégories nommées d'abord, puis le reste).
@@ -588,7 +592,7 @@ export function CatalogueLive({
                       className="mt-0.5 size-4 rounded border-border text-brand-600 focus:ring-brand-500"
                     />
                     <span>
-                      J'accepte que mes coordonnées soient utilisées pour traiter ma commande —{" "}
+                      J’accepte que mes coordonnées soient utilisées pour traiter ma commande —{" "}
                       <a
                         href={confidentialiteHref}
                         className="font-medium text-brand-700 hover:underline"

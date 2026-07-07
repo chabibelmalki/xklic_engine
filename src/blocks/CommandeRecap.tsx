@@ -48,12 +48,12 @@ export function CommandeRecap({
   const retourHref = `${basePath}${c.retourHref ?? "/boutique"}`;
 
   useEffect(() => {
-    const sessionId = new URLSearchParams(window.location.search).get("session_id");
-    if (!sessionId) {
-      setState("none");
-      return;
-    }
     (async () => {
+      const sessionId = new URLSearchParams(window.location.search).get("session_id");
+      if (!sessionId) {
+        setState("none");
+        return;
+      }
       try {
         const res = await fetch(
           `/api/shop/order?site=${encodeURIComponent(config.slug)}&session_id=${encodeURIComponent(sessionId)}`,

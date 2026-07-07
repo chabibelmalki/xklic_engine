@@ -284,7 +284,6 @@ export function ServiceQuoteBuilder({
   config,
   tone,
   basePath = "",
-  locale,
   strings,
 }: BlockComponentProps<ServiceQuoteBuilderContent>) {
   const c = block.content;
