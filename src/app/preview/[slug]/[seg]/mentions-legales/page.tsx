@@ -8,14 +8,8 @@ import { isLocale, buildLocaleBasePath } from "@/lib/i18n";
 /** Mentions légales localisées en PREVIEW : "/preview/<slug>/en/mentions-legales". */
 export const metadata: Metadata = { robots: { index: false, follow: false } };
 
-export function generateStaticParams() {
-  return listSlugs().flatMap((slug) => {
-    const def = defaultLocale(slug);
-    return siteLocales(slug)
-      .filter((l) => l !== def)
-      .map((seg) => ({ slug, seg }));
-  });
-}
+// Route de DEV (noindex) : rendu à la demande, hors prérendu (économie ISR writes).
+export const dynamic = "force-dynamic";
 
 export default async function PreviewLocaleLegal({
   params,

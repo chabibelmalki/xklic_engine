@@ -5,7 +5,7 @@ import { MentionsLegalesPage } from "@/components/MentionsLegalesPage";
 import { buildLegalMetadata } from "@/lib/seo";
 
 /** Mentions légales du site par défaut (racine / apex). */
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 export async function generateMetadata(): Promise<Metadata> {
   const config = getConfig(getDefaultSlug());

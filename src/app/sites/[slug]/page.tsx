@@ -7,7 +7,7 @@ import { buildMetadata } from "@/lib/seo";
 // SSG : une page statique par slug connu. ISR pour rafraîchir si une config
 // change sans rebuild complet. Un slug inconnu -> 404 (dynamicParams=false).
 export const dynamicParams = false;
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 export function generateStaticParams() {
   return listSlugs().map((slug) => ({ slug }));

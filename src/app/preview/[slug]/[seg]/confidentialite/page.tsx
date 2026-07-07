@@ -8,14 +8,8 @@ import { isLocale, buildLocaleBasePath } from "@/lib/i18n";
 /** Confidentialité localisée en PREVIEW : "/preview/<slug>/en/confidentialite". */
 export const metadata: Metadata = { robots: { index: false, follow: false } };
 
-export function generateStaticParams() {
-  return listSlugs().flatMap((slug) => {
-    const def = defaultLocale(slug);
-    return siteLocales(slug)
-      .filter((l) => l !== def)
-      .map((seg) => ({ slug, seg }));
-  });
-}
+// Route de DEV (noindex) : rendu à la demande, hors prérendu (économie ISR writes).
+export const dynamic = "force-dynamic";
 
 export default async function PreviewLocaleConfidentialite({
   params,

@@ -6,9 +6,8 @@ import { DevSwitcher } from "@/components/DevSwitcher";
 
 export const metadata: Metadata = { robots: { index: false, follow: false } };
 
-export function generateStaticParams() {
-  return listSlugs().map((slug) => ({ slug }));
-}
+// Route de DEV (noindex) : rendu à la demande, hors prérendu (économie ISR writes).
+export const dynamic = "force-dynamic";
 
 export default async function PreviewConfidentialite({
   params,

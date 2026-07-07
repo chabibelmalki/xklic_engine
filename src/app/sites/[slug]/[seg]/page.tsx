@@ -12,7 +12,7 @@ import { resolveSeg, buildLocaleBasePath } from "@/lib/i18n";
  * le middleware ; basePath public = "" (défaut) ou "/<locale>".
  */
 export const dynamicParams = false;
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 export function generateStaticParams() {
   return listSlugs().flatMap((slug) => {

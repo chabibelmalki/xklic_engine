@@ -12,7 +12,7 @@ import { resolveSegSub, buildLocaleBasePath } from "@/lib/i18n";
  * `[seg]` (pas d'imbrication).
  */
 export const dynamicParams = false;
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 export function generateStaticParams() {
   const slug = getDefaultSlug();

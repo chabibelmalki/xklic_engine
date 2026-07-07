@@ -14,6 +14,9 @@ import { ui } from "@/i18n/ui";
  */
 export const metadata: Metadata = { robots: { index: false, follow: false } };
 
+// Route de DEV (noindex) : rendu à la demande, hors prérendu (économie ISR writes).
+export const dynamic = "force-dynamic";
+
 /** Thème constant pour isoler la variable « pack » (la couleur est un autre axe). */
 const THEME = "pro-bleu-nuit";
 

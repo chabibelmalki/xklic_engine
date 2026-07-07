@@ -3,24 +3,14 @@ import type { Metadata } from "next";
 import { getConfig, listSlugs, siteLocales, defaultLocale } from "@/lib/config-loader";
 import { SiteRenderer } from "@/components/SiteRenderer";
 import { DevSwitcher } from "@/components/DevSwitcher";
-import { getPage, subPageSlugs } from "@/lib/pages";
+import { getPage } from "@/lib/pages";
 import { resolveSegSub, buildLocaleBasePath } from "@/lib/i18n";
 
 /** Sous-page en langue non-défaut en PREVIEW : "/preview/<slug>/en/tarifs". Non indexé. */
 export const metadata: Metadata = { robots: { index: false, follow: false } };
 
-export function generateStaticParams() {
-  return listSlugs().flatMap((slug) => {
-    const def = defaultLocale(slug);
-    const out: { slug: string; seg: string; sub: string }[] = [];
-    for (const loc of siteLocales(slug).filter((l) => l !== def)) {
-      const cfg = getConfig(slug, loc);
-      if (!cfg) continue;
-      for (const sub of subPageSlugs(cfg)) out.push({ slug, seg: loc, sub });
-    }
-    return out;
-  });
-}
+// Route de DEV (noindex) : rendu à la demande, hors prérendu (économie ISR writes).
+export const dynamic = "force-dynamic";
 
 export default async function PreviewSegSub({
   params,

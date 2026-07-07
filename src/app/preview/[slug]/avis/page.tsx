@@ -7,11 +7,8 @@ import { DevSwitcher } from "@/components/DevSwitcher";
 /** Page « Laissez un avis » en PREVIEW : "/preview/<slug>/avis". */
 export const metadata: Metadata = { robots: { index: false, follow: false } };
 
-export function generateStaticParams() {
-  return listSlugs()
-    .filter((slug) => getConfig(slug)?.googleReviewUrl)
-    .map((slug) => ({ slug }));
-}
+// Route de DEV (noindex) : rendu à la demande, hors prérendu (économie ISR writes).
+export const dynamic = "force-dynamic";
 
 export default async function PreviewAvis({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

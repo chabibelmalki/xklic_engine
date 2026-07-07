@@ -7,7 +7,7 @@ import { isLocale, buildLocaleBasePath } from "@/lib/i18n";
 
 /** Mentions légales en LANGUE non-défaut du site par défaut : "/en/mentions-legales". */
 export const dynamicParams = false;
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 export function generateStaticParams() {
   const slug = getDefaultSlug();

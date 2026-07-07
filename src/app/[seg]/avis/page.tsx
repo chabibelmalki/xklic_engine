@@ -7,7 +7,7 @@ import { isLocale, buildLocaleBasePath } from "@/lib/i18n";
 
 /** Avis en LANGUE non-défaut du site par défaut : "/en/avis". */
 export const dynamicParams = false;
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 export function generateStaticParams() {
   const slug = getDefaultSlug();

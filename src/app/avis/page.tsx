@@ -5,7 +5,7 @@ import { AvisPage } from "@/components/AvisPage";
 import { buildAvisMetadata } from "@/lib/seo";
 
 /** Page « Laissez un avis » du site par défaut (racine / apex). */
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 export async function generateMetadata(): Promise<Metadata> {
   const config = getConfig(getDefaultSlug());

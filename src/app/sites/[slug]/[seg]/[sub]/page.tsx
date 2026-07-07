@@ -8,7 +8,7 @@ import { resolveSegSub, buildLocaleBasePath } from "@/lib/i18n";
 
 /** Sous-page en LANGUE non-défaut d'un site tenant : "/sites/<slug>/en/tarifs". */
 export const dynamicParams = false;
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 export function generateStaticParams() {
   return listSlugs().flatMap((slug) => {

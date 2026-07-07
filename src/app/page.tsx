@@ -8,7 +8,7 @@ import { buildMetadata } from "@/lib/seo";
  * "fatima"). En prod, les sous-domaines sont réécrits vers /sites/[slug] par le
  * middleware ; la racine reste le site par défaut.
  */
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 export async function generateMetadata(): Promise<Metadata> {
   const config = getConfig(getDefaultSlug());

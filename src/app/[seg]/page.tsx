@@ -12,7 +12,7 @@ import { resolveSeg, buildLocaleBasePath } from "@/lib/i18n";
  * routes statiques sœurs (mentions-legales, sitemap.xml…) priment sur ce segment.
  */
 export const dynamicParams = false;
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 export function generateStaticParams() {
   const slug = getDefaultSlug();
