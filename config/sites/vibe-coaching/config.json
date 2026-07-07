@@ -36,7 +36,7 @@
   },
   "forms": {
     "to": "flp.chabib@gmail.com",
-    "turnstile": true
+    "turnstile": false
   },
   "pages": [
     {

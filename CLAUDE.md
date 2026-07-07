@@ -118,11 +118,18 @@ du dossier parent).
   `VERCEL_DEPLOY_TIMEOUT_MS` (opt).
 - **OVH (DNS)** : `OVH_APP_KEY`, `OVH_APP_SECRET`, `OVH_CONSUMER_KEY`, `OVH_ENDPOINT`.
 - **Cloudflare (Turnstile)** : `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`,
-  `TURNSTILE_SECRET_KEY`, `NEXT_PUBLIC_TURNSTILE_SITE_KEY`.
+  `NEXT_PUBLIC_TURNSTILE_SITE_KEY` — utilisées UNIQUEMENT par le script d'onboarding
+  (`scripts/onboard/cloudflare.mjs`, ajout des hostnames au widget). Le RUNTIME
+  (rendu de la sitekey + vérif du token) passe désormais par le back-office par
+  widget/tenant : `src/lib/turnstile.ts` appelle `GET /config` et
+  `POST /turnstile/verify`. `TURNSTILE_SECRET_KEY` n'est plus lue par l'engine
+  (le secret vit côté API Go, chiffré). Assignation d'un tenant à un widget :
+  `npm run onboard -- … --widget "<nom>"` (défaut « xklic 1 »).
 - **Google Search Console** : `GSC_SERVICE_ACCOUNT_KEY` (chemin du JSON),
   `GSC_PROPERTY`, `GSC_HUMAN_OWNER`.
 - **Back-office** : `BACKOFFICE_API_URL` (base de l'API Go, sans slash final),
-  `BACKOFFICE_API_KEY` (= `ENGINE_API_KEY` côté back-office, header `X-API-Key`).
+  `BACKOFFICE_API_KEY` (= `ENGINE_API_KEY` côté back-office, header `X-API-Key`) —
+  sert aussi à `src/lib/turnstile.ts` (sitekey + vérif Turnstile).
 - **Médias / mail** : `BLOB_READ_WRITE_TOKEN`, `RESEND_API_KEY`, `RESEND_FROM`,
   `LEAD_TO`, `LEAD_WEBHOOK_URL`.
 - **Divers** : `NEXT_PUBLIC_ROOT_DOMAIN` (défaut `xklic.com`),
