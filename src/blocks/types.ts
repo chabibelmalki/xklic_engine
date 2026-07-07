@@ -19,4 +19,11 @@ export interface BlockComponentProps<C = unknown> {
   locale: string;
   /** Libellés d'UI de la langue active (résolus côté serveur). */
   strings: UIStrings;
+  /**
+   * Sitekey Turnstile du widget assigné au tenant, résolue côté serveur par le
+   * SiteRenderer (back-office, repli env). `undefined` ⇒ anti-robot désactivé
+   * (local, ou site non opt-in). Les blocs la passent au widget, ne la calculent
+   * jamais eux-mêmes (les blocs client n'ont pas accès à la clé serveur).
+   */
+  turnstileSiteKey?: string;
 }

@@ -5,7 +5,6 @@ import type { BlockComponentProps } from "@/blocks/types";
 import { Button } from "@/components/ui/Button";
 import { ContactForm } from "@/components/ContactForm";
 import { telHref, waHref, withBase } from "@/lib/utils";
-import { resolveTurnstileSiteKey } from "@/lib/runtime";
 import { EditorialSection } from "../ui/Section";
 import { EditorialContainer } from "../ui/Container";
 import { EditorialHeading } from "../ui/Heading";
@@ -15,10 +14,16 @@ import { EditorialHeading } from "../ui/Heading";
  * + formulaire (ContactForm, client par nécessité). Le mode/turnstile/consentement
  * restent gérés par ContactForm (partagé).
  */
-export function Contact({ block, config, tone, basePath = "", strings }: BlockComponentProps<ContactContent>) {
+export function Contact({
+  block,
+  config,
+  tone,
+  basePath = "",
+  strings,
+  turnstileSiteKey,
+}: BlockComponentProps<ContactContent>) {
   const c = block.content;
   const mode: ContactMode = (c.formMode ?? c.formType ?? "simple") as ContactMode;
-  const turnstileSiteKey = resolveTurnstileSiteKey(config);
   const rawConf = c.confidentialiteHref ?? "/confidentialite";
   const confidentialiteHref = rawConf.startsWith("http") ? rawConf : `${basePath}${rawConf}`;
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { CheckCircle2, Loader2, Phone, MessageCircle } from "lucide-react";
@@ -9,6 +9,7 @@ import type { UIStrings } from "@/i18n/ui";
 import { cn, telHref, waHref } from "@/lib/utils";
 import { getSessionId } from "@/lib/session";
 import { Button } from "@/components/ui/Button";
+import { Turnstile } from "@/components/ui/Turnstile";
 
 const labelClass = "block text-sm font-medium text-ink-soft";
 const inputClass =
@@ -34,16 +35,6 @@ export interface ContactFormProps {
   strings: UIStrings["form"];
 }
 
-declare global {
-  interface Window {
-    turnstile?: {
-      render: (el: HTMLElement, opts: Record<string, unknown>) => string;
-      reset: (id?: string) => void;
-      remove: (id?: string) => void;
-    };
-  }
-}
-
 export function ContactForm({
   mode = "simple",
   site,
@@ -61,7 +52,6 @@ export function ContactForm({
   const [done, setDone] = useState(false);
   const [serverError, setServerError] = useState<string | null>(null);
   const [turnstileToken, setTurnstileToken] = useState<string>("");
-  const tsRef = useRef<HTMLDivElement>(null);
 
   const showEmail = mode === "simple" || mode === "contact" || mode === "devis";
   const showPhone = mode !== "simple";
@@ -78,32 +68,6 @@ export function ContactForm({
     resolver: zodResolver(contactSchema),
     defaultValues: { mode, consent: false, site, siteSlug },
   });
-
-  // Charge et monte le widget Turnstile si une clé publique est fournie.
-  useEffect(() => {
-    if (!turnstileSiteKey || !tsRef.current) return;
-    const SCRIPT_ID = "cf-turnstile-script";
-    function mount() {
-      if (!window.turnstile || !tsRef.current || tsRef.current.childElementCount) return;
-      window.turnstile.render(tsRef.current, {
-        sitekey: turnstileSiteKey,
-        callback: (t: string) => setTurnstileToken(t),
-        "error-callback": () => setTurnstileToken(""),
-        "expired-callback": () => setTurnstileToken(""),
-      });
-    }
-    if (!document.getElementById(SCRIPT_ID)) {
-      const s = document.createElement("script");
-      s.id = SCRIPT_ID;
-      s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
-      s.async = true;
-      s.defer = true;
-      s.onload = mount;
-      document.head.appendChild(s);
-    } else {
-      mount();
-    }
-  }, [turnstileSiteKey]);
 
   async function onSubmit(values: ContactInput) {
     setServerError(null);
@@ -323,7 +287,7 @@ export function ContactForm({
       </div>
       {errors.consent && <p className={errorClass}>{errors.consent.message}</p>}
 
-      {turnstileSiteKey && <div ref={tsRef} className="mt-4" />}
+      <Turnstile siteKey={turnstileSiteKey} onVerify={setTurnstileToken} className="mt-4" />
 
       {serverError && (
         <p className="mt-4 rounded-xl bg-red-50 px-4 py-3 text-sm text-red-600">{serverError}</p>

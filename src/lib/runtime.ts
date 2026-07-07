@@ -1,5 +1,3 @@
-import type { SiteConfig } from "@/types/config";
-
 /**
  * Détection du mode LOCAL / TEST (dev) vs PRODUCTION — garde-fou pour ne PAS, en
  * local : (a) afficher / vérifier Turnstile, (b) livrer les formulaires au client
@@ -30,14 +28,4 @@ export function isDeliveryEnabled(): boolean {
  */
 export function isInsertEnabled(): boolean {
   return !isLocalTestMode() || process.env.DEV_ALLOW_INSERT === "true";
-}
-
-/**
- * Clé publique Turnstile à utiliser pour un site, ou `undefined` si l'anti-robot
- * est désactivé. Désactivé en local (pas de widget, et le serveur skippe la
- * vérification — voir /api/contact) pour ne pas friter les tests.
- */
-export function resolveTurnstileSiteKey(config: SiteConfig): string | undefined {
-  if (isLocalTestMode()) return undefined;
-  return config.forms?.turnstile ? process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY : undefined;
 }

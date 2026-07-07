@@ -23,7 +23,6 @@ import { Button } from "@/components/ui/Button";
 import { QuoteForm } from "@/components/ui/QuoteForm";
 import { cn, formatEUR, telHref, waHref } from "@/lib/utils";
 import { getSessionId } from "@/lib/session";
-import { resolveTurnstileSiteKey } from "@/lib/runtime";
 
 interface SelLine {
   id: string;
@@ -141,6 +140,7 @@ export function Boutique({
   tone,
   basePath = "",
   strings,
+  turnstileSiteKey,
 }: BlockComponentProps<BoutiqueContent>) {
   const c = block.content;
   const devis = strings.devis;
@@ -159,9 +159,6 @@ export function Boutique({
 
   const rawConf = c.confidentialiteHref ?? "/confidentialite";
   const confidentialiteHref = rawConf.startsWith("http") ? rawConf : `${basePath}${rawConf}`;
-
-  // Anti-robot Turnstile activé par site via config.forms.turnstile.
-  const turnstileSiteKey = resolveTurnstileSiteKey(config);
 
   function addItem(ci: number, item: ProduitItem) {
     const id = itemId(ci, item);

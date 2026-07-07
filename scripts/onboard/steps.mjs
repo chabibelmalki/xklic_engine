@@ -20,6 +20,7 @@ import * as vercel from "./vercel.mjs";
 import * as ovh from "./ovh.mjs";
 import * as google from "./google.mjs";
 import * as cloudflare from "./cloudflare.mjs";
+import * as backoffice from "./backoffice.mjs";
 
 const OVH_PARKING_IP = "213.186.33.5";
 // TXT de parking OVH : "1|<domaine>" sur @, "3|welcome" sur www. On ne touche
@@ -473,6 +474,9 @@ export async function gscHumanStep(ctx) {
 // ────────────────────────────────────────────────────────── turnstile ──────
 export async function turnstileStep(ctx) {
   const hosts = [ctx.apex, ctx.www];
+  const widget = ctx.widget || "xklic 1";
+
+  // 1) Cloudflare : autoriser les hostnames du nouveau domaine sur le widget.
   if (!cloudflare.isConfigured()) {
     manualAction("Turnstile (Cloudflare) — config absente", [
       `Dashboard Cloudflare → widget Turnstile → Hostnames : ajouter`,
@@ -484,11 +488,38 @@ export async function turnstileStep(ctx) {
   }
   const w = await cloudflare.getWidget();
   const missing = hosts.filter((h) => !w.domains.includes(h));
-  if (missing.length === 0) { skip(`hostnames déjà autorisés (${hosts.join(", ")})`); return; }
-  willDo(`ajouter au widget Turnstile : ${missing.join(", ")}`);
+  if (missing.length === 0) {
+    skip(`hostnames déjà autorisés (${hosts.join(", ")})`);
+  } else {
+    willDo(`ajouter au widget Turnstile : ${missing.join(", ")}`);
+    if (!ctx.dryRun) {
+      const { after } = await cloudflare.addWidgetHostnames(missing);
+      ok(`hostnames Turnstile : ${after.join(", ")}`);
+    }
+  }
+
+  // 2) Back-office : assigner le tenant au widget (source de vérité par widget).
+  // Non bloquant : le fallback env couvre tant que ce n'est pas fait.
+  if (!backoffice.isConfigured()) {
+    manualAction("Turnstile (back-office) — config absente", [
+      `Assigner le tenant « ${ctx.slug} » au widget « ${widget} » :`,
+      `  POST /v1/public/tenants/${ctx.slug}/turnstile-widget { "widget": "${widget}" }`,
+      `Sans ça, le site reste sur le fallback env au lieu de la config DB (non bloquant).`,
+    ]);
+    return;
+  }
+  willDo(`assigner « ${ctx.slug} » au widget back-office « ${widget} »`);
   if (ctx.dryRun) return;
-  const { after } = await cloudflare.addWidgetHostnames(missing);
-  ok(`hostnames Turnstile : ${after.join(", ")}`);
+  try {
+    const r = await backoffice.assignTurnstileWidget(ctx.slug, widget);
+    ok(`tenant « ${r.tenant} » → widget « ${r.widget} » (sitekey ${r.sitekey || "∅"})`);
+  } catch (e) {
+    warn(`assignation widget back-office échouée : ${e.message}`);
+    manualAction("Turnstile (back-office) — à assigner à la main", [
+      `POST /v1/public/tenants/${ctx.slug}/turnstile-widget { "widget": "${widget}" }`,
+      `(fallback env actif en attendant — non bloquant)`,
+    ]);
+  }
 }
 
 export const STEPS = {

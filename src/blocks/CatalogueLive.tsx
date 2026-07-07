@@ -20,7 +20,6 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { Turnstile } from "@/components/ui/Turnstile";
 import { cn, formatEUR } from "@/lib/utils";
-import { resolveTurnstileSiteKey } from "@/lib/runtime";
 
 /**
  * Catalogue — boutique en ligne LIVE. Les produits, prix et stocks viennent du
@@ -161,6 +160,7 @@ export function CatalogueLive({
   config,
   tone,
   basePath = "",
+  turnstileSiteKey,
 }: BlockComponentProps<CatalogueContent>) {
   const c = block.content;
 
@@ -175,7 +175,6 @@ export function CatalogueLive({
 
   const rawConf = c.confidentialiteHref ?? "/confidentialite";
   const confidentialiteHref = rawConf.startsWith("http") ? rawConf : `${basePath}${rawConf}`;
-  const turnstileSiteKey = resolveTurnstileSiteKey(config);
 
   async function loadCatalog() {
     try {

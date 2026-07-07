@@ -28,7 +28,6 @@ import { Button } from "@/components/ui/Button";
 import { QuoteForm } from "@/components/ui/QuoteForm";
 import { cn, formatEUR, telHref, waHref } from "@/lib/utils";
 import { getSessionId } from "@/lib/session";
-import { resolveTurnstileSiteKey } from "@/lib/runtime";
 
 interface SelLine {
   id: string;
@@ -285,6 +284,7 @@ export function ServiceQuoteBuilder({
   tone,
   basePath = "",
   strings,
+  turnstileSiteKey,
 }: BlockComponentProps<ServiceQuoteBuilderContent>) {
   const c = block.content;
   const devis = strings.devis;
@@ -303,9 +303,6 @@ export function ServiceQuoteBuilder({
 
   const rawConf = c.confidentialiteHref ?? "/confidentialite";
   const confidentialiteHref = rawConf.startsWith("http") ? rawConf : `${basePath}${rawConf}`;
-
-  // Anti-robot Turnstile activé par site via config.forms.turnstile.
-  const turnstileSiteKey = resolveTurnstileSiteKey(config);
 
   function addLine(line: Omit<SelLine, "qty">) {
     setSelection((prev) => {

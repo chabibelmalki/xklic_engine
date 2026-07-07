@@ -3,6 +3,7 @@ import { getConfig } from "@/lib/config-loader";
 import { shopCheckoutSchema } from "@/lib/shop-schema";
 import { shopFetch, shopTenant } from "@/lib/shop";
 import { isLocalTestMode } from "@/lib/runtime";
+import { verifyTurnstileToken } from "@/lib/turnstile";
 
 /**
  * Proxy checkout : POST /api/shop/checkout
@@ -16,24 +17,6 @@ import { isLocalTestMode } from "@/lib/runtime";
  * (le host public du site, préservé par le proxy multi-tenant) + chemins
  * RELATIFS fournis par le client (validés : anti open-redirect).
  */
-
-async function verifyTurnstile(token: string | undefined, ip: string | null): Promise<boolean> {
-  const secret = process.env.TURNSTILE_SECRET_KEY?.trim();
-  if (!secret) return true;
-  if (!token) return false;
-  try {
-    const body = new URLSearchParams({ secret, response: token });
-    if (ip) body.set("remoteip", ip);
-    const res = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
-      method: "POST",
-      body,
-    });
-    const data = (await res.json()) as { success?: boolean };
-    return data.success === true;
-  } catch {
-    return false;
-  }
-}
 
 /** Messages lisibles pour les erreurs métier du back-office. */
 const SHOP_ERRORS: Record<string, string> = {
@@ -78,7 +61,7 @@ export async function POST(request: Request) {
   // Turnstile : seulement si le site l'a activé, et jamais en local/test.
   if (config.forms?.turnstile && !isLocalTestMode()) {
     const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? null;
-    if (!(await verifyTurnstile(data.turnstileToken, ip))) {
+    if (!(await verifyTurnstileToken(config, data.turnstileToken, ip))) {
       return NextResponse.json({ error: "Vérification anti-robot échouée." }, { status: 403 });
     }
   }

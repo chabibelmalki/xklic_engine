@@ -4,6 +4,7 @@ import { getConfig } from "@/lib/config-loader";
 import { postLead } from "@/lib/backoffice";
 import { normalizePagePath, trackEvent } from "@/lib/events";
 import { isLocalTestMode, isDeliveryEnabled } from "@/lib/runtime";
+import { verifyTurnstileToken } from "@/lib/turnstile";
 import type { SiteConfig } from "@/types/config";
 
 /**
@@ -26,24 +27,6 @@ const MODE_LABELS: Record<string, string> = {
   "demande-intervention": "Demande d'intervention",
   devis: "Demande de devis",
 };
-
-async function verifyTurnstile(token: string | undefined, ip: string | null): Promise<boolean> {
-  const secret = process.env.TURNSTILE_SECRET_KEY?.trim();
-  if (!secret) return true; // Turnstile non activé -> on laisse passer.
-  if (!token) return false;
-  try {
-    const body = new URLSearchParams({ secret, response: token });
-    if (ip) body.set("remoteip", ip);
-    const res = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
-      method: "POST",
-      body,
-    });
-    const data = (await res.json()) as { success?: boolean };
-    return data.success === true;
-  } catch {
-    return false;
-  }
-}
 
 function formatLead(data: ContactInput): { subject: string; lines: string[] } {
   const siteName = data.site || "Site";
@@ -160,7 +143,7 @@ export async function POST(request: Request) {
   // cf. resolveTurnstileSiteKey) pour ne pas friter les tests.
   if (config?.forms?.turnstile && !isLocalTestMode()) {
     const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? null;
-    if (!(await verifyTurnstile(data.turnstileToken, ip))) {
+    if (!(await verifyTurnstileToken(config, data.turnstileToken, ip))) {
       return NextResponse.json({ error: "Vérification anti-robot échouée." }, { status: 403 });
     }
   }

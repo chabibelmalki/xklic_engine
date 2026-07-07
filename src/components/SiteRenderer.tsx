@@ -12,6 +12,7 @@ import { TrackClicks } from "@/components/TrackClicks";
 import { getHomePage, findBlock, type ResolvedPage } from "@/lib/pages";
 import { localeDir, htmlLang } from "@/lib/i18n";
 import { ui } from "@/i18n/ui";
+import { getTurnstileSiteKey } from "@/lib/turnstile";
 
 /**
  * Cœur du moteur : pose le thème (data-theme), injecte le JSON-LD, puis rend
@@ -40,7 +41,7 @@ const SECTION_TYPES = new Set([
   "contact",
 ]);
 
-export function SiteRenderer({
+export async function SiteRenderer({
   config,
   page,
   basePath = "",
@@ -51,6 +52,9 @@ export function SiteRenderer({
   basePath?: string;
   locale?: string;
 }) {
+  // Sitekey Turnstile résolue UNE fois côté serveur (back-office, repli env) et
+  // injectée dans chaque bloc — les blocs client ne peuvent pas la résoudre.
+  const turnstileSiteKey = await getTurnstileSiteKey(config);
   const theme = resolveTheme(config.theme);
   const colorStyle = brandColorStyle(config.branding.colors);
   const pack = resolvePack(config.stylePack);
@@ -124,6 +128,7 @@ export function SiteRenderer({
                 basePath={basePath}
                 locale={locale}
                 strings={t}
+                turnstileSiteKey={turnstileSiteKey}
               />
             </Fragment>
           );
