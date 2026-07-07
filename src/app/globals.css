@@ -966,7 +966,10 @@ input[type="range"] {
   --shadow-card: 0 22px 54px -30px rgb(15 26 58 / 0.32);
   --shadow-pop: 0 40px 76px -34px rgb(15 26 58 / 0.30);
 
-  --section-py: 6rem;
+  /* Divergence éditorielle (couche 1) — pack exclusif mb-nettoyage : fond plat +
+     filets (bordered/rule via packs.ts), très aéré, colonne étroite. */
+  --section-py: 8rem;
+  --content-max: 60rem;
   --motion-distance: 16px;
   --motion-duration: 0.6s;
   --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);

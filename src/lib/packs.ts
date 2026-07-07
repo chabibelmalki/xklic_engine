@@ -189,8 +189,8 @@ export const PACKS: StylePack[] = [
   {
     id: "marine-premium",
     label: "Marine · Élégant & posé",
-    sectionStrategy: "striped",
-    sectionDivider: "none",
+    sectionStrategy: "bordered",
+    sectionDivider: "rule",
     ambiance:
       "Serif posée (Libre Baskerville), kicker à filet fin sans pastille, boutons moyennement arrondis, ombres teintées marine, motion sobre.",
     fonts: { display: "Libre Baskerville", sans: "Inter" },
