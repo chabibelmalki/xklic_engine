@@ -30,7 +30,7 @@ const stripDot = (s) => String(s).replace(/\.$/, "").toLowerCase();
 /** Lance une commande en sous-process, hérite de l'env. @returns {Promise<void>} */
 function run(cmd, args) {
   return new Promise((resolve, reject) => {
-    const child = spawn(cmd, args, { stdio: "inherit", env: process.env });
+    const child = spawn(cmd, args, { stdio: "inherit", env: process.env, shell: true });
     child.on("error", reject);
     child.on("close", (code) =>
       code === 0 ? resolve() : reject(new Error(`${cmd} ${args.join(" ")} -> exit ${code}`)),
