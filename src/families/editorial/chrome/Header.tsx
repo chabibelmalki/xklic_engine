@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/Button";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { telHref, cn } from "@/lib/utils";
 import { navPages, isMultiPage, resolvePages, findBlock } from "@/lib/pages";
-import { EditorialContainer } from "../ui/Container";
 
 /**
  * HEADER éditorial — SERVER pur : flat, filet bas fin, pas d'effet scroll (donc
@@ -83,17 +82,19 @@ export function EditorialHeader({
 
   return (
     <header className="relative sticky top-0 z-50 border-b border-border bg-bg">
-      <EditorialContainer className="flex h-20 items-center justify-between gap-6">
-        <Logo config={config} href={basePath || "/"} className="min-w-0" />
+      {/* Barre chrome : mesure LARGE dédiée (indépendante de --content-max, qui
+          est la mesure ÉTROITE du corps de texte) → la nav tient sur une ligne. */}
+      <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between gap-8 px-6 sm:px-10">
+        <Logo config={config} href={basePath || "/"} className="min-w-0 shrink-0" />
 
-        <nav className="hidden items-center gap-8 lg:flex">
+        <nav className="hidden min-w-0 items-center gap-x-7 xl:gap-x-9 lg:flex">
           {nav.map((item) => (
             <a
               key={item.href}
               href={item.href}
               aria-current={item.active ? "page" : undefined}
               className={cn(
-                "text-xs font-semibold uppercase tracking-[0.14em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
+                "whitespace-nowrap text-xs font-semibold uppercase tracking-[0.14em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
                 item.active ? "text-brand-700" : "text-muted hover:text-ink",
               )}
             >
@@ -102,7 +103,7 @@ export function EditorialHeader({
           ))}
         </nav>
 
-        <div className="hidden items-center gap-5 lg:flex">
+        <div className="hidden shrink-0 items-center gap-5 lg:flex">
           {showLangs && (
             <LanguageSwitcher
               locales={locales}
@@ -179,7 +180,7 @@ export function EditorialHeader({
             </nav>
           </div>
         </details>
-      </EditorialContainer>
+      </div>
     </header>
   );
 }
