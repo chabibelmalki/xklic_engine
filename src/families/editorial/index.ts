@@ -2,6 +2,15 @@ import type { TemplateFamily } from "../types";
 import { Hero } from "./blocks/Hero";
 import { Services } from "./blocks/Services";
 import { Cta } from "./blocks/Cta";
+import { PageHero } from "./blocks/PageHero";
+import { Etapes } from "./blocks/Etapes";
+import { Faq } from "./blocks/Faq";
+import { Zone } from "./blocks/Zone";
+import { Tarifs } from "./blocks/Tarifs";
+import { Contenu } from "./blocks/Contenu";
+import { Galerie } from "./blocks/Galerie";
+import { Simulateur } from "./blocks/Simulateur";
+import { Contact } from "./blocks/Contact";
 import { EditorialHeader } from "./chrome/Header";
 import { EditorialFooter } from "./chrome/Footer";
 import { EditorialFloatingActions } from "./chrome/FloatingActions";
@@ -21,6 +30,15 @@ export const EDITORIAL: TemplateFamily = {
     hero: Hero,
     services: Services,
     cta: Cta,
+    pageHero: PageHero,
+    etapes: Etapes,
+    faq: Faq,
+    zone: Zone,
+    tarifs: Tarifs,
+    contenu: Contenu,
+    galerie: Galerie,
+    simulateur: Simulateur,
+    contact: Contact,
   },
   Chrome: {
     Header: EditorialHeader,
