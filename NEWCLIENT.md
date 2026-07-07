@@ -49,32 +49,36 @@ N'utilise que ce qui est concordant ; signale tout écart ou doute.
 
 ---
 
-## DESIGN — CHAQUE SITE EST DISTINCT (lis `catalog.json`)
+## DESIGN — CHAQUE SITE EST DISTINCT
 
-Deux clients ne se ressemblent pas. La différence vient surtout de la **TYPO**, du
-**LAYOUT** et du **MOTION** — pas seulement de la couleur.
+Trois axes INDÉPENDANTS, à combiner librement — jamais choisis « par métier »
+(le réflexe sectoriel produit des clones) :
 
-**RÈGLE ABSOLUE — aucun pack/thème n'est réservé à un métier.** Ne choisis JAMAIS
-le design « par secteur » (« ménage → tel pack »). C'est ce réflexe qui produit
-des clones. Le `stylePack` (structure/typo/motion) et le `theme` (couleur) sont
-**deux axes indépendants à combiner librement** : tu peux mettre n'importe quelle
-couleur sous n'importe quelle typo. Pioche dans **toute** la palette de packs ×
-thèmes selon l'**ambiance** voulue et le **style demandé par le client**.
+1. **FAMILLE de template** — le levier de divergence le PLUS FORT. Une famille
+   définit la structure profonde : composition, primitives (sections, titres,
+   traitement d'image), chrome (header/footer), grammaire visuelle d'ensemble.
+   Deux familles = deux « studios » différents, bien au-delà de la couleur ou de
+   la typo. **Découvre les familles disponibles dans le moteur** et choisis selon
+   l'AMBIANCE et le CARACTÈRE voulus pour ce client. Une famille au parti pris
+   fort diverge ; un choix tiède converge vers le look des autres.
 
-**AVANT de choisir : regarde les sites déjà en prod** (`config/sites/*`) et prends
-sciemment un pack, un thème, un hero et une composition **différents** des clients
-du même métier. Si un voisin proche existe (ex. autre site de ménage), tu DOIS
-diverger sur la couleur, la typo, le hero ET l'ordre des blocs — pas juste l'un.
+2. **`stylePack`** (typo / layout / motion) — affine à l'intérieur de la famille,
+   selon l'ambiance, jamais selon le métier.
 
-1. **`stylePack`** (`catalog.json > stylePacks.items`) — choisis selon l'**ambiance**
-   et le style client, jamais selon le métier. Vérifie qu'aucun site existant
-   n'utilise déjà ce pack pour ce métier.
-2. **`theme`** (couleur) — choisi indépendamment du pack, selon la couleur demandée
-   par le client.
-3. **`variant`** (par bloc) — `recommendedVariants` n'est qu'une suggestion de
-   combinaisons saines, pas une contrainte : mélange librement.
-4. **ORDRE & COMPOSITION** (`pages[].blocks[]`) — invente une structure propre.
-   Ne reproduis **aucun** squelette d'un site existant (accueil ET pages internes).
+3. **`theme`** (couleur) — indépendant, selon la couleur demandée par le client.
+
+**AVANT de choisir : regarde les sites déjà en prod** et prends sciemment une
+famille + un pack + un thème + une composition différents des clients proches. Si
+un voisin du même métier existe, tu DOIS diverger d'abord sur la FAMILLE (ou, à
+famille égale, sur pack + thème + hero + ordre des blocs — jamais un seul).
+
+Aucune famille, aucun pack, aucun thème n'est réservé à un secteur : on peut
+avoir de tout sous tout.
+
+4. **`variant`** (par bloc) — suggestion, pas contrainte : mélange librement.
+
+5. **ORDRE & COMPOSITION** (`pages[].blocks[]`) — invente une structure propre.
+   Ne reproduis aucun squelette d'un site existant (accueil ET pages internes).
 
 Toujours : mobile-first, contrastes AA, tout le texte via i18n.
 

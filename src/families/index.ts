@@ -1,6 +1,7 @@
 import { Unknown } from "@/blocks/Unknown";
 import { CLASSIC } from "./classic";
 import { EDITORIAL } from "./editorial";
+import { PRESTIGE } from "./prestige";
 import type { FamilyBlock, TemplateFamily } from "./types";
 
 export type { TemplateFamily, FamilyChrome, FamilyBlock } from "./types";
@@ -13,6 +14,7 @@ export type { TemplateFamily, FamilyChrome, FamilyBlock } from "./types";
 const FAMILIES: Record<string, TemplateFamily> = {
   classic: CLASSIC,
   editorial: EDITORIAL,
+  prestige: PRESTIGE,
 };
 
 export const DEFAULT_FAMILY = CLASSIC;

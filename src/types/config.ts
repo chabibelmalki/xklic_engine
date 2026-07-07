@@ -345,6 +345,12 @@ export interface CtaContent {
   ctaSecondaire?: CTA;
   /** Lien texte sous les boutons (ex. WhatsApp). */
   lien?: CTA;
+  /**
+   * Image de fond OPTIONNELLE de la bande CTA (plein cadre, sous voile sombre).
+   * Utilisée par les familles immersives (ex. `prestige`) ; ignorée par les
+   * familles qui rendent une bande de couleur pleine (classic, editorial).
+   */
+  image?: ImageRef;
 }
 
 // --- tarifs ---
