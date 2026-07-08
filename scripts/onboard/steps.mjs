@@ -472,12 +472,38 @@ export async function gscHumanStep(ctx) {
 }
 
 // ────────────────────────────────────────────────────────── turnstile ──────
+
+// siteTenantSlug : slug que l'ENGINE utilise pour /config & /verify =
+// shopTenant(config) = config.shop.tenant ?? config.slug. Lu depuis la config.
+function siteTenantSlug(ctx) {
+  try {
+    const file = path.join(ctx.root, "config", "sites", ctx.slug, "config.json");
+    const cfg = JSON.parse(fs.readFileSync(file, "utf8"));
+    const t = (cfg.shop && typeof cfg.shop.tenant === "string" && cfg.shop.tenant.trim()) || cfg.slug;
+    return t || ctx.slug;
+  } catch {
+    return ctx.slug;
+  }
+}
+
 export async function turnstileStep(ctx) {
   const hosts = [ctx.apex, ctx.www];
   const widget = ctx.widget || "xklic 1";
+  const tenantSlug = siteTenantSlug(ctx);
 
-  // 1) Cloudflare : autoriser les hostnames du nouveau domaine sur le widget.
-  if (!cloudflare.isConfigured()) {
+  // Garde-fou slug : l'engine interroge /config avec tenantSlug ; il DOIT désigner
+  // le tenant back-office, sinon Turnstile ne se câble pas (et la boutique casse).
+  if (tenantSlug !== ctx.slug) {
+    warn(`slug tenant « ${tenantSlug} » ≠ slug config « ${ctx.slug} » (shop.tenant) — l'engine utilisera « ${tenantSlug} » ; le tenant back-office doit porter CE slug.`);
+  }
+
+  // Sitekey/secret du widget (lot 2) : sitekey via --widget-sitekey ou env ;
+  // secret UNIQUEMENT via env (.env.turnstile-widget), jamais en flag/commit.
+  const widgetSitekey = (ctx.widgetSitekey || process.env.TURNSTILE_WIDGET_SITEKEY || "").trim();
+  const widgetSecret = (process.env.TURNSTILE_WIDGET_SECRET || "").trim();
+
+  // 1) Cloudflare : hostnames sur le BON widget (celui de widgetSitekey si fourni).
+  if (!cloudflare.isConfigured(widgetSitekey)) {
     manualAction("Turnstile (Cloudflare) — config absente", [
       `Dashboard Cloudflare → widget Turnstile → Hostnames : ajouter`,
       `  • ${ctx.apex}`,
@@ -486,37 +512,54 @@ export async function turnstileStep(ctx) {
     ]);
     throw new MissingTokenError("Turnstile non configuré — hostname à ajouter à la main.");
   }
-  const w = await cloudflare.getWidget();
+  const w = await cloudflare.getWidget(widgetSitekey);
   const missing = hosts.filter((h) => !w.domains.includes(h));
   if (missing.length === 0) {
-    skip(`hostnames déjà autorisés (${hosts.join(", ")})`);
+    skip(`hostnames déjà autorisés sur « ${w.name} » (${hosts.join(", ")})`);
   } else {
-    willDo(`ajouter au widget Turnstile : ${missing.join(", ")}`);
+    willDo(`ajouter au widget Cloudflare « ${w.name} » : ${missing.join(", ")}`);
     if (!ctx.dryRun) {
-      const { after } = await cloudflare.addWidgetHostnames(missing);
+      const { after } = await cloudflare.addWidgetHostnames(missing, widgetSitekey);
       ok(`hostnames Turnstile : ${after.join(", ")}`);
     }
   }
 
-  // 2) Back-office : assigner le tenant au widget (source de vérité par widget).
+  // 2) Back-office : (a) provisionner le widget si sitekey+secret fournis, (b) assigner.
   // Non bloquant : le fallback env couvre tant que ce n'est pas fait.
   if (!backoffice.isConfigured()) {
     manualAction("Turnstile (back-office) — config absente", [
-      `Assigner le tenant « ${ctx.slug} » au widget « ${widget} » :`,
-      `  POST /v1/public/tenants/${ctx.slug}/turnstile-widget { "widget": "${widget}" }`,
+      `Assigner le tenant « ${tenantSlug} » au widget « ${widget} » :`,
+      `  POST /v1/public/tenants/${tenantSlug}/turnstile-widget { "widget": "${widget}" }`,
       `Sans ça, le site reste sur le fallback env au lieu de la config DB (non bloquant).`,
     ]);
     return;
   }
-  willDo(`assigner « ${ctx.slug} » au widget back-office « ${widget} »`);
+
+  // (a) Provisionnement idempotent du widget quand on a de quoi le créer.
+  if (widgetSitekey && widgetSecret) {
+    willDo(`s'assurer que le widget back-office « ${widget} » existe (création si absent)`);
+    if (!ctx.dryRun) {
+      try {
+        const ew = await backoffice.ensureWidget(widget, widgetSitekey, widgetSecret);
+        ok(`widget « ${ew.widget} » ${ew.created ? "créé" : "déjà présent"} (sitekey ${ew.sitekey})`);
+      } catch (e) {
+        warn(`provisionnement widget échoué : ${e.message}`);
+      }
+    }
+  } else if (widget !== "xklic 1") {
+    warn(`widget « ${widget} » : ni --widget-sitekey ni TURNSTILE_WIDGET_SECRET fournis — il doit déjà exister côté back-office, sinon l'assignation échouera.`);
+  }
+
+  // (b) Assignation du tenant au widget.
+  willDo(`assigner « ${tenantSlug} » au widget back-office « ${widget} »`);
   if (ctx.dryRun) return;
   try {
-    const r = await backoffice.assignTurnstileWidget(ctx.slug, widget);
+    const r = await backoffice.assignTurnstileWidget(tenantSlug, widget);
     ok(`tenant « ${r.tenant} » → widget « ${r.widget} » (sitekey ${r.sitekey || "∅"})`);
   } catch (e) {
     warn(`assignation widget back-office échouée : ${e.message}`);
     manualAction("Turnstile (back-office) — à assigner à la main", [
-      `POST /v1/public/tenants/${ctx.slug}/turnstile-widget { "widget": "${widget}" }`,
+      `POST /v1/public/tenants/${tenantSlug}/turnstile-widget { "widget": "${widget}" }`,
       `(fallback env actif en attendant — non bloquant)`,
     ]);
   }

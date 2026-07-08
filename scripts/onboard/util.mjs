@@ -28,9 +28,9 @@ export class MissingTokenError extends Error {}
 
 // --- .env.local : chargé sans écraser l'env déjà présent ------------------
 // (même comportement que deploy.mjs / sync-sitemaps.mjs : l'env réel a priorité)
-/** @param {string} root */
-export function loadEnvLocal(root) {
-  const file = path.join(root, ".env.local");
+/** @param {string} root @param {string} [name] fichier env (défaut .env.local) */
+export function loadEnvLocal(root, name = ".env.local") {
+  const file = path.join(root, name);
   if (!fs.existsSync(file)) return;
   for (const raw of fs.readFileSync(file, "utf8").split("\n")) {
     const line = raw.trim();

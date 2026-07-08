@@ -47,3 +47,27 @@ export async function assignTurnstileWidget(slug, widget) {
   }
   return { tenant: body?.tenant, widget: body?.widget, sitekey: body?.turnstile_sitekey };
 }
+
+/**
+ * S'assure qu'un widget existe côté back-office (le crée s'il est absent, en
+ * chiffrant le secret). Idempotent : widget déjà présent → renvoyé tel quel,
+ * secret conservé (pas de rotation). Le secret ne transite qu'ici (HTTPS +
+ * X-API-Key) et n'est jamais renvoyé.
+ * @param {string} name @param {string} sitekey @param {string} secret
+ * @returns {Promise<{ widget:string, sitekey:string, created:boolean }>}
+ */
+export async function ensureWidget(name, sitekey, secret) {
+  const { base, key } = cfg();
+  const res = await fetch(`${base}/v1/public/turnstile/widgets`, {
+    method: "POST",
+    headers: { "X-API-Key": key, "Content-Type": "application/json" },
+    body: JSON.stringify({ name, sitekey, secret }),
+  });
+  const text = await res.text();
+  const body = text ? JSON.parse(text) : null;
+  if (!res.ok) {
+    const detail = body?.error ?? res.statusText;
+    throw new Error(`back-office POST /turnstile/widgets -> ${res.status} ${detail}`);
+  }
+  return { widget: body?.widget, sitekey: body?.sitekey, created: !!body?.created };
+}

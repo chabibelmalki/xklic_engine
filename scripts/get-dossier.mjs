@@ -74,6 +74,9 @@ function human(v) {
 const DOSSIER_LABELS = {
   ref: ["Ref"],
   entreprise: ["Entreprise"],
+  // Slug déterministe figé sur le dossier : à reprendre TEL QUEL pour
+  // config/sites/<slug> (sinon /config ne matchera pas le tenant).
+  tenant_slug: ["Slug"],
   statut_commande: ["Statut commande"],
   statut_production: ["Statut production"],
   formule: ["Formule"],
@@ -229,6 +232,8 @@ const full = await api(`/v1/public/agency/orders/${encodeURIComponent(match.ref)
 const dossier = mapDossier(full?.order ?? full?.dossier ?? full);
 const result = {
   dossier,
+  // Bloc tenant (identité + statut + câblage Turnstile), null si dossier non lié.
+  tenant: full?.tenant ?? null,
   paiements: (full?.payments ?? []).map((r) => mapPaiement(r, dossier)),
   production: (full?.production ?? []).map((r) => mapSatellite(r, dossier)),
   notes: (full?.notes ?? []).map((r) => mapSatellite(r, dossier)),
@@ -240,10 +245,18 @@ const result = {
  * ------------------------------------------------------------------------- */
 
 const d = result.dossier;
+const tn = result.tenant;
+const tenantLine = tn
+  ? `${c.bold(tn.onboarding_status)}` +
+    (tn.turnstile_sitekey
+      ? ` · turnstile ${c.bold("✓")} (${tn.turnstile_widget})`
+      : ` · turnstile ${c.bold("✗")}`)
+  : c.dim("aucun tenant lié");
 console.error(
   "\n" +
     c.bold(c.cyan(`📋 ${d.Entreprise}`)) +
     `  ${c.dim("Ref " + d.Ref)}\n` +
+    `   slug: ${c.bold(String(d.Slug ?? "—"))}   ·   tenant: ${tenantLine}\n` +
     `   commande: ${c.bold(String(d["Statut commande"]))}   ·   production: ${c.bold(String(d["Statut production"]))}\n` +
     `   ${d.Metier || "—"} · ${d.Ville || "—"} · ${d.Email || "—"} · ${d.Telephone || "—"}\n` +
     `   liés → paiements:${result.paiements.length}  production:${result.production.length}  notes:${result.notes.length}  produits:${result.produits.length}\n`,

@@ -19,24 +19,26 @@ import { MissingTokenError } from "./util.mjs";
 
 const API = "https://api.cloudflare.com/client/v4";
 
-function cfg() {
+// overrideSitekey : vise un widget Cloudflare précis (lot 2). À défaut, le widget
+// par défaut identifié par NEXT_PUBLIC_TURNSTILE_SITE_KEY.
+function cfg(overrideSitekey) {
   const token = process.env.CLOUDFLARE_API_TOKEN?.trim();
   const accountId = process.env.CLOUDFLARE_ACCOUNT_ID?.trim();
-  const sitekey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY?.trim();
+  const sitekey = (overrideSitekey || process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || "").trim();
   const miss = [
     !token && "CLOUDFLARE_API_TOKEN",
     !accountId && "CLOUDFLARE_ACCOUNT_ID",
-    !sitekey && "NEXT_PUBLIC_TURNSTILE_SITE_KEY",
+    !sitekey && "sitekey (--widget-sitekey ou NEXT_PUBLIC_TURNSTILE_SITE_KEY)",
   ].filter(Boolean);
   if (miss.length) throw new MissingTokenError(`Config Turnstile manquante : ${miss.join(", ")}`);
   return { token, accountId, sitekey };
 }
 
-export function isConfigured() {
+export function isConfigured(overrideSitekey) {
   return !!(
     process.env.CLOUDFLARE_API_TOKEN &&
     process.env.CLOUDFLARE_ACCOUNT_ID &&
-    process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
+    (overrideSitekey || process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY)
   );
 }
 
@@ -56,8 +58,8 @@ async function cf(method, pathname, token, payload) {
 }
 
 /** Lit le widget. @returns {Promise<{ name:string, mode:string, domains:string[], raw:any }>} */
-export async function getWidget() {
-  const { token, accountId, sitekey } = cfg();
+export async function getWidget(overrideSitekey) {
+  const { token, accountId, sitekey } = cfg(overrideSitekey);
   const r = await cf("GET", `/accounts/${accountId}/challenges/widgets/${sitekey}`, token);
   return { name: r?.name, mode: r?.mode, domains: r?.domains ?? [], raw: r };
 }
@@ -66,11 +68,12 @@ export async function getWidget() {
  * Ajoute des hostnames au widget (idempotent : union). PUT = remplacement, donc
  * on renvoie l'objet complet relu avec la liste domains augmentée.
  * @param {string[]} hostsToAdd
+ * @param {string} [overrideSitekey] widget Cloudflare ciblé (lot 2)
  * @returns {Promise<{ before: string[], after: string[] }>}
  */
-export async function addWidgetHostnames(hostsToAdd) {
-  const { token, accountId, sitekey } = cfg();
-  const current = await getWidget();
+export async function addWidgetHostnames(hostsToAdd, overrideSitekey) {
+  const { token, accountId, sitekey } = cfg(overrideSitekey);
+  const current = await getWidget(overrideSitekey);
   const before = current.domains;
   const after = [...new Set([...before, ...hostsToAdd])];
   await cf("PUT", `/accounts/${accountId}/challenges/widgets/${sitekey}`, token, {

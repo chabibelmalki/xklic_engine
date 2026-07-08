@@ -26,10 +26,14 @@ const ONLY_TARGETS = Object.keys(STEPS); // inclut "gsc-human" (hors pipeline au
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
 loadEnvLocal(ROOT);
+// Secret du widget Turnstile (provisionnement lot 2) — fichier dédié gitignoré
+// (.env* est ignoré). Contient TURNSTILE_WIDGET_SECRET (et éventuellement
+// TURNSTILE_WIDGET_SITEKEY). Jamais commité, jamais en flag.
+loadEnvLocal(ROOT, ".env.turnstile-widget");
 
 // --- parsing args ---------------------------------------------------------
 function parseArgs(argv) {
-  const out = { apply: false, only: null, slug: null, domain: null, humanToken: null, widget: "xklic 1" };
+  const out = { apply: false, only: null, slug: null, domain: null, humanToken: null, widget: "xklic 1", widgetSitekey: null };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--apply" || a === "--no-dry-run") out.apply = true;
@@ -39,11 +43,13 @@ function parseArgs(argv) {
     else if (a === "--domain") out.domain = argv[++i];
     else if (a === "--human-token") out.humanToken = argv[++i];
     else if (a === "--widget") out.widget = argv[++i];
+    else if (a === "--widget-sitekey") out.widgetSitekey = argv[++i];
     else if (a.startsWith("--slug=")) out.slug = a.slice(7);
     else if (a.startsWith("--domain=")) out.domain = a.slice(9);
     else if (a.startsWith("--only=")) out.only = a.slice(7);
     else if (a.startsWith("--human-token=")) out.humanToken = a.slice(14);
     else if (a.startsWith("--widget=")) out.widget = a.slice(9);
+    else if (a.startsWith("--widget-sitekey=")) out.widgetSitekey = a.slice(17);
     else die(`Argument inconnu : ${a}`);
   }
   return out;
@@ -71,6 +77,7 @@ async function main() {
     only: args.only,
     humanToken: args.humanToken,
     widget: args.widget,
+    widgetSitekey: args.widgetSitekey,
     root: ROOT,
     rootDomain: process.env.NEXT_PUBLIC_ROOT_DOMAIN?.trim() || "xklic.com",
   };
