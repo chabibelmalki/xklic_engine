@@ -290,10 +290,11 @@
         },
         {
           "type": "zone",
-          "mode": "liste",
+          "mode": "carte",
           "content": {
             "titre": "In Nîmes, Montpellier, Marseille and beyond",
             "intro": "We work around Nîmes, Montpellier and Marseille. Check your area or contact us directly.",
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=3.70%2C43.20%2C5.60%2C43.95&layer=mapnik&marker=43.8451919%2C4.3883404",
             "zones": [
               {
                 "region": "Gard — around Nîmes",

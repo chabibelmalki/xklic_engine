@@ -1,7 +1,7 @@
 {
   "slug": "mb-nettoyage",
   "theme": "pro-bleu-nuit",
-  "stylePack": "marine-premium",
+  "stylePack": "cotier-marine",
   "i18n": {
     "default": "fr",
     "languages": ["fr", "en"]
@@ -11,13 +11,13 @@
     "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/mb-nettoyage/logo.jpeg",
     "logoAlt": "MB Nettoyage — home and professional cleaning in Marseille",
     "logoTwoTone": {
-      "first": "#1e3a8a",
-      "rest": "#c9a227"
+      "first": "#204485",
+      "rest": "#e8b44a"
     },
     "tagline": "Home & professional cleaning · Marseille",
     "colors": {
-      "brand": "#1e3a8a",
-      "accent": "#c9a227",
+      "brand": "#204485",
+      "accent": "#e8b44a",
       "neutral": "cool"
     }
   },
@@ -122,6 +122,31 @@
           }
         },
         {
+          "type": "etapes",
+          "variant": "ligne-horizontale",
+          "content": {
+            "eyebrow": "Your benefits",
+            "titre": "Three good reasons to start now",
+            "items": [
+              {
+                "icone": "BadgePercent",
+                "titre": "−15% on your first visit",
+                "texte": "A welcome discount applied to your very first service."
+              },
+              {
+                "icone": "Gift",
+                "titre": "Referral: −€10",
+                "texte": "−€10 for you and for the person you refer, on your next service."
+              },
+              {
+                "icone": "BadgeEuro",
+                "titre": "50% tax credit",
+                "texte": "Half of your at-home services refunded or deducted from your taxes."
+              }
+            ]
+          }
+        },
+        {
           "type": "services",
           "variant": "lignes-alternees",
           "content": {
@@ -142,7 +167,8 @@
                 "description": "Complete restoration before or after a move-out inspection, a move or a rental.",
                 "href": "/grand-menage-etat-des-lieux",
                 "icone": "KeyRound",
-                "priceHint": "Free quote"
+                "priceHint": "Free quote",
+                "badge": "50% tax credit"
               },
               {
                 "nom": "Home ironing",
@@ -157,7 +183,8 @@
                 "description": "Windows and bay windows cleaned with care, for individuals and businesses alike.",
                 "href": "/nettoyage-vitres",
                 "icone": "Droplets",
-                "priceHint": "from €10/window"
+                "priceHint": "from €10/window",
+                "badge": "50% tax credit"
               },
               {
                 "nom": "Office & shop cleaning",
@@ -171,6 +198,13 @@
                 "description": "Construction dust, paint marks and work residue removed before handover.",
                 "href": "/nettoyage-fin-chantier",
                 "icone": "HardHat",
+                "priceHint": "Free quote"
+              },
+              {
+                "nom": "Airbnb & rental cleaning",
+                "description": "Turnover cleaning between guests for your short-term rentals, for hosts and property managers.",
+                "href": "/menage-airbnb-location",
+                "icone": "BedDouble",
                 "priceHint": "Free quote"
               }
             ],
@@ -340,7 +374,8 @@
                 "description": "Full restoration before moving in, after moving out, or before a move-out inspection.",
                 "href": "/grand-menage-etat-des-lieux",
                 "icone": "KeyRound",
-                "priceHint": "Free quote"
+                "priceHint": "Free quote",
+                "badge": "50% tax credit"
               },
               {
                 "nom": "Home ironing",
@@ -355,7 +390,8 @@
                 "description": "Windows and bay windows cleaned according to their size.",
                 "href": "/nettoyage-vitres",
                 "icone": "Droplets",
-                "priceHint": "€10 to €15/window"
+                "priceHint": "€10 to €15/window",
+                "badge": "50% tax credit"
               }
             ]
           }
@@ -395,6 +431,22 @@
           "type": "cta",
           "variant": "encadre",
           "content": {
+            "titre": "Renting short-term or managing Airbnbs?",
+            "sousTitre": "Turnover cleaning between guests for hosts and property managers, in Marseille and around.",
+            "ctaPrimaire": {
+              "label": "Airbnb & rental cleaning",
+              "href": "/menage-airbnb-location"
+            },
+            "ctaSecondaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
             "titre": "A service you don't see here?",
             "sousTitre": "Tell us what you need: we'll prepare a free, no-obligation quote.",
             "ctaPrimaire": {
@@ -423,6 +475,31 @@
             "eyebrow": "Prices",
             "titre": "Clear prices, announced upfront",
             "intro": "The prices below apply to services for individuals. For businesses, a custom quote is prepared based on your premises."
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "ligne-horizontale",
+          "content": {
+            "eyebrow": "Your benefits",
+            "titre": "What lowers your bill",
+            "items": [
+              {
+                "icone": "BadgePercent",
+                "titre": "−15% on your first visit",
+                "texte": "A welcome discount on your very first service."
+              },
+              {
+                "icone": "Gift",
+                "titre": "Referral: −€10",
+                "texte": "−€10 for you and for the person you refer, on your next service."
+              },
+              {
+                "icone": "BadgeEuro",
+                "titre": "50% tax credit",
+                "texte": "Half of your at-home services refunded or deducted from your taxes."
+              }
+            ]
           }
         },
         {
@@ -746,6 +823,7 @@
               "Window cleaning",
               "Office & shop cleaning",
               "Post-construction cleaning",
+              "Airbnb / short-term rental cleaning",
               "Other / not sure"
             ],
             "villes": [
@@ -814,6 +892,7 @@
               "Window cleaning",
               "Office & shop cleaning",
               "Post-construction cleaning",
+              "Airbnb / short-term rental cleaning",
               "Other / not sure"
             ],
             "villes": [
@@ -1785,6 +1864,199 @@
           "content": {
             "titre": "A site to clean in Marseille?",
             "sousTitre": "Free quote by phone, quick reply.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "menage-airbnb-location",
+      "label": "Airbnb & rental cleaning",
+      "navHidden": true,
+      "meta": {
+        "title": "Airbnb & short-term rental cleaning in Marseille — MB Nettoyage",
+        "description": "Short-term rental and Airbnb cleaning in Marseille and Aix-en-Provence: turnover cleaning between guests, check-in/check-out, for hosts and property managers. On quote.",
+        "keywords": [
+          "Airbnb cleaning Marseille",
+          "short-term rental cleaning Marseille",
+          "property manager cleaning Marseille",
+          "turnover cleaning Aix-en-Provence"
+        ]
+      },
+      "service": {
+        "name": "Airbnb & short-term rental cleaning",
+        "description": "Turnover cleaning of short-term rentals between guests in Marseille and around, for hosts and property managers.",
+        "serviceType": "Short-term rental cleaning",
+        "priceFrom": "Free quote"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Short-term rentals & Airbnb",
+            "titre": "Short-term rental cleaning in Marseille",
+            "intro": "Between two guests, MB Nettoyage gets your property back in shape in Marseille, Aix-en-Provence and around: full cleaning, fresh linen and a final check, within tight turnaround windows. For hosts and property managers alike.",
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Airbnb & rental cleaning"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Hosts & property managers",
+            "titre": "A property ready to welcome, on every arrival",
+            "paragraphes": [
+              "Seasonal rental, Airbnb, Booking or furnished tourist accommodation: between each stay, the property has to be spotless and ready within a short window. MB Nettoyage handles the full turnover between guests — floors, bathrooms, kitchen, dusting — with natural products and equipment.",
+              "Whether you own a single property or run a management company handling several, we adapt to your turnovers: one-off or recurring visits, coordinated with your check-outs and check-ins."
+            ],
+            "image": {
+              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
+              "alt": "Short-term rental bedroom cleaned and ready to welcome new guests"
+            },
+            "imagePosition": "right"
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Why trust MB Nettoyage with your rentals",
+            "items": [
+              {
+                "icone": "Clock",
+                "nom": "Tight windows respected",
+                "description": "A visit between a departure and an arrival, within the window your bookings allow."
+              },
+              {
+                "icone": "BedDouble",
+                "nom": "Beds & linen",
+                "description": "Sheets and linen changed, beds made, bathroom restocked on request."
+              },
+              {
+                "icone": "Sparkles",
+                "nom": "Full turnover",
+                "description": "Floors, bathrooms, kitchen and surfaces: a clean property, ready to welcome."
+              },
+              {
+                "icone": "CalendarCheck",
+                "nom": "Recurring turnovers",
+                "description": "Visits coordinated with your check-ins / check-outs, one-off or regular."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "titre": "How a turnover works",
+            "items": [
+              {
+                "icone": "LogOut",
+                "titre": "After check-out",
+                "texte": "You let us know about the check-out: we schedule the visit within your window."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "The turnover",
+                "texte": "Full cleaning, fresh linen and restocking according to your instructions."
+              },
+              {
+                "icone": "KeyRound",
+                "titre": "Ready to welcome",
+                "texte": "The property is clean and ready before the next guest arrives."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Rentals covered in Marseille, Aix-en-Provence and 20 km around",
+            "rayonKm": 20,
+            "zones": [
+              {
+                "region": "Marseille and surroundings",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "Marignane",
+                  "Vitrolles"
+                ]
+              },
+              {
+                "region": "Aix-en-Provence and around",
+                "principale": "Aix-en-Provence",
+                "villes": [
+                  "Aix-en-Provence",
+                  "Gardanne",
+                  "Bouc-Bel-Air",
+                  "Cabriès"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Frequently asked questions",
+            "items": [
+              {
+                "question": "Do you work with individual hosts and property managers?",
+                "reponse": "Yes, both for an owner renting a single property and for a management company handling several."
+              },
+              {
+                "question": "Do you change the sheets and linen?",
+                "reponse": "Yes, on request: sheets changed, beds made and towels renewed, according to your instructions and the linen you provide."
+              },
+              {
+                "question": "How is the price set?",
+                "reponse": "On quote, based on the size of the property, how often turnovers happen and the services you need. Contact us for a free estimate."
+              },
+              {
+                "question": "Does this service qualify for the tax credit?",
+                "reponse": "No. The 50% tax credit applies to cleaning at an individual's home; the upkeep of a property let on short-term rental is part of your rental activity and is not eligible."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Rentals to turn around in Marseille?",
+            "sousTitre": "Free quote by phone, quick reply, 7 days a week.",
             "ctaPrimaire": {
               "label": "Request a quote",
               "href": "/devis"

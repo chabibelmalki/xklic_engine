@@ -126,6 +126,31 @@
           }
         },
         {
+          "type": "etapes",
+          "variant": "ligne-horizontale",
+          "content": {
+            "eyebrow": "Vos avantages",
+            "titre": "Trois bonnes raisons de commencer maintenant",
+            "items": [
+              {
+                "icone": "BadgePercent",
+                "titre": "−15 % sur votre 1er passage",
+                "texte": "Une remise de bienvenue appliquée dès votre toute première intervention."
+              },
+              {
+                "icone": "Gift",
+                "titre": "Parrainage : −10 €",
+                "texte": "Parrainez un proche : −10 € pour vous et pour la personne parrainée, sur votre prochaine prestation."
+              },
+              {
+                "icone": "BadgeEuro",
+                "titre": "Crédit d'impôt 50 %",
+                "texte": "La moitié de vos prestations à domicile remboursée ou déduite de vos impôts."
+              }
+            ]
+          }
+        },
+        {
           "type": "services",
           "variant": "lignes-alternees",
           "content": {
@@ -146,7 +171,8 @@
                 "description": "Remise en état complète avant ou après un état des lieux, un déménagement ou une location.",
                 "href": "/grand-menage-etat-des-lieux",
                 "icone": "KeyRound",
-                "priceHint": "Sur devis gratuit"
+                "priceHint": "Sur devis gratuit",
+                "badge": "Crédit d'impôt 50 %"
               },
               {
                 "nom": "Repassage à domicile",
@@ -161,7 +187,8 @@
                 "description": "Vitres et baies vitrées lavées avec soin, pour les particuliers comme pour les professionnels.",
                 "href": "/nettoyage-vitres",
                 "icone": "Droplets",
-                "priceHint": "dès 10 €/vitre"
+                "priceHint": "dès 10 €/vitre",
+                "badge": "Crédit d'impôt 50 %"
               },
               {
                 "nom": "Nettoyage de bureaux & commerces",
@@ -175,6 +202,13 @@
                 "description": "Poussière de chantier, traces de peinture et résidus de travaux éliminés avant livraison.",
                 "href": "/nettoyage-fin-chantier",
                 "icone": "HardHat",
+                "priceHint": "Sur devis"
+              },
+              {
+                "nom": "Ménage Airbnb & locations",
+                "description": "Remise en état entre deux voyageurs pour vos locations courte durée, pour hôtes et conciergeries.",
+                "href": "/menage-airbnb-location",
+                "icone": "BedDouble",
                 "priceHint": "Sur devis"
               }
             ],
@@ -344,7 +378,8 @@
                 "description": "Remise en état complète avant emménagement, après déménagement ou avant un état des lieux.",
                 "href": "/grand-menage-etat-des-lieux",
                 "icone": "KeyRound",
-                "priceHint": "Sur devis gratuit"
+                "priceHint": "Sur devis gratuit",
+                "badge": "Crédit d'impôt 50 %"
               },
               {
                 "nom": "Repassage à domicile",
@@ -359,7 +394,8 @@
                 "description": "Vitres, baies et fenêtres lavées selon leur taille.",
                 "href": "/nettoyage-vitres",
                 "icone": "Droplets",
-                "priceHint": "10 à 15 €/vitre"
+                "priceHint": "10 à 15 €/vitre",
+                "badge": "Crédit d'impôt 50 %"
               }
             ]
           }
@@ -399,6 +435,22 @@
           "type": "cta",
           "variant": "encadre",
           "content": {
+            "titre": "Vous louez en courte durée ou gérez des Airbnb ?",
+            "sousTitre": "Remise en état entre deux voyageurs pour hôtes et conciergeries, à Marseille et alentour.",
+            "ctaPrimaire": {
+              "label": "Ménage Airbnb & locations",
+              "href": "/menage-airbnb-location"
+            },
+            "ctaSecondaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
             "titre": "Une prestation qui ne figure pas ici ?",
             "sousTitre": "Décrivez-nous votre besoin : nous établissons un devis gratuit et sans engagement.",
             "ctaPrimaire": {
@@ -427,6 +479,31 @@
             "eyebrow": "Tarifs",
             "titre": "Des prix clairs, annoncés d'avance",
             "intro": "Les tarifs ci-dessous s'appliquent aux prestations chez les particuliers. Pour les professionnels, un devis personnalisé est établi selon vos locaux."
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "ligne-horizontale",
+          "content": {
+            "eyebrow": "Vos avantages",
+            "titre": "Ce qui allège votre facture",
+            "items": [
+              {
+                "icone": "BadgePercent",
+                "titre": "−15 % sur votre 1er passage",
+                "texte": "Une remise de bienvenue dès votre toute première intervention."
+              },
+              {
+                "icone": "Gift",
+                "titre": "Parrainage : −10 €",
+                "texte": "−10 € pour vous et pour la personne parrainée, sur votre prochaine prestation."
+              },
+              {
+                "icone": "BadgeEuro",
+                "titre": "Crédit d'impôt 50 %",
+                "texte": "La moitié de vos prestations à domicile remboursée ou déduite de vos impôts."
+              }
+            ]
           }
         },
         {
@@ -750,6 +827,7 @@
               "Nettoyage de vitres",
               "Nettoyage de bureaux et commerces",
               "Nettoyage post-chantier",
+              "Ménage Airbnb / location courte durée",
               "Autre / je ne sais pas"
             ],
             "villes": [
@@ -818,6 +896,7 @@
               "Nettoyage de vitres",
               "Nettoyage de bureaux et commerces",
               "Nettoyage post-chantier",
+              "Ménage Airbnb / location courte durée",
               "Autre / je ne sais pas"
             ],
             "villes": [
@@ -1860,6 +1939,199 @@
           "content": {
             "titre": "Un chantier à nettoyer à Marseille ?",
             "sousTitre": "Devis gratuit par téléphone, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "menage-airbnb-location",
+      "label": "Ménage Airbnb & locations",
+      "navHidden": true,
+      "meta": {
+        "title": "Ménage Airbnb & locations courte durée à Marseille — MB Nettoyage",
+        "description": "Nettoyage de locations courte durée et Airbnb à Marseille et Aix-en-Provence : remise en état entre deux voyageurs, check-in/check-out, pour hôtes et conciergeries. Sur devis.",
+        "keywords": [
+          "ménage Airbnb Marseille",
+          "nettoyage location courte durée Marseille",
+          "conciergerie ménage Marseille",
+          "nettoyage entre deux locations Aix-en-Provence"
+        ]
+      },
+      "service": {
+        "name": "Ménage Airbnb & locations courte durée",
+        "description": "Remise en état de locations courte durée entre deux voyageurs à Marseille et alentour, pour hôtes et conciergeries.",
+        "serviceType": "Ménage de location courte durée",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Locations courte durée & Airbnb",
+            "titre": "Ménage de locations courte durée à Marseille",
+            "intro": "Entre deux voyageurs, MB Nettoyage remet votre logement en état à Marseille, Aix-en-Provence et alentour : ménage complet, changement du linge et vérification, dans des créneaux serrés. Pour les hôtes comme pour les conciergeries.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage Airbnb & locations"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 66 65 14 29",
+              "href": "tel:+33766651429"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Hôtes & conciergeries",
+            "titre": "Un logement prêt à accueillir, à chaque arrivée",
+            "paragraphes": [
+              "Location saisonnière, Airbnb, Booking ou meublé de tourisme : entre chaque séjour, le logement doit être impeccable et prêt dans un délai court. MB Nettoyage assure la remise en état complète entre deux voyageurs — sols, sanitaires, cuisine, poussières — avec du matériel et des produits naturels.",
+              "Que vous soyez propriétaire d'un seul bien ou conciergerie gérant plusieurs logements, nous nous adaptons à vos rotations : interventions ponctuelles ou récurrentes, coordonnées avec vos check-out et check-in."
+            ],
+            "image": {
+              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
+              "alt": "Chambre de location courte durée remise en état, prête à accueillir de nouveaux voyageurs"
+            },
+            "imagePosition": "right"
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Pourquoi confier vos locations à MB Nettoyage",
+            "items": [
+              {
+                "icone": "Clock",
+                "nom": "Créneaux serrés respectés",
+                "description": "Intervention entre un départ et une arrivée, dans le délai imposé par vos réservations."
+              },
+              {
+                "icone": "BedDouble",
+                "nom": "Lits & linge",
+                "description": "Changement des draps et du linge, lits refaits, salle de bain réapprovisionnée sur demande."
+              },
+              {
+                "icone": "Sparkles",
+                "nom": "Remise en état complète",
+                "description": "Sols, sanitaires, cuisine et surfaces : un logement net, prêt à accueillir."
+              },
+              {
+                "icone": "CalendarCheck",
+                "nom": "Rotations récurrentes",
+                "description": "Interventions coordonnées avec vos check-in / check-out, ponctuelles ou régulières."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "titre": "Comment se passe une rotation",
+            "items": [
+              {
+                "icone": "LogOut",
+                "titre": "Après le départ",
+                "texte": "Vous nous signalez le check-out : nous planifions l'intervention dans votre créneau."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "La remise en état",
+                "texte": "Ménage complet, changement du linge et réapprovisionnement selon vos consignes."
+              },
+              {
+                "icone": "KeyRound",
+                "titre": "Prêt à accueillir",
+                "texte": "Le logement est net et prêt avant l'arrivée du voyageur suivant."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Locations gérées à Marseille, Aix-en-Provence et 20 km alentour",
+            "rayonKm": 20,
+            "zones": [
+              {
+                "region": "Marseille et environs",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "Marignane",
+                  "Vitrolles"
+                ]
+              },
+              {
+                "region": "Aix-en-Provence et alentours",
+                "principale": "Aix-en-Provence",
+                "villes": [
+                  "Aix-en-Provence",
+                  "Gardanne",
+                  "Bouc-Bel-Air",
+                  "Cabriès"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Intervenez-vous pour les hôtes particuliers et les conciergeries ?",
+                "reponse": "Oui, aussi bien pour un propriétaire qui loue un seul logement que pour une conciergerie gérant plusieurs biens."
+              },
+              {
+                "question": "Changez-vous les draps et le linge ?",
+                "reponse": "Oui, sur demande : changement des draps, lits refaits et linge de toilette renouvelé, selon vos consignes et le linge que vous fournissez."
+              },
+              {
+                "question": "Comment est établi le tarif ?",
+                "reponse": "Sur devis, selon la surface du logement, la fréquence des rotations et les prestations souhaitées. Contactez-nous pour une estimation gratuite."
+              },
+              {
+                "question": "Ce service ouvre-t-il droit au crédit d'impôt ?",
+                "reponse": "Non. Le crédit d'impôt de 50 % concerne le ménage au domicile d'un particulier ; l'entretien d'un logement mis en location courte durée relève de votre activité locative et n'y est pas éligible."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Des locations à faire tourner à Marseille ?",
+            "sousTitre": "Devis gratuit par téléphone, réponse rapide, 7j/7.",
             "ctaPrimaire": {
               "label": "Demander un devis",
               "href": "/devis"
