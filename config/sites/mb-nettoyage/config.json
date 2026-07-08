@@ -11,14 +11,14 @@
     ]
   },
   "branding": {
-    "logo": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/mb-nettoyage/logo.jpeg",
-    "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/mb-nettoyage/logo.jpeg",
+    "logo": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/mb-nettoyage/logo-vr00yeGcLKU7VbPf2iVtvXtn3I5Xxn.png",
+    "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/mb-nettoyage/icon.png",
     "logoAlt": "MB Nettoyage — nettoyage à domicile et professionnel à Marseille",
     "logoTwoTone": {
       "first": "#204485",
       "rest": "#e8b44a"
     },
-    "tagline": "Nettoyage à domicile & professionnel · Marseille",
+    "tagline": "Marseille et ses alentours",
     "colors": {
       "brand": "#204485",
       "accent": "#e8b44a",
@@ -37,6 +37,10 @@
     {
       "platform": "tiktok",
       "url": "https://www.tiktok.com/@mb.nettoyage13"
+    },
+    {
+      "platform": "googlemaps",
+      "url": "https://maps.app.goo.gl/Hz7ADyGiq8WAnj8U6?g_st=ic"
     }
   ],
   "googleReviewUrl": "https://maps.app.goo.gl/Hz7ADyGiq8WAnj8U6?g_st=ic",
@@ -308,6 +312,33 @@
               {
                 "question": "Vos prestations à domicile ouvrent-elles droit au crédit d'impôt ?",
                 "reponse": "Oui, pour le ménage, le repassage et les vitres réalisés au domicile d'un particulier : 50 % du montant vous est remboursé ou déduit de vos impôts."
+              }
+            ]
+          }
+        },
+        {
+          "type": "avis",
+          "variant": "vedette",
+          "content": {
+            "eyebrow": "Avis Google",
+            "titre": "Ce que disent nos clients",
+            "noteGlobale": 5,
+            "items": [
+              {
+                "auteur": "Fe4rLeSsJR",
+                "ville": "Cassis",
+                "note": 5,
+                "texte": "J'ai confié mon appartement à Meriem et son équipe pendant mon absence et je suis ravie du résultat. À mon retour, tout était impeccable, propre et parfaitement rangé. J'ai particulièrement apprécié leur discrétion et leur professionnalisme. C'est rassurant de savoir que son logement est entre de bonnes mains. Je recommande vivement à toute personne qui cherche une entreprise de housekeeping fiable, sérieuse et efficace. Merci beaucoup ! 😊"
+              },
+              {
+                "auteur": "Louise",
+                "note": 5,
+                "texte": "Excellente prestation de ménage. Meriem est arrangeante, ponctuelle, agréable et elle a fait le grand ménage minutieux dont la maison avait besoin. Merci beaucoup !"
+              },
+              {
+                "auteur": "Sarah H.",
+                "note": 5,
+                "texte": "Meriem et son personnel sont très professionnels, sympas et fiables. Meriem a toujours trouvé des solutions à nos problématiques de gestion ménage. Je recommande +++"
               }
             ]
           }
@@ -813,13 +844,14 @@
             "telephoneHeader": "icone-popup",
             "whatsapp": "+33 7 66 65 14 29",
             "email": "mb.nettoyage130@gmail.com",
+            "adresse": "171 boulevard de Saint-Loup, 13011 Marseille",
             "horaires": [
               {
                 "jour": "Lun – Dim",
                 "heures": "24h/24"
               }
             ],
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=5.05%2C43.15%2C5.75%2C43.65&layer=mapnik&marker=43.2847572757835%2C5.4373811847503",
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=5.4274%2C43.2808%2C5.4474%2C43.2888&layer=mapnik&marker=43.2847572757835%2C5.4373811847503",
             "services": [
               "Ménage à domicile",
               "Grand ménage / état des lieux",
@@ -883,6 +915,7 @@
             "telephone": "+33 7 66 65 14 29",
             "whatsapp": "+33 7 66 65 14 29",
             "email": "mb.nettoyage130@gmail.com",
+            "adresse": "171 boulevard de Saint-Loup, 13011 Marseille",
             "horaires": [
               {
                 "jour": "Lun – Dim",

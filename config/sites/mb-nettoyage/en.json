@@ -7,14 +7,14 @@
     "languages": ["fr", "en"]
   },
   "branding": {
-    "logo": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/mb-nettoyage/logo.jpeg",
-    "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/mb-nettoyage/logo.jpeg",
+    "logo": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/mb-nettoyage/logo-vr00yeGcLKU7VbPf2iVtvXtn3I5Xxn.png",
+    "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/mb-nettoyage/icon.png",
     "logoAlt": "MB Nettoyage — home and professional cleaning in Marseille",
     "logoTwoTone": {
       "first": "#204485",
       "rest": "#e8b44a"
     },
-    "tagline": "Home & professional cleaning · Marseille",
+    "tagline": "Marseille and surrounding areas",
     "colors": {
       "brand": "#204485",
       "accent": "#e8b44a",
@@ -33,6 +33,10 @@
     {
       "platform": "tiktok",
       "url": "https://www.tiktok.com/@mb.nettoyage13"
+    },
+    {
+      "platform": "googlemaps",
+      "url": "https://maps.app.goo.gl/Hz7ADyGiq8WAnj8U6?g_st=ic"
     }
   ],
   "googleReviewUrl": "https://maps.app.goo.gl/Hz7ADyGiq8WAnj8U6?g_st=ic",
@@ -304,6 +308,33 @@
               {
                 "question": "Do your home services qualify for the tax credit?",
                 "reponse": "Yes, for cleaning, ironing and windows carried out at an individual's home: 50% of the amount is refunded or deducted from your taxes."
+              }
+            ]
+          }
+        },
+        {
+          "type": "avis",
+          "variant": "vedette",
+          "content": {
+            "eyebrow": "Google reviews",
+            "titre": "What our clients say",
+            "noteGlobale": 5,
+            "items": [
+              {
+                "auteur": "Fe4rLeSsJR",
+                "ville": "Cassis",
+                "note": 5,
+                "texte": "I entrusted my flat to Meriem and her team while I was away and I'm delighted with the result. When I came back, everything was spotless, clean and perfectly tidy. I especially appreciated their discretion and professionalism. It's reassuring to know your home is in good hands. I highly recommend them to anyone looking for a reliable, serious and efficient housekeeping company. Thank you so much! 😊"
+              },
+              {
+                "auteur": "Louise",
+                "note": 5,
+                "texte": "Excellent cleaning service. Meriem is accommodating, punctual and pleasant, and she did the thorough deep clean the house needed. Thank you so much!"
+              },
+              {
+                "auteur": "Sarah H.",
+                "note": 5,
+                "texte": "Meriem and her staff are very professional, friendly and reliable. Meriem has always found solutions to our cleaning-management needs. Highly recommend +++"
               }
             ]
           }
@@ -809,13 +840,14 @@
             "telephoneHeader": "icone-popup",
             "whatsapp": "+33 7 66 65 14 29",
             "email": "mb.nettoyage130@gmail.com",
+            "adresse": "171 boulevard de Saint-Loup, 13011 Marseille",
             "horaires": [
               {
                 "jour": "Mon – Sun",
                 "heures": "24/7"
               }
             ],
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=5.05%2C43.15%2C5.75%2C43.65&layer=mapnik&marker=43.2847572757835%2C5.4373811847503",
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=5.4274%2C43.2808%2C5.4474%2C43.2888&layer=mapnik&marker=43.2847572757835%2C5.4373811847503",
             "services": [
               "Home cleaning",
               "Deep cleaning / move-out cleaning",
@@ -879,6 +911,7 @@
             "telephone": "+33 7 66 65 14 29",
             "whatsapp": "+33 7 66 65 14 29",
             "email": "mb.nettoyage130@gmail.com",
+            "adresse": "171 boulevard de Saint-Loup, 13011 Marseille",
             "horaires": [
               {
                 "jour": "Mon – Sun",

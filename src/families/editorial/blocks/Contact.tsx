@@ -31,7 +31,12 @@ export function Contact({
     c.telephone && { icon: Phone, label: c.telephone, href: telHref(c.telephone) },
     c.whatsapp && { icon: MessageCircle, label: strings.contact.whatsapp, href: waHref(c.whatsapp) },
     c.email && { icon: Mail, label: c.email, href: `mailto:${c.email}` },
-    c.adresse && { icon: MapPin, label: c.adresse, href: undefined },
+    c.adresse && {
+      icon: MapPin,
+      label: c.adresse,
+      // Cliquer l'adresse ouvre Google Maps sur cette adresse (nouvel onglet).
+      href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(c.adresse)}`,
+    },
   ].filter(Boolean) as { icon: typeof Phone; label: string; href?: string }[];
 
   const coords = (

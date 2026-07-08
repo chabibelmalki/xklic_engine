@@ -21,6 +21,7 @@ const LABELS: Record<string, string> = {
   youtube: "YouTube",
   x: "X",
   google: "Google",
+  googlemaps: "Google Maps",
 };
 
 export function socialLabel(platform: string): string {

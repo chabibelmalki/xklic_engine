@@ -83,8 +83,14 @@ export function LittoralHeader({
 
   return (
     <header className="sticky top-0 z-50 border-b border-brand-100 bg-bg/95 backdrop-blur-sm supports-[backdrop-filter]:bg-bg/80">
-      <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between gap-8 px-6 sm:h-24 sm:px-10">
-        <Logo config={config} href={basePath || "/"} className="min-w-0" />
+      <div className="relative mx-auto flex h-20 w-full max-w-7xl items-center justify-between gap-8 px-6 sm:h-24 sm:px-10">
+        {/* Mobile : logo centré (absolu) ; desktop : à gauche dans le flux. */}
+        <Logo
+          config={config}
+          href={basePath || "/"}
+          layout="stacked"
+          className="min-w-0 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:static lg:translate-x-0 lg:translate-y-0"
+        />
 
         <nav className="hidden shrink-0 items-center gap-x-6 lg:flex xl:gap-x-8">
           {nav.map((item) => (
@@ -130,7 +136,7 @@ export function LittoralHeader({
         </div>
 
         {/* Menu mobile : <details> natif — zéro JS, accessible clavier. */}
-        <details className="group lg:hidden [&_.open-i]:block [&_.close-i]:hidden [&[open]_.open-i]:hidden [&[open]_.close-i]:block">
+        <details className="group ml-auto lg:hidden [&_.open-i]:block [&_.close-i]:hidden [&[open]_.open-i]:hidden [&[open]_.close-i]:block">
           <summary
             aria-label={strings.header.openMenu}
             className="grid size-10 shrink-0 cursor-pointer list-none place-items-center text-brand-800 [&::-webkit-details-marker]:hidden"
