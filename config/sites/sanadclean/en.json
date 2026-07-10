@@ -173,6 +173,14 @@
                 "href": "/nettoyage-canape"
               },
               {
+                "nom": "Rug & carpet cleaning",
+                "emoji": "🧶",
+                "badge": "On quote",
+                "priceHint": "on quote",
+                "description": "Rugs, carpets and runners deep-cleaned, at home or in our workshop.",
+                "href": "/nettoyage-tapis"
+              },
+              {
                 "nom": "Terrace & outdoors",
                 "emoji": "🌿",
                 "badge": "50% tax credit",
@@ -499,6 +507,14 @@
                 "priceHint": "from €60",
                 "description": "Deep cleaning and stain removal for your sofas, armchairs and textiles.",
                 "href": "/nettoyage-canape"
+              },
+              {
+                "nom": "Rug & carpet cleaning",
+                "emoji": "🧶",
+                "badge": "On quote",
+                "priceHint": "on quote",
+                "description": "Rugs, carpets and runners deep-cleaned, at home or in our workshop.",
+                "href": "/nettoyage-tapis"
               },
               {
                 "nom": "Terrace & outdoors",
@@ -1529,6 +1545,243 @@
           "type": "cta",
           "content": {
             "titre": "Need a quote for sofa cleaning in Nîmes?",
+            "sousTitre": "Free, no-obligation quote. Quick reply by phone, WhatsApp or email.",
+            "ctaPrimaire": {
+              "label": "Free quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-tapis",
+      "label": "Rug & carpet cleaning",
+      "navHidden": true,
+      "meta": {
+        "title": "Rug & carpet cleaning in Nîmes — on quote",
+        "description": "Rug, carpet and runner cleaning in Nîmes and the Gard: deep fibre wash for wool or synthetic rugs. At home (50% tax credit) or in our workshop. Free quote.",
+        "keywords": [
+          "rug cleaning Nîmes",
+          "carpet cleaning Gard",
+          "rug wash Nîmes",
+          "wool rug cleaning Nîmes",
+          "runner cleaning Gard"
+        ]
+      },
+      "service": {
+        "name": "Rug & carpet cleaning",
+        "description": "Deep cleaning of rugs, carpets and runners in Nîmes, at home or in our workshop.",
+        "serviceType": "Rug cleaning",
+        "priceFrom": "On quote"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "On quote",
+            "titre": "Rug & carpet cleaning in Nîmes",
+            "intro": "SANAD CLEAN brings life back to your rugs, carpets and runners in Nîmes and across the Gard. As every rug is different — size, fabric, condition — the service is priced on quote. Cleaned in your home, it qualifies for the 50% tax credit.",
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Rug cleaning"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Free quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Why trust SANAD CLEAN with your rugs",
+            "items": [
+              {
+                "icone": "droplets",
+                "nom": "Deep fibre wash",
+                "description": "Hot-water extraction or shampooing to lift dust, stains and dust mites from deep in the pile."
+              },
+              {
+                "icone": "leaf",
+                "nom": "Right for every fabric",
+                "description": "Gentle treatment for wool, synthetic fibres or oriental rugs, without damaging them."
+              },
+              {
+                "icone": "badge-euro",
+                "nom": "Tax credit at home",
+                "description": "Cleaned in your home, a rug qualifies for the 50% tax credit; in our workshop it stays on quote."
+              },
+              {
+                "icone": "check-circle",
+                "nom": "A clear quote first",
+                "description": "A firm price agreed before we start, based on the rug's size, fabric and condition."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "How your rug cleaning works",
+            "items": [
+              {
+                "icone": "clipboard-list",
+                "titre": "Your request",
+                "texte": "Tell us about your rugs — number, size, fabric. We send a free quote within 24 h."
+              },
+              {
+                "icone": "droplets",
+                "titre": "The cleaning",
+                "texte": "At home or in our workshop, we wash the fibres deep and treat marked areas."
+              },
+              {
+                "icone": "thumbs-up",
+                "titre": "Drying & check",
+                "texte": "We speed up drying and check the result before returning a fresh rug."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Frequently asked questions",
+            "items": [
+              {
+                "question": "How much does rug cleaning cost?",
+                "reponse": "It depends on the rug's size, fabric and condition. We provide a free, no-obligation quote, usually within 24 hours."
+              },
+              {
+                "question": "Does rug cleaning qualify for the tax credit?",
+                "reponse": "Yes, when done in your home: like any at-home service it qualifies for the 50% tax credit via Accès SAP. Cleaned in our workshop, it does not."
+              },
+              {
+                "question": "Do you clean wool or delicate rugs?",
+                "reponse": "Yes. We match the method to the fabric — wool, silk, synthetic fibres or oriental rugs — with a gentle treatment that protects colours and pile."
+              },
+              {
+                "question": "Do you also clean fitted carpets?",
+                "reponse": "Yes, fitted carpets and runners are cleaned with the same hot-water extraction, right where they are."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Serving Nîmes, Montpellier & Marseille",
+            "intro": "We clean rugs around Nîmes, Montpellier and Marseille.",
+            "zones": [
+              {
+                "region": "Gard — around Nîmes",
+                "principale": "Nîmes",
+                "villes": [
+                  "Nîmes",
+                  "Caissargues",
+                  "Bouillargues",
+                  "Rodilhan",
+                  "Marguerittes",
+                  "Garons",
+                  "Saint-Gervasy",
+                  "Poulx",
+                  "Caveirac",
+                  "Clarensac",
+                  "Milhaud",
+                  "Bernis",
+                  "Manduel",
+                  "Saint-Gilles",
+                  "Uchaud",
+                  "Vergèze",
+                  "Générac",
+                  "Vauvert"
+                ]
+              },
+              {
+                "region": "Hérault — around Montpellier",
+                "principale": "Montpellier",
+                "villes": [
+                  "Montpellier",
+                  "Lattes",
+                  "Castelnau-le-Lez",
+                  "Pérols",
+                  "Le Crès",
+                  "Jacou",
+                  "Clapiers",
+                  "Montferrier-sur-Lez",
+                  "Saint-Jean-de-Védas",
+                  "Lavérune",
+                  "Juvignac",
+                  "Grabels",
+                  "Castries",
+                  "Mauguio",
+                  "Vendargues",
+                  "Palavas-les-Flots"
+                ]
+              },
+              {
+                "region": "Bouches-du-Rhône — around Marseille",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Aubagne",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "La Penne-sur-Huveaune",
+                  "Septèmes-les-Vallons",
+                  "Marignane",
+                  "Vitrolles",
+                  "Aix-en-Provence",
+                  "Gémenos",
+                  "Cassis",
+                  "Carnoux-en-Provence"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Our other services",
+            "items": [
+              {
+                "nom": "Sofa & armchair",
+                "description": "Cleaning and stain removal for sofas, armchairs and mattresses.",
+                "href": "/nettoyage-canape"
+              },
+              {
+                "nom": "Home cleaning & housekeeping",
+                "description": "Regular upkeep or a deep clean, from €15/h after tax credit.",
+                "href": "/menage-domicile"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "A rug to revive in Nîmes?",
             "sousTitre": "Free, no-obligation quote. Quick reply by phone, WhatsApp or email.",
             "ctaPrimaire": {
               "label": "Free quote",
@@ -3305,6 +3558,7 @@
               "Ironing",
               "Premises / office cleaning",
               "Deep cleaning (after renovation work)",
+              "Rug & carpet cleaning",
               "Pest control",
               "Other / I'm not sure"
             ],
@@ -3614,6 +3868,7 @@
               "Ironing",
               "Premises / office cleaning",
               "Deep cleaning (after renovation work)",
+              "Rug & carpet cleaning",
               "Pest control",
               "Other / I'm not sure"
             ],

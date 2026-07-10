@@ -175,6 +175,14 @@
                 "href": "/nettoyage-canape"
               },
               {
+                "nom": "Nettoyage de tapis",
+                "emoji": "🧶",
+                "badge": "Sur devis",
+                "priceHint": "sur devis",
+                "description": "Tapis, moquettes et descentes de lit lavés en profondeur, à domicile ou en atelier.",
+                "href": "/nettoyage-tapis"
+              },
+              {
                 "nom": "Terrasse & extérieur",
                 "emoji": "🌿",
                 "badge": "Crédit d'impôt 50 %",
@@ -509,6 +517,14 @@
                 "priceHint": "dès 60 €",
                 "description": "Nettoyage et désincrustation de vos canapés, fauteuils et textiles.",
                 "href": "/nettoyage-canape"
+              },
+              {
+                "nom": "Nettoyage de tapis",
+                "emoji": "🧶",
+                "badge": "Sur devis",
+                "priceHint": "sur devis",
+                "description": "Tapis, moquettes et descentes de lit lavés en profondeur, à domicile ou en atelier.",
+                "href": "/nettoyage-tapis"
               },
               {
                 "nom": "Terrasse & extérieur",
@@ -1163,6 +1179,7 @@
               "Repassage",
               "Nettoyage de locaux / bureaux",
               "Remise en état (après travaux)",
+              "Nettoyage de tapis",
               "Traitement des nuisibles",
               "Autre / je ne sais pas"
             ],
@@ -1473,6 +1490,7 @@
               "Repassage",
               "Nettoyage de locaux / bureaux",
               "Remise en état (après travaux)",
+              "Nettoyage de tapis",
               "Traitement des nuisibles",
               "Autre / je ne sais pas"
             ],
@@ -2453,6 +2471,243 @@
           "content": {
             "titre": "Besoin d'un devis pour le nettoyage de canapé à Nîmes ?",
             "sousTitre": "Devis gratuit et sans engagement, crédit d'impôt déduit. Réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-tapis",
+      "label": "Nettoyage de tapis",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de tapis à Nîmes — sur devis",
+        "description": "Nettoyage de tapis, moquettes et descentes de lit à Nîmes et dans le Gard : lavage en profondeur des fibres, tapis en laine ou synthétiques. À domicile (crédit d'impôt 50 %) ou en atelier. Devis gratuit.",
+        "keywords": [
+          "nettoyage tapis Nîmes",
+          "nettoyage tapis Gard",
+          "lavage tapis Nîmes",
+          "nettoyage moquette Nîmes",
+          "nettoyage tapis laine"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage de tapis",
+        "description": "Lavage en profondeur de tapis, moquettes et descentes de lit à Nîmes, à domicile ou en atelier.",
+        "serviceType": "Nettoyage de tapis",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Sur devis",
+            "titre": "Nettoyage de tapis à Nîmes",
+            "intro": "SANAD CLEAN redonne éclat et fraîcheur à vos tapis, moquettes et descentes de lit à Nîmes et dans le Gard. Chaque tapis étant unique — taille, matière, état — la prestation est établie sur devis. Réalisé à votre domicile, le nettoyage ouvre droit au crédit d'impôt de 50 %.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage de tapis"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 67 02 97 62",
+              "href": "tel:+33767029762"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Pourquoi confier vos tapis à SANAD CLEAN",
+            "items": [
+              {
+                "icone": "droplets",
+                "nom": "Lavage en profondeur",
+                "description": "Injection-extraction ou shampooing pour déloger poussières, taches et acariens au cœur des fibres."
+              },
+              {
+                "icone": "leaf",
+                "nom": "Adapté à chaque matière",
+                "description": "Traitement doux pour la laine, les fibres synthétiques ou les tapis d'orient, sans les abîmer."
+              },
+              {
+                "icone": "badge-euro",
+                "nom": "Crédit d'impôt à domicile",
+                "description": "Nettoyé chez vous, le tapis ouvre droit au crédit d'impôt de 50 % ; en atelier, la prestation reste sur devis."
+              },
+              {
+                "icone": "check-circle",
+                "nom": "Sur devis, sans surprise",
+                "description": "Un prix clair fixé avant l'intervention, selon la surface, la matière et l'état du tapis."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "titre": "Comment se déroule le nettoyage de votre tapis",
+            "items": [
+              {
+                "icone": "clipboard-list",
+                "titre": "Votre demande",
+                "texte": "Vous nous décrivez vos tapis (nombre, taille, matière). Nous établissons un devis gratuit sous 24 h."
+              },
+              {
+                "icone": "droplets",
+                "titre": "Le nettoyage",
+                "texte": "À domicile ou en atelier, nous lavons les fibres en profondeur et détachons les zones marquées."
+              },
+              {
+                "icone": "thumbs-up",
+                "titre": "Séchage & contrôle",
+                "texte": "Nous optimisons le séchage et vérifions le rendu avant de vous restituer un tapis frais."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Combien coûte le nettoyage d'un tapis ?",
+                "reponse": "Le prix dépend de la surface, de la matière et de l'état du tapis. Nous établissons un devis gratuit et sans engagement, généralement sous 24 h."
+              },
+              {
+                "question": "Le nettoyage de tapis ouvre-t-il droit au crédit d'impôt ?",
+                "reponse": "Oui lorsqu'il est réalisé à votre domicile : comme tout service à la personne, il ouvre droit au crédit d'impôt de 50 % via la coopérative Accès SAP. Nettoyé en atelier, il n'y ouvre pas droit."
+              },
+              {
+                "question": "Nettoyez-vous les tapis fragiles ou en laine ?",
+                "reponse": "Oui. Nous adaptons la méthode à la matière — laine, soie, fibres synthétiques ou tapis d'orient — avec un traitement doux qui préserve les couleurs et les fibres."
+              },
+              {
+                "question": "Traitez-vous aussi les moquettes ?",
+                "reponse": "Oui, moquettes et descentes de lit sont nettoyées selon le même principe d'injection-extraction, directement sur place."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Intervention à Nîmes, Montpellier et Marseille",
+            "intro": "Nous intervenons autour de Nîmes, Montpellier et Marseille.",
+            "zones": [
+              {
+                "region": "Gard — autour de Nîmes",
+                "principale": "Nîmes",
+                "villes": [
+                  "Nîmes",
+                  "Caissargues",
+                  "Bouillargues",
+                  "Rodilhan",
+                  "Marguerittes",
+                  "Garons",
+                  "Saint-Gervasy",
+                  "Poulx",
+                  "Caveirac",
+                  "Clarensac",
+                  "Milhaud",
+                  "Bernis",
+                  "Manduel",
+                  "Saint-Gilles",
+                  "Uchaud",
+                  "Vergèze",
+                  "Générac",
+                  "Vauvert"
+                ]
+              },
+              {
+                "region": "Hérault — autour de Montpellier",
+                "principale": "Montpellier",
+                "villes": [
+                  "Montpellier",
+                  "Lattes",
+                  "Castelnau-le-Lez",
+                  "Pérols",
+                  "Le Crès",
+                  "Jacou",
+                  "Clapiers",
+                  "Montferrier-sur-Lez",
+                  "Saint-Jean-de-Védas",
+                  "Lavérune",
+                  "Juvignac",
+                  "Grabels",
+                  "Castries",
+                  "Mauguio",
+                  "Vendargues",
+                  "Palavas-les-Flots"
+                ]
+              },
+              {
+                "region": "Bouches-du-Rhône — autour de Marseille",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Aubagne",
+                  "Allauch",
+                  "Plan-de-Cuques",
+                  "La Penne-sur-Huveaune",
+                  "Septèmes-les-Vallons",
+                  "Marignane",
+                  "Vitrolles",
+                  "Aix-en-Provence",
+                  "Gémenos",
+                  "Cassis",
+                  "Carnoux-en-Provence"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "Nos autres prestations",
+            "items": [
+              {
+                "nom": "Canapé & fauteuil",
+                "description": "Nettoyage et désincrustation de vos canapés, fauteuils et matelas.",
+                "href": "/nettoyage-canape"
+              },
+              {
+                "nom": "Ménage à domicile",
+                "description": "Entretien régulier ou grand ménage, dès 15 €/h après crédit d'impôt.",
+                "href": "/menage-domicile"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un tapis à raviver à Nîmes ?",
+            "sousTitre": "Devis gratuit et sans engagement. Réponse rapide par téléphone, WhatsApp ou e-mail.",
             "ctaPrimaire": {
               "label": "Devis gratuit",
               "href": "/devis"
