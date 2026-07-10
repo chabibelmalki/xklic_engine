@@ -1,13 +1,14 @@
 import Image from "next/image";
 import { ShieldCheck, Star, Sparkles } from "lucide-react";
-import type { HeroContent } from "@/types/config";
+import type { HeroContent, ContactContent } from "@/types/config";
 import type { BlockComponentProps } from "./types";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { Reveal } from "@/components/ui/Reveal";
 import { Icon } from "@/components/ui/Icon";
-import { withBase } from "@/lib/utils";
+import { withBase, telHrefIntl, telIndicatif, telNeedsIndicatif } from "@/lib/utils";
+import { findBlock } from "@/lib/pages";
 import { resolveHeroSecondary } from "@/lib/hero-cta";
 import { resolveSocials } from "@/lib/social";
 import { SocialLinks } from "@/components/layout/SocialLinks";
@@ -84,6 +85,24 @@ export function Hero({ block, config, basePath = "", strings }: BlockComponentPr
   // PAS dans le hero (mauvaise audience : on sollicite des avis à des prospects)
   // → il vit dans le footer + la page /avis + le QR. Voir resolveHeroSecondary.
   const secondary = resolveHeroSecondary(config, c.ctaSecondaire);
+
+  // Numéro cliquable dans le hero (opt-in `content.showPhone`) : quand APPELER
+  // est l'action n°1 (taxi…). Numéro depuis le bloc `contact`, format d'affichage
+  // conservé (mémorisable) ; l'indicatif « (+33) » ne s'ajoute que si besoin.
+  const heroTel = c.showPhone
+    ? findBlock<ContactContent>(config, "contact")?.content?.telephone
+    : undefined;
+  const heroPhoneOnDark = heroTel ? (
+    <a
+      href={telHrefIntl(heroTel)}
+      className="inline-flex items-baseline gap-2.5 text-3xl font-extrabold tabular-nums tracking-tight text-white transition-colors hover:text-accent-500 focus-visible:outline-none sm:text-4xl"
+    >
+      {telNeedsIndicatif(heroTel) && (
+        <span className="text-lg font-semibold text-white/55">{telIndicatif()}</span>
+      )}
+      {heroTel}
+    </a>
+  ) : null;
 
   const ctas = (c.ctaPrimaire || secondary) && (
     <div className="flex flex-col gap-3 sm:flex-row">
@@ -326,9 +345,14 @@ export function Hero({ block, config, basePath = "", strings }: BlockComponentPr
                 <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85">{c.accroche}</p>
               </Reveal>
             )}
+            {heroPhoneOnDark && (
+              <Reveal delay={0.13}>
+                <div className="mt-8">{heroPhoneOnDark}</div>
+              </Reveal>
+            )}
             {ctas && (
               <Reveal delay={0.15}>
-                <div className="mt-8">{ctas}</div>
+                <div className="mt-6">{ctas}</div>
               </Reveal>
             )}
             {c.trust?.length ? (

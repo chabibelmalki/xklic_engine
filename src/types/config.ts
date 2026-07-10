@@ -268,6 +268,12 @@ export interface HeroContent {
   ctaSecondaire?: CTA;
   /** Affiche les icônes réseaux (config.social) dans le hero. Défaut : false. */
   showSocial?: boolean;
+  /**
+   * Affiche le NUMÉRO de téléphone (cliquable, tel:) dans le hero, juste avant
+   * les CTA. Le numéro vient du bloc `contact`. Utile quand appeler EST l'action
+   * n°1 (taxi, dépannage…). Variante "plein" pour l'instant. Défaut : false.
+   */
+  showPhone?: boolean;
 }
 
 // --- services ---
