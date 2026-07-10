@@ -47,7 +47,7 @@ npx tsc --noEmit # typecheck (utilisé après édition d'une config/d'un bloc)
 2. **Créer la config** `config/sites/<slug>/config.json` (voir `NEWCLIENT.md` pour
    la méthode détaillée et les conventions de blocs/SEO).
 3. **Logo + favicon** : `node scripts/upload-logo.mjs <slug> [fichier] --clean-source`
-   (upload Vercel Blob + patch `branding.logo`/`branding.icon` + nettoyage local).
+   (upload Scaleway + patch `branding.logo`/`branding.icon` + nettoyage local).
 4. **Manifeste** : `npm run predev` (ou `generate-sites-manifest.mjs`).
 5. **Domaine perso** (si client en `.fr`) : `npm run onboard` (voir ci-dessous).
 6. **Déployer** : `npm run deploy`.
@@ -70,11 +70,21 @@ npm run sitemaps:sync[:dry]  # soumission des sitemaps à Google Search Console
 # Onboarding domaine personnalisé (CLI, voir section suivante)
 npm run onboard -- --slug <slug> --domain <domaine>.fr [--dry-run | --apply]
 
-# Médias / manifeste
-node scripts/upload-logo.mjs <slug> [fichier] --clean-source
-node scripts/upload-blob.mjs <fichier> --pathname <slug>/x.png
-node scripts/generate-sites-manifest.mjs   # auto via predev/prebuild
+# Médias — stockage objet Scaleway (bucket xklic-media, préfixe sites/)
+node scripts/upload-logo.mjs <slug> [fichier] --clean-source   # logo/favicon -> config
+node scripts/upload-blob.mjs <fichier> [<slug>/x.png]          # upload brut -> imprime l'URL
+npm run media:migrate[:apply]                                  # migration Blob -> Scaleway (one-shot)
+node scripts/generate-sites-manifest.mjs                       # auto via predev/prebuild
 ```
+
+> **Médias sur Scaleway** (migration 2026-07-10) : les assets des sites sont sur le
+> **même bucket S3 que le back-office** (`xklic-media`), sous le préfixe `sites/`.
+> La config ne stocke que l'URL publique = `MEDIA_BASE_URL + "/" + clé`. Upload
+> **brut** (pas de transcodage — préserve PNG transparence / SVG / WebP). Clés de
+> logo versionnées par hash de contenu (cache immuable). Helper Node :
+> `scripts/lib/scaleway.mjs` (miroir de `internal/media/media.go` du back-office).
+> Vercel Blob est **retiré** ; les anciens objets Blob subsistent comme filet
+> (à purger plus tard).
 
 ### `onboard` — automatisation domaine perso
 
@@ -130,7 +140,10 @@ du dossier parent).
 - **Back-office** : `BACKOFFICE_API_URL` (base de l'API Go, sans slash final),
   `BACKOFFICE_API_KEY` (= `ENGINE_API_KEY` côté back-office, header `X-API-Key`) —
   sert aussi à `src/lib/turnstile.ts` (sitekey + vérif Turnstile).
-- **Médias / mail** : `BLOB_READ_WRITE_TOKEN`, `RESEND_API_KEY`, `RESEND_FROM`,
+- **Médias (Scaleway S3)** : `S3_ENDPOINT`, `S3_REGION`, `S3_BUCKET`,
+  `S3_ACCESS_KEY`, `S3_SECRET_KEY`, `MEDIA_BASE_URL` — mêmes valeurs que le
+  back-office. `BLOB_*` (Vercel) déprécié, plus lu par aucun script.
+- **Mail** : `RESEND_API_KEY`, `RESEND_FROM`,
   `LEAD_TO`, `LEAD_WEBHOOK_URL`.
 - **Divers** : `NEXT_PUBLIC_ROOT_DOMAIN` (défaut `xklic.com`),
   `ONBOARD_SSL_TIMEOUT_MS` (opt), `SITE` (cible un site précis en dev).

@@ -1,35 +1,34 @@
 #!/usr/bin/env node
 // @ts-check
 /**
- * Héberge le logo d'un client sur Vercel Blob, branche l'URL dans sa config,
- * et nettoie l'image locale.
+ * Héberge le logo d'un client sur le stockage objet Scaleway, branche l'URL dans
+ * sa config, et nettoie l'image locale.
  *
  *   node scripts/upload-logo.mjs <slug> [fichier]
  *
  * Ce que ça fait, dans l'ordre :
  *   1. Trouve l'image source. Si [fichier] est omis, on la cherche dans `.temp/`
  *      (un seul candidat -> pris ; ou un fichier dont le nom contient le slug).
- *   2. `vercel blob put` -> URL publique stable sur le store `blob-agency`.
+ *   2. Upload -> clé versionnée `sites/<slug>/logo-<hash>.<ext>` (le hash de
+ *      contenu casse le cache immuable quand le logo change).
  *   3. Patch `config/sites/<slug>/config.json` :
- *        branding.logo  (= le HEADER)   = URL Blob
- *        branding.icon  (= le FAVICON)  = URL Blob   (même image, c'est voulu)
+ *        branding.logo  (= le HEADER)   = URL publique
+ *        branding.icon  (= le FAVICON)  = URL publique   (même image, c'est voulu)
  *
  * Le logo (header) et le favicon sont la MÊME image : un seul upload, deux refs.
  *
  * Par défaut l'image source est CONSERVÉE en local. `--clean-source` la supprime
  * (et `public/sites/<slug>` si l'image venait de l'ancien schéma local).
  *
- * Token : BLOB_READ_WRITE_TOKEN, lu depuis `.env.local` (jamais commité).
- *         Passé en `--rw-token` ; on retire BLOB_STORE_ID de l'env de l'enfant
- *         pour ne pas déclencher le mode OIDC du CLI (« must both be set »).
+ * Credentials : S3_* + MEDIA_BASE_URL, lus depuis `.env.local` (jamais commités).
  *
  * `--dry-run` : montre ce qui serait fait, n'upload/écrit/supprime rien.
  */
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { runCliSync } from "./lib/proc.mjs";
 import { c, loadEnvLocal, die } from "./onboard/util.mjs";
+import { scalewayFromEnv, contentHash, contentTypeFor, SITES_PREFIX } from "./lib/scaleway.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DRY_RUN = process.argv.includes("--dry-run");
@@ -37,7 +36,6 @@ const CLEAN_SOURCE = process.argv.includes("--clean-source");
 const FLAGS = new Set(["--dry-run", "--clean-source"]);
 const args = process.argv.slice(2).filter((a) => !FLAGS.has(a));
 
-const BLOB_HOST_RE = /https:\/\/[^\s"']*\.public\.blob\.vercel-storage\.com\/\S+/;
 const IMG_EXT = new Set([".png", ".jpg", ".jpeg", ".webp", ".svg", ".ico", ".gif", ".avif"]);
 
 loadEnvLocal(ROOT);
@@ -67,24 +65,19 @@ if (!IMG_EXT.has(ext)) {
 console.log(`${c.bold("slug")}    ${slug}`);
 console.log(`${c.bold("source")}  ${path.relative(ROOT, sourceFile)}`);
 
-// --- 2. upload vers Vercel Blob ------------------------------------------
-const token = (process.env.BLOB_READ_WRITE_TOKEN || "").trim();
-if (!token) {
-  die(
-    "BLOB_READ_WRITE_TOKEN manquant dans .env.local.\n" +
-      "  Ajoute-le :  echo 'BLOB_READ_WRITE_TOKEN=vercel_blob_rw_…' >> .env.local",
-  );
-}
+// --- 2. upload vers Scaleway ---------------------------------------------
+const s3 = scalewayFromEnv();
+const data = fs.readFileSync(sourceFile);
+const key = `${SITES_PREFIX}/${slug}/logo-${contentHash(data)}${ext}`;
 
-const pathname = `${slug}/logo${ext}`;
 let url;
 if (DRY_RUN) {
-  url = `https://<host>.public.blob.vercel-storage.com/${slug}/logo-XXXX${ext}`;
-  console.log(c.yellow(`[dry-run] vercel blob put ${path.relative(ROOT, sourceFile)} --pathname ${pathname}`));
+  url = s3.publicURL(key);
+  console.log(c.yellow(`[dry-run] s3 put ${key} -> ${url}`));
 } else {
-  console.log(c.dim(`↑ upload  ${pathname} …`));
-  url = uploadToBlob(sourceFile, pathname, token);
-  console.log(`${c.green("✔ blob")}  ${url}`);
+  console.log(c.dim(`↑ upload  ${key} …`));
+  url = await s3.upload(key, data, contentTypeFor(ext));
+  console.log(`${c.green("✔ scaleway")} ${url}`);
 }
 
 // --- 3. patcher la config (header = logo, favicon = icon) ----------------
@@ -144,51 +137,6 @@ function resolveSourceImage(explicit, slug) {
       .map((p) => path.relative(ROOT, p))
       .join("\n  ")}\n  Précise le fichier en 2e argument.`,
   );
-}
-
-/**
- * `vercel blob put` avec un env nettoyé (sans BLOB_STORE_ID -> évite le mode
- * OIDC), parse l'URL publique renvoyée.
- * @param {string} file
- * @param {string} pathname
- * @param {string} token
- * @returns {string}
- */
-function uploadToBlob(file, pathname, token) {
-  const childEnv = { ...process.env };
-  delete childEnv.BLOB_STORE_ID; // sinon le CLI exige le couple OIDC -> erreur
-  delete childEnv.BLOB_READ_WRITE_TOKEN; // passé en --rw-token, pas via l'env
-
-  const res = runCliSync(
-    "vercel",
-    [
-      "blob",
-      "put",
-      file,
-      "--pathname",
-      pathname,
-      "--access",
-      "public",
-      "--allow-overwrite",
-      "true",
-      "--rw-token",
-      token,
-    ],
-    { cwd: ROOT, env: childEnv, encoding: "utf8" },
-  );
-
-  // le CLI Vercel écrit « Success! <url> » sur stderr -> on lit les deux flux
-  const output = [res.stdout, res.stderr].filter(Boolean).join("\n");
-  if (res.error) die(`Échec du lancement de « vercel ».\n${res.error.message}`);
-  if (res.status !== 0) {
-    die(`Échec de l'upload Vercel Blob (code ${res.status}).\n${output.trim()}`);
-  }
-
-  const match = output.match(BLOB_HOST_RE);
-  if (!match) {
-    die(`Upload OK mais URL Blob introuvable dans la sortie :\n${output}`);
-  }
-  return match[0].replace(/[)"'.,]+$/, "");
 }
 
 /**

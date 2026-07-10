@@ -7,8 +7,8 @@
     "languages": ["fr", "en"]
   },
   "branding": {
-    "logo": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/mb-nettoyage/logo-vr00yeGcLKU7VbPf2iVtvXtn3I5Xxn.png",
-    "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/mb-nettoyage/icon.png",
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/mb-nettoyage/logo-vr00yeGcLKU7VbPf2iVtvXtn3I5Xxn.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/mb-nettoyage/icon.png",
     "logoAlt": "MB Nettoyage — home and professional cleaning in Marseille",
     "logoTwoTone": {
       "first": "#204485",
@@ -89,7 +89,7 @@
           "content": {
             "showSocial": true,
             "image": {
-              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
               "alt": "Bedroom carefully cleaned by MB Nettoyage in Marseille"
             },
             "imageRatio": "4/5",
@@ -672,21 +672,21 @@
             "images": [
               {
                 "image": {
-                  "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
                   "alt": "Bedroom carefully cleaned, spotless floors and bedding"
                 },
                 "titre": "Home cleaning"
               },
               {
                 "image": {
-                  "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/F13C28AC-BA55-4A82-B466-AEF6457E8B0C-3a3IjqOYQAKKtdt8O1Svn90c7y9dod.jpeg",
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/F13C28AC-BA55-4A82-B466-AEF6457E8B0C-3a3IjqOYQAKKtdt8O1Svn90c7y9dod.jpeg",
                   "alt": "Shop cleaned and tidied in Marseille"
                 },
                 "titre": "Shop cleaning"
               },
               {
                 "image": {
-                  "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_4304-xw7ac4gbDYh8gjB8DZ1sozZcCjkswc.jpeg",
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/IMG_4304-xw7ac4gbDYh8gjB8DZ1sozZcCjkswc.jpeg",
                   "alt": "Room before post-construction cleaning, work equipment in place"
                 },
                 "titre": "Before post-construction cleaning"
@@ -1691,7 +1691,7 @@
               "Every quote is prepared based on the surface area, the desired frequency and your business constraints, with the option to work outside your opening hours."
             ],
             "image": {
-              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/F13C28AC-BA55-4A82-B466-AEF6457E8B0C-3a3IjqOYQAKKtdt8O1Svn90c7y9dod.jpeg",
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/F13C28AC-BA55-4A82-B466-AEF6457E8B0C-3a3IjqOYQAKKtdt8O1Svn90c7y9dod.jpeg",
               "alt": "Shop cleaned and tidied, spotless displays and floors"
             },
             "imagePosition": "right"
@@ -1840,7 +1840,7 @@
               "Every quote is prepared based on the surface area and the scale of the work, with the option of a fast turnaround before a handover or key delivery."
             ],
             "image": {
-              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_4304-xw7ac4gbDYh8gjB8DZ1sozZcCjkswc.jpeg",
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/IMG_4304-xw7ac4gbDYh8gjB8DZ1sozZcCjkswc.jpeg",
               "alt": "Room under construction before post-construction cleaning"
             },
             "imagePosition": "left"
@@ -1969,7 +1969,7 @@
               "Whether you own a single property or run a management company handling several, we adapt to your turnovers: one-off or recurring visits, coordinated with your check-outs and check-ins."
             ],
             "image": {
-              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
               "alt": "Short-term rental bedroom cleaned and ready to welcome new guests"
             },
             "imagePosition": "right"

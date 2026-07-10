@@ -4,8 +4,8 @@
   "theme": "noir-cuivre",
   "stylePack": "rose-noir-premium",
   "branding": {
-    "logo": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/parfait-menage-26/logo.png",
-    "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/parfait-menage-26/logo.png",
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/parfait-menage-26/logo.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/parfait-menage-26/logo.png",
     "logoAlt": "Parfait Ménage 26 — ménage et remise en état à Pierrelatte",
     "logoTwoTone": {
       "first": "#d49a78",
@@ -69,7 +69,7 @@
           "content": {
             "showSocial": false,
             "image": {
-              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/parfait-menage-26/hero.webp",
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/parfait-menage-26/hero.webp",
               "alt": "L'équipe de Parfait Ménage 26 devant son véhicule, à Pierrelatte"
             },
             "imageRatio": "3/2",
@@ -98,11 +98,11 @@
             ],
             "trustImages": [
               {
-                "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/parfait-menage-26/sap-logo-officiel.png",
+                "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/parfait-menage-26/sap-logo-officiel.png",
                 "alt": "Services à la personne"
               },
               {
-                "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/parfait-menage-26/reduction-50-rond.png",
+                "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/parfait-menage-26/reduction-50-rond.png",
                 "alt": "50 % de réduction d'impôts"
               }
             ],
@@ -498,7 +498,7 @@
           "content": {
             "eyebrow": "Parfait Ménage 26 · Pierrelatte",
             "image": {
-              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/parfait-menage-26/apropos.png",
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/parfait-menage-26/apropos.png",
               "alt": "Une intervenante Parfait Ménage 26, tablier floqué, en plein entretien d'un salon à Pierrelatte"
             },
             "paragraphes": [

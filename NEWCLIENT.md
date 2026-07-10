@@ -44,7 +44,7 @@ N'utilise que ce qui est concordant ; signale tout écart ou doute.
   `node scripts/generate-sites-manifest.mjs` (`src/lib/sites-manifest.ts` est
   généré — ne jamais l'éditer à la main).
 - `sitemap`/`robots`/`llms.txt` générés par le moteur : rien à écrire à la main.
-- Logo/Photos : URLs déjà hébergées (Vercel Blob), référence-les directement.
+- Logo/Photos : URLs déjà hébergées (Scaleway, bucket xklic-media, préfixe sites/), référence-les directement.
 - Domaine custom = branchement Vercel **manuel** : signale-le.
 
 ---

@@ -11,8 +11,8 @@
     ]
   },
   "branding": {
-    "logo": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/mb-nettoyage/logo-vr00yeGcLKU7VbPf2iVtvXtn3I5Xxn.png",
-    "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/mb-nettoyage/icon.png",
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/mb-nettoyage/logo-vr00yeGcLKU7VbPf2iVtvXtn3I5Xxn.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/mb-nettoyage/icon.png",
     "logoAlt": "MB Nettoyage — nettoyage à domicile et professionnel à Marseille",
     "logoTwoTone": {
       "first": "#204485",
@@ -93,7 +93,7 @@
           "content": {
             "showSocial": true,
             "image": {
-              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
               "alt": "Chambre entretenue avec soin par MB Nettoyage à Marseille"
             },
             "imageRatio": "4/5",
@@ -676,21 +676,21 @@
             "images": [
               {
                 "image": {
-                  "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
                   "alt": "Chambre entretenue avec soin, sols et literie impeccables"
                 },
                 "titre": "Ménage à domicile"
               },
               {
                 "image": {
-                  "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/F13C28AC-BA55-4A82-B466-AEF6457E8B0C-3a3IjqOYQAKKtdt8O1Svn90c7y9dod.jpeg",
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/F13C28AC-BA55-4A82-B466-AEF6457E8B0C-3a3IjqOYQAKKtdt8O1Svn90c7y9dod.jpeg",
                   "alt": "Boutique nettoyée et rangée à Marseille"
                 },
                 "titre": "Nettoyage de commerce"
               },
               {
                 "image": {
-                  "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_4304-xw7ac4gbDYh8gjB8DZ1sozZcCjkswc.jpeg",
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/IMG_4304-xw7ac4gbDYh8gjB8DZ1sozZcCjkswc.jpeg",
                   "alt": "Pièce avant nettoyage de fin de chantier, matériel de travaux en place"
                 },
                 "titre": "Avant nettoyage post-chantier"
@@ -1758,7 +1758,7 @@
               "Chaque devis est établi selon la surface, la fréquence souhaitée et les contraintes de votre activité, avec la possibilité d'intervenir en dehors de vos horaires d'ouverture."
             ],
             "image": {
-              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/F13C28AC-BA55-4A82-B466-AEF6457E8B0C-3a3IjqOYQAKKtdt8O1Svn90c7y9dod.jpeg",
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/F13C28AC-BA55-4A82-B466-AEF6457E8B0C-3a3IjqOYQAKKtdt8O1Svn90c7y9dod.jpeg",
               "alt": "Boutique nettoyée et rangée, présentoirs et sols impeccables"
             },
             "imagePosition": "right"
@@ -1915,7 +1915,7 @@
               "Chaque devis est établi selon la surface et l'ampleur des travaux, avec la possibilité d'intervenir dans des délais courts avant une livraison ou une remise des clés."
             ],
             "image": {
-              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_4304-xw7ac4gbDYh8gjB8DZ1sozZcCjkswc.jpeg",
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/IMG_4304-xw7ac4gbDYh8gjB8DZ1sozZcCjkswc.jpeg",
               "alt": "Pièce en travaux avant nettoyage de fin de chantier"
             },
             "imagePosition": "left"
@@ -2044,7 +2044,7 @@
               "Que vous soyez propriétaire d'un seul bien ou conciergerie gérant plusieurs logements, nous nous adaptons à vos rotations : interventions ponctuelles ou récurrentes, coordonnées avec vos check-out et check-in."
             ],
             "image": {
-              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg",
               "alt": "Chambre de location courte durée remise en état, prête à accueillir de nouveaux voyageurs"
             },
             "imagePosition": "right"

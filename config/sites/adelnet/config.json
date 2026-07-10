@@ -13,8 +13,8 @@
       "rest": "#0f172a"
     },
     "tagline": "Ménage & repassage à domicile · Saint-Étienne",
-    "logo": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/adelnet/logo.png",
-    "icon": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/adelnet/logo.png"
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/adelnet/logo.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/adelnet/logo.png"
   },
   "social": [
     {
@@ -79,7 +79,7 @@
           "variant": "fondu",
           "content": {
             "image": {
-              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/adelnet/accueil.png",
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/adelnet/accueil.png",
               "alt": "Intervenante Adelnet en tenue, entretien d'un appartement lumineux à Saint-Étienne"
             },
             "eyebrow": "Aide ménagère à Saint-Étienne & Lyon",
@@ -375,7 +375,7 @@
             "imagePosition": "left",
             "imageRatio": "4/3",
             "image": {
-              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/adelnet/services-menage.png",
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/adelnet/services-menage.png",
               "alt": "Intervenante Adelnet en tenue nettoyant un appartement à Saint-Étienne"
             },
             "paragraphes": [
@@ -1662,7 +1662,7 @@
             "imagePosition": "right",
             "imageRatio": "4/3",
             "image": {
-              "url": "https://wie1kgknszlo37fw.public.blob.vercel-storage.com/adelnet/nettoyage-bureaux.png",
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/adelnet/nettoyage-bureaux.png",
               "alt": "Équipe Adelnet nettoyant un open space de bureaux"
             },
             "paragraphes": [
