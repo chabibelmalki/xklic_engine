@@ -294,7 +294,10 @@ export function Hero({ block, config, basePath = "", strings }: BlockComponentPr
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/55 to-ink/25" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink/92 via-ink/72 to-ink/45" />
+          {/* Voile plein léger : garantit le contraste du texte quelle que soit
+              la photo (parties claires comprises). */}
+          <div className="absolute inset-0 bg-ink/20" />
         </div>
         <Container className="flex min-h-[78vh] flex-col justify-end py-20 sm:min-h-[86vh]">
           <div className="max-w-2xl text-white">

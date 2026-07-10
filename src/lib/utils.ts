@@ -30,6 +30,26 @@ export function telHref(phone: string): string {
   return "tel:" + phone.replace(/[^+0-9]/g, "");
 }
 
+/**
+ * Lien tel: au format INTERNATIONAL (défaut France = +33). On retire le 0 de
+ * tête national et on préfixe l'indicatif — un lien +33… se compose depuis
+ * n'importe quel pays (indispensable pour un client qui appelle de l'étranger).
+ * Entrée attendue : numéro national FR ("06-58-660-660"). Idempotent si le
+ * numéro est déjà international.
+ */
+export function telHrefIntl(phone: string, cc = "33"): string {
+  let digits = phone.replace(/[^0-9]/g, "");
+  if (digits.startsWith("0")) digits = digits.slice(1);
+  else if (digits.startsWith(cc)) digits = digits.slice(cc.length);
+  return `tel:+${cc}${digits}`;
+}
+
+/** Indicatif d'affichage entre parenthèses (« (+33) ») à poser en discret devant
+ *  le numéro national. Présentation voulue par le client (plus propre). */
+export function telIndicatif(cc = "33"): string {
+  return `(+${cc})`;
+}
+
 export function waHref(phone: string): string {
   const digits = phone.replace(/[^0-9]/g, "").replace(/^0/, "33");
   return `https://wa.me/${digits}`;

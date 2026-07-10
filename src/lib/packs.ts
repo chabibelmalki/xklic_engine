@@ -193,6 +193,31 @@ export const PACKS: StylePack[] = [
     },
   },
   {
+    id: "taxi-jour",
+    label: "Taxi · Jour (clair pro navy/orange)",
+    sectionStrategy: "striped",
+    sectionDivider: "none",
+    // Registre CLAIR pro « mobilité » : fond blanc + gris très clair, encre navy,
+    // orange vif en accent (couleurs du logo), sans géométrique, arrondis moyens,
+    // ombres douces teintées navy. Les couleurs viennent de `branding.colors`
+    // (navy/orange) ; le pack ne pilote que typo / rayons / ombres / rythme.
+    ambiance:
+      "Clair, net et rassurant : blanc + gris très clair, encre navy, orange vif (logo), sans géométrique (Poppins), arrondis moyens, ombres douces navy, boutons affirmés.",
+    fonts: { display: "Poppins", sans: "Inter" },
+    variants: {
+      hero: ["split", "centre"],
+      services: ["grille-cartes", "grille-icones"],
+      produits: ["grille", "vitrine"],
+      galerie: ["grille", "masonry"],
+      avis: ["carrousel", "grille"],
+      tarifs: ["grille", "liste-simple"],
+      etapes: ["cartes-numerotees", "timeline-verticale"],
+      faq: ["accordeon", "deux-colonnes"],
+      contact: ["split-form-carte", "centre"],
+      cta: ["bande", "encadre"],
+    },
+  },
+  {
     id: "marine-premium",
     label: "Marine · Élégant & posé",
     family: "editorial",
@@ -254,6 +279,7 @@ export const PACKS: StylePack[] = [
     variants: {
       hero: ["plein"],
       services: ["liste-filets"],
+      avis: ["carrousel", "grille"],
       zone: ["liste"],
       cta: ["bande"],
     },

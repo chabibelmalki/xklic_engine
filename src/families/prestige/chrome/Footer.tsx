@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Phone } from "lucide-react";
 import type { SiteConfig, ContactContent } from "@/types/config";
 import { legalName, siretToSiren } from "@/lib/legal";
-import { telHref, waHref } from "@/lib/utils";
+import { telHrefIntl, telIndicatif, waHref } from "@/lib/utils";
 import { resolvePages, isMultiPage, findBlock } from "@/lib/pages";
 import { resolveSocials } from "@/lib/social";
 import { SocialLinks } from "@/components/layout/SocialLinks";
@@ -96,10 +96,11 @@ export function PrestigeFooter({
               {contact?.telephone && (
                 <li>
                   <a
-                    href={telHref(contact.telephone)}
+                    href={telHrefIntl(contact.telephone)}
                     className="inline-flex items-center gap-2 font-semibold tabular-nums text-white hover:text-[var(--px-gold)]"
                   >
                     <Phone className="size-4 text-[var(--px-gold)]" strokeWidth={2.2} />
+                    <span className="text-[0.8em] font-medium text-white/45">{telIndicatif()}</span>
                     {contact.telephone}
                   </a>
                 </li>

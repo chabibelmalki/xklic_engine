@@ -1,5 +1,5 @@
 import { Phone, MessageCircle } from "lucide-react";
-import { telHref, waHref } from "@/lib/utils";
+import { telHrefIntl, telIndicatif, waHref } from "@/lib/utils";
 import type { UIStrings } from "@/i18n/ui";
 
 /**
@@ -37,7 +37,7 @@ export function PrestigeFloatingActions({
       )}
       {telephone && (
         <a
-          href={telHref(telephone)}
+          href={telHrefIntl(telephone)}
           aria-label={`${strings.callAria} ${entreprise}`}
           className="flex flex-1 items-center justify-center gap-3 bg-[var(--px-gold)] py-4 text-[var(--px-void)] transition-opacity hover:opacity-90"
         >
@@ -45,7 +45,9 @@ export function PrestigeFloatingActions({
           <span className="text-[0.68rem] font-bold uppercase tracking-[0.16em]">
             {strings.callAria}
           </span>
-          <span className="text-lg font-bold tabular-nums tracking-tight">{telephone}</span>
+          <span className="text-lg font-bold tabular-nums tracking-tight">
+            <span className="text-[0.72em] font-semibold opacity-55">{telIndicatif()}</span> {telephone}
+          </span>
         </a>
       )}
     </div>

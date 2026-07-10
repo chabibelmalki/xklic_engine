@@ -2,15 +2,22 @@
   "slug": "taxi-concept",
   "demo": true,
   "noindexSite": true,
-  "theme": "noir-cuivre",
-  "stylePack": "prestige-nuit",
+  "theme": "bleu-azur",
+  "stylePack": "taxi-jour",
   "branding": {
-    "logoAlt": "TAXI CONCEPT — taxi premium à Montpellier et dans l'Hérault",
-    "tagline": "Taxi premium · Montpellier & Hérault",
+    "logo": "/sites/taxi-concept/logo.png",
+    "icon": "/sites/taxi-concept/logo.png",
+    "logoAlt": "TAXI CONCEPT — taxi à Montpellier et régions",
+    "tagline": "Montpellier et régions",
+    "logoTwoTone": {
+      "first": "#16284d",
+      "rest": "#e8641c"
+    },
+    "logoDarkBadge": true,
     "colors": {
-      "brand": "#c8a24a",
-      "accent": "#e6c05c",
-      "neutral": "warm"
+      "brand": "#16284d",
+      "accent": "#e8641c",
+      "neutral": "cool"
     }
   },
   "entreprise": {
@@ -60,6 +67,7 @@
       "blocks": [
         {
           "type": "hero",
+          "variant": "plein",
           "content": {
             "image": {
               "url": "/sites/taxi-concept/hero-nuit.webp",
@@ -70,10 +78,22 @@
             "titreAccent": "à toute heure",
             "accroche": "Trajets, transferts gares & aéroports, longue distance : TAXI CONCEPT vous conduit à Montpellier et dans tout l'Hérault, dans une flotte climatisée jusqu'à 7 places. Réservation 24h/24, 7j/7.",
             "trust": [
-              { "label": "24 H/24 · 7 jours sur 7" },
-              { "label": "7 places · Van & monospace" },
-              { "label": "34 · Tout l'Hérault" },
-              { "label": "4 aéroports · Transferts directs" }
+              {
+                "label": "24 H/24 · 7 jours sur 7",
+                "icone": "Clock"
+              },
+              {
+                "label": "7 places · Van & monospace",
+                "icone": "Users"
+              },
+              {
+                "label": "34 · Tout l'Hérault",
+                "icone": "MapPin"
+              },
+              {
+                "label": "4 aéroports · Transferts directs",
+                "icone": "Plane"
+              }
             ],
             "ctaPrimaire": {
               "label": "Réserver une course",
@@ -96,43 +116,50 @@
                 "nom": "Trajets taxi",
                 "description": "Courses en ville et toutes distances à Montpellier et dans l'Hérault, de jour comme de nuit.",
                 "href": "/trajets-taxi",
-                "priceHint": "Tarif préfectoral"
+                "priceHint": "Tarif préfectoral",
+                "icone": "Car"
               },
               {
                 "nom": "Transferts gares & aéroports",
                 "description": "Liaisons directes vers Montpellier, Marseille, Lyon et Perpignan — gares et aéroports, avec suivi des horaires.",
                 "href": "/transferts-gares-aeroports",
-                "priceHint": "Forfait fixe"
+                "priceHint": "Forfait fixe",
+                "icone": "Plane"
               },
               {
                 "nom": "Longue distance",
                 "description": "Déplacements nationaux, toutes destinations, dans le confort d'une berline ou d'un van climatisé.",
                 "href": "/longue-distance",
-                "priceHint": "Sur devis"
+                "priceHint": "Sur devis",
+                "icone": "Route"
               },
               {
                 "nom": "Transport de colis & plis",
                 "description": "Acheminement urgent de colis et documents, en toute fiabilité, dans l'Hérault et au-delà.",
                 "href": "/transport-colis",
-                "priceHint": "Sur devis"
+                "priceHint": "Sur devis",
+                "icone": "Package"
               },
               {
                 "nom": "Van & monospace 1 à 7 places",
                 "description": "Groupes, familles et bagages : un véhicule spacieux et climatisé, jusqu'à 7 personnes.",
                 "href": "/van-monospace",
-                "priceHint": "1 à 7 personnes"
+                "priceHint": "1 à 7 personnes",
+                "icone": "Users"
               },
               {
                 "nom": "Transport PMR",
                 "description": "Véhicule adapté aux personnes à mobilité réduite, avec un accompagnement attentif.",
                 "href": "/transport-pmr",
-                "priceHint": "Sur réservation"
+                "priceHint": "Sur réservation",
+                "icone": "Accessibility"
               },
               {
                 "nom": "Service VIP & mise à disposition",
                 "description": "Chauffeur dédié pour vos rendez-vous, événements et déplacements professionnels.",
                 "href": "/service-vip",
-                "priceHint": "Sur devis"
+                "priceHint": "Sur devis",
+                "icone": "Crown"
               }
             ],
             "cta": {
@@ -223,6 +250,42 @@
           }
         },
         {
+          "type": "avis",
+          "variant": "carrousel",
+          "content": {
+            "eyebrow": "Avis clients",
+            "titre": "Ils ont voyagé avec nous",
+            "compactStars": true,
+            "items": [
+              {
+                "auteur": "Messiano",
+                "texte": "Sympathique et rapide.",
+                "note": 5,
+                "date": "13 décembre 2024"
+              },
+              {
+                "auteur": "Nanou",
+                "texte": "Chauffeur très sympa, voiture propre, ponctuelle. Merci à vous !",
+                "note": 5,
+                "date": "18 décembre 2022"
+              },
+              {
+                "auteur": "Maeva Hamchaoui",
+                "texte": "Taxi efficace, je recommande.",
+                "note": 5,
+                "date": "31 juillet 2022"
+              },
+              {
+                "auteur": "Anne Chapuis-Breyton",
+                "texte": "Service impeccable. Arrivée à l'heure, trajet efficace, chauffeur sympathique, serviable et débrouillard. Je suis bluffée. Bravo et merci !",
+                "note": 5,
+                "date": "19 septembre 2021"
+              }
+            ],
+            "disclaimer": "Avis publiés par nos clients sur Google."
+          }
+        },
+        {
           "type": "cta",
           "content": {
             "image": {
@@ -258,8 +321,13 @@
             "titre": "Un service de taxi, plusieurs solutions de transport",
             "intro": "TAXI CONCEPT couvre l'ensemble de vos besoins de déplacement à Montpellier et dans l'Hérault, dans une flotte climatisée jusqu'à 7 places. Chaque prestation a sa page dédiée.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations"
+              }
             ],
             "ctaPrimaire": {
               "label": "Réserver une course",
@@ -278,43 +346,50 @@
                 "nom": "Trajets taxi",
                 "description": "Courses en ville et toutes distances, de jour comme de nuit, au tarif préfectoral en vigueur.",
                 "href": "/trajets-taxi",
-                "priceHint": "Tarif préfectoral"
+                "priceHint": "Tarif préfectoral",
+                "icone": "Car"
               },
               {
                 "nom": "Transferts gares & aéroports",
                 "description": "Montpellier Saint-Roch, aéroport Montpellier-Méditerranée, ainsi que Marseille, Lyon et Perpignan — avec suivi des horaires de train et de vol.",
                 "href": "/transferts-gares-aeroports",
-                "priceHint": "Forfait fixe"
+                "priceHint": "Forfait fixe",
+                "icone": "Plane"
               },
               {
                 "nom": "Longue distance",
                 "description": "Trajets nationaux toutes destinations, dans le confort d'une berline ou d'un van climatisé.",
                 "href": "/longue-distance",
-                "priceHint": "Sur devis"
+                "priceHint": "Sur devis",
+                "icone": "Route"
               },
               {
                 "nom": "Transport de colis & plis urgents",
                 "description": "Acheminement fiable et rapide de colis et documents dans l'Hérault et au-delà.",
                 "href": "/transport-colis",
-                "priceHint": "Sur devis"
+                "priceHint": "Sur devis",
+                "icone": "Package"
               },
               {
                 "nom": "Van & monospace 1 à 7 places",
                 "description": "Groupes, familles et bagages : un véhicule spacieux et climatisé, jusqu'à 7 personnes.",
                 "href": "/van-monospace",
-                "priceHint": "1 à 7 personnes"
+                "priceHint": "1 à 7 personnes",
+                "icone": "Users"
               },
               {
                 "nom": "Transport PMR",
                 "description": "Véhicule adapté aux personnes à mobilité réduite, avec un accompagnement attentif.",
                 "href": "/transport-pmr",
-                "priceHint": "Sur réservation"
+                "priceHint": "Sur réservation",
+                "icone": "Accessibility"
               },
               {
                 "nom": "Service VIP & mise à disposition",
                 "description": "Chauffeur dédié pour vos rendez-vous, événements et déplacements professionnels.",
                 "href": "/service-vip",
-                "priceHint": "Sur devis"
+                "priceHint": "Sur devis",
+                "icone": "Crown"
               }
             ]
           }
@@ -360,11 +435,22 @@
             "titre": "Vos courses à Montpellier et dans l'Hérault",
             "intro": "Un trajet en ville, un rendez-vous, une sortie de nuit : TAXI CONCEPT vous conduit où vous voulez, à l'heure, dans un véhicule climatisé.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations", "href": "/services" },
-              { "label": "Trajets taxi" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Trajets taxi"
+              }
             ],
-            "ctaPrimaire": { "label": "Réserver une course", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Réserver une course",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -387,19 +473,23 @@
             "items": [
               {
                 "nom": "Tarif préfectoral",
-                "description": "Prix encadré et affiché au compteur pour les courses locales, sans supplément caché."
+                "description": "Prix encadré et affiché au compteur pour les courses locales, sans supplément caché.",
+                "icone": "Wallet"
               },
               {
                 "nom": "Jour et nuit, 7j/7",
-                "description": "Disponibles à toute heure, y compris la nuit, le week-end et les jours fériés."
+                "description": "Disponibles à toute heure, y compris la nuit, le week-end et les jours fériés.",
+                "icone": "Clock"
               },
               {
                 "nom": "Véhicule climatisé",
-                "description": "Un intérieur propre et confortable, entretenu, pour chaque trajet."
+                "description": "Un intérieur propre et confortable, entretenu, pour chaque trajet.",
+                "icone": "Snowflake"
               },
               {
                 "nom": "Paiement au choix",
-                "description": "Espèces, carte bancaire ou virement, selon ce qui vous arrange."
+                "description": "Espèces, carte bancaire ou virement, selon ce qui vous arrange.",
+                "icone": "Wallet"
               }
             ]
           }
@@ -450,7 +540,10 @@
           "content": {
             "titre": "Besoin d'un taxi maintenant ?",
             "sousTitre": "Appelez-nous : prise en charge rapide, partout dans l'Hérault.",
-            "ctaPrimaire": { "label": "Réserver une course", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Réserver une course",
+              "href": "/contact"
+            }
           }
         }
       ]
@@ -483,11 +576,22 @@
             "titre": "Ne ratez jamais votre train ni votre vol",
             "intro": "Prise en charge à domicile, à l'hôtel ou au bureau, et dépose directement au terminal ou sur le quai — avec suivi de vos horaires.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations", "href": "/services" },
-              { "label": "Transferts gares & aéroports" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Transferts gares & aéroports"
+              }
             ],
-            "ctaPrimaire": { "label": "Réserver un transfert", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Réserver un transfert",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -510,19 +614,23 @@
             "items": [
               {
                 "nom": "Aéroport Montpellier-Méditerranée",
-                "description": "Transfert direct depuis toute la métropole et l'Hérault, à l'horaire de votre vol."
+                "description": "Transfert direct depuis toute la métropole et l'Hérault, à l'horaire de votre vol.",
+                "icone": "Plane"
               },
               {
                 "nom": "Gare Montpellier Saint-Roch",
-                "description": "Dépose et prise en charge au plus près des quais, bagages compris."
+                "description": "Dépose et prise en charge au plus près des quais, bagages compris.",
+                "icone": "TrainFront"
               },
               {
                 "nom": "Marseille, Lyon, Perpignan",
-                "description": "Liaisons longue distance vers les grands aéroports et gares de la région."
+                "description": "Liaisons longue distance vers les grands aéroports et gares de la région.",
+                "icone": "MapPinned"
               },
               {
                 "nom": "Suivi des horaires",
-                "description": "Nous surveillons les retards de vol et de train pour ajuster votre prise en charge."
+                "description": "Nous surveillons les retards de vol et de train pour ajuster votre prise en charge.",
+                "icone": "Timer"
               }
             ]
           }
@@ -573,7 +681,10 @@
           "content": {
             "titre": "Un transfert à réserver ?",
             "sousTitre": "Donnez-nous votre vol ou votre train : nous calons tout, 24h/24.",
-            "ctaPrimaire": { "label": "Réserver un transfert", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Réserver un transfert",
+              "href": "/contact"
+            }
           }
         }
       ]
@@ -605,11 +716,22 @@
             "titre": "Toutes distances, tout confort",
             "intro": "Un rendez-vous à l'autre bout de la région ou une traversée du pays : voyagez posément, avec un chauffeur dédié et un tarif connu d'avance.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations", "href": "/services" },
-              { "label": "Longue distance" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Longue distance"
+              }
             ],
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -632,19 +754,23 @@
             "items": [
               {
                 "nom": "Porte à porte",
-                "description": "Départ de chez vous, arrivée à destination — aucune correspondance."
+                "description": "Départ de chez vous, arrivée à destination — aucune correspondance.",
+                "icone": "Navigation"
               },
               {
                 "nom": "Berline ou van climatisé",
-                "description": "Le véhicule adapté au nombre de passagers et à vos bagages, jusqu'à 7 places."
+                "description": "Le véhicule adapté au nombre de passagers et à vos bagages, jusqu'à 7 places.",
+                "icone": "Snowflake"
               },
               {
                 "nom": "Devis à l'avance",
-                "description": "Un prix clair, convenu avant le départ, sans surprise à l'arrivée."
+                "description": "Un prix clair, convenu avant le départ, sans surprise à l'arrivée.",
+                "icone": "Users"
               },
               {
                 "nom": "Chauffeur dédié",
-                "description": "Un conducteur professionnel pour un trajet posé, de jour comme de nuit."
+                "description": "Un conducteur professionnel pour un trajet posé, de jour comme de nuit.",
+                "icone": "UserRound"
               }
             ]
           }
@@ -695,7 +821,10 @@
           "content": {
             "titre": "Un long trajet en vue ?",
             "sousTitre": "Décrivez-nous votre déplacement : nous établissons un devis rapidement.",
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
           }
         }
       ]
@@ -728,11 +857,22 @@
             "titre": "Vos envois urgents, livrés en main propre",
             "intro": "Un pli à faire signer, un colis à livrer sans attendre, une pièce à convoyer : nous partons tout de suite, en course dédiée.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations", "href": "/services" },
-              { "label": "Transport de colis" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Transport de colis"
+              }
             ],
-            "ctaPrimaire": { "label": "Demander un enlèvement", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Demander un enlèvement",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -755,19 +895,23 @@
             "items": [
               {
                 "nom": "Course dédiée",
-                "description": "Votre colis part seul et direct, sans tournée ni rupture de charge."
+                "description": "Votre colis part seul et direct, sans tournée ni rupture de charge.",
+                "icone": "UserRound"
               },
               {
                 "nom": "Remise en main propre",
-                "description": "Livraison directe au destinataire, avec discrétion."
+                "description": "Livraison directe au destinataire, avec discrétion.",
+                "icone": "Handshake"
               },
               {
                 "nom": "Local et longue distance",
-                "description": "Montpellier, tout l'Hérault et au-delà pour les envois urgents."
+                "description": "Montpellier, tout l'Hérault et au-delà pour les envois urgents.",
+                "icone": "Route"
               },
               {
                 "nom": "24h/24, 7j/7",
-                "description": "Disponibles à toute heure, y compris la nuit et le week-end."
+                "description": "Disponibles à toute heure, y compris la nuit et le week-end.",
+                "icone": "Clock"
               }
             ]
           }
@@ -818,7 +962,10 @@
           "content": {
             "titre": "Un colis à faire partir ?",
             "sousTitre": "Appelez-nous : enlèvement rapide et livraison en main propre.",
-            "ctaPrimaire": { "label": "Demander un enlèvement", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Demander un enlèvement",
+              "href": "/contact"
+            }
           }
         }
       ]
@@ -851,11 +998,22 @@
             "titre": "Jusqu'à 7 places, tout le monde à bord",
             "intro": "Une famille, une équipe, un groupe d'amis avec bagages : voyagez ensemble dans un van spacieux et climatisé.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations", "href": "/services" },
-              { "label": "Van & monospace" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Van & monospace"
+              }
             ],
-            "ctaPrimaire": { "label": "Réserver un van", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Réserver un van",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -878,19 +1036,23 @@
             "items": [
               {
                 "nom": "Familles & groupes",
-                "description": "Jusqu'à 7 passagers dans le même véhicule, sans se séparer."
+                "description": "Jusqu'à 7 passagers dans le même véhicule, sans se séparer.",
+                "icone": "Users"
               },
               {
                 "nom": "Transferts avec bagages",
-                "description": "Aéroport, gare ou longue distance : de la place pour les valises."
+                "description": "Aéroport, gare ou longue distance : de la place pour les valises.",
+                "icone": "Luggage"
               },
               {
                 "nom": "Événements",
-                "description": "Mariages, sorties, déplacements professionnels en groupe."
+                "description": "Mariages, sorties, déplacements professionnels en groupe.",
+                "icone": "Briefcase"
               },
               {
                 "nom": "Confort climatisé",
-                "description": "Un intérieur spacieux et climatisé, court trajet comme longue route."
+                "description": "Un intérieur spacieux et climatisé, court trajet comme longue route.",
+                "icone": "Snowflake"
               }
             ]
           }
@@ -941,7 +1103,10 @@
           "content": {
             "titre": "Vous voyagez à plusieurs ?",
             "sousTitre": "Réservez un van jusqu'à 7 places, climatisé, à l'heure.",
-            "ctaPrimaire": { "label": "Réserver un van", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Réserver un van",
+              "href": "/contact"
+            }
           }
         }
       ]
@@ -974,11 +1139,22 @@
             "titre": "Un transport adapté, un accompagnement humain",
             "intro": "Rendez-vous médical, sortie, déplacement du quotidien : nous transportons les personnes à mobilité réduite avec attention et respect.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations", "href": "/services" },
-              { "label": "Transport PMR" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Transport PMR"
+              }
             ],
-            "ctaPrimaire": { "label": "Réserver un transport", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Réserver un transport",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -1001,19 +1177,23 @@
             "items": [
               {
                 "nom": "Véhicule adapté",
-                "description": "Un aménagement pensé pour le confort et la sécurité des personnes à mobilité réduite."
+                "description": "Un aménagement pensé pour le confort et la sécurité des personnes à mobilité réduite.",
+                "icone": "Accessibility"
               },
               {
                 "nom": "Accompagnement",
-                "description": "Aide à la montée et à la descente, patience et discrétion."
+                "description": "Aide à la montée et à la descente, patience et discrétion.",
+                "icone": "HandHelping"
               },
               {
                 "nom": "Rendez-vous médicaux",
-                "description": "Prise en charge ponctuelle pour vos consultations et démarches."
+                "description": "Prise en charge ponctuelle pour vos consultations et démarches.",
+                "icone": "Stethoscope"
               },
               {
                 "nom": "Tout l'Hérault",
-                "description": "À Montpellier et dans l'ensemble du département, sur réservation."
+                "description": "À Montpellier et dans l'ensemble du département, sur réservation.",
+                "icone": "MapPin"
               }
             ]
           }
@@ -1064,7 +1244,10 @@
           "content": {
             "titre": "Un déplacement à organiser ?",
             "sousTitre": "Appelez-nous : nous préparons un transport adapté et attentif.",
-            "ctaPrimaire": { "label": "Réserver un transport", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Réserver un transport",
+              "href": "/contact"
+            }
           }
         }
       ]
@@ -1097,11 +1280,22 @@
             "titre": "Un chauffeur, rien que pour vous",
             "intro": "Une journée de rendez-vous, un événement, un client à recevoir : réservez un chauffeur dédié et un véhicule soigné, à votre rythme.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations", "href": "/services" },
-              { "label": "Service VIP & mise à disposition" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Service VIP & mise à disposition"
+              }
             ],
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -1124,19 +1318,23 @@
             "items": [
               {
                 "nom": "Chauffeur dédié",
-                "description": "Un conducteur attitré, disponible sur toute la durée de la prestation."
+                "description": "Un conducteur attitré, disponible sur toute la durée de la prestation.",
+                "icone": "UserRound"
               },
               {
                 "nom": "Mise à disposition",
-                "description": "À l'heure ou à la journée, le véhicule reste à votre service entre les étapes."
+                "description": "À l'heure ou à la journée, le véhicule reste à votre service entre les étapes.",
+                "icone": "CalendarClock"
               },
               {
                 "nom": "Événements & professionnels",
-                "description": "Rendez-vous d'affaires, accueil de clients, cérémonies et déplacements sur mesure."
+                "description": "Rendez-vous d'affaires, accueil de clients, cérémonies et déplacements sur mesure.",
+                "icone": "Briefcase"
               },
               {
                 "nom": "Discrétion & présentation",
-                "description": "Confidentialité, ponctualité et véhicule irréprochable, à chaque instant."
+                "description": "Confidentialité, ponctualité et véhicule irréprochable, à chaque instant.",
+                "icone": "BadgeCheck"
               }
             ]
           }
@@ -1187,7 +1385,10 @@
           "content": {
             "titre": "Un chauffeur dédié pour votre journée ?",
             "sousTitre": "Décrivez votre besoin : nous préparons une prestation sur mesure.",
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
           }
         }
       ]
@@ -1207,8 +1408,13 @@
             "titre": "Nous desservons tout l'Hérault",
             "intro": "De Montpellier au bassin de Thau, du littoral à l'arrière-pays : vérifiez votre commune ci-dessous.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Zone desservie" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Zone desservie"
+              }
             ]
           }
         },
@@ -1321,8 +1527,13 @@
             "titre": "Réservez votre course",
             "intro": "Appelez-nous à toute heure ou envoyez votre demande : nous confirmons rapidement, 24h/24 et 7j/7.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Contact" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Contact"
+              }
             ]
           }
         },
@@ -1334,11 +1545,15 @@
             "intro": "Indiquez votre trajet (départ, destination, date et heure) et le nombre de passagers. Nous vous confirmons la prise en charge.",
             "form": true,
             "formMode": "demande-intervention",
-            "telephone": "06 58 66 06 60",
+            "telephone": "06-58-660-660",
+            "whatsapp": "06-58-660-660",
             "telephoneHeader": "texte",
             "adresse": "73 allée Kléber, 34000 Montpellier",
             "horaires": [
-              { "jour": "Lun – Dim", "heures": "24h/24" }
+              {
+                "jour": "Lun – Dim",
+                "heures": "24h/24"
+              }
             ],
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=3.83%2C43.59%2C3.93%2C43.63&layer=mapnik&marker=43.6108%2C3.8767",
             "services": [
@@ -1386,8 +1601,13 @@
             "eyebrow": "FAQ",
             "titre": "Vos questions, nos réponses",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "FAQ" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "FAQ"
+              }
             ]
           }
         },

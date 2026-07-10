@@ -3,7 +3,7 @@ import { Phone } from "lucide-react";
 import type { HeroContent, ContactContent } from "@/types/config";
 import type { BlockComponentProps } from "@/blocks/types";
 import { Button } from "@/components/ui/Button";
-import { telHref, withBase } from "@/lib/utils";
+import { telHrefIntl, telIndicatif, withBase } from "@/lib/utils";
 import { findBlock } from "@/lib/pages";
 import { resolveHeroSecondary } from "@/lib/hero-cta";
 import { PrestigeContainer } from "../ui/Container";
@@ -75,7 +75,7 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
         {tel && (
           <div className="mt-10 flex flex-col gap-x-10 gap-y-6 sm:flex-row sm:items-end">
             <a
-              href={telHref(tel)}
+              href={telHrefIntl(tel)}
               className="group inline-flex flex-col focus-visible:outline-none"
             >
               <span className="text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-white/60">
@@ -83,7 +83,10 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
               </span>
               <span className="mt-2 inline-flex items-center gap-4 font-sans text-4xl font-bold tabular-nums leading-none tracking-tight text-white transition-colors group-hover:text-[var(--px-gold)] sm:text-6xl">
                 <Phone className="size-8 shrink-0 text-[var(--px-gold)] sm:size-10" strokeWidth={2.2} />
-                {tel}
+                <span className="inline-flex items-baseline gap-2.5">
+                  <span className="text-[0.4em] font-medium text-white/45">{telIndicatif()}</span>
+                  {tel}
+                </span>
               </span>
             </a>
             {(c.ctaPrimaire || secondary) && (

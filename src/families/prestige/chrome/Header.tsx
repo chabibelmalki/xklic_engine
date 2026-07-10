@@ -1,8 +1,9 @@
+import Image from "next/image";
 import { Menu, Phone } from "lucide-react";
 import type { SiteConfig, ContactContent } from "@/types/config";
 import type { UIStrings } from "@/i18n/ui";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
-import { telHref, cn } from "@/lib/utils";
+import { telHrefIntl, telIndicatif, cn } from "@/lib/utils";
 import { navPages, isMultiPage, resolvePages, findBlock } from "@/lib/pages";
 
 /**
@@ -56,18 +57,35 @@ function ctaTarget(config: SiteConfig, basePath: string, strings: UIStrings) {
   return { href: `${basePath}/#contact`, label: contactBlock?.form ? quote : contactLabel };
 }
 
-/** Wordmark maison : nom en display + tagline en capitales dorées. */
+/**
+ * Wordmark maison : emblème (logo rogné, fond transparent) À GAUCHE + nom en
+ * display et sous-titre en capitales orangées empilés à droite. Sans logo, le
+ * texte seul (repli propre).
+ */
 function Wordmark({ config, href }: { config: SiteConfig; href: string }) {
+  const { logo, logoAlt, tagline } = config.branding;
   return (
-    <a href={href} aria-label={config.entreprise.nom} className="group flex min-w-0 flex-col leading-none">
-      <span className="truncate font-display text-xl font-semibold tracking-tight text-white sm:text-2xl">
-        {config.entreprise.nom}
-      </span>
-      {config.branding.tagline && (
-        <span className="mt-1 truncate text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-[var(--px-gold)]">
-          {config.branding.tagline}
-        </span>
+    <a href={href} aria-label={config.entreprise.nom} className="group flex min-w-0 items-center gap-3 sm:gap-4">
+      {logo && (
+        <Image
+          src={logo}
+          alt={logoAlt ?? config.entreprise.nom}
+          width={128}
+          height={128}
+          priority
+          className="h-11 w-auto shrink-0 object-contain sm:h-14"
+        />
       )}
+      <span className="flex min-w-0 flex-col leading-none">
+        <span className="truncate font-display text-xl font-semibold tracking-tight text-white sm:text-2xl">
+          {config.entreprise.nom}
+        </span>
+        {tagline && (
+          <span className="mt-1.5 truncate text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-[var(--px-gold)]">
+            {tagline}
+          </span>
+        )}
+      </span>
     </a>
   );
 }
@@ -128,11 +146,14 @@ export function PrestigeHeader({
           )}
           {tel && (
             <a
-              href={telHref(tel)}
+              href={telHrefIntl(tel)}
               className="inline-flex items-center gap-2 text-sm font-semibold tabular-nums tracking-tight text-white transition-colors hover:text-[var(--px-gold)]"
             >
               <Phone className="size-4 text-[var(--px-gold)]" strokeWidth={2.2} />
-              {tel}
+              <span className="inline-flex items-baseline gap-1.5">
+                <span className="text-[0.72em] font-medium text-white/45">{telIndicatif()}</span>
+                {tel}
+              </span>
             </a>
           )}
           {cta && (
@@ -184,10 +205,11 @@ export function PrestigeHeader({
                 )}
                 {tel && (
                   <a
-                    href={telHref(tel)}
+                    href={telHrefIntl(tel)}
                     className="inline-flex h-12 items-center justify-center gap-2 border border-[var(--px-line)] text-sm font-semibold tabular-nums text-white"
                   >
-                    <Phone className="size-4 text-[var(--px-gold)]" /> {tel}
+                    <Phone className="size-4 text-[var(--px-gold)]" />
+                    <span className="text-[0.72em] font-medium text-white/45">{telIndicatif()}</span> {tel}
                   </a>
                 )}
                 {cta && (

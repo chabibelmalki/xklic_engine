@@ -2,6 +2,7 @@ import type { TemplateFamily } from "../types";
 import { Hero } from "./blocks/Hero";
 import { PageHero } from "./blocks/PageHero";
 import { Services } from "./blocks/Services";
+import { Avis } from "./blocks/Avis";
 import { Contenu } from "./blocks/Contenu";
 import { Etapes } from "./blocks/Etapes";
 import { Faq } from "./blocks/Faq";
@@ -19,7 +20,7 @@ import { PrestigeFloatingActions } from "./chrome/FloatingActions";
  * et à classic (cartes) : c'est le pari « caractère fort » qui casse la
  * ressemblance. 100 % rendu serveur, zéro motion lourd.
  *
- * PÉRIMÈTRE : blocs porteurs d'identité (hero, pageHero, services, contenu,
+ * PÉRIMÈTRE : blocs porteurs d'identité (hero, pageHero, services, avis, contenu,
  * etapes, faq, zone, cta) + le chrome.
  * Tous les autres types retombent sur `classic` via `getFamilyBlock`. Couleurs
  * via tokens client (brand/accent) + noir/blanc d'infrastructure de lecture.
@@ -30,6 +31,7 @@ export const PRESTIGE: TemplateFamily = {
     hero: Hero,
     pageHero: PageHero,
     services: Services,
+    avis: Avis,
     contenu: Contenu,
     etapes: Etapes,
     faq: Faq,

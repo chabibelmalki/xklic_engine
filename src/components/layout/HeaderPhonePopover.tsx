@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Phone, Copy, Check } from "lucide-react";
-import { cn, telHref } from "@/lib/utils";
+import { cn, telHrefIntl, telIndicatif } from "@/lib/utils";
 
 /**
  * Icône téléphone du header : au clic, popup avec le numéro (cliquable) et un
@@ -77,9 +77,10 @@ export function HeaderPhonePopover({
           className="absolute right-0 top-full z-50 mt-2 flex items-center gap-2 whitespace-nowrap rounded-xl border border-border bg-bg px-3 py-2.5 shadow-lg"
         >
           <a
-            href={telHref(telephone)}
+            href={telHrefIntl(telephone)}
             className="text-sm font-semibold text-ink transition-colors hover:text-brand-700"
           >
+            <span className="text-[0.8em] font-medium text-muted">{telIndicatif()}</span>{" "}
             {telephone}
           </a>
           <button

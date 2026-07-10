@@ -47,15 +47,32 @@ export function Logo({
     );
   }
 
+  // Sur fond sombre (footer), un logo sombre/transparent disparaît : on le pose
+  // dans une pastille ronde blanche (opt-in `branding.logoDarkBadge`).
+  const darkBadge = light && !!logo && !!config.branding.logoDarkBadge;
+
   const emblem = logo ? (
-    <Image
-      src={logo}
-      alt={logoAlt ?? config.entreprise.nom}
-      width={160}
-      height={44}
-      className="h-9 w-auto max-w-[160px] shrink-0 object-contain"
-      priority
-    />
+    darkBadge ? (
+      <span className="grid size-12 shrink-0 place-items-center rounded-full bg-white shadow-md ring-1 ring-black/5">
+        <Image
+          src={logo}
+          alt={logoAlt ?? config.entreprise.nom}
+          width={160}
+          height={160}
+          className="size-9 object-contain"
+          priority
+        />
+      </span>
+    ) : (
+      <Image
+        src={logo}
+        alt={logoAlt ?? config.entreprise.nom}
+        width={160}
+        height={44}
+        className="h-9 w-auto max-w-[160px] shrink-0 object-contain"
+        priority
+      />
+    )
   ) : (
     <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-brand-gradient text-brand-contrast shadow-md shadow-brand-600/30 transition-transform group-hover:scale-105">
       <Sparkles className="size-5" strokeWidth={2.4} />

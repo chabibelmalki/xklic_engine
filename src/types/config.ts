@@ -179,6 +179,12 @@ export interface Branding {
    * N'affecte que le rendu clair (header) ; le footer sombre garde le blanc.
    */
   logoTwoTone?: { first: string; rest: string };
+  /**
+   * Pose l'emblème du logo dans une PASTILLE RONDE BLANCHE sur les fonds sombres
+   * (footer). À activer pour un logo sombre/transparent qui disparaîtrait sinon.
+   * À laisser à défaut (faux) pour un logo clair déjà lisible sur fond sombre.
+   */
+  logoDarkBadge?: boolean;
   /** Petite ligne sous le nom (ex. "Nettoyage · Nîmes"). */
   tagline?: string;
   /**
@@ -564,6 +570,12 @@ export interface AvisContent {
   items: AvisItem[];
   /** Mention sous la grille (ex. "témoignages à titre d'exemple"). */
   disclaimer?: string;
+  /**
+   * Étoiles par carte en version COMPACTE : une seule étoile + la note chiffrée
+   * (ex. « ★ 5,0 ») au lieu d'une rangée de 5 étoiles. Réduit la répétition
+   * visuelle quand tous les avis sont notés pareil. Défaut : rangée complète.
+   */
+  compactStars?: boolean;
 }
 
 // --- contact ---

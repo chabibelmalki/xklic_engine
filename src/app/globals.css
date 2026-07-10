@@ -1153,3 +1153,50 @@ input[type="range"] {
 [data-pack="prestige-nuit"] h3.font-display {
   font-family: var(--pack-font-display), "Didot", "Bodoni MT", Georgia, serif;
 }
+
+/* ======================= Taxi · Jour (clair pro navy/orange) =======================
+   Pack CLAIR « mobilité » : sans géométrique (Poppins), arrondis moyens (pas de
+   pill), ombres douces teintées NAVY (dérivées du logo, jamais teal/gris froid).
+   Les couleurs (navy/orange) viennent de `branding.colors` en style inline —
+   ce bloc ne touche QUE typo / rayons / ombres / rythme. */
+[data-pack="taxi-jour"] {
+  --pack-font-display: var(--font-poppins);
+  --pack-font-sans: var(--font-inter);
+  --display-tracking: -0.02em;
+  --display-case: none;
+
+  --radius-btn: 0.7rem;
+  --radius-card: 1rem;
+  --radius-image: 1rem;
+  --border-width: 1px;
+  --radius: 0.8rem;
+
+  --shadow-card: 0 16px 40px -24px rgb(22 40 77 / 0.22);
+  --shadow-pop: 0 30px 60px -30px rgb(22 40 77 / 0.28);
+
+  --section-py: 5.5rem;
+  --content-max: 72rem;
+  --motion-distance: 22px;
+  --motion-duration: 0.55s;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Boutons d'action PRIMAIRES en ORANGE (accent du logo) au lieu du navy (brand) :
+   rappelle l'orange dans les CTA. Cible `.btn.bg-brand-600` (variant primary) —
+   les boutons `outline`/`ghost` (navy) et l'`accent` (déjà orange) sont intacts.
+   Hors @layer plus haut en spécificité que les utilitaires Tailwind hover. */
+[data-pack="taxi-jour"] .btn.bg-brand-600 {
+  background-color: var(--accent-500);
+  color: #ffffff;
+  --tw-shadow-color: color-mix(in srgb, var(--accent-500) 32%, transparent);
+}
+[data-pack="taxi-jour"] .btn.bg-brand-600:hover {
+  background-color: var(--accent-600);
+}
+/* Bouton d'APPEL flottant (rond, hors `.btn`) : orange lui aussi, pour rester
+   visible sur le hero sombre et cohérent avec les CTA primaires. Le WhatsApp
+   (vert) et les boutons outline (navy) ne sont pas ciblés. */
+[data-pack="taxi-jour"] a.rounded-full.bg-brand-600 {
+  background-color: var(--accent-500);
+  color: #ffffff;
+}

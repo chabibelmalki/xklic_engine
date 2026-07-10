@@ -1,4 +1,4 @@
-import { Quote } from "lucide-react";
+import { Quote, Star } from "lucide-react";
 import type { AvisContent, AvisItem } from "@/types/config";
 import type { BlockComponentProps } from "./types";
 import { Section } from "@/components/ui/Section";
@@ -6,8 +6,19 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Stars } from "@/components/ui/Stars";
 import { Reveal } from "@/components/ui/Reveal";
 
+/** Note d'une carte : rangée de 5 étoiles, ou version compacte « ★ 5,0 ». */
+function CardNote({ note, compact }: { note: number; compact?: boolean }) {
+  if (!compact) return <Stars note={note} />;
+  return (
+    <span className="inline-flex items-center gap-1.5 text-amber-500" aria-label={`${note}/5`}>
+      <Star className="size-4" fill="currentColor" strokeWidth={0} />
+      <span className="text-sm font-semibold text-ink">{note.toFixed(1).replace(".", ",")}</span>
+    </span>
+  );
+}
+
 /** Carte d'avis réutilisée par les variantes grille / carrousel. */
-function AvisCard({ a, className = "" }: { a: AvisItem; className?: string }) {
+function AvisCard({ a, compact, className = "" }: { a: AvisItem; compact?: boolean; className?: string }) {
   return (
     <figure className={`flex h-full flex-col rounded-theme border border-border bg-surface p-7 shadow-sm ${className}`}>
       <Quote className="size-8 text-brand-200" />
@@ -17,7 +28,7 @@ function AvisCard({ a, className = "" }: { a: AvisItem; className?: string }) {
           <p className="font-semibold text-ink">{a.auteur}</p>
           {a.ville && <p className="text-sm text-muted">{a.ville}</p>}
         </div>
-        {a.note && <Stars note={a.note} />}
+        {a.note && <CardNote note={a.note} compact={compact} />}
       </figcaption>
     </figure>
   );
@@ -68,7 +79,7 @@ export function Avis({ block, tone, strings }: BlockComponentProps<AvisContent>)
         <div className="mt-12 -mx-5 flex snap-x snap-mandatory gap-6 overflow-x-auto px-5 pb-4 sm:-mx-8 sm:px-8">
           {c.items.map((a, i) => (
             <div key={i} className="w-[82%] shrink-0 snap-start sm:w-[360px]">
-              <AvisCard a={a} />
+              <AvisCard a={a} compact={c.compactStars} />
             </div>
           ))}
         </div>
@@ -99,7 +110,7 @@ export function Avis({ block, tone, strings }: BlockComponentProps<AvisContent>)
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {rest.map((a, i) => (
               <Reveal key={i} delay={(i % 3) * 0.06}>
-                <AvisCard a={a} />
+                <AvisCard a={a} compact={c.compactStars} />
               </Reveal>
             ))}
           </div>
@@ -115,7 +126,7 @@ export function Avis({ block, tone, strings }: BlockComponentProps<AvisContent>)
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {c.items.map((a, i) => (
           <Reveal key={i} delay={(i % 3) * 0.06}>
-            <AvisCard a={a} />
+            <AvisCard a={a} compact={c.compactStars} />
           </Reveal>
         ))}
       </div>

@@ -1,5 +1,5 @@
 import { Phone } from "lucide-react";
-import { telHref, waHref } from "@/lib/utils";
+import { telHrefIntl, waHref } from "@/lib/utils";
 import type { UIStrings } from "@/i18n/ui";
 
 /**
@@ -41,7 +41,7 @@ export function FloatingActions({
       )}
       {telephone && (
         <a
-          href={telHref(telephone)}
+          href={telHrefIntl(telephone)}
           aria-label={`${strings.callAria} ${entreprise}`}
           className="grid size-14 place-items-center rounded-full bg-brand-600 text-brand-contrast shadow-lg shadow-brand-700/30 transition-transform hover:scale-110 sm:hidden"
         >
