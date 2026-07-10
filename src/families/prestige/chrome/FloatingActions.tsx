@@ -1,5 +1,5 @@
 import { Phone, MessageCircle } from "lucide-react";
-import { telHrefIntl, telIndicatif, waHref } from "@/lib/utils";
+import { telHrefIntl, telIndicatif, telNeedsIndicatif, waHref } from "@/lib/utils";
 import type { UIStrings } from "@/i18n/ui";
 
 /**
@@ -46,7 +46,10 @@ export function PrestigeFloatingActions({
             {strings.callAria}
           </span>
           <span className="text-lg font-bold tabular-nums tracking-tight">
-            <span className="text-[0.72em] font-semibold opacity-55">{telIndicatif()}</span> {telephone}
+            {telNeedsIndicatif(telephone) && (
+              <span className="text-[0.72em] font-semibold opacity-55">{telIndicatif()}</span>
+            )}{" "}
+            {telephone}
           </span>
         </a>
       )}

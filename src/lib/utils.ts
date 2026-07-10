@@ -50,6 +50,15 @@ export function telIndicatif(cc = "33"): string {
   return `(+${cc})`;
 }
 
+/**
+ * Faut-il afficher l'indicatif « (+33) » devant CE numéro ? Non si le numéro
+ * porte DÉJÀ un indicatif international (« +33 … » ou « 0033 … ») — sinon on
+ * doublonne. Oui pour un numéro national (« 06 … »). Le lien tel: reste géré à
+ * part par `telHrefIntl` (idempotent). */
+export function telNeedsIndicatif(phone: string): boolean {
+  return !/^\s*(\+|00)/.test(phone);
+}
+
 export function waHref(phone: string): string {
   const digits = phone.replace(/[^0-9]/g, "").replace(/^0/, "33");
   return `https://wa.me/${digits}`;

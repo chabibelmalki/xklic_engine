@@ -8,7 +8,7 @@ import { Logo } from "./Logo";
 import { Button } from "@/components/ui/Button";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { HeaderPhonePopover } from "./HeaderPhonePopover";
-import { cn, telHrefIntl, telIndicatif } from "@/lib/utils";
+import { cn, telHrefIntl, telIndicatif, telNeedsIndicatif } from "@/lib/utils";
 import { navPages, isMultiPage, resolvePages, findBlock } from "@/lib/pages";
 
 type NavItem = { href: string; label: string; active: boolean };
@@ -167,7 +167,9 @@ export function SiteHeader({
               >
                 <Phone className="size-4 text-brand-600" />
                 <span className="inline-flex items-baseline gap-1.5">
-                  <span className="text-[0.78em] font-medium text-muted">{telIndicatif()}</span>
+                  {telNeedsIndicatif(contact.telephone) && (
+                    <span className="text-[0.78em] font-medium text-muted">{telIndicatif()}</span>
+                  )}
                   {contact.telephone}
                 </span>
               </a>
@@ -230,7 +232,9 @@ export function SiteHeader({
             {contact?.telephone && (
               <Button href={telHrefIntl(contact.telephone)} variant="outline" size="lg">
                 <Phone className="size-4" />
-                <span className="text-[0.8em] font-medium text-muted">{telIndicatif()}</span>{" "}
+                {telNeedsIndicatif(contact.telephone) && (
+                  <span className="text-[0.8em] font-medium text-muted">{telIndicatif()}</span>
+                )}{" "}
                 {contact.telephone}
               </Button>
             )}

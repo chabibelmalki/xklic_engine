@@ -3,7 +3,7 @@ import { Phone } from "lucide-react";
 import type { HeroContent, ContactContent } from "@/types/config";
 import type { BlockComponentProps } from "@/blocks/types";
 import { Button } from "@/components/ui/Button";
-import { telHrefIntl, telIndicatif, withBase } from "@/lib/utils";
+import { telHrefIntl, telIndicatif, telNeedsIndicatif, withBase } from "@/lib/utils";
 import { findBlock } from "@/lib/pages";
 import { resolveHeroSecondary } from "@/lib/hero-cta";
 import { PrestigeContainer } from "../ui/Container";
@@ -84,7 +84,9 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
               <span className="mt-2 inline-flex items-center gap-4 font-sans text-4xl font-bold tabular-nums leading-none tracking-tight text-white transition-colors group-hover:text-[var(--px-gold)] sm:text-6xl">
                 <Phone className="size-8 shrink-0 text-[var(--px-gold)] sm:size-10" strokeWidth={2.2} />
                 <span className="inline-flex items-baseline gap-2.5">
-                  <span className="text-[0.4em] font-medium text-white/45">{telIndicatif()}</span>
+                  {telNeedsIndicatif(tel) && (
+                    <span className="text-[0.4em] font-medium text-white/45">{telIndicatif()}</span>
+                  )}
                   {tel}
                 </span>
               </span>

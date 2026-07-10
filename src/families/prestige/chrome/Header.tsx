@@ -3,7 +3,7 @@ import { Menu, Phone } from "lucide-react";
 import type { SiteConfig, ContactContent } from "@/types/config";
 import type { UIStrings } from "@/i18n/ui";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
-import { telHrefIntl, telIndicatif, cn } from "@/lib/utils";
+import { telHrefIntl, telIndicatif, telNeedsIndicatif, cn } from "@/lib/utils";
 import { navPages, isMultiPage, resolvePages, findBlock } from "@/lib/pages";
 
 /**
@@ -151,7 +151,9 @@ export function PrestigeHeader({
             >
               <Phone className="size-4 text-[var(--px-gold)]" strokeWidth={2.2} />
               <span className="inline-flex items-baseline gap-1.5">
-                <span className="text-[0.72em] font-medium text-white/45">{telIndicatif()}</span>
+                {telNeedsIndicatif(tel) && (
+                  <span className="text-[0.72em] font-medium text-white/45">{telIndicatif()}</span>
+                )}
                 {tel}
               </span>
             </a>
@@ -209,7 +211,10 @@ export function PrestigeHeader({
                     className="inline-flex h-12 items-center justify-center gap-2 border border-[var(--px-line)] text-sm font-semibold tabular-nums text-white"
                   >
                     <Phone className="size-4 text-[var(--px-gold)]" />
-                    <span className="text-[0.72em] font-medium text-white/45">{telIndicatif()}</span> {tel}
+                    {telNeedsIndicatif(tel) && (
+                      <span className="text-[0.72em] font-medium text-white/45">{telIndicatif()}</span>
+                    )}{" "}
+                    {tel}
                   </a>
                 )}
                 {cta && (

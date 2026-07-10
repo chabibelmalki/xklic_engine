@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import type { SiteConfig, ContactContent, ServicesContent } from "@/types/config";
 import { Logo } from "./Logo";
 import { statutLabel, legalName, siretToSiren } from "@/lib/legal";
-import { telHrefIntl, telIndicatif, waHref } from "@/lib/utils";
+import { telHrefIntl, telIndicatif, telNeedsIndicatif, waHref } from "@/lib/utils";
 import { resolvePages, isMultiPage, findBlock } from "@/lib/pages";
 import { resolveSocials } from "@/lib/social";
 import { SocialLinks } from "./SocialLinks";
@@ -143,7 +143,9 @@ export function SiteFooter({
                 <li className="flex items-center gap-3">
                   <Phone className="size-4 shrink-0 text-brand-400" />
                   <a href={telHrefIntl(contact.telephone)} className="hover:text-brand-300">
-                    <span className="text-[0.82em] opacity-70">{telIndicatif()}</span>{" "}
+                    {telNeedsIndicatif(contact.telephone) && (
+                      <span className="text-[0.82em] opacity-70">{telIndicatif()}</span>
+                    )}{" "}
                     {contact.telephone}
                   </a>
                 </li>
