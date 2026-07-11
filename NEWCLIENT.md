@@ -25,12 +25,18 @@ métier et à la ville du client.
 
 ---
 
-## ENRICHISSEMENT (si SIREN/SIRET renseigné)
+## ENRICHISSEMENT (si un identifiant légal est renseigné)
 
-Si un SIREN/SIRET est fourni, déduis et recoupe les données légales de
-l'entreprise (raison sociale, forme juridique, dirigeant, adresse, statut, GPS).
-Source fiable et gratuite : `recherche-entreprises.api.gouv.fr/search?q=<siret>`
-(`societe.com` et `pappers.fr` renvoient souvent 403 à la récupération auto).
+Si un identifiant légal d'entreprise est fourni (SIREN/SIRET en France, numéro
+BCE/KBO en Belgique, ou l'équivalent d'un autre pays), déduis et recoupe les
+données légales de l'entreprise (raison sociale, forme juridique, dirigeant,
+adresse, statut, GPS).
+
+**Utilise uniquement le registre officiel des entreprises du pays concerné**
+(source publique et faisant foi) — jamais un site tiers, agrégateur ou annuaire
+non officiel, qui bloque souvent la récupération auto et n'engage pas sa fiabilité.
+En France, la source de référence est `recherche-entreprises.api.gouv.fr/search?q=<id>`.
+
 N'utilise que ce qui est concordant ; signale tout écart ou doute.
 
 ---
@@ -154,7 +160,8 @@ npm run dossier:get -- "<nom de l'entreprise | Ref | OrderId>"
   e-mail, téléphone, nb d'éléments liés) — pour vérifier d'un coup d'œil.
 - Si **plusieurs dossiers** correspondent, le script liste les candidats avec leur
   Ref : relance avec le **nom exact** ou la **Ref**.
-- Si un **SIREN/SIRET** figure au dossier → applique l'ENRICHISSEMENT ci-dessus.
+- Si un **identifiant légal** (SIREN/SIRET, BCE/KBO, équivalent étranger) figure
+  au dossier → applique l'ENRICHISSEMENT ci-dessus.
 - Rappel : `dossier:get` lit `.env.local` (`BACKOFFICE_API_URL`,
   `BACKOFFICE_API_KEY`), c'est un script **local de lecture** (API Go du
   back-office, distinct des écritures de la prod).
