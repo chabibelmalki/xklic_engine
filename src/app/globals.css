@@ -1113,6 +1113,11 @@ input[type="range"] {
   --display-tracking: -0.01em;
   --display-case: none;
 
+  /* Contrôles natifs (date picker, <select>, scrollbars) rendus en schéma SOMBRE.
+     Sans ça, l'icône calendrier de <input type="date"> est un glyphe noir →
+     invisible sur le fond near-black : le champ « ne s'ouvre pas » à l'œil. */
+  color-scheme: dark;
+
   /* Bords CARRÉS (luxe net), zéro ombre douce. */
   --radius-btn: 0px;
   --radius-card: 0px;
