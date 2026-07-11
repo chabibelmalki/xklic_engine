@@ -61,7 +61,7 @@
     ]
   },
   "forms": {
-    "turnstile": false
+    "turnstile": true
   },
   "pages": [
     {
