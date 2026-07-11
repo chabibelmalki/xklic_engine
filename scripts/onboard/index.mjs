@@ -21,6 +21,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { c, loadEnvLocal, bareHost, die, stepHeader, MissingTokenError } from "./util.mjs";
 import { STEPS, STEP_ORDER } from "./steps.mjs";
+import * as backoffice from "./backoffice.mjs";
 
 const ONLY_TARGETS = Object.keys(STEPS); // inclut "gsc-human" (hors pipeline auto)
 
@@ -33,23 +34,26 @@ loadEnvLocal(ROOT, ".env.turnstile-widget");
 
 // --- parsing args ---------------------------------------------------------
 function parseArgs(argv) {
-  const out = { apply: false, only: null, slug: null, domain: null, humanToken: null, widget: "xklic 1", widgetSitekey: null };
+  const out = { apply: false, only: null, slug: null, domain: null, humanToken: null, widget: "xklic 1", widgetSitekey: null, dossierRef: null, listWidgets: false };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--apply" || a === "--no-dry-run") out.apply = true;
     else if (a === "--dry-run") out.apply = out.apply; // alias explicite (no-op)
+    else if (a === "--list-widgets") out.listWidgets = true;
     else if (a === "--only") out.only = argv[++i];
     else if (a === "--slug") out.slug = argv[++i];
     else if (a === "--domain") out.domain = argv[++i];
     else if (a === "--human-token") out.humanToken = argv[++i];
     else if (a === "--widget") out.widget = argv[++i];
     else if (a === "--widget-sitekey") out.widgetSitekey = argv[++i];
+    else if (a === "--dossier-ref") out.dossierRef = argv[++i];
     else if (a.startsWith("--slug=")) out.slug = a.slice(7);
     else if (a.startsWith("--domain=")) out.domain = a.slice(9);
     else if (a.startsWith("--only=")) out.only = a.slice(7);
     else if (a.startsWith("--human-token=")) out.humanToken = a.slice(14);
     else if (a.startsWith("--widget=")) out.widget = a.slice(9);
     else if (a.startsWith("--widget-sitekey=")) out.widgetSitekey = a.slice(17);
+    else if (a.startsWith("--dossier-ref=")) out.dossierRef = a.slice(14);
     else die(`Argument inconnu : ${a}`);
   }
   return out;
@@ -57,6 +61,20 @@ function parseArgs(argv) {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
+
+  // Action autonome : lister les widgets Turnstile du back-office (aucun slug/domaine requis).
+  if (args.listWidgets) {
+    if (!backoffice.isConfigured()) die("Config back-office absente (BACKOFFICE_API_URL / BACKOFFICE_API_KEY).");
+    const widgets = await backoffice.listWidgets();
+    if (!widgets.length) {
+      console.log(c.dim("Aucun widget Turnstile côté back-office."));
+    } else {
+      console.log(c.bold(`Widgets Turnstile (${widgets.length}) :`));
+      for (const w of widgets) console.log(`   • ${c.bold(w.name)}  ${c.dim(w.sitekey)}`);
+    }
+    return;
+  }
+
   if (!args.slug) die("--slug <slug> requis.");
   if (!args.domain) die("--domain <domaine> requis.");
   if (args.only && !ONLY_TARGETS.includes(args.only)) {
@@ -78,6 +96,7 @@ async function main() {
     humanToken: args.humanToken,
     widget: args.widget,
     widgetSitekey: args.widgetSitekey,
+    dossierRef: args.dossierRef,
     root: ROOT,
     rootDomain: process.env.NEXT_PUBLIC_ROOT_DOMAIN?.trim() || "xklic.com",
   };

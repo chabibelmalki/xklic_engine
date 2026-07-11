@@ -486,6 +486,19 @@ function siteTenantSlug(ctx) {
   }
 }
 
+// Nom d'entreprise (config.entreprise.nom) — sert de nom de tenant quand le
+// back-office doit le créer à la volée. Défaut : slug si config illisible.
+function siteBusinessName(ctx) {
+  try {
+    const file = path.join(ctx.root, "config", "sites", ctx.slug, "config.json");
+    const cfg = JSON.parse(fs.readFileSync(file, "utf8"));
+    const n = cfg.entreprise && typeof cfg.entreprise.nom === "string" && cfg.entreprise.nom.trim();
+    return n || ctx.slug;
+  } catch {
+    return ctx.slug;
+  }
+}
+
 export async function turnstileStep(ctx) {
   const hosts = [ctx.apex, ctx.www];
   const widget = ctx.widget || "xklic 1";
@@ -550,16 +563,25 @@ export async function turnstileStep(ctx) {
     warn(`widget « ${widget} » : ni --widget-sitekey ni TURNSTILE_WIDGET_SECRET fournis — il doit déjà exister côté back-office, sinon l'assignation échouera.`);
   }
 
-  // (b) Assignation du tenant au widget.
-  willDo(`assigner « ${tenantSlug} » au widget back-office « ${widget} »`);
+  // (b) Assignation du tenant au widget. create_missing : le back-office crée le
+  // tenant s'il n'existe pas encore (sinon 404) — indispensable pour un nouveau
+  // client jamais provisionné côté back-office. dossierRef (Ref/OrderId, via
+  // --dossier-ref) lie le tenant créé à son dossier.
+  const tenantName = siteBusinessName(ctx);
+  willDo(`assigner « ${tenantSlug} » au widget back-office « ${widget} » (créer le tenant si absent : « ${tenantName} »)`);
   if (ctx.dryRun) return;
   try {
-    const r = await backoffice.assignTurnstileWidget(tenantSlug, widget);
-    ok(`tenant « ${r.tenant} » → widget « ${r.widget} » (sitekey ${r.sitekey || "∅"})`);
+    const r = await backoffice.assignTurnstileWidget(tenantSlug, widget, {
+      createMissing: true,
+      tenantName,
+      dossierRef: ctx.dossierRef || undefined,
+    });
+    const how = r.created ? "tenant créé + assigné" : "assigné";
+    ok(`${how} : tenant « ${r.tenant} » → widget « ${r.widget} » (sitekey ${r.sitekey || "∅"})`);
   } catch (e) {
     warn(`assignation widget back-office échouée : ${e.message}`);
     manualAction("Turnstile (back-office) — à assigner à la main", [
-      `POST /v1/public/tenants/${tenantSlug}/turnstile-widget { "widget": "${widget}" }`,
+      `POST /v1/public/tenants/${tenantSlug}/turnstile-widget { "widget": "${widget}", "create_missing": true }`,
       `(fallback env actif en attendant — non bloquant)`,
     ]);
   }

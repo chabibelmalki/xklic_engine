@@ -27,17 +27,26 @@ export function isConfigured() {
 }
 
 /**
- * Assigne le tenant `slug` au widget nommé `widget`.
+ * Assigne le tenant `slug` au widget nommé `widget`. Avec `opts.createMissing`,
+ * le back-office crée le tenant s'il n'existe pas encore (au lieu de renvoyer
+ * 404) — ce qui permet de câbler Turnstile de bout en bout sans le repo
+ * back-office. `opts.dossierRef` (Ref/OrderId) lie le tenant créé à son dossier
+ * (garde-fou : le slug doit correspondre à celui figé sur le dossier, sinon 409).
  * @param {string} slug
  * @param {string} widget
- * @returns {Promise<{ tenant:string, widget:string, sitekey:string }>}
+ * @param {{ createMissing?:boolean, tenantName?:string, dossierRef?:string }} [opts]
+ * @returns {Promise<{ tenant:string, widget:string, sitekey:string, created:boolean }>}
  */
-export async function assignTurnstileWidget(slug, widget) {
+export async function assignTurnstileWidget(slug, widget, opts = {}) {
   const { base, key } = cfg();
+  const payload = { widget };
+  if (opts.createMissing) payload.create_missing = true;
+  if (opts.tenantName) payload.tenant_name = opts.tenantName;
+  if (opts.dossierRef) payload.dossier_ref = opts.dossierRef;
   const res = await fetch(`${base}/v1/public/tenants/${encodeURIComponent(slug)}/turnstile-widget`, {
     method: "POST",
     headers: { "X-API-Key": key, "Content-Type": "application/json" },
-    body: JSON.stringify({ widget }),
+    body: JSON.stringify(payload),
   });
   const text = await res.text();
   const body = text ? JSON.parse(text) : null;
@@ -45,7 +54,28 @@ export async function assignTurnstileWidget(slug, widget) {
     const detail = body?.error ?? res.statusText;
     throw new Error(`back-office POST /turnstile-widget -> ${res.status} ${detail}`);
   }
-  return { tenant: body?.tenant, widget: body?.widget, sitekey: body?.turnstile_sitekey };
+  return { tenant: body?.tenant, widget: body?.widget, sitekey: body?.turnstile_sitekey, created: !!body?.tenant_created };
+}
+
+/**
+ * Liste les widgets Turnstile connus du back-office (nom + sitekey ; le secret
+ * n'est jamais renvoyé). Sert à savoir quels « groupes » existent avant d'en
+ * créer/assigner un.
+ * @returns {Promise<Array<{ name:string, sitekey:string, created_at:string }>>}
+ */
+export async function listWidgets() {
+  const { base, key } = cfg();
+  const res = await fetch(`${base}/v1/public/turnstile/widgets`, {
+    headers: { "X-API-Key": key },
+  });
+  const text = await res.text();
+  let body = null;
+  try { body = text ? JSON.parse(text) : null; } catch { /* réponse non-JSON (ex. 405) */ }
+  if (!res.ok) {
+    const detail = body?.error ?? res.statusText;
+    throw new Error(`back-office GET /turnstile/widgets -> ${res.status} ${detail}`);
+  }
+  return Array.isArray(body?.widgets) ? body.widgets : [];
 }
 
 /**

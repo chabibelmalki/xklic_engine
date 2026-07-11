@@ -4,9 +4,13 @@ But : câbler un nouveau client sur un **2ᵉ widget Cloudflare** quand « xklic
 approche la limite de 10 hostnames. Suivre dans l'ordre, les yeux fermés.
 
 **Prérequis (faits une fois)** : backoffice + engine déployés avec le chantier
-Turnstile-par-widget (slug-à-l'upsert, endpoint `POST /v1/public/turnstile/widgets`,
-onboarding `--widget`). Le client a commandé via la vitrine → **un dossier existe**
-en base (sinon, pas de slug déterministe).
+Turnstile-par-widget **self-service** : endpoints `POST /v1/public/turnstile/widgets`
+(créer un widget), `GET /v1/public/turnstile/widgets` (lister), et
+`POST /v1/public/tenants/{slug}/turnstile-widget` avec `create_missing` (crée le
+tenant à la volée). L'onboarding de l'engine fait **tout le câblage back-office à
+distance** — plus besoin du repo `xklic-backoffice` ni d'un accès DB. Le client a
+commandé via la vitrine → **un dossier existe** en base (sinon, pas de slug
+déterministe).
 
 Terminologie : le **slug** est déterministe et **figé sur le dossier** dès la
 commande. On l'utilise partout à l'identique (`config/sites/<slug>`, tenant,
@@ -70,60 +74,56 @@ en utilisant **exactement** le `<slug>` de l'étape 2. Vérifier :
 
 ---
 
-## 5. Provisionner le côté back-office (widget + tenant + assignation)
+## 5. (Optionnel) Vérifier les widgets back-office existants
 
-Client nouveau ⇒ son tenant n'existe pas encore. Une seule commande crée le
-widget « xklic 2 » (chiffre le secret), crée le tenant **lié au dossier** en
-reprenant le slug figé, et l'assigne au widget.
+Plus de provisionnement manuel : le côté back-office (widget + tenant +
+assignation) est fait **automatiquement par l'onboarding (étape 6)** depuis
+l'engine, via l'API. Aucun accès au repo `xklic-backoffice` ni à la DB requis.
+
+Pour juste voir quels widgets existent déjà côté back-office :
 
 ```bash
-# charger les secrets (sitekey/secret widget + connexion DB + clé de chiffrement)
-cd xklic_engine        && set -a && source .env.turnstile-widget && set +a
-cd ../xklic-backoffice && set -a && source .env.backfill         && set +a
-cd api
-
-# dry-run (n'écrit rien) — vérifier le tenant ciblé
-go run ./cmd/seed-turnstile --name "xklic 2" \
-  --sitekey "$TURNSTILE_WIDGET_SITEKEY" --secret "$TURNSTILE_WIDGET_SECRET" \
-  --tenants <slug> --tenant-name "<Nom Client>" --create-missing --baserow-ref <ref-dossier>
-
-# apply
-go run ./cmd/seed-turnstile --name "xklic 2" \
-  --sitekey "$TURNSTILE_WIDGET_SITEKEY" --secret "$TURNSTILE_WIDGET_SECRET" \
-  --tenants <slug> --tenant-name "<Nom Client>" --create-missing --baserow-ref <ref-dossier> --apply
+npm run onboard -- --list-widgets
 ```
 
-Sortie attendue à l'apply : `widget créé` (ou réutilisé), `+ tenant créé`,
-`↔ dossier … lié`, `OK : 1/1 tenant(s) assignés`.
-
-> Garde-fou : si `<slug>` ≠ le `tenant_slug` figé du dossier, la commande
-> **échoue bruyamment** (« divergence slug »). Corriger `<slug>` avec la valeur
+> Garde-fou : si `<slug>` ≠ le `tenant_slug` figé du dossier, la création du
+> tenant **échoue en 409 `slug_mismatch`**. Corriger `<slug>` avec la valeur
 > exacte de `dossier:get`.
 >
-> Variante marchand (boutique) : si le client est activé comme marchand côté
-> admin SA, le tenant est créé par l'activation — sauter cette étape, vérifier
-> juste que le slug correspond.
+> Variante marchand (boutique) : si le client est déjà activé comme marchand côté
+> admin SA, le tenant existe déjà — l'onboarding se contente de l'assigner.
 
 ---
 
-## 6. Onboarder le domaine (Cloudflare hostnames + DNS + SSL + déploiement)
+## 6. Onboarder le domaine (Cloudflare + DNS + SSL + back-office + déploiement)
 
-Depuis `xklic_engine/` (le secret est lu automatiquement de `.env.turnstile-widget`) :
+Depuis `xklic_engine/` (le sitekey **et le secret** sont lus automatiquement de
+`.env.turnstile-widget`). Passer `--dossier-ref <ref-dossier>` pour lier le tenant
+créé à son dossier :
 
 ```bash
 # dry-run
 npm run onboard -- --slug <slug> --domain <domaine>.fr \
-  --widget "xklic 2" --widget-sitekey "$TURNSTILE_WIDGET_SITEKEY" --dry-run
+  --widget "xklic 2" --dossier-ref <ref-dossier> --dry-run
 
 # apply
 npm run onboard -- --slug <slug> --domain <domaine>.fr \
-  --widget "xklic 2" --widget-sitekey "$TURNSTILE_WIDGET_SITEKEY" --apply
+  --widget "xklic 2" --dossier-ref <ref-dossier> --apply
 ```
 
-L'étape `turnstile` de l'onboarding : ajoute les hostnames au **widget Cloudflare
-« xklic 2 »** (ciblé par `--widget-sitekey`), ré-assure le widget back-office
-(idempotent — déjà créé à l'étape 5), ré-assigne (idempotent). L'onboarding
-attend le déploiement Vercel READY avant de finir.
+L'étape `turnstile` de l'onboarding, **de bout en bout** :
+1. ajoute les hostnames au **widget Cloudflare « xklic 2 »** (ciblé par la sitekey
+   de `.env.turnstile-widget`) ;
+2. **crée le widget back-office** « xklic 2 » si absent (chiffre le secret) —
+   idempotent ;
+3. **crée le tenant** s'il n'existe pas (`create_missing`), le nomme depuis
+   `entreprise.nom` et le **lie au dossier** (`--dossier-ref`), puis l'**assigne**
+   au widget — idempotent.
+
+L'onboarding attend le déploiement Vercel READY avant de finir.
+
+> Note : `--widget-sitekey` reste accepté mais n'est plus nécessaire si la sitekey
+> est dans `.env.turnstile-widget`.
 
 > Si un `warn` « slug tenant ≠ slug config » apparaît : le `shop.tenant` de la
 > config diffère du slug — aligner avant de continuer.
