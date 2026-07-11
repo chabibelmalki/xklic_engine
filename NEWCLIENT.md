@@ -129,6 +129,81 @@ pas par habitude.
 
 ---
 
+## CHECKLIST SEO — leçons de l'audit du parc (2026-07-11)
+
+Chaque point ci-dessous est une erreur RÉELLEMENT constatée en prod sur le parc.
+À vérifier systématiquement avant de livrer une config.
+
+**Balises**
+- `meta.title` : **≤ 55 caractères, SANS le nom de l'entreprise** — le moteur
+  ajoute ` — <entreprise.nom>` lui-même (et déduplique, mais un title propre reste
+  plus court). Service + ville EN TÊTE (la troncature SERP coupe vers 60 c.).
+  Constaté : titles de 77 à 114 c. avec marque en double sur 3 sites.
+- `meta.description` : 140-155 caractères, l'argument clé (prix, crédit d'impôt…)
+  dans les 120 premiers. Jamais la même description sur deux pages (constaté :
+  home ≈ /services chez un client).
+
+**i18n (sites multilingues)**
+- Un `<locale>.json` = du **CONTENU traduit**, rien d'autre. Les champs techniques
+  (`customDomains`, `domain`, `demo`, `noindexSite`, `geo`, `forms`,
+  `googleReviewUrl`, `social`, `theme`, `stylePack`) sont **hérités de
+  `config.json`** par le loader — ne JAMAIS les répéter dans une locale.
+  (Bug historique : locale sans `customDomains` → canonical/hreflang des pages
+  EN/AR émis sur `<slug>.xklic.com` ; 3 sites touchés en prod.)
+- **Toute évolution de `config.json` doit être répliquée traduite dans CHAQUE
+  locale** (bloc ajouté, meta modifiée, page nouvelle). Constaté : simulateur
+  absent de l'EN, Turnstile désactivé côté EN.
+
+**Contenu**
+- Aucune page service sous **~150 mots utiles** (hors nav/footer) : pageHero +
+  3 cartes + CTA = thin content qui ne ranke pas. Chaque silo porte un bloc
+  `contenu` (déroulé concret, inclus/exclus) + une **FAQ propre à la page**
+  (3-4 questions spécifiques au service).
+- **Jamais la même FAQ sur deux pages** (ni la même question crédit d'impôt
+  partout) : le détail fiscal vit sur `/credit-impot`, les autres pages y renvoient.
+- **Unicité vs LE PARC, pas seulement vs le client** : ne réutilise jamais les
+  intros de blocs devis/contact/zone d'un autre site, ni les formulations FAQ
+  crédit d'impôt/CESU d'un autre client — reformule TOUT dans le registre du
+  client (l'audit a mesuré jusqu'à 26 % de texte commun entre deux clients sur
+  une page money ; c'est l'empreinte « réseau de sites » la plus dangereuse).
+
+**Ciblage local**
+- Une ville n'apparaît dans les metas/keywords **que si une page la porte
+  réellement** (title + contenu dédiés). Lister une métropole en zone n'est PAS
+  la cibler (constaté : Lyon, Aix, Montpellier revendiquées sans page).
+- Si deux clients du parc partagent une ville : **différencier les angles
+  éditoriaux et les patterns de titles** (sinon ils se cannibalisent en SERP).
+- `/zone-intervention` n'est pas une liste de communes : un paragraphe par
+  bassin/secteur, sinon la page ne capte rien.
+
+**Maillage**
+- Aucune page **orpheline** : une page `navHidden: true` doit recevoir des liens
+  depuis le contenu (cartes services `href`, badges cliquables, blocs zone).
+  Constaté : `/credit-impot` (l'argument n°1 du client !) sans AUCUN lien entrant.
+- Liens croisés entre pages service sœurs (« autres prestations »).
+
+**Données**
+- `contact.adresse` = une **vraie voie postale** ou rien (le JSON-LD filtre
+  désormais les accroches type « 22 communes autour de… », mais l'UI l'affiche).
+- `social[]` = des **URLs** (WhatsApp → `https://wa.me/336…`, jamais un numéro
+  brut) ; ajouter le lien Google Maps de la fiche (`platform: "google"`) quand
+  il existe → `hasMap` (sinon dérivé de `googleReviewUrl`).
+- Avis : en plus de « vrais avis Google uniquement » — **jamais un avis du
+  dirigeant ou de sa famille** (constaté en prod, crédibilité détruite).
+- Crédit d'impôt : rappel — domicile de particulier UNIQUEMENT. Un débarras /
+  une évacuation de déchets n'y est PAS éligible, même dans une prestation
+  « syndrome de Diogène » (constaté : promesse non conforme en prod).
+
+**Après mise en ligne**
+- Propriété **Search Console du domaine client** : `sync-sitemaps.mjs` ne couvre
+  que `sc-domain:xklic.com` — dérouler l'étape `gsc` d'onboard (TXT) pour chaque
+  domaine perso, sinon zéro suivi d'indexation.
+- `npm run canonicals:check` après chaque deploy touchant un site multilingue ou
+  un domaine : vérifie que le canonical de chaque accueil (et de chaque langue)
+  pointe le bon domaine.
+
+---
+
 ## SI LE MOTEUR NE COUVRE PAS UN BESOIN
 
 Ne bricole jamais : arrête-toi, propose le bloc à créer (nom, rôle, champs) + son
