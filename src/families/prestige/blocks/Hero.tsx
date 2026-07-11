@@ -62,7 +62,9 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
 
         <h1 className="max-w-4xl font-display text-5xl font-semibold leading-[0.98] tracking-tight text-white sm:text-7xl lg:text-8xl">
           {c.titre}
-          {c.titreAccent && <span className="text-[var(--px-gold)]"> {c.titreAccent}</span>}
+          {c.titreAccent && (
+            <span className="block whitespace-nowrap text-[var(--px-gold)]">{c.titreAccent}</span>
+          )}
           {showVilleSuffix && <span className="text-[var(--px-gold)]"> à {ville}</span>}
         </h1>
 

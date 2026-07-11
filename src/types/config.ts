@@ -442,6 +442,83 @@ export interface GrilleTarifsContent {
   cta?: CTA;
 }
 
+// --- simulateurTaxi (estimateur de prix au km, paramétrable) ---
+/** Une option d'un groupe de variantes (ex. « Nuit », « Van »). La 1re option d'un groupe est celle sélectionnée par défaut. */
+export interface SimulateurTaxiVarianteOption {
+  id: string;
+  label: string;
+  /** Prix au km (€) porté par cette option. Si défini, s'ajoute au prix/km courant (typiquement un seul groupe le porte). */
+  prixKm?: number;
+  /** Majoration en % appliquée au total (ex. van +25). Cumulative entre options/suppléments sélectionnés. */
+  majorationPct?: number;
+  /** Montant forfaitaire (€) ajouté quand l'option est choisie. */
+  montant?: number;
+  /** Aide affichée sous l'option. */
+  description?: string;
+}
+/** Un groupe de variantes = un sélecteur exclusif (radio). Ex. « Moment » (Jour/Nuit), « Véhicule » (Berline/Van). */
+export interface SimulateurTaxiVarianteGroupe {
+  id: string;
+  label: string;
+  options: SimulateurTaxiVarianteOption[];
+}
+/** Un supplément optionnel (case à cocher). Montant forfaitaire et/ou majoration %. */
+export interface SimulateurTaxiSupplement {
+  id: string;
+  label: string;
+  /** Montant forfaitaire (€) ajouté quand coché. */
+  montant?: number;
+  /** Majoration % appliquée au total quand coché. */
+  majorationPct?: number;
+  /** Coché par défaut. */
+  defaut?: boolean;
+  description?: string;
+}
+/**
+ * Contenu du bloc `simulateurTaxi` : un ESTIMATEUR de prix de course paramétrable.
+ * L'utilisateur saisit une distance (km) et choisit des variantes (moment, véhicule…)
+ * et des suppléments ; le prix approximatif est calculé côté client, à titre indicatif.
+ * Formule : total = max( (priseEnCharge + Σmontants + distance·Σprix/km) · (1 + Σmajorations%), minimumCourse ).
+ * 100 % configuré : aucune règle métier en dur. Réutilisable pour tout taxi / VTC.
+ */
+export interface SimulateurTaxiContent {
+  titre?: string;
+  intro?: string;
+  eyebrow?: string;
+  /** Panneau de gauche : titre d'argumentaire. */
+  argumentaireTitre?: string;
+  /** Fin du titre d'argumentaire mise en valeur. */
+  argumentaireAccent?: string;
+  argumentaire?: string;
+  /** Points clés à gauche. */
+  points?: string[];
+  cardTitre?: string;
+  cardIntro?: string;
+  /** Prise en charge (€), forfait de base ajouté à toute course. */
+  priseEnCharge?: number;
+  /** Minimum de perception (€) : plancher du prix estimé. */
+  minimumCourse?: number;
+  /** Bornes et libellés du champ distance (km par défaut). */
+  distanceLabel?: string;
+  distanceMin?: number;
+  distanceMax?: number;
+  distanceDefaut?: number;
+  distanceStep?: number;
+  /** Unité de distance affichée (défaut « km »). */
+  unite?: string;
+  /** Sélecteurs exclusifs (moment, véhicule…). */
+  variantes?: SimulateurTaxiVarianteGroupe[];
+  /** Suppléments optionnels (bagages, animal, attente…). */
+  supplements?: SimulateurTaxiSupplement[];
+  /** Demi-fourchette affichée autour de l'estimation, en % (défaut 10 → ± 10 %). */
+  margePct?: number;
+  /** Libellé du bloc résultat (défaut « Estimation de votre course »). */
+  resultatLabel?: string;
+  note?: string;
+  cta?: CTA;
+  ctaSecondaire?: CTA;
+}
+
 // --- zone ---
 export type ZoneMode = "carte" | "liste" | "aucune";
 /** Un groupe de communes desservies, rattaché à une région / un département. */
@@ -793,6 +870,7 @@ export interface BlockContentMap {
   services: ServicesContent;
   etapes: EtapesContent;
   simulateur: SimulateurContent;
+  simulateurTaxi: SimulateurTaxiContent;
   tarifs: TarifsContent;
   grilleTarifs: GrilleTarifsContent;
   serviceQuoteBuilder: ServiceQuoteBuilderContent;

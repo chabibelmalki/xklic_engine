@@ -4,7 +4,10 @@
   "stylePack": "prestige-nuit",
   "i18n": {
     "default": "fr",
-    "languages": ["fr", "en"]
+    "languages": [
+      "fr",
+      "en"
+    ]
   },
   "branding": {
     "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/taxi-excellence/logo.png",
@@ -68,18 +71,26 @@
           "type": "hero",
           "content": {
             "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/taxi-excellence/hero-van.jpg",
-              "alt": "Van Mercedes noir de Taxi Excellence, enseigne TAXI jaune, en ville de nuit"
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/taxi-excellence/hero-front-de-mer.png",
+              "alt": "Berline Mercedes de Taxi Excellence, enseigne TAXI, sur le front de mer au coucher du soleil"
             },
             "eyebrow": "Taxi à Gigean · Bassin de Thau & Montpellier",
-            "titre": "Votre taxi à Gigean,",
+            "titre": "Votre taxi,",
             "titreAccent": "et bien au-delà",
             "accroche": "Transferts gares & aéroports, transport médical, circuits touristiques et longue distance. Berline et van Mercedes climatisés, chauffeur à votre écoute — réservation 24h/24, 7j/7, au départ de Gigean, du bassin de Thau et vers Montpellier.",
             "trust": [
-              { "label": "24/7 · Réservation à toute heure" },
-              { "label": "Gigean · Bassin de Thau & Montpellier" },
-              { "label": "Mercedes · Berline & van climatisés" },
-              { "label": "Depuis 2013 · À votre service" }
+              {
+                "label": "24/7 · Réservation à toute heure"
+              },
+              {
+                "label": "Gigean · Bassin de Thau & Montpellier"
+              },
+              {
+                "label": "Mercedes · Berline & van climatisés"
+              },
+              {
+                "label": "Depuis 2013 · À votre service"
+              }
             ],
             "ctaPrimaire": {
               "label": "Réserver ma course",
@@ -90,7 +101,11 @@
               "href": "/services"
             },
             "paymentsLabel": "Paiement accepté",
-            "payments": ["visa", "mastercard", "amex"]
+            "payments": [
+              "visa",
+              "mastercard",
+              "amex"
+            ]
           }
         },
         {
@@ -326,8 +341,13 @@
             "titre": "Une seule adresse pour tous vos déplacements",
             "intro": "De Gigean au bassin de Thau, et bien au-delà : Taxi Excellence couvre l'ensemble de vos besoins de mobilité. Chaque prestation a sa page dédiée.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations"
+              }
             ],
             "ctaPrimaire": {
               "label": "Réserver ma course",
@@ -410,9 +430,17 @@
             "titre": "Ne manquez jamais votre vol ni votre train",
             "intro": "Prise en charge à Gigean, dans le bassin de Thau ou à l'adresse de votre choix, et dépose directement au terminal ou sur le quai — avec suivi de vos horaires.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations", "href": "/services" },
-              { "label": "Transferts gares & aéroports" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Transferts gares & aéroports"
+              }
             ],
             "ctaPrimaire": {
               "label": "Réserver un transfert",
@@ -539,9 +567,17 @@
             "titre": "Vos trajets de santé, en toute sérénité",
             "intro": "Consultation, examen, soin, entrée ou sortie d'établissement : nous vous conduisons à l'heure, avec attention et discrétion, à Gigean, dans le bassin de Thau et vers Montpellier.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations", "href": "/services" },
-              { "label": "Transport médical" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Transport médical"
+              }
             ],
             "ctaPrimaire": {
               "label": "Organiser un transport",
@@ -643,9 +679,17 @@
             "titre": "Découvrez la région, on conduit",
             "intro": "Le temps d'une demi-journée ou d'une journée entière, laissez-vous guider à travers le bassin de Thau, l'arrière-pays et les vignobles — confortablement installé, sans contrainte de conduite ni de stationnement.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations", "href": "/services" },
-              { "label": "Circuits touristiques" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Circuits touristiques"
+              }
             ],
             "ctaPrimaire": {
               "label": "Composer mon circuit",
@@ -762,9 +806,17 @@
             "titre": "Toutes distances, tout confort",
             "intro": "Un rendez-vous à l'autre bout de la région ou une traversée du pays : voyagez posément, avec un chauffeur dédié et un tarif connu d'avance.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations", "href": "/services" },
-              { "label": "Longue distance" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Longue distance"
+              }
             ],
             "ctaPrimaire": {
               "label": "Demander un devis",
@@ -874,11 +926,67 @@
             "titre": "Estimation des prix de vos trajets",
             "intro": "Des forfaits clairs, connus à l'avance : consultez nos tarifs pour les principales destinations au départ de Montpellier, ou demandez un devis personnalisé depuis Gigean et le bassin de Thau.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Tarifs" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Tarifs"
+              }
             ],
             "ctaPrimaire": {
               "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "simulateurTaxi",
+          "content": {
+            "eyebrow": "Simulateur en ligne",
+            "argumentaireTitre": "Estimez le prix de votre course",
+            "argumentaireAccent": "en quelques secondes",
+            "argumentaire": "Indiquez la distance approximative de votre trajet et choisissez le tarif de jour ou de nuit. Vous obtenez une estimation immédiate. Pour un tarif ferme, demandez-nous un devis — il vous est confirmé avant chaque départ.",
+            "points": [
+              "Calcul instantané selon la distance",
+              "Tarif de jour comme de nuit, dimanches & jours fériés",
+              "Un forfait ferme confirmé avant le départ"
+            ],
+            "cardTitre": "Simulateur de course",
+            "cardIntro": "Estimation indicative, hors trafic et attente.",
+            "distanceLabel": "Distance du trajet",
+            "distanceMin": 2,
+            "distanceMax": 400,
+            "distanceDefaut": 40,
+            "distanceStep": 1,
+            "unite": "km",
+            "priseEnCharge": 6,
+            "minimumCourse": 20,
+            "margePct": 10,
+            "variantes": [
+              {
+                "id": "moment",
+                "label": "Moment du trajet",
+                "options": [
+                  {
+                    "id": "jour",
+                    "label": "Tarif de jour (7h–19h)",
+                    "prixKm": 2.05,
+                    "description": "En semaine, de 7h à 19h"
+                  },
+                  {
+                    "id": "nuit",
+                    "label": "Tarif de nuit (19h–7h, dim. & fériés)",
+                    "prixKm": 2.85,
+                    "description": "19h–7h, dimanches et jours fériés"
+                  }
+                ]
+              }
+            ],
+            "resultatLabel": "Estimation de votre course",
+            "note": "* Estimation indicative calculée sur la distance et les options choisies, susceptible de varier selon le trafic, l'itinéraire réel, les temps d'attente et le nombre de passagers. Les courses locales (Gigean et bassin de Thau) suivent le tarif préfectoral au compteur. Un forfait ferme vous est confirmé avant chaque départ.",
+            "cta": {
+              "label": "Obtenir un devis ferme",
               "href": "/contact"
             }
           }
@@ -898,46 +1006,286 @@
               "duree": "Durée estimée"
             },
             "lignes": [
-              { "destination": "Agde", "jour": 140, "nuit": 185, "distance": "64 km", "duree": "50 min" },
-              { "destination": "Aigues-Mortes", "jour": 80, "nuit": 110, "distance": "34 km", "duree": "40 min" },
-              { "destination": "Alès", "jour": 165, "nuit": 235, "distance": "82 km", "duree": "1h20" },
-              { "destination": "Avignon", "jour": 190, "nuit": 275, "distance": "95 km", "duree": "1h15" },
-              { "destination": "Béziers", "jour": 150, "nuit": 210, "distance": "71 km", "duree": "55 min" },
-              { "destination": "Béziers aéroport", "jour": 145, "nuit": 190, "distance": "67 km", "duree": "55 min" },
-              { "destination": "Cap d'Agde", "jour": 145, "nuit": 190, "distance": "67 km", "duree": "55 min" },
-              { "destination": "Carcassonne", "jour": 310, "nuit": 420, "distance": "151 km", "duree": "1h30" },
-              { "destination": "Clermont-l'Hérault", "jour": 85, "nuit": 125, "distance": "45 km", "duree": "55 min" },
-              { "destination": "Ganges", "jour": 100, "nuit": 140, "distance": "45 km", "duree": "55 min" },
-              { "destination": "La Grande-Motte", "jour": 65, "nuit": 85, "distance": "25 km", "duree": "30 min" },
-              { "destination": "La Jonquère (Espagne)", "jour": 390, "nuit": 485, "distance": "189 km", "duree": "1h55" },
-              { "destination": "Lamalou-les-Bains", "jour": 175, "nuit": 245, "distance": "85 km", "duree": "1h30" },
-              { "destination": "Le Grau-du-Roi", "jour": 80, "nuit": 110, "distance": "34 km", "duree": "40 min" },
-              { "destination": "Le Vigan", "jour": 135, "nuit": 185, "distance": "63 km", "duree": "1h10" },
-              { "destination": "Lodève", "jour": 115, "nuit": 165, "distance": "56 km", "duree": "50 min" },
-              { "destination": "Lyon aéroport", "jour": 620, "nuit": 730, "distance": "317 km", "duree": "3h10" },
-              { "destination": "Lyon centre", "jour": 600, "nuit": 720, "distance": "304 km", "duree": "3h" },
-              { "destination": "Marseille aéroport", "jour": 310, "nuit": 400, "distance": "150 km", "duree": "1h45" },
-              { "destination": "Marseille centre", "jour": 330, "nuit": 445, "distance": "168 km", "duree": "1h50" },
-              { "destination": "Mende", "jour": 390, "nuit": 550, "distance": "198 km", "duree": "2h25" },
-              { "destination": "Millau", "jour": 225, "nuit": 325, "distance": "115 km", "duree": "1h30" },
-              { "destination": "Narbonne", "jour": 195, "nuit": 270, "distance": "95 km", "duree": "1h05" },
-              { "destination": "Nice", "jour": 610, "nuit": 820, "distance": "324 km", "duree": "3h30" },
-              { "destination": "Nice aéroport", "jour": 600, "nuit": 810, "distance": "319 km", "duree": "3h30" },
-              { "destination": "Nîmes", "jour": 110, "nuit": 155, "distance": "54 km", "duree": "45 min" },
-              { "destination": "Nîmes aéroport", "jour": 125, "nuit": 165, "distance": "60 km", "duree": "50 min" },
-              { "destination": "Paris", "jour": 1450, "nuit": 1650, "distance": "748 km", "duree": "7h" },
-              { "destination": "Pézenas", "jour": 130, "nuit": 185, "distance": "63 km", "duree": "45 min" },
-              { "destination": "Perpignan aéroport", "jour": 310, "nuit": 420, "distance": "152 km", "duree": "1h35" },
-              { "destination": "Perpignan centre", "jour": 320, "nuit": 425, "distance": "156 km", "duree": "1h40" },
-              { "destination": "Port-Camargue / Espiguette", "jour": 90, "nuit": 120, "distance": "38 km", "duree": "45 min" },
-              { "destination": "Saint-Affrique", "jour": 245, "nuit": 345, "distance": "125 km", "duree": "1h35" },
-              { "destination": "Sète (par A9)", "jour": 80, "nuit": 110, "distance": "37 km", "duree": "40 min" },
-              { "destination": "Sommières", "jour": 75, "nuit": 100, "distance": "35 km", "duree": "30 min" },
-              { "destination": "Saintes-Maries-de-la-Mer", "jour": 130, "nuit": 175, "distance": "62 km", "duree": "1h10" },
-              { "destination": "Saint-Guilhem-le-Désert", "jour": 100, "nuit": 140, "distance": "48 km", "duree": "45 min" },
-              { "destination": "Toulouse", "jour": 500, "nuit": 670, "distance": "245 km", "duree": "2h25" },
-              { "destination": "Toulouse aéroport", "jour": 510, "nuit": 675, "distance": "253 km", "duree": "2h30" },
-              { "destination": "Uzès", "jour": 165, "nuit": 235, "distance": "82 km", "duree": "1h15" }
+              {
+                "destination": "Agde",
+                "jour": 140,
+                "nuit": 185,
+                "distance": "64 km",
+                "duree": "50 min"
+              },
+              {
+                "destination": "Aigues-Mortes",
+                "jour": 80,
+                "nuit": 110,
+                "distance": "34 km",
+                "duree": "40 min"
+              },
+              {
+                "destination": "Alès",
+                "jour": 165,
+                "nuit": 235,
+                "distance": "82 km",
+                "duree": "1h20"
+              },
+              {
+                "destination": "Avignon",
+                "jour": 190,
+                "nuit": 275,
+                "distance": "95 km",
+                "duree": "1h15"
+              },
+              {
+                "destination": "Béziers",
+                "jour": 150,
+                "nuit": 210,
+                "distance": "71 km",
+                "duree": "55 min"
+              },
+              {
+                "destination": "Béziers aéroport",
+                "jour": 145,
+                "nuit": 190,
+                "distance": "67 km",
+                "duree": "55 min"
+              },
+              {
+                "destination": "Cap d'Agde",
+                "jour": 145,
+                "nuit": 190,
+                "distance": "67 km",
+                "duree": "55 min"
+              },
+              {
+                "destination": "Carcassonne",
+                "jour": 310,
+                "nuit": 420,
+                "distance": "151 km",
+                "duree": "1h30"
+              },
+              {
+                "destination": "Clermont-l'Hérault",
+                "jour": 85,
+                "nuit": 125,
+                "distance": "45 km",
+                "duree": "55 min"
+              },
+              {
+                "destination": "Ganges",
+                "jour": 100,
+                "nuit": 140,
+                "distance": "45 km",
+                "duree": "55 min"
+              },
+              {
+                "destination": "La Grande-Motte",
+                "jour": 65,
+                "nuit": 85,
+                "distance": "25 km",
+                "duree": "30 min"
+              },
+              {
+                "destination": "La Jonquère (Espagne)",
+                "jour": 390,
+                "nuit": 485,
+                "distance": "189 km",
+                "duree": "1h55"
+              },
+              {
+                "destination": "Lamalou-les-Bains",
+                "jour": 175,
+                "nuit": 245,
+                "distance": "85 km",
+                "duree": "1h30"
+              },
+              {
+                "destination": "Le Grau-du-Roi",
+                "jour": 80,
+                "nuit": 110,
+                "distance": "34 km",
+                "duree": "40 min"
+              },
+              {
+                "destination": "Le Vigan",
+                "jour": 135,
+                "nuit": 185,
+                "distance": "63 km",
+                "duree": "1h10"
+              },
+              {
+                "destination": "Lodève",
+                "jour": 115,
+                "nuit": 165,
+                "distance": "56 km",
+                "duree": "50 min"
+              },
+              {
+                "destination": "Lyon aéroport",
+                "jour": 620,
+                "nuit": 730,
+                "distance": "317 km",
+                "duree": "3h10"
+              },
+              {
+                "destination": "Lyon centre",
+                "jour": 600,
+                "nuit": 720,
+                "distance": "304 km",
+                "duree": "3h"
+              },
+              {
+                "destination": "Marseille aéroport",
+                "jour": 310,
+                "nuit": 400,
+                "distance": "150 km",
+                "duree": "1h45"
+              },
+              {
+                "destination": "Marseille centre",
+                "jour": 330,
+                "nuit": 445,
+                "distance": "168 km",
+                "duree": "1h50"
+              },
+              {
+                "destination": "Mende",
+                "jour": 390,
+                "nuit": 550,
+                "distance": "198 km",
+                "duree": "2h25"
+              },
+              {
+                "destination": "Millau",
+                "jour": 225,
+                "nuit": 325,
+                "distance": "115 km",
+                "duree": "1h30"
+              },
+              {
+                "destination": "Narbonne",
+                "jour": 195,
+                "nuit": 270,
+                "distance": "95 km",
+                "duree": "1h05"
+              },
+              {
+                "destination": "Nice",
+                "jour": 610,
+                "nuit": 820,
+                "distance": "324 km",
+                "duree": "3h30"
+              },
+              {
+                "destination": "Nice aéroport",
+                "jour": 600,
+                "nuit": 810,
+                "distance": "319 km",
+                "duree": "3h30"
+              },
+              {
+                "destination": "Nîmes",
+                "jour": 110,
+                "nuit": 155,
+                "distance": "54 km",
+                "duree": "45 min"
+              },
+              {
+                "destination": "Nîmes aéroport",
+                "jour": 125,
+                "nuit": 165,
+                "distance": "60 km",
+                "duree": "50 min"
+              },
+              {
+                "destination": "Paris",
+                "jour": 1450,
+                "nuit": 1650,
+                "distance": "748 km",
+                "duree": "7h"
+              },
+              {
+                "destination": "Pézenas",
+                "jour": 130,
+                "nuit": 185,
+                "distance": "63 km",
+                "duree": "45 min"
+              },
+              {
+                "destination": "Perpignan aéroport",
+                "jour": 310,
+                "nuit": 420,
+                "distance": "152 km",
+                "duree": "1h35"
+              },
+              {
+                "destination": "Perpignan centre",
+                "jour": 320,
+                "nuit": 425,
+                "distance": "156 km",
+                "duree": "1h40"
+              },
+              {
+                "destination": "Port-Camargue / Espiguette",
+                "jour": 90,
+                "nuit": 120,
+                "distance": "38 km",
+                "duree": "45 min"
+              },
+              {
+                "destination": "Saint-Affrique",
+                "jour": 245,
+                "nuit": 345,
+                "distance": "125 km",
+                "duree": "1h35"
+              },
+              {
+                "destination": "Sète (par A9)",
+                "jour": 80,
+                "nuit": 110,
+                "distance": "37 km",
+                "duree": "40 min"
+              },
+              {
+                "destination": "Sommières",
+                "jour": 75,
+                "nuit": 100,
+                "distance": "35 km",
+                "duree": "30 min"
+              },
+              {
+                "destination": "Saintes-Maries-de-la-Mer",
+                "jour": 130,
+                "nuit": 175,
+                "distance": "62 km",
+                "duree": "1h10"
+              },
+              {
+                "destination": "Saint-Guilhem-le-Désert",
+                "jour": 100,
+                "nuit": 140,
+                "distance": "48 km",
+                "duree": "45 min"
+              },
+              {
+                "destination": "Toulouse",
+                "jour": 500,
+                "nuit": 670,
+                "distance": "245 km",
+                "duree": "2h25"
+              },
+              {
+                "destination": "Toulouse aéroport",
+                "jour": 510,
+                "nuit": 675,
+                "distance": "253 km",
+                "duree": "2h30"
+              },
+              {
+                "destination": "Uzès",
+                "jour": 165,
+                "nuit": 235,
+                "distance": "82 km",
+                "duree": "1h15"
+              }
             ],
             "note": "* Tarifs indicatifs au départ de la gare Saint-Roch de Montpellier, susceptibles de varier selon le trafic, les bagages, les temps d'attente et le nombre de passagers. Les courses locales (Gigean et bassin de Thau) suivent le tarif préfectoral au compteur. Un forfait ferme vous est confirmé avant chaque départ.",
             "cta": {
@@ -974,8 +1322,13 @@
             "titre": "Un taxi de confiance, ancré dans sa région",
             "intro": "Depuis 2013, Taxi Excellence conduit les habitants et les visiteurs du bassin de Thau avec la même exigence de service.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "À propos" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "À propos"
+              }
             ],
             "ctaPrimaire": {
               "label": "Réserver ma course",
@@ -1053,8 +1406,13 @@
             "titre": "Réservez votre course",
             "intro": "Appelez-nous à toute heure ou envoyez votre demande : nous confirmons rapidement, 24h/24 et 7j/7.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Contact" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Contact"
+              }
             ]
           }
         },
@@ -1071,7 +1429,10 @@
             "email": "benaissa.abdelkader@orange.fr",
             "adresse": "Gigean (34770) · Hérault",
             "horaires": [
-              { "jour": "Lun – Dim", "heures": "24h/24" }
+              {
+                "jour": "Lun – Dim",
+                "heures": "24h/24"
+              }
             ],
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=3.66%2C43.48%2C3.78%2C43.53&layer=mapnik&marker=43.5023%2C3.7188",
             "services": [
