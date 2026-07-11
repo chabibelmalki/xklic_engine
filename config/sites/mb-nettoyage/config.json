@@ -1,6 +1,9 @@
 {
   "slug": "mb-nettoyage",
-  "customDomains": ["mbnettoyage-marseille.fr", "www.mbnettoyage-marseille.fr"],
+  "customDomains": [
+    "mbnettoyage-marseille.fr",
+    "www.mbnettoyage-marseille.fr"
+  ],
   "theme": "pro-bleu-nuit",
   "stylePack": "cotier-marine",
   "i18n": {
@@ -65,8 +68,8 @@
     "lng": 5.4373811847503
   },
   "meta": {
-    "title": "MB Nettoyage — Ménage à domicile & nettoyage professionnel à Marseille",
-    "description": "MB Nettoyage : ménage à domicile, repassage, vitres, nettoyage de bureaux et post-chantier à Marseille et Aix-en-Provence. Produits naturels fournis, devis gratuit par téléphone, crédit d'impôt de 50 % pour les particuliers.",
+    "title": "MB Nettoyage — Ménage à domicile & nettoyage à Marseille",
+    "description": "Crédit d'impôt 50 % sur le ménage à domicile : MB Nettoyage entretient logements et locaux pros à Marseille et Aix, aux produits naturels. Devis gratuit.",
     "keywords": [
       "ménage à domicile Marseille",
       "femme de ménage Marseille",
@@ -152,6 +155,22 @@
                 "texte": "La moitié de vos prestations à domicile remboursée ou déduite de vos impôts."
               }
             ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "La moitié de votre ménage, remboursée par le fisc",
+            "sousTitre": "Ménage, repassage et vitres réalisés chez vous ouvrent droit au crédit d'impôt de 50 % : faites le calcul, c'est vite vu.",
+            "ctaPrimaire": {
+              "label": "Simuler mon crédit d'impôt",
+              "href": "/credit-impot"
+            },
+            "ctaSecondaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            }
           }
         },
         {
@@ -258,7 +277,7 @@
           "content": {
             "eyebrow": "Zone d'intervention",
             "titre": "À Marseille, Aix-en-Provence et 20 km alentour",
-            "intro": "Nous nous déplaçons dans Marseille et ses quartiers, à Aix-en-Provence et dans les communes voisines. Vérifiez votre secteur ou contactez-nous directement.",
+            "intro": "Du 11e arrondissement où nous sommes installés jusqu'à la couronne aixoise, on se déplace chez les particuliers comme dans les commerces. La liste complète des communes est ci-dessous — et en cas de doute, un appel tranche la question.",
             "rayonKm": 20,
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=5.05%2C43.15%2C5.75%2C43.65&layer=mapnik&marker=43.2847572757835%2C5.4373811847503",
             "zones": [
@@ -369,7 +388,7 @@
       "slug": "services",
       "label": "Services",
       "meta": {
-        "title": "Nos prestations de nettoyage à Marseille — MB Nettoyage",
+        "title": "Prestations ménage & nettoyage à Marseille",
         "description": "Ménage à domicile, grand ménage, repassage, vitres, nettoyage de bureaux et post-chantier à Marseille et Aix-en-Provence. Devis gratuit par téléphone."
       },
       "blocks": [
@@ -500,7 +519,7 @@
       "slug": "tarifs",
       "label": "Tarifs",
       "meta": {
-        "title": "Tarifs — Ménage, repassage, vitres et nettoyage professionnel à Marseille",
+        "title": "Tarifs ménage, repassage & vitres à Marseille",
         "description": "Tarifs de MB Nettoyage à Marseille : ménage à domicile dès 50 €/h, repassage dès 10 €/kilo, vitres dès 10 €/vitre. Nettoyage professionnel sur devis. Crédit d'impôt 50 % pour les particuliers."
       },
       "blocks": [
@@ -594,6 +613,18 @@
           }
         },
         {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "50 €/h affichés, 25 €/h réellement payés",
+            "sousTitre": "Le simulateur vous montre, heure par heure, ce que votre ménage coûte une fois les 50 % de crédit d'impôt déduits.",
+            "ctaPrimaire": {
+              "label": "Faire le calcul",
+              "href": "/credit-impot"
+            }
+          }
+        },
+        {
           "type": "tarifs",
           "mode": "sur-devis",
           "variant": "grille",
@@ -645,7 +676,7 @@
       "slug": "a-propos",
       "label": "À propos",
       "meta": {
-        "title": "À propos de MB Nettoyage — Marseille",
+        "title": "Entreprise de nettoyage à Marseille — à propos",
         "description": "MB Nettoyage, entreprise de nettoyage à Marseille : ménage à domicile et nettoyage professionnel, avec du matériel et des produits naturels."
       },
       "blocks": [
@@ -750,7 +781,7 @@
       "slug": "faq",
       "label": "FAQ",
       "meta": {
-        "title": "Questions fréquentes — MB Nettoyage Marseille",
+        "title": "Questions fréquentes — nettoyage à Marseille",
         "description": "Tarifs, zone d'intervention, crédit d'impôt, produits utilisés : toutes les réponses sur les prestations de MB Nettoyage à Marseille."
       },
       "blocks": [
@@ -780,8 +811,8 @@
                 "reponse": "Par téléphone, WhatsApp ou via notre formulaire : le devis est gratuit et sans engagement, nous vous répondons rapidement, 7j/7."
               },
               {
-                "question": "Fournissez-vous le matériel et les produits ?",
-                "reponse": "Oui, nous venons avec notre matériel et des produits naturels, adaptés à chaque intervention."
+                "question": "Faut-il prévoir produits ou matériel de votre côté ?",
+                "reponse": "Non, rien à prévoir : nous arrivons équipés, avec des produits naturels choisis selon les surfaces à traiter."
               },
               {
                 "question": "Vos prestations donnent-elles droit au crédit d'impôt ?",
@@ -820,7 +851,7 @@
       "slug": "contact",
       "label": "Contact",
       "meta": {
-        "title": "Contact — MB Nettoyage à Marseille",
+        "title": "Contact — ménage & nettoyage à Marseille",
         "description": "Contactez MB Nettoyage : téléphone, e-mail, WhatsApp. Demande d'intervention à Marseille, Aix-en-Provence et alentour, réponse rapide, devis gratuit."
       },
       "blocks": [
@@ -829,7 +860,7 @@
           "content": {
             "eyebrow": "Contact",
             "titre": "Parlons de votre besoin",
-            "intro": "Une question, une demande d'intervention ? Écrivez-nous, appelez ou passez par WhatsApp — réponse rapide, devis gratuit, 24h/24 et 7j/7."
+            "intro": "Un logement à entretenir, une boutique à faire briller, ou simplement une question ? Téléphone, WhatsApp ou formulaire : on vous répond vite, 24h/24 et 7j/7."
           }
         },
         {
@@ -837,7 +868,7 @@
           "variant": "split-form-carte",
           "content": {
             "titre": "Demande d'intervention",
-            "intro": "Décrivez votre besoin : type de prestation, commune et disponibilités. Nous revenons vers vous rapidement avec un devis.",
+            "intro": "Expliquez la situation en deux lignes — prestation, commune, disponibilités — et on vous rappelle avec une réponse franche et un devis gratuit.",
             "form": true,
             "formMode": "demande-intervention",
             "telephone": "+33 7 66 65 14 29",
@@ -888,7 +919,7 @@
       "label": "Devis gratuit",
       "navHidden": true,
       "meta": {
-        "title": "Demande de devis gratuit — MB Nettoyage Marseille",
+        "title": "Devis gratuit ménage & nettoyage à Marseille",
         "description": "Demandez votre devis gratuit à MB Nettoyage : ménage, repassage, vitres, nettoyage de bureaux ou post-chantier à Marseille et alentour."
       },
       "blocks": [
@@ -897,7 +928,7 @@
           "content": {
             "eyebrow": "Devis gratuit",
             "titre": "Demandez votre devis en 1 minute",
-            "intro": "Renseignez votre besoin : nous revenons vers vous rapidement avec une estimation adaptée, gratuite et sans engagement.",
+            "intro": "Décrivez ce qu'il y a à nettoyer — logement, linge, vitres ou fin de chantier — et vous recevez une estimation claire, gratuite et sans engagement.",
             "ctaSecondaire": {
               "label": "Voir nos tarifs",
               "href": "/tarifs"
@@ -909,7 +940,7 @@
           "variant": "split-form-carte",
           "content": {
             "titre": "Votre demande de devis",
-            "intro": "Quelques informations suffisent pour vous établir une estimation.",
+            "intro": "Le type de prestation, votre commune et vos créneaux : voilà tout ce qu'il nous faut pour chiffrer juste, que vous soyez particulier ou professionnel.",
             "form": true,
             "formMode": "devis",
             "telephone": "+33 7 66 65 14 29",
@@ -958,7 +989,7 @@
       "label": "Zone d'intervention",
       "navHidden": true,
       "meta": {
-        "title": "Zone d'intervention — Marseille, Aix-en-Provence et 20 km alentour",
+        "title": "Zone d'intervention nettoyage — Marseille et Aix",
         "description": "MB Nettoyage intervient à Marseille, Aix-en-Provence, Vitrolles, Marignane, Gardanne et dans toutes les communes dans un rayon de 20 km."
       },
       "blocks": [
@@ -967,7 +998,7 @@
           "content": {
             "eyebrow": "Zone d'intervention",
             "titre": "Nous nous déplaçons jusqu'à 20 km",
-            "intro": "Marseille, Aix-en-Provence et les communes voisines, pour les particuliers comme pour les professionnels."
+            "intro": "Basés boulevard de Saint-Loup, dans le 11e arrondissement, nous rayonnons sur Marseille, le pays d'Aix et les communes de l'étang de Berre — chez les particuliers comme dans les locaux professionnels."
           }
         },
         {
@@ -975,7 +1006,7 @@
           "mode": "carte",
           "content": {
             "titre": "Communes desservies",
-            "intro": "Vérifiez votre secteur ci-dessous ou contactez-nous directement pour confirmer.",
+            "intro": "Deux secteurs, une même équipe : la liste ci-dessous fait foi, et si votre commune manque à l'appel, appelez-nous — à quelques kilomètres près, on trouve souvent une solution.",
             "rayonKm": 20,
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=5.05%2C43.15%2C5.75%2C43.65&layer=mapnik&marker=43.2847572757835%2C5.4373811847503",
             "zones": [
@@ -1006,6 +1037,22 @@
                 ]
               }
             ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Côté pays d'Aix",
+            "titre": "Ménage et nettoyage à Aix-en-Provence",
+            "paragraphes": [
+              "Aix-en-Provence n'est pas une simple extension de notre carte : nous y assurons les mêmes prestations qu'à Marseille — ménage régulier ou ponctuel, repassage et vitres pour les particuliers, entretien de bureaux et de commerces pour les professionnels.",
+              "Les tarifs ne changent pas d'une ville à l'autre : 50 €/h pour le ménage régulier, 60 €/h en ponctuel, et toujours le crédit d'impôt de 50 % pour les prestations réalisées à votre domicile.",
+              "Autour d'Aix, nous desservons Gardanne, Bouc-Bel-Air, Cabriès, Simiane-Collongue, Éguilles et Venelles. Un doute sur votre commune ? Un appel suffit pour confirmer le déplacement."
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis à Aix",
+              "href": "/devis"
+            }
           }
         },
         {
@@ -1149,14 +1196,15 @@
       "label": "Ménage à domicile",
       "navHidden": true,
       "meta": {
-        "title": "Ménage à domicile à Marseille — entretien régulier ou ponctuel",
+        "title": "Ménage à domicile à Marseille — régulier ou ponctuel",
         "description": "Ménage à domicile à Marseille et Aix-en-Provence : entretien régulier dès 50 €/h, ponctuel dès 60 €/h. Matériel et produits naturels fournis. Crédit d'impôt 50 %.",
         "keywords": [
           "ménage à domicile Marseille",
           "femme de ménage Marseille",
           "aide ménagère Marseille",
           "ménage régulier Aix-en-Provence"
-        ]
+        ],
+        "ogImage": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg"
       },
       "service": {
         "name": "Ménage à domicile",
@@ -1213,13 +1261,26 @@
               {
                 "icone": "BadgePercent",
                 "nom": "Crédit d'impôt 50 %",
-                "description": "La moitié de la dépense vous est remboursée ou déduite de vos impôts."
+                "description": "La moitié de la dépense vous est remboursée ou déduite de vos impôts.",
+                "href": "/credit-impot"
               },
               {
                 "icone": "Clock",
                 "nom": "Disponibilité 24h/24",
                 "description": "Joignable 24h/24 et 7j/7 pour s'adapter à votre emploi du temps."
               }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Chez vous, au naturel",
+            "titre": "Une trame précise, du plafond au carrelage",
+            "paragraphes": [
+              "Concrètement, chaque passage suit la même logique : on aère, on dépoussière du haut vers le bas, on récure la cuisine et les sanitaires, puis on termine par les sols. Tout est compris dans le tarif horaire — 50 €/h en régulier, 60 €/h en ponctuel — matériel et produits naturels apportés par nos soins, sans supplément.",
+              "Besoin d'aller plus loin qu'un entretien courant ? La remise à neuf complète d'un logement avant une location ou un déménagement relève du grand ménage, chiffré à part sur devis. Les vitres, elles, s'ajoutent simplement à la même intervention, de 10 à 15 € la vitre selon la taille.",
+              "Notre base est au 171 boulevard de Saint-Loup, dans le 11e arrondissement : de là, on couvre tout Marseille, mais aussi Allauch, Plan-de-Cuques, Marignane, Vitrolles et la couronne d'Aix — Gardanne, Bouc-Bel-Air, Cabriès. Et comme la moitié de la facture revient en crédit d'impôt, votre heure de ménage régulière vous coûte réellement 25 €."
             ]
           }
         },
@@ -1282,7 +1343,7 @@
           "type": "faq",
           "variant": "accordeon",
           "content": {
-            "titre": "Questions fréquentes",
+            "titre": "Vos questions sur le ménage à domicile",
             "items": [
               {
                 "question": "Quelle est la différence entre ménage régulier et ponctuel ?",
@@ -1312,6 +1373,10 @@
             "ctaSecondaire": {
               "label": "+33 7 66 65 14 29",
               "href": "tel:+33766651429"
+            },
+            "lien": {
+              "label": "Toutes les communes desservies →",
+              "href": "/zone-intervention"
             }
           }
         }
@@ -1322,13 +1387,14 @@
       "label": "Grand ménage & état des lieux",
       "navHidden": true,
       "meta": {
-        "title": "Grand ménage & état des lieux à Marseille — MB Nettoyage",
+        "title": "Grand ménage & état des lieux à Marseille",
         "description": "Grand ménage, remise en état avant ou après un état des lieux à Marseille et Aix-en-Provence. Devis gratuit établi par téléphone.",
         "keywords": [
           "grand ménage Marseille",
           "nettoyage état des lieux Marseille",
           "remise en état logement Marseille"
-        ]
+        ],
+        "ogImage": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg"
       },
       "service": {
         "name": "Grand ménage & état des lieux",
@@ -1396,10 +1462,26 @@
           }
         },
         {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Remise à neuf",
+            "titre": "Rendre les clés l'esprit tranquille",
+            "paragraphes": [
+              "Un état des lieux de sortie se joue souvent sur des détails : traces sur les plinthes, calcaire dans la salle de bain, four oublié. Notre grand ménage reprend le logement pièce par pièce — sols, sanitaires, cuisine, rangements, poussières en hauteur — pour le rendre dans un état qui ne prête pas à discussion.",
+              "La formule vaut aussi dans l'autre sens : avant d'emménager, faire remettre l'appartement au propre évite de récupérer les traces des anciens occupants. Le devis est établi gratuitement par téléphone, selon la surface et l'état du logement, et nous nous calons sur votre date de remise des clés.",
+              "Propriétaire bailleur entre deux locataires ou famille en plein déménagement, le besoin est le même à Marseille, Allauch, Marignane ou du côté d'Aix, Gardanne et Bouc-Bel-Air. Réalisé au domicile d'un particulier, ce grand ménage peut en plus ouvrir droit au crédit d'impôt de 50 % — le devis vous le précise."
+            ],
+            "ctaSecondaire": {
+              "label": "Vérifier l'éligibilité aux 50 %",
+              "href": "/credit-impot"
+            }
+          }
+        },
+        {
           "type": "faq",
           "variant": "accordeon",
           "content": {
-            "titre": "Questions fréquentes",
+            "titre": "Vos questions avant de rendre les clés",
             "items": [
               {
                 "question": "Comment est établi le devis ?",
@@ -1410,7 +1492,7 @@
                 "reponse": "Oui, dans les deux cas, ainsi qu'avant un état des lieux de sortie."
               },
               {
-                "question": "Ce service est-il éligible au crédit d'impôt ?",
+                "question": "Le grand ménage ouvre-t-il droit au crédit d'impôt ?",
                 "reponse": "Le grand ménage et l'état des lieux réalisés au domicile d'un particulier peuvent être éligibles : le devis vous précisera les conditions selon votre situation."
               }
             ]
@@ -1429,6 +1511,10 @@
             "ctaSecondaire": {
               "label": "+33 7 66 65 14 29",
               "href": "tel:+33766651429"
+            },
+            "lien": {
+              "label": "Vérifier les communes desservies →",
+              "href": "/zone-intervention"
             }
           }
         }
@@ -1443,9 +1529,9 @@
         "description": "Repassage à domicile à Marseille et Aix-en-Provence, dès 10 €/kilo (tarif dégressif à partir de 3 kilos). Crédit d'impôt de 50 % pour les particuliers.",
         "keywords": [
           "repassage à domicile Marseille",
-          "repassage au kilo Marseille",
-          "service repassage Aix-en-Provence"
-        ]
+          "repassage au kilo Marseille"
+        ],
+        "ogImage": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg"
       },
       "service": {
         "name": "Repassage à domicile",
@@ -1510,6 +1596,22 @@
           }
         },
         {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Le linge, sans la corvée",
+            "titre": "Du panier au placard, plié et rangé",
+            "paragraphes": [
+              "Le principe est simple : votre linge est pesé, trié par matière, repassé pièce par pièce puis plié, prêt à ranger. Le tout à domicile, à 10 € le kilo, avec un tarif qui baisse dès 3 kilos — inutile d'attendre d'avoir une montagne de chemises pour nous appeler.",
+              "Draps, chemises, linge délicat : chaque matière a son réglage, et le linge repart plié selon vos habitudes de rangement, pas selon les nôtres. C'est une prestation à part entière, pas un bonus expédié en fin de ménage.",
+              "Beaucoup de nos clients marseillais combinent d'ailleurs repassage et ménage sur le même créneau : une seule venue, une seule facture, et l'ensemble reste éligible au crédit d'impôt de 50 % puisque tout se passe chez vous. Nous nous déplaçons à Marseille comme à Allauch, Plan-de-Cuques, Marignane ou Vitrolles. Le devis se fait par téléphone ou WhatsApp, gratuitement — le temps de peser le panier, et vous savez à quoi vous en tenir."
+            ],
+            "ctaSecondaire": {
+              "label": "Voir comment marchent les 50 %",
+              "href": "/credit-impot"
+            }
+          }
+        },
+        {
           "type": "services",
           "variant": "grille-icones",
           "content": {
@@ -1537,7 +1639,7 @@
           "type": "faq",
           "variant": "deux-colonnes",
           "content": {
-            "titre": "Questions fréquentes",
+            "titre": "Vos questions sur le repassage au kilo",
             "items": [
               {
                 "question": "Comment est calculé le tarif du repassage ?",
@@ -1573,13 +1675,14 @@
       "label": "Nettoyage de vitres",
       "navHidden": true,
       "meta": {
-        "title": "Nettoyage de vitres à Marseille — particuliers & professionnels",
+        "title": "Nettoyage de vitres à Marseille — maisons & vitrines",
         "description": "Nettoyage de vitres à Marseille et Aix-en-Provence : dès 10 €/vitre pour les particuliers, sur devis pour les professionnels (vitrines, façades vitrées).",
         "keywords": [
           "nettoyage de vitres Marseille",
           "laveur de vitres Marseille",
           "nettoyage vitrine Marseille"
-        ]
+        ],
+        "ogImage": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/F13C28AC-BA55-4A82-B466-AEF6457E8B0C-3a3IjqOYQAKKtdt8O1Svn90c7y9dod.jpeg"
       },
       "service": {
         "name": "Nettoyage de vitres",
@@ -1658,6 +1761,22 @@
           }
         },
         {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "La lumière du Sud, sans les traces",
+            "titre": "Des vitres nettes, côté rue comme côté cour",
+            "paragraphes": [
+              "Entre le mistral, la poussière et les projections de pluie, les vitres marseillaises se salissent vite. Nous les lavons intérieur et extérieur, encadrements compris, avec des produits naturels qui ne laissent ni traces ni odeur agressive. Comptez 10 à 15 € la vitre selon sa taille — le tarif est annoncé avant l'intervention, pas après.",
+              "Chez un particulier, la prestation se glisse volontiers dans un ménage régulier et ouvre droit au crédit d'impôt de 50 %. Pour les professionnels — vitrines de commerces, façades vitrées de bureaux — le devis se fait sur mesure, à la fréquence de votre choix, y compris en dehors de vos horaires d'ouverture.",
+              "Nous couvrons Marseille et ses communes voisines, d'Allauch à Vitrolles, ainsi que le secteur d'Aix-en-Provence. Pour une vitrine en centre-ville comme pour une villa avec baies vitrées, le principe reste le même : un tarif annoncé d'avance et un passage soigné, sans engagement."
+            ],
+            "ctaSecondaire": {
+              "label": "Le crédit d'impôt en détail",
+              "href": "/credit-impot"
+            }
+          }
+        },
+        {
           "type": "etapes",
           "variant": "ligne-horizontale",
           "content": {
@@ -1694,6 +1813,10 @@
             "ctaSecondaire": {
               "label": "+33 7 66 65 14 29",
               "href": "tel:+33766651429"
+            },
+            "lien": {
+              "label": "On se déplace jusqu'à 20 km : voir la zone →",
+              "href": "/zone-intervention"
             }
           }
         }
@@ -1704,13 +1827,14 @@
       "label": "Nettoyage de bureaux & commerces",
       "navHidden": true,
       "meta": {
-        "title": "Nettoyage de bureaux et commerces à Marseille — MB Nettoyage",
+        "title": "Nettoyage de bureaux et commerces à Marseille",
         "description": "Entretien professionnel de bureaux, commerces et boutiques à Marseille et Aix-en-Provence. Devis gratuit établi par téléphone selon vos locaux.",
         "keywords": [
           "nettoyage bureaux Marseille",
           "nettoyage commerces Marseille",
           "entreprise de nettoyage professionnel Marseille"
-        ]
+        ],
+        "ogImage": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/F13C28AC-BA55-4A82-B466-AEF6457E8B0C-3a3IjqOYQAKKtdt8O1Svn90c7y9dod.jpeg"
       },
       "service": {
         "name": "Nettoyage de bureaux & commerces",
@@ -1821,7 +1945,7 @@
           "type": "faq",
           "variant": "accordeon",
           "content": {
-            "titre": "Questions fréquentes",
+            "titre": "Vos questions de professionnels",
             "items": [
               {
                 "question": "Intervenez-vous en dehors des horaires d'ouverture ?",
@@ -1832,7 +1956,7 @@
                 "reponse": "Selon la surface, la nature de l'activité et la fréquence souhaitée. Contactez-nous pour une estimation gratuite."
               },
               {
-                "question": "Ce service est-il éligible au crédit d'impôt ?",
+                "question": "Mes locaux professionnels donnent-ils droit au crédit d'impôt ?",
                 "reponse": "Non, le crédit d'impôt de 50 % ne s'applique qu'aux prestations réalisées au domicile d'un particulier."
               }
             ]
@@ -1865,9 +1989,9 @@
         "description": "Nettoyage post-chantier à Marseille et Aix-en-Provence : après travaux, rénovation ou construction. Devis gratuit établi par téléphone.",
         "keywords": [
           "nettoyage post-chantier Marseille",
-          "nettoyage après travaux Marseille",
-          "nettoyage fin de chantier Aix-en-Provence"
-        ]
+          "nettoyage après travaux Marseille"
+        ],
+        "ogImage": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/IMG_4304-xw7ac4gbDYh8gjB8DZ1sozZcCjkswc.jpeg"
       },
       "service": {
         "name": "Nettoyage post-chantier",
@@ -1949,7 +2073,7 @@
           "type": "faq",
           "variant": "accordeon",
           "content": {
-            "titre": "Questions fréquentes",
+            "titre": "Vos questions après travaux",
             "items": [
               {
                 "question": "Comment obtenir un devis de nettoyage post-chantier ?",
@@ -1960,7 +2084,7 @@
                 "reponse": "Oui, aussi bien pour un logement après rénovation que pour des locaux professionnels après construction."
               },
               {
-                "question": "Ce service est-il éligible au crédit d'impôt ?",
+                "question": "Le nettoyage après travaux est-il éligible au crédit d'impôt ?",
                 "reponse": "Non, le nettoyage post-chantier est facturé sur devis, hors crédit d'impôt."
               }
             ]
@@ -1979,6 +2103,10 @@
             "ctaSecondaire": {
               "label": "+33 7 66 65 14 29",
               "href": "tel:+33766651429"
+            },
+            "lien": {
+              "label": "Chantiers couverts de Marseille à Aix : la carte →",
+              "href": "/zone-intervention"
             }
           }
         }
@@ -1989,14 +2117,15 @@
       "label": "Ménage Airbnb & locations",
       "navHidden": true,
       "meta": {
-        "title": "Ménage Airbnb & locations courte durée à Marseille — MB Nettoyage",
+        "title": "Ménage Airbnb & location courte durée à Marseille",
         "description": "Nettoyage de locations courte durée et Airbnb à Marseille et Aix-en-Provence : remise en état entre deux voyageurs, check-in/check-out, pour hôtes et conciergeries. Sur devis.",
         "keywords": [
           "ménage Airbnb Marseille",
           "nettoyage location courte durée Marseille",
           "conciergerie ménage Marseille",
           "nettoyage entre deux locations Aix-en-Provence"
-        ]
+        ],
+        "ogImage": "https://xklic-media.s3.fr-par.scw.cloud/sites/leads/IMG_5510-n5OGjhqvfMYo9S3LIQDNJmLQFSl6Xw.jpeg"
       },
       "service": {
         "name": "Ménage Airbnb & locations courte durée",
@@ -2138,7 +2267,7 @@
           "type": "faq",
           "variant": "accordeon",
           "content": {
-            "titre": "Questions fréquentes",
+            "titre": "Vos questions d'hôtes et de conciergeries",
             "items": [
               {
                 "question": "Intervenez-vous pour les hôtes particuliers et les conciergeries ?",
@@ -2172,6 +2301,10 @@
             "ctaSecondaire": {
               "label": "+33 7 66 65 14 29",
               "href": "tel:+33766651429"
+            },
+            "lien": {
+              "label": "Votre location est-elle dans notre secteur ? →",
+              "href": "/zone-intervention"
             }
           }
         }

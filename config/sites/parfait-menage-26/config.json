@@ -42,7 +42,7 @@
   },
   "meta": {
     "title": "Parfait Ménage 26 — Ménage professionnel à Pierrelatte et alentours",
-    "description": "Parfait Ménage 26 : ménage difficile, remise en état des logements très sales, nettoyage de fin de chantier, entretien locatif et Airbnb à Pierrelatte et dans un rayon de 40 km. Travail fiable, rapide et minutieux. Devis gratuit, sans engagement.",
+    "description": "Logements très sales, fin de chantier, locatif : le ménage difficile est notre spécialité à Pierrelatte et 40 km autour. Devis gratuit, zéro jugement.",
     "keywords": [
       "ménage à domicile Pierrelatte",
       "femme de ménage Pierrelatte",
@@ -138,13 +138,13 @@
               },
               {
                 "nom": "Remise en état après location",
-                "description": "Appartements à remettre en état après le départ de locataires, prêts à relouer.",
-                "href": "/nettoyage-location-airbnb",
+                "description": "Fin de bail, logement rendu en mauvais état, état des lieux à préparer : nous le rendons prêt à relouer.",
+                "href": "/remise-en-etat",
                 "icone": "KeyRound"
               },
               {
-                "nom": "Airbnb et résidences secondaires",
-                "description": "Ménage de rotation entre deux séjours, gîtes et résidences secondaires entretenus avec soin.",
+                "nom": "Airbnb, gîtes et résidences secondaires",
+                "description": "Rotation entre deux séjours en courte durée, gîtes et résidences secondaires : prêt pour la prochaine arrivée.",
                 "href": "/nettoyage-location-airbnb",
                 "icone": "BedDouble"
               },
@@ -162,7 +162,7 @@
               },
               {
                 "nom": "Crédit d'impôt de 50 %",
-                "description": "Prestations de ménage et d'entretien à domicile éligibles au crédit d'impôt : la moitié de la dépense vous est remboursée ou déduite de vos impôts.",
+                "description": "Le ménage réalisé chez vous relève des services à la personne : la moitié de la dépense vous est restituée sur vos impôts.",
                 "href": "/credit-impot",
                 "icone": "BadgePercent",
                 "badge": "−50 %"
@@ -210,7 +210,7 @@
           "content": {
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.45%2C44.20%2C4.95%2C44.55&layer=mapnik&marker=44.3829857%2C4.7016543",
             "titre": "À Pierrelatte et jusqu'à 40 km",
-            "intro": "Nous nous déplaçons dans la Drôme provençale, la vallée du Rhône et les communes limitrophes du Vaucluse, du Gard et de l'Ardèche. Vérifiez votre secteur ou contactez-nous directement.",
+            "intro": "Basés à Pierrelatte, nous rayonnons sur la Drôme provençale, la vallée du Rhône et les communes limitrophes du Vaucluse, du Gard et de l'Ardèche. Votre commune n'apparaît pas dans la liste ? Appelez-nous, on regarde ensemble.",
             "rayonKm": 40,
             "zones": [
               {
@@ -280,7 +280,7 @@
               },
               {
                 "question": "Le devis est-il gratuit ?",
-                "reponse": "Oui, le devis est gratuit et sans engagement. Décrivez-nous votre besoin et l'état du logement : nous revenons vers vous rapidement avec une estimation claire."
+                "reponse": "Oui, toujours, et sans engagement. Dites-nous franchement dans quel état est le logement — même s'il est catastrophique, on en a vu d'autres — et vous recevez une estimation honnête, sans mauvaise surprise à l'arrivée."
               },
               {
                 "question": "Fournissez-vous le matériel et les produits ?",
@@ -323,7 +323,7 @@
                 "texte": "Zakia fait un travail remarquable ! Elle est rapide, très soigneuse et rigoureuse, et la maison est impeccable ! Je recommande +++"
               }
             ],
-            "disclaimer": "Avis authentiques publiés par nos clients sur notre fiche Google."
+            "disclaimer": "Retours déposés sur notre fiche Google par des clients de Pierrelatte et des environs, reproduits tels quels."
           }
         },
         {
@@ -352,8 +352,8 @@
       "slug": "services",
       "label": "Services",
       "meta": {
-        "title": "Nos prestations de ménage et remise en état à Pierrelatte",
-        "description": "Ménage difficile, remise en état des logements très sales, nettoyage de fin de chantier, entretien locatif et Airbnb à Pierrelatte et dans un rayon de 40 km. Devis gratuit, sans engagement."
+        "title": "Prestations de ménage à Pierrelatte : le détail",
+        "description": "Chaque prestation passée en revue : remise en état, fin de chantier, rotation Airbnb, entretien courant. Ce qui est compris, pour qui, et dans quel cas."
       },
       "blocks": [
         {
@@ -361,7 +361,7 @@
           "content": {
             "eyebrow": "Nos prestations",
             "titre": "Du ménage régulier au nettoyage difficile",
-            "intro": "Parfait Ménage 26 couvre tous vos besoins à Pierrelatte et alentour : ménage difficile, remise en état, fin de chantier et entretien locatif. Pour chaque situation, un devis gratuit et sans engagement.",
+            "intro": "Du ménage hebdomadaire au logement laissé à l'abandon, voici tout ce que nous savons faire, de Pierrelatte à Montélimar et Bollène. Chaque prestation a sa page : déroulé, ce qui est compris, questions fréquentes — et toujours un devis gratuit avant de commencer.",
             "ctaPrimaire": {
               "label": "Demander un devis",
               "href": "/devis"
@@ -378,7 +378,7 @@
           "content": {
             "eyebrow": "Tout le ménage, un seul prestataire",
             "titre": "Nos prestations en détail",
-            "intro": "Spécialisée dans le ménage difficile et le nettoyage de fin de chantier, Parfait Ménage 26 intervient dans tout type de situation.",
+            "intro": "Cliquez sur une carte pour ouvrir la page de la prestation : vous y trouverez le déroulé d'une intervention, ce qui est inclus et les réponses aux questions qu'on nous pose vraiment.",
             "items": [
               {
                 "nom": "Logements très sales ou en mauvais état",
@@ -394,13 +394,13 @@
               },
               {
                 "nom": "Remise en état après location",
-                "description": "Appartements à remettre en état après le départ de locataires, prêts à relouer.",
-                "href": "/nettoyage-location-airbnb",
+                "description": "Fin de bail, logement rendu en mauvais état, état des lieux à préparer : nous le rendons prêt à relouer.",
+                "href": "/remise-en-etat",
                 "icone": "KeyRound"
               },
               {
-                "nom": "Airbnb et résidences secondaires",
-                "description": "Ménage de rotation entre deux séjours, gîtes et résidences secondaires entretenus avec soin.",
+                "nom": "Airbnb, gîtes et résidences secondaires",
+                "description": "Rotation entre deux séjours en courte durée, gîtes et résidences secondaires : prêt pour la prochaine arrivée.",
                 "href": "/nettoyage-location-airbnb",
                 "icone": "BedDouble"
               },
@@ -418,7 +418,7 @@
               },
               {
                 "nom": "Crédit d'impôt de 50 %",
-                "description": "Prestations de ménage et d'entretien à domicile éligibles au crédit d'impôt : la moitié de la dépense vous est remboursée ou déduite de vos impôts.",
+                "description": "Le ménage réalisé chez vous relève des services à la personne : la moitié de la dépense vous est restituée sur vos impôts.",
                 "href": "/credit-impot",
                 "icone": "BadgePercent",
                 "badge": "−50 %"
@@ -482,8 +482,8 @@
       "slug": "a-propos",
       "label": "À propos",
       "meta": {
-        "title": "À propos de Parfait Ménage 26",
-        "description": "Parfait Ménage 26, spécialiste du ménage difficile et de la remise en état à Pierrelatte : un travail fiable, rapide et minutieux, à domicile comme en fin de chantier."
+        "title": "Notre histoire — ménage et remise en état à Pierrelatte",
+        "description": "Fondée en 2025 à Pierrelatte par Zakia Boukersanna, l'entreprise s'est fait un nom sur les ménages difficiles. Portrait d'une équipe au travail soigné."
       },
       "blocks": [
         {
@@ -502,7 +502,7 @@
               "alt": "Une intervenante Parfait Ménage 26, tablier floqué, en plein entretien d'un salon à Pierrelatte"
             },
             "paragraphes": [
-              "Spécialisée dans les prestations de ménage et d'aide à domicile, Parfait Ménage 26 incarne à merveille la rigueur professionnelle, la confiance, mais aussi la chaleur humaine que l'on attend d'une entreprise de proximité. Fondée au printemps 2025 par madame Boukersanna, cette jeune société a déjà conquis de nombreux particuliers et professionnels dans un rayon de 30 km autour de Pierrelatte où elle est basée, grâce à la qualité de ses prestations et à son sens aigu du service.",
+              "Spécialisée dans les prestations de ménage et d'aide à domicile, Parfait Ménage 26 incarne à merveille la rigueur professionnelle, la confiance, mais aussi la chaleur humaine que l'on attend d'une entreprise de proximité. Fondée au printemps 2025 par madame Boukersanna, cette jeune société a déjà conquis de nombreux particuliers et professionnels dans un rayon de 40 km autour de Pierrelatte où elle est basée, grâce à la qualité de ses prestations et à son sens aigu du service.",
               "Chez Parfait Ménage 26, chaque client est unique. Qu'il s'agisse de l'entretien d'une résidence principale, d'un gîte ou d'un logement Airbnb, de la remise en état après travaux ou d'un ménage courant, aide aux courses et aux travaux chez les personnes âgées, madame Boukersanna et sa petite équipe s'adaptent à chaque situation et anticipent chaque besoin avec une attention toute particulière. Ce sens du détail, allié à une vraie écoute, fait toute la différence, comme en témoignent les avis clients unanimement élogieux.",
               "La petite entreprise a ainsi bâti sa réputation sur le bouche-à-oreille et sur des valeurs essentielles que sont la fiabilité, la discrétion et l'engagement. Derrière chaque intervention, il y a une même exigence : un travail soigné, des finitions impeccables, un intérieur rendu impeccable jusque dans les moindres recoins. Des prestations éligibles au crédit d'impôt de 50 %, permettant à chacun de bénéficier d'un service professionnel à coût allégé. Conjuguant confiance, efficacité et humanité, Parfait Ménage 26 porte décidément bien son nom."
             ]
@@ -560,8 +560,8 @@
       "slug": "faq",
       "label": "FAQ",
       "meta": {
-        "title": "Questions fréquentes — Parfait Ménage 26",
-        "description": "Logements très sales, fin de chantier, zone d'intervention, devis gratuit : toutes les réponses sur le ménage et la remise en état avec Parfait Ménage 26."
+        "title": "FAQ ménage & remise en état à Pierrelatte",
+        "description": "Logements très sales, fin de chantier, secteur couvert, crédit d'impôt, devis : les réponses franches à ce qu'on nous demande le plus à Pierrelatte."
       },
       "blocks": [
         {
@@ -591,11 +591,11 @@
               },
               {
                 "question": "Comment obtenir un devis ?",
-                "reponse": "Décrivez-nous votre besoin et l'état du logement par téléphone, WhatsApp ou via le formulaire : nous revenons vers vous rapidement avec une estimation gratuite et sans engagement."
+                "reponse": "Un coup de fil, un message WhatsApp ou le formulaire : dites-nous où en est le logement, sans enjoliver — on a l'habitude des situations compliquées. L'estimation est gratuite, sans engagement, et on vous dit franchement ce qui est faisable."
               },
               {
                 "question": "Vos prestations donnent-elles droit au crédit d'impôt ?",
-                "reponse": "Oui. Nos prestations de ménage et d'entretien à domicile sont éligibles au crédit d'impôt de 50 % au titre des services à la personne : la moitié des sommes engagées vous est remboursée ou déduite de vos impôts. Concrètement, un service facturé 100 € ne vous coûte réellement que 50 €."
+                "reponse": "Oui, pour tout ce qui relève du ménage et de l'entretien réalisés chez vous, au titre des services à la personne : l'État vous rend la moitié de la facture, remboursée ou déduite de vos impôts, dans la limite des plafonds annuels. Nous vous remettons chaque année l'attestation à joindre à votre déclaration."
               },
               {
                 "question": "Fournissez-vous le matériel et les produits ?",
@@ -630,8 +630,8 @@
       "slug": "contact",
       "label": "Contact",
       "meta": {
-        "title": "Contact — Parfait Ménage 26 à Pierrelatte",
-        "description": "Contactez Parfait Ménage 26 : téléphone, e-mail, WhatsApp. Demande d'intervention en ligne à Pierrelatte et dans un rayon de 40 km, réponse rapide, devis gratuit."
+        "title": "Joindre notre équipe de ménage à Pierrelatte",
+        "description": "Téléphone, WhatsApp, e-mail ou formulaire : expliquez-nous l'état de votre logement à Pierrelatte ou alentours et recevez une estimation gratuite."
       },
       "blocks": [
         {
@@ -639,7 +639,7 @@
           "content": {
             "eyebrow": "Contact",
             "titre": "Parlons de votre besoin",
-            "intro": "Une question, une demande d'intervention ? Écrivez-nous, appelez ou passez par WhatsApp — réponse rapide, devis gratuit."
+            "intro": "Un logement dans un état qui vous gêne d'en parler, un doute sur votre commune ? Ici, personne ne juge : appelez, écrivez ou passez par WhatsApp, et on voit ça ensemble."
           }
         },
         {
@@ -647,7 +647,7 @@
           "variant": "panneau-sombre",
           "content": {
             "titre": "Demande d'intervention",
-            "intro": "Décrivez votre besoin : type de prestation, commune et état du logement. Nous revenons vers vous rapidement avec une estimation.",
+            "intro": "Le plus utile pour nous : la prestation souhaitée, la commune et un mot honnête sur l'état des lieux. Le reste, on le précise ensemble de vive voix.",
             "form": true,
             "formMode": "demande-intervention",
             "telephone": "+33 6 68 99 04 80",
@@ -695,8 +695,8 @@
       "label": "Devis gratuit",
       "navHidden": true,
       "meta": {
-        "title": "Demande de devis gratuit — Parfait Ménage 26",
-        "description": "Demandez votre devis gratuit et sans engagement à Parfait Ménage 26 : ménage difficile, remise en état, fin de chantier et entretien locatif à Pierrelatte et alentour."
+        "title": "Devis de ménage gratuit à Pierrelatte",
+        "description": "Décrivez l'état de votre logement tel qu'il est, même très sale, et recevez une estimation gratuite et sans engagement, à Pierrelatte et 40 km autour."
       },
       "blocks": [
         {
@@ -704,7 +704,7 @@
           "content": {
             "eyebrow": "Devis gratuit",
             "titre": "Demandez votre devis en 1 minute",
-            "intro": "Renseignez votre besoin : nous revenons vers vous rapidement avec une estimation adaptée, gratuite et sans engagement.",
+            "intro": "Pas besoin de photos parfaites ni de longues explications : dites les choses comme elles sont, même si le logement est en piteux état, et on chiffre gratuitement, sans engagement.",
             "ctaSecondaire": {
               "label": "Voir nos prestations",
               "href": "/services"
@@ -716,7 +716,7 @@
           "variant": "split-form-carte",
           "content": {
             "titre": "Votre demande de devis",
-            "intro": "Quelques informations suffisent pour vous établir une estimation.",
+            "intro": "Prestation, commune, état du logement : avec ça, on peut déjà chiffrer sérieusement. Et si c'est compliqué, dites-le sans détour — c'est justement notre spécialité.",
             "form": true,
             "formMode": "devis",
             "telephone": "+33 6 68 99 04 80",
@@ -764,7 +764,7 @@
       "navHidden": true,
       "meta": {
         "title": "Zone d'intervention — Pierrelatte et 40 km alentour",
-        "description": "Parfait Ménage 26 intervient à Pierrelatte, Saint-Paul-Trois-Châteaux, Donzère, Grignan, Montélimar, Bollène, Pont-Saint-Esprit et dans toute la Drôme provençale."
+        "description": "De Pierrelatte à Montélimar, Bollène, Saint-Paul-Trois-Châteaux, Donzère ou Grignan : les communes où nous faisons le ménage, jusqu'à 40 km de notre base."
       },
       "blocks": [
         {
@@ -772,7 +772,7 @@
           "content": {
             "eyebrow": "Zone d'intervention",
             "titre": "Nous nous déplaçons jusqu'à 40 km",
-            "intro": "Pierrelatte et les communes voisines de la Drôme provençale, de la vallée du Rhône et des départements limitrophes."
+            "intro": "Notre base est à Pierrelatte ; de là, nous couvrons la Drôme provençale, la vallée du Rhône et les communes voisines du Vaucluse, du Gard et de l'Ardèche. Le devis, lui, reste gratuit où que vous soyez dans ce périmètre."
           }
         },
         {
@@ -780,7 +780,7 @@
           "mode": "carte",
           "content": {
             "titre": "Communes desservies",
-            "intro": "Vérifiez votre secteur ci-dessous ou contactez-nous directement pour confirmer.",
+            "intro": "La liste ci-dessous n'est pas figée : si votre village est à portée de nos 40 km, on trouve une solution. Au moindre doute, un coup de fil suffit.",
             "rayonKm": 40,
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.45%2C44.20%2C4.95%2C44.55&layer=mapnik&marker=44.3829857%2C4.7016543",
             "zones": [
@@ -836,6 +836,19 @@
           }
         },
         {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Là où nous travaillons",
+            "titre": "Un territoire, quatre bassins",
+            "paragraphes": [
+              "Pierrelatte, c'est chez nous : le siège est boulevard Pierre et Marie Curie, et c'est ici que se concentrent nos passages réguliers, ainsi que dans les villages voisins — Donzère, La Garde-Adhémar, Valaurie. Entre maisons de ville et logements locatifs, les demandes vont de l'entretien hebdomadaire au grand nettoyage d'un appartement rendu en mauvais état.",
+              "À Saint-Paul-Trois-Châteaux et sur les hauteurs de la Drôme provençale — Clansayes, Suze-la-Rousse, Grignan —, beaucoup de résidences secondaires et de gîtes. Nous y assurons les ouvertures et fermetures de saison, les rotations entre deux séjours et l'entretien des maisons occupées une partie de l'année seulement.",
+              "Le bassin de Montélimar concentre le plus gros parc locatif du secteur : c'est de là que nous arrivent le plus souvent les remises en état après un départ de locataire et les nettoyages après rénovation, à Montélimar même comme à Malataverne, Châteauneuf-du-Rhône ou Savasse.",
+              "Côté sud, nous passons le Rhône et les limites départementales sans faire d'histoires : Bollène, Lapalud et Mondragon dans le Vaucluse, Pont-Saint-Esprit dans le Gard, Bourg-Saint-Andéol et Viviers en Ardèche. Mêmes prestations qu'en Drôme, du ménage courant à la fin de chantier — et même devis gratuit."
+            ]
+          }
+        },
+        {
           "type": "cta",
           "variant": "bande",
           "content": {
@@ -858,8 +871,8 @@
       "label": "Ménage à domicile",
       "navHidden": true,
       "meta": {
-        "title": "Ménage à domicile à Pierrelatte — entretien régulier ou ponctuel",
-        "description": "Ménage et entretien à domicile à Pierrelatte et dans un rayon de 40 km : intervention régulière ou ponctuelle, travail soigné. Devis gratuit, sans engagement.",
+        "title": "Ménage à domicile à Pierrelatte, régulier ou ponctuel",
+        "description": "Entretien de votre logement à Pierrelatte, Saint-Paul-Trois-Châteaux, Donzère et 40 km autour, au rythme qui vous convient. Devis gratuit, sans engagement.",
         "keywords": [
           "ménage à domicile Pierrelatte",
           "aide ménagère Pierrelatte",
@@ -879,7 +892,7 @@
           "content": {
             "eyebrow": "Entretien régulier ou ponctuel",
             "titre": "Ménage à domicile à Pierrelatte",
-            "intro": "Parfait Ménage 26 assure l'entretien de votre logement à Pierrelatte et dans un rayon de 40 km : intervention régulière ou ponctuelle, sols, sanitaires, cuisine et poussières. Un travail soigné, fini dans le détail.",
+            "intro": "Parfait Ménage 26 assure l'entretien de votre logement à Pierrelatte, Saint-Paul-Trois-Châteaux, Donzère et jusqu'à 40 km autour : intervention régulière ou ponctuelle, sols, sanitaires, cuisine et poussières. Un travail soigné, fini dans le détail — et chez vous, il ouvre droit au crédit d'impôt de 50 %.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -964,7 +977,7 @@
             "items": [
               {
                 "question": "Comment obtenir un devis pour le ménage à domicile ?",
-                "reponse": "Décrivez-nous votre logement et la fréquence souhaitée, par téléphone, WhatsApp ou via le formulaire : nous établissons un devis gratuit et sans engagement, rapidement."
+                "reponse": "Indiquez-nous la taille du logement et le rythme souhaité, par téléphone, WhatsApp ou formulaire : l'estimation ne vous coûte rien et ne vous engage à rien — vous décidez ensuite, tranquillement."
               },
               {
                 "question": "Proposez-vous un entretien régulier ?",
@@ -1021,6 +1034,34 @@
           }
         },
         {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Remise en état",
+                "description": "Le logement a dépassé le stade du ménage courant ? On repart d'une base saine avant de reprendre un rythme régulier.",
+                "href": "/remise-en-etat",
+                "icone": "SprayCan"
+              },
+              {
+                "nom": "Airbnb, gîtes & résidences secondaires",
+                "description": "Vous louez en courte durée ? Nous calons les rotations entre deux séjours, en votre absence si besoin.",
+                "href": "/nettoyage-location-airbnb",
+                "icone": "BedDouble"
+              },
+              {
+                "nom": "Crédit d'impôt de 50 %",
+                "description": "Chez vous, la moitié de la facture de ménage est prise en charge via le crédit d'impôt services à la personne.",
+                "href": "/credit-impot",
+                "icone": "BadgePercent"
+              }
+            ]
+          }
+        },
+        {
           "type": "cta",
           "variant": "encadre",
           "content": {
@@ -1043,8 +1084,8 @@
       "label": "Remise en état",
       "navHidden": true,
       "meta": {
-        "title": "Remise en état à Pierrelatte — logements très sales & après déménagement",
-        "description": "Remise en état à Pierrelatte et dans un rayon de 40 km : logements très sales, après déménagement ou avant état des lieux. Travail minutieux. Devis gratuit, sans engagement.",
+        "title": "Remise en état de logements très sales à Pierrelatte",
+        "description": "Logement très sale, fin de bail, état des lieux à préparer : remise en état complète à Pierrelatte et 40 km autour. Zéro jugement, devis gratuit et franc.",
         "keywords": [
           "remise en état Pierrelatte",
           "nettoyage logement très sale Drôme",
@@ -1055,16 +1096,16 @@
       },
       "service": {
         "name": "Remise en état",
-        "description": "Nettoyage en profondeur des logements très sales, après déménagement ou avant état des lieux, à Pierrelatte.",
+        "description": "Nettoyage en profondeur des logements très sales, après un départ de locataire longue durée, un déménagement ou avant un état des lieux, à Pierrelatte.",
         "serviceType": "Nettoyage de remise en état"
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Logements très sales & déménagement",
+            "eyebrow": "Logements très sales, fins de bail & états des lieux",
             "titre": "Remise en état à Pierrelatte",
-            "intro": "Logement laissé très sale, départ de locataires peu soigneux, après-déménagement ou avant un état des lieux : Parfait Ménage 26 remet votre logement à neuf à Pierrelatte et alentour. Saletés incrustées, traces et résidus disparaissent.",
+            "intro": "Un locataire de longue durée parti en laissant l'appartement dans un état grave, un état des lieux de sortie qui approche, une maison négligée depuis des années : c'est exactement pour ces situations que nous existons. Aucune gêne à avoir, nous en avons vu de toutes sortes, de Pierrelatte à Montélimar. Pour le ménage entre deux séjours d'une location courte durée, voyez plutôt notre prestation Airbnb et gîtes.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1149,19 +1190,23 @@
             "items": [
               {
                 "question": "Comment est établi le devis d'une remise en état ?",
-                "reponse": "Selon la surface et l'état du logement, après description de votre besoin ou une visite. Le devis est gratuit et sans engagement."
+                "reponse": "Sur la surface et l'état réel du logement, décrit franchement ou constaté sur place. L'estimation est gratuite, sans engagement, et nous vous disons honnêtement ce qui est rattrapable."
               },
               {
                 "question": "Intervenez-vous sur les logements vraiment très sales ?",
-                "reponse": "Oui, c'est notre spécialité. Nous prenons en charge les logements laissés en mauvais état, avec un matériel adapté à chaque situation."
+                "reponse": "Oui, et sans jugement : encrassement ancien, logement encombré, années sans entretien. C'est le cœur de notre métier, et nous venons équipés en conséquence."
+              },
+              {
+                "question": "Mon locataire est parti et le logement est en mauvais état : c'est bien cette prestation ?",
+                "reponse": "Oui, dès qu'il s'agit d'une fin de bail ou d'un logement rendu sale après une location longue durée. Le ménage entre deux séjours d'une location courte durée relève, lui, de notre prestation Airbnb et gîtes."
               },
               {
                 "question": "Intervenez-vous après un déménagement ou avant un état des lieux ?",
-                "reponse": "Oui. Nous remettons le logement à neuf après le départ, ou avant l'emménagement, ainsi qu'avant un état des lieux de sortie."
+                "reponse": "Oui, dans les deux sens : logement remis au propre après votre départ ou avant l'emménagement, et grand nettoyage avant l'état des lieux de sortie pour rendre les clés l'esprit tranquille."
               },
               {
                 "question": "Sous quel délai pouvez-vous intervenir ?",
-                "reponse": "Nous nous adaptons à vos contraintes de remise des clés ou d'état des lieux. Contactez-nous pour un créneau rapide."
+                "reponse": "Nous calons l'intervention sur votre contrainte réelle : remise des clés, état des lieux, relocation. Prévenez-nous dès que la date est connue, on s'organise."
               }
             ]
           }
@@ -1206,6 +1251,34 @@
           }
         },
         {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Nettoyage de fin de chantier",
+                "description": "Le logement sort de travaux plutôt que d'une location ? La poussière de chantier a sa prestation dédiée.",
+                "href": "/nettoyage-fin-chantier",
+                "icone": "HardHat"
+              },
+              {
+                "nom": "Ménage à domicile",
+                "description": "Une fois le logement remis d'aplomb, un entretien régulier évite d'en arriver là une seconde fois.",
+                "href": "/menage-domicile",
+                "icone": "CalendarCheck"
+              },
+              {
+                "nom": "Airbnb, gîtes & résidences secondaires",
+                "description": "Pour la courte durée et les gîtes, c'est la rotation entre deux séjours qu'il vous faut.",
+                "href": "/nettoyage-location-airbnb",
+                "icone": "BedDouble"
+              }
+            ]
+          }
+        },
+        {
           "type": "cta",
           "variant": "encadre",
           "content": {
@@ -1228,8 +1301,8 @@
       "label": "Fin de chantier",
       "navHidden": true,
       "meta": {
-        "title": "Nettoyage de fin de chantier à Pierrelatte — après travaux",
-        "description": "Nettoyage de fin de chantier à Pierrelatte et dans un rayon de 40 km : après travaux, rénovation ou chantier. Poussière, traces de peinture et résidus éliminés. Devis gratuit.",
+        "title": "Nettoyage de fin de chantier à Pierrelatte",
+        "description": "Après travaux ou rénovation à Pierrelatte, Montélimar ou Bollène : poussière, traces de peinture et résidus éliminés avant livraison. Devis gratuit.",
         "keywords": [
           "nettoyage fin de chantier Pierrelatte",
           "nettoyage après travaux Pierrelatte",
@@ -1249,7 +1322,7 @@
           "content": {
             "eyebrow": "Après travaux, rénovation ou chantier",
             "titre": "Nettoyage de fin de chantier à Pierrelatte",
-            "intro": "Après des travaux, une rénovation ou un chantier, Parfait Ménage 26 débarrasse les lieux de la poussière de chantier, des traces de peinture, de colle et de plâtre, pour un logement ou un local prêt à être livré.",
+            "intro": "Après des travaux, une rénovation ou un chantier à Pierrelatte, Montélimar, Bollène ou dans les communes voisines, Parfait Ménage 26 débarrasse les lieux de la poussière de chantier, des traces de peinture, de colle et de plâtre, pour un logement ou un local prêt à être livré.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1377,6 +1450,34 @@
           }
         },
         {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Remise en état",
+                "description": "Pas de travaux, mais un logement en mauvais état ? C'est notre spécialité première.",
+                "href": "/remise-en-etat",
+                "icone": "SprayCan"
+              },
+              {
+                "nom": "Ménage à domicile",
+                "description": "Chantier livré, maison habitée : place à l'entretien régulier ou ponctuel.",
+                "href": "/menage-domicile",
+                "icone": "CalendarCheck"
+              },
+              {
+                "nom": "Airbnb, gîtes & résidences secondaires",
+                "description": "Un gîte rénové à remettre en location ? Nous enchaînons avec les rotations entre séjours.",
+                "href": "/nettoyage-location-airbnb",
+                "icone": "BedDouble"
+              }
+            ]
+          }
+        },
+        {
           "type": "cta",
           "variant": "encadre",
           "content": {
@@ -1399,8 +1500,8 @@
       "label": "Entretien locatif, Airbnb & Gîtes",
       "navHidden": true,
       "meta": {
-        "title": "Entretien locatif, ménage Airbnb & gîtes à Pierrelatte",
-        "description": "Ménage de rotation Airbnb et gîtes, remise en état entre deux locations et résidences secondaires à Pierrelatte et dans un rayon de 40 km. Intervention fiable et rapide. Devis gratuit.",
+        "title": "Ménage Airbnb, gîtes & saisonnier à Pierrelatte",
+        "description": "Rotation entre deux séjours pour Airbnb, gîtes et locations saisonnières de la Drôme provençale : un logement impeccable à chaque arrivée. Devis gratuit.",
         "keywords": [
           "ménage Airbnb Pierrelatte",
           "entretien locatif Pierrelatte",
@@ -1411,17 +1512,17 @@
         ]
       },
       "service": {
-        "name": "Entretien locatif, Airbnb & gîtes",
-        "description": "Ménage de rotation Airbnb et gîtes, remise en état entre deux locations et résidences secondaires à Pierrelatte.",
+        "name": "Ménage Airbnb, gîtes & résidences secondaires",
+        "description": "Ménage de rotation des locations courte durée, gîtes et résidences secondaires autour de Pierrelatte.",
         "serviceType": "Ménage de location saisonnière"
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Locations, Airbnb, gîtes & résidences secondaires",
+            "eyebrow": "Courte durée, gîtes & résidences secondaires",
             "titre": "Entretien locatif, Airbnb & Gîtes",
-            "intro": "Pour vos locations courte durée, vos appartements à remettre en état entre deux locataires, vos résidences secondaires et vos gîtes, Parfait Ménage 26 assure un ménage de rotation fiable, rapide et soigné, prêt pour la prochaine arrivée.",
+            "intro": "Location saisonnière à Grignan, gîte du côté de Suze-la-Rousse, appartement Airbnb à Montélimar : entre le départ des uns et l'arrivée des autres, la fenêtre est courte et rien ne doit être oublié. Nous assurons ces rotations, ainsi que l'ouverture, la fermeture et l'entretien des résidences secondaires. Un logement rendu très sale par un locataire longue durée relève, lui, de notre remise en état.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1505,20 +1606,20 @@
             "titre": "Questions fréquentes",
             "items": [
               {
-                "question": "Comment fonctionne le devis pour un Airbnb ?",
-                "reponse": "Selon le logement et la fréquence des rotations : nous établissons un devis gratuit et sans engagement après description de votre besoin."
+                "question": "Comment fonctionne le devis pour un Airbnb ou un gîte ?",
+                "reponse": "Dites-nous le logement, sa taille et le rythme des séjours : le devis est gratuit, sans engagement, et pensé pour un tarif de rotation qui tient la saison."
               },
               {
                 "question": "Gérez-vous le linge et les consommables ?",
-                "reponse": "Nous assurons le nettoyage et la remise en ordre du logement. Le change du linge et le réassort des consommables peuvent être prévus au devis selon vos besoins."
+                "reponse": "Le nettoyage et la remise en ordre sont toujours compris. Le change du linge et le réassort des consommables se prévoient au devis, selon votre organisation."
               },
               {
                 "question": "Pouvez-vous intervenir en l'absence du propriétaire ?",
-                "reponse": "Oui, après remise d'un accès convenu ensemble. Nous intervenons en toute autonomie et discrétion entre deux locations."
+                "reponse": "Oui, c'est même le cas le plus fréquent : un accès convenu ensemble (clé, boîte à clés) et nous gérons la rotation en autonomie, avec discrétion."
               },
               {
-                "question": "Intervenez-vous aussi sur les résidences secondaires ?",
-                "reponse": "Oui, pour l'ouverture, la fermeture ou l'entretien ponctuel de votre résidence secondaire à Pierrelatte et alentour."
+                "question": "Faites-vous aussi la remise en état après une location classique ?",
+                "reponse": "Oui, mais c'est une prestation à part : quand un locataire longue durée laisse un logement sale ou qu'un état des lieux approche, c'est notre remise en état qui prend le relais, avec un devis spécifique."
               }
             ]
           }
@@ -1549,6 +1650,34 @@
           }
         },
         {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Remise en état",
+                "description": "Départ d'un locataire longue durée, logement rendu très sale : une prestation à part, plus lourde qu'une rotation.",
+                "href": "/remise-en-etat",
+                "icone": "SprayCan"
+              },
+              {
+                "nom": "Ménage à domicile",
+                "description": "Pour votre propre logement cette fois : entretien régulier ou ponctuel, au rythme choisi.",
+                "href": "/menage-domicile",
+                "icone": "CalendarCheck"
+              },
+              {
+                "nom": "Crédit d'impôt de 50 %",
+                "description": "L'entretien de votre résidence principale ou secondaire ouvre droit à l'avantage fiscal services à la personne.",
+                "href": "/credit-impot",
+                "icone": "BadgePercent"
+              }
+            ]
+          }
+        },
+        {
           "type": "cta",
           "variant": "encadre",
           "content": {
@@ -1571,8 +1700,8 @@
       "label": "Crédit d'impôt 50 %",
       "navHidden": true,
       "meta": {
-        "title": "Crédit d'impôt de 50 % — ménage à domicile à Pierrelatte",
-        "description": "Les prestations de ménage et d'entretien à domicile de Parfait Ménage 26 sont éligibles au crédit d'impôt de 50 % au titre des services à la personne. Un service facturé 100 € ne vous coûte réellement que 50 €.",
+        "title": "Crédit d'impôt 50 % sur le ménage à Pierrelatte",
+        "description": "Le ménage réalisé chez vous relève des services à la personne : la moitié des sommes versées revient en crédit d'impôt. Attestation fiscale fournie.",
         "keywords": [
           "crédit d'impôt ménage Pierrelatte",
           "services à la personne Drôme",
@@ -1681,19 +1810,47 @@
             "items": [
               {
                 "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
-                "reponse": "Pour les prestations de ménage et d'entretien réalisées à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées, au titre des services à la personne. Un service facturé 100 € ne vous coûte donc réellement que 50 €."
+                "reponse": "C'est la loi qui le prévoit, pas une promesse commerciale : le ménage et l'entretien réalisés à votre domicile relèvent des services à la personne, et l'État vous restitue 50 % des sommes versées. Une prestation de 100 € vous revient donc, au bout du compte, à 50 €."
               },
               {
                 "question": "Quelles prestations sont éligibles ?",
-                "reponse": "Les prestations de ménage et d'entretien réalisées au domicile d'un particulier, en résidence principale ou secondaire. Les interventions de remise en état après location ou en fin de chantier à usage professionnel sont, elles, facturées sur devis."
+                "reponse": "Uniquement ce qui se passe chez vous, chez un particulier : ménage courant et entretien, en résidence principale comme secondaire. Une remise en état pour relouer ou une fin de chantier à usage professionnel n'en relèvent pas — elles restent facturées sur devis, sans avantage fiscal."
               },
               {
                 "question": "Que dois-je faire pour en bénéficier ?",
-                "reponse": "Rien de particulier : nous vous remettons en début d'année une attestation récapitulant les sommes versées, à reporter sur votre déclaration de revenus. Le crédit d'impôt est ensuite appliqué automatiquement, même si vous n'êtes pas imposable."
+                "reponse": "Pas grand-chose, et c'est tant mieux : en début d'année, nous vous remettons l'attestation fiscale des sommes versées. Vous la reportez sur votre déclaration de revenus, et le crédit s'applique — y compris si vous n'êtes pas imposable."
               },
               {
                 "question": "Y a-t-il un plafond ?",
-                "reponse": "Oui. Le crédit d'impôt s'applique dans la limite des plafonds annuels fixés par l'administration fiscale pour les services à la personne. Nous vous renseignons selon votre situation."
+                "reponse": "Oui, comme pour tous les services à la personne : le crédit d'impôt joue dans la limite des plafonds annuels fixés par l'administration fiscale. Selon votre situation, le plafond applicable peut varier — posez-nous la question, on fait le point avant de commencer."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "description": "La prestation éligible par excellence : l'entretien de votre logement, régulier ou ponctuel.",
+                "href": "/menage-domicile",
+                "icone": "CalendarCheck"
+              },
+              {
+                "nom": "Airbnb, gîtes & résidences secondaires",
+                "description": "Votre résidence secondaire entretenue à l'année : parlons de votre cas, l'éligibilité dépend de l'usage.",
+                "href": "/nettoyage-location-airbnb",
+                "icone": "BedDouble"
+              },
+              {
+                "nom": "Remise en état",
+                "description": "Logement très sale à traiter chez vous ? Demandez le devis, nous précisons ce qui est éligible.",
+                "href": "/remise-en-etat",
+                "icone": "SprayCan"
               }
             ]
           }

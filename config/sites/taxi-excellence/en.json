@@ -1,7 +1,5 @@
 {
   "slug": "taxi-excellence",
-  "theme": "noir-cuivre",
-  "stylePack": "prestige-nuit",
   "i18n": {
     "default": "fr",
     "languages": ["fr", "en"]
@@ -17,13 +15,6 @@
       "neutral": "dark"
     }
   },
-  "social": [
-    {
-      "platform": "whatsapp",
-      "url": "07 66 90 50 99"
-    }
-  ],
-  "googleReviewUrl": "https://g.page/r/CRGBAfW0xUjLEBE/review",
   "entreprise": {
     "nom": "Taxi Excellence",
     "statut": "EI",
@@ -38,13 +29,9 @@
     "schemaType": "TaxiService",
     "ville": "Gigean"
   },
-  "geo": {
-    "lat": 43.5023,
-    "lng": 3.7188
-  },
   "meta": {
-    "title": "Taxi Excellence — Taxi in Gigean: airport transfers, medical & tours, 24/7",
-    "description": "Taxi in Gigean and across the Thau basin: station & airport transfers (Montpellier-Méditerranée, Sète), medical transport, sightseeing tours and long-distance trips. Air-conditioned Mercedes saloon and van, booking 24/7.",
+    "title": "Taxi Excellence — Taxi in Gigean & the Thau basin",
+    "description": "Taxi in Gigean and across the Thau basin: station and airport transfers, medical transport, tours, long distance. Air-conditioned Mercedes, 24/7.",
     "keywords": [
       "taxi Gigean",
       "taxi Thau basin",
@@ -56,9 +43,6 @@
       "long distance taxi Gigean"
     ]
   },
-  "forms": {
-    "turnstile": false
-  },
   "pages": [
     {
       "slug": "",
@@ -68,8 +52,8 @@
           "type": "hero",
           "content": {
             "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/taxi-excellence/hero-van.jpg",
-              "alt": "Black Mercedes van of Taxi Excellence with a yellow TAXI sign at night in the city"
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/taxi-excellence/hero-front-de-mer.png",
+              "alt": "Mercedes saloon of Taxi Excellence, TAXI sign, on the seafront at sunset"
             },
             "eyebrow": "Taxi in Gigean · Thau basin & Montpellier",
             "titre": "Your taxi in Gigean,",
@@ -287,7 +271,7 @@
                 "texte": "Ce matin, alors que la personne qui devait m'accompagner à la gare m'a fait faux bond, ma fille qui n'est pas sur Montpellier a appelé cette compagnie. Le taxi avec son chauffeur Robert m'a accompagnée en deux temps trois mouvements à la gare. Il a rappelé ma fille à trois reprises pour l'informer de la situation. En même temps il a vérifié le numéro de mon train et m'a donné le quai où je devais me rendre. Efficacité, sympathique et rassurant. Je recommande cette compagnie. Merci beaucoup."
               }
             ],
-            "disclaimer": "Genuine reviews published by our customers on our Google listing."
+            "disclaimer": "Published on our Google listing and reproduced here in French, exactly as our passengers wrote them."
           }
         },
         {
@@ -315,8 +299,8 @@
       "slug": "services",
       "label": "Services",
       "meta": {
-        "title": "Services — Transfers, medical transport, tours & long distance | Taxi Excellence Gigean",
-        "description": "Station & airport transfers, medical transport, sightseeing tours and long-distance trips in Gigean and the Thau basin. Air-conditioned Mercedes saloon and van, 24/7, flat rate on transfers."
+        "title": "Taxi services in Gigean — transfers & tours",
+        "description": "Flat-rate station and airport transfers, seated medical transport, sightseeing tours and long-distance trips: our services in Gigean and the Thau basin."
       },
       "blocks": [
         {
@@ -370,10 +354,28 @@
           }
         },
         {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "In practice",
+            "titre": "Four services,",
+            "titreAccent": "one same standard",
+            "paragraphes": [
+              "For station and airport transfers, everything starts from your schedule: we track your flight or train, pick you up in Gigean, the Thau basin or the address of your choice, and drop you off as close as possible to the terminal or platform. The flat rate is announced when you book — the agreed amount is what you pay, whatever the traffic.",
+              "Seated medical transport calls for punctuality and calm: we build in the margin needed for your consultations, tests and treatments towards Montpellier, Sète or Béziers, and can schedule regular trips for an ongoing treatment.",
+              "Sightseeing tours are planned with you: Sète and Mont Saint-Clair, the oyster beds of Bouzigues and Mèze, Saint-Guilhem-le-Désert or Pézenas, for a half-day or a full day, with the stops you want.",
+              "Long distance, finally, covers any destination in France, in a saloon or a seven-seat van: departure from your door, a quote set before leaving, a calm drive all the way. Local rides, for their part, follow the metered official taxi tariff."
+            ],
+            "ctaPrimaire": {
+              "label": "See our fares",
+              "href": "/tarifs"
+            }
+          }
+        },
+        {
           "type": "cta",
           "content": {
             "titre": "A journey to arrange?",
-            "sousTitre": "Call us or send your request: fast reply, 24/7.",
+            "sousTitre": "Describe your trip by phone or WhatsApp: we confirm the time and the vehicle, day or night.",
             "ctaPrimaire": {
               "label": "Book my ride",
               "href": "/contact"
@@ -387,8 +389,8 @@
       "label": "Station & airport transfers",
       "navHidden": true,
       "meta": {
-        "title": "Airport & station transfer — Montpellier, Sète, Béziers | Taxi Excellence Gigean",
-        "description": "Taxi transfer to airports and stations from Gigean and the Thau basin: Montpellier-Méditerranée, Sète station, Montpellier Saint-Roch. Door-to-door pick-up, flat rate, flight tracking, 24/7.",
+        "title": "Airport & station transfer — Montpellier, Sète",
+        "description": "Flat-rate taxi transfer from Gigean and the Thau basin to Montpellier-Méditerranée airport, Sète and Saint-Roch stations. Flight tracking, door to door.",
         "keywords": [
           "Montpellier airport transfer from Gigean",
           "taxi Sète station",
@@ -429,7 +431,11 @@
               "Taxi Excellence handles your links to Montpellier-Méditerranée airport, Sète station and Montpellier Saint-Roch station, as well as the region's airports and stations. We pick you up in Gigean, the Thau basin or the address of your choice, and drop you off as close as possible to the terminal or platform.",
               "The transfer price is agreed in advance as a flat rate: you know the price before you get in, whatever the traffic. We track your flight and train times and adjust the pick-up in case of delay or early arrival.",
               "For families, groups and heavy luggage, an air-conditioned Mercedes van is available on request."
-            ]
+            ],
+            "ctaPrimaire": {
+              "label": "See the fare grid",
+              "href": "/tarifs"
+            }
           }
         },
         {
@@ -448,13 +454,19 @@
               },
               {
                 "nom": "Regional airports & stations",
-                "description": "Links to the nearby major transport hubs, by reservation."
+                "description": "Links to the nearby major transport hubs, by reservation.",
+                "href": "/longue-distance"
               },
               {
                 "nom": "Flat rate & schedule tracking",
-                "description": "A price known before departure and a pick-up adjusted to flight or train delays."
+                "description": "A price known before departure and a pick-up adjusted to flight or train delays.",
+                "href": "/tarifs"
               }
-            ]
+            ],
+            "cta": {
+              "label": "All our services",
+              "href": "/services"
+            }
           }
         },
         {
@@ -516,8 +528,8 @@
       "label": "Medical transport",
       "navHidden": true,
       "meta": {
-        "title": "Seated medical transport — Gigean, Thau basin, Montpellier | Taxi Excellence",
-        "description": "Seated medical transport in Gigean and the Thau basin: trips to your consultations, tests and treatments, in Sète, Mèze, Béziers and towards Montpellier. Punctuality, discretion, attentive care.",
+        "title": "Seated medical transport — Gigean, Thau basin",
+        "description": "Seated transport to consultations, tests and treatments from Gigean and the Thau basin, towards Montpellier, Sète and Béziers. Punctual and discreet.",
         "keywords": [
           "medical transport Gigean",
           "medical taxi Thau basin",
@@ -558,7 +570,15 @@
               "Taxi Excellence provides seated transport for patients to their medical appointments: consultations, tests, treatment sessions, admissions and discharges. We operate in Gigean, across the whole Thau basin and towards the healthcare hubs of Montpellier, Sète and Béziers.",
               "Punctuality is essential for a medical appointment: we plan for the time, the traffic and the parking so that you arrive calmly, without rushing. Care is provided with respect, patience and discretion.",
               "One-off trip or regular journeys: contact us to arrange your medical rides in advance and travel with peace of mind."
-            ]
+            ],
+            "ctaPrimaire": {
+              "label": "Our other services",
+              "href": "/services"
+            },
+            "ctaSecondaire": {
+              "label": "Station & airport transfers",
+              "href": "/transferts-gares-aeroports"
+            }
           }
         },
         {
@@ -620,8 +640,8 @@
       "label": "Sightseeing tours",
       "navHidden": true,
       "meta": {
-        "title": "Sightseeing tours by taxi — Thau basin, Sète, Saint-Guilhem | Taxi Excellence",
-        "description": "Excursions and sightseeing tours by taxi from Gigean: Thau basin, Sète, Saint-Guilhem-le-Désert, Pézenas, vineyards and the Hérault coast. At your own pace, with a driver who knows the region.",
+        "title": "Sightseeing taxi tours — Sète, Saint-Guilhem",
+        "description": "Taxi excursions from Gigean: Sète and the Thau basin, Saint-Guilhem-le-Désert, Pézenas, vineyards. An itinerary planned with you, at your own pace.",
         "keywords": [
           "sightseeing tour taxi Hérault",
           "excursion Sète Thau basin",
@@ -698,7 +718,11 @@
                 "description": "Wine estates, tastings and Hérault beaches, between Marseillan, Agde and the Mediterranean.",
                 "priceHint": "Tailored"
               }
-            ]
+            ],
+            "cta": {
+              "label": "See indicative fares",
+              "href": "/tarifs"
+            }
           }
         },
         {
@@ -739,8 +763,8 @@
       "label": "Long distance",
       "navHidden": true,
       "meta": {
-        "title": "Long-distance taxi from Gigean — any destination | Taxi Excellence",
-        "description": "Long-distance taxi from Gigean and the Thau basin: trips to any destination in France, in an air-conditioned Mercedes saloon or van. Clear quote agreed in advance, dedicated driver, 24/7.",
+        "title": "Long-distance taxi from Gigean — all of France",
+        "description": "Long-distance taxi trips from Gigean and the Thau basin to any destination in France. Quote agreed before departure, Mercedes saloon or van, 24/7.",
         "keywords": [
           "long distance taxi Gigean",
           "long distance taxi Thau basin",
@@ -800,13 +824,18 @@
               },
               {
                 "nom": "Quote in advance",
-                "description": "A clear price, agreed before departure, with no surprise on arrival."
+                "description": "A clear price, agreed before departure, with no surprise on arrival.",
+                "href": "/tarifs"
               },
               {
                 "nom": "Dedicated driver",
                 "description": "A professional driver for a calm trip, day or night."
               }
-            ]
+            ],
+            "cta": {
+              "label": "Indicative flat rates by destination",
+              "href": "/tarifs"
+            }
           }
         },
         {
@@ -847,8 +876,8 @@
       "slug": "tarifs",
       "label": "Fares",
       "meta": {
-        "title": "Taxi fares from Montpellier — prices, distances & times | Taxi Excellence",
-        "description": "Taxi fare grid from Montpellier Saint-Roch station: day and night prices, estimated distances and travel times to Agde, Béziers, Nîmes, Marseille, Lyon and the airports. Clear flat rates, quote from Gigean and the Thau basin.",
+        "title": "Taxi fares — flat rates from Gigean & Montpellier",
+        "description": "Day and night taxi flat rates from Montpellier Saint-Roch station, quotes from Gigean and the Thau basin. Distances, travel times and a fare simulator.",
         "keywords": [
           "taxi price Montpellier",
           "taxi fare Saint-Roch station",
@@ -861,9 +890,9 @@
         ]
       },
       "service": {
-        "name": "Long-distance taxi flat rates",
-        "description": "Indicative taxi flat rates from Montpellier Saint-Roch station to the main destinations in the region and beyond.",
-        "serviceType": "Taxi flat rates",
+        "name": "Fare grid",
+        "description": "Indicative fare grid: day and night flat rates from Montpellier Saint-Roch station, quotes from Gigean and the Thau basin.",
+        "serviceType": "Fare grid",
         "priceFrom": 65
       },
       "blocks": [
@@ -872,13 +901,64 @@
           "content": {
             "eyebrow": "Fares",
             "titre": "Estimate the price of your trips",
-            "intro": "Clear flat rates, known in advance: check our fares for the main destinations from Montpellier, or request a tailored quote from Gigean and the Thau basin.",
+            "intro": "Our base is in Gigean, at the heart of the Thau basin: local rides there follow the metered official taxi tariff, and every trip from Gigean or nearby is priced on quote. The grid below shows, as a reference, our flat rates from Montpellier Saint-Roch station.",
             "breadcrumb": [
               { "label": "Home", "href": "/" },
               { "label": "Fares" }
             ],
             "ctaPrimaire": {
               "label": "Request a quote",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "simulateurTaxi",
+          "content": {
+            "eyebrow": "Online simulator",
+            "argumentaireTitre": "Estimate the price of your ride",
+            "argumentaireAccent": "in a few seconds",
+            "argumentaire": "Enter the approximate distance of your trip and choose the day or night rate. You get an instant estimate. For a firm price, ask us for a quote — it is confirmed before every departure.",
+            "points": [
+              "Instant calculation based on distance",
+              "Day and night rates, Sundays & public holidays",
+              "A firm flat rate confirmed before departure"
+            ],
+            "cardTitre": "Ride simulator",
+            "cardIntro": "Indicative estimate, excluding traffic and waiting time.",
+            "distanceLabel": "Trip distance",
+            "distanceMin": 2,
+            "distanceMax": 400,
+            "distanceDefaut": 40,
+            "distanceStep": 1,
+            "unite": "km",
+            "priseEnCharge": 6,
+            "minimumCourse": 20,
+            "margePct": 10,
+            "variantes": [
+              {
+                "id": "moment",
+                "label": "Time of the trip",
+                "options": [
+                  {
+                    "id": "jour",
+                    "label": "Day rate (7am–7pm)",
+                    "prixKm": 2.05,
+                    "description": "Weekdays, 7am to 7pm"
+                  },
+                  {
+                    "id": "nuit",
+                    "label": "Night rate (7pm–7am, Sun. & holidays)",
+                    "prixKm": 2.85,
+                    "description": "7pm–7am, Sundays and public holidays"
+                  }
+                ]
+              }
+            ],
+            "resultatLabel": "Estimate for your ride",
+            "note": "* Indicative estimate based on the distance and the chosen options, subject to change depending on traffic, the actual route, waiting time and the number of passengers. Local rides (Gigean and the Thau basin) follow the metered official taxi tariff. A firm flat rate is confirmed before each departure.",
+            "cta": {
+              "label": "Get a firm quote",
               "href": "/contact"
             }
           }
@@ -947,6 +1027,30 @@
           }
         },
         {
+          "type": "faq",
+          "content": {
+            "titre": "Questions about our prices",
+            "items": [
+              {
+                "question": "How is the price of a ride set?",
+                "reponse": "Local rides, in Gigean and the Thau basin, follow the metered official taxi tariff. For longer trips — transfers, long distance — a firm flat rate is agreed and confirmed before departure: the amount announced is what you pay."
+              },
+              {
+                "question": "When does the night rate apply?",
+                "reponse": "From 7pm to 7am, as well as on Sundays and public holidays. On weekdays from 7am to 7pm, the day rate applies — the two columns of the grid match these time slots."
+              },
+              {
+                "question": "Do the listed flat rates apply from Gigean?",
+                "reponse": "The grid is set from Montpellier Saint-Roch station, as a reference. For a departure from Gigean, the Thau basin or any other address, we price your trip on quote, with a flat rate confirmed before departure."
+              },
+              {
+                "question": "Can the amount change along the way?",
+                "reponse": "Not for a flat rate: the price confirmed before departure is final. The grid's rates, however, remain indicative and may vary with luggage, waiting time and the number of passengers — which is why a quote is worth asking for."
+              }
+            ]
+          }
+        },
+        {
           "type": "cta",
           "content": {
             "titre": "A specific trip to price?",
@@ -963,8 +1067,8 @@
       "slug": "a-propos",
       "label": "About",
       "meta": {
-        "title": "About — Taxi Excellence, your taxi in Gigean since 2013",
-        "description": "Taxi Excellence, your taxi driver in Gigean and the Thau basin since 2013: punctuality, spotless Mercedes vehicles and attentiveness. Transfers, medical transport, tours and long distance."
+        "title": "About — your taxi in Gigean since 2013",
+        "description": "Taxi driver in Gigean since 2013: reliable punctuality, clean air-conditioned Mercedes vehicles, smooth driving and deep knowledge of the Thau basin."
       },
       "blocks": [
         {
@@ -1042,8 +1146,8 @@
       "slug": "contact",
       "label": "Contact",
       "meta": {
-        "title": "Contact & booking — Taxi Excellence Gigean, 24/7",
-        "description": "Book your taxi in Gigean and the Thau basin: by phone or WhatsApp 24/7, or via the form. Transfers, medical transport, sightseeing tours and long distance."
+        "title": "Contact & booking — taxi in Gigean, 24/7",
+        "description": "Book your taxi in Gigean by phone or WhatsApp, 24/7, or through the form: airport transfer, medical transport, sightseeing tour or long distance."
       },
       "blocks": [
         {
@@ -1051,7 +1155,7 @@
           "content": {
             "eyebrow": "Contact & booking",
             "titre": "Book your ride",
-            "intro": "Call us at any hour or send your request: we confirm quickly, 24/7.",
+            "intro": "A transfer to schedule, an appointment to keep, an excursion to prepare: call, message us on WhatsApp or leave your request — your driver answers at any hour.",
             "breadcrumb": [
               { "label": "Home", "href": "/" },
               { "label": "Contact" }
@@ -1063,7 +1167,7 @@
           "variant": "split-form-carte",
           "content": {
             "titre": "Booking request",
-            "intro": "Tell us your trip (pick-up, destination, date and time) and the number of passengers. We'll confirm the pick-up.",
+            "intro": "Pick-up point, destination, date and time, number of passengers: give us the essentials of your trip, and we confirm the ride and, for transfers, the flat rate.",
             "form": true,
             "formMode": "demande-intervention",
             "telephone": "07 66 90 50 99",

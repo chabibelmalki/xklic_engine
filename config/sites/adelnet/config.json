@@ -51,14 +51,15 @@
     "lng": 4.4030955
   },
   "meta": {
-    "title": "Adelnet — Ménage & repassage à domicile à Saint-Étienne (crédit d'impôt 50 %)",
-    "description": "Adelnet, aide ménagère à Saint-Étienne et Lyon : ménage à domicile, repassage, grand nettoyage, vitres et entretien de bureaux. Crédit d'impôt de 50 %, soit 14 €/h réellement à votre charge. Devis gratuit, 7j/7.",
+    "title": "Ménage & repassage à Saint-Étienne — dès 14 €/h",
+    "description": "Ménage à domicile, repassage, grand nettoyage et vitres à Saint-Étienne et sa couronne. Crédit d'impôt 50 % : l'heure revient à 14 €. Devis sous 24 h.",
     "keywords": [
       "aide ménagère Saint-Étienne",
       "ménage à domicile Saint-Étienne",
       "femme de ménage Saint-Étienne",
       "repassage à domicile Saint-Étienne",
-      "ménage à domicile Lyon",
+      "ménage à domicile Saint-Chamond",
+      "aide ménagère Firminy",
       "crédit d'impôt ménage Loire",
       "nettoyage de bureaux Saint-Étienne",
       "services à la personne Saint-Étienne"
@@ -82,10 +83,10 @@
               "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/adelnet/accueil.png",
               "alt": "Intervenante Adelnet en tenue, entretien d'un appartement lumineux à Saint-Étienne"
             },
-            "eyebrow": "Aide ménagère à Saint-Étienne & Lyon",
+            "eyebrow": "Aide ménagère à Saint-Étienne",
             "titre": "Reprenez votre temps,",
             "titreAccent": "on s'occupe du ménage",
-            "accroche": "Ménage régulier, repassage et grand nettoyage à domicile — à Saint-Étienne, Lyon et alentours. Avec le crédit d'impôt de 50 %, votre heure revient à 14 € au lieu de 28 €.",
+            "accroche": "Ménage régulier, repassage et grand nettoyage à domicile, à Saint-Étienne et dans toute sa couronne. Avec le crédit d'impôt de 50 %, votre heure revient à 14 € au lieu de 28 €.",
             "trust": [
               {
                 "icone": "Receipt",
@@ -101,7 +102,7 @@
               },
               {
                 "icone": "Car",
-                "label": "Saint-Étienne & Lyon"
+                "label": "Saint-Étienne & couronne"
               }
             ],
             "ctaPrimaire": {
@@ -146,7 +147,7 @@
           "content": {
             "eyebrow": "Nos prestations",
             "titre": "Un intérieur entretenu, sans y penser",
-            "intro": "Du ménage hebdomadaire au repassage en passant par le grand nettoyage : un service régulier et soigné à Saint-Étienne, Lyon et leurs environs.",
+            "intro": "Du ménage hebdomadaire au repassage en passant par le grand nettoyage : un service régulier et soigné à Saint-Étienne et dans les communes voisines, de Firminy à Rive-de-Gier.",
             "items": [
               {
                 "nom": "Ménage à domicile",
@@ -242,8 +243,8 @@
           "type": "zone",
           "mode": "carte",
           "content": {
-            "titre": "À Saint-Étienne, Lyon et tout autour",
-            "intro": "Nous nous déplaçons chez vous dans la Loire et le Rhône. Vérifiez votre commune ou contactez-nous directement.",
+            "titre": "Basées à Saint-Étienne, on rayonne tout autour",
+            "intro": "Départ place du Forum : la couronne stéphanoise, la plaine du Forez, la vallée du Gier et jusqu'aux communes du Rhône. Déplacement compris sur l'agglomération de Saint-Étienne — votre ville manque à la liste ? Un coup de fil et c'est réglé.",
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.30%2C45.35%2C4.95%2C45.82&layer=mapnik&marker=45.4695347%2C4.4030955",
             "zones": [
               {
@@ -299,24 +300,16 @@
             "titre": "Les questions que l'on nous pose souvent",
             "items": [
               {
-                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
-                "reponse": "Pour le ménage et le repassage réalisés à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées (plafond de 12 000 € par an et par foyer). Concrètement, une heure facturée 28 € ne vous coûte réellement que 14 €. Adelnet travaille via la coopérative Accès SAP, déclarée services à la personne, ce qui vous ouvre ce droit."
+                "question": "Au final, combien me coûte une heure de ménage ?",
+                "reponse": "28 € facturés, 14 € de reste à charge une fois le crédit d'impôt de 50 % déduit. Le fonctionnement complet du dispositif et de l'avance immédiate est détaillé sur notre page crédit d'impôt."
               },
               {
-                "question": "Qu'est-ce que l'avance immédiate ?",
-                "reponse": "Grâce à l'avance immédiate de crédit d'impôt (URSSAF), vous ne réglez tout de suite que la moitié restant à votre charge, sans attendre votre déclaration d'impôts. Le dispositif est géré via la coopérative Accès SAP."
+                "question": "C'est toujours la même personne qui vient ?",
+                "reponse": "Oui, dans la mesure du possible : une intervenante attitrée, sur des créneaux fixes convenus ensemble. C'est la base de la confiance et d'un travail régulier."
               },
               {
-                "question": "Aurai-je toujours la même intervenante ?",
-                "reponse": "Oui, dans la mesure du possible vous gardez la même intervenante à chaque passage. C'est essentiel pour la confiance, la régularité et la qualité du travail."
-              },
-              {
-                "question": "Le crédit d'impôt s'applique-t-il au nettoyage de bureaux ?",
-                "reponse": "Non. Le crédit d'impôt de 50 % ne concerne que les prestations réalisées au domicile d'un particulier. Le nettoyage de bureaux, de locaux professionnels et la fin de chantier sont facturés sur devis, sans crédit d'impôt."
-              },
-              {
-                "question": "Dans quelles communes intervenez-vous ?",
-                "reponse": "Nous intervenons autour de Saint-Étienne (Loire) et autour de Lyon (Rhône), ainsi que dans les communes voisines. Vérifiez votre secteur sur la page d'accueil ou contactez-nous pour confirmer."
+                "question": "Vous venez jusqu'où ?",
+                "reponse": "Saint-Étienne et sa couronne d'abord — Villars, La Talaudière, Saint-Chamond, Firminy — puis la plaine du Forez et les communes du Rhône listées dans notre zone d'intervention."
               }
             ]
           }
@@ -347,8 +340,8 @@
       "slug": "services",
       "label": "Services",
       "meta": {
-        "title": "Services de ménage & repassage à Saint-Étienne et Lyon",
-        "description": "Ménage à domicile, repassage, grand nettoyage, vitres, bureaux et fin de chantier à Saint-Étienne, Lyon et alentours. Crédit d'impôt 50 % sur les prestations à domicile."
+        "title": "Services ménage & repassage à Saint-Étienne",
+        "description": "Ménage régulier, repassage, grand nettoyage, vitres, bureaux et fin de chantier à Saint-Étienne et sa couronne. Crédit d'impôt 50 % à domicile."
       },
       "blocks": [
         {
@@ -356,7 +349,7 @@
           "content": {
             "eyebrow": "Nos prestations",
             "titre": "Tout l'entretien de votre quotidien",
-            "intro": "Du ménage régulier au repassage, du grand nettoyage à l'entretien de vos bureaux : Adelnet couvre vos besoins à Saint-Étienne et Lyon — avec crédit d'impôt sur les prestations à domicile.",
+            "intro": "Du ménage régulier au repassage, du grand nettoyage à l'entretien de vos bureaux : Adelnet couvre vos besoins à Saint-Étienne et dans sa couronne — avec crédit d'impôt sur les prestations à domicile.",
             "ctaPrimaire": {
               "label": "Composer mon devis",
               "href": "/devis"
@@ -379,7 +372,7 @@
               "alt": "Intervenante Adelnet en tenue nettoyant un appartement à Saint-Étienne"
             },
             "paragraphes": [
-              "Du ménage régulier au repassage, du grand nettoyage à l'entretien de vos locaux, Adelnet couvre tout l'entretien de votre quotidien à Saint-Étienne, Lyon et leurs environs.",
+              "Du ménage régulier au repassage, du grand nettoyage à l'entretien de vos locaux, Adelnet couvre tout l'entretien de votre quotidien à Saint-Étienne et dans les communes alentour.",
               "Une intervenante attitrée, formée et de confiance, intervient dans le respect de vos habitudes — avec, pour les prestations à domicile, le crédit d'impôt de 50 %."
             ],
             "ctaPrimaire": {
@@ -489,7 +482,7 @@
       "label": "Tarifs",
       "meta": {
         "title": "Tarifs ménage & repassage à Saint-Étienne",
-        "description": "Tarifs Adelnet : ménage 28 €/h (14 €/h après crédit d'impôt), repassage, grand nettoyage, vitres, bureaux et fin de chantier. Composez votre devis en ligne."
+        "description": "Ménage 28 €/h soit 14 €/h après crédit d'impôt, repassage 26 €/h, grand nettoyage dès 180 €, vitres dès 80 €. Composez votre devis en ligne."
       },
       "blocks": [
         {
@@ -719,8 +712,8 @@
       "label": "Crédit d'impôt",
       "navHidden": true,
       "meta": {
-        "title": "Crédit d'impôt 50 % sur le ménage à domicile à Saint-Étienne",
-        "description": "Avec Adelnet et la coopérative Accès SAP, profitez du crédit d'impôt de 50 % et de l'avance immédiate sur le ménage et le repassage à domicile à Saint-Étienne. Coût réel : 14 €/h."
+        "title": "Crédit d'impôt 50 % ménage à Saint-Étienne",
+        "description": "Crédit d'impôt de 50 % et avance immédiate via Accès SAP sur le ménage et le repassage à domicile à Saint-Étienne : l'heure facturée 28 € revient à 14 €."
       },
       "blocks": [
         {
@@ -810,8 +803,8 @@
       "label": "Zone d'intervention",
       "navHidden": true,
       "meta": {
-        "title": "Zone d'intervention : Saint-Étienne, Lyon et alentours",
-        "description": "Adelnet intervient à Saint-Étienne, Saint-Chamond, Firminy, Andrézieux-Bouthéon, Lyon, Villeurbanne, Vénissieux et dans toute la Loire et le Rhône."
+        "title": "Zone d'intervention autour de Saint-Étienne",
+        "description": "Adelnet se déplace à Saint-Étienne, Villars, Saint-Chamond, Firminy, Andrézieux-Bouthéon et jusqu'au Rhône. Déplacement compris sur l'agglomération."
       },
       "blocks": [
         {
@@ -819,7 +812,7 @@
           "content": {
             "eyebrow": "Zone d'intervention",
             "titre": "Nous venons jusqu'à chez vous",
-            "intro": "De Saint-Étienne à Lyon, dans la Loire et le Rhône. Vérifiez votre commune ci-dessous ou contactez-nous pour confirmer."
+            "intro": "Point de départ : place du Forum, à Saint-Étienne. De là, on couvre la couronne stéphanoise, la plaine du Forez, la vallée du Gier et des communes du Rhône — sans frais de déplacement sur l'agglomération."
           }
         },
         {
@@ -827,7 +820,7 @@
           "mode": "carte",
           "content": {
             "titre": "Communes desservies",
-            "intro": "Nous nous déplaçons dans toute l'agglomération stéphanoise et la métropole de Lyon.",
+            "intro": "La carte ci-dessous situe notre point de départ ; les listes détaillent chaque secteur, du Chambon-Feugerolles à Rive-de-Gier.",
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.30%2C45.35%2C4.95%2C45.82&layer=mapnik&marker=45.4695347%2C4.4030955",
             "zones": [
               {
@@ -877,6 +870,18 @@
           }
         },
         {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Secteur par secteur",
+            "titre": "Trois bassins, une même organisation",
+            "paragraphes": [
+              "Saint-Étienne et sa couronne, c'est notre terrain quotidien : tous les quartiers de la ville, puis Saint-Priest-en-Jarez, Villars, La Talaudière, Sorbiers, Saint-Genest-Lerpt et Roche-la-Molière. Côté Ondaine, La Ricamarie, Le Chambon-Feugerolles, Firminy et Unieux sont desservis aux mêmes conditions : déplacement compris, créneaux 7j/7 de 7h à 22h.",
+              "Dans la plaine du Forez, nous passons régulièrement par La Fouillouse, Andrézieux-Bouthéon, Saint-Just-Saint-Rambert et Veauche. Un passage hebdomadaire s'y organise aussi facilement qu'en ville : on cale un créneau fixe, la même intervenante le tient d'une semaine sur l'autre.",
+              "Enfin, la vallée du Gier — Saint-Chamond et Rive-de-Gier — fait la jonction avec les communes du Rhône que nous desservons également, de Givors à Villeurbanne. Pour ces secteurs plus éloignés, un appel au 07 60 15 38 53 suffit pour vérifier les disponibilités avant d'envoyer votre demande de devis."
+            ]
+          }
+        },
+        {
           "type": "cta",
           "variant": "encadre",
           "content": {
@@ -899,7 +904,7 @@
       "label": "À propos",
       "navHidden": true,
       "meta": {
-        "title": "À propos d'Adelnet",
+        "title": "À propos",
         "description": "Adelnet, aide ménagère à Saint-Étienne fondée par Khadija Selhami : un service de proximité, soigné et de confiance, à domicile comme en entreprise."
       },
       "blocks": [
@@ -963,8 +968,8 @@
       "slug": "contact",
       "label": "Contact",
       "meta": {
-        "title": "Contact",
-        "description": "Contactez Adelnet à Saint-Étienne : téléphone, e-mail, WhatsApp. Demande d'intervention en ligne, réponse rapide, devis gratuit."
+        "title": "Contact — ménage à Saint-Étienne",
+        "description": "Contactez Adelnet à Saint-Étienne au 07 60 15 38 53, par e-mail ou WhatsApp, 7j/7 de 7h à 22h. Demande d'intervention en ligne, devis gratuit sous 24 h."
       },
       "blocks": [
         {
@@ -980,7 +985,7 @@
           "variant": "split-form-carte",
           "content": {
             "titre": "Demande d'intervention",
-            "intro": "Décrivez votre besoin : prestation, commune et date souhaitée. Nous revenons vers vous rapidement avec une estimation.",
+            "intro": "La prestation, la commune, le créneau visé : avec ces trois infos, on vous rappelle sous 24 h avec un chiffrage clair, crédit d'impôt déjà compté.",
             "form": true,
             "formMode": "demande-intervention",
             "telephone": "+33 7 60 15 38 53",
@@ -1031,8 +1036,8 @@
       "label": "Devis gratuit",
       "navHidden": true,
       "meta": {
-        "title": "Demande de devis gratuit",
-        "description": "Demandez votre devis gratuit et sans engagement à Adelnet : ménage, repassage, grand nettoyage, vitres et bureaux à Saint-Étienne et Lyon."
+        "title": "Devis ménage gratuit à Saint-Étienne",
+        "description": "Décrivez votre besoin de ménage, repassage, grand nettoyage ou vitres à Saint-Étienne : devis gratuit sous 24 h, sans engagement, crédit d'impôt déduit."
       },
       "blocks": [
         {
@@ -1040,7 +1045,7 @@
           "content": {
             "eyebrow": "Devis gratuit",
             "titre": "Demandez votre devis en 1 minute",
-            "intro": "Renseignez votre besoin : nous revenons vers vous rapidement avec une estimation adaptée, gratuite et sans engagement.",
+            "intro": "Votre logement, la fréquence souhaitée, votre commune : deux minutes chrono, et vous recevez sous 24 h une estimation posée noir sur blanc, gratuite et sans engagement.",
             "ctaSecondaire": {
               "label": "Composer en ligne",
               "href": "/tarifs"
@@ -1052,7 +1057,7 @@
           "variant": "split-form-carte",
           "content": {
             "titre": "Votre demande de devis",
-            "intro": "Quelques informations suffisent pour vous établir une estimation.",
+            "intro": "Surface, fréquence, secteur : c'est tout ce qu'il nous faut pour poser des chiffres justes dès le premier échange.",
             "form": true,
             "formMode": "devis",
             "telephone": "+33 7 60 15 38 53",
@@ -1102,8 +1107,8 @@
       "label": "FAQ",
       "navHidden": true,
       "meta": {
-        "title": "Questions fréquentes",
-        "description": "Crédit d'impôt, avance immédiate, CESU, zone d'intervention, régularité, devis : toutes les réponses sur le ménage et le repassage avec Adelnet."
+        "title": "FAQ ménage à domicile Saint-Étienne",
+        "description": "Produits fournis ou non, horaires 7j/7, remplacement, communes desservies, cumul ménage-repassage : les réponses pratiques avant de vous lancer."
       },
       "blocks": [
         {
@@ -1120,32 +1125,32 @@
             "titre": "Tout savoir avant de commencer",
             "items": [
               {
-                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
-                "reponse": "Pour le ménage et le repassage à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées (plafond de 12 000 € par an et par foyer). Une heure facturée 28 € ne vous coûte donc réellement que 14 €. Adelnet travaille via la coopérative Accès SAP, déclarée services à la personne."
+                "question": "Faut-il fournir les produits et le matériel ?",
+                "reponse": "Comme vous préférez. Vous pouvez mettre à disposition vos propres produits, ou nous demander d'apporter produits et matériel : le supplément est de 4 €/h, affiché tel quel dans le devis en ligne."
               },
               {
-                "question": "Qu'est-ce que l'avance immédiate ?",
-                "reponse": "Grâce à l'avance immédiate de crédit d'impôt (URSSAF), vous ne réglez tout de suite que la moitié restant à votre charge, sans attendre votre déclaration d'impôts. Le dispositif est géré via la coopérative Accès SAP."
+                "question": "À quelles heures pouvez-vous passer ?",
+                "reponse": "7j/7, de 7h à 22h. Les créneaux tôt le matin et en soirée sont les plus demandés : pour un passage régulier, mieux vaut bloquer le vôtre dès le devis."
               },
               {
-                "question": "Aurai-je toujours la même intervenante ?",
-                "reponse": "Oui, dans la mesure du possible vous gardez la même intervenante à chaque passage, pour la confiance et la régularité du service."
+                "question": "Que se passe-t-il si mon intervenante est absente ?",
+                "reponse": "On vous prévient dès que possible et on vous propose, selon ce qui vous arrange, un report du créneau ou une solution de remplacement — jamais de passage annulé sans nouvelle de notre part."
               },
               {
-                "question": "Le crédit d'impôt s'applique-t-il aux bureaux ?",
-                "reponse": "Non. Le crédit d'impôt de 50 % ne concerne que les prestations réalisées au domicile d'un particulier. Le nettoyage de bureaux, de locaux et la fin de chantier sont facturés sur devis, sans crédit d'impôt."
+                "question": "Intervenez-vous dans ma commune ?",
+                "reponse": "Saint-Étienne et sa couronne (Villars, La Talaudière, Saint-Chamond, Firminy…), la plaine du Forez côté Andrézieux-Bouthéon, la vallée du Gier et des communes du Rhône. La liste complète est sur la page zone d'intervention."
               },
               {
-                "question": "Dans quelles communes intervenez-vous ?",
-                "reponse": "Nous intervenons autour de Saint-Étienne (Loire) et autour de Lyon (Rhône), ainsi que dans les communes voisines. Contactez-nous pour confirmer votre secteur."
-              },
-              {
-                "question": "Quels sont vos horaires ?",
-                "reponse": "Nous sommes joignables et intervenons 7j/7, de 7h à 22h, pour s'adapter à votre emploi du temps."
+                "question": "Peut-on combiner ménage et repassage sur un même passage ?",
+                "reponse": "Oui, et c'est souvent le plus rentable : un seul créneau, deux prestations, chacune à son taux (28 €/h le ménage, 26 €/h le repassage), toutes deux éligibles au crédit d'impôt."
               },
               {
                 "question": "Utilisez-vous des produits écologiques ?",
-                "reponse": "Nous adaptons les produits à vos préférences et pouvons utiliser des produits respectueux de l'environnement sur demande, notamment en présence d'enfants ou d'animaux."
+                "reponse": "Sur demande, oui : nous adaptons les produits à vos préférences, notamment en présence d'enfants ou d'animaux. Dites-le simplement au moment du devis."
+              },
+              {
+                "question": "Où trouver le détail du crédit d'impôt ?",
+                "reponse": "Tout est regroupé sur notre page crédit d'impôt : fonctionnement des 50 %, avance immédiate, plafond annuel, paiement CESU, avec un simulateur pour chiffrer votre situation."
               }
             ]
           }
@@ -1173,8 +1178,8 @@
       "label": "Ménage à domicile",
       "navHidden": true,
       "meta": {
-        "title": "Ménage à domicile à Saint-Étienne — dès 14 €/h après crédit d'impôt",
-        "description": "Ménage et entretien à domicile à Saint-Étienne, Lyon et alentours : entretien régulier ou ponctuel, dès 28 €/h soit 14 €/h après crédit d'impôt de 50 %. Devis gratuit.",
+        "title": "Ménage à domicile Saint-Étienne — dès 14 €/h",
+        "description": "Entretien régulier ou ponctuel de votre logement à Saint-Étienne et sa couronne : 28 €/h, soit 14 €/h après crédit d'impôt 50 %. Devis sous 24 h.",
         "keywords": [
           "ménage à domicile Saint-Étienne",
           "aide ménagère Saint-Étienne",
@@ -1195,7 +1200,7 @@
           "content": {
             "eyebrow": "Crédit d'impôt 50 %",
             "titre": "Ménage à domicile à Saint-Étienne — dès 28 €/h",
-            "intro": "Adelnet assure l'entretien régulier de votre logement à Saint-Étienne, Lyon et alentours : sols, cuisine, sanitaires, poussières. Grâce au crédit d'impôt de 50 %, votre heure facturée 28 € ne vous coûte réellement que 14 €.",
+            "intro": "Adelnet assure l'entretien régulier de votre logement à Saint-Étienne et dans sa couronne : sols, cuisine, sanitaires, poussières. Grâce au crédit d'impôt de 50 %, votre heure facturée 28 € ne vous coûte réellement que 14 €.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1273,11 +1278,48 @@
           }
         },
         {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "En pratique",
+            "titre": "Un passage type, heure par heure",
+            "paragraphes": [
+              "Le format le plus courant, c'est un créneau de 2 h par semaine, toujours au même horaire. L'intervenante commence par les pièces d'eau : cuisine dégraissée (plan de travail, évier, extérieur des façades), puis salle de bain et sanitaires détartrés. Elle enchaîne sur les poussières — meubles, plinthes accessibles, rebords — et finit par les sols de tout le logement, aspirés puis lavés. Sur un créneau de 3 h, on ajoute ce qui déborde d'une semaine normale : intérieur du micro-ondes, miroirs, changement des draps si vous le souhaitez.",
+              "Côté matériel, deux options : vos produits, ou les nôtres avec un supplément de 4 €/h affiché tel quel dans le devis en ligne. Ce qui ne relève pas de l'entretien courant — lessivage complet, intérieurs de placards, électroménager en profondeur — bascule sur le grand nettoyage, chiffré à part dès 180 €.",
+              "La fréquence, c'est vous qui la fixez : hebdomadaire, à la quinzaine ou ponctuelle avant une occasion. Nous intervenons 7j/7 de 7h à 22h, à Saint-Étienne comme à Saint-Priest-en-Jarez, Villars, Sorbiers ou La Talaudière — déplacement compris sur l'agglomération."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Ménage à domicile : questions pratiques",
+            "items": [
+              {
+                "question": "Combien d'heures prévoir pour mon logement ?",
+                "reponse": "En entretien hebdomadaire, le créneau de 2 h est le format le plus demandé — c'est d'ailleurs la base de notre simulateur. Au-delà d'un T3 ou si le rythme est à la quinzaine, on passe plutôt sur 3 h. Le devis ajuste précisément après un premier échange."
+              },
+              {
+                "question": "Puis-je changer la fréquence en cours de route ?",
+                "reponse": "Oui : on passe d'un rythme hebdomadaire à la quinzaine (ou l'inverse) sur simple demande, sans frais. Le créneau et l'intervenante restent les mêmes autant que possible."
+              },
+              {
+                "question": "Le ménage régulier comprend-il les vitres ?",
+                "reponse": "L'entretien courant couvre sols, poussières, cuisine et salle de bain. Les vitres font l'objet d'une prestation dédiée, dès 80 € en appartement, que l'on peut caler sur votre créneau habituel."
+              },
+              {
+                "question": "Le tarif est-il le même partout ?",
+                "reponse": "28 €/h, déplacement compris sur Saint-Étienne et son agglomération. Pour les secteurs plus éloignés, plaine du Forez ou communes du Rhône, les conditions sont confirmées au devis."
+              }
+            ]
+          }
+        },
+        {
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "Ménage à domicile à Saint-Étienne, Lyon et alentours",
-            "intro": "Nous nous déplaçons dans la Loire et le Rhône.",
+            "titre": "Ménage à domicile à Saint-Étienne et alentours",
+            "intro": "Déplacement compris sur l'agglomération stéphanoise ; les communes du Rhône sont desservies sur demande.",
             "zones": [
               {
                 "region": "Loire — autour de Saint-Étienne",
@@ -1311,6 +1353,36 @@
           }
         },
         {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Nos autres prestations",
+            "items": [
+              {
+                "nom": "Repassage à domicile",
+                "emoji": "👕",
+                "priceHint": "dès 26 €/h",
+                "description": "S'ajoute au même créneau que le ménage : un seul passage, deux corvées en moins.",
+                "href": "/repassage"
+              },
+              {
+                "nom": "Grand nettoyage",
+                "emoji": "✨",
+                "priceHint": "dès 180 €",
+                "description": "La remise à niveau complète avant de démarrer un entretien régulier.",
+                "href": "/grand-menage"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "emoji": "🪟",
+                "priceHint": "dès 80 €",
+                "description": "Le complément idéal du ménage régulier, une à deux fois par an.",
+                "href": "/nettoyage-vitres"
+              }
+            ]
+          }
+        },
+        {
           "type": "cta",
           "variant": "encadre",
           "content": {
@@ -1333,13 +1405,13 @@
       "label": "Repassage à domicile",
       "navHidden": true,
       "meta": {
-        "title": "Repassage à domicile à Saint-Étienne — dès 13 €/h après crédit d'impôt",
-        "description": "Repassage à domicile à Saint-Étienne et Lyon : linge repassé, plié et rangé, dès 26 €/h soit 13 €/h après crédit d'impôt de 50 %. Sur le même créneau que le ménage.",
+        "title": "Repassage à domicile Saint-Étienne — dès 13 €/h",
+        "description": "Linge repassé, plié et rangé à domicile à Saint-Étienne : 26 €/h, soit 13 €/h après crédit d'impôt, combinable avec le ménage sur le même créneau.",
         "keywords": [
           "repassage à domicile Saint-Étienne",
           "service repassage Loire",
           "repassage crédit d'impôt",
-          "aide ménagère repassage Lyon"
+          "repassage Saint-Chamond"
         ]
       },
       "service": {
@@ -1403,6 +1475,62 @@
           }
         },
         {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "En pratique",
+            "titre": "Le repassage chez vous, sans y passer votre dimanche",
+            "paragraphes": [
+              "Le principe est simple : l'intervenante repasse à votre domicile, avec votre linge sorti de machine ou de la panière. Chemises, pantalons, draps, housses de couette, nappes : tout est repassé, plié et rangé là où vous l'indiquez — armoire, penderie ou piles prêtes pour la semaine. Une heure de repassage est facturée 26 €, soit 13 € après le crédit d'impôt de 50 %, et le compteur démarre à 1 h : pas de forfait imposé pour une petite panière.",
+              "Le calcul le plus malin, c'est le créneau combiné : ménage puis repassage sur le même passage, chacun à son taux horaire. Un seul rendez-vous dans votre semaine, deux corvées en moins. C'est la formule que choisissent la plupart de nos clients réguliers de Saint-Étienne, Villars ou Saint-Chamond.",
+              "Pourquoi à domicile et pas en atelier ? D'abord parce que votre linge ne quitte pas la maison — pas de transport, pas d'attente, pas d'échange de sacs. Ensuite parce que seule une prestation réalisée chez vous ouvre droit au crédit d'impôt de 50 % : le même service ailleurs vous coûterait le double, net."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Repassage : questions pratiques",
+            "items": [
+              {
+                "question": "Le repassage se fait-il obligatoirement chez moi ?",
+                "reponse": "Oui, et c'est votre intérêt : le crédit d'impôt de 50 % ne s'applique qu'aux prestations réalisées à votre domicile. Chez vous, l'heure revient à 13 € au lieu de 26 €."
+              },
+              {
+                "question": "Puis-je cumuler ménage et repassage sur un même rendez-vous ?",
+                "reponse": "C'est même la formule la plus courante : l'intervenante enchaîne les deux sur un seul passage, le ménage à 28 €/h et le repassage à 26 €/h, chacun compté à son taux."
+              },
+              {
+                "question": "Comment le linge est-il rendu ?",
+                "reponse": "Repassé, plié et rangé selon vos consignes : sur cintres dans la penderie, en piles par personne ou par type de linge. Dites-le une fois, ce sera pareil à chaque passage."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Nos autres prestations",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "emoji": "🧽",
+                "priceHint": "dès 28 €/h",
+                "description": "Le duo gagnant avec le repassage : tout l'entretien sur un seul créneau.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Grand nettoyage",
+                "emoji": "✨",
+                "priceHint": "dès 180 €",
+                "description": "Quand le logement a besoin d'une remise à plat, pas juste d'un coup de fer.",
+                "href": "/grand-menage"
+              }
+            ]
+          }
+        },
+        {
           "type": "cta",
           "variant": "encadre",
           "content": {
@@ -1425,8 +1553,8 @@
       "label": "Grand nettoyage",
       "navHidden": true,
       "meta": {
-        "title": "Grand nettoyage à domicile à Saint-Étienne — crédit d'impôt 50 %",
-        "description": "Grand nettoyage de printemps ou avant événement à Saint-Étienne et Lyon : nettoyage en profondeur pièce par pièce, dès 180 €, crédit d'impôt de 50 % à domicile.",
+        "title": "Grand nettoyage à Saint-Étienne — dès 180 €",
+        "description": "Nettoyage en profondeur pièce par pièce à Saint-Étienne : dès 180 € pour un studio, 400 € pour un T4. Crédit d'impôt de 50 % sur ce service à domicile.",
         "keywords": [
           "grand nettoyage Saint-Étienne",
           "nettoyage de printemps Loire",
@@ -1495,6 +1623,73 @@
           }
         },
         {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "En pratique",
+            "titre": "Ce qu'on nettoie que le ménage courant ne touche pas",
+            "paragraphes": [
+              "Le grand nettoyage, c'est tout ce qui s'accumule entre deux entretiens courants : plinthes et dessus de meubles, intérieurs de placards vidés puis essuyés, électroménager dégraissé (four, hotte, réfrigérateur), calcaire des robinetteries et parois de douche, traces sur les portes et interrupteurs. On avance pièce par pièce, en terminant par les sols, et les vitres intérieures peuvent s'ajouter sur demande.",
+              "Le tarif suit la taille du logement, pas de surprise à l'arrivée : dès 180 € pour un studio ou T1, 250 € pour un T2, 320 € pour un T3 et 400 € à partir du T4. Réalisée à votre domicile, la prestation ouvre droit au crédit d'impôt de 50 % — un T2 à 250 € vous revient donc réellement à 125 €.",
+              "Quand le programmer ? Au printemps évidemment, mais aussi avant de recevoir, après une longue absence, ou au moment d'emménager dans un logement resté vide. À Saint-Étienne, Firminy ou Andrézieux-Bouthéon, comptez une demande de devis et une réponse sous 24 h pour caler la date."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Grand nettoyage : questions pratiques",
+            "items": [
+              {
+                "question": "Quelle différence avec le ménage régulier ?",
+                "reponse": "Le ménage régulier entretient ; le grand nettoyage remet à niveau. Placards vidés, électroménager dégraissé, calcaire traité : on va chercher ce qu'un passage hebdomadaire ne couvre pas."
+              },
+              {
+                "question": "De quoi dépend le prix ?",
+                "reponse": "De la taille du logement, avec une grille simple : dès 180 € en studio/T1, 250 € en T2, 320 € en T3, 400 € à partir du T4. Le devis précise le montant exact selon l'état des lieux."
+              },
+              {
+                "question": "Les vitres sont-elles comprises ?",
+                "reponse": "Les vitres intérieures peuvent être incluses sur demande. Pour un traitement complet intérieur et extérieur, baies comprises, notre prestation vitrerie dédiée démarre à 80 €."
+              },
+              {
+                "question": "Peut-on enchaîner sur un entretien régulier ?",
+                "reponse": "C'est le scénario idéal : le grand nettoyage remet le logement à zéro, puis un créneau hebdomadaire à 28 €/h (14 €/h après crédit d'impôt) le maintient à niveau."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Nos autres prestations",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "emoji": "🧽",
+                "priceHint": "dès 28 €/h",
+                "description": "Pour que le résultat du grand nettoyage dure toute l'année.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "emoji": "🪟",
+                "priceHint": "dès 80 €",
+                "description": "Intérieur et extérieur, baies comprises : la touche finale.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Fin de chantier",
+                "emoji": "🧰",
+                "priceHint": "dès 220 €",
+                "description": "Après travaux, c'est cette prestation qu'il vous faut plutôt qu'un grand nettoyage.",
+                "href": "/nettoyage-fin-chantier"
+              }
+            ]
+          }
+        },
+        {
           "type": "cta",
           "variant": "encadre",
           "content": {
@@ -1517,12 +1712,12 @@
       "label": "Nettoyage de vitres",
       "navHidden": true,
       "meta": {
-        "title": "Nettoyage de vitres à domicile à Saint-Étienne — crédit d'impôt 50 %",
-        "description": "Nettoyage de vitres à Saint-Étienne et Lyon : vitres, baies et miroirs sans traces, intérieur et extérieur, dès 80 €. Crédit d'impôt de 50 % à domicile.",
+        "title": "Nettoyage de vitres à Saint-Étienne — dès 80 €",
+        "description": "Vitres, baies vitrées et miroirs sans traces à Saint-Étienne : dès 80 € en appartement, 130 € en maison, intérieur et extérieur. Crédit d'impôt de 50 %.",
         "keywords": [
           "nettoyage vitres Saint-Étienne",
           "lavage vitres domicile Loire",
-          "nettoyage baies vitrées Lyon",
+          "nettoyage baies vitrées Firminy",
           "vitres crédit d'impôt"
         ]
       },
@@ -1587,6 +1782,62 @@
           }
         },
         {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "En pratique",
+            "titre": "Une vitrerie complète, pas juste un coup de raclette",
+            "paragraphes": [
+              "L'intervention couvre l'ensemble des surfaces vitrées de votre logement : fenêtres et baies vitrées sur les deux faces, miroirs fixes, sans oublier les encadrements et les rebords, qui font toute la différence sur le rendu final. Le résultat visé est simple : zéro trace, y compris en plein soleil — c'est là que les défauts se voient.",
+              "Deux forfaits, annoncés d'avance : dès 80 € pour un appartement, dès 130 € pour une maison. Le montant exact dépend du nombre d'ouvertures et de la présence de grandes baies ; il est fixé au devis, avant l'intervention, jamais après. Réalisée à votre domicile, la prestation ouvre droit au crédit d'impôt de 50 % : un forfait appartement à 80 € revient donc réellement à 40 €.",
+              "Beaucoup de clients de Saint-Étienne, Villars ou Saint-Just-Saint-Rambert calent une vitrerie au printemps et une à l'automne, ou l'ajoutent ponctuellement à leur créneau de ménage habituel. Une seule demande de devis suffit pour organiser les deux."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Vitres : questions pratiques",
+            "items": [
+              {
+                "question": "Nettoyez-vous aussi la face extérieure ?",
+                "reponse": "Oui, l'intervention couvre les deux faces des vitres et des baies, ainsi que les encadrements, tant qu'elles restent accessibles en sécurité depuis le logement ou le jardin."
+              },
+              {
+                "question": "Comment le forfait est-il calculé ?",
+                "reponse": "Dès 80 € en appartement, dès 130 € en maison : le montant exact dépend du nombre d'ouvertures et des grandes baies. Il est fixé au devis, avant l'intervention."
+              },
+              {
+                "question": "À quelle fréquence faire ses vitres ?",
+                "reponse": "Deux passages par an suffisent en général — printemps et automne. En bord de rue passante ou avec de grandes baies exposées, certains clients passent à trois."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Nos autres prestations",
+            "items": [
+              {
+                "nom": "Grand nettoyage",
+                "emoji": "✨",
+                "priceHint": "dès 180 €",
+                "description": "Vitres impeccables mais logement à rafraîchir ? Faites les deux d'un coup.",
+                "href": "/grand-menage"
+              },
+              {
+                "nom": "Ménage à domicile",
+                "emoji": "🧽",
+                "priceHint": "dès 28 €/h",
+                "description": "Ajoutez la vitrerie ponctuellement à votre créneau d'entretien régulier.",
+                "href": "/menage-domicile"
+              }
+            ]
+          }
+        },
+        {
           "type": "cta",
           "variant": "encadre",
           "content": {
@@ -1609,18 +1860,18 @@
       "label": "Bureaux & locaux",
       "navHidden": true,
       "meta": {
-        "title": "Nettoyage de bureaux à Saint-Étienne & Lyon — sur devis",
-        "description": "Entretien de bureaux, cabinets et commerces à Saint-Étienne et Lyon : prestations régulières en horaires décalés, dès 90 €. Devis gratuit, sans crédit d'impôt.",
+        "title": "Nettoyage de bureaux à Saint-Étienne — dès 90 €",
+        "description": "Entretien de bureaux, cabinets et commerces à Saint-Étienne et son agglomération : dès 90 €, horaires décalés possibles, régulier ou ponctuel.",
         "keywords": [
           "nettoyage bureaux Saint-Étienne",
           "entretien locaux professionnels Loire",
-          "nettoyage commerces Lyon",
+          "nettoyage commerces Saint-Étienne",
           "société de nettoyage bureaux"
         ]
       },
       "service": {
         "name": "Nettoyage de bureaux & locaux",
-        "description": "Entretien régulier de bureaux, cabinets et commerces à Saint-Étienne et Lyon.",
+        "description": "Entretien régulier de bureaux, cabinets et commerces à Saint-Étienne et son agglomération.",
         "serviceType": "Nettoyage de locaux professionnels",
         "priceFrom": 90
       },
@@ -1630,7 +1881,7 @@
           "content": {
             "eyebrow": "Professionnels",
             "titre": "Entretien de bureaux & locaux — sur devis",
-            "intro": "Adelnet entretient bureaux, cabinets et commerces à Saint-Étienne et Lyon : sols, sanitaires, points de contact et espaces communs, en horaires décalés si nécessaire. Facturé sur devis, sans crédit d'impôt.",
+            "intro": "Adelnet entretient bureaux, cabinets et commerces à Saint-Étienne et dans son agglomération : sols, sanitaires, points de contact et espaces communs, en horaires décalés si nécessaire. Facturé sur devis, sans crédit d'impôt.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1666,7 +1917,7 @@
               "alt": "Équipe Adelnet nettoyant un open space de bureaux"
             },
             "paragraphes": [
-              "Adelnet entretient vos bureaux, cabinets et commerces à Saint-Étienne et Lyon : sols, sanitaires, postes de travail et espaces communs, sur le créneau qui dérange le moins votre activité — tôt le matin, en soirée ou le week-end.",
+              "Adelnet entretient vos bureaux, cabinets et commerces à Saint-Étienne et dans son agglomération : sols, sanitaires, postes de travail et espaces communs, sur le créneau qui dérange le moins votre activité — tôt le matin, en soirée ou le week-end.",
               "Un passage régulier ou ponctuel, réalisé avec sérieux et discrétion par une équipe attitrée."
             ],
             "ctaPrimaire": {
@@ -1700,6 +1951,29 @@
           }
         },
         {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Nos autres prestations",
+            "items": [
+              {
+                "nom": "Fin de chantier",
+                "emoji": "🧰",
+                "priceHint": "dès 220 €",
+                "description": "Vos locaux sortent de travaux ? On les remet en propre avant l'entretien courant.",
+                "href": "/nettoyage-fin-chantier"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "emoji": "🪟",
+                "priceHint": "dès 80 €",
+                "description": "Vitrines et surfaces vitrées de vos locaux, traitées sur le même devis.",
+                "href": "/nettoyage-vitres"
+              }
+            ]
+          }
+        },
+        {
           "type": "cta",
           "variant": "encadre",
           "content": {
@@ -1722,18 +1996,18 @@
       "label": "Fin de chantier",
       "navHidden": true,
       "meta": {
-        "title": "Nettoyage de fin de chantier à Saint-Étienne & Lyon — sur devis",
-        "description": "Nettoyage après travaux et fin de chantier à Saint-Étienne et Lyon : poussières fines, traces de peinture et résidus, dès 220 €. Devis gratuit, sans crédit d'impôt.",
+        "title": "Nettoyage fin de chantier Saint-Étienne — dès 220 €",
+        "description": "Poussières fines, traces de peinture et résidus après travaux : remise en propre dès 220 € à Saint-Étienne et alentours. Devis gratuit sous 24 h.",
         "keywords": [
           "nettoyage fin de chantier Saint-Étienne",
           "nettoyage après travaux Loire",
-          "remise en propre rénovation Lyon",
+          "remise en propre après rénovation",
           "nettoyage post-chantier"
         ]
       },
       "service": {
         "name": "Nettoyage de fin de chantier",
-        "description": "Remise en propre après travaux ou rénovation à Saint-Étienne et Lyon.",
+        "description": "Remise en propre après travaux ou rénovation à Saint-Étienne et alentours.",
         "serviceType": "Nettoyage après travaux",
         "priceFrom": 220
       },
@@ -1787,6 +2061,29 @@
                 "icone": "key-round",
                 "nom": "Prêt à emménager",
                 "description": "Un logement net et sain, prêt à être habité ou remis en location."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Nos autres prestations",
+            "items": [
+              {
+                "nom": "Grand nettoyage",
+                "emoji": "✨",
+                "priceHint": "dès 180 €",
+                "description": "Pas de travaux, juste un logement à remettre à niveau ? C'est plutôt celui-ci.",
+                "href": "/grand-menage"
+              },
+              {
+                "nom": "Bureaux & locaux",
+                "emoji": "🏢",
+                "priceHint": "dès 90 €",
+                "description": "Après la remise en propre, un entretien régulier de vos locaux professionnels.",
+                "href": "/nettoyage-bureaux"
               }
             ]
           }

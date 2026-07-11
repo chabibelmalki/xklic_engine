@@ -19,7 +19,7 @@
   "social": [
     {
       "platform": "whatsapp",
-      "url": "+33 6 41 87 53 27"
+      "url": "https://wa.me/33641875327"
     }
   ],
   "googleReviewUrl": "https://g.page/r/CUNeJx6mXTwvEBM/review",
@@ -219,22 +219,12 @@
                 "texte": "Un travail de grande qualité, réalisé dans les délais. L'équipe est réactive, efficace et très respectueuse. Merci pour votre professionnalisme !"
               },
               {
-                "auteur": "LATIFA MAZZOUR",
-                "note": 5,
-                "texte": "Je suis très satisfaite du service de nettoyage. L'équipe est ponctuelle, professionnelle et très efficace. Le travail est réalisé avec soin."
-              },
-              {
-                "auteur": "Aziz Mazzour",
-                "note": 5,
-                "texte": "Très bonne expérience avec cette entreprise de nettoyage. L'équipe est dynamique, discrète et attentive aux détails."
-              },
-              {
                 "auteur": "Reyou Reyou",
                 "note": 5,
                 "texte": "Des personnes très professionnel un travail irréprochable merci beaucoup."
               }
             ],
-            "disclaimer": "Avis authentiques publiés par nos clients sur notre fiche Google."
+            "disclaimer": "Extraits de notre fiche Google. Merci pour vos mots — c'est notre plus belle carte de visite."
           }
         },
         {
@@ -276,27 +266,19 @@
           "type": "faq",
           "variant": "deux-colonnes",
           "content": {
-            "titre": "Les questions qu'on nous pose le plus",
+            "titre": "Trois choses à savoir avant de nous appeler",
             "items": [
               {
-                "question": "Concrètement, comment marche le crédit d'impôt de 50 % ?",
-                "reponse": "Tout ce que nous réalisons chez vous ouvre droit à un crédit d'impôt de 50 % des sommes versées (plafond 12 000 € par an et par foyer). Une heure facturée 30 € ne vous revient donc qu'à 15 €. Casa Clean Provence est déclarée au titre des services à la personne, ce qui déclenche ce droit."
+                "question": "Le crédit d'impôt de 50 %, ça marche vraiment comment chez vous ?",
+                "reponse": "Casa Clean Provence est déclarée au titre des services à la personne : tout ce qui se fait à votre domicile y est éligible, dans la limite de 12 000 € par an et par foyer. Sur une heure de ménage facturée 30 €, la moitié vous revient — et avec l'avance immédiate, vous ne sortez que 15 € de votre poche."
               },
               {
-                "question": "Le crédit d'impôt vaut-il aussi pour mes bureaux ?",
-                "reponse": "Non : il ne s'applique qu'aux prestations faites au domicile d'un particulier. L'entretien de locaux professionnels et le traitement des nuisibles sont chiffrés sur devis, sans crédit d'impôt."
+                "question": "J'ai besoin de quelqu'un très vite : c'est possible ?",
+                "reponse": "Oui. Dégât des eaux, visite imprévue, remise de clés qui approche : selon nos disponibilités, nous passons en priorité, moyennant une majoration de 10 % sur le tarif habituel. Un coup de fil ou un WhatsApp du lundi au samedi, entre 8h30 et 18h, et on s'organise."
               },
               {
-                "question": "Pouvez-vous intervenir en urgence, et à quel prix ?",
-                "reponse": "Oui, selon nos disponibilités nous nous déplaçons en priorité. L'intervention en urgence est alors majorée de 10 % par rapport au tarif habituel."
-              },
-              {
-                "question": "Vous déplacez-vous jusqu'à ma commune ?",
-                "reponse": "Nous couvrons Marseille et un rayon d'environ 50 km : Aix-en-Provence, Aubagne, Vitrolles, Marignane, Cassis, La Ciotat, Gardanne et les communes alentour. En cas de doute, un message suffit pour confirmer."
-              },
-              {
-                "question": "Quels jours et horaires peut-on vous joindre ?",
-                "reponse": "Nous travaillons du lundi au samedi, de 8h30 à 18h. Un appel, un WhatsApp ou un e-mail suffit pour caler un créneau."
+                "question": "Jusqu'où venez-vous autour de Marseille ?",
+                "reponse": "Nous rayonnons sur une cinquantaine de kilomètres : Aubagne, Aix-en-Provence, Vitrolles, Marignane, Cassis, La Ciotat, Gardanne et toutes les communes entre les deux. Le déplacement est même offert sur Marseille et ses environs proches."
               }
             ]
           }
@@ -306,7 +288,7 @@
           "mode": "carte",
           "content": {
             "titre": "À Marseille, Aix-en-Provence, Aubagne et tout le pourtour",
-            "intro": "Casa Clean Provence se déplace dans un rayon d'environ 50 km autour de Marseille. Vérifiez votre commune ou contactez-nous directement.",
+            "intro": "De L'Estaque à la Pointe-Rouge et jusqu'à Aix ou Aubagne, Casa Clean Provence rayonne sur une cinquantaine de kilomètres. Un doute sur votre commune ? Écrivez-nous, on vous répond franchement.",
             "zones": [
               {
                 "region": "Bouches-du-Rhône — autour de Marseille",
@@ -392,7 +374,7 @@
           "content": {
             "eyebrow": "Chez vous · crédit d'impôt 50 %",
             "titre": "Ce qu'on fait chez vous",
-            "intro": "Réalisées au domicile des particuliers, ces prestations ouvrent droit au crédit d'impôt de 50 %.",
+            "intro": "Réalisées au domicile des particuliers, ces prestations ouvrent droit au crédit d'impôt de 50 % — hors part débarras, chiffrée à part.",
             "items": [
               {
                 "nom": "Ménage & entretien",
@@ -437,9 +419,9 @@
               {
                 "nom": "Syndrome de Diogène",
                 "emoji": "♻️",
-                "badge": "Crédit d'impôt 50 %",
+                "badge": "Crédit d'impôt partiel",
                 "priceHint": "dès 600 €",
-                "description": "Débarras, nettoyage et désinfection des logements très encombrés, en toute discrétion.",
+                "description": "Nettoyage et désinfection des logements très encombrés, en toute discrétion ; débarras chiffré à part.",
                 "href": "/syndrome-diogene"
               }
             ]
@@ -505,7 +487,7 @@
       "label": "Tarifs",
       "meta": {
         "title": "Tarifs ménage & nettoyage à Marseille",
-        "description": "Tarifs Casa Clean Provence : ménage 30 €/h (15 €/h après crédit d'impôt), remise en état, vitres, canapé, terrasse, bureaux et nuisibles. Composez votre devis en ligne."
+        "description": "Ménage 30 €/h (15 €/h après crédit d'impôt), remise en état, vitres, canapé, terrasse, bureaux, nuisibles : composez votre devis en ligne à Marseille."
       },
       "blocks": [
         {
@@ -724,8 +706,8 @@
                 "id": "diogene",
                 "emoji": "♻️",
                 "titre": "Syndrome de Diogène",
-                "description": "Débarras, nettoyage et désinfection des logements très encombrés.",
-                "creditImpot": true,
+                "description": "Nettoyage et désinfection des logements très encombrés ; débarras chiffré à part. Le crédit d'impôt ne porte que sur la part nettoyage à domicile, détaillée sur le devis.",
+                "creditImpot": false,
                 "prestations": [
                   {
                     "nom": "Nettoyage extrême",
@@ -872,7 +854,7 @@
       "label": "Crédit d'impôt",
       "navHidden": true,
       "meta": {
-        "title": "Crédit d'impôt 50 % pour le ménage à domicile à Marseille",
+        "title": "Crédit d'impôt ménage à domicile à Marseille",
         "description": "Avec Casa Clean Provence, profitez du crédit d'impôt de 50 % et de l'avance immédiate sur le ménage à domicile à Marseille. Coût réel : 15 €/h."
       },
       "blocks": [
@@ -963,8 +945,8 @@
       "slug": "contact",
       "label": "Contact",
       "meta": {
-        "title": "Contact",
-        "description": "Contactez Casa Clean Provence à Marseille : téléphone, e-mail, WhatsApp. Demande d'intervention en ligne, réponse rapide, devis gratuit."
+        "title": "Contact ménage & nettoyage à Marseille",
+        "description": "Téléphone, WhatsApp, e-mail ou formulaire : joignez Casa Clean Provence à Marseille du lundi au samedi, 8h30-18h. Réponse rapide et devis gratuit."
       },
       "blocks": [
         {
@@ -972,7 +954,7 @@
           "content": {
             "eyebrow": "Contact",
             "titre": "Parlons de votre besoin",
-            "intro": "Une question, une demande d'intervention ? Écrivez-nous, appelez ou passez par WhatsApp — réponse rapide, devis gratuit."
+            "intro": "Un renseignement, un créneau à caler, une urgence ? Appelez, écrivez ou envoyez un WhatsApp : c'est Latifa qui vous lit, et qui vous répond vite."
           }
         },
         {
@@ -980,7 +962,7 @@
           "variant": "coordonnees-cartes",
           "content": {
             "titre": "Demande d'intervention",
-            "intro": "Décrivez votre besoin : prestation, secteur et date souhaitée. Nous revenons vers vous rapidement avec une estimation.",
+            "intro": "Expliquez-nous la situation avec vos mots : la prestation qui vous intéresse, votre commune et la date idéale. Nous revenons vers vous avec une proposition claire et un prix sans surprise.",
             "form": true,
             "formMode": "demande-intervention",
             "telephone": "+33 6 41 87 53 27",
@@ -1038,8 +1020,8 @@
       "label": "Devis gratuit",
       "navHidden": true,
       "meta": {
-        "title": "Demande de devis gratuit",
-        "description": "Demandez votre devis gratuit et sans engagement à Casa Clean Provence : ménage, remise en état, vitres, bureaux, nuisibles à Marseille."
+        "title": "Devis nettoyage gratuit à Marseille",
+        "description": "Décrivez votre besoin de ménage ou de nettoyage à Marseille : estimation gratuite et sans engagement sous 24 h, crédit d'impôt de 50 % déduit à domicile."
       },
       "blocks": [
         {
@@ -1047,7 +1029,7 @@
           "content": {
             "eyebrow": "Devis gratuit",
             "titre": "Demandez votre devis en 1 minute",
-            "intro": "Renseignez votre besoin : nous revenons vers vous rapidement avec une estimation adaptée, gratuite et sans engagement.",
+            "intro": "Dites-nous ce qu'il faut nettoyer, où et pour quand : nous chiffrons votre demande et vous recevez une estimation honnête, gratuite et sans engagement.",
             "ctaSecondaire": {
               "label": "Composer en ligne",
               "href": "/tarifs"
@@ -1059,7 +1041,7 @@
           "variant": "coordonnees-cartes",
           "content": {
             "titre": "Votre demande de devis",
-            "intro": "Quelques informations suffisent pour vous établir une estimation.",
+            "intro": "Trois lignes sur votre logement ou vos locaux, la commune et vos disponibilités : c'est tout ce qu'il nous faut pour préparer votre estimation.",
             "form": true,
             "formMode": "devis",
             "telephone": "+33 6 41 87 53 27",
@@ -1117,8 +1099,8 @@
       "label": "À propos",
       "navHidden": true,
       "meta": {
-        "title": "À propos de Casa Clean Provence",
-        "description": "Casa Clean Provence, entreprise de nettoyage à Marseille : un service de confiance, soigné et discret, à domicile comme en entreprise."
+        "title": "À propos — nettoyage de confiance à Marseille",
+        "description": "Casa Clean Provence, entreprise de nettoyage à Marseille : un service de confiance, soigné et discret, chez les particuliers comme dans les entreprises."
       },
       "blocks": [
         {
@@ -1182,7 +1164,7 @@
       "label": "Zone d'intervention",
       "navHidden": true,
       "meta": {
-        "title": "Zone d'intervention à Marseille et dans les Bouches-du-Rhône",
+        "title": "Zone d'intervention — Marseille et Bouches-du-Rhône",
         "description": "Casa Clean Provence intervient à Marseille, Aix-en-Provence, Aubagne, Vitrolles, Marignane, Cassis, La Ciotat, Gardanne et dans un rayon d'environ 50 km."
       },
       "blocks": [
@@ -1191,7 +1173,20 @@
           "content": {
             "eyebrow": "Zone d'intervention",
             "titre": "Nous intervenons à Marseille et dans les Bouches-du-Rhône",
-            "intro": "Marseille et les communes voisines, dans un rayon d'environ 50 km. Déplacement offert sur le secteur proche."
+            "intro": "Du Vieux-Port aux portes d'Aix, nous sillonnons Marseille et les Bouches-du-Rhône dans un rayon d'environ 50 km — déplacement offert sur le secteur proche."
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Notre secteur",
+            "titre": "Marseille d'abord,",
+            "titreAccent": "et tout le pourtour",
+            "paragraphes": [
+              "Marseille est notre port d'attache et nous la couvrons en entier, du 1er au 16e arrondissement : les appartements du centre autour du Vieux-Port, de Castellane et de la Plaine, les quartiers sud vers le Prado, Mazargues et la Pointe-Rouge, les collines du 11e et du 12e du côté de Saint-Barnabé et des Caillols, comme les quartiers nord jusqu'à L'Estaque. Sur la ville et ses abords immédiats, le déplacement est offert.",
+              "Côté est, nous suivons la vallée de l'Huveaune : La Penne-sur-Huveaune, Aubagne, Roquevaire, Auriol et Gémenos, puis le littoral de Cassis à La Ciotat en passant par Carnoux-en-Provence et Ceyreste. Vers le nord, nous montons par Allauch et Plan-de-Cuques jusqu'à Simiane-Collongue, Bouc-Bel-Air, Gardanne et Aix-en-Provence ; côté étang de Berre, Marignane, Vitrolles, Les Pennes-Mirabeau et Châteauneuf-les-Martigues font partie de nos trajets réguliers.",
+              "Concrètement, nous organisons les tournées par secteur pour regrouper les rendez-vous voisins : c'est ce qui nous permet d'offrir le déplacement sur Marseille et ses environs proches et de rester réactives sur le reste du secteur. Pour une commune en limite de zone, on en parle simplement au moment du devis ; et en cas d'urgence, la majoration de 10 % reste la seule différence, où que vous soyez dans la liste ci-dessous."
+            ]
           }
         },
         {
@@ -1199,7 +1194,7 @@
           "mode": "carte",
           "content": {
             "titre": "Communes desservies",
-            "intro": "Vérifiez votre secteur ci-dessous ou contactez-nous directement pour confirmer.",
+            "intro": "Toutes les communes où nous intervenons régulièrement, de la rade de Marseille aux portes d'Aix. La vôtre n'y figure pas ? Un petit message et on regarde ensemble ce qui est possible.",
             "zones": [
               {
                 "region": "Bouches-du-Rhône — autour de Marseille",
@@ -1256,8 +1251,8 @@
       "label": "FAQ",
       "navHidden": true,
       "meta": {
-        "title": "Questions fréquentes",
-        "description": "Crédit d'impôt, avance immédiate, CESU, zone d'intervention, urgences, produits, devis : toutes les réponses sur le nettoyage avec Casa Clean Provence."
+        "title": "FAQ pratique ménage & nettoyage à Marseille",
+        "description": "Produits fournis, animaux, remise des clés, annulation, remplacement, CESU : les réponses pratiques de Casa Clean Provence pour un ménage serein."
       },
       "blocks": [
         {
@@ -1271,35 +1266,35 @@
           "type": "faq",
           "variant": "deux-colonnes",
           "content": {
-            "titre": "Les questions qu'on nous pose le plus",
+            "titre": "Les petites questions pratiques",
             "items": [
               {
-                "question": "Concrètement, comment marche le crédit d'impôt de 50 % ?",
-                "reponse": "Tout ce que nous réalisons chez vous ouvre droit à un crédit d'impôt de 50 % des sommes versées (plafond 12 000 € par an et par foyer). Une heure facturée 30 € ne vous revient donc qu'à 15 €. Casa Clean Provence est déclarée au titre des services à la personne, ce qui déclenche ce droit."
+                "question": "Faut-il fournir les produits et le matériel de ménage ?",
+                "reponse": "Comme vous préférez. Nous pouvons travailler avec vos produits ou apporter les nôtres, moyennant un petit supplément matériel de 5 € sur le ménage régulier. Précisez-le simplement au moment du devis."
               },
               {
-                "question": "Le crédit d'impôt vaut-il aussi pour mes bureaux ?",
-                "reponse": "Non : il ne s'applique qu'aux prestations faites au domicile d'un particulier. L'entretien de locaux professionnels et le traitement des nuisibles sont chiffrés sur devis, sans crédit d'impôt."
+                "question": "J'ai des enfants ou des animaux : adaptez-vous les produits ?",
+                "reponse": "Oui. Sur simple demande, nous utilisons des produits plus doux et respectueux de l'environnement, et nous faisons attention aux gamelles, paniers et jouets. Votre chat peut rester dans nos pattes, il ne nous dérange pas."
               },
               {
-                "question": "Pouvez-vous intervenir en urgence, et à quel prix ?",
-                "reponse": "Oui, selon nos disponibilités nous nous déplaçons en priorité. L'intervention en urgence est alors majorée de 10 % par rapport au tarif habituel."
+                "question": "Puis-je vous laisser un double des clés ?",
+                "reponse": "Pour un ménage régulier, oui, si vous le souhaitez : nous convenons ensemble des modalités de remise et de garde, et vous pouvez revenir sur cette organisation à tout moment."
               },
               {
-                "question": "Vous déplacez-vous jusqu'à ma commune ?",
-                "reponse": "Nous couvrons Marseille et un rayon d'environ 50 km : Aix-en-Provence, Aubagne, Vitrolles, Marignane, Cassis, La Ciotat, Gardanne et les communes alentour. En cas de doute, un message suffit pour confirmer."
+                "question": "Et si quelque chose est cassé ou abîmé pendant l'intervention ?",
+                "reponse": "On vous le dit tout de suite, sans rien cacher — c'est la base de la confiance qu'on vous doit. Et si vous constatez une anomalie après notre passage, signalez-la nous : nous cherchons une solution ensemble, rapidement."
               },
               {
-                "question": "Quels jours et horaires peut-on vous joindre ?",
-                "reponse": "Nous travaillons du lundi au samedi, de 8h30 à 18h. Un appel, un WhatsApp ou un e-mail suffit pour caler un créneau."
+                "question": "Comment décaler ou annuler un rendez-vous ?",
+                "reponse": "Un appel ou un message WhatsApp dès que vous savez, et nous recalons le créneau ensemble. La vie a ses imprévus, à Marseille comme ailleurs : on s'adapte."
               },
               {
-                "question": "Utilisez-vous des produits écologiques ?",
-                "reponse": "Nous adaptons les produits à vos préférences et pouvons utiliser des produits respectueux de l'environnement sur demande, notamment en présence d'enfants ou d'animaux."
+                "question": "Que se passe-t-il si mon intervenante habituelle est absente ?",
+                "reponse": "Nous vous prévenons au plus tôt et nous vous proposons soit un autre créneau, soit un remplacement — mais jamais de passage chez vous sans vous avoir demandé votre accord d'abord."
               },
               {
-                "question": "Acceptez-vous le paiement en CESU ?",
-                "reponse": "Oui, le paiement en CESU est accepté pour les prestations réalisées à votre domicile."
+                "question": "Acceptez-vous les CESU ?",
+                "reponse": "Oui, le règlement en CESU est possible pour toutes les prestations effectuées à votre domicile, en complément du crédit d'impôt de 50 % lorsque les conditions sont réunies."
               }
             ]
           }
@@ -1327,8 +1322,8 @@
       "label": "Ménage à domicile",
       "navHidden": true,
       "meta": {
-        "title": "Ménage à domicile à Marseille — dès 15 €/h après crédit d'impôt",
-        "description": "Ménage et entretien à domicile à Marseille et dans les Bouches-du-Rhône : entretien régulier ou grand ménage, dès 30 €/h soit 15 €/h après le crédit d'impôt de 50 %. Devis gratuit.",
+        "title": "Ménage à domicile à Marseille — dès 15 €/h",
+        "description": "Entretien régulier ou grand ménage de votre logement à Marseille : dès 30 €/h, soit 15 €/h après crédit d'impôt de 50 %. Devis gratuit sous 24 h.",
         "keywords": [
           "ménage à domicile Marseille",
           "femme de ménage Marseille",
@@ -1456,7 +1451,7 @@
           "mode": "carte",
           "content": {
             "titre": "À Marseille, Aix-en-Provence, Aubagne et tout le pourtour",
-            "intro": "Casa Clean Provence se déplace dans un rayon d'environ 50 km autour de Marseille. Vérifiez votre commune ou contactez-nous directement.",
+            "intro": "Votre ménage régulier peut se caler aussi bien dans le centre de Marseille qu'à Allauch, Plan-de-Cuques ou Aubagne : nous organisons les tournées par secteur pour vous garantir des passages réguliers.",
             "zones": [
               {
                 "region": "Bouches-du-Rhône — autour de Marseille",
@@ -1537,8 +1532,8 @@
       "label": "Remise en état",
       "navHidden": true,
       "meta": {
-        "title": "Remise en état à Marseille — nettoyage après travaux dès 250 €",
-        "description": "Remise en état à Marseille et dans les Bouches-du-Rhône : nettoyage profond après travaux, déménagement ou avant état des lieux, dès 250 €. Crédit d'impôt 50 % à domicile. Devis gratuit.",
+        "title": "Remise en état après travaux à Marseille — dès 250 €",
+        "description": "Nettoyage profond après travaux, déménagement ou avant état des lieux à Marseille, dès 250 €. Crédit d'impôt de 50 % à domicile, devis gratuit sous 24 h.",
         "keywords": [
           "remise en état Marseille",
           "nettoyage après travaux Marseille",
@@ -1665,7 +1660,7 @@
           "mode": "carte",
           "content": {
             "titre": "À Marseille, Aix-en-Provence, Aubagne et tout le pourtour",
-            "intro": "Casa Clean Provence se déplace dans un rayon d'environ 50 km autour de Marseille. Vérifiez votre commune ou contactez-nous directement.",
+            "intro": "Fin de chantier à Vitrolles, état des lieux à La Ciotat, après-déménagement dans le centre de Marseille : nous planifions les remises en état dans tout le pourtour, jusqu'à 50 km environ.",
             "zones": [
               {
                 "region": "Bouches-du-Rhône — autour de Marseille",
@@ -1746,8 +1741,8 @@
       "label": "Nettoyage de vitres",
       "navHidden": true,
       "meta": {
-        "title": "Nettoyage de vitres à Marseille — dès 90 €, crédit d'impôt 50 %",
-        "description": "Nettoyage de vitres à Marseille : vitres, baies vitrées, vérandas et miroirs sans traces, intérieur et extérieur, dès 90 €. Crédit d'impôt de 50 % à domicile. Devis gratuit.",
+        "title": "Nettoyage de vitres à Marseille — dès 90 €",
+        "description": "Vitres, baies vitrées, vérandas et miroirs sans traces à Marseille, dès 90 €, intérieur et extérieur. Crédit d'impôt de 50 % à domicile, devis gratuit.",
         "keywords": [
           "nettoyage vitres Marseille",
           "laveur de vitres Marseille",
@@ -1874,7 +1869,7 @@
           "mode": "carte",
           "content": {
             "titre": "À Marseille, Aix-en-Provence, Aubagne et tout le pourtour",
-            "intro": "Casa Clean Provence se déplace dans un rayon d'environ 50 km autour de Marseille. Vérifiez votre commune ou contactez-nous directement.",
+            "intro": "Baies du littoral voilées par les embruns, vérandas d'Aubagne ou fenêtres d'appartement en étage dans le centre de Marseille : nous lavons les vitres dans chacune des communes ci-dessous.",
             "zones": [
               {
                 "region": "Bouches-du-Rhône — autour de Marseille",
@@ -1955,8 +1950,8 @@
       "label": "Canapé & fauteuil",
       "navHidden": true,
       "meta": {
-        "title": "Nettoyage de canapé à Marseille — dès 60 €, crédit d'impôt 50 %",
-        "description": "Nettoyage et désincrustation de canapés, fauteuils et textiles d'ameublement à Marseille, dès 60 €. Taches, odeurs et acariens éliminés. Crédit d'impôt 50 %. Devis gratuit.",
+        "title": "Nettoyage de canapé à Marseille — dès 60 €",
+        "description": "Canapés, fauteuils et textiles d'ameublement nettoyés par injection-extraction à Marseille, dès 60 €. Taches et odeurs délogées, crédit d'impôt 50 %.",
         "keywords": [
           "nettoyage canapé Marseille",
           "nettoyage fauteuil Marseille",
@@ -2083,7 +2078,7 @@
           "mode": "carte",
           "content": {
             "titre": "À Marseille, Aix-en-Provence, Aubagne et tout le pourtour",
-            "intro": "Casa Clean Provence se déplace dans un rayon d'environ 50 km autour de Marseille. Vérifiez votre commune ou contactez-nous directement.",
+            "intro": "Le nettoyage de canapé se fait chez vous, sans transporter le mobilier : notre matériel d'injection-extraction voyage jusqu'à Aix-en-Provence, Gardanne ou Cassis sans difficulté.",
             "zones": [
               {
                 "region": "Bouches-du-Rhône — autour de Marseille",
@@ -2164,8 +2159,8 @@
       "label": "Terrasse & extérieur",
       "navHidden": true,
       "meta": {
-        "title": "Nettoyage de terrasse à Marseille — dès 90 €, crédit d'impôt 50 %",
-        "description": "Nettoyage et dégraissage de terrasses, balcons et sols extérieurs à Marseille, dès 90 €. Mousse, salissures et dépôts éliminés. Crédit d'impôt 50 % à domicile. Devis gratuit.",
+        "title": "Nettoyage de terrasse à Marseille — dès 90 €",
+        "description": "Terrasses, balcons et sols extérieurs dégraissés à Marseille, dès 90 € : mousses et dépôts éliminés sans abîmer le revêtement. Crédit d'impôt 50 %.",
         "keywords": [
           "nettoyage terrasse Marseille",
           "nettoyage balcon Marseille",
@@ -2292,7 +2287,7 @@
           "mode": "carte",
           "content": {
             "titre": "À Marseille, Aix-en-Provence, Aubagne et tout le pourtour",
-            "intro": "Casa Clean Provence se déplace dans un rayon d'environ 50 km autour de Marseille. Vérifiez votre commune ou contactez-nous directement.",
+            "intro": "Terrasses des collines d'Allauch, balcons du centre de Marseille ou dallages de villas vers Cassis et La Ciotat : notre matériel de nettoyage extérieur se déplace dans tout le secteur.",
             "zones": [
               {
                 "region": "Bouches-du-Rhône — autour de Marseille",
@@ -2373,8 +2368,8 @@
       "label": "Syndrome de Diogène",
       "navHidden": true,
       "meta": {
-        "title": "Nettoyage syndrome de Diogène à Marseille — débarras & désinfection",
-        "description": "Nettoyage syndrome de Diogène à Marseille : débarras, nettoyage et désinfection complets des logements très encombrés, dès 600 €, en toute discrétion. Crédit d'impôt 50 %. Devis gratuit.",
+        "title": "Syndrome de Diogène à Marseille — nettoyage & débarras",
+        "description": "Débarras, nettoyage et désinfection des logements très encombrés à Marseille, dès 600 €, en toute discrétion. Crédit d'impôt 50 % sur la part nettoyage.",
         "keywords": [
           "syndrome de Diogène Marseille",
           "nettoyage extrême Marseille",
@@ -2392,9 +2387,9 @@
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Crédit d'impôt 50 %",
+            "eyebrow": "Intervention en toute discrétion",
             "titre": "Syndrome de Diogène à Marseille — débarras & désinfection",
-            "intro": "Casa Clean Provence prend en charge les logements très encombrés ou en situation d'incurie à Marseille : débarras, nettoyage complet et désinfection, avec discrétion, respect et sans jugement.",
+            "intro": "Casa Clean Provence prend en charge les logements très encombrés ou en situation d'incurie à Marseille : débarras, nettoyage complet et désinfection, avec discrétion, respect et sans jugement. Sur le devis, la part nettoyage-désinfection réalisée au domicile est distinguée du débarras : seule la première ouvre droit au crédit d'impôt de 50 %.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -2432,7 +2427,7 @@
               {
                 "icone": "trash-2",
                 "nom": "Débarras complet",
-                "description": "Évacuation des déchets et encombrants, tri et remise en ordre du logement."
+                "description": "Tri, évacuation des déchets et encombrants, remise en ordre : cette partie est chiffrée à part sur le devis, sans crédit d'impôt."
               },
               {
                 "icone": "shield-check",
@@ -2441,8 +2436,8 @@
               },
               {
                 "icone": "badge-euro",
-                "nom": "Crédit d'impôt 50 %",
-                "description": "Réalisée chez un particulier, l'intervention ouvre droit au crédit d'impôt de 50 %."
+                "nom": "Crédit d'impôt sur le nettoyage",
+                "description": "La part nettoyage et désinfection réalisée au domicile ouvre droit au crédit d'impôt de 50 % ; le débarras n'y est pas éligible."
               }
             ]
           }
@@ -2487,11 +2482,11 @@
               },
               {
                 "question": "Cette prestation ouvre-t-elle droit au crédit d'impôt ?",
-                "reponse": "Oui, lorsqu'elle est réalisée au domicile d'un particulier, elle ouvre droit au crédit d'impôt de 50 %."
+                "reponse": "En partie seulement. La part nettoyage et désinfection réalisée au domicile ouvre droit au crédit d'impôt de 50 %. Le débarras et l'évacuation des déchets n'y sont pas éligibles : ils sont chiffrés séparément sur le devis."
               },
               {
                 "question": "Gérez-vous l'évacuation des déchets ?",
-                "reponse": "Oui, nous prenons en charge le tri et l'évacuation des déchets et encombrants dans le cadre du devis."
+                "reponse": "Oui, tri et évacuation des déchets et encombrants sont pris en charge. Cette partie apparaît sur une ligne distincte du devis, hors crédit d'impôt."
               }
             ]
           }
@@ -2501,7 +2496,7 @@
           "mode": "carte",
           "content": {
             "titre": "À Marseille, Aix-en-Provence, Aubagne et tout le pourtour",
-            "intro": "Casa Clean Provence se déplace dans un rayon d'environ 50 km autour de Marseille. Vérifiez votre commune ou contactez-nous directement.",
+            "intro": "Ces interventions délicates demandent de la discrétion : nous nous déplaçons dans les mêmes conditions et avec le même respect dans chacune des communes ci-dessous.",
             "zones": [
               {
                 "region": "Bouches-du-Rhône — autour de Marseille",
@@ -2582,8 +2577,8 @@
       "label": "Nettoyage de bureaux",
       "navHidden": true,
       "meta": {
-        "title": "Nettoyage de bureaux à Marseille — entretien de locaux pro dès 90 €",
-        "description": "Nettoyage de bureaux, commerces et locaux professionnels à Marseille, dès 90 €. Entretien régulier ou ponctuel, sur devis, avec une intervenante de confiance. Devis gratuit.",
+        "title": "Nettoyage de bureaux à Marseille — dès 90 €",
+        "description": "Entretien de bureaux, commerces et cabinets à Marseille, dès 90 €, sur vos horaires : régulier ou ponctuel, avec une interlocutrice unique. Devis gratuit.",
         "keywords": [
           "nettoyage bureaux Marseille",
           "entretien locaux professionnels Marseille",
@@ -2710,7 +2705,7 @@
           "mode": "carte",
           "content": {
             "titre": "À Marseille, Aix-en-Provence, Aubagne et tout le pourtour",
-            "intro": "Casa Clean Provence se déplace dans un rayon d'environ 50 km autour de Marseille. Vérifiez votre commune ou contactez-nous directement.",
+            "intro": "Bureaux du centre de Marseille, commerces d'Aubagne ou cabinets d'Aix-en-Provence : nous calons les passages d'entretien sur vos horaires, où que soient vos locaux dans le secteur.",
             "zones": [
               {
                 "region": "Bouches-du-Rhône — autour de Marseille",
@@ -2792,7 +2787,7 @@
       "navHidden": true,
       "meta": {
         "title": "Traitement des punaises de lit à Marseille — dès 250 €",
-        "description": "Traitement professionnel des punaises de lit à Marseille, dès 250 €. Intervention discrète, chambre par chambre, jusqu'à l'éradication complète. Sur devis. Devis gratuit.",
+        "description": "Punaises de lit traitées chambre par chambre à Marseille, dès 250 €, avec contrôle jusqu'à éradication complète. Intervention rapide et discrète.",
         "keywords": [
           "traitement punaises de lit Marseille",
           "désinsectisation punaises Marseille",
@@ -2919,7 +2914,7 @@
           "mode": "carte",
           "content": {
             "titre": "À Marseille, Aix-en-Provence, Aubagne et tout le pourtour",
-            "intro": "Casa Clean Provence se déplace dans un rayon d'environ 50 km autour de Marseille. Vérifiez votre commune ou contactez-nous directement.",
+            "intro": "Les punaises de lit ne s'arrêtent pas aux limites de la ville : nous traitons chambres et logements à Marseille comme à Marignane, Vitrolles ou La Ciotat, sans tarder.",
             "zones": [
               {
                 "region": "Bouches-du-Rhône — autour de Marseille",
@@ -3000,8 +2995,8 @@
       "label": "Traitement des cafards",
       "navHidden": true,
       "meta": {
-        "title": "Traitement des cafards à Marseille — désinsectisation dès 140 €",
-        "description": "Désinsectisation contre les cafards et blattes à Marseille, dès 140 €. Traitement professionnel ciblé des cuisines, salles de bain et gaines techniques. Sur devis. Devis gratuit.",
+        "title": "Traitement des cafards à Marseille — dès 140 €",
+        "description": "Cafards et blattes éliminés durablement à Marseille, dès 140 € : traitement ciblé des cuisines, salles de bain et gaines techniques. Devis gratuit rapide.",
         "keywords": [
           "traitement cafards Marseille",
           "désinsectisation cafards Marseille",
@@ -3128,7 +3123,7 @@
           "mode": "carte",
           "content": {
             "titre": "À Marseille, Aix-en-Provence, Aubagne et tout le pourtour",
-            "intro": "Casa Clean Provence se déplace dans un rayon d'environ 50 km autour de Marseille. Vérifiez votre commune ou contactez-nous directement.",
+            "intro": "Cuisines marseillaises, arrière-boutiques d'Aubagne ou restaurants du littoral : la désinsectisation des cafards couvre les mêmes communes que nos autres prestations.",
             "zones": [
               {
                 "region": "Bouches-du-Rhône — autour de Marseille",

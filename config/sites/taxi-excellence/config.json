@@ -24,7 +24,7 @@
   "social": [
     {
       "platform": "whatsapp",
-      "url": "07 66 90 50 99"
+      "url": "https://wa.me/33766905099"
     }
   ],
   "googleReviewUrl": "https://g.page/r/CRGBAfW0xUjLEBE/review",
@@ -47,8 +47,8 @@
     "lng": 3.7188
   },
   "meta": {
-    "title": "Taxi Excellence — Taxi à Gigean : transferts aéroport, médical & circuits, 24h/24",
-    "description": "Taxi à Gigean et dans tout le bassin de Thau : transferts gares & aéroports (Montpellier-Méditerranée, Sète), transport médical, circuits touristiques et longue distance. Berline et van Mercedes climatisés, réservation 24h/24, 7j/7.",
+    "title": "Taxi Excellence — Taxi à Gigean & bassin de Thau",
+    "description": "Taxi à Gigean et sur le bassin de Thau : transferts gares et aéroports, transport médical, circuits, longue distance. Mercedes climatisées, 24h/24.",
     "keywords": [
       "taxi Gigean",
       "taxi bassin de Thau",
@@ -76,7 +76,7 @@
               "alt": "Berline Mercedes de Taxi Excellence, enseigne TAXI, sur le front de mer au coucher du soleil"
             },
             "eyebrow": "Taxi à Gigean · Bassin de Thau & Montpellier",
-            "titre": "Votre taxi,",
+            "titre": "Votre taxi à Gigean,",
             "titreAccent": "et bien au-delà",
             "accroche": "Transferts gares & aéroports, transport médical, circuits touristiques et longue distance. Berline et van Mercedes climatisés, chauffeur à votre écoute — réservation 24h/24, 7j/7, au départ de Gigean, du bassin de Thau et vers Montpellier.",
             "trust": [
@@ -303,7 +303,7 @@
                 "texte": "Ce matin, alors que la personne qui devait m'accompagner à la gare m'a fait faux bond, ma fille qui n'est pas sur Montpellier a appelé cette compagnie. Le taxi avec son chauffeur Robert m'a accompagnée en deux temps trois mouvements à la gare. Il a rappelé ma fille à trois reprises pour l'informer de la situation. En même temps il a vérifié le numéro de mon train et m'a donné le quai où je devais me rendre. Efficacité, sympathique et rassurant. Je recommande cette compagnie. Merci beaucoup."
               }
             ],
-            "disclaimer": "Avis authentiques publiés par nos clients sur notre fiche Google."
+            "disclaimer": "Publiés sur notre fiche Google et reproduits ici tels que nos passagers les ont écrits."
           }
         },
         {
@@ -331,8 +331,8 @@
       "slug": "services",
       "label": "Prestations",
       "meta": {
-        "title": "Prestations — Transferts, transport médical, circuits & longue distance | Taxi Excellence Gigean",
-        "description": "Transferts gares & aéroports, transport médical, circuits touristiques et longue distance à Gigean et dans le bassin de Thau. Berline et van Mercedes climatisés, 24h/24, prix forfaitaire sur les transferts."
+        "title": "Prestations taxi à Gigean — transferts & circuits",
+        "description": "Transferts gares et aéroports au forfait, transport médical assis, circuits et longue distance : nos prestations à Gigean et sur le bassin de Thau."
       },
       "blocks": [
         {
@@ -391,10 +391,28 @@
           }
         },
         {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "En pratique",
+            "titre": "Quatre prestations,",
+            "titreAccent": "une même exigence",
+            "paragraphes": [
+              "Pour les transferts gares et aéroports, tout part de vos horaires : nous suivons votre vol ou votre train, venons vous chercher à Gigean, dans le bassin de Thau ou à l'adresse de votre choix, et vous déposons au plus près du terminal ou du quai. Le forfait est annoncé à la réservation — le montant convenu est celui que vous payez, quelle que soit la circulation.",
+              "Le transport médical assis demande de la ponctualité et du calme : nous prévoyons la marge nécessaire pour vos consultations, examens et soins vers Montpellier, Sète ou Béziers, et planifions au besoin des trajets réguliers pour un traitement suivi.",
+              "Les circuits touristiques se composent avec vous : Sète et le mont Saint-Clair, les parcs à huîtres de Bouzigues et Mèze, Saint-Guilhem-le-Désert ou Pézenas, à la demi-journée ou à la journée, avec les arrêts que vous souhaitez.",
+              "La longue distance, enfin, couvre toutes les destinations en France, en berline ou en van sept places : départ de votre porte, devis établi avant de partir, conduite posée jusqu'à l'arrivée. Les courses locales, elles, suivent le tarif préfectoral au compteur."
+            ],
+            "ctaPrimaire": {
+              "label": "Consulter nos tarifs",
+              "href": "/tarifs"
+            }
+          }
+        },
+        {
           "type": "cta",
           "content": {
             "titre": "Un déplacement à organiser ?",
-            "sousTitre": "Appelez-nous ou envoyez votre demande : réponse rapide, 24h/24 et 7j/7.",
+            "sousTitre": "Décrivez votre trajet par téléphone ou WhatsApp : nous confirmons l'horaire et le véhicule, de jour comme de nuit.",
             "ctaPrimaire": {
               "label": "Réserver ma course",
               "href": "/contact"
@@ -408,8 +426,8 @@
       "label": "Transferts gares & aéroports",
       "navHidden": true,
       "meta": {
-        "title": "Transfert aéroport & gare — Montpellier, Sète, Béziers | Taxi Excellence Gigean",
-        "description": "Transfert taxi vers les aéroports et gares depuis Gigean et le bassin de Thau : Montpellier-Méditerranée, gare de Sète, Montpellier Saint-Roch. Prise en charge à domicile, forfait fixe, suivi des vols, 24h/24.",
+        "title": "Transfert aéroport & gare — Montpellier, Sète",
+        "description": "Transfert taxi au forfait depuis Gigean et le bassin de Thau vers l'aéroport Montpellier-Méditerranée, les gares de Sète et Saint-Roch. Suivi des vols.",
         "keywords": [
           "transfert aéroport Montpellier depuis Gigean",
           "taxi gare Sète",
@@ -458,7 +476,11 @@
               "Taxi Excellence assure vos liaisons vers l'aéroport de Montpellier-Méditerranée, la gare de Sète et la gare Montpellier Saint-Roch, ainsi que les aéroports et gares de la région. Nous venons vous chercher à Gigean, dans le bassin de Thau ou à l'adresse de votre choix, et vous déposons au plus près du terminal ou du quai.",
               "Le tarif d'un transfert est convenu à l'avance sous forme de forfait fixe : vous connaissez le prix avant de monter, quelle que soit la circulation. Nous suivons vos horaires de vol et de train et adaptons la prise en charge en cas de retard ou d'avance.",
               "Pour les familles, les groupes et les gros bagages, un van Mercedes climatisé est disponible sur simple demande."
-            ]
+            ],
+            "ctaPrimaire": {
+              "label": "Voir la grille des tarifs",
+              "href": "/tarifs"
+            }
           }
         },
         {
@@ -477,13 +499,19 @@
               },
               {
                 "nom": "Aéroports & gares de la région",
-                "description": "Liaisons vers les grands pôles de transport voisins, sur réservation."
+                "description": "Liaisons vers les grands pôles de transport voisins, sur réservation.",
+                "href": "/longue-distance"
               },
               {
                 "nom": "Forfait fixe & suivi des horaires",
-                "description": "Un prix connu avant le départ et une prise en charge ajustée aux retards de vol ou de train."
+                "description": "Un prix connu avant le départ et une prise en charge ajustée aux retards de vol ou de train.",
+                "href": "/tarifs"
               }
-            ]
+            ],
+            "cta": {
+              "label": "Toutes nos prestations",
+              "href": "/services"
+            }
           }
         },
         {
@@ -545,8 +573,8 @@
       "label": "Transport médical",
       "navHidden": true,
       "meta": {
-        "title": "Transport médical assis — Gigean, bassin de Thau, Montpellier | Taxi Excellence",
-        "description": "Transport médical assis à Gigean et dans le bassin de Thau : trajets vers vos consultations, examens et soins, à Sète, Mèze, Béziers et vers Montpellier. Ponctualité, discrétion, accompagnement attentif.",
+        "title": "Transport médical assis — Gigean, bassin de Thau",
+        "description": "Transport assis vers consultations, examens et soins depuis Gigean et le bassin de Thau, vers Montpellier, Sète et Béziers. Ponctualité et discrétion.",
         "keywords": [
           "transport médical Gigean",
           "taxi médical bassin de Thau",
@@ -595,7 +623,15 @@
               "Taxi Excellence assure le transport assis des patients vers leurs rendez-vous médicaux : consultations, examens, séances de soins, entrées et sorties d'établissement. Nous intervenons à Gigean, dans tout le bassin de Thau et vers les pôles de santé de Montpellier, de Sète et de Béziers.",
               "La ponctualité est essentielle pour un rendez-vous médical : nous anticipons l'horaire, la circulation et le stationnement pour que vous arriviez sereinement, sans précipitation. L'accompagnement se fait dans le respect, la patience et la discrétion.",
               "Trajet ponctuel ou déplacements réguliers : contactez-nous pour organiser vos courses médicales à l'avance et voyager l'esprit tranquille."
-            ]
+            ],
+            "ctaPrimaire": {
+              "label": "Nos autres prestations",
+              "href": "/services"
+            },
+            "ctaSecondaire": {
+              "label": "Transferts gares & aéroports",
+              "href": "/transferts-gares-aeroports"
+            }
           }
         },
         {
@@ -657,8 +693,8 @@
       "label": "Circuits touristiques",
       "navHidden": true,
       "meta": {
-        "title": "Circuits touristiques en taxi — Bassin de Thau, Sète, Saint-Guilhem | Taxi Excellence",
-        "description": "Excursions et circuits touristiques en taxi au départ de Gigean : bassin de Thau, Sète, Saint-Guilhem-le-Désert, Pézenas, vignobles et littoral de l'Hérault. À votre rythme, avec un chauffeur qui connaît la région.",
+        "title": "Circuits touristiques en taxi — Sète, Saint-Guilhem",
+        "description": "Excursions en taxi depuis Gigean : Sète et le bassin de Thau, Saint-Guilhem-le-Désert, Pézenas, vignobles. Itinéraire composé avec vous, à votre rythme.",
         "keywords": [
           "circuit touristique taxi Hérault",
           "excursion Sète bassin de Thau",
@@ -743,7 +779,11 @@
                 "description": "Domaines viticoles, dégustations et plages de l'Hérault, entre Marseillan, Agde et la Méditerranée.",
                 "priceHint": "Sur mesure"
               }
-            ]
+            ],
+            "cta": {
+              "label": "Voir les tarifs indicatifs",
+              "href": "/tarifs"
+            }
           }
         },
         {
@@ -784,8 +824,8 @@
       "label": "Longue distance",
       "navHidden": true,
       "meta": {
-        "title": "Taxi longue distance depuis Gigean — toutes destinations | Taxi Excellence",
-        "description": "Taxi longue distance au départ de Gigean et du bassin de Thau : trajets toutes destinations en France, en berline ou van Mercedes climatisé. Devis clair convenu à l'avance, chauffeur dédié, 24h/24.",
+        "title": "Taxi longue distance depuis Gigean — toute la France",
+        "description": "Trajets longue distance en taxi depuis Gigean et le bassin de Thau, toutes destinations en France. Devis convenu avant le départ, berline ou van Mercedes.",
         "keywords": [
           "taxi longue distance Gigean",
           "taxi longue distance bassin de Thau",
@@ -853,13 +893,18 @@
               },
               {
                 "nom": "Devis à l'avance",
-                "description": "Un prix clair, convenu avant le départ, sans surprise à l'arrivée."
+                "description": "Un prix clair, convenu avant le départ, sans surprise à l'arrivée.",
+                "href": "/tarifs"
               },
               {
                 "nom": "Chauffeur dédié",
                 "description": "Un conducteur professionnel pour un trajet posé, de jour comme de nuit."
               }
-            ]
+            ],
+            "cta": {
+              "label": "Forfaits indicatifs par destination",
+              "href": "/tarifs"
+            }
           }
         },
         {
@@ -900,8 +945,8 @@
       "slug": "tarifs",
       "label": "Tarifs",
       "meta": {
-        "title": "Tarifs taxi au départ de Montpellier — prix, distances & durées | Taxi Excellence",
-        "description": "Grille tarifaire du taxi au départ de la gare Saint-Roch de Montpellier : prix de jour et de nuit, distances et temps de parcours estimés vers Agde, Béziers, Nîmes, Marseille, Lyon et les aéroports. Forfaits clairs, devis depuis Gigean et le bassin de Thau.",
+        "title": "Tarifs taxi — forfaits depuis Gigean & Montpellier",
+        "description": "Forfaits taxi de jour et de nuit depuis la gare Montpellier Saint-Roch, devis depuis Gigean et le bassin de Thau. Distances, durées, simulateur de course.",
         "keywords": [
           "prix taxi Montpellier",
           "tarif taxi gare Saint-Roch",
@@ -914,9 +959,9 @@
         ]
       },
       "service": {
-        "name": "Forfaits taxi longue distance",
-        "description": "Forfaits taxi indicatifs au départ de la gare Saint-Roch de Montpellier vers les principales destinations de la région et au-delà.",
-        "serviceType": "Forfaits taxi",
+        "name": "Grille tarifaire",
+        "description": "Grille tarifaire indicative : forfaits de jour et de nuit au départ de la gare Saint-Roch de Montpellier, devis au départ de Gigean et du bassin de Thau.",
+        "serviceType": "Grille tarifaire",
         "priceFrom": 65
       },
       "blocks": [
@@ -925,7 +970,7 @@
           "content": {
             "eyebrow": "Tarifs",
             "titre": "Estimation des prix de vos trajets",
-            "intro": "Des forfaits clairs, connus à l'avance : consultez nos tarifs pour les principales destinations au départ de Montpellier, ou demandez un devis personnalisé depuis Gigean et le bassin de Thau.",
+            "intro": "Notre base est à Gigean, au cœur du bassin de Thau : les courses locales y suivent le tarif préfectoral au compteur, et chaque trajet au départ de Gigean ou des environs est chiffré sur devis. La grille ci-dessous présente, à titre de repère, nos forfaits au départ de la gare Saint-Roch de Montpellier.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1085,7 +1130,7 @@
                 "duree": "30 min"
               },
               {
-                "destination": "La Jonquère (Espagne)",
+                "destination": "La Jonquera (Espagne)",
                 "jour": 390,
                 "nuit": 485,
                 "distance": "189 km",
@@ -1296,6 +1341,30 @@
           }
         },
         {
+          "type": "faq",
+          "content": {
+            "titre": "Questions sur nos prix",
+            "items": [
+              {
+                "question": "Comment le prix d'une course est-il fixé ?",
+                "reponse": "Les courses locales, à Gigean et dans le bassin de Thau, suivent le tarif préfectoral au compteur. Pour les trajets plus longs — transferts, longue distance —, un forfait ferme est convenu et confirmé avant le départ : le montant annoncé est celui que vous payez."
+              },
+              {
+                "question": "Quand s'applique le tarif de nuit ?",
+                "reponse": "De 19h à 7h, ainsi que les dimanches et jours fériés. En semaine de 7h à 19h, c'est le tarif de jour qui s'applique — les deux colonnes de la grille correspondent à ces plages horaires."
+              },
+              {
+                "question": "Les forfaits affichés valent-ils au départ de Gigean ?",
+                "reponse": "La grille est établie au départ de la gare Saint-Roch de Montpellier, à titre indicatif. Pour un départ de Gigean, du bassin de Thau ou de toute autre adresse, nous chiffrons votre trajet sur devis, avec un forfait confirmé avant le départ."
+              },
+              {
+                "question": "Le montant peut-il évoluer en cours de route ?",
+                "reponse": "Pas pour un forfait : le prix confirmé avant le départ est définitif. Les tarifs de la grille restent en revanche indicatifs et peuvent varier selon les bagages, les temps d'attente et le nombre de passagers — d'où l'intérêt de demander un devis."
+              }
+            ]
+          }
+        },
+        {
           "type": "cta",
           "content": {
             "titre": "Un trajet précis à chiffrer ?",
@@ -1312,8 +1381,8 @@
       "slug": "a-propos",
       "label": "À propos",
       "meta": {
-        "title": "À propos — Taxi Excellence, votre taxi à Gigean depuis 2013",
-        "description": "Taxi Excellence, votre chauffeur de taxi à Gigean et dans le bassin de Thau depuis 2013 : ponctualité, véhicules Mercedes soignés et écoute. Transferts, transport médical, circuits et longue distance."
+        "title": "À propos — votre taxi à Gigean depuis 2013",
+        "description": "Chauffeur de taxi à Gigean depuis 2013 : ponctualité tenue, Mercedes propres et climatisées, conduite souple et connaissance fine du bassin de Thau."
       },
       "blocks": [
         {
@@ -1396,8 +1465,8 @@
       "slug": "contact",
       "label": "Contact",
       "meta": {
-        "title": "Contact & réservation — Taxi Excellence Gigean, 24h/24",
-        "description": "Réservez votre taxi à Gigean et dans le bassin de Thau : par téléphone ou WhatsApp 24h/24, 7j/7, ou via le formulaire. Transferts, transport médical, circuits touristiques et longue distance."
+        "title": "Contact & réservation — taxi à Gigean, 24h/24",
+        "description": "Réservez votre taxi à Gigean par téléphone ou WhatsApp, 24h/24 et 7j/7, ou par le formulaire : transfert, transport médical, circuit ou longue distance."
       },
       "blocks": [
         {
@@ -1405,7 +1474,7 @@
           "content": {
             "eyebrow": "Contact & réservation",
             "titre": "Réservez votre course",
-            "intro": "Appelez-nous à toute heure ou envoyez votre demande : nous confirmons rapidement, 24h/24 et 7j/7.",
+            "intro": "Un transfert à caler, un rendez-vous à assurer, une excursion à préparer : appelez, écrivez sur WhatsApp ou laissez votre demande — votre chauffeur répond à toute heure.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1422,7 +1491,7 @@
           "variant": "split-form-carte",
           "content": {
             "titre": "Demande de réservation",
-            "intro": "Indiquez votre trajet (départ, destination, date et heure) et le nombre de passagers. Nous vous confirmons la prise en charge.",
+            "intro": "Départ, destination, date et heure, nombre de passagers : donnez-nous l'essentiel de votre trajet, nous confirmons la prise en charge et, pour les transferts, le forfait.",
             "form": true,
             "formMode": "demande-intervention",
             "telephone": "07 66 90 50 99",
