@@ -82,11 +82,11 @@ const DOSSIER_LABELS = {
   formule: ["Formule"],
   metier: ["Metier"],
   ville: ["Ville"],
+  pays: ["Pays"],
   type_activite: ["Type"],
   se_deplace: ["Se deplace", ouiNon],
   zone_deplacement: ["Zone deplacement"],
   prestations: ["Prestations"],
-  credit_impot: ["Credit impot"],
   telephone: ["Telephone"],
   whatsapp: ["WhatsApp", ouiNon],
   email: ["Email"],
@@ -94,9 +94,7 @@ const DOSSIER_LABELS = {
   adresse: ["Adresse"],
   disponibilites: ["Disponibilites"],
   siret: ["SIRET"],
-  siret_en_cours: ["SIRET en cours", ouiNon],
   langues: ["Langues"],
-  styles: ["Styles"],
   couleurs: ["Couleur"],
   ambiance: ["Ambiance"],
   logo_urls: ["Logo"],
@@ -107,7 +105,6 @@ const DOSSIER_LABELS = {
   x: ["X"],
   google: ["Google"],
   extra: ["Extra"],
-  mode: ["Mode"],
 };
 
 /**
