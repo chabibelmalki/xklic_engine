@@ -1,5 +1,6 @@
 {
   "slug": "taxi-excellence",
+  "customDomains": ["taxi-excellence.fr", "www.taxi-excellence.fr"],
   "theme": "noir-cuivre",
   "stylePack": "prestige-nuit",
   "i18n": {
@@ -60,7 +61,7 @@
     ]
   },
   "forms": {
-    "turnstile": false
+    "turnstile": true
   },
   "pages": [
     {

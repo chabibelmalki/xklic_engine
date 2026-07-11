@@ -31,11 +31,13 @@ export const CUSTOM_DOMAINS: Readonly<Record<string, string>> = {
   "mbnettoyage-marseille.fr": "mb-nettoyage",
   "parfaitmenage26.fr": "parfait-menage-26",
   "sanadclean.fr": "sanadclean",
+  "taxi-excellence.fr": "taxi-excellence",
   "www.adel-net.fr": "adelnet",
   "www.casacleanprovence.fr": "casa-clean-provence",
   "www.mbnettoyage-marseille.fr": "mb-nettoyage",
   "www.parfaitmenage26.fr": "parfait-menage-26",
   "www.sanadclean.fr": "sanadclean",
+  "www.taxi-excellence.fr": "taxi-excellence",
 };
 
 /**
@@ -48,4 +50,5 @@ export const CANONICAL_DOMAIN: Readonly<Record<string, string>> = {
   "mb-nettoyage": "mbnettoyage-marseille.fr",
   "parfait-menage-26": "parfaitmenage26.fr",
   "sanadclean": "sanadclean.fr",
+  "taxi-excellence": "taxi-excellence.fr",
 };
