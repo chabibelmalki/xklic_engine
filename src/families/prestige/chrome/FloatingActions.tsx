@@ -1,11 +1,13 @@
-import { Phone, MessageCircle } from "lucide-react";
-import { telHrefIntl, telIndicatif, telNeedsIndicatif, waHref } from "@/lib/utils";
+import { Phone } from "lucide-react";
+import { telHrefIntl, waHref } from "@/lib/utils";
+import { SocialIcon } from "@/components/ui/SocialIcon";
 import type { UIStrings } from "@/i18n/ui";
 
 /**
  * Barre d'action flottante prestige (mobile/tablette) : le CTA d'un taxi, c'est
- * APPELER. Barre pleine largeur, sticky en bas, bouton OR massif avec le numéro
- * en tabular-nums + WhatsApp optionnel. Masquée en desktop (le header garde la
+ * APPELER. Barre pleine largeur, sticky en bas — deux boutons ICÔNE SEULE
+ * (WhatsApp + Appel), sans libellé ni numéro (l'intitulé reste porté par
+ * `aria-label` pour l'accessibilité). Masquée en desktop (le header garde la
  * réservation visible). Props identiques à `FloatingActions`.
  */
 export function PrestigeFloatingActions({
@@ -29,28 +31,18 @@ export function PrestigeFloatingActions({
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`${strings.whatsappAria} ${entreprise}`}
-          className="flex shrink-0 items-center justify-center gap-2 border-e border-[var(--px-line)] px-5 py-4 text-sm font-semibold text-white"
+          className="flex flex-1 items-center justify-center border-e border-[var(--px-line)] py-4 text-[var(--px-gold)]"
         >
-          <MessageCircle className="size-5 text-[var(--px-gold)]" />
-          <span className="sr-only sm:not-sr-only">WhatsApp</span>
+          <SocialIcon platform="whatsapp" className="size-6" />
         </a>
       )}
       {telephone && (
         <a
           href={telHrefIntl(telephone)}
           aria-label={`${strings.callAria} ${entreprise}`}
-          className="flex flex-1 items-center justify-center gap-3 bg-[var(--px-gold)] py-4 text-[var(--px-void)] transition-opacity hover:opacity-90"
+          className="flex flex-1 items-center justify-center bg-[var(--px-gold)] py-4 text-[var(--px-void)] transition-opacity hover:opacity-90"
         >
-          <Phone className="size-5" strokeWidth={2.4} />
-          <span className="text-[0.68rem] font-bold uppercase tracking-[0.16em]">
-            {strings.callAria}
-          </span>
-          <span className="text-lg font-bold tabular-nums tracking-tight">
-            {telNeedsIndicatif(telephone) && (
-              <span className="text-[0.72em] font-semibold opacity-55">{telIndicatif()}</span>
-            )}{" "}
-            {telephone}
-          </span>
+          <Phone className="size-6" strokeWidth={2.4} />
         </a>
       )}
     </div>

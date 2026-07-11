@@ -21,10 +21,13 @@ function buildNav(
   basePath: string,
   currentPath: string,
   nav: UIStrings["nav"],
+  excludeSlug?: string,
 ): NavItem[] {
   if (isMultiPage(config)) {
+    // On EXCLUT la page cible du CTA (déjà présente en bouton OR à droite) pour
+    // ne pas afficher deux fois le même lien (ex. « Contact »).
     return navPages(config)
-      .filter((p) => !p.isHome)
+      .filter((p) => !p.isHome && p.slug !== excludeSlug)
       .map((p) => ({ href: `${basePath}${p.path}`, label: p.label, active: p.path === currentPath }));
   }
   const labels = nav as Record<string, string>;
@@ -48,13 +51,17 @@ function ctaTarget(config: SiteConfig, basePath: string, strings: UIStrings) {
     const pages = resolvePages(config);
     const target = pages.find((p) => p.slug === "devis") ?? pages.find((p) => p.slug === "contact");
     if (!target) return null;
-    return { href: `${basePath}${target.path}`, label: target.slug === "devis" ? quote : contactLabel };
+    return {
+      href: `${basePath}${target.path}`,
+      label: target.slug === "devis" ? quote : contactLabel,
+      slug: target.slug,
+    };
   }
   const contactBlock = config.blocks.find((b) => b.type === "contact")?.content as
     | ContactContent
     | undefined;
   if (!config.blocks.some((b) => b.type === "contact")) return null;
-  return { href: `${basePath}/#contact`, label: contactBlock?.form ? quote : contactLabel };
+  return { href: `${basePath}/#contact`, label: contactBlock?.form ? quote : contactLabel, slug: "contact" };
 }
 
 /**
@@ -107,9 +114,9 @@ export function PrestigeHeader({
   defaultLocale: string;
   strings: UIStrings;
 }) {
-  const nav = buildNav(config, basePath, currentPath, strings.nav);
-  const contact = findBlock<ContactContent>(config, "contact")?.content;
   const cta = ctaTarget(config, basePath, strings);
+  const nav = buildNav(config, basePath, currentPath, strings.nav, cta?.slug);
+  const contact = findBlock<ContactContent>(config, "contact")?.content;
   const showLangs = locales.length > 1;
   const tel = contact?.telephone;
 

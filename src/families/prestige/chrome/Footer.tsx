@@ -48,7 +48,9 @@ export function PrestigeFooter({
 
   return (
     <footer className="border-t border-[var(--px-hairline)] bg-[var(--px-void)] text-white">
-      <PrestigeContainer className="py-16 sm:py-20">
+      {/* pb renforcé sous lg : la barre d'action flottante (fixed bottom, mobile/
+          tablette) ne doit pas recouvrir le bas du footer. +safe-area iOS. */}
+      <PrestigeContainer className="pt-16 pb-[calc(6rem_+_env(safe-area-inset-bottom))] sm:pt-20 lg:pb-20">
         <div className="grid gap-12 lg:grid-cols-[1.6fr_1fr_1.2fr]">
           {/* Marque */}
           <div>

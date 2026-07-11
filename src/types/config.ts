@@ -159,8 +159,14 @@ export interface BrandColors {
   brand: string;
   /** Accent / CTA. Hex. Défaut : ambre (#f59e0b) si absent. */
   accent?: string;
-  /** Tonalité des neutres (gris/fonds). Défaut : teinté par `brand`. */
-  neutral?: "warm" | "cool";
+  /**
+   * Tonalité des neutres (gris/fonds). Défaut : teinté par `brand`.
+   * `dark` = registre SOMBRE (fonds near-black, encre claire) : à utiliser avec
+   * un pack nocturne (ex. `prestige-nuit`) pour que TOUT le rendu retombant sur
+   * la famille classic (contact, pages légales, /avis) reste sombre et cohérent
+   * avec les blocs immersifs, sans perdre la couleur de marque.
+   */
+  neutral?: "warm" | "cool" | "dark";
 }
 
 export interface Branding {
@@ -274,6 +280,14 @@ export interface HeroContent {
    * n°1 (taxi, dépannage…). Variante "plein" pour l'instant. Défaut : false.
    */
   showPhone?: boolean;
+  /**
+   * Moyens de paiement acceptés, affichés en petites vignettes cartes dans le
+   * hero (marques reconnues : "visa", "mastercard", "amex"). Une marque inconnue
+   * est ignorée. Absent/vide => aucune vignette. Voir `PaymentMarks`.
+   */
+  payments?: string[];
+  /** Libellé (i18n) au-dessus des vignettes de paiement (ex. "Paiement accepté"). */
+  paymentsLabel?: string;
 }
 
 // --- services ---
@@ -386,6 +400,45 @@ export interface TarifsContent {
   /** Note de bas (TVA, conditions…). */
   note?: string;
   /** CTA "demander un devis" (utile en mode sur-devis / a-partir-de). */
+  cta?: CTA;
+}
+
+// --- grilleTarifs (tableau de tarifs par destination) ---
+/** Une ligne de la grille tarifaire (une destination). */
+export interface GrilleTarifsLigne {
+  /** Destination (ex. "Aéroport de Béziers"). */
+  destination: string;
+  /** Prix tarif de jour : nombre (EUR, "€" ajouté) ou libellé libre. */
+  jour?: number | string;
+  /** Prix tarif de nuit / dimanches & fériés : nombre (EUR) ou libellé. */
+  nuit?: number | string;
+  /** Distance estimée (ex. "64 km"). */
+  distance?: string;
+  /** Temps de parcours estimé (ex. "50 min", "1h20"). */
+  duree?: string;
+}
+/**
+ * Contenu du bloc `grilleTarifs` : un TABLEAU de tarifs indicatifs par
+ * destination (prix jour / nuit, distance, durée), au départ d'un point donné.
+ * Pensé pour les taxis/VTC à forfaits fixes. Défilement horizontal sur mobile.
+ */
+export interface GrilleTarifsContent {
+  titre?: string;
+  intro?: string;
+  eyebrow?: string;
+  /** Point de départ affiché sous le titre (ex. "gare Saint-Roch de Montpellier"). */
+  origine?: string;
+  /** Libellés de colonnes (surchargeables pour l'i18n). */
+  colonnes?: {
+    destination?: string;
+    jour?: string;
+    nuit?: string;
+    distance?: string;
+    duree?: string;
+  };
+  lignes: GrilleTarifsLigne[];
+  /** Note de bas de tableau (astérisque : caractère indicatif des prix…). */
+  note?: string;
   cta?: CTA;
 }
 
@@ -741,6 +794,7 @@ export interface BlockContentMap {
   etapes: EtapesContent;
   simulateur: SimulateurContent;
   tarifs: TarifsContent;
+  grilleTarifs: GrilleTarifsContent;
   serviceQuoteBuilder: ServiceQuoteBuilderContent;
   produits: ProduitsContent;
   boutique: BoutiqueContent;

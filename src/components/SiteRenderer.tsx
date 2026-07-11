@@ -33,6 +33,7 @@ const SECTION_TYPES = new Set([
   "etapes",
   "simulateur",
   "tarifs",
+  "grilleTarifs",
   "serviceQuoteBuilder",
   "zone",
   "faq",

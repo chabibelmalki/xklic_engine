@@ -1,0 +1,1105 @@
+{
+  "slug": "taxi-excellence",
+  "theme": "noir-cuivre",
+  "stylePack": "prestige-nuit",
+  "i18n": {
+    "default": "fr",
+    "languages": ["fr", "en"]
+  },
+  "branding": {
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/taxi-excellence/logo.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/taxi-excellence/icon.png",
+    "logoAlt": "Taxi Excellence — taxi in Gigean: airport transfers, medical transport, sightseeing tours",
+    "tagline": "Gigean · Thau basin",
+    "colors": {
+      "brand": "#e8a600",
+      "accent": "#ffcc02",
+      "neutral": "dark"
+    }
+  },
+  "social": [
+    {
+      "platform": "whatsapp",
+      "url": "07 66 90 50 99"
+    }
+  ],
+  "googleReviewUrl": "https://g.page/r/CRGBAfW0xUjLEBE/review",
+  "entreprise": {
+    "nom": "Taxi Excellence",
+    "statut": "EI",
+    "siret": "79931177400019",
+    "ape": "49.32Z",
+    "apeLabel": "Passenger transport by taxi",
+    "tva": {
+      "regime": "franchise"
+    }
+  },
+  "seo": {
+    "schemaType": "TaxiService",
+    "ville": "Gigean"
+  },
+  "geo": {
+    "lat": 43.5023,
+    "lng": 3.7188
+  },
+  "meta": {
+    "title": "Taxi Excellence — Taxi in Gigean: airport transfers, medical & tours, 24/7",
+    "description": "Taxi in Gigean and across the Thau basin: station & airport transfers (Montpellier-Méditerranée, Sète), medical transport, sightseeing tours and long-distance trips. Air-conditioned Mercedes saloon and van, booking 24/7.",
+    "keywords": [
+      "taxi Gigean",
+      "taxi Thau basin",
+      "Montpellier airport transfer",
+      "taxi Sète station",
+      "medical transport Gigean",
+      "taxi Sète Mèze Frontignan",
+      "sightseeing tour Hérault taxi",
+      "long distance taxi Gigean"
+    ]
+  },
+  "forms": {
+    "turnstile": false
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Home",
+      "blocks": [
+        {
+          "type": "hero",
+          "content": {
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/taxi-excellence/hero-van.jpg",
+              "alt": "Black Mercedes van of Taxi Excellence with a yellow TAXI sign at night in the city"
+            },
+            "eyebrow": "Taxi in Gigean · Thau basin & Montpellier",
+            "titre": "Your taxi in Gigean,",
+            "titreAccent": "and far beyond",
+            "accroche": "Station & airport transfers, medical transport, sightseeing tours and long-distance trips. Air-conditioned Mercedes saloon and van, a driver who listens — booking 24/7, from Gigean, the Thau basin and towards Montpellier.",
+            "trust": [
+              { "label": "24/7 · Booking at any hour" },
+              { "label": "Gigean · Thau basin & Montpellier" },
+              { "label": "Mercedes · Air-conditioned saloon & van" },
+              { "label": "Since 2013 · At your service" }
+            ],
+            "ctaPrimaire": {
+              "label": "Book my ride",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Our services",
+              "href": "/services"
+            },
+            "paymentsLabel": "Payment accepted",
+            "payments": ["visa", "mastercard", "amex"]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Our services",
+            "titre": "A taxi service worthy of the name",
+            "intro": "From an airport transfer to a medical appointment, from discovering the region to a long journey: every ride is handled with the same care, in a spotless, air-conditioned vehicle.",
+            "items": [
+              {
+                "nom": "Station & airport transfers",
+                "description": "Montpellier-Méditerranée airport, Sète and Montpellier Saint-Roch stations, regional airports. Door-to-door pick-up, schedule tracking, a flat price known in advance.",
+                "href": "/transferts-gares-aeroports",
+                "priceHint": "Flat rate"
+              },
+              {
+                "nom": "Medical transport",
+                "description": "Seated trips to your consultations, tests and treatments, in Gigean, across the Thau basin and towards Montpellier. Punctuality, discretion and attentive care.",
+                "href": "/transport-medical",
+                "priceHint": "By appointment"
+              },
+              {
+                "nom": "Sightseeing tours",
+                "description": "Sète, the Thau basin, Saint-Guilhem-le-Désert, Pézenas, vineyards: discover the region at your own pace, with a driver who knows it well.",
+                "href": "/circuits-touristiques",
+                "priceHint": "Tailored"
+              },
+              {
+                "nom": "Long distance",
+                "description": "Any destination in France, from Gigean and the Thau basin, in an air-conditioned saloon or van. A clear quote, agreed before departure.",
+                "href": "/longue-distance",
+                "priceHint": "On quote"
+              }
+            ],
+            "cta": {
+              "label": "See all services",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Taxi Excellence",
+            "titre": "The Gigean taxi that",
+            "titreAccent": "sees further",
+            "paragraphes": [
+              "Based in Gigean, at the heart of the Thau basin, Taxi Excellence has been driving you since 2013 with the same standards: punctual service, an immaculate vehicle and a driver who listens. From the everyday ride to the long journey, every trip is handled with care.",
+              "Air-conditioned Mercedes saloon and van, serviced and spotless: you travel in comfort, alone, as a family or as a group, with your luggage. Station and airport transfers, medical transport, sightseeing tours, long distance — all your mobility needs, one contact.",
+              "Sète, Mèze, Frontignan, Balaruc, Montpellier, Béziers: we know the region and its routes. You book with a single call, and we take care of the rest."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/taxi-excellence/montpellier-nuit.jpg",
+              "alt": "Black Mercedes saloon of Taxi Excellence at Place de la Comédie in Montpellier at sunset"
+            },
+            "imageRatio": "1/1",
+            "ctaPrimaire": {
+              "label": "Our services",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "Simple and fast",
+            "titre": "Booking, in three steps",
+            "items": [
+              {
+                "titre": "You call",
+                "texte": "By phone or WhatsApp, tell us your pick-up, your destination and the time you need. Immediate ride or advance booking."
+              },
+              {
+                "titre": "We confirm",
+                "texte": "We confirm the pick-up, the right vehicle and, for transfers, a flat price known in advance — no surprises."
+              },
+              {
+                "titre": "We drive you",
+                "texte": "Your driver collects you on time, in a clean, air-conditioned vehicle, and takes you to your destination."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "From Gigean to the Thau basin, and towards Montpellier",
+            "intro": "Based in Gigean, we cover the whole Thau basin, Montpellier and its metro area, Béziers and western Hérault. Check your town or call us: we look at every trip.",
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=3.15%2C43.33%2C4.05%2C43.75&layer=mapnik&marker=43.5023%2C3.7188",
+            "zones": [
+              {
+                "region": "Gigean & the Thau basin",
+                "principale": "Gigean",
+                "villes": [
+                  "Gigean",
+                  "Poussan",
+                  "Bouzigues",
+                  "Loupian",
+                  "Mèze",
+                  "Balaruc-les-Bains",
+                  "Balaruc-le-Vieux",
+                  "Frontignan",
+                  "Sète",
+                  "Marseillan",
+                  "Vic-la-Gardiole",
+                  "Montbazin",
+                  "Villeveyrac"
+                ]
+              },
+              {
+                "region": "Towards Montpellier & its metro area",
+                "principale": "Montpellier",
+                "villes": [
+                  "Montpellier",
+                  "Saint-Jean-de-Védas",
+                  "Lattes",
+                  "Pérols",
+                  "Fabrègues",
+                  "Villeneuve-lès-Maguelone",
+                  "Pignan",
+                  "Cournonterral",
+                  "Cournonsec",
+                  "Juvignac"
+                ]
+              },
+              {
+                "region": "Towards Béziers & western Hérault",
+                "principale": "Béziers",
+                "villes": [
+                  "Béziers",
+                  "Agde",
+                  "Pézenas",
+                  "Servian",
+                  "Vias"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Your questions, our answers",
+            "items": [
+              {
+                "question": "How do I book a taxi in Gigean?",
+                "reponse": "By phone or WhatsApp on 07 66 90 50 99, 24/7. Immediate ride subject to availability, or advance booking for a set time — an airport transfer, a medical appointment, an excursion."
+              },
+              {
+                "question": "Do you handle transfers to airports and stations?",
+                "reponse": "Yes: Montpellier-Méditerranée airport, Sète and Montpellier Saint-Roch stations, as well as the region's airports. The transfer price is agreed in advance as a flat rate, whatever the traffic."
+              },
+              {
+                "question": "Do you provide medical transport?",
+                "reponse": "Yes, we provide seated transport to your consultations, tests and treatments, in Gigean, across the Thau basin and towards Montpellier. Contact us to arrange your trips, one-off or regular."
+              },
+              {
+                "question": "How far do you travel?",
+                "reponse": "From Gigean, we cover the whole Thau basin (Sète, Mèze, Frontignan, Balaruc…), Montpellier and its metro area, Béziers and western Hérault. For long distance, we go anywhere in France, on quote."
+              },
+              {
+                "question": "Do you carry groups or luggage?",
+                "reponse": "Yes. We have an air-conditioned Mercedes van for groups, families and airport transfers with luggage, alongside the saloon. Please state the number of passengers when booking."
+              }
+            ]
+          }
+        },
+        {
+          "type": "avis",
+          "variant": "carrousel",
+          "content": {
+            "eyebrow": "Customer reviews",
+            "titre": "They trusted us",
+            "items": [
+              {
+                "auteur": "Elisa Trouillet",
+                "note": 5,
+                "texte": "Un service irréprochable à tous les niveaux que ce soit la ponctualité, la disponibilité et la sympathie du chauffeur. Je suis passée 2 fois par cette compagnie pour me rendre à des examens et je repasserai par leurs services sans hésiter !"
+              },
+              {
+                "auteur": "Chloé Bruel",
+                "note": 5,
+                "texte": "Un service de qualité remarquable : un message la veille et le jour J pour me rassurer sur le fait que mon taxi serait bien là pour que je puisse prendre mon avion, un timing exemplaire, et pour finir il m'a été proposé de rester avec moi pour que je n'aie pas à attendre seule dans la nuit. Je recommande les yeux fermés."
+              },
+              {
+                "auteur": "Jehanne Miloud",
+                "note": 5,
+                "texte": "Super service et ponctualité de la part du chauffeur que j'ai prévenu un mois à l'avance pour mon déplacement avec mon berger allemand. Encore un grand merci pour le stress évité, pour votre sympathie et votre professionnalisme ! À très bientôt :)"
+              },
+              {
+                "auteur": "Maguelone Dussol",
+                "note": 5,
+                "texte": "Ce matin, alors que la personne qui devait m'accompagner à la gare m'a fait faux bond, ma fille qui n'est pas sur Montpellier a appelé cette compagnie. Le taxi avec son chauffeur Robert m'a accompagnée en deux temps trois mouvements à la gare. Il a rappelé ma fille à trois reprises pour l'informer de la situation. En même temps il a vérifié le numéro de mon train et m'a donné le quai où je devais me rendre. Efficacité, sympathique et rassurant. Je recommande cette compagnie. Merci beaucoup."
+              }
+            ],
+            "disclaimer": "Genuine reviews published by our customers on our Google listing."
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/taxi-excellence/berline-cote.jpg",
+              "alt": "Black Mercedes saloon of Taxi Excellence in profile with a TAXI sign, in the city"
+            },
+            "titre": "Ready to hop in?",
+            "sousTitre": "Immediate ride or advance booking: your Taxi Excellence driver answers 24/7.",
+            "ctaPrimaire": {
+              "label": "Book my ride",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "See the service area",
+              "href": "/#zone"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Services",
+      "meta": {
+        "title": "Services — Transfers, medical transport, tours & long distance | Taxi Excellence Gigean",
+        "description": "Station & airport transfers, medical transport, sightseeing tours and long-distance trips in Gigean and the Thau basin. Air-conditioned Mercedes saloon and van, 24/7, flat rate on transfers."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Our services",
+            "titre": "One address for all your journeys",
+            "intro": "From Gigean to the Thau basin, and far beyond: Taxi Excellence covers all your mobility needs. Each service has its own page.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services" }
+            ],
+            "ctaPrimaire": {
+              "label": "Book my ride",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Services in detail",
+            "titre": "What we provide",
+            "intro": "Click a service for the detail: what it covers, how it works and frequently asked questions.",
+            "items": [
+              {
+                "nom": "Station & airport transfers",
+                "description": "Montpellier-Méditerranée, Sète and Montpellier Saint-Roch stations, regional airports. Door-to-door pick-up, schedule tracking, flat rate.",
+                "href": "/transferts-gares-aeroports",
+                "priceHint": "Flat rate"
+              },
+              {
+                "nom": "Medical transport",
+                "description": "Seated trips to your consultations, tests and treatments, with punctuality, discretion and care.",
+                "href": "/transport-medical",
+                "priceHint": "By appointment"
+              },
+              {
+                "nom": "Sightseeing tours",
+                "description": "Discover the region at your own pace: Thau basin, Saint-Guilhem-le-Désert, Pézenas, vineyards and coast.",
+                "href": "/circuits-touristiques",
+                "priceHint": "Tailored"
+              },
+              {
+                "nom": "Long distance",
+                "description": "Any destination in France, in an air-conditioned saloon or van, with a clear quote agreed before departure.",
+                "href": "/longue-distance",
+                "priceHint": "On quote"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "A journey to arrange?",
+            "sousTitre": "Call us or send your request: fast reply, 24/7.",
+            "ctaPrimaire": {
+              "label": "Book my ride",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "transferts-gares-aeroports",
+      "label": "Station & airport transfers",
+      "navHidden": true,
+      "meta": {
+        "title": "Airport & station transfer — Montpellier, Sète, Béziers | Taxi Excellence Gigean",
+        "description": "Taxi transfer to airports and stations from Gigean and the Thau basin: Montpellier-Méditerranée, Sète station, Montpellier Saint-Roch. Door-to-door pick-up, flat rate, flight tracking, 24/7.",
+        "keywords": [
+          "Montpellier airport transfer from Gigean",
+          "taxi Sète station",
+          "taxi airport Thau basin",
+          "Montpellier-Méditerranée airport shuttle"
+        ]
+      },
+      "service": {
+        "name": "Station & airport transfers",
+        "description": "Taxi transfers to stations and airports from Gigean and the Thau basin, with schedule tracking and a flat rate.",
+        "serviceType": "Airport transfer",
+        "priceFrom": "Flat rate"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Station & airport transfers",
+            "titre": "Never miss your flight or your train",
+            "intro": "Pick-up in Gigean, the Thau basin or the address of your choice, and drop-off right at the terminal or platform — with tracking of your schedule.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Station & airport transfers" }
+            ],
+            "ctaPrimaire": {
+              "label": "Book a transfer",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "On time, every time",
+            "titre": "The stress-free transfer",
+            "paragraphes": [
+              "Taxi Excellence handles your links to Montpellier-Méditerranée airport, Sète station and Montpellier Saint-Roch station, as well as the region's airports and stations. We pick you up in Gigean, the Thau basin or the address of your choice, and drop you off as close as possible to the terminal or platform.",
+              "The transfer price is agreed in advance as a flat rate: you know the price before you get in, whatever the traffic. We track your flight and train times and adjust the pick-up in case of delay or early arrival.",
+              "For families, groups and heavy luggage, an air-conditioned Mercedes van is available on request."
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Your links",
+            "titre": "Destinations & guarantees",
+            "items": [
+              {
+                "nom": "Montpellier-Méditerranée airport",
+                "description": "Direct transfer from Gigean, the Thau basin and western Hérault, timed to your flight."
+              },
+              {
+                "nom": "Sète & Montpellier Saint-Roch stations",
+                "description": "Drop-off and pick-up as close as possible to the platforms, luggage included."
+              },
+              {
+                "nom": "Regional airports & stations",
+                "description": "Links to the nearby major transport hubs, by reservation."
+              },
+              {
+                "nom": "Flat rate & schedule tracking",
+                "description": "A price known before departure and a pick-up adjusted to flight or train delays."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "How it works",
+            "titre": "Your transfer, step by step",
+            "items": [
+              {
+                "titre": "You give us your flight",
+                "texte": "Flight or train number, time, pick-up address and number of passengers."
+              },
+              {
+                "titre": "Flat rate confirmed",
+                "texte": "We give you the fixed transfer price, agreed in advance."
+              },
+              {
+                "titre": "Pick-up on time",
+                "texte": "The driver collects you at the planned time, adjusted if your schedule changes."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Your questions",
+            "items": [
+              {
+                "question": "What happens if my flight is delayed?",
+                "reponse": "We track flight times: in case of delay or early arrival, we adjust the pick-up time, with no extra charge for the shift."
+              },
+              {
+                "question": "Is the price fixed in advance?",
+                "reponse": "Yes. Station and airport transfers are charged at a flat rate, agreed before departure: you know the price whatever the traffic."
+              },
+              {
+                "question": "Do you pick me up at home?",
+                "reponse": "Yes, we pick up in Gigean, across the whole Thau basin and at the address of your choice, day or night."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "A transfer to book?",
+            "sousTitre": "Give us your flight or your train: we sort it all out, 24/7.",
+            "ctaPrimaire": {
+              "label": "Book a transfer",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "transport-medical",
+      "label": "Medical transport",
+      "navHidden": true,
+      "meta": {
+        "title": "Seated medical transport — Gigean, Thau basin, Montpellier | Taxi Excellence",
+        "description": "Seated medical transport in Gigean and the Thau basin: trips to your consultations, tests and treatments, in Sète, Mèze, Béziers and towards Montpellier. Punctuality, discretion, attentive care.",
+        "keywords": [
+          "medical transport Gigean",
+          "medical taxi Thau basin",
+          "seated transport Sète Montpellier",
+          "taxi medical appointment Hérault"
+        ]
+      },
+      "service": {
+        "name": "Medical transport",
+        "description": "Seated transport of patients to their consultations, tests and treatments from Gigean, the Thau basin and towards Montpellier.",
+        "serviceType": "Medical transport",
+        "priceFrom": "By appointment"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Medical transport",
+            "titre": "Your health trips, with peace of mind",
+            "intro": "Consultation, test, treatment, admission or discharge: we take you there on time, with care and discretion, in Gigean, the Thau basin and towards Montpellier.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Medical transport" }
+            ],
+            "ctaPrimaire": {
+              "label": "Arrange a trip",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "With care",
+            "titre": "Health transport that is human and punctual",
+            "paragraphes": [
+              "Taxi Excellence provides seated transport for patients to their medical appointments: consultations, tests, treatment sessions, admissions and discharges. We operate in Gigean, across the whole Thau basin and towards the healthcare hubs of Montpellier, Sète and Béziers.",
+              "Punctuality is essential for a medical appointment: we plan for the time, the traffic and the parking so that you arrive calmly, without rushing. Care is provided with respect, patience and discretion.",
+              "One-off trip or regular journeys: contact us to arrange your medical rides in advance and travel with peace of mind."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "How it works",
+            "titre": "Arranging your trip",
+            "items": [
+              {
+                "titre": "You call us",
+                "texte": "Tell us the address, the facility, the appointment time and any particular needs."
+              },
+              {
+                "titre": "Trip planned",
+                "texte": "We agree on the pick-up time, with the margin needed to arrive relaxed."
+              },
+              {
+                "titre": "There and back, accompanied",
+                "texte": "Your driver takes you there and, if needed, brings you back home."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Your questions",
+            "items": [
+              {
+                "question": "Where do you provide medical transport?",
+                "reponse": "From Gigean and the whole Thau basin (Sète, Mèze, Frontignan, Balaruc…), to the healthcare hubs of Montpellier, Sète and Béziers, as well as the region's practices and laboratories."
+              },
+              {
+                "question": "Can I book regular trips?",
+                "reponse": "Yes. For a treatment or follow-up that requires repeated trips, we plan your rides in advance to guarantee availability and timing."
+              },
+              {
+                "question": "How do I book medical transport?",
+                "reponse": "Call or message us with the facility, the address and the appointment time: we arrange the pick-up, one-off or regular."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "A medical appointment coming up?",
+            "sousTitre": "Call us: we arrange a punctual and attentive trip.",
+            "ctaPrimaire": {
+              "label": "Arrange a trip",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "circuits-touristiques",
+      "label": "Sightseeing tours",
+      "navHidden": true,
+      "meta": {
+        "title": "Sightseeing tours by taxi — Thau basin, Sète, Saint-Guilhem | Taxi Excellence",
+        "description": "Excursions and sightseeing tours by taxi from Gigean: Thau basin, Sète, Saint-Guilhem-le-Désert, Pézenas, vineyards and the Hérault coast. At your own pace, with a driver who knows the region.",
+        "keywords": [
+          "sightseeing tour taxi Hérault",
+          "excursion Sète Thau basin",
+          "taxi Saint-Guilhem-le-Désert",
+          "vineyard visit taxi Gigean"
+        ]
+      },
+      "service": {
+        "name": "Sightseeing tours",
+        "description": "Excursions and sightseeing tours by taxi from Gigean and the Thau basin, discovering the Hérault.",
+        "serviceType": "Sightseeing tour",
+        "priceFrom": "On quote"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Sightseeing tours",
+            "titre": "Discover the region, we'll drive",
+            "intro": "For a half-day or a full day, let yourself be guided through the Thau basin, the hinterland and the vineyards — comfortably seated, with no driving or parking to worry about.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Sightseeing tours" }
+            ],
+            "ctaPrimaire": {
+              "label": "Plan my tour",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "At your own pace",
+            "titre": "The region, the way a local would show it",
+            "paragraphes": [
+              "Between lagoons, garrigue and vineyards, the Hérault is far better discovered without worrying about the road. Taxi Excellence takes you for a day or a half-day to the region's finest spots, at your own pace, with the stops you want.",
+              "You choose the destination and the mood — heritage, nature, tasting, coast — and we plan the itinerary. Pick-up at your hotel, your rental or your home, in an air-conditioned saloon or van.",
+              "Ideal for a stay, a family visit, a group of friends or hosting your guests: tell us what you'd like and we'll build the tour."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/taxi-excellence/berline-cote.jpg",
+              "alt": "Black Mercedes saloon of Taxi Excellence in profile, ready for an excursion"
+            },
+            "imageRatio": "1/1",
+            "imagePosition": "left"
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "A few ideas",
+            "titre": "Tours to plan together",
+            "intro": "As many starting points as there are wishes — here are a few popular itineraries, to tailor to your day.",
+            "items": [
+              {
+                "nom": "Sète & the Thau basin",
+                "description": "The port of Sète, Mont Saint-Clair, the oyster beds of Bouzigues and Mèze, a tasting by the water.",
+                "priceHint": "Half-day"
+              },
+              {
+                "nom": "Saint-Guilhem-le-Désert & the Hérault valley",
+                "description": "One of France's most beautiful villages, the Devil's Bridge and the Clamouse cave.",
+                "priceHint": "Full day"
+              },
+              {
+                "nom": "Pézenas & the villages of character",
+                "description": "Lanes, mansions and craft artisans in the town of Molière and its surroundings.",
+                "priceHint": "Half-day"
+              },
+              {
+                "nom": "Vineyards & coast",
+                "description": "Wine estates, tastings and Hérault beaches, between Marseillan, Agde and the Mediterranean.",
+                "priceHint": "Tailored"
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Your questions",
+            "items": [
+              {
+                "question": "Can I customise my tour?",
+                "reponse": "Of course. Tell us what you enjoy — heritage, nature, tasting, coast — and we'll plan the itinerary, the stops and the duration to match your wishes."
+              },
+              {
+                "question": "How many people can come along?",
+                "reponse": "From one to seven people depending on the vehicle. The air-conditioned Mercedes van is ideal for families and small groups."
+              },
+              {
+                "question": "How is a tour priced?",
+                "reponse": "On quote, based on the duration, the itinerary and the number of passengers. The price is agreed in advance, with no surprises."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Fancy discovering the region?",
+            "sousTitre": "Tell us your wishes: we'll plan your tailor-made tour.",
+            "ctaPrimaire": {
+              "label": "Plan my tour",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "longue-distance",
+      "label": "Long distance",
+      "navHidden": true,
+      "meta": {
+        "title": "Long-distance taxi from Gigean — any destination | Taxi Excellence",
+        "description": "Long-distance taxi from Gigean and the Thau basin: trips to any destination in France, in an air-conditioned Mercedes saloon or van. Clear quote agreed in advance, dedicated driver, 24/7.",
+        "keywords": [
+          "long distance taxi Gigean",
+          "long distance taxi Thau basin",
+          "national taxi trip Sète Montpellier",
+          "intercity taxi Hérault"
+        ]
+      },
+      "service": {
+        "name": "Long distance",
+        "description": "Long-distance taxi trips from Gigean and the Thau basin, to any national destination.",
+        "serviceType": "Long-distance taxi",
+        "priceFrom": "On quote"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Long distance",
+            "titre": "Any distance, full comfort",
+            "intro": "An appointment on the other side of the region or a journey across the country: travel calmly, with a dedicated driver and a price known in advance.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Long distance" }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Travel differently",
+            "titre": "The road, with complete peace of mind",
+            "paragraphes": [
+              "For your long-distance trips from Gigean and the Thau basin, Taxi Excellence provides an air-conditioned Mercedes saloon or van and a professional driver. You leave from your door and arrive at your destination with no changes, no waiting, no luggage constraints.",
+              "The price of a long-distance trip is set in advance, as a clear quote, based on the distance and the chosen vehicle. You know exactly what you pay before you leave.",
+              "It's the ideal solution for a business trip, a specialist medical appointment in another city, or simply to travel without driving."
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Why choose us",
+            "titre": "The ideal long-distance trip",
+            "items": [
+              {
+                "nom": "Door to door",
+                "description": "Departure from your place, arrival at your destination — no changes, no transfers."
+              },
+              {
+                "nom": "Air-conditioned saloon or van",
+                "description": "The vehicle suited to the number of passengers and your luggage, up to seven seats."
+              },
+              {
+                "nom": "Quote in advance",
+                "description": "A clear price, agreed before departure, with no surprise on arrival."
+              },
+              {
+                "nom": "Dedicated driver",
+                "description": "A professional driver for a calm trip, day or night."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "How it works",
+            "titre": "Arranging your trip",
+            "items": [
+              {
+                "titre": "You describe the trip",
+                "texte": "Departure town, destination, date, time and number of passengers."
+              },
+              {
+                "titre": "Clear quote",
+                "texte": "We set a fixed price based on the distance and the chosen vehicle."
+              },
+              {
+                "titre": "On the road",
+                "texte": "The driver collects you at the agreed time and takes you to your destination."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "A long trip ahead?",
+            "sousTitre": "Describe your journey: we'll put together a quote quickly.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tarifs",
+      "label": "Fares",
+      "meta": {
+        "title": "Taxi fares from Montpellier — prices, distances & times | Taxi Excellence",
+        "description": "Taxi fare grid from Montpellier Saint-Roch station: day and night prices, estimated distances and travel times to Agde, Béziers, Nîmes, Marseille, Lyon and the airports. Clear flat rates, quote from Gigean and the Thau basin.",
+        "keywords": [
+          "taxi price Montpellier",
+          "taxi fare Saint-Roch station",
+          "flat rate taxi Montpellier airport",
+          "taxi price Montpellier Marseille",
+          "taxi fare Montpellier Nîmes",
+          "night taxi fare Montpellier",
+          "taxi price Béziers",
+          "taxi quote Gigean"
+        ]
+      },
+      "service": {
+        "name": "Long-distance taxi flat rates",
+        "description": "Indicative taxi flat rates from Montpellier Saint-Roch station to the main destinations in the region and beyond.",
+        "serviceType": "Taxi flat rates",
+        "priceFrom": 65
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Fares",
+            "titre": "Estimate the price of your trips",
+            "intro": "Clear flat rates, known in advance: check our fares for the main destinations from Montpellier, or request a tailored quote from Gigean and the Thau basin.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Fares" }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "grilleTarifs",
+          "content": {
+            "eyebrow": "Fare grid",
+            "titre": "Prices, distances and travel times",
+            "intro": "Indicative flat rates for the main destinations, with estimated distance and travel time. For a departure from Gigean, the Thau basin or any other address, request your quote.",
+            "origine": "From Montpellier Saint-Roch station",
+            "colonnes": {
+              "destination": "Destination",
+              "jour": "Day rate (7am–7pm)",
+              "nuit": "Night rate (7pm–7am, Sun. & holidays)",
+              "distance": "Distance",
+              "duree": "Estimated time"
+            },
+            "lignes": [
+              { "destination": "Agde", "jour": 140, "nuit": 185, "distance": "64 km", "duree": "50 min" },
+              { "destination": "Aigues-Mortes", "jour": 80, "nuit": 110, "distance": "34 km", "duree": "40 min" },
+              { "destination": "Alès", "jour": 165, "nuit": 235, "distance": "82 km", "duree": "1h20" },
+              { "destination": "Avignon", "jour": 190, "nuit": 275, "distance": "95 km", "duree": "1h15" },
+              { "destination": "Béziers", "jour": 150, "nuit": 210, "distance": "71 km", "duree": "55 min" },
+              { "destination": "Béziers airport", "jour": 145, "nuit": 190, "distance": "67 km", "duree": "55 min" },
+              { "destination": "Cap d'Agde", "jour": 145, "nuit": 190, "distance": "67 km", "duree": "55 min" },
+              { "destination": "Carcassonne", "jour": 310, "nuit": 420, "distance": "151 km", "duree": "1h30" },
+              { "destination": "Clermont-l'Hérault", "jour": 85, "nuit": 125, "distance": "45 km", "duree": "55 min" },
+              { "destination": "Ganges", "jour": 100, "nuit": 140, "distance": "45 km", "duree": "55 min" },
+              { "destination": "La Grande-Motte", "jour": 65, "nuit": 85, "distance": "25 km", "duree": "30 min" },
+              { "destination": "La Jonquera (Spain)", "jour": 390, "nuit": 485, "distance": "189 km", "duree": "1h55" },
+              { "destination": "Lamalou-les-Bains", "jour": 175, "nuit": 245, "distance": "85 km", "duree": "1h30" },
+              { "destination": "Le Grau-du-Roi", "jour": 80, "nuit": 110, "distance": "34 km", "duree": "40 min" },
+              { "destination": "Le Vigan", "jour": 135, "nuit": 185, "distance": "63 km", "duree": "1h10" },
+              { "destination": "Lodève", "jour": 115, "nuit": 165, "distance": "56 km", "duree": "50 min" },
+              { "destination": "Lyon airport", "jour": 620, "nuit": 730, "distance": "317 km", "duree": "3h10" },
+              { "destination": "Lyon centre", "jour": 600, "nuit": 720, "distance": "304 km", "duree": "3h" },
+              { "destination": "Marseille airport", "jour": 310, "nuit": 400, "distance": "150 km", "duree": "1h45" },
+              { "destination": "Marseille centre", "jour": 330, "nuit": 445, "distance": "168 km", "duree": "1h50" },
+              { "destination": "Mende", "jour": 390, "nuit": 550, "distance": "198 km", "duree": "2h25" },
+              { "destination": "Millau", "jour": 225, "nuit": 325, "distance": "115 km", "duree": "1h30" },
+              { "destination": "Narbonne", "jour": 195, "nuit": 270, "distance": "95 km", "duree": "1h05" },
+              { "destination": "Nice", "jour": 610, "nuit": 820, "distance": "324 km", "duree": "3h30" },
+              { "destination": "Nice airport", "jour": 600, "nuit": 810, "distance": "319 km", "duree": "3h30" },
+              { "destination": "Nîmes", "jour": 110, "nuit": 155, "distance": "54 km", "duree": "45 min" },
+              { "destination": "Nîmes airport", "jour": 125, "nuit": 165, "distance": "60 km", "duree": "50 min" },
+              { "destination": "Paris", "jour": 1450, "nuit": 1650, "distance": "748 km", "duree": "7h" },
+              { "destination": "Pézenas", "jour": 130, "nuit": 185, "distance": "63 km", "duree": "45 min" },
+              { "destination": "Perpignan airport", "jour": 310, "nuit": 420, "distance": "152 km", "duree": "1h35" },
+              { "destination": "Perpignan centre", "jour": 320, "nuit": 425, "distance": "156 km", "duree": "1h40" },
+              { "destination": "Port-Camargue / Espiguette", "jour": 90, "nuit": 120, "distance": "38 km", "duree": "45 min" },
+              { "destination": "Saint-Affrique", "jour": 245, "nuit": 345, "distance": "125 km", "duree": "1h35" },
+              { "destination": "Sète (via A9)", "jour": 80, "nuit": 110, "distance": "37 km", "duree": "40 min" },
+              { "destination": "Sommières", "jour": 75, "nuit": 100, "distance": "35 km", "duree": "30 min" },
+              { "destination": "Saintes-Maries-de-la-Mer", "jour": 130, "nuit": 175, "distance": "62 km", "duree": "1h10" },
+              { "destination": "Saint-Guilhem-le-Désert", "jour": 100, "nuit": 140, "distance": "48 km", "duree": "45 min" },
+              { "destination": "Toulouse", "jour": 500, "nuit": 670, "distance": "245 km", "duree": "2h25" },
+              { "destination": "Toulouse airport", "jour": 510, "nuit": 675, "distance": "253 km", "duree": "2h30" },
+              { "destination": "Uzès", "jour": 165, "nuit": 235, "distance": "82 km", "duree": "1h15" }
+            ],
+            "note": "* Indicative rates from Montpellier Saint-Roch station, subject to change depending on traffic, luggage, waiting time and the number of passengers. Local rides (Gigean and the Thau basin) follow the metered official taxi tariff. A firm flat rate is confirmed before each departure.",
+            "cta": {
+              "label": "Request an exact quote",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "A specific trip to price?",
+            "sousTitre": "Tell us your pick-up and your destination: we confirm a firm flat rate before departure, 24/7.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "a-propos",
+      "label": "About",
+      "meta": {
+        "title": "About — Taxi Excellence, your taxi in Gigean since 2013",
+        "description": "Taxi Excellence, your taxi driver in Gigean and the Thau basin since 2013: punctuality, spotless Mercedes vehicles and attentiveness. Transfers, medical transport, tours and long distance."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "About",
+            "titre": "A trusted taxi, rooted in its region",
+            "intro": "Since 2013, Taxi Excellence has driven the residents and visitors of the Thau basin with the same commitment to service.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "About" }
+            ],
+            "ctaPrimaire": {
+              "label": "Book my ride",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Our story",
+            "titre": "Service above all",
+            "paragraphes": [
+              "Taxi Excellence was born in Gigean from a simple idea: to offer a taxi you can rely on, at any hour. Since 2013, we have driven the residents of the Thau basin and their visitors, for the everyday ride as well as the big occasions.",
+              "What sets us apart is attentiveness: a clean, air-conditioned Mercedes, kept punctuality, smooth driving and a driver who listens. Whether you're off to the airport, a medical appointment or an excursion, you're in good hands.",
+              "Rooted in the region, we know its roads, its timetables and its shortcuts. It's this local knowledge, put at each client's service, that makes the difference."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/taxi-excellence/montpellier-nuit.jpg",
+              "alt": "Black Mercedes saloon of Taxi Excellence in Montpellier at sunset"
+            },
+            "imageRatio": "1/1"
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Our commitments",
+            "titre": "What you can count on",
+            "items": [
+              {
+                "nom": "Punctuality",
+                "description": "We plan for the time, the traffic and the parking so we're there on time, every time."
+              },
+              {
+                "nom": "Comfort & cleanliness",
+                "description": "An air-conditioned Mercedes saloon and van, serviced and spotless, for every trip."
+              },
+              {
+                "nom": "Attentiveness & discretion",
+                "description": "An attentive, patient driver who respects your peace and quiet."
+              },
+              {
+                "nom": "Transparent prices",
+                "description": "A flat rate known in advance on transfers, a clear quote on long distance and tours."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Let's hit the road together",
+            "sousTitre": "Book your ride in Gigean and the Thau basin, 24/7.",
+            "ctaPrimaire": {
+              "label": "Book my ride",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Contact & booking — Taxi Excellence Gigean, 24/7",
+        "description": "Book your taxi in Gigean and the Thau basin: by phone or WhatsApp 24/7, or via the form. Transfers, medical transport, sightseeing tours and long distance."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Contact & booking",
+            "titre": "Book your ride",
+            "intro": "Call us at any hour or send your request: we confirm quickly, 24/7.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Contact" }
+            ]
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Booking request",
+            "intro": "Tell us your trip (pick-up, destination, date and time) and the number of passengers. We'll confirm the pick-up.",
+            "form": true,
+            "formMode": "demande-intervention",
+            "telephone": "07 66 90 50 99",
+            "whatsapp": "07 66 90 50 99",
+            "email": "benaissa.abdelkader@orange.fr",
+            "adresse": "Gigean (34770) · Hérault",
+            "horaires": [
+              { "jour": "Mon – Sun", "heures": "24/7" }
+            ],
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=3.66%2C43.48%2C3.78%2C43.53&layer=mapnik&marker=43.5023%2C3.7188",
+            "services": [
+              "Station / airport transfer",
+              "Medical transport",
+              "Sightseeing tour",
+              "Long distance",
+              "Local ride",
+              "Other / not sure"
+            ],
+            "villes": [
+              "Gigean",
+              "Poussan",
+              "Mèze",
+              "Balaruc-les-Bains",
+              "Frontignan",
+              "Sète",
+              "Montpellier",
+              "Saint-Jean-de-Védas",
+              "Fabrègues",
+              "Béziers",
+              "Agde",
+              "Pézenas"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    }
+  ]
+}

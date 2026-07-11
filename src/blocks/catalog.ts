@@ -7,6 +7,7 @@ import { Services } from "./Services";
 import { Etapes } from "./Etapes";
 import { Simulateur } from "./Simulateur";
 import { Tarifs } from "./Tarifs";
+import { GrilleTarifs } from "./GrilleTarifs";
 import { ServiceQuoteBuilder } from "./ServiceQuoteBuilder";
 import { Produits } from "./Produits";
 import { Boutique } from "./Boutique";
@@ -38,6 +39,7 @@ export const blockRegistry: Record<string, ComponentType<BlockComponentProps<any
   etapes: Etapes,
   simulateur: Simulateur,
   tarifs: Tarifs,
+  grilleTarifs: GrilleTarifs,
   serviceQuoteBuilder: ServiceQuoteBuilder,
   produits: Produits,
   boutique: Boutique,

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/Button";
 import { telHrefIntl, telIndicatif, telNeedsIndicatif, withBase } from "@/lib/utils";
 import { findBlock } from "@/lib/pages";
 import { resolveHeroSecondary } from "@/lib/hero-cta";
+import { PaymentMarks } from "@/components/ui/PaymentMarks";
 import { PrestigeContainer } from "../ui/Container";
 
 /**
@@ -127,6 +128,17 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
               </div>
             ))}
           </dl>
+        )}
+
+        {c.payments && c.payments.length > 0 && (
+          <div className="mt-9 flex flex-wrap items-center gap-x-4 gap-y-3">
+            {c.paymentsLabel && (
+              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.24em] text-white/50">
+                {c.paymentsLabel}
+              </span>
+            )}
+            <PaymentMarks ids={c.payments} />
+          </div>
         )}
       </PrestigeContainer>
     </header>

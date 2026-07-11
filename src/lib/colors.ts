@@ -206,9 +206,26 @@ function accentScale(accentHex: string): Record<string, string> {
   };
 }
 
-/** Neutres tokenisés, légèrement teintés (cohérence) — ton warm/cool/auto. */
-function neutralScale(brandHex: string, tone?: "warm" | "cool"): Record<string, string> {
+/** Neutres tokenisés, légèrement teintés (cohérence) — ton warm/cool/dark/auto. */
+function neutralScale(brandHex: string, tone?: "warm" | "cool" | "dark"): Record<string, string> {
   const brandH = hexToOklch(brandHex).H;
+  // Registre SOMBRE : fonds near-black (calés sur le void des packs nocturnes) +
+  // encre claire légèrement chaude. Contraste AA garanti (ink clair sur near-black
+  // ≫ 4.5:1). Les échelles brand/accent (générées ailleurs) restent inchangées :
+  // la marque s'exprime dans l'or/la couleur, l'infrastructure de lecture est noire.
+  if (tone === "dark") {
+    return {
+      "--ink": "#f5f2ec",
+      "--ink-soft": "#cbc7bf",
+      "--muted": "#9c978e",
+      "--muted-2": "#736e65",
+      "--bg": "#0a0b0d",
+      "--alt": "#101217",
+      "--surface": "#15171d",
+      "--surface-2": "#1c1f27",
+      "--border": "#2b2f38",
+    };
+  }
   const H = tone === "warm" ? 70 : tone === "cool" ? 250 : brandH;
   const n = (L: number, C: number) => oklchToHex({ L, C, H });
   return {
