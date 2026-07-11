@@ -23,7 +23,8 @@
     "media:upload": "node scripts/upload-blob.mjs",
     "media:migrate": "node scripts/migrate-blob-to-scaleway.mjs",
     "media:migrate:apply": "node scripts/migrate-blob-to-scaleway.mjs --apply",
-    "dossier:get": "node scripts/get-dossier.mjs"
+    "dossier:get": "node scripts/get-dossier.mjs",
+    "canonicals:check": "node scripts/check-canonicals.mjs"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1084.0",

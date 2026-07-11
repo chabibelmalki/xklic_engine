@@ -47,6 +47,79 @@ function pageBlock<T>(page: ResolvedPage, type: string): T | null {
   return null;
 }
 
+// ---------------------------------------------------------------------------
+// Normalisation schema.org des horaires et de l'adresse (le config porte des
+// chaînes d'AFFICHAGE françaises ; Google exige les formats normalisés, sinon
+// la donnée est ignorée — constaté sur toute la flotte).
+// ---------------------------------------------------------------------------
+
+const DAY_MAP: Record<string, string> = {
+  lun: "Mo", lundi: "Mo",
+  mar: "Tu", mardi: "Tu",
+  mer: "We", mercredi: "We",
+  jeu: "Th", jeudi: "Th",
+  ven: "Fr", vendredi: "Fr",
+  sam: "Sa", samedi: "Sa",
+  dim: "Su", dimanche: "Su",
+};
+
+function schemaDay(raw: string): string | null {
+  return DAY_MAP[raw.trim().toLowerCase().replace(/\.$/, "")] ?? null;
+}
+
+/** "7h" → "07:00", "8h30" → "08:30". `null` si imprononçable. */
+function schemaTime(raw: string): string | null {
+  const m = raw.trim().match(/^(\d{1,2})\s*[h:]\s*(\d{2})?$/i);
+  if (!m) return null;
+  const h = Number(m[1]);
+  if (h > 24) return null;
+  return `${String(h).padStart(2, "0")}:${m[2] ?? "00"}`;
+}
+
+/**
+ * Convertit UNE ligne d'horaires du bloc contact (`{jour, heures}` en français
+ * d'affichage) vers le format `openingHours` de schema.org (« Mo-Sa
+ * 08:30-18:00 »). Ligne non parsable → `null` (on OMET : une valeur invalide
+ * est ignorée par Google et pollue les tests de résultats enrichis).
+ */
+function schemaOpeningHours(jour: string, heures: string): string | null {
+  const parts = jour.split(/[–—-]|au|à/i).map(schemaDay);
+  if (!parts.length || parts.some((d) => d === null)) return null;
+  const days = parts.length > 1 ? `${parts[0]}-${parts[parts.length - 1]}` : parts[0];
+  const h = heures.trim();
+  // « 24h/24 » (± « 7j/7 ») → jour seul = ouvert toute la journée (convention schema.org).
+  if (/24\s*h?\s*\/\s*24/i.test(h)) return days as string;
+  if (/ferm/i.test(h)) return null;
+  const times = h.split(/[–—-]/).map(schemaTime);
+  if (times.length !== 2 || times.some((t) => t === null)) return null;
+  return `${days} ${times[0]}-${times[1]}`;
+}
+
+/**
+ * PostalAddress depuis la chaîne d'affichage `contact.adresse` : code postal
+ * extrait s'il est présent ; `streetAddress` UNIQUEMENT si la chaîne ressemble
+ * à une vraie voie postale (numéro + type de voie). Les accroches marketing
+ * (« 22 communes autour de Marseille ») ou les libellés de zone (« Gigean
+ * (34770) · Hérault ») ne sont PAS des adresses : pour un service-area
+ * business, `addressLocality` suffit.
+ */
+function postalAddress(config: SiteConfig, adresse?: string): Record<string, unknown> {
+  const out: Record<string, unknown> = {
+    "@type": "PostalAddress",
+    addressLocality: config.seo.ville,
+    addressCountry: "FR",
+  };
+  if (!adresse) return out;
+  const cp = adresse.match(/\b(\d{5})\b/);
+  if (cp) out.postalCode = cp[1];
+  const isVoie =
+    /^\s*\d+\s*(bis|ter)?\s*,?\s+(rue|av(enue)?\.?|bd\.?|boulevard|pl(ace)?\.?|chemin|ch\.?|impasse|imp\.?|all[ée]e|all\.?|route|rte\.?|quai|cours|traverse|passage|square|lot(issement)?|z[ai]c?\b)/i.test(
+      adresse,
+    );
+  if (isVoie) out.streetAddress = adresse;
+  return out;
+}
+
 /**
  * `areaServed` partagé par LocalBusiness et Service : les villes de la zone
  * (mode ≠ "aucune"), sinon la ville unique du SEO.
@@ -76,12 +149,7 @@ export function buildJsonLd(config: SiteConfig, page?: ResolvedPage): object[] {
     url: origin,
     image: absUrl(origin, heroImage(config)),
     logo: absUrl(origin, config.branding.logo),
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: config.seo.ville,
-      addressCountry: "FR",
-      ...(contact?.adresse ? { streetAddress: contact.adresse } : {}),
-    },
+    address: postalAddress(config, contact?.adresse),
   };
 
   if (contact?.telephone) business.telephone = contact.telephone;
@@ -105,7 +173,13 @@ export function buildJsonLd(config: SiteConfig, page?: ResolvedPage): object[] {
   // Fiche Google (lien réseau « google ») -> hasMap : relie l'entité du site à sa
   // fiche Google Business / Maps (signal local fort, source des vraies étoiles).
   const googleProfile = resolveSocials(config).find((s) => s.platform === "google");
-  if (googleProfile) business.hasMap = googleProfile.href;
+  if (googleProfile) {
+    business.hasMap = googleProfile.href;
+  } else if (config.googleReviewUrl) {
+    // Repli : le lien « laissez un avis » (g.page/r/…/review) pointe la même
+    // fiche — on retire le segment /review pour relier l'entité à son profil.
+    business.hasMap = config.googleReviewUrl.replace(/\/review\/?$/, "");
+  }
 
   // Zone d'intervention -> areaServed (helper partagé avec Service)
   business.areaServed = areaServed(config);
@@ -117,9 +191,14 @@ export function buildJsonLd(config: SiteConfig, page?: ResolvedPage): object[] {
   // sans aggregateRating ». Les vraies étoiles viennent du profil Google Business.
   // Les témoignages restent affichés via le bloc Avis (UI), pas en structured data.
 
-  // Horaires
+  // Horaires — normalisés au format schema.org (« Mo-Sa 08:30-18:00 ») ; les
+  // lignes non parsables sont omises (une chaîne d'affichage brute est ignorée
+  // par Google). L'UI, elle, continue d'afficher les chaînes du config.
   if (contact?.horaires?.length) {
-    business.openingHours = contact.horaires.map((h) => `${h.jour} ${h.heures}`);
+    const hours = contact.horaires
+      .map((h) => schemaOpeningHours(h.jour, h.heures))
+      .filter((v): v is string => v !== null);
+    if (hours.length) business.openingHours = hours;
   }
 
   const graph: object[] = [business];
@@ -192,8 +271,11 @@ export function buildJsonLd(config: SiteConfig, page?: ResolvedPage): object[] {
     });
   }
 
-  // FAQPage : la PAGE courante prime ; sinon repli site-wide (accueil / one-pager).
-  const faq = (page && pageBlock<FaqContent>(page, "faq")) || block<FaqContent>(config, "faq");
+  // FAQPage : UNIQUEMENT la FAQ de la page courante (guidelines Google : le
+  // contenu balisé doit être VISIBLE sur la page). L'ancien repli site-wide
+  // dupliquait la FAQ de l'accueil en structured data sur ~12 URLs par site.
+  // Le repli global ne sert plus qu'aux one-pagers rendus sans `page`.
+  const faq = page ? pageBlock<FaqContent>(page, "faq") : block<FaqContent>(config, "faq");
   if (faq && faq.items.length) {
     graph.push({
       "@context": "https://schema.org",

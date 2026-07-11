@@ -101,15 +101,26 @@ function pageTitle(config: SiteConfig, page: ResolvedPage): string {
   const { meta, seo } = effective(config, page);
   const nom = config.entreprise.nom;
   if (page.isHome) {
-    if (meta.title) return meta.title;
+    // La home porte TOUJOURS la marque (c'est la page d'entité) : préfixée si
+    // le meta.title du config ne la contient pas déjà.
+    if (meta.title) {
+      return meta.title.toLowerCase().includes(nom.toLowerCase())
+        ? meta.title
+        : `${nom} — ${meta.title}`;
+    }
     const t = heroTitleOf(page);
     const base = t ? `${nom} — ${t}` : nom;
     return base.includes(seo.ville) ? base : `${base} à ${seo.ville}`;
   }
-  // Pages intérieures.
-  if (meta.title) return `${meta.title} — ${nom}`;
+  // Pages intérieures. Suffixe de marque ajouté UNIQUEMENT si le title ne
+  // porte pas déjà le nom (sinon « … — Marque — Marque », tronqué en SERP).
+  if (meta.title) {
+    return meta.title.toLowerCase().includes(nom.toLowerCase())
+      ? meta.title
+      : `${meta.title} — ${nom}`;
+  }
   const label = heroTitleOf(page) ?? page.label;
-  const base = `${label} — ${nom}`;
+  const base = label.toLowerCase().includes(nom.toLowerCase()) ? label : `${label} — ${nom}`;
   return base.includes(seo.ville) ? base : `${base} à ${seo.ville}`;
 }
 

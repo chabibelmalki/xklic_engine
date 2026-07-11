@@ -47,6 +47,28 @@ function normalize(parsed: SiteConfig, slug: string): SiteConfig {
   return parsed;
 }
 
+/**
+ * Champs TECHNIQUES / d'identité TOUJOURS hérités de `config.json` par les
+ * variantes de langue — jamais lus depuis un `<locale>.json`. Un fichier de
+ * locale traduit du CONTENU ; s'il divergeait sur ces champs, la variante
+ * casserait le canonique (bug historique : `customDomains` absent des locales
+ * → canonical/hreflang des pages EN/AR émis sur `<slug>.xklic.com`), la
+ * protection des formulaires ou l'exclusion d'index.
+ */
+function inheritTechnical(variant: SiteConfig, base: SiteConfig): SiteConfig {
+  variant.customDomains = base.customDomains;
+  variant.domain = base.domain;
+  variant.demo = base.demo;
+  variant.noindexSite = base.noindexSite;
+  variant.geo = base.geo;
+  variant.forms = base.forms;
+  variant.googleReviewUrl = base.googleReviewUrl;
+  variant.social = base.social;
+  variant.theme = base.theme;
+  variant.stylePack = base.stylePack;
+  return variant;
+}
+
 function parseFile(fullPath: string): SiteConfig {
   const raw = fs.readFileSync(fullPath, "utf8");
   try {
@@ -100,7 +122,7 @@ function readAll(): Map<string, SiteEntry> {
         );
         continue;
       }
-      byLocale.set(locale, normalize(parseFile(path.join(dir, file)), slug));
+      byLocale.set(locale, inheritTechnical(normalize(parseFile(path.join(dir, file)), slug), base));
     }
 
     map.set(slug, { default: def, languages, byLocale });

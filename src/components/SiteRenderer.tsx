@@ -87,6 +87,18 @@ export async function SiteRenderer({
       dir={localeDir(locale)}
       className="flex min-h-screen flex-col bg-bg text-ink"
     >
+      {/* Le layout racine (partagé moteur/tenants) fige <html lang="fr"> ; la
+          locale n'y est pas connaissable sans rendre tout dynamique. On aligne
+          lang/dir de <html> côté client pour les variantes non-FR (lecteurs
+          d'écran + crawlers exécutant le JS) — le signal serveur principal
+          reste hreflang + lang/dir de ce wrapper. */}
+      {htmlLang(locale) !== "fr" && (
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `document.documentElement.lang=${JSON.stringify(htmlLang(locale))};document.documentElement.dir=${JSON.stringify(localeDir(locale))};`,
+          }}
+        />
+      )}
       <JsonLd data={buildJsonLd(config, current)} />
       <Header
         config={config}
