@@ -19,6 +19,10 @@ npm run dev      # predev (génère le manifeste) puis next dev
 npm run build    # prebuild (manifeste) puis next build
 npm run lint     # eslint
 npx tsc --noEmit # typecheck (utilisé après édition d'une config/d'un bloc)
+
+# Garde-fous SEO du parc (audit 2026-07) — à lancer après toute édition de config
+npm run dedup:check       # ZÉRO séquence de 9 mots partagée entre deux sites (exit 1 sinon)
+npm run canonicals:check  # post-deploy : chaque site × langue annonce son bon domaine
 ```
 
 ## Comment un site client est rendu
@@ -28,6 +32,12 @@ npx tsc --noEmit # typecheck (utilisé après édition d'une config/d'un bloc)
   premier** : `["client.fr","www.client.fr"]`), `theme`, `stylePack`, `branding`
   (`logo`, `icon`, couleurs…), `social[]`, `googleReviewUrl`, `entreprise{}`, le
   contenu des sections, etc. Voir `config/sites/parfait-menage-26/` comme référence.
+- **Sites multilingues** : les `<locale>.json` portent le CONTENU traduit
+  uniquement. Les champs techniques (`customDomains`, `domain`, `demo`,
+  `noindexSite`, `geo`, `forms`, `googleReviewUrl`, `social`, `theme`,
+  `stylePack`) sont **hérités de `config.json`** par le loader
+  (`inheritTechnical`, `src/lib/config-loader.ts`) — ne jamais les y répéter.
+  Toute modif de `config.json` se réplique traduite dans CHAQUE locale.
 - **`theme` et `stylePack` sont deux axes indépendants** à combiner librement
   (thème = palette via variables CSS ; stylePack = parti pris visuel).
 - **Rendu** : un `SiteRenderer` assemble des **blocs** depuis un catalogue
@@ -151,5 +161,11 @@ du dossier parent).
 ## Autres docs (statut)
 
 - **`README.md`** — architecture du moteur (rendu, blocs, thèmes, déploiement). **Vivant.**
-- **`NEWCLIENT.md`** — playbook de création de la config d'un site. **Vivant** (compléter
-  par : données via `dossier:get`, domaine perso via `customDomains` + `onboard`).
+- **`NEWCLIENT.md`** — playbook de création d'un site : conventions, checklist SEO
+  du parc (leçons de l'audit 2026-07) et **definition of done** (validations
+  obligatoires dont `dedup:check`). **Vivant** — à suivre pour TOUT nouveau site.
+- **`MODIFCLIENT.md`** — les 6 réflexes pour **modifier** un site existant sans
+  créer de dette (i18n complet, unicité au script, bornes meta, maillage, zéro
+  fait inventé, valider→déployer→vérifier live) + pièges par cas fréquent
+  (changement de prix, prospect→client, etc.). **Vivant** — à suivre pour TOUTE
+  modification d'un site en prod.

@@ -44,17 +44,17 @@
     "lng": 3.8767
   },
   "meta": {
-    "title": "TAXI CONCEPT — Taxi premium à Montpellier & dans tout l'Hérault, 24h/24",
-    "description": "Taxi premium à Montpellier et dans tout l'Hérault : trajets, transferts gares & aéroports (Montpellier, Marseille, Lyon, Perpignan), longue distance, van 1 à 7 places, PMR, VIP. Flotte climatisée, réservation 24h/24, 7j/7.",
+    "title": "TAXI CONCEPT — Taxi à Montpellier 24h/24",
+    "description": "Taxi à Montpellier 24h/24 : courses en ville, aéroports et gares, longue distance. Berline, van 7 places, PMR, colis : le bon véhicule à chaque trajet.",
     "keywords": [
       "taxi Montpellier",
-      "taxi premium Montpellier",
-      "transfert aéroport Montpellier",
-      "taxi gare Montpellier Saint-Roch",
-      "taxi Hérault 24h/24",
+      "taxi 24h/24 Montpellier",
       "taxi van 7 places Montpellier",
       "taxi PMR Montpellier",
-      "taxi longue distance Montpellier"
+      "transfert aéroport Montpellier",
+      "taxi gare Saint-Roch Montpellier",
+      "transport colis taxi Montpellier",
+      "chauffeur VIP Montpellier"
     ]
   },
   "forms": {
@@ -71,37 +71,37 @@
           "content": {
             "image": {
               "url": "/sites/taxi-concept/hero-nuit.webp",
-              "alt": "Berline noire de nuit sur une avenue mouillée — taxi premium à Montpellier"
+              "alt": "Berline noire de nuit sur une avenue de Montpellier"
             },
-            "eyebrow": "Taxi premium · Montpellier & Hérault",
-            "titre": "Votre chauffeur,",
-            "titreAccent": "à toute heure",
+            "eyebrow": "Taxi à Montpellier · 24h/24",
+            "titre": "Un taxi pour chaque besoin,",
+            "titreAccent": "à Montpellier, 24h/24",
             "showPhone": true,
-            "accroche": "Trajets, transferts gares & aéroports, longue distance : TAXI CONCEPT vous conduit à Montpellier et dans tout l'Hérault, dans une flotte climatisée jusqu'à 7 places. Réservation 24h/24, 7j/7.",
+            "accroche": "Berline pour filer à un rendez-vous, van 7 places pour toute la famille, véhicule PMR, pli urgent à livrer : dites-nous où vous allez, nous envoyons le véhicule qu'il faut. Jour et nuit, dans Montpellier et dans l'Hérault.",
             "trust": [
               {
-                "label": "24 H/24 · 7 jours sur 7",
+                "label": "24h/24 · 7j/7, toute l'année",
                 "icone": "Clock"
               },
               {
-                "label": "7 places · Van & monospace",
+                "label": "Berline · van 7 places · PMR",
                 "icone": "Users"
               },
               {
-                "label": "34 · Tout l'Hérault",
+                "label": "Montpellier · tout l'Hérault",
                 "icone": "MapPin"
               },
               {
-                "label": "4 aéroports · Transferts directs",
+                "label": "Aéroports & gares au forfait",
                 "icone": "Plane"
               }
             ],
             "ctaPrimaire": {
-              "label": "Réserver une course",
+              "label": "Commander un taxi",
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "Nos prestations",
+              "label": "Toute la flotte",
               "href": "/services"
             }
           }
@@ -109,55 +109,55 @@
         {
           "type": "services",
           "content": {
-            "eyebrow": "Nos prestations",
-            "titre": "Chaque trajet, à la hauteur",
-            "intro": "Du transfert aéroport au déplacement longue distance, TAXI CONCEPT assure vos courses avec la même exigence, dans une flotte climatisée. Réservation simple, ponctualité garantie.",
+            "eyebrow": "La flotte et les services",
+            "titre": "Quel que soit le trajet, on a le véhicule",
+            "intro": "Sept services, une règle : vous simplifier le déplacement. Chaque prestation a sa page — déroulé, véhicules, réponses à vos questions. Un doute ? Appelez, on vous oriente en une minute.",
             "items": [
               {
                 "nom": "Trajets taxi",
-                "description": "Courses en ville et toutes distances à Montpellier et dans l'Hérault, de jour comme de nuit.",
+                "description": "La course du quotidien dans Montpellier et l'Hérault : au compteur, de jour comme de nuit.",
                 "href": "/trajets-taxi",
                 "priceHint": "Tarif préfectoral",
                 "icone": "Car"
               },
               {
                 "nom": "Transferts gares & aéroports",
-                "description": "Liaisons directes vers Montpellier, Marseille, Lyon et Perpignan — gares et aéroports, avec suivi des horaires.",
+                "description": "Saint-Roch, Montpellier-Méditerranée, mais aussi Marseille, Lyon ou Perpignan.",
                 "href": "/transferts-gares-aeroports",
                 "priceHint": "Forfait fixe",
                 "icone": "Plane"
               },
               {
                 "nom": "Longue distance",
-                "description": "Déplacements nationaux, toutes destinations, dans le confort d'une berline ou d'un van climatisé.",
+                "description": "Partout en France, en berline ou en van, prix annoncé avant de partir.",
                 "href": "/longue-distance",
                 "priceHint": "Sur devis",
                 "icone": "Route"
               },
               {
                 "nom": "Transport de colis & plis",
-                "description": "Acheminement urgent de colis et documents, en toute fiabilité, dans l'Hérault et au-delà.",
+                "description": "Votre envoi part immédiatement, seul dans le véhicule, remis en main propre.",
                 "href": "/transport-colis",
                 "priceHint": "Sur devis",
                 "icone": "Package"
               },
               {
                 "nom": "Van & monospace 1 à 7 places",
-                "description": "Groupes, familles et bagages : un véhicule spacieux et climatisé, jusqu'à 7 personnes.",
+                "description": "Sept places et un grand coffre pour voyager groupés, bagages compris.",
                 "href": "/van-monospace",
                 "priceHint": "1 à 7 personnes",
                 "icone": "Users"
               },
               {
                 "nom": "Transport PMR",
-                "description": "Véhicule adapté aux personnes à mobilité réduite, avec un accompagnement attentif.",
+                "description": "Un véhicule adapté et un chauffeur qui prend le temps, sur réservation.",
                 "href": "/transport-pmr",
                 "priceHint": "Sur réservation",
                 "icone": "Accessibility"
               },
               {
                 "nom": "Service VIP & mise à disposition",
-                "description": "Chauffeur dédié pour vos rendez-vous, événements et déplacements professionnels.",
+                "description": "Un chauffeur qui reste à votre disposition, à l'heure ou à la journée.",
                 "href": "/service-vip",
                 "priceHint": "Sur devis",
                 "icone": "Crown"
@@ -173,8 +173,8 @@
           "type": "zone",
           "mode": "carte",
           "content": {
-            "titre": "Montpellier & tout l'Hérault",
-            "intro": "Basés à Montpellier, nous desservons l'ensemble du département de l'Hérault (34), 24h/24 et 7j/7. Vérifiez votre commune ou appelez-nous : nous étudions chaque trajet.",
+            "titre": "De Montpellier, on rayonne sur tout l'Hérault",
+            "intro": "Notre base est à Montpellier ; nos taxis couvrent la métropole et l'ensemble du département, à toute heure. Votre commune n'est pas listée ? Appelez : on trouve une solution.",
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=2.55%2C43.20%2C4.20%2C43.95&layer=mapnik&marker=43.6108%2C3.8767",
             "zones": [
               {
@@ -198,7 +198,7 @@
                 ]
               },
               {
-                "region": "Bassin de Thau & littoral",
+                "region": "Sète & littoral ouest",
                 "principale": "Sète",
                 "villes": [
                   "Sète",
@@ -212,7 +212,7 @@
                 ]
               },
               {
-                "region": "Est & Petite Camargue",
+                "region": "Lunel & littoral est",
                 "principale": "Lunel",
                 "villes": [
                   "Lunel",
@@ -225,7 +225,7 @@
                 ]
               },
               {
-                "region": "Ouest Hérault",
+                "region": "Béziers & ouest Hérault",
                 "principale": "Béziers",
                 "villes": [
                   "Béziers",
@@ -236,7 +236,7 @@
                 ]
               },
               {
-                "region": "Nord & arrière-pays",
+                "region": "Cœur d'Hérault & arrière-pays",
                 "principale": "Clermont-l'Hérault",
                 "villes": [
                   "Clermont-l'Hérault",
@@ -255,7 +255,7 @@
           "variant": "carrousel",
           "content": {
             "eyebrow": "Avis clients",
-            "titre": "Ils ont voyagé avec nous",
+            "titre": "Ce que disent nos passagers",
             "compactStars": true,
             "items": [
               {
@@ -293,15 +293,15 @@
               "url": "/sites/taxi-concept/mouvement-nuit.webp",
               "alt": "Trainées de phares dans la ville de nuit"
             },
-            "titre": "Un taxi, à une sonnerie près.",
-            "sousTitre": "Course immédiate ou réservation à l'avance : nous répondons 24h/24, 7j/7, partout dans l'Hérault.",
+            "titre": "Besoin d'un taxi, là, maintenant ?",
+            "sousTitre": "Un appel suffit, à n'importe quelle heure : nous décrochons et nous roulons.",
             "ctaPrimaire": {
-              "label": "Réserver une course",
+              "label": "Commander un taxi",
               "href": "/contact"
             },
             "ctaSecondaire": {
               "label": "Voir la zone desservie",
-              "href": "/#zone"
+              "href": "/zone"
             }
           }
         }
@@ -311,16 +311,16 @@
       "slug": "services",
       "label": "Prestations",
       "meta": {
-        "title": "Prestations — Taxi, transferts aéroport, van & PMR à Montpellier | TAXI CONCEPT",
-        "description": "Trajets taxi, transferts gares & aéroports (Montpellier, Marseille, Lyon, Perpignan), longue distance, colis, van 1 à 7 places, PMR et VIP. Flotte climatisée, 24h/24 dans tout l'Hérault."
+        "title": "Prestations taxi à Montpellier — van, PMR, VIP, colis",
+        "description": "Prestations taxi à Montpellier : course au compteur, transferts gare et aéroport, longue distance, van 7 places, PMR, colis et VIP. Un seul numéro, 24h/24."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Nos prestations",
-            "titre": "Un service de taxi, plusieurs solutions de transport",
-            "intro": "TAXI CONCEPT couvre l'ensemble de vos besoins de déplacement à Montpellier et dans l'Hérault, dans une flotte climatisée jusqu'à 7 places. Chaque prestation a sa page dédiée.",
+            "titre": "Sept façons de vous rendre service",
+            "intro": "Un même numéro, plusieurs véhicules : berline, van 7 places, monospace, véhicule PMR. Parcourez les prestations et choisissez celle qui colle à votre besoin — ou appelez, on vous oriente.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -331,7 +331,7 @@
               }
             ],
             "ctaPrimaire": {
-              "label": "Réserver une course",
+              "label": "Commander un taxi",
               "href": "/contact"
             }
           }
@@ -340,54 +340,54 @@
           "type": "services",
           "content": {
             "eyebrow": "Détail des prestations",
-            "titre": "Ce que nous assurons",
-            "intro": "Cliquez sur une prestation pour le détail : ce qu'elle couvre, comment elle se déroule et les questions fréquentes.",
+            "titre": "À chacun son véhicule",
+            "intro": "Ouvrez la page d'une prestation pour son fonctionnement concret, les véhicules mobilisés et les réponses aux questions qu'on nous pose le plus.",
             "items": [
               {
                 "nom": "Trajets taxi",
-                "description": "Courses en ville et toutes distances, de jour comme de nuit, au tarif préfectoral en vigueur.",
+                "description": "Le taxi du quotidien à Montpellier : compteur au tarif préfectoral, jour et nuit.",
                 "href": "/trajets-taxi",
                 "priceHint": "Tarif préfectoral",
                 "icone": "Car"
               },
               {
                 "nom": "Transferts gares & aéroports",
-                "description": "Montpellier Saint-Roch, aéroport Montpellier-Méditerranée, ainsi que Marseille, Lyon et Perpignan — avec suivi des horaires de train et de vol.",
+                "description": "Montpellier-Méditerranée et Saint-Roch en tête, Marseille, Lyon et Perpignan aussi — horaires de vol et de train surveillés.",
                 "href": "/transferts-gares-aeroports",
                 "priceHint": "Forfait fixe",
                 "icone": "Plane"
               },
               {
                 "nom": "Longue distance",
-                "description": "Trajets nationaux toutes destinations, dans le confort d'une berline ou d'un van climatisé.",
+                "description": "Toute destination en France depuis Montpellier, devis fixé avant le départ.",
                 "href": "/longue-distance",
                 "priceHint": "Sur devis",
                 "icone": "Route"
               },
               {
                 "nom": "Transport de colis & plis urgents",
-                "description": "Acheminement fiable et rapide de colis et documents dans l'Hérault et au-delà.",
+                "description": "Course dédiée pour vos envois pressés : chargé, parti, remis en main propre.",
                 "href": "/transport-colis",
                 "priceHint": "Sur devis",
                 "icone": "Package"
               },
               {
                 "nom": "Van & monospace 1 à 7 places",
-                "description": "Groupes, familles et bagages : un véhicule spacieux et climatisé, jusqu'à 7 personnes.",
+                "description": "Le groupe entier dans un seul véhicule, valises comprises.",
                 "href": "/van-monospace",
                 "priceHint": "1 à 7 personnes",
                 "icone": "Users"
               },
               {
                 "nom": "Transport PMR",
-                "description": "Véhicule adapté aux personnes à mobilité réduite, avec un accompagnement attentif.",
+                "description": "Véhicule aménagé et accompagnement pas à pas, au rythme de chacun.",
                 "href": "/transport-pmr",
                 "priceHint": "Sur réservation",
                 "icone": "Accessibility"
               },
               {
                 "nom": "Service VIP & mise à disposition",
-                "description": "Chauffeur dédié pour vos rendez-vous, événements et déplacements professionnels.",
+                "description": "Chauffeur et véhicule réservés pour vous, à l'heure ou à la journée.",
                 "href": "/service-vip",
                 "priceHint": "Sur devis",
                 "icone": "Crown"
@@ -398,10 +398,10 @@
         {
           "type": "cta",
           "content": {
-            "titre": "Besoin d'un transfert ou d'un chauffeur ?",
-            "sousTitre": "Appelez-nous ou envoyez votre demande : réponse rapide, 24h/24 et 7j/7.",
+            "titre": "Vous hésitez entre deux formules ?",
+            "sousTitre": "Expliquez-nous le trajet : on vous dit tout de suite quel véhicule et quelle formule conviennent.",
             "ctaPrimaire": {
-              "label": "Réserver une course",
+              "label": "Commander un taxi",
               "href": "/contact"
             }
           }
@@ -413,8 +413,8 @@
       "label": "Trajets taxi",
       "navHidden": true,
       "meta": {
-        "title": "Trajets taxi à Montpellier & dans l'Hérault, 24h/24 | TAXI CONCEPT",
-        "description": "Course de taxi à Montpellier et dans tout l'Hérault : trajets en ville et toutes distances, de jour comme de nuit, au tarif préfectoral. Véhicule climatisé, réservation 24h/24.",
+        "title": "Course de taxi à Montpellier — jour et nuit",
+        "description": "Course de taxi dans Montpellier et l'Hérault : prise en charge rapide, compteur au tarif préfectoral, paiement espèces, carte ou virement. 24h/24, 7j/7.",
         "keywords": [
           "taxi Montpellier",
           "course taxi Montpellier",
@@ -424,7 +424,7 @@
       },
       "service": {
         "name": "Trajets taxi",
-        "description": "Courses de taxi en ville et toutes distances à Montpellier et dans l'Hérault, de jour comme de nuit.",
+        "description": "Courses de taxi au compteur dans Montpellier et l'Hérault, de jour comme de nuit, 24h/24.",
         "serviceType": "Course de taxi",
         "priceFrom": "Tarif préfectoral"
       },
@@ -433,8 +433,8 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "Trajets taxi",
-            "titre": "Vos courses à Montpellier et dans l'Hérault",
-            "intro": "Un trajet en ville, un rendez-vous, une sortie de nuit : TAXI CONCEPT vous conduit où vous voulez, à l'heure, dans un véhicule climatisé.",
+            "titre": "La course en ville, sans attendre",
+            "intro": "Un rendez-vous, une gare à rejoindre, une soirée qui se termine tard : commandez, un taxi arrive. Compteur au tarif préfectoral, paiement comme vous voulez.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -449,7 +449,7 @@
               }
             ],
             "ctaPrimaire": {
-              "label": "Réserver une course",
+              "label": "Commander un taxi",
               "href": "/contact"
             }
           }
@@ -457,12 +457,12 @@
         {
           "type": "contenu",
           "content": {
-            "eyebrow": "Une course, sans mauvaise surprise",
-            "titre": "Le taxi, quand vous en avez besoin",
+            "eyebrow": "Le taxi du quotidien",
+            "titre": "Montpellier, on connaît par cœur",
             "paragraphes": [
-              "Que ce soit pour un trajet quotidien, un rendez-vous médical, une soirée ou une course imprévue, TAXI CONCEPT assure vos déplacements dans Montpellier et partout dans l'Hérault. Nos courses locales sont facturées au tarif préfectoral des taxis du département : un prix encadré, affiché au compteur, sans surprise.",
-              "Nous roulons de jour comme de nuit, 7 jours sur 7 : appelez au moment où vous en avez besoin, ou réservez à l'avance pour être certain d'avoir un véhicule. Le paiement se fait en espèces, par carte ou par virement.",
-              "Chaque véhicule est climatisé, entretenu et conduit par un chauffeur professionnel qui connaît la métropole et le département — le meilleur itinéraire, les bons horaires, la ponctualité."
+              "Dans Montpellier, le bon itinéraire change avec l'heure : trafic des grands axes, travaux, événements au centre-ville. Nos chauffeurs roulent ici toute l'année et choisissent le chemin qui vous fait réellement gagner du temps — vers un cabinet médical, la gare, votre domicile ou une adresse dans une commune voisine.",
+              "La course se règle au compteur, selon le tarif préfectoral de l'Hérault : un cadre officiel, identique pour tous les taxis du département. Espèces, carte bancaire ou virement — vous payez comme cela vous arrange.",
+              "Et parce qu'un besoin de taxi n'attend pas les heures de bureau, nous répondons 24h/24 et 7 jours sur 7 : course immédiate quand un véhicule est disponible, ou réservation pour l'heure qui vous convient, même en pleine nuit."
             ]
           }
         },
@@ -470,48 +470,27 @@
           "type": "services",
           "content": {
             "eyebrow": "Ce qui est compris",
-            "titre": "Une course soignée",
+            "titre": "Les règles de la course",
             "items": [
               {
-                "nom": "Tarif préfectoral",
-                "description": "Prix encadré et affiché au compteur pour les courses locales, sans supplément caché.",
+                "nom": "Compteur officiel",
+                "description": "Le tarif préfectoral de l'Hérault s'applique, rien d'autre.",
                 "icone": "Wallet"
               },
               {
-                "nom": "Jour et nuit, 7j/7",
-                "description": "Disponibles à toute heure, y compris la nuit, le week-end et les jours fériés.",
+                "nom": "Nuit, week-end, fériés",
+                "description": "Le service ne s'arrête jamais : mêmes chauffeurs, même sérieux.",
                 "icone": "Clock"
               },
               {
-                "nom": "Véhicule climatisé",
-                "description": "Un intérieur propre et confortable, entretenu, pour chaque trajet.",
-                "icone": "Snowflake"
+                "nom": "Berline ou van",
+                "description": "Seul ou à sept : le véhicule s'ajuste à votre demande.",
+                "icone": "Users"
               },
               {
-                "nom": "Paiement au choix",
-                "description": "Espèces, carte bancaire ou virement, selon ce qui vous arrange.",
+                "nom": "Trois moyens de paiement",
+                "description": "Espèces, carte bancaire ou virement, au choix.",
                 "icone": "Wallet"
-              }
-            ]
-          }
-        },
-        {
-          "type": "etapes",
-          "content": {
-            "eyebrow": "Simple et rapide",
-            "titre": "Réserver votre course",
-            "items": [
-              {
-                "titre": "Vous appelez",
-                "texte": "Indiquez votre adresse de départ, votre destination et l'heure souhaitée. Course immédiate ou à l'avance."
-              },
-              {
-                "titre": "On confirme",
-                "texte": "Nous vous confirmons la prise en charge et le véhicule adapté à votre trajet."
-              },
-              {
-                "titre": "On vous conduit",
-                "texte": "Le chauffeur vous récupère à l'heure et vous emmène à destination par le meilleur itinéraire."
               }
             ]
           }
@@ -519,19 +498,50 @@
         {
           "type": "faq",
           "content": {
-            "titre": "Vos questions",
+            "titre": "Questions sur les courses",
             "items": [
               {
-                "question": "Puis-je réserver à l'avance ?",
-                "reponse": "Oui. Vous pouvez réserver une course à l'avance pour un horaire précis, ou nous appeler pour une prise en charge immédiate selon nos disponibilités."
+                "question": "Peut-on avoir un taxi immédiatement à Montpellier ?",
+                "reponse": "Oui, selon la disponibilité des véhicules au moment de l'appel. Pour une heure précise — tôt le matin, tard le soir — mieux vaut réserver : le taxi vous attend, pas l'inverse."
               },
               {
-                "question": "Roulez-vous la nuit ?",
-                "reponse": "Oui, nous assurons les courses 24h/24 et 7j/7, y compris la nuit, les week-ends et les jours fériés."
+                "question": "Une course de nuit coûte-t-elle plus cher ?",
+                "reponse": "Les courses suivent le tarif préfectoral de l'Hérault, qui distingue horaires de jour et de nuit ; dans tous les cas, le montant s'affiche au compteur."
               },
               {
-                "question": "Comment sont calculés les prix ?",
-                "reponse": "Les courses locales suivent le tarif préfectoral des taxis de l'Hérault, affiché au compteur. Pour les longs trajets ou les transferts, un forfait peut être établi à l'avance."
+                "question": "Peut-on régler la course par carte bancaire ?",
+                "reponse": "Oui. Carte bancaire, espèces ou virement : les trois sont acceptés à bord, dites simplement au chauffeur ce que vous préférez."
+              },
+              {
+                "question": "Prenez-vous des courses vers les communes autour de Montpellier ?",
+                "reponse": "Bien sûr : Castelnau-le-Lez, Lattes, Pérols et toutes les communes de l'Hérault. La page zone desservie détaille les secteurs couverts."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "À voir aussi",
+            "titre": "Dans la même flotte",
+            "items": [
+              {
+                "nom": "Transferts gares & aéroports",
+                "description": "Un train ou un avion à prendre ? Passez au forfait fixe.",
+                "href": "/transferts-gares-aeroports",
+                "icone": "Plane"
+              },
+              {
+                "nom": "Van & monospace",
+                "description": "À plusieurs ou très chargé : jusqu'à 7 places.",
+                "href": "/van-monospace",
+                "icone": "Users"
+              },
+              {
+                "nom": "Transport PMR",
+                "description": "Véhicule adapté et accompagnement, sur réservation.",
+                "href": "/transport-pmr",
+                "icone": "Accessibility"
               }
             ]
           }
@@ -539,10 +549,10 @@
         {
           "type": "cta",
           "content": {
-            "titre": "Besoin d'un taxi maintenant ?",
-            "sousTitre": "Appelez-nous : prise en charge rapide, partout dans l'Hérault.",
+            "titre": "Le taxi, c'est pour maintenant ?",
+            "sousTitre": "Un appel, un taxi : nous sommes joignables à toute heure dans Montpellier et l'Hérault.",
             "ctaPrimaire": {
-              "label": "Réserver une course",
+              "label": "Commander un taxi",
               "href": "/contact"
             }
           }
@@ -554,18 +564,18 @@
       "label": "Transferts gares & aéroports",
       "navHidden": true,
       "meta": {
-        "title": "Transfert aéroport & gare — Montpellier, Marseille, Lyon, Perpignan | TAXI CONCEPT",
-        "description": "Transfert taxi vers les gares et aéroports depuis Montpellier et l'Hérault : Montpellier-Méditerranée, Marseille, Lyon, Perpignan et gare Saint-Roch. Forfait fixe, suivi des vols, 24h/24.",
+        "title": "Taxi aéroport & gare à Montpellier — forfait fixe",
+        "description": "Taxi vers l'aéroport Montpellier-Méditerranée, la gare Saint-Roch, Marseille, Lyon ou Perpignan : forfait annoncé d'avance, vols suivis, départs 24h/24.",
         "keywords": [
           "transfert aéroport Montpellier",
           "taxi aéroport Montpellier-Méditerranée",
           "taxi gare Saint-Roch",
-          "navette aéroport Marseille depuis Montpellier"
+          "taxi Montpellier aéroport Marseille"
         ]
       },
       "service": {
         "name": "Transferts gares & aéroports",
-        "description": "Transferts taxi vers les gares et aéroports de Montpellier, Marseille, Lyon et Perpignan, avec suivi des horaires.",
+        "description": "Liaisons taxi au forfait depuis Montpellier vers gares et aéroports : Saint-Roch, Montpellier-Méditerranée, Marseille, Lyon, Perpignan.",
         "serviceType": "Transfert aéroport",
         "priceFrom": "Forfait fixe"
       },
@@ -574,8 +584,8 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "Transferts gares & aéroports",
-            "titre": "Ne ratez jamais votre train ni votre vol",
-            "intro": "Prise en charge à domicile, à l'hôtel ou au bureau, et dépose directement au terminal ou sur le quai — avec suivi de vos horaires.",
+            "titre": "Avion ou train, vous partez tranquille",
+            "intro": "Départ de votre adresse à Montpellier ou ailleurs dans l'Hérault, arrivée devant l'enregistrement ou la gare. Le montant est annoncé à la réservation : c'est un forfait, il ne bougera plus.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -598,12 +608,12 @@
         {
           "type": "contenu",
           "content": {
-            "eyebrow": "À l'heure, à chaque fois",
-            "titre": "Le transfert sans stress",
+            "eyebrow": "Nos liaisons",
+            "titre": "Quatre villes, toutes leurs plateformes",
             "paragraphes": [
-              "TAXI CONCEPT assure vos liaisons vers l'aéroport Montpellier-Méditerranée et la gare Montpellier Saint-Roch, mais aussi vers les aéroports et gares de Marseille, Lyon et Perpignan. Nous partons de chez vous, de votre hôtel ou de votre bureau et vous déposons directement au terminal ou sur le quai.",
-              "Le tarif d'un transfert est convenu à l'avance sous forme de forfait fixe : vous connaissez le prix avant de monter, quelle que soit la circulation. Nous suivons vos horaires de train et de vol et adaptons la prise en charge en cas de retard ou d'avance.",
-              "Pour les groupes, les familles et les gros bagages, un van jusqu'à 7 places est disponible sur simple demande."
+              "L'aéroport Montpellier-Méditerranée et la gare Saint-Roch sont notre quotidien ; nous assurons aussi les liaisons vers Marseille, Lyon et Perpignan, gares comme aéroports. Donnez votre numéro de vol ou de train à la réservation : si l'horaire glisse, votre chauffeur le sait et décale la prise en charge en conséquence.",
+              "Côté prix, pas de compteur qui grimpe sur l'autoroute : le transfert se réserve au forfait, annoncé avant la course. Bouchons, déviation, attente d'un bagage — le montant reste celui annoncé.",
+              "Vol du petit matin ou atterrissage tardif, aucune importance : le service tourne 24h/24. Et quand la famille ou les valises débordent d'une berline, le van 7 places prend le relais."
             ]
           }
         },
@@ -611,48 +621,27 @@
           "type": "services",
           "content": {
             "eyebrow": "Destinations & garanties",
-            "titre": "Vos liaisons",
+            "titre": "Ce que couvre le transfert",
             "items": [
               {
-                "nom": "Aéroport Montpellier-Méditerranée",
-                "description": "Transfert direct depuis toute la métropole et l'Hérault, à l'horaire de votre vol.",
+                "nom": "Montpellier-Méditerranée",
+                "description": "L'aéroport de la ville : notre liaison la plus fréquente.",
                 "icone": "Plane"
               },
               {
-                "nom": "Gare Montpellier Saint-Roch",
-                "description": "Dépose et prise en charge au plus près des quais, bagages compris.",
+                "nom": "Gare Saint-Roch",
+                "description": "En plein centre : dépose au plus près, même aux heures chargées.",
                 "icone": "TrainFront"
               },
               {
-                "nom": "Marseille, Lyon, Perpignan",
-                "description": "Liaisons longue distance vers les grands aéroports et gares de la région.",
+                "nom": "Marseille · Lyon · Perpignan",
+                "description": "Les grandes plateformes voisines, gares et aéroports.",
                 "icone": "MapPinned"
               },
               {
-                "nom": "Suivi des horaires",
-                "description": "Nous surveillons les retards de vol et de train pour ajuster votre prise en charge.",
+                "nom": "Horaires surveillés",
+                "description": "Vol ou train suivi : la prise en charge s'ajuste au réel.",
                 "icone": "Timer"
-              }
-            ]
-          }
-        },
-        {
-          "type": "etapes",
-          "content": {
-            "eyebrow": "Comment ça se passe",
-            "titre": "Votre transfert, étape par étape",
-            "items": [
-              {
-                "titre": "Vous nous donnez votre vol",
-                "texte": "Numéro de vol ou de train, horaire, adresse de départ et nombre de passagers."
-              },
-              {
-                "titre": "Forfait confirmé",
-                "texte": "Nous vous communiquons le prix fixe du transfert, convenu à l'avance."
-              },
-              {
-                "titre": "Prise en charge à l'heure",
-                "texte": "Le chauffeur vous récupère à l'heure prévue, ajustée si votre horaire change."
               }
             ]
           }
@@ -660,19 +649,50 @@
         {
           "type": "faq",
           "content": {
-            "titre": "Vos questions",
+            "titre": "Questions sur les transferts",
             "items": [
               {
-                "question": "Que se passe-t-il si mon vol a du retard ?",
-                "reponse": "Nous suivons les horaires de vol : en cas de retard ou d'avance, nous adaptons l'heure de prise en charge, sans surcoût lié au décalage."
+                "question": "Mon avion atterrit après minuit : venez-vous quand même ?",
+                "reponse": "Oui. Nous travaillons 24h/24 : indiquez le numéro de vol, le chauffeur suit l'atterrissage et vous attend, même en pleine nuit."
               },
               {
-                "question": "Le prix est-il fixé à l'avance ?",
-                "reponse": "Oui. Les transferts gares et aéroports sont facturés au forfait, convenu avant le départ : vous connaissez le prix quelle que soit la circulation."
+                "question": "Le forfait peut-il changer le jour du transfert ?",
+                "reponse": "Non : le montant annoncé à la réservation est celui que vous payez, quelles que soient la circulation ou l'attente sur place."
               },
               {
-                "question": "Desservez-vous les aéroports hors Hérault ?",
-                "reponse": "Oui, nous assurons les transferts longue distance vers Marseille, Lyon et Perpignan, ainsi que d'autres destinations sur devis."
+                "question": "Pouvez-vous emmener une famille avec beaucoup de bagages ?",
+                "reponse": "Oui : le van 7 places absorbe passagers, valises et poussettes. Précisez le volume à la réservation, nous affectons le bon véhicule."
+              },
+              {
+                "question": "Faut-il réserver le transfert longtemps à l'avance ?",
+                "reponse": "Réservez dès que votre billet est pris : c'est la meilleure garantie d'avoir le véhicule au bon créneau, surtout pour les départs très matinaux."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "À voir aussi",
+            "titre": "Dans la même flotte",
+            "items": [
+              {
+                "nom": "Van & monospace",
+                "description": "Le transfert à 7, valises comprises.",
+                "href": "/van-monospace",
+                "icone": "Users"
+              },
+              {
+                "nom": "Longue distance",
+                "description": "Au-delà des aéroports : toute la France sur devis.",
+                "href": "/longue-distance",
+                "icone": "Route"
+              },
+              {
+                "nom": "Trajets taxi",
+                "description": "La course classique au compteur, dans Montpellier.",
+                "href": "/trajets-taxi",
+                "icone": "Car"
               }
             ]
           }
@@ -680,8 +700,8 @@
         {
           "type": "cta",
           "content": {
-            "titre": "Un transfert à réserver ?",
-            "sousTitre": "Donnez-nous votre vol ou votre train : nous calons tout, 24h/24.",
+            "titre": "Un vol à ne pas rater ?",
+            "sousTitre": "Envoyez votre numéro de vol et votre adresse : le forfait tombe dans la foulée.",
             "ctaPrimaire": {
               "label": "Réserver un transfert",
               "href": "/contact"
@@ -695,8 +715,8 @@
       "label": "Longue distance",
       "navHidden": true,
       "meta": {
-        "title": "Taxi longue distance depuis Montpellier — toutes destinations | TAXI CONCEPT",
-        "description": "Taxi longue distance au départ de Montpellier et de l'Hérault : trajets nationaux toutes destinations, berline ou van climatisé, chauffeur professionnel. Devis à l'avance, 24h/24.",
+        "title": "Taxi longue distance au départ de Montpellier",
+        "description": "Taxi longue distance depuis Montpellier : toutes destinations en France, berline ou van 7 places, devis fixé avant le départ. Départs 24h/24, 7j/7.",
         "keywords": [
           "taxi longue distance Montpellier",
           "taxi interurbain Hérault",
@@ -705,7 +725,7 @@
       },
       "service": {
         "name": "Longue distance",
-        "description": "Trajets taxi longue distance au départ de Montpellier et de l'Hérault, toutes destinations nationales.",
+        "description": "Trajets taxi nationaux au départ de Montpellier et de l'Hérault, en berline ou van 7 places, sur devis.",
         "serviceType": "Taxi longue distance",
         "priceFrom": "Sur devis"
       },
@@ -714,8 +734,8 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "Longue distance",
-            "titre": "Toutes distances, tout confort",
-            "intro": "Un rendez-vous à l'autre bout de la région ou une traversée du pays : voyagez posément, avec un chauffeur dédié et un tarif connu d'avance.",
+            "titre": "La France entière, départ Montpellier",
+            "intro": "Un autre département, une autre région : nous prenons la route à l'heure que vous choisissez, au prix fixé d'avance, en berline ou en van.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -738,61 +758,40 @@
         {
           "type": "contenu",
           "content": {
-            "eyebrow": "Voyager autrement",
-            "titre": "La route, en toute sérénité",
+            "eyebrow": "Comment ça marche",
+            "titre": "Monter devant chez soi, descendre à destination",
             "paragraphes": [
-              "Pour vos trajets longue distance au départ de Montpellier et de l'Hérault, TAXI CONCEPT met à votre disposition une berline ou un van climatisé et un chauffeur professionnel. Vous partez de la porte et arrivez à destination sans correspondance, sans attente, sans contrainte de bagage.",
-              "Le prix d'un trajet longue distance est établi à l'avance, sous forme de devis clair, en fonction de la distance et du véhicule choisi. Vous savez exactement ce que vous payez avant de partir.",
-              "C'est la solution idéale pour un déplacement professionnel, un rendez-vous médical spécialisé dans une autre ville, ou tout simplement pour voyager sans conduire."
+              "Le principe est simple : vous montez à votre adresse, à Montpellier ou ailleurs dans l'Hérault, et vous descendez exactement là où vous allez. Aucune correspondance à gérer, aucun horaire imposé — c'est le taxi qui se cale sur votre agenda, y compris pour un départ nocturne.",
+              "Avant de valider, vous recevez un devis : un montant unique qui dépend du trajet et du véhicule retenu — berline pour voyager léger, van quand on part nombreux ou chargé. Ce qui est annoncé est ce qui est payé, point final.",
+              "Déplacement professionnel, consultation médicale dans une autre ville, ou simplement l'envie de faire la route sans prendre le volant : décrivez la situation, nous organisons le départ à l'heure qui vous arrange, 24h/24."
             ]
           }
         },
         {
           "type": "services",
           "content": {
-            "eyebrow": "Pourquoi nous choisir",
-            "titre": "Le trajet longue distance idéal",
+            "eyebrow": "Les garanties du trajet",
+            "titre": "Ce que vous achetez vraiment",
             "items": [
               {
-                "nom": "Porte à porte",
-                "description": "Départ de chez vous, arrivée à destination — aucune correspondance.",
+                "nom": "Adresse à adresse",
+                "description": "Départ et arrivée exactement où vous le décidez.",
                 "icone": "Navigation"
               },
               {
-                "nom": "Berline ou van climatisé",
-                "description": "Le véhicule adapté au nombre de passagers et à vos bagages, jusqu'à 7 places.",
-                "icone": "Snowflake"
+                "nom": "Départ à toute heure",
+                "description": "Un long trajet peut commencer à 4 h du matin : nous serons là.",
+                "icone": "Clock"
               },
               {
-                "nom": "Devis à l'avance",
-                "description": "Un prix clair, convenu avant le départ, sans surprise à l'arrivée.",
+                "nom": "Devis unique",
+                "description": "Distance et véhicule fixent le montant, communiqué avant d'accepter.",
+                "icone": "Wallet"
+              },
+              {
+                "nom": "Berline ou van 7 places",
+                "description": "Le véhicule suit le nombre de passagers et le volume de bagages.",
                 "icone": "Users"
-              },
-              {
-                "nom": "Chauffeur dédié",
-                "description": "Un conducteur professionnel pour un trajet posé, de jour comme de nuit.",
-                "icone": "UserRound"
-              }
-            ]
-          }
-        },
-        {
-          "type": "etapes",
-          "content": {
-            "eyebrow": "Comment ça se passe",
-            "titre": "Organiser votre trajet",
-            "items": [
-              {
-                "titre": "Vous décrivez le trajet",
-                "texte": "Ville de départ, destination, date, heure et nombre de passagers."
-              },
-              {
-                "titre": "Devis clair",
-                "texte": "Nous établissons un prix fixe selon la distance et le véhicule choisi."
-              },
-              {
-                "titre": "En route",
-                "texte": "Le chauffeur vous prend en charge à l'heure convenue et vous conduit à destination."
               }
             ]
           }
@@ -800,19 +799,46 @@
         {
           "type": "faq",
           "content": {
-            "titre": "Vos questions",
+            "titre": "Questions sur la longue distance",
             "items": [
               {
-                "question": "Jusqu'où pouvez-vous m'emmener ?",
-                "reponse": "Toutes destinations nationales au départ de Montpellier et de l'Hérault. Décrivez-nous votre trajet, nous établissons un devis."
+                "question": "Acceptez-vous les très longs trajets, type traversée de la France ?",
+                "reponse": "Oui : toutes les destinations en France sont possibles au départ de Montpellier et de l'Hérault. Le devis précise le montant selon le trajet demandé."
               },
               {
-                "question": "Comment est fixé le prix ?",
-                "reponse": "Sur devis, à l'avance, selon la distance et le véhicule. Le tarif est convenu avant le départ, sans surprise."
+                "question": "Quand connaît-on le prix du trajet ?",
+                "reponse": "Avant de confirmer : le devis est établi sur la distance et le véhicule, puis ne bouge plus. Aucun ajustement en fin de course."
               },
               {
-                "question": "Puis-je voyager à plusieurs ?",
-                "reponse": "Oui, un van jusqu'à 7 places est disponible pour les groupes, les familles et les gros bagages."
+                "question": "Peut-on partir de nuit pour une longue distance ?",
+                "reponse": "Oui : le départ se cale sur votre horaire, 24h/24 et 7j/7 — trajets nocturnes compris."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "À voir aussi",
+            "titre": "Dans la même flotte",
+            "items": [
+              {
+                "nom": "Transferts gares & aéroports",
+                "description": "Marseille, Lyon, Perpignan : déjà au forfait fixe.",
+                "href": "/transferts-gares-aeroports",
+                "icone": "Plane"
+              },
+              {
+                "nom": "Van & monospace",
+                "description": "La longue route à plusieurs, jusqu'à 7 places.",
+                "href": "/van-monospace",
+                "icone": "Users"
+              },
+              {
+                "nom": "Service VIP",
+                "description": "Chauffeur dédié sur la durée, programme sur mesure.",
+                "href": "/service-vip",
+                "icone": "Crown"
               }
             ]
           }
@@ -820,8 +846,8 @@
         {
           "type": "cta",
           "content": {
-            "titre": "Un long trajet en vue ?",
-            "sousTitre": "Décrivez-nous votre déplacement : nous établissons un devis rapidement.",
+            "titre": "Un grand trajet à préparer ?",
+            "sousTitre": "Envoyez départ, destination et date : le devis arrive rapidement, l'heure de départ vous appartient.",
             "ctaPrimaire": {
               "label": "Demander un devis",
               "href": "/contact"
@@ -835,8 +861,8 @@
       "label": "Transport de colis",
       "navHidden": true,
       "meta": {
-        "title": "Transport de colis & plis urgents — Montpellier & Hérault | TAXI CONCEPT",
-        "description": "Acheminement urgent de colis et documents à Montpellier et dans l'Hérault, et longue distance. Course dédiée, remise en main propre, suivi, 24h/24 et 7j/7.",
+        "title": "Transport de colis en taxi à Montpellier",
+        "description": "Coursier taxi à Montpellier : votre pli ou colis part immédiatement en course dédiée et arrive en main propre, dans l'Hérault ou au-delà. 24h/24, 7j/7.",
         "keywords": [
           "transport de colis Montpellier",
           "coursier taxi Hérault",
@@ -846,7 +872,7 @@
       },
       "service": {
         "name": "Transport de colis & plis",
-        "description": "Acheminement urgent de colis et documents à Montpellier, dans l'Hérault et au-delà.",
+        "description": "Course dédiée pour plis et colis urgents à Montpellier, dans l'Hérault et au-delà, remise en main propre.",
         "serviceType": "Transport de colis",
         "priceFrom": "Sur devis"
       },
@@ -855,8 +881,8 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "Transport de colis & plis",
-            "titre": "Vos envois urgents, livrés en main propre",
-            "intro": "Un pli à faire signer, un colis à livrer sans attendre, une pièce à convoyer : nous partons tout de suite, en course dédiée.",
+            "titre": "Votre colis prend le taxi",
+            "intro": "Résultats d'analyses, contrat à signer, pièce qui bloque tout un chantier : nous chargeons, nous partons, nous remettons en main propre. Sans passer par un dépôt.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -879,61 +905,32 @@
         {
           "type": "contenu",
           "content": {
-            "eyebrow": "L'urgence, maîtrisée",
-            "titre": "Un coursier de confiance",
+            "eyebrow": "La course dédiée",
+            "titre": "Un envoi, un véhicule, un itinéraire direct",
             "paragraphes": [
-              "Quand un colis ou un document ne peut pas attendre, TAXI CONCEPT l'achemine en course dédiée : votre envoi part seul, directement, sans tournée ni entrepôt. Nous intervenons à Montpellier, dans tout l'Hérault et au-delà pour les envois longue distance.",
-              "La remise se fait en main propre au destinataire, avec la même exigence de ponctualité et de discrétion que pour le transport de personnes. C'est la solution des professionnels — cabinets, laboratoires, commerces — comme des particuliers pressés.",
-              "Le tarif est établi selon la distance et l'urgence : appelez-nous, nous partons."
-            ]
-          }
-        },
-        {
-          "type": "services",
-          "content": {
-            "eyebrow": "Ce que nous garantissons",
-            "titre": "Un envoi bien traité",
-            "items": [
-              {
-                "nom": "Course dédiée",
-                "description": "Votre colis part seul et direct, sans tournée ni rupture de charge.",
-                "icone": "UserRound"
-              },
-              {
-                "nom": "Remise en main propre",
-                "description": "Livraison directe au destinataire, avec discrétion.",
-                "icone": "Handshake"
-              },
-              {
-                "nom": "Local et longue distance",
-                "description": "Montpellier, tout l'Hérault et au-delà pour les envois urgents.",
-                "icone": "Route"
-              },
-              {
-                "nom": "24h/24, 7j/7",
-                "description": "Disponibles à toute heure, y compris la nuit et le week-end.",
-                "icone": "Clock"
-              }
+              "Un envoi, un véhicule : votre colis voyage seul, sans transiter par un entrepôt ni attendre une tournée. Le chauffeur file par l'itinéraire direct, et vous savez à tout moment qui transporte quoi, du chargement à la remise.",
+              "À l'arrivée, le pli ou le colis est remis en main propre au destinataire que vous désignez, avec discrétion. Cabinets, laboratoires et commerces nous confient leurs envois sensibles ; les particuliers, leurs urgences de dernière minute.",
+              "Le service fonctionne 24h/24 : un document à faire partir un dimanche soir ou avant l'aube trouvera un chauffeur. Le tarif dépend de la distance et de l'urgence — il vous est donné à l'appel, avant l'enlèvement."
             ]
           }
         },
         {
           "type": "etapes",
           "content": {
-            "eyebrow": "Comment ça se passe",
-            "titre": "Faire partir un envoi",
+            "eyebrow": "En trois temps",
+            "titre": "De votre main à la sienne",
             "items": [
               {
-                "titre": "Vous nous appelez",
-                "texte": "Adresse d'enlèvement, adresse de livraison, nature du colis et niveau d'urgence."
+                "titre": "Décrivez l'envoi",
+                "texte": "Nature du colis, adresse d'enlèvement, adresse de remise, degré d'urgence : tout se règle en un appel."
               },
               {
-                "titre": "Enlèvement rapide",
-                "texte": "Nous récupérons le colis ou le pli au point de départ dans les meilleurs délais."
+                "titre": "On enlève",
+                "texte": "Un chauffeur récupère l'envoi au point de départ, sans détour préalable."
               },
               {
-                "titre": "Livraison directe",
-                "texte": "Acheminement en course dédiée et remise en main propre au destinataire."
+                "titre": "On remet",
+                "texte": "Trajet direct et remise en main propre au destinataire désigné."
               }
             ]
           }
@@ -941,19 +938,44 @@
         {
           "type": "faq",
           "content": {
-            "titre": "Vos questions",
+            "titre": "Questions sur les envois",
             "items": [
               {
-                "question": "Quel type de colis transportez-vous ?",
-                "reponse": "Documents, plis à signer, petits et moyens colis, pièces urgentes. Décrivez-nous votre envoi et sa destination."
+                "question": "Transportez-vous des documents confidentiels ?",
+                "reponse": "Oui : le pli voyage seul, avec un chauffeur professionnel, et n'est remis qu'au destinataire convenu. La discrétion fait partie du service."
               },
               {
-                "question": "Livrez-vous hors de l'Hérault ?",
-                "reponse": "Oui, nous assurons aussi les envois longue distance en course dédiée, sur devis selon la destination."
+                "question": "Peut-on faire partir un colis la nuit ou le dimanche ?",
+                "reponse": "Oui, le service d'envoi fonctionne aux mêmes horaires que le taxi : 24h/24 et 7j/7, jours fériés compris."
               },
               {
-                "question": "En combien de temps intervenez-vous ?",
-                "reponse": "Nous partons dès que possible après votre appel : la course étant dédiée, il n'y a ni tournée ni attente."
+                "question": "Comment est calculé le prix d'un envoi ?",
+                "reponse": "Selon la distance à parcourir et le niveau d'urgence. Le montant vous est annoncé au téléphone, avant l'enlèvement."
+              },
+              {
+                "question": "Y a-t-il une taille limite de colis ?",
+                "reponse": "Nous prenons documents, plis et colis de petite ou moyenne taille. Décrivez votre envoi au téléphone : nous confirmons immédiatement si nous pouvons le prendre."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "À voir aussi",
+            "titre": "Dans la même flotte",
+            "items": [
+              {
+                "nom": "Longue distance",
+                "description": "Un envoi à faire traverser la France ? Course dédiée sur devis.",
+                "href": "/longue-distance",
+                "icone": "Route"
+              },
+              {
+                "nom": "Trajets taxi",
+                "description": "Le transport de personnes, au compteur, jour et nuit.",
+                "href": "/trajets-taxi",
+                "icone": "Car"
               }
             ]
           }
@@ -961,8 +983,8 @@
         {
           "type": "cta",
           "content": {
-            "titre": "Un colis à faire partir ?",
-            "sousTitre": "Appelez-nous : enlèvement rapide et livraison en main propre.",
+            "titre": "Un envoi qui ne peut pas attendre ?",
+            "sousTitre": "Décrivez le colis et les deux adresses : l'enlèvement s'organise dans la foulée.",
             "ctaPrimaire": {
               "label": "Demander un enlèvement",
               "href": "/contact"
@@ -976,8 +998,8 @@
       "label": "Van & monospace 1 à 7 places",
       "navHidden": true,
       "meta": {
-        "title": "Taxi van & monospace 1 à 7 places — Montpellier & Hérault | TAXI CONCEPT",
-        "description": "Taxi van et monospace jusqu'à 7 places à Montpellier et dans l'Hérault : groupes, familles, gros bagages, transferts aéroport. Véhicule climatisé, réservation 24h/24.",
+        "title": "Taxi 7 places à Montpellier — van & monospace",
+        "description": "Van et monospace avec chauffeur à Montpellier : jusqu'à 7 passagers et bagages dans un seul véhicule climatisé. Aéroport, événements, longue route, 24h/24.",
         "keywords": [
           "taxi van Montpellier",
           "taxi 7 places Montpellier",
@@ -987,17 +1009,17 @@
       },
       "service": {
         "name": "Van & monospace 1 à 7 places",
-        "description": "Taxi van et monospace jusqu'à 7 places pour groupes, familles et bagages à Montpellier et dans l'Hérault.",
+        "description": "Taxi van et monospace jusqu'à 7 passagers à Montpellier et dans l'Hérault : groupes, familles, bagages volumineux.",
         "serviceType": "Taxi van 7 places",
-        "priceFrom": "1 à 7 personnes"
+        "priceFrom": "Sur réservation"
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Van & monospace",
-            "titre": "Jusqu'à 7 places, tout le monde à bord",
-            "intro": "Une famille, une équipe, un groupe d'amis avec bagages : voyagez ensemble dans un van spacieux et climatisé.",
+            "titre": "Sept places, un seul taxi",
+            "intro": "Famille au complet, équipe en déplacement, amis chargés de valises : personne ne se sépare, et tout tient dans le coffre.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1020,29 +1042,29 @@
         {
           "type": "contenu",
           "content": {
-            "eyebrow": "De la place pour tous",
-            "titre": "Le confort, à plusieurs",
+            "eyebrow": "Voyager groupés",
+            "titre": "Un véhicule au lieu de deux",
             "paragraphes": [
-              "Pour les déplacements à plusieurs, TAXI CONCEPT propose un van et un monospace jusqu'à 7 places. Idéal pour les familles, les groupes d'amis, les équipes professionnelles ou les transferts aéroport avec de nombreux bagages : tout le monde voyage ensemble, dans le même véhicule.",
-              "Nos vans sont climatisés, spacieux et pensés pour le confort de tous les passagers, sur un court trajet en ville comme sur une longue distance. Le coffre accueille valises, poussettes et équipements sans compromis.",
-              "Réservez à l'avance pour garantir le véhicule le jour J, en particulier pour les transferts et les événements."
+              "Voyager à cinq, six ou sept, d'ordinaire, c'est deux taxis : deux réservations, deux additions, et le groupe coupé en deux. Notre van et notre monospace règlent la question — tout le monde monte dans le même véhicule, bagages compris.",
+              "L'espace n'enlève rien au confort : une vraie place pour chacun, la climatisation, et un coffre qui avale valises, poussettes et équipements. Le van assure aussi bien la course dans Montpellier que le transfert vers un aéroport ou la longue route.",
+              "Un conseil : réservez dès que la date est connue, surtout pour un transfert ou un événement. C'est ce qui garantit le van devant votre porte à l'heure dite."
             ]
           }
         },
         {
           "type": "services",
           "content": {
-            "eyebrow": "Pour quels usages",
-            "titre": "Le van, quand il en faut plus",
+            "eyebrow": "Pour qui, pour quoi",
+            "titre": "Les usages du van",
             "items": [
               {
                 "nom": "Familles & groupes",
-                "description": "Jusqu'à 7 passagers dans le même véhicule, sans se séparer.",
+                "description": "Jusqu'à 7 passagers ensemble, personne ne reste sur le trottoir.",
                 "icone": "Users"
               },
               {
-                "nom": "Transferts avec bagages",
-                "description": "Aéroport, gare ou longue distance : de la place pour les valises.",
+                "nom": "Gros volumes de bagages",
+                "description": "Valises, poussettes, équipements : le coffre suit.",
                 "icone": "Luggage"
               },
               {
@@ -1051,30 +1073,9 @@
                 "icone": "Briefcase"
               },
               {
-                "nom": "Confort climatisé",
-                "description": "Un intérieur spacieux et climatisé, court trajet comme longue route.",
-                "icone": "Snowflake"
-              }
-            ]
-          }
-        },
-        {
-          "type": "etapes",
-          "content": {
-            "eyebrow": "Comment ça se passe",
-            "titre": "Réserver votre van",
-            "items": [
-              {
-                "titre": "Vous précisez le groupe",
-                "texte": "Nombre de passagers, bagages, trajet et horaire souhaités."
-              },
-              {
-                "titre": "Van confirmé",
-                "texte": "Nous réservons le véhicule adapté et vous confirmons la prise en charge."
-              },
-              {
-                "titre": "Tout le monde à bord",
-                "texte": "Le chauffeur vous récupère à l'heure et vous conduit à destination."
+                "nom": "Toutes distances",
+                "description": "Course en ville, transfert aéroport ou trajet national.",
+                "icone": "Route"
               }
             ]
           }
@@ -1082,19 +1083,46 @@
         {
           "type": "faq",
           "content": {
-            "titre": "Vos questions",
+            "titre": "Questions sur le van",
             "items": [
               {
-                "question": "Combien de passagers pouvez-vous prendre ?",
-                "reponse": "Jusqu'à 7 personnes dans notre van/monospace, bagages compris. Indiquez le nombre de passagers à la réservation."
+                "question": "Peut-on vraiment monter à 7 avec les bagages ?",
+                "reponse": "Oui : 7 passagers, et le coffre reste disponible pour les valises. Signalez les volumes inhabituels à la réservation pour que tout soit prévu."
               },
               {
-                "question": "Le van convient-il aux transferts aéroport ?",
-                "reponse": "Oui, c'est le véhicule idéal pour les transferts en famille ou en groupe avec de nombreux bagages."
+                "question": "Le van fait-il aussi les longues distances ?",
+                "reponse": "Oui : course dans Montpellier, transfert vers un aéroport ou trajet national — le van couvre les mêmes prestations que la berline, avec l'espace en plus."
               },
               {
-                "question": "Faut-il réserver à l'avance ?",
-                "reponse": "Nous le recommandons, surtout pour les transferts et les événements, afin de garantir le van le jour souhaité."
+                "question": "Peut-on réserver le van pour un mariage ?",
+                "reponse": "Oui, les événements font partie de ses usages : mariages, sorties de groupe, déplacements professionnels. Réservez tôt pour bloquer le créneau."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "À voir aussi",
+            "titre": "Dans la même flotte",
+            "items": [
+              {
+                "nom": "Transferts gares & aéroports",
+                "description": "Le van au forfait fixe, horaires de vol suivis.",
+                "href": "/transferts-gares-aeroports",
+                "icone": "Plane"
+              },
+              {
+                "nom": "Longue distance",
+                "description": "Partir nombreux à l'autre bout de la France, sur devis.",
+                "href": "/longue-distance",
+                "icone": "Route"
+              },
+              {
+                "nom": "Trajets taxi",
+                "description": "Pour les trajets à une ou deux personnes, la berline suffit.",
+                "href": "/trajets-taxi",
+                "icone": "Car"
               }
             ]
           }
@@ -1102,8 +1130,8 @@
         {
           "type": "cta",
           "content": {
-            "titre": "Vous voyagez à plusieurs ?",
-            "sousTitre": "Réservez un van jusqu'à 7 places, climatisé, à l'heure.",
+            "titre": "Le groupe est prêt ?",
+            "sousTitre": "Donnez le nombre de passagers, les bagages et l'heure : le van sera devant la porte.",
             "ctaPrimaire": {
               "label": "Réserver un van",
               "href": "/contact"
@@ -1117,18 +1145,18 @@
       "label": "Transport PMR",
       "navHidden": true,
       "meta": {
-        "title": "Transport PMR à Montpellier — personnes à mobilité réduite | TAXI CONCEPT",
-        "description": "Transport de personnes à mobilité réduite (PMR) à Montpellier et dans l'Hérault : véhicule adapté, accompagnement attentif, rendez-vous médicaux. Sur réservation, 24h/24.",
+        "title": "Taxi PMR à Montpellier — véhicule adapté",
+        "description": "Transport PMR à Montpellier et dans l'Hérault : véhicule adapté, aide à la montée et la descente, chauffeur patient. Rendez-vous médicaux, sur réservation.",
         "keywords": [
           "taxi PMR Montpellier",
           "transport personne mobilité réduite Hérault",
-          "taxi handicapé Montpellier",
-          "transport médical Montpellier"
+          "taxi véhicule adapté Montpellier",
+          "transport rendez-vous médical Montpellier"
         ]
       },
       "service": {
         "name": "Transport PMR",
-        "description": "Transport de personnes à mobilité réduite à Montpellier et dans l'Hérault, avec véhicule adapté et accompagnement.",
+        "description": "Transport de personnes à mobilité réduite à Montpellier et dans l'Hérault : véhicule adapté, accompagnement à la montée et à la descente.",
         "serviceType": "Transport de personnes à mobilité réduite",
         "priceFrom": "Sur réservation"
       },
@@ -1137,8 +1165,8 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "Transport PMR",
-            "titre": "Un transport adapté, un accompagnement humain",
-            "intro": "Rendez-vous médical, sortie, déplacement du quotidien : nous transportons les personnes à mobilité réduite avec attention et respect.",
+            "titre": "Se déplacer, sans obstacle",
+            "intro": "Consultation, démarche, repas de famille : un véhicule adapté et un chauffeur qui prend le temps qu'il faut, à Montpellier et partout dans l'Hérault.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1161,61 +1189,40 @@
         {
           "type": "contenu",
           "content": {
-            "eyebrow": "Avec attention",
-            "titre": "La mobilité, pour chacun",
+            "eyebrow": "Plus qu'une conduite",
+            "titre": "Du trottoir jusqu'à la bonne porte",
             "paragraphes": [
-              "TAXI CONCEPT assure le transport des personnes à mobilité réduite à Montpellier et dans tout l'Hérault, avec un véhicule adapté et un chauffeur attentif. Rendez-vous médicaux, démarches, visites en famille, sorties : nous facilitons les déplacements du quotidien comme les trajets exceptionnels.",
-              "L'accompagnement va au-delà de la conduite : aide à la montée et à la descente, patience et discrétion, respect du rythme de chacun. Nous prenons le temps qu'il faut, sans précipitation.",
-              "Ce service se réserve à l'avance afin de garantir le véhicule adapté et l'horaire, en particulier pour les rendez-vous médicaux."
+              "Transporter une personne à mobilité réduite ne se résume pas à conduire : cela commence sur le trottoir, avec l'aide à la montée, et se termine devant la bonne porte, à la descente. Nos chauffeurs le savent et ne comptent pas les minutes.",
+              "Le véhicule est aménagé pour la sécurité et le confort ; le rythme, lui, c'est le vôtre. Patience et discrétion font partie de la prestation, pour les trajets du quotidien comme pour les grandes occasions.",
+              "Pour garantir le véhicule adapté et l'horaire — en particulier avant un rendez-vous médical — ce service se réserve à l'avance, par téléphone. Le retour peut être prévu dans la même réservation."
             ]
           }
         },
         {
           "type": "services",
           "content": {
-            "eyebrow": "Notre engagement",
-            "titre": "Un transport respectueux",
+            "eyebrow": "Nos engagements",
+            "titre": "Ce que comprend le transport",
             "items": [
               {
-                "nom": "Véhicule adapté",
-                "description": "Un aménagement pensé pour le confort et la sécurité des personnes à mobilité réduite.",
+                "nom": "Véhicule aménagé",
+                "description": "Conçu pour la sécurité et le confort des personnes à mobilité réduite.",
                 "icone": "Accessibility"
               },
               {
-                "nom": "Accompagnement",
-                "description": "Aide à la montée et à la descente, patience et discrétion.",
+                "nom": "Aide à bord et à terre",
+                "description": "Montée, descente, installation : le chauffeur accompagne chaque étape.",
                 "icone": "HandHelping"
               },
               {
                 "nom": "Rendez-vous médicaux",
-                "description": "Prise en charge ponctuelle pour vos consultations et démarches.",
+                "description": "Consultations et démarches, aller et retour organisables ensemble.",
                 "icone": "Stethoscope"
               },
               {
-                "nom": "Tout l'Hérault",
-                "description": "À Montpellier et dans l'ensemble du département, sur réservation.",
+                "nom": "Montpellier & Hérault",
+                "description": "Dans toute la métropole et le département, sur réservation.",
                 "icone": "MapPin"
-              }
-            ]
-          }
-        },
-        {
-          "type": "etapes",
-          "content": {
-            "eyebrow": "Comment ça se passe",
-            "titre": "Organiser le transport",
-            "items": [
-              {
-                "titre": "Vous nous appelez",
-                "texte": "Précisez le besoin, l'adresse, l'horaire du rendez-vous et les éventuelles contraintes."
-              },
-              {
-                "titre": "Véhicule réservé",
-                "texte": "Nous réservons le véhicule adapté et confirmons la prise en charge."
-              },
-              {
-                "titre": "Trajet accompagné",
-                "texte": "Le chauffeur vous accompagne, sans précipitation, jusqu'à destination et retour si besoin."
               }
             ]
           }
@@ -1223,19 +1230,50 @@
         {
           "type": "faq",
           "content": {
-            "titre": "Vos questions",
+            "titre": "Questions sur le transport PMR",
             "items": [
               {
-                "question": "Faut-il réserver à l'avance ?",
-                "reponse": "Oui, ce service se réserve à l'avance afin de garantir le véhicule adapté et l'horaire, notamment pour les rendez-vous médicaux."
+                "question": "En quoi consiste l'accompagnement exactement ?",
+                "reponse": "Le chauffeur aide à monter et à descendre du véhicule, s'assure de la bonne installation et avance au rythme de la personne, sans précipitation."
               },
               {
-                "question": "Accompagnez-vous la personne ?",
-                "reponse": "Oui, nous aidons à la montée et à la descente et respectons le rythme de chacun, avec patience et discrétion."
+                "question": "Peut-on organiser l'aller et le retour d'un rendez-vous médical ?",
+                "reponse": "Oui : indiquez l'horaire de la consultation, nous prévoyons la prise en charge dans les deux sens au sein de la même réservation."
               },
               {
-                "question": "Intervenez-vous pour des rendez-vous médicaux ?",
-                "reponse": "Oui, nous assurons les trajets vers les consultations et démarches à Montpellier et dans tout l'Hérault."
+                "question": "Combien de temps à l'avance faut-il réserver ?",
+                "reponse": "Dès que la date est connue : la réservation anticipée garantit le véhicule adapté et l'horaire, surtout pour les rendez-vous médicaux."
+              },
+              {
+                "question": "Le service couvre-t-il les communes autour de Montpellier ?",
+                "reponse": "Oui, l'ensemble de l'Hérault est couvert sur réservation, de la métropole à l'arrière-pays."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "À voir aussi",
+            "titre": "Dans la même flotte",
+            "items": [
+              {
+                "nom": "Trajets taxi",
+                "description": "La course classique au compteur, jour et nuit.",
+                "href": "/trajets-taxi",
+                "icone": "Car"
+              },
+              {
+                "nom": "Van & monospace",
+                "description": "Pour accompagner à plusieurs, jusqu'à 7 places.",
+                "href": "/van-monospace",
+                "icone": "Users"
+              },
+              {
+                "nom": "Transferts gares & aéroports",
+                "description": "Un train ou un vol à prendre : forfait fixe, horaires suivis.",
+                "href": "/transferts-gares-aeroports",
+                "icone": "Plane"
               }
             ]
           }
@@ -1243,8 +1281,8 @@
         {
           "type": "cta",
           "content": {
-            "titre": "Un déplacement à organiser ?",
-            "sousTitre": "Appelez-nous : nous préparons un transport adapté et attentif.",
+            "titre": "Un trajet à prévoir pour vous ou un proche ?",
+            "sousTitre": "Appelez-nous : nous organisons le transport adapté, aller et retour si besoin.",
             "ctaPrimaire": {
               "label": "Réserver un transport",
               "href": "/contact"
@@ -1258,8 +1296,8 @@
       "label": "Service VIP & mise à disposition",
       "navHidden": true,
       "meta": {
-        "title": "Service VIP & chauffeur privé — Montpellier & Hérault | TAXI CONCEPT",
-        "description": "Chauffeur dédié et mise à disposition à Montpellier et dans l'Hérault : rendez-vous professionnels, événements, déplacements sur mesure. Discrétion, ponctualité, véhicule soigné.",
+        "title": "Chauffeur VIP à Montpellier — mise à disposition",
+        "description": "Chauffeur dédié à Montpellier, à l'heure ou à la journée : rendez-vous, accueil de clients, événements. Discrétion, ponctualité, devis sur mesure.",
         "keywords": [
           "chauffeur privé Montpellier",
           "taxi VIP Montpellier",
@@ -1269,7 +1307,7 @@
       },
       "service": {
         "name": "Service VIP & mise à disposition",
-        "description": "Chauffeur dédié et mise à disposition pour rendez-vous, événements et déplacements professionnels à Montpellier et dans l'Hérault.",
+        "description": "Chauffeur dédié à l'heure ou à la journée à Montpellier et dans l'Hérault : rendez-vous, événements, accueil de clients.",
         "serviceType": "Chauffeur privé VIP",
         "priceFrom": "Sur devis"
       },
@@ -1278,8 +1316,8 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "Service VIP & mise à disposition",
-            "titre": "Un chauffeur, rien que pour vous",
-            "intro": "Une journée de rendez-vous, un événement, un client à recevoir : réservez un chauffeur dédié et un véhicule soigné, à votre rythme.",
+            "titre": "Votre chauffeur, votre programme",
+            "intro": "Il attend quand vous êtes en réunion, avance quand votre planning change, et reste impeccable du premier au dernier rendez-vous.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1302,61 +1340,32 @@
         {
           "type": "contenu",
           "content": {
-            "eyebrow": "Sur mesure",
-            "titre": "La discrétion et le détail",
+            "eyebrow": "La formule",
+            "titre": "Un véhicule qui n'existe que pour vous",
             "paragraphes": [
-              "Le service VIP de TAXI CONCEPT met à votre disposition un chauffeur dédié et un véhicule soigné, pour une course unique ou une journée entière. Idéal pour enchaîner des rendez-vous professionnels, accueillir un client, accompagner un événement ou simplement voyager avec un niveau d'attention supérieur.",
-              "En mise à disposition, le chauffeur reste à votre service sur la durée convenue : il patiente, se rend disponible entre deux étapes et adapte le programme à vos imprévus. Discrétion, ponctualité et présentation irréprochable sont la règle.",
-              "Chaque prestation VIP fait l'objet d'un devis personnalisé selon la durée, le trajet et vos exigences."
-            ]
-          }
-        },
-        {
-          "type": "services",
-          "content": {
-            "eyebrow": "Ce qui distingue le VIP",
-            "titre": "Un service d'exception",
-            "items": [
-              {
-                "nom": "Chauffeur dédié",
-                "description": "Un conducteur attitré, disponible sur toute la durée de la prestation.",
-                "icone": "UserRound"
-              },
-              {
-                "nom": "Mise à disposition",
-                "description": "À l'heure ou à la journée, le véhicule reste à votre service entre les étapes.",
-                "icone": "CalendarClock"
-              },
-              {
-                "nom": "Événements & professionnels",
-                "description": "Rendez-vous d'affaires, accueil de clients, cérémonies et déplacements sur mesure.",
-                "icone": "Briefcase"
-              },
-              {
-                "nom": "Discrétion & présentation",
-                "description": "Confidentialité, ponctualité et véhicule irréprochable, à chaque instant.",
-                "icone": "BadgeCheck"
-              }
+              "La mise à disposition inverse la logique du taxi : ce n'est plus une course, c'est une plage horaire pendant laquelle le chauffeur et le véhicule n'existent que pour vous. À l'heure ou à la journée, dans Montpellier ou au-delà.",
+              "Entre deux étapes, le chauffeur patiente ou se repositionne ; un imprévu survient, et le programme se réécrit sans discussion. La formule sert autant à enchaîner des rendez-vous professionnels qu'à accueillir un client ou à accompagner un événement du début à la fin.",
+              "Discrétion, ponctualité, tenue et véhicule irréprochables : c'est le cahier des charges de chaque prestation VIP. Le devis est personnalisé — durée, parcours, exigences particulières — avant tout engagement."
             ]
           }
         },
         {
           "type": "etapes",
           "content": {
-            "eyebrow": "Comment ça se passe",
-            "titre": "Composer votre prestation",
+            "eyebrow": "En trois temps",
+            "titre": "Monter votre prestation",
             "items": [
               {
-                "titre": "Vous décrivez le besoin",
-                "texte": "Durée, programme, nombre de passagers et niveau d'exigence attendu."
+                "titre": "Le programme",
+                "texte": "Vous décrivez la journée : étapes, horaires, passagers, niveau d'exigence."
               },
               {
-                "titre": "Devis sur mesure",
-                "texte": "Nous établissons une proposition adaptée à la durée et au trajet."
+                "titre": "Le devis",
+                "texte": "Nous chiffrons sur mesure, selon la durée et le parcours, avant tout engagement."
               },
               {
-                "titre": "Chauffeur à votre service",
-                "texte": "Le jour J, votre chauffeur dédié suit votre programme et s'adapte aux imprévus."
+                "titre": "Le jour J",
+                "texte": "Le chauffeur suit votre programme et absorbe les imprévus, du début à la fin."
               }
             ]
           }
@@ -1364,19 +1373,46 @@
         {
           "type": "faq",
           "content": {
-            "titre": "Vos questions",
+            "titre": "Questions sur le service VIP",
             "items": [
               {
-                "question": "Puis-je réserver un chauffeur à la journée ?",
-                "reponse": "Oui. En mise à disposition, le chauffeur reste à votre service sur la durée convenue, à l'heure ou à la journée."
+                "question": "Que fait le chauffeur pendant mes rendez-vous ?",
+                "reponse": "Il reste à votre disposition : il patiente sur place ou se repositionne pour l'étape suivante, selon le programme convenu."
               },
               {
-                "question": "Le service convient-il aux événements ?",
-                "reponse": "Oui : rendez-vous professionnels, accueil de clients, cérémonies et déplacements sur mesure font partie des prestations VIP."
+                "question": "Peut-on modifier le programme en cours de journée ?",
+                "reponse": "Oui, c'est même le principe de la mise à disposition : le chauffeur s'adapte aux imprévus et aux changements d'ordre des étapes."
               },
               {
-                "question": "Comment est fixé le prix ?",
-                "reponse": "Sur devis personnalisé, selon la durée, le trajet et vos exigences. Décrivez-nous votre besoin pour une proposition."
+                "question": "Sur quoi porte le devis VIP ?",
+                "reponse": "Sur la durée, le parcours et vos exigences particulières : chaque prestation est chiffrée sur mesure, avant engagement."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "À voir aussi",
+            "titre": "Dans la même flotte",
+            "items": [
+              {
+                "nom": "Transferts gares & aéroports",
+                "description": "Accueillir un invité à l'aéroport, au forfait fixe.",
+                "href": "/transferts-gares-aeroports",
+                "icone": "Plane"
+              },
+              {
+                "nom": "Longue distance",
+                "description": "Le grand déplacement, chauffeur dédié et devis d'avance.",
+                "href": "/longue-distance",
+                "icone": "Route"
+              },
+              {
+                "nom": "Van & monospace",
+                "description": "La délégation au complet dans un seul véhicule.",
+                "href": "/van-monospace",
+                "icone": "Users"
               }
             ]
           }
@@ -1384,8 +1420,8 @@
         {
           "type": "cta",
           "content": {
-            "titre": "Un chauffeur dédié pour votre journée ?",
-            "sousTitre": "Décrivez votre besoin : nous préparons une prestation sur mesure.",
+            "titre": "Une journée à orchestrer ?",
+            "sousTitre": "Décrivez le programme : nous préparons le chauffeur et le véhicule à la hauteur.",
             "ctaPrimaire": {
               "label": "Demander un devis",
               "href": "/contact"
@@ -1398,16 +1434,16 @@
       "slug": "zone",
       "label": "Zone desservie",
       "meta": {
-        "title": "Zone desservie — Montpellier et tout l'Hérault (34) | TAXI CONCEPT",
-        "description": "TAXI CONCEPT dessert Montpellier, Sète, Béziers, Lunel, Agde, la Grande-Motte et l'ensemble de l'Hérault, 24h/24 et 7j/7. Vérifiez votre commune."
+        "title": "Taxi Montpellier & Hérault — zone desservie",
+        "description": "Taxi basé à Montpellier, actif dans tout l'Hérault : métropole, littoral, Sète, Lunel, Béziers, cœur d'Hérault. Prise en charge 24h/24, trajets étudiés."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Zone d'intervention",
-            "titre": "Nous desservons tout l'Hérault",
-            "intro": "De Montpellier au bassin de Thau, du littoral à l'arrière-pays : vérifiez votre commune ci-dessous.",
+            "titre": "Basés à Montpellier, présents dans tout l'Hérault",
+            "intro": "Notre point d'ancrage est Montpellier ; nos courses, elles, vont partout dans le département. Voici comment nous couvrons chaque secteur.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1420,11 +1456,25 @@
           }
         },
         {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Secteur par secteur",
+            "titre": "Comment nous couvrons le département",
+            "paragraphes": [
+              "Montpellier et sa métropole d'abord : c'est notre terrain de tous les jours. Courses au compteur dans la ville, liaisons vers la gare Saint-Roch et l'aéroport Montpellier-Méditerranée, dessertes de Castelnau-le-Lez, Lattes, Pérols, Juvignac ou Saint-Jean-de-Védas — à toute heure, la nuit comprise.",
+              "Vers le littoral ouest, nous descendons régulièrement sur Sète, Frontignan, Balaruc-les-Bains ou Mèze : prises en charge à domicile, retours de soirée, liaisons avec les gares et l'aéroport de Montpellier.",
+              "À l'est, Lunel, Mauguio, La Grande-Motte, Palavas-les-Flots et Carnon complètent la carte : les stations du littoral comme les communes de la plaine sont reliées à Montpellier et à ses gares.",
+              "L'ouest du département — Béziers, Agde, Pézenas — reste accessible sur réservation, notamment pour les transferts et les trajets longue distance.",
+              "Reste le cœur d'Hérault et l'arrière-pays : Clermont-l'Hérault, Gignac, Ganges ou Lodève. Les communes y sont plus espacées ; réservez à l'avance et le taxi sera là, exactement comme en ville."
+            ]
+          }
+        },
+        {
           "type": "zone",
           "mode": "carte",
           "content": {
-            "titre": "Communes desservies dans l'Hérault",
-            "intro": "Vérifiez votre commune ou appelez-nous : nous étudions chaque trajet, y compris hors des communes listées.",
+            "titre": "Les communes desservies",
+            "intro": "La liste n'est pas fermée : une adresse hors de ces communes, ou hors département, se règle d'un coup de téléphone — chaque demande est étudiée.",
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=2.55%2C43.20%2C4.20%2C43.95&layer=mapnik&marker=43.6108%2C3.8767",
             "zones": [
               {
@@ -1448,7 +1498,7 @@
                 ]
               },
               {
-                "region": "Bassin de Thau & littoral",
+                "region": "Sète & littoral ouest",
                 "principale": "Sète",
                 "villes": [
                   "Sète",
@@ -1462,7 +1512,7 @@
                 ]
               },
               {
-                "region": "Est & Petite Camargue",
+                "region": "Lunel & littoral est",
                 "principale": "Lunel",
                 "villes": [
                   "Lunel",
@@ -1475,7 +1525,7 @@
                 ]
               },
               {
-                "region": "Ouest Hérault",
+                "region": "Béziers & ouest Hérault",
                 "principale": "Béziers",
                 "villes": [
                   "Béziers",
@@ -1486,7 +1536,7 @@
                 ]
               },
               {
-                "region": "Nord & arrière-pays",
+                "region": "Cœur d'Hérault & arrière-pays",
                 "principale": "Clermont-l'Hérault",
                 "villes": [
                   "Clermont-l'Hérault",
@@ -1503,10 +1553,10 @@
         {
           "type": "cta",
           "content": {
-            "titre": "Votre commune est dans l'Hérault ?",
-            "sousTitre": "Appelez-nous : nous desservons tout le département, 24h/24 et 7j/7.",
+            "titre": "Votre commune n'apparaît pas ?",
+            "sousTitre": "Appelez quand même : chaque demande est étudiée, y compris hors des communes listées.",
             "ctaPrimaire": {
-              "label": "Réserver une course",
+              "label": "Commander un taxi",
               "href": "/contact"
             }
           }
@@ -1517,16 +1567,16 @@
       "slug": "contact",
       "label": "Contact",
       "meta": {
-        "title": "Contact & réservation — TAXI CONCEPT Montpellier, 24h/24",
-        "description": "Réservez votre taxi à Montpellier et dans l'Hérault : par téléphone 24h/24, 7j/7, ou via le formulaire. Transferts, longue distance, van et PMR."
+        "title": "Réserver un taxi à Montpellier — 24h/24",
+        "description": "Réservation de taxi à Montpellier par téléphone ou formulaire : indiquez trajet, horaire et passagers, nous confirmons la course rapidement. 24h/24, 7j/7."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Contact & réservation",
-            "titre": "Réservez votre course",
-            "intro": "Appelez-nous à toute heure ou envoyez votre demande : nous confirmons rapidement, 24h/24 et 7j/7.",
+            "titre": "On vous envoie un taxi",
+            "intro": "Par téléphone pour tout de suite, par formulaire pour plus tard : dans les deux cas, une confirmation rapide et le véhicule adapté à la demande.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1542,8 +1592,8 @@
           "type": "contact",
           "variant": "split-form-carte",
           "content": {
-            "titre": "Demande de réservation",
-            "intro": "Indiquez votre trajet (départ, destination, date et heure) et le nombre de passagers. Nous vous confirmons la prise en charge.",
+            "titre": "Votre demande de course",
+            "intro": "Départ, destination, date, heure, nombre de passagers — et tout besoin particulier (van, PMR, bagages volumineux) : plus la demande est précise, plus vite elle est confirmée.",
             "form": true,
             "formMode": "demande-intervention",
             "telephone": "06-58-660-660",
@@ -1592,15 +1642,15 @@
       "slug": "faq",
       "label": "FAQ",
       "meta": {
-        "title": "Questions fréquentes — TAXI CONCEPT Montpellier",
-        "description": "Réservation, transferts aéroport, tarifs, van 7 places, PMR : les réponses aux questions fréquentes sur le service de TAXI CONCEPT à Montpellier et dans l'Hérault."
+        "title": "Taxi à Montpellier : questions fréquentes",
+        "description": "Comment réserver, quel véhicule choisir, où intervenons-nous : l'essentiel sur le service de taxi TAXI CONCEPT à Montpellier et dans l'Hérault, en clair."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "FAQ",
-            "titre": "Vos questions, nos réponses",
+            "titre": "Tout ce qu'on nous demande",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1616,31 +1666,31 @@
           "type": "faq",
           "variant": "deux-colonnes",
           "content": {
-            "titre": "Avant de réserver",
+            "titre": "L'essentiel en six réponses",
             "items": [
               {
-                "question": "Êtes-vous disponibles la nuit et le week-end ?",
-                "reponse": "Oui. TAXI CONCEPT assure les courses 24h/24 et 7j/7, y compris la nuit, les week-ends et les jours fériés, sur réservation ou en course immédiate."
+                "question": "Comment vous joindre : téléphone, WhatsApp ou formulaire ?",
+                "reponse": "Les trois fonctionnent. Le téléphone reste le plus rapide pour une course immédiate ; WhatsApp et le formulaire conviennent bien aux réservations à l'avance. Nous répondons 24h/24."
               },
               {
-                "question": "Comment réserver un transfert aéroport ?",
-                "reponse": "Par téléphone, en indiquant votre vol et l'horaire : nous suivons les horaires de vol et adaptons la prise en charge en cas de retard. Nous desservons les aéroports de Montpellier, Marseille, Lyon et Perpignan."
+                "question": "Comment choisir entre berline, van et véhicule PMR ?",
+                "reponse": "Ne choisissez pas : dites-nous qui voyage et avec quoi. Berline pour les trajets classiques, van jusqu'à 7 passagers pour les groupes et les bagages, véhicule adapté pour les personnes à mobilité réduite."
               },
               {
-                "question": "Combien de personnes pouvez-vous transporter ?",
-                "reponse": "Jusqu'à 7 personnes grâce à nos vans et monospaces climatisés, bagages compris. Précisez le nombre de passagers lors de la réservation."
+                "question": "Travaillez-vous les jours fériés ?",
+                "reponse": "Oui : 24h/24 et 7j/7 s'entend toute l'année — nuits, week-ends et jours fériés compris, en course immédiate comme sur réservation."
               },
               {
-                "question": "Proposez-vous un véhicule adapté PMR ?",
-                "reponse": "Oui, le transport de personnes à mobilité réduite est assuré sur réservation, avec un véhicule adapté et un accompagnement attentif."
+                "question": "La prise en charge peut-elle se faire ailleurs qu'à Montpellier ?",
+                "reponse": "Oui : nous prenons des courses au départ de toutes les communes de l'Hérault, pas seulement de Montpellier. La page zone desservie détaille les secteurs couverts."
               },
               {
-                "question": "Quels sont vos tarifs ?",
-                "reponse": "Les courses locales suivent le tarif préfectoral des taxis de l'Hérault. Les transferts aéroport et la longue distance peuvent faire l'objet d'un forfait ou d'un devis : appelez-nous pour une estimation."
+                "question": "Peut-on connaître le montant avant de réserver ?",
+                "reponse": "Pour les transferts, la longue distance, les colis et le VIP, oui : le montant est annoncé avant la course. Les trajets en ville, eux, suivent le compteur au tarif préfectoral."
               },
               {
-                "question": "Intervenez-vous dans tout l'Hérault ?",
-                "reponse": "Oui, depuis Montpellier nous desservons l'ensemble du département (34) : bassin de Thau, littoral, Biterrois et arrière-pays. Nous étudions aussi les trajets hors zone."
+                "question": "Qui est TAXI CONCEPT ?",
+                "reponse": "Une entreprise de taxi montpelliéraine (EURL, siège au 73 allée Kléber), dirigée par Abdelkader Benaissa, qui fait rouler berline, van 7 places et véhicule PMR dans tout l'Hérault."
               }
             ]
           }
@@ -1648,10 +1698,10 @@
         {
           "type": "cta",
           "content": {
-            "titre": "Une autre question ?",
-            "sousTitre": "Appelez-nous, nous répondons 24h/24 et 7j/7.",
+            "titre": "La réponse n'y est pas ?",
+            "sousTitre": "Posez la question de vive voix : nous décrochons à toute heure.",
             "ctaPrimaire": {
-              "label": "Réserver une course",
+              "label": "Commander un taxi",
               "href": "/contact"
             }
           }

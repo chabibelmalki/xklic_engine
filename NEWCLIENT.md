@@ -93,10 +93,16 @@ Toujours : mobile-first, contrastes AA, tout le texte via i18n.
 ## SILOS DE SERVICES (activité de services)
 
 Pas de one-pager : crée **une page dédiée par prestation**. Le **minimum SEO** de
-chaque silo (à respecter, mais ce n'est PAS un gabarit à recopier) : `meta` propre,
-`pageHero` + `breadcrumb` (→ `BreadcrumbList`), bloc `service` (→ `Service`
-JSON-LD), `navHidden: true`, et du maillage interne. Plus une page `services` qui
-les regroupe, et `tarifs` (`serviceQuoteBuilder`) si pertinent.
+chaque silo (à respecter, mais ce n'est PAS un gabarit à recopier) : `meta` propre
+(title ≤ 55 c sans marque), `pageHero` + `breadcrumb` (→ `BreadcrumbList`), bloc
+`service` (→ `Service` JSON-LD, `priceFrom` si un vrai prix existe), un bloc
+`contenu` d'au moins **~150 mots utiles** (déroulé concret, inclus/exclus — le
+thin content ne ranke pas), une **FAQ propre à la page** (3-4 questions
+spécifiques, jamais réutilisées sur une autre page ni un autre site), et du
+**maillage croisé** vers 2-3 pages sœurs. `navHidden: true` seulement si la page
+reçoit des liens entrants réels depuis le contenu (sinon page orpheline). Plus
+une page `services` qui les regroupe, et `tarifs` (`serviceQuoteBuilder`) si
+pertinent.
 
 ⚠️ **Le silo n'impose aucune composition figée.** Au-delà de ce minimum, **varie**
 les blocs, leurs variantes et leur ordre — d'un silo à l'autre ET d'un client à
@@ -211,10 +217,40 @@ entrée catalogue, attends ma validation, puis utilise-le.
 
 ---
 
+## DEFINITION OF DONE — validations OBLIGATOIRES avant de livrer
+
+Un site n'est « au niveau du parc » que si TOUT passe :
+
+```bash
+python3 -m json.tool config/sites/<slug>/*.json   # chaque fichier
+node scripts/generate-sites-manifest.mjs           # manifeste à jour
+npx tsc --noEmit                                   # config conforme au schéma
+npm run dedup:check                                # ZÉRO séquence partagée avec le parc
+npm run build                                      # build vert
+```
+
+- `dedup:check` est **le seul juge** de l'unicité : même deux rédactions
+  indépendantes convergent (constaté à l'audit 2026-07 : 116 séquences après
+  une réécriture pourtant « originale »). Tant qu'il sort ✗, on réécrit.
+- Après mise en ligne (`npm run deploy`) : `npm run canonicals:check` (chaque
+  langue annonce le bon domaine) + curl du title/description/JSON-LD sur 2-3
+  pages réelles. Propriété **Search Console** du domaine client (étape `gsc`
+  d'onboard) — sans elle, zéro suivi.
+- Prospect non signé : `demo: true` + `noindexSite: true`, pas de
+  `customDomains` — la levée de ces flags à la signature suit `MODIFCLIENT.md`
+  (cas « Passer un prospect en client »).
+
+> Pour toute MODIFICATION ultérieure d'un site existant : suivre
+> **`MODIFCLIENT.md`** (les 6 réflexes) — jamais de modif « rapide » hors process.
+
+---
+
 ## À LA FIN
 
 Récap court : `<slug>`, langues et pages générées, `stylePack` choisi (et pourquoi),
-prestations en pages silo, et **tout manque ou hypothèse signalé**.
+prestations en pages silo, résultats des validations (dedup/tsc/build), et
+**tout manque ou hypothèse signalé** (donnée client absente = demandée, jamais
+inventée).
 
 ---
 

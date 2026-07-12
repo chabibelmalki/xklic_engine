@@ -24,7 +24,8 @@
     "media:migrate": "node scripts/migrate-blob-to-scaleway.mjs",
     "media:migrate:apply": "node scripts/migrate-blob-to-scaleway.mjs --apply",
     "dossier:get": "node scripts/get-dossier.mjs",
-    "canonicals:check": "node scripts/check-canonicals.mjs"
+    "canonicals:check": "node scripts/check-canonicals.mjs",
+    "dedup:check": "node scripts/check-duplication.mjs"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1084.0",
