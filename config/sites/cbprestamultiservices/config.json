@@ -24,7 +24,7 @@
       "first": "#c0872f",
       "rest": "#173754"
     },
-    "tagline": "Nettoyage professionnel · Nîmes et 30 km",
+    "tagline": "Nettoyage professionnel & multiservices",
     "colors": {
       "brand": "#173754",
       "accent": "#c0872f",
@@ -40,8 +40,10 @@
     "ape": "81.21Z",
     "apeLabel": "Nettoyage courant des bâtiments",
     "tva": {
-      "regime": "franchise"
+      "regime": "reel",
+      "numero": "FR75937964898"
     },
+    "capital": 50,
     "rcs": "Nîmes",
     "dirigeant": "Abdelkrim Chkirbani",
     "siege": "539 avenue Jean Prouvé, 30900 Nîmes"
@@ -56,17 +58,40 @@
   },
   "meta": {
     "title": "Nettoyage professionnel & remise en état à Nîmes",
-    "description": "Entreprise de nettoyage pour professionnels à Nîmes : bureaux, fin de chantier, vitrerie, canapés et tapis. Devis gratuit sous 48 h, intervention à 30 km.",
+    "description": "Nettoyage pro à Nîmes, Montpellier, Avignon et Marseille : bureaux, chantiers, vitrerie, textiles, plus vigne et jardinage. Disponible 7j/7, 24h/24. Devis gratuit.",
     "keywords": [
       "nettoyage professionnel Nîmes",
       "nettoyage bureaux Nîmes",
       "nettoyage fin de chantier Nîmes",
       "nettoyage vitres Nîmes",
-      "nettoyage canapé tapis Nîmes"
+      "nettoyage canapé tapis Nîmes",
+      "vendange taille de vigne Gard",
+      "jardinage entretien espaces verts"
     ]
   },
+  "social": [
+    {
+      "platform": "whatsapp",
+      "url": "https://wa.me/33767029762"
+    },
+    {
+      "platform": "facebook",
+      "url": "https://www.facebook.com/people/Cb-presta-cleannuisible/61577812294284"
+    },
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/cb_presta_multiservices"
+    },
+    {
+      "platform": "google",
+      "url": "https://share.google/mfkniFgMDHdlD7IVO",
+      "label": "Voir CB Presta Multiservices sur Google Maps"
+    }
+  ],
+  "googleReviewUrl": "https://g.page/r/CayhldlW4MHoEBM/review",
   "forms": {
-    "turnstile": true
+    "turnstile": true,
+    "to": "cbprestamultiservices@gmail.com"
   },
   "blocks": [],
   "pages": [
@@ -79,7 +104,7 @@
           "content": {
             "eyebrow": "Entreprise de nettoyage · Nîmes",
             "titre": "Nettoyage professionnel & remise en état",
-            "accroche": "Bureaux, commerces, chantiers et copropriétés : une équipe équipée qui rend vos locaux impeccables. Nettoyage textile canapés et tapis en injection-extraction. Devis gratuit, intervention dans tout le Gard nîmois.",
+            "accroche": "Bureaux, commerces, chantiers et copropriétés : une équipe équipée qui rend vos locaux impeccables, plus le nettoyage textile canapés et tapis et les travaux de vigne et de jardinage. Disponible 7j/7 et 24h/24, à Nîmes, Montpellier, Avignon et Marseille.",
             "image": {
               "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/hero-equipe.jpg",
               "alt": "Équipe CB Presta Multiservices en intervention de nettoyage professionnel"
@@ -95,11 +120,11 @@
             "trust": [
               {
                 "icone": "building-2",
-                "label": "Professionnels & collectivités"
+                "label": "Professionnels & particuliers"
               },
               {
                 "icone": "clock",
-                "label": "Devis sous 48 h"
+                "label": "Disponible 7j/7 · 24h/24"
               },
               {
                 "icone": "shield-check",
@@ -107,7 +132,7 @@
               },
               {
                 "icone": "map-pin",
-                "label": "Nîmes et 30 km"
+                "label": "Nîmes · Montpellier · Avignon · Marseille"
               }
             ]
           }
@@ -154,6 +179,13 @@
                 "icone": "users",
                 "priceHint": "sur devis",
                 "href": "/coproprietes"
+              },
+              {
+                "nom": "Vigne, taille & jardinage",
+                "description": "Vendange, taille de la vigne, entretien d'espaces verts et ramassage de déchets verts, en renfort saisonnier ou ponctuel.",
+                "icone": "leaf",
+                "priceHint": "sur devis",
+                "href": "/vigne-jardinage"
               }
             ],
             "cta": {
@@ -170,8 +202,8 @@
             "titreAccent": "au service des professionnels",
             "paragraphes": [
               "CB Presta Multiservices est une entreprise de nettoyage basée à Nîmes, dirigée par Abdelkrim Chkirbani. Nous avons choisi de nous adresser en priorité aux professionnels : entreprises, commerces, syndics de copropriété, artisans du bâtiment et gestionnaires de locaux qui attendent un résultat régulier et vérifiable.",
-              "Notre métier, c'est le nettoyage qui demande de la méthode et du matériel : remise en état après travaux, entretien de bureaux, vitrerie en hauteur, décapage de sols et traitement des textiles. Nous travaillons avec des monobrosses, des injecteurs-extracteurs et des produits professionnels adaptés à chaque surface, plutôt que par improvisation.",
-              "Chaque intervention commence par une visite ou un échange précis, se poursuit par un devis clair et se termine par un contrôle du travail rendu. Cette rigueur nous vaut la confiance de nos clients dans tout le bassin nîmois, à Nîmes et jusqu'à trente kilomètres alentour."
+              "Notre métier, c'est le nettoyage qui demande de la méthode et du matériel : remise en état après travaux, entretien de bureaux, vitrerie en hauteur, décapage de sols et traitement des textiles. En vrai multiservices, nous prenons aussi en charge les travaux de vigne — vendange, taille — ainsi que le jardinage et le ramassage de déchets verts.",
+              "Chaque intervention commence par une visite ou un échange précis, se poursuit par un devis clair et se termine par un contrôle du travail rendu. Joignables 7 jours sur 7 et 24 heures sur 24, nous nous déplaçons sur quatre départements : autour de Nîmes, de Montpellier, d'Avignon et de Marseille."
             ],
             "image": {
               "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/remise-etat.jpg",
@@ -250,6 +282,13 @@
                   "alt": "Nettoyage de vitrages d'une tour de bureaux sur nacelle"
                 },
                 "titre": "Grands vitrages & façades"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/vigne-jardinage.jpg",
+                  "alt": "Vendange et taille de la vigne au sécateur"
+                },
+                "titre": "Vigne, taille & jardinage"
               }
             ]
           }
@@ -259,52 +298,62 @@
           "mode": "liste",
           "content": {
             "titre": "Notre secteur d'intervention",
-            "intro": "Nous intervenons chez les professionnels et les particuliers de Nîmes et de sa périphérie, jusqu'à environ trente kilomètres. Zones d'activité, centres commerciaux, bureaux et résidences : nous nous déplaçons sur l'ensemble du bassin.",
-            "rayonKm": 30,
+            "intro": "Basés à Nîmes, nous rayonnons sur quatre départements du sud : le Gard, l'Hérault, le Vaucluse et les Bouches-du-Rhône. Zones d'activité, commerces, bureaux, copropriétés, exploitations et particuliers : nous nous déplaçons autour de Nîmes, Montpellier, Avignon et Marseille, 7 jours sur 7.",
             "zones": [
               {
-                "region": "Nîmes et sa couronne",
+                "region": "Gard — autour de Nîmes",
                 "principale": "Nîmes",
                 "villes": [
                   "Nîmes",
                   "Caissargues",
                   "Bouillargues",
-                  "Rodilhan",
                   "Marguerittes",
-                  "Saint-Gervasy",
-                  "Bezouce",
-                  "Poulx"
-                ]
-              },
-              {
-                "region": "Vaunage & Sommiérois",
-                "principale": "Sommières",
-                "villes": [
-                  "Caveirac",
-                  "Clarensac",
-                  "Langlade",
-                  "Nages-et-Solorgues",
-                  "Calvisson",
-                  "Congénies",
-                  "Sommières"
-                ]
-              },
-              {
-                "region": "Costières & Petite Camargue",
-                "principale": "Vauvert",
-                "villes": [
                   "Milhaud",
-                  "Bernis",
-                  "Uchaud",
-                  "Vergèze",
-                  "Codognan",
-                  "Vauvert",
                   "Saint-Gilles",
-                  "Générac",
-                  "Garons",
-                  "Manduel",
-                  "Redessan",
-                  "Beaucaire"
+                  "Beaucaire",
+                  "Vauvert",
+                  "Sommières",
+                  "Uchaud"
+                ]
+              },
+              {
+                "region": "Hérault — autour de Montpellier",
+                "principale": "Montpellier",
+                "villes": [
+                  "Montpellier",
+                  "Lattes",
+                  "Pérols",
+                  "Castelnau-le-Lez",
+                  "Saint-Jean-de-Védas",
+                  "Mauguio",
+                  "Vendargues",
+                  "Lunel"
+                ]
+              },
+              {
+                "region": "Vaucluse — autour d'Avignon",
+                "principale": "Avignon",
+                "villes": [
+                  "Avignon",
+                  "Le Pontet",
+                  "Sorgues",
+                  "Vedène",
+                  "Morières-lès-Avignon",
+                  "Villeneuve-lès-Avignon",
+                  "Carpentras"
+                ]
+              },
+              {
+                "region": "Bouches-du-Rhône — autour de Marseille",
+                "principale": "Marseille",
+                "villes": [
+                  "Marseille",
+                  "Aix-en-Provence",
+                  "Vitrolles",
+                  "Marignane",
+                  "Aubagne",
+                  "Salon-de-Provence",
+                  "Arles"
                 ]
               }
             ]
@@ -354,15 +403,15 @@
       "label": "Prestations",
       "meta": {
         "title": "Nos prestations de nettoyage pro à Nîmes",
-        "description": "Découvrez les prestations de CB Presta Multiservices à Nîmes : bureaux, fin de chantier, vitrerie, nettoyage textile et entretien de copropriétés."
+        "description": "Prestations de CB Presta Multiservices : bureaux, fin de chantier, vitrerie, textiles, copropriétés, vigne et jardinage. Nîmes, Montpellier, Avignon, Marseille."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Prestations",
-            "titre": "Nos prestations de nettoyage",
-            "intro": "Un savoir-faire concentré sur le nettoyage professionnel et technique, sur Nîmes et tout le bassin nîmois jusqu'à 30 km.",
+            "titre": "Nos prestations",
+            "intro": "Du nettoyage professionnel et technique aux travaux de vigne et de jardinage, sur Nîmes, Montpellier, Avignon et Marseille — 7j/7, 24h/24.",
             "ctaPrimaire": {
               "label": "Demander un devis",
               "href": "/contact"
@@ -409,6 +458,13 @@
                 "icone": "users",
                 "priceHint": "sur devis",
                 "href": "/coproprietes"
+              },
+              {
+                "nom": "Vigne, taille & jardinage",
+                "description": "Vendange, taille de la vigne, entretien d'espaces verts et ramassage de déchets verts, en saison ou à la demande.",
+                "icone": "leaf",
+                "priceHint": "sur devis",
+                "href": "/vigne-jardinage"
               }
             ]
           }
@@ -1179,6 +1235,135 @@
       ]
     },
     {
+      "slug": "vigne-jardinage",
+      "label": "Vigne & jardinage",
+      "navHidden": true,
+      "service": {
+        "name": "Travaux de la vigne et jardinage",
+        "serviceType": "Travaux de la vigne, taille et jardinage",
+        "priceFrom": "Sur devis"
+      },
+      "meta": {
+        "title": "Vigne, taille & jardinage à Nîmes",
+        "description": "Renfort pour la vendange, taille de la vigne, entretien d'espaces verts et ramassage de déchets verts, autour de Nîmes, Montpellier, Avignon et Marseille."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Multiservices",
+            "titre": "Vigne, taille & jardinage",
+            "intro": "Un renfort de bras sérieux et équipé pour vos travaux saisonniers de vigne et l'entretien de vos espaces verts.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Vigne & jardinage"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Des bras et du soin, en saison comme au quotidien",
+            "paragraphes": [
+              "Au-delà de la propreté des bâtiments, CB Presta Multiservices met son sérieux au service de la vigne et des jardins. Nous intervenons en renfort auprès des exploitations viticoles, des domaines, des particuliers et des gestionnaires d'espaces, avec des équipes ponctuelles ou saisonnières selon la charge du moment.",
+              "Côté vigne, nous prêtons main-forte pour la vendange manuelle au moment des récoltes, puis pour la taille pendant la période hivernale, en respectant les consignes du responsable de parcelle. Côté jardin, nous assurons l'entretien courant des espaces verts — débroussaillage, désherbage, coupe et remise en ordre — ainsi que le ramassage et l'évacuation des déchets verts.",
+              "Chaque chantier est cadré par un devis établi sur mesure, en fonction de la surface, de la période et du nombre de journées nécessaires. Nous nous déplaçons dans le Gard, l'Hérault, le Vaucluse et les Bouches-du-Rhône, autour de Nîmes, Montpellier, Avignon et Marseille, 7 jours sur 7."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/vigne-jardinage.jpg",
+              "alt": "Vendange manuelle au sécateur dans une vigne"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/5"
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "sur-devis",
+          "content": {
+            "titre": "Tarification vigne & jardinage",
+            "intro": "Ces travaux se chiffrent à la journée ou au chantier, selon la saison, la surface et l'effectif mobilisé.",
+            "cta": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Vigne & jardinage — vos questions",
+            "items": [
+              {
+                "question": "Intervenez-vous en renfort pour les vendanges ?",
+                "reponse": "Oui, nous fournissons de la main-d'œuvre pour la vendange manuelle pendant la période des récoltes. L'organisation et les consignes de coupe restent celles du domaine ; nous apportons des bras motivés et ponctuels."
+              },
+              {
+                "question": "Faites-vous la taille de la vigne en hiver ?",
+                "reponse": "Oui. Nous assurons la taille durant la saison hivernale, sur la base des instructions du responsable de parcelle, avec notre propre équipement de coupe et de sécurité."
+              },
+              {
+                "question": "Évacuez-vous les déchets verts après le chantier ?",
+                "reponse": "Le ramassage des déchets verts est inclus, et leur évacuation vers une filière adaptée peut être organisée sur devis, selon le volume et le lieu."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Nos autres métiers",
+            "items": [
+              {
+                "nom": "Bureaux & locaux",
+                "description": "Entretien de vos espaces professionnels.",
+                "icone": "building-2",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Fin de chantier",
+                "description": "Remise en état après travaux.",
+                "icone": "hard-hat",
+                "href": "/fin-de-chantier"
+              },
+              {
+                "nom": "Copropriétés",
+                "description": "Entretien des parties communes.",
+                "icone": "users",
+                "href": "/coproprietes"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un besoin en vigne ou au jardin ?",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
       "slug": "tarifs",
       "label": "Tarifs",
       "meta": {
@@ -1233,6 +1418,12 @@
                 "prix": "Sur devis",
                 "unite": "",
                 "description": "Contrats d'immeuble pour syndics et bailleurs."
+              },
+              {
+                "nom": "Vigne, taille & jardinage",
+                "prix": "Sur devis",
+                "unite": "",
+                "description": "Vendange, taille, entretien d'espaces verts, à la journée ou au chantier."
               }
             ],
             "note": "Prix de départ indicatifs, hors conditions particulières d'accès. Contrats récurrents dégressifs.",
@@ -1261,7 +1452,7 @@
       "label": "Contact",
       "meta": {
         "title": "Devis nettoyage gratuit à Nîmes",
-        "description": "Contactez CB Presta Multiservices à Nîmes pour un devis gratuit sous 48 h : bureaux, fin de chantier, vitrerie, canapés et copropriétés. Nîmes et 30 km."
+        "description": "Contactez CB Presta Multiservices pour un devis gratuit : nettoyage, chantiers, textiles, vigne et jardinage. Nîmes, Montpellier, Avignon, Marseille — 7j/7, 24h/24."
       },
       "blocks": [
         {
@@ -1269,7 +1460,7 @@
           "content": {
             "eyebrow": "Contact",
             "titre": "Parlons de votre besoin",
-            "intro": "Décrivez-nous votre projet de nettoyage : nous revenons vers vous avec un devis gratuit et détaillé."
+            "intro": "Décrivez-nous votre projet : nous revenons vers vous avec un devis gratuit et détaillé. Joignables 7 jours sur 7, 24 heures sur 24."
           }
         },
         {
@@ -1277,8 +1468,12 @@
           "variant": "split-form-carte",
           "content": {
             "titre": "Demander un devis",
-            "intro": "Remplissez le formulaire ci-dessous en précisant la prestation, la surface et la commune. Nous vous recontactons rapidement.",
-            "adresse": "Nîmes et 30 km alentour",
+            "intro": "Par téléphone, WhatsApp ou via le formulaire, en précisant la prestation, la surface et la commune. Nous vous recontactons rapidement.",
+            "telephone": "07 67 02 97 62",
+            "email": "cbprestamultiservices@gmail.com",
+            "whatsapp": "33767029762",
+            "adresse": "Nîmes, Montpellier, Avignon, Marseille",
+            "telephoneHeader": "texte",
             "form": true,
             "formMode": "demande-intervention",
             "formTitre": "Votre demande",
@@ -1289,30 +1484,26 @@
               "Nettoyage de vitres & vitrerie",
               "Canapés, fauteuils, tapis & matelas",
               "Copropriétés & parties communes",
+              "Vigne, taille & jardinage",
               "Autre / plusieurs prestations"
             ],
             "villes": [
               "Nîmes",
-              "Caissargues",
-              "Bouillargues",
-              "Marguerittes",
-              "Milhaud",
-              "Caveirac",
-              "Vauvert",
-              "Saint-Gilles",
-              "Manduel",
-              "Sommières",
+              "Montpellier",
+              "Avignon",
+              "Marseille",
+              "Aix-en-Provence",
               "Beaucaire",
+              "Sommières",
+              "Lunel",
+              "Vauvert",
+              "Arles",
               "Autre commune"
             ],
             "horaires": [
               {
-                "jour": "Lundi – Vendredi",
-                "heures": "8h00 – 19h00"
-              },
-              {
-                "jour": "Samedi",
-                "heures": "Sur rendez-vous"
+                "jour": "Tous les jours",
+                "heures": "7j/7 · 24h/24"
               }
             ],
             "confidentialiteHref": "/confidentialite"
@@ -1342,10 +1533,9 @@
           "content": {
             "titre": "Éditeur du site",
             "paragraphes": [
-              "Le présent site est édité par CB Presta Multiservices, société à responsabilité limitée (SARL) dont le siège social est situé 539 avenue Jean Prouvé, 30900 Nîmes.",
-              "SIRET : 937 964 898 00012 — Code APE 81.21Z (Nettoyage courant des bâtiments) — RCS Nîmes. Gérant : Abdelkrim Chkirbani.",
-              "TVA non applicable, article 293 B du Code général des impôts.",
-              "Contact : via le formulaire de la page Contact du site.",
+              "Le présent site est édité par CB Presta Multiservices, société à responsabilité limitée (SARL) au capital de 50 €, dont le siège social est situé 539 avenue Jean Prouvé, 30900 Nîmes.",
+              "SIRET : 937 964 898 00012 — Code APE 81.21Z (Nettoyage courant des bâtiments) — RCS Nîmes. N° TVA intracommunautaire : FR75937964898. Gérant : Abdelkrim Chkirbani.",
+              "Contact : 07 67 02 97 62 — cbprestamultiservices@gmail.com, ou via le formulaire de la page Contact du site.",
               "Directeur de la publication : Abdelkrim Chkirbani, en qualité de gérant."
             ]
           }
