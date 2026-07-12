@@ -51,7 +51,7 @@
     "lng": 4.4030955
   },
   "meta": {
-    "title": "Ménage & repassage à Saint-Étienne — dès 14 €/h",
+    "title": "Ménage & repassage à Saint-Étienne — dès 14 €/h net",
     "description": "Ménage à domicile, repassage, grand nettoyage et vitres à Saint-Étienne et sa couronne. Crédit d'impôt 50 % : l'heure revient à 14 €. Devis sous 24 h.",
     "keywords": [
       "aide ménagère Saint-Étienne",
@@ -153,7 +153,7 @@
                 "nom": "Ménage à domicile",
                 "emoji": "🧽",
                 "badge": "Crédit d'impôt 50 %",
-                "priceHint": "dès 28 €/h",
+                "priceHint": "28 €/h — 14 €/h net",
                 "description": "Entretien régulier de votre logement : sols, cuisine, salle de bain, poussières.",
                 "href": "/menage-domicile"
               },
@@ -161,7 +161,7 @@
                 "nom": "Repassage à domicile",
                 "emoji": "👕",
                 "badge": "Crédit d'impôt 50 %",
-                "priceHint": "dès 26 €/h",
+                "priceHint": "26 €/h — 13 €/h net",
                 "description": "Linge repassé, plié et rangé avec soin, chez vous ou sur le même créneau que le ménage.",
                 "href": "/repassage"
               },
@@ -178,7 +178,7 @@
                 "emoji": "🪟",
                 "badge": "Crédit d'impôt 50 %",
                 "priceHint": "dès 80 €",
-                "description": "Vitres, baies vitrées et miroirs sans traces, à l'intérieur comme à l'extérieur.",
+                "description": "Fenêtres, baies vitrées et miroirs débarrassés de toute trace, sur les deux faces.",
                 "href": "/nettoyage-vitres"
               },
               {
@@ -210,7 +210,7 @@
             "eyebrow": "Services à la personne",
             "argumentaireTitre": "Votre ménage à domicile vous coûte",
             "argumentaireAccent": "moitié prix",
-            "argumentaire": "Pour le ménage et le repassage chez vous : 28 €/h facturés, mais seulement 14 €/h réellement à votre charge après le crédit d'impôt de 50 %.",
+            "argumentaire": "Ménage et repassage chez vous : la facture indique 28 €/h, mais après déduction des 50 % de crédit d'impôt, seuls 14 €/h sortent réellement de votre poche.",
             "points": [
               "50 % de crédit d'impôt sur le ménage et le repassage à domicile",
               "Avance immédiate : ne réglez tout de suite que la moitié",
@@ -294,6 +294,21 @@
           }
         },
         {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Qui sommes-nous",
+            "titre": "Une entreprise stéphanoise, à taille humaine",
+            "paragraphes": [
+              "Adelnet est une entreprise indépendante fondée à Saint-Étienne par Khadija Selhami, installée place du Forum. Régularité, soin du détail et discrétion : trois engagements tenus à chaque passage, chez les particuliers comme dans les entreprises.",
+              "Intervenante attitrée, créneaux fixes 7j/7 de 7h à 22h, déplacement compris sur l'agglomération : la proximité n'est pas un slogan, c'est notre organisation."
+            ],
+            "ctaPrimaire": {
+              "label": "Découvrir Adelnet",
+              "href": "/a-propos"
+            }
+          }
+        },
+        {
           "type": "faq",
           "variant": "deux-colonnes",
           "content": {
@@ -319,7 +334,7 @@
           "variant": "encadre",
           "content": {
             "titre": "Prête à vous libérer des corvées ?",
-            "sousTitre": "Devis gratuit et sans engagement. Réponse rapide par téléphone, WhatsApp ou e-mail.",
+            "sousTitre": "Estimation offerte, sans engagement — on vous répond vite, au téléphone, sur WhatsApp ou par e-mail.",
             "ctaPrimaire": {
               "label": "Demander un devis gratuit",
               "href": "/devis"
@@ -329,8 +344,8 @@
               "href": "tel:+33760153853"
             },
             "lien": {
-              "label": "ou écrivez-nous sur WhatsApp →",
-              "href": "https://wa.me/33760153853"
+              "label": "Toutes les réponses à vos questions →",
+              "href": "/faq"
             }
           }
         }
@@ -387,13 +402,13 @@
           "content": {
             "eyebrow": "À domicile · crédit d'impôt 50 %",
             "titre": "Prestations à votre domicile",
-            "intro": "Réalisées chez les particuliers, ces prestations ouvrent droit au crédit d'impôt de 50 % via la coopérative Accès SAP.",
+            "intro": "Effectuées au domicile des particuliers, elles bénéficient des 50 % de crédit d'impôt, gérés par la coopérative Accès SAP.",
             "items": [
               {
                 "nom": "Ménage à domicile",
                 "emoji": "🧽",
                 "badge": "Crédit d'impôt 50 %",
-                "priceHint": "dès 28 €/h",
+                "priceHint": "28 €/h — 14 €/h net",
                 "description": "Entretien régulier de votre logement : sols, cuisine, salle de bain, poussières.",
                 "href": "/menage-domicile"
               },
@@ -401,7 +416,7 @@
                 "nom": "Repassage à domicile",
                 "emoji": "👕",
                 "badge": "Crédit d'impôt 50 %",
-                "priceHint": "dès 26 €/h",
+                "priceHint": "26 €/h — 13 €/h net",
                 "description": "Linge repassé, plié et rangé, chez vous ou sur le même créneau que le ménage.",
                 "href": "/repassage"
               },
@@ -418,7 +433,7 @@
                 "emoji": "🪟",
                 "badge": "Crédit d'impôt 50 %",
                 "priceHint": "dès 80 €",
-                "description": "Vitres, baies et miroirs sans traces, intérieur et extérieur.",
+                "description": "Fenêtres, baies et miroirs impeccables, dedans comme dehors.",
                 "href": "/nettoyage-vitres"
               }
             ]
@@ -456,6 +471,17 @@
           }
         },
         {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Le catalogue en bref",
+            "titre": "Six prestations, deux familles de prix",
+            "paragraphes": [
+              "Le catalogue Adelnet tient en six prestations. Quatre se déroulent chez vous et ouvrent droit au crédit d'impôt : le ménage régulier à 28 €/h (14 €/h net), le repassage à 26 €/h (13 €/h net), le grand nettoyage dès 180 € et la vitrerie dès 80 €. Les deux dernières s'adressent aux professionnels et aux biens en sortie de travaux : entretien de bureaux dès 90 € et fin de chantier dès 220 €, toujours sur devis.",
+              "Chaque page décrit le déroulé, la grille de prix et les questions fréquentes ; le configurateur de la page tarifs additionne le tout, crédit d'impôt déduit."
+            ]
+          }
+        },
+        {
           "type": "cta",
           "variant": "encadre",
           "content": {
@@ -490,7 +516,7 @@
           "content": {
             "eyebrow": "Tarifs & devis en ligne",
             "titre": "Composez votre devis en quelques clics",
-            "intro": "Choisissez vos prestations, ajustez les quantités et obtenez une estimation immédiate — crédit d'impôt déduit pour les prestations à domicile."
+            "intro": "Réglez les heures de ménage, ajoutez le repassage ou un forfait : le total se calcule en direct, et la bascule « après crédit d'impôt » affiche votre vrai reste à charge — 14 €/h sur le ménage, 13 €/h sur le repassage."
           }
         },
         {
@@ -690,11 +716,22 @@
           }
         },
         {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Tarifs sans surprise",
+            "titre": "Comment lire nos prix",
+            "paragraphes": [
+              "Les montants du configurateur sont les prix réellement facturés : 28 € l'heure de ménage, 26 € l'heure de repassage, des forfaits dès 180 € pour le grand nettoyage et dès 80 € pour la vitrerie. Pour tout ce qui se déroule à votre domicile, la bascule « après crédit d'impôt » affiche votre reste à charge : 14 €/h et 13 €/h sur les prestations horaires, dans la limite de 12 000 € de dépenses par an.",
+              "Bureaux, locaux professionnels et fin de chantier ne relèvent pas des services à la personne : ces interventions sont chiffrées sur devis, au prix plein, après un échange sur la surface et l'état des lieux."
+            ]
+          }
+        },
+        {
           "type": "cta",
           "variant": "encadre",
           "content": {
             "titre": "Un grand chantier ou un besoin sur mesure ?",
-            "sousTitre": "Contactez-nous pour un devis personnalisé, gratuit et sans engagement.",
+            "sousTitre": "Parlez-nous de votre projet : chiffrage sur mesure, offert et sans aucune obligation.",
             "ctaPrimaire": {
               "label": "Nous contacter",
               "href": "/contact"
@@ -721,7 +758,7 @@
           "content": {
             "eyebrow": "Services à la personne",
             "titre": "Le ménage à domicile, divisé par deux",
-            "intro": "Crédit d'impôt de 50 %, avance immédiate, paiement CESU : le ménage et le repassage à votre domicile ne vous coûtent réellement que 14 €/h."
+            "intro": "Avance immédiate, règlement en CESU, 50 % de crédit d'impôt : le ménage et le repassage à votre domicile ne vous coûtent réellement que 14 €/h."
           }
         },
         {
@@ -729,7 +766,7 @@
           "content": {
             "argumentaireTitre": "Vous payez la moitié,",
             "argumentaireAccent": "l'État paie le reste",
-            "argumentaire": "Le crédit d'impôt couvre 50 % du ménage et du repassage à domicile, dans la limite de 12 000 € par an et par foyer.",
+            "argumentaire": "Sur le ménage comme sur le repassage à domicile, l'État rembourse la moitié de vos dépenses, plafonnées à 12 000 € annuels par foyer.",
             "points": [
               "50 % de crédit d'impôt sur les prestations à domicile",
               "Avance immédiate : ne réglez tout de suite que la moitié",
@@ -762,20 +799,24 @@
             "titre": "Crédit d'impôt : vos questions",
             "items": [
               {
-                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
-                "reponse": "Pour le ménage et le repassage à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées (plafond de 12 000 € par an et par foyer). Une heure facturée 28 € ne vous coûte donc réellement que 14 €. Adelnet travaille via la coopérative Accès SAP, déclarée services à la personne, ce qui vous ouvre ce droit."
+                "question": "Concrètement, sur une facture de 56 €, je paie combien ?",
+                "reponse": "28 €. Deux heures de ménage à 28 €/h font 56 € facturés ; le crédit d'impôt de 50 % en couvre la moitié. Même mécanique sur le repassage : l'heure à 26 € pèse 13 € au final. Le dispositif joue dans la limite de 12 000 € de dépenses par an et par foyer, plafond majorable selon la composition du foyer."
               },
               {
-                "question": "Qu'est-ce que l'avance immédiate ?",
-                "reponse": "Grâce à l'avance immédiate de crédit d'impôt (URSSAF), vous ne réglez tout de suite que la moitié restant à votre charge, sans attendre votre déclaration d'impôts. Le dispositif est géré via la coopérative Accès SAP."
+                "question": "Faut-il avancer la totalité et attendre la déclaration ?",
+                "reponse": "Non. L'avance immédiate, gérée par l'URSSAF, applique la déduction au moment du règlement : sur ces 56 € de ménage, vous ne décaissez que 28 €. Adelnet passe par la coopérative Accès SAP, déclarée services à la personne, qui active ce service pour vous."
               },
               {
-                "question": "Le crédit d'impôt s'applique-t-il aux bureaux ?",
-                "reponse": "Non. Le crédit d'impôt de 50 % concerne uniquement les prestations réalisées au domicile d'un particulier. Le nettoyage de bureaux, de locaux et la fin de chantier sont facturés sur devis, sans crédit d'impôt."
+                "question": "Mes bureaux ou mon commerce en profitent-ils aussi ?",
+                "reponse": "Non, et autant l'annoncer d'entrée : les 50 % ne valent que pour les prestations effectuées au domicile d'un particulier. Bureaux, locaux professionnels et fin de chantier sont donc chiffrés sur devis, au prix plein."
               },
               {
-                "question": "Puis-je payer en CESU ?",
-                "reponse": "Oui, le paiement en CESU est accepté pour les prestations à domicile. Avec le crédit d'impôt, votre coût réel revient à 14 €/h."
+                "question": "Et au moment de déclarer mes revenus, je fournis quoi ?",
+                "reponse": "Une attestation fiscale vous est remise chaque année : elle récapitule les sommes versées pour vos prestations à domicile, prêtes à reporter dans votre déclaration. Avec l'avance immédiate, l'administration connaît déjà ces montants."
+              },
+              {
+                "question": "Régler en CESU change-t-il le calcul ?",
+                "reponse": "Rien ne bouge : payée en CESU ou par un autre moyen, l'heure de ménage facturée 28 € revient à 14 € une fois les 50 % déduits, du moment que la prestation a lieu chez vous."
               }
             ]
           }
@@ -801,7 +842,6 @@
     {
       "slug": "zone-intervention",
       "label": "Zone d'intervention",
-      "navHidden": true,
       "meta": {
         "title": "Zone d'intervention autour de Saint-Étienne",
         "description": "Adelnet se déplace à Saint-Étienne, Villars, Saint-Chamond, Firminy, Andrézieux-Bouthéon et jusqu'au Rhône. Déplacement compris sur l'agglomération."
@@ -913,7 +953,7 @@
           "content": {
             "eyebrow": "À propos",
             "titre": "Adelnet, l'aide ménagère de confiance à Saint-Étienne",
-            "intro": "Fondée par Khadija Selhami, Adelnet met la régularité, le soin et la discrétion au cœur de chaque intervention — chez les particuliers comme dans les entreprises."
+            "intro": "Adelnet, fondée par Khadija Selhami, tient la même ligne à chaque passage — régularité, soin du détail, discrétion — que l'on intervienne chez un particulier ou dans une entreprise."
           }
         },
         {
@@ -926,7 +966,7 @@
               {
                 "icone": "ShieldCheck",
                 "titre": "Confiance",
-                "texte": "Une intervenante sérieuse et discrète, qui respecte votre logement et vos habitudes."
+                "texte": "Une professionnelle fiable et discrète, attentive à votre logement comme à vos habitudes."
               },
               {
                 "icone": "Repeat",
@@ -941,7 +981,7 @@
               {
                 "icone": "Leaf",
                 "titre": "Écoute",
-                "texte": "Produits et méthodes adaptés à vos préférences, en présence d'enfants ou d'animaux."
+                "texte": "Méthodes et produits ajustés à vos souhaits, y compris avec des enfants ou des animaux à la maison."
               }
             ]
           }
@@ -1057,7 +1097,7 @@
           "variant": "split-form-carte",
           "content": {
             "titre": "Votre demande de devis",
-            "intro": "Surface, fréquence, secteur : c'est tout ce qu'il nous faut pour poser des chiffres justes dès le premier échange.",
+            "intro": "Surface, fréquence, secteur : ces trois informations suffisent pour poser des chiffres justes dès le premier échange.",
             "form": true,
             "formMode": "devis",
             "telephone": "+33 7 60 15 38 53",
@@ -1142,7 +1182,7 @@
               },
               {
                 "question": "Peut-on combiner ménage et repassage sur un même passage ?",
-                "reponse": "Oui, et c'est souvent le plus rentable : un seul créneau, deux prestations, chacune à son taux (28 €/h le ménage, 26 €/h le repassage), toutes deux éligibles au crédit d'impôt."
+                "reponse": "Oui, et c'est souvent le plus rentable : un seul créneau, deux prestations, chacune à son taux avant crédit d'impôt (28 €/h le ménage, 26 €/h le repassage), toutes deux éligibles aux 50 %."
               },
               {
                 "question": "Utilisez-vous des produits écologiques ?",
@@ -1178,8 +1218,9 @@
       "label": "Ménage à domicile",
       "navHidden": true,
       "meta": {
-        "title": "Ménage à domicile Saint-Étienne — dès 14 €/h",
+        "title": "Ménage à domicile Saint-Étienne — dès 14 €/h net",
         "description": "Entretien régulier ou ponctuel de votre logement à Saint-Étienne et sa couronne : 28 €/h, soit 14 €/h après crédit d'impôt 50 %. Devis sous 24 h.",
+        "ogImage": "https://xklic-media.s3.fr-par.scw.cloud/sites/adelnet/services-menage.png",
         "keywords": [
           "ménage à domicile Saint-Étienne",
           "aide ménagère Saint-Étienne",
@@ -1199,7 +1240,7 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "Crédit d'impôt 50 %",
-            "titre": "Ménage à domicile à Saint-Étienne — dès 28 €/h",
+            "titre": "Ménage à domicile à Saint-Étienne : 28 €/h, 14 €/h après crédit d'impôt",
             "intro": "Adelnet assure l'entretien régulier de votre logement à Saint-Étienne et dans sa couronne : sols, cuisine, sanitaires, poussières. Grâce au crédit d'impôt de 50 %, votre heure facturée 28 € ne vous coûte réellement que 14 €.",
             "breadcrumb": [
               {
@@ -1233,7 +1274,7 @@
               {
                 "icone": "badge-euro",
                 "nom": "14 €/h après crédit d'impôt",
-                "description": "Le ménage à domicile ouvre droit au crédit d'impôt de 50 %, avec avance immédiate possible."
+                "description": "Fait chez vous, le ménage est éligible aux 50 % de crédit d'impôt — et l'avance immédiate évite d'attendre."
               },
               {
                 "icone": "repeat",
@@ -1248,7 +1289,7 @@
               {
                 "icone": "leaf",
                 "nom": "Produits adaptés",
-                "description": "Produits choisis selon vos préférences, en présence d'enfants ou d'animaux."
+                "description": "Des produits sélectionnés avec vous, pensés pour les foyers avec enfants ou animaux."
               }
             ]
           }
@@ -1262,7 +1303,7 @@
               {
                 "icone": "clipboard-list",
                 "titre": "Votre demande",
-                "texte": "Vous décrivez votre logement et la fréquence souhaitée. Devis gratuit sous 24 h."
+                "texte": "Dites-nous à quoi ressemble votre logement et le rythme voulu : estimation offerte sous 24 h."
               },
               {
                 "icone": "calendar-check",
@@ -1309,7 +1350,7 @@
               },
               {
                 "question": "Le tarif est-il le même partout ?",
-                "reponse": "28 €/h, déplacement compris sur Saint-Étienne et son agglomération. Pour les secteurs plus éloignés, plaine du Forez ou communes du Rhône, les conditions sont confirmées au devis."
+                "reponse": "28 €/h avant crédit d'impôt (soit 14 €/h après), déplacement compris sur Saint-Étienne et son agglomération. Pour les secteurs plus éloignés, plaine du Forez ou communes du Rhône, les conditions sont confirmées au devis."
               }
             ]
           }
@@ -1361,7 +1402,7 @@
               {
                 "nom": "Repassage à domicile",
                 "emoji": "👕",
-                "priceHint": "dès 26 €/h",
+                "priceHint": "26 €/h — 13 €/h net",
                 "description": "S'ajoute au même créneau que le ménage : un seul passage, deux corvées en moins.",
                 "href": "/repassage"
               },
@@ -1405,7 +1446,7 @@
       "label": "Repassage à domicile",
       "navHidden": true,
       "meta": {
-        "title": "Repassage à domicile Saint-Étienne — dès 13 €/h",
+        "title": "Repassage à domicile Saint-Étienne — dès 13 €/h net",
         "description": "Linge repassé, plié et rangé à domicile à Saint-Étienne : 26 €/h, soit 13 €/h après crédit d'impôt, combinable avec le ménage sur le même créneau.",
         "keywords": [
           "repassage à domicile Saint-Étienne",
@@ -1425,7 +1466,7 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "Crédit d'impôt 50 %",
-            "titre": "Repassage à domicile à Saint-Étienne — dès 26 €/h",
+            "titre": "Repassage à domicile à Saint-Étienne : 26 €/h, 13 €/h après crédit d'impôt",
             "intro": "Adelnet repasse, plie et range votre linge à domicile, seul ou sur le même créneau que le ménage. Grâce au crédit d'impôt de 50 %, l'heure facturée 26 € ne vous coûte réellement que 13 €.",
             "breadcrumb": [
               {
@@ -1482,7 +1523,7 @@
             "paragraphes": [
               "Le principe est simple : l'intervenante repasse à votre domicile, avec votre linge sorti de machine ou de la panière. Chemises, pantalons, draps, housses de couette, nappes : tout est repassé, plié et rangé là où vous l'indiquez — armoire, penderie ou piles prêtes pour la semaine. Une heure de repassage est facturée 26 €, soit 13 € après le crédit d'impôt de 50 %, et le compteur démarre à 1 h : pas de forfait imposé pour une petite panière.",
               "Le calcul le plus malin, c'est le créneau combiné : ménage puis repassage sur le même passage, chacun à son taux horaire. Un seul rendez-vous dans votre semaine, deux corvées en moins. C'est la formule que choisissent la plupart de nos clients réguliers de Saint-Étienne, Villars ou Saint-Chamond.",
-              "Pourquoi à domicile et pas en atelier ? D'abord parce que votre linge ne quitte pas la maison — pas de transport, pas d'attente, pas d'échange de sacs. Ensuite parce que seule une prestation réalisée chez vous ouvre droit au crédit d'impôt de 50 % : le même service ailleurs vous coûterait le double, net."
+              "Pourquoi à domicile et pas en atelier ? D'abord parce que votre linge ne quitte pas la maison — pas de transport, pas d'attente, pas d'échange de sacs. Ensuite parce que seule une prestation réalisée chez vous donne accès aux 50 % de crédit d'impôt : le même service ailleurs vous coûterait le double, net."
             ]
           }
         },
@@ -1498,7 +1539,7 @@
               },
               {
                 "question": "Puis-je cumuler ménage et repassage sur un même rendez-vous ?",
-                "reponse": "C'est même la formule la plus courante : l'intervenante enchaîne les deux sur un seul passage, le ménage à 28 €/h et le repassage à 26 €/h, chacun compté à son taux."
+                "reponse": "C'est même la formule la plus courante : l'intervenante enchaîne les deux sur un seul passage, le ménage à 28 €/h et le repassage à 26 €/h avant crédit d'impôt, chacun compté à son taux."
               },
               {
                 "question": "Comment le linge est-il rendu ?",
@@ -1516,7 +1557,7 @@
               {
                 "nom": "Ménage à domicile",
                 "emoji": "🧽",
-                "priceHint": "dès 28 €/h",
+                "priceHint": "28 €/h — 14 €/h net",
                 "description": "Le duo gagnant avec le repassage : tout l'entretien sur un seul créneau.",
                 "href": "/menage-domicile"
               },
@@ -1617,7 +1658,7 @@
               {
                 "icone": "badge-euro",
                 "nom": "Crédit d'impôt 50 %",
-                "description": "Réalisé à votre domicile, le grand nettoyage ouvre droit au crédit d'impôt de 50 %."
+                "description": "Effectué chez vous, le grand nettoyage profite lui aussi des 50 % de crédit d'impôt."
               }
             ]
           }
@@ -1629,7 +1670,7 @@
             "titre": "Ce qu'on nettoie que le ménage courant ne touche pas",
             "paragraphes": [
               "Le grand nettoyage, c'est tout ce qui s'accumule entre deux entretiens courants : plinthes et dessus de meubles, intérieurs de placards vidés puis essuyés, électroménager dégraissé (four, hotte, réfrigérateur), calcaire des robinetteries et parois de douche, traces sur les portes et interrupteurs. On avance pièce par pièce, en terminant par les sols, et les vitres intérieures peuvent s'ajouter sur demande.",
-              "Le tarif suit la taille du logement, pas de surprise à l'arrivée : dès 180 € pour un studio ou T1, 250 € pour un T2, 320 € pour un T3 et 400 € à partir du T4. Réalisée à votre domicile, la prestation ouvre droit au crédit d'impôt de 50 % — un T2 à 250 € vous revient donc réellement à 125 €.",
+              "Le tarif suit la taille du logement, pas de surprise à l'arrivée : dès 180 € pour un studio ou T1, 250 € pour un T2, 320 € pour un T3 et 400 € à partir du T4. Réalisée chez vous, la prestation est couverte à moitié par le crédit d'impôt — un T2 à 250 € vous revient donc réellement à 125 €.",
               "Quand le programmer ? Au printemps évidemment, mais aussi avant de recevoir, après une longue absence, ou au moment d'emménager dans un logement resté vide. À Saint-Étienne, Firminy ou Andrézieux-Bouthéon, comptez une demande de devis et une réponse sous 24 h pour caler la date."
             ]
           }
@@ -1668,7 +1709,7 @@
               {
                 "nom": "Ménage à domicile",
                 "emoji": "🧽",
-                "priceHint": "dès 28 €/h",
+                "priceHint": "28 €/h — 14 €/h net",
                 "description": "Pour que le résultat du grand nettoyage dure toute l'année.",
                 "href": "/menage-domicile"
               },
@@ -1733,7 +1774,7 @@
           "content": {
             "eyebrow": "Crédit d'impôt 50 %",
             "titre": "Nettoyage de vitres à domicile — dès 80 €",
-            "intro": "Adelnet redonne de la lumière à votre intérieur : vitres, baies vitrées et miroirs nettoyés sans traces, à l'intérieur comme à l'extérieur. Prestation à domicile éligible au crédit d'impôt de 50 %.",
+            "intro": "Fenêtres, baies vitrées et miroirs retrouvent leur transparence, faces intérieures et extérieures comprises : votre logement gagne en clarté. Prestation à domicile éligible au crédit d'impôt de 50 %.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1776,7 +1817,7 @@
               {
                 "icone": "badge-euro",
                 "nom": "Crédit d'impôt 50 %",
-                "description": "Réalisé à votre domicile, le nettoyage de vitres ouvre droit au crédit d'impôt de 50 %."
+                "description": "La vitrerie se déroulant chez vous, elle bénéficie elle aussi des 50 % de crédit d'impôt."
               }
             ]
           }
@@ -1788,7 +1829,7 @@
             "titre": "Une vitrerie complète, pas juste un coup de raclette",
             "paragraphes": [
               "L'intervention couvre l'ensemble des surfaces vitrées de votre logement : fenêtres et baies vitrées sur les deux faces, miroirs fixes, sans oublier les encadrements et les rebords, qui font toute la différence sur le rendu final. Le résultat visé est simple : zéro trace, y compris en plein soleil — c'est là que les défauts se voient.",
-              "Deux forfaits, annoncés d'avance : dès 80 € pour un appartement, dès 130 € pour une maison. Le montant exact dépend du nombre d'ouvertures et de la présence de grandes baies ; il est fixé au devis, avant l'intervention, jamais après. Réalisée à votre domicile, la prestation ouvre droit au crédit d'impôt de 50 % : un forfait appartement à 80 € revient donc réellement à 40 €.",
+              "Deux forfaits, annoncés d'avance : dès 80 € pour un appartement, dès 130 € pour une maison. Le montant exact dépend du nombre d'ouvertures et de la présence de grandes baies ; il est fixé au devis, avant l'intervention, jamais après. Effectuée à votre domicile, la prestation est prise en charge pour moitié par le crédit d'impôt : un forfait appartement à 80 € revient donc réellement à 40 €.",
               "Beaucoup de clients de Saint-Étienne, Villars ou Saint-Just-Saint-Rambert calent une vitrerie au printemps et une à l'automne, ou l'ajoutent ponctuellement à leur créneau de ménage habituel. Une seule demande de devis suffit pour organiser les deux."
             ]
           }
@@ -1830,7 +1871,7 @@
               {
                 "nom": "Ménage à domicile",
                 "emoji": "🧽",
-                "priceHint": "dès 28 €/h",
+                "priceHint": "28 €/h — 14 €/h net",
                 "description": "Ajoutez la vitrerie ponctuellement à votre créneau d'entretien régulier.",
                 "href": "/menage-domicile"
               }
@@ -1862,6 +1903,7 @@
       "meta": {
         "title": "Nettoyage de bureaux à Saint-Étienne — dès 90 €",
         "description": "Entretien de bureaux, cabinets et commerces à Saint-Étienne et son agglomération : dès 90 €, horaires décalés possibles, régulier ou ponctuel.",
+        "ogImage": "https://xklic-media.s3.fr-par.scw.cloud/sites/adelnet/nettoyage-bureaux.png",
         "keywords": [
           "nettoyage bureaux Saint-Étienne",
           "entretien locaux professionnels Loire",
@@ -2062,6 +2104,18 @@
                 "nom": "Prêt à emménager",
                 "description": "Un logement net et sain, prêt à être habité ou remis en location."
               }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "En pratique",
+            "titre": "Après les artisans, avant les cartons",
+            "paragraphes": [
+              "Un chantier laisse toujours la même signature : une poussière de plâtre fine qui se redépose plusieurs jours durant, des projections de peinture sur les plinthes, des traces de colle et d'étiquettes sur les vitrages neufs. La remise en propre s'attaque à tout cela dans l'ordre — dépoussiérage complet des surfaces du haut vers le bas, gommage des traces, lessivage des sols, vitres et encadrements en finition. Objectif : un logement ou un local où l'on peut poser les meubles le soir même.",
+              "Côté budget, la grille de départ suit la taille du bien : dès 220 € pour un studio ou T1, dès 340 € pour un T2 ou T3, dès 480 € à partir du T4. Le montant définitif est fixé sur devis, après description du chantier — nature des travaux, surfaces, niveau de résidus. Un point fiscal à connaître : la fin de chantier ne relève pas des services à la personne et n'ouvre donc pas droit au crédit d'impôt de 50 %, contrairement au ménage à domicile.",
+              "Nous intervenons à Saint-Étienne et dans toute sa couronne, avec une réponse sous 24 h — appréciable quand la remise des clés ou l'état des lieux approche."
             ]
           }
         },

@@ -39,8 +39,8 @@
     "ville": "Marseille"
   },
   "meta": {
-    "title": "MB Nettoyage — Home & business cleaning in Marseille",
-    "description": "50% tax credit on home cleaning: MB Nettoyage looks after homes and business premises in Marseille and Aix, with natural products. Free quote by phone.",
+    "title": "MB Nettoyage — Eco-friendly home & office cleaning in Marseille",
+    "description": "Cleaning, ironing, windows and business premises upkeep in Marseille and Aix: natural products only, and half price at home thanks to the 50% tax break.",
     "keywords": [
       "home cleaning Marseille",
       "cleaning lady Marseille",
@@ -129,7 +129,7 @@
           "variant": "encadre",
           "content": {
             "titre": "Half of your cleaning bill, refunded by the taxman",
-            "sousTitre": "Cleaning, ironing and windows done at your home qualify for the 50% tax credit: run the numbers, it adds up fast.",
+            "sousTitre": "At home, half the price of cleaning, ironing and windows comes back through your taxes: two minutes on the simulator make it obvious.",
             "ctaPrimaire": {
               "label": "Simulate my tax credit",
               "href": "/credit-impot"
@@ -150,7 +150,7 @@
             "items": [
               {
                 "nom": "Home cleaning",
-                "description": "Regular or one-off cleaning of your home, at the frequency that suits you.",
+                "description": "Your home looked after weekly, fortnightly or in a single visit, at your own pace.",
                 "href": "/menage-domicile",
                 "icone": "Sparkles",
                 "priceHint": "from €50/h",
@@ -218,7 +218,7 @@
               {
                 "icone": "PhoneCall",
                 "titre": "Your call",
-                "texte": "You describe your needs by phone, WhatsApp or the form: we're reachable 24/7."
+                "texte": "Call, WhatsApp message or form: tell us what needs cleaning — we pick up at any hour, 7 days a week."
               },
               {
                 "icone": "FileText",
@@ -469,7 +469,7 @@
           "variant": "encadre",
           "content": {
             "titre": "A service you don't see here?",
-            "sousTitre": "Tell us what you need: we'll prepare a free, no-obligation quote.",
+            "sousTitre": "Explain your situation in two sentences: the costing is free and commits you to nothing.",
             "ctaPrimaire": {
               "label": "Request a quote",
               "href": "/devis"
@@ -487,7 +487,7 @@
       "label": "Prices",
       "meta": {
         "title": "Cleaning, ironing & window prices in Marseille",
-        "description": "MB Nettoyage prices in Marseille: home cleaning from €50/h, ironing from €10/kilo, windows from €10 each. Professional cleaning on quote. 50% tax credit for individuals."
+        "description": "Regular cleaning €50/h (€25/h after the tax credit), one-off €60/h, ironing €10/kilo, windows €10-15. Business premises and site cleans on quote."
       },
       "blocks": [
         {
@@ -529,7 +529,7 @@
           "variant": "grille",
           "content": {
             "titre": "Individuals",
-            "intro": "Home services, eligible for the 50% tax credit.",
+            "intro": "These prices apply to services at your home, where the 50% tax advantage kicks in.",
             "items": [
               {
                 "nom": "Regular cleaning",
@@ -572,7 +572,7 @@
                 "description": "Free quote by phone, based on the surface area and condition of the home."
               }
             ],
-            "note": "All these services, carried out at an individual's home, are eligible for the 50% tax credit. −15% on your first visit. Referral offer: −€10 for you and for the person you refer.",
+            "note": "Carried out at an individual's home, these services entitle you to the 50% tax credit. Add −15% on your first visit and a −€10 referral credit, for you and your referee alike.",
             "cta": {
               "label": "Request a free quote",
               "href": "/devis"
@@ -782,7 +782,7 @@
                 "reponse": "No, nothing to prepare: we arrive fully equipped, with natural products chosen for the surfaces to treat."
               },
               {
-                "question": "Do your services qualify for the tax credit?",
+                "question": "Who can benefit from the 50% tax credit?",
                 "reponse": "Yes, for cleaning, ironing and windows carried out at an individual's home: 50% of the amount is refunded or deducted from your taxes. Services for businesses are billed on quote, and are not eligible."
               },
               {
@@ -818,24 +818,24 @@
       "slug": "contact",
       "label": "Contact",
       "meta": {
-        "title": "Contact — home & business cleaning in Marseille",
-        "description": "Contact MB Nettoyage: phone, email, WhatsApp. Service request in Marseille, Aix-en-Provence and beyond, quick reply, free quote."
+        "title": "Reach us — home & business cleaning in Marseille",
+        "description": "Call +33 7 66 65 14 29, message us on WhatsApp or drop by 171 boulevard de Saint-Loup: opening hours, access map and a team reachable 24/7, all year."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Contact",
-            "titre": "Let's talk about your needs",
-            "intro": "A home to look after, a shop to make shine, or simply a question? Phone, WhatsApp or the form: we answer fast, 24/7."
+            "titre": "Rather talk it through?",
+            "intro": "A question about a service, a doubt about your town, or you'd simply like to chat before deciding? Meriem and her team pick up at any hour. Every way to reach us is here: phone, WhatsApp, email, address and access map."
           }
         },
         {
           "type": "contact",
           "variant": "split-form-carte",
           "content": {
-            "titre": "Service request",
-            "intro": "Explain the situation in two lines — service, town, availability — and we'll call you back with a straight answer and a free quote.",
+            "titre": "Write to us, we call back",
+            "intro": "Leave your details and a couple of words about the context: we call you back to talk it over, no script and no commitment. Our direct contact details and hours are right alongside.",
             "form": true,
             "formMode": "demande-intervention",
             "telephone": "+33 7 66 65 14 29",
@@ -878,6 +878,27 @@
             ],
             "confidentialiteHref": "/confidentialite"
           }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Reaching us made easy",
+            "items": [
+              {
+                "question": "What's the fastest way to talk to you?",
+                "reponse": "Phone or WhatsApp, on +33 7 66 65 14 29: we answer around the clock. The form works too, and we call you back."
+              },
+              {
+                "question": "Can we come and see you?",
+                "reponse": "Our base is at 171 boulevard de Saint-Loup, in Marseille's 11th arrondissement — the map is on this page. Call before coming over: we're often out on a job."
+              },
+              {
+                "question": "I want a price, not just a chat: where do I go?",
+                "reponse": "Head to the quote page: it lists the details that speed up the costing (service, surface area, town, time slots) and its form is built for exactly that."
+              }
+            ]
+          }
         }
       ]
     },
@@ -887,15 +908,15 @@
       "navHidden": true,
       "meta": {
         "title": "Free cleaning quote in Marseille",
-        "description": "Request your free quote from MB Nettoyage: cleaning, ironing, windows, office or post-construction cleaning in Marseille and beyond."
+        "description": "Service, surface area, town and time slots: four details are enough to receive a costed estimate, free and with no obligation, at home or at work."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Free quote",
-            "titre": "Request your quote in 1 minute",
-            "intro": "Tell us what needs cleaning — a home, laundry, windows or a construction site — and you'll receive a clear estimate, free and with no obligation.",
+            "titre": "Describe the job, we price it",
+            "intro": "This page is built to get you a price: the more precise your description, the faster the estimate arrives and the more accurate it is first time — free, with no strings attached.",
             "ctaSecondaire": {
               "label": "See our prices",
               "href": "/tarifs"
@@ -903,11 +924,36 @@
           }
         },
         {
+          "type": "etapes",
+          "variant": "ligne-horizontale",
+          "content": {
+            "eyebrow": "Save time",
+            "titre": "What speeds up your estimate",
+            "items": [
+              {
+                "icone": "Ruler",
+                "titre": "Surface area and rooms",
+                "texte": "Rough square metres, number of rooms, kilos of laundry or number of windows: the costing starts there."
+              },
+              {
+                "icone": "ListChecks",
+                "titre": "The service and its frequency",
+                "texte": "Regular or one-off cleaning, deep clean, building site, Airbnb changeover — and how often."
+              },
+              {
+                "icone": "MapPin",
+                "titre": "Your town and time slots",
+                "texte": "Where to come and when you're available: we confirm the trip and lock in the date straight away."
+              }
+            ]
+          }
+        },
+        {
           "type": "contact",
           "variant": "split-form-carte",
           "content": {
             "titre": "Your quote request",
-            "intro": "The type of service, your town and your time slots: that's all we need to price it right, whether you're an individual or a business.",
+            "intro": "Fill in the points above in the form — individual or business — and the estimate comes back quickly, by phone or in writing, whichever you prefer.",
             "form": true,
             "formMode": "devis",
             "telephone": "+33 7 66 65 14 29",
@@ -1046,7 +1092,7 @@
       "navHidden": true,
       "meta": {
         "title": "50% tax credit — home cleaning in Marseille",
-        "description": "MB Nettoyage's cleaning, ironing and window services carried out at an individual's home in Marseille are eligible for the 50% tax credit.",
+        "description": "Cleaning, ironing and windows done at an individual's home in Marseille: 50% of the amount back through tax, a €12,000 yearly cap, annual certificate.",
         "keywords": [
           "cleaning tax credit Marseille",
           "home care services Marseille",
@@ -1059,7 +1105,7 @@
           "content": {
             "eyebrow": "Home care services",
             "titre": "50% tax credit",
-            "intro": "Cleaning, ironing and window cleaning carried out at your home are eligible for the 50% tax credit under home care services rules.",
+            "intro": "MB Nettoyage is registered as a home care services provider: cleaning, ironing and windows done at your home really only cost you half the listed price.",
             "breadcrumb": [
               {
                 "label": "Home",
@@ -1090,14 +1136,14 @@
             "titre": "Your home cleaning costs",
             "argumentaireTitre": "Your home cleaning costs",
             "argumentaireAccent": "half as much",
-            "argumentaire": "For regular cleaning at home: €50/h billed, but only €25/h actually paid by you after the 50% tax credit.",
+            "argumentaire": "An hour of regular cleaning listed at €50 actually comes to €25 once the 50% is recovered through your taxes.",
             "points": [
-              "50% tax credit on home cleaning, ironing and windows",
-              "A tax certificate is issued to you every year",
+              "Cleaning, ironing and windows at your home: half the expense recovered",
+              "The tax certificate arrives every year, with no paperwork on your side",
               "Only valid for services carried out at an individual's home"
             ],
             "cardTitre": "Tax credit simulator",
-            "cardIntro": "Estimate your real cost in a few seconds, tax credit deducted.",
+            "cardIntro": "Slide the cursor: your out-of-pocket cost appears instantly, tax advantage deducted.",
             "curseurLabel": "Cleaning hours per week",
             "unite": "h",
             "min": 1,
@@ -1122,20 +1168,28 @@
             "titre": "Tax credit: your questions",
             "items": [
               {
-                "question": "How does the 50% tax credit work?",
-                "reponse": "For cleaning, ironing and windows carried out at your home, you receive a tax credit equal to 50% of the amounts paid, under home care services rules."
+                "question": "In practice, what does an hour of cleaning cost me after the deduction?",
+                "reponse": "Take regular cleaning: €50 an hour on the invoice, €25 once the 50% is applied. Three hours a week therefore come to €75 of real cost instead of €150. The same logic applies to ironing and windows done at your home."
               },
               {
-                "question": "Does this apply to services for businesses?",
-                "reponse": "No. The tax credit only applies to services carried out at an individual's home. Office, shop and post-construction cleaning are billed on quote, without tax credit."
+                "question": "I'm an individual: what qualifies at my home, and what doesn't?",
+                "reponse": "Everything to do with the upkeep of your own home — regular or one-off cleaning, ironing, windows — falls under home care services. On the other hand, a property you let short-term is no longer your home: its upkeep belongs to your rental activity and sits outside the scheme."
               },
               {
-                "question": "What do I need to do to benefit from it?",
-                "reponse": "Nothing in particular: a certificate summarising the amounts paid is issued to you every year, to include in your tax return."
+                "question": "And for a company, a shop or a building site?",
+                "reponse": "No tax break of this kind: the scheme targets individuals' homes, not business premises. Offices, shops and post-construction cleans are priced on quote, at the real price, without the 50%."
               },
               {
-                "question": "Is there a cap?",
-                "reponse": "Yes, the tax credit applies within the annual caps set by the tax administration for home care services."
+                "question": "Up to what level of spending does the tax office follow?",
+                "reponse": "Expenses count up to €12,000 per year and per household, a cap that can be raised depending on your situation (a dependent child, a household member over 65…). Beyond that, services remain possible, simply without any additional tax advantage."
+              },
+              {
+                "question": "Do I have to pay the full amount while waiting for my tax return?",
+                "reponse": "By default, yes: you pay the full rate and the 50% comes back through your tax return. URSSAF's immediate advance scheme, however, lets you pay only your share at the time of payment — ask us where this scheme stands when you request your quote."
+              },
+              {
+                "question": "What proof do I need for my tax return?",
+                "reponse": "Every year we give you a tax certificate summarising the amounts paid. You carry that figure over to your return and the 50% credit is calculated automatically — even if you pay no income tax, the amount is refunded to you."
               }
             ]
           }
@@ -1144,7 +1198,7 @@
           "type": "cta",
           "variant": "encadre",
           "content": {
-            "titre": "Take advantage of the tax credit on your home cleaning",
+            "titre": "Your cleaning at half price — we handle the rest",
             "sousTitre": "Free quote by phone, quick reply.",
             "ctaPrimaire": {
               "label": "Request a quote",
@@ -1223,12 +1277,12 @@
               {
                 "icone": "CalendarCheck",
                 "nom": "Regular or one-off",
-                "description": "At the frequency that suits you, or as a single visit."
+                "description": "Weekly, fortnightly, monthly — or one single visit: you set the pace."
               },
               {
                 "icone": "BadgePercent",
                 "nom": "50% tax credit",
-                "description": "Half of the expense is refunded or deducted from your taxes.",
+                "description": "€50 billed, €25 of real cost: the tax office covers the other half.",
                 "href": "/credit-impot"
               },
               {
@@ -1260,12 +1314,12 @@
               {
                 "icone": "PhoneCall",
                 "titre": "Your call",
-                "texte": "You describe your home and the frequency you want. Free quote by phone."
+                "texte": "Surface area, number of rooms, desired rhythm: two minutes on the phone and the estimate is set, free of charge."
               },
               {
                 "icone": "CalendarCheck",
                 "titre": "The appointment",
-                "texte": "We set a regular or one-off time, fitting your schedule."
+                "texte": "Together we set the slot that fits your days, recurring or one-off."
               },
               {
                 "icone": "Sparkles",
@@ -1317,11 +1371,11 @@
                 "reponse": "Regular cleaning (€50/h) is recurring upkeep at a fixed frequency. One-off cleaning (€60/h) is a single visit, with no commitment."
               },
               {
-                "question": "Do I need to supply the equipment and products?",
+                "question": "Should I get a vacuum or products ready before you arrive?",
                 "reponse": "No, we bring our own equipment and natural products, suited to your home."
               },
               {
-                "question": "Does home cleaning qualify for the tax credit?",
+                "question": "Does the 50% tax credit apply to this service?",
                 "reponse": "Yes, up to 50% of the amounts paid, within the caps set by the tax administration."
               }
             ]
@@ -1331,7 +1385,7 @@
           "type": "cta",
           "variant": "encadre",
           "content": {
-            "titre": "Need a quote for home cleaning?",
+            "titre": "Shall we price your regular or one-off cleaning?",
             "sousTitre": "Free quote by phone, quick reply.",
             "ctaPrimaire": {
               "label": "Request a quote",
@@ -1375,7 +1429,7 @@
           "content": {
             "eyebrow": "Before or after a move-out inspection",
             "titre": "Deep cleaning & move-out cleaning in Marseille",
-            "intro": "Moving in, tenants moving out, or a final inspection: MB Nettoyage restores your home in Marseille and beyond, with a free quote by phone.",
+            "intro": "Before you unpack your boxes or hand back the keys, MB Nettoyage goes over the home from top to bottom, in Marseille and nearby — costing free, settled by phone.",
             "breadcrumb": [
               {
                 "label": "Home",
@@ -1423,7 +1477,7 @@
               {
                 "icone": "CheckCircle",
                 "nom": "Move-in ready",
-                "description": "A clean home, ready to live in or hand back without reservation."
+                "description": "You get clean keys back — to move in, re-let or hand over with peace of mind."
               }
             ]
           }
@@ -1436,7 +1490,7 @@
             "paragraphes": [
               "A move-out inspection often comes down to details: marks on the skirting boards, limescale in the bathroom, a forgotten oven. Our deep cleaning goes through the home room by room — floors, bathrooms, kitchen, storage, high-up dust — to leave it in a condition nobody can argue with.",
               "It works the other way round too: before moving in, having the flat properly cleaned means you don't inherit the previous occupants' marks. The quote is prepared free of charge by phone, based on the surface area and condition of the home, and we work around your key handover date.",
-              "A landlord between two tenants or a family mid-move: the need is the same in Marseille, Allauch, Marignane or over towards Aix, Gardanne and Bouc-Bel-Air. Carried out at an individual's home, this deep clean may also qualify for the 50% tax credit — your quote will spell it out."
+              "A landlord lining up two lets or a family knee-deep in boxes: from Marseille to Allauch and Marignane, and Aix-side out to Gardanne and Bouc-Bel-Air, the request is the same. When the work happens at an individual's own home, the 50% tax credit can apply — we confirm it in black and white on the quote."
             ],
             "ctaSecondaire": {
               "label": "Check eligibility for the 50%",
@@ -1459,7 +1513,7 @@
                 "reponse": "Yes, in both cases, as well as before a final move-out inspection."
               },
               {
-                "question": "Does deep cleaning qualify for the tax credit?",
+                "question": "Can I get 50% of the deep-clean price back?",
                 "reponse": "Deep cleaning and move-out cleaning carried out at an individual's home may be eligible: the quote will clarify the conditions for your situation."
               }
             ]
@@ -1555,7 +1609,7 @@
                 ]
               }
             ],
-            "note": "Home service, eligible for the 50% tax credit.",
+            "note": "Done at your home, ironing benefits from the 50% tax credit: a €10 kilo really costs just €5.",
             "cta": {
               "label": "Request a quote",
               "href": "/devis"
@@ -1734,7 +1788,7 @@
             "titre": "Clean windows, street side and courtyard side",
             "paragraphes": [
               "Between the mistral wind, dust and rain splashes, Marseille windows get dirty fast. We wash them inside and out, frames included, with natural products that leave neither streaks nor harsh smells. Expect €10 to €15 per window depending on size — the price is announced before the visit, not after.",
-              "For individuals, the service slots easily into a regular cleaning visit and qualifies for the 50% tax credit. For businesses — shopfronts, glass office façades — the quote is tailor-made, at the frequency of your choice, including outside your opening hours.",
+              "At your home, windows often join the usual cleaning visit — and like the rest, they only cost half thanks to the 50% recovered through tax. On the business side, shopfronts and glass façades are priced tailor-made, at whatever rhythm you want, even before opening or after your shop closes.",
               "We cover Marseille and its neighbouring towns, from Allauch to Vitrolles, as well as the Aix-en-Provence area. For a shopfront in the city centre or a villa with bay windows, the principle stays the same: a price announced upfront and a careful visit, with no commitment."
             ],
             "ctaSecondaire": {
@@ -1924,7 +1978,7 @@
               },
               {
                 "question": "Do my business premises qualify for the tax credit?",
-                "reponse": "No, the 50% tax credit only applies to services carried out at an individual's home."
+                "reponse": "No: the home care services tax break is reserved for individuals' homes. Your premises are billed at the quoted rate, with no tax reduction."
               }
             ]
           }
@@ -1972,7 +2026,7 @@
           "content": {
             "eyebrow": "After building work, renovation or construction",
             "titre": "Post-construction cleaning in Marseille",
-            "intro": "Construction dust, paint, glue or plaster marks: MB Nettoyage prepares your premises or your home for handover, with a free quote.",
+            "intro": "Plaster on the floor, protective film, flecks of paint or glue: MB Nettoyage makes the building site vanish before your home or premises are handed over — estimate on the house.",
             "breadcrumb": [
               {
                 "label": "Home",
@@ -2021,7 +2075,7 @@
               {
                 "icone": "SprayCan",
                 "nom": "Construction dust under control",
-                "description": "Thorough dusting of floors, surfaces, windows and frames."
+                "description": "Fine dust hunted down everywhere: floors, worktops, frames and glazing."
               },
               {
                 "icone": "HardHat",
@@ -2044,10 +2098,10 @@
             "items": [
               {
                 "question": "How do I get a post-construction cleaning quote?",
-                "reponse": "Tell us the surface area and the scale of the work: we'll prepare a free quote by phone."
+                "reponse": "Give us the square metres and the nature of the work: the costing comes back fast, by phone and at no charge."
               },
               {
-                "question": "Do you work for both individuals and businesses?",
+                "question": "Do you handle homes as well as business premises?",
                 "reponse": "Yes, for a home after renovation as well as for business premises after construction."
               },
               {
@@ -2155,7 +2209,7 @@
               {
                 "icone": "Clock",
                 "nom": "Tight windows respected",
-                "description": "A visit between a departure and an arrival, within the window your bookings allow."
+                "description": "We come in between check-out and check-in, within the window your bookings leave."
               },
               {
                 "icone": "BedDouble",
@@ -2249,8 +2303,8 @@
                 "reponse": "On quote, based on the size of the property, how often turnovers happen and the services you need. Contact us for a free estimate."
               },
               {
-                "question": "Does this service qualify for the tax credit?",
-                "reponse": "No. The 50% tax credit applies to cleaning at an individual's home; the upkeep of a property let on short-term rental is part of your rental activity and is not eligible."
+                "question": "Is cleaning a short-term rental eligible for the 50%?",
+                "reponse": "No: a property let to travellers doesn't count as your own home. Its upkeep is part of your hosting activity and therefore sits outside the 50% scheme."
               }
             ]
           }

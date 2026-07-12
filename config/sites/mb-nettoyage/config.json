@@ -68,8 +68,8 @@
     "lng": 5.4373811847503
   },
   "meta": {
-    "title": "MB Nettoyage — Ménage à domicile & nettoyage à Marseille",
-    "description": "Crédit d'impôt 50 % sur le ménage à domicile : MB Nettoyage entretient logements et locaux pros à Marseille et Aix, aux produits naturels. Devis gratuit.",
+    "title": "MB Nettoyage — Ménage écologique à domicile à Marseille",
+    "description": "Ménage, repassage, vitres et entretien de locaux pros à Marseille et Aix : travail aux produits naturels, moitié prix chez vous grâce aux 50 % fiscaux.",
     "keywords": [
       "ménage à domicile Marseille",
       "femme de ménage Marseille",
@@ -162,7 +162,7 @@
           "variant": "encadre",
           "content": {
             "titre": "La moitié de votre ménage, remboursée par le fisc",
-            "sousTitre": "Ménage, repassage et vitres réalisés chez vous ouvrent droit au crédit d'impôt de 50 % : faites le calcul, c'est vite vu.",
+            "sousTitre": "Chez vous, la moitié du prix du ménage, du repassage et des vitres revient via l'impôt : deux minutes de simulateur suffisent pour le voir.",
             "ctaPrimaire": {
               "label": "Simuler mon crédit d'impôt",
               "href": "/credit-impot"
@@ -183,7 +183,7 @@
             "items": [
               {
                 "nom": "Ménage à domicile",
-                "description": "Entretien régulier ou ponctuel de votre logement, à la fréquence qui vous convient.",
+                "description": "Votre logement entretenu chaque semaine, chaque quinzaine ou en un seul passage, selon votre rythme.",
                 "href": "/menage-domicile",
                 "icone": "Sparkles",
                 "priceHint": "dès 50 €/h",
@@ -251,7 +251,7 @@
               {
                 "icone": "PhoneCall",
                 "titre": "Votre appel",
-                "texte": "Vous décrivez votre besoin par téléphone, WhatsApp ou via le formulaire : nous sommes joignables 24h/24, 7j/7."
+                "texte": "Appel, message WhatsApp ou formulaire : racontez-nous ce qu'il y a à nettoyer — on décroche à toute heure, 7j/7."
               },
               {
                 "icone": "FileText",
@@ -502,7 +502,7 @@
           "variant": "encadre",
           "content": {
             "titre": "Une prestation qui ne figure pas ici ?",
-            "sousTitre": "Décrivez-nous votre besoin : nous établissons un devis gratuit et sans engagement.",
+            "sousTitre": "Expliquez votre situation en deux phrases : le chiffrage est offert et ne vous engage à rien.",
             "ctaPrimaire": {
               "label": "Demander un devis",
               "href": "/devis"
@@ -520,7 +520,7 @@
       "label": "Tarifs",
       "meta": {
         "title": "Tarifs ménage, repassage & vitres à Marseille",
-        "description": "Tarifs de MB Nettoyage à Marseille : ménage à domicile dès 50 €/h, repassage dès 10 €/kilo, vitres dès 10 €/vitre. Nettoyage professionnel sur devis. Crédit d'impôt 50 % pour les particuliers."
+        "description": "Ménage régulier 50 €/h (25 €/h après crédit d'impôt), ponctuel 60 €/h, repassage 10 €/kilo, vitres 10 à 15 €. Locaux pros et chantiers sur devis."
       },
       "blocks": [
         {
@@ -562,7 +562,7 @@
           "variant": "grille",
           "content": {
             "titre": "Particuliers",
-            "intro": "Prestations à domicile, éligibles au crédit d'impôt de 50 %.",
+            "intro": "Ces tarifs concernent les interventions chez vous, où l'avantage fiscal de 50 % s'applique.",
             "items": [
               {
                 "nom": "Ménage régulier",
@@ -605,7 +605,7 @@
                 "description": "Devis gratuit établi par téléphone, selon la surface et l'état du logement."
               }
             ],
-            "note": "Toutes ces prestations, réalisées au domicile d'un particulier, sont éligibles au crédit d'impôt de 50 %. −15 % sur votre premier passage. Offre de parrainage : −10 € pour vous et pour la personne parrainée.",
+            "note": "Effectuées chez un particulier, ces interventions ouvrent droit aux 50 % de crédit d'impôt. Ajoutez −15 % au premier passage et −10 € de parrainage, pour vous comme pour votre filleul.",
             "cta": {
               "label": "Demander un devis gratuit",
               "href": "/devis"
@@ -815,7 +815,7 @@
                 "reponse": "Non, rien à prévoir : nous arrivons équipés, avec des produits naturels choisis selon les surfaces à traiter."
               },
               {
-                "question": "Vos prestations donnent-elles droit au crédit d'impôt ?",
+                "question": "Qui peut profiter du crédit d'impôt de 50 % ?",
                 "reponse": "Oui, pour le ménage, le repassage et les vitres réalisés au domicile d'un particulier : 50 % du montant vous est remboursé ou déduit de vos impôts. Les prestations pour les professionnels sont facturées sur devis, hors crédit d'impôt."
               },
               {
@@ -851,24 +851,24 @@
       "slug": "contact",
       "label": "Contact",
       "meta": {
-        "title": "Contact — ménage & nettoyage à Marseille",
-        "description": "Contactez MB Nettoyage : téléphone, e-mail, WhatsApp. Demande d'intervention à Marseille, Aix-en-Provence et alentour, réponse rapide, devis gratuit."
+        "title": "Nous joindre — ménage & nettoyage à Marseille",
+        "description": "Appelez le 07 66 65 14 29, écrivez sur WhatsApp ou passez au 171 boulevard de Saint-Loup : horaires, plan d'accès et une équipe joignable 24h/24, 7j/7."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Contact",
-            "titre": "Parlons de votre besoin",
-            "intro": "Un logement à entretenir, une boutique à faire briller, ou simplement une question ? Téléphone, WhatsApp ou formulaire : on vous répond vite, 24h/24 et 7j/7."
+            "titre": "Envie d'en parler de vive voix ?",
+            "intro": "Une question sur une prestation, un doute sur votre commune, ou juste besoin d'échanger avant de vous décider ? Meriem et son équipe décrochent à toute heure. Vous trouverez ici tous les moyens de nous joindre : téléphone, WhatsApp, e-mail, adresse et plan d'accès."
           }
         },
         {
           "type": "contact",
           "variant": "split-form-carte",
           "content": {
-            "titre": "Demande d'intervention",
-            "intro": "Expliquez la situation en deux lignes — prestation, commune, disponibilités — et on vous rappelle avec une réponse franche et un devis gratuit.",
+            "titre": "Écrivez-nous, on vous rappelle",
+            "intro": "Laissez vos coordonnées et deux mots sur le contexte : on vous rappelle pour en discuter, sans script ni engagement. Nos coordonnées directes et nos horaires sont juste à côté.",
             "form": true,
             "formMode": "demande-intervention",
             "telephone": "+33 7 66 65 14 29",
@@ -911,6 +911,27 @@
             ],
             "confidentialiteHref": "/confidentialite"
           }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Pour nous joindre facilement",
+            "items": [
+              {
+                "question": "Quel est le moyen le plus rapide de vous parler ?",
+                "reponse": "Le téléphone ou WhatsApp, au 07 66 65 14 29 : nous répondons 24h/24. Le formulaire fonctionne aussi, avec un rappel de notre part."
+              },
+              {
+                "question": "Peut-on passer vous voir ?",
+                "reponse": "Notre base est au 171 boulevard de Saint-Loup, dans le 11e arrondissement — le plan est sur cette page. Appelez avant de venir : nous sommes souvent en intervention."
+              },
+              {
+                "question": "Je veux un prix, pas juste discuter : où aller ?",
+                "reponse": "Direction la page devis : elle liste les informations qui accélèrent le chiffrage (prestation, surface, commune, créneaux) et le formulaire y est prévu pour ça."
+              }
+            ]
+          }
         }
       ]
     },
@@ -920,15 +941,15 @@
       "navHidden": true,
       "meta": {
         "title": "Devis gratuit ménage & nettoyage à Marseille",
-        "description": "Demandez votre devis gratuit à MB Nettoyage : ménage, repassage, vitres, nettoyage de bureaux ou post-chantier à Marseille et alentour."
+        "description": "Prestation, surface, commune et créneaux : quatre informations suffisent pour recevoir une estimation chiffrée, gratuite et sans aucun engagement."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Devis gratuit",
-            "titre": "Demandez votre devis en 1 minute",
-            "intro": "Décrivez ce qu'il y a à nettoyer — logement, linge, vitres ou fin de chantier — et vous recevez une estimation claire, gratuite et sans engagement.",
+            "titre": "Décrivez le besoin, on chiffre",
+            "intro": "Ici, tout est pensé pour obtenir un prix : plus votre description est précise, plus l'estimation arrive vite et tombe juste du premier coup — offerte, sans suite obligée.",
             "ctaSecondaire": {
               "label": "Voir nos tarifs",
               "href": "/tarifs"
@@ -936,11 +957,36 @@
           }
         },
         {
+          "type": "etapes",
+          "variant": "ligne-horizontale",
+          "content": {
+            "eyebrow": "Gagnez du temps",
+            "titre": "Ce qui accélère votre estimation",
+            "items": [
+              {
+                "icone": "Ruler",
+                "titre": "La surface et les pièces",
+                "texte": "Mètres carrés approximatifs, nombre de pièces, kilos de linge ou nombre de vitres : le chiffrage part de là."
+              },
+              {
+                "icone": "ListChecks",
+                "titre": "La prestation et sa fréquence",
+                "texte": "Ménage régulier ou ponctuel, grand ménage, chantier, rotation Airbnb — et à quel rythme."
+              },
+              {
+                "icone": "MapPin",
+                "titre": "La commune et vos créneaux",
+                "texte": "Où intervenir et quand vous êtes disponible : on confirme le déplacement et on cale la date dans la foulée."
+              }
+            ]
+          }
+        },
+        {
           "type": "contact",
           "variant": "split-form-carte",
           "content": {
             "titre": "Votre demande de devis",
-            "intro": "Le type de prestation, votre commune et vos créneaux : voilà tout ce qu'il nous faut pour chiffrer juste, que vous soyez particulier ou professionnel.",
+            "intro": "Renseignez les points ci-dessus dans le formulaire — particulier ou professionnel — et l'estimation revient rapidement, par téléphone ou par écrit, comme vous préférez.",
             "form": true,
             "formMode": "devis",
             "telephone": "+33 7 66 65 14 29",
@@ -1079,7 +1125,7 @@
       "navHidden": true,
       "meta": {
         "title": "Crédit d'impôt de 50 % — ménage à domicile à Marseille",
-        "description": "Les prestations de ménage, repassage et vitres de MB Nettoyage réalisées au domicile d'un particulier à Marseille sont éligibles au crédit d'impôt de 50 %.",
+        "description": "Ménage, repassage et vitres réalisés chez un particulier à Marseille : 50 % du montant récupéré sur l'impôt, plafond de 12 000 €/an, attestation annuelle.",
         "keywords": [
           "crédit d'impôt ménage Marseille",
           "services à la personne Marseille",
@@ -1092,7 +1138,7 @@
           "content": {
             "eyebrow": "Services à la personne",
             "titre": "Crédit d'impôt de 50 %",
-            "intro": "Le ménage, le repassage et le nettoyage de vitres réalisés à votre domicile sont éligibles au crédit d'impôt de 50 % au titre des services à la personne.",
+            "intro": "MB Nettoyage est déclarée services à la personne : le ménage, le repassage et les vitres effectués chez vous ne vous coûtent réellement que la moitié du tarif affiché.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1123,14 +1169,14 @@
             "titre": "Votre ménage à domicile vous coûte",
             "argumentaireTitre": "Votre ménage à domicile vous coûte",
             "argumentaireAccent": "deux fois moins cher",
-            "argumentaire": "Pour le ménage régulier chez vous : 50 €/h facturés, mais seulement 25 €/h réellement à votre charge après le crédit d'impôt de 50 %.",
+            "argumentaire": "Une heure de ménage régulier affichée 50 € revient en réalité à 25 € une fois les 50 % récupérés sur vos impôts.",
             "points": [
-              "50 % de crédit d'impôt sur le ménage, le repassage et les vitres à domicile",
-              "Une attestation fiscale vous est remise chaque année",
+              "Ménage, repassage et vitres chez vous : la moitié de la dépense récupérée",
+              "L'attestation fiscale arrive chaque année, sans démarche de votre part",
               "Valable uniquement pour les prestations chez les particuliers"
             ],
             "cardTitre": "Simulateur crédit d'impôt",
-            "cardIntro": "Estimez en quelques secondes votre coût réel, crédit d'impôt déduit.",
+            "cardIntro": "Faites glisser le curseur : le reste à charge s'affiche aussitôt, avantage fiscal déduit.",
             "curseurLabel": "Heures de ménage par semaine",
             "unite": "h",
             "min": 1,
@@ -1155,20 +1201,28 @@
             "titre": "Crédit d'impôt : vos questions",
             "items": [
               {
-                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
-                "reponse": "Pour le ménage, le repassage et les vitres réalisés à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées, au titre des services à la personne."
+                "question": "Concrètement, combien me coûte une heure de ménage après déduction ?",
+                "reponse": "Prenons le ménage régulier : 50 € l'heure sur la facture, 25 € après application des 50 %. Trois heures par semaine reviennent donc à 75 € réels au lieu de 150 €. Même logique pour le repassage et les vitres faits chez vous."
               },
               {
-                "question": "Cela s'applique-t-il aux prestations pour les professionnels ?",
-                "reponse": "Non. Le crédit d'impôt s'applique uniquement aux prestations réalisées au domicile d'un particulier. Le nettoyage de bureaux, de commerces et le nettoyage post-chantier sont facturés sur devis, hors crédit d'impôt."
+                "question": "Je suis un particulier : qu'est-ce qui est éligible chez moi, et qu'est-ce qui ne l'est pas ?",
+                "reponse": "Tout ce qui touche à l'entretien de votre propre logement — ménage régulier ou ponctuel, repassage, vitres — relève des services à la personne. En revanche, un bien que vous louez en courte durée n'est plus votre domicile : son entretien fait partie de votre activité locative et sort du dispositif."
               },
               {
-                "question": "Que dois-je faire pour en bénéficier ?",
-                "reponse": "Rien de particulier : une attestation récapitulant les sommes versées vous est remise chaque année, à reporter sur votre déclaration de revenus."
+                "question": "Et pour une entreprise, un commerce ou un chantier ?",
+                "reponse": "Aucun avantage fiscal de ce type : le dispositif vise le domicile des particuliers, pas les locaux d'activité. Bureaux, boutiques et fins de chantier sont chiffrés sur devis, au prix réel, sans les 50 %."
               },
               {
-                "question": "Y a-t-il un plafond ?",
-                "reponse": "Oui, le crédit d'impôt s'applique dans la limite des plafonds annuels fixés par l'administration fiscale pour les services à la personne."
+                "question": "Jusqu'à quel montant de dépenses le fisc suit-il ?",
+                "reponse": "Les dépenses sont retenues jusqu'à 12 000 € annuels par foyer fiscal ; ce plafond se majore selon votre situation (enfant à charge, membre du foyer de plus de 65 ans…). Au-delà, les prestations restent possibles, simplement sans avantage fiscal supplémentaire."
+              },
+              {
+                "question": "Dois-je avancer la totalité en attendant ma déclaration ?",
+                "reponse": "Par défaut, oui : vous payez plein tarif et les 50 % vous reviennent via votre déclaration de revenus. L'avance immédiate de l'URSSAF permet, elle, de ne régler que le reste à charge dès le paiement — demandez-nous où en est ce dispositif au moment du devis."
+              },
+              {
+                "question": "Quel justificatif pour ma déclaration de revenus ?",
+                "reponse": "Chaque année, nous vous remettons une attestation fiscale récapitulant les sommes réglées. Vous reportez ce montant sur votre déclaration et le crédit de 50 % est calculé automatiquement — même non imposable, vous êtes remboursé."
               }
             ]
           }
@@ -1177,7 +1231,7 @@
           "type": "cta",
           "variant": "encadre",
           "content": {
-            "titre": "Profitez du crédit d'impôt sur votre ménage à domicile",
+            "titre": "Votre ménage à moitié prix, on s'occupe du reste",
             "sousTitre": "Devis gratuit par téléphone, réponse rapide.",
             "ctaPrimaire": {
               "label": "Demander un devis",
@@ -1256,12 +1310,12 @@
               {
                 "icone": "CalendarCheck",
                 "nom": "Régulier ou ponctuel",
-                "description": "À la fréquence qui vous convient, ou en intervention unique."
+                "description": "Hebdo, quinzaine, mensuel — ou un seul passage : c'est vous qui décidez du rythme."
               },
               {
                 "icone": "BadgePercent",
                 "nom": "Crédit d'impôt 50 %",
-                "description": "La moitié de la dépense vous est remboursée ou déduite de vos impôts.",
+                "description": "50 € facturés, 25 € de charge réelle : le fisc reprend l'autre moitié.",
                 "href": "/credit-impot"
               },
               {
@@ -1293,12 +1347,12 @@
               {
                 "icone": "PhoneCall",
                 "titre": "Votre appel",
-                "texte": "Vous décrivez votre logement et la fréquence souhaitée. Devis gratuit par téléphone."
+                "texte": "Surface, nombre de pièces, rythme voulu : deux minutes au téléphone et l'estimation est posée, gratuitement."
               },
               {
                 "icone": "CalendarCheck",
                 "titre": "Le rendez-vous",
-                "texte": "Nous fixons un créneau régulier ou ponctuel, adapté à votre emploi du temps."
+                "texte": "On cale ensemble le créneau qui colle à vos journées, récurrent ou unique."
               },
               {
                 "icone": "Sparkles",
@@ -1350,11 +1404,11 @@
                 "reponse": "Le ménage régulier (50 €/h) correspond à un entretien récurrent, à fréquence fixe. Le ménage ponctuel (60 €/h) est une intervention unique, sans engagement."
               },
               {
-                "question": "Faut-il fournir le matériel et les produits ?",
+                "question": "Dois-je prévoir aspirateur ou produits avant votre venue ?",
                 "reponse": "Non, nous venons avec notre matériel et des produits naturels, adaptés à votre logement."
               },
               {
-                "question": "Le ménage à domicile ouvre-t-il droit au crédit d'impôt ?",
+                "question": "Les 50 % de crédit d'impôt s'appliquent-ils à ce service ?",
                 "reponse": "Oui, à hauteur de 50 % des sommes versées, dans la limite des plafonds fixés par l'administration fiscale."
               }
             ]
@@ -1364,7 +1418,7 @@
           "type": "cta",
           "variant": "encadre",
           "content": {
-            "titre": "Besoin d'un devis pour le ménage à domicile ?",
+            "titre": "On chiffre votre ménage régulier ou ponctuel ?",
             "sousTitre": "Devis gratuit par téléphone, réponse rapide.",
             "ctaPrimaire": {
               "label": "Demander un devis",
@@ -1408,7 +1462,7 @@
           "content": {
             "eyebrow": "Avant ou après un état des lieux",
             "titre": "Grand ménage & état des lieux à Marseille",
-            "intro": "Emménagement, départ de locataires ou état des lieux de sortie : MB Nettoyage remet votre logement à neuf à Marseille et alentour, sur devis gratuit établi par téléphone.",
+            "intro": "Avant de poser vos cartons ou de rendre les clés, MB Nettoyage reprend le logement de fond en comble, à Marseille et alentour — chiffrage offert, réglé au téléphone.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1456,7 +1510,7 @@
               {
                 "icone": "CheckCircle",
                 "nom": "Rendu prêt à vivre",
-                "description": "Un logement propre, prêt à être habité ou rendu sans réserve."
+                "description": "Vous récupérez des clés propres — pour emménager, relouer ou restituer sereinement."
               }
             ]
           }
@@ -1469,7 +1523,7 @@
             "paragraphes": [
               "Un état des lieux de sortie se joue souvent sur des détails : traces sur les plinthes, calcaire dans la salle de bain, four oublié. Notre grand ménage reprend le logement pièce par pièce — sols, sanitaires, cuisine, rangements, poussières en hauteur — pour le rendre dans un état qui ne prête pas à discussion.",
               "La formule vaut aussi dans l'autre sens : avant d'emménager, faire remettre l'appartement au propre évite de récupérer les traces des anciens occupants. Le devis est établi gratuitement par téléphone, selon la surface et l'état du logement, et nous nous calons sur votre date de remise des clés.",
-              "Propriétaire bailleur entre deux locataires ou famille en plein déménagement, le besoin est le même à Marseille, Allauch, Marignane ou du côté d'Aix, Gardanne et Bouc-Bel-Air. Réalisé au domicile d'un particulier, ce grand ménage peut en plus ouvrir droit au crédit d'impôt de 50 % — le devis vous le précise."
+              "Bailleur qui enchaîne deux locations ou famille au milieu des cartons : de Marseille à Allauch et Marignane, et côté Aix jusqu'à Gardanne et Bouc-Bel-Air, la demande est la même. Quand l'intervention se fait chez un particulier, dans son propre logement, les 50 % de crédit d'impôt peuvent jouer — on vous le confirme noir sur blanc sur le devis."
             ],
             "ctaSecondaire": {
               "label": "Vérifier l'éligibilité aux 50 %",
@@ -1492,7 +1546,7 @@
                 "reponse": "Oui, dans les deux cas, ainsi qu'avant un état des lieux de sortie."
               },
               {
-                "question": "Le grand ménage ouvre-t-il droit au crédit d'impôt ?",
+                "question": "Puis-je récupérer 50 % du prix du grand ménage ?",
                 "reponse": "Le grand ménage et l'état des lieux réalisés au domicile d'un particulier peuvent être éligibles : le devis vous précisera les conditions selon votre situation."
               }
             ]
@@ -1588,7 +1642,7 @@
                 ]
               }
             ],
-            "note": "Prestation à domicile, éligible au crédit d'impôt de 50 %.",
+            "note": "Effectué chez vous, le repassage bénéficie des 50 % de crédit d'impôt : le kilo à 10 € n'en coûte réellement que 5.",
             "cta": {
               "label": "Demander un devis",
               "href": "/devis"
@@ -1767,7 +1821,7 @@
             "titre": "Des vitres nettes, côté rue comme côté cour",
             "paragraphes": [
               "Entre le mistral, la poussière et les projections de pluie, les vitres marseillaises se salissent vite. Nous les lavons intérieur et extérieur, encadrements compris, avec des produits naturels qui ne laissent ni traces ni odeur agressive. Comptez 10 à 15 € la vitre selon sa taille — le tarif est annoncé avant l'intervention, pas après.",
-              "Chez un particulier, la prestation se glisse volontiers dans un ménage régulier et ouvre droit au crédit d'impôt de 50 %. Pour les professionnels — vitrines de commerces, façades vitrées de bureaux — le devis se fait sur mesure, à la fréquence de votre choix, y compris en dehors de vos horaires d'ouverture.",
+              "À votre domicile, les vitres s'ajoutent souvent au ménage habituel — et comme lui, elles n'en coûtent que la moitié grâce aux 50 % récupérés sur l'impôt. Côté pros, vitrines et façades vitrées se chiffrent sur mesure, au rythme que vous voulez, même avant l'ouverture ou après la fermeture de votre commerce.",
               "Nous couvrons Marseille et ses communes voisines, d'Allauch à Vitrolles, ainsi que le secteur d'Aix-en-Provence. Pour une vitrine en centre-ville comme pour une villa avec baies vitrées, le principe reste le même : un tarif annoncé d'avance et un passage soigné, sans engagement."
             ],
             "ctaSecondaire": {
@@ -1957,7 +2011,7 @@
               },
               {
                 "question": "Mes locaux professionnels donnent-ils droit au crédit d'impôt ?",
-                "reponse": "Non, le crédit d'impôt de 50 % ne s'applique qu'aux prestations réalisées au domicile d'un particulier."
+                "reponse": "Non : l'avantage fiscal des services à la personne est réservé au logement des particuliers. Vos locaux sont facturés au tarif du devis, sans réduction d'impôt."
               }
             ]
           }
@@ -2005,7 +2059,7 @@
           "content": {
             "eyebrow": "Après travaux, rénovation ou construction",
             "titre": "Nettoyage post-chantier à Marseille",
-            "intro": "Poussière de chantier, traces de peinture, de colle ou de plâtre : MB Nettoyage prépare vos locaux ou votre logement pour la livraison, sur devis gratuit.",
+            "intro": "Plâtre au sol, films de protection, éclats de peinture ou de colle : MB Nettoyage fait disparaître le chantier avant la livraison de votre logement ou de vos locaux — estimation offerte.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -2054,7 +2108,7 @@
               {
                 "icone": "SprayCan",
                 "nom": "Poussière de chantier maîtrisée",
-                "description": "Dépoussiérage complet des sols, surfaces, vitres et menuiseries."
+                "description": "La poussière fine traquée partout : sols, plans de travail, encadrements et vitrages."
               },
               {
                 "icone": "HardHat",
@@ -2077,10 +2131,10 @@
             "items": [
               {
                 "question": "Comment obtenir un devis de nettoyage post-chantier ?",
-                "reponse": "Indiquez-nous la surface et l'ampleur des travaux : nous établissons un devis gratuit par téléphone."
+                "reponse": "Donnez-nous les mètres carrés et la nature des travaux : le chiffrage arrive vite, par téléphone et sans frais."
               },
               {
-                "question": "Intervenez-vous pour les particuliers et les professionnels ?",
+                "question": "Travaillez-vous aussi bien pour un logement que pour un local d'entreprise ?",
                 "reponse": "Oui, aussi bien pour un logement après rénovation que pour des locaux professionnels après construction."
               },
               {
@@ -2188,7 +2242,7 @@
               {
                 "icone": "Clock",
                 "nom": "Créneaux serrés respectés",
-                "description": "Intervention entre un départ et une arrivée, dans le délai imposé par vos réservations."
+                "description": "On passe entre le check-out et le check-in, dans la fenêtre laissée par vos réservations."
               },
               {
                 "icone": "BedDouble",
@@ -2282,8 +2336,8 @@
                 "reponse": "Sur devis, selon la surface du logement, la fréquence des rotations et les prestations souhaitées. Contactez-nous pour une estimation gratuite."
               },
               {
-                "question": "Ce service ouvre-t-il droit au crédit d'impôt ?",
-                "reponse": "Non. Le crédit d'impôt de 50 % concerne le ménage au domicile d'un particulier ; l'entretien d'un logement mis en location courte durée relève de votre activité locative et n'y est pas éligible."
+                "question": "Le ménage d'une location courte durée est-il éligible aux 50 % ?",
+                "reponse": "Non : un bien loué aux voyageurs n'est pas considéré comme votre domicile. Son entretien fait partie de votre activité de loueur et reste donc en dehors du dispositif des 50 %."
               }
             ]
           }

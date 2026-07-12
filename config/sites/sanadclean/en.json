@@ -36,8 +36,8 @@
   },
   "meta": {
     "ogImage": "/sites/sanadclean/og.png",
-    "title": "SANAD CLEAN — Home cleaning & professional cleaning in Nîmes",
-    "description": "SANAD CLEAN, a cleaning company in Nîmes: home cleaning (50% tax credit, i.e. €15/h for you), commercial premises cleaning, deep cleaning and pest control. Free quote.",
+    "title": "Cleaning in Nîmes — €15/hr after the 50% tax credit",
+    "description": "Home cleaning in Nîmes: €30/hr billed, €15/hr after the 50% tax credit. Premises, deep cleaning and pest control — free quote within 24 hours.",
     "keywords": [
       "home cleaning Nîmes",
       "house cleaner Nîmes",
@@ -61,8 +61,8 @@
           "content": {
             "showSocial": true,
             "eyebrow": "Cleaning company in Nîmes",
-            "titre": "A spotless home,",
-            "titreAccent": "from €15/h",
+            "titre": "Attentive home cleaning in Nîmes,",
+            "titreAccent": "€30/hr billed — €15/hr after the tax credit",
             "accroche": "Home cleaning with a 50% tax credit, premises cleaning, deep cleaning and pest control in Nîmes. We take care of everything.",
             "trust": [
               {
@@ -71,7 +71,7 @@
               },
               {
                 "icone": "Clock",
-                "label": "Available 24/7"
+                "label": "7 days a week · emergencies possible"
               },
               {
                 "icone": "ShieldCheck",
@@ -86,10 +86,10 @@
               "label": "Home cleaning",
               "prix": "15 €",
               "unite": "/ hour",
-              "mention": "after tax credit",
+              "mention": "after the 50% tax credit (home cleaning)",
               "prixBarre": "30 €/h",
               "points": [
-                "Available 24/7",
+                "Visits 7 days a week, 8 am – 7 pm",
                 "Free quote within 24 h",
                 "Trusted staff",
                 "Products suited to your home",
@@ -121,7 +121,7 @@
                 "nom": "Cleaning & housekeeping",
                 "emoji": "🧹",
                 "badge": "50% tax credit",
-                "priceHint": "from €30/h",
+                "priceHint": "€30/hr — €15/hr after credit",
                 "description": "Your home looked after weekly or as a one-off, with the same meticulous care every visit.",
                 "href": "/menage-domicile"
               },
@@ -160,7 +160,7 @@
               {
                 "nom": "Terrace & outdoors",
                 "emoji": "🌿",
-                "badge": "50% tax credit",
+                "badge": "Tax credit case by case",
                 "priceHint": "from €90",
                 "description": "Paving brightened, moss lifted: outdoor spaces ready for the sunny season.",
                 "href": "/nettoyage-terrasse"
@@ -458,14 +458,14 @@
           "content": {
             "eyebrow": "In private homes · −50%",
             "titre": "The services that open the 50%",
-            "intro": "Performed at your home, these services fall under the home-help scheme: the Accès SAP cooperative opens the 50% tax credit for you.",
+            "intro": "Performed at your home, most of these services fall under the home-help scheme: the Accès SAP cooperative then opens the 50% tax credit — your quote states it for each service.",
             "items": [
               {
                 "nom": "Cleaning & housekeeping",
                 "emoji": "🧹",
                 "badge": "50% tax credit",
-                "priceHint": "from €30/h",
-                "description": "Your home looked after weekly or as a one-off, with the same meticulous care every visit.",
+                "priceHint": "€30/hr — €15/hr after credit",
+                "description": "Weekly or one-off visits: floors, dusting, kitchen and bathroom looked after to your instructions, noted down and followed.",
                 "href": "/menage-domicile"
               },
               {
@@ -473,7 +473,7 @@
                 "emoji": "🏠",
                 "badge": "50% tax credit",
                 "priceHint": "from €250",
-                "description": "Your home spotless again after building work, a move-out or before handing over the keys.",
+                "description": "Ceilings, cupboards, windows and floors reworked one by one after works or a move-out, then checked with you room by room.",
                 "href": "/remise-en-etat"
               },
               {
@@ -481,7 +481,7 @@
                 "emoji": "🪟",
                 "badge": "50% tax credit",
                 "priceHint": "from €90",
-                "description": "Bays, windows and mirrors that finally let all the light through, street side and garden side.",
+                "description": "Windows, bays and mirrors washed on both sides, frames and sills included, then verified against the light.",
                 "href": "/nettoyage-vitres"
               },
               {
@@ -489,7 +489,7 @@
                 "emoji": "🛋️",
                 "badge": "50% tax credit",
                 "priceHint": "from €60",
-                "description": "Injection-extraction that revives tired seats, mattresses and fabrics.",
+                "description": "Stains pre-treated, then fibre-by-fibre injection-extraction: the fabric dries within hours, sanitised and deodorised.",
                 "href": "/nettoyage-canape"
               },
               {
@@ -497,21 +497,21 @@
                 "emoji": "🧶",
                 "badge": "On quote",
                 "priceHint": "on quote",
-                "description": "A fibre-by-fibre wash that respects wool, silk and colours, at home or in our workshop.",
+                "description": "The fibre is examined before anything else: a wash suited to wool, silk or synthetics, at your home or in our workshop.",
                 "href": "/nettoyage-tapis"
               },
               {
                 "nom": "Terrace & outdoors",
                 "emoji": "🌿",
-                "badge": "50% tax credit",
+                "badge": "Tax credit case by case",
                 "priceHint": "from €90",
-                "description": "Paving brightened, moss lifted: outdoor spaces ready for the sunny season.",
+                "description": "De-mossing, degreasing then rinsing, with pressure dosed to the material: stone, wood, concrete or tiles.",
                 "href": "/nettoyage-terrasse"
               },
               {
                 "nom": "Diogenes syndrome",
                 "emoji": "♻️",
-                "badge": "50% tax credit",
+                "badge": "Tax credit case by case",
                 "priceHint": "from €600",
                 "description": "Discreet support to clear, sanitise and bring an overwhelmed home back to life.",
                 "href": "/syndrome-diogene"
@@ -532,7 +532,7 @@
                 "emoji": "🏢",
                 "badge": "On quote",
                 "priceHint": "from €90",
-                "description": "Welcoming premises for your teams and clients, at whatever pace suits your business.",
+                "description": "Visits before opening or after closing, a fixed schedule and the same cleaner from one week to the next.",
                 "href": "/nettoyage-bureaux"
               },
               {
@@ -590,7 +590,7 @@
         "priceFrom": 30
       },
       "meta": {
-        "title": "Home cleaning in Nîmes from €15/hr",
+        "title": "Cleaning in Nîmes: €30/hr, €15/hr after tax credit",
         "description": "Home cleaning in Nîmes and the Gard: €30/hr billed, €15/hr after the 50% tax credit. Same cleaner each visit, instructions kept, quote within 24 hrs.",
         "keywords": [
           "home cleaning Nîmes",
@@ -833,7 +833,7 @@
       },
       "meta": {
         "title": "Restoration cleaning in Nîmes from €250",
-        "description": "Restoration cleaning in Nîmes from €250: after works, a move or before check-out, every room reworked then signed off with you. Tax credit at home.",
+        "description": "Restoration cleaning in Nîmes from €250: after works, a move or before check-out, every room reworked then checked with you. Tax credit set on the quote.",
         "keywords": [
           "deep cleaning Nîmes",
           "after-works cleaning Nîmes",
@@ -846,7 +846,7 @@
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "50% tax credit",
+            "eyebrow": "Deep cleaning · tax credit case by case",
             "titre": "Deep cleaning in Nîmes — from €250",
             "intro": "Key handover coming up, or building work that has left dust on everything? In Nîmes and the Gard we take the home back room by room, from €250, until it is fit to live in or hand back — and we check it with you.",
             "breadcrumb": [
@@ -895,8 +895,8 @@
               },
               {
                 "icone": "badge-euro",
-                "nom": "50% back at home",
-                "description": "Carried out in a private residence, the service qualifies for the home-help tax credit."
+                "nom": "Tax credit: case by case",
+                "description": "In a private home, part of these jobs falls under the home-help scheme: your quote states whether the 50% applies."
               }
             ]
           }
@@ -1009,7 +1009,7 @@
               },
               {
                 "question": "Can I get 50% of the amount back?",
-                "reponse": "Yes, if the property is your private home: the service then counts as home help. The exact conditions are set out on our tax credit page."
+                "reponse": "Often, yes: done in your own private home, the service can count as home help. It depends on its exact nature — the quote states it clearly, and our tax credit page details the conditions."
               },
               {
                 "question": "Builder's dust: can you handle it?",
@@ -1260,6 +1260,10 @@
               {
                 "question": "Can you reach high or large bay windows?",
                 "reponse": "Yes, we have suitable equipment for tall windows and large bay doors, while working safely."
+              },
+              {
+                "question": "Do you clean windows outside Nîmes?",
+                "reponse": "Yes: our window rounds cover Nîmes and the nearby Gard first — Caissargues, Marguerittes, Saint-Gilles or Vauvert among others — with travel included within a 20 km radius. Bays and verandas around Montpellier and Marseille are scheduled by appointment, planned in advance."
               }
             ]
           }
@@ -1502,6 +1506,10 @@
               {
                 "question": "When can I sit on it again?",
                 "reponse": "Usually after a few hours of drying; our equipment extracts most of the moisture and we advise airing the room."
+              },
+              {
+                "question": "Do you treat mattresses too?",
+                "reponse": "Yes, on the same principle as sofas: marked areas are pre-treated, then the machine injects the solution deep into the fibres before extracting it along with dirt and dust mites. The mattress can be used again after a few hours of drying, and the quote, sent within 24 hours, states the price by size."
               }
             ]
           }
@@ -1791,7 +1799,7 @@
       },
       "meta": {
         "title": "Terrace cleaning in Nîmes from €90",
-        "description": "Terraces and outdoor floors degreased and de-mossed in Nîmes from €90. Tiles, stone, wood or concrete: 50% tax credit in private residences.",
+        "description": "Terraces and outdoor floors degreased and de-mossed in Nîmes from €90. Stone, wood or tiles — tax credit depending on the job, stated on the quote.",
         "keywords": [
           "terrace cleaning Nîmes",
           "outdoor cleaning Gard",
@@ -1804,7 +1812,7 @@
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "50% tax credit",
+            "eyebrow": "Outdoors · tax credit depending on the job",
             "titre": "Terrace & outdoor cleaning in Nîmes — from €90",
             "intro": "Under the Gard sun, terraces green over quickly in the shade and darken around the barbecue. From €90, we give your paving, stone and wood their original shade back — ready for long summer meals in Nîmes.",
             "breadcrumb": [
@@ -1853,8 +1861,8 @@
               },
               {
                 "icone": "badge-euro",
-                "nom": "50% for private homes",
-                "description": "Done at your home, outdoor upkeep qualifies for the tax credit."
+                "nom": "Tax credit: case by case",
+                "description": "Done at a private home, outdoor upkeep may open the 50%: we state it in black and white on your quote."
               }
             ]
           }
@@ -1967,7 +1975,7 @@
               },
               {
                 "question": "Does outdoor upkeep count towards the 50%?",
-                "reponse": "Yes, when done at a private home; the conditions are summed up on our tax credit page."
+                "reponse": "It depends on the exact nature of the job and where it takes place: at a private home it may open the 50%. Eligibility is stated on the quote before any work starts."
               },
               {
                 "question": "Could wood or stone get damaged?",
@@ -1976,6 +1984,10 @@
               {
                 "question": "How long does the result last?",
                 "reponse": "Visible moss is removed and its return slowed; a regular maintenance pass clearly extends the effect."
+              },
+              {
+                "question": "Do you charge for travel to clean a terrace?",
+                "reponse": "Not around Nîmes: travel is included in Nîmes and within 20 km. Further out, towards Montpellier or Marseille, visits are grouped into shared rounds; mention your town when you get in touch and the quote, sent within 24 hours, covers everything — no hidden costs."
               }
             ]
           }
@@ -3089,7 +3101,7 @@
       "label": "Rates",
       "meta": {
         "title": "Cleaning prices in Nîmes",
-        "description": "Cleaning at €30/hr (€15/hr after tax credit), restoration from €250, windows from €90: all our floor prices in Nîmes, with an instant online quote tool."
+        "description": "Cleaning billed at €30/hr and brought down to €15 by the 50% credit; restoration from €250, windows from €90. All floor prices in Nîmes, instant quote."
       },
       "blocks": [
         {
@@ -3097,7 +3109,7 @@
           "content": {
             "eyebrow": "Rates & online quote",
             "titre": "Cleaning prices in Nîmes",
-            "intro": "Everything is displayed up front: cleaning €30/hr (€15/hr after tax credit), spring-clean from €150, restoration from €250, sofa from €60, windows and terrace from €90, offices from €90, cockroaches from €140, bed bugs from €250, extreme cleaning from €600. Adjust the quantities below: the total updates before your eyes."
+            "intro": "Everything is displayed up front: an hour of cleaning at €30, i.e. €15 net thanks to the 50% tax credit, spring-clean from €150, restoration from €250, sofa from €60, windows and terrace from €90, offices from €90, cockroaches from €140, bed bugs from €250, extreme cleaning from €600. Adjust the quantities below: the total updates before your eyes."
           }
         },
         {
@@ -3132,7 +3144,8 @@
             ],
             "notes": [
               "🚗 Travel included in Nîmes and within 20 km.",
-              "📋 Your detailed quote arrives within 24 hours, nothing to pay to get it."
+              "📋 Your detailed quote arrives within 24 hours, nothing to pay to get it.",
+              "ℹ️ The 50% applies to services carried out in a private home; for terraces, deep cleaning or clear-outs, exact eligibility is confirmed on the quote."
             ],
             "categories": [
               {
@@ -3508,7 +3521,7 @@
               },
               {
                 "question": "Which services stay outside the scheme?",
-                "reponse": "Anything not performed in a private home: offices, shops and business premises, plus pest control (bed bugs, cockroaches). These are priced by quotation, without tax credit."
+                "reponse": "Anything that does not take place in a private home: offices, shops and business premises, plus pest control (bed bugs, cockroaches). For borderline jobs — terraces, clear-outs — eligibility depends on the exact nature of the work: your quote states it in black and white."
               },
               {
                 "question": "Can I pay with CESU?",

@@ -60,8 +60,8 @@
   "googleReviewUrl": "https://g.page/r/CZ_OkKs4Rw1nEBM/review",
   "meta": {
     "ogImage": "/sites/sanadclean/og.png",
-    "title": "SANAD CLEAN — Ménage à domicile & nettoyage professionnel à Nîmes",
-    "description": "SANAD CLEAN, entreprise de nettoyage à Nîmes : ménage à domicile (crédit d'impôt 50 %, soit 15 €/h pour vous), nettoyage de locaux professionnels, remise en état et traitement des nuisibles. Devis gratuit.",
+    "title": "Nettoyage & ménage à Nîmes, 15 €/h après crédit d'impôt",
+    "description": "Ménage à domicile à Nîmes : 30 €/h facturés, 15 €/h après crédit d'impôt de 50 %. Locaux, remise en état, nuisibles — devis gratuit sous 24 h.",
     "keywords": [
       "ménage à domicile Nîmes",
       "femme de ménage Nîmes",
@@ -89,8 +89,8 @@
           "content": {
             "showSocial": true,
             "eyebrow": "Entreprise de nettoyage à Nîmes",
-            "titre": "Un intérieur impeccable,",
-            "titreAccent": "dès 30 €/h — 15 €/h après crédit d'impôt",
+            "titre": "Ménage à domicile soigné à Nîmes,",
+            "titreAccent": "30 €/h facturés — 15 €/h après crédit d'impôt",
             "accroche": "Ménage à domicile avec crédit d'impôt de 50 %, nettoyage de locaux, remise en état et traitement des nuisibles à Nîmes. On s'occupe de tout.",
             "trust": [
               {
@@ -149,7 +149,7 @@
                 "nom": "Ménage & nettoyage",
                 "emoji": "🧹",
                 "badge": "Crédit d'impôt 50 %",
-                "priceHint": "dès 30 €/h",
+                "priceHint": "30 €/h — 15 €/h après crédit",
                 "description": "L'entretien de votre logement, chaque semaine ou ponctuellement, avec la même minutie à chaque passage.",
                 "href": "/menage-domicile"
               },
@@ -188,7 +188,7 @@
               {
                 "nom": "Terrasse & extérieur",
                 "emoji": "🌿",
-                "badge": "Crédit d'impôt 50 %",
+                "badge": "Crédit d'impôt selon prestation",
                 "priceHint": "dès 90 €",
                 "description": "Dalles dégrisées, mousses délogées : des extérieurs prêts pour la belle saison.",
                 "href": "/nettoyage-terrasse"
@@ -487,14 +487,14 @@
           "content": {
             "eyebrow": "Chez le particulier · −50 %",
             "titre": "Les prestations qui ouvrent les 50 %",
-            "intro": "Effectuées chez vous, ces interventions relèvent des services à la personne : la coopérative Accès SAP vous ouvre les 50 % de crédit d'impôt.",
+            "intro": "Effectuées chez vous, ces interventions relèvent le plus souvent des services à la personne : la coopérative Accès SAP ouvre alors les 50 % de crédit d'impôt — votre devis le précise pour chaque prestation.",
             "items": [
               {
                 "nom": "Ménage & nettoyage",
                 "emoji": "🧹",
                 "badge": "Crédit d'impôt 50 %",
-                "priceHint": "dès 30 €/h",
-                "description": "L'entretien de votre logement, chaque semaine ou ponctuellement, avec la même minutie à chaque passage.",
+                "priceHint": "30 €/h — 15 €/h après crédit",
+                "description": "Passages hebdomadaires ou ponctuels : sols, poussières, cuisine et salle de bain suivis selon vos consignes, notées et respectées.",
                 "href": "/menage-domicile"
               },
               {
@@ -502,7 +502,7 @@
                 "emoji": "🏠",
                 "badge": "Crédit d'impôt 50 %",
                 "priceHint": "dès 250 €",
-                "description": "Le logement rendu impeccable après un chantier, un départ ou avant la remise des clés.",
+                "description": "Plafonds, placards, vitres et sols repris un à un après travaux ou départ, puis contrôlés avec vous pièce par pièce.",
                 "href": "/remise-en-etat"
               },
               {
@@ -510,7 +510,7 @@
                 "emoji": "🪟",
                 "badge": "Crédit d'impôt 50 %",
                 "priceHint": "dès 90 €",
-                "description": "Baies, fenêtres et miroirs qui laissent enfin passer toute la lumière, côté rue comme côté jardin.",
+                "description": "Vitres, baies et miroirs lavés des deux faces, encadrements et rebords compris, avec vérification à contre-jour.",
                 "href": "/nettoyage-vitres"
               },
               {
@@ -518,7 +518,7 @@
                 "emoji": "🛋️",
                 "badge": "Crédit d'impôt 50 %",
                 "priceHint": "dès 60 €",
-                "description": "L'injection-extraction qui ravive assises, matelas et tissus fatigués.",
+                "description": "Taches prétraitées puis injection-extraction fibre à fibre : le tissu sèche en quelques heures, assaini et désodorisé.",
                 "href": "/nettoyage-canape"
               },
               {
@@ -526,21 +526,21 @@
                 "emoji": "🧶",
                 "badge": "Sur devis",
                 "priceHint": "sur devis",
-                "description": "Un lavage fibre à fibre qui respecte laine, soie et couleurs, chez vous ou en atelier.",
+                "description": "La fibre est examinée avant tout geste : lavage adapté à la laine, à la soie ou au synthétique, chez vous ou en atelier.",
                 "href": "/nettoyage-tapis"
               },
               {
                 "nom": "Terrasse & extérieur",
                 "emoji": "🌿",
-                "badge": "Crédit d'impôt 50 %",
+                "badge": "Crédit d'impôt selon prestation",
                 "priceHint": "dès 90 €",
-                "description": "Dalles dégrisées, mousses délogées : des extérieurs prêts pour la belle saison.",
+                "description": "Démoussage, dégraissage puis rinçage, avec une pression dosée selon le matériau : pierre, bois, béton ou carrelage.",
                 "href": "/nettoyage-terrasse"
               },
               {
                 "nom": "Syndrome de Diogène",
                 "emoji": "♻️",
-                "badge": "Crédit d'impôt 50 %",
+                "badge": "Crédit d'impôt selon prestation",
                 "priceHint": "dès 600 €",
                 "description": "Un accompagnement discret pour vider, assainir et faire revivre un logement saturé.",
                 "href": "/syndrome-diogene"
@@ -561,7 +561,7 @@
                 "emoji": "🏢",
                 "badge": "Sur devis",
                 "priceHint": "dès 90 €",
-                "description": "Des locaux accueillants pour vos équipes et vos clients, au rythme qui convient à votre activité.",
+                "description": "Passage avant l'ouverture ou après la fermeture, planning fixe et même intervenante d'une semaine à l'autre.",
                 "href": "/nettoyage-bureaux"
               },
               {
@@ -728,7 +728,7 @@
       "label": "Tarifs",
       "meta": {
         "title": "Tarifs ménage & nettoyage à Nîmes",
-        "description": "Ménage 30 €/h soit 15 €/h après crédit d'impôt, remise en état dès 250 €, vitres dès 90 € : tous les prix planchers à Nîmes, avec devis en ligne immédiat."
+        "description": "Heure de ménage 30 €, ramenée à 15 € grâce aux 50 % ; remise en état dès 250 €, vitres dès 90 €. Tous nos prix planchers à Nîmes, devis chiffré immédiat."
       },
       "blocks": [
         {
@@ -736,7 +736,7 @@
           "content": {
             "eyebrow": "Tarifs & devis en ligne",
             "titre": "Tarifs ménage & nettoyage à Nîmes",
-            "intro": "Tout est affiché d'avance : ménage 30 €/h (15 €/h après crédit d'impôt), grand nettoyage dès 150 €, remise en état dès 250 €, canapé dès 60 €, vitres et terrasse dès 90 €, bureaux dès 90 €, cafards dès 140 €, punaises dès 250 €, nettoyage extrême dès 600 €. Ajustez les quantités ci-dessous : le total se calcule sous vos yeux."
+            "intro": "Tout est affiché d'avance : l'heure de ménage à 30 €, soit 15 € réels grâce aux 50 % de crédit d'impôt, grand nettoyage dès 150 €, remise en état dès 250 €, canapé dès 60 €, vitres et terrasse dès 90 €, bureaux dès 90 €, cafards dès 140 €, punaises dès 250 €, nettoyage extrême dès 600 €. Ajustez les quantités ci-dessous : le total se calcule sous vos yeux."
           }
         },
         {
@@ -771,7 +771,8 @@
             ],
             "notes": [
               "🚗 Déplacement offert sur Nîmes et 20 km alentours.",
-              "📋 Votre devis détaillé arrive sous 24 h, rien à régler pour l'obtenir."
+              "📋 Votre devis détaillé arrive sous 24 h, rien à régler pour l'obtenir.",
+              "ℹ️ Les 50 % concernent les prestations réalisées au domicile d'un particulier ; pour la terrasse, la remise en état ou le débarras, l'éligibilité exacte est confirmée sur le devis."
             ],
             "categories": [
               {
@@ -1147,7 +1148,7 @@
               },
               {
                 "question": "Quelles prestations restent en dehors du dispositif ?",
-                "reponse": "Tout ce qui n'a pas lieu au domicile d'un particulier : bureaux, commerces et locaux professionnels, ainsi que la désinsectisation (punaises, cafards). Ces prestations sont chiffrées sur devis, sans crédit d'impôt."
+                "reponse": "Tout ce qui n'a pas lieu au domicile d'un particulier : bureaux, commerces et locaux professionnels, ainsi que la désinsectisation (punaises, cafards). Pour les prestations aux limites du dispositif — terrasse, débarras —, l'éligibilité dépend de la nature exacte de l'intervention : votre devis l'indique noir sur blanc."
               },
               {
                 "question": "Puis-je régler en CESU ?",
@@ -1558,7 +1559,7 @@
       "label": "Ménage à domicile",
       "navHidden": true,
       "meta": {
-        "title": "Ménage à domicile à Nîmes dès 15 €/h",
+        "title": "Ménage à Nîmes : 30 €/h, soit 15 €/h après crédit",
         "description": "Ménage à domicile à Nîmes et dans le Gard : 30 €/h facturés, 15 €/h après crédit d'impôt de 50 %. Même intervenante, consignes suivies, devis sous 24 h.",
         "keywords": [
           "ménage à domicile Nîmes",
@@ -1801,7 +1802,7 @@
       "navHidden": true,
       "meta": {
         "title": "Remise en état à Nîmes dès 250 €",
-        "description": "Remise en état à Nîmes dès 250 € : après travaux, départ ou avant état des lieux, chaque pièce reprise puis validée avec vous. Crédit d'impôt à domicile.",
+        "description": "Remise en état à Nîmes dès 250 € : après travaux, départ ou avant état des lieux, chaque pièce reprise puis validée avec vous. Crédit d'impôt selon devis.",
         "keywords": [
           "remise en état Nîmes",
           "remise en état Gard",
@@ -1820,7 +1821,7 @@
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Crédit d'impôt 50 %",
+            "eyebrow": "Remise en état · crédit d'impôt selon prestation",
             "titre": "Remise en état à Nîmes — dès 250 €",
             "intro": "Une remise des clés qui approche, un chantier qui laisse sa poussière partout ? À Nîmes et dans le Gard, nous reprenons le logement pièce par pièce, dès 250 €, jusqu'à ce qu'il soit prêt à être habité ou rendu — et nous le vérifions avec vous.",
             "breadcrumb": [
@@ -1869,8 +1870,8 @@
               },
               {
                 "icone": "badge-euro",
-                "nom": "50 % remboursés à domicile",
-                "description": "Effectuée dans la résidence d'un particulier, la prestation entre dans le crédit d'impôt services à la personne."
+                "nom": "Crédit d'impôt : selon la prestation",
+                "description": "Au domicile d'un particulier, une partie des remises en état relève des services à la personne : votre devis indique si les 50 % s'appliquent."
               }
             ]
           }
@@ -1983,7 +1984,7 @@
               },
               {
                 "question": "Puis-je récupérer 50 % du montant ?",
-                "reponse": "Oui si le logement est votre domicile de particulier : la prestation relève alors des services à la personne. Les conditions exactes sont détaillées sur notre page crédit d'impôt."
+                "reponse": "Souvent, oui : réalisée dans votre domicile de particulier, la prestation peut relever des services à la personne. Tout dépend de sa nature exacte — le devis vous l'indique clairement, et notre page crédit d'impôt détaille les conditions."
               },
               {
                 "question": "Poussière de chantier : vous savez faire ?",
@@ -2234,6 +2235,10 @@
               {
                 "question": "Les encadrements et rebords sont-ils inclus ?",
                 "reponse": "Oui, nous nettoyons les vitres ainsi que les encadrements et les rebords pour un rendu complet et soigné."
+              },
+              {
+                "question": "Intervenez-vous pour la vitrerie en dehors de Nîmes ?",
+                "reponse": "Oui : les tournées vitres couvrent d'abord Nîmes et le Gard proche — Caissargues, Marguerittes, Saint-Gilles ou Vauvert notamment —, où le déplacement est offert dans un rayon de 20 km. Les baies et vérandas des secteurs de Montpellier et de Marseille se programment sur rendez-vous planifié à l'avance."
               }
             ]
           }
@@ -2476,6 +2481,10 @@
               {
                 "question": "Quand pourrai-je me rasseoir dessus ?",
                 "reponse": "Après quelques heures de séchage en général ; notre matériel aspire l'essentiel de l'humidité et nous vous conseillons d'aérer la pièce."
+              },
+              {
+                "question": "Traitez-vous aussi les matelas ?",
+                "reponse": "Oui, et sur le même principe que les canapés : les zones marquées sont prétraitées, puis la machine injecte la solution au cœur des fibres avant de l'aspirer avec la saleté et les acariens. Le matelas est de nouveau utilisable après quelques heures de séchage, et le devis, envoyé sous 24 h, précise le tarif selon sa taille."
               }
             ]
           }
@@ -2759,7 +2768,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage terrasse à Nîmes dès 90 €",
-        "description": "Terrasses et sols extérieurs dégraissés et démoussés à Nîmes, dès 90 €. Carrelage, pierre, bois ou béton : crédit d'impôt 50 % chez le particulier.",
+        "description": "Terrasses et sols extérieurs dégraissés et démoussés à Nîmes dès 90 €. Pierre, bois ou carrelage — crédit d'impôt selon la prestation, précisé au devis.",
         "keywords": [
           "nettoyage terrasse Nîmes",
           "nettoyage terrasse Gard",
@@ -2778,7 +2787,7 @@
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Crédit d'impôt 50 %",
+            "eyebrow": "Extérieurs · crédit d'impôt selon prestation",
             "titre": "Nettoyage terrasse & extérieur à Nîmes — dès 90 €",
             "intro": "Sous le soleil du Gard, les terrasses verdissent vite à l'ombre et noircissent près du barbecue. Dès 90 €, nous rendons à vos dallages, pierres et bois leur teinte d'origine — prêts pour les longs repas d'été à Nîmes.",
             "breadcrumb": [
@@ -2827,8 +2836,8 @@
               },
               {
                 "icone": "badge-euro",
-                "nom": "50 % chez le particulier",
-                "description": "Réalisé à votre domicile, l'entretien des extérieurs entre dans le crédit d'impôt."
+                "nom": "Crédit d'impôt : selon prestation",
+                "description": "Réalisé au domicile d'un particulier, l'entretien des extérieurs peut ouvrir les 50 % : nous le précisons noir sur blanc sur votre devis."
               }
             ]
           }
@@ -2941,7 +2950,7 @@
               },
               {
                 "question": "L'entretien d'extérieurs compte-t-il pour les 50 % ?",
-                "reponse": "Oui lorsqu'il est réalisé chez un particulier ; les conditions sont résumées sur notre page crédit d'impôt."
+                "reponse": "Cela dépend de la nature exacte de la prestation et de son lieu : réalisée au domicile d'un particulier, elle peut ouvrir les 50 %. L'éligibilité est précisée sur le devis, avant toute intervention."
               },
               {
                 "question": "Le bois et la pierre risquent-ils d'être abîmés ?",
@@ -2950,6 +2959,10 @@
               {
                 "question": "Combien de temps le résultat tient-il ?",
                 "reponse": "Les mousses visibles sont éliminées et leur retour ralenti ; un passage d'entretien régulier prolonge nettement l'effet."
+              },
+              {
+                "question": "Le déplacement est-il facturé pour une terrasse ?",
+                "reponse": "Non dans le bassin nîmois : le déplacement est offert sur Nîmes et 20 km alentour. Au-delà, vers Montpellier ou Marseille, les interventions s'organisent en rendez-vous groupés ; indiquez votre commune lors de la demande et le devis, envoyé sous 24 h, intègre le tout — sans frais cachés."
               }
             ]
           }
@@ -3416,7 +3429,7 @@
             "items": [
               {
                 "question": "Combien coûte le nettoyage de bureaux à Nîmes ?",
-                "reponse": "Le nettoyage de locaux professionnels démarre à 90 € jusqu'à 50 m², 120 € de 50 à 100 m² et à partir de 150 € au-delà. Le tarif dépend de la surface et de la fréquence d'entretien."
+                "reponse": "Pour des locaux professionnels, comptez 90 € jusqu'à 50 m² et 120 € entre 50 et 100 m² ; les surfaces plus grandes démarrent à 150 €, le chiffrage final tenant compte des mètres carrés et du rythme d'entretien."
               },
               {
                 "question": "Une entreprise peut-elle prétendre aux 50 % ?",

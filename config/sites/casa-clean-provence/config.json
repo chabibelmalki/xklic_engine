@@ -44,8 +44,8 @@
     "lng": 5.3698
   },
   "meta": {
-    "title": "Casa Clean Provence — Ménage à domicile & nettoyage à Marseille",
-    "description": "Casa Clean Provence prend soin de votre maison à Marseille et dans les Bouches-du-Rhône : ménage à domicile à 15 €/h après crédit d'impôt de 50 %, remise en état, vitres, textiles et traitement des nuisibles. Intervention d'urgence possible, devis gratuit.",
+    "title": "Casa Clean Provence — Ménage & remise en état à Marseille",
+    "description": "Crédit d'impôt de 50 % : le ménage à domicile revient à 15 €/h à Marseille. Remise en état, vitres, canapé, terrasse, nuisibles — devis gratuit sous 24 h.",
     "keywords": [
       "ménage à domicile Marseille",
       "femme de ménage Marseille",
@@ -369,6 +369,18 @@
           }
         },
         {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Comment lire ce catalogue",
+            "titre": "Deux familles de prestations,",
+            "titreAccent": "une règle simple",
+            "paragraphes": [
+              "Notre catalogue se lit en deux familles. Tout ce qui se déroule au domicile d'un particulier — ménage régulier ou grand nettoyage, remise en état, vitres, canapé, terrasse — ouvre droit au crédit d'impôt de 50 % : le badge sur chaque carte vous le rappelle, et les prix affichés « dès » correspondent au tarif avant déduction. Bureaux, commerces, punaises de lit et cafards relèvent du devis classique, sans avantage fiscal ; le chantier Diogène est un cas à part, avec un crédit limité à la part nettoyage-désinfection, le débarras étant chiffré séparément.",
+              "Vous pouvez tout à fait grouper plusieurs prestations sur un même passage : les vitres à l'occasion d'un grand nettoyage, le canapé pendant une remise en état. Nos rendez-vous étant regroupés par secteur autour de Marseille, tout confier d'un coup nous évite des allers-retours. Décrivez l'ensemble de votre besoin dans le formulaire, ou composez votre estimation ligne par ligne sur la page tarifs : réponse sous 24 h, majoration de 10 % uniquement en cas d'urgence."
+            ]
+          }
+        },
+        {
           "type": "services",
           "variant": "mosaique",
           "content": {
@@ -495,7 +507,7 @@
           "content": {
             "eyebrow": "Tarifs & devis en ligne",
             "titre": "Composez votre devis en quelques clics",
-            "intro": "Choisissez vos prestations, ajustez les quantités et obtenez une estimation immédiate — crédit d'impôt déduit pour les prestations à domicile."
+            "intro": "Ménage, vitres, canapé, terrasse ou remise en état : ajoutez ce qu'il vous faut et le montant se met à jour sous vos yeux, les 50 % de crédit d'impôt déjà retranchés pour tout ce qui se fait à votre domicile."
           }
         },
         {
@@ -902,23 +914,23 @@
           "type": "faq",
           "variant": "deux-colonnes",
           "content": {
-            "titre": "Crédit d'impôt : vos questions",
+            "titre": "Le crédit d'impôt, expliqué avec des mots simples",
             "items": [
               {
-                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
-                "reponse": "Pour les prestations réalisées à votre domicile, vous bénéficiez d'un crédit d'impôt égal à 50 % des sommes versées (plafond de 12 000 € par an et par foyer). Concrètement, une heure facturée 30 € ne vous coûte réellement que 15 €. Casa Clean Provence est déclarée au titre des services à la personne, ce qui vous ouvre ce droit."
+                "question": "Qui s'occupe de la paperasse pour que je touche mes 50 % ?",
+                "reponse": "Nous, pour l'essentiel — c'est notre rôle. Casa Clean Provence est déclarée au titre des services à la personne : chaque début d'année, nous vous remettons l'attestation fiscale qui récapitule les sommes versées, et vous n'avez qu'à la reporter sur votre déclaration de revenus. Le crédit couvre 50 % de ce que vous payez pour les prestations réalisées chez vous, dans la limite de 12 000 € par an et par foyer — un plafond qui peut être majoré selon la composition de votre foyer."
               },
               {
-                "question": "Qu'est-ce que l'avance immédiate ?",
-                "reponse": "Grâce à l'avance immédiate de crédit d'impôt (dispositif URSSAF), vous ne réglez tout de suite que la moitié restant à votre charge, sans attendre votre déclaration d'impôts de l'année suivante."
+                "question": "L'avance immédiate, comment ça se déroule pour moi ?",
+                "reponse": "En trois temps. D'abord, au moment du devis, nous faisons les démarches pour vous inscrire au dispositif d'avance immédiate de l'URSSAF ; vous n'avez qu'à activer votre compte en ligne, et on vous guide si besoin. Ensuite, après chaque prestation, l'URSSAF vous présente la facture dans votre espace personnel : vous la validez. Enfin, seule la moitié restant à votre charge est prélevée — une heure de ménage facturée 30 €, c'est 15 € qui sortent de votre compte, tout de suite, sans attendre la déclaration de l'année suivante."
               },
               {
-                "question": "Le crédit d'impôt s'applique-t-il au nettoyage de bureaux ?",
-                "reponse": "Non. Le crédit d'impôt de 50 % concerne uniquement les prestations réalisées au domicile d'un particulier. Le nettoyage de locaux professionnels et le traitement des nuisibles sont facturés sur devis, sans crédit d'impôt."
+                "question": "Est-ce que tout ce que vous proposez ouvre droit aux 50 % ?",
+                "reponse": "Non, et on préfère être claires : la loi réserve le crédit d'impôt aux prestations effectuées au domicile d'un particulier. Ménage, remise en état, vitres, canapé ou terrasse chez vous : oui. Bureaux, commerces et traitement des nuisibles : non, c'est du devis classique. Et pour un chantier Diogène, seule la part nettoyage-désinfection réalisée à domicile est éligible, le débarras étant chiffré à part."
               },
               {
-                "question": "Puis-je payer en CESU ?",
-                "reponse": "Oui, le paiement en CESU est accepté pour les prestations à domicile. Avec le crédit d'impôt, votre coût réel revient à 15 €/h."
+                "question": "Je règle déjà mes services en CESU : ça change quoi avec vous ?",
+                "reponse": "Rien de compliqué : nous acceptons le CESU pour tout ce qui se fait à votre domicile, et l'avantage fiscal de 50 % reste acquis quand les conditions sont réunies. Ces sommes figurent sur votre attestation annuelle comme les autres. Un doute sur votre situation ? Posez la question à Latifa au moment du devis, elle vous répond franchement."
               }
             ]
           }
@@ -1109,6 +1121,19 @@
             "eyebrow": "À propos",
             "titre": "Casa Clean Provence, le nettoyage de confiance à Marseille",
             "intro": "Casa Clean Provence met le soin, l'écoute et la discrétion au cœur de chaque intervention — chez les particuliers comme dans les entreprises, à Marseille et dans les Bouches-du-Rhône."
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Qui sommes-nous",
+            "titre": "Latifa, une entreprise",
+            "titreAccent": "à taille humaine",
+            "paragraphes": [
+              "Derrière Casa Clean Provence, il y a Latifa Mazzour, qui a créé cette entreprise marseillaise et la dirige au quotidien. C'est elle qui lit vos messages, prépare les devis et décroche le téléphone du lundi au samedi, de 8h30 à 18h — la même personne du premier appel au dernier coup d'éponge, et c'est justement ce que nos clients soulignent dans leurs avis.",
+              "Ce format à taille humaine se retrouve dans l'organisation : les rendez-vous sont regroupés par secteur, de la vallée de l'Huveaune aux portes d'Aix, ce qui nous permet de tenir les créneaux convenus, d'offrir le déplacement sur Marseille et ses environs proches et de garder de la place pour une urgence (majoration de 10 %). Chez les clients réguliers, nous faisons le maximum pour envoyer toujours la même intervenante.",
+              "L'entreprise est déclarée au titre des services à la personne : tout ce qui est réalisé à votre domicile ouvre droit au crédit d'impôt de 50 %, avec l'avance immédiate si vous le souhaitez, et l'attestation fiscale vous est remise chaque année. Le règlement en CESU est également accepté."
+            ]
           }
         },
         {
@@ -1322,7 +1347,7 @@
       "label": "Ménage à domicile",
       "navHidden": true,
       "meta": {
-        "title": "Ménage à domicile à Marseille — dès 15 €/h",
+        "title": "Ménage 30 €/h à Marseille, 15 €/h après crédit d'impôt",
         "description": "Entretien régulier ou grand ménage de votre logement à Marseille : dès 30 €/h, soit 15 €/h après crédit d'impôt de 50 %. Devis gratuit sous 24 h.",
         "keywords": [
           "ménage à domicile Marseille",
@@ -1343,8 +1368,8 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "Crédit d'impôt 50 %",
-            "titre": "Ménage à domicile à Marseille — dès 30 €/h",
-            "intro": "Casa Clean Provence prend en charge l'entretien de votre logement à Marseille et alentours : ménage hebdomadaire, bimensuel ou grand nettoyage ponctuel. Avec le crédit d'impôt de 50 %, l'heure facturée 30 € ne vous revient en réalité qu'à 15 €.",
+            "titre": "Ménage à domicile à Marseille — 30 €/h, soit 15 €/h après crédit d'impôt",
+            "intro": "Casa Clean Provence prend en charge l'entretien de votre logement à Marseille et alentours : ménage hebdomadaire, bimensuel ou grand nettoyage ponctuel. L'heure est facturée 30 € ; avec le crédit d'impôt de 50 %, elle ne vous revient en réalité qu'à 15 €. Le repassage est possible en complément d'un passage ménage — précisez-le simplement dans votre devis.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1442,6 +1467,10 @@
               {
                 "question": "Intervenez-vous en urgence ?",
                 "reponse": "Oui, nous pouvons intervenir en urgence selon nos disponibilités. Une majoration de 10 % s'applique alors sur le tarif de la prestation."
+              },
+              {
+                "question": "Proposez-vous aussi le repassage ?",
+                "reponse": "Oui, en complément d'un passage ménage : votre intervenante peut consacrer une partie du créneau au repassage de votre linge. Indiquez-le dans votre demande de devis — le formulaire le prévoit — pour que nous calions la durée nécessaire. Réalisé à votre domicile, il ouvre droit au même crédit d'impôt de 50 %."
               }
             ]
           }

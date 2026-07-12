@@ -16,7 +16,7 @@
   "social": [
     {
       "platform": "google",
-      "url": "https://share.google/iH0ygzQy078Sd756g"
+      "url": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x12b50bb93e573191:0x3b7b14b832708d3f"
     }
   ],
   "googleReviewUrl": "https://g.page/r/CT-NcDK4FHs7EBM/review",
@@ -122,7 +122,7 @@
           "content": {
             "eyebrow": "Nos prestations",
             "titre": "Le ménage difficile, notre spécialité",
-            "intro": "Spécialisée dans le ménage difficile et le nettoyage de fin de chantier, Parfait Ménage 26 intervient dans tout type de situation.",
+            "intro": "Femme de ménage pour l'entretien courant, aide ménagère régulière ou grand nettoyage après travaux : à Pierrelatte, une seule équipe couvre tout le spectre, du plus simple au plus difficile.",
             "items": [
               {
                 "nom": "Logements très sales ou en mauvais état",
@@ -169,8 +169,8 @@
               }
             ],
             "cta": {
-              "label": "Demander un devis gratuit",
-              "href": "/devis"
+              "label": "Vérifier que votre commune est desservie",
+              "href": "/zone-intervention"
             }
           }
         },
@@ -268,23 +268,23 @@
           "type": "faq",
           "variant": "liste-ouverte",
           "content": {
-            "titre": "Vos questions avant de commencer",
+            "titre": "On vous répond sans détour",
             "items": [
               {
-                "question": "Intervenez-vous sur les logements très sales ?",
-                "reponse": "Oui, c'est notre spécialité. Logements laissés en mauvais état, fin de chantier, appartements à remettre en état après une location : nous arrivons avec un matériel adapté à chaque situation pour un résultat irréprochable."
+                "question": "Pouvez-vous intervenir vite, par exemple avant un état des lieux ?",
+                "reponse": "Oui : donnez-nous votre échéance — remise des clés, état des lieux, arrivée de voyageurs — dès le premier contact, et nous calons l'intervention dessus. Plus la date est connue tôt, plus c'est simple à organiser."
               },
               {
-                "question": "Dans quel secteur vous déplacez-vous ?",
-                "reponse": "Nous intervenons à Pierrelatte et dans un rayon d'environ 40 km : Saint-Paul-Trois-Châteaux, Donzère, Grignan, Malataverne, Montélimar, Bollène, Pont-Saint-Esprit et les communes voisines."
+                "question": "Dois-je être présent pendant l'intervention ?",
+                "reponse": "Non, sauf si vous le souhaitez. Un accès convenu ensemble (clé, boîte à clés) suffit : nous avons l'habitude de travailler en autonomie, avec discrétion, et nous vous faisons un retour une fois le travail terminé."
               },
               {
-                "question": "Le devis est-il gratuit ?",
-                "reponse": "Oui, toujours, et sans engagement. Dites-nous franchement dans quel état est le logement — même s'il est catastrophique, on en a vu d'autres — et vous recevez une estimation honnête, sans mauvaise surprise à l'arrivée."
+                "question": "Travaillez-vous aussi pour les bailleurs et les professionnels ?",
+                "reponse": "Oui : propriétaires bailleurs entre deux locataires, gestionnaires de gîtes, artisans qui livrent un chantier. Seule différence : le crédit d'impôt de 50 % reste réservé au ménage réalisé au domicile d'un particulier."
               },
               {
-                "question": "Fournissez-vous le matériel et les produits ?",
-                "reponse": "Oui, nous pouvons venir avec notre matériel et nos produits, adaptés au type d'intervention. Nous pouvons aussi utiliser les vôtres si vous le préférez."
+                "question": "Comment vos prix sont-ils fixés ?",
+                "reponse": "Sur la réalité du terrain : surface, état du logement, type d'intervention. Pas de forfait aveugle — vous décrivez la situation telle qu'elle est, vous recevez une estimation gratuite, et rien ne démarre sans votre accord."
               }
             ]
           }
@@ -331,7 +331,7 @@
           "variant": "bande",
           "content": {
             "titre": "Un logement à remettre d'aplomb ?",
-            "sousTitre": "Devis gratuit et sans engagement. Réponse rapide par téléphone, WhatsApp ou e-mail.",
+            "sousTitre": "Chiffrage offert, zéro engagement — et on vous répond vite, que vous passiez par téléphone, WhatsApp ou e-mail.",
             "ctaPrimaire": {
               "label": "Demander un devis gratuit",
               "href": "/devis"
@@ -359,9 +359,9 @@
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Nos prestations",
-            "titre": "Du ménage régulier au nettoyage difficile",
-            "intro": "Du ménage hebdomadaire au logement laissé à l'abandon, voici tout ce que nous savons faire, de Pierrelatte à Montélimar et Bollène. Chaque prestation a sa page : déroulé, ce qui est compris, questions fréquentes — et toujours un devis gratuit avant de commencer.",
+            "eyebrow": "Le catalogue, fiche par fiche",
+            "titre": "Sept prestations, sept fiches détaillées",
+            "intro": "Cette page sert de sommaire. Pour chaque prestation, une fiche complète précise à quelles situations elle répond, comment se déroule l'intervention et ce qu'il faut préparer avant notre venue. Vous hésitez entre deux formules ? Le guide plus bas tranche les cas les plus courants — et au moindre doute, un appel suffit.",
             "ctaPrimaire": {
               "label": "Demander un devis",
               "href": "/devis"
@@ -378,51 +378,66 @@
           "content": {
             "eyebrow": "Tout le ménage, un seul prestataire",
             "titre": "Nos prestations en détail",
-            "intro": "Cliquez sur une carte pour ouvrir la page de la prestation : vous y trouverez le déroulé d'une intervention, ce qui est inclus et les réponses aux questions qu'on nous pose vraiment.",
+            "intro": "Chaque carte ouvre la fiche de la prestation : cas concrets couverts, déroulé d'une intervention, ce qui est inclus et questions fréquentes.",
             "items": [
               {
                 "nom": "Logements très sales ou en mauvais état",
-                "description": "Logements laissés en mauvais état ou fortement encrassés : nous remettons tout d'aplomb, même les situations les plus difficiles.",
+                "description": "La fiche détaille notre méthode pièce par pièce : priorités, dégraissage, désinfection, et ce qu'il est réaliste d'attendre selon l'encrassement.",
                 "href": "/remise-en-etat",
                 "icone": "SprayCan"
               },
               {
                 "nom": "Nettoyage après travaux, rénovation ou chantier",
-                "description": "Poussière de chantier, traces de peinture, de colle et de plâtre éliminées après vos travaux.",
+                "description": "Pour qui livre ou emménage après des travaux : les résidus traités (plâtre, colle, peinture), l'ordre des passages et la coordination avec vos artisans.",
                 "href": "/nettoyage-fin-chantier",
                 "icone": "HardHat"
               },
               {
                 "nom": "Remise en état après location",
-                "description": "Fin de bail, logement rendu en mauvais état, état des lieux à préparer : nous le rendons prêt à relouer.",
+                "description": "Fin de bail côté locataire ou logement rendu sale côté bailleur : ce qui se joue avant un état des lieux et comment on s'y prépare.",
                 "href": "/remise-en-etat",
                 "icone": "KeyRound"
               },
               {
                 "nom": "Airbnb, gîtes et résidences secondaires",
-                "description": "Rotation entre deux séjours en courte durée, gîtes et résidences secondaires : prêt pour la prochaine arrivée.",
+                "description": "Rotations en autonomie, gestion des accès, ouverture et fermeture de saison : le déroulé complet pour la courte durée et les maisons de vacances.",
                 "href": "/nettoyage-location-airbnb",
                 "icone": "BedDouble"
               },
               {
                 "nom": "Ménage avant / après déménagement",
-                "description": "Logement nettoyé de fond en comble avant l'emménagement ou après le départ.",
+                "description": "Avant de poser les cartons ou après les avoir chargés : ce que couvre le nettoyage de fond, et dans quel ordre le caler avec votre déménagement.",
                 "href": "/remise-en-etat",
                 "icone": "Truck"
               },
               {
                 "nom": "Entretien ponctuel ou régulier",
-                "description": "Entretien de votre intérieur à la fréquence qui vous convient, ou en intervention unique.",
+                "description": "Fréquences possibles, contenu d'un passage type, ajustements au fil des semaines : de quoi construire une formule d'entretien à votre rythme.",
                 "href": "/menage-domicile",
                 "icone": "CalendarCheck"
               },
               {
                 "nom": "Crédit d'impôt de 50 %",
-                "description": "Le ménage réalisé chez vous relève des services à la personne : la moitié de la dépense vous est restituée sur vos impôts.",
+                "description": "Conditions d'éligibilité, plafond annuel, attestation : la fiche répond aux questions fiscales avant que vous ne vous engagiez.",
                 "href": "/credit-impot",
                 "icone": "BadgePercent",
                 "badge": "−50 %"
               }
+            ],
+            "cta": {
+              "label": "Voir notre zone d'intervention — 40 km autour de Pierrelatte",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Bien choisir",
+            "titre": "Quelle prestation pour votre situation ?",
+            "paragraphes": [
+              "Le bon point de départ, c'est l'état du logement. S'il sort de travaux, la fin de chantier s'impose : la poussière fine et les résidus de plâtre demandent un matériel spécifique. S'il a été occupé longtemps sans entretien, ou rendu sale par un locataire, c'est une remise en état. Et s'il est simplement vécu au quotidien, l'entretien ponctuel ou régulier suffit largement.",
+              "Deuxième question : qui occupe les lieux ? À votre domicile, la prestation entre dans le champ des services à la personne et la moitié de la dépense vous revient en crédit d'impôt. Pour un bien mis en location, courte ou longue durée, le devis reste classique, sans avantage fiscal — chaque fiche prestation le précise noir sur blanc."
             ]
           }
         },
@@ -431,7 +446,7 @@
           "variant": "ligne-horizontale",
           "content": {
             "eyebrow": "Simple et rapide",
-            "titre": "Comment ça se passe",
+            "titre": "Le même déroulé, quelle que soit la prestation",
             "items": [
               {
                 "icone": "ClipboardList",
@@ -582,7 +597,7 @@
                 "reponse": "Oui, c'est notre spécialité. Logements laissés en mauvais état, après des travaux, après le départ de locataires peu soigneux : nous arrivons avec un matériel adapté à chaque situation pour un résultat impeccable."
               },
               {
-                "question": "Quelles prestations proposez-vous ?",
+                "question": "Quels types de ménage prenez-vous en charge ?",
                 "reponse": "Ménage difficile et remise en état des logements très sales, nettoyage après travaux ou chantier, remise en état après location, Airbnb et résidences secondaires, ménage avant/après déménagement, et entretien ponctuel ou régulier."
               },
               {
@@ -590,7 +605,7 @@
                 "reponse": "À Pierrelatte et dans un rayon d'environ 40 km : Saint-Paul-Trois-Châteaux, Donzère, Grignan, Malataverne, Montélimar, Bollène, Pont-Saint-Esprit, Bourg-Saint-Andéol et les communes voisines."
               },
               {
-                "question": "Comment obtenir un devis ?",
+                "question": "Par où passer pour recevoir une estimation ?",
                 "reponse": "Un coup de fil, un message WhatsApp ou le formulaire : dites-nous où en est le logement, sans enjoliver — on a l'habitude des situations compliquées. L'estimation est gratuite, sans engagement, et on vous dit franchement ce qui est faisable."
               },
               {
@@ -598,8 +613,8 @@
                 "reponse": "Oui, pour tout ce qui relève du ménage et de l'entretien réalisés chez vous, au titre des services à la personne : l'État vous rend la moitié de la facture, remboursée ou déduite de vos impôts, dans la limite des plafonds annuels. Nous vous remettons chaque année l'attestation à joindre à votre déclaration."
               },
               {
-                "question": "Fournissez-vous le matériel et les produits ?",
-                "reponse": "Oui, nous pouvons venir avec notre matériel et nos produits, adaptés au type d'intervention. Nous pouvons aussi utiliser les vôtres si vous le préférez."
+                "question": "Faut-il que je prépare produits et matériel avant votre venue ?",
+                "reponse": "Non, pas nécessairement : nous venons avec notre matériel et nos produits, adaptés au type d'intervention. Si vous préférez que nous utilisions les vôtres, dites-le simplement au moment du devis."
               },
               {
                 "question": "Proposez-vous un entretien régulier ?",
@@ -892,7 +907,7 @@
           "content": {
             "eyebrow": "Entretien régulier ou ponctuel",
             "titre": "Ménage à domicile à Pierrelatte",
-            "intro": "Parfait Ménage 26 assure l'entretien de votre logement à Pierrelatte, Saint-Paul-Trois-Châteaux, Donzère et jusqu'à 40 km autour : intervention régulière ou ponctuelle, sols, sanitaires, cuisine et poussières. Un travail soigné, fini dans le détail — et chez vous, il ouvre droit au crédit d'impôt de 50 %.",
+            "intro": "Vous cherchez une femme de ménage à Pierrelatte, ou une aide ménagère régulière à Saint-Paul-Trois-Châteaux, Donzère et jusqu'à 40 km autour ? Parfait Ménage 26 entretient votre logement au rythme choisi : sols, sanitaires, cuisine et poussières, en passage unique ou récurrent. Un travail soigné, fini dans le détail — que l'État allège de moitié via le crédit d'impôt dès lors qu'il est réalisé à votre domicile.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -930,7 +945,7 @@
               {
                 "icone": "shield-check",
                 "nom": "Intervenante de confiance",
-                "description": "Sérieuse et discrète, qui respecte votre logement et vos habitudes."
+                "description": "Quelqu'un de fiable et de discret, attentif à vos habitudes comme à votre intérieur."
               },
               {
                 "icone": "calendar-check",
@@ -954,12 +969,12 @@
               {
                 "icone": "clipboard-list",
                 "titre": "Votre demande",
-                "texte": "Vous décrivez votre logement et la fréquence souhaitée. Devis gratuit rapide."
+                "texte": "Dites-nous à quoi ressemble le logement et le rythme de passage voulu : l'estimation suit vite, offerte."
               },
               {
                 "icone": "calendar-check",
                 "titre": "Le rendez-vous",
-                "texte": "Nous fixons un créneau régulier ou ponctuel adapté à votre emploi du temps."
+                "texte": "On cale ensemble l'horaire, récurrent ou en une seule fois, selon vos disponibilités."
               },
               {
                 "icone": "sparkles",
@@ -980,7 +995,7 @@
                 "reponse": "Indiquez-nous la taille du logement et le rythme souhaité, par téléphone, WhatsApp ou formulaire : l'estimation ne vous coûte rien et ne vous engage à rien — vous décidez ensuite, tranquillement."
               },
               {
-                "question": "Proposez-vous un entretien régulier ?",
+                "question": "Peut-on convenir d'un passage chaque semaine ou tous les quinze jours ?",
                 "reponse": "Oui, à la fréquence de votre choix (hebdomadaire, bimensuel, mensuel) ou en intervention ponctuelle selon vos besoins."
               },
               {
@@ -988,7 +1003,7 @@
                 "reponse": "Au choix : nous pouvons venir équipés ou utiliser les vôtres. Nous adaptons les produits à votre logement."
               },
               {
-                "question": "Dans quel secteur intervenez-vous ?",
+                "question": "Jusqu'où acceptez-vous de vous déplacer pour un ménage régulier ?",
                 "reponse": "À Pierrelatte et dans un rayon d'environ 40 km : Drôme provençale, vallée du Rhône et communes limitrophes."
               }
             ]
@@ -1058,7 +1073,11 @@
                 "href": "/credit-impot",
                 "icone": "BadgePercent"
               }
-            ]
+            ],
+            "cta": {
+              "label": "Votre commune est-elle desservie ? Voir la zone d'intervention",
+              "href": "/zone-intervention"
+            }
           }
         },
         {
@@ -1153,7 +1172,7 @@
               {
                 "icone": "check-circle",
                 "nom": "Rendu prêt à vivre",
-                "description": "Un logement propre, assaini et prêt à être habité ou rendu sans réserve."
+                "description": "Un intérieur sain et net, qu'on peut réoccuper ou restituer au bailleur l'esprit tranquille."
               }
             ]
           }
@@ -1167,17 +1186,17 @@
               {
                 "icone": "clipboard-list",
                 "titre": "État des lieux",
-                "texte": "Nous évaluons la surface et l'état du logement pour un devis gratuit et précis."
+                "texte": "Superficie et niveau d'encrassement sont passés en revue : le chiffrage est précis, et offert."
               },
               {
                 "icone": "spray-can",
                 "titre": "Nettoyage intégral",
-                "texte": "Dépoussiérage, dégraissage, détartrage et désinfection de toutes les pièces."
+                "texte": "Poussières, graisse, tartre : chaque pièce est traitée à fond, puis désinfectée."
               },
               {
                 "icone": "thumbs-up",
                 "titre": "Contrôle final",
-                "texte": "Nous vérifions chaque pièce avec vous pour garantir un résultat irréprochable."
+                "texte": "On refait le tour du logement à vos côtés : rien ne doit rester à reprendre."
               }
             ]
           }
@@ -1205,7 +1224,7 @@
                 "reponse": "Oui, dans les deux sens : logement remis au propre après votre départ ou avant l'emménagement, et grand nettoyage avant l'état des lieux de sortie pour rendre les clés l'esprit tranquille."
               },
               {
-                "question": "Sous quel délai pouvez-vous intervenir ?",
+                "question": "L'état des lieux approche : est-ce encore jouable ?",
                 "reponse": "Nous calons l'intervention sur votre contrainte réelle : remise des clés, état des lieux, relocation. Prévenez-nous dès que la date est connue, on s'organise."
               }
             ]
@@ -1275,7 +1294,11 @@
                 "href": "/nettoyage-location-airbnb",
                 "icone": "BedDouble"
               }
-            ]
+            ],
+            "cta": {
+              "label": "Logement à remettre d'aplomb hors Pierrelatte ? Vérifiez notre périmètre",
+              "href": "/zone-intervention"
+            }
           }
         },
         {
@@ -1418,8 +1441,8 @@
                 "reponse": "Un matériel adapté à la poussière de chantier et aux résidus de travaux, pour un résultat efficace sans abîmer les surfaces neuves."
               },
               {
-                "question": "Sous quel délai pouvez-vous intervenir ?",
-                "reponse": "Nous nous adaptons à vos contraintes de livraison ou de remise des clés. Contactez-nous pour un créneau rapide."
+                "question": "Pouvez-vous passer juste avant la livraison du chantier ?",
+                "reponse": "Oui, c'est même le créneau habituel : livraison du chantier, remise des clés — le passage s'organise autour de vos impératifs. Contactez-nous dès que la date se précise."
               }
             ]
           }
@@ -1474,7 +1497,11 @@
                 "href": "/nettoyage-location-airbnb",
                 "icone": "BedDouble"
               }
-            ]
+            ],
+            "cta": {
+              "label": "Chantier à Montélimar, Bollène ou ailleurs ? Consulter notre rayon d'action",
+              "href": "/zone-intervention"
+            }
           }
         },
         {
@@ -1674,7 +1701,11 @@
                 "href": "/credit-impot",
                 "icone": "BadgePercent"
               }
-            ]
+            ],
+            "cta": {
+              "label": "Gîte isolé en Drôme provençale ? Vérifiez que nous montons jusqu'à vous",
+              "href": "/zone-intervention"
+            }
           }
         },
         {
@@ -1806,23 +1837,23 @@
           "type": "faq",
           "variant": "accordeon",
           "content": {
-            "titre": "Crédit d'impôt : vos questions",
+            "titre": "Le crédit d'impôt en pratique, sans jargon",
             "items": [
               {
-                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
-                "reponse": "C'est la loi qui le prévoit, pas une promesse commerciale : le ménage et l'entretien réalisés à votre domicile relèvent des services à la personne, et l'État vous restitue 50 % des sommes versées. Une prestation de 100 € vous revient donc, au bout du compte, à 50 €."
+                "question": "Un gros chantier de remise en état chez moi donne-t-il droit aux 50 % ?",
+                "reponse": "Ce qui compte, c'est le lieu, pas l'ampleur du travail. Un grand nettoyage réalisé dans votre propre logement de particulier — résidence principale ou secondaire — relève des services à la personne, même s'il demande plusieurs journées. À l'inverse, remettre en état un bien pour le relouer, nettoyer un local professionnel ou livrer une fin de chantier reste hors dispositif : ces prestations sont facturées sur devis classique, sans avantage fiscal."
               },
               {
-                "question": "Quelles prestations sont éligibles ?",
-                "reponse": "Uniquement ce qui se passe chez vous, chez un particulier : ménage courant et entretien, en résidence principale comme secondaire. Une remise en état pour relouer ou une fin de chantier à usage professionnel n'en relèvent pas — elles restent facturées sur devis, sans avantage fiscal."
+                "question": "Sur une facture de ménage, combien est-ce que je récupère vraiment ?",
+                "reponse": "La moitié des sommes versées, ni plus ni moins : 600 € de ménage sur l'année, c'est 300 € restitués par l'administration fiscale. Et comme il s'agit d'un crédit d'impôt, pas d'une simple réduction, vous en profitez même si vous n'êtes pas imposable."
               },
               {
-                "question": "Que dois-je faire pour en bénéficier ?",
-                "reponse": "Pas grand-chose, et c'est tant mieux : en début d'année, nous vous remettons l'attestation fiscale des sommes versées. Vous la reportez sur votre déclaration de revenus, et le crédit s'applique — y compris si vous n'êtes pas imposable."
+                "question": "Existe-t-il une limite annuelle aux dépenses prises en compte ?",
+                "reponse": "Oui. Le fisc retient vos dépenses de services à la personne à hauteur de 12 000 € par an — un plafond que la composition de votre foyer peut faire grimper. Le crédit maximal atteint donc 6 000 € dans le cas général : rien n'empêche de dépenser davantage, mais le surplus ne sera pas remboursé."
               },
               {
-                "question": "Y a-t-il un plafond ?",
-                "reponse": "Oui, comme pour tous les services à la personne : le crédit d'impôt joue dans la limite des plafonds annuels fixés par l'administration fiscale. Selon votre situation, le plafond applicable peut varier — posez-nous la question, on fait le point avant de commencer."
+                "question": "L'argent, je le récupère quand : tout de suite ou à la déclaration ?",
+                "reponse": "Les deux circuits existent. Avec l'avance immédiate mise en place par l'URSSAF, vous ne réglez que votre moitié au moment du paiement, l'État versant l'autre part directement — posez-nous la question au moment du devis. En circuit classique, vous payez la facture entière puis reportez le montant sur votre déclaration de revenus, à l'aide de l'attestation fiscale annuelle que nous vous remettons en début d'année."
               }
             ]
           }
