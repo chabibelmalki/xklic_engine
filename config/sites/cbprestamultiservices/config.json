@@ -1,0 +1,1407 @@
+{
+  "slug": "cbprestamultiservices",
+  "customDomains": ["cbprestamultiservices.fr", "www.cbprestamultiservices.fr"],
+  "_ops": {
+    "domaine": "cbprestamultiservices.fr",
+    "onboardAuto": false,
+    "registrarDNS": "hors OVH — registrar/DNS externe, géré manuellement",
+    "raison": "Le DNS n'est pas chez OVH : `npm run onboard` ne peut ni créer/vérifier les enregistrements DNS, ni la propriété Search Console. Ces étapes sont faites À LA MAIN pour ce site.",
+    "pointeVersVercel": true,
+    "etapesManuelles": [
+      "Ajouter cbprestamultiservices.fr et www.cbprestamultiservices.fr au projet Vercel (dashboard)",
+      "Enregistrements DNS chez le registrar (A apex vers IP Vercel / CNAME www)",
+      "Google Search Console : propriété de domaine + TXT de vérification",
+      "Cloudflare Turnstile : ajouter le hostname au widget du tenant"
+    ],
+    "note": "customDomains est renseigné : une fois le domaine ajouté au projet Vercel, `npm run deploy` met le site en ligne sur l'apex (canonical/hreflang/sitemap = apex, le sous-domaine .xklic.com 301 vers l'apex). Ne déployer avec ce customDomains QU'APRÈS l'ajout du domaine au projet Vercel.",
+    "maj": "2026-07-12"
+  },
+  "theme": "pro-bleu-nuit",
+  "stylePack": "marine-premium",
+  "branding": {
+    "logoAlt": "CB Presta Multiservices",
+    "logoTwoTone": {
+      "first": "#c0872f",
+      "rest": "#173754"
+    },
+    "tagline": "Nettoyage professionnel · Nîmes et 30 km",
+    "colors": {
+      "brand": "#173754",
+      "accent": "#c0872f",
+      "neutral": "warm"
+    },
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/logo-f5ad022e.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/logo-f5ad022e.png"
+  },
+  "entreprise": {
+    "nom": "CB Presta Multiservices",
+    "statut": "SARL",
+    "siret": "93796489800012",
+    "ape": "81.21Z",
+    "apeLabel": "Nettoyage courant des bâtiments",
+    "tva": {
+      "regime": "franchise"
+    },
+    "rcs": "Nîmes",
+    "dirigeant": "Abdelkrim Chkirbani",
+    "siege": "539 avenue Jean Prouvé, 30900 Nîmes"
+  },
+  "seo": {
+    "schemaType": "CleaningService",
+    "ville": "Nîmes"
+  },
+  "geo": {
+    "lat": 43.8148,
+    "lng": 4.3531
+  },
+  "meta": {
+    "title": "Nettoyage professionnel & remise en état à Nîmes",
+    "description": "Entreprise de nettoyage pour professionnels à Nîmes : bureaux, fin de chantier, vitrerie, canapés et tapis. Devis gratuit sous 48 h, intervention à 30 km.",
+    "keywords": [
+      "nettoyage professionnel Nîmes",
+      "nettoyage bureaux Nîmes",
+      "nettoyage fin de chantier Nîmes",
+      "nettoyage vitres Nîmes",
+      "nettoyage canapé tapis Nîmes"
+    ]
+  },
+  "forms": {
+    "turnstile": true
+  },
+  "blocks": [],
+  "pages": [
+    {
+      "slug": "",
+      "label": "Accueil",
+      "blocks": [
+        {
+          "type": "hero",
+          "content": {
+            "eyebrow": "Entreprise de nettoyage · Nîmes",
+            "titre": "Nettoyage professionnel & remise en état",
+            "accroche": "Bureaux, commerces, chantiers et copropriétés : une équipe équipée qui rend vos locaux impeccables. Nettoyage textile canapés et tapis en injection-extraction. Devis gratuit, intervention dans tout le Gard nîmois.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/hero-equipe.jpg",
+              "alt": "Équipe CB Presta Multiservices en intervention de nettoyage professionnel"
+            },
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir nos prestations",
+              "href": "/services"
+            },
+            "trust": [
+              {
+                "icone": "building-2",
+                "label": "Professionnels & collectivités"
+              },
+              {
+                "icone": "clock",
+                "label": "Devis sous 48 h"
+              },
+              {
+                "icone": "shield-check",
+                "label": "Matériel et produits pros"
+              },
+              {
+                "icone": "map-pin",
+                "label": "Nîmes et 30 km"
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Nos domaines",
+            "titre": "Un nettoyage taillé pour les pros",
+            "intro": "Nous concentrons notre savoir-faire sur les chantiers exigeants et l'entretien récurrent des professionnels. Chaque prestation est cadrée par un devis détaillé.",
+            "items": [
+              {
+                "nom": "Bureaux & locaux professionnels",
+                "description": "Entretien régulier ou ponctuel de vos bureaux, commerces, cabinets et locaux d'activité, en journée ou hors présence.",
+                "icone": "building-2",
+                "priceHint": "dès 90 €",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Fin de chantier & remise en état",
+                "description": "Dépoussiérage, décollage de traces, sols et sanitaires : nous livrons un local propre, prêt à occuper après travaux.",
+                "icone": "hard-hat",
+                "priceHint": "dès 250 €",
+                "href": "/fin-de-chantier"
+              },
+              {
+                "nom": "Vitres & vitrerie",
+                "description": "Vitrines, baies, verrières et vitrages en hauteur nettoyés sans traces, à la perche à eau pure ou sur accès sécurisé.",
+                "icone": "sparkles",
+                "priceHint": "dès 90 €",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Canapés, fauteuils, tapis & matelas",
+                "description": "Nettoyage textile en injection-extraction : taches, odeurs et acariens éliminés en profondeur, séchage rapide.",
+                "icone": "sofa",
+                "priceHint": "dès 60 €",
+                "href": "/nettoyage-textile"
+              },
+              {
+                "nom": "Copropriétés & parties communes",
+                "description": "Contrats d'entretien des halls, cages d'escalier, vitrages et locaux poubelles pour syndics et bailleurs.",
+                "icone": "users",
+                "priceHint": "sur devis",
+                "href": "/coproprietes"
+              }
+            ],
+            "cta": {
+              "label": "Toutes nos prestations",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Qui sommes-nous",
+            "titre": "Une exigence de propreté",
+            "titreAccent": "au service des professionnels",
+            "paragraphes": [
+              "CB Presta Multiservices est une entreprise de nettoyage basée à Nîmes, dirigée par Abdelkrim Chkirbani. Nous avons choisi de nous adresser en priorité aux professionnels : entreprises, commerces, syndics de copropriété, artisans du bâtiment et gestionnaires de locaux qui attendent un résultat régulier et vérifiable.",
+              "Notre métier, c'est le nettoyage qui demande de la méthode et du matériel : remise en état après travaux, entretien de bureaux, vitrerie en hauteur, décapage de sols et traitement des textiles. Nous travaillons avec des monobrosses, des injecteurs-extracteurs et des produits professionnels adaptés à chaque surface, plutôt que par improvisation.",
+              "Chaque intervention commence par une visite ou un échange précis, se poursuit par un devis clair et se termine par un contrôle du travail rendu. Cette rigueur nous vaut la confiance de nos clients dans tout le bassin nîmois, à Nîmes et jusqu'à trente kilomètres alentour."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/remise-etat.jpg",
+              "alt": "Nettoyage de sol au balai réservoir dans un local professionnel"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/5",
+            "ctaPrimaire": {
+              "label": "Nous confier un chantier",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "sentier-alterne",
+          "content": {
+            "eyebrow": "Notre méthode",
+            "titre": "De la demande au local livré",
+            "items": [
+              {
+                "titre": "Visite et diagnostic",
+                "texte": "Nous évaluons les surfaces, l'état et les contraintes d'accès, sur place ou sur photos, pour cadrer le juste besoin.",
+                "icone": "clipboard-check"
+              },
+              {
+                "titre": "Devis détaillé",
+                "texte": "Vous recevez un devis gratuit sous 48 h, ligne par ligne, sans engagement ni surprise en fin de prestation.",
+                "icone": "file-text"
+              },
+              {
+                "titre": "Intervention planifiée",
+                "texte": "Nous intervenons au créneau convenu, en journée ou hors présence, avec le matériel adapté à chaque poste.",
+                "icone": "calendar-check"
+              },
+              {
+                "titre": "Contrôle du rendu",
+                "texte": "Un tour de contrôle valide chaque point avant de vous rendre les lieux, et nous ajustons si nécessaire.",
+                "icone": "badge-check"
+              }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "En intervention",
+            "titre": "Un aperçu de nos chantiers types",
+            "intro": "Photographies d'illustration de nos domaines d'intervention. Les visuels de vos propres chantiers viendront enrichir cette galerie.",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/bureaux-locaux.jpg",
+                  "alt": "Nettoyage et entretien de bureaux professionnels"
+                },
+                "titre": "Bureaux & espaces de travail"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/vitrerie-hauteur.jpg",
+                  "alt": "Nettoyage de vitres en hauteur sur façade d'immeuble"
+                },
+                "titre": "Vitrerie en hauteur"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/textile-canape.jpg",
+                  "alt": "Nettoyage de canapé en injection-extraction"
+                },
+                "titre": "Textiles : canapés & fauteuils"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/chantier-facade.jpg",
+                  "alt": "Nettoyage de vitrages d'une tour de bureaux sur nacelle"
+                },
+                "titre": "Grands vitrages & façades"
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Notre secteur d'intervention",
+            "intro": "Nous intervenons chez les professionnels et les particuliers de Nîmes et de sa périphérie, jusqu'à environ trente kilomètres. Zones d'activité, centres commerciaux, bureaux et résidences : nous nous déplaçons sur l'ensemble du bassin.",
+            "rayonKm": 30,
+            "zones": [
+              {
+                "region": "Nîmes et sa couronne",
+                "principale": "Nîmes",
+                "villes": [
+                  "Nîmes",
+                  "Caissargues",
+                  "Bouillargues",
+                  "Rodilhan",
+                  "Marguerittes",
+                  "Saint-Gervasy",
+                  "Bezouce",
+                  "Poulx"
+                ]
+              },
+              {
+                "region": "Vaunage & Sommiérois",
+                "principale": "Sommières",
+                "villes": [
+                  "Caveirac",
+                  "Clarensac",
+                  "Langlade",
+                  "Nages-et-Solorgues",
+                  "Calvisson",
+                  "Congénies",
+                  "Sommières"
+                ]
+              },
+              {
+                "region": "Costières & Petite Camargue",
+                "principale": "Vauvert",
+                "villes": [
+                  "Milhaud",
+                  "Bernis",
+                  "Uchaud",
+                  "Vergèze",
+                  "Codognan",
+                  "Vauvert",
+                  "Saint-Gilles",
+                  "Générac",
+                  "Garons",
+                  "Manduel",
+                  "Redessan",
+                  "Beaucaire"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Travaillez-vous uniquement pour les entreprises ?",
+                "reponse": "Nous privilégions les prestations professionnelles et techniques — bureaux, chantiers, copropriétés, vitrerie et nettoyage textile — mais un particulier peut tout à fait nous confier le nettoyage de son canapé, de ses tapis ou une remise en état ponctuelle."
+              },
+              {
+                "question": "Sous quel délai obtient-on un devis ?",
+                "reponse": "Après une visite ou un simple échange de photos et de mesures, nous vous envoyons un devis gratuit et détaillé sous 48 heures ouvrées. Il reste sans engagement de votre part."
+              },
+              {
+                "question": "Pouvez-vous intervenir en dehors des heures d'ouverture ?",
+                "reponse": "Oui. Pour les bureaux et les commerces, nous programmons les passages avant l'ouverture, après la fermeture ou le samedi, afin de ne pas gêner votre activité ni votre clientèle."
+              },
+              {
+                "question": "Fournissez-vous le matériel et les produits ?",
+                "reponse": "Nous arrivons entièrement équipés : monobrosses, injecteurs-extracteurs, perches à eau pure et produits professionnels adaptés à chaque surface. Vous n'avez rien à prévoir."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un local, un chantier, un textile à traiter ?",
+            "sousTitre": "Décrivez-nous votre besoin : nous revenons vers vous avec un devis clair sous 48 h.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Prestations",
+      "meta": {
+        "title": "Nos prestations de nettoyage pro à Nîmes",
+        "description": "Découvrez les prestations de CB Presta Multiservices à Nîmes : bureaux, fin de chantier, vitrerie, nettoyage textile et entretien de copropriétés."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Prestations",
+            "titre": "Nos prestations de nettoyage",
+            "intro": "Un savoir-faire concentré sur le nettoyage professionnel et technique, sur Nîmes et tout le bassin nîmois jusqu'à 30 km.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "intro": "Cliquez sur une prestation pour en connaître le détail, le déroulé et les tarifs indicatifs.",
+            "items": [
+              {
+                "nom": "Nettoyage de bureaux & locaux",
+                "description": "Entretien régulier ou grand nettoyage de vos espaces de travail, cabinets, commerces et locaux d'activité.",
+                "icone": "building-2",
+                "priceHint": "dès 90 €",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Fin de chantier & remise en état",
+                "description": "Nettoyage complet après travaux ou avant emménagement : gravats fins, traces, sols et sanitaires.",
+                "icone": "hard-hat",
+                "priceHint": "dès 250 €",
+                "href": "/fin-de-chantier"
+              },
+              {
+                "nom": "Nettoyage de vitres & vitrerie",
+                "description": "Vitrines, baies vitrées, verrières et vitrages difficiles d'accès, nettoyés sans traces.",
+                "icone": "sparkles",
+                "priceHint": "dès 90 €",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Canapés, tapis, matelas & fauteuils",
+                "description": "Nettoyage textile en profondeur par injection-extraction, contre les taches, odeurs et allergènes.",
+                "icone": "sofa",
+                "priceHint": "dès 60 €",
+                "href": "/nettoyage-textile"
+              },
+              {
+                "nom": "Copropriétés & parties communes",
+                "description": "Contrats d'entretien des halls, escaliers, vitrages et locaux techniques pour syndics et bailleurs.",
+                "icone": "users",
+                "priceHint": "sur devis",
+                "href": "/coproprietes"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Besoin de plusieurs prestations ?",
+            "sousTitre": "Nous regroupons vos besoins dans un seul devis et un seul planning d'intervention.",
+            "ctaPrimaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-bureaux",
+      "label": "Bureaux & locaux",
+      "navHidden": true,
+      "service": {
+        "name": "Nettoyage de bureaux et locaux professionnels",
+        "serviceType": "Nettoyage de bureaux",
+        "priceFrom": 90
+      },
+      "meta": {
+        "title": "Nettoyage de bureaux & locaux à Nîmes",
+        "description": "Entretien de bureaux, commerces et locaux d'activité à Nîmes : passages réguliers ou ponctuels, en journée ou hors présence. Devis gratuit sous 48 h."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Professionnels",
+            "titre": "Nettoyage de bureaux & locaux",
+            "intro": "Des espaces de travail sains et présentables, entretenus au rythme qui vous convient.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Bureaux & locaux"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Un entretien régulier, pensé pour votre activité",
+            "paragraphes": [
+              "Un bureau propre, c'est une image soignée pour vos clients et un cadre plus sain pour vos équipes. CB Presta Multiservices assure l'entretien de vos locaux professionnels à Nîmes selon la fréquence qui vous convient : quotidienne, plusieurs fois par semaine, hebdomadaire ou en grand nettoyage ponctuel.",
+              "Nos passages couvrent l'ensemble des postes : dépoussiérage des surfaces et du mobilier, aspiration et lavage des sols, désinfection des sanitaires, entretien des espaces de pause et des points de contact, vidage des corbeilles et remise en ordre. Les produits et le matériel sont adaptés à chaque revêtement, du carrelage à la moquette.",
+              "Pour ne jamais gêner votre activité, nous intervenons avant l'ouverture, en soirée après le départ de vos équipes, ou le samedi, avec une équipe identifiée et un protocole constant. Vous gardez le même interlocuteur, et un contrôle qualité valide chaque passage. Un imprévu, un renfort ponctuel avant une visite importante ? Nous nous adaptons."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/bureaux-locaux.jpg",
+              "alt": "Bureaux professionnels propres et rangés"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/5"
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "a-partir-de",
+          "content": {
+            "titre": "Tarifs indicatifs — bureaux & locaux",
+            "intro": "À ajuster selon la surface, la fréquence et le niveau de finition. Un devis précis vous est remis après visite.",
+            "items": [
+              {
+                "nom": "Entretien de locaux (passage)",
+                "prix": 90,
+                "unite": "/ passage",
+                "description": "Surfaces jusqu'à environ 150 m², postes courants.",
+                "inclus": [
+                  "Dépoussiérage & sols",
+                  "Sanitaires désinfectés",
+                  "Espaces de pause",
+                  "Corbeilles"
+                ]
+              },
+              {
+                "nom": "Locaux moyens",
+                "prix": 120,
+                "unite": "/ passage",
+                "description": "Surfaces de 150 à 300 m² environ.",
+                "populaire": true
+              },
+              {
+                "nom": "Grands locaux & sites",
+                "prix": 150,
+                "unite": "/ passage",
+                "description": "Au-delà de 300 m² ou multi-espaces."
+              }
+            ],
+            "note": "Contrats récurrents dégressifs. Tarifs hors fournitures consommables spécifiques.",
+            "cta": {
+              "label": "Obtenir mon devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Nettoyage de bureaux — vos questions",
+            "items": [
+              {
+                "question": "Proposez-vous des contrats à l'année ?",
+                "reponse": "Oui, la plupart de nos clients bureaux fonctionnent en contrat récurrent, avec un tarif dégressif selon la fréquence. Vous pouvez aussi nous solliciter pour un grand nettoyage ponctuel, sans abonnement."
+              },
+              {
+                "question": "Vos intervenants sont-ils toujours les mêmes ?",
+                "reponse": "Nous affectons une équipe identifiée à votre site pour garantir la régularité et la connaissance de vos lieux. En cas d'absence, un remplaçant briefé prend le relais avec le même protocole."
+              },
+              {
+                "question": "Gérez-vous aussi les vitres et les sols spécifiques ?",
+                "reponse": "Oui. Nous complétons l'entretien courant par la vitrerie et le décapage ou la remise en éclat des sols durs. Ces prestations peuvent être intégrées au contrat ou facturées ponctuellement."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Prestations complémentaires",
+            "items": [
+              {
+                "nom": "Nettoyage de vitres",
+                "description": "Vitrines et baies sans traces.",
+                "icone": "sparkles",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Fin de chantier",
+                "description": "Après vos aménagements de locaux.",
+                "icone": "hard-hat",
+                "href": "/fin-de-chantier"
+              },
+              {
+                "nom": "Copropriétés",
+                "description": "Parties communes et immeubles.",
+                "icone": "users",
+                "href": "/coproprietes"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un devis pour vos bureaux ?",
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "fin-de-chantier",
+      "label": "Fin de chantier",
+      "navHidden": true,
+      "service": {
+        "name": "Nettoyage de fin de chantier et remise en état",
+        "serviceType": "Nettoyage de fin de chantier",
+        "priceFrom": 250
+      },
+      "meta": {
+        "title": "Nettoyage fin de chantier à Nîmes",
+        "description": "Nettoyage de fin de chantier et remise en état à Nîmes : poussière de travaux, traces de peinture, sols et sanitaires. Local prêt à occuper. Devis 48 h."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Après travaux",
+            "titre": "Fin de chantier & remise en état",
+            "intro": "Nous transformons un local en fin de travaux en un espace propre, prêt à être livré ou occupé.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Fin de chantier"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "La dernière étape avant la livraison",
+            "paragraphes": [
+              "Après des travaux de rénovation ou de construction, la poussière fine se dépose partout et les traces de chantier restent tenaces : projections de peinture, résidus de colle, étiquettes, plâtre sur les vitres. CB Presta Multiservices prend en charge cette remise en état à Nîmes pour livrer un local net, dès la réception du chantier.",
+              "Nous procédons méthodiquement : dépoussiérage complet du haut vers le bas, décollage des traces sur les menuiseries et les vitrages, lavage et parfois décapage des sols, désinfection des sanitaires et de la cuisine, dégagement des derniers déchets légers. Chaque support est traité avec le produit adapté pour ne pas endommager les surfaces neuves.",
+              "Cette prestation s'adresse aux artisans du bâtiment, aux promoteurs, aux agences et aux particuliers en fin de rénovation. Nous intervenons aussi en remise en état de logements avant une remise des clés ou une nouvelle occupation, avec un rendu vérifié pièce par pièce."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/remise-etat.jpg",
+              "alt": "Lavage de sol lors d'une remise en état après chantier"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/5"
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "a-partir-de",
+          "content": {
+            "titre": "Tarifs indicatifs — fin de chantier",
+            "intro": "Le prix dépend de la surface, du niveau d'encrassement et des finitions. Un devis ferme est établi après visite.",
+            "items": [
+              {
+                "nom": "Studio / petit local",
+                "prix": 250,
+                "unite": "",
+                "description": "Jusqu'à ~40 m², un niveau de finition standard."
+              },
+              {
+                "nom": "Logement / local intermédiaire",
+                "prix": 350,
+                "unite": "",
+                "description": "Environ 40 à 80 m².",
+                "populaire": true
+              },
+              {
+                "nom": "Grand logement / plateau",
+                "prix": 450,
+                "unite": "",
+                "description": "Environ 80 à 120 m²."
+              },
+              {
+                "nom": "Grande surface / multi-niveaux",
+                "prix": 600,
+                "unite": "",
+                "description": "Au-delà de 120 m² ou chantier lourd."
+              }
+            ],
+            "note": "Décapage de sol, traitement de protection ou vitrerie complète peuvent s'ajouter selon le chantier.",
+            "cta": {
+              "label": "Chiffrer mon chantier",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Fin de chantier — vos questions",
+            "items": [
+              {
+                "question": "Intervenez-vous juste après la fin des travaux ?",
+                "reponse": "Oui, nous nous calons sur votre calendrier de chantier et intervenons dès que les corps de métier ont libéré les lieux, y compris dans des délais courts avant une livraison."
+              },
+              {
+                "question": "Évacuez-vous les gravats ?",
+                "reponse": "Nous retirons les déchets légers et les résidus fins liés au nettoyage. L'évacuation des gravats lourds et des déchets de construction relève d'une benne dédiée, que nous pouvons coordonner mais qui n'est pas comprise dans le nettoyage."
+              },
+              {
+                "question": "Nettoyez-vous les vitres pleines de traces de travaux ?",
+                "reponse": "Oui, le décollage des projections de peinture, de plâtre et d'étiquettes sur les vitrages fait partie de la remise en état. Pour les grandes surfaces vitrées, nous mobilisons notre matériel de vitrerie."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Autres prestations utiles",
+            "items": [
+              {
+                "nom": "Nettoyage de vitres",
+                "description": "Vitrages neufs sans traces.",
+                "icone": "sparkles",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Bureaux & locaux",
+                "description": "Entretien après emménagement.",
+                "icone": "building-2",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Textiles",
+                "description": "Canapés et moquettes du local.",
+                "icone": "sofa",
+                "href": "/nettoyage-textile"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un chantier à livrer bientôt ?",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Vitres & vitrerie",
+      "navHidden": true,
+      "service": {
+        "name": "Nettoyage de vitres et vitrerie",
+        "serviceType": "Nettoyage de vitres",
+        "priceFrom": 90
+      },
+      "meta": {
+        "title": "Nettoyage de vitres & vitrerie à Nîmes",
+        "description": "Nettoyage de vitrines, baies et vitrages en hauteur à Nîmes : perche à eau pure, résultat sans traces pour commerces, bureaux et particuliers. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Vitrerie",
+            "titre": "Nettoyage de vitres & vitrerie",
+            "intro": "Des vitrages nets, sans traces ni traînées, y compris en hauteur et sur accès difficile.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Vitres & vitrerie"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "La transparence, sans compromis",
+            "paragraphes": [
+              "Une vitrine impeccable donne immédiatement confiance, et un bureau lumineux se travaille mieux. CB Presta Multiservices nettoie à Nîmes les vitrines de commerce, les baies vitrées, les verrières, les garde-corps en verre et les vitrages des immeubles, pour les professionnels comme pour les particuliers.",
+              "Selon la configuration, nous utilisons la raclette professionnelle pour un fini parfait, ou la perche à eau pure télescopique qui permet de laver les vitrages en hauteur depuis le sol, sans échelle et sans laisser de calcaire. Pour les façades et les verrières inaccessibles, nous travaillons sur des moyens d'accès sécurisés, dans le respect des règles de sécurité.",
+              "Le nettoyage porte sur les deux faces quand elles sont accessibles, encadrements et rebords compris. Nous proposons des passages ponctuels — après un chantier, avant un événement — ou un entretien régulier des vitrines, intégré ou non à un contrat d'entretien de vos locaux."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/vitrerie-hauteur.jpg",
+              "alt": "Nettoyage de vitrages en hauteur sur une façade"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/5"
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "a-partir-de",
+          "content": {
+            "titre": "Tarifs indicatifs — vitrerie",
+            "intro": "À affiner selon le nombre de vitrages, la hauteur et l'accessibilité. Devis gratuit après repérage.",
+            "items": [
+              {
+                "nom": "Vitrine / petite surface",
+                "prix": 90,
+                "unite": "",
+                "description": "Vitrine de commerce ou vitrages d'un logement, accès de plain-pied."
+              },
+              {
+                "nom": "Surface moyenne",
+                "prix": 140,
+                "unite": "",
+                "description": "Bureau ou local à vitrages multiples.",
+                "populaire": true
+              },
+              {
+                "nom": "Grands vitrages / hauteur",
+                "prix": 180,
+                "unite": "",
+                "description": "Verrières, baies XXL ou vitrages nécessitant une perche."
+              }
+            ],
+            "note": "Travaux en hauteur sur accès spécifique (nacelle, cordiste) : sur devis dédié.",
+            "cta": {
+              "label": "Demander un devis vitrerie",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Vitrerie — vos questions",
+            "items": [
+              {
+                "question": "Comment lavez-vous les vitres en hauteur ?",
+                "reponse": "Nous utilisons une perche télescopique à eau pure qui atteint plusieurs étages depuis le sol, sans échelle. Lorsque la hauteur l'exige, nous mettons en place un accès sécurisé adapté à la façade."
+              },
+              {
+                "question": "Laissez-vous des traces sur le verre ?",
+                "reponse": "Non. L'eau pure ne contient aucun minéral et sèche sans dépôt, tandis que la raclette professionnelle assure une finition nette. C'est justement ce qui distingue un lavage professionnel d'un nettoyage improvisé."
+              },
+              {
+                "question": "Peut-on inclure les vitres dans un contrat d'entretien ?",
+                "reponse": "Oui. Pour les commerces et les bureaux, nous programmons des passages de vitrerie à la fréquence souhaitée, seuls ou intégrés à l'entretien global de vos locaux."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "À combiner avec",
+            "items": [
+              {
+                "nom": "Bureaux & locaux",
+                "description": "Entretien complet des espaces.",
+                "icone": "building-2",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Fin de chantier",
+                "description": "Vitres neuves à dégraisser.",
+                "icone": "hard-hat",
+                "href": "/fin-de-chantier"
+              },
+              {
+                "nom": "Copropriétés",
+                "description": "Vitrages des parties communes.",
+                "icone": "users",
+                "href": "/coproprietes"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Des vitres à faire briller ?",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-textile",
+      "label": "Canapés & tapis",
+      "navHidden": true,
+      "service": {
+        "name": "Nettoyage textile : canapés, fauteuils, tapis et matelas",
+        "serviceType": "Nettoyage de textiles d'ameublement",
+        "priceFrom": 60
+      },
+      "meta": {
+        "title": "Nettoyage canapé, fauteuil & tapis à Nîmes",
+        "description": "Nettoyage de canapés, fauteuils, tapis et matelas à Nîmes par injection-extraction : taches, odeurs et acariens éliminés, séchage rapide. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Textiles d'ameublement",
+            "titre": "Canapés, fauteuils, tapis & matelas",
+            "intro": "Un nettoyage en profondeur qui ravive les couleurs et assainit vos textiles, chez vous ou dans vos locaux.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Canapés & tapis"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "L'injection-extraction, en profondeur",
+            "paragraphes": [
+              "Un canapé et un tapis retiennent la poussière, les taches, les odeurs et les acariens bien au-delà de ce qu'un aspirateur peut retirer. CB Presta Multiservices redonne vie à vos textiles d'ameublement à Nîmes grâce à la méthode par injection-extraction, efficace et respectueuse des fibres.",
+              "Le principe : une solution nettoyante est injectée sous pression au cœur du textile, puis immédiatement réaspirée avec les salissures dissoutes. Les taches et les odeurs sont traitées, la couleur retrouve son éclat, et la faible humidité résiduelle permet un séchage rapide, généralement en quelques heures selon l'aération.",
+              "Nous traitons les canapés en tissu, les fauteuils, les chaises, les matelas et les tapis, avec un prétraitement ciblé des zones les plus marquées. Nous intervenons au domicile des particuliers comme dans les espaces d'accueil des professionnels — salles d'attente, hôtellerie, bureaux — pour un mobilier sain et présentable."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/textile-canape.jpg",
+              "alt": "Nettoyage d'un canapé par injection-extraction"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/5"
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "a-partir-de",
+          "content": {
+            "titre": "Tarifs indicatifs — textiles",
+            "intro": "Selon la taille, la matière et l'état d'encrassement. Le devis final est confirmé avant l'intervention.",
+            "items": [
+              {
+                "nom": "Fauteuil / matelas 1 place",
+                "prix": 60,
+                "unite": "",
+                "description": "Une assise, un fauteuil ou un matelas simple."
+              },
+              {
+                "nom": "Canapé 2 à 3 places",
+                "prix": 90,
+                "unite": "",
+                "description": "Le format le plus courant.",
+                "populaire": true
+              },
+              {
+                "nom": "Canapé d'angle / grand tapis",
+                "prix": 120,
+                "unite": "",
+                "description": "Canapé d'angle ou grand tapis de séjour."
+              },
+              {
+                "nom": "Ensemble salon",
+                "prix": 150,
+                "unite": "",
+                "description": "Canapé + fauteuils ou plusieurs pièces traités ensemble."
+              }
+            ],
+            "note": "Tapis de grande valeur ou en matière délicate : sur devis, après examen des fibres.",
+            "cta": {
+              "label": "Estimer mon canapé",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Nettoyage textile — vos questions",
+            "items": [
+              {
+                "question": "Combien de temps sèche un canapé après nettoyage ?",
+                "reponse": "L'injection-extraction laisse peu d'humidité : comptez généralement quelques heures de séchage, jusqu'à une demi-journée pour un textile épais. Une pièce aérée accélère nettement le processus."
+              },
+              {
+                "question": "Toutes les taches partent-elles ?",
+                "reponse": "La grande majorité des taches courantes s'estompe fortement ou disparaît. Certaines taches anciennes, brûlures ou décolorations peuvent rester visibles ; nous vous le disons honnêtement après examen, avant toute intervention."
+              },
+              {
+                "question": "Vous déplacez-vous à domicile ?",
+                "reponse": "Oui, nous traitons vos textiles directement sur place, chez vous ou dans vos locaux, sans avoir à démonter ou transporter le mobilier. Il suffit d'un point d'eau et d'une prise électrique."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Vous pourriez aussi vouloir",
+            "items": [
+              {
+                "nom": "Bureaux & locaux",
+                "description": "Sièges et moquettes du bureau.",
+                "icone": "building-2",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Fin de chantier",
+                "description": "Après une rénovation d'intérieur.",
+                "icone": "hard-hat",
+                "href": "/fin-de-chantier"
+              },
+              {
+                "nom": "Vitres & vitrerie",
+                "description": "Pour un intérieur net de bout en bout.",
+                "icone": "sparkles",
+                "href": "/nettoyage-vitres"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un canapé ou un tapis à raviver ?",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "coproprietes",
+      "label": "Copropriétés",
+      "navHidden": true,
+      "service": {
+        "name": "Entretien de copropriétés et parties communes",
+        "serviceType": "Entretien de parties communes",
+        "priceFrom": "Sur devis"
+      },
+      "meta": {
+        "title": "Nettoyage de copropriétés à Nîmes",
+        "description": "Entretien des parties communes à Nîmes pour syndics et bailleurs : halls, escaliers, vitrages et locaux poubelles. Contrats réguliers, interlocuteur unique."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Syndics & bailleurs",
+            "titre": "Copropriétés & parties communes",
+            "intro": "Un entretien régulier et fiable des immeubles, avec un interlocuteur unique et un suivi de passage.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Copropriétés"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Des immeubles propres, résidents satisfaits",
+            "paragraphes": [
+              "La propreté des parties communes est le premier signe de qualité d'une copropriété, et souvent la première source de réclamations quand elle fait défaut. CB Presta Multiservices accompagne à Nîmes les syndics, les bailleurs et les conseils syndicaux avec des contrats d'entretien réguliers et un engagement de constance.",
+              "Nos prestations couvrent le nettoyage des halls et des paliers, le lavage des cages d'escalier, l'entretien des ascenseurs, le dépoussiérage des boîtes aux lettres et de la signalétique, le nettoyage des vitrages communs, l'entretien des locaux à poubelles ainsi que la sortie et la rentrée des conteneurs selon le calendrier de collecte.",
+              "Chaque immeuble dispose d'un plan de passage clair et d'une fréquence adaptée à sa taille et à sa fréquentation. Un même interlocuteur suit votre parc, ce qui simplifie la relation et le reporting auprès des copropriétaires. Nous intervenons sur un immeuble isolé comme sur un ensemble de résidences."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/chantier-facade.jpg",
+              "alt": "Entretien des vitrages d'un immeuble"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/5"
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "sur-devis",
+          "content": {
+            "titre": "Tarification des contrats d'immeuble",
+            "intro": "Chaque copropriété est différente : le tarif dépend du nombre d'étages, de la fréquence et du périmètre confié.",
+            "cta": {
+              "label": "Demander une proposition",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Copropriétés — vos questions",
+            "items": [
+              {
+                "question": "Gérez-vous la sortie des conteneurs ?",
+                "reponse": "Oui, la sortie et la rentrée des bacs selon le calendrier de collecte, ainsi que l'entretien du local à poubelles, peuvent être inclus dans le contrat d'immeuble."
+              },
+              {
+                "question": "Proposez-vous un suivi des passages ?",
+                "reponse": "Nous mettons en place un plan de passage par immeuble et un interlocuteur unique pour le syndic. Vous savez ce qui est fait, quand, et à qui vous adresser en cas de besoin."
+              },
+              {
+                "question": "Intervenez-vous sur plusieurs immeubles ?",
+                "reponse": "Oui. Nous entretenons aussi bien une copropriété isolée qu'un ensemble de résidences pour un même syndic ou bailleur, avec une organisation adaptée à la taille du parc."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Vitres & vitrerie",
+                "description": "Vitrages des halls et entrées.",
+                "icone": "sparkles",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Fin de chantier",
+                "description": "Après travaux dans l'immeuble.",
+                "icone": "hard-hat",
+                "href": "/fin-de-chantier"
+              },
+              {
+                "nom": "Bureaux & locaux",
+                "description": "Loges et locaux techniques.",
+                "icone": "building-2",
+                "href": "/nettoyage-bureaux"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un immeuble à confier ?",
+            "ctaPrimaire": {
+              "label": "Demander une proposition",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tarifs",
+      "label": "Tarifs",
+      "meta": {
+        "title": "Tarifs nettoyage professionnel à Nîmes",
+        "description": "Tarifs indicatifs de CB Presta Multiservices à Nîmes : bureaux dès 90 €, fin de chantier dès 250 €, vitrerie dès 90 €, textiles dès 60 €. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Tarifs",
+            "titre": "Des tarifs clairs, un devis ferme",
+            "intro": "Voici nos prix indicatifs par prestation. Le devis définitif, gratuit et sans engagement, est établi après un repérage rapide.",
+            "ctaPrimaire": {
+              "label": "Demander mon devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "a-partir-de",
+          "content": {
+            "titre": "Nos prestations, en un coup d'œil",
+            "items": [
+              {
+                "nom": "Nettoyage de bureaux & locaux",
+                "prix": 90,
+                "unite": "/ passage",
+                "description": "Entretien régulier ou ponctuel de vos espaces de travail."
+              },
+              {
+                "nom": "Fin de chantier & remise en état",
+                "prix": 250,
+                "unite": "",
+                "description": "Remise à neuf après travaux, prête à occuper."
+              },
+              {
+                "nom": "Nettoyage de vitres & vitrerie",
+                "prix": 90,
+                "unite": "",
+                "description": "Vitrines, baies et vitrages en hauteur, sans traces."
+              },
+              {
+                "nom": "Canapés, fauteuils, tapis & matelas",
+                "prix": 60,
+                "unite": "",
+                "description": "Injection-extraction en profondeur, séchage rapide."
+              },
+              {
+                "nom": "Copropriétés & parties communes",
+                "prix": "Sur devis",
+                "unite": "",
+                "description": "Contrats d'immeuble pour syndics et bailleurs."
+              }
+            ],
+            "note": "Prix de départ indicatifs, hors conditions particulières d'accès. Contrats récurrents dégressifs.",
+            "cta": {
+              "label": "Obtenir un devis précis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Chaque site est différent",
+            "sousTitre": "Envoyez-nous quelques photos et la surface concernée : nous chiffrons sous 48 h.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Devis nettoyage gratuit à Nîmes",
+        "description": "Contactez CB Presta Multiservices à Nîmes pour un devis gratuit sous 48 h : bureaux, fin de chantier, vitrerie, canapés et copropriétés. Nîmes et 30 km."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Contact",
+            "titre": "Parlons de votre besoin",
+            "intro": "Décrivez-nous votre projet de nettoyage : nous revenons vers vous avec un devis gratuit et détaillé."
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Demander un devis",
+            "intro": "Remplissez le formulaire ci-dessous en précisant la prestation, la surface et la commune. Nous vous recontactons rapidement.",
+            "adresse": "Nîmes et 30 km alentour",
+            "form": true,
+            "formMode": "demande-intervention",
+            "formTitre": "Votre demande",
+            "formIntro": "Plus votre demande est précise (surface, fréquence, accès), plus le devis sera juste.",
+            "services": [
+              "Nettoyage de bureaux & locaux",
+              "Fin de chantier & remise en état",
+              "Nettoyage de vitres & vitrerie",
+              "Canapés, fauteuils, tapis & matelas",
+              "Copropriétés & parties communes",
+              "Autre / plusieurs prestations"
+            ],
+            "villes": [
+              "Nîmes",
+              "Caissargues",
+              "Bouillargues",
+              "Marguerittes",
+              "Milhaud",
+              "Caveirac",
+              "Vauvert",
+              "Saint-Gilles",
+              "Manduel",
+              "Sommières",
+              "Beaucaire",
+              "Autre commune"
+            ],
+            "horaires": [
+              {
+                "jour": "Lundi – Vendredi",
+                "heures": "8h00 – 19h00"
+              },
+              {
+                "jour": "Samedi",
+                "heures": "Sur rendez-vous"
+              }
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "mentions-legales",
+      "label": "Mentions légales",
+      "navHidden": true,
+      "noindex": true,
+      "meta": {
+        "title": "Mentions légales",
+        "description": "Mentions légales du site CB Presta Multiservices."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Informations légales",
+            "titre": "Mentions légales"
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Éditeur du site",
+            "paragraphes": [
+              "Le présent site est édité par CB Presta Multiservices, société à responsabilité limitée (SARL) dont le siège social est situé 539 avenue Jean Prouvé, 30900 Nîmes.",
+              "SIRET : 937 964 898 00012 — Code APE 81.21Z (Nettoyage courant des bâtiments) — RCS Nîmes. Gérant : Abdelkrim Chkirbani.",
+              "TVA non applicable, article 293 B du Code général des impôts.",
+              "Contact : via le formulaire de la page Contact du site.",
+              "Directeur de la publication : Abdelkrim Chkirbani, en qualité de gérant."
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Hébergement",
+            "paragraphes": [
+              "Le site est hébergé par Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis.",
+              "Les médias du site sont hébergés sur l'infrastructure de stockage objet Scaleway (Scaleway SAS, 8 rue de la Ville l'Évêque, 75008 Paris)."
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Propriété intellectuelle",
+            "paragraphes": [
+              "L'ensemble des contenus de ce site (textes, mise en page, identité visuelle) est la propriété de CB Presta Multiservices, sauf mention contraire. Toute reproduction sans autorisation est interdite.",
+              "Certaines photographies présentées à titre d'illustration proviennent de banques d'images libres de droits et ne représentent pas nécessairement des chantiers réalisés par l'entreprise."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slug": "confidentialite",
+      "label": "Confidentialité",
+      "navHidden": true,
+      "noindex": true,
+      "meta": {
+        "title": "Politique de confidentialité",
+        "description": "Politique de confidentialité et gestion des données du site CB Presta Multiservices."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Données personnelles",
+            "titre": "Politique de confidentialité"
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Quelles données et pourquoi",
+            "paragraphes": [
+              "Lorsque vous remplissez le formulaire de contact, nous recueillons les informations que vous nous transmettez (nom, coordonnées, description de votre besoin) dans le seul but de traiter votre demande et de vous adresser un devis.",
+              "Ces données ne sont utilisées que pour la relation commerciale qui en découle. Elles ne sont ni vendues, ni cédées à des tiers à des fins de prospection.",
+              "Conformément au Règlement général sur la protection des données (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression des informations vous concernant. Il vous suffit d'en faire la demande via le formulaire de contact.",
+              "Les données transmises sont conservées le temps nécessaire au traitement de votre demande, puis à la durée légale applicable, avant d'être supprimées."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
