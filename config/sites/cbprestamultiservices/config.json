@@ -66,7 +66,8 @@
       "nettoyage vitres Nîmes",
       "nettoyage canapé tapis Nîmes",
       "vendange taille de vigne Gard",
-      "jardinage entretien espaces verts"
+      "jardinage entretien espaces verts",
+      "désinsectisation cafards punaises de lit"
     ]
   },
   "social": [
@@ -186,6 +187,13 @@
                 "icone": "leaf",
                 "priceHint": "sur devis",
                 "href": "/vigne-jardinage"
+              },
+              {
+                "nom": "Traitement anti-nuisibles",
+                "description": "Cafards, punaises de lit, fourmis et guêpes : diagnostic, traitement ciblé et visite de contrôle.",
+                "icone": "bug",
+                "priceHint": "sur devis",
+                "href": "/traitement-nuisibles"
               }
             ],
             "cta": {
@@ -465,6 +473,13 @@
                 "icone": "leaf",
                 "priceHint": "sur devis",
                 "href": "/vigne-jardinage"
+              },
+              {
+                "nom": "Traitement anti-nuisibles",
+                "description": "Désinsectisation cafards, punaises de lit, fourmis et guêpes, avec diagnostic et suivi.",
+                "icone": "bug",
+                "priceHint": "sur devis",
+                "href": "/traitement-nuisibles"
               }
             ]
           }
@@ -1364,6 +1379,135 @@
       ]
     },
     {
+      "slug": "traitement-nuisibles",
+      "label": "Anti-nuisibles",
+      "navHidden": true,
+      "service": {
+        "name": "Traitement anti-nuisibles : cafards, punaises de lit et autres nuisibles",
+        "serviceType": "Désinsectisation et traitement anti-nuisibles",
+        "priceFrom": "Sur devis"
+      },
+      "meta": {
+        "title": "Traitement cafards & punaises de lit à Nîmes",
+        "description": "Traitement anti-nuisibles à Nîmes, Montpellier, Avignon et Marseille : cafards, punaises de lit, fourmis, guêpes. Diagnostic, traitement ciblé et suivi. Sur devis."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Désinsectisation",
+            "titre": "Traitement anti-nuisibles",
+            "intro": "Cafards, punaises de lit et autres indésirables : un traitement ciblé, discret et durable, chez les particuliers comme les professionnels.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Anti-nuisibles"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Diagnostic, traitement ciblé et suivi",
+            "paragraphes": [
+              "Une infestation ne se règle pas au hasard : elle demande d'identifier l'espèce, de localiser les foyers et d'appliquer le bon protocole. CB Presta Multiservices traite les nuisibles les plus courants — cafards et blattes, punaises de lit, fourmis, guêpes et frelons — pour les logements, les commerces, les restaurants et les locaux professionnels.",
+              "Chaque intervention débute par un diagnostic : nous repérons les nids, les points d'entrée et l'étendue de la colonisation avant de choisir la méthode adaptée — gel, pulvérisation, traitement thermique ou nébulisation selon le cas. Nous ciblons les zones sensibles (plinthes, gaines, sommiers, cuisines) avec des produits professionnels, en respectant les consignes de sécurité pour les occupants et les animaux.",
+              "Contre les punaises de lit et les cafards, une seconde visite de contrôle est souvent nécessaire pour casser le cycle de reproduction ; nous la planifions et vérifions la disparition des nuisibles. Le tarif est établi sur devis, après diagnostic, selon la surface, l'espèce et le niveau d'infestation. Nous intervenons dans le Gard, l'Hérault, le Vaucluse et les Bouches-du-Rhône."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/cbprestamultiservices/traitement-nuisibles.jpg",
+              "alt": "Technicien en combinaison réalisant une nébulisation anti-nuisibles"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/5"
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "sur-devis",
+          "content": {
+            "titre": "Tarification anti-nuisibles",
+            "intro": "Le prix dépend de l'espèce, de la surface et du degré d'infestation : il est fixé sur devis après diagnostic.",
+            "cta": {
+              "label": "Demander un diagnostic",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Anti-nuisibles — vos questions",
+            "items": [
+              {
+                "question": "Comment se déroule un traitement contre les punaises de lit ?",
+                "reponse": "Après repérage des foyers, nous traitons les sommiers, matelas, plinthes et fissures, puis programmons une visite de contrôle pour éliminer les individus issus des œufs éclos entre-temps. La préparation du logement vous est expliquée à l'avance."
+              },
+              {
+                "question": "Vos traitements sont-ils sans danger pour ma famille ?",
+                "reponse": "Nous employons des produits homologués et appliquons un protocole de sécurité : délai de réintégration des pièces, aération et consignes claires pour les occupants et les animaux domestiques."
+              },
+              {
+                "question": "Intervenez-vous en urgence et en discrétion ?",
+                "reponse": "Oui. Nous nous déplaçons 7j/7 et 24h/24, en véhicule discret, ce qui est particulièrement apprécié des commerces, restaurants et hôtels soucieux de leur image."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Nos autres prestations",
+            "items": [
+              {
+                "nom": "Bureaux & locaux",
+                "description": "Entretien régulier après traitement.",
+                "icone": "building-2",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Canapés & tapis",
+                "description": "Nettoyage textile en profondeur.",
+                "icone": "sofa",
+                "href": "/nettoyage-textile"
+              },
+              {
+                "nom": "Fin de chantier",
+                "description": "Remise en état des locaux.",
+                "icone": "hard-hat",
+                "href": "/fin-de-chantier"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Des nuisibles à éliminer ?",
+            "ctaPrimaire": {
+              "label": "Demander un diagnostic",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
       "slug": "tarifs",
       "label": "Tarifs",
       "meta": {
@@ -1424,6 +1568,12 @@
                 "prix": "Sur devis",
                 "unite": "",
                 "description": "Vendange, taille, entretien d'espaces verts, à la journée ou au chantier."
+              },
+              {
+                "nom": "Traitement anti-nuisibles",
+                "prix": "Sur devis",
+                "unite": "",
+                "description": "Cafards, punaises de lit, fourmis, guêpes : chiffré après diagnostic."
               }
             ],
             "note": "Prix de départ indicatifs, hors conditions particulières d'accès. Contrats récurrents dégressifs.",
@@ -1485,6 +1635,7 @@
               "Canapés, fauteuils, tapis & matelas",
               "Copropriétés & parties communes",
               "Vigne, taille & jardinage",
+              "Traitement anti-nuisibles",
               "Autre / plusieurs prestations"
             ],
             "villes": [
