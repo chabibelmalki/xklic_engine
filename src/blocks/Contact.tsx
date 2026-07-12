@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { ContactForm } from "@/components/ContactForm";
 import { telHref, waHref, withBase } from "@/lib/utils";
+import { resolveSocials } from "@/lib/social";
 
 /**
  * Contact. Coordonnées cliquables (tel/mail/WhatsApp) + horaires + carte, et —
@@ -34,16 +35,22 @@ export function Contact({
   const rawConf = c.confidentialiteHref ?? "/confidentialite";
   const confidentialiteHref = rawConf.startsWith("http") ? rawConf : `${basePath}${rawConf}`;
 
+  // Cliquer l'adresse ouvre la FICHE Google du client quand elle est connue
+  // (lien social « google », sinon dérivé de googleReviewUrl) : une recherche
+  // Maps sur le texte de l'adresse part en vrille dès que `adresse` n'est pas
+  // une voie postale exacte (accroche marketing, libellé de zone…).
+  const googleProfile =
+    resolveSocials(config).find((s) => s.platform === "google")?.href ??
+    config.googleReviewUrl?.replace(/\/review\/?$/, "");
+  const adresseHref =
+    googleProfile ??
+    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(c.adresse ?? "")}`;
+
   const rows = [
     c.telephone && { icon: Phone, label: c.telephone, href: telHref(c.telephone) },
     c.whatsapp && { icon: MessageCircle, label: strings.contact.whatsapp, href: waHref(c.whatsapp) },
     c.email && { icon: Mail, label: c.email, href: `mailto:${c.email}` },
-    c.adresse && {
-      icon: MapPin,
-      label: c.adresse,
-      // Cliquer l'adresse ouvre Google Maps sur cette adresse (nouvel onglet).
-      href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(c.adresse)}`,
-    },
+    c.adresse && { icon: MapPin, label: c.adresse, href: adresseHref },
   ].filter(Boolean) as { icon: typeof Phone; label: string; href?: string }[];
 
   const infoCard = (

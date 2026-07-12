@@ -20,6 +20,10 @@
     {
       "platform": "whatsapp",
       "url": "https://wa.me/33641875327"
+    },
+    {
+      "platform": "google",
+      "url": "https://g.page/r/CUNeJx6mXTwvEBM"
     }
   ],
   "googleReviewUrl": "https://g.page/r/CUNeJx6mXTwvEBM/review",
@@ -167,6 +171,14 @@
                 "priceHint": "dès 90 €",
                 "description": "Bureaux, commerces et cabinets entretenus selon vos horaires, avant ou après votre activité.",
                 "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Vous êtes à Aubagne ?",
+                "emoji": "📍",
+                "badge": "Vallée de l'Huveaune",
+                "priceHint": "mêmes tarifs qu'à Marseille",
+                "description": "Nos tournées de l'est passent par chez vous : la page consacrée au ménage à Aubagne.",
+                "href": "/menage-aubagne"
               }
             ],
             "cta": {
@@ -206,8 +218,13 @@
           "content": {
             "eyebrow": "Avis clients",
             "titre": "Des Marseillais déjà conquis",
-            "noteGlobale": 5,
+            "noteGlobale": 4.9,
             "items": [
+              {
+                "auteur": "Sami Zalmat",
+                "note": 5,
+                "texte": "Excellent travail ! Le résultat est bluffant, les photos avant/après parlent d'elles-mêmes. Équipe professionnelle, efficace et soigneuse. Je recommande sans hésiter !"
+              },
               {
                 "auteur": "joel delery",
                 "note": 5,
@@ -222,6 +239,11 @@
                 "auteur": "Reyou Reyou",
                 "note": 5,
                 "texte": "Des personnes très professionnel un travail irréprochable merci beaucoup."
+              },
+              {
+                "auteur": "Sedat Ates",
+                "note": 5,
+                "texte": "Un travail très sérieux. L'équipe est au top et disponible ! je recommande fortement"
               }
             ],
             "disclaimer": "Extraits de notre fiche Google. Merci pour vos mots — c'est notre plus belle carte de visite."
@@ -1211,7 +1233,11 @@
               "Marseille est notre port d'attache et nous la couvrons en entier, du 1er au 16e arrondissement : les appartements du centre autour du Vieux-Port, de Castellane et de la Plaine, les quartiers sud vers le Prado, Mazargues et la Pointe-Rouge, les collines du 11e et du 12e du côté de Saint-Barnabé et des Caillols, comme les quartiers nord jusqu'à L'Estaque. Sur la ville et ses abords immédiats, le déplacement est offert.",
               "Côté est, nous suivons la vallée de l'Huveaune : La Penne-sur-Huveaune, Aubagne, Roquevaire, Auriol et Gémenos, puis le littoral de Cassis à La Ciotat en passant par Carnoux-en-Provence et Ceyreste. Vers le nord, nous montons par Allauch et Plan-de-Cuques jusqu'à Simiane-Collongue, Bouc-Bel-Air, Gardanne et Aix-en-Provence ; côté étang de Berre, Marignane, Vitrolles, Les Pennes-Mirabeau et Châteauneuf-les-Martigues font partie de nos trajets réguliers.",
               "Concrètement, nous organisons les tournées par secteur pour regrouper les rendez-vous voisins : c'est ce qui nous permet d'offrir le déplacement sur Marseille et ses environs proches et de rester réactives sur le reste du secteur. Pour une commune en limite de zone, on en parle simplement au moment du devis ; et en cas d'urgence, la majoration de 10 % reste la seule différence, où que vous soyez dans la liste ci-dessous."
-            ]
+            ],
+            "ctaSecondaire": {
+              "label": "Vous êtes à Aubagne ? Votre page dédiée",
+              "href": "/menage-aubagne"
+            }
           }
         },
         {
@@ -1534,6 +1560,11 @@
                 "nom": "Canapé & fauteuil",
                 "description": "Nettoyage et désincrustation de vos textiles d'ameublement.",
                 "href": "/nettoyage-canape"
+              },
+              {
+                "nom": "Ménage à Aubagne",
+                "description": "Dans la vallée de l'Huveaune, mêmes prestations et mêmes tarifs qu'à Marseille.",
+                "href": "/menage-aubagne"
               }
             ]
           }
@@ -1551,6 +1582,168 @@
             "ctaSecondaire": {
               "label": "+33 6 41 87 53 27",
               "href": "tel:+33641875327"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "menage-aubagne",
+      "label": "Ménage à Aubagne",
+      "navHidden": true,
+      "meta": {
+        "title": "Femme de ménage à Aubagne — 15 €/h après crédit d'impôt",
+        "description": "Ménage à domicile à Aubagne aux tarifs de Marseille : 30 €/h, soit 15 €/h après crédit d'impôt de 50 %. Tournées vallée de l'Huveaune, devis sous 24 h.",
+        "keywords": [
+          "ménage Aubagne",
+          "femme de ménage Aubagne",
+          "ménage à domicile Aubagne",
+          "aide ménagère Aubagne",
+          "nettoyage Aubagne",
+          "ménage crédit d'impôt Aubagne"
+        ]
+      },
+      "service": {
+        "name": "Ménage à domicile à Aubagne",
+        "description": "Ménage régulier, remise en état et vitres au domicile des particuliers à Aubagne, dans la vallée de l'Huveaune, avec crédit d'impôt de 50 %.",
+        "serviceType": "Ménage à domicile",
+        "priceFrom": 30
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Aubagne · Vallée de l'Huveaune",
+            "titre": "Votre femme de ménage à Aubagne, au tarif de Marseille",
+            "intro": "Aubagne fait déjà partie de nos tournées : la vallée de l'Huveaune est l'axe naturel de nos rendez-vous à l'est de Marseille. Et chez vous, l'heure de ménage est au même prix que pour nos clients marseillais : 30 € facturés, dont la moitié revient sous forme de crédit d'impôt — 15 € réels.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Ménage à domicile",
+                "href": "/menage-domicile"
+              },
+              {
+                "label": "Ménage à Aubagne"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 6 41 87 53 27",
+              "href": "tel:+33641875327"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Ménage à Aubagne",
+            "titre": "Aubagne, sur la route de",
+            "titreAccent": "nos tournées de l'est",
+            "paragraphes": [
+              "Au pied du Garlaban, Aubagne occupe le cœur de la vallée de l'Huveaune — précisément le fil que remontent nos tournées de l'est marseillais : La Penne-sur-Huveaune, Aubagne, puis Roquevaire, Auriol ou Gémenos. Caler votre logement aubagnais dans un planning existant n'a donc rien d'exceptionnel pour nous : c'est notre organisation par secteur qui rend la chose simple, sans trajet dédié à répercuter sur votre facture.",
+              "Sur place, rien ne change par rapport à Marseille : mêmes prestations, mêmes prix. L'heure de ménage régulier est facturée 30 €, soit 15 € réellement à votre charge après le crédit d'impôt de 50 % — avance immédiate possible, règlement en CESU accepté. Vous préparez un état des lieux ou sortez de travaux ? La remise en état démarre à 250 € pour un studio. Et des baies d'une villa sur les hauteurs aux fenêtres d'un appartement du centre-ville, la vitrerie commence à 90 €.",
+              "Concrètement : vous nous décrivez votre logement et vos attentes, nous vous renvoyons un devis gratuit sous 24 h, puis le premier passage se cale sur un créneau du secteur, du lundi au samedi entre 8h30 et 18h. Pour un entretien régulier, nous tenons à ce que ce soit la même intervenante qui pousse votre porte à chaque visite — et si un imprévu vous tombe dessus, l'intervention d'urgence reste possible, moyennant 10 % de majoration."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "On répond aux Aubagnais",
+            "items": [
+              {
+                "question": "Le déplacement jusqu'à Aubagne est-il facturé en plus ?",
+                "reponse": "Non. Nos rendez-vous de l'est étant regroupés le long de la vallée de l'Huveaune, venir à Aubagne s'insère dans nos trajets habituels : vous payez le même tarif horaire qu'un client marseillais, 30 €/h facturés, sans ligne « déplacement » sur le devis."
+              },
+              {
+                "question": "Sous combien de temps pouvez-vous passer à Aubagne ?",
+                "reponse": "Nous vous répondons d'abord vite : le devis est gratuit et vous parvient sous 24 h. Pour l'intervention elle-même, nous vous proposons dès le devis le prochain créneau disponible sur le secteur est — et en cas de véritable urgence, nous passons en priorité selon nos disponibilités, avec une majoration de 10 %."
+              },
+              {
+                "question": "J'habite Aubagne : le crédit d'impôt de 50 % s'applique-t-il chez moi ?",
+                "reponse": "Oui. Le crédit d'impôt tient à la nature de la prestation — réalisée au domicile d'un particulier — pas à la commune : à Aubagne comme à Marseille, l'heure facturée 30 € vous revient à 15 €. Le fonctionnement détaillé (avance immédiate, attestation annuelle, plafond) est expliqué sur notre page crédit d'impôt."
+              },
+              {
+                "question": "Vous couvrez aussi les alentours d'Aubagne ?",
+                "reponse": "Oui, tout le secteur est de notre zone : Gémenos, Carnoux-en-Provence, La Penne-sur-Huveaune, Roquevaire et Auriol, et jusqu'au littoral avec Cassis, Ceyreste et La Ciotat. Si vos proches y cherchent aussi une aide ménagère, parlez-en au moment du devis : nos tournées passent déjà par là."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "Aubagne et tout le secteur est",
+            "intro": "Depuis Aubagne, la même équipe dessert les communes voisines de la vallée de l'Huveaune et du littoral est. Vous êtes juste à côté ? C'est la même tournée.",
+            "zones": [
+              {
+                "region": "Bouches-du-Rhône — vallée de l'Huveaune & littoral est",
+                "principale": "Aubagne",
+                "villes": [
+                  "Aubagne",
+                  "La Penne-sur-Huveaune",
+                  "Gémenos",
+                  "Roquevaire",
+                  "Auriol",
+                  "Carnoux-en-Provence",
+                  "Cassis",
+                  "Ceyreste",
+                  "La Ciotat"
+                ]
+              }
+            ],
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=5.45%2C43.15%2C5.72%2C43.37&layer=mapnik&marker=43.2927%2C5.5706"
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "titre": "À combiner lors du même passage",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "description": "Le détail complet de la prestation, du ménage régulier au grand nettoyage.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Remise en état",
+                "description": "Avant un état des lieux ou après des travaux, dès 250 €.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "description": "Fenêtres et baies rendues à la lumière, dès 90 €.",
+                "href": "/nettoyage-vitres"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Un devis ménage pour votre logement à Aubagne ?",
+            "sousTitre": "Gratuit et sans engagement : décrivez votre besoin, la réponse arrive sous 24 h.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 6 41 87 53 27",
+              "href": "tel:+33641875327"
+            },
+            "lien": {
+              "label": "ou passez par WhatsApp →",
+              "href": "https://wa.me/33641875327"
             }
           }
         }
