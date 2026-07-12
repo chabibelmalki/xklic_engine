@@ -305,9 +305,10 @@
           "type": "zone",
           "mode": "carte",
           "content": {
-            "titre": "Nîmes d'abord, le Gard tout entier",
-            "intro": "Notre port d'attache est nîmois et l'essentiel de nos journées se passe dans le Gard ; des tournées régulières prolongent le service vers Montpellier et Marseille.",
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=3.70%2C43.20%2C5.60%2C43.95&layer=mapnik&marker=43.8451919%2C4.3883404",
+            "titre": "Nîmes d'abord, et jamais à plus de 30 km",
+            "intro": "Notre port d'attache est nîmois et nous avons choisi la proximité : toutes les interventions se déroulent à Nîmes et dans un rayon de 30 km, de la première couronne aux Costières.",
+            "rayonKm": 30,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.01%2C43.57%2C4.77%2C44.12&layer=mapnik&marker=43.8451919%2C4.3883404",
             "zones": [
               {
                 "region": "Gard — autour de Nîmes",
@@ -331,46 +332,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — autour de Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — autour de Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -423,7 +384,7 @@
               },
               {
                 "question": "Où intervenez-vous exactement ?",
-                "reponse": "À Nîmes et dans le Gard avant tout — le déplacement y est offert dans un rayon de 20 km. Des tournées régulières desservent aussi les environs de Montpellier et de Marseille."
+                "reponse": "À Nîmes et dans un rayon de 30 km autour de la ville — le déplacement est offert sur les 20 premiers kilomètres. Toutes les communes desservies sont listées sur la page zone d'intervention."
               },
               {
                 "question": "Peut-on vous joindre le week-end ?",
@@ -1311,16 +1272,16 @@
       "label": "Zone d'intervention",
       "navHidden": true,
       "meta": {
-        "title": "Zone d'intervention — Nîmes et le Gard",
-        "description": "SANAD CLEAN intervient à Nîmes et dans tout le Gard — déplacement offert sur 20 km — et dessert des communes de l'Hérault et des Bouches-du-Rhône."
+        "title": "Zone d'intervention — Nîmes et 30 km alentours",
+        "description": "SANAD CLEAN intervient à Nîmes et 30 km alentours : première couronne, Vaunage, Vistrenque, Costières. Déplacement offert sur 20 km, devis sous 24 h."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Zone d'intervention",
-            "titre": "Nîmes, le Gard — et nos tournées voisines",
-            "intro": "Notre port d'attache est nîmois : le déplacement est offert sur Nîmes et 20 km alentour. Des tournées régulières nous mènent aussi vers les communes de l'Hérault et des Bouches-du-Rhône listées ci-dessous."
+            "titre": "Nîmes et 30 km alentours",
+            "intro": "Notre port d'attache est nîmois : le déplacement est offert sur Nîmes et 20 km alentour, et toutes nos prestations se concentrent désormais dans un rayon de 30 km — trois bassins de vie que Souad Tazya connaît par cœur."
           }
         },
         {
@@ -1328,71 +1289,44 @@
           "mode": "carte",
           "content": {
             "titre": "Communes desservies",
-            "intro": "Trois secteurs, une priorité : le Gard. Votre commune manque à la liste ? Posez la question, nos tournées s'étoffent régulièrement.",
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8451919%2C4.3883404",
+            "intro": "Trois bassins, un même soin du détail : la première couronne nîmoise, la Vaunage et la Vistrenque, les Costières jusqu'à Vauvert. Votre commune manque à la liste ? Posez la question : si elle est à moins de 30 km de Nîmes, nous venons.",
+            "rayonKm": 30,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.01%2C43.57%2C4.77%2C44.12&layer=mapnik&marker=43.8451919%2C4.3883404",
             "zones": [
               {
-                "region": "Gard — autour de Nîmes",
+                "region": "Nîmes et première couronne",
                 "principale": "Nîmes",
                 "villes": [
                   "Nîmes",
-                  "Caissargues",
-                  "Bouillargues",
-                  "Rodilhan",
                   "Marguerittes",
-                  "Garons",
                   "Saint-Gervasy",
                   "Poulx",
+                  "Rodilhan",
+                  "Manduel",
+                  "Bouillargues",
+                  "Caissargues"
+                ]
+              },
+              {
+                "region": "Vaunage et Vistrenque",
+                "principale": "Milhaud",
+                "villes": [
                   "Caveirac",
                   "Clarensac",
                   "Milhaud",
                   "Bernis",
-                  "Manduel",
-                  "Saint-Gilles",
                   "Uchaud",
-                  "Vergèze",
+                  "Vergèze"
+                ]
+              },
+              {
+                "region": "Costières, vers Saint-Gilles et Vauvert",
+                "principale": "Saint-Gilles",
+                "villes": [
+                  "Garons",
                   "Générac",
+                  "Saint-Gilles",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — autour de Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — autour de Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -1446,7 +1380,7 @@
               },
               {
                 "question": "Ma commune est-elle desservie ?",
-                "reponse": "Le Gard nîmois est notre terrain quotidien ; des tournées régulières couvrent aussi des communes de l'Hérault et des Bouches-du-Rhône. La liste complète figure sur la page zone d'intervention."
+                "reponse": "Le Gard nîmois est notre terrain quotidien : toutes les prestations se déroulent à moins de 30 km de Nîmes. La liste complète des communes figure sur la page zone d'intervention."
               },
               {
                 "question": "Peut-on exiger des produits doux ou écologiques ?",
@@ -1662,7 +1596,8 @@
           "mode": "liste",
           "content": {
             "titre": "Où passe notre équipe de ménage",
-            "intro": "Le ménage régulier se concentre sur Nîmes et sa première couronne gardoise ; les secteurs de Montpellier et de Marseille sont desservis lors de nos tournées.",
+            "intro": "Le ménage régulier se concentre sur Nîmes et sa première couronne gardoise, sans jamais dépasser 30 km : c'est ce qui permet de garder la même intervenante chez vous, semaine après semaine.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — autour de Nîmes",
@@ -1686,46 +1621,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — autour de Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — autour de Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -1903,8 +1798,9 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "Des chantiers du Gard aux tournées voisines",
-            "intro": "Les remises en état se programment dans tout le bassin nîmois ; côté Hérault ou Bouches-du-Rhône, nous groupons les déplacements — parlons dates.",
+            "titre": "Des chantiers programmés à moins de 30 km",
+            "intro": "Les remises en état se programment dans tout le bassin nîmois, de Marguerittes à Saint-Gilles ; rester près de notre base nous laisse revenir vérifier le résultat avec vous — parlons dates.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — autour de Nîmes",
@@ -1928,46 +1824,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — autour de Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — autour de Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -2146,7 +2002,8 @@
           "mode": "liste",
           "content": {
             "titre": "Vitrerie assurée autour de Nîmes",
-            "intro": "Les tournées vitres sillonnent Nîmes et le Gard proche ; baies et vérandas de l'Hérault ou des Bouches-du-Rhône se programment sur rendez-vous.",
+            "intro": "Les tournées vitres sillonnent Nîmes et le Gard proche ; jusqu'à 30 km, de Poulx à Vauvert, baies vitrées et vérandas se programment sur rendez-vous.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — autour de Nîmes",
@@ -2170,46 +2027,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — autour de Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — autour de Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -2238,7 +2055,7 @@
               },
               {
                 "question": "Intervenez-vous pour la vitrerie en dehors de Nîmes ?",
-                "reponse": "Oui : les tournées vitres couvrent d'abord Nîmes et le Gard proche — Caissargues, Marguerittes, Saint-Gilles ou Vauvert notamment —, où le déplacement est offert dans un rayon de 20 km. Les baies et vérandas des secteurs de Montpellier et de Marseille se programment sur rendez-vous planifié à l'avance."
+                "reponse": "Oui : les tournées vitres couvrent d'abord Nîmes et le Gard proche — Caissargues, Marguerittes, Saint-Gilles ou Vauvert notamment —, où le déplacement est offert dans un rayon de 20 km. Entre 20 et 30 km, baies et vérandas se programment sur rendez-vous planifié à l'avance."
               }
             ]
           }
@@ -2392,7 +2209,8 @@
           "mode": "liste",
           "content": {
             "titre": "Vos textiles traités à domicile, secteur Nîmes",
-            "intro": "Fauteuils, canapés et matelas se traitent chez vous, partout dans le bassin nîmois ; Hérault et Bouches-du-Rhône sont couverts au fil de nos tournées.",
+            "intro": "Fauteuils, canapés et matelas se traitent chez vous, partout dans le bassin nîmois : de Caveirac à Manduel, notre matériel d'injection-extraction voyage dans un rayon de 30 km.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — autour de Nîmes",
@@ -2416,46 +2234,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — autour de Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — autour de Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -2657,7 +2435,8 @@
           "mode": "liste",
           "content": {
             "titre": "Tapis pris en charge autour de Nîmes",
-            "intro": "À domicile ou en atelier, nous servons d'abord Nîmes et le Gard ; l'Hérault et les Bouches-du-Rhône s'ajoutent au fil de nos tournées.",
+            "intro": "À domicile ou en atelier, nous servons Nîmes et ses environs immédiats ; l'enlèvement comme la repose de vos tapis s'organisent dans les communes situées à moins de 30 km.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — autour de Nîmes",
@@ -2681,46 +2460,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — autour de Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — autour de Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -2870,7 +2609,8 @@
           "mode": "liste",
           "content": {
             "titre": "Extérieurs entretenus dans le bassin nîmois",
-            "intro": "Terrasses et cours se nettoient en priorité à Nîmes et dans le Gard proche ; les secteurs de Montpellier et Marseille s'organisent sur rendez-vous groupés.",
+            "intro": "Terrasses et cours se nettoient en priorité à Nîmes et dans les communes voisines ; nos créneaux d'extérieur couvrent un rayon de 30 km, de Clarensac à Générac.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — autour de Nîmes",
@@ -2894,46 +2634,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — autour de Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — autour de Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -2962,7 +2662,7 @@
               },
               {
                 "question": "Le déplacement est-il facturé pour une terrasse ?",
-                "reponse": "Non dans le bassin nîmois : le déplacement est offert sur Nîmes et 20 km alentour. Au-delà, vers Montpellier ou Marseille, les interventions s'organisent en rendez-vous groupés ; indiquez votre commune lors de la demande et le devis, envoyé sous 24 h, intègre le tout — sans frais cachés."
+                "reponse": "Non dans le bassin nîmois : le déplacement est offert sur Nîmes et 20 km alentour. Entre 20 et 30 km, indiquez simplement votre commune lors de la demande ; le devis, envoyé sous 24 h, intègre le tout — sans frais cachés."
               }
             ]
           }
@@ -3110,8 +2810,9 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "Interventions discrètes à Nîmes et au-delà",
-            "intro": "Ces situations se traitent en priorité dans le Gard nîmois ; nous nous déplaçons aussi vers l'Hérault et les Bouches-du-Rhône lorsque la situation le demande.",
+            "titre": "Interventions discrètes, tout près de Nîmes",
+            "intro": "Ces situations se traitent dans le Gard nîmois, à moins de 30 km de notre base : cette proximité permet d'intervenir vite, plusieurs jours d'affilée si besoin, et en toute discrétion.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — autour de Nîmes",
@@ -3135,46 +2836,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — autour de Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — autour de Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -3353,7 +3014,8 @@
           "mode": "liste",
           "content": {
             "titre": "Locaux suivis à Nîmes et alentours",
-            "intro": "Bureaux et commerces s'entretiennent surtout à Nîmes et dans le Gard ; un site à Montpellier ou Marseille peut rejoindre nos tournées régulières.",
+            "intro": "Bureaux et commerces s'entretiennent à Nîmes et dans un rayon de 30 km ; une zone resserrée qui garantit des passages réguliers, aux mêmes horaires, sans aléa de route.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — autour de Nîmes",
@@ -3377,46 +3039,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — autour de Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — autour de Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -3590,7 +3212,8 @@
           "mode": "liste",
           "content": {
             "titre": "Désinsectisation autour de Nîmes",
-            "intro": "Les traitements punaises s'organisent en priorité sur Nîmes et le Gard ; pour l'Hérault et les Bouches-du-Rhône, nous convenons d'une date rapide par téléphone.",
+            "intro": "Les traitements punaises s'organisent sur Nîmes et les communes à moins de 30 km : face à une infestation, cette proximité fait la rapidité du premier passage comme du second.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — autour de Nîmes",
@@ -3614,46 +3237,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — autour de Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — autour de Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -3827,7 +3410,8 @@
           "mode": "liste",
           "content": {
             "titre": "Traitements cafards sur le secteur nîmois",
-            "intro": "Les désinsectisations cafards couvrent d'abord Nîmes et le Gard ; les demandes côté Hérault ou Bouches-du-Rhône se calent par téléphone selon nos tournées.",
+            "intro": "Les désinsectisations cafards couvrent Nîmes et un rayon de 30 km, de Bernis à Saint-Gervasy ; décrivez les lieux par téléphone et la date du passage se cale ensemble.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — autour de Nîmes",
@@ -3851,46 +3435,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — autour de Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — autour de Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]

@@ -277,9 +277,10 @@
           "type": "zone",
           "mode": "carte",
           "content": {
-            "titre": "Nîmes first, then the whole Gard",
-            "intro": "Our home base is Nîmes and most of our days are spent in the Gard; regular rounds extend the service towards Montpellier and Marseille.",
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=3.70%2C43.20%2C5.60%2C43.95&layer=mapnik&marker=43.8451919%2C4.3883404",
+            "titre": "Nîmes first — never more than 30 km away",
+            "intro": "Our home base is Nîmes and we have chosen to stay close: every job takes place in Nîmes or within a 30 km radius, from the first ring of towns out to the Costières.",
+            "rayonKm": 30,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.01%2C43.57%2C4.77%2C44.12&layer=mapnik&marker=43.8451919%2C4.3883404",
             "zones": [
               {
                 "region": "Gard — around Nîmes",
@@ -303,46 +304,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — around Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — around Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -394,7 +355,7 @@
               },
               {
                 "question": "Where exactly do you operate?",
-                "reponse": "In Nîmes and the Gard above all — travel there is free within a 20 km radius. Regular rounds also serve the Montpellier and Marseille areas."
+                "reponse": "In Nîmes and within a 30 km radius of the city — travel is free over the first 20 km. Every town we serve is listed on the service-area page."
               },
               {
                 "question": "Can we reach you at the weekend?",
@@ -687,7 +648,8 @@
           "mode": "liste",
           "content": {
             "titre": "Where our cleaning rounds go",
-            "intro": "Regular housekeeping focuses on Nîmes and its Gard outskirts; the Montpellier and Marseille areas are covered during our scheduled rounds.",
+            "intro": "Regular housekeeping focuses on Nîmes and its Gard outskirts, never more than 30 km out: that is what lets the same cleaner come to your home, week after week.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — around Nîmes",
@@ -711,46 +673,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — around Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — around Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -928,8 +850,9 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "From Gard job sites to nearby rounds",
-            "intro": "Restoration cleans are scheduled across the Nîmes basin; for the Hérault or Bouches-du-Rhône we group trips — let's talk dates.",
+            "titre": "Job sites scheduled within 30 km",
+            "intro": "Restoration cleans are scheduled across the Nîmes basin, from Marguerittes to Saint-Gilles; staying close to base lets us come back and check the result with you — let's talk dates.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — around Nîmes",
@@ -953,46 +876,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — around Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — around Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -1171,7 +1054,8 @@
           "mode": "liste",
           "content": {
             "titre": "Window rounds around Nîmes",
-            "intro": "Our window rounds criss-cross Nîmes and the nearby Gard; bays and verandas in the Hérault or Bouches-du-Rhône are scheduled by appointment.",
+            "intro": "Our window rounds criss-cross Nîmes and the nearby Gard; up to 30 km out, from Poulx to Vauvert, bay windows and verandas are scheduled by appointment.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — around Nîmes",
@@ -1195,46 +1079,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — around Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — around Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -1263,7 +1107,7 @@
               },
               {
                 "question": "Do you clean windows outside Nîmes?",
-                "reponse": "Yes: our window rounds cover Nîmes and the nearby Gard first — Caissargues, Marguerittes, Saint-Gilles or Vauvert among others — with travel included within a 20 km radius. Bays and verandas around Montpellier and Marseille are scheduled by appointment, planned in advance."
+                "reponse": "Yes: our window rounds cover Nîmes and the nearby Gard first — Caissargues, Marguerittes, Saint-Gilles or Vauvert among others — with travel included within a 20 km radius. Between 20 and 30 km, bays and verandas are scheduled by appointment, planned in advance."
               }
             ]
           }
@@ -1417,7 +1261,8 @@
           "mode": "liste",
           "content": {
             "titre": "Upholstery treated at home, Nîmes area",
-            "intro": "Armchairs, sofas and mattresses are treated at your place across the Nîmes basin; the Hérault and Bouches-du-Rhône are covered on our rounds.",
+            "intro": "Armchairs, sofas and mattresses are treated at your place across the Nîmes basin: from Caveirac to Manduel, our injection-extraction equipment travels within a 30 km radius.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — around Nîmes",
@@ -1441,46 +1286,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — around Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — around Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -1682,7 +1487,8 @@
           "mode": "liste",
           "content": {
             "titre": "Rugs taken care of around Nîmes",
-            "intro": "At home or in the workshop, we serve Nîmes and the Gard first; the Hérault and Bouches-du-Rhône come on top along our rounds.",
+            "intro": "At home or in the workshop, we serve Nîmes and its immediate surroundings; pick-up and re-laying of your rugs are arranged in towns within 30 km.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — around Nîmes",
@@ -1706,46 +1512,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — around Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — around Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -1895,7 +1661,8 @@
           "mode": "liste",
           "content": {
             "titre": "Outdoor areas served in the Nîmes basin",
-            "intro": "Terraces and courtyards are cleaned first and foremost in Nîmes and the nearby Gard; the Montpellier and Marseille areas are arranged as grouped appointments.",
+            "intro": "Terraces and courtyards are cleaned first and foremost in Nîmes and the neighbouring towns; our outdoor slots cover a 30 km radius, from Clarensac to Générac.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — around Nîmes",
@@ -1919,46 +1686,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — around Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — around Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -1987,7 +1714,7 @@
               },
               {
                 "question": "Do you charge for travel to clean a terrace?",
-                "reponse": "Not around Nîmes: travel is included in Nîmes and within 20 km. Further out, towards Montpellier or Marseille, visits are grouped into shared rounds; mention your town when you get in touch and the quote, sent within 24 hours, covers everything — no hidden costs."
+                "reponse": "Not around Nîmes: travel is included in Nîmes and within 20 km. Between 20 and 30 km, simply mention your town when you get in touch; the quote, sent within 24 hours, covers everything — no hidden costs."
               }
             ]
           }
@@ -2135,8 +1862,9 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "Discreet interventions in Nîmes and beyond",
-            "intro": "These situations are handled first in the Nîmes Gard; we also travel towards the Hérault and the Bouches-du-Rhône when the situation calls for it.",
+            "titre": "Discreet interventions, close to Nîmes",
+            "intro": "These situations are handled in the Nîmes Gard, within 30 km of our base: that closeness lets us act fast, several days in a row if needed, and with full discretion.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — around Nîmes",
@@ -2160,46 +1888,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — around Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — around Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -2378,7 +2066,8 @@
           "mode": "liste",
           "content": {
             "titre": "Premises looked after in and around Nîmes",
-            "intro": "Offices and shops are maintained mainly in Nîmes and the Gard; a site in Montpellier or Marseille can join our regular rounds.",
+            "intro": "Offices and shops are maintained in Nîmes and within a 30 km radius; a tight area that guarantees regular visits, at the same hours, with no long drive involved.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — around Nîmes",
@@ -2402,46 +2091,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — around Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — around Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -2615,7 +2264,8 @@
           "mode": "liste",
           "content": {
             "titre": "Pest control around Nîmes",
-            "intro": "Bed bug treatments are arranged first in Nîmes and the Gard; for the Hérault and Bouches-du-Rhône we agree a prompt date by phone.",
+            "intro": "Bed bug treatments are arranged in Nîmes and the towns within 30 km: against an infestation, that closeness speeds up the first visit as much as the second.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — around Nîmes",
@@ -2639,46 +2289,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — around Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — around Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -2852,7 +2462,8 @@
           "mode": "liste",
           "content": {
             "titre": "Cockroach treatments across the Nîmes area",
-            "intro": "Cockroach jobs cover Nîmes and the Gard first; requests from the Hérault or Bouches-du-Rhône are slotted in by phone along our rounds.",
+            "intro": "Cockroach jobs cover Nîmes and a 30 km radius, from Bernis to Saint-Gervasy; describe the premises by phone and we set the visit date together.",
+            "rayonKm": 30,
             "zones": [
               {
                 "region": "Gard — around Nîmes",
@@ -2876,46 +2487,6 @@
                   "Vergèze",
                   "Générac",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — around Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — around Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -3683,16 +3254,16 @@
       "label": "Service area",
       "navHidden": true,
       "meta": {
-        "title": "Service area — Nîmes and the Gard",
-        "description": "SANAD CLEAN cleans in Nîmes and across the Gard — free travel within 20 km — and also reaches towns in the Hérault and Bouches-du-Rhône on its rounds."
+        "title": "Service area — Nîmes and 30 km around",
+        "description": "SANAD CLEAN works in Nîmes and within 30 km: first ring, Vaunage, Vistrenque and Costières. Free travel within 20 km, free quote within 24 hours."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Service area",
-            "titre": "Nîmes, the Gard — and our nearby rounds",
-            "intro": "Our home base is Nîmes: travel is free across Nîmes and 20 km around. Regular rounds also take us to the Hérault and Bouches-du-Rhône towns listed below."
+            "titre": "Nîmes and 30 km around",
+            "intro": "Our home base is Nîmes: travel is free across Nîmes and 20 km around, and every service now stays within a 30 km radius — three living areas Souad Tazya knows by heart."
           }
         },
         {
@@ -3700,71 +3271,44 @@
           "mode": "carte",
           "content": {
             "titre": "Towns we serve",
-            "intro": "Three sectors, one priority: the Gard. Your town missing from the list? Just ask — our rounds grow regularly.",
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.31%2C43.80%2C4.41%2C43.87&layer=mapnik&marker=43.8451919%2C4.3883404",
+            "intro": "Three home areas, the same care for detail: the first ring around Nîmes, the Vaunage and Vistrenque plains, and the Costières down to Vauvert. Your town missing from the list? Just ask — if it sits within 30 km of Nîmes, we come.",
+            "rayonKm": 30,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.01%2C43.57%2C4.77%2C44.12&layer=mapnik&marker=43.8451919%2C4.3883404",
             "zones": [
               {
-                "region": "Gard — around Nîmes",
+                "region": "Nîmes and the first ring",
                 "principale": "Nîmes",
                 "villes": [
                   "Nîmes",
-                  "Caissargues",
-                  "Bouillargues",
-                  "Rodilhan",
                   "Marguerittes",
-                  "Garons",
                   "Saint-Gervasy",
                   "Poulx",
+                  "Rodilhan",
+                  "Manduel",
+                  "Bouillargues",
+                  "Caissargues"
+                ]
+              },
+              {
+                "region": "Vaunage and Vistrenque",
+                "principale": "Milhaud",
+                "villes": [
                   "Caveirac",
                   "Clarensac",
                   "Milhaud",
                   "Bernis",
-                  "Manduel",
-                  "Saint-Gilles",
                   "Uchaud",
-                  "Vergèze",
+                  "Vergèze"
+                ]
+              },
+              {
+                "region": "Costières, towards Saint-Gilles and Vauvert",
+                "principale": "Saint-Gilles",
+                "villes": [
+                  "Garons",
                   "Générac",
+                  "Saint-Gilles",
                   "Vauvert"
-                ]
-              },
-              {
-                "region": "Hérault — around Montpellier",
-                "principale": "Montpellier",
-                "villes": [
-                  "Montpellier",
-                  "Lattes",
-                  "Castelnau-le-Lez",
-                  "Pérols",
-                  "Le Crès",
-                  "Jacou",
-                  "Clapiers",
-                  "Montferrier-sur-Lez",
-                  "Saint-Jean-de-Védas",
-                  "Lavérune",
-                  "Juvignac",
-                  "Grabels",
-                  "Castries",
-                  "Mauguio",
-                  "Vendargues",
-                  "Palavas-les-Flots"
-                ]
-              },
-              {
-                "region": "Bouches-du-Rhône — around Marseille",
-                "principale": "Marseille",
-                "villes": [
-                  "Marseille",
-                  "Aubagne",
-                  "Allauch",
-                  "Plan-de-Cuques",
-                  "La Penne-sur-Huveaune",
-                  "Septèmes-les-Vallons",
-                  "Marignane",
-                  "Vitrolles",
-                  "Aix-en-Provence",
-                  "Gémenos",
-                  "Cassis",
-                  "Carnoux-en-Provence"
                 ]
               }
             ]
@@ -3818,7 +3362,7 @@
               },
               {
                 "question": "Is my town covered?",
-                "reponse": "The Nîmes Gard is our daily ground; regular rounds also cover towns in the Hérault and Bouches-du-Rhône. The full list is on the service-area page."
+                "reponse": "The Nîmes Gard is our daily ground: every job takes place within 30 km of Nîmes. The full list of towns is on the service-area page."
               },
               {
                 "question": "Can I ask for gentle or eco-friendly products?",
