@@ -128,6 +128,14 @@ export function contentTypeFor(ext) {
       return "image/avif";
     case ".ico":
       return "image/x-icon";
+    case ".jfif":
+      return "image/jpeg";
+    case ".mp4":
+      return "video/mp4";
+    case ".webm":
+      return "video/webm";
+    case ".mov":
+      return "video/quicktime";
     default:
       return "application/octet-stream";
   }

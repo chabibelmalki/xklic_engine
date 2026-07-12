@@ -13,6 +13,6 @@ export function MentionsLegalesPage({
   locale?: string;
 }) {
   return (
-    <LegalDocPage config={config} doc={buildMentionsLegales(config)} basePath={basePath} locale={locale} />
+    <LegalDocPage config={config} doc={buildMentionsLegales(config, locale)} basePath={basePath} locale={locale} />
   );
 }

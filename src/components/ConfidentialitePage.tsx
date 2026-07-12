@@ -13,6 +13,6 @@ export function ConfidentialitePage({
   locale?: string;
 }) {
   return (
-    <LegalDocPage config={config} doc={buildConfidentialite(config)} basePath={basePath} locale={locale} />
+    <LegalDocPage config={config} doc={buildConfidentialite(config, locale)} basePath={basePath} locale={locale} />
   );
 }

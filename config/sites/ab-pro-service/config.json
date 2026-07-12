@@ -1,0 +1,1929 @@
+{
+  "slug": "ab-pro-service",
+  "theme": "bleu-azur",
+  "stylePack": "marine-premium",
+  "i18n": {
+    "default": "fr",
+    "languages": [
+      "fr",
+      "nl"
+    ]
+  },
+  "branding": {
+    "logoAlt": "AB Pro Service — nettoyage professionnel à Charleroi",
+    "tagline": "Nettoyage professionnel · Charleroi & Hainaut",
+    "colors": {
+      "brand": "#1E5BA6",
+      "accent": "#3E9B45",
+      "neutral": "cool"
+    },
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/logo-11c47356.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/logo-11c47356.png"
+  },
+  "social": [
+    {
+      "platform": "whatsapp",
+      "url": "https://wa.me/32492683823"
+    },
+    {
+      "platform": "google",
+      "url": "https://share.google/JQnJVFCwxfxOgJNvB"
+    }
+  ],
+  "googleReviewUrl": "https://g.page/r/Ceg-Pvpu13VTEAI/review",
+  "entreprise": {
+    "nom": "AB Pro Service",
+    "statut": "SRL",
+    "siret": "BE 1013.025.834",
+    "ape": "81.210",
+    "apeLabel": "Nettoyage courant des bâtiments",
+    "tva": {
+      "regime": "reel",
+      "numero": "BE 1013.025.834"
+    },
+    "dirigeant": "Ibtissam Abbadi",
+    "siege": "Rue du Bon Pasteur 54/A001, 1140 Evere"
+  },
+  "seo": {
+    "schemaType": "CleaningService",
+    "ville": "Charleroi"
+  },
+  "geo": {
+    "lat": 50.424955,
+    "lng": 4.4407406
+  },
+  "meta": {
+    "title": "Nettoyage professionnel à Charleroi et 50 km",
+    "description": "Entreprise de nettoyage à Charleroi : bureaux, commerces, copropriétés, vitres et particuliers. Travail soigné, devis gratuit, intervention dans tout le Hainaut.",
+    "keywords": [
+      "nettoyage Charleroi",
+      "entreprise de nettoyage Charleroi",
+      "nettoyage de bureaux Charleroi",
+      "nettoyage copropriété Charleroi",
+      "lavage de vitres Charleroi",
+      "société de nettoyage Hainaut"
+    ]
+  },
+  "forms": {
+    "to": "ab.proservice79@gmail.com",
+    "turnstile": true
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Accueil",
+      "blocks": [
+        {
+          "type": "hero",
+          "content": {
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/hero.png",
+              "alt": "Bureau moderne lumineux, skyline urbaine et matériel de nettoyage, aux couleurs bleu et vert d'AB Pro Service"
+            },
+            "eyebrow": "Nettoyage professionnel · Charleroi et 50 km autour",
+            "titre": "Des espaces impeccables,",
+            "titreAccent": "sans y penser",
+            "accroche": "AB Pro Service prend en charge la propreté de vos bureaux, commerces, immeubles et intérieurs sur Charleroi et l'ensemble du Hainaut. Une équipe déclarée, un matériel adapté à chaque surface et un interlocuteur unique qui connaît vos lieux : vous constatez le résultat, nous gérons le reste.",
+            "trust": [
+              {
+                "icone": "ShieldCheck",
+                "label": "Société déclarée à la BCE"
+              },
+              {
+                "icone": "Sparkles",
+                "label": "Finition soignée, contrôlée à chaque passage"
+              },
+              {
+                "icone": "CalendarCheck",
+                "label": "Contrat régulier ou intervention ponctuelle"
+              },
+              {
+                "icone": "BadgeCheck",
+                "label": "Devis gratuit, sans engagement"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Découvrir nos prestations",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Nos domaines d'intervention",
+            "titre": "Un seul prestataire pour toute votre propreté",
+            "intro": "Du bureau au hall d'immeuble, de la vitrine du commerce au logement du particulier, nous couvrons l'entretien courant comme les remises en état ponctuelles. Chaque prestation ouvre sa fiche détaillée.",
+            "items": [
+              {
+                "nom": "Nettoyage de bureaux",
+                "description": "Entretien régulier et professionnel des espaces de travail : postes, sanitaires, salles de réunion et parties communes.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              },
+              {
+                "nom": "Commerces et locaux",
+                "description": "Une propreté irréprochable au quotidien pour vos surfaces de vente, salles et espaces d'accueil, avant ou après ouverture.",
+                "href": "/nettoyage-commerces",
+                "icone": "Store"
+              },
+              {
+                "nom": "Parties communes et copropriétés",
+                "description": "Halls, cages d'escalier, ascenseurs et couloirs d'immeubles et de résidences, entretenus avec régularité pour les syndics et gestionnaires.",
+                "href": "/nettoyage-copropriete",
+                "icone": "Building"
+              },
+              {
+                "nom": "Lavage de vitres",
+                "description": "Vitres, baies et surfaces vitrées nettoyées à l'intérieur comme à l'extérieur, sans traces ni coulures.",
+                "href": "/nettoyage-vitres",
+                "icone": "GlassWater"
+              },
+              {
+                "nom": "Nettoyage à domicile",
+                "description": "Un intérieur entretenu avec soin chez les particuliers : entretien courant, grand nettoyage ou remise au propre après un événement.",
+                "href": "/nettoyage-domicile",
+                "icone": "Home"
+              },
+              {
+                "nom": "Intervention d'urgence",
+                "description": "Dégât des eaux ou situation imprévue : nous nous mobilisons rapidement pour assainir et remettre les lieux en état.",
+                "href": "/nettoyage-urgence",
+                "icone": "Droplets",
+                "badge": "Sur devis"
+              }
+            ],
+            "cta": {
+              "label": "Voir la zone couverte autour de Charleroi",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Pourquoi AB Pro Service",
+            "titre": "La propreté prise au sérieux,",
+            "titreAccent": "du premier au dernier détail",
+            "paragraphes": [
+              "Une entreprise propre inspire confiance, un logement net se vit mieux : la propreté n'est jamais un détail. AB Pro Service a été fondée à cette conviction, avec l'ambition d'offrir aux professionnels comme aux particuliers du bassin de Charleroi un service fiable, ponctuel et vraiment complet, sans mauvaise surprise sur la facture.",
+              "Nous intervenons avec des produits et un matériel choisis selon chaque surface — sol technique de bureau, marbre d'un hall, vitrerie d'une devanture — et nous adaptons la fréquence à votre réalité : un passage quotidien, un entretien hebdomadaire ou une remise en état ponctuelle. À chaque intervention, un contrôle final garantit que rien n'a été laissé de côté.",
+              "Travailler avec nous, c'est aussi un seul interlocuteur qui connaît vos lieux et vos contraintes, un devis clair établi à l'avance et une équipe qui respecte les horaires convenus, capable d'intervenir avant l'ouverture ou après la fermeture quand votre activité l'exige."
+            ],
+            "ctaPrimaire": {
+              "label": "Faire connaissance",
+              "href": "/entreprise"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "Comment nous démarrons",
+            "titre": "De votre appel à des lieux impeccables",
+            "items": [
+              {
+                "icone": "PhoneCall",
+                "titre": "Votre demande",
+                "texte": "Vous décrivez les lieux, la surface et la fréquence souhaitée, par téléphone, WhatsApp ou via le formulaire."
+              },
+              {
+                "icone": "ClipboardList",
+                "titre": "Visite et devis",
+                "texte": "Nous évaluons les besoins sur place quand c'est utile, puis vous remettons un devis clair et gratuit."
+              },
+              {
+                "icone": "CalendarCheck",
+                "titre": "Planning convenu",
+                "texte": "Nous calons ensemble les jours et les horaires, en une fois ou selon un rythme régulier."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "Intervention et contrôle",
+                "texte": "L'équipe intervient avec le matériel adapté et vérifie chaque zone avant de quitter les lieux."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "À Charleroi et jusqu'à 50 km alentour",
+            "intro": "Basés dans la région, nous rayonnons sur le Grand Charleroi, le cœur du Hainaut et jusqu'aux communes limitrophes du Namurois et du Brabant wallon. Votre commune n'est pas citée ? Un appel suffit pour vérifier ensemble.",
+            "rayonKm": 50,
+            "zones": [
+              {
+                "region": "Grand Charleroi",
+                "principale": "Charleroi",
+                "villes": [
+                  "Charleroi",
+                  "Marcinelle",
+                  "Gilly",
+                  "Montignies-sur-Sambre",
+                  "Jumet",
+                  "Gosselies",
+                  "Lodelinsart",
+                  "Marchienne-au-Pont",
+                  "Couillet",
+                  "Mont-sur-Marchienne",
+                  "Ransart"
+                ]
+              },
+              {
+                "region": "Cœur du Hainaut",
+                "principale": "La Louvière",
+                "villes": [
+                  "La Louvière",
+                  "Binche",
+                  "Fleurus",
+                  "Châtelet",
+                  "Courcelles",
+                  "Fontaine-l'Évêque",
+                  "Anderlues",
+                  "Chapelle-lez-Herlaimont",
+                  "Manage",
+                  "Thuin",
+                  "Pont-à-Celles"
+                ]
+              },
+              {
+                "region": "Vers le Namurois et le Brabant wallon",
+                "principale": "Sambreville",
+                "villes": [
+                  "Sambreville",
+                  "Fosses-la-Ville",
+                  "Gembloux",
+                  "Sombreffe",
+                  "Walcourt",
+                  "Nivelles",
+                  "Genappe"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Ce qu'on nous demande souvent",
+            "items": [
+              {
+                "question": "Intervenez-vous pour les entreprises comme pour les particuliers ?",
+                "reponse": "Oui, les deux. Bureaux, commerces, immeubles et copropriétés d'un côté, logements de particuliers de l'autre : nous adaptons simplement le matériel, les produits et le créneau à chaque type de lieu."
+              },
+              {
+                "question": "Faut-il signer un contrat sur la durée ?",
+                "reponse": "Non, rien ne vous y oblige. Nous proposons des entretiens réguliers sous forme de planning convenu, mais aussi des interventions ponctuelles ou uniques, sans engagement de durée."
+              },
+              {
+                "question": "Pouvez-vous passer en dehors des heures d'activité ?",
+                "reponse": "Oui. Pour épargner vos bureaux comme votre commerce, nous nous glissons dans vos plages creuses : petit matin, fin de journée ou week-end, comme il vous convient."
+              },
+              {
+                "question": "Comment obtenir un prix ?",
+                "reponse": "Décrivez-nous les lieux et le rythme voulu ; nous établissons un devis gratuit et détaillé, au besoin après une courte visite pour être au plus juste. Vous décidez ensuite, sans pression."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un espace à confier à des professionnels ?",
+            "sousTitre": "Parlez-nous de vos lieux et de vos attentes : nous revenons vers vous rapidement avec un devis gratuit et clair.",
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            },
+            "lien": {
+              "label": "ou écrivez-nous sur WhatsApp →",
+              "href": "https://wa.me/32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Prestations",
+      "meta": {
+        "title": "Prestations de nettoyage à Charleroi : le détail",
+        "description": "Bureaux, commerces, copropriétés, vitres, domicile et urgences : chaque prestation d'AB Pro Service détaillée, avec ce qui est compris et pour quels lieux."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Le catalogue, prestation par prestation",
+            "titre": "Tout ce que nous entretenons",
+            "intro": "Cette page réunit nos six domaines d'intervention. Chaque carte ouvre une fiche complète : les lieux concernés, le déroulé d'un passage type et ce qui est inclus. Un doute sur la prestation qui vous convient ? Le repère plus bas vous aiguille, et un appel lève le reste.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Six métiers, une même exigence",
+            "titre": "Nos prestations en détail",
+            "intro": "Chaque fiche précise à qui s'adresse la prestation, comment se passe une intervention et ce qu'elle couvre exactement.",
+            "items": [
+              {
+                "nom": "Nettoyage de bureaux",
+                "description": "La fiche détaille l'entretien des postes, sanitaires et espaces communs, les fréquences possibles et l'organisation autour de vos horaires.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              },
+              {
+                "nom": "Commerces et locaux",
+                "description": "Surfaces de vente, vitrines et zones d'accueil : la méthode pour une propreté visible dès l'ouverture, expliquée pas à pas.",
+                "href": "/nettoyage-commerces",
+                "icone": "Store"
+              },
+              {
+                "nom": "Parties communes et copropriétés",
+                "description": "Halls, escaliers et couloirs d'immeubles : le déroulé d'un entretien régulier pensé pour les syndics et gestionnaires.",
+                "href": "/nettoyage-copropriete",
+                "icone": "Building"
+              },
+              {
+                "nom": "Lavage de vitres",
+                "description": "Intérieur, extérieur, hauteur accessible : ce que nous nettoyons et le matériel qui garantit un résultat sans traces.",
+                "href": "/nettoyage-vitres",
+                "icone": "GlassWater"
+              },
+              {
+                "nom": "Nettoyage à domicile",
+                "description": "Entretien courant ou grand nettoyage chez les particuliers : la fiche décrit les pièces traitées et les rythmes possibles.",
+                "href": "/nettoyage-domicile",
+                "icone": "Home"
+              },
+              {
+                "nom": "Intervention d'urgence",
+                "description": "Dégât des eaux ou imprévu : notre manière d'assainir vite et proprement, chiffrée au cas par cas.",
+                "href": "/nettoyage-urgence",
+                "icone": "Droplets",
+                "badge": "Sur devis"
+              }
+            ],
+            "cta": {
+              "label": "Vérifier que nous couvrons votre commune",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Bien choisir",
+            "titre": "Quelle prestation pour votre situation ?",
+            "paragraphes": [
+              "Le premier repère, c'est la nature du lieu. Un espace professionnel — bureau, commerce, immeuble — appelle un entretien organisé, souvent régulier et calé en dehors de l'affluence : selon les surfaces, orientez-vous vers le nettoyage de bureaux, l'entretien de commerces ou la prestation copropriété. Un logement de particulier relève, lui, du nettoyage à domicile.",
+              "Le deuxième repère, c'est le besoin ponctuel qui se greffe sur l'entretien courant. Des vitres et devantures à faire briller ? Le lavage de vitres se réserve seul ou s'ajoute à un contrat. Un dégât des eaux ou une remise en état pressante ? L'intervention d'urgence prend le relais, chiffrée à part. Au moindre doute, décrivez-nous les lieux : nous vous orientons sans détour vers la bonne formule."
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Un besoin précis à chiffrer ?",
+            "sousTitre": "Expliquez-nous vos lieux et votre rythme : nous établissons un devis gratuit, sans engagement, rapidement.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "realisations",
+      "label": "Galerie",
+      "meta": {
+        "title": "Nettoyage avant/après à Charleroi : nos chantiers",
+        "description": "Sols dégraissés, parties communes dégagées, cuisines et halls remis à neuf : découvrez en images et en vidéo des chantiers d'AB Pro Service à Charleroi."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Galerie",
+            "titre": "Avant / après : nos chantiers",
+            "intro": "Rien ne parle mieux que le résultat. Voici quelques interventions menées à Charleroi et dans le Hainaut — un sol de parking dégraissé, un couloir d'immeuble dégagé, une cuisine et un hall remis à neuf — présentées en images et en vidéo.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "En images",
+            "titre": "Le résultat parle de lui-même",
+            "intro": "À gauche l'état constaté à notre arrivée, à droite le rendu une fois notre travail terminé.",
+            "avantApres": [
+              {
+                "avant": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/parking-avant.jpg",
+                  "alt": "Emplacement de parking taché de mazout avant nettoyage à Charleroi"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/parking-apres.jpg",
+                  "alt": "Même emplacement de parking dégraissé et propre après intervention"
+                },
+                "legende": "Dégraissage d'un emplacement de parking : la tache de mazout incrustée au sol entièrement retirée."
+              },
+              {
+                "avant": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/couloir-avant.jpg",
+                  "alt": "Couloir d'immeuble encombré de mobilier avant intervention"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/couloir-apres.jpg",
+                  "alt": "Même couloir dégagé et sol lavé après intervention"
+                },
+                "legende": "Partie commune d'un immeuble : couloir débarrassé des encombrants puis sol nettoyé en profondeur."
+              }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "En vidéo",
+            "titre": "Certains chantiers, filmés",
+            "intro": "Pour ces interventions, l'état de départ a été filmé : lancez la vidéo à gauche, comparez avec la photo du résultat à droite.",
+            "avantApres": [
+              {
+                "avantVideo": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-avant.mp4",
+                  "alt": "Vidéo de l'état d'une cuisine avant nettoyage"
+                },
+                "apresImages": [
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres.jpg",
+                    "alt": "La même cuisine propre après intervention"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres-2.jpg",
+                    "alt": "Cuisine propre après intervention, autre angle"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres-3.jpg",
+                    "alt": "Cuisine propre après nettoyage, détail du plan de travail"
+                  }
+                ],
+                "legende": "Cuisine : l'état initial filmé, puis le résultat sous plusieurs angles une fois sols et surfaces remis au propre."
+              },
+              {
+                "avantVideo": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/entree-avant.mp4",
+                  "alt": "Vidéo de l'état d'un hall d'entrée avant nettoyage"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/entree-apres.jpg",
+                  "alt": "Le même hall d'entrée au sol carrelé propre après intervention"
+                },
+                "legende": "Hall d'entrée : le carrelage filmé avant, puis nettoyé et ravivé."
+              }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "Autres chantiers",
+            "titre": "Fins de chantier et remises au propre",
+            "intro": "Un aperçu de nos interventions après travaux, du logement particulier à l'équipement public.",
+            "ratio": "3/4",
+            "groupes": [
+              {
+                "titre": "Station de métro — Charleroi",
+                "description": "Nettoyage de fin de chantier d'une station du métro de Charleroi : quais, sols et mobilier.",
+                "images": [
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-station-1.jpg",
+                    "alt": "Quai de station de métro nettoyé après travaux à Charleroi"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-station-2.jpg",
+                    "alt": "Quai et mobilier de station de métro après nettoyage de fin de chantier"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-station-3.jpg",
+                    "alt": "Espace public d'une station de métro nettoyé"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-station-4.jpg",
+                    "alt": "Sol de quai de métro nettoyé après chantier"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-station-5.jpg",
+                    "alt": "Station de métro de Charleroi après nettoyage"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-station-6.jpg",
+                    "alt": "Quai de métro et équipements nettoyés"
+                  }
+                ]
+              },
+              {
+                "titre": "Parties communes d'une résidence",
+                "description": "Nettoyage après travaux des espaces communs d'une résidence : hall, sols en terrazzo lustrés et grandes baies vitrées.",
+                "images": [
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-residence-1.jpg",
+                    "alt": "Hall d'une résidence au sol en terrazzo poli après nettoyage"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-residence-2.jpg",
+                    "alt": "Salle commune d'une résidence au sol nettoyé et lustré"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-residence-3.jpg",
+                    "alt": "Espace commun d'une résidence après nettoyage de fin de chantier"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-residence-4.jpg",
+                    "alt": "Sol en terrazzo d'une partie commune de résidence nettoyé"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-residence-5.jpg",
+                    "alt": "Palier d'une résidence au sol propre et brillant"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-residence-6.jpg",
+                    "alt": "Grande baie vitrée et sol nettoyé dans les communs d'une résidence"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-residence-7.jpg",
+                    "alt": "Espace partagé d'une résidence remis au propre après travaux"
+                  }
+                ]
+              },
+              {
+                "titre": "Maison après travaux",
+                "description": "Remise au propre complète d'une maison en fin de chantier, pièce par pièce.",
+                "images": [
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-maison-1.jpg",
+                    "alt": "Pièce de maison au parquet neuf nettoyée après travaux"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-maison-2.jpg",
+                    "alt": "Intérieur de maison remis au propre après rénovation"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-maison-3.jpg",
+                    "alt": "Pièce de maison propre après fin de chantier"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-maison-4.jpg",
+                    "alt": "Maison nettoyée après travaux, pièce lumineuse"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un chantier ou un entretien à nous confier ?",
+            "sousTitre": "Décrivez-nous vos lieux : nous établissons un devis gratuit et nous nous chargeons du reste.",
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "zone-intervention",
+      "label": "Zone",
+      "meta": {
+        "title": "Zone d'intervention : Charleroi et 50 km alentour",
+        "description": "De Charleroi à La Louvière, Fleurus, Châtelet ou Gembloux : les secteurs où AB Pro Service assure le nettoyage, jusqu'à 50 km autour du bassin carolo."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Zone d'intervention",
+            "titre": "Nous nous déplaçons jusqu'à 50 km",
+            "intro": "Le bassin de Charleroi est notre terrain de jeu quotidien, mais nous allons plus loin : cœur du Hainaut, franges du Namurois et du Brabant wallon. Où que vous soyez dans ce périmètre, le devis reste gratuit."
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "Les secteurs desservis",
+            "intro": "La liste ci-dessous n'a rien de figé : si votre commune se trouve dans notre rayon de 50 km, nous trouvons une solution. En cas de doute, appelez-nous, on regarde ensemble.",
+            "rayonKm": 50,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.10%2C50.25%2C4.80%2C50.55&layer=mapnik&marker=50.424955%2C4.4407406",
+            "zones": [
+              {
+                "region": "Grand Charleroi",
+                "principale": "Charleroi",
+                "villes": [
+                  "Charleroi",
+                  "Marcinelle",
+                  "Gilly",
+                  "Montignies-sur-Sambre",
+                  "Jumet",
+                  "Gosselies",
+                  "Lodelinsart",
+                  "Marchienne-au-Pont",
+                  "Couillet",
+                  "Mont-sur-Marchienne",
+                  "Ransart",
+                  "Roux",
+                  "Dampremy"
+                ]
+              },
+              {
+                "region": "Cœur du Hainaut",
+                "principale": "La Louvière",
+                "villes": [
+                  "La Louvière",
+                  "Binche",
+                  "Fleurus",
+                  "Châtelet",
+                  "Farciennes",
+                  "Courcelles",
+                  "Fontaine-l'Évêque",
+                  "Anderlues",
+                  "Chapelle-lez-Herlaimont",
+                  "Manage",
+                  "Thuin",
+                  "Pont-à-Celles",
+                  "Ham-sur-Heure"
+                ]
+              },
+              {
+                "region": "Vers le Namurois et le Brabant wallon",
+                "principale": "Sambreville",
+                "villes": [
+                  "Sambreville",
+                  "Fosses-la-Ville",
+                  "Gembloux",
+                  "Sombreffe",
+                  "Walcourt",
+                  "Philippeville",
+                  "Nivelles",
+                  "Genappe"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Là où nous travaillons",
+            "titre": "Un bassin, trois grands secteurs",
+            "paragraphes": [
+              "Charleroi et ses entités concentrent l'essentiel de nos passages : bureaux du centre, commerces des grands axes, immeubles de Gilly, Marcinelle, Montignies ou Jumet. C'est un territoire dense en professionnels, où l'entretien régulier fait toute la différence sur l'image d'un lieu, et où nous calons volontiers nos interventions avant l'ouverture ou après la fermeture.",
+              "Au-delà, le cœur du Hainaut s'ouvre à nous : La Louvière, Binche, Fleurus, Châtelet, Courcelles ou Anderlues. Commerces de proximité, cabinets, petites copropriétés et logements y demandent le même sérieux, avec des déplacements qui restent maîtrisés depuis Charleroi.",
+              "Enfin, vers l'est et le nord, nous poussons jusqu'aux communes du Namurois et du Brabant wallon — Sambreville, Fosses-la-Ville, Gembloux, Nivelles — tant qu'elles restent dans notre rayon de 50 km. Mêmes prestations, même exigence de finition, et toujours un devis gratuit avant de commencer."
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Votre commune est dans le rayon ?",
+            "sousTitre": "Demandez votre devis gratuit : nous nous déplaçons dans tout le bassin.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "entreprise",
+      "label": "L'entreprise",
+      "meta": {
+        "title": "AB Pro Service, votre partenaire propreté à Charleroi",
+        "description": "Société de nettoyage active à Charleroi et en Hainaut, AB Pro Service met le soin du détail et la fiabilité au service des professionnels et des particuliers."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "L'entreprise",
+            "titre": "Une exigence simple : que tout soit net"
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "AB Pro Service · Charleroi & Hainaut",
+            "paragraphes": [
+              "AB Pro Service est une société de nettoyage professionnel active dans le bassin de Charleroi et l'ensemble du Hainaut. Dirigée par Ibtissam Abbadi, l'entreprise accompagne aussi bien les professionnels — bureaux, commerces, syndics et gestionnaires d'immeubles — que les particuliers soucieux d'un intérieur toujours net.",
+              "Notre approche tient en trois mots : fiabilité, régularité et finition. Fiabilité, parce que les horaires convenus sont respectés et qu'un même interlocuteur suit vos lieux dans la durée. Régularité, parce qu'un espace se maintient bien plus facilement qu'il ne se rattrape. Finition, enfin, parce qu'un contrôle systématique en fin d'intervention garantit qu'aucun recoin n'a été oublié.",
+              "Nous choisissons produits et matériel selon chaque surface et privilégions des méthodes respectueuses des lieux comme des personnes qui les occupent. Qu'il s'agisse d'un entretien quotidien de bureaux, d'un passage hebdomadaire en copropriété ou d'une remise en état ponctuelle, chaque mission est traitée avec le même sérieux et un devis transparent, établi à l'avance."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "ligne-horizontale",
+          "content": {
+            "eyebrow": "Nos engagements",
+            "titre": "Ce qui guide chacune de nos interventions",
+            "items": [
+              {
+                "icone": "ShieldCheck",
+                "titre": "Fiabilité",
+                "texte": "Société déclarée, horaires tenus et discrétion sur chaque site, professionnel comme privé."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "Finition",
+                "texte": "Un travail contrôlé en fin de passage : ce qui est commencé est terminé, dans le détail."
+              },
+              {
+                "icone": "Leaf",
+                "titre": "Soin des lieux",
+                "texte": "Des produits et un matériel adaptés à chaque surface, sans agresser les supports."
+              },
+              {
+                "icone": "Handshake",
+                "titre": "Transparence",
+                "texte": "Un devis clair et gratuit, sans engagement caché ni supplément de dernière minute."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Envie de nous confier vos espaces ?",
+            "sousTitre": "Devis gratuit et sans engagement, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Contacter AB Pro Service à Charleroi",
+        "description": "Téléphone, WhatsApp, e-mail ou formulaire : décrivez vos lieux à Charleroi ou en Hainaut et recevez un devis gratuit d'AB Pro Service."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Contact",
+            "titre": "Parlons de vos espaces",
+            "intro": "Bureau, commerce, immeuble ou logement : dites-nous ce que vous souhaitez confier, et nous revenons vers vous rapidement. Le plus simple reste souvent un appel ou un message WhatsApp."
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Demande d'intervention",
+            "intro": "Précisez-nous le type de lieu, la surface approximative, la commune et la fréquence souhaitée : avec cela, nous chiffrons déjà sérieusement.",
+            "mapEmbedUrl": "https://maps.google.com/maps?q=50.424955,4.4407406&z=15&hl=fr&output=embed",
+            "form": true,
+            "formMode": "demande-intervention",
+            "telephone": "+32 492 68 38 23",
+            "whatsapp": "+32 492 68 38 23",
+            "email": "ab.proservice79@gmail.com",
+            "horaires": [
+              {
+                "jour": "Lun – Sam",
+                "heures": "7h – 22h"
+              }
+            ],
+            "services": [
+              "Nettoyage de bureaux",
+              "Commerces et locaux",
+              "Parties communes / copropriété",
+              "Lavage de vitres",
+              "Nettoyage à domicile",
+              "Intervention d'urgence (dégât des eaux)",
+              "Autre / je ne sais pas"
+            ],
+            "villes": [
+              "Charleroi",
+              "Marcinelle",
+              "Gilly",
+              "Montignies-sur-Sambre",
+              "Jumet",
+              "Gosselies",
+              "Châtelet",
+              "Fleurus",
+              "Courcelles",
+              "La Louvière",
+              "Binche",
+              "Sambreville",
+              "Gembloux"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "devis",
+      "label": "Devis gratuit",
+      "navHidden": true,
+      "meta": {
+        "title": "Devis de nettoyage gratuit à Charleroi",
+        "description": "Décrivez vos lieux à Charleroi ou dans le Hainaut et recevez une estimation gratuite et sans engagement pour l'entretien de vos bureaux, commerces ou logement."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Devis gratuit",
+            "titre": "Votre estimation en quelques lignes",
+            "intro": "Pas besoin d'un cahier des charges : dites-nous simplement de quels lieux il s'agit, la surface approximative et le rythme voulu. Nous chiffrons gratuitement, sans engagement, et au besoin après une courte visite.",
+            "ctaSecondaire": {
+              "label": "Voir nos prestations",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Votre demande de devis",
+            "intro": "Type de lieu, surface, commune et fréquence : ces quelques informations nous suffisent pour vous répondre juste et vite.",
+            "form": true,
+            "formMode": "devis",
+            "telephone": "+32 492 68 38 23",
+            "whatsapp": "+32 492 68 38 23",
+            "email": "ab.proservice79@gmail.com",
+            "horaires": [
+              {
+                "jour": "Lun – Sam",
+                "heures": "7h – 22h"
+              }
+            ],
+            "services": [
+              "Nettoyage de bureaux",
+              "Commerces et locaux",
+              "Parties communes / copropriété",
+              "Lavage de vitres",
+              "Nettoyage à domicile",
+              "Intervention d'urgence (dégât des eaux)",
+              "Autre / je ne sais pas"
+            ],
+            "villes": [
+              "Charleroi",
+              "Marcinelle",
+              "Gilly",
+              "Montignies-sur-Sambre",
+              "Jumet",
+              "Gosselies",
+              "Châtelet",
+              "Fleurus",
+              "Courcelles",
+              "La Louvière",
+              "Binche",
+              "Sambreville",
+              "Gembloux"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-bureaux",
+      "label": "Nettoyage de bureaux",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de bureaux à Charleroi",
+        "description": "Entretien régulier et professionnel de vos bureaux à Charleroi et en Hainaut : postes, sanitaires et espaces communs, avant ou après vos heures. Devis gratuit.",
+        "keywords": [
+          "nettoyage de bureaux Charleroi",
+          "entretien de bureaux Hainaut",
+          "société de nettoyage bureaux Charleroi",
+          "nettoyage espaces de travail Charleroi"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage de bureaux",
+        "description": "Entretien professionnel régulier des espaces de travail à Charleroi et alentour.",
+        "serviceType": "Nettoyage de bureaux"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Espaces de travail",
+            "titre": "Nettoyage de bureaux à Charleroi",
+            "intro": "Des bureaux propres, ce sont des collaborateurs mieux accueillis et des visiteurs rassurés. AB Pro Service entretient vos espaces de travail à Charleroi et dans tout le Hainaut, avec un planning calé sur votre activité et un même interlocuteur d'un mois sur l'autre.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage de bureaux"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Un entretien pensé pour votre rythme de travail",
+            "paragraphes": [
+              "Nous prenons en charge l'ensemble des zones d'un environnement de travail : postes et plans de bureau dépoussiérés, sols aspirés et lavés, sanitaires désinfectés et réapprovisionnés, cuisine ou coin café remis d'aplomb, salles de réunion prêtes à recevoir. Les surfaces de contact — poignées, interrupteurs, rampes — font l'objet d'une attention particulière, car ce sont elles qui font vraiment la différence sur l'hygiène d'un lieu partagé.",
+              "La fréquence s'ajuste à votre réalité : un passage quotidien pour les open-spaces très fréquentés, deux à trois fois par semaine pour des équipes plus réduites, ou un rythme hebdomadaire pour de petites structures. Pour ne pas gêner vos réunions ni vos clients, nous intervenons volontiers avant l'arrivée des équipes, en soirée ou le week-end. À chaque passage, un contrôle final valide que tout est en ordre, et nous vous signalons ce qui mériterait, ponctuellement, une remise en état plus poussée."
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Ce que comprend l'entretien de vos bureaux",
+            "items": [
+              {
+                "icone": "Sparkles",
+                "nom": "Surfaces et mobilier",
+                "description": "Bureaux, plans de travail et mobilier dépoussiérés, écrans et surfaces de contact essuyés."
+              },
+              {
+                "icone": "Droplets",
+                "nom": "Sanitaires",
+                "description": "Désinfection complète et réapprovisionnement en consommables à chaque passage."
+              },
+              {
+                "icone": "Wind",
+                "nom": "Sols",
+                "description": "Aspiration des moquettes, lavage des sols durs, avec des produits adaptés au revêtement."
+              },
+              {
+                "icone": "Clock",
+                "nom": "Aux bons horaires",
+                "description": "Selon votre organisation : à l'aube, en fin de journée ou le week-end, jamais pendant l'affluence."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "timeline-verticale",
+          "content": {
+            "titre": "Comment se met en place votre contrat",
+            "items": [
+              {
+                "icone": "ClipboardList",
+                "titre": "Visite des lieux",
+                "texte": "Nous parcourons vos espaces pour évaluer surfaces, fréquences et contraintes horaires."
+              },
+              {
+                "icone": "FileText",
+                "titre": "Devis et planning",
+                "texte": "Vous recevez un devis clair et une proposition de planning, ajustables à volonté."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "Passages réguliers",
+                "texte": "L'équipe intervient au rythme convenu, avec un contrôle qualité à chaque fin de passage."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Pouvez-vous intervenir en dehors des heures d'ouverture ?",
+                "reponse": "Oui, c'est même fréquent. Beaucoup de nos clients préfèrent un passage avant l'arrivée des équipes ou après leur départ : nous calons le créneau qui perturbe le moins votre activité, y compris en soirée ou le samedi."
+              },
+              {
+                "question": "Fournissez-vous le matériel et les consommables ?",
+                "reponse": "Oui, nous venons équipés de notre matériel et de nos produits. Nous pouvons aussi gérer le réapprovisionnement des sanitaires en savon et papier ; il suffit de le prévoir au devis."
+              },
+              {
+                "question": "Peut-on ajuster la fréquence au fil des mois ?",
+                "reponse": "Bien sûr. Le planning n'est jamais figé : on l'augmente pendant une période chargée, on l'allège plus tard. Un simple échange suffit à faire évoluer le contrat."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations souvent associées",
+            "items": [
+              {
+                "nom": "Lavage de vitres",
+                "description": "Baies et cloisons vitrées de vos bureaux nettoyées sans traces, en complément de l'entretien courant.",
+                "href": "/nettoyage-vitres",
+                "icone": "GlassWater"
+              },
+              {
+                "nom": "Parties communes et copropriétés",
+                "description": "Votre bureau partage un hall ou des couloirs d'immeuble ? Nous entretenons aussi ces espaces.",
+                "href": "/nettoyage-copropriete",
+                "icone": "Building"
+              },
+              {
+                "nom": "Commerces et locaux",
+                "description": "Un espace d'accueil ou une surface recevant du public ? Découvrez notre prestation commerces.",
+                "href": "/nettoyage-commerces",
+                "icone": "Store"
+              }
+            ],
+            "cta": {
+              "label": "Vos bureaux sont-ils dans notre zone ? Vérifier",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Un devis pour l'entretien de vos bureaux à Charleroi ?",
+            "sousTitre": "Devis gratuit et sans engagement. Réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-commerces",
+      "label": "Commerces et locaux",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de commerces et locaux à Charleroi",
+        "description": "Propreté impeccable de vos surfaces de vente et locaux commerciaux à Charleroi et en Hainaut, avant ou après ouverture. Entretien régulier, devis gratuit.",
+        "keywords": [
+          "nettoyage commerce Charleroi",
+          "nettoyage local commercial Charleroi",
+          "entretien magasin Hainaut",
+          "nettoyage vitrine Charleroi"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage de commerces et locaux",
+        "description": "Entretien professionnel des commerces et locaux recevant du public à Charleroi.",
+        "serviceType": "Nettoyage de locaux commerciaux"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Surfaces recevant du public",
+            "titre": "Nettoyage de commerces et locaux à Charleroi",
+            "intro": "Dans un commerce, la propreté se voit dès le seuil et pèse sur la décision d'achat. AB Pro Service maintient vos surfaces de vente, salles et espaces d'accueil impeccables à Charleroi et dans le Hainaut, avec des passages calés avant l'ouverture ou après la fermeture.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Commerces et locaux"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Ce que nous prenons en charge",
+            "items": [
+              {
+                "icone": "Store",
+                "nom": "Surface de vente",
+                "description": "Sols, rayonnages accessibles et zones de passage nettoyés pour un accueil irréprochable."
+              },
+              {
+                "icone": "GlassWater",
+                "nom": "Vitrines et accueil",
+                "description": "Comptoirs, vitrines intérieures et espaces d'accueil dégagés et sans traces."
+              },
+              {
+                "icone": "Droplets",
+                "nom": "Sanitaires et coin cuisine",
+                "description": "Désinfection des sanitaires clients et personnel, entretien du coin cuisine."
+              },
+              {
+                "icone": "Clock",
+                "nom": "Hors affluence",
+                "description": "Passages avant l'ouverture ou après la fermeture, pour ne jamais gêner la clientèle."
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Une propreté visible qui sert votre image",
+            "paragraphes": [
+              "Un local commercial se salit vite et de façon très visible : traces au sol dans les zones de passage, comptoirs marqués, vitrines piquées de traces de doigts, sanitaires très sollicités. Nous adaptons l'entretien à votre flux de clientèle, avec une attention forte sur tout ce qui se remarque au premier coup d'œil, parce que c'est précisément ce qui construit — ou abîme — la confiance de vos clients.",
+              "Selon le commerce, nous intervenons chaque jour, plusieurs fois par semaine ou ponctuellement pour une grande remise en propre avant un temps fort commercial. Les produits sont choisis pour respecter vos sols et surfaces, du carrelage à la résine, et nous restons discrets sur la présentation de vos produits. L'objectif est simple : que vos portes ouvrent chaque matin sur un espace net, sans que vous ayez à y penser."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Intervenez-vous avant l'ouverture de mon commerce ?",
+                "reponse": "Oui, c'est l'organisation la plus courante. Nous passons tôt le matin pour que tout soit net à l'ouverture, ou en soirée après la fermeture selon ce qui vous arrange le mieux."
+              },
+              {
+                "question": "Pouvez-vous gérer une remise en propre avant un événement commercial ?",
+                "reponse": "Tout à fait. Avant les soldes, une réouverture ou une opération spéciale, nous programmons un grand nettoyage ponctuel qui s'ajoute, ou non, à un entretien régulier."
+              },
+              {
+                "question": "Adaptez-vous les produits à mes sols ?",
+                "reponse": "Oui, systématiquement. Carrelage, résine, parquet stratifié ou sol souple : nous utilisons des produits adaptés au revêtement pour nettoyer efficacement sans l'abîmer."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Commerces suivis à Charleroi et jusqu'à 50 km",
+            "intro": "Grand Charleroi, cœur du Hainaut et communes limitrophes.",
+            "rayonKm": 50,
+            "zones": [
+              {
+                "region": "Grand Charleroi",
+                "principale": "Charleroi",
+                "villes": [
+                  "Charleroi",
+                  "Gilly",
+                  "Marcinelle",
+                  "Jumet",
+                  "Gosselies",
+                  "Montignies-sur-Sambre",
+                  "Marchienne-au-Pont"
+                ]
+              },
+              {
+                "region": "Cœur du Hainaut et alentours",
+                "principale": "La Louvière",
+                "villes": [
+                  "La Louvière",
+                  "Châtelet",
+                  "Fleurus",
+                  "Courcelles",
+                  "Binche",
+                  "Sambreville",
+                  "Gembloux"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations souvent associées",
+            "items": [
+              {
+                "nom": "Lavage de vitres",
+                "description": "Une vitrine qui brille attire l'œil : ajoutez le lavage régulier de vos surfaces vitrées.",
+                "href": "/nettoyage-vitres",
+                "icone": "GlassWater"
+              },
+              {
+                "nom": "Nettoyage de bureaux",
+                "description": "Une arrière-boutique ou des bureaux attenants ? Nous les entretenons dans la même visite.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              },
+              {
+                "nom": "Intervention d'urgence",
+                "description": "Dégât des eaux ou incident dans votre local ? Nous intervenons vite pour limiter la casse.",
+                "href": "/nettoyage-urgence",
+                "icone": "Droplets"
+              }
+            ],
+            "cta": {
+              "label": "Votre commerce est-il dans notre zone ? Vérifier",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Un devis pour l'entretien de votre commerce à Charleroi ?",
+            "sousTitre": "Devis gratuit et sans engagement. Réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-copropriete",
+      "label": "Copropriétés",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de copropriétés à Charleroi",
+        "description": "Entretien des parties communes d'immeubles et de résidences à Charleroi et en Hainaut : halls, escaliers et couloirs suivis avec régularité. Devis pour syndics.",
+        "keywords": [
+          "nettoyage copropriété Charleroi",
+          "nettoyage parties communes Charleroi",
+          "entretien immeuble Hainaut",
+          "nettoyage hall d'immeuble Charleroi"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage de parties communes et copropriétés",
+        "description": "Entretien régulier des parties communes d'immeubles et de résidences à Charleroi.",
+        "serviceType": "Nettoyage de parties communes"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Immeubles, résidences et copropriétés",
+            "titre": "Nettoyage de copropriétés à Charleroi",
+            "intro": "Un hall soigné et des communs entretenus donnent le ton d'un immeuble et rassurent occupants comme candidats à la location. AB Pro Service assure l'entretien régulier des parties communes pour les syndics, gestionnaires et propriétaires à Charleroi et dans le Hainaut.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Copropriétés"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Des communs qui restent propres toute l'année",
+            "paragraphes": [
+              "L'entretien d'une copropriété couvre tout ce que traversent les occupants et leurs visiteurs : hall d'entrée, boîtes aux lettres, cage d'escalier et rampes, paliers, couloirs, cabine et boutons d'ascenseur, portes vitrées et local poubelles. Ce sont des zones très fréquentées, où la poussière, les traces et les salissures reviennent vite : seule une intervention régulière permet de garder un immeuble présentable en continu.",
+              "Nous établissons avec le syndic ou le gestionnaire une fréquence adaptée à la taille de l'immeuble et au nombre de lots — souvent hebdomadaire, parfois bihebdomadaire pour les grandes résidences. Le passage inclut le lavage des sols, le dépoussiérage des surfaces, l'entretien des vitrages du hall et la sortie ou la rentrée des conteneurs si c'est convenu. Un point de contact unique facilite le suivi, et nous signalons toute dégradation constatée sur les communs, pour que rien ne traîne."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "ligne-horizontale",
+          "content": {
+            "titre": "Un suivi clair pour le syndic",
+            "items": [
+              {
+                "icone": "ClipboardList",
+                "titre": "État des communs",
+                "texte": "Nous visitons l'immeuble et recensons les zones à entretenir et leur fréquence idéale."
+              },
+              {
+                "icone": "FileText",
+                "titre": "Proposition chiffrée",
+                "texte": "Un devis lisible, adapté au nombre de lots, prêt à présenter en assemblée si besoin."
+              },
+              {
+                "icone": "CalendarCheck",
+                "titre": "Passages planifiés",
+                "texte": "Des interventions au jour convenu, avec un interlocuteur unique pour le suivi."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Travaillez-vous avec les syndics et gestionnaires ?",
+                "reponse": "Oui, c'est le cœur de cette prestation. Nous nous adressons aussi bien aux syndics professionnels qu'aux syndics bénévoles et aux propriétaires d'immeubles de rapport, avec un devis clair, présentable en assemblée générale."
+              },
+              {
+                "question": "Gérez-vous la sortie et la rentrée des conteneurs ?",
+                "reponse": "Si vous le souhaitez, oui. La gestion des poubelles au jour de collecte peut être intégrée au contrat d'entretien des communs ; il suffit de le préciser au moment du devis."
+              },
+              {
+                "question": "À quelle fréquence faut-il entretenir un immeuble ?",
+                "reponse": "Cela dépend du nombre de lots et du passage. Un petit immeuble se satisfait souvent d'un passage hebdomadaire, tandis qu'une grande résidence gagne à un rythme plus soutenu. Nous vous conseillons après une visite."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations souvent associées",
+            "items": [
+              {
+                "nom": "Lavage de vitres",
+                "description": "Portes et parois vitrées du hall nettoyées sans traces, en complément de l'entretien des communs.",
+                "href": "/nettoyage-vitres",
+                "icone": "GlassWater"
+              },
+              {
+                "nom": "Nettoyage à domicile",
+                "description": "Un occupant souhaite aussi l'entretien de son logement ? Nous proposons la prestation à domicile.",
+                "href": "/nettoyage-domicile",
+                "icone": "Home"
+              },
+              {
+                "nom": "Intervention d'urgence",
+                "description": "Dégât des eaux dans les communs ou un appartement ? Nous intervenons rapidement.",
+                "href": "/nettoyage-urgence",
+                "icone": "Droplets"
+              }
+            ],
+            "cta": {
+              "label": "Votre immeuble est-il dans notre zone ? Vérifier",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Un devis pour les communs de votre immeuble ?",
+            "sousTitre": "Devis gratuit et sans engagement, adapté au nombre de lots.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Lavage de vitres",
+      "navHidden": true,
+      "meta": {
+        "title": "Lavage de vitres à Charleroi et en Hainaut",
+        "description": "Vitres, baies et surfaces vitrées nettoyées à l'intérieur comme à l'extérieur, sans traces ni coulures, à Charleroi et dans le Hainaut. Devis gratuit.",
+        "keywords": [
+          "lavage de vitres Charleroi",
+          "nettoyage vitres Hainaut",
+          "laveur de vitres Charleroi",
+          "nettoyage vitrine commerce Charleroi"
+        ]
+      },
+      "service": {
+        "name": "Lavage de vitres",
+        "description": "Nettoyage des vitres et surfaces vitrées, intérieur et extérieur, à Charleroi.",
+        "serviceType": "Lavage de vitres"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Surfaces vitrées",
+            "titre": "Lavage de vitres à Charleroi",
+            "intro": "Des vitres nettes changent tout : elles laissent entrer la lumière et donnent une impression immédiate de soin. AB Pro Service lave vos vitres, baies et surfaces vitrées à l'intérieur comme à l'extérieur, chez les professionnels comme chez les particuliers, à Charleroi et dans le Hainaut.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Lavage de vitres"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Ce que nous nettoyons",
+            "items": [
+              {
+                "icone": "GlassWater",
+                "nom": "Vitres et baies",
+                "description": "Fenêtres, baies vitrées et parois nettoyées des deux côtés, sans traces ni coulures."
+              },
+              {
+                "icone": "Store",
+                "nom": "Vitrines et devantures",
+                "description": "Vitrines de commerce et devantures dégagées pour attirer le regard des passants."
+              },
+              {
+                "icone": "Building",
+                "nom": "Vitrages des communs",
+                "description": "Portes et parois vitrées des halls d'immeubles et espaces d'accueil."
+              },
+              {
+                "icone": "Sparkles",
+                "nom": "Encadrements",
+                "description": "Châssis, rebords et encadrements essuyés pour une finition complète et nette."
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Un résultat sans traces, à chaque passage",
+            "paragraphes": [
+              "Le lavage de vitres ne s'improvise pas : la qualité tient au matériel et à la méthode. Nous travaillons avec un équipement professionnel — raclettes, mouilleurs et eau maîtrisée — pour obtenir des surfaces limpides sans auréoles, y compris sur les grandes baies et les vitrages difficiles d'accès depuis l'intérieur. Les encadrements et rebords sont essuyés dans la foulée, car une vitre propre encadrée de poussière ne rend jamais vraiment.",
+              "Cette prestation se réserve seule, pour un coup d'éclat ponctuel, ou s'ajoute à un entretien régulier de bureaux, de commerce ou de copropriété. Pour les professionnels, un passage récurrent garde les vitrines et façades accessibles toujours nettes ; pour les particuliers, un rendez-vous saisonnier suffit souvent à retrouver de la lumière. Nous convenons d'une hauteur d'intervention réaliste et sécurisée, et vous disons franchement ce qui relève, ou non, de notre champ d'action."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Lavez-vous les vitres à l'extérieur aussi ?",
+                "reponse": "Oui, intérieur et extérieur, dès lors que l'accès est sûr depuis le sol ou une hauteur raisonnable. Pour les vitrages en très grande hauteur nécessitant un matériel spécifique, nous vous le disons d'emblée."
+              },
+              {
+                "question": "Le lavage de vitres peut-il s'ajouter à un contrat d'entretien ?",
+                "reponse": "Bien sûr. C'est même très courant : nous intégrons un passage vitres régulier à un contrat de bureaux, de commerce ou de copropriété, à la fréquence qui vous convient."
+              },
+              {
+                "question": "À quelle fréquence refaire ses vitres ?",
+                "reponse": "Pour une vitrine ou une façade exposée à la rue, un rythme mensuel garde l'éclat. Pour un logement, deux à quatre fois par an suffisent généralement, selon l'exposition et l'environnement."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations souvent associées",
+            "items": [
+              {
+                "nom": "Nettoyage de bureaux",
+                "description": "Associez le lavage des baies à l'entretien régulier de vos espaces de travail.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              },
+              {
+                "nom": "Commerces et locaux",
+                "description": "Vitrine impeccable et intérieur soigné : la combinaison qui sert votre image de commerce.",
+                "href": "/nettoyage-commerces",
+                "icone": "Store"
+              },
+              {
+                "nom": "Nettoyage à domicile",
+                "description": "Chez vous aussi, des vitres nettes changent l'ambiance : ajoutez-les à un entretien du logement.",
+                "href": "/nettoyage-domicile",
+                "icone": "Home"
+              }
+            ],
+            "cta": {
+              "label": "Êtes-vous dans notre zone d'intervention ? Vérifier",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Envie de vitres impeccables à Charleroi ?",
+            "sousTitre": "Devis gratuit et sans engagement. Réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-domicile",
+      "label": "Nettoyage à domicile",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage à domicile à Charleroi",
+        "description": "Entretien soigné de votre intérieur à Charleroi et en Hainaut : ménage courant, grand nettoyage ou remise au propre ponctuelle. Devis gratuit et sans engagement.",
+        "keywords": [
+          "nettoyage à domicile Charleroi",
+          "aide ménagère Charleroi",
+          "nettoyage maison Hainaut",
+          "grand nettoyage Charleroi"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage à domicile",
+        "description": "Entretien courant et grand nettoyage du logement des particuliers à Charleroi.",
+        "serviceType": "Nettoyage à domicile"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Chez les particuliers",
+            "titre": "Nettoyage à domicile à Charleroi",
+            "intro": "Rentrer dans un intérieur net, sans y avoir passé son week-end : c'est ce que nous proposons aux particuliers de Charleroi et du Hainaut. Entretien courant, grand nettoyage de printemps ou remise au propre après un événement, nous adaptons la prestation à votre logement et à votre rythme.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage à domicile"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Votre intérieur entretenu comme il le mérite",
+            "paragraphes": [
+              "À domicile, nous couvrons l'ensemble des pièces de vie : dépoussiérage des surfaces et meubles, aspiration et lavage des sols, cuisine dégraissée et plans nettoyés, salle de bains et sanitaires désinfectés et détartrés. Le résultat, ce n'est pas seulement un logement propre, c'est du temps et de la charge mentale que vous récupérez pour ce qui compte vraiment.",
+              "Nous proposons un entretien régulier — hebdomadaire, tous les quinze jours ou mensuel — pour maintenir votre intérieur sans effort, mais aussi des interventions uniques : un grand nettoyage saisonnier, une remise au propre avant ou après une réception, ou un coup de frais avant l'arrivée d'invités. Vous choisissez si nous venons avec notre matériel et nos produits ou si nous utilisons les vôtres. Dans tous les cas, discrétion et respect de votre intérieur sont la règle, et le devis reste gratuit et clair."
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Ce que comprend un passage",
+            "items": [
+              {
+                "icone": "Sparkles",
+                "nom": "Pièces de vie",
+                "description": "Dépoussiérage, sols aspirés et lavés, surfaces essuyées dans le salon et les chambres."
+              },
+              {
+                "icone": "Droplets",
+                "nom": "Cuisine et sanitaires",
+                "description": "Plans dégraissés, éviers, salle de bains et WC désinfectés et détartrés."
+              },
+              {
+                "icone": "CalendarCheck",
+                "nom": "À votre rythme",
+                "description": "Passage régulier ou intervention unique, selon vos besoins et votre disponibilité."
+              },
+              {
+                "icone": "ShieldCheck",
+                "nom": "En confiance",
+                "description": "Une intervenante discrète et soigneuse, attentive à votre intérieur comme à vos habitudes."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Puis-je réserver un seul grand nettoyage, sans abonnement ?",
+                "reponse": "Oui. Beaucoup de clients nous appellent pour une intervention unique : un grand nettoyage de printemps, une remise au propre avant une réception ou après des invités. Aucun engagement dans la durée n'est requis."
+              },
+              {
+                "question": "Dois-je fournir les produits et le matériel ?",
+                "reponse": "Comme vous préférez. Nous pouvons arriver entièrement équipés, ou utiliser vos produits si vous y tenez. Nous adaptons dans tous les cas les produits aux surfaces de votre logement."
+              },
+              {
+                "question": "Faut-il être présent pendant l'intervention ?",
+                "reponse": "Ce n'est pas obligatoire. Beaucoup de clients nous confient un accès convenu et retrouvent leur logement net à leur retour. Un message de notre part vous prévient dès que tout est bouclé."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations souvent associées",
+            "items": [
+              {
+                "nom": "Lavage de vitres",
+                "description": "Ajoutez le nettoyage des vitres de votre logement pour retrouver pleinement la lumière.",
+                "href": "/nettoyage-vitres",
+                "icone": "GlassWater"
+              },
+              {
+                "nom": "Intervention d'urgence",
+                "description": "Un dégât des eaux chez vous ? Nous intervenons rapidement pour assainir et remettre en état.",
+                "href": "/nettoyage-urgence",
+                "icone": "Droplets"
+              },
+              {
+                "nom": "Parties communes et copropriétés",
+                "description": "Vous gérez aussi un immeuble ? Découvrez notre entretien des parties communes.",
+                "href": "/nettoyage-copropriete",
+                "icone": "Building"
+              }
+            ],
+            "cta": {
+              "label": "Votre commune est-elle desservie ? Vérifier",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Un devis pour l'entretien de votre logement ?",
+            "sousTitre": "Devis gratuit et sans engagement. Réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-urgence",
+      "label": "Intervention d'urgence",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage après dégât des eaux à Charleroi",
+        "description": "Dégât des eaux ou situation imprévue à Charleroi et en Hainaut : AB Pro Service se mobilise vite pour assainir, assécher les surfaces et remettre les lieux en état.",
+        "keywords": [
+          "nettoyage après dégât des eaux Charleroi",
+          "intervention nettoyage urgence Charleroi",
+          "remise en état après sinistre Hainaut",
+          "nettoyage d'urgence Charleroi"
+        ]
+      },
+      "service": {
+        "name": "Intervention d'urgence",
+        "description": "Nettoyage et remise en état après dégât des eaux ou imprévu à Charleroi, sur devis.",
+        "serviceType": "Nettoyage d'urgence après sinistre",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Dégâts des eaux et imprévus",
+            "titre": "Intervention d'urgence à Charleroi",
+            "intro": "Un dégât des eaux, une fuite ou un incident laissent rarement le temps d'attendre. AB Pro Service se mobilise rapidement sur Charleroi et le Hainaut pour assainir les surfaces, évacuer l'eau accessible et remettre les lieux en état. Chaque situation étant particulière, cette prestation est chiffrée sur devis.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Intervention d'urgence"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Nous appeler maintenant",
+              "href": "tel:+32492683823"
+            },
+            "ctaSecondaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Réagir vite pour limiter les dégâts",
+            "paragraphes": [
+              "Après un dégât des eaux, chaque heure compte : plus l'humidité stagne, plus les dommages s'étendent aux sols, aux plinthes et aux revêtements. Dès votre appel, nous organisons une intervention rapide pour évacuer l'eau accessible, nettoyer et assainir les surfaces touchées, retirer les résidus et préparer les lieux à leur remise en état. Nous traitons aussi les nettoyages consécutifs à d'autres imprévus, quand une remise au propre pressante s'impose.",
+              "Notre rôle est le nettoyage et l'assainissement : nous ne réalisons pas les travaux de plomberie ni la recherche de fuite, mais nous intervenons en complément pour que les lieux redeviennent sains et présentables une fois la cause traitée. Parce qu'aucune urgence ne ressemble à une autre — surface touchée, nature des dégâts, accessibilité —, nous établissons un devis clair adapté à la situation, en toute transparence sur ce qui relève, ou non, de notre intervention."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "timeline-verticale",
+          "content": {
+            "titre": "Notre intervention, étape par étape",
+            "items": [
+              {
+                "icone": "PhoneCall",
+                "titre": "Votre appel",
+                "texte": "Vous nous décrivez la situation et l'ampleur du dégât ; nous organisons une venue rapide."
+              },
+              {
+                "icone": "Droplets",
+                "titre": "Assainissement",
+                "texte": "Nous évacuons l'eau accessible, nettoyons et désinfectons les surfaces touchées."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "Remise en état",
+                "texte": "Nous retirons les résidus et rendons les lieux sains, prêts pour la suite des réparations."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Intervenez-vous rapidement après un dégât des eaux ?",
+                "reponse": "Nous faisons au mieux pour nous mobiliser dans les meilleurs délais après votre appel. Le plus efficace est de nous joindre par téléphone : nous évaluons l'urgence et nous organisons aussitôt."
+              },
+              {
+                "question": "Réparez-vous la fuite à l'origine du dégât ?",
+                "reponse": "Non, la plomberie et la recherche de fuite relèvent d'un autre corps de métier. Notre intervention porte sur le nettoyage, l'assainissement et la remise au propre des lieux, en complément des réparations."
+              },
+              {
+                "question": "Pourquoi cette prestation est-elle uniquement sur devis ?",
+                "reponse": "Parce que deux sinistres ne se ressemblent jamais : la surface touchée, la nature des dégâts et l'accessibilité changent tout. Un chiffrage au cas par cas est le seul moyen d'être juste et transparent."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un dégât des eaux à traiter sans attendre ?",
+            "sousTitre": "Appelez-nous : nous évaluons la situation et nous organisons une intervention rapide.",
+            "ctaPrimaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            },
+            "ctaSecondaire": {
+              "label": "Écrire sur WhatsApp",
+              "href": "https://wa.me/32492683823"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

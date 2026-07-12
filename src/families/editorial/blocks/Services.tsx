@@ -128,7 +128,12 @@ export function Services({
 
         {c.cta && (
           <div className="mt-12">
-            <Button href={withBase(basePath, c.cta.href)} variant="outline" size="lg">
+            <Button
+              href={withBase(basePath, c.cta.href)}
+              variant="outline"
+              size="lg"
+              className="max-w-full whitespace-normal text-center"
+            >
               {c.cta.label}
             </Button>
           </div>

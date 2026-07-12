@@ -283,7 +283,11 @@ export function Services({
       {c.cta && (
         <Reveal>
           <div className="mt-10 text-center">
-            <Button href={withBase(basePath, c.cta.href)} size="lg">
+            <Button
+              href={withBase(basePath, c.cta.href)}
+              size="lg"
+              className="max-w-full whitespace-normal text-center"
+            >
               {c.cta.label}
             </Button>
           </div>

@@ -5,6 +5,7 @@
 // amont du rendu sans accès au système de fichiers.
 
 export const SITE_SLUGS: string[] = [
+  "ab-pro-service",
   "adelnet",
   "atelier-douceur",
   "casa-clean-provence",

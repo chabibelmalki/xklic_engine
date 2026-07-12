@@ -16,6 +16,7 @@ export function localeDir(locale: string): "rtl" | "ltr" {
 /** Libellé natif d'une langue, pour le sélecteur. */
 const LOCALE_LABELS: Record<string, string> = {
   fr: "Français",
+  nl: "Nederlands",
   en: "English",
   ar: "العربية",
   tr: "Türkçe",
@@ -37,6 +38,7 @@ export function localeLabel(locale: string): string {
  */
 const LOCALE_COUNTRY: Record<string, string> = {
   fr: "fr",
+  nl: "nl",
   en: "us",
   ar: "sa",
   tr: "tr",

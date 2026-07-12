@@ -8,6 +8,7 @@ import type { BlockComponentProps } from "./types";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
+import { ImageCycle } from "@/components/ui/ImageCycle";
 import { localeDir } from "@/lib/i18n";
 
 function ratioClass(ratio?: string, fallback = "aspect-[4/3]") {
@@ -33,6 +34,7 @@ export function Galerie({ block, tone, locale, strings }: BlockComponentProps<Ga
   const c = block.content;
   const variant = (block.variant as GalerieVariant | "montage" | "masonry") ?? "grille";
   const images: GalerieImageItem[] = c.images ?? [];
+  const groupes = c.groupes ?? [];
   const lightboxOn = c.lightbox !== false && variant !== "avant-apres" && images.length > 0;
   const pastille = c.pastille ?? (variant === "montage" ? strings.galerie.beforeAfter : undefined);
   const isRtl = localeDir(locale) === "rtl";
@@ -109,23 +111,62 @@ export function Galerie({ block, tone, locale, strings }: BlockComponentProps<Ga
             <Reveal key={i} delay={(i % 2) * 0.05}>
               <figure className="overflow-hidden rounded-theme border border-border bg-surface shadow-sm">
                 <div className="grid grid-cols-2">
-                  {(["avant", "apres"] as const).map((k) => (
-                    <div key={k} className="relative aspect-square">
-                      <Image
-                        src={pair[k].url}
-                        alt={pair[k].alt ?? `${k} — ${pair.legende ?? ""}`}
-                        fill
-                        sizes="(max-width: 768px) 50vw, 25vw"
-                        className="object-cover"
-                      />
-                      <span className="absolute start-2 top-2 rounded-full bg-ink/75 px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-white">
-                        {k === "avant" ? strings.galerie.before : strings.galerie.after}
-                      </span>
-                    </div>
-                  ))}
+                  {(["avant", "apres"] as const).map((k) => {
+                    const video = k === "avant" ? pair.avantVideo : pair.apresVideo;
+                    const cycle = (k === "avant" ? pair.avantImages : pair.apresImages) ?? [];
+                    const img = pair[k];
+                    return (
+                      <div key={k} className="relative aspect-square bg-ink/5">
+                        {video ? (
+                          <video
+                            src={video.url}
+                            poster={video.poster}
+                            controls
+                            playsInline
+                            preload="metadata"
+                            aria-label={video.alt ?? `${k} — ${pair.legende ?? ""}`}
+                            className="absolute inset-0 h-full w-full object-cover"
+                          />
+                        ) : cycle.length > 0 ? (
+                          <ImageCycle fill images={cycle} sizes="(max-width: 768px) 50vw, 25vw" />
+                        ) : img ? (
+                          <Image
+                            src={img.url}
+                            alt={img.alt ?? `${k} — ${pair.legende ?? ""}`}
+                            fill
+                            sizes="(max-width: 768px) 50vw, 25vw"
+                            className="object-cover"
+                          />
+                        ) : null}
+                        <span className="pointer-events-none absolute start-2 top-2 z-10 rounded-full bg-ink/75 px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-white">
+                          {k === "avant" ? strings.galerie.before : strings.galerie.after}
+                        </span>
+                      </div>
+                    );
+                  })}
                 </div>
                 {pair.legende && (
                   <figcaption className="px-4 py-3 text-sm text-muted">{pair.legende}</figcaption>
+                )}
+              </figure>
+            </Reveal>
+          ))}
+        </div>
+      ) : groupes.length > 0 ? (
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {groupes.map((g, i) => (
+            <Reveal key={i} delay={(i % 3) * 0.05}>
+              <figure className="group overflow-hidden rounded-theme border border-border bg-surface shadow-sm">
+                <ImageCycle
+                  images={g.images}
+                  ratioClassName={tileRatio}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+                {(g.titre || g.description) && (
+                  <figcaption className="p-4">
+                    {g.titre && <p className="font-medium text-ink">{g.titre}</p>}
+                    {g.description && <p className="mt-1 text-sm text-muted">{g.description}</p>}
+                  </figcaption>
                 )}
               </figure>
             </Reveal>

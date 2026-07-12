@@ -1,0 +1,1857 @@
+{
+  "slug": "ab-pro-service",
+  "i18n": {
+    "default": "fr",
+    "languages": ["fr", "nl"]
+  },
+  "branding": {
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/logo-11c47356.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/logo-11c47356.png",
+    "logoAlt": "AB Pro Service — professionele schoonmaak in Charleroi",
+    "tagline": "Professionele schoonmaak · Charleroi & Henegouwen",
+    "colors": {
+      "brand": "#1E5BA6",
+      "accent": "#3E9B45",
+      "neutral": "cool"
+    }
+  },
+  "entreprise": {
+    "nom": "AB Pro Service",
+    "statut": "SRL",
+    "siret": "BE 1013.025.834",
+    "ape": "81.210",
+    "apeLabel": "Gewone reiniging van gebouwen",
+    "tva": {
+      "regime": "reel",
+      "numero": "BE 1013.025.834"
+    },
+    "dirigeant": "Ibtissam Abbadi",
+    "siege": "Rue du Bon Pasteur 54/A001, 1140 Evere"
+  },
+  "seo": {
+    "schemaType": "CleaningService",
+    "ville": "Charleroi"
+  },
+  "meta": {
+    "title": "Professionele schoonmaak in Charleroi en 50 km",
+    "description": "Schoonmaakbedrijf in Charleroi: kantoren, winkels, mede-eigendommen, ramen en particulieren. Verzorgd werk, gratis offerte, actief in heel Henegouwen.",
+    "keywords": [
+      "schoonmaak Charleroi",
+      "schoonmaakbedrijf Charleroi",
+      "kantoorschoonmaak Charleroi",
+      "schoonmaak mede-eigendom Charleroi",
+      "ramen wassen Charleroi",
+      "schoonmaakbedrijf Henegouwen"
+    ]
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Home",
+      "blocks": [
+        {
+          "type": "hero",
+          "content": {
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/hero.png",
+              "alt": "Licht modern kantoor, stadskyline en schoonmaakmateriaal, in de blauw-groene kleuren van AB Pro Service"
+            },
+            "eyebrow": "Professionele schoonmaak · Charleroi en 50 km rondom",
+            "titre": "Onberispelijke ruimtes,",
+            "titreAccent": "zonder eraan te denken",
+            "accroche": "AB Pro Service neemt de netheid van uw kantoren, winkels, gebouwen en interieurs in Charleroi en heel Henegouwen voor zijn rekening. Een aangegeven ploeg, materiaal afgestemd op elk oppervlak en één vast aanspreekpunt dat uw locaties kent: u ziet het resultaat, wij regelen de rest.",
+            "trust": [
+              {
+                "icone": "ShieldCheck",
+                "label": "Vennootschap ingeschreven bij de KBO"
+              },
+              {
+                "icone": "Sparkles",
+                "label": "Verzorgde afwerking, bij elke beurt gecontroleerd"
+              },
+              {
+                "icone": "CalendarCheck",
+                "label": "Vast contract of eenmalige interventie"
+              },
+              {
+                "icone": "BadgeCheck",
+                "label": "Gratis offerte, vrijblijvend"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Vraag een gratis offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Ontdek onze diensten",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Onze werkdomeinen",
+            "titre": "Eén dienstverlener voor al uw netheid",
+            "intro": "Van kantoor tot inkomhal, van winkeletalage tot particuliere woning: wij verzorgen zowel het regelmatige onderhoud als eenmalige opknapbeurten. Elke dienst opent zijn eigen detailpagina.",
+            "items": [
+              {
+                "nom": "Kantoorschoonmaak",
+                "description": "Regelmatig en professioneel onderhoud van werkplekken: bureaus, sanitair, vergaderzalen en gemeenschappelijke ruimtes.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              },
+              {
+                "nom": "Winkels en panden",
+                "description": "Een onberispelijke netheid, elke dag, voor uw verkoopruimtes, zalen en onthaalruimtes, voor of na openingstijd.",
+                "href": "/nettoyage-commerces",
+                "icone": "Store"
+              },
+              {
+                "nom": "Gemeenschappelijke delen en mede-eigendommen",
+                "description": "Inkomhallen, traphallen, liften en gangen van gebouwen en residenties, met regelmaat onderhouden voor syndici en beheerders.",
+                "href": "/nettoyage-copropriete",
+                "icone": "Building"
+              },
+              {
+                "nom": "Ramen wassen",
+                "description": "Ramen, raampartijen en glasoppervlakken binnen en buiten gereinigd, zonder strepen of druipsporen.",
+                "href": "/nettoyage-vitres",
+                "icone": "GlassWater"
+              },
+              {
+                "nom": "Schoonmaak aan huis",
+                "description": "Een zorgvuldig onderhouden interieur bij particulieren: gewoon onderhoud, grote schoonmaak of opfrissing na een gebeurtenis.",
+                "href": "/nettoyage-domicile",
+                "icone": "Home"
+              },
+              {
+                "nom": "Noodinterventie",
+                "description": "Waterschade of onvoorziene situatie: wij komen snel ter plaatse om te saneren en de ruimtes te herstellen.",
+                "href": "/nettoyage-urgence",
+                "icone": "Droplets",
+                "badge": "Op offerte"
+              }
+            ],
+            "cta": {
+              "label": "Bekijk het werkgebied rond Charleroi",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Waarom AB Pro Service",
+            "titre": "Netheid serieus genomen,",
+            "titreAccent": "van het eerste tot het laatste detail",
+            "paragraphes": [
+              "Een net bedrijf wekt vertrouwen, een verzorgde woning voelt beter aan: netheid is nooit een detail. AB Pro Service is uit die overtuiging ontstaan, met de ambitie om professionals én particulieren uit de regio Charleroi een betrouwbare, stipte en werkelijk complete service te bieden, zonder verrassingen op de factuur.",
+              "Wij werken met producten en materiaal die op elk oppervlak zijn afgestemd — technische kantoorvloer, marmer van een hal, glaswerk van een etalage — en passen de frequentie aan uw realiteit aan: een dagelijkse beurt, een wekelijks onderhoud of een eenmalige opknapbeurt. Bij elke interventie waarborgt een eindcontrole dat niets over het hoofd werd gezien.",
+              "Met ons werken betekent ook één aanspreekpunt dat uw locaties en beperkingen kent, een duidelijke offerte die vooraf wordt opgesteld en een ploeg die de afgesproken uren respecteert, ook vroeg in de ochtend of ’s avonds om uw activiteit niet te storen."
+            ],
+            "ctaPrimaire": {
+              "label": "Maak kennis",
+              "href": "/entreprise"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "Zo beginnen we",
+            "titre": "Van uw telefoontje tot onberispelijke ruimtes",
+            "items": [
+              {
+                "icone": "PhoneCall",
+                "titre": "Uw aanvraag",
+                "texte": "U beschrijft de locatie, de oppervlakte en de gewenste frequentie, via telefoon, WhatsApp of het formulier."
+              },
+              {
+                "icone": "ClipboardList",
+                "titre": "Bezoek en offerte",
+                "texte": "Wij evalueren de noden ter plaatse wanneer dat nuttig is en bezorgen u vervolgens een duidelijke, gratis offerte."
+              },
+              {
+                "icone": "CalendarCheck",
+                "titre": "Afgesproken planning",
+                "texte": "Samen leggen we de dagen en uren vast, eenmalig of volgens een vast ritme."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "Interventie en controle",
+                "texte": "De ploeg werkt met het juiste materiaal en controleert elke zone voor ze vertrekt."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "In Charleroi en tot 50 km rondom",
+            "intro": "Vanuit de regio bestrijken wij Groot-Charleroi, het hart van Henegouwen en tot de aangrenzende gemeenten van het Naamse en Waals-Brabant. Uw gemeente niet vermeld? Eén telefoontje volstaat om het samen na te gaan.",
+            "rayonKm": 50,
+            "zones": [
+              {
+                "region": "Groot-Charleroi",
+                "principale": "Charleroi",
+                "villes": [
+                  "Charleroi",
+                  "Marcinelle",
+                  "Gilly",
+                  "Montignies-sur-Sambre",
+                  "Jumet",
+                  "Gosselies",
+                  "Lodelinsart",
+                  "Marchienne-au-Pont",
+                  "Couillet",
+                  "Mont-sur-Marchienne",
+                  "Ransart"
+                ]
+              },
+              {
+                "region": "Hart van Henegouwen",
+                "principale": "La Louvière",
+                "villes": [
+                  "La Louvière",
+                  "Binche",
+                  "Fleurus",
+                  "Châtelet",
+                  "Courcelles",
+                  "Fontaine-l'Évêque",
+                  "Anderlues",
+                  "Chapelle-lez-Herlaimont",
+                  "Manage",
+                  "Thuin",
+                  "Pont-à-Celles"
+                ]
+              },
+              {
+                "region": "Richting het Naamse en Waals-Brabant",
+                "principale": "Sambreville",
+                "villes": [
+                  "Sambreville",
+                  "Fosses-la-Ville",
+                  "Gembloux",
+                  "Sombreffe",
+                  "Walcourt",
+                  "Nivelles",
+                  "Genappe"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Wat men ons vaak vraagt",
+            "items": [
+              {
+                "question": "Werkt u zowel voor bedrijven als voor particulieren?",
+                "reponse": "Ja, voor beide. Kantoren, winkels, gebouwen en mede-eigendommen enerzijds, woningen van particulieren anderzijds: wij stemmen simpelweg het materiaal, de producten en het tijdstip af op elk type locatie."
+              },
+              {
+                "question": "Moet ik een langlopend contract tekenen?",
+                "reponse": "Nee, dat is niet verplicht. Wij bieden regelmatig onderhoud in de vorm van een afgesproken planning, maar evengoed eenmalige of losse interventies, zonder verbintenis op termijn."
+              },
+              {
+                "question": "Kunt u buiten de openingsuren langskomen?",
+                "reponse": "Ja. Om uw kantoor of winkel niet te storen, komen wij graag vroeg in de ochtend, ’s avonds of in het weekend, naargelang wat u het beste past."
+              },
+              {
+                "question": "Hoe krijg ik een prijs?",
+                "reponse": "Beschrijf ons de locatie en het gewenste ritme; wij stellen een gratis en gedetailleerde offerte op, indien nodig na een kort bezoek om zo juist mogelijk te zijn. Daarna beslist u, zonder druk."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Een ruimte toevertrouwen aan professionals?",
+            "sousTitre": "Vertel ons over uw locaties en verwachtingen: wij komen snel bij u terug met een gratis en duidelijke offerte.",
+            "ctaPrimaire": {
+              "label": "Vraag een gratis offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            },
+            "lien": {
+              "label": "of schrijf ons op WhatsApp →",
+              "href": "https://wa.me/32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Diensten",
+      "meta": {
+        "title": "Schoonmaakdiensten in Charleroi: het detail",
+        "description": "Kantoren, winkels, mede-eigendommen, ramen, aan huis en noodgevallen: elke dienst van AB Pro Service uitgelegd, met wat inbegrepen is en voor welke locatie."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "De catalogus, dienst per dienst",
+            "titre": "Alles wat wij onderhouden",
+            "intro": "Deze pagina verzamelt onze zes werkdomeinen. Elke kaart opent een volledige fiche: de betrokken locaties, het verloop van een typische beurt en wat inbegrepen is. Twijfelt u welke dienst u nodig heeft? Het overzicht hieronder wijst de weg, en een telefoontje doet de rest.",
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Zes vakgebieden, dezelfde eis",
+            "titre": "Onze diensten in detail",
+            "intro": "Elke fiche verduidelijkt voor wie de dienst bedoeld is, hoe een interventie verloopt en wat ze precies dekt.",
+            "items": [
+              {
+                "nom": "Kantoorschoonmaak",
+                "description": "De fiche beschrijft het onderhoud van werkplekken, sanitair en gemeenschappelijke ruimtes, de mogelijke frequenties en de organisatie rond uw uren.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              },
+              {
+                "nom": "Winkels en panden",
+                "description": "Verkoopruimtes, etalages en onthaalzones: de methode voor een netheid die zichtbaar is vanaf de opening, stap voor stap uitgelegd.",
+                "href": "/nettoyage-commerces",
+                "icone": "Store"
+              },
+              {
+                "nom": "Mede-eigendommen",
+                "description": "Inkomhallen, trappen en gangen van gebouwen: het verloop van een regelmatig onderhoud, bedacht voor syndici en beheerders.",
+                "href": "/nettoyage-copropriete",
+                "icone": "Building"
+              },
+              {
+                "nom": "Ramen wassen",
+                "description": "Binnen, buiten, op bereikbare hoogte: wat wij reinigen en het materiaal dat een streeploos resultaat waarborgt.",
+                "href": "/nettoyage-vitres",
+                "icone": "GlassWater"
+              },
+              {
+                "nom": "Schoonmaak aan huis",
+                "description": "Gewoon onderhoud of grote schoonmaak bij particulieren: de fiche beschrijft de behandelde ruimtes en de mogelijke ritmes.",
+                "href": "/nettoyage-domicile",
+                "icone": "Home"
+              },
+              {
+                "nom": "Noodinterventie",
+                "description": "Waterschade of iets onvoorziens: onze manier om snel en netjes te saneren, per geval geraamd.",
+                "href": "/nettoyage-urgence",
+                "icone": "Droplets",
+                "badge": "Op offerte"
+              }
+            ],
+            "cta": {
+              "label": "Ga na of wij uw gemeente bedienen",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Goed kiezen",
+            "titre": "Welke dienst voor uw situatie?",
+            "paragraphes": [
+              "Het eerste houvast is de aard van de locatie. Een professionele ruimte — kantoor, winkel, gebouw — vraagt een georganiseerd onderhoud, vaak regelmatig en buiten de drukte gepland: kies naargelang de oppervlakte voor kantoorschoonmaak, winkelonderhoud of de dienst voor mede-eigendommen. Een woning van een particulier valt onder de schoonmaak aan huis.",
+              "Het tweede houvast is de eenmalige behoefte die zich bovenop het gewone onderhoud voordoet. Ramen en etalages te laten blinken? Ramen wassen boekt u apart of voegt u toe aan een contract. Waterschade of een dringende opknapbeurt? De noodinterventie neemt het over, apart geraamd. Bij de minste twijfel: beschrijf ons de locatie, wij verwijzen u meteen naar de juiste formule."
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Een concrete behoefte om te ramen?",
+            "sousTitre": "Leg ons uw locaties en ritme uit: wij stellen snel een gratis en vrijblijvende offerte op.",
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Contacteer ons",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "realisations",
+      "label": "Galerij",
+      "meta": {
+        "title": "Schoonmaak voor/na in Charleroi: onze werven",
+        "description": "Ontvette vloeren, vrijgemaakte gemeenschappelijke delen, opgeknapte keukens en hallen: ontdek in beeld en video werven van AB Pro Service in Charleroi."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Galerij",
+            "titre": "Voor / na: onze werven",
+            "intro": "Niets spreekt duidelijker dan het resultaat. Hier enkele interventies in Charleroi en Henegouwen — een ontvette parkeervloer, een vrijgemaakte gang van een gebouw, een opgeknapte keuken en hal — in beeld en in video.",
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "In beeld",
+            "titre": "Het resultaat spreekt voor zich",
+            "intro": "Links de toestand bij onze aankomst, rechts het resultaat zodra ons werk klaar is.",
+            "avantApres": [
+              {
+                "avant": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/parking-avant.jpg",
+                  "alt": "Parkeerplaats met mazoutvlek voor de reiniging in Charleroi"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/parking-apres.jpg",
+                  "alt": "Dezelfde parkeerplaats ontvet en proper na de interventie"
+                },
+                "legende": "Ontvetten van een parkeerplaats: de in de vloer ingebrande mazoutvlek volledig verwijderd."
+              },
+              {
+                "avant": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/couloir-avant.jpg",
+                  "alt": "Gang van een gebouw vol meubilair voor de interventie"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/couloir-apres.jpg",
+                  "alt": "Dezelfde gang vrijgemaakt en met gewassen vloer na de interventie"
+                },
+                "legende": "Gemeenschappelijke delen van een gebouw: gang ontruimd en vloer grondig gereinigd."
+              }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "In video",
+            "titre": "Sommige werven, gefilmd",
+            "intro": "Voor deze interventies werd de begintoestand gefilmd: speel de video links af en vergelijk met de foto van het resultaat rechts.",
+            "avantApres": [
+              {
+                "avantVideo": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-avant.mp4",
+                  "alt": "Video van de toestand van een keuken voor de schoonmaak"
+                },
+                "apresImages": [
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres.jpg",
+                    "alt": "Dezelfde keuken proper na de interventie"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres-2.jpg",
+                    "alt": "Propere keuken na interventie, andere hoek"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres-3.jpg",
+                    "alt": "Propere keuken na schoonmaak, detail van het werkblad"
+                  }
+                ],
+                "legende": "Keuken: de begintoestand gefilmd, daarna het resultaat vanuit meerdere hoeken zodra vloeren en oppervlakken zijn opgefrist."
+              },
+              {
+                "avantVideo": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/entree-avant.mp4",
+                  "alt": "Video van de toestand van een inkomhal voor de schoonmaak"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/entree-apres.jpg",
+                  "alt": "Dezelfde inkomhal met propere tegelvloer na de interventie"
+                },
+                "legende": "Inkomhal: de tegelvloer gefilmd voor, daarna gereinigd en opgefrist."
+              }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "Andere werven",
+            "titre": "Opleveringen en opknapbeurten",
+            "intro": "Een blik op onze interventies na werken, van de particuliere woning tot de openbare uitrusting.",
+            "ratio": "3/4",
+            "groupes": [
+              {
+                "titre": "Metrostation — Charleroi",
+                "description": "Opleveringsschoonmaak van een metrostation in Charleroi: perrons, vloeren en meubilair.",
+                "images": [
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-station-1.jpg",
+                    "alt": "Perron van een metrostation gereinigd na werken in Charleroi"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-station-2.jpg",
+                    "alt": "Perron en meubilair van een metrostation na opleveringsschoonmaak"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-station-3.jpg",
+                    "alt": "Openbare ruimte van een metrostation gereinigd"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-station-4.jpg",
+                    "alt": "Perronvloer van een metro gereinigd na de werf"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-station-5.jpg",
+                    "alt": "Metrostation van Charleroi na de schoonmaak"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-station-6.jpg",
+                    "alt": "Perron van de metro en uitrusting gereinigd"
+                  }
+                ]
+              },
+              {
+                "titre": "Gemeenschappelijke delen van een residentie",
+                "description": "Opleveringsschoonmaak van de gemeenschappelijke ruimtes van een residentie: hal, opgeblonken terrazzovloeren en grote raampartijen.",
+                "images": [
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-residence-1.jpg",
+                    "alt": "Hal van een residentie met gepolijste terrazzovloer na de schoonmaak"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-residence-2.jpg",
+                    "alt": "Gemeenschappelijke zaal van een residentie met gereinigde en opgeblonken vloer"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-residence-3.jpg",
+                    "alt": "Gemeenschappelijke ruimte van een residentie na opleveringsschoonmaak"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-residence-4.jpg",
+                    "alt": "Terrazzovloer van een gemeenschappelijk deel van een residentie gereinigd"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-residence-5.jpg",
+                    "alt": "Overloop van een residentie met propere en glanzende vloer"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-residence-6.jpg",
+                    "alt": "Grote raampartij en gereinigde vloer in de gemeenschappelijke delen van een residentie"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-residence-7.jpg",
+                    "alt": "Gedeelde ruimte van een residentie opgefrist na werken"
+                  }
+                ]
+              },
+              {
+                "titre": "Woning na werken",
+                "description": "Volledige opknapbeurt van een woning bij oplevering, kamer per kamer.",
+                "images": [
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-maison-1.jpg",
+                    "alt": "Kamer met nieuwe parketvloer gereinigd na werken"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-maison-2.jpg",
+                    "alt": "Interieur van een woning opgefrist na renovatie"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-maison-3.jpg",
+                    "alt": "Propere kamer van een woning na oplevering"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/chantier-maison-4.jpg",
+                    "alt": "Woning gereinigd na werken, lichte kamer"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Een werf of onderhoud aan ons toe te vertrouwen?",
+            "sousTitre": "Beschrijf ons uw locaties: wij stellen een gratis offerte op en nemen de rest voor onze rekening.",
+            "ctaPrimaire": {
+              "label": "Vraag een gratis offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "zone-intervention",
+      "label": "Werkgebied",
+      "meta": {
+        "title": "Werkgebied: Charleroi en 50 km rondom",
+        "description": "Van Charleroi tot La Louvière, Fleurus, Châtelet of Gembloux: de zones waar AB Pro Service schoonmaakt, tot 50 km rond het bekken van Charleroi."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Werkgebied",
+            "titre": "Wij verplaatsen ons tot 50 km",
+            "intro": "Het bekken van Charleroi is ons dagelijkse terrein, maar wij gaan verder: het hart van Henegouwen, de randen van het Naamse en Waals-Brabant. Waar u zich ook in dit gebied bevindt, de offerte blijft gratis."
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "De bediende zones",
+            "intro": "De lijst hieronder ligt niet vast: bevindt uw gemeente zich binnen onze straal van 50 km, dan vinden wij een oplossing. Bij twijfel: bel ons, we bekijken het samen.",
+            "rayonKm": 50,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.10%2C50.25%2C4.80%2C50.55&layer=mapnik&marker=50.424955%2C4.4407406",
+            "zones": [
+              {
+                "region": "Groot-Charleroi",
+                "principale": "Charleroi",
+                "villes": [
+                  "Charleroi",
+                  "Marcinelle",
+                  "Gilly",
+                  "Montignies-sur-Sambre",
+                  "Jumet",
+                  "Gosselies",
+                  "Lodelinsart",
+                  "Marchienne-au-Pont",
+                  "Couillet",
+                  "Mont-sur-Marchienne",
+                  "Ransart",
+                  "Roux",
+                  "Dampremy"
+                ]
+              },
+              {
+                "region": "Hart van Henegouwen",
+                "principale": "La Louvière",
+                "villes": [
+                  "La Louvière",
+                  "Binche",
+                  "Fleurus",
+                  "Châtelet",
+                  "Farciennes",
+                  "Courcelles",
+                  "Fontaine-l'Évêque",
+                  "Anderlues",
+                  "Chapelle-lez-Herlaimont",
+                  "Manage",
+                  "Thuin",
+                  "Pont-à-Celles",
+                  "Ham-sur-Heure"
+                ]
+              },
+              {
+                "region": "Richting het Naamse en Waals-Brabant",
+                "principale": "Sambreville",
+                "villes": [
+                  "Sambreville",
+                  "Fosses-la-Ville",
+                  "Gembloux",
+                  "Sombreffe",
+                  "Walcourt",
+                  "Philippeville",
+                  "Nivelles",
+                  "Genappe"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Waar wij werken",
+            "titre": "Eén bekken, drie grote zones",
+            "paragraphes": [
+              "Charleroi en zijn deelgemeenten vormen het gros van onze beurten: kantoren in het centrum, winkels langs de grote assen, gebouwen in Gilly, Marcinelle, Montignies of Jumet. Het is een gebied vol professionals, waar regelmatig onderhoud een wereld van verschil maakt voor de uitstraling van een locatie, en waar wij onze interventies graag voor de opening of na sluitingstijd plannen.",
+              "Daarbuiten opent zich het hart van Henegouwen: La Louvière, Binche, Fleurus, Châtelet, Courcelles of Anderlues. Buurtwinkels, praktijken, kleine mede-eigendommen en woningen vragen er dezelfde zorg, met verplaatsingen die vanuit Charleroi beheersbaar blijven.",
+              "Ten slotte gaan wij richting het oosten en noorden tot de gemeenten van het Naamse en Waals-Brabant — Sambreville, Fosses-la-Ville, Gembloux, Nivelles — zolang ze binnen onze straal van 50 km liggen. Dezelfde diensten, dezelfde eis van afwerking, en altijd een gratis offerte vooraf."
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Ligt uw gemeente binnen de straal?",
+            "sousTitre": "Vraag uw gratis offerte: wij verplaatsen ons in heel het bekken.",
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "entreprise",
+      "label": "Het bedrijf",
+      "meta": {
+        "title": "AB Pro Service, uw netheidspartner in Charleroi",
+        "description": "Schoonmaakbedrijf actief in Charleroi en Henegouwen, stelt AB Pro Service oog voor detail en betrouwbaarheid ten dienste van professionals en particulieren."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Het bedrijf",
+            "titre": "Eén eenvoudige eis: dat alles net is"
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "AB Pro Service · Charleroi & Henegouwen",
+            "paragraphes": [
+              "AB Pro Service is een professioneel schoonmaakbedrijf, actief in het bekken van Charleroi en heel Henegouwen. Onder leiding van Ibtissam Abbadi begeleidt de onderneming zowel professionals — kantoren, winkels, syndici en gebouwbeheerders — als particulieren die een steeds net interieur wensen.",
+              "Onze aanpak vat samen in drie woorden: betrouwbaarheid, regelmaat en afwerking. Betrouwbaarheid, omdat de afgesproken uren worden nageleefd en één vast aanspreekpunt uw locaties in de tijd opvolgt. Regelmaat, omdat een ruimte veel makkelijker onderhouden wordt dan ingehaald. Afwerking ten slotte, omdat een systematische controle na de interventie waarborgt dat geen enkele hoek werd vergeten.",
+              "Wij kiezen producten en materiaal naargelang elk oppervlak en verkiezen methodes die de locaties en de mensen die er verblijven respecteren. Of het nu gaat om een dagelijks kantooronderhoud, een wekelijkse beurt in een mede-eigendom of een eenmalige opknapbeurt, elke opdracht wordt met dezelfde ernst behandeld, met een transparante offerte die vooraf wordt opgesteld."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "ligne-horizontale",
+          "content": {
+            "eyebrow": "Onze engagementen",
+            "titre": "Wat elke interventie stuurt",
+            "items": [
+              {
+                "icone": "ShieldCheck",
+                "titre": "Betrouwbaarheid",
+                "texte": "Aangegeven vennootschap, nageleefde uren en discretie op elke locatie, professioneel of privé."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "Afwerking",
+                "texte": "Werk dat na de beurt wordt gecontroleerd: wat begonnen is, wordt afgemaakt, tot in het detail."
+              },
+              {
+                "icone": "Leaf",
+                "titre": "Zorg voor de locatie",
+                "texte": "Producten en materiaal afgestemd op elk oppervlak, zonder de ondergrond aan te tasten."
+              },
+              {
+                "icone": "Handshake",
+                "titre": "Transparantie",
+                "texte": "Een duidelijke, gratis offerte, zonder verborgen verbintenis of last-minute meerkost."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Zin om ons uw ruimtes toe te vertrouwen?",
+            "sousTitre": "Gratis en vrijblijvende offerte, snel antwoord.",
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Contacteer ons",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "AB Pro Service contacteren in Charleroi",
+        "description": "Telefoon, WhatsApp, e-mail of formulier: beschrijf uw locaties in Charleroi of Henegouwen en ontvang een gratis offerte van AB Pro Service."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Contact",
+            "titre": "Laten we het over uw ruimtes hebben",
+            "intro": "Kantoor, winkel, gebouw of woning: vertel ons wat u wenst toe te vertrouwen, en wij komen snel bij u terug. Het eenvoudigst is vaak een telefoontje of een WhatsApp-bericht."
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Aanvraag tot interventie",
+            "intro": "Geef ons het type locatie, de geschatte oppervlakte, de gemeente en de gewenste frequentie: daarmee kunnen we al een ernstige raming maken.",
+            "mapEmbedUrl": "https://maps.google.com/maps?q=50.424955,4.4407406&z=15&hl=nl&output=embed",
+            "form": true,
+            "formMode": "demande-intervention",
+            "telephone": "+32 492 68 38 23",
+            "whatsapp": "+32 492 68 38 23",
+            "email": "ab.proservice79@gmail.com",
+            "horaires": [
+              {
+                "jour": "Ma – Za",
+                "heures": "7u – 22u"
+              }
+            ],
+            "services": [
+              "Kantoorschoonmaak",
+              "Winkels en panden",
+              "Gemeenschappelijke delen / mede-eigendom",
+              "Ramen wassen",
+              "Schoonmaak aan huis",
+              "Noodinterventie (waterschade)",
+              "Andere / ik weet het niet"
+            ],
+            "villes": [
+              "Charleroi",
+              "Marcinelle",
+              "Gilly",
+              "Montignies-sur-Sambre",
+              "Jumet",
+              "Gosselies",
+              "Châtelet",
+              "Fleurus",
+              "Courcelles",
+              "La Louvière",
+              "Binche",
+              "Sambreville",
+              "Gembloux"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "devis",
+      "label": "Gratis offerte",
+      "navHidden": true,
+      "meta": {
+        "title": "Gratis schoonmaakofferte in Charleroi",
+        "description": "Beschrijf uw locaties in Charleroi of Henegouwen en ontvang een gratis en vrijblijvende raming voor het onderhoud van uw kantoren, winkels of woning."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Gratis offerte",
+            "titre": "Uw raming in enkele regels",
+            "intro": "Geen lastenboek nodig: vertel ons gewoon om welke locaties het gaat, de geschatte oppervlakte en het gewenste ritme. Wij ramen gratis en vrijblijvend, indien nodig na een kort bezoek.",
+            "ctaSecondaire": {
+              "label": "Onze diensten bekijken",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Uw offerteaanvraag",
+            "intro": "Type locatie, oppervlakte, gemeente en frequentie: met die enkele gegevens kunnen wij u juist en snel antwoorden.",
+            "form": true,
+            "formMode": "devis",
+            "telephone": "+32 492 68 38 23",
+            "whatsapp": "+32 492 68 38 23",
+            "email": "ab.proservice79@gmail.com",
+            "horaires": [
+              {
+                "jour": "Ma – Za",
+                "heures": "7u – 22u"
+              }
+            ],
+            "services": [
+              "Kantoorschoonmaak",
+              "Winkels en panden",
+              "Gemeenschappelijke delen / mede-eigendom",
+              "Ramen wassen",
+              "Schoonmaak aan huis",
+              "Noodinterventie (waterschade)",
+              "Andere / ik weet het niet"
+            ],
+            "villes": [
+              "Charleroi",
+              "Marcinelle",
+              "Gilly",
+              "Montignies-sur-Sambre",
+              "Jumet",
+              "Gosselies",
+              "Châtelet",
+              "Fleurus",
+              "Courcelles",
+              "La Louvière",
+              "Binche",
+              "Sambreville",
+              "Gembloux"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-bureaux",
+      "label": "Kantoorschoonmaak",
+      "navHidden": true,
+      "meta": {
+        "title": "Kantoorschoonmaak in Charleroi",
+        "description": "Regelmatig en professioneel onderhoud van uw kantoren in Charleroi en Henegouwen: werkplekken, sanitair en gemeenschappelijke ruimtes, voor of na de uren. Gratis offerte.",
+        "keywords": [
+          "kantoorschoonmaak Charleroi",
+          "kantooronderhoud Henegouwen",
+          "schoonmaakbedrijf kantoren Charleroi",
+          "schoonmaak werkplekken Charleroi"
+        ]
+      },
+      "service": {
+        "name": "Kantoorschoonmaak",
+        "description": "Regelmatig professioneel onderhoud van werkplekken in Charleroi en omstreken.",
+        "serviceType": "Kantoorschoonmaak"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Werkplekken",
+            "titre": "Kantoorschoonmaak in Charleroi",
+            "intro": "Nette kantoren betekenen beter onthaalde medewerkers en geruststelde bezoekers. AB Pro Service onderhoudt uw werkplekken in Charleroi en heel Henegouwen, met een planning afgestemd op uw activiteit en één vast aanspreekpunt van de ene maand op de andere.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Diensten", "href": "/services" },
+              { "label": "Kantoorschoonmaak" }
+            ],
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Een onderhoud op maat van uw werkritme",
+            "paragraphes": [
+              "Wij nemen alle zones van een werkomgeving voor onze rekening: bureaus en werkbladen ontstoft, vloeren gestofzuigd en gedweild, sanitair ontsmet en bijgevuld, keuken of koffiehoek opgefrist, vergaderzalen klaar om te ontvangen. De contactoppervlakken — klinken, schakelaars, leuningen — krijgen bijzondere aandacht, want net zij maken echt het verschil voor de hygiëne van een gedeelde ruimte.",
+              "De frequentie past zich aan uw realiteit aan: een dagelijkse beurt voor drukbezochte open ruimtes, twee tot drie keer per week voor kleinere teams, of een wekelijks ritme voor kleine structuren. Om uw vergaderingen en klanten niet te storen, komen wij graag voor de aankomst van de teams, ’s avonds of in het weekend. Bij elke beurt bevestigt een eindcontrole dat alles in orde is, en wij melden u wat af en toe een grondiger opknapbeurt zou verdienen."
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Wat het onderhoud van uw kantoren omvat",
+            "items": [
+              {
+                "icone": "Sparkles",
+                "nom": "Oppervlakken en meubilair",
+                "description": "Bureaus, werkbladen en meubilair ontstoft, schermen en contactvlakken afgenomen."
+              },
+              {
+                "icone": "Droplets",
+                "nom": "Sanitair",
+                "description": "Volledige ontsmetting en bijvullen van verbruiksgoederen bij elke beurt."
+              },
+              {
+                "icone": "Wind",
+                "nom": "Vloeren",
+                "description": "Stofzuigen van tapijt, dweilen van harde vloeren, met producten afgestemd op de bekleding."
+              },
+              {
+                "icone": "Clock",
+                "nom": "Op de juiste uren",
+                "description": "Interventies vroeg in de ochtend, ’s avonds of in het weekend om de activiteit niet te storen."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "timeline-verticale",
+          "content": {
+            "titre": "Hoe uw contract tot stand komt",
+            "items": [
+              {
+                "icone": "ClipboardList",
+                "titre": "Bezoek ter plaatse",
+                "texte": "Wij lopen uw ruimtes door om oppervlakten, frequenties en uurbeperkingen in te schatten."
+              },
+              {
+                "icone": "FileText",
+                "titre": "Offerte en planning",
+                "texte": "U ontvangt een duidelijke offerte en een voorstel van planning, naar wens aan te passen."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "Regelmatige beurten",
+                "texte": "De ploeg komt volgens het afgesproken ritme, met een kwaliteitscontrole na elke beurt."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Veelgestelde vragen",
+            "items": [
+              {
+                "question": "Kunt u buiten de openingsuren langskomen?",
+                "reponse": "Ja, dat komt zelfs vaak voor. Veel klanten verkiezen een beurt voor de aankomst van de teams of na hun vertrek: wij plannen het tijdstip dat uw activiteit het minst stoort, ook ’s avonds of op zaterdag."
+              },
+              {
+                "question": "Voorziet u het materiaal en de verbruiksgoederen?",
+                "reponse": "Ja, wij komen uitgerust met eigen materiaal en producten. Wij kunnen ook het bijvullen van het sanitair met zeep en papier verzorgen; dat wordt eenvoudig in de offerte voorzien."
+              },
+              {
+                "question": "Kan de frequentie in de loop van de maanden worden aangepast?",
+                "reponse": "Uiteraard. De planning ligt nooit vast: wij verhogen ze in een drukke periode en verlichten ze later. Eén gesprek volstaat om het contract te laten evolueren."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Om verder te gaan",
+            "titre": "Vaak gecombineerde diensten",
+            "items": [
+              {
+                "nom": "Ramen wassen",
+                "description": "Raampartijen en glazen wanden van uw kantoren streeploos gereinigd, in aanvulling op het gewone onderhoud.",
+                "href": "/nettoyage-vitres",
+                "icone": "GlassWater"
+              },
+              {
+                "nom": "Mede-eigendommen",
+                "description": "Deelt uw kantoor een hal of gangen van een gebouw? Wij onderhouden ook die ruimtes.",
+                "href": "/nettoyage-copropriete",
+                "icone": "Building"
+              },
+              {
+                "nom": "Winkels en panden",
+                "description": "Een onthaalruimte of een oppervlakte die publiek ontvangt? Ontdek onze dienst voor winkels.",
+                "href": "/nettoyage-commerces",
+                "icone": "Store"
+              }
+            ],
+            "cta": {
+              "label": "Liggen uw kantoren in ons werkgebied? Nagaan",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Een offerte voor het onderhoud van uw kantoren in Charleroi?",
+            "sousTitre": "Gratis en vrijblijvende offerte. Snel antwoord.",
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-commerces",
+      "label": "Winkels en panden",
+      "navHidden": true,
+      "meta": {
+        "title": "Schoonmaak van winkels en panden in Charleroi",
+        "description": "Onberispelijke netheid van uw verkoopruimtes en handelspanden in Charleroi en Henegouwen, voor of na opening. Regelmatig onderhoud, gratis offerte.",
+        "keywords": [
+          "schoonmaak winkel Charleroi",
+          "schoonmaak handelspand Charleroi",
+          "onderhoud winkel Henegouwen",
+          "etalage reinigen Charleroi"
+        ]
+      },
+      "service": {
+        "name": "Schoonmaak van winkels en panden",
+        "description": "Professioneel onderhoud van winkels en publiek toegankelijke panden in Charleroi.",
+        "serviceType": "Schoonmaak van handelspanden"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Publiek toegankelijke ruimtes",
+            "titre": "Schoonmaak van winkels en panden in Charleroi",
+            "intro": "In een winkel is netheid zichtbaar vanaf de drempel en weegt ze op de koopbeslissing. AB Pro Service houdt uw verkoopruimtes, zalen en onthaalzones onberispelijk in Charleroi en Henegouwen, met beurten gepland voor de opening of na sluitingstijd.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Diensten", "href": "/services" },
+              { "label": "Winkels en panden" }
+            ],
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Wat wij voor onze rekening nemen",
+            "items": [
+              {
+                "icone": "Store",
+                "nom": "Verkoopruimte",
+                "description": "Vloeren, bereikbare rekken en looppaden gereinigd voor een onberispelijk onthaal."
+              },
+              {
+                "icone": "GlassWater",
+                "nom": "Etalages en onthaal",
+                "description": "Toonbanken, binnenetalages en onthaalzones vrijgemaakt en streeploos."
+              },
+              {
+                "icone": "Droplets",
+                "nom": "Sanitair en keukenhoek",
+                "description": "Ontsmetting van sanitair voor klanten en personeel, onderhoud van de keukenhoek."
+              },
+              {
+                "icone": "Clock",
+                "nom": "Buiten de drukte",
+                "description": "Beurten voor de opening of na sluitingstijd, om de klanten nooit te storen."
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Een zichtbare netheid die uw imago dient",
+            "paragraphes": [
+              "Een handelspand vervuilt snel en heel zichtbaar: sporen op de vloer in de looppaden, gemarkeerde toonbanken, etalages vol vingerafdrukken, zwaar belast sanitair. Wij stemmen het onderhoud af op uw klantenstroom, met sterke aandacht voor alles wat in één oogopslag opvalt, want net dat bouwt — of ondermijnt — het vertrouwen van uw klanten.",
+              "Naargelang de winkel komen wij dagelijks, meerdere keren per week of eenmalig voor een grote opknapbeurt voor een commercieel hoogtepunt. De producten zijn gekozen om uw vloeren en oppervlakken te respecteren, van tegels tot gietvloer, en wij blijven discreet bij de presentatie van uw producten. Het doel is eenvoudig: dat uw deuren elke ochtend opengaan op een nette ruimte, zonder dat u eraan moet denken."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Veelgestelde vragen",
+            "items": [
+              {
+                "question": "Komt u langs voor de opening van mijn winkel?",
+                "reponse": "Ja, dat is de meest gangbare regeling. Wij komen vroeg in de ochtend zodat alles net is bij de opening, of ’s avonds na sluitingstijd, naargelang wat u het beste past."
+              },
+              {
+                "question": "Kunt u een opknapbeurt voor een commercieel evenement verzorgen?",
+                "reponse": "Zeker. Voor de solden, een heropening of een speciale actie plannen wij een eenmalige grote schoonmaak die al dan niet bovenop een regelmatig onderhoud komt."
+              },
+              {
+                "question": "Stemt u de producten af op mijn vloeren?",
+                "reponse": "Ja, systematisch. Tegels, gietvloer, laminaat of soepele vloer: wij gebruiken producten die op de bekleding zijn afgestemd om doeltreffend te reinigen zonder ze te beschadigen."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Winkels opgevolgd in Charleroi en tot 50 km",
+            "intro": "Groot-Charleroi, hart van Henegouwen en aangrenzende gemeenten.",
+            "rayonKm": 50,
+            "zones": [
+              {
+                "region": "Groot-Charleroi",
+                "principale": "Charleroi",
+                "villes": [
+                  "Charleroi",
+                  "Gilly",
+                  "Marcinelle",
+                  "Jumet",
+                  "Gosselies",
+                  "Montignies-sur-Sambre",
+                  "Marchienne-au-Pont"
+                ]
+              },
+              {
+                "region": "Hart van Henegouwen en omstreken",
+                "principale": "La Louvière",
+                "villes": [
+                  "La Louvière",
+                  "Châtelet",
+                  "Fleurus",
+                  "Courcelles",
+                  "Binche",
+                  "Sambreville",
+                  "Gembloux"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Om verder te gaan",
+            "titre": "Vaak gecombineerde diensten",
+            "items": [
+              {
+                "nom": "Ramen wassen",
+                "description": "Een blinkende etalage trekt de blik: voeg het regelmatig wassen van uw glasoppervlakken toe.",
+                "href": "/nettoyage-vitres",
+                "icone": "GlassWater"
+              },
+              {
+                "nom": "Kantoorschoonmaak",
+                "description": "Een achterruimte of aanpalende kantoren? Wij onderhouden ze tijdens hetzelfde bezoek.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              },
+              {
+                "nom": "Noodinterventie",
+                "description": "Waterschade of een incident in uw pand? Wij komen snel om de schade te beperken.",
+                "href": "/nettoyage-urgence",
+                "icone": "Droplets"
+              }
+            ],
+            "cta": {
+              "label": "Ligt uw winkel in ons werkgebied? Nagaan",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Een offerte voor het onderhoud van uw winkel in Charleroi?",
+            "sousTitre": "Gratis en vrijblijvende offerte. Snel antwoord.",
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-copropriete",
+      "label": "Mede-eigendommen",
+      "navHidden": true,
+      "meta": {
+        "title": "Schoonmaak van mede-eigendommen in Charleroi",
+        "description": "Onderhoud van gemeenschappelijke delen van gebouwen en residenties in Charleroi en Henegouwen: hallen, trappen en gangen, met regelmaat opgevolgd. Offerte voor syndici.",
+        "keywords": [
+          "schoonmaak mede-eigendom Charleroi",
+          "schoonmaak gemeenschappelijke delen Charleroi",
+          "onderhoud gebouw Henegouwen",
+          "schoonmaak inkomhal Charleroi"
+        ]
+      },
+      "service": {
+        "name": "Schoonmaak van gemeenschappelijke delen en mede-eigendommen",
+        "description": "Regelmatig onderhoud van gemeenschappelijke delen van gebouwen en residenties in Charleroi.",
+        "serviceType": "Schoonmaak van gemeenschappelijke delen"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Gebouwen, residenties en mede-eigendommen",
+            "titre": "Schoonmaak van mede-eigendommen in Charleroi",
+            "intro": "Een verzorgde hal en onderhouden gemeenschappelijke delen geven de toon aan van een gebouw en stellen bewoners en kandidaat-huurders gerust. AB Pro Service verzorgt het regelmatige onderhoud van de gemeenschappelijke delen voor syndici, beheerders en eigenaars in Charleroi en Henegouwen.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Diensten", "href": "/services" },
+              { "label": "Mede-eigendommen" }
+            ],
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Gemeenschappelijke delen die het hele jaar net blijven",
+            "paragraphes": [
+              "Het onderhoud van een mede-eigendom dekt alles wat de bewoners en hun bezoekers doorkruisen: inkomhal, brievenbussen, traphal en leuningen, overlopen, gangen, cabine en knoppen van de lift, glazen deuren en het lokaal voor afval. Het zijn drukbezochte zones, waar stof, sporen en vuil snel terugkeren: alleen een regelmatige interventie houdt een gebouw voortdurend toonbaar.",
+              "Samen met de syndicus of beheerder bepalen wij een frequentie afgestemd op de grootte van het gebouw en het aantal kavels — vaak wekelijks, soms tweewekelijks voor grote residenties. De beurt omvat het dweilen van de vloeren, het ontstoffen van de oppervlakken, het onderhoud van het glaswerk van de hal en het buiten- of binnenzetten van de containers indien afgesproken. Eén contactpunt vergemakkelijkt de opvolging, en wij melden elke vastgestelde beschadiging aan de gemeenschappelijke delen, zodat niets blijft liggen."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "ligne-horizontale",
+          "content": {
+            "titre": "Een duidelijke opvolging voor de syndicus",
+            "items": [
+              {
+                "icone": "ClipboardList",
+                "titre": "Staat van de delen",
+                "texte": "Wij bezoeken het gebouw en inventariseren de te onderhouden zones en hun ideale frequentie."
+              },
+              {
+                "icone": "FileText",
+                "titre": "Becijferd voorstel",
+                "texte": "Een leesbare offerte, afgestemd op het aantal kavels, klaar om op de algemene vergadering voor te leggen."
+              },
+              {
+                "icone": "CalendarCheck",
+                "titre": "Geplande beurten",
+                "texte": "Interventies op de afgesproken dag, met één aanspreekpunt voor de opvolging."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Veelgestelde vragen",
+            "items": [
+              {
+                "question": "Werkt u met syndici en beheerders?",
+                "reponse": "Ja, dat is de kern van deze dienst. Wij richten ons zowel tot professionele syndici als tot vrijwillige syndici en eigenaars van opbrengstgebouwen, met een duidelijke offerte die op de algemene vergadering kan worden voorgelegd."
+              },
+              {
+                "question": "Verzorgt u het buiten- en binnenzetten van de containers?",
+                "reponse": "Als u dat wenst, ja. Het beheer van het afval op de ophaaldag kan in het onderhoudscontract van de gemeenschappelijke delen worden opgenomen; het volstaat dit bij de offerte te vermelden."
+              },
+              {
+                "question": "Hoe vaak moet een gebouw worden onderhouden?",
+                "reponse": "Dat hangt af van het aantal kavels en de passage. Een klein gebouw heeft vaak genoeg aan een wekelijkse beurt, terwijl een grote residentie baat heeft bij een hoger ritme. Wij adviseren u na een bezoek."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Om verder te gaan",
+            "titre": "Vaak gecombineerde diensten",
+            "items": [
+              {
+                "nom": "Ramen wassen",
+                "description": "Deuren en glazen wanden van de hal streeploos gereinigd, in aanvulling op het onderhoud van de delen.",
+                "href": "/nettoyage-vitres",
+                "icone": "GlassWater"
+              },
+              {
+                "nom": "Schoonmaak aan huis",
+                "description": "Wil een bewoner ook zijn woning laten onderhouden? Wij bieden de dienst aan huis aan.",
+                "href": "/nettoyage-domicile",
+                "icone": "Home"
+              },
+              {
+                "nom": "Noodinterventie",
+                "description": "Waterschade in de gemeenschappelijke delen of een appartement? Wij komen snel ter plaatse.",
+                "href": "/nettoyage-urgence",
+                "icone": "Droplets"
+              }
+            ],
+            "cta": {
+              "label": "Ligt uw gebouw in ons werkgebied? Nagaan",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Een offerte voor de gemeenschappelijke delen van uw gebouw?",
+            "sousTitre": "Gratis en vrijblijvende offerte, afgestemd op het aantal kavels.",
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Ramen wassen",
+      "navHidden": true,
+      "meta": {
+        "title": "Ramen wassen in Charleroi en Henegouwen",
+        "description": "Ramen, raampartijen en glasoppervlakken binnen en buiten gereinigd, zonder strepen of druipsporen, in Charleroi en Henegouwen. Gratis offerte.",
+        "keywords": [
+          "ramen wassen Charleroi",
+          "ramen reinigen Henegouwen",
+          "glazenwasser Charleroi",
+          "etalage reinigen winkel Charleroi"
+        ]
+      },
+      "service": {
+        "name": "Ramen wassen",
+        "description": "Reiniging van ramen en glasoppervlakken, binnen en buiten, in Charleroi.",
+        "serviceType": "Ramen wassen"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Glasoppervlakken",
+            "titre": "Ramen wassen in Charleroi",
+            "intro": "Heldere ramen veranderen alles: ze laten het licht binnen en geven meteen een indruk van zorg. AB Pro Service wast uw ramen, raampartijen en glasoppervlakken binnen en buiten, bij professionals en particulieren, in Charleroi en Henegouwen.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Diensten", "href": "/services" },
+              { "label": "Ramen wassen" }
+            ],
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Wat wij reinigen",
+            "items": [
+              {
+                "icone": "GlassWater",
+                "nom": "Ramen en raampartijen",
+                "description": "Vensters, raampartijen en wanden aan beide zijden gereinigd, zonder strepen of druipsporen."
+              },
+              {
+                "icone": "Store",
+                "nom": "Etalages en gevels",
+                "description": "Winkeletalages en gevels vrijgemaakt om de blik van voorbijgangers te trekken."
+              },
+              {
+                "icone": "Building",
+                "nom": "Glaswerk van de delen",
+                "description": "Glazen deuren en wanden van inkomhallen en onthaalruimtes."
+              },
+              {
+                "icone": "Sparkles",
+                "nom": "Omlijstingen",
+                "description": "Kaders, dorpels en omlijstingen afgenomen voor een complete, nette afwerking."
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Een streeploos resultaat, bij elke beurt",
+            "paragraphes": [
+              "Ramen wassen laat zich niet improviseren: de kwaliteit zit in het materiaal en de methode. Wij werken met professioneel gereedschap — trekkers, inwasser en beheerst water — om heldere oppervlakken zonder kringen te bekomen, ook op grote raampartijen en op ruiten die van binnenuit moeilijk bereikbaar zijn. Kaders en dorpels worden meteen mee afgenomen, want een propere ruit omlijst door stof komt nooit echt tot haar recht.",
+              "Deze dienst boekt u apart, voor een eenmalige opfrissing, of voegt u toe aan een regelmatig onderhoud van kantoren, winkel of mede-eigendom. Voor professionals houdt een terugkerende beurt de etalages en bereikbare gevels steeds net; voor particulieren volstaat vaak een seizoensafspraak om het licht terug te winnen. Wij spreken een realistische en veilige werkhoogte af, en zeggen u eerlijk wat wel of niet tot ons werkterrein behoort."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Veelgestelde vragen",
+            "items": [
+              {
+                "question": "Wast u de ramen ook aan de buitenkant?",
+                "reponse": "Ja, binnen en buiten, zolang de toegang veilig is vanaf de grond of een redelijke hoogte. Voor ruiten op zeer grote hoogte die speciaal materiaal vergen, zeggen wij u dat meteen."
+              },
+              {
+                "question": "Kan het ramen wassen bij een onderhoudscontract worden gevoegd?",
+                "reponse": "Zeker. Dat is zelfs heel gebruikelijk: wij nemen een regelmatige ramenbeurt op in een contract voor kantoren, winkel of mede-eigendom, in het ritme dat u past."
+              },
+              {
+                "question": "Hoe vaak moet je je ramen laten doen?",
+                "reponse": "Voor een etalage of een gevel langs de straat houdt een maandelijks ritme de glans. Voor een woning volstaan doorgaans twee tot vier keer per jaar, naargelang de ligging en de omgeving."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Om verder te gaan",
+            "titre": "Vaak gecombineerde diensten",
+            "items": [
+              {
+                "nom": "Kantoorschoonmaak",
+                "description": "Combineer het wassen van de raampartijen met het regelmatige onderhoud van uw werkplekken.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              },
+              {
+                "nom": "Winkels en panden",
+                "description": "Blinkende etalage en verzorgd interieur: de combinatie die het imago van uw winkel dient.",
+                "href": "/nettoyage-commerces",
+                "icone": "Store"
+              },
+              {
+                "nom": "Schoonmaak aan huis",
+                "description": "Ook thuis veranderen nette ramen de sfeer: voeg ze toe aan een onderhoud van de woning.",
+                "href": "/nettoyage-domicile",
+                "icone": "Home"
+              }
+            ],
+            "cta": {
+              "label": "Bevindt u zich in ons werkgebied? Nagaan",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Zin in onberispelijke ramen in Charleroi?",
+            "sousTitre": "Gratis en vrijblijvende offerte. Snel antwoord.",
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-domicile",
+      "label": "Schoonmaak aan huis",
+      "navHidden": true,
+      "meta": {
+        "title": "Schoonmaak aan huis in Charleroi",
+        "description": "Verzorgd onderhoud van uw interieur in Charleroi en Henegouwen: gewone schoonmaak, grote beurt of opfrissing. Gratis en vrijblijvende offerte.",
+        "keywords": [
+          "schoonmaak aan huis Charleroi",
+          "huishoudhulp Charleroi",
+          "schoonmaak woning Henegouwen",
+          "grote schoonmaak Charleroi"
+        ]
+      },
+      "service": {
+        "name": "Schoonmaak aan huis",
+        "description": "Gewoon onderhoud en grote schoonmaak van de woning van particulieren in Charleroi.",
+        "serviceType": "Schoonmaak aan huis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Bij particulieren",
+            "titre": "Schoonmaak aan huis in Charleroi",
+            "intro": "Thuiskomen in een net interieur, zonder er uw weekend aan te besteden: dat bieden wij particulieren in Charleroi en Henegouwen. Gewoon onderhoud, grote voorjaarsschoonmaak of opfrissing na een gebeurtenis, wij stemmen de dienst af op uw woning en uw ritme.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Diensten", "href": "/services" },
+              { "label": "Schoonmaak aan huis" }
+            ],
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Uw interieur onderhouden zoals het verdient",
+            "paragraphes": [
+              "Aan huis nemen wij alle leefruimtes voor onze rekening: ontstoffen van oppervlakken en meubels, stofzuigen en dweilen van de vloeren, keuken ontvet en werkbladen gereinigd, badkamer en sanitair ontsmet en ontkalkt. Het resultaat is niet alleen een propere woning, het is tijd en mentale rust die u terugwint voor wat er echt toe doet.",
+              "Wij bieden een regelmatig onderhoud — wekelijks, tweewekelijks of maandelijks — om uw interieur moeiteloos op peil te houden, maar evengoed losse beurten: een grote seizoensschoonmaak, een opfrissing voor of na een feest, of een fris tintje voor de komst van gasten. U kiest of wij met eigen materiaal en producten komen dan wel de uwe gebruiken. In alle gevallen zijn discretie en respect voor uw interieur de regel, en blijft de offerte gratis en duidelijk."
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Wat een beurt omvat",
+            "items": [
+              {
+                "icone": "Sparkles",
+                "nom": "Leefruimtes",
+                "description": "Ontstoffen, vloeren gestofzuigd en gedweild, oppervlakken afgenomen in woonkamer en slaapkamers."
+              },
+              {
+                "icone": "Droplets",
+                "nom": "Keuken en sanitair",
+                "description": "Werkbladen ontvet, gootstenen, badkamer en toilet ontsmet en ontkalkt."
+              },
+              {
+                "icone": "CalendarCheck",
+                "nom": "In uw ritme",
+                "description": "Regelmatige beurt of eenmalige interventie, naargelang uw noden en beschikbaarheid."
+              },
+              {
+                "icone": "ShieldCheck",
+                "nom": "In vertrouwen",
+                "description": "Een discrete en zorgvuldige medewerker, met oog voor uw interieur en uw gewoontes."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Veelgestelde vragen",
+            "items": [
+              {
+                "question": "Kan ik één grote schoonmaak boeken, zonder abonnement?",
+                "reponse": "Ja. Veel klanten bellen ons voor een eenmalige interventie: een grote voorjaarsschoonmaak, een opfrissing voor een feest of na gasten. Geen enkele verbintenis op termijn is vereist."
+              },
+              {
+                "question": "Moet ik de producten en het materiaal voorzien?",
+                "reponse": "Zoals u verkiest. Wij kunnen volledig uitgerust komen, of uw producten gebruiken als u daaraan houdt. In alle gevallen stemmen wij de producten af op de oppervlakken van uw woning."
+              },
+              {
+                "question": "Moet ik aanwezig zijn tijdens de interventie?",
+                "reponse": "Dat is niet verplicht. Veel klanten geven ons een afgesproken toegang en vinden hun woning net terug bij hun thuiskomst. Wij geven u een seintje zodra het werk klaar is."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Om verder te gaan",
+            "titre": "Vaak gecombineerde diensten",
+            "items": [
+              {
+                "nom": "Ramen wassen",
+                "description": "Voeg het reinigen van de ramen van uw woning toe om het licht volop terug te winnen.",
+                "href": "/nettoyage-vitres",
+                "icone": "GlassWater"
+              },
+              {
+                "nom": "Noodinterventie",
+                "description": "Waterschade bij u thuis? Wij komen snel om te saneren en te herstellen.",
+                "href": "/nettoyage-urgence",
+                "icone": "Droplets"
+              },
+              {
+                "nom": "Mede-eigendommen",
+                "description": "Beheert u ook een gebouw? Ontdek ons onderhoud van de gemeenschappelijke delen.",
+                "href": "/nettoyage-copropriete",
+                "icone": "Building"
+              }
+            ],
+            "cta": {
+              "label": "Wordt uw gemeente bediend? Nagaan",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Een offerte voor het onderhoud van uw woning?",
+            "sousTitre": "Gratis en vrijblijvende offerte. Snel antwoord.",
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-urgence",
+      "label": "Noodinterventie",
+      "navHidden": true,
+      "meta": {
+        "title": "Schoonmaak na waterschade in Charleroi",
+        "description": "Waterschade of onvoorziene situatie in Charleroi en Henegouwen: AB Pro Service komt snel ter plaatse om te saneren, oppervlakken te drogen en de ruimtes te herstellen.",
+        "keywords": [
+          "schoonmaak na waterschade Charleroi",
+          "noodschoonmaak Charleroi",
+          "herstel na schade Henegouwen",
+          "dringende schoonmaak Charleroi"
+        ]
+      },
+      "service": {
+        "name": "Noodinterventie",
+        "description": "Schoonmaak en herstel na waterschade of iets onvoorziens in Charleroi, op offerte.",
+        "serviceType": "Noodschoonmaak na schade",
+        "priceFrom": "Op offerte"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Waterschade en onvoorziene situaties",
+            "titre": "Noodinterventie in Charleroi",
+            "intro": "Waterschade, een lek of een incident laten zelden tijd om te wachten. AB Pro Service komt snel ter plaatse in Charleroi en Henegouwen om de oppervlakken te saneren, het bereikbare water af te voeren en de ruimtes te herstellen. Omdat elke situatie anders is, wordt deze dienst op offerte geraamd.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Diensten", "href": "/services" },
+              { "label": "Noodinterventie" }
+            ],
+            "ctaPrimaire": {
+              "label": "Bel ons nu",
+              "href": "tel:+32492683823"
+            },
+            "ctaSecondaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Snel reageren om de schade te beperken",
+            "paragraphes": [
+              "Na waterschade telt elk uur: hoe langer het vocht blijft staan, hoe meer de schade zich uitbreidt naar vloeren, plinten en bekledingen. Vanaf uw telefoontje organiseren wij een snelle interventie om het bereikbare water af te voeren, de getroffen oppervlakken te reinigen en te saneren, resten te verwijderen en de ruimtes voor te bereiden op hun herstel. Wij behandelen ook schoonmaakwerk na andere onvoorziene voorvallen, wanneer een dringende opknapbeurt zich opdringt.",
+              "Onze rol is het schoonmaken en saneren: wij voeren geen loodgieterswerk of lekdetectie uit, maar komen in aanvulling tussen zodat de ruimtes weer gezond en toonbaar worden zodra de oorzaak is aangepakt. Omdat geen enkel noodgeval op een ander lijkt — getroffen oppervlak, aard van de schade, bereikbaarheid — stellen wij een duidelijke offerte op maat van de situatie op, in alle transparantie over wat wel of niet tot onze interventie behoort."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "timeline-verticale",
+          "content": {
+            "titre": "Onze interventie, stap voor stap",
+            "items": [
+              {
+                "icone": "PhoneCall",
+                "titre": "Uw oproep",
+                "texte": "U beschrijft de situatie en de omvang van de schade; wij organiseren een snelle komst."
+              },
+              {
+                "icone": "Droplets",
+                "titre": "Sanering",
+                "texte": "Wij voeren het bereikbare water af, reinigen en ontsmetten de getroffen oppervlakken."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "Herstel",
+                "texte": "Wij verwijderen de resten en maken de ruimtes gezond, klaar voor de verdere herstellingen."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Veelgestelde vragen",
+            "items": [
+              {
+                "question": "Komt u snel na waterschade?",
+                "reponse": "Wij doen ons uiterste best om ons zo snel mogelijk na uw oproep vrij te maken. Het efficiëntst is ons telefonisch te bereiken: wij schatten de urgentie in en organiseren ons meteen."
+              },
+              {
+                "question": "Herstelt u het lek dat de schade veroorzaakte?",
+                "reponse": "Nee, loodgieterswerk en lekdetectie behoren tot een ander vak. Onze interventie betreft het schoonmaken, saneren en opknappen van de ruimtes, in aanvulling op de herstellingen."
+              },
+              {
+                "question": "Waarom is deze dienst enkel op offerte?",
+                "reponse": "Omdat geen twee schadegevallen op elkaar lijken: het getroffen oppervlak, de aard van de schade en de bereikbaarheid veranderen alles. Een raming per geval is de enige manier om juist en transparant te zijn."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Waterschade die niet kan wachten?",
+            "sousTitre": "Bel ons: wij schatten de situatie in en organiseren een snelle interventie.",
+            "ctaPrimaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            },
+            "ctaSecondaire": {
+              "label": "Schrijf op WhatsApp",
+              "href": "https://wa.me/32492683823"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

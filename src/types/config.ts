@@ -214,6 +214,14 @@ export interface ImageRef {
   alt?: string;
 }
 
+/** Référence vidéo (mp4/webm). Rendue en `<video controls>` natif. */
+export interface VideoRef {
+  url: string;
+  /** Image d'aperçu affichée avant lecture (poster). Recommandée. */
+  poster?: string;
+  alt?: string;
+}
+
 // --- hero ---
 /** Carte de prix flottante du hero (variant "carte"). */
 export interface HeroCard {
@@ -555,9 +563,30 @@ export interface FaqContent {
 // --- galerie ---
 export type GalerieVariant = "avant-apres" | "produits" | "grille";
 export interface GalerieAvantApresItem {
-  avant: ImageRef;
-  apres: ImageRef;
+  avant?: ImageRef;
+  apres?: ImageRef;
+  /** Vidéo à la place de l'image « avant » (ex. état initial filmé). */
+  avantVideo?: VideoRef;
+  /** Vidéo à la place de l'image « après ». */
+  apresVideo?: VideoRef;
+  /**
+   * Plusieurs photos « après » qui DÉFILENT l'une après l'autre (diaporama).
+   * Prioritaire sur `apres` pour la cellule « après ». Idem `avantImages`.
+   */
+  avantImages?: ImageRef[];
+  apresImages?: ImageRef[];
   legende?: string;
+}
+
+/**
+ * Un GROUPE de la galerie = une seule carte présentant PLUSIEURS photos d'un
+ * même chantier, qui basculent automatiquement (diaporama). Alternative à une
+ * carte par image. Utilisé par `GalerieContent.groupes`.
+ */
+export interface GalerieGroupe {
+  titre?: string;
+  description?: string;
+  images: ImageRef[];
 }
 export interface GalerieImageItem {
   image: ImageRef;
@@ -572,6 +601,11 @@ export interface GalerieContent {
   avantApres?: GalerieAvantApresItem[];
   /** Pour variants "produits" / "grille" / "montage" (image unique). */
   images?: GalerieImageItem[];
+  /**
+   * Cartes-chantiers à diaporama : chaque groupe = UNE carte dont les photos
+   * basculent automatiquement. Prioritaire sur `images` quand présent (grille).
+   */
+  groupes?: GalerieGroupe[];
   /** Active la visionneuse plein écran (défaut: true). */
   lightbox?: boolean;
   /** Pastille affichée sur les vignettes (ex. "Avant / Après"). */

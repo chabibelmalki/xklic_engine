@@ -4,6 +4,7 @@ import { siteOrigin } from "@/lib/urls";
 import { getHomePage, type ResolvedPage } from "@/lib/pages";
 import { htmlLang, ogLocale, localizedPath } from "@/lib/i18n";
 import { buildIcons } from "@/lib/favicon";
+import { mentionsLegalesTitle, confidentialiteTitle } from "@/lib/legal";
 import { ui } from "@/i18n/ui";
 
 /**
@@ -199,10 +200,11 @@ export function buildMetadata(config: SiteConfig, page?: ResolvedPage, locale?: 
 export function buildLegalMetadata(config: SiteConfig, locale?: string): Metadata {
   const def = config.i18n?.default ?? "fr";
   const loc = locale ?? def;
+  const title = mentionsLegalesTitle(loc);
   return {
     metadataBase: new URL(siteOrigin(config)),
-    title: `Mentions légales — ${config.entreprise.nom}`,
-    description: `Mentions légales de ${config.entreprise.nom} (${config.seo.ville}).`,
+    title: `${title} — ${config.entreprise.nom}`,
+    description: `${title} — ${config.entreprise.nom} (${config.seo.ville}).`,
     icons: buildIcons(config),
     alternates: {
       canonical: localizedPath("/mentions-legales", loc, def),
@@ -216,10 +218,11 @@ export function buildLegalMetadata(config: SiteConfig, locale?: string): Metadat
 export function buildConfidentialiteMetadata(config: SiteConfig, locale?: string): Metadata {
   const def = config.i18n?.default ?? "fr";
   const loc = locale ?? def;
+  const title = confidentialiteTitle(loc);
   return {
     metadataBase: new URL(siteOrigin(config)),
-    title: `Politique de confidentialité — ${config.entreprise.nom}`,
-    description: `Politique de confidentialité de ${config.entreprise.nom} (${config.seo.ville}).`,
+    title: `${title} — ${config.entreprise.nom}`,
+    description: `${title} — ${config.entreprise.nom} (${config.seo.ville}).`,
     icons: buildIcons(config),
     alternates: {
       canonical: localizedPath("/confidentialite", loc, def),

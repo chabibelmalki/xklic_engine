@@ -163,10 +163,10 @@ export function SiteHeader({
             ) : (
               <a
                 href={telHrefIntl(contact.telephone)}
-                className="inline-flex items-center gap-2 text-sm font-semibold text-ink transition-colors hover:text-brand-700"
+                className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap text-sm font-semibold text-ink transition-colors hover:text-brand-700"
               >
-                <Phone className="size-4 text-brand-600" />
-                <span className="inline-flex items-baseline gap-1.5">
+                <Phone className="size-4 shrink-0 text-brand-600" />
+                <span className="inline-flex items-baseline gap-1.5 whitespace-nowrap">
                   {telNeedsIndicatif(contact.telephone) && (
                     <span className="text-[0.78em] font-medium text-muted">{telIndicatif()}</span>
                   )}
