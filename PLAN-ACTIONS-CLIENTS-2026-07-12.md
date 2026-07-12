@@ -1,9 +1,9 @@
 # PLAN D'ACTIONS PAR CLIENT — améliorer les scores SEO
 
-> État au 2026-07-12, après les 2 audits (8 agents chacun), les 4 vagues de
-> corrections déployées et le recentrage sanadclean. Scores = re-audit du
-> 2026-07-12 (mesurés AVANT la passe finale : ce sont des planchers).
-> Tenir ce fichier À JOUR à chaque action réalisée (réflexes : `MODIFCLIENT.md`).
+> Instantané daté du 2026-07-12, après les 2 audits (8 agents chacun), les
+> 4 vagues de corrections déployées et le recentrage sanadclean. Scores =
+> re-audit du 2026-07-12 (mesurés AVANT la passe finale : ce sont des
+> planchers). Toute action se réalise selon les réflexes de `MODIFCLIENT.md`.
 
 ## Comment lire les scores (et pourquoi personne n'est à 10)
 
