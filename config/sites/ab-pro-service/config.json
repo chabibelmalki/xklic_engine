@@ -77,9 +77,10 @@
           "type": "hero",
           "content": {
             "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/hero.png",
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/hero.jpg",
               "alt": "Bureau moderne lumineux, skyline urbaine et matériel de nettoyage, aux couleurs bleu et vert d'AB Pro Service"
             },
+            "imageOverlay": "moyen",
             "eyebrow": "Nettoyage professionnel · Charleroi et 50 km autour",
             "titre": "Des espaces impeccables,",
             "titreAccent": "sans y penser",

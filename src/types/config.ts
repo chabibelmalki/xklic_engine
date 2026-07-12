@@ -263,6 +263,13 @@ export interface HeroContent {
    */
   imageRatio?: string;
   /**
+   * Intensité du voile sombre posé sur l'image plein cadre (familles à hero
+   * immersif, ex. `editorial`). `fort` (défaut) garantit le contraste AA du
+   * texte blanc sur n'importe quelle image ; `moyen`/`leger` laissent
+   * davantage voir l'image quand elle est déjà sombre côté texte.
+   */
+  imageOverlay?: "fort" | "moyen" | "leger";
+  /**
    * Variant "split" : agrandit la colonne image (image plus grande que le
    * texte). Défaut false = colonnes 1.1/0.9 (texte dominant). Voir Hero.tsx.
    */

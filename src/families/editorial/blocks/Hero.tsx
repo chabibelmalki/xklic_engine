@@ -16,6 +16,13 @@ import { EditorialContainer } from "../ui/Container";
  * Ce hero IGNORE `block.variant` (la famille impose le plein cadre, à l'opposé
  * des variants carte/split de la famille classic).
  */
+/** Voiles de lisibilité (noir dégradé, non-marque). `fort` = rendu historique. */
+const OVERLAYS: Record<"fort" | "moyen" | "leger", string> = {
+  fort: "linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.84) 88%, rgba(0,0,0,0.50) 100%)",
+  moyen: "linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.60) 80%, rgba(0,0,0,0.30) 100%)",
+  leger: "linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 75%, rgba(0,0,0,0.14) 100%)",
+};
+
 export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroContent>) {
   const c = block.content;
   const ville = config.seo.ville;
@@ -35,11 +42,11 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
             sizes="100vw"
             className="object-cover"
           />
-          {/* Scrim de LISIBILITÉ (noir, non-marque). ≥84 % de noir jusqu'à 88 %
-              de la hauteur = toute la zone de texte → contraste AA garanti même
-              au pire cas (image ≈ blanche). L'image reste visible (assombrie) en
-              haut. La marque s'exprime par le kicker, les CTA et l'accent. */}
-          <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(0,0,0,0.92)_0%,rgba(0,0,0,0.84)_88%,rgba(0,0,0,0.50)_100%)]" />
+          {/* Scrim de LISIBILITÉ (noir, non-marque). `fort` (défaut) garantit le
+              contraste AA du texte blanc même au pire cas (image ≈ blanche) ;
+              `moyen`/`leger` laissent davantage voir l'image. Réglable par site
+              via `content.imageOverlay`. */}
+          <div className="absolute inset-0" style={{ backgroundImage: OVERLAYS[c.imageOverlay ?? "fort"] }} />
         </div>
       )}
 

@@ -53,9 +53,10 @@
           "type": "hero",
           "content": {
             "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/hero.png",
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/hero.jpg",
               "alt": "Licht modern kantoor, stadskyline en schoonmaakmateriaal, in de blauw-groene kleuren van AB Pro Service"
             },
+            "imageOverlay": "moyen",
             "eyebrow": "Professionele schoonmaak · Charleroi en 50 km rondom",
             "titre": "Onberispelijke ruimtes,",
             "titreAccent": "zonder eraan te denken",
