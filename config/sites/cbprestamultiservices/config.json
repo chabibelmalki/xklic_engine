@@ -120,19 +120,19 @@
             },
             "trust": [
               {
-                "icone": "building-2",
+                "icone": "Building2",
                 "label": "Professionnels & particuliers"
               },
               {
-                "icone": "clock",
+                "icone": "Clock",
                 "label": "Disponible 7j/7 · 24h/24"
               },
               {
-                "icone": "shield-check",
+                "icone": "ShieldCheck",
                 "label": "Matériel et produits pros"
               },
               {
-                "icone": "map-pin",
+                "icone": "MapPin",
                 "label": "Nîmes · Montpellier · Avignon · Marseille"
               }
             ]
@@ -149,49 +149,49 @@
               {
                 "nom": "Bureaux & locaux professionnels",
                 "description": "Entretien régulier ou ponctuel de vos bureaux, commerces, cabinets et locaux d'activité, en journée ou hors présence.",
-                "icone": "building-2",
+                "icone": "Building2",
                 "priceHint": "dès 90 €",
                 "href": "/nettoyage-bureaux"
               },
               {
                 "nom": "Fin de chantier & remise en état",
                 "description": "Dépoussiérage, décollage de traces, sols et sanitaires : nous livrons un local propre, prêt à occuper après travaux.",
-                "icone": "hard-hat",
+                "icone": "HardHat",
                 "priceHint": "dès 250 €",
                 "href": "/fin-de-chantier"
               },
               {
                 "nom": "Vitres & vitrerie",
                 "description": "Vitrines, baies, verrières et vitrages en hauteur nettoyés sans traces, à la perche à eau pure ou sur accès sécurisé.",
-                "icone": "sparkles",
+                "icone": "AppWindow",
                 "priceHint": "dès 90 €",
                 "href": "/nettoyage-vitres"
               },
               {
                 "nom": "Canapés, fauteuils, tapis & matelas",
                 "description": "Nettoyage textile en injection-extraction : taches, odeurs et acariens éliminés en profondeur, séchage rapide.",
-                "icone": "sofa",
+                "icone": "Sofa",
                 "priceHint": "dès 60 €",
                 "href": "/nettoyage-textile"
               },
               {
                 "nom": "Copropriétés & parties communes",
                 "description": "Contrats d'entretien des halls, cages d'escalier, vitrages et locaux poubelles pour syndics et bailleurs.",
-                "icone": "users",
+                "icone": "Building",
                 "priceHint": "sur devis",
                 "href": "/coproprietes"
               },
               {
                 "nom": "Vigne, taille & jardinage",
                 "description": "Vendange, taille de la vigne, entretien d'espaces verts et ramassage de déchets verts, en renfort saisonnier ou ponctuel.",
-                "icone": "leaf",
+                "icone": "Grape",
                 "priceHint": "sur devis",
                 "href": "/vigne-jardinage"
               },
               {
                 "nom": "Traitement anti-nuisibles",
                 "description": "Cafards, punaises de lit, fourmis et guêpes : diagnostic, traitement ciblé et visite de contrôle.",
-                "icone": "bug",
+                "icone": "Bug",
                 "priceHint": "sur devis",
                 "href": "/traitement-nuisibles"
               }
@@ -235,22 +235,22 @@
               {
                 "titre": "Visite et diagnostic",
                 "texte": "Nous évaluons les surfaces, l'état et les contraintes d'accès, sur place ou sur photos, pour cadrer le juste besoin.",
-                "icone": "clipboard-check"
+                "icone": "ClipboardCheck"
               },
               {
                 "titre": "Devis détaillé",
                 "texte": "Vous recevez un devis gratuit sous 48 h, ligne par ligne, sans engagement ni surprise en fin de prestation.",
-                "icone": "file-text"
+                "icone": "FileText"
               },
               {
                 "titre": "Intervention planifiée",
                 "texte": "Nous intervenons au créneau convenu, en journée ou hors présence, avec le matériel adapté à chaque poste.",
-                "icone": "calendar-check"
+                "icone": "CalendarCheck"
               },
               {
                 "titre": "Contrôle du rendu",
                 "texte": "Un tour de contrôle valide chaque point avant de vous rendre les lieux, et nous ajustons si nécessaire.",
-                "icone": "badge-check"
+                "icone": "BadgeCheck"
               }
             ]
           }
@@ -435,49 +435,49 @@
               {
                 "nom": "Nettoyage de bureaux & locaux",
                 "description": "Entretien régulier ou grand nettoyage de vos espaces de travail, cabinets, commerces et locaux d'activité.",
-                "icone": "building-2",
+                "icone": "Building2",
                 "priceHint": "dès 90 €",
                 "href": "/nettoyage-bureaux"
               },
               {
                 "nom": "Fin de chantier & remise en état",
                 "description": "Nettoyage complet après travaux ou avant emménagement : gravats fins, traces, sols et sanitaires.",
-                "icone": "hard-hat",
+                "icone": "HardHat",
                 "priceHint": "dès 250 €",
                 "href": "/fin-de-chantier"
               },
               {
                 "nom": "Nettoyage de vitres & vitrerie",
                 "description": "Vitrines, baies vitrées, verrières et vitrages difficiles d'accès, nettoyés sans traces.",
-                "icone": "sparkles",
+                "icone": "AppWindow",
                 "priceHint": "dès 90 €",
                 "href": "/nettoyage-vitres"
               },
               {
                 "nom": "Canapés, tapis, matelas & fauteuils",
                 "description": "Nettoyage textile en profondeur par injection-extraction, contre les taches, odeurs et allergènes.",
-                "icone": "sofa",
+                "icone": "Sofa",
                 "priceHint": "dès 60 €",
                 "href": "/nettoyage-textile"
               },
               {
                 "nom": "Copropriétés & parties communes",
                 "description": "Contrats d'entretien des halls, escaliers, vitrages et locaux techniques pour syndics et bailleurs.",
-                "icone": "users",
+                "icone": "Building",
                 "priceHint": "sur devis",
                 "href": "/coproprietes"
               },
               {
                 "nom": "Vigne, taille & jardinage",
                 "description": "Vendange, taille de la vigne, entretien d'espaces verts et ramassage de déchets verts, en saison ou à la demande.",
-                "icone": "leaf",
+                "icone": "Grape",
                 "priceHint": "sur devis",
                 "href": "/vigne-jardinage"
               },
               {
                 "nom": "Traitement anti-nuisibles",
                 "description": "Désinsectisation cafards, punaises de lit, fourmis et guêpes, avec diagnostic et suivi.",
-                "icone": "bug",
+                "icone": "Bug",
                 "priceHint": "sur devis",
                 "href": "/traitement-nuisibles"
               }
@@ -624,19 +624,19 @@
               {
                 "nom": "Nettoyage de vitres",
                 "description": "Vitrines et baies sans traces.",
-                "icone": "sparkles",
+                "icone": "AppWindow",
                 "href": "/nettoyage-vitres"
               },
               {
                 "nom": "Fin de chantier",
                 "description": "Après vos aménagements de locaux.",
-                "icone": "hard-hat",
+                "icone": "HardHat",
                 "href": "/fin-de-chantier"
               },
               {
                 "nom": "Copropriétés",
                 "description": "Parties communes et immeubles.",
-                "icone": "users",
+                "icone": "Building",
                 "href": "/coproprietes"
               }
             ]
@@ -781,19 +781,19 @@
               {
                 "nom": "Nettoyage de vitres",
                 "description": "Vitrages neufs sans traces.",
-                "icone": "sparkles",
+                "icone": "AppWindow",
                 "href": "/nettoyage-vitres"
               },
               {
                 "nom": "Bureaux & locaux",
                 "description": "Entretien après emménagement.",
-                "icone": "building-2",
+                "icone": "Building2",
                 "href": "/nettoyage-bureaux"
               },
               {
                 "nom": "Textiles",
                 "description": "Canapés et moquettes du local.",
-                "icone": "sofa",
+                "icone": "Sofa",
                 "href": "/nettoyage-textile"
               }
             ]
@@ -932,19 +932,19 @@
               {
                 "nom": "Bureaux & locaux",
                 "description": "Entretien complet des espaces.",
-                "icone": "building-2",
+                "icone": "Building2",
                 "href": "/nettoyage-bureaux"
               },
               {
                 "nom": "Fin de chantier",
                 "description": "Vitres neuves à dégraisser.",
-                "icone": "hard-hat",
+                "icone": "HardHat",
                 "href": "/fin-de-chantier"
               },
               {
                 "nom": "Copropriétés",
                 "description": "Vitrages des parties communes.",
-                "icone": "users",
+                "icone": "Building",
                 "href": "/coproprietes"
               }
             ]
@@ -1089,19 +1089,19 @@
               {
                 "nom": "Bureaux & locaux",
                 "description": "Sièges et moquettes du bureau.",
-                "icone": "building-2",
+                "icone": "Building2",
                 "href": "/nettoyage-bureaux"
               },
               {
                 "nom": "Fin de chantier",
                 "description": "Après une rénovation d'intérieur.",
-                "icone": "hard-hat",
+                "icone": "HardHat",
                 "href": "/fin-de-chantier"
               },
               {
                 "nom": "Vitres & vitrerie",
                 "description": "Pour un intérieur net de bout en bout.",
-                "icone": "sparkles",
+                "icone": "AppWindow",
                 "href": "/nettoyage-vitres"
               }
             ]
@@ -1218,19 +1218,19 @@
               {
                 "nom": "Vitres & vitrerie",
                 "description": "Vitrages des halls et entrées.",
-                "icone": "sparkles",
+                "icone": "AppWindow",
                 "href": "/nettoyage-vitres"
               },
               {
                 "nom": "Fin de chantier",
                 "description": "Après travaux dans l'immeuble.",
-                "icone": "hard-hat",
+                "icone": "HardHat",
                 "href": "/fin-de-chantier"
               },
               {
                 "nom": "Bureaux & locaux",
                 "description": "Loges et locaux techniques.",
-                "icone": "building-2",
+                "icone": "Building2",
                 "href": "/nettoyage-bureaux"
               }
             ]
@@ -1347,19 +1347,19 @@
               {
                 "nom": "Bureaux & locaux",
                 "description": "Entretien de vos espaces professionnels.",
-                "icone": "building-2",
+                "icone": "Building2",
                 "href": "/nettoyage-bureaux"
               },
               {
                 "nom": "Fin de chantier",
                 "description": "Remise en état après travaux.",
-                "icone": "hard-hat",
+                "icone": "HardHat",
                 "href": "/fin-de-chantier"
               },
               {
                 "nom": "Copropriétés",
                 "description": "Entretien des parties communes.",
-                "icone": "users",
+                "icone": "Building",
                 "href": "/coproprietes"
               }
             ]
@@ -1476,19 +1476,19 @@
               {
                 "nom": "Bureaux & locaux",
                 "description": "Entretien régulier après traitement.",
-                "icone": "building-2",
+                "icone": "Building2",
                 "href": "/nettoyage-bureaux"
               },
               {
                 "nom": "Canapés & tapis",
                 "description": "Nettoyage textile en profondeur.",
-                "icone": "sofa",
+                "icone": "Sofa",
                 "href": "/nettoyage-textile"
               },
               {
                 "nom": "Fin de chantier",
                 "description": "Remise en état des locaux.",
-                "icone": "hard-hat",
+                "icone": "HardHat",
                 "href": "/fin-de-chantier"
               }
             ]
