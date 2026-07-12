@@ -1,9 +1,11 @@
 # PLAN D'ACTIONS PAR CLIENT — améliorer les scores SEO
 
-> Instantané daté du 2026-07-12, après les 2 audits (8 agents chacun), les
-> 4 vagues de corrections déployées et le recentrage sanadclean. Scores =
-> re-audit du 2026-07-12 (mesurés AVANT la passe finale : ce sont des
-> planchers). Toute action se réalise selon les réflexes de `MODIFCLIENT.md`.
+> Instantané mis à jour le 2026-07-13. Couvre : les 2 audits des 11-12/07
+> (8 agents chacun), les 4 vagues de corrections déployées, le recentrage
+> sanadclean (12/07) et le chantier casa complet (13/07 : NAP Berre-l'Étang,
+> visuels, avis, page Aubagne, horaires 6h-22h). Scores = re-audit du 12/07,
+> mesurés AVANT la passe finale (ce sont des planchers). Toute action se
+> réalise selon les réflexes de `MODIFCLIENT.md`.
 
 ## Comment lire les scores (et pourquoi personne n'est à 10)
 
@@ -46,21 +48,26 @@ Le socle est très bon ; tout son retard est concentré sur la preuve sociale.
 
 | # | Action | Impact attendu | Qui | Statut |
 |---|---|---|---|---|
-| 1 | **Fiche Google Business** : dès validation, envoyer l'URL → on branche `googleReviewUrl` (+ lien Maps en `social[]`) : page /avis, lien footer et hasMap s'activent automatiquement | **Local 6 → 7,5+** : débloque le pack local, aujourd'hui à zéro | Client (en cours) → nous 15 min | ⏳ fiche en validation |
+| 1 | **Fiche Google Business** : dès validation, envoyer l'URL → on branche `googleReviewUrl` (+ lien Maps en `social[]`) : page /avis, lien footer et hasMap s'activent automatiquement | **Local 6 → 7,5+** : débloque le pack local, aujourd'hui à zéro | Client (en cours) → nous 15 min | ⏳ fiche en validation côté client |
 | 2 | **Collecter les premiers avis** puis bloc témoignages sur la home (vrais avis, verbatim) | Local + Persona : première preuve sociale du site | Client → nous 20 min | À la suite de #1 |
 | 3 | **Photos réelles** de prestations (5-6 suffisent) → galerie + og:image par page | Contenu 6 → 7 : le site est 100 % texte/icônes aujourd'hui | Client → nous 30 min | À demander |
 | 4 | Trancher **Lyon** : la zone liste 14 communes du Rhône sans contenu dédié — soit une vraie page si ambition réelle, soit retirer du bloc zone | Local : concentre le signal sur Saint-Étienne (même logique que le recentrage sanadclean) | Décision CEO/client | Ouvert |
 
 ## casa-clean-provence — 7,5 (persona 8 · technique 8 · contenu 6,5 · local 7,5)
 
-Config parmi les plus abouties ; il lui manque du VISUEL.
+Gros chantier bouclé le 2026-07-13 : NAP réaligné sur la fiche réelle
+(**Berre-l'Étang**, Rue de la République 13130, GPS exact du plus code
+F5F8+PV, horaires 6h-22h partout), 7 visuels Unsplash validés CEO (hero
+arrière-plan « plein », og 1200×630, 5 pages illustrées), 2 avis frais
+(3e écarté : famille), page pilote `/menage-aubagne`, clic adresse → fiche.
 
 | # | Action | Impact attendu | Qui | Statut |
 |---|---|---|---|---|
-| 1 | **5-10 photos réelles** (avant/après, matériel, équipe) + une image de partage 1200×630 | Persona + Contenu : métier où la preuve visuelle convertit ; l'image de partage actuelle est le logo | Client → nous 30 min | À demander |
-| 2 | **2-3 avis Google frais** (le bloc est passé de 5 à 3 après retrait des avis famille) | Local + confiance | Client | À demander |
-| 3 | **Confirmer la ventilation Diogène** (part nettoyage éligible vs débarras) sur les devis réels | Conformité : le site est cadré, les devis doivent suivre | Client (dirigeante) | À confirmer |
-| 4 | **Pages villes secondaires** (Aubagne, puis Aix) si ambition au-delà de Marseille intra-muros | Local : seule façon de ranker hors Marseille | Décision → nous ~1 h/page | Ouvert |
+| 1 | ~~Visuels + image de partage~~ (illustrations banque en place) ; **vraies photos de chantiers** → page Réalisations dédiée | Persona + Contenu : la vraie preuve remplacera l'illustration | Client → nous 30 min | ✅ illustrations FAIT · vraies photos à demander |
+| 2 | ~~2 avis Google frais~~ (Sami Zalmat, Sedat Ates intégrés, note 4,9 alignée fiche) ; collecte continue | Local + confiance | Client | ✅ FAIT · collecte continue |
+| 3 | ~~Ventilation Diogène~~ | Conformité | Cliente | ✅ CONFIRMÉ 2026-07-13 |
+| 4 | ~~Page Aubagne~~ (pilote en ligne) ; **suivre son indexation GSC 3-4 semaines**, puis répliquer sur **Aix** si ça capte | Local : seule façon de ranker hors Marseille | Nous (suivi) → décision Aix | ✅ Aubagne FAIT · suivi en cours |
+| 5 | **Propriété Search Console** de casacleanprovence.fr à vérifier (préalable au suivi du pilote) | Pilotage | Nous | À vérifier |
 
 ## mb-nettoyage — 7,5 (persona 8 · technique 8 · contenu 7 · local 7)
 
@@ -120,6 +127,6 @@ signature, dérouler `MODIFCLIENT.md` (cas « Passer un prospect en client ») :
 
 1. **parfait-menage-26 : obtenir UN taux horaire** (1 info client, 30 min de travail, gros impact SERP + conversion).
 2. **adelnet : brancher la fiche Google dès validation** (15 min, débloque son levier n°1).
-3. **casa : obtenir les photos** (le seul client 100 % sans visuel réel).
+3. ~~casa : obtenir les photos~~ → illustrations en place (2026-07-13) ; prochaines vraies photos = page Réalisations.
 4. **mb : décider la page Aix** (1 h de travail, un marché de 145 000 hab.).
 5. **taxi-excellence : décider les pages Sète/Frontignan** (casse son plafond géographique).

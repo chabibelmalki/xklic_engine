@@ -44,8 +44,8 @@
     "ville": "Berre-l'Étang"
   },
   "geo": {
-    "lat": 43.478,
-    "lng": 5.17
+    "lat": 43.4743,
+    "lng": 5.1672
   },
   "meta": {
     "title": "Casa Clean Provence — Ménage & remise en état à Marseille",
@@ -97,7 +97,7 @@
               },
               {
                 "icone": "Clock",
-                "label": "Lun – Sam, 8h30 – 18h"
+                "label": "Lun – Sam, 6h – 22h"
               },
               {
                 "icone": "MapPin",
@@ -302,7 +302,7 @@
               },
               {
                 "question": "J'ai besoin de quelqu'un très vite : c'est possible ?",
-                "reponse": "Oui. Dégât des eaux, visite imprévue, remise de clés qui approche : selon nos disponibilités, nous passons en priorité, moyennant une majoration de 10 % sur le tarif habituel. Un coup de fil ou un WhatsApp du lundi au samedi, entre 8h30 et 18h, et on s'organise."
+                "reponse": "Oui. Dégât des eaux, visite imprévue, remise de clés qui approche : selon nos disponibilités, nous passons en priorité, moyennant une majoration de 10 % sur le tarif habituel. Un coup de fil ou un WhatsApp du lundi au samedi, entre 6h et 22h, et on s'organise."
               },
               {
                 "question": "Jusqu'où venez-vous autour de Marseille ?",
@@ -994,7 +994,7 @@
       "label": "Contact",
       "meta": {
         "title": "Contact ménage & nettoyage à Marseille",
-        "description": "Téléphone, WhatsApp, e-mail ou formulaire : joignez Casa Clean Provence à Marseille du lundi au samedi, 8h30-18h. Réponse rapide et devis gratuit."
+        "description": "Téléphone, WhatsApp, e-mail ou formulaire : joignez Casa Clean Provence à Marseille du lundi au samedi, 6h-22h. Réponse rapide et devis gratuit."
       },
       "blocks": [
         {
@@ -1020,7 +1020,7 @@
             "horaires": [
               {
                 "jour": "Lun – Sam",
-                "heures": "8h30 – 18h00"
+                "heures": "6h – 22h"
               }
             ],
             "services": [
@@ -1100,7 +1100,7 @@
             "horaires": [
               {
                 "jour": "Lun – Sam",
-                "heures": "8h30 – 18h00"
+                "heures": "6h – 22h"
               }
             ],
             "services": [
@@ -1168,7 +1168,7 @@
             "titre": "Latifa, une entreprise",
             "titreAccent": "à taille humaine",
             "paragraphes": [
-              "Derrière Casa Clean Provence, il y a Latifa Mazzour, qui a créé l'entreprise et la dirige au quotidien depuis Berre-l'Étang, au bord de l'étang. C'est de là que partent nos tournées, vers Marseille et tout le pourtour — et c'est elle qui lit vos messages, prépare les devis et décroche le téléphone du lundi au samedi, de 8h30 à 18h : la même personne du premier appel au dernier coup d'éponge, ce que nos clients soulignent justement dans leurs avis.",
+              "Derrière Casa Clean Provence, il y a Latifa Mazzour, qui a créé l'entreprise et la dirige au quotidien depuis Berre-l'Étang, au bord de l'étang. C'est de là que partent nos tournées, vers Marseille et tout le pourtour — et c'est elle qui lit vos messages, prépare les devis et décroche le téléphone du lundi au samedi, de 6h à 22h : la même personne du premier appel au dernier coup d'éponge, ce que nos clients soulignent justement dans leurs avis.",
               "Ce format à taille humaine se retrouve dans l'organisation : les rendez-vous sont regroupés par secteur, de la vallée de l'Huveaune aux portes d'Aix, ce qui nous permet de tenir les créneaux convenus, d'offrir le déplacement sur Marseille et ses environs proches et de garder de la place pour une urgence (majoration de 10 %). Chez les clients réguliers, nous faisons le maximum pour envoyer toujours la même intervenante.",
               "L'entreprise est déclarée au titre des services à la personne : tout ce qui est réalisé à votre domicile ouvre droit au crédit d'impôt de 50 %, avec l'avance immédiate si vous le souhaitez, et l'attestation fiscale vous est remise chaque année. Le règlement en CESU est également accepté."
             ]
@@ -1199,7 +1199,7 @@
               {
                 "icone": "Clock",
                 "titre": "Ponctualité",
-                "texte": "Des créneaux respectés, du lundi au samedi de 8h30 à 18h."
+                "texte": "Des créneaux respectés, du lundi au samedi de 6h à 22h."
               }
             ]
           }
@@ -1690,7 +1690,7 @@
             "paragraphes": [
               "Au pied du Garlaban, Aubagne occupe le cœur de la vallée de l'Huveaune — précisément le fil que remontent nos tournées de l'est marseillais : La Penne-sur-Huveaune, Aubagne, puis Roquevaire, Auriol ou Gémenos. Caler votre logement aubagnais dans un planning existant n'a donc rien d'exceptionnel pour nous : c'est notre organisation par secteur qui rend la chose simple, sans trajet dédié à répercuter sur votre facture.",
               "Sur place, rien ne change par rapport à Marseille : mêmes prestations, mêmes prix. L'heure de ménage régulier est facturée 30 €, soit 15 € réellement à votre charge après le crédit d'impôt de 50 % — avance immédiate possible, règlement en CESU accepté. Vous préparez un état des lieux ou sortez de travaux ? La remise en état démarre à 250 € pour un studio. Et des baies d'une villa sur les hauteurs aux fenêtres d'un appartement du centre-ville, la vitrerie commence à 90 €.",
-              "Concrètement : vous nous décrivez votre logement et vos attentes, nous vous renvoyons un devis gratuit sous 24 h, puis le premier passage se cale sur un créneau du secteur, du lundi au samedi entre 8h30 et 18h. Pour un entretien régulier, nous tenons à ce que ce soit la même intervenante qui pousse votre porte à chaque visite — et si un imprévu vous tombe dessus, l'intervention d'urgence reste possible, moyennant 10 % de majoration."
+              "Concrètement : vous nous décrivez votre logement et vos attentes, nous vous renvoyons un devis gratuit sous 24 h, puis le premier passage se cale sur un créneau du secteur, du lundi au samedi entre 6h et 22h. Pour un entretien régulier, nous tenons à ce que ce soit la même intervenante qui pousse votre porte à chaque visite — et si un imprévu vous tombe dessus, l'intervention d'urgence reste possible, moyennant 10 % de majoration."
             ]
           }
         },
