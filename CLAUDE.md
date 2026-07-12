@@ -169,3 +169,7 @@ du dossier parent).
   fait inventé, valider→déployer→vérifier live) + pièges par cas fréquent
   (changement de prix, prospect→client, etc.). **Vivant** — à suivre pour TOUTE
   modification d'un site en prod.
+- **`PLAN-ACTIONS-CLIENTS.md`** — feuille de route SEO par client (action,
+  impact attendu, qui, statut) issue des audits 2026-07. **Vivant** — mettre à
+  jour le statut à chaque action réalisée ; c'est là qu'on pioche la prochaine
+  action au meilleur ratio impact/effort.
