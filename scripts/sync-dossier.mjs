@@ -134,6 +134,7 @@ const res = await api("POST", "/v1/public/agency/orders", {
   ref: before.ref,
   statut: before.statut_commande,
   dossier: patch,
+  source: "sync", // versioning : étiquette la version créée côté back-office
 });
 const after = (await api("GET", `/v1/public/agency/orders/${encodeURIComponent(res.ref || before.ref)}`)).order;
 
