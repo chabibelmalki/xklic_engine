@@ -24,6 +24,7 @@
     "media:migrate": "node scripts/migrate-blob-to-scaleway.mjs",
     "media:migrate:apply": "node scripts/migrate-blob-to-scaleway.mjs --apply",
     "dossier:get": "node scripts/get-dossier.mjs",
+    "dossier:sync": "node scripts/sync-dossier.mjs",
     "canonicals:check": "node scripts/check-canonicals.mjs",
     "dedup:check": "node scripts/check-duplication.mjs"
   },

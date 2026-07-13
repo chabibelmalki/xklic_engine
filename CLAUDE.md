@@ -124,6 +124,21 @@ du dossier parent).
   `statut_commande` (lead/panier/payé, écrit par la vitrine) ≠ `statut_production`
   (kanban interne : Prospect → À faire → En prod → En ligne → SAV). Script
   **local** (lit `.env.local`, ne tourne pas sur Vercel).
+- **Alignement config → dossier** : `scripts/sync-dossier.mjs` (`npm run dossier:sync`)
+  recale un dossier agence sur les données **canoniques du client**, la config
+  engine étant la **source de vérité** (email, téléphone, adresse, SIRET, réseaux,
+  `domaine` = apex de `customDomains`, `logo_urls`/`photo_urls`). On produit un JSON
+  d'entrée `{ "search": "<nom|Ref>", "dossier": { <champs à aligner> } }` (typiquement
+  rempli à la main depuis `config/sites/<slug>/config.json`), puis :
+  ```bash
+  npm run dossier:sync -- entree.json           # DRY-RUN : affiche le décalage
+  npm run dossier:sync -- entree.json --apply    # écrit en base
+  ```
+  L'écriture passe par l'**upsert public par `ref`** : seuls les champs fournis
+  sont écrits (coalesce serveur — un champ absent n'est pas touché), le statut est
+  renvoyé tel quel, et le **paiement n'est JAMAIS touché** (aucun `payment` envoyé ;
+  les clés paiement de l'entrée sont ignorées). Process **manuel, un client à la
+  fois** (get → comparer → apply).
 - **Écriture** (runtime serveur) : `src/lib/backoffice.ts` — `postLead()` →
   `POST /v1/public/leads` (formulaires, PII) et `postEvent()` →
   `POST /v1/public/events` (clics de contact, sans PII). Fire-and-forget strict
