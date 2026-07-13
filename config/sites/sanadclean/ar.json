@@ -9,8 +9,8 @@
     ]
   },
   "branding": {
-    "logo": "/sites/sanadclean/logo.png",
-    "icon": "/sites/sanadclean/icon.png",
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/sanadclean/logo.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/sanadclean/icon.png",
     "logoAlt": "SANAD CLEAN — خدمات التنظيف في نيم",
     "logoTwoTone": {
       "first": "#034373",
@@ -35,7 +35,7 @@
     "ville": "Nîmes"
   },
   "meta": {
-    "ogImage": "/sites/sanadclean/og.png",
+    "ogImage": "https://xklic-media.s3.fr-par.scw.cloud/sites/sanadclean/og.png",
     "title": "تنظيف منزلي في نيم — 15 € للساعة بعد الخصم الضريبي",
     "description": "تنظيف منزلي في نيم: 30 € للساعة في الفاتورة و15 € بعد الخصم الضريبي 50٪. تنظيف المحلات المهنية وإعادة التأهيل ومكافحة الآفات — تقدير مجاني خلال 24 ساعة.",
     "keywords": [

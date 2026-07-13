@@ -14,8 +14,8 @@
     ]
   },
   "branding": {
-    "logo": "/sites/sanadclean/logo.png",
-    "icon": "/sites/sanadclean/icon.png",
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/sanadclean/logo.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/sanadclean/icon.png",
     "logoAlt": "SANAD CLEAN — services de nettoyage à Nîmes",
     "logoTwoTone": {
       "first": "#034373",
@@ -59,7 +59,7 @@
   },
   "googleReviewUrl": "https://g.page/r/CZ_OkKs4Rw1nEBM/review",
   "meta": {
-    "ogImage": "/sites/sanadclean/og.png",
+    "ogImage": "https://xklic-media.s3.fr-par.scw.cloud/sites/sanadclean/og.png",
     "title": "Nettoyage & ménage à Nîmes, 15 €/h après crédit d'impôt",
     "description": "Ménage à domicile à Nîmes : 30 €/h facturés, 15 €/h après crédit d'impôt de 50 %. Locaux, remise en état, nuisibles — devis gratuit sous 24 h.",
     "keywords": [
