@@ -1,5 +1,6 @@
 {
   "slug": "ab-pro-service",
+  "customDomains": ["abproservice.be", "www.abproservice.be"],
   "theme": "bleu-azur",
   "stylePack": "marine-premium",
   "i18n": {
