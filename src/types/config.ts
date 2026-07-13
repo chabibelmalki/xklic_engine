@@ -191,6 +191,12 @@ export interface Branding {
    * À laisser à défaut (faux) pour un logo clair déjà lisible sur fond sombre.
    */
   logoDarkBadge?: boolean;
+  /**
+   * Facteur d'échelle du logo dans l'en-tête (défaut 1). >1 agrandit, <1 réduit.
+   * PROPRE AU SITE : n'affecte que ce logo, pas le composant partagé des autres
+   * sites. Ex. 1.35 pour un logo qui rend trop petit à la taille par défaut.
+   */
+  logoScale?: number;
   /** Petite ligne sous le nom (ex. "Nettoyage · Nîmes"). */
   tagline?: string;
   /**

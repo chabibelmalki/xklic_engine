@@ -14,6 +14,7 @@ export const SITE_SLUGS: string[] = [
   "meca-atlas",
   "minhaj",
   "parfait-menage-26",
+  "rd-net-propre",
   "sanadclean",
   "taxi-concept",
   "taxi-excellence",

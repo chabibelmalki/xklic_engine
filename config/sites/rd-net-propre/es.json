@@ -1,0 +1,1567 @@
+{
+  "slug": "rd-net-propre",
+  "i18n": {
+    "default": "fr",
+    "languages": [
+      "fr",
+      "en",
+      "es",
+      "ar"
+    ]
+  },
+  "branding": {
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/logo-d0f2181d.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/logo-d0f2181d.png",
+    "logoAlt": "RD NET&PROPRE — empresa de limpieza en París",
+    "logoTwoTone": {
+      "first": "#1c6b57",
+      "rest": "#c79a3f"
+    },
+    "tagline": "Limpieza profesional · París & Isla de Francia",
+    "colors": {
+      "brand": "#1c6b57",
+      "accent": "#c79a3f",
+      "neutral": "warm"
+    },
+    "logoScale": 1.35
+  },
+  "entreprise": {
+    "nom": "RD NET&PROPRE",
+    "statut": "EI",
+    "siret": "99339068100019",
+    "ape": "81.21Z",
+    "apeLabel": "Limpieza corriente de edificios",
+    "tva": {
+      "regime": "franchise"
+    }
+  },
+  "seo": {
+    "schemaType": "CleaningService",
+    "ville": "Paris"
+  },
+  "meta": {
+    "title": "Empresa de limpieza en París & Isla de Francia",
+    "description": "RD NET&PROPRE limpia comunidades, oficinas, cristales y viviendas en toda la Isla de Francia. Limpieza desde 35 €/h, presupuesto gratis en 24 h, 6 días a la semana.",
+    "keywords": [
+      "empresa de limpieza París",
+      "limpieza de comunidades Isla de Francia",
+      "limpieza de oficinas París",
+      "limpieza de cristales París",
+      "limpieza a domicilio París",
+      "limpieza de zonas comunes",
+      "limpieza fin de obra París",
+      "servicios de limpieza Isla de Francia"
+    ]
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Inicio",
+      "navHidden": true,
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "carte",
+          "content": {
+            "showSocial": true,
+            "eyebrow": "Empresa de limpieza · París & Isla de Francia",
+            "titre": "Espacios impecables, en manos de un equipo",
+            "titreAccent": "serio y discreto",
+            "accroche": "Comunidades, oficinas, comercios y viviendas: RD NET&PROPRE cuida sus espacios con método, desde el portal del edificio hasta el cristal de la oficina, en toda la Isla de Francia.",
+            "trust": [
+              {
+                "icone": "Building2",
+                "label": "Comunidades y empresas"
+              },
+              {
+                "icone": "Clock",
+                "label": "6 días/semana · 8h – 22h"
+              },
+              {
+                "icone": "ShieldCheck",
+                "label": "Un equipo de confianza"
+              },
+              {
+                "icone": "MapPin",
+                "label": "Toda la Isla de Francia"
+              }
+            ],
+            "card": {
+              "label": "Limpieza a domicilio",
+              "prix": "35 €",
+              "unite": "/ hora",
+              "mention": "presupuesto gratis para las demás prestaciones",
+              "points": [
+                "Intervenciones de lunes a sábado, 8h – 22h",
+                "Presupuesto claro devuelto en 24 h",
+                "Personal fijo y discreto",
+                "Material y productos incluidos"
+              ],
+              "rating": {
+                "label": "A su servicio en toda la región"
+              }
+            },
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto gratis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Descubrir nuestros servicios",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Nuestros servicios",
+            "titre": "Un solo proveedor para cada tipo de lugar",
+            "intro": "Desde la limpieza periódica de las zonas comunes hasta la puesta a punto tras una obra, cubrimos las necesidades de administradores de fincas, empresas y particulares de la región parisina.",
+            "items": [
+              {
+                "nom": "Comunidades y zonas comunes",
+                "icone": "Building2",
+                "priceHint": "según presupuesto",
+                "description": "Portales, escaleras, rellanos, ascensores y cristales interiores mantenidos con una planificación regular, con un responsable único para su administrador.",
+                "href": "/nettoyage-copropriete"
+              },
+              {
+                "nom": "Oficinas y locales profesionales",
+                "icone": "Briefcase",
+                "priceHint": "desde 120 €",
+                "description": "Oficinas, restaurantes y cocinas profesionales limpiados antes de abrir o después de cerrar, sin perturbar su actividad.",
+                "href": "/nettoyage-professionnels"
+              },
+              {
+                "nom": "Limpieza de cristales",
+                "icone": "Sparkles",
+                "priceHint": "desde 100 €",
+                "description": "Escaparates, ventanales y cristales impecables por ambas caras, tanto para comercios como para particulares.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Limpieza a domicilio",
+                "icone": "Home",
+                "priceHint": "desde 35 €/h",
+                "description": "El mantenimiento regular o puntual de su vivienda, siempre a cargo de la misma persona, atenta a sus costumbres.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Sofás, sillones y alfombras",
+                "icone": "Sofa",
+                "priceHint": "desde 70 €",
+                "description": "Tejidos revividos por inyección-extracción: asientos higienizados, manchas tratadas, alfombras lavadas fibra a fibra.",
+                "href": "/nettoyage-textiles"
+              },
+              {
+                "nom": "Limpieza fin de obra",
+                "icone": "Hammer",
+                "priceHint": "desde 300 €",
+                "description": "Tras una obra o una mudanza, el lugar se recupera estancia por estancia, hasta la entrega de llaves.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Desinfección y biolimpieza",
+                "icone": "ShieldPlus",
+                "priceHint": "según presupuesto",
+                "description": "Limpieza y desinfección profesional: aplicación de protocolos de higiene hospitalaria y biolimpieza, con métodos y productos adaptados.",
+                "href": "/nettoyage-professionnels"
+              }
+            ],
+            "cta": {
+              "label": "Ver todos los servicios",
+              "href": "/services"
+            }
+          },
+          "variant": "mosaique"
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "En imágenes",
+            "titre": "La limpieza RD NET&PROPRE en acción",
+            "intro": "Un vistazo a nuestras intervenciones, de las zonas comunes de un edificio a los cristales de oficina y los sofás como nuevos.",
+            "ratio": "4/3",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/service-menage.png",
+                  "alt": "Equipo de RD NET&PROPRE aspirando y fregando el suelo de un salón luminoso"
+                },
+                "titre": "Limpieza y mantenimiento del hogar"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/service-bureaux.png",
+                  "alt": "Espacio de oficinas limpio y ordenado tras el paso de RD NET&PROPRE"
+                },
+                "titre": "Oficinas y espacios profesionales"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/service-canape.png",
+                  "alt": "Limpieza de un cojín de sofá con aspiración en profundidad"
+                },
+                "titre": "Sofás, sillones y alfombras"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/service-vitres-facade.png",
+                  "alt": "Técnicos limpiando los cristales de la fachada de un edificio en altura"
+                },
+                "titre": "Cristales y fachadas de edificios"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Quiénes somos",
+            "titre": "Una joven empresa de la región parisina,",
+            "titreAccent": "exigente con el detalle",
+            "paragraphes": [
+              "RD NET&PROPRE nació del deseo de ofrecer a administradores, empresas y familias de la Isla de Francia una limpieza que de verdad se sostiene en el tiempo, lejos de los trabajos hechos con prisas. Con base en París, cubrimos toda la región tanto para el mantenimiento habitual como para las puestas a punto puntuales.",
+              "Nuestra postura es sencilla: personal fijo en lugar de una rotación anónima, un interlocutor que conoce sus espacios y un control sistemático antes de irnos. Eso es lo que mantiene limpio un portal semana tras semana y permite que una oficina reciba a sus equipos en las mejores condiciones.",
+              "Atendemos a nuestros clientes en francés, inglés, español y árabe: cada uno puede describir su necesidad en su idioma y recibir un presupuesto claro, sin tecnicismos."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/qui-sommes-nous.png",
+              "alt": "Imagen de RD NET&PROPRE — material de limpieza profesional en una oficina luminosa"
+            },
+            "imagePosition": "left",
+            "imageRatio": "16/10",
+            "imageCard": true,
+            "ctaPrimaire": {
+              "label": "Conócenos",
+              "href": "/a-propos"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "Cómo trabajamos",
+            "titre": "De su llamada a un lugar impecable",
+            "items": [
+              {
+                "icone": "Phone",
+                "titre": "Nos describe el lugar",
+                "texte": "Por teléfono, WhatsApp o el formulario, nos indica el tipo de espacio, la superficie y la frecuencia deseada."
+              },
+              {
+                "icone": "FileText",
+                "titre": "Un presupuesto claro en 24 h",
+                "texte": "Le enviamos una propuesta detallada, con un precio firme y la planificación de las intervenciones que conviene."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "La intervención y el control",
+                "texte": "El equipo interviene con su propio material y revisa cada zona antes de marcharse. El resultado se nota desde la primera visita."
+              }
+            ]
+          },
+          "variant": "timeline-verticale"
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "París como base, la Isla de Francia como terreno",
+            "intro": "Trabajamos dentro de París y en los ocho departamentos de la región, de la primera a la segunda corona. Un desplazamiento hasta el extremo de la región no nos asusta: díganos dónde está el lugar.",
+            "rayonKm": 60,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=1.44%2C48.12%2C3.56%2C49.24&layer=mapnik&marker=48.8566%2C2.3522",
+            "zones": [
+              {
+                "region": "París ciudad",
+                "principale": "Paris",
+                "villes": [
+                  "París, del distrito 1 al 20"
+                ]
+              },
+              {
+                "region": "Primera corona",
+                "principale": "Boulogne-Billancourt",
+                "villes": [
+                  "Boulogne-Billancourt",
+                  "Neuilly-sur-Seine",
+                  "Levallois-Perret",
+                  "Nanterre",
+                  "Courbevoie",
+                  "Montreuil",
+                  "Saint-Denis",
+                  "Aubervilliers",
+                  "Créteil",
+                  "Vitry-sur-Seine",
+                  "Ivry-sur-Seine"
+                ]
+              },
+              {
+                "region": "Segunda corona",
+                "principale": "Versailles",
+                "villes": [
+                  "Versailles",
+                  "Argenteuil",
+                  "Cergy",
+                  "Évry-Courcouronnes",
+                  "Meaux",
+                  "Melun",
+                  "Sarcelles",
+                  "Saint-Germain-en-Laye"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Lo que más nos preguntan",
+            "items": [
+              {
+                "question": "¿Trabajan más con empresas o con particulares?",
+                "reponse": "Con ambos. Mantenemos las zonas comunes de las comunidades y los locales de las empresas, y también cuidamos las viviendas de particulares. Cada servicio tiene su propia página con el detalle de lo que incluye."
+              },
+              {
+                "question": "¿En cuánto tiempo se puede empezar?",
+                "reponse": "Para una intervención puntual, a menudo proponemos una cita dentro de la semana. Para un contrato periódico, fijamos juntos una planificación estable. El presupuesto, por su parte, le llega en 24 horas."
+              },
+              {
+                "question": "¿Hay que aportar material y productos?",
+                "reponse": "No, venimos equipados. Si prefiere que usemos productos concretos, por ejemplo para una superficie delicada o con niños en casa, basta con indicarlo al hacer el presupuesto."
+              },
+              {
+                "question": "¿En qué idiomas se les puede contactar?",
+                "reponse": "En francés, inglés, español y árabe. Describa su necesidad en el idioma que prefiera y la respuesta llegará en el mismo."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "¿Un lugar para dejar impecable?",
+            "sousTitre": "Teléfono, WhatsApp o el formulario en línea: su presupuesto gratuito le llega en 24 horas.",
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto gratis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            },
+            "lien": {
+              "label": "o escríbanos por WhatsApp →",
+              "href": "https://wa.me/33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Servicios",
+      "meta": {
+        "title": "Servicios de limpieza en París & Isla de Francia",
+        "description": "Comunidades, oficinas, cristales, limpieza a domicilio, tapicerías y fin de obra: el detalle de cada servicio de limpieza de RD NET&PROPRE en la Isla de Francia."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nuestros servicios",
+            "titre": "Cada lugar tiene su limpieza",
+            "intro": "Adaptamos método, frecuencia y productos a la naturaleza del espacio: un portal no se mantiene como una oficina, ni un sofá como un escaparate. Estas son nuestras seis áreas de trabajo.",
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Ver las tarifas",
+              "href": "/tarifs"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Empresas y administradores",
+            "titre": "Para comunidades y empresas",
+            "intro": "Intervenciones planificadas, un interlocutor único e informes claros para quienes gestionan edificios y locales.",
+            "items": [
+              {
+                "nom": "Comunidades y zonas comunes",
+                "icone": "Building2",
+                "priceHint": "según presupuesto",
+                "description": "Portales, cajas de escalera, rellanos, ascensores y cristales interiores: un mantenimiento regular que revaloriza el edificio y tranquiliza a los vecinos.",
+                "href": "/nettoyage-copropriete"
+              },
+              {
+                "nom": "Oficinas y locales profesionales",
+                "icone": "Briefcase",
+                "priceHint": "desde 120 €",
+                "description": "Oficinas, restaurantes y cocinas profesionales, limpiados fuera de su horario de apertura, respetando las normas de higiene.",
+                "href": "/nettoyage-professionnels"
+              },
+              {
+                "nom": "Limpieza de cristales",
+                "icone": "Sparkles",
+                "priceHint": "desde 100 €",
+                "description": "Escaparates, fachadas acristaladas y ventanas de oficina limpiados sin marcas, con las alturas resueltas con seguridad.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Desinfección y biolimpieza",
+                "icone": "ShieldPlus",
+                "priceHint": "según presupuesto",
+                "description": "Limpieza y desinfección profesional: aplicación de protocolos de higiene hospitalaria y biolimpieza, con métodos y productos adaptados.",
+                "href": "/nettoyage-professionnels"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Particulares",
+            "titre": "Para su vivienda y sus tejidos",
+            "intro": "El mismo cuidado del detalle, aplicado a la casa: un mantenimiento continuo y muebles que recuperan su frescura.",
+            "items": [
+              {
+                "nom": "Limpieza a domicilio",
+                "icone": "Home",
+                "priceHint": "desde 35 €/h",
+                "description": "Mantenimiento semanal o puntual: suelos, cocina, baño y polvo según sus indicaciones, a cargo de una persona fija.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Sofás, sillones y alfombras",
+                "icone": "Sofa",
+                "priceHint": "desde 70 €",
+                "description": "Inyección-extracción en profundidad: los tejidos salen higienizados, desodorizados y secos en unas horas. Alfombras lavadas según la fibra.",
+                "href": "/nettoyage-textiles"
+              },
+              {
+                "nom": "Limpieza fin de obra",
+                "icone": "Hammer",
+                "priceHint": "desde 300 €",
+                "description": "Tras una obra o antes de una revisión de salida: polvo de obra, restos de pintura y suelos recuperados hasta el último rincón.",
+                "href": "/remise-en-etat"
+              }
+            ],
+            "cta": {
+              "label": "Estimar mi presupuesto",
+              "href": "/tarifs"
+            }
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "¿No sabe en qué casilla encaja su necesidad?",
+            "sousTitre": "Descríbanos el lugar y el objetivo: le orientamos hacia el servicio adecuado y lo presupuestamos todo.",
+            "ctaPrimaire": {
+              "label": "Describir mi necesidad",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-copropriete",
+      "label": "Comunidades",
+      "navHidden": true,
+      "meta": {
+        "title": "Limpieza de comunidades y zonas comunes París",
+        "description": "Mantenimiento de zonas comunes en la Isla de Francia: portales, escaleras, rellanos, ascensores y cristales interiores. Planificación regular, responsable único, presupuesto gratis."
+      },
+      "service": {
+        "name": "Limpieza de comunidades y zonas comunes",
+        "description": "Mantenimiento regular de las zonas comunes de edificios residenciales en la Isla de Francia.",
+        "serviceType": "Limpieza de zonas comunes",
+        "priceFrom": "Según presupuesto"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Comunidades y edificios residenciales",
+            "titre": "Zonas comunes siempre impecables",
+            "intro": "Un edificio bien cuidado se nota desde el portal. Mantenemos sus zonas comunes con un ritmo regular, para vecinos satisfechos y un patrimonio preservado.",
+            "breadcrumb": [
+              {
+                "label": "Inicio",
+                "href": "/"
+              },
+              {
+                "label": "Servicios",
+                "href": "/services"
+              },
+              {
+                "label": "Comunidades"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Un mantenimiento pensado para administradores y vecinos",
+            "paragraphes": [
+              "El mantenimiento de las zonas comunes es el corazón de nuestro trabajo con las comunidades de la región parisina. Nos encargamos del barrido y fregado de portales, cajas de escalera y rellanos, del desempolvado de barandillas, buzones e interruptores, de la limpieza de las cabinas de ascensor y de los cristales interiores; la gestión de los contenedores en los días de recogida puede añadirse según el contrato.",
+              "Cada edificio recibe una planificación fija e, idealmente, el mismo personal de una semana a otra: conocen los rincones, las costumbres del edificio y avisan al administrador de lo que merece atención. Usted mantiene un interlocutor único, localizable, y un informe claro de lo realizado.",
+              "La frecuencia se ajusta a la vida del edificio: paso semanal, quincenal o varias veces por semana en los inmuebles de mucho tránsito. Elaboramos el presupuesto tras ver el lugar, para un precio justo y sin sorpresas."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Preguntas de los administradores de fincas",
+            "items": [
+              {
+                "question": "¿Ofrecen contratos de mantenimiento regular?",
+                "reponse": "Sí, es el formato más habitual en comunidades: una planificación fija, una frecuencia acordada con el administrador o la junta, y una facturación mensual clara. Las intervenciones puntuales siguen siendo posibles para una necesidad aislada."
+              },
+              {
+                "question": "¿Se ocupan de los contenedores y del cuarto de basuras?",
+                "reponse": "Es una opción frecuente en nuestros contratos. Sacar y recoger los contenedores los días de recogida, lavar el cuarto y una desinfección puntual pueden incluirse: lo indicamos con claridad en el presupuesto."
+              },
+              {
+                "question": "¿Cómo controla la calidad el administrador?",
+                "reponse": "Dispone de un interlocutor único con nosotros y de un informe de las intervenciones. Cualquier observación de un vecino nos llega directamente y ajustamos desde el paso siguiente."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Otras necesidades para su edificio",
+            "items": [
+              {
+                "nom": "Limpieza de cristales",
+                "icone": "Sparkles",
+                "description": "Portales acristalados, puertas y ventanas de las zonas comunes.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Limpieza fin de obra",
+                "icone": "Hammer",
+                "description": "Zonas comunes recuperadas tras una obra o un siniestro.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Oficinas y locales profesionales",
+                "icone": "Briefcase",
+                "description": "El cuarto del conserje, una sala común o la oficina de gestión.",
+                "href": "/nettoyage-professionnels"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Confíe sus zonas comunes a un equipo regular",
+            "sousTitre": "Envíenos la dirección y el número de plantas: vamos a verlo y presupuestamos el contrato.",
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-professionnels",
+      "label": "Oficinas y empresas",
+      "navHidden": true,
+      "meta": {
+        "title": "Limpieza de oficinas y locales en París",
+        "description": "Limpieza de oficinas, restaurantes y cocinas profesionales en la Isla de Francia, desde 120 €. Intervenciones fuera del horario, higiene cuidada, presupuesto en 24 h."
+      },
+      "service": {
+        "name": "Limpieza de oficinas y locales profesionales",
+        "description": "Mantenimiento de oficinas, restaurantes y cocinas profesionales en la Isla de Francia.",
+        "serviceType": "Limpieza de locales profesionales",
+        "priceFrom": 120
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Empresas, comercios y restaurantes",
+            "titre": "Locales limpios, sin perturbar su actividad",
+            "intro": "Un entorno de trabajo sano marca el tono para sus equipos y sus clientes. Mantenemos sus oficinas y espacios profesionales antes de abrir o después de cerrar.",
+            "breadcrumb": [
+              {
+                "label": "Inicio",
+                "href": "/"
+              },
+              {
+                "label": "Servicios",
+                "href": "/services"
+              },
+              {
+                "label": "Oficinas y empresas"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Oficinas, restaurantes y cocinas profesionales",
+            "paragraphes": [
+              "Intervenimos en espacios de trabajo de todos los tamaños: plantas de oficinas, consultas, salas de reunión, aseos y zonas de recepción. El protocolo cubre el vaciado de papeleras, el desempolvado de los puestos, el fregado de suelos, la desinfección de los puntos de contacto y el mantenimiento de los aseos, con reposición de consumibles si lo desea.",
+              "En la restauración, la exigencia sube un nivel: desengrasado de superficies, limpieza de salas y cocinas profesionales respetando las normas de higiene, suelos antideslizantes tratados con los productos adecuados. Adaptamos nuestros pasos a su servicio, a primera hora o a última, para no estorbar nunca la atención al público.",
+              "El servicio arranca en 120 € y se ajusta a la superficie, la frecuencia y el nivel de exigencia. Un contrato periódico garantiza el mismo equipo y un resultado constante, semana tras semana.",
+              "También realizamos la limpieza y desinfección profesional de entornos sensibles: aplicación de protocolos de higiene hospitalaria y biolimpieza, con métodos y productos adaptados a cada superficie. Una respuesta para consultas, laboratorios, salas de cura y cualquier local donde la exigencia sanitaria es máxima."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Preguntas de empresas y restauradores",
+            "items": [
+              {
+                "question": "¿Pueden intervenir fuera del horario de apertura?",
+                "reponse": "Sí, es incluso la norma para la mayoría de nuestros clientes profesionales. A primera hora, por la tarde o de noche según su actividad: ajustamos los pasos a sus horas de menor actividad para no molestar nunca a clientes ni empleados."
+              },
+              {
+                "question": "¿Respetan las exigencias de higiene en cocina profesional?",
+                "reponse": "Usamos productos y métodos adaptados a las superficies alimentarias y al desengrasado, e intervenimos siguiendo la lógica de las normas de higiene de la restauración. El detalle de las zonas tratadas figura en el presupuesto."
+              },
+              {
+                "question": "¿La limpieza de oficinas se factura por hora o por paquete?",
+                "reponse": "Lo más habitual es por paquete, calculado sobre la superficie y la frecuencia, para un presupuesto previsible. Para una necesidad puntual o una gran superficie, también podemos presupuestar por intervención."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "A combinar para sus locales",
+            "items": [
+              {
+                "nom": "Limpieza de cristales",
+                "icone": "Sparkles",
+                "description": "Escaparates y ventanas de oficina sin marcas, a la calle y al patio.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Limpieza fin de obra",
+                "icone": "Hammer",
+                "description": "Local recuperado a fondo tras una reforma o antes de una entrega.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Sofás y sillones",
+                "icone": "Sofa",
+                "description": "Asientos de recepción y sillones de reunión higienizados.",
+                "href": "/nettoyage-textiles"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "¿Un presupuesto para sus oficinas o su comercio?",
+            "sousTitre": "Indíquenos la superficie y sus horarios: proponemos una planificación y un precio firme.",
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Cristales",
+      "navHidden": true,
+      "meta": {
+        "title": "Limpieza de cristales en París, desde 100 €",
+        "description": "Limpieza de cristales para empresas y particulares en la Isla de Francia, desde 100 €. Escaparates, ventanales y cristales sin marcas, por ambos lados. Presupuesto en 24 h."
+      },
+      "service": {
+        "name": "Limpieza de cristales",
+        "description": "Limpieza de cristales, escaparates y ventanales para empresas y particulares en la Isla de Francia.",
+        "serviceType": "Limpieza de cristales",
+        "priceFrom": 100
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Empresas y particulares",
+            "titre": "Entra la luz, desaparecen las marcas",
+            "intro": "Unos cristales limpios lo cambian todo: un escaparate que invita a entrar, una oficina más luminosa, un salón transformado. Lavamos sus superficies acristaladas por ambas caras.",
+            "breadcrumb": [
+              {
+                "label": "Inicio",
+                "href": "/"
+              },
+              {
+                "label": "Servicios",
+                "href": "/services"
+              },
+              {
+                "label": "Cristales"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Escaparates, ventanales y ventanas",
+            "paragraphes": [
+              "Limpiamos los cristales de comercios y empresas igual que los de las viviendas: escaparates y fachadas, lucernarios, ventanales correderos, ventanas de cuarterones, marcos y alféizares. Cada superficie se lava por sus dos caras y luego se revisa a contraluz para no dejar ni velo ni reguero.",
+              "En los escaparates de comercio, un paso regular mantiene una imagen cuidada que cuenta en el momento en que el cliente duda si empujar la puerta. Para los particulares, una gran limpieza de temporada basta a menudo para recuperar claridad en toda la vivienda. Las superficies en altura se tratan con el material adecuado, con seguridad.",
+              "El servicio arranca en 100 € y depende del número de aberturas, de su accesibilidad y de la frecuencia. Presupuestamos con precisión tras revisar las superficies a tratar."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Preguntas sobre la limpieza de cristales",
+            "items": [
+              {
+                "question": "¿Limpian los escaparates de forma regular?",
+                "reponse": "Sí. Muchos comerciantes optan por un paso semanal o quincenal para mantener un escaparate impecable en todo momento. Intervenimos antes de abrir para no molestar a la clientela."
+              },
+              {
+                "question": "¿Llegan a los cristales en altura?",
+                "reponse": "Tratamos las superficies a una altura razonable con pértigas y el material adecuado. Para configuraciones complejas o grandes fachadas, evaluamos el acceso al presupuestar y le proponemos la solución más segura."
+              },
+              {
+                "question": "¿Se incluyen marcos y alféizares?",
+                "reponse": "Sí, la limpieza incluye los montantes, los alféizares y las marcas de los marcos: eso es lo que distingue un verdadero lavado de cristales de un simple paso de bayeta por el vidrio."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "A menudo pedido junto con",
+            "items": [
+              {
+                "nom": "Oficinas y locales profesionales",
+                "icone": "Briefcase",
+                "description": "El mantenimiento completo del local, cristales incluidos.",
+                "href": "/nettoyage-professionnels"
+              },
+              {
+                "nom": "Limpieza a domicilio",
+                "icone": "Home",
+                "description": "Los cristales integrados en el mantenimiento regular de la vivienda.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Comunidades y zonas comunes",
+                "icone": "Building2",
+                "description": "Portales y puertas acristaladas de edificios residenciales.",
+                "href": "/nettoyage-copropriete"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "¿Con ganas de ver más claro?",
+            "sousTitre": "Cuente sus ventanas y escaparates, envíenos el número: el presupuesto llega en 24 h.",
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "menage-domicile",
+      "label": "Limpieza a domicilio",
+      "navHidden": true,
+      "meta": {
+        "title": "Limpieza a domicilio en París, desde 35 €/h",
+        "description": "Limpieza a domicilio en la Isla de Francia desde 35 €/h: mantenimiento regular o puntual, persona fija, indicaciones respetadas, material incluido. Presupuesto en 24 h."
+      },
+      "service": {
+        "name": "Limpieza a domicilio",
+        "description": "Mantenimiento regular o puntual de la vivienda en la Isla de Francia, desde 35 €/h.",
+        "serviceType": "Limpieza a domicilio",
+        "priceFrom": 35
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Particulares",
+            "titre": "Una vivienda cuidada, con la mente tranquila",
+            "intro": "Volver a un hogar impecable sin dedicarle el fin de semana: eso es lo que le aportamos, con una persona fija que conoce sus costumbres.",
+            "breadcrumb": [
+              {
+                "label": "Inicio",
+                "href": "/"
+              },
+              {
+                "label": "Servicios",
+                "href": "/services"
+              },
+              {
+                "label": "Limpieza a domicilio"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "El mantenimiento de su vivienda, a su ritmo",
+            "paragraphes": [
+              "Ya busque un paso semanal, una limpieza puntual o una gran limpieza de temporada, adaptamos el servicio a su hogar. Suelos, cocina, baño, polvo, cristales interiores y un orden ligero: usted fija las prioridades en la primera cita, nosotros las anotamos y las seguimos en cada visita.",
+              "Damos prioridad a la misma persona de una vez a otra. Es lo que genera confianza cuando se entregan las llaves: su persona de limpieza acaba conociendo la casa, sus superficies delicadas y sus preferencias de productos. Con niños o mascotas, ajustamos con naturalidad los productos utilizados.",
+              "La limpieza a domicilio arranca en 35 €/h, material y productos incluidos. Usted decide la frecuencia y puede cambiar el ritmo según la temporada. El presupuesto es gratuito y sin compromiso."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Preguntas sobre la limpieza a domicilio",
+            "items": [
+              {
+                "question": "¿Tendré siempre a la misma persona?",
+                "reponse": "Es nuestra prioridad: asignamos una persona fija a su vivienda para que conozca su casa y sus indicaciones. Si falta, quien la sustituye recibe de antemano todas sus notas."
+              },
+              {
+                "question": "¿Puedo reservar una limpieza puntual en vez de un contrato regular?",
+                "reponse": "Por supuesto. Gran limpieza de primavera, puesta a punto antes de una reunión o tras una época intensa: intervenimos de forma puntual, sin obligación de repetir."
+              },
+              {
+                "question": "¿Ofrecen la desgravación fiscal en la limpieza a domicilio?",
+                "reponse": "La limpieza en casa de un particular es un servicio a la persona, pero la ventaja fiscal exige un registro específico. Le decimos con toda transparencia, al presupuestar, si su servicio da derecho o no."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Para ir más allá en casa",
+            "items": [
+              {
+                "nom": "Sofás, sillones y alfombras",
+                "icone": "Sofa",
+                "description": "Devolver la vida a los tejidos que el mantenimiento diario no basta para revivir.",
+                "href": "/nettoyage-textiles"
+              },
+              {
+                "nom": "Limpieza de cristales",
+                "icone": "Sparkles",
+                "description": "Una gran limpieza de las ventanas para recuperar luz.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Limpieza fin de obra",
+                "icone": "Hammer",
+                "description": "Una vivienda recuperada a fondo tras una obra o antes de una mudanza.",
+                "href": "/remise-en-etat"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "¿Con ganas de respirar en lo doméstico?",
+            "sousTitre": "Díganos el tamaño de la vivienda y el ritmo deseado: estimamos el presupuesto en 24 h.",
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-textiles",
+      "label": "Sofás y alfombras",
+      "navHidden": true,
+      "meta": {
+        "title": "Limpieza de sofá y alfombra en París, desde 70 €",
+        "description": "Limpieza de sofás, sillones y alfombras en la Isla de Francia desde 70 €. Inyección-extracción en profundidad, manchas tratadas, tejidos higienizados y de secado rápido."
+      },
+      "service": {
+        "name": "Limpieza de sofás, sillones y alfombras",
+        "description": "Limpieza en profundidad de tapicerías por inyección-extracción, en la Isla de Francia.",
+        "serviceType": "Limpieza de tapicerías",
+        "priceFrom": 70
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Sofás · Sillones · Alfombras",
+            "titre": "Sus tejidos recuperan su frescura",
+            "intro": "Un sofá apagado, una alfombra marcada, un olor que se instala: la inyección-extracción va a buscar la suciedad en el corazón de la fibra, allí donde el aspirador se detiene.",
+            "breadcrumb": [
+              {
+                "label": "Inicio",
+                "href": "/"
+              },
+              {
+                "label": "Servicios",
+                "href": "/services"
+              },
+              {
+                "label": "Sofás y alfombras"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "La inyección-extracción, en profundidad",
+            "paragraphes": [
+              "El método consiste en pulverizar una solución limpiadora en el corazón del tejido y luego aspirarla de inmediato junto con la suciedad disuelta. Resultado: las manchas se tratan, los ácaros y los olores se eliminan, y el tejido sale higienizado en lugar de simplemente frotado en superficie. El secado suele llevar unas horas, según el grosor y la ventilación de la estancia.",
+              "Intervenimos en sofás de tela, sillones, sillas tapizadas, colchones y alfombras. Cada material se identifica antes del menor gesto: lana, algodón, sintético o fibras delicadas no piden la misma dosis ni la misma temperatura. Las manchas rebeldes se pretratan a mano.",
+              "La limpieza de un sillón o de una alfombra arranca en 70 €, y las piezas grandes y los sofás rinconeros se presupuestan según su tamaño. Vamos a su casa con todo el material: no hay nada que mover."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Preguntas sobre la limpieza de tejidos",
+            "items": [
+              {
+                "question": "¿Cuánto tarda el sofá en secarse?",
+                "reponse": "Cuente por lo general de dos a cuatro horas, según el grosor del relleno y la ventilación de la estancia. Ajustamos la extracción para retirar el máximo de humedad y acortar el secado."
+              },
+              {
+                "question": "¿Salen todas las manchas?",
+                "reponse": "La gran mayoría se atenúa con claridad, sobre todo si la mancha es reciente. Algunas marcas antiguas o definitivas pueden quedar visibles: somos honestos sobre el resultado esperado antes de intervenir."
+              },
+              {
+                "question": "¿Tratan también colchones y alfombras delicadas?",
+                "reponse": "Sí. Colchones, alfombras de lana o seda y fibras delicadas se limpian con una dosis y un método adaptados al material, tras una prueba discreta en una zona poco visible."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "En la misma visita",
+            "items": [
+              {
+                "nom": "Limpieza a domicilio",
+                "icone": "Home",
+                "description": "El mantenimiento completo de la vivienda, además de los tejidos.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Limpieza de cristales",
+                "icone": "Sparkles",
+                "description": "Ventanas limpias para acompañar la gran limpieza.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Oficinas y locales profesionales",
+                "icone": "Briefcase",
+                "description": "Asientos de recepción y sillones de reunión higienizados.",
+                "href": "/nettoyage-professionnels"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "¿Un sofá o una alfombra que revivir?",
+            "sousTitre": "Envíenos una foto por WhatsApp: la estimación será aún más ajustada.",
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "remise-en-etat",
+      "label": "Fin de obra",
+      "navHidden": true,
+      "meta": {
+        "title": "Limpieza fin de obra en París, desde 300 €",
+        "description": "Limpieza fin de obra o tras mudanza en la Isla de Francia, desde 300 €. Polvo de obra, restos de pintura y suelos recuperados estancia por estancia. Presupuesto en 24 h."
+      },
+      "service": {
+        "name": "Limpieza fin de obra o tras mudanza",
+        "description": "Limpieza completa de una vivienda o local tras una obra o antes de una revisión de salida, en la Isla de Francia.",
+        "serviceType": "Limpieza fin de obra",
+        "priceFrom": 300
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Tras la obra · Tras la mudanza",
+            "titre": "De la obra a las llaves, un lugar listo para vivir",
+            "intro": "El final de la obra siempre deja una capa de polvo fino, restos de pintura y pegatinas por todas partes. Recuperamos el lugar a fondo para que esté listo para habitarse o entregarse.",
+            "breadcrumb": [
+              {
+                "label": "Inicio",
+                "href": "/"
+              },
+              {
+                "label": "Servicios",
+                "href": "/services"
+              },
+              {
+                "label": "Fin de obra"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Tras una obra o antes de una revisión de salida",
+            "paragraphes": [
+              "La limpieza fin de obra es un servicio aparte: no se improvisa con una simple limpieza. Eliminamos el polvo de obra que se infiltra por todas partes, los restos de yeso y cola, las marcas de pintura y adhesivo en cristales y suelos, las pegatinas de las carpinterías nuevas, y luego lavamos todas las superficies hasta los rodapiés y los interruptores.",
+              "Este servicio también sirve para las mudanzas: una vivienda dejada impecable antes de la revisión de salida, o un nuevo hogar limpiado antes de colocar las cajas. Para los profesionales, recuperamos un local tras una reforma o antes de una entrega. Cada estancia se revisa con usted al final de la intervención.",
+              "La limpieza fin de obra arranca en 300 € y depende de la superficie, la magnitud de la obra y el estado de partida. Un paso por el lugar, o unas fotos, basta para elaborar un presupuesto preciso."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Preguntas sobre la limpieza fin de obra",
+            "items": [
+              {
+                "question": "¿Qué diferencia hay con una limpieza normal?",
+                "reponse": "La limpieza fin de obra ataca suciedades que el mantenimiento habitual no trata: polvo fino de obra incrustado, salpicaduras de pintura, cola, cal en los sanitarios nuevos. Exige productos específicos y mucho más tiempo por metro cuadrado."
+              },
+              {
+                "question": "¿Intervienen antes de una revisión de salida?",
+                "reponse": "Sí, es una petición frecuente. Entregamos la vivienda en un estado cuidado para afrontar la revisión con tranquilidad. Avísenos de la fecha límite para que ajustemos la intervención a tiempo."
+              },
+              {
+                "question": "¿Cómo se obtiene un precio justo para este tipo de obra?",
+                "reponse": "Lo mejor es un rápido paso por el lugar, o unas fotos representativas de las estancias. Ajustamos el presupuesto al estado real en vez de a un paquete a ciegas, para evitar cualquier mala sorpresa."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Servicios relacionados",
+            "items": [
+              {
+                "nom": "Limpieza de cristales",
+                "icone": "Sparkles",
+                "description": "Marcas de pintura y adhesivo retiradas de las superficies acristaladas.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Limpieza a domicilio",
+                "icone": "Home",
+                "description": "Un mantenimiento regular una vez la vivienda recuperada.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Comunidades y zonas comunes",
+                "icone": "Building2",
+                "description": "Zonas comunes recuperadas tras una obra en el edificio.",
+                "href": "/nettoyage-copropriete"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "¿Una obra que acaba de terminar?",
+            "sousTitre": "Envíenos la superficie y unas fotos: el presupuesto sale en 24 horas.",
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "tarifs",
+      "label": "Tarifas",
+      "meta": {
+        "title": "Tarifas de limpieza en París & Isla de Francia",
+        "description": "Limpieza desde 35 €/h, cristales desde 100 €, sofá desde 70 €, oficinas desde 120 €, fin de obra desde 300 €. Estime su presupuesto en línea, precio firme en 24 h."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Tarifas y estimación",
+            "titre": "Precios de partida mostrados con claridad",
+            "intro": "Limpieza a domicilio a 35 €/h, cristales desde 100 €, sofá desde 70 €, oficinas desde 120 €, terraza desde 120 €, fin de obra desde 300 €, zonas comunes de comunidad según presupuesto. Componga su estimación abajo y reciba un precio firme en 24 h."
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Nuestro compromiso de precio",
+            "titre": "Precios claros, sin sorpresas desagradables",
+            "paragraphes": [
+              "Mostramos nuestros precios de partida con total transparencia. El importe final depende de tres cosas sencillas: la superficie a tratar, la frecuencia de los pasos y el estado del lugar cuando empezamos. Lo que anotamos en el presupuesto es exactamente lo que usted paga.",
+              "El presupuesto es gratuito, detallado y sin compromiso. Le llega en 24 horas, y seguimos localizables para ajustarlo con usted si su necesidad cambia por el camino."
+            ]
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "grille",
+          "content": {
+            "titre": "Nuestros precios de partida",
+            "intro": "Un resumen honesto de nuestros precios mínimos, servicio por servicio. Para un importe exacto, pida su presupuesto gratis.",
+            "items": [
+              {
+                "nom": "Limpieza a domicilio",
+                "prix": "35 €/h",
+                "description": "Mantenimiento regular o puntual de su vivienda.",
+                "inclus": [
+                  "Persona fija asignada",
+                  "Material y productos incluidos",
+                  "A su ritmo, de lunes a sábado"
+                ]
+              },
+              {
+                "nom": "Limpieza de cristales",
+                "prix": "desde 100 €",
+                "description": "Escaparates, ventanales y cristales, por ambos lados.",
+                "inclus": [
+                  "Marcos y alféizares incluidos",
+                  "Revisión a contraluz"
+                ]
+              },
+              {
+                "nom": "Sofás, sillones y alfombras",
+                "prix": "desde 70 €",
+                "description": "Inyección-extracción en profundidad, a domicilio.",
+                "inclus": [
+                  "Manchas pretratadas a mano",
+                  "Secado en unas horas"
+                ]
+              },
+              {
+                "nom": "Oficinas y locales profesionales",
+                "prix": "desde 120 €",
+                "description": "Oficinas, comercios, restaurantes y cocinas pro.",
+                "inclus": [
+                  "Fuera del horario de apertura",
+                  "Contrato periódico posible"
+                ]
+              },
+              {
+                "nom": "Limpieza de terraza",
+                "prix": "desde 120 €",
+                "description": "Pavimentos y suelos exteriores desengrasados.",
+                "inclus": [
+                  "Presión adaptada al material"
+                ]
+              },
+              {
+                "nom": "Limpieza fin de obra",
+                "prix": "desde 300 €",
+                "description": "Tras una obra o una mudanza.",
+                "inclus": [
+                  "Polvo de obra y marcas retirados",
+                  "Revisión estancia por estancia"
+                ]
+              },
+              {
+                "nom": "Comunidades y zonas comunes",
+                "prix": "Según presupuesto",
+                "description": "Contrato de mantenimiento regular de las zonas comunes.",
+                "inclus": [
+                  "Planificación fija",
+                  "Un responsable único para el administrador"
+                ]
+              }
+            ],
+            "note": "Precios de partida orientativos. Presupuesto firme devuelto en 24 h tras estudiar su solicitud.",
+            "cta": {
+              "label": "Estimar mi presupuesto gratis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "¿Un proyecto más complejo?",
+            "sousTitre": "Gran volumen, varios locales, una necesidad recurrente: descríbalo, el presupuesto sigue siendo gratuito.",
+            "ctaPrimaire": {
+              "label": "Contáctenos",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "zone-intervention",
+      "label": "Zona",
+      "navHidden": true,
+      "meta": {
+        "title": "Zona de intervención — París & Isla de Francia",
+        "description": "RD NET&PROPRE interviene en París y los ocho departamentos de la Isla de Francia: primera y segunda corona. Comunidades, oficinas y particulares, presupuesto en 24 h."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Zona de intervención",
+            "titre": "Toda la Isla de Francia, desde París",
+            "intro": "Nuestra base es parisina, pero nuestro terreno cubre los ocho departamentos de la región. Así organizamos nuestros desplazamientos, de la capital a la segunda corona."
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "Tres anillos, una misma exigencia",
+            "intro": "Ya esté su lugar en un distrito parisino, en la primera corona o en los confines de la región, aplicamos el mismo método y el mismo control. ¿Su municipio no aparece? Pregunte: si está en la Isla de Francia, vamos.",
+            "rayonKm": 60,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=1.44%2C48.12%2C3.56%2C49.24&layer=mapnik&marker=48.8566%2C2.3522",
+            "zones": [
+              {
+                "region": "París ciudad (75)",
+                "principale": "Paris",
+                "villes": [
+                  "Centro de París",
+                  "Orilla izquierda",
+                  "Orilla derecha",
+                  "Los 20 distritos"
+                ]
+              },
+              {
+                "region": "Primera corona (92 · 93 · 94)",
+                "principale": "Boulogne-Billancourt",
+                "villes": [
+                  "Boulogne-Billancourt",
+                  "Neuilly-sur-Seine",
+                  "Levallois-Perret",
+                  "Nanterre",
+                  "Courbevoie",
+                  "Montreuil",
+                  "Saint-Denis",
+                  "Aubervilliers",
+                  "Créteil",
+                  "Vitry-sur-Seine",
+                  "Ivry-sur-Seine"
+                ]
+              },
+              {
+                "region": "Segunda corona (77 · 78 · 91 · 95)",
+                "principale": "Versailles",
+                "villes": [
+                  "Versailles",
+                  "Saint-Germain-en-Laye",
+                  "Argenteuil",
+                  "Cergy",
+                  "Sarcelles",
+                  "Évry-Courcouronnes",
+                  "Meaux",
+                  "Melun"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "¿Su lugar está en algún punto de este mapa?",
+            "sousTitre": "Díganos el municipio y el tipo de espacio: confirmamos el desplazamiento y lo presupuestamos.",
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "a-propos",
+      "label": "Quiénes somos",
+      "navHidden": true,
+      "meta": {
+        "title": "Nuestro enfoque de la limpieza en Isla de Francia",
+        "description": "RD NET&PROPRE, empresa de limpieza con base en París: personal fijo, controles sistemáticos y una acogida multilingüe al servicio de la región parisina."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Quiénes somos",
+            "titre": "RD NET&PROPRE, la limpieza tomada en serio",
+            "intro": "Una empresa de la región parisina que pone la regularidad, la discreción y el control del resultado en el centro de cada intervención — para administradores, empresas y particulares."
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Nuestra manera de trabajar",
+            "paragraphes": [
+              "RD NET&PROPRE es una empresa de limpieza con base en París, al servicio de toda la Isla de Francia. Construimos nuestro enfoque en torno a una convicción: la limpieza no se juzga en el momento de irse, sino a lo largo del tiempo. Un portal que sigue limpio entre dos pasos, una oficina que recibe a los equipos sin reproche, un hogar donde uno se siente bien: ese es el verdadero resultado.",
+              "Para lograrlo, apostamos por personal fijo, formado y discreto, en lugar de una rotación anónima. Cada cliente cuenta con un responsable que conoce sus espacios y sus expectativas. Y como a menudo trabajamos en casa de la gente o en espacios sensibles, la confianza y el respeto por el lugar están por encima de todo.",
+              "Atendemos a nuestros clientes en francés, inglés, español y árabe: en París como en la corona, cada uno debe poder explicar su necesidad sin barreras y recibir una respuesta clara."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "Nuestras referencias",
+            "titre": "Cuatro compromisos que mantenemos",
+            "items": [
+              {
+                "icone": "ShieldCheck",
+                "titre": "Confianza",
+                "texte": "Personal serio y discreto, respetuoso con sus espacios, sus pertenencias y su intimidad."
+              },
+              {
+                "icone": "Repeat",
+                "titre": "Regularidad",
+                "texte": "El mismo equipo de una vez a otra, una planificación cumplida y un resultado constante en el tiempo."
+              },
+              {
+                "icone": "SearchCheck",
+                "titre": "Control",
+                "texte": "Cada zona se revisa antes de irnos: nada se deja al azar."
+              },
+              {
+                "icone": "Languages",
+                "titre": "Cercanía",
+                "texte": "Una acogida en cuatro idiomas y un interlocutor que de verdad le responde, en su idioma."
+              }
+            ]
+          },
+          "variant": "timeline-verticale"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "¿Quiere confiarnos un lugar?",
+            "sousTitre": "Hablemos de su necesidad: la conversación no compromete a nada y el presupuesto es gratuito.",
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Contáctenos",
+              "href": "/contact"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contacto",
+      "meta": {
+        "title": "Contacto — limpieza en París & Isla de Francia",
+        "description": "Teléfono, WhatsApp o formulario: describa su necesidad de limpieza en la Isla de Francia. Respuesta y presupuesto gratis en 24 h, en francés, inglés, español o árabe."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Contacto",
+            "titre": "Hablemos del lugar que hay que limpiar",
+            "intro": "Llamada, WhatsApp o formulario: elija el canal que le convenga. Describa el tipo de espacio, la superficie y la frecuencia — su presupuesto sale en 24 h."
+          }
+        },
+        {
+          "type": "contact",
+          "content": {
+            "titre": "Solicitud de presupuesto",
+            "intro": "Indique el servicio deseado, su municipio y el momento previsto: preparamos su estimación y se la devolvemos en 24 h. Dos líneas para contactarnos: 07 48 32 20 29 y 07 58 08 61 83.",
+            "form": true,
+            "formMode": "demande-intervention",
+            "telephone": "07 48 32 20 29",
+            "whatsapp": "+33 7 48 32 20 29",
+            "email": "rd.nettoyagepropre@gmail.com",
+            "horaires": [
+              {
+                "jour": "Lun – Sáb",
+                "heures": "08:00 – 22:00"
+              },
+              {
+                "jour": "Domingo",
+                "heures": "Cerrado"
+              }
+            ],
+            "services": [
+              "Comunidad / zonas comunes",
+              "Oficinas y locales profesionales",
+              "Restaurante / cocina profesional",
+              "Limpieza de cristales",
+              "Limpieza a domicilio",
+              "Sofá, sillón y alfombra",
+              "Limpieza de terraza",
+              "Limpieza fin de obra (reforma / mudanza)",
+              "Otro / aún no lo sé"
+            ],
+            "villes": [
+              "Paris",
+              "Boulogne-Billancourt",
+              "Neuilly-sur-Seine",
+              "Levallois-Perret",
+              "Nanterre",
+              "Courbevoie",
+              "Montreuil",
+              "Saint-Denis",
+              "Aubervilliers",
+              "Créteil",
+              "Vitry-sur-Seine",
+              "Ivry-sur-Seine",
+              "Versailles",
+              "Argenteuil",
+              "Cergy",
+              "Otro municipio de la Isla de Francia"
+            ],
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=1.44%2C48.12%2C3.56%2C49.24&layer=mapnik&marker=48.8566%2C2.3522",
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    }
+  ]
+}

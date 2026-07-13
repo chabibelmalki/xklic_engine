@@ -1,0 +1,1591 @@
+{
+  "slug": "rd-net-propre",
+  "theme": "douceur-beige",
+  "stylePack": "maison-premium",
+  "i18n": {
+    "default": "fr",
+    "languages": [
+      "fr",
+      "en",
+      "es",
+      "ar"
+    ]
+  },
+  "branding": {
+    "logoAlt": "RD NET&PROPRE — entreprise de nettoyage à Paris",
+    "logoTwoTone": {
+      "first": "#1c6b57",
+      "rest": "#c79a3f"
+    },
+    "tagline": "Nettoyage professionnel · Paris & Île-de-France",
+    "colors": {
+      "brand": "#1c6b57",
+      "accent": "#c79a3f",
+      "neutral": "warm"
+    },
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/logo-d0f2181d.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/logo-d0f2181d.png",
+    "logoScale": 1.35
+  },
+  "social": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/rd.nettoyagepropre/"
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@rd.nettoyagepropre"
+    },
+    {
+      "platform": "whatsapp",
+      "url": "https://wa.me/33748322029"
+    }
+  ],
+  "entreprise": {
+    "nom": "RD NET&PROPRE",
+    "statut": "EI",
+    "siret": "99339068100019",
+    "ape": "81.21Z",
+    "apeLabel": "Nettoyage courant des bâtiments",
+    "tva": {
+      "regime": "franchise"
+    }
+  },
+  "seo": {
+    "schemaType": "CleaningService",
+    "ville": "Paris"
+  },
+  "geo": {
+    "lat": 48.8566,
+    "lng": 2.3522
+  },
+  "meta": {
+    "title": "Entreprise de nettoyage à Paris & Île-de-France",
+    "description": "RD NET&PROPRE nettoie copropriétés, bureaux, vitres et logements dans toute l'Île-de-France. Ménage dès 35 €/h, devis gratuit sous 24 h, 6j/7.",
+    "keywords": [
+      "entreprise de nettoyage Paris",
+      "nettoyage copropriété Île-de-France",
+      "nettoyage bureaux Paris",
+      "nettoyage de vitres Paris",
+      "ménage à domicile Paris",
+      "nettoyage parties communes",
+      "remise en état après travaux Paris",
+      "société de propreté Île-de-France"
+    ]
+  },
+  "forms": {
+    "to": "rd.nettoyagepropre@gmail.com",
+    "turnstile": true
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Accueil",
+      "navHidden": true,
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "carte",
+          "content": {
+            "showSocial": true,
+            "eyebrow": "Entreprise de nettoyage · Paris & Île-de-France",
+            "titre": "Des espaces impeccables, confiés à une équipe",
+            "titreAccent": "sérieuse et discrète",
+            "accroche": "Copropriétés, bureaux, commerces et logements : RD NET&PROPRE prend soin de vos lieux avec méthode, du hall d'immeuble à la vitre de bureau, partout en Île-de-France.",
+            "trust": [
+              {
+                "icone": "Building2",
+                "label": "Copropriétés & pros"
+              },
+              {
+                "icone": "Clock",
+                "label": "6j/7 · 8h – 22h"
+              },
+              {
+                "icone": "ShieldCheck",
+                "label": "Équipe de confiance"
+              },
+              {
+                "icone": "MapPin",
+                "label": "Toute l'Île-de-France"
+              }
+            ],
+            "card": {
+              "label": "Ménage à domicile",
+              "prix": "35 €",
+              "unite": "/ heure",
+              "mention": "devis gratuit pour les autres prestations",
+              "points": [
+                "Interventions du lundi au samedi, 8h – 22h",
+                "Devis clair renvoyé sous 24 h",
+                "Intervenants attitrés et discrets",
+                "Matériel et produits fournis"
+              ],
+              "rating": {
+                "label": "À votre service dans toute la région"
+              }
+            },
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Découvrir nos prestations",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Nos prestations",
+            "titre": "Un seul prestataire pour chaque type de lieu",
+            "intro": "Du nettoyage récurrent des parties communes à la remise en état après un chantier, nous couvrons les besoins des syndics, des entreprises et des particuliers franciliens.",
+            "items": [
+              {
+                "nom": "Copropriétés & parties communes",
+                "icone": "Building2",
+                "priceHint": "sur devis",
+                "description": "Halls, escaliers, paliers, ascenseurs et vitres intérieures entretenus selon un planning régulier, avec un référent unique pour votre syndic.",
+                "href": "/nettoyage-copropriete"
+              },
+              {
+                "nom": "Bureaux & locaux professionnels",
+                "icone": "Briefcase",
+                "priceHint": "dès 120 €",
+                "description": "Bureaux, restaurants et cuisines professionnelles nettoyés avant l'ouverture ou après la fermeture, sans perturber votre activité.",
+                "href": "/nettoyage-professionnels"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "icone": "Sparkles",
+                "priceHint": "dès 100 €",
+                "description": "Vitrines, baies et fenêtres rendues limpides des deux côtés, pour les commerces comme pour les particuliers.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Ménage à domicile",
+                "icone": "Home",
+                "priceHint": "dès 35 €/h",
+                "description": "L'entretien régulier ou ponctuel de votre logement, confié toujours à la même personne, attentive à vos habitudes.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Canapés, fauteuils & tapis",
+                "icone": "Sofa",
+                "priceHint": "dès 70 €",
+                "description": "Textiles ravivés par injection-extraction : assises assainies, taches traitées, tapis lavés fibre à fibre.",
+                "href": "/nettoyage-textiles"
+              },
+              {
+                "nom": "Remise en état",
+                "icone": "Hammer",
+                "priceHint": "dès 300 €",
+                "description": "Après un chantier ou un déménagement, le lieu est repris pièce par pièce jusqu'à la remise des clés.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Désinfection & bionettoyage",
+                "icone": "ShieldPlus",
+                "priceHint": "sur devis",
+                "description": "Nettoyage et désinfection professionnelle : application des protocoles d'hygiène hospitaliers et bionettoyage, avec des méthodes et des produits adaptés.",
+                "href": "/nettoyage-professionnels"
+              }
+            ],
+            "cta": {
+              "label": "Voir toutes les prestations",
+              "href": "/services"
+            }
+          },
+          "variant": "mosaique"
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "En images",
+            "titre": "Le nettoyage RD NET&PROPRE en action",
+            "intro": "Un aperçu de nos interventions, des parties communes d'immeuble aux vitres de bureau et aux canapés remis à neuf.",
+            "ratio": "4/3",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/service-menage.png",
+                  "alt": "Équipe RD NET&PROPRE aspirant et lavant le sol d'un salon lumineux"
+                },
+                "titre": "Ménage & entretien du logement"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/service-bureaux.png",
+                  "alt": "Espace de bureaux propre et rangé après le passage de RD NET&PROPRE"
+                },
+                "titre": "Bureaux & espaces professionnels"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/service-canape.png",
+                  "alt": "Nettoyage d'un coussin de canapé à l'aspiration en profondeur"
+                },
+                "titre": "Canapés, fauteuils & tapis"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/service-vitres-facade.png",
+                  "alt": "Techniciens nettoyant les vitres d'une façade d'immeuble en hauteur"
+                },
+                "titre": "Vitres & façades d'immeubles"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Qui sommes-nous",
+            "titre": "Une jeune entreprise francilienne,",
+            "titreAccent": "exigeante sur le détail",
+            "paragraphes": [
+              "RD NET&PROPRE est née de l'envie d'apporter aux syndics, aux entreprises et aux familles d'Île-de-France un nettoyage vraiment tenu dans la durée, loin des prestations expédiées. Basés à Paris, nous rayonnons sur toute la région pour l'entretien courant comme pour les remises en état ponctuelles.",
+              "Notre parti pris est simple : des intervenants réguliers plutôt qu'un roulement anonyme, un interlocuteur qui connaît vos lieux, et un contrôle systématique avant de quitter les lieux. C'est ce qui fait qu'un hall reste net semaine après semaine et qu'un bureau accueille vos équipes dans les meilleures conditions.",
+              "Nous parlons français, anglais, espagnol et arabe : chacun peut décrire son besoin dans sa langue et recevoir un devis clair, sans jargon."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/qui-sommes-nous.png",
+              "alt": "Visuel RD NET&PROPRE — matériel de nettoyage professionnel dans un bureau lumineux"
+            },
+            "imagePosition": "left",
+            "imageRatio": "16/10",
+            "imageCard": true,
+            "ctaPrimaire": {
+              "label": "Faire connaissance",
+              "href": "/a-propos"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "Comment on travaille",
+            "titre": "De votre appel à un lieu impeccable",
+            "items": [
+              {
+                "icone": "Phone",
+                "titre": "Vous nous décrivez le lieu",
+                "texte": "Par téléphone, WhatsApp ou formulaire, vous précisez le type d'espace, la surface et la fréquence souhaitée."
+              },
+              {
+                "icone": "FileText",
+                "titre": "Un devis clair sous 24 h",
+                "texte": "Nous vous renvoyons une proposition détaillée, avec un prix ferme et le planning d'intervention adapté."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "L'intervention, puis le contrôle",
+                "texte": "L'équipe intervient avec son matériel et vérifie chaque zone avant de partir. Le résultat se remarque dès le premier passage."
+              }
+            ]
+          },
+          "variant": "timeline-verticale"
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "Paris comme point d'ancrage, l'Île-de-France comme terrain",
+            "intro": "Nous intervenons dans Paris intra-muros et dans les huit départements franciliens, de la petite à la grande couronne. Un déplacement au bout de la région ne nous fait pas peur : dites-nous où se trouve le lieu.",
+            "rayonKm": 60,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=1.44%2C48.12%2C3.56%2C49.24&layer=mapnik&marker=48.8566%2C2.3522",
+            "zones": [
+              {
+                "region": "Paris intra-muros",
+                "principale": "Paris",
+                "villes": [
+                  "Paris 1er au 20e arrondissement"
+                ]
+              },
+              {
+                "region": "Petite couronne",
+                "principale": "Boulogne-Billancourt",
+                "villes": [
+                  "Boulogne-Billancourt",
+                  "Neuilly-sur-Seine",
+                  "Levallois-Perret",
+                  "Nanterre",
+                  "Courbevoie",
+                  "Montreuil",
+                  "Saint-Denis",
+                  "Aubervilliers",
+                  "Créteil",
+                  "Vitry-sur-Seine",
+                  "Ivry-sur-Seine"
+                ]
+              },
+              {
+                "region": "Grande couronne",
+                "principale": "Versailles",
+                "villes": [
+                  "Versailles",
+                  "Argenteuil",
+                  "Cergy",
+                  "Évry-Courcouronnes",
+                  "Meaux",
+                  "Melun",
+                  "Sarcelles",
+                  "Saint-Germain-en-Laye"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Ce qu'on nous demande le plus souvent",
+            "items": [
+              {
+                "question": "Travaillez-vous plutôt avec les professionnels ou les particuliers ?",
+                "reponse": "Les deux. Nous entretenons les parties communes de copropriétés et les locaux d'entreprises, et nous prenons aussi soin des logements de particuliers. Chaque prestation a sa page dédiée avec le détail de ce qui est inclus."
+              },
+              {
+                "question": "Sous quel délai peut-on démarrer ?",
+                "reponse": "Pour une intervention ponctuelle, nous proposons souvent un créneau dans la semaine. Pour un contrat récurrent, nous calons ensemble un planning fixe. Le devis, lui, vous parvient sous 24 h."
+              },
+              {
+                "question": "Faut-il fournir le matériel et les produits ?",
+                "reponse": "Non, nous venons équipés. Si vous préférez que nous utilisions des produits précis, par exemple pour une surface fragile ou en présence d'enfants, indiquez-le simplement au moment du devis."
+              },
+              {
+                "question": "Dans quelles langues peut-on vous joindre ?",
+                "reponse": "En français, en anglais, en espagnol et en arabe. Décrivez votre besoin dans la langue qui vous convient, la réponse suivra dans la même langue."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un lieu à remettre au propre ?",
+            "sousTitre": "Téléphone, WhatsApp ou formulaire en ligne : votre estimation gratuite vous parvient sous 24 heures.",
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 48 32 20 29",
+              "href": "tel:+33748322029"
+            },
+            "lien": {
+              "label": "ou écrivez-nous sur WhatsApp →",
+              "href": "https://wa.me/33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Prestations",
+      "meta": {
+        "title": "Services de nettoyage à Paris & Île-de-France",
+        "description": "Copropriétés, bureaux, vitres, ménage à domicile, textiles et remise en état : le détail de chaque prestation de nettoyage RD NET&PROPRE en Île-de-France."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nos prestations",
+            "titre": "Chaque lieu a son nettoyage",
+            "intro": "Nous adaptons méthode, fréquence et produits à la nature de l'espace : un hall d'immeuble ne s'entretient pas comme un bureau, ni un canapé comme une vitrine. Voici nos six domaines d'intervention.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir les tarifs",
+              "href": "/tarifs"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Professionnels & syndics",
+            "titre": "Pour les copropriétés et les entreprises",
+            "intro": "Des interventions planifiées, un référent unique et des comptes-rendus clairs pour les gestionnaires d'immeubles et de locaux.",
+            "items": [
+              {
+                "nom": "Copropriétés & parties communes",
+                "icone": "Building2",
+                "priceHint": "sur devis",
+                "description": "Halls, cages d'escalier, paliers, ascenseurs et vitres intérieures : un entretien régulier qui valorise l'immeuble et rassure les résidents.",
+                "href": "/nettoyage-copropriete"
+              },
+              {
+                "nom": "Bureaux & locaux professionnels",
+                "icone": "Briefcase",
+                "priceHint": "dès 120 €",
+                "description": "Bureaux, restaurants et cuisines professionnelles, entretenus en dehors de vos heures d'ouverture, dans le respect des règles d'hygiène.",
+                "href": "/nettoyage-professionnels"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "icone": "Sparkles",
+                "priceHint": "dès 100 €",
+                "description": "Vitrines de commerces, façades vitrées et fenêtres de bureaux nettoyées sans traces, en hauteur maîtrisée.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Désinfection & bionettoyage",
+                "icone": "ShieldPlus",
+                "priceHint": "sur devis",
+                "description": "Nettoyage et désinfection professionnelle : application des protocoles d'hygiène hospitaliers et bionettoyage, avec des méthodes et des produits adaptés.",
+                "href": "/nettoyage-professionnels"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Particuliers",
+            "titre": "Pour votre logement et vos textiles",
+            "intro": "Le même soin du détail, appliqué à la maison : un entretien suivi et des meubles qui retrouvent leur fraîcheur.",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "icone": "Home",
+                "priceHint": "dès 35 €/h",
+                "description": "Entretien hebdomadaire ou ponctuel : sols, cuisine, salle de bain et poussières suivis selon vos consignes, par une intervenante attitrée.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Canapés, fauteuils & tapis",
+                "icone": "Sofa",
+                "priceHint": "dès 70 €",
+                "description": "Injection-extraction en profondeur : les tissus ressortent assainis, désodorisés et secs en quelques heures. Tapis lavés selon la fibre.",
+                "href": "/nettoyage-textiles"
+              },
+              {
+                "nom": "Remise en état",
+                "icone": "Hammer",
+                "priceHint": "dès 300 €",
+                "description": "Après travaux ou avant un état des lieux : poussière de chantier, traces de peinture et sols repris jusqu'au moindre recoin.",
+                "href": "/remise-en-etat"
+              }
+            ],
+            "cta": {
+              "label": "Estimer mon budget",
+              "href": "/tarifs"
+            }
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Vous ne savez pas dans quelle case ranger votre besoin ?",
+            "sousTitre": "Décrivez-nous le lieu et l'objectif : nous vous orientons vers la bonne prestation et chiffrons le tout.",
+            "ctaPrimaire": {
+              "label": "Nous décrire le besoin",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-copropriete",
+      "label": "Copropriétés",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de copropriété & parties communes Paris",
+        "description": "Entretien des parties communes en Île-de-France : halls, escaliers, paliers, ascenseurs et vitres intérieures. Planning régulier, référent unique, devis gratuit."
+      },
+      "service": {
+        "name": "Nettoyage de copropriétés & parties communes",
+        "description": "Entretien régulier des parties communes d'immeubles résidentiels en Île-de-France.",
+        "serviceType": "Nettoyage de parties communes",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Copropriétés & immeubles résidentiels",
+            "titre": "Des parties communes toujours nettes",
+            "intro": "Un immeuble bien tenu se ressent dès le hall. Nous entretenons vos parties communes selon un rythme régulier, pour des résidents satisfaits et un patrimoine préservé.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Copropriétés"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Un entretien pensé pour les syndics et les résidents",
+            "paragraphes": [
+              "L'entretien des parties communes est notre cœur de métier auprès des copropriétés franciliennes. Nous prenons en charge le balayage et le lavage des halls, des cages d'escalier et des paliers, le dépoussiérage des rampes, boîtes aux lettres et interrupteurs, le nettoyage des cabines d'ascenseur et des vitres intérieures ; la gestion des bacs à ordures aux jours de collecte peut s'y ajouter selon le contrat.",
+              "Chaque immeuble reçoit un planning fixe et, idéalement, les mêmes intervenants d'une semaine à l'autre : ils connaissent les recoins, les habitudes de l'immeuble et signalent au syndic ce qui mérite attention. Vous gardez un interlocuteur unique, joignable, et un compte-rendu clair de ce qui est réalisé.",
+              "La fréquence se cale sur la vie de la résidence : passage hebdomadaire, bimensuel ou plurihebdomadaire pour les immeubles à fort passage. Nous établissons le devis après avoir vu les lieux, pour un prix juste et sans surprise."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions des gestionnaires d'immeubles",
+            "items": [
+              {
+                "question": "Proposez-vous des contrats d'entretien régulier ?",
+                "reponse": "Oui, c'est le format le plus courant en copropriété : un planning fixe, une fréquence définie avec le syndic ou le conseil syndical, et une facturation mensuelle lisible. Les interventions ponctuelles restent possibles pour un besoin isolé."
+              },
+              {
+                "question": "Gérez-vous la sortie des poubelles et le nettoyage des locaux à conteneurs ?",
+                "reponse": "C'est une option fréquente de nos contrats. Sortie et rentrée des bacs aux jours de collecte, lavage du local et désinfection ponctuelle peuvent être inclus : nous l'indiquons clairement sur le devis."
+              },
+              {
+                "question": "Comment le syndic suit-il la qualité des passages ?",
+                "reponse": "Vous avez un référent unique chez nous et un compte-rendu des interventions. Toute remarque d'un résident nous remonte directement et nous ajustons dès le passage suivant."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "D'autres besoins pour votre immeuble",
+            "items": [
+              {
+                "nom": "Nettoyage de vitres",
+                "icone": "Sparkles",
+                "description": "Halls vitrés, portes et fenêtres des communs rendus limpides.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Remise en état",
+                "icone": "Hammer",
+                "description": "Parties communes reprises après des travaux ou un dégât.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Bureaux & locaux professionnels",
+                "icone": "Briefcase",
+                "description": "Local du gardien, salle commune ou bureau de gestion.",
+                "href": "/nettoyage-professionnels"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Confiez vos communs à une équipe régulière",
+            "sousTitre": "Envoyez-nous l'adresse et le nombre d'étages : nous venons voir et chiffrons le contrat.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-professionnels",
+      "label": "Bureaux & pros",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de bureaux & locaux pros à Paris",
+        "description": "Nettoyage de bureaux, restaurants et cuisines professionnelles en Île-de-France, dès 120 €. Interventions hors horaires d'ouverture, hygiène soignée, devis 24 h."
+      },
+      "service": {
+        "name": "Nettoyage de bureaux & locaux professionnels",
+        "description": "Entretien de bureaux, restaurants et cuisines professionnelles en Île-de-France.",
+        "serviceType": "Nettoyage de locaux professionnels",
+        "priceFrom": 120
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Entreprises, commerces & restaurants",
+            "titre": "Des locaux propres, sans perturber votre activité",
+            "intro": "Un environnement de travail sain donne le ton à vos équipes et à vos clients. Nous entretenons vos bureaux et espaces professionnels avant l'ouverture ou après la fermeture.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Bureaux & pros"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Bureaux, restaurants et cuisines professionnelles",
+            "paragraphes": [
+              "Nous intervenons dans les espaces de travail de toutes tailles : plateaux de bureaux, cabinets, salles de réunion, sanitaires et espaces d'accueil. Le protocole couvre le vidage des corbeilles, le dépoussiérage des postes, le lavage des sols, la désinfection des points de contact et l'entretien des sanitaires, avec un réapprovisionnement des consommables si vous le souhaitez.",
+              "Pour la restauration, l'exigence monte d'un cran : dégraissage des surfaces, nettoyage des salles et des cuisines professionnelles dans le respect des règles d'hygiène, sols antidérapants traités avec les produits adaptés. Nous adaptons nos passages à votre service, tôt le matin ou tard le soir, pour ne jamais gêner l'accueil du public.",
+              "La prestation démarre à 120 € et s'ajuste à la surface, à la fréquence et au niveau d'exigence. Un contrat récurrent garantit le même binôme et un résultat constant, semaine après semaine.",
+              "Nous assurons aussi le nettoyage et la désinfection professionnelle des environnements sensibles : application des protocoles d'hygiène hospitaliers et bionettoyage, avec des méthodes et des produits adaptés à chaque surface. Une réponse pour les cabinets, laboratoires, salles de soins et tout local où l'exigence sanitaire est maximale."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions des entreprises et restaurateurs",
+            "items": [
+              {
+                "question": "Pouvez-vous intervenir en dehors des heures d'ouverture ?",
+                "reponse": "Oui, c'est même la règle pour la plupart de nos clients professionnels. Tôt le matin, en soirée ou la nuit selon votre activité : nous calons les passages sur vos créneaux creux pour ne jamais gêner clients et collaborateurs."
+              },
+              {
+                "question": "Respectez-vous les contraintes d'hygiène en cuisine professionnelle ?",
+                "reponse": "Nous utilisons des produits et méthodes adaptés aux surfaces alimentaires et au dégraissage, et intervenons dans la logique des règles d'hygiène de la restauration. Le détail des zones traitées figure sur le devis."
+              },
+              {
+                "question": "Le ménage de bureau est-il facturé à l'heure ou au forfait ?",
+                "reponse": "Le plus souvent au forfait, calculé sur la surface et la fréquence, pour un budget prévisible. Pour un besoin ponctuel ou une grande surface, nous pouvons aussi chiffrer à la prestation."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "À combiner pour vos locaux",
+            "items": [
+              {
+                "nom": "Nettoyage de vitres",
+                "icone": "Sparkles",
+                "description": "Vitrines et fenêtres de bureaux sans trace, côté rue comme côté cour.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Remise en état",
+                "icone": "Hammer",
+                "description": "Local repris à fond après un aménagement ou avant une reprise.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Canapés & fauteuils",
+                "icone": "Sofa",
+                "description": "Assises d'accueil et sièges de réunion assainis.",
+                "href": "/nettoyage-textiles"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un devis pour vos bureaux ou votre commerce ?",
+            "sousTitre": "Indiquez la surface et vos horaires : nous proposons un planning et un prix ferme.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Vitres",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de vitres à Paris, dès 100 €",
+        "description": "Nettoyage de vitres pour professionnels et particuliers en Île-de-France, dès 100 €. Vitrines, baies et fenêtres sans traces, des deux côtés. Devis gratuit sous 24 h."
+      },
+      "service": {
+        "name": "Nettoyage de vitres",
+        "description": "Nettoyage de vitres, vitrines et baies pour professionnels et particuliers en Île-de-France.",
+        "serviceType": "Nettoyage de vitres",
+        "priceFrom": 100
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Professionnels & particuliers",
+            "titre": "La lumière entre, les traces disparaissent",
+            "intro": "Des vitres propres changent tout : une vitrine qui donne envie d'entrer, un bureau plus lumineux, un salon transformé. Nous lavons vos surfaces vitrées des deux faces.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Vitres"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Vitrines, baies vitrées et fenêtres",
+            "paragraphes": [
+              "Nous nettoyons les vitres des commerces et des entreprises comme celles des logements : vitrines et devantures, verrières, baies coulissantes, fenêtres à petits carreaux, encadrements et rebords. Chaque surface est lavée sur ses deux faces, puis vérifiée à contre-jour pour ne laisser ni voile ni coulure.",
+              "Pour les vitrines de commerce, un passage régulier maintient une image soignée qui compte au moment où le client hésite à pousser la porte. Pour les particuliers, un grand nettoyage saisonnier suffit souvent à retrouver de la clarté dans tout le logement. Les surfaces en hauteur sont traitées avec le matériel adapté, en sécurité.",
+              "La prestation démarre à 100 € et dépend du nombre d'ouvertures, de leur accessibilité et de la fréquence. Nous chiffrons précisément après un état des surfaces à traiter."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions sur le nettoyage de vitres",
+            "items": [
+              {
+                "question": "Nettoyez-vous les vitrines de commerce de façon régulière ?",
+                "reponse": "Oui. Beaucoup de commerçants optent pour un passage hebdomadaire ou bimensuel afin de garder une devanture nette en permanence. Nous intervenons avant l'ouverture pour ne pas gêner la clientèle."
+              },
+              {
+                "question": "Atteignez-vous les vitres en hauteur ?",
+                "reponse": "Nous traitons les surfaces en hauteur raisonnable avec des perches et le matériel adapté. Pour les configurations complexes ou les grandes façades, nous évaluons l'accès lors du devis et vous proposons la solution la plus sûre."
+              },
+              {
+                "question": "Les encadrements et rebords sont-ils compris ?",
+                "reponse": "Oui, le nettoyage inclut les montants, les rebords et les traces sur les encadrements : c'est ce qui distingue un vrai lavage de vitres d'un simple coup d'éponge sur le verre."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Souvent demandé avec",
+            "items": [
+              {
+                "nom": "Bureaux & locaux professionnels",
+                "icone": "Briefcase",
+                "description": "L'entretien complet du local, vitres comprises.",
+                "href": "/nettoyage-professionnels"
+              },
+              {
+                "nom": "Ménage à domicile",
+                "icone": "Home",
+                "description": "Les vitres intégrées à l'entretien régulier du logement.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Copropriétés & parties communes",
+                "icone": "Building2",
+                "description": "Halls et portes vitrées des immeubles résidentiels.",
+                "href": "/nettoyage-copropriete"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Envie d'y voir plus clair ?",
+            "sousTitre": "Comptez vos fenêtres et vitrines, envoyez-nous le nombre : le devis suit sous 24 h.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "menage-domicile",
+      "label": "Ménage à domicile",
+      "navHidden": true,
+      "meta": {
+        "title": "Ménage à domicile à Paris, dès 35 €/h",
+        "description": "Ménage à domicile en Île-de-France dès 35 €/h : entretien régulier ou ponctuel, intervenante attitrée, consignes respectées, matériel fourni. Devis gratuit sous 24 h."
+      },
+      "service": {
+        "name": "Ménage à domicile",
+        "description": "Entretien régulier ou ponctuel du logement en Île-de-France, dès 35 €/h.",
+        "serviceType": "Ménage à domicile",
+        "priceFrom": 35
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Particuliers",
+            "titre": "Un logement entretenu, l'esprit tranquille",
+            "intro": "Retrouver un logement soigné sans y consacrer votre week-end : voilà ce que nous vous apportons, avec une intervenante attitrée qui connaît vos habitudes.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage à domicile"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "L'entretien de votre logement, à votre rythme",
+            "paragraphes": [
+              "Que vous cherchiez un passage hebdomadaire, un coup de propre ponctuel ou un grand ménage saisonnier, nous adaptons la prestation à votre foyer. Sols, cuisine, salle de bain, poussières, vitres intérieures et rangement léger : vous fixez les priorités au premier rendez-vous, nous les notons et les suivons à chaque visite.",
+              "Nous privilégions la même personne d'une fois sur l'autre. C'est ce qui crée la confiance quand on confie ses clés : votre intervenante finit par connaître la maison, ses surfaces délicates et vos préférences de produits. En présence d'enfants ou d'animaux, nous ajustons naturellement les produits utilisés.",
+              "Le ménage à domicile démarre à 35 €/h, matériel et produits fournis. Vous restez libre de la fréquence et pouvez faire évoluer le rythme selon les saisons. Le devis est gratuit et sans engagement."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions sur le ménage à domicile",
+            "items": [
+              {
+                "question": "Aurai-je toujours la même personne ?",
+                "reponse": "C'est notre priorité : nous attribuons une intervenante attitrée à votre logement afin qu'elle connaisse vos lieux et vos consignes. En cas d'absence, la personne qui la remplace reçoit toutes vos indications au préalable."
+              },
+              {
+                "question": "Puis-je réserver un ménage ponctuel plutôt qu'un contrat régulier ?",
+                "reponse": "Bien sûr. Grand ménage de printemps, remise au propre avant une réception ou après une période chargée : nous intervenons ponctuellement, sans obligation de récurrence."
+              },
+              {
+                "question": "Proposez-vous le crédit d'impôt sur le ménage à domicile ?",
+                "reponse": "Le ménage chez un particulier relève des services à la personne, mais l'avantage fiscal suppose une déclaration spécifique. Nous vous disons en toute transparence, au moment du devis, si votre prestation y ouvre droit ou non."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Pour aller plus loin chez vous",
+            "items": [
+              {
+                "nom": "Canapés, fauteuils & tapis",
+                "icone": "Sofa",
+                "description": "Redonner vie aux textiles que l'entretien courant ne suffit pas à raviver.",
+                "href": "/nettoyage-textiles"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "icone": "Sparkles",
+                "description": "Un grand nettoyage des fenêtres pour retrouver de la lumière.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Remise en état",
+                "icone": "Hammer",
+                "description": "Un logement repris à fond après des travaux ou avant un déménagement.",
+                "href": "/remise-en-etat"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Envie de souffler côté ménage ?",
+            "sousTitre": "Indiquez la surface de votre logement et la fréquence voulue : nous estimons le budget sous 24 h.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-textiles",
+      "label": "Canapés & tapis",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de canapé & tapis à Paris, dès 70 €",
+        "description": "Nettoyage de canapés, fauteuils et tapis en Île-de-France dès 70 €. Injection-extraction en profondeur, taches traitées, tissus assainis et secs vite. Devis 24 h."
+      },
+      "service": {
+        "name": "Nettoyage de canapés, fauteuils & tapis",
+        "description": "Nettoyage en profondeur des textiles d'ameublement par injection-extraction, en Île-de-France.",
+        "serviceType": "Nettoyage de textiles d'ameublement",
+        "priceFrom": 70
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Canapés · Fauteuils · Tapis",
+            "titre": "Vos tissus retrouvent leur fraîcheur",
+            "intro": "Un canapé terni, un tapis marqué, une odeur qui s'installe : l'injection-extraction va chercher la saleté au cœur de la fibre, là où l'aspirateur s'arrête.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Canapés & tapis"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "L'injection-extraction, en profondeur",
+            "paragraphes": [
+              "La méthode consiste à pulvériser une solution nettoyante au cœur du textile, puis à l'aspirer aussitôt avec la saleté dissoute. Résultat : les taches sont traitées, les acariens et les odeurs délogés, et le tissu ressort assaini plutôt que simplement frotté en surface. Le séchage prend en général quelques heures, selon l'épaisseur et l'aération de la pièce.",
+              "Nous intervenons sur les canapés en tissu, les fauteuils, les chaises rembourrées, les matelas et les tapis. Chaque matière est identifiée avant le moindre geste : laine, coton, synthétique ou fibres délicates n'appellent pas le même dosage ni la même température. Les taches tenaces sont prétraitées à la main.",
+              "Le nettoyage d'un fauteuil ou d'un tapis démarre à 70 €, les grandes pièces et canapés d'angle se chiffrant selon leur taille. Nous venons chez vous avec tout le matériel : il n'y a rien à déplacer."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions sur le nettoyage des textiles",
+            "items": [
+              {
+                "question": "Combien de temps le canapé met-il à sécher ?",
+                "reponse": "Comptez généralement de deux à quatre heures, selon l'épaisseur du rembourrage et l'aération de la pièce. Nous réglons l'extraction pour retirer un maximum d'humidité et raccourcir le séchage."
+              },
+              {
+                "question": "Toutes les taches partent-elles ?",
+                "reponse": "La grande majorité s'estompe nettement, surtout si la tache est récente. Certaines marques anciennes ou définitives peuvent rester visibles : nous sommes honnêtes sur le résultat attendu avant d'intervenir."
+              },
+              {
+                "question": "Traitez-vous aussi les matelas et les tapis fragiles ?",
+                "reponse": "Oui. Matelas, tapis en laine ou en soie et fibres délicates sont nettoyés avec un dosage et une méthode adaptés à la matière, après un test discret sur une zone peu visible."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Dans la même visite",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "icone": "Home",
+                "description": "L'entretien complet du logement, en plus des textiles.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "icone": "Sparkles",
+                "description": "Des fenêtres nettes pour accompagner le grand nettoyage.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Bureaux & locaux professionnels",
+                "icone": "Briefcase",
+                "description": "Sièges d'accueil et fauteuils de réunion assainis.",
+                "href": "/nettoyage-professionnels"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un canapé ou un tapis à raviver ?",
+            "sousTitre": "Envoyez-nous une photo par WhatsApp : l'estimation n'en sera que plus juste.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "remise-en-etat",
+      "label": "Remise en état",
+      "navHidden": true,
+      "meta": {
+        "title": "Remise en état après chantier à Paris, dès 300 €",
+        "description": "Remise en état après travaux ou déménagement en Île-de-France, dès 300 €. Poussière de chantier, traces de peinture et sols repris pièce par pièce. Devis sous 24 h."
+      },
+      "service": {
+        "name": "Remise en état après chantier ou déménagement",
+        "description": "Nettoyage complet d'un logement ou local après travaux ou avant état des lieux, en Île-de-France.",
+        "serviceType": "Nettoyage de remise en état",
+        "priceFrom": 300
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Après chantier · Après déménagement",
+            "titre": "Du chantier aux clés, un lieu prêt à vivre",
+            "intro": "La fin des travaux laisse toujours une couche de poussière fine, des traces de peinture et des étiquettes partout. Nous reprenons le lieu de fond en comble pour qu'il soit prêt à être habité ou remis.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Remise en état"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Après travaux ou avant un état des lieux",
+            "paragraphes": [
+              "La remise en état est une prestation à part : elle ne s'improvise pas avec un simple ménage. Nous éliminons la poussière de chantier qui s'infiltre partout, les résidus de plâtre et de colle, les traces de peinture et d'adhésif sur les vitres et les sols, les étiquettes sur les menuiseries neuves, puis nous lavons l'ensemble des surfaces jusqu'aux plinthes et aux interrupteurs.",
+              "Cette prestation convient aussi aux déménagements : un logement rendu impeccable avant l'état des lieux de sortie, ou un nouveau chez-vous nettoyé avant d'y poser ses cartons. Pour les professionnels, nous remettons en état un local après aménagement ou avant une reprise. Chaque pièce est contrôlée avec vous en fin d'intervention.",
+              "La remise en état démarre à 300 € et dépend de la surface, de l'ampleur des travaux et de l'état de départ. Un passage sur place, ou quelques photos, suffit à établir un devis précis."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions sur la remise en état",
+            "items": [
+              {
+                "question": "Quelle différence avec un ménage classique ?",
+                "reponse": "La remise en état s'attaque à des salissures que l'entretien courant ne traite pas : poussière fine de chantier incrustée, projections de peinture, colle, calcaire des sanitaires neufs. Elle demande des produits spécifiques et beaucoup plus de temps par mètre carré."
+              },
+              {
+                "question": "Intervenez-vous avant un état des lieux de sortie ?",
+                "reponse": "Oui, c'est une demande fréquente. Nous rendons le logement dans un état soigné pour aborder l'état des lieux sereinement. Prévenez-nous de la date butoir pour que nous calions l'intervention à temps."
+              },
+              {
+                "question": "Comment obtenir un prix juste pour ce type de chantier ?",
+                "reponse": "Le mieux est un rapide passage sur place, ou quelques photos représentatives des pièces. Nous ajustons le devis à l'état réel plutôt qu'à un forfait aveugle, pour éviter toute mauvaise surprise."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Nettoyage de vitres",
+                "icone": "Sparkles",
+                "description": "Traces de peinture et d'adhésif retirées des surfaces vitrées.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Ménage à domicile",
+                "icone": "Home",
+                "description": "Un entretien régulier une fois le logement remis à neuf.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Copropriétés & parties communes",
+                "icone": "Building2",
+                "description": "Communs repris après des travaux dans l'immeuble.",
+                "href": "/nettoyage-copropriete"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un chantier qui vient de se terminer ?",
+            "sousTitre": "Envoyez-nous la surface et quelques photos : le devis part sous 24 heures.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "tarifs",
+      "label": "Tarifs",
+      "meta": {
+        "title": "Tarifs nettoyage à Paris & Île-de-France",
+        "description": "Ménage dès 35 €/h, vitres dès 100 €, canapé dès 70 €, bureaux dès 120 €, remise en état dès 300 €. Estimez votre budget en ligne, devis ferme renvoyé sous 24 h."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Tarifs & estimation",
+            "titre": "Des prix de départ affichés clairement",
+            "intro": "Ménage à domicile à 35 €/h, vitres dès 100 €, canapé dès 70 €, bureaux dès 120 €, terrasse dès 120 €, remise en état dès 300 €, parties communes de copropriété sur devis. Composez votre estimation ci-dessous, puis recevez un prix ferme sous 24 h."
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Notre engagement prix",
+            "titre": "Des prix clairs, sans mauvaise surprise",
+            "paragraphes": [
+              "Nous affichons nos prix de départ en toute transparence. Le montant final dépend de trois éléments simples : la surface à traiter, la fréquence des passages et l'état des lieux au moment où nous commençons. Ce que nous inscrivons sur le devis, c'est exactement ce que vous réglez.",
+              "Le devis est gratuit, détaillé et sans engagement. Il vous parvient sous 24 h, et nous restons joignables pour l'ajuster avec vous si votre besoin évolue en cours de route."
+            ]
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "grille",
+          "content": {
+            "titre": "Nos tarifs de départ",
+            "intro": "Un aperçu honnête de nos prix planchers, prestation par prestation. Pour un montant précis, demandez votre devis gratuit.",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "prix": "35 €/h",
+                "description": "Entretien régulier ou ponctuel de votre logement.",
+                "inclus": [
+                  "Intervenante attitrée",
+                  "Matériel et produits fournis",
+                  "À votre rythme, du lundi au samedi"
+                ]
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "prix": "dès 100 €",
+                "description": "Vitrines, baies et fenêtres, des deux côtés.",
+                "inclus": [
+                  "Encadrements et rebords compris",
+                  "Vérification à contre-jour"
+                ]
+              },
+              {
+                "nom": "Canapés, fauteuils & tapis",
+                "prix": "dès 70 €",
+                "description": "Injection-extraction en profondeur, à domicile.",
+                "inclus": [
+                  "Taches prétraitées à la main",
+                  "Séchage en quelques heures"
+                ]
+              },
+              {
+                "nom": "Bureaux & locaux pro",
+                "prix": "dès 120 €",
+                "description": "Bureaux, commerces, restaurants et cuisines pro.",
+                "inclus": [
+                  "En dehors des heures d'ouverture",
+                  "Contrat régulier possible"
+                ]
+              },
+              {
+                "nom": "Nettoyage de terrasse",
+                "prix": "dès 120 €",
+                "description": "Dallages et sols extérieurs dégraissés et démoussés.",
+                "inclus": [
+                  "Pression dosée selon le matériau"
+                ]
+              },
+              {
+                "nom": "Remise en état",
+                "prix": "dès 300 €",
+                "description": "Après un chantier ou un déménagement.",
+                "inclus": [
+                  "Poussière de chantier et traces retirées",
+                  "Contrôle pièce par pièce"
+                ]
+              },
+              {
+                "nom": "Copropriétés & parties communes",
+                "prix": "Sur devis",
+                "description": "Contrat d'entretien régulier des communs d'immeuble.",
+                "inclus": [
+                  "Planning fixe",
+                  "Un référent unique pour le syndic"
+                ]
+              }
+            ],
+            "note": "Prix de départ indicatifs. Devis ferme renvoyé sous 24 h après étude de votre demande.",
+            "cta": {
+              "label": "Estimer mon devis gratuit",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un projet plus complexe ?",
+            "sousTitre": "Grand volume, plusieurs sites, besoin récurrent : décrivez-le, le devis reste gratuit.",
+            "ctaPrimaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "zone-intervention",
+      "label": "Zone",
+      "navHidden": true,
+      "meta": {
+        "title": "Zone d'intervention — Paris & Île-de-France",
+        "description": "RD NET&PROPRE intervient dans Paris et les huit départements d'Île-de-France : petite et grande couronne. Copropriétés, bureaux et particuliers, devis sous 24 h."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Zone d'intervention",
+            "titre": "Toute l'Île-de-France, depuis Paris",
+            "intro": "Notre base est parisienne, mais notre terrain couvre les huit départements de la région. Voici comment nous organisons nos déplacements, de la capitale à la grande couronne."
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "Trois cercles, une même exigence",
+            "intro": "Que votre lieu se trouve dans un arrondissement parisien, en première couronne ou aux confins de la région, nous appliquons la même méthode et le même contrôle. Votre commune n'est pas listée ? Demandez : si elle est en Île-de-France, nous venons.",
+            "rayonKm": 60,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=1.44%2C48.12%2C3.56%2C49.24&layer=mapnik&marker=48.8566%2C2.3522",
+            "zones": [
+              {
+                "region": "Paris intra-muros (75)",
+                "principale": "Paris",
+                "villes": [
+                  "Paris Centre",
+                  "Rive gauche",
+                  "Rive droite",
+                  "Les 20 arrondissements"
+                ]
+              },
+              {
+                "region": "Petite couronne (92 · 93 · 94)",
+                "principale": "Boulogne-Billancourt",
+                "villes": [
+                  "Boulogne-Billancourt",
+                  "Neuilly-sur-Seine",
+                  "Levallois-Perret",
+                  "Nanterre",
+                  "Courbevoie",
+                  "Montreuil",
+                  "Saint-Denis",
+                  "Aubervilliers",
+                  "Créteil",
+                  "Vitry-sur-Seine",
+                  "Ivry-sur-Seine"
+                ]
+              },
+              {
+                "region": "Grande couronne (77 · 78 · 91 · 95)",
+                "principale": "Versailles",
+                "villes": [
+                  "Versailles",
+                  "Saint-Germain-en-Laye",
+                  "Argenteuil",
+                  "Cergy",
+                  "Sarcelles",
+                  "Évry-Courcouronnes",
+                  "Meaux",
+                  "Melun"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Votre lieu est quelque part sur cette carte ?",
+            "sousTitre": "Donnez-nous la commune et le type d'espace : nous confirmons le déplacement et chiffrons.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "a-propos",
+      "label": "À propos",
+      "navHidden": true,
+      "meta": {
+        "title": "Notre approche du nettoyage en Île-de-France",
+        "description": "RD NET&PROPRE, entreprise de nettoyage basée à Paris : intervenants réguliers, contrôle systématique et accueil multilingue au service des Franciliens."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "À propos",
+            "titre": "RD NET&PROPRE, la propreté prise au sérieux",
+            "intro": "Une entreprise francilienne qui met la régularité, la discrétion et le contrôle du résultat au centre de chaque intervention — pour les syndics, les entreprises et les particuliers."
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Notre façon de travailler",
+            "paragraphes": [
+              "RD NET&PROPRE est une entreprise de nettoyage basée à Paris, au service de toute l'Île-de-France. Nous avons construit notre approche autour d'une conviction : la propreté ne se juge pas au moment où l'on part, mais dans la durée. Un hall qui reste net entre deux passages, un bureau qui accueille les équipes sans reproche, un logement où l'on se sent bien : voilà le vrai résultat.",
+              "Pour y parvenir, nous misons sur des intervenants réguliers, formés et discrets, plutôt que sur un roulement anonyme. Chaque client dispose d'un référent qui connaît ses lieux et ses attentes. Et parce que nous travaillons souvent chez les gens ou dans des espaces sensibles, la confiance et le respect des lieux passent avant tout.",
+              "Nous accueillons nos clients en français, en anglais, en espagnol et en arabe : à Paris comme en couronne, chacun doit pouvoir expliquer son besoin sans barrière et recevoir une réponse claire."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "Nos repères",
+            "titre": "Quatre engagements qui nous tiennent",
+            "items": [
+              {
+                "icone": "ShieldCheck",
+                "titre": "Confiance",
+                "texte": "Des intervenants sérieux et discrets, respectueux de vos lieux, de vos affaires et de votre intimité."
+              },
+              {
+                "icone": "Repeat",
+                "titre": "Régularité",
+                "texte": "Le même binôme d'une fois sur l'autre, un planning tenu et un résultat constant dans le temps."
+              },
+              {
+                "icone": "SearchCheck",
+                "titre": "Contrôle",
+                "texte": "Chaque zone est vérifiée avant de quitter les lieux : rien n'est laissé au hasard."
+              },
+              {
+                "icone": "Languages",
+                "titre": "Proximité",
+                "texte": "Un accueil en quatre langues et un interlocuteur qui vous répond vraiment, dans votre langue."
+              }
+            ]
+          },
+          "variant": "timeline-verticale"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Envie de nous confier un lieu ?",
+            "sousTitre": "Parlons de votre besoin : l'échange n'engage à rien et le devis est gratuit.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Contact — nettoyage à Paris & Île-de-France",
+        "description": "Joignez-nous par téléphone, WhatsApp ou formulaire pour tout besoin de nettoyage en Île-de-France. Réponse et devis gratuit sous 24 h, en 4 langues."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Contact",
+            "titre": "Parlons de votre lieu à nettoyer",
+            "intro": "Par téléphone, sur WhatsApp ou via le formulaire, contactez-nous comme il vous plaît. Décrivez le type d'espace, la surface et la fréquence — votre devis part sous 24 h."
+          }
+        },
+        {
+          "type": "contact",
+          "content": {
+            "titre": "Demande de devis",
+            "intro": "Indiquez le service souhaité, votre commune et le moment envisagé : nous préparons votre estimation et vous la renvoyons sous 24 h. Deux lignes pour nous joindre : 07 48 32 20 29 et 07 58 08 61 83.",
+            "form": true,
+            "formMode": "demande-intervention",
+            "telephone": "07 48 32 20 29",
+            "whatsapp": "+33 7 48 32 20 29",
+            "email": "rd.nettoyagepropre@gmail.com",
+            "horaires": [
+              {
+                "jour": "Lun – Sam",
+                "heures": "08:00 – 22:00"
+              },
+              {
+                "jour": "Dimanche",
+                "heures": "Fermé"
+              }
+            ],
+            "services": [
+              "Copropriété / parties communes",
+              "Bureaux & locaux professionnels",
+              "Restaurant / cuisine professionnelle",
+              "Nettoyage de vitres",
+              "Ménage à domicile",
+              "Canapé, fauteuil & tapis",
+              "Nettoyage de terrasse",
+              "Remise en état (chantier / déménagement)",
+              "Autre / je ne sais pas encore"
+            ],
+            "villes": [
+              "Paris",
+              "Boulogne-Billancourt",
+              "Neuilly-sur-Seine",
+              "Levallois-Perret",
+              "Nanterre",
+              "Courbevoie",
+              "Montreuil",
+              "Saint-Denis",
+              "Aubervilliers",
+              "Créteil",
+              "Vitry-sur-Seine",
+              "Ivry-sur-Seine",
+              "Versailles",
+              "Argenteuil",
+              "Cergy",
+              "Autre commune d'Île-de-France"
+            ],
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=1.44%2C48.12%2C3.56%2C49.24&layer=mapnik&marker=48.8566%2C2.3522",
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    }
+  ]
+}

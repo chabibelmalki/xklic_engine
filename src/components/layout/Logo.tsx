@@ -26,9 +26,15 @@ export function Logo({
   layout?: "inline" | "stacked";
   className?: string;
 }) {
-  const { logo, logoAlt, tagline, logoTwoTone } = config.branding;
+  const { logo, logoAlt, tagline, logoTwoTone, logoScale } = config.branding;
   const light = variant === "light";
   const stacked = layout === "stacked";
+
+  // Échelle du logo PROPRE AU SITE (défaut 1 = rendu historique h-9/max-w-160).
+  // Appliquée en style inline pour ne toucher aucun autre site.
+  const scale = logoScale && logoScale > 0 ? logoScale : 1;
+  const scaledStyle =
+    scale !== 1 ? { height: `${2.25 * scale}rem`, maxWidth: `${160 * scale}px` } : undefined;
 
   // Wordmark deux tons (couleurs de marque exactes, ex. « SANAD CLEAN » de l'OG) :
   // 1er mot dans `first`, le reste dans `rest`. Réservé au rendu clair (le footer
@@ -69,7 +75,11 @@ export function Logo({
         alt={logoAlt ?? config.entreprise.nom}
         width={160}
         height={44}
-        className="h-9 w-auto max-w-[160px] shrink-0 object-contain"
+        style={scaledStyle}
+        className={cn(
+          "w-auto shrink-0 object-contain",
+          scale === 1 && "h-9 max-w-[160px]",
+        )}
         priority
       />
     )

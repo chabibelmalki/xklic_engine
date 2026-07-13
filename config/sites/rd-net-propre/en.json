@@ -1,0 +1,1567 @@
+{
+  "slug": "rd-net-propre",
+  "i18n": {
+    "default": "fr",
+    "languages": [
+      "fr",
+      "en",
+      "es",
+      "ar"
+    ]
+  },
+  "branding": {
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/logo-d0f2181d.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/logo-d0f2181d.png",
+    "logoAlt": "RD NET&PROPRE — cleaning company in Paris",
+    "logoTwoTone": {
+      "first": "#1c6b57",
+      "rest": "#c79a3f"
+    },
+    "tagline": "Professional cleaning · Paris & Île-de-France",
+    "colors": {
+      "brand": "#1c6b57",
+      "accent": "#c79a3f",
+      "neutral": "warm"
+    },
+    "logoScale": 1.35
+  },
+  "entreprise": {
+    "nom": "RD NET&PROPRE",
+    "statut": "EI",
+    "siret": "99339068100019",
+    "ape": "81.21Z",
+    "apeLabel": "Routine building cleaning",
+    "tva": {
+      "regime": "franchise"
+    }
+  },
+  "seo": {
+    "schemaType": "CleaningService",
+    "ville": "Paris"
+  },
+  "meta": {
+    "title": "Cleaning company in Paris & Île-de-France",
+    "description": "RD NET&PROPRE cleans apartment blocks, offices, windows and homes across Île-de-France. Home cleaning from €35/h, free quote within 24h, 6 days a week.",
+    "keywords": [
+      "cleaning company Paris",
+      "apartment block cleaning Île-de-France",
+      "office cleaning Paris",
+      "window cleaning Paris",
+      "home cleaning Paris",
+      "common areas cleaning",
+      "post-renovation cleaning Paris",
+      "cleaning services Île-de-France"
+    ]
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Home",
+      "navHidden": true,
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "carte",
+          "content": {
+            "showSocial": true,
+            "eyebrow": "Cleaning company · Paris & Île-de-France",
+            "titre": "Spotless spaces, entrusted to a team",
+            "titreAccent": "that is serious and discreet",
+            "accroche": "Apartment blocks, offices, shops and homes: RD NET&PROPRE looks after your premises with method, from the building lobby to the office window, right across Île-de-France.",
+            "trust": [
+              {
+                "icone": "Building2",
+                "label": "Blocks & businesses"
+              },
+              {
+                "icone": "Clock",
+                "label": "6 days/week · 8am – 10pm"
+              },
+              {
+                "icone": "ShieldCheck",
+                "label": "A team you can trust"
+              },
+              {
+                "icone": "MapPin",
+                "label": "All of Île-de-France"
+              }
+            ],
+            "card": {
+              "label": "Home cleaning",
+              "prix": "€35",
+              "unite": "/ hour",
+              "mention": "free quote for every other service",
+              "points": [
+                "Visits Monday to Saturday, 8am – 10pm",
+                "Clear quote returned within 24h",
+                "Dedicated, discreet cleaners",
+                "Equipment and products provided"
+              ],
+              "rating": {
+                "label": "At your service across the region"
+              }
+            },
+            "ctaPrimaire": {
+              "label": "Request a free quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Explore our services",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Our services",
+            "titre": "One provider for every kind of place",
+            "intro": "From recurring cleaning of common areas to a full clean-up after building work, we cover the needs of property managers, businesses and households across the Paris region.",
+            "items": [
+              {
+                "nom": "Apartment blocks & common areas",
+                "icone": "Building2",
+                "priceHint": "on quote",
+                "description": "Lobbies, staircases, landings, lifts and interior windows kept up on a regular schedule, with a single point of contact for your managing agent.",
+                "href": "/nettoyage-copropriete"
+              },
+              {
+                "nom": "Offices & business premises",
+                "icone": "Briefcase",
+                "priceHint": "from €120",
+                "description": "Offices, restaurants and professional kitchens cleaned before opening or after closing, without disrupting your business.",
+                "href": "/nettoyage-professionnels"
+              },
+              {
+                "nom": "Window cleaning",
+                "icone": "Sparkles",
+                "priceHint": "from €100",
+                "description": "Shopfronts, bay windows and panes made crystal clear on both sides, for shops and households alike.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Home cleaning",
+                "icone": "Home",
+                "priceHint": "from €35/h",
+                "description": "Regular or one-off upkeep of your home, always entrusted to the same person, mindful of your habits.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Sofas, armchairs & rugs",
+                "icone": "Sofa",
+                "priceHint": "from €70",
+                "description": "Fabrics revived by hot-water extraction: seats sanitised, stains treated, rugs washed fibre by fibre.",
+                "href": "/nettoyage-textiles"
+              },
+              {
+                "nom": "Post-work clean-up",
+                "icone": "Hammer",
+                "priceHint": "from €300",
+                "description": "After building work or a move, the place is taken back room by room, right through to handing over the keys.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Disinfection & bio-cleaning",
+                "icone": "ShieldPlus",
+                "priceHint": "on quote",
+                "description": "Professional cleaning and disinfection: hospital-grade hygiene protocols and bio-cleaning, with suitable methods and products.",
+                "href": "/nettoyage-professionnels"
+              }
+            ],
+            "cta": {
+              "label": "See every service",
+              "href": "/services"
+            }
+          },
+          "variant": "mosaique"
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "In pictures",
+            "titre": "RD NET&PROPRE cleaning at work",
+            "intro": "A glimpse of our visits, from building common areas to office windows and sofas brought back to life.",
+            "ratio": "4/3",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/service-menage.png",
+                  "alt": "RD NET&PROPRE team vacuuming and mopping the floor of a bright living room"
+                },
+                "titre": "Home cleaning & upkeep"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/service-bureaux.png",
+                  "alt": "Clean, tidy office space after an RD NET&PROPRE visit"
+                },
+                "titre": "Offices & business spaces"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/service-canape.png",
+                  "alt": "Deep vacuum cleaning of a sofa cushion"
+                },
+                "titre": "Sofas, armchairs & rugs"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/service-vitres-facade.png",
+                  "alt": "Technicians cleaning the windows of a building facade at height"
+                },
+                "titre": "Windows & building facades"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Who we are",
+            "titre": "A young Paris-region company,",
+            "titreAccent": "exacting about detail",
+            "paragraphes": [
+              "RD NET&PROPRE grew out of a wish to give property managers, businesses and families across Île-de-France cleaning that truly holds up over time, far from rushed jobs. Based in Paris, we cover the whole region for both routine upkeep and one-off clean-ups.",
+              "Our stance is simple: regular cleaners rather than an anonymous rotation, a contact who knows your premises, and a systematic check before we leave. That is what keeps a lobby tidy week after week and lets an office welcome your teams in the best conditions.",
+              "We welcome our clients in French, English, Spanish and Arabic: everyone can describe their need in their own language and receive a clear, jargon-free quote."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/qui-sommes-nous.png",
+              "alt": "RD NET&PROPRE visual — professional cleaning equipment in a bright office"
+            },
+            "imagePosition": "left",
+            "imageRatio": "16/10",
+            "imageCard": true,
+            "ctaPrimaire": {
+              "label": "Get to know us",
+              "href": "/a-propos"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "How we work",
+            "titre": "From your call to a spotless place",
+            "items": [
+              {
+                "icone": "Phone",
+                "titre": "You describe the place",
+                "texte": "By phone, WhatsApp or the form, you tell us the type of space, the surface area and the frequency you want."
+              },
+              {
+                "icone": "FileText",
+                "titre": "A clear quote within 24h",
+                "texte": "We send back a detailed proposal, with a firm price and the cleaning schedule that fits."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "The visit, then the check",
+                "texte": "The team works with its own equipment and checks every zone before leaving. The result shows from the very first visit."
+              }
+            ]
+          },
+          "variant": "timeline-verticale"
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "Paris as our anchor, Île-de-France as our ground",
+            "intro": "We work within central Paris and across the region's eight departments, from the inner to the outer suburbs. A trip to the edge of the region doesn't scare us: just tell us where the place is.",
+            "rayonKm": 60,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=1.44%2C48.12%2C3.56%2C49.24&layer=mapnik&marker=48.8566%2C2.3522",
+            "zones": [
+              {
+                "region": "Central Paris",
+                "principale": "Paris",
+                "villes": [
+                  "Paris, 1st to 20th arrondissement"
+                ]
+              },
+              {
+                "region": "Inner suburbs",
+                "principale": "Boulogne-Billancourt",
+                "villes": [
+                  "Boulogne-Billancourt",
+                  "Neuilly-sur-Seine",
+                  "Levallois-Perret",
+                  "Nanterre",
+                  "Courbevoie",
+                  "Montreuil",
+                  "Saint-Denis",
+                  "Aubervilliers",
+                  "Créteil",
+                  "Vitry-sur-Seine",
+                  "Ivry-sur-Seine"
+                ]
+              },
+              {
+                "region": "Outer suburbs",
+                "principale": "Versailles",
+                "villes": [
+                  "Versailles",
+                  "Argenteuil",
+                  "Cergy",
+                  "Évry-Courcouronnes",
+                  "Meaux",
+                  "Melun",
+                  "Sarcelles",
+                  "Saint-Germain-en-Laye"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "What people ask us most",
+            "items": [
+              {
+                "question": "Do you work mainly with businesses or with households?",
+                "reponse": "Both. We maintain the common areas of apartment blocks and the premises of businesses, and we also look after private homes. Each service has its own page with the detail of what is included."
+              },
+              {
+                "question": "How quickly can we start?",
+                "reponse": "For a one-off visit, we can often offer a slot within the week. For a recurring contract, we agree on a fixed schedule together. The quote itself reaches you within 24 hours."
+              },
+              {
+                "question": "Do we need to provide equipment and products?",
+                "reponse": "No, we come fully equipped. If you would rather we use specific products, for a delicate surface or with children around, just say so when we quote."
+              },
+              {
+                "question": "Which languages can we reach you in?",
+                "reponse": "French, English, Spanish and Arabic. Describe your need in whichever language suits you, and the reply will follow in the same one."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "A place to bring back to spotless?",
+            "sousTitre": "Phone, WhatsApp or the online form: your free estimate reaches you within 24 hours.",
+            "ctaPrimaire": {
+              "label": "Request a free quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            },
+            "lien": {
+              "label": "or message us on WhatsApp →",
+              "href": "https://wa.me/33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Services",
+      "meta": {
+        "title": "Cleaning services in Paris & Île-de-France",
+        "description": "Apartment blocks, offices, windows, home cleaning, upholstery and post-work clean-up: the detail of each RD NET&PROPRE cleaning service across Île-de-France."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Our services",
+            "titre": "Every place has its own cleaning",
+            "intro": "We match method, frequency and products to the nature of the space: a building lobby isn't kept like an office, nor a sofa like a shopfront. Here are our six areas of work.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "See the prices",
+              "href": "/tarifs"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Businesses & property managers",
+            "titre": "For apartment blocks and companies",
+            "intro": "Scheduled visits, a single point of contact and clear reports for those who manage buildings and business premises.",
+            "items": [
+              {
+                "nom": "Apartment blocks & common areas",
+                "icone": "Building2",
+                "priceHint": "on quote",
+                "description": "Lobbies, stairwells, landings, lifts and interior windows: regular upkeep that adds value to the building and reassures residents.",
+                "href": "/nettoyage-copropriete"
+              },
+              {
+                "nom": "Offices & business premises",
+                "icone": "Briefcase",
+                "priceHint": "from €120",
+                "description": "Offices, restaurants and professional kitchens, cleaned outside your opening hours, in line with hygiene rules.",
+                "href": "/nettoyage-professionnels"
+              },
+              {
+                "nom": "Window cleaning",
+                "icone": "Sparkles",
+                "priceHint": "from €100",
+                "description": "Shop windows, glass facades and office panes cleaned streak-free, with heights handled safely.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Disinfection & bio-cleaning",
+                "icone": "ShieldPlus",
+                "priceHint": "on quote",
+                "description": "Professional cleaning and disinfection: hospital-grade hygiene protocols and bio-cleaning, with suitable methods and products.",
+                "href": "/nettoyage-professionnels"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Households",
+            "titre": "For your home and your fabrics",
+            "intro": "The same eye for detail, brought home: ongoing upkeep and furniture that gets its freshness back.",
+            "items": [
+              {
+                "nom": "Home cleaning",
+                "icone": "Home",
+                "priceHint": "from €35/h",
+                "description": "Weekly or one-off upkeep: floors, kitchen, bathroom and dusting followed to your instructions, by a dedicated cleaner.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Sofas, armchairs & rugs",
+                "icone": "Sofa",
+                "priceHint": "from €70",
+                "description": "Deep hot-water extraction: fabrics come out sanitised, deodorised and dry within a few hours. Rugs washed to suit the fibre.",
+                "href": "/nettoyage-textiles"
+              },
+              {
+                "nom": "Post-work clean-up",
+                "icone": "Hammer",
+                "priceHint": "from €300",
+                "description": "After building work or before a move-out inspection: site dust, paint marks and floors taken back to the last corner.",
+                "href": "/remise-en-etat"
+              }
+            ],
+            "cta": {
+              "label": "Estimate my budget",
+              "href": "/tarifs"
+            }
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Not sure which box your need fits into?",
+            "sousTitre": "Describe the place and the goal: we point you to the right service and price the whole thing.",
+            "ctaPrimaire": {
+              "label": "Describe my need",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-copropriete",
+      "label": "Apartment blocks",
+      "navHidden": true,
+      "meta": {
+        "title": "Apartment block & common-area cleaning Paris",
+        "description": "Common-area upkeep across Île-de-France: lobbies, staircases, landings, lifts and interior windows. Regular schedule, single contact, free quote."
+      },
+      "service": {
+        "name": "Apartment block & common-area cleaning",
+        "description": "Regular upkeep of the common areas of residential buildings across Île-de-France.",
+        "serviceType": "Common-area cleaning",
+        "priceFrom": "On quote"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Apartment blocks & residential buildings",
+            "titre": "Common areas that always look their best",
+            "intro": "A well-kept building shows from the lobby. We maintain your common areas on a regular rhythm, for satisfied residents and a well-preserved property.",
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Apartment blocks"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Upkeep built for managing agents and residents",
+            "paragraphes": [
+              "Maintaining common areas is at the heart of what we do for apartment blocks across the Paris region. We handle the sweeping and washing of lobbies, stairwells and landings, the dusting of handrails, letterboxes and switches, the cleaning of lift cabins and interior windows; managing the bins on collection days can be added under the contract.",
+              "Each building gets a fixed schedule and, ideally, the same cleaners from one week to the next: they know the corners, the building's habits and flag to the managing agent whatever needs attention. You keep a single contact, reachable, and a clear report of what is done.",
+              "The frequency follows the life of the building: weekly, fortnightly or several times a week for high-traffic blocks. We draw up the quote once we've seen the place, for a fair price with no surprises."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions from building managers",
+            "items": [
+              {
+                "question": "Do you offer regular upkeep contracts?",
+                "reponse": "Yes, it's the most common format for apartment blocks: a fixed schedule, a frequency agreed with the managing agent or residents' council, and readable monthly billing. One-off visits remain possible for an isolated need."
+              },
+              {
+                "question": "Do you handle the bins and the bin-store cleaning?",
+                "reponse": "It's a common option in our contracts. Taking bins out and back on collection days, washing the store and occasional disinfection can be included: we set it out clearly on the quote."
+              },
+              {
+                "question": "How does the managing agent track quality?",
+                "reponse": "You have a single contact with us and a report of the visits. Any resident's remark reaches us directly and we adjust from the very next visit."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Other needs for your building",
+            "items": [
+              {
+                "nom": "Window cleaning",
+                "icone": "Sparkles",
+                "description": "Glazed lobbies, doors and windows of the common areas made clear.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Post-work clean-up",
+                "icone": "Hammer",
+                "description": "Common areas taken back after building work or water damage.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Offices & business premises",
+                "icone": "Briefcase",
+                "description": "The caretaker's room, a shared hall or the management office.",
+                "href": "/nettoyage-professionnels"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Entrust your common areas to a regular team",
+            "sousTitre": "Send us the address and the number of floors: we come and see, then price the contract.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-professionnels",
+      "label": "Offices & business",
+      "navHidden": true,
+      "meta": {
+        "title": "Office & business premises cleaning in Paris",
+        "description": "Cleaning of offices, restaurants and professional kitchens across Île-de-France, from €120. Visits outside opening hours, careful hygiene, quote within 24h."
+      },
+      "service": {
+        "name": "Office & business premises cleaning",
+        "description": "Upkeep of offices, restaurants and professional kitchens across Île-de-France.",
+        "serviceType": "Business premises cleaning",
+        "priceFrom": 120
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Companies, shops & restaurants",
+            "titre": "Clean premises, without disrupting your work",
+            "intro": "A healthy work environment sets the tone for your teams and your clients. We maintain your offices and business spaces before opening or after closing.",
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Offices & business"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Offices, restaurants and professional kitchens",
+            "paragraphes": [
+              "We work in workspaces of every size: office floors, practices, meeting rooms, washrooms and reception areas. The protocol covers emptying bins, dusting desks, washing floors, disinfecting contact points and keeping the washrooms up, with restocking of consumables if you wish.",
+              "For restaurants, the bar rises: degreasing surfaces, cleaning dining rooms and professional kitchens in line with hygiene rules, non-slip floors treated with the right products. We fit our visits to your service, early morning or late evening, so we never get in the way of welcoming the public.",
+              "The service starts at €120 and adjusts to the surface area, the frequency and the level of demand. A recurring contract guarantees the same pair of cleaners and a steady result, week after week.",
+              "We also carry out professional cleaning and disinfection of sensitive environments: hospital-grade hygiene protocols and bio-cleaning, with methods and products suited to each surface. A fit for practices, laboratories, treatment rooms and any premises where sanitary standards are at their highest."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions from companies and restaurateurs",
+            "items": [
+              {
+                "question": "Can you work outside opening hours?",
+                "reponse": "Yes, it's even the rule for most of our business clients. Early morning, in the evening or overnight depending on your activity: we set the visits around your quiet slots so we never disturb clients and staff."
+              },
+              {
+                "question": "Do you respect hygiene constraints in a professional kitchen?",
+                "reponse": "We use products and methods suited to food surfaces and degreasing, and we work within the logic of restaurant hygiene rules. The detail of the zones treated appears on the quote."
+              },
+              {
+                "question": "Is office cleaning billed by the hour or as a package?",
+                "reponse": "Most often as a package, based on surface area and frequency, for a predictable budget. For a one-off need or a large surface, we can also price it per visit."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Worth combining for your premises",
+            "items": [
+              {
+                "nom": "Window cleaning",
+                "icone": "Sparkles",
+                "description": "Office windows and panes streak-free, street side and courtyard side.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Post-work clean-up",
+                "icone": "Hammer",
+                "description": "Premises taken back thoroughly after a fit-out or before handover.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Sofas & armchairs",
+                "icone": "Sofa",
+                "description": "Reception seating and meeting-room chairs sanitised.",
+                "href": "/nettoyage-textiles"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "A quote for your offices or your shop?",
+            "sousTitre": "Tell us the surface area and your hours: we propose a schedule and a firm price.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Windows",
+      "navHidden": true,
+      "meta": {
+        "title": "Window cleaning in Paris, from €100",
+        "description": "Window cleaning for businesses and households across Île-de-France, from €100. Shopfronts, bay windows and panes streak-free, both sides. Free quote within 24h."
+      },
+      "service": {
+        "name": "Window cleaning",
+        "description": "Cleaning of windows, shopfronts and bay windows for businesses and households across Île-de-France.",
+        "serviceType": "Window cleaning",
+        "priceFrom": 100
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Businesses & households",
+            "titre": "The light comes in, the streaks go out",
+            "intro": "Clean windows change everything: a shopfront that invites you in, a brighter office, a transformed living room. We wash your glazed surfaces on both sides.",
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Windows"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Shopfronts, bay windows and panes",
+            "paragraphes": [
+              "We clean the windows of shops and businesses just as we do those of homes: shopfronts and storefronts, glass roofs, sliding bays, small-pane windows, frames and sills. Each surface is washed on both faces, then checked against the light to leave no film or run.",
+              "For shop windows, a regular visit keeps a polished image that matters at the moment a customer hesitates to push the door. For households, a seasonal deep clean is often enough to bring clarity back to the whole home. High surfaces are handled with the right equipment, safely.",
+              "The service starts at €100 and depends on the number of openings, how reachable they are and the frequency. We price precisely after surveying the surfaces to be treated."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions about window cleaning",
+            "items": [
+              {
+                "question": "Do you clean shop windows on a regular basis?",
+                "reponse": "Yes. Many shopkeepers choose a weekly or fortnightly visit to keep a spotless front at all times. We come in before opening so as not to get in the customers' way."
+              },
+              {
+                "question": "Can you reach windows up high?",
+                "reponse": "We handle surfaces at a reasonable height with poles and the right equipment. For complex setups or large facades, we assess the access during the quote and propose the safest solution."
+              },
+              {
+                "question": "Are frames and sills included?",
+                "reponse": "Yes, the cleaning covers the frames, sills and marks on the surrounds: that's what sets a real window clean apart from a quick wipe of the glass."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Often requested with",
+            "items": [
+              {
+                "nom": "Offices & business premises",
+                "icone": "Briefcase",
+                "description": "The full upkeep of the premises, windows included.",
+                "href": "/nettoyage-professionnels"
+              },
+              {
+                "nom": "Home cleaning",
+                "icone": "Home",
+                "description": "Windows built into the regular upkeep of the home.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Apartment blocks & common areas",
+                "icone": "Building2",
+                "description": "Glazed lobbies and doors of residential buildings.",
+                "href": "/nettoyage-copropriete"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Fancy a clearer view?",
+            "sousTitre": "Count your windows and shopfronts, send us the number: the quote follows within 24h.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "menage-domicile",
+      "label": "Home cleaning",
+      "navHidden": true,
+      "meta": {
+        "title": "Home cleaning in Paris, from €35/h",
+        "description": "Home cleaning across Île-de-France from €35/h: regular or one-off upkeep, dedicated cleaner, instructions respected, equipment provided. Free quote within 24h."
+      },
+      "service": {
+        "name": "Home cleaning",
+        "description": "Regular or one-off upkeep of the home across Île-de-France, from €35/h.",
+        "serviceType": "Home cleaning",
+        "priceFrom": 35
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Households",
+            "titre": "A well-kept home, with a clear mind",
+            "intro": "Coming back to a tidy home without spending your weekend on it: that's what we bring you, with a dedicated cleaner who knows your habits.",
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Home cleaning"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "The upkeep of your home, at your own pace",
+            "paragraphes": [
+              "Whether you're after a weekly visit, a one-off freshen-up or a seasonal deep clean, we tailor the service to your household. Floors, kitchen, bathroom, dusting, interior windows and light tidying: you set the priorities at the first appointment, we note them and follow them at every visit.",
+              "We favour the same person from one time to the next. That's what builds trust when you hand over your keys: your cleaner ends up knowing the home, its delicate surfaces and your product preferences. With children or pets around, we naturally adjust the products used.",
+              "Home cleaning starts at €35/h, equipment and products provided. You stay free to set the frequency and can change the pace with the seasons. The quote is free and with no commitment."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions about home cleaning",
+            "items": [
+              {
+                "question": "Will I always have the same person?",
+                "reponse": "It's our priority: we assign a dedicated cleaner to your home so they know your place and your instructions. If they're away, whoever stands in receives all your notes beforehand."
+              },
+              {
+                "question": "Can I book a one-off clean rather than a regular contract?",
+                "reponse": "Of course. Spring deep clean, a freshen-up before a gathering or after a busy stretch: we come out one-off, with no obligation to make it recurring."
+              },
+              {
+                "question": "Do you offer the tax credit on home cleaning?",
+                "reponse": "Home cleaning for a private individual is a personal service, but the tax benefit requires a specific registration. We tell you frankly, at quote time, whether your service qualifies or not."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "To go further at home",
+            "items": [
+              {
+                "nom": "Sofas, armchairs & rugs",
+                "icone": "Sofa",
+                "description": "Bring back to life the fabrics that everyday upkeep can't revive.",
+                "href": "/nettoyage-textiles"
+              },
+              {
+                "nom": "Window cleaning",
+                "icone": "Sparkles",
+                "description": "A deep clean of the windows to bring the light back.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Post-work clean-up",
+                "icone": "Hammer",
+                "description": "A home taken back thoroughly after work or before a move.",
+                "href": "/remise-en-etat"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Fancy a break from the cleaning?",
+            "sousTitre": "Tell us the size of the home and the pace you want: we estimate the budget within 24h.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-textiles",
+      "label": "Sofas & rugs",
+      "navHidden": true,
+      "meta": {
+        "title": "Sofa & rug cleaning in Paris, from €70",
+        "description": "Cleaning of sofas, armchairs and rugs across Île-de-France from €70. Deep hot-water extraction, stains treated, fabrics sanitised and quick to dry. Quote within 24h."
+      },
+      "service": {
+        "name": "Sofa, armchair & rug cleaning",
+        "description": "Deep cleaning of upholstery by hot-water extraction, across Île-de-France.",
+        "serviceType": "Upholstery cleaning",
+        "priceFrom": 70
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Sofas · Armchairs · Rugs",
+            "titre": "Your fabrics get their freshness back",
+            "intro": "A dull sofa, a marked rug, a smell that lingers: hot-water extraction goes after the dirt deep in the fibre, where the vacuum stops.",
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Sofas & rugs"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Hot-water extraction, in depth",
+            "paragraphes": [
+              "The method sprays a cleaning solution deep into the fabric, then draws it straight back out along with the dissolved dirt. The result: stains are treated, dust mites and smells are removed, and the fabric comes out sanitised rather than merely rubbed on the surface. Drying usually takes a few hours, depending on thickness and how airy the room is.",
+              "We work on fabric sofas, armchairs, padded chairs, mattresses and rugs. Each material is identified before any move: wool, cotton, synthetic or delicate fibres don't call for the same dose or the same temperature. Stubborn stains are pre-treated by hand.",
+              "Cleaning an armchair or a rug starts at €70, with large pieces and corner sofas priced by size. We come to you with all the equipment: there's nothing to move."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions about fabric cleaning",
+            "items": [
+              {
+                "question": "How long does the sofa take to dry?",
+                "reponse": "Usually two to four hours, depending on the thickness of the padding and how airy the room is. We set the extraction to pull out as much moisture as possible and shorten the drying."
+              },
+              {
+                "question": "Do all stains come out?",
+                "reponse": "The vast majority fade clearly, especially if the stain is recent. Some old or permanent marks may stay visible: we're honest about the expected result before we start."
+              },
+              {
+                "question": "Do you also treat mattresses and delicate rugs?",
+                "reponse": "Yes. Mattresses, wool or silk rugs and delicate fibres are cleaned with a dose and method suited to the material, after a discreet test on a hidden spot."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "In the same visit",
+            "items": [
+              {
+                "nom": "Home cleaning",
+                "icone": "Home",
+                "description": "The full upkeep of the home, on top of the fabrics.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Window cleaning",
+                "icone": "Sparkles",
+                "description": "Clean windows to go with the deep clean.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Offices & business premises",
+                "icone": "Briefcase",
+                "description": "Reception seats and meeting-room armchairs sanitised.",
+                "href": "/nettoyage-professionnels"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "A sofa or a rug to revive?",
+            "sousTitre": "Send us a photo on WhatsApp: the estimate will only be more accurate.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "remise-en-etat",
+      "label": "Post-work clean-up",
+      "navHidden": true,
+      "meta": {
+        "title": "Post-renovation clean-up in Paris, from €300",
+        "description": "Post-work or post-move clean-up across Île-de-France, from €300. Site dust, paint marks and floors taken back room by room. Free quote within 24h."
+      },
+      "service": {
+        "name": "Post-work or post-move clean-up",
+        "description": "Full cleaning of a home or premises after building work or before a move-out inspection, across Île-de-France.",
+        "serviceType": "Post-renovation cleaning",
+        "priceFrom": 300
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "After building work · After a move",
+            "titre": "From the building site to the keys, ready to live in",
+            "intro": "The end of the work always leaves a layer of fine dust, paint marks and stickers everywhere. We take the place back thoroughly so it's ready to be lived in or handed over.",
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Post-work clean-up"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "After building work or before a move-out inspection",
+            "paragraphes": [
+              "A post-work clean-up is a service of its own: it can't be improvised with a plain clean. We remove the site dust that gets in everywhere, plaster and glue residue, paint and tape marks on windows and floors, stickers on new joinery, then we wash every surface down to the skirting boards and switches.",
+              "This service also suits moves: a home left spotless before the move-out inspection, or a new place cleaned before you set down your boxes. For businesses, we take a premises back after a fit-out or before handover. Each room is checked with you at the end of the visit.",
+              "The clean-up starts at €300 and depends on the surface area, the scale of the work and the starting state. A visit on site, or a few photos, is enough to draw up a precise quote."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions about post-work clean-up",
+            "items": [
+              {
+                "question": "What's the difference with a standard clean?",
+                "reponse": "A post-work clean-up tackles soiling that everyday upkeep doesn't: fine, embedded site dust, paint spatter, glue, limescale on new sanitary ware. It calls for specific products and far more time per square metre."
+              },
+              {
+                "question": "Do you work before a move-out inspection?",
+                "reponse": "Yes, it's a frequent request. We hand the home back in a careful state so you can approach the inspection calmly. Let us know the deadline so we can schedule the visit in time."
+              },
+              {
+                "question": "How do we get a fair price for this kind of job?",
+                "reponse": "The best is a quick visit on site, or a few representative photos of the rooms. We match the quote to the real state rather than a blind package, to avoid any nasty surprise."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Related services",
+            "items": [
+              {
+                "nom": "Window cleaning",
+                "icone": "Sparkles",
+                "description": "Paint and tape marks removed from glazed surfaces.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Home cleaning",
+                "icone": "Home",
+                "description": "Regular upkeep once the home has been brought back to new.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Apartment blocks & common areas",
+                "icone": "Building2",
+                "description": "Common areas taken back after work in the building.",
+                "href": "/nettoyage-copropriete"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Work that's just wrapped up?",
+            "sousTitre": "Send us the surface area and a few photos: the quote goes out within 24 hours.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "tarifs",
+      "label": "Prices",
+      "meta": {
+        "title": "Cleaning prices in Paris & Île-de-France",
+        "description": "Home cleaning from €35/h, windows from €100, sofa from €70, offices from €120, post-work clean-up from €300. Estimate your budget online, firm quote within 24h."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Prices & estimate",
+            "titre": "Starting prices, clearly shown",
+            "intro": "Home cleaning at €35/h, windows from €100, sofa from €70, offices from €120, terrace from €120, post-work clean-up from €300, apartment-block common areas on quote. Build your estimate below, then receive a firm price within 24h."
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Our pricing promise",
+            "titre": "Clear prices, no nasty surprises",
+            "paragraphes": [
+              "We show our starting prices openly. The final figure comes down to three simple things: the surface area to be treated, how often we visit and the state of the place when we begin. What we write on the quote is exactly what you pay.",
+              "The quote is free, detailed and with no commitment. It reaches you within 24 hours, and we stay reachable to adjust it with you if your need changes along the way."
+            ]
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "grille",
+          "content": {
+            "titre": "Our starting prices",
+            "intro": "An honest overview of our floor prices, service by service. For an exact figure, ask for your free quote.",
+            "items": [
+              {
+                "nom": "Home cleaning",
+                "prix": "€35/h",
+                "description": "Regular or one-off upkeep of your home.",
+                "inclus": [
+                  "A dedicated cleaner",
+                  "Equipment and products provided",
+                  "At your pace, Monday to Saturday"
+                ]
+              },
+              {
+                "nom": "Window cleaning",
+                "prix": "from €100",
+                "description": "Shopfronts, bay windows and panes, both sides.",
+                "inclus": [
+                  "Frames and sills included",
+                  "Checked against the light"
+                ]
+              },
+              {
+                "nom": "Sofas, armchairs & rugs",
+                "prix": "from €70",
+                "description": "Deep hot-water extraction, at home.",
+                "inclus": [
+                  "Stains pre-treated by hand",
+                  "Dry within a few hours"
+                ]
+              },
+              {
+                "nom": "Offices & business premises",
+                "prix": "from €120",
+                "description": "Offices, shops, restaurants and pro kitchens.",
+                "inclus": [
+                  "Outside opening hours",
+                  "Recurring contract possible"
+                ]
+              },
+              {
+                "nom": "Terrace cleaning",
+                "prix": "from €120",
+                "description": "Paving and outdoor floors degreased and demossed.",
+                "inclus": [
+                  "Pressure dosed to the material"
+                ]
+              },
+              {
+                "nom": "Post-work clean-up",
+                "prix": "from €300",
+                "description": "After building work or a move.",
+                "inclus": [
+                  "Site dust and marks removed",
+                  "Checked room by room"
+                ]
+              },
+              {
+                "nom": "Apartment blocks & common areas",
+                "prix": "On quote",
+                "description": "Regular upkeep contract for building common areas.",
+                "inclus": [
+                  "Fixed schedule",
+                  "A single contact for the manager"
+                ]
+              }
+            ],
+            "note": "Indicative starting prices. Firm quote returned within 24h once we've studied your request.",
+            "cta": {
+              "label": "Estimate my free quote",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "A more complex project?",
+            "sousTitre": "Large volume, several sites, a recurring need: describe it, the quote stays free.",
+            "ctaPrimaire": {
+              "label": "Contact us",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "zone-intervention",
+      "label": "Coverage",
+      "navHidden": true,
+      "meta": {
+        "title": "Coverage — Paris & Île-de-France",
+        "description": "RD NET&PROPRE works within Paris and the eight departments of Île-de-France: inner and outer suburbs. Apartment blocks, offices and households, quote within 24h."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Coverage",
+            "titre": "All of Île-de-France, from Paris",
+            "intro": "Our base is in Paris, but our ground covers the region's eight departments. Here's how we organise our travel, from the capital to the outer suburbs."
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "Three rings, one same standard",
+            "intro": "Whether your place is in a Paris arrondissement, in the inner suburbs or at the edge of the region, we apply the same method and the same check. Your town isn't listed? Just ask: if it's in Île-de-France, we come.",
+            "rayonKm": 60,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=1.44%2C48.12%2C3.56%2C49.24&layer=mapnik&marker=48.8566%2C2.3522",
+            "zones": [
+              {
+                "region": "Central Paris (75)",
+                "principale": "Paris",
+                "villes": [
+                  "Central Paris",
+                  "Left Bank",
+                  "Right Bank",
+                  "The 20 arrondissements"
+                ]
+              },
+              {
+                "region": "Inner suburbs (92 · 93 · 94)",
+                "principale": "Boulogne-Billancourt",
+                "villes": [
+                  "Boulogne-Billancourt",
+                  "Neuilly-sur-Seine",
+                  "Levallois-Perret",
+                  "Nanterre",
+                  "Courbevoie",
+                  "Montreuil",
+                  "Saint-Denis",
+                  "Aubervilliers",
+                  "Créteil",
+                  "Vitry-sur-Seine",
+                  "Ivry-sur-Seine"
+                ]
+              },
+              {
+                "region": "Outer suburbs (77 · 78 · 91 · 95)",
+                "principale": "Versailles",
+                "villes": [
+                  "Versailles",
+                  "Saint-Germain-en-Laye",
+                  "Argenteuil",
+                  "Cergy",
+                  "Sarcelles",
+                  "Évry-Courcouronnes",
+                  "Meaux",
+                  "Melun"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Is your place somewhere on this map?",
+            "sousTitre": "Give us the town and the type of space: we confirm the trip and price it.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 48 32 20 29",
+              "href": "tel:+33748322029"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "a-propos",
+      "label": "About",
+      "navHidden": true,
+      "meta": {
+        "title": "Our approach to cleaning in Île-de-France",
+        "description": "RD NET&PROPRE, a cleaning company based in Paris: regular cleaners, systematic checks and a multilingual welcome at the service of the Paris region."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "About",
+            "titre": "RD NET&PROPRE, cleanliness taken seriously",
+            "intro": "A Paris-region company that puts regularity, discretion and control of the result at the centre of every visit — for property managers, businesses and households."
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "The way we work",
+            "paragraphes": [
+              "RD NET&PROPRE is a cleaning company based in Paris, serving the whole of Île-de-France. We built our approach around one conviction: cleanliness isn't judged the moment you leave, but over time. A lobby that stays tidy between two visits, an office that welcomes teams without reproach, a home where you feel good: that's the real result.",
+              "To get there, we rely on regular, trained and discreet cleaners rather than an anonymous rotation. Each client has a contact who knows their premises and expectations. And because we often work in people's homes or in sensitive spaces, trust and respect for the place come first.",
+              "We welcome our clients in French, English, Spanish and Arabic: in Paris as in the suburbs, everyone should be able to explain their need without a barrier and get a clear answer."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "Our markers",
+            "titre": "Four commitments we hold to",
+            "items": [
+              {
+                "icone": "ShieldCheck",
+                "titre": "Trust",
+                "texte": "Serious, discreet cleaners, respectful of your premises, your belongings and your privacy."
+              },
+              {
+                "icone": "Repeat",
+                "titre": "Regularity",
+                "texte": "The same pair from one time to the next, a schedule kept and a result steady over time."
+              },
+              {
+                "icone": "SearchCheck",
+                "titre": "Control",
+                "texte": "Every zone is checked before we leave: nothing is left to chance."
+              },
+              {
+                "icone": "Languages",
+                "titre": "Closeness",
+                "texte": "A welcome in four languages and a contact who really answers, in your language."
+              }
+            ]
+          },
+          "variant": "timeline-verticale"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Want to entrust us with a place?",
+            "sousTitre": "Let's talk about your need: the conversation is no commitment and the quote is free.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Contact us",
+              "href": "/contact"
+            }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Contact — cleaning in Paris & Île-de-France",
+        "description": "Phone, WhatsApp or form: describe your cleaning need across Île-de-France. Reply and free quote within 24h, in French, English, Spanish or Arabic."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Contact",
+            "titre": "Let's talk about the place to clean",
+            "intro": "Call, WhatsApp or the form: pick whatever channel suits you. Describe the type of space, the surface area and the frequency — your quote goes out within 24h."
+          }
+        },
+        {
+          "type": "contact",
+          "content": {
+            "titre": "Quote request",
+            "intro": "Tell us the service you want, your town and the timing you have in mind: we prepare your estimate and send it back within 24h. Two lines to reach us: 07 48 32 20 29 and 07 58 08 61 83.",
+            "form": true,
+            "formMode": "demande-intervention",
+            "telephone": "07 48 32 20 29",
+            "whatsapp": "+33 7 48 32 20 29",
+            "email": "rd.nettoyagepropre@gmail.com",
+            "horaires": [
+              {
+                "jour": "Mon – Sat",
+                "heures": "08:00 – 22:00"
+              },
+              {
+                "jour": "Sunday",
+                "heures": "Closed"
+              }
+            ],
+            "services": [
+              "Apartment block / common areas",
+              "Offices & business premises",
+              "Restaurant / professional kitchen",
+              "Window cleaning",
+              "Home cleaning",
+              "Sofa, armchair & rug",
+              "Terrace cleaning",
+              "Post-work clean-up (renovation / move)",
+              "Other / not sure yet"
+            ],
+            "villes": [
+              "Paris",
+              "Boulogne-Billancourt",
+              "Neuilly-sur-Seine",
+              "Levallois-Perret",
+              "Nanterre",
+              "Courbevoie",
+              "Montreuil",
+              "Saint-Denis",
+              "Aubervilliers",
+              "Créteil",
+              "Vitry-sur-Seine",
+              "Ivry-sur-Seine",
+              "Versailles",
+              "Argenteuil",
+              "Cergy",
+              "Another town in Île-de-France"
+            ],
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=1.44%2C48.12%2C3.56%2C49.24&layer=mapnik&marker=48.8566%2C2.3522",
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    }
+  ]
+}
