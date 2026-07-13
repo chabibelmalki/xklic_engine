@@ -328,6 +328,11 @@ export interface ServicesContent {
   items: ServiceItem[];
   /** CTA sous la grille (ex. "Voir tous les tarifs"). */
   cta?: CTA;
+  /**
+   * Pastilles d'icônes COLORÉES (une teinte par carte, en cycle) au lieu de la
+   * teinte de marque unique. Opt-in par bloc — défaut `false` (rendu inchangé).
+   */
+  iconColors?: boolean;
 }
 
 // --- etapes ("comment ça marche") ---
@@ -836,6 +841,12 @@ export interface ContenuContent {
    * affichée sans recadrage agressif.
    */
   imageRatio?: string;
+  /**
+   * Traitement « carte » de l'image (familles à image nette, ex. `editorial`) :
+   * coins arrondis, ombre portée teintée marque, et image légèrement agrandie.
+   * Opt-in — défaut `false` (image plein cadre nette, rendu historique).
+   */
+  imageCard?: boolean;
   ctaPrimaire?: CTA;
   ctaSecondaire?: CTA;
 }

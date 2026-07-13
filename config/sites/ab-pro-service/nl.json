@@ -2,13 +2,20 @@
   "slug": "ab-pro-service",
   "i18n": {
     "default": "fr",
-    "languages": ["fr", "nl"]
+    "languages": [
+      "fr",
+      "nl"
+    ]
   },
   "branding": {
     "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/logo-11c47356.png",
     "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/logo-11c47356.png",
     "logoAlt": "AB Pro Service — professionele schoonmaak in Charleroi",
-    "tagline": "Professionele schoonmaak · Charleroi & Henegouwen",
+    "tagline": "Professionele schoonmaak · Charleroi",
+    "logoTwoTone": {
+      "first": "#2C74C0",
+      "rest": "#4A97D8"
+    },
     "colors": {
       "brand": "#1E5BA6",
       "accent": "#3E9B45",
@@ -53,8 +60,8 @@
           "type": "hero",
           "content": {
             "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/hero.jpg",
-              "alt": "Licht modern kantoor, stadskyline en schoonmaakmateriaal, in de blauw-groene kleuren van AB Pro Service"
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/hero-office.jpg",
+              "alt": "Medewerkster van AB Pro Service in werkkledij maakt een modern kantoor schoon in Charleroi"
             },
             "imageOverlay": "moyen",
             "eyebrow": "Professionele schoonmaak · Charleroi en 50 km rondom",
@@ -94,6 +101,7 @@
           "variant": "grille-cartes",
           "content": {
             "eyebrow": "Onze werkdomeinen",
+            "iconColors": true,
             "titre": "Eén dienstverlener voor al uw netheid",
             "intro": "Van kantoor tot inkomhal, van winkeletalage tot particuliere woning: wij verzorgen zowel het regelmatige onderhoud als eenmalige opknapbeurten. Elke dienst opent zijn eigen detailpagina.",
             "items": [
@@ -322,6 +330,7 @@
           "variant": "grille-cartes",
           "content": {
             "eyebrow": "Zes vakgebieden, dezelfde eis",
+            "iconColors": true,
             "titre": "Onze diensten in detail",
             "intro": "Elke fiche verduidelijkt voor wie de dienst bedoeld is, hoe een interventie verloopt en wat ze precies dekt.",
             "items": [
@@ -400,7 +409,7 @@
     },
     {
       "slug": "realisations",
-      "label": "Galerij",
+      "label": "Realisaties",
       "meta": {
         "title": "Schoonmaak voor/na in Charleroi: onze werven",
         "description": "Ontvette vloeren, vrijgemaakte gemeenschappelijke delen, opgeknapte keukens en hallen: ontdek in beeld en video werven van AB Pro Service in Charleroi."
@@ -409,7 +418,7 @@
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Galerij",
+            "eyebrow": "Realisaties",
             "titre": "Voor / na: onze werven",
             "intro": "Niets spreekt duidelijker dan het resultaat. Hier enkele interventies in Charleroi en Henegouwen — een ontvette parkeervloer, een vrijgemaakte gang van een gebouw, een opgeknapte keuken en hal — in beeld en in video.",
             "ctaPrimaire": {
@@ -420,82 +429,6 @@
               "label": "+32 492 68 38 23",
               "href": "tel:+32492683823"
             }
-          }
-        },
-        {
-          "type": "galerie",
-          "variant": "avant-apres",
-          "content": {
-            "eyebrow": "In beeld",
-            "titre": "Het resultaat spreekt voor zich",
-            "intro": "Links de toestand bij onze aankomst, rechts het resultaat zodra ons werk klaar is.",
-            "avantApres": [
-              {
-                "avant": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/parking-avant.jpg",
-                  "alt": "Parkeerplaats met mazoutvlek voor de reiniging in Charleroi"
-                },
-                "apres": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/parking-apres.jpg",
-                  "alt": "Dezelfde parkeerplaats ontvet en proper na de interventie"
-                },
-                "legende": "Ontvetten van een parkeerplaats: de in de vloer ingebrande mazoutvlek volledig verwijderd."
-              },
-              {
-                "avant": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/couloir-avant.jpg",
-                  "alt": "Gang van een gebouw vol meubilair voor de interventie"
-                },
-                "apres": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/couloir-apres.jpg",
-                  "alt": "Dezelfde gang vrijgemaakt en met gewassen vloer na de interventie"
-                },
-                "legende": "Gemeenschappelijke delen van een gebouw: gang ontruimd en vloer grondig gereinigd."
-              }
-            ]
-          }
-        },
-        {
-          "type": "galerie",
-          "variant": "avant-apres",
-          "content": {
-            "eyebrow": "In video",
-            "titre": "Sommige werven, gefilmd",
-            "intro": "Voor deze interventies werd de begintoestand gefilmd: speel de video links af en vergelijk met de foto van het resultaat rechts.",
-            "avantApres": [
-              {
-                "avantVideo": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-avant.mp4",
-                  "alt": "Video van de toestand van een keuken voor de schoonmaak"
-                },
-                "apresImages": [
-                  {
-                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres.jpg",
-                    "alt": "Dezelfde keuken proper na de interventie"
-                  },
-                  {
-                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres-2.jpg",
-                    "alt": "Propere keuken na interventie, andere hoek"
-                  },
-                  {
-                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres-3.jpg",
-                    "alt": "Propere keuken na schoonmaak, detail van het werkblad"
-                  }
-                ],
-                "legende": "Keuken: de begintoestand gefilmd, daarna het resultaat vanuit meerdere hoeken zodra vloeren en oppervlakken zijn opgefrist."
-              },
-              {
-                "avantVideo": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/entree-avant.mp4",
-                  "alt": "Video van de toestand van een inkomhal voor de schoonmaak"
-                },
-                "apres": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/entree-apres.jpg",
-                  "alt": "Dezelfde inkomhal met propere tegelvloer na de interventie"
-                },
-                "legende": "Inkomhal: de tegelvloer gefilmd voor, daarna gereinigd en opgefrist."
-              }
-            ]
           }
         },
         {
@@ -597,6 +530,82 @@
           }
         },
         {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "In beeld",
+            "titre": "Het resultaat spreekt voor zich",
+            "intro": "Links de toestand bij onze aankomst, rechts het resultaat zodra ons werk klaar is.",
+            "avantApres": [
+              {
+                "avant": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/parking-avant.jpg",
+                  "alt": "Parkeerplaats met mazoutvlek voor de reiniging in Charleroi"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/parking-apres.jpg",
+                  "alt": "Dezelfde parkeerplaats ontvet en proper na de interventie"
+                },
+                "legende": "Ontvetten van een parkeerplaats: de in de vloer ingebrande mazoutvlek volledig verwijderd."
+              },
+              {
+                "avant": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/couloir-avant.jpg",
+                  "alt": "Gang van een gebouw vol meubilair voor de interventie"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/couloir-apres.jpg",
+                  "alt": "Dezelfde gang vrijgemaakt en met gewassen vloer na de interventie"
+                },
+                "legende": "Gemeenschappelijke delen van een gebouw: gang ontruimd en vloer grondig gereinigd."
+              }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "In video",
+            "titre": "Sommige werven, gefilmd",
+            "intro": "Voor deze interventies werd de begintoestand gefilmd: speel de video links af en vergelijk met de foto van het resultaat rechts.",
+            "avantApres": [
+              {
+                "avantVideo": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-avant.mp4",
+                  "alt": "Video van de toestand van een keuken voor de schoonmaak"
+                },
+                "apresImages": [
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres.jpg",
+                    "alt": "Dezelfde keuken proper na de interventie"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres-2.jpg",
+                    "alt": "Propere keuken na interventie, andere hoek"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres-3.jpg",
+                    "alt": "Propere keuken na schoonmaak, detail van het werkblad"
+                  }
+                ],
+                "legende": "Keuken: de begintoestand gefilmd, daarna het resultaat vanuit meerdere hoeken zodra vloeren en oppervlakken zijn opgefrist."
+              },
+              {
+                "avantVideo": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/entree-avant.mp4",
+                  "alt": "Video van de toestand van een inkomhal voor de schoonmaak"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/entree-apres.jpg",
+                  "alt": "Dezelfde inkomhal met propere tegelvloer na de interventie"
+                },
+                "legende": "Inkomhal: de tegelvloer gefilmd voor, daarna gereinigd en opgefrist."
+              }
+            ]
+          }
+        },
+        {
           "type": "cta",
           "variant": "bande",
           "content": {
@@ -616,7 +625,7 @@
     },
     {
       "slug": "zone-intervention",
-      "label": "Werkgebied",
+      "label": "Interventiegebied",
       "meta": {
         "title": "Werkgebied: Charleroi en 50 km rondom",
         "description": "Van Charleroi tot La Louvière, Fleurus, Châtelet of Gembloux: de zones waar AB Pro Service schoonmaakt, tot 50 km rond het bekken van Charleroi."
@@ -743,11 +752,22 @@
           "type": "contenu",
           "content": {
             "eyebrow": "AB Pro Service · Charleroi & Henegouwen",
+            "titre": "Oog voor detail, ten dienste van uw ruimtes",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/entreprise-photo.jpg",
+              "alt": "Medewerkster van AB Pro Service in werkkledij maakt een kantoor schoon in Charleroi"
+            },
+            "imageRatio": "fill",
+            "imageCard": true,
+            "imagePosition": "right",
             "paragraphes": [
-              "AB Pro Service is een professioneel schoonmaakbedrijf, actief in het bekken van Charleroi en heel Henegouwen. Onder leiding van Ibtissam Abbadi begeleidt de onderneming zowel professionals — kantoren, winkels, syndici en gebouwbeheerders — als particulieren die een steeds net interieur wensen.",
-              "Onze aanpak vat samen in drie woorden: betrouwbaarheid, regelmaat en afwerking. Betrouwbaarheid, omdat de afgesproken uren worden nageleefd en één vast aanspreekpunt uw locaties in de tijd opvolgt. Regelmaat, omdat een ruimte veel makkelijker onderhouden wordt dan ingehaald. Afwerking ten slotte, omdat een systematische controle na de interventie waarborgt dat geen enkele hoek werd vergeten.",
-              "Wij kiezen producten en materiaal naargelang elk oppervlak en verkiezen methodes die de locaties en de mensen die er verblijven respecteren. Of het nu gaat om een dagelijks kantooronderhoud, een wekelijkse beurt in een mede-eigendom of een eenmalige opknapbeurt, elke opdracht wordt met dezelfde ernst behandeld, met een transparante offerte die vooraf wordt opgesteld."
-            ]
+              "AB Pro Service is een professioneel schoonmaakbedrijf, actief in Charleroi en heel Henegouwen. Onder leiding van Ibtissam Abbadi begeleidt het zowel professionals — kantoren, winkels, syndici en gebouwbeheerders — als particulieren die een steeds net interieur wensen.",
+              "Onze aanpak vat samen in drie woorden: betrouwbaarheid, regelmaat en afwerking. Nageleefde uren, één aanspreekpunt, producten afgestemd op elk oppervlak en een controle na de interventie — voor een onberispelijk resultaat, zonder verrassingen op de factuur."
+            ],
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            }
           }
         },
         {
@@ -955,9 +975,17 @@
             "titre": "Kantoorschoonmaak in Charleroi",
             "intro": "Nette kantoren betekenen beter onthaalde medewerkers en geruststelde bezoekers. AB Pro Service onderhoudt uw werkplekken in Charleroi en heel Henegouwen, met een planning afgestemd op uw activiteit en één vast aanspreekpunt van de ene maand op de andere.",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Diensten", "href": "/services" },
-              { "label": "Kantoorschoonmaak" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Diensten",
+                "href": "/services"
+              },
+              {
+                "label": "Kantoorschoonmaak"
+              }
             ],
             "ctaPrimaire": {
               "label": "Vraag een offerte",
@@ -1130,9 +1158,17 @@
             "titre": "Schoonmaak van winkels en panden in Charleroi",
             "intro": "In een winkel is netheid zichtbaar vanaf de drempel en weegt ze op de koopbeslissing. AB Pro Service houdt uw verkoopruimtes, zalen en onthaalzones onberispelijk in Charleroi en Henegouwen, met beurten gepland voor de opening of na sluitingstijd.",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Diensten", "href": "/services" },
-              { "label": "Winkels en panden" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Diensten",
+                "href": "/services"
+              },
+              {
+                "label": "Winkels en panden"
+              }
             ],
             "ctaPrimaire": {
               "label": "Vraag een offerte",
@@ -1318,9 +1354,17 @@
             "titre": "Schoonmaak van mede-eigendommen in Charleroi",
             "intro": "Een verzorgde hal en onderhouden gemeenschappelijke delen geven de toon aan van een gebouw en stellen bewoners en kandidaat-huurders gerust. AB Pro Service verzorgt het regelmatige onderhoud van de gemeenschappelijke delen voor syndici, beheerders en eigenaars in Charleroi en Henegouwen.",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Diensten", "href": "/services" },
-              { "label": "Mede-eigendommen" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Diensten",
+                "href": "/services"
+              },
+              {
+                "label": "Mede-eigendommen"
+              }
             ],
             "ctaPrimaire": {
               "label": "Vraag een offerte",
@@ -1464,9 +1508,17 @@
             "titre": "Ramen wassen in Charleroi",
             "intro": "Heldere ramen veranderen alles: ze laten het licht binnen en geven meteen een indruk van zorg. AB Pro Service wast uw ramen, raampartijen en glasoppervlakken binnen en buiten, bij professionals en particulieren, in Charleroi en Henegouwen.",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Diensten", "href": "/services" },
-              { "label": "Ramen wassen" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Diensten",
+                "href": "/services"
+              },
+              {
+                "label": "Ramen wassen"
+              }
             ],
             "ctaPrimaire": {
               "label": "Vraag een offerte",
@@ -1615,9 +1667,17 @@
             "titre": "Schoonmaak aan huis in Charleroi",
             "intro": "Thuiskomen in een net interieur, zonder er uw weekend aan te besteden: dat bieden wij particulieren in Charleroi en Henegouwen. Gewoon onderhoud, grote voorjaarsschoonmaak of opfrissing na een gebeurtenis, wij stemmen de dienst af op uw woning en uw ritme.",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Diensten", "href": "/services" },
-              { "label": "Schoonmaak aan huis" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Diensten",
+                "href": "/services"
+              },
+              {
+                "label": "Schoonmaak aan huis"
+              }
             ],
             "ctaPrimaire": {
               "label": "Vraag een offerte",
@@ -1767,9 +1827,17 @@
             "titre": "Noodinterventie in Charleroi",
             "intro": "Waterschade, een lek of een incident laten zelden tijd om te wachten. AB Pro Service komt snel ter plaatse in Charleroi en Henegouwen om de oppervlakken te saneren, het bereikbare water af te voeren en de ruimtes te herstellen. Omdat elke situatie anders is, wordt deze dienst op offerte geraamd.",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Diensten", "href": "/services" },
-              { "label": "Noodinterventie" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Diensten",
+                "href": "/services"
+              },
+              {
+                "label": "Noodinterventie"
+              }
             ],
             "ctaPrimaire": {
               "label": "Bel ons nu",

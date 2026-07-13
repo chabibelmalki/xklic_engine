@@ -1,6 +1,7 @@
 import type { GalerieContent, GalerieImageItem } from "@/types/config";
 import type { BlockComponentProps } from "@/blocks/types";
 import { ImageCycle } from "@/components/ui/ImageCycle";
+import { MutedVideo } from "@/components/ui/MutedVideo";
 import { EditorialSection } from "../ui/Section";
 import { EditorialContainer } from "../ui/Container";
 import { EditorialHeading } from "../ui/Heading";
@@ -56,13 +57,10 @@ export function Galerie({ block, tone, strings }: BlockComponentProps<GalerieCon
                       <div key={k} className="relative">
                         {video ? (
                           <div className="relative aspect-square overflow-hidden bg-ink/5">
-                            <video
+                            <MutedVideo
                               src={video.url}
                               poster={video.poster}
-                              controls
-                              playsInline
-                              preload="metadata"
-                              aria-label={video.alt ?? `${k} — ${pair.legende ?? ""}`}
+                              ariaLabel={video.alt ?? `${k} — ${pair.legende ?? ""}`}
                               className="absolute inset-0 h-full w-full object-cover"
                             />
                           </div>

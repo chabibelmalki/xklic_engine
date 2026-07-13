@@ -87,7 +87,7 @@ export function Logo({
     light ? "text-white" : "text-ink",
   );
   const taglineClass = cn(
-    "text-[10px] font-medium uppercase tracking-[0.18em]",
+    "truncate text-[10px] font-medium uppercase tracking-[0.18em]",
     light ? "text-white/60" : "text-muted-2",
   );
 
@@ -100,7 +100,7 @@ export function Logo({
         className={cn("group inline-flex flex-col items-center gap-1.5 leading-none", className)}
         aria-label={config.entreprise.nom}
       >
-        <span className="inline-flex items-center gap-2.5">
+        <span className="inline-flex items-center gap-4">
           {emblem}
           <span className={nameClass}>{nameNode}</span>
         </span>
@@ -112,7 +112,7 @@ export function Logo({
   return (
     <Link
       href={href}
-      className={cn("group inline-flex items-center gap-2.5", className)}
+      className={cn("group inline-flex items-center gap-4", className)}
       aria-label={config.entreprise.nom}
     >
       {emblem}

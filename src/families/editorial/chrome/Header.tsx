@@ -85,10 +85,10 @@ export function EditorialHeader({
     <header className="relative sticky top-0 z-50 border-b border-border bg-bg">
       {/* Barre chrome : mesure LARGE dédiée (indépendante de --content-max, qui
           est la mesure ÉTROITE du corps de texte) → la nav tient sur une ligne. */}
-      <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between gap-8 px-6 sm:px-10">
+      <div className="mx-auto flex h-20 w-full max-w-7xl items-center justify-between gap-5 px-6 sm:px-10">
         <Logo config={config} href={basePath || "/"} className="min-w-0" />
 
-        <nav className="hidden shrink-0 items-center gap-x-6 lg:flex xl:gap-x-8">
+        <nav className="hidden shrink-0 items-center gap-x-4 lg:flex xl:gap-x-6">
           {nav.map((item) => (
             <a
               key={item.href}
@@ -104,7 +104,7 @@ export function EditorialHeader({
           ))}
         </nav>
 
-        <div className="hidden shrink-0 items-center gap-5 lg:flex">
+        <div className="hidden shrink-0 items-center gap-4 lg:flex">
           {showLangs && (
             <LanguageSwitcher
               locales={locales}

@@ -9,6 +9,7 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { ImageCycle } from "@/components/ui/ImageCycle";
+import { MutedVideo } from "@/components/ui/MutedVideo";
 import { localeDir } from "@/lib/i18n";
 
 function ratioClass(ratio?: string, fallback = "aspect-[4/3]") {
@@ -118,13 +119,10 @@ export function Galerie({ block, tone, locale, strings }: BlockComponentProps<Ga
                     return (
                       <div key={k} className="relative aspect-square bg-ink/5">
                         {video ? (
-                          <video
+                          <MutedVideo
                             src={video.url}
                             poster={video.poster}
-                            controls
-                            playsInline
-                            preload="metadata"
-                            aria-label={video.alt ?? `${k} — ${pair.legende ?? ""}`}
+                            ariaLabel={video.alt ?? `${k} — ${pair.legende ?? ""}`}
                             className="absolute inset-0 h-full w-full object-cover"
                           />
                         ) : cycle.length > 0 ? (

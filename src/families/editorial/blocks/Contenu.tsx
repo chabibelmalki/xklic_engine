@@ -1,7 +1,8 @@
+import Image from "next/image";
 import type { ContenuContent } from "@/types/config";
 import type { BlockComponentProps } from "@/blocks/types";
 import { Button } from "@/components/ui/Button";
-import { withBase } from "@/lib/utils";
+import { withBase, cn } from "@/lib/utils";
 import { EditorialSection } from "../ui/Section";
 import { EditorialContainer } from "../ui/Container";
 import { EditorialImage } from "../ui/Image";
@@ -59,19 +60,49 @@ export function Contenu({ block, tone, basePath }: BlockComponentProps<ContenuCo
     );
   }
 
-  const visuel = (
+  // `imageRatio: "fill"` → l'image REMPLIT la hauteur de la colonne texte
+  // (object-cover, ne rogne que le haut/bas d'une photo paysage) : rééquilibre un
+  // texte long face à une image qui paraîtrait sinon petite. Sinon → ratio fixe.
+  const fillImage = c.imageRatio === "fill";
+  // `imageCard` : coins arrondis + ombre teintée marque (bleu clair du site) +
+  // image légèrement agrandie (colonnes asymétriques). Opt-in par bloc.
+  const imageCard = c.imageCard === true;
+  const cardClass = "rounded-2xl shadow-2xl shadow-brand-400/40";
+  const gridCols =
+    !fillImage && imageCard
+      ? imageLeft
+        ? "lg:grid-cols-[1.08fr_0.92fr]"
+        : "lg:grid-cols-[0.92fr_1.08fr]"
+      : "lg:grid-cols-2";
+  const visuel = fillImage ? (
+    <div
+      className={cn(
+        "relative aspect-[4/3] overflow-hidden bg-surface-2 lg:aspect-auto lg:h-full lg:min-h-[420px]",
+        imageCard && cardClass,
+      )}
+    >
+      <Image
+        src={c.image.url}
+        alt={c.image.alt ?? c.titre ?? ""}
+        fill
+        sizes="(max-width: 1024px) 100vw, 48vw"
+        className="object-cover"
+      />
+    </div>
+  ) : (
     <EditorialImage
       src={c.image.url}
       alt={c.image.alt ?? c.titre ?? ""}
       ratio={c.imageRatio ?? "4/5"}
       sizes="(max-width: 1024px) 100vw, 48vw"
+      className={imageCard ? cardClass : undefined}
     />
   );
 
   return (
     <EditorialSection tone={tone}>
       <EditorialContainer>
-        <div className="grid items-center gap-12 lg:grid-cols-2">
+        <div className={cn("grid gap-12", gridCols, fillImage ? "items-stretch" : "items-center")}>
           {imageLeft ? (
             <>
               {visuel}

@@ -2,11 +2,21 @@ import type { ServicesContent } from "@/types/config";
 import type { BlockComponentProps } from "@/blocks/types";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
-import { withBase } from "@/lib/utils";
+import { withBase, cn } from "@/lib/utils";
 import { EditorialSection } from "../ui/Section";
 import { EditorialContainer } from "../ui/Container";
 import { EditorialHeading } from "../ui/Heading";
 import { EditorialImage } from "../ui/Image";
+
+/** Palette de pastilles d'icônes colorées (cycle), quand `content.iconColors`. */
+const ICON_COLORS = [
+  "bg-blue-100 text-blue-600",
+  "bg-emerald-100 text-emerald-600",
+  "bg-amber-100 text-amber-700",
+  "bg-violet-100 text-violet-600",
+  "bg-rose-100 text-rose-600",
+  "bg-teal-100 text-teal-600",
+];
 
 /**
  * SERVICES éditorial. Trois grammaires, JAMAIS de cartes à ombre douce :
@@ -74,7 +84,12 @@ export function Services({
                   )}
                 </div>
                 {s.icone && (
-                  <span className="mt-4 grid size-11 place-items-center rounded-xl bg-brand-50 text-brand-600">
+                  <span
+                    className={cn(
+                      "mt-4 grid size-11 place-items-center rounded-xl",
+                      c.iconColors ? ICON_COLORS[i % ICON_COLORS.length] : "bg-brand-50 text-brand-600",
+                    )}
+                  >
                     <Icon name={s.icone} className="size-5" />
                   </span>
                 )}

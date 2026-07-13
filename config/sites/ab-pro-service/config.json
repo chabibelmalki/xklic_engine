@@ -11,7 +11,11 @@
   },
   "branding": {
     "logoAlt": "AB Pro Service — nettoyage professionnel à Charleroi",
-    "tagline": "Nettoyage professionnel · Charleroi & Hainaut",
+    "tagline": "Nettoyage professionnel · Charleroi",
+    "logoTwoTone": {
+      "first": "#2C74C0",
+      "rest": "#4A97D8"
+    },
     "colors": {
       "brand": "#1E5BA6",
       "accent": "#3E9B45",
@@ -77,8 +81,8 @@
           "type": "hero",
           "content": {
             "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/hero.jpg",
-              "alt": "Bureau moderne lumineux, skyline urbaine et matériel de nettoyage, aux couleurs bleu et vert d'AB Pro Service"
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/hero-office.jpg",
+              "alt": "Intervenante AB Pro Service en tenue de travail nettoyant un bureau moderne à Charleroi"
             },
             "imageOverlay": "moyen",
             "eyebrow": "Nettoyage professionnel · Charleroi et 50 km autour",
@@ -118,6 +122,7 @@
           "variant": "grille-cartes",
           "content": {
             "eyebrow": "Nos domaines d'intervention",
+            "iconColors": true,
             "titre": "Un seul prestataire pour toute votre propreté",
             "intro": "Du bureau au hall d'immeuble, de la vitrine du commerce au logement du particulier, nous couvrons l'entretien courant comme les remises en état ponctuelles. Chaque prestation ouvre sa fiche détaillée.",
             "items": [
@@ -346,6 +351,7 @@
           "variant": "grille-cartes",
           "content": {
             "eyebrow": "Six métiers, une même exigence",
+            "iconColors": true,
             "titre": "Nos prestations en détail",
             "intro": "Chaque fiche précise à qui s'adresse la prestation, comment se passe une intervention et ce qu'elle couvre exactement.",
             "items": [
@@ -424,7 +430,7 @@
     },
     {
       "slug": "realisations",
-      "label": "Galerie",
+      "label": "Réalisations",
       "meta": {
         "title": "Nettoyage avant/après à Charleroi : nos chantiers",
         "description": "Sols dégraissés, parties communes dégagées, cuisines et halls remis à neuf : découvrez en images et en vidéo des chantiers d'AB Pro Service à Charleroi."
@@ -433,7 +439,7 @@
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Galerie",
+            "eyebrow": "Réalisations",
             "titre": "Avant / après : nos chantiers",
             "intro": "Rien ne parle mieux que le résultat. Voici quelques interventions menées à Charleroi et dans le Hainaut — un sol de parking dégraissé, un couloir d'immeuble dégagé, une cuisine et un hall remis à neuf — présentées en images et en vidéo.",
             "ctaPrimaire": {
@@ -444,82 +450,6 @@
               "label": "+32 492 68 38 23",
               "href": "tel:+32492683823"
             }
-          }
-        },
-        {
-          "type": "galerie",
-          "variant": "avant-apres",
-          "content": {
-            "eyebrow": "En images",
-            "titre": "Le résultat parle de lui-même",
-            "intro": "À gauche l'état constaté à notre arrivée, à droite le rendu une fois notre travail terminé.",
-            "avantApres": [
-              {
-                "avant": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/parking-avant.jpg",
-                  "alt": "Emplacement de parking taché de mazout avant nettoyage à Charleroi"
-                },
-                "apres": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/parking-apres.jpg",
-                  "alt": "Même emplacement de parking dégraissé et propre après intervention"
-                },
-                "legende": "Dégraissage d'un emplacement de parking : la tache de mazout incrustée au sol entièrement retirée."
-              },
-              {
-                "avant": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/couloir-avant.jpg",
-                  "alt": "Couloir d'immeuble encombré de mobilier avant intervention"
-                },
-                "apres": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/couloir-apres.jpg",
-                  "alt": "Même couloir dégagé et sol lavé après intervention"
-                },
-                "legende": "Partie commune d'un immeuble : couloir débarrassé des encombrants puis sol nettoyé en profondeur."
-              }
-            ]
-          }
-        },
-        {
-          "type": "galerie",
-          "variant": "avant-apres",
-          "content": {
-            "eyebrow": "En vidéo",
-            "titre": "Certains chantiers, filmés",
-            "intro": "Pour ces interventions, l'état de départ a été filmé : lancez la vidéo à gauche, comparez avec la photo du résultat à droite.",
-            "avantApres": [
-              {
-                "avantVideo": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-avant.mp4",
-                  "alt": "Vidéo de l'état d'une cuisine avant nettoyage"
-                },
-                "apresImages": [
-                  {
-                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres.jpg",
-                    "alt": "La même cuisine propre après intervention"
-                  },
-                  {
-                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres-2.jpg",
-                    "alt": "Cuisine propre après intervention, autre angle"
-                  },
-                  {
-                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres-3.jpg",
-                    "alt": "Cuisine propre après nettoyage, détail du plan de travail"
-                  }
-                ],
-                "legende": "Cuisine : l'état initial filmé, puis le résultat sous plusieurs angles une fois sols et surfaces remis au propre."
-              },
-              {
-                "avantVideo": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/entree-avant.mp4",
-                  "alt": "Vidéo de l'état d'un hall d'entrée avant nettoyage"
-                },
-                "apres": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/entree-apres.jpg",
-                  "alt": "Le même hall d'entrée au sol carrelé propre après intervention"
-                },
-                "legende": "Hall d'entrée : le carrelage filmé avant, puis nettoyé et ravivé."
-              }
-            ]
           }
         },
         {
@@ -621,6 +551,82 @@
           }
         },
         {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "En images",
+            "titre": "Le résultat parle de lui-même",
+            "intro": "À gauche l'état constaté à notre arrivée, à droite le rendu une fois notre travail terminé.",
+            "avantApres": [
+              {
+                "avant": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/parking-avant.jpg",
+                  "alt": "Emplacement de parking taché de mazout avant nettoyage à Charleroi"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/parking-apres.jpg",
+                  "alt": "Même emplacement de parking dégraissé et propre après intervention"
+                },
+                "legende": "Dégraissage d'un emplacement de parking : la tache de mazout incrustée au sol entièrement retirée."
+              },
+              {
+                "avant": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/couloir-avant.jpg",
+                  "alt": "Couloir d'immeuble encombré de mobilier avant intervention"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/couloir-apres.jpg",
+                  "alt": "Même couloir dégagé et sol lavé après intervention"
+                },
+                "legende": "Partie commune d'un immeuble : couloir débarrassé des encombrants puis sol nettoyé en profondeur."
+              }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "En vidéo",
+            "titre": "Certains chantiers, filmés",
+            "intro": "Pour ces interventions, l'état de départ a été filmé : lancez la vidéo à gauche, comparez avec la photo du résultat à droite.",
+            "avantApres": [
+              {
+                "avantVideo": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-avant.mp4",
+                  "alt": "Vidéo de l'état d'une cuisine avant nettoyage"
+                },
+                "apresImages": [
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres.jpg",
+                    "alt": "La même cuisine propre après intervention"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres-2.jpg",
+                    "alt": "Cuisine propre après intervention, autre angle"
+                  },
+                  {
+                    "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/cuisine-apres-3.jpg",
+                    "alt": "Cuisine propre après nettoyage, détail du plan de travail"
+                  }
+                ],
+                "legende": "Cuisine : l'état initial filmé, puis le résultat sous plusieurs angles une fois sols et surfaces remis au propre."
+              },
+              {
+                "avantVideo": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/entree-avant.mp4",
+                  "alt": "Vidéo de l'état d'un hall d'entrée avant nettoyage"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/realisations/entree-apres.jpg",
+                  "alt": "Le même hall d'entrée au sol carrelé propre après intervention"
+                },
+                "legende": "Hall d'entrée : le carrelage filmé avant, puis nettoyé et ravivé."
+              }
+            ]
+          }
+        },
+        {
           "type": "cta",
           "variant": "bande",
           "content": {
@@ -640,7 +646,7 @@
     },
     {
       "slug": "zone-intervention",
-      "label": "Zone",
+      "label": "Zone d'Intervention",
       "meta": {
         "title": "Zone d'intervention : Charleroi et 50 km alentour",
         "description": "De Charleroi à La Louvière, Fleurus, Châtelet ou Gembloux : les secteurs où AB Pro Service assure le nettoyage, jusqu'à 50 km autour du bassin carolo."
@@ -767,11 +773,22 @@
           "type": "contenu",
           "content": {
             "eyebrow": "AB Pro Service · Charleroi & Hainaut",
+            "titre": "Le soin du détail au service de vos espaces",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/entreprise-photo.jpg",
+              "alt": "Intervenante AB Pro Service en tenue nettoyant un bureau à Charleroi"
+            },
+            "imageRatio": "fill",
+            "imageCard": true,
+            "imagePosition": "right",
             "paragraphes": [
-              "AB Pro Service est une société de nettoyage professionnel active dans le bassin de Charleroi et l'ensemble du Hainaut. Dirigée par Ibtissam Abbadi, l'entreprise accompagne aussi bien les professionnels — bureaux, commerces, syndics et gestionnaires d'immeubles — que les particuliers soucieux d'un intérieur toujours net.",
-              "Notre approche tient en trois mots : fiabilité, régularité et finition. Fiabilité, parce que les horaires convenus sont respectés et qu'un même interlocuteur suit vos lieux dans la durée. Régularité, parce qu'un espace se maintient bien plus facilement qu'il ne se rattrape. Finition, enfin, parce qu'un contrôle systématique en fin d'intervention garantit qu'aucun recoin n'a été oublié.",
-              "Nous choisissons produits et matériel selon chaque surface et privilégions des méthodes respectueuses des lieux comme des personnes qui les occupent. Qu'il s'agisse d'un entretien quotidien de bureaux, d'un passage hebdomadaire en copropriété ou d'une remise en état ponctuelle, chaque mission est traitée avec le même sérieux et un devis transparent, établi à l'avance."
-            ]
+              "AB Pro Service est une société de nettoyage professionnel active à Charleroi et dans tout le Hainaut. Dirigée par Ibtissam Abbadi, elle accompagne les professionnels — bureaux, commerces, syndics et gestionnaires d'immeubles — comme les particuliers soucieux d'un intérieur toujours net.",
+              "Notre approche tient en trois mots : fiabilité, régularité et finition. Horaires respectés, interlocuteur unique, produits choisis selon chaque surface et contrôle en fin d'intervention — pour un résultat impeccable, sans mauvaise surprise sur la facture."
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            }
           }
         },
         {
