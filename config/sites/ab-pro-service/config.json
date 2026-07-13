@@ -69,7 +69,7 @@
     ]
   },
   "forms": {
-    "to": "ab.proservice79@gmail.com",
+    "to": "contact@abproservice.be",
     "turnstile": true
   },
   "pages": [
@@ -866,7 +866,7 @@
             "formMode": "demande-intervention",
             "telephone": "+32 492 68 38 23",
             "whatsapp": "+32 492 68 38 23",
-            "email": "ab.proservice79@gmail.com",
+            "email": "contact@abproservice.be",
             "horaires": [
               {
                 "jour": "Lun – Sam",
@@ -933,7 +933,7 @@
             "formMode": "devis",
             "telephone": "+32 492 68 38 23",
             "whatsapp": "+32 492 68 38 23",
-            "email": "ab.proservice79@gmail.com",
+            "email": "contact@abproservice.be",
             "horaires": [
               {
                 "jour": "Lun – Sam",
