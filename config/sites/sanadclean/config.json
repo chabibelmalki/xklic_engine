@@ -74,7 +74,7 @@
     ]
   },
   "forms": {
-    "to": "sanadclean30@gmail.com",
+    "to": "contact@sanadclean.fr",
     "turnstile": true
   },
   "pages": [
@@ -1160,7 +1160,7 @@
             "formMode": "demande-intervention",
             "telephone": "+33 7 67 02 97 62",
             "whatsapp": "+33 7 67 02 97 62",
-            "email": "sanadclean30@gmail.com",
+            "email": "contact@sanadclean.fr",
             "adresse": "20 rue Général Delestraint, 30000 Nîmes",
             "horaires": [
               {
@@ -1444,7 +1444,7 @@
             "formMode": "devis",
             "telephone": "+33 7 67 02 97 62",
             "whatsapp": "+33 7 67 02 97 62",
-            "email": "sanadclean30@gmail.com",
+            "email": "contact@sanadclean.fr",
             "adresse": "20 rue Général Delestraint, 30000 Nîmes",
             "horaires": [
               {
