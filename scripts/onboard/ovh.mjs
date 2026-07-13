@@ -131,3 +131,11 @@ export async function deleteRecord(zone, id) {
 export async function refreshZone(zone) {
   return await call("POST", `/domain/zone/${zone}/refresh`);
 }
+
+/**
+ * Requête OVH signée bas-niveau, réexportée pour les AUTRES namespaces (ex.
+ * redirections email, cf. ovh-email.mjs) : même auth (clé applicative + CK),
+ * même endpoint régional. Le CK doit porter les droits du namespace visé.
+ * @type {(method:string, pathname:string, payload?:any)=>Promise<any>}
+ */
+export const request = call;

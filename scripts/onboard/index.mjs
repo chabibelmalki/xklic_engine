@@ -10,7 +10,7 @@
  * SÉCURITÉ : DRY-RUN PAR DÉFAUT. Rien n'est modifié tant que `--apply` n'est pas
  * passé explicitement. `--dry-run` est accepté (alias explicite, no-op).
  *
- * Étapes (ordre) : vercel · dns · ssl · config · manifest · deploy · verify · gsc · turnstile
+ * Étapes (ordre) : vercel · dns · ssl · config · manifest · deploy · verify · gsc · turnstile · email
  *   --only <étape>  n'exécute QUE cette sous-étape.
  *
  * Idempotent + reprenable : chaque étape vérifie « déjà fait ? » avant d'agir.
@@ -34,7 +34,7 @@ loadEnvLocal(ROOT, ".env.turnstile-widget");
 
 // --- parsing args ---------------------------------------------------------
 function parseArgs(argv) {
-  const out = { apply: false, only: null, slug: null, domain: null, humanToken: null, widget: "xklic 1", widgetSitekey: null, dossierRef: null, listWidgets: false };
+  const out = { apply: false, only: null, slug: null, domain: null, humanToken: null, widget: "xklic 1", widgetSitekey: null, dossierRef: null, redirectTo: null, listWidgets: false };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--apply" || a === "--no-dry-run") out.apply = true;
@@ -47,6 +47,7 @@ function parseArgs(argv) {
     else if (a === "--widget") out.widget = argv[++i];
     else if (a === "--widget-sitekey") out.widgetSitekey = argv[++i];
     else if (a === "--dossier-ref") out.dossierRef = argv[++i];
+    else if (a === "--redirect-to") out.redirectTo = argv[++i];
     else if (a.startsWith("--slug=")) out.slug = a.slice(7);
     else if (a.startsWith("--domain=")) out.domain = a.slice(9);
     else if (a.startsWith("--only=")) out.only = a.slice(7);
@@ -54,6 +55,7 @@ function parseArgs(argv) {
     else if (a.startsWith("--widget=")) out.widget = a.slice(9);
     else if (a.startsWith("--widget-sitekey=")) out.widgetSitekey = a.slice(17);
     else if (a.startsWith("--dossier-ref=")) out.dossierRef = a.slice(14);
+    else if (a.startsWith("--redirect-to=")) out.redirectTo = a.slice(14);
     else die(`Argument inconnu : ${a}`);
   }
   return out;
@@ -97,6 +99,7 @@ async function main() {
     widget: args.widget,
     widgetSitekey: args.widgetSitekey,
     dossierRef: args.dossierRef,
+    redirectTo: args.redirectTo,
     root: ROOT,
     rootDomain: process.env.NEXT_PUBLIC_ROOT_DOMAIN?.trim() || "xklic.com",
   };

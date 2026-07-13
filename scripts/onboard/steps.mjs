@@ -18,6 +18,7 @@ import {
 import { runCli } from "../lib/proc.mjs";
 import * as vercel from "./vercel.mjs";
 import * as ovh from "./ovh.mjs";
+import * as ovhEmail from "./ovh-email.mjs";
 import * as google from "./google.mjs";
 import * as cloudflare from "./cloudflare.mjs";
 import * as backoffice from "./backoffice.mjs";
@@ -587,6 +588,153 @@ export async function turnstileStep(ctx) {
   }
 }
 
+// ──────────────────────────────────────────────────────────────── email ────
+const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+/**
+ * Remplace l'ancienne/les anciennes adresse(s) du client par l'adresse pro dans
+ * la config du site (mailto, blocs contact…), puis committe + pousse CE fichier
+ * seul (auto-deploy Vercel). Non destructif : ne touche que ce fichier, jamais le
+ * reste du working tree. Idempotent : si aucune ancienne adresse n'est présente → no-op.
+ * @param {string[]} oldEmails  adresses à remplacer (perso + ancien email public)
+ * @returns {{changed:boolean, occurrences:number}}
+ */
+function swapConfigEmailAndPush(ctx, oldEmails, proEmail) {
+  const rel = path.join("config", "sites", ctx.slug, "config.json");
+  const file = path.join(ctx.root, rel);
+  if (!fs.existsSync(file)) { warn(`config introuvable (${rel}) — pas de bascule config.json.`); return { changed: false, occurrences: 0 }; }
+  // Dédup + filtre : jamais l'adresse pro elle-même, jamais du vide.
+  const olds = [...new Set(oldEmails.map((e) => (e || "").trim()).filter((e) => e && e.toLowerCase() !== proEmail.toLowerCase()))];
+  const raw = fs.readFileSync(file, "utf8");
+  const re = new RegExp(olds.map(escapeRe).join("|"), "gi");
+  const occurrences = olds.length ? (raw.match(re) || []).length : 0;
+  if (occurrences === 0) { skip(`config.json : aucune occurrence de ${olds.map((e) => `« ${e} »`).join(", ") || "l'ancienne adresse"} (déjà pro ?)`); return { changed: false, occurrences: 0 }; }
+  willDo(`config.json : ${occurrences} occurrence(s) → « ${proEmail} », puis commit + push`);
+  if (ctx.dryRun) return { changed: true, occurrences };
+  fs.writeFileSync(file, raw.replace(re, proEmail), "utf8");
+  const git = (args) => execFileSync("git", args, { cwd: ctx.root, encoding: "utf8" }).trim();
+  if (git(["status", "--porcelain", "--", rel]).length === 0) { skip("config.json inchangé après réécriture."); return { changed: false, occurrences }; }
+  const msg = `${ctx.slug}: email public → ${proEmail}\n\nBascule vers l'adresse pro (redirection OVH ${proEmail} → boîte du client).\n\nCo-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>`;
+  git(["add", "--", rel]);
+  git(["commit", "-m", msg]);
+  const sha = git(["rev-parse", "--short", "HEAD"]);
+  git(["push"]);
+  ok(`config.json committé (${sha}) + poussé (auto-deploy).`);
+  return { changed: true, occurrences };
+}
+
+/**
+ * Redirection email pro + bascule back-office/config. Placée APRÈS turnstile
+ * (le tenant existe alors). Idempotente, dry-run sans effet de bord.
+ *
+ *   1. Résout le dossier (--dossier-ref sinon recherche par nom d'entreprise).
+ *   2. Cible = --redirect-to, sinon email_perso, sinon email « ancien » (= le
+ *      perso saisi au départ). Anti-boucle : la cible ne peut pas être contact@.
+ *   3. OVH : redirection contact@<apex> → cible (MX Plan requis, sinon manuel).
+ *   4. Back-office : email_perso ← cible, dossier.email ← contact@<apex>,
+ *      tenant.contact_email ← contact@<apex>.
+ *   5. config.json : ancienne adresse perso → contact@<apex> (commit + push).
+ */
+export async function emailStep(ctx) {
+  const pro = `contact@${ctx.apex}`;
+  const proLc = pro.toLowerCase();
+
+  if (!backoffice.isConfigured()) {
+    manualAction("Email pro — config back-office absente", [
+      `Impossible de lire le dossier / basculer les emails (BACKOFFICE_API_URL / BACKOFFICE_API_KEY).`,
+      `À faire à la main : redirection OVH ${pro} → <email perso du client>, puis email public = ${pro}.`,
+    ]);
+    throw new MissingTokenError("Back-office non configuré — étape email à faire à la main.");
+  }
+
+  // 1. Dossier.
+  const dossier = await backoffice.resolveDossier({ ref: ctx.dossierRef, name: siteBusinessName(ctx) });
+  if (!dossier) throw new Error(`dossier introuvable (ref=${ctx.dossierRef || "∅"}, nom=« ${siteBusinessName(ctx)} »). Passer --dossier-ref.`);
+  if (dossier.tenantSlug && dossier.tenantSlug !== ctx.slug) {
+    warn(`dossier lié au slug « ${dossier.tenantSlug} » ≠ « ${ctx.slug} » — on continue sur ${ctx.slug}, vérifie que c'est le bon dossier.`);
+  }
+  info(`dossier ${dossier.ref} (${dossier.entreprise || "—"}) : email=${dossier.email || "∅"}  email_perso=${dossier.emailPerso || "∅"}`);
+
+  // 2. Cible de redirection = la vraie boîte du client.
+  let target = (ctx.redirectTo || "").trim();
+  if (!target) {
+    if (dossier.emailPerso && dossier.emailPerso.toLowerCase() !== proLc) target = dossier.emailPerso;
+    else if (dossier.email && dossier.email.toLowerCase() !== proLc) target = dossier.email;
+  }
+  if (!target) {
+    manualAction("Email pro — aucune cible de redirection", [
+      `email_perso vide et email déjà = ${pro} (ou absent) → pas de boîte réelle vers laquelle rediriger.`,
+      `Renseigner l'email perso du client dans le dossier ${dossier.ref}, puis relancer --only email.`,
+    ]);
+    throw new MissingTokenError("Cible de redirection introuvable — renseigner email_perso.");
+  }
+  if (target.toLowerCase() === proLc) throw new Error(`garde-fou anti-boucle : la cible = ${pro}. Fournir --redirect-to <email réel> ou corriger le dossier.`);
+  info(`cible de redirection : ${c.bold(pro)} → ${c.bold(target)}`);
+
+  // 3. OVH — redirection (MX Plan requis).
+  if (!ovhEmail.isConfigured()) {
+    manualAction("Redirection OVH — clés API absentes", [
+      `OVH → email/domaine ${ctx.apex} : créer la redirection ${pro} → ${target}`,
+      `(le CK doit porter les droits /email/domain/* ; sinon, à faire dans le manager OVH).`,
+    ]);
+    throw new MissingTokenError("OVH non configuré — redirection à poser à la main (puis relancer --only email).");
+  }
+  let emailSvc;
+  try {
+    emailSvc = await ovhEmail.hasEmailService(ctx.apex);
+  } catch (e) {
+    if (/403|not been granted|invalid|forbidden/i.test(e.message)) {
+      manualAction("Redirection OVH — consumer key sans droits /email/domain/*", [
+        `Le CK OVH n'a pas (encore) les droits sur le namespace email → ${e.message}`,
+        `One-shot : re-valider le consumer key avec GET/POST/DELETE sur /email/domain/*`,
+        `(POST /auth/credential puis ouvrir l'URL de validation), puis relancer --only email.`,
+      ]);
+      throw new MissingTokenError("CK OVH sans droits /email/domain/* — re-valider puis relancer.");
+    }
+    throw e;
+  }
+  if (!emailSvc) {
+    manualAction("Redirection OVH — pas de service email (MX Plan)", [
+      `Le domaine ${ctx.apex} n'a pas de service email OVH actif → aucune redirection possible.`,
+      `Activer le MX Plan (gratuit) dans le manager OVH, puis relancer --only email.`,
+      `En attendant, ne pas basculer l'email public (contact@ pointerait dans le vide).`,
+    ]);
+    throw new MissingTokenError("MX Plan absent — activer le service email OVH puis relancer.");
+  }
+  const existing = await ovhEmail.listRedirections(ctx.apex, pro);
+  const good = existing.find((r) => stripDot(r.to) === target.toLowerCase());
+  const mismatched = existing.filter((r) => stripDot(r.to) !== target.toLowerCase());
+  for (const r of mismatched) warn(`redirection OVH existante ${pro} → ${r.to} (≠ cible ; laissée en place, à nettoyer si besoin)`);
+  if (good) {
+    skip(`redirection OVH déjà en place : ${pro} → ${target}`);
+  } else {
+    willDo(`créer redirection OVH ${pro} → ${target}`);
+    if (!ctx.dryRun) { await ovhEmail.createRedirection(ctx.apex, pro, target); ok(`redirection OVH créée : ${pro} → ${target}`); }
+  }
+
+  // 4. Back-office — email_perso ← cible, dossier.email ← pro, tenant.contact_email ← pro.
+  const dossierNeedsFlip = dossier.email.toLowerCase() !== proLc || dossier.emailPerso.toLowerCase() !== target.toLowerCase();
+  if (dossierNeedsFlip) willDo(`back-office dossier ${dossier.ref} : email_perso ← ${target}, email ← ${pro}`);
+  else skip(`back-office dossier déjà basculé (email=${pro}, email_perso=${target})`);
+  willDo(`back-office tenant ${ctx.slug} : contact_email ← ${pro}`);
+
+  if (!ctx.dryRun) {
+    if (dossierNeedsFlip) {
+      // L'upsert écrit statut_commande = valeur envoyée (pas de coalesce) → on renvoie
+      // le statut COURANT tel quel pour ne jamais le downgrader. Absent = on refuse.
+      if (!dossier.statut) throw new Error(`statut_commande absent sur le dossier ${dossier.ref} — refus d'écrire (risque d'écraser le statut).`);
+      await backoffice.updateDossierEmails(dossier.ref, dossier.statut, { email: pro, emailPerso: target });
+      ok(`dossier ${dossier.ref} basculé (email_perso=${target}, email=${pro}).`);
+    }
+    const r = await backoffice.setTenantContactEmail(ctx.slug, pro);
+    ok(`tenant « ${r.tenant} » : contact_email = ${r.contactEmail}.`);
+  }
+
+  // 5. config.json — adresse(s) affichée(s) → pro (commit + push). On couvre le
+  //    perso ET l'ancien email public (parfois affiché s'il diffère du perso).
+  swapConfigEmailAndPush(ctx, [target, dossier.email], pro);
+}
+
 export const STEPS = {
   vercel: vercelStep,
   dns: dnsStep,
@@ -597,8 +745,9 @@ export const STEPS = {
   verify: verifyStep,
   gsc: gscStep,
   turnstile: turnstileStep,
+  email: emailStep,
   "gsc-human": gscHumanStep,
 };
 // Pipeline standard (full run). `gsc-human` en est EXCLU : c'est un geste à la
 // demande (--only gsc-human --human-token …), pas une étape du parcours auto.
-export const STEP_ORDER = ["vercel", "dns", "ssl", "config", "manifest", "deploy", "verify", "gsc", "turnstile"];
+export const STEP_ORDER = ["vercel", "dns", "ssl", "config", "manifest", "deploy", "verify", "gsc", "turnstile", "email"];

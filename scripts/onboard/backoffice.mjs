@@ -58,6 +58,89 @@ export async function assignTurnstileWidget(slug, widget, opts = {}) {
 }
 
 /**
+ * Résout le dossier agence d'un client pour l'étape « email ».
+ *   • par `ref` (Ref/OrderId figée) si fournie → GET direct ;
+ *   • sinon recherche par nom d'entreprise (désambiguïsation par nom exact),
+ *     comme scripts/get-dossier.mjs.
+ * @param {{ ref?:string, name?:string }} q
+ * @returns {Promise<{ ref:string, statut:string, email:string, emailPerso:string, tenantSlug:string, entreprise:string }|null>}
+ */
+export async function resolveDossier(q) {
+  const { base, key } = cfg();
+  const get = async (pathname) => {
+    const res = await fetch(`${base}${pathname}`, { headers: { "X-API-Key": key } });
+    const text = await res.text();
+    const body = text ? JSON.parse(text) : null;
+    if (!res.ok) throw new Error(`back-office GET ${pathname} -> ${res.status} ${body?.error ?? res.statusText}`);
+    return body;
+  };
+  let ref = (q.ref || "").trim();
+  if (!ref) {
+    const name = (q.name || "").trim();
+    if (!name) return null;
+    const found = await get(`/v1/public/agency/orders?q=${encodeURIComponent(name)}`);
+    const matches = Array.isArray(found) ? found : (found?.orders ?? found?.results ?? []);
+    if (!matches.length) return null;
+    const pick = matches.length === 1
+      ? matches[0]
+      : matches.find((r) => String(r.entreprise || "").toLowerCase() === name.toLowerCase());
+    if (!pick) throw new Error(`plusieurs dossiers pour « ${name} » — préciser --dossier-ref.`);
+    ref = String(pick.ref);
+  }
+  const full = await get(`/v1/public/agency/orders/${encodeURIComponent(ref)}`);
+  const o = full?.order ?? {};
+  return {
+    ref: String(o.ref ?? ref),
+    statut: String(o.statut_commande ?? ""),
+    email: String(o.email ?? "").trim(),
+    emailPerso: String(o.email_perso ?? "").trim(),
+    tenantSlug: String(o.tenant_slug ?? "").trim(),
+    entreprise: String(o.entreprise ?? "").trim(),
+  };
+}
+
+/**
+ * Met à jour les deux emails du dossier via l'upsert public (merge par pointeurs :
+ * les autres champs restent intacts). `statut` doit refléter le statut courant
+ * (l'upsert l'exige). source="sync" → snapshot de version côté back-office.
+ * @param {string} ref @param {string} statut
+ * @param {{ email?:string, emailPerso?:string }} emails
+ */
+export async function updateDossierEmails(ref, statut, emails) {
+  const { base, key } = cfg();
+  const dossier = {};
+  if (emails.email !== undefined) dossier.email = emails.email;
+  if (emails.emailPerso !== undefined) dossier.email_perso = emails.emailPerso;
+  const res = await fetch(`${base}/v1/public/agency/orders`, {
+    method: "POST",
+    headers: { "X-API-Key": key, "Content-Type": "application/json" },
+    body: JSON.stringify({ ref, statut, dossier, source: "sync" }),
+  });
+  const text = await res.text();
+  const body = text ? JSON.parse(text) : null;
+  if (!res.ok) throw new Error(`back-office POST /agency/orders -> ${res.status} ${body?.error ?? res.statusText}`);
+  return body;
+}
+
+/**
+ * Bascule le contact_email d'un tenant vers l'adresse pro (étape « email »).
+ * @param {string} slug @param {string} email
+ * @returns {Promise<{ tenant:string, contactEmail:string }>}
+ */
+export async function setTenantContactEmail(slug, email) {
+  const { base, key } = cfg();
+  const res = await fetch(`${base}/v1/public/tenants/${encodeURIComponent(slug)}/contact-email`, {
+    method: "POST",
+    headers: { "X-API-Key": key, "Content-Type": "application/json" },
+    body: JSON.stringify({ email }),
+  });
+  const text = await res.text();
+  const body = text ? JSON.parse(text) : null;
+  if (!res.ok) throw new Error(`back-office POST /contact-email -> ${res.status} ${body?.error ?? res.statusText}`);
+  return { tenant: body?.tenant, contactEmail: body?.contact_email };
+}
+
+/**
  * Liste les widgets Turnstile connus du back-office (nom + sitekey ; le secret
  * n'est jamais renvoyé). Sert à savoir quels « groupes » existent avant d'en
  * créer/assigner un.

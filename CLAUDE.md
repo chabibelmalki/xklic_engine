@@ -100,10 +100,20 @@ node scripts/generate-sites-manifest.mjs                       # auto via predev
 
 `scripts/onboard/` orchestre l'ajout d'un domaine client en étapes **idempotentes**
 (ordre : `vercel → dns → ssl → config → manifest → deploy → verify → gsc →
-turnstile`). Chaque étape sait dire « déjà fait » et, quand un secret manque ou
+turnstile → email`). Chaque étape sait dire « déjà fait » et, quand un secret manque ou
 qu'une action doit être faite à la main (ex. TXT GSC), s'arrête proprement en
 imprimant **les valeurs exactes à saisir** (jamais de bricolage silencieux).
 Lancer d'abord en `--dry-run`, puis `--apply`.
+
+L'étape **`email`** (dernière du pipeline, après `turnstile` pour que le tenant
+existe) crée l'adresse pro du client et bascule tout dessus, sans saisie :
+1. lit le dossier (par `--dossier-ref`, sinon recherche par nom d'entreprise) ;
+2. **cible** = `email_perso`, sinon l'`email` « ancien » (= le perso saisi au départ),
+   ou `--redirect-to <email>` en override ; garde-fou anti-boucle (la cible ≠ `contact@`) ;
+3. **OVH** : redirection `contact@<domaine>` → cible (namespace `/email/domain/*`, MX Plan requis) ;
+4. **back-office** : `email_perso ← cible`, `dossier.email ← contact@<domaine>`,
+   `tenant.contact_email ← contact@<domaine>` (endpoint `POST …/tenants/{slug}/contact-email`) ;
+5. **config.json** : l'email public affiché → `contact@<domaine>` (commit + push = auto-deploy).
 
 > Garde-fou critique (cf. `sync-domains.mjs`) : on ne touche **qu'aux** sous-domaines
 > à un seul label sous `.xklic.com` ; jamais l'apex, le www, le wildcard, ni un
@@ -151,7 +161,12 @@ du dossier parent).
 
 - **Vercel** : `VERCEL_TOKEN`, `VERCEL_PROJECT_ID`, `VERCEL_TEAM_ID`,
   `VERCEL_DEPLOY_TIMEOUT_MS` (opt).
-- **OVH (DNS)** : `OVH_APP_KEY`, `OVH_APP_SECRET`, `OVH_CONSUMER_KEY`, `OVH_ENDPOINT`.
+- **OVH (DNS + email)** : `OVH_APP_KEY`, `OVH_APP_SECRET`, `OVH_CONSUMER_KEY`, `OVH_ENDPOINT`.
+  L'étape `email` (redirection `contact@<domaine>` → boîte du client) réutilise ces
+  clés mais via le namespace `/email/domain/*` : le **consumer key doit porter en plus**
+  les droits `GET/POST/DELETE /email/domain/*` (re-validation manuelle one-shot). Sans
+  ces droits (403) ou sans **MX Plan** actif sur le domaine (404) → l'étape s'arrête
+  proprement en « manuel » et imprime la redirection exacte à créer.
 - **Cloudflare (Turnstile)** : `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`,
   `NEXT_PUBLIC_TURNSTILE_SITE_KEY` — utilisées UNIQUEMENT par le script d'onboarding
   (`scripts/onboard/cloudflare.mjs`, ajout des hostnames au widget). Le RUNTIME
