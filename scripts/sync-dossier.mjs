@@ -98,7 +98,10 @@ if (matches.length === 0) {
 const before = (await api("GET", `/v1/public/agency/orders/${encodeURIComponent(match.ref)}`)).order;
 
 // ── 3) Calculer le décalage (champ par champ) ────────────────────────────────
-const same = (a, b) => JSON.stringify(a ?? null) === JSON.stringify(b ?? null);
+// Normalise les dates ISO (l'API renvoie "2029-06-23T00:00:00Z", l'entrée
+// "2029-06-23") pour éviter un faux « non appliqué » sur les champs date.
+const norm = (v) => (typeof v === "string" && /^\d{4}-\d{2}-\d{2}T/.test(v) ? v.slice(0, 10) : v);
+const same = (a, b) => JSON.stringify(norm(a) ?? null) === JSON.stringify(norm(b) ?? null);
 const show = (v) => (Array.isArray(v) ? `[${v.join(", ")}]` : v === "" || v == null ? c.dim("∅") : String(v));
 const changes = [];
 for (const [k, v] of Object.entries(patch)) {
