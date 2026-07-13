@@ -52,8 +52,8 @@ npm run canonicals:check  # post-deploy : chaque site × langue annonce son bon 
 ## Workflow nouveau client (de bout en bout)
 
 1. **Récupérer le dossier** depuis le back-office :
-   `npm run dossier:get -- "<nom entreprise>"` → JSON complet (fiche + Paiements +
-   Production + Notes + Produits). C'est la source des données client.
+   `npm run dossier:get -- "<nom entreprise>"` → le JSON des données du dossier
+   (paiement retiré). C'est la source des données client.
 2. **Créer la config** `config/sites/<slug>/config.json` (voir `NEWCLIENT.md` pour
    la méthode détaillée et les conventions de blocs/SEO).
 3. **Logo + favicon** : `node scripts/upload-logo.mjs <slug> [fichier] --clean-source`
@@ -116,12 +116,12 @@ vérité unique** des données clients (cf. le chantier de migration à la racin
 du dossier parent).
 
 - **Lecture** : `scripts/get-dossier.mjs` interroge
-  `GET /v1/public/agency/orders?q=` puis `GET /v1/public/agency/orders/{ref}` :
-  dossier (clé `Ref` = OrderId) + `Paiements` / `Production` / `Notes` /
-  `Produits`. Sortie : résumé lisible sur **stderr**, **JSON** sur **stdout**
-  avec les libellés historiques (`Ref`, `Entreprise`, `Statut commande`… ;
-  booléens → oui/non) — prêt à exploiter pour bâtir une config client.
-  `Statut commande` (lead/panier/payé, écrit par la vitrine) ≠ `Statut production`
+  `GET /v1/public/agency/orders?q=` puis `GET /v1/public/agency/orders/{ref}`.
+  Règle de **nettoyage, pas de correspondance** : la sortie est le JSON du
+  back-office **tel quel, le paiement retiré** — aucun mapping à maintenir quand
+  le back-office ajoute un champ. Sortie : résumé lisible sur **stderr**, **JSON**
+  des données du dossier sur **stdout** — prêt à exploiter pour bâtir une config.
+  `statut_commande` (lead/panier/payé, écrit par la vitrine) ≠ `statut_production`
   (kanban interne : Prospect → À faire → En prod → En ligne → SAV). Script
   **local** (lit `.env.local`, ne tourne pas sur Vercel).
 - **Écriture** (runtime serveur) : `src/lib/backoffice.ts` — `postLead()` →

@@ -264,9 +264,8 @@ back-office avec le script dédié.
 npm run dossier:get -- "<nom de l'entreprise | Ref | OrderId>"
 ```
 
-- **stdout** = le JSON complet `{ dossier, paiements, production, notes, produits }`
-  (menus déroulants et liens aplatis en valeurs lisibles) : c'est la **SOURCE de
-  vérité** pour bâtir la config.
+- **stdout** = le JSON des données du dossier (tel que fourni par le back-office,
+  le paiement retiré) : c'est la **SOURCE de vérité** pour bâtir la config.
 - **stderr** = un résumé lisible (statuts commande/production, métier, ville,
   e-mail, téléphone, nb d'éléments liés) — pour vérifier d'un coup d'œil.
 - Si **plusieurs dossiers** correspondent, le script liste les candidats avec leur
