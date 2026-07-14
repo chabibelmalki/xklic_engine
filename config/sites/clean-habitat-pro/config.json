@@ -62,6 +62,10 @@
           "variant": "fiche",
           "content": {
             "eyebrow": "Nettoyage professionnel · Saint-Nazaire & estuaire",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/clean-habitat-pro/hero-menage-75a7c460.jpg",
+              "alt": "Femme faisant le ménage dans un intérieur lumineux à Saint-Nazaire"
+            },
             "titre": "Le nettoyage professionnel",
             "titreAccent": "qui ne laisse rien au hasard",
             "accroche": "Bureaux, cabinets médicaux, fins de chantier, vitres, moquettes ou parties communes d'immeuble : à Saint-Nazaire et dans un rayon de 30 km, Clean Habitat Pro remet vos surfaces d'aplomb avec un matériel de professionnel et un résultat contrôlé, du premier passage à la finition.",
@@ -1644,6 +1648,12 @@
           "content": {
             "eyebrow": "Clean Habitat Pro · Saint-Nazaire",
             "titre": "Une entreprise de nettoyage au service du bassin nazairien",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/clean-habitat-pro/apropos-cf71aaf5.jpg",
+              "alt": "Intervention de nettoyage sur les vitrages d'un immeuble à Saint-Nazaire"
+            },
+            "imageRatio": "16/10",
+            "imageCard": true,
             "paragraphes": [
               "Clean Habitat Pro est une entreprise de nettoyage installée à Saint-Nazaire, tournée vers les professionnels comme vers les particuliers. Notre métier tient en une idée simple : rendre des lieux réellement propres, avec le matériel qu'il faut et une méthode constante, plutôt que de passer vite fait pour donner le change. Bureaux, cabinets médicaux, parties communes d'immeubles, logements à remettre au propre, vitres, moquettes ou fins de chantier : nous couvrons tout le spectre du nettoyage des bâtiments.",
               "Nous travaillons avec un équipement professionnel — monobrosse, machine à injection-extraction, perches télescopiques, produits adaptés à chaque support — parce qu'un résultat durable ne s'obtient pas avec du matériel d'appoint. Chaque intervention est cadrée : on définit ce qui doit être fait, on le fait dans l'ordre, et on contrôle le résultat avant de rendre les lieux. Pour les clients réguliers, ce cadre devient un cahier des charges tenu à l'identique d'un passage à l'autre.",
