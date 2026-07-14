@@ -12,6 +12,7 @@
     "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/ab-pro-service/logo-11c47356.png",
     "logoAlt": "AB Pro Service — professionele schoonmaak in Charleroi",
     "tagline": "Professionele schoonmaak · Charleroi",
+    "logoTaglineHidden": true,
     "logoTwoTone": {
       "first": "#2C74C0",
       "rest": "#4A97D8"
@@ -67,7 +68,7 @@
             "eyebrow": "Professionele schoonmaak · Charleroi en 50 km rondom",
             "titre": "Onberispelijke ruimtes,",
             "titreAccent": "zonder eraan te denken",
-            "accroche": "AB Pro Service neemt de netheid van uw kantoren, winkels, gebouwen en interieurs in Charleroi en heel Henegouwen voor zijn rekening. Een aangegeven ploeg, materiaal afgestemd op elk oppervlak en één vast aanspreekpunt dat uw locaties kent: u ziet het resultaat, wij regelen de rest.",
+            "accroche": "Kantoren, winkels, mede-eigendommen en particulieren: een betrouwbare ploeg voor onberispelijke ruimtes in Charleroi en heel Henegouwen.",
             "trust": [
               {
                 "icone": "ShieldCheck",
