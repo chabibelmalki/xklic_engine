@@ -85,9 +85,9 @@ export function EpureHeader({
 
   return (
     <header className="sticky top-0 z-50 bg-bg/95 backdrop-blur-sm supports-[backdrop-filter]:bg-bg/80">
-      {/* Liseré de marque, signature de la famille. */}
-      <div aria-hidden className="h-1 w-full bg-brand-gradient" />
-      <div className="border-b border-border">
+      {/* Liseré de marque épais, signature de la famille. */}
+      <div aria-hidden className="h-1.5 w-full bg-brand-gradient" />
+      <div className="border-b-2 border-brand-800">
         <div className="mx-auto grid h-16 w-full max-w-7xl grid-cols-[minmax(0,auto)_1fr_auto] items-center gap-4 px-5 sm:h-20 sm:px-8 lg:px-10">
           {/* Colonne 1 : logo + nom (la colonne peut se rétracter → le nom
               tronque plutôt que de déborder sur très petit écran). */}
@@ -101,10 +101,10 @@ export function EpureHeader({
                 href={item.href}
                 aria-current={item.active ? "page" : undefined}
                 className={cn(
-                  "whitespace-nowrap rounded-full px-3.5 py-2 text-xs font-semibold uppercase tracking-[0.14em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
+                  "whitespace-nowrap rounded-[var(--radius-btn)] px-3.5 py-2 text-xs font-bold uppercase tracking-[0.14em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
                   item.active
-                    ? "bg-brand-50 text-brand-700 ring-1 ring-inset ring-brand-500/25"
-                    : "text-muted hover:bg-alt hover:text-ink",
+                    ? "bg-brand-800 text-brand-contrast"
+                    : "text-ink-soft hover:bg-brand-50 hover:text-brand-800",
                 )}
               >
                 {item.label}
@@ -132,7 +132,12 @@ export function EpureHeader({
               />
             )}
             {cta && (
-              <Button href={cta.href} size="sm">
+              <Button
+                href={cta.href}
+                variant="accent"
+                size="sm"
+                className="border-2 border-brand-800 shadow-[3px_3px_0_0_var(--brand-800)] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[4px_4px_0_0_var(--brand-800)]"
+              >
                 {cta.label}
               </Button>
             )}

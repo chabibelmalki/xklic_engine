@@ -15,7 +15,7 @@
     "logoAlt": "RD NET&PROPRE — cleaning company in Paris",
     "logoTwoTone": {
       "first": "#1c6b57",
-      "rest": "#c79a3f"
+      "rest": "#22302c"
     },
     "tagline": "Professional cleaning · Paris & Île-de-France",
     "colors": {
@@ -23,7 +23,8 @@
       "accent": "#c79a3f",
       "neutral": "warm"
     },
-    "logoScale": 1.35
+    "logoScale": 1.35,
+    "logoTaglineHidden": true
   },
   "entreprise": {
     "nom": "RD NET&PROPRE",

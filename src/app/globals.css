@@ -565,27 +565,50 @@ input[type="range"] {
 }
 
 /* ========================= Épure · Clair & aéré ========================= */
+/* ============ Épure « Atelier » — AUDACIEUX : grotesque XXL, angles durs,
+   ombres dures décalées, bandeau marquee. Parti pris fort et affirmé. ========= */
 [data-pack="epure-clair"] {
-  --pack-font-display: var(--font-jakarta);
+  --pack-font-display: var(--font-bricolage);
   --pack-font-sans: var(--font-inter);
-  --display-tracking: -0.02em;
+  --display-tracking: -0.03em;
   --display-case: none;
 
-  --radius-btn: 0.7rem;
-  --radius-card: 1rem;
-  --radius-image: 1rem;
-  --border-width: 1px;
-  --radius: 0.9rem;
+  /* Angles DURS : la signature tactile de la famille. */
+  --radius-btn: 0.4rem;
+  --radius-card: 0.5rem;
+  --radius-image: 0.5rem;
+  --border-width: 2px;
+  --radius: 0.4rem;
 
-  /* Ombres douces et discrètes (registre net, pas de drop-shadow marqué). */
-  --shadow-card: 0 18px 40px -24px rgb(15 23 42 / 0.16);
-  --shadow-pop: 0 26px 55px -26px rgb(15 23 42 / 0.20);
+  /* Ombres DURES décalées (portées par la couleur de marque, définies inline
+     dans les blocs) — ici on garde des ombres douces de repli pour les blocs
+     empruntés à editorial. */
+  --shadow-card: 0 16px 40px -26px rgb(15 23 42 / 0.22);
+  --shadow-pop: 0 30px 60px -28px rgb(15 23 42 / 0.26);
 
-  --section-py: 6rem;
-  --content-max: 74rem;
-  --motion-distance: 16px;
+  --section-py: 6.5rem;
+  --content-max: 75rem;
+  --motion-distance: 18px;
   --motion-duration: 0.6s;
   --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+/* Titres display de l'atelier : bien gras, serrés. */
+[data-pack="epure-clair"] h1.font-display,
+[data-pack="epure-clair"] h2.font-display,
+[data-pack="epure-clair"] .pack-heading {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+/* Bandeau marquee (signature). Défile en boucle, coupé si reduced-motion. */
+@keyframes epure-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.epure-marquee-track {
+  animation: epure-marquee 30s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .epure-marquee-track { animation: none; }
 }
 
 /* ======================= Maison · Premium élégant ======================= */

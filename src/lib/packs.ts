@@ -308,15 +308,15 @@ export const PACKS: StylePack[] = [
   },
   {
     id: "epure-clair",
-    label: "Épure · Clair & aéré",
+    label: "Atelier · Audacieux & net",
     family: "epure",
-    // Alternance de fond avec un LAVIS de marque très pâle (chaleur + profondeur,
-    // jamais monotone), sans filet dur : le rythme vient de la teinte.
+    // Alternance de fond avec un LAVIS de marque très pâle, sur laquelle tranchent
+    // des blocs à ombre DURE et un bandeau marquee.
     sectionStrategy: "brand-tinted",
     sectionDivider: "none",
     ambiance:
-      "Clair, aéré et net : sans géométrique (Plus Jakarta Sans), filets fins, sections plates séparées par des règles, carte de prix encadrée, header à nav centrée sous un liseré de marque. Moderne, élégant, professionnel — jamais d'image en fond de hero.",
-    fonts: { display: "Plus Jakarta Sans", sans: "Inter" },
+      "Parti pris FORT « atelier / signage » : grotesque XXL (Bricolage), angles durs, bordures épaisses, ombres DURES décalées portées par la marque, cartes-stickers, gros chiffres, bandeau marquee défilant, blocs vert profond ponctués d'or. Affirmé et tactile — jamais d'image en fond de hero.",
+    fonts: { display: "Bricolage Grotesque", sans: "Inter" },
     variants: {
       hero: ["carte"],
       services: ["grille-cartes"],

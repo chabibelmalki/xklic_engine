@@ -1,18 +1,19 @@
 import { Check, Star } from "lucide-react";
-import type { HeroContent } from "@/types/config";
+import type { HeroContent, ServicesContent } from "@/types/config";
 import type { BlockComponentProps } from "@/blocks/types";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
 import { withBase } from "@/lib/utils";
 import { resolveHeroSecondary } from "@/lib/hero-cta";
+import { findBlock } from "@/lib/pages";
 import { EditorialContainer } from "../../editorial/ui/Container";
 
 /**
- * HERO épure — CLAIR, jamais d'image en fond (parti pris de la famille). Fond
- * dégradé blanc → lavis de marque (chaleureux, aéré), texte à filet à gauche,
- * CARTE DE PRIX encadrée à droite : liseré OR en tête, bandeau de marque, points
- * cochés, note dorée. Registre distinct de classic (carte sur mesh), editorial
- * (photo plein cadre) et littoral (nuit marine). 100 % tokens, mobile-first, AA.
+ * HERO atelier — AUDACIEUX, jamais d'image en fond. Titre display XXL (Bricolage),
+ * eyebrow en TAG, carte de prix en « STICKER » (bordure épaisse + ombre DURE
+ * décalée de marque), badges en pastilles cerclées, puis un BANDEAU MARQUEE
+ * pleine largeur (mots-clés des prestations qui défilent). Parti pris fort et
+ * affirmé, à l'opposé des cartes lisses de classic. 100 % tokens, AA, SSR.
  */
 export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroContent>) {
   const c = block.content;
@@ -22,36 +23,33 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
   const showVilleSuffix = !c.titreAccent && !titleHasVille;
   const secondary = resolveHeroSecondary(config, c.ctaSecondaire);
 
+  // Mots du marquee = noms des prestations (traduits), repli sobre sinon.
+  const services = findBlock<ServicesContent>(config, "services")?.content;
+  const words = (services?.items ?? []).map((s) => s.nom).slice(0, 6);
+  const marquee = words.length ? words : [config.seo.ville, config.entreprise.nom];
+
   return (
-    <header className="relative overflow-hidden border-b border-brand-100 bg-gradient-to-b from-bg to-brand-50/60">
-      {/* Lavis de marque diffus (décor, jamais une image). */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -right-40 -top-48 -z-10 hidden size-[42rem] rounded-full bg-[color-mix(in_srgb,var(--brand-500)_14%,transparent)] blur-3xl lg:block"
-      />
-      <EditorialContainer className="grid items-center gap-12 py-14 sm:py-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:py-24">
+    <header className="relative overflow-hidden border-b-2 border-brand-800 bg-[color-mix(in_srgb,var(--brand-500)_7%,var(--bg))]">
+      <EditorialContainer className="grid items-center gap-12 py-14 sm:py-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-14 lg:py-24">
         <div className="min-w-0">
           {c.eyebrow && (
-            <div className="mb-6 flex items-center gap-2.5">
-              <span className="size-1.5 rounded-full bg-accent-500" />
-              <span className="h-px w-8 bg-brand-400" />
-              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-700">
-                {c.eyebrow}
-              </span>
-            </div>
+            <span className="mb-6 inline-flex items-center gap-2 rounded-[var(--radius-btn)] border-2 border-brand-800 bg-surface px-3 py-1.5 text-xs font-bold uppercase tracking-[0.14em] text-brand-800">
+              <Star className="size-3.5 fill-accent-500 text-accent-500" />
+              {c.eyebrow}
+            </span>
           )}
-          <h1 className="font-display text-4xl font-bold leading-[1.06] tracking-tight text-ink sm:text-5xl lg:text-[3.5rem]">
+          <h1 className="font-display text-[2.6rem] font-bold leading-[0.98] tracking-[-0.03em] text-ink sm:text-6xl lg:text-[4.4rem]">
             {c.titre}
             {c.titreAccent && <span className="text-brand-600"> {c.titreAccent}</span>}
             {showVilleSuffix && <span className="text-brand-600"> à {ville}</span>}
           </h1>
           {c.accroche && (
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">{c.accroche}</p>
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">{c.accroche}</p>
           )}
           {(c.ctaPrimaire || secondary) && (
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               {c.ctaPrimaire && (
-                <Button href={withBase(basePath, c.ctaPrimaire.href)} size="lg">
+                <Button href={withBase(basePath, c.ctaPrimaire.href)} variant="accent" size="lg">
                   {c.ctaPrimaire.label}
                 </Button>
               )}
@@ -63,15 +61,13 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
             </div>
           )}
           {c.trust?.length ? (
-            <ul className="mt-12 grid grid-cols-2 gap-x-6 gap-y-3.5 border-t border-brand-100 pt-6 sm:flex sm:flex-wrap sm:gap-x-8">
+            <ul className="mt-10 flex flex-wrap gap-2.5">
               {c.trust.map((t) => (
                 <li
                   key={t.label}
-                  className="flex items-center gap-2.5 text-sm font-medium text-ink-soft"
+                  className="inline-flex items-center gap-2 rounded-full border-2 border-brand-200 bg-surface px-3.5 py-1.5 text-sm font-semibold text-brand-800"
                 >
-                  <span className="grid size-7 shrink-0 place-items-center rounded-full bg-brand-50 text-brand-600">
-                    <Icon name={t.icone} className="size-4" />
-                  </span>
+                  <Icon name={t.icone} className="size-4 text-brand-600" />
                   {t.label}
                 </li>
               ))}
@@ -80,19 +76,18 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
         </div>
 
         {card && (
-          <div className="mx-auto w-full max-w-sm lg:mx-0 lg:ms-auto">
-            <div className="overflow-hidden rounded-[var(--radius-card)] border border-brand-100 bg-surface shadow-[var(--shadow-pop)]">
-              {/* Liseré or : l'accent chaud, signature de la carte. */}
-              <span aria-hidden className="block h-1.5 bg-gradient-to-r from-accent-400 to-accent-600" />
-              <div className="bg-brand-gradient p-7 text-brand-contrast">
+          <div className="mx-auto w-full max-w-[21rem] pe-1.5 lg:mx-0 lg:ms-auto">
+            <div className="overflow-hidden rounded-[var(--radius-card)] border-2 border-brand-800 bg-surface shadow-[6px_6px_0_0_var(--brand-800)]">
+              <div className="flex items-center justify-between bg-brand-800 px-6 py-2.5 text-brand-contrast">
                 {card.label && (
-                  <p className="text-xs font-semibold uppercase tracking-[0.14em] opacity-90">
-                    {card.label}
-                  </p>
+                  <span className="text-xs font-bold uppercase tracking-[0.14em]">{card.label}</span>
                 )}
-                <p className="mt-2 flex items-baseline gap-2">
-                  <span className="font-display text-5xl font-bold leading-none">{card.prix}</span>
-                  {card.unite && <span className="text-lg opacity-90">{card.unite}</span>}
+                <Star className="size-4 fill-accent-400 text-accent-400" />
+              </div>
+              <div className="bg-brand-gradient px-6 py-7 text-brand-contrast">
+                <p className="flex items-baseline gap-2">
+                  <span className="font-display text-[3.4rem] font-bold leading-none">{card.prix}</span>
+                  {card.unite && <span className="text-lg font-medium opacity-90">{card.unite}</span>}
                 </p>
                 {(card.mention || card.prixBarre) && (
                   <p className="mt-2 text-sm opacity-90">
@@ -103,13 +98,13 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
                   </p>
                 )}
               </div>
-              <div className="p-7">
+              <div className="px-6 py-6">
                 {card.points?.length ? (
                   <ul className="space-y-3">
                     {card.points.map((p) => (
-                      <li key={p} className="flex gap-3 text-sm text-ink-soft">
-                        <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-full bg-brand-50 text-brand-600">
-                          <Check className="size-3.5" strokeWidth={2.6} />
+                      <li key={p} className="flex gap-3 text-sm font-medium text-ink-soft">
+                        <span className="mt-0.5 grid size-5 shrink-0 place-items-center rounded-[0.3rem] bg-brand-600 text-brand-contrast">
+                          <Check className="size-3.5" strokeWidth={3} />
                         </span>
                         <span>{p}</span>
                       </li>
@@ -117,14 +112,14 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
                   </ul>
                 ) : null}
                 {card.rating && (
-                  <div className="mt-6 flex items-center gap-2 border-t border-border pt-5">
+                  <div className="mt-6 flex items-center gap-2 border-t-2 border-dashed border-border pt-5">
                     <span className="inline-flex items-center gap-0.5 text-accent-500">
                       {Array.from({ length: 5 }).map((_, i) => (
                         <Star key={i} className="size-4 fill-current" />
                       ))}
                     </span>
                     {card.rating.label && (
-                      <span className="text-sm text-muted">{card.rating.label}</span>
+                      <span className="text-sm font-medium text-muted">{card.rating.label}</span>
                     )}
                   </div>
                 )}
@@ -133,6 +128,22 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
           </div>
         )}
       </EditorialContainer>
+
+      {/* BANDEAU MARQUEE — signature de la famille. */}
+      <div className="flex overflow-hidden border-t-2 border-brand-800 bg-brand-800 text-brand-contrast">
+        <div className="epure-marquee-track flex shrink-0 items-center whitespace-nowrap py-3">
+          {[0, 1].map((dup) => (
+            <div key={dup} className="flex items-center" aria-hidden={dup === 1 ? true : undefined}>
+              {marquee.map((w, i) => (
+                <span key={`${dup}-${i}`} className="flex items-center">
+                  <span className="px-6 text-sm font-bold uppercase tracking-[0.18em]">{w}</span>
+                  <Star className="size-3.5 shrink-0 fill-accent-400 text-accent-400" />
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
     </header>
   );
 }

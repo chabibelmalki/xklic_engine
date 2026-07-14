@@ -1,7 +1,7 @@
 {
   "slug": "rd-net-propre",
   "theme": "douceur-beige",
-  "stylePack": "maison-premium",
+  "stylePack": "epure-clair",
   "i18n": {
     "default": "fr",
     "languages": [
@@ -15,7 +15,7 @@
     "logoAlt": "RD NET&PROPRE — entreprise de nettoyage à Paris",
     "logoTwoTone": {
       "first": "#1c6b57",
-      "rest": "#c79a3f"
+      "rest": "#22302c"
     },
     "tagline": "Nettoyage professionnel · Paris & Île-de-France",
     "colors": {
@@ -25,7 +25,8 @@
     },
     "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/logo-d0f2181d.png",
     "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/logo-d0f2181d.png",
-    "logoScale": 1.35
+    "logoScale": 1.35,
+    "logoTaglineHidden": true
   },
   "social": [
     {
