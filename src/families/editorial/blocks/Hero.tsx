@@ -31,7 +31,7 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
   const secondary = resolveHeroSecondary(config, c.ctaSecondaire);
 
   return (
-    <header className="relative isolate flex min-h-[50svh] items-end overflow-hidden sm:min-h-[92svh]">
+    <header className="relative isolate flex min-h-[34svh] items-end overflow-hidden sm:min-h-[92svh]">
       {c.image && (
         <div className="absolute inset-0 -z-10">
           <Image
@@ -50,7 +50,7 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
         </div>
       )}
 
-      <EditorialContainer className="pb-14 pt-24 sm:pb-24 sm:pt-40">
+      <EditorialContainer className="pb-14 pt-8 sm:pb-24 sm:pt-40">
         <div className="max-w-3xl">
           {c.eyebrow && (
             <div className="mb-6 flex items-center gap-3">

@@ -88,25 +88,21 @@
             },
             "imageOverlay": "moyen",
             "eyebrow": "Nettoyage professionnel · Charleroi et 50 km autour",
-            "titre": "Des espaces impeccables,",
-            "titreAccent": "sans y penser",
-            "accroche": "Bureaux, commerces, copropriétés et particuliers : une équipe de confiance pour des espaces impeccables à Charleroi et dans tout le Hainaut.",
+            "titre": "Des locaux impeccables.",
+            "titreAccent": "Zéro contrainte pour vous.",
+            "accroche": "AB Pro Service assure le nettoyage de vos bureaux, commerces, immeubles et espaces professionnels à Charleroi et dans tout le Hainaut. Profitez de locaux toujours propres : nous nous occupons de tout.",
             "trust": [
               {
-                "icone": "ShieldCheck",
-                "label": "Société déclarée à la BCE"
-              },
-              {
-                "icone": "Sparkles",
-                "label": "Finition soignée, contrôlée à chaque passage"
-              },
-              {
-                "icone": "CalendarCheck",
-                "label": "Contrat régulier ou intervention ponctuelle"
+                "icone": "BadgeCheck",
+                "label": "Équipe qualifiée et déclarée"
               },
               {
                 "icone": "BadgeCheck",
-                "label": "Devis gratuit, sans engagement"
+                "label": "Matériel adapté à chaque surface"
+              },
+              {
+                "icone": "BadgeCheck",
+                "label": "Un interlocuteur unique et réactif"
               }
             ],
             "ctaPrimaire": {
