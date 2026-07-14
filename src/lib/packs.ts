@@ -328,6 +328,31 @@ export const PACKS: StylePack[] = [
       cta: ["encadre"],
     },
   },
+  {
+    id: "foyer-carnet",
+    label: "Foyer · Carnet de maison chaleureux",
+    family: "foyer",
+    // Corps clair « papier » : alternance crème / surface chaude (surface-alt).
+    // Les blocs d'identité peignent leur propre chaleur (cadres photo album,
+    // cartes-recette, check-list cochée, carton d'invitation de marque).
+    sectionStrategy: "surface-alt",
+    sectionDivider: "none",
+    ambiance:
+      "Chaleureux et domestique, « carnet de maison » : voix MANUSCRITE en signature (script Caveat pour les kickers, note « by Maman »), titres serif éditorial chaud (Newsreader), cartes-recette arrondies à liseré COUTURE pointillé, étapes en check-list cochée, CTA en carton d'invitation, header à filet-couture, pilules d'accent miel. Personnel, rassurant, tactile — parti pris fort et distinct.",
+    fonts: { display: "Newsreader", sans: "Inter" },
+    variants: {
+      hero: ["carte", "split"],
+      services: ["grille-cartes"],
+      etapes: ["cartes-numerotees", "timeline-verticale"],
+      faq: ["deux-colonnes", "accordeon"],
+      tarifs: ["grille", "liste-simple"],
+      galerie: ["grille", "masonry"],
+      simulateur: ["carte"],
+      contenu: ["texte-image"],
+      contact: ["split-form-carte"],
+      cta: ["encadre"],
+    },
+  },
 ];
 
 export const DEFAULT_PACK: StylePackId = "base";

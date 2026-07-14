@@ -14,6 +14,8 @@ import {
   Bodoni_Moda,
   Cormorant_Garamond,
   Space_Grotesk,
+  Newsreader,
+  Caveat,
 } from "next/font/google";
 import "./globals.css";
 
@@ -108,6 +110,22 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
   preload: false,
 });
+// Serif éditorial chaleureux (titres display) — pack foyer-carnet (famille foyer).
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  preload: false,
+});
+// Écriture manuscrite (kickers « signature ») — pack foyer-carnet.
+const caveat = Caveat({
+  variable: "--font-caveat",
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  display: "swap",
+  preload: false,
+});
 
 const fontVars = [
   poppins,
@@ -124,6 +142,8 @@ const fontVars = [
   bodoni,
   cormorant,
   spaceGrotesk,
+  newsreader,
+  caveat,
 ]
   .map((f) => f.variable)
   .join(" ");

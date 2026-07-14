@@ -611,6 +611,51 @@ input[type="range"] {
   .epure-marquee-track { animation: none; }
 }
 
+/* ================= Foyer · Carnet de maison chaleureux ================= */
+/* « Carnet de maison » : serif éditorial chaud (Newsreader) + écriture
+   manuscrite (Caveat) en signature, coins généreux arrondis, ombres douces
+   TEINTÉES marque, liserés couture pointillés. Tactile, personnel, rassurant. */
+[data-pack="foyer-carnet"] {
+  --pack-font-display: var(--font-newsreader);
+  --pack-font-sans: var(--font-inter);
+  --pack-font-script: var(--font-caveat);
+  --display-tracking: -0.015em;
+  --display-case: none;
+
+  /* Arrondis généreux et amicaux (à l'opposé des angles durs epure/signal). */
+  --radius-btn: 9999px;
+  --radius-card: 1.35rem;
+  --radius-image: 1.5rem;
+  --border-width: 1px;
+  --radius: 1rem;
+
+  /* Ombres douces teintées marque (prune chaude). */
+  --shadow-card: 0 16px 38px -24px rgb(120 40 60 / 0.28);
+  --shadow-pop: 0 30px 60px -30px rgb(120 40 60 / 0.30);
+
+  --section-py: 6rem;
+  --content-max: 74rem;
+  --motion-distance: 20px;
+  --motion-duration: 0.7s;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+/* Titres display : Newsreader, semi-bold chaleureux (jamais aussi serré qu'epure). */
+[data-pack="foyer-carnet"] h1.font-display,
+[data-pack="foyer-carnet"] h2.font-display,
+[data-pack="foyer-carnet"] .pack-heading {
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+/* Utilitaire « signature manuscrite » — kickers et légendes (Caveat). Scopé au
+   pack pour ne jamais fuir vers les autres familles. */
+[data-pack="foyer-carnet"] .foyer-script {
+  font-family: var(--pack-font-script), var(--font-newsreader), cursive;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 1.1;
+}
+
 /* ======================= Maison · Premium élégant ======================= */
 [data-pack="maison-premium"] {
   --pack-font-display: var(--font-playfair);

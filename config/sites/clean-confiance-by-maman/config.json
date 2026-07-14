@@ -1,0 +1,1471 @@
+{
+  "slug": "clean-confiance-by-maman",
+  "theme": "rose-poudre",
+  "stylePack": "foyer-carnet",
+  "branding": {
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/clean-confiance-by-maman/logo-header.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/clean-confiance-by-maman/icon-embleme.png",
+    "logoAlt": "Clean & Confiance by Maman — ménage et nettoyage à Blanquefort",
+    "logoTextHidden": true,
+    "logoScale": 1.3,
+    "tagline": "Ménage & nettoyage · Blanquefort",
+    "colors": {
+      "brand": "#0e5782",
+      "accent": "#e0a23c",
+      "neutral": "warm"
+    }
+  },
+  "social": [
+    {
+      "platform": "facebook",
+      "url": "https://www.facebook.com/share/17R98ZPdzc/?mibextid=wwXIfr"
+    },
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/clean_et_confiance_by_maman/"
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@cleanetconfiancebymaman?_r=1&_t=ZN-95VQdhw7Gje"
+    },
+    {
+      "platform": "whatsapp",
+      "url": "https://wa.me/33759848031"
+    }
+  ],
+  "entreprise": {
+    "nom": "Clean & Confiance by Maman",
+    "statut": "micro",
+    "siret": "99229572500012",
+    "tva": {
+      "regime": "franchise"
+    },
+    "ape": "81.21Z",
+    "apeLabel": "Nettoyage courant des bâtiments",
+    "siege": "51 Rue de Maurian, 33290 Blanquefort"
+  },
+  "seo": {
+    "schemaType": "HousekeepingService",
+    "ville": "Blanquefort"
+  },
+  "geo": {
+    "lat": 44.9074,
+    "lng": -0.6386
+  },
+  "meta": {
+    "title": "Ménage & nettoyage à Blanquefort, dès 15 €/h",
+    "description": "Ménage régulier, vitres, grand ménage et remise en état à Blanquefort et 20 km autour. Ménage à domicile deux fois moins cher grâce au crédit d'impôt. Devis gratuit.",
+    "keywords": [
+      "ménage Blanquefort",
+      "femme de ménage Blanquefort",
+      "nettoyage à domicile",
+      "crédit d'impôt ménage",
+      "aide ménagère Médoc"
+    ]
+  },
+  "forms": {
+    "turnstile": true
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Accueil",
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "carte",
+          "content": {
+            "eyebrow": "prendre soin de chez vous",
+            "titre": "Ménage & nettoyage à Blanquefort, en toute",
+            "titreAccent": "confiance",
+            "accroche": "Clean & Confiance by Maman entretient votre maison ou votre appartement avec la minutie d'une maman : ménage régulier ou ponctuel, repassage, vitres, grand ménage et remise en état. Vous rentrez chez vous, tout est frais et rangé.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/clean-confiance-by-maman/menage-salon.jpg",
+              "alt": "Ménage à domicile : aspiration d'un salon lumineux près de Blanquefort"
+            },
+            "imageRatio": "4/5",
+            "card": {
+              "label": "Ménage à domicile",
+              "prix": "15 €",
+              "unite": "/ heure",
+              "mention": "après crédit d'impôt de 50 %",
+              "prixBarre": "30 €/h",
+              "points": [
+                "Devis gratuit et sans engagement",
+                "Produits et matériel fournis",
+                "Une intervenante près de chez vous"
+              ]
+            },
+            "trust": [
+              {
+                "icone": "Home",
+                "label": "Prestations à domicile"
+              },
+              {
+                "icone": "BadgePercent",
+                "label": "Crédit d'impôt 50 %"
+              },
+              {
+                "icone": "MapPin",
+                "label": "Blanquefort & 20 km"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir les prestations",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "ce que je fais pour vous",
+            "titre": "Des prestations pensées pour votre quotidien",
+            "intro": "Un coup de propre régulier ou un chantier ponctuel : chaque intervention est adaptée à votre logement, vos habitudes et votre budget. Choisissez la prestation qui vous ressemble.",
+            "items": [
+              {
+                "icone": "Home",
+                "nom": "Ménage à domicile",
+                "description": "Entretien régulier ou ponctuel de la maison et de l'appartement, avec le repassage en option. La prestation qui vous rend du temps.",
+                "priceHint": "dès 30 €/h · net 15 €/h",
+                "badge": "Crédit d'impôt 50 %",
+                "href": "/menage-domicile"
+              },
+              {
+                "icone": "Sun",
+                "nom": "Grand ménage",
+                "description": "Le grand nettoyage de printemps ou de fond : on décrasse ce que l'entretien courant ne touche jamais, pièce par pièce.",
+                "priceHint": "sur devis · base 30 €/h",
+                "badge": "Crédit d'impôt 50 %",
+                "href": "/grand-menage"
+              },
+              {
+                "icone": "Sparkles",
+                "nom": "Nettoyage de vitres",
+                "description": "Vitres, baies et miroirs sans traces, intérieur comme extérieur, pour laisser entrer la lumière.",
+                "priceHint": "dès 90 €",
+                "badge": "Crédit d'impôt 50 %",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "icone": "Truck",
+                "nom": "Remise en état",
+                "description": "Fin de location, après un déménagement ou après des travaux : on rend un logement impeccable, prêt à être remis ou habité.",
+                "priceHint": "dès 250 €",
+                "href": "/remise-en-etat"
+              },
+              {
+                "icone": "Building2",
+                "nom": "Bureaux & locaux pros",
+                "description": "Bureaux, commerces, cabinets et parties communes : un entretien discret et régulier pour recevoir dans un cadre net.",
+                "priceHint": "sur devis · dès 90 €",
+                "href": "/nettoyage-professionnel"
+              },
+              {
+                "icone": "Trash2",
+                "nom": "Syndrome de Diogène",
+                "description": "Débarras, nettoyage en profondeur et désinfection d'un logement très encombré, avec tact et sans jugement.",
+                "priceHint": "dès 600 €",
+                "href": "/syndrome-diogene"
+              }
+            ],
+            "cta": {
+              "label": "Voir le détail des tarifs",
+              "href": "/tarifs"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "simple comme bonjour",
+            "titre": "De votre appel à la maison qui brille",
+            "intro": "Aucune démarche compliquée : vous me dites ce dont vous avez besoin, je m'occupe du reste.",
+            "items": [
+              {
+                "icone": "MessageCircle",
+                "titre": "Vous me contactez",
+                "texte": "Par téléphone, WhatsApp ou le formulaire. Vous décrivez votre logement et ce que vous attendez ; je vous pose quelques questions pour bien comprendre."
+              },
+              {
+                "icone": "CalendarCheck",
+                "titre": "On cale un devis clair",
+                "texte": "Je vous propose un tarif précis, gratuit et sans engagement, avec un créneau qui vous arrange. Rien n'est facturé tant que rien n'est validé."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "J'entretiens votre intérieur",
+                "texte": "J'arrive avec le matériel et les produits. Je travaille avec soin, dans le respect de vos affaires et de vos habitudes."
+              },
+              {
+                "icone": "Heart",
+                "titre": "Vous profitez, l'esprit léger",
+                "texte": "Vous retrouvez une maison nette et ordonnée. Pour l'entretien régulier, on garde le même rythme, en confiance."
+              }
+            ]
+          }
+        },
+        {
+          "type": "simulateur",
+          "content": {
+            "eyebrow": "50 % pour vous",
+            "titre": "Votre ménage, moitié moins cher",
+            "argumentaireTitre": "Le crédit d'impôt, sans prise de tête",
+            "argumentaireAccent": "sans prise de tête",
+            "argumentaire": "Confier son ménage à une intervenante à domicile donne droit, chaque année, à un crédit d'impôt égal à la moitié de la dépense. En clair, une heure payée 30 € ne pèse que 15 € sur votre budget, que vous soyez imposable ou non.",
+            "points": [
+              "50 % du montant réglé vous est rendu",
+              "Jusqu'à 12 000 € de dépenses par an",
+              "Une attestation fiscale fournie chaque année"
+            ],
+            "cardTitre": "Estimez votre reste à charge",
+            "cardIntro": "Faites glisser selon votre besoin hebdomadaire.",
+            "curseurLabel": "Heures de ménage par semaine",
+            "unite": "h",
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "defaut": 3,
+            "prixPlein": 30,
+            "prixNet": 15,
+            "facteurMensuel": 4.33,
+            "plafondAnnuel": 12000,
+            "note": "Estimation indicative. L'avantage fiscal de moitié s'applique aux interventions faites chez vous, retenues jusqu'à 12 000 € de dépenses annuelles, selon la réglementation applicable.",
+            "cta": {
+              "label": "Comprendre le crédit d'impôt",
+              "href": "/credit-impot"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "l'histoire derrière le nom",
+            "titre": "Le sérieux d'une pro, l'attention d'une",
+            "titreAccent": "maman",
+            "paragraphes": [
+              "« by Maman », ce n'est pas qu'un joli nom. C'est une façon de travailler : on entretient votre logement comme on tient sa propre maison, avec le souci du détail que l'on met chez soi et le respect que l'on doit à ce qui vous est cher.",
+              "Basée à Blanquefort, elle travaille aussi bien pour les familles que pour les professionnels, à la carte ou sous contrat régulier. Chaque passage est réalisé avec le même sérieux : ponctualité, discrétion et un travail que l'on assume jusqu'au moindre recoin."
+            ],
+            "ctaPrimaire": {
+              "label": "Faire connaissance",
+              "href": "/a-propos"
+            },
+            "ctaSecondaire": {
+              "label": "Notre zone d'intervention",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Là où j'interviens",
+            "intro": "Autour de Blanquefort, jusqu'à une vingtaine de kilomètres, sur le Médoc et la métropole bordelaise.",
+            "rayonKm": 20,
+            "zones": [
+              {
+                "region": "Médoc & rive gauche",
+                "principale": "Blanquefort",
+                "villes": [
+                  "Blanquefort",
+                  "Le Taillan-Médoc",
+                  "Le Pian-Médoc",
+                  "Parempuyre",
+                  "Ludon-Médoc",
+                  "Macau"
+                ]
+              },
+              {
+                "region": "Métropole bordelaise",
+                "principale": "Bordeaux",
+                "villes": [
+                  "Bordeaux",
+                  "Le Bouscat",
+                  "Bruges",
+                  "Eysines",
+                  "Saint-Médard-en-Jalles",
+                  "Mérignac"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Les questions que l'on me pose souvent",
+            "items": [
+              {
+                "question": "Faut-il fournir le matériel et les produits ?",
+                "reponse": "Non, j'arrive équipée : aspirateur, chiffons, produits d'entretien classiques ou écologiques selon votre préférence. Si vous tenez à vos propres produits, je les utilise volontiers."
+              },
+              {
+                "question": "Peut-on commencer par un seul passage pour tester ?",
+                "reponse": "Bien sûr. Beaucoup de clients débutent par une prestation ponctuelle, puis passent à un rythme régulier une fois la confiance installée. Vous n'êtes jamais engagé sur la durée."
+              },
+              {
+                "question": "Intervenez-vous quand je suis absent ?",
+                "reponse": "Oui, dès lors que l'accès est organisé (clé, code, boîte à clés). C'est fréquent pour l'entretien régulier : vous partez le matin, vous rentrez le soir dans un intérieur propre."
+              },
+              {
+                "question": "Comment se règle une prestation ?",
+                "reponse": "Le règlement se fait après l'intervention, par les moyens convenus ensemble au devis. Pour les prestations à domicile, une attestation fiscale vous est remise pour votre crédit d'impôt."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Offrez-vous du temps libre",
+            "sousTitre": "Dites-moi ce dont vous avez besoin : je vous réponds vite, avec un devis clair et gratuit.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir les tarifs",
+              "href": "/tarifs"
+            },
+            "lien": {
+              "label": "ou écrivez-moi sur WhatsApp →",
+              "href": "https://wa.me/33759848031"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Prestations",
+      "meta": {
+        "title": "Prestations de ménage & nettoyage à Blanquefort",
+        "description": "Ménage à domicile, grand ménage, vitres, remise en état, bureaux et débarras Diogène : découvrez toutes les prestations de Clean & Confiance by Maman à Blanquefort."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "tout ce que je sais faire",
+            "titre": "Mes prestations de ménage et de nettoyage",
+            "intro": "Du coup d'éclat hebdomadaire au chantier de remise en état, chaque prestation est détaillée sur sa propre page : ce qui est inclus, comment ça se passe et le tarif de départ."
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "à la carte",
+            "titre": "Choisissez la prestation qu'il vous faut",
+            "intro": "Chaque carte renvoie vers une page dédiée. Une question sur mesure ? Un devis répond toujours mieux qu'une grille.",
+            "items": [
+              {
+                "icone": "Home",
+                "nom": "Ménage à domicile",
+                "description": "Entretien régulier ou ponctuel, repassage inclus en option. Le confort d'un intérieur toujours net.",
+                "priceHint": "dès 30 €/h · net 15 €/h",
+                "badge": "Crédit d'impôt 50 %",
+                "href": "/menage-domicile"
+              },
+              {
+                "icone": "Sun",
+                "nom": "Grand ménage",
+                "description": "Nettoyage de fond, de printemps ou avant réception : on remet tout à neuf, du haut des placards aux plinthes.",
+                "priceHint": "sur devis · base 30 €/h",
+                "badge": "Crédit d'impôt 50 %",
+                "href": "/grand-menage"
+              },
+              {
+                "icone": "Sparkles",
+                "nom": "Nettoyage de vitres",
+                "description": "Vitres, baies vitrées, vérandas et miroirs, sans traces, dedans et dehors.",
+                "priceHint": "dès 90 €",
+                "badge": "Crédit d'impôt 50 %",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "icone": "Truck",
+                "nom": "Remise en état",
+                "description": "Fin de bail, après déménagement, après travaux : un logement rendu impeccable, prêt pour l'état des lieux.",
+                "priceHint": "dès 250 €",
+                "href": "/remise-en-etat"
+              },
+              {
+                "icone": "Building2",
+                "nom": "Bureaux & locaux pros",
+                "description": "Bureaux, commerces, cabinets, parties communes : un entretien fiable pour recevoir dans un cadre soigné.",
+                "priceHint": "sur devis · dès 90 €",
+                "href": "/nettoyage-professionnel"
+              },
+              {
+                "icone": "Trash2",
+                "nom": "Syndrome de Diogène",
+                "description": "Débarras, nettoyage en profondeur et désinfection d'un logement très encombré, avec délicatesse.",
+                "priceHint": "dès 600 €",
+                "href": "/syndrome-diogene"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Et le nettoyage de terrasse & extérieur",
+            "paragraphes": [
+              "Au-delà de l'intérieur, je redonne aussi de l'éclat aux terrasses, balcons et sols extérieurs : dégraissage, brossage et rinçage pour effacer les traces vertes de l'hiver. Cette prestation démarre à 90 € et se chiffre selon la surface et l'état du support.",
+              "Elle se combine facilement avec un nettoyage de vitres ou un grand ménage de printemps, pour repartir sur une maison nette dedans comme dehors. Parlez-m'en au moment du devis, on regarde l'ensemble d'un coup."
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un besoin précis en tête ?",
+            "sousTitre": "Décrivez-moi votre logement et votre rythme : je reviens vers vous avec une proposition adaptée.",
+            "ctaPrimaire": {
+              "label": "Me contacter",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir les tarifs",
+              "href": "/tarifs"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "menage-domicile",
+      "label": "Ménage à domicile",
+      "navHidden": true,
+      "service": {
+        "name": "Ménage à domicile",
+        "description": "Entretien régulier ou ponctuel de la maison et de l'appartement, repassage en option, à Blanquefort et alentours.",
+        "serviceType": "Ménage à domicile",
+        "priceFrom": 30
+      },
+      "meta": {
+        "title": "Ménage à domicile à Blanquefort, dès 15 €/h net",
+        "description": "Entretien régulier ou ponctuel de votre maison ou appartement à Blanquefort, repassage inclus en option. Comptez 30 €/h, ramenés à 15 €/h avec le crédit d'impôt."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "votre quotidien allégé",
+            "titre": "Ménage à domicile, régulier ou ponctuel",
+            "intro": "Sols, poussières, cuisine, sanitaires, repassage : je m'occupe de l'entretien courant de votre logement pour que vous n'ayez plus à y penser. À Blanquefort et jusqu'à 20 km.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage à domicile"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Un intérieur suivi, à votre rythme",
+            "imagePosition": "right",
+            "imageRatio": "4/3",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/clean-confiance-by-maman/menage-cuisine.jpg",
+              "alt": "Nettoyage d'une cuisine lors d'un ménage à domicile à Blanquefort"
+            },
+            "paragraphes": [
+              "L'entretien régulier, c'est le cœur de mon métier. Une fois par semaine, tous les quinze jours ou selon vos besoins, je passe chez vous pour garder votre logement propre et ordonné sans que cela pèse sur vos soirées et vos week-ends.",
+              "Une prestation type couvre l'aspiration et le lavage des sols, le dépoussiérage des surfaces et des meubles, l'entretien de la cuisine (plan de travail, évier, extérieur des appareils), le nettoyage complet de la salle de bain et des toilettes, ainsi que le vidage des poubelles et l'aération des pièces. Le repassage et le change du linge de lit s'ajoutent en option, sur simple demande.",
+              "Avant le premier passage, on fait le tour de votre logement ensemble : vos priorités, vos produits, les pièces sensibles. Je m'adapte à votre maison, jamais l'inverse. Et pour l'entretien régulier, je garde le même cahier des charges d'une fois sur l'autre, pour un résultat constant."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "concrètement",
+            "titre": "Ce qui est prévu à chaque passage",
+            "items": [
+              {
+                "icone": "Sparkles",
+                "titre": "Sols & poussières",
+                "texte": "Aspiration puis lavage des sols, dépoussiérage des meubles, surfaces et objets, traces sur les portes et interrupteurs."
+              },
+              {
+                "icone": "Droplets",
+                "titre": "Cuisine & sanitaires",
+                "texte": "Plan de travail, évier, extérieur des appareils, puis salle de bain et WC désinfectés et détartrés."
+              },
+              {
+                "icone": "Shirt",
+                "titre": "Repassage en option",
+                "texte": "Chemises, linge de maison, pliage soigné : à ajouter selon la quantité, sur le même créneau ou un passage dédié."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Bon à savoir avant de commencer",
+            "items": [
+              {
+                "question": "À quelle fréquence puis-je vous faire venir ?",
+                "reponse": "Chaque semaine, toutes les deux semaines, une fois par mois ou de manière ponctuelle : vous choisissez le rythme et l'on peut le faire évoluer à tout moment."
+              },
+              {
+                "question": "Le repassage est-il compris dans le tarif horaire ?",
+                "reponse": "Il s'ajoute au ménage sur le même taux horaire, selon la quantité de linge. On l'estime ensemble au devis pour éviter les surprises."
+              },
+              {
+                "question": "Combien d'heures faut-il prévoir pour mon logement ?",
+                "reponse": "Tout dépend de la superficie, du nombre de pièces et du niveau d'entretien au départ. Pour donner un ordre d'idée, un T3 suivi régulièrement demande souvent deux à trois heures. Le devis fixe le reste."
+              },
+              {
+                "question": "Puis-je garder la même personne à chaque fois ?",
+                "reponse": "Oui, c'est même le principe : la continuité crée la confiance et un résultat régulier, puisque je connais déjà votre logement et vos préférences."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Prêt à souffler un peu ?",
+            "sousTitre": "Ménage à domicile à 30 €/h, ramené à 15 €/h une fois l'avantage fiscal appliqué.",
+            "ctaPrimaire": {
+              "label": "Obtenir mon devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Le crédit d'impôt en détail",
+              "href": "/credit-impot"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "grand-menage",
+      "label": "Grand ménage",
+      "navHidden": true,
+      "service": {
+        "name": "Grand ménage",
+        "description": "Grand nettoyage de printemps ou de fond, pièce par pièce, à Blanquefort et alentours.",
+        "serviceType": "Grand nettoyage",
+        "priceFrom": "Sur devis"
+      },
+      "meta": {
+        "title": "Grand ménage & nettoyage de printemps à Blanquefort",
+        "description": "Nettoyage de fond de la maison à Blanquefort : placards, plinthes, portes, électroménager, recoins oubliés. Éligible au crédit d'impôt de 50 %. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "un vrai coup de neuf",
+            "titre": "Grand ménage & nettoyage de printemps",
+            "intro": "Une à deux fois par an, on décrasse ce que l'entretien courant ne touche jamais. Un grand nettoyage de fond qui redonne à votre maison son air des premiers jours.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Grand ménage"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Planifier mon grand ménage",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Là où l'entretien courant s'arrête",
+            "imagePosition": "left",
+            "imageRatio": "4/3",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/clean-confiance-by-maman/grand-menage-tapis.jpg",
+              "alt": "Grand ménage : nettoyage en profondeur d'un tapis à Blanquefort"
+            },
+            "paragraphes": [
+              "Le grand ménage s'attaque à tout ce que l'on repousse d'une semaine sur l'autre. On dépoussière le haut des armoires et des cadres, on nettoie l'intérieur et l'extérieur des placards, on dégraisse la hotte et le four, on détartre la robinetterie et les joints, on lessive les portes, les plinthes et les interrupteurs.",
+              "C'est la prestation idéale au changement de saison, avant une fête de famille, après une longue absence ou pour repartir sur des bases saines. On peut la mener en une fois sur une grande journée, ou pièce par pièce sur plusieurs passages si vous préférez lisser l'effort.",
+              "Chaque grand ménage est chiffré sur devis, sur une base horaire de 30 €, car le temps à prévoir varie selon la superficie et le degré d'encrassement. Comme il se déroule chez vous, cet entretien entre dans le champ du crédit d'impôt de 50 %."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Vos questions sur le grand ménage",
+            "items": [
+              {
+                "question": "Quelle différence avec l'entretien régulier ?",
+                "reponse": "L'entretien régulier maintient la propreté au fil des semaines. Le grand ménage traite en profondeur les zones oubliées : placards, électroménager, hauteurs, joints. C'est ponctuel et bien plus complet."
+              },
+              {
+                "question": "Faut-il vider les placards à l'avance ?",
+                "reponse": "Ce n'est pas obligatoire, mais un placard désencombré se nettoie mieux. On en parle au devis pour définir jusqu'où on va, ensemble."
+              },
+              {
+                "question": "Peut-on le faire en plusieurs fois ?",
+                "reponse": "Oui. Certains préfèrent une grande journée d'un seul tenant, d'autres découper par étage ou par pièce. Le rythme s'organise selon votre confort."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Envie de tout remettre à neuf ?",
+            "sousTitre": "On planifie votre grand ménage quand ça vous arrange, avec un devis clair au préalable.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir le ménage régulier",
+              "href": "/menage-domicile"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Vitres",
+      "navHidden": true,
+      "service": {
+        "name": "Nettoyage de vitres",
+        "description": "Vitres, baies, vérandas et miroirs sans traces, intérieur et extérieur, à Blanquefort et alentours.",
+        "serviceType": "Nettoyage de vitres",
+        "priceFrom": 90
+      },
+      "meta": {
+        "title": "Nettoyage de vitres à Blanquefort, dès 90 €",
+        "description": "Fenêtres, baies, vérandas et miroirs rendus limpides à Blanquefort, dedans comme dehors. Dès 90 €, avec 50 % de crédit d'impôt pour les particuliers."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "laissez entrer la lumière",
+            "titre": "Nettoyage de vitres, sans une seule trace",
+            "intro": "Vitres, baies vitrées, vérandas et grands miroirs retrouvent leur transparence, dedans comme dehors. Une maison plus lumineuse, tout de suite.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Vitres"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Des surfaces vitrées vraiment nettes",
+            "imagePosition": "right",
+            "imageRatio": "4/3",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/clean-confiance-by-maman/nettoyage-vitres.png",
+              "alt": "Nettoyage de vitres sans traces, intérieur et extérieur, à Blanquefort"
+            },
+            "paragraphes": [
+              "On oublie souvent à quel point des vitres propres changent une pièce : la lumière entre mieux, les couleurs ressortent, la maison respire. Je nettoie les deux faces des fenêtres, les baies coulissantes, les vérandas, les portes vitrées et les miroirs, encadrements et rebords compris.",
+              "Chaque surface est décollée, lavée puis passée à la raclette pour un fini sans traces ni peluches, y compris dans les angles. Pour les grandes hauteurs ou les vitrages difficiles d'accès, on évalue ensemble la faisabilité en amont, dans le respect de la sécurité.",
+              "La prestation démarre à 90 € et se précise selon le nombre et la taille des ouvertures. Réalisée à votre domicile, elle entre dans le champ du crédit d'impôt de 50 %."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Ce que vous voulez savoir sur les vitres",
+            "items": [
+              {
+                "question": "Nettoyez-vous aussi l'extérieur des fenêtres ?",
+                "reponse": "Oui, les deux faces sont comprises quand l'accès le permet en toute sécurité, depuis l'intérieur ou de plain-pied. Les cas particuliers sont vus au devis."
+              },
+              {
+                "question": "Les encadrements et rebords sont-ils inclus ?",
+                "reponse": "Absolument : châssis, rebords et rails font partie du soin apporté, car c'est souvent là que la saleté s'accumule."
+              },
+              {
+                "question": "À quelle fréquence refaire ses vitres ?",
+                "reponse": "Deux à trois fois par an suffisent pour la plupart des logements. On peut aussi les intégrer à un grand ménage saisonnier pour tout traiter d'un coup."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Des vitres qui changent tout",
+            "sousTitre": "Nettoyage de vitres dès 90 €, seul ou couplé à un grand ménage.",
+            "ctaPrimaire": {
+              "label": "Obtenir mon devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Découvrir le grand ménage",
+              "href": "/grand-menage"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "remise-en-etat",
+      "label": "Remise en état",
+      "navHidden": true,
+      "service": {
+        "name": "Remise en état",
+        "description": "Nettoyage complet de fin de location, après déménagement ou après travaux, à Blanquefort et alentours.",
+        "serviceType": "Remise en état",
+        "priceFrom": 250
+      },
+      "meta": {
+        "title": "Remise en état & fin de location à Blanquefort",
+        "description": "Nettoyage complet fin de bail, après déménagement ou après travaux à Blanquefort : logement rendu impeccable pour l'état des lieux. À partir de 250 €."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "on repart de zéro",
+            "titre": "Remise en état d'un logement, de fond en comble",
+            "intro": "Fin de location, après un déménagement ou une fin de chantier : je rends un logement parfaitement propre, prêt pour l'état des lieux ou pour emménager sereinement.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Remise en état"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Trois situations, une même exigence",
+            "paragraphes": [
+              "La remise en état, c'est le nettoyage total d'un logement vide ou presque. En fin de bail, elle vous aide à récupérer votre dépôt de garantie : sols, sanitaires, cuisine, placards intérieurs, vitres et traces sont repris un par un pour un état des lieux serein.",
+              "Après un déménagement, elle vous accueille dans un intérieur sain, désinfecté et prêt à vivre, avant même de poser les cartons. Après des travaux, elle élimine poussières fines, résidus de plâtre, traces de peinture et laisser le chantier vraiment habitable.",
+              "La prestation démarre à 250 € et se chiffre selon la surface, le nombre de pièces et l'état de départ. On fait le point ensemble au devis pour ne rien oublier et vous donner un montant ferme."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "les cas fréquents",
+            "titre": "Pour quel moment de vie",
+            "items": [
+              {
+                "icone": "Home",
+                "titre": "Fin de location",
+                "texte": "Logement rendu propre pour l'état des lieux de sortie, afin de mettre toutes les chances de votre côté pour le dépôt de garantie."
+              },
+              {
+                "icone": "Truck",
+                "titre": "Après déménagement",
+                "texte": "Nettoyage complet avant d'emménager : on vous remet un intérieur sain, prêt à recevoir vos meubles et votre vie."
+              },
+              {
+                "icone": "Brush",
+                "titre": "Après travaux",
+                "texte": "Dépoussiérage fin, retrait des résidus de chantier et des traces : la touche finale qui rend les pièces vraiment habitables."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions sur la remise en état",
+            "items": [
+              {
+                "question": "La remise en état ouvre-t-elle droit au crédit d'impôt ?",
+                "reponse": "L'avantage fiscal concerne l'entretien courant du domicile. Un nettoyage de fin de chantier ou un débarras n'y ouvre pas droit ; je vous indique clairement, au devis, ce qui est éligible ou non."
+              },
+              {
+                "question": "Intervenez-vous sur un logement encore meublé ?",
+                "reponse": "Oui, mais le résultat est optimal sur un logement vide ou dégagé. Si des meubles restent, on adapte le périmètre et le devis en conséquence."
+              },
+              {
+                "question": "Sous quel délai pouvez-vous intervenir ?",
+                "reponse": "Les remises en état sont souvent urgentes, avant un état des lieux ou une entrée dans les lieux. Contactez-moi tôt : je fais mon possible pour caler un créneau rapide."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un logement à rendre nickel ?",
+            "sousTitre": "Remise en état dès 250 €, chiffrée précisément après un point sur votre logement.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir toutes les prestations",
+              "href": "/services"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-professionnel",
+      "label": "Bureaux & pros",
+      "navHidden": true,
+      "service": {
+        "name": "Nettoyage de bureaux et locaux professionnels",
+        "description": "Entretien de bureaux, commerces, cabinets et parties communes à Blanquefort et alentours.",
+        "serviceType": "Nettoyage de locaux professionnels",
+        "priceFrom": 90
+      },
+      "meta": {
+        "title": "Nettoyage de bureaux & locaux pros à Blanquefort",
+        "description": "Entretien de bureaux, commerces, cabinets et parties communes à Blanquefort : intervention discrète et régulière, sur devis dès 90 €. Contrat ou ponctuel."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "recevoir dans un cadre net",
+            "titre": "Nettoyage de bureaux & locaux professionnels",
+            "intro": "Bureaux, commerces, cabinets, supermarchés et parties communes d'immeubles : un entretien discret et fiable pour accueillir vos clients et vos équipes dans un environnement soigné.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Bureaux & pros"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis pro",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Un entretien qui vous ressemble",
+            "imagePosition": "right",
+            "imageRatio": "4/3",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/clean-confiance-by-maman/nettoyage-bureaux.jpg",
+              "alt": "Entretien de bureaux et de locaux professionnels à Blanquefort"
+            },
+            "paragraphes": [
+              "Un local propre, c'est une première impression réussie et des équipes qui travaillent mieux. J'assure l'entretien de vos espaces professionnels avec la même rigueur que chez les particuliers, mais au rythme de votre activité : avant l'ouverture, après la fermeture ou pendant les heures creuses.",
+              "Bureaux et postes de travail, sanitaires, salles de réunion, espaces d'accueil, cuisines et coins repas, vitrines et parties communes : chaque prestation est bâtie sur un cahier des charges défini avec vous, en ponctuel ou en contrat régulier.",
+              "Les prestations professionnelles sont établies sur devis personnalisé, à partir de 90 €, selon la surface, la fréquence et le niveau d'exigence. La discrétion et la confidentialité vont de soi dans vos locaux."
+            ],
+            "ctaPrimaire": {
+              "label": "Établir un devis pro",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions des professionnels",
+            "items": [
+              {
+                "question": "Intervenez-vous en dehors des heures d'ouverture ?",
+                "reponse": "Oui, c'est même souvent préférable. Très tôt, en soirée ou le samedi, selon vos horaires : on planifie les passages pour ne déranger ni votre activité ni vos clients."
+              },
+              {
+                "question": "Proposez-vous des contrats réguliers ?",
+                "reponse": "Bien sûr. On définit une fréquence et un périmètre fixes, avec un tarif stable, pour un local toujours impeccable sans avoir à y penser."
+              },
+              {
+                "question": "Quels types de locaux entretenez-vous ?",
+                "reponse": "Bureaux, commerces et magasins, cabinets professionnels, supermarchés, parties communes d'immeubles et locaux commerciaux en général, sur la métropole bordelaise."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local à confier ?",
+            "sousTitre": "Prestations professionnelles sur devis, en ponctuel ou en contrat régulier.",
+            "ctaPrimaire": {
+              "label": "Demander un devis pro",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir la zone d'intervention",
+              "href": "/zone-intervention"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "syndrome-diogene",
+      "label": "Syndrome de Diogène",
+      "navHidden": true,
+      "service": {
+        "name": "Nettoyage syndrome de Diogène",
+        "description": "Débarras, nettoyage en profondeur et désinfection d'un logement très encombré, avec discrétion, à Blanquefort et alentours.",
+        "serviceType": "Nettoyage extrême et désinfection",
+        "priceFrom": 600
+      },
+      "meta": {
+        "title": "Nettoyage syndrome de Diogène à Blanquefort",
+        "description": "Débarras, nettoyage en profondeur et désinfection d'un logement encombré à Blanquefort, avec tact et discrétion. Prestation sur devis, à partir de 600 €."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "sans jugement, avec tact",
+            "titre": "Nettoyage lié au syndrome de Diogène",
+            "intro": "Quand un logement est très encombré ou insalubre, je prends le relais avec discrétion et humanité : débarras, nettoyage en profondeur et désinfection, pour rendre l'espace de nouveau vivable.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Syndrome de Diogène"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Parler de la situation",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Une intervention humaine avant tout",
+            "paragraphes": [
+              "Ces situations sont délicates et souvent chargées d'émotion, pour la personne concernée comme pour ses proches. J'interviens sans jugement, dans le respect de l'histoire des lieux et de ceux qui y vivent, avec une confidentialité totale.",
+              "La prestation se déroule par étapes : tri et débarras des encombrants, nettoyage en profondeur de chaque surface, puis désinfection pour assainir durablement le logement. On avance à un rythme supportable, en concertation avec la famille ou les personnes qui accompagnent.",
+              "Chaque intervention est unique et se chiffre sur devis après un état des lieux, à partir de 600 €. Le débarras et l'évacuation de déchets relèvent d'une prestation spécifique et ne sont pas concernés par le crédit d'impôt : je vous l'explique clairement dès le premier échange."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Vos questions, en toute confiance",
+            "items": [
+              {
+                "question": "L'intervention reste-t-elle discrète ?",
+                "reponse": "Totalement. Aucune photo publiée, aucun commentaire : la situation reste entre nous. La discrétion vis-à-vis du voisinage fait partie de mon travail."
+              },
+              {
+                "question": "Peut-on avancer progressivement ?",
+                "reponse": "Oui. Selon l'ampleur et l'état émotionnel de la personne, on peut échelonner l'intervention sur plusieurs passages plutôt que tout traiter d'un coup."
+              },
+              {
+                "question": "Comment se passe le premier contact ?",
+                "reponse": "On échange d'abord au téléphone pour comprendre la situation, puis j'organise si besoin une visite pour évaluer le travail et établir un devis honnête et réaliste."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Vous n'êtes pas seul face à ça",
+            "sousTitre": "Parlons-en simplement, en toute confidentialité, pour trouver la meilleure façon d'avancer.",
+            "ctaPrimaire": {
+              "label": "Me contacter",
+              "href": "/contact"
+            },
+            "lien": {
+              "label": "ou par WhatsApp, en privé →",
+              "href": "https://wa.me/33759848031"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tarifs",
+      "label": "Tarifs",
+      "meta": {
+        "title": "Tarifs ménage & nettoyage à Blanquefort",
+        "description": "Les tarifs de départ de Clean & Confiance by Maman à Blanquefort : ménage dès 30 €/h (15 €/h net), vitres dès 90 €, remise en état dès 250 €. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "clair et sans surprise",
+            "titre": "Des tarifs simples, un devis toujours gratuit",
+            "intro": "Voici les prix de départ, pour vous donner un ordre d'idée. Le montant exact dépend de votre logement et de vos besoins : il est fixé au devis, gratuitement et sans engagement."
+          }
+        },
+        {
+          "type": "tarifs",
+          "content": {
+            "titre": "Prix de départ par prestation",
+            "intro": "Chez les particuliers, la moitié du montant vous revient via le crédit d'impôt, sauf mention contraire.",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "prix": 30,
+                "unite": "/ h",
+                "description": "Régulier ou ponctuel, repassage en option. Soit 15 €/h après crédit d'impôt.",
+                "populaire": true,
+                "inclus": [
+                  "Sols, poussières, surfaces",
+                  "Cuisine & sanitaires",
+                  "Repassage en option"
+                ]
+              },
+              {
+                "nom": "Grand ménage",
+                "prix": "Sur devis",
+                "unite": "base 30 €/h",
+                "description": "Nettoyage de fond, pièce par pièce, placards et électroménager compris."
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "prix": 90,
+                "unite": "à partir de",
+                "description": "Vitres, baies et miroirs, intérieur et extérieur, sans traces."
+              },
+              {
+                "nom": "Terrasse & extérieur",
+                "prix": 90,
+                "unite": "à partir de",
+                "description": "Dégraissage et nettoyage des terrasses, balcons et sols extérieurs."
+              },
+              {
+                "nom": "Remise en état",
+                "prix": 250,
+                "unite": "à partir de",
+                "description": "Fin de location, après déménagement ou après travaux. Non éligible au crédit d'impôt."
+              },
+              {
+                "nom": "Bureaux & locaux pros",
+                "prix": 90,
+                "unite": "sur devis dès",
+                "description": "Entretien professionnel ponctuel ou en contrat. Non éligible au crédit d'impôt."
+              },
+              {
+                "nom": "Syndrome de Diogène",
+                "prix": 600,
+                "unite": "à partir de",
+                "description": "Débarras, nettoyage en profondeur et désinfection. Sur devis après visite."
+              }
+            ],
+            "note": "Prix indicatifs de départ, hors TVA non applicable (article 293 B du CGI). Le tarif définitif est établi au devis. Le crédit d'impôt de 50 % concerne les prestations réalisées au domicile d'un particulier, dans les conditions légales.",
+            "cta": {
+              "label": "Demander mon devis gratuit",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Envie d'un chiffrage précis ?",
+            "sousTitre": "Deux minutes suffisent pour me décrire votre besoin. Je reviens vers vous avec un tarif clair.",
+            "ctaPrimaire": {
+              "label": "Obtenir mon devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Calculer avec le crédit d'impôt",
+              "href": "/credit-impot"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "credit-impot",
+      "label": "Crédit d'impôt 50 %",
+      "meta": {
+        "title": "Crédit d'impôt de 50 % sur votre ménage",
+        "description": "Le ménage à domicile à Blanquefort ouvre droit à un crédit d'impôt de 50 % : 30 €/h reviennent à 15 €/h. Fonctionnement, plafond de 12 000 € et conditions expliqués."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "l'avantage qui change tout",
+            "titre": "Le crédit d'impôt de 50 %, expliqué",
+            "intro": "Faire appel à une intervenante à domicile vous donne droit à un crédit d'impôt égal à la moitié de ce que vous payez. Voici comment ça marche, sans jargon."
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Comment 30 € deviennent 15 €",
+            "paragraphes": [
+              "Le ménage, le repassage et l'entretien courant effectués chez vous font partie des services à la personne : à ce titre, ils vous font bénéficier d'un crédit d'impôt qui vous rend la moitié de ce que vous réglez. Une heure facturée 30 € ne vous coûte donc, au final, que 15 €.",
+              "Bonne nouvelle : c'est bien un crédit d'impôt, pas une simple réduction. Vous en profitez que vous soyez imposable ou non ; dans ce dernier cas, la somme vous est remboursée par l'administration fiscale. Le plafond des dépenses est de 12 000 € par an, majoré dans certaines situations familiales.",
+              "Chaque année, je vous remets une attestation fiscale récapitulant les sommes versées : il vous suffit de les reporter sur votre déclaration de revenus. Rien de plus à faire. Cet avantage concerne les prestations réalisées à votre domicile de particulier ; il ne s'applique pas aux locaux professionnels ni aux prestations de débarras."
+            ]
+          }
+        },
+        {
+          "type": "simulateur",
+          "content": {
+            "eyebrow": "à vous de jouer",
+            "titre": "Combien ça vous coûte vraiment",
+            "argumentaireTitre": "Un budget maîtrisé, mois après mois",
+            "argumentaire": "Ajustez le nombre d'heures et découvrez aussitôt ce qu'il vous reste à payer, déduction faite des 50 % rendus par le fisc. De quoi décider l'esprit tranquille.",
+            "points": [
+              "Reste à charge divisé par deux",
+              "Plafond de 12 000 € de dépenses par an",
+              "Attestation fiscale remise chaque année"
+            ],
+            "cardTitre": "Votre reste à charge estimé",
+            "cardIntro": "Déplacez le curseur selon votre rythme.",
+            "curseurLabel": "Heures de ménage par semaine",
+            "unite": "h",
+            "min": 1,
+            "max": 15,
+            "step": 1,
+            "defaut": 4,
+            "prixPlein": 30,
+            "prixNet": 15,
+            "facteurMensuel": 4.33,
+            "plafondAnnuel": 12000,
+            "note": "Simulation indicative, hors situations particulières. L'avantage réel dépend de votre situation et du plafond annuel de 12 000 €, selon la réglementation en vigueur.",
+            "cta": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Vos questions sur le crédit d'impôt",
+            "items": [
+              {
+                "question": "Suis-je concerné même sans payer d'impôt ?",
+                "reponse": "Oui. Puisqu'il ne s'agit pas d'une simple réduction mais bien d'un crédit, les foyers non imposables se voient rembourser la somme directement par le service des impôts."
+              },
+              {
+                "question": "Quelles prestations sont éligibles ?",
+                "reponse": "Les prestations réalisées à votre domicile de particulier : ménage, repassage, nettoyage courant, vitres. Les locaux professionnels et les prestations de débarras en sont exclus."
+              },
+              {
+                "question": "Comment déclarer les sommes versées ?",
+                "reponse": "Je vous fournis chaque année une attestation. Vous reportez simplement le montant dans la case dédiée de votre déclaration de revenus ; l'avantage est ensuite calculé automatiquement."
+              },
+              {
+                "question": "Y a-t-il un plafond à respecter ?",
+                "reponse": "Oui, les dépenses sont retenues dans la limite de 12 000 € par an, ce qui laisse une large marge, avec des majorations possibles selon la composition du foyer."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Profitez-en dès le premier passage",
+            "sousTitre": "Un ménage régulier à moitié prix, c'est possible. On en parle ?",
+            "ctaPrimaire": {
+              "label": "Demander mon devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir le ménage à domicile",
+              "href": "/menage-domicile"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "zone-intervention",
+      "label": "Zone d'intervention",
+      "meta": {
+        "title": "Zone d'intervention autour de Blanquefort",
+        "description": "Clean & Confiance by Maman intervient à Blanquefort et jusqu'à 20 km : Médoc (Le Taillan, Parempuyre, Ludon) et métropole bordelaise (Bordeaux, Bruges, Eysines)."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "près de chez vous",
+            "titre": "Où j'interviens, autour de Blanquefort",
+            "intro": "Installée à Blanquefort, je me déplace dans un rayon d'une vingtaine de kilomètres, sur le sud du Médoc et une bonne partie de la métropole bordelaise."
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Deux bassins, un même soin",
+            "paragraphes": [
+              "Sur le secteur de Blanquefort et le sud du Médoc, j'interviens au plus près : Le Taillan-Médoc, Le Pian-Médoc, Parempuyre, Ludon-Médoc et Macau. C'est mon terrain de tous les jours, où je peux caler facilement un entretien régulier et rester réactive en cas de besoin ponctuel.",
+              "Vers la métropole bordelaise, je couvre Bordeaux et sa première couronne rive gauche : Le Bouscat, Bruges, Eysines, Saint-Médard-en-Jalles et Mérignac. Pour les communes en limite de zone, un simple message suffit à vérifier ensemble si le déplacement est possible.",
+              "Où que vous soyez dans ce périmètre, la prestation reste la même : ponctualité, matériel fourni et un travail soigné. Vous n'êtes pas sûr d'être dans la zone ? Demandez-moi, je vous réponds franchement."
+            ],
+            "ctaPrimaire": {
+              "label": "Vérifier ma commune",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Les communes desservies",
+            "rayonKm": 20,
+            "zones": [
+              {
+                "region": "Blanquefort & sud du Médoc",
+                "principale": "Blanquefort",
+                "villes": [
+                  "Blanquefort",
+                  "Le Taillan-Médoc",
+                  "Le Pian-Médoc",
+                  "Parempuyre",
+                  "Ludon-Médoc",
+                  "Macau"
+                ]
+              },
+              {
+                "region": "Métropole bordelaise (rive gauche)",
+                "principale": "Bordeaux",
+                "villes": [
+                  "Bordeaux",
+                  "Le Bouscat",
+                  "Bruges",
+                  "Eysines",
+                  "Saint-Médard-en-Jalles",
+                  "Mérignac"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "On se retrouve dans votre quartier ?",
+            "sousTitre": "Dites-moi votre commune et votre besoin : je vous confirme le déplacement et un créneau.",
+            "ctaPrimaire": {
+              "label": "Me contacter",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir les prestations",
+              "href": "/services"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "a-propos",
+      "label": "À propos",
+      "meta": {
+        "title": "À propos de Clean & Confiance by Maman",
+        "description": "Micro-entreprise de ménage et nettoyage basée à Blanquefort, Clean & Confiance by Maman entretient maisons, appartements et locaux avec sérieux, soin et discrétion."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "enchantée",
+            "titre": "Clean & Confiance by Maman, c'est qui ?",
+            "intro": "Une micro-entreprise de ménage et de nettoyage installée à Blanquefort, avec une conviction simple : votre maison mérite qu'on en prenne soin comme de la sienne."
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Une exigence toute maternelle",
+            "paragraphes": [
+              "Le nom dit l'essentiel. « Clean » pour le résultat : un logement vraiment propre, jusque dans les détails. « Confiance » parce que vous m'ouvrez la porte de chez vous, et que ça se mérite chaque fois. Et « by Maman » pour la manière : cette façon d'entretenir un intérieur avec attention, patience et bon sens, comme on le fait pour les siens.",
+              "Je propose l'entretien régulier ou ponctuel des maisons et appartements, le repassage, les vitres, le grand ménage, la remise en état après un déménagement ou des travaux, ainsi que le nettoyage de bureaux et de locaux professionnels. Un seul interlocuteur, du particulier au professionnel, avec le même niveau d'exigence.",
+              "Ce qui me tient à cœur : la ponctualité, la discrétion et un travail assumé de bout en bout. Pas de sous-traitance anonyme, pas de promesses en l'air. Un devis clair, un rendez-vous respecté et une maison que vous êtes heureux de retrouver."
+            ],
+            "ctaPrimaire": {
+              "label": "Voir mes prestations",
+              "href": "/services"
+            },
+            "ctaSecondaire": {
+              "label": "Me contacter",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "mes engagements",
+            "titre": "Ce sur quoi vous pouvez compter",
+            "items": [
+              {
+                "icone": "Clock",
+                "titre": "La ponctualité",
+                "texte": "Un créneau convenu est un créneau tenu. Vous savez quand j'arrive, et je préviens toujours en cas d'imprévu."
+              },
+              {
+                "icone": "ShieldCheck",
+                "titre": "La discrétion",
+                "texte": "Chez vous comme dans vos locaux, ce que je vois reste chez vous. Respect de votre intimité et de vos affaires."
+              },
+              {
+                "icone": "Heart",
+                "titre": "Le soin du détail",
+                "texte": "Le travail n'est fini que lorsque je serais moi-même satisfaite du résultat. C'est ma définition du sérieux."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Faisons connaissance",
+            "sousTitre": "Un projet d'entretien régulier ou un besoin ponctuel ? Racontez-moi, je vous réponds avec plaisir.",
+            "ctaPrimaire": {
+              "label": "Me contacter",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Découvrir les tarifs",
+              "href": "/tarifs"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "navHidden": true,
+      "meta": {
+        "title": "Contact & devis gratuit à Blanquefort",
+        "description": "Contactez Clean & Confiance by Maman à Blanquefort pour un devis gratuit de ménage ou de nettoyage : téléphone, WhatsApp ou formulaire. Réponse rapide, sans engagement."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "à bientôt",
+            "titre": "Parlons de votre intérieur",
+            "intro": "Un devis gratuit, une question, une prise de rendez-vous : le plus simple est encore d'échanger. Choisissez le canal qui vous arrange, je réponds vite."
+          }
+        },
+        {
+          "type": "contact",
+          "mode": "demande-intervention",
+          "content": {
+            "titre": "Demander un devis gratuit",
+            "intro": "Décrivez-moi votre logement ou votre local et ce dont vous avez besoin. Je reviens vers vous avec une proposition claire.",
+            "telephone": "07 59 84 80 31",
+            "email": "clean.confiance.bymaman@gmail.com",
+            "whatsapp": "33759848031",
+            "adresse": "51 Rue de Maurian, 33290 Blanquefort",
+            "horaires": [
+              { "jour": "Lundi au samedi", "heures": "7 h – 22 h" },
+              { "jour": "Dimanche", "heures": "Fermé" }
+            ],
+            "form": true,
+            "formMode": "demande-intervention",
+            "formTitre": "Votre demande en quelques mots",
+            "formIntro": "Réponse rapide, sans engagement. Les champs marqués sont nécessaires pour vous recontacter.",
+            "services": [
+              "Ménage à domicile",
+              "Grand ménage",
+              "Nettoyage de vitres",
+              "Remise en état",
+              "Terrasse & extérieur",
+              "Bureaux & locaux pros",
+              "Syndrome de Diogène",
+              "Autre / je ne sais pas encore"
+            ],
+            "villes": [
+              "Blanquefort",
+              "Le Taillan-Médoc",
+              "Le Pian-Médoc",
+              "Parempuyre",
+              "Ludon-Médoc",
+              "Macau",
+              "Bordeaux",
+              "Le Bouscat",
+              "Bruges",
+              "Eysines",
+              "Saint-Médard-en-Jalles",
+              "Mérignac"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    }
+  ]
+}
