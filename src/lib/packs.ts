@@ -284,6 +284,50 @@ export const PACKS: StylePack[] = [
       cta: ["bande"],
     },
   },
+  {
+    id: "signal-graphite",
+    label: "Signal · Structuré & technique",
+    family: "signal",
+    // Alternance sobre blanc / surface (structure discrète) : le rythme vient des
+    // filets et des étiquettes d'index, pas d'une teinte de fond marquée.
+    sectionStrategy: "surface-alt",
+    sectionDivider: "none",
+    ambiance:
+      "Clair mais structuré, éditorial-technique : sans géométrique (Space Grotesk), grille de fins filets, étiquettes d'index (carré d'accent + majuscules espacées), titres adossés à une arête de marque, coins nets, ombres franches et discrètes. Net, opératoire, professionnel — jamais d'image en fond de hero.",
+    fonts: { display: "Space Grotesk", sans: "Inter" },
+    variants: {
+      hero: ["fiche"],
+      services: ["bento"],
+      etapes: ["bande-procedure", "cartes-numerotees"],
+      faq: ["deux-colonnes", "accordeon"],
+      zone: ["liste", "carte"],
+      contenu: ["texte-image"],
+      contact: ["split-form-carte"],
+      cta: ["bande"],
+    },
+  },
+  {
+    id: "epure-clair",
+    label: "Épure · Clair & aéré",
+    family: "epure",
+    // Alternance de fond avec un LAVIS de marque très pâle (chaleur + profondeur,
+    // jamais monotone), sans filet dur : le rythme vient de la teinte.
+    sectionStrategy: "brand-tinted",
+    sectionDivider: "none",
+    ambiance:
+      "Clair, aéré et net : sans géométrique (Plus Jakarta Sans), filets fins, sections plates séparées par des règles, carte de prix encadrée, header à nav centrée sous un liseré de marque. Moderne, élégant, professionnel — jamais d'image en fond de hero.",
+    fonts: { display: "Plus Jakarta Sans", sans: "Inter" },
+    variants: {
+      hero: ["carte"],
+      services: ["grille-cartes"],
+      etapes: ["cartes-numerotees", "timeline-verticale"],
+      faq: ["deux-colonnes", "accordeon"],
+      tarifs: ["grille"],
+      galerie: ["grille"],
+      contact: ["split-form-carte"],
+      cta: ["encadre"],
+    },
+  },
 ];
 
 export const DEFAULT_PACK: StylePackId = "base";

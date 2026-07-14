@@ -539,6 +539,55 @@ input[type="range"] {
   box-shadow: var(--shadow-pop);
 }
 
+/* ==================== Signal · Structuré & technique ==================== */
+[data-pack="signal-graphite"] {
+  --pack-font-display: var(--font-space-grotesk);
+  --pack-font-sans: var(--font-inter);
+  --display-tracking: -0.02em;
+  --display-case: none;
+
+  /* Coins NETS (registre technique) : boutons/cartes/images quasi carrés. */
+  --radius-btn: 0.35rem;
+  --radius-card: 0.4rem;
+  --radius-image: 0.35rem;
+  --border-width: 1px;
+  --radius: 0.4rem;
+
+  /* Ombres franches mais discrètes, teintées froid (graphite). */
+  --shadow-card: 0 16px 40px -22px rgb(15 23 42 / 0.20);
+  --shadow-pop: 0 24px 55px -26px rgb(15 23 42 / 0.24);
+
+  --section-py: 6rem;
+  --content-max: 75rem;
+  --motion-distance: 18px;
+  --motion-duration: 0.55s;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ========================= Épure · Clair & aéré ========================= */
+[data-pack="epure-clair"] {
+  --pack-font-display: var(--font-jakarta);
+  --pack-font-sans: var(--font-inter);
+  --display-tracking: -0.02em;
+  --display-case: none;
+
+  --radius-btn: 0.7rem;
+  --radius-card: 1rem;
+  --radius-image: 1rem;
+  --border-width: 1px;
+  --radius: 0.9rem;
+
+  /* Ombres douces et discrètes (registre net, pas de drop-shadow marqué). */
+  --shadow-card: 0 18px 40px -24px rgb(15 23 42 / 0.16);
+  --shadow-pop: 0 26px 55px -26px rgb(15 23 42 / 0.20);
+
+  --section-py: 6rem;
+  --content-max: 74rem;
+  --motion-distance: 16px;
+  --motion-duration: 0.6s;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 /* ======================= Maison · Premium élégant ======================= */
 [data-pack="maison-premium"] {
   --pack-font-display: var(--font-playfair);

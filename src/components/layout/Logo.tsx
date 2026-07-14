@@ -26,7 +26,10 @@ export function Logo({
   layout?: "inline" | "stacked";
   className?: string;
 }) {
-  const { logo, logoAlt, tagline, logoTwoTone, logoScale } = config.branding;
+  const { logo, logoAlt, logoTwoTone, logoScale, logoTextHidden, logoTaglineHidden } =
+    config.branding;
+  // Tagline masquable indépendamment (garder le nom, retirer la tagline).
+  const tagline = logoTaglineHidden ? undefined : config.branding.tagline;
   const light = variant === "light";
   const stacked = layout === "stacked";
 
@@ -88,6 +91,20 @@ export function Logo({
       <Sparkles className="size-5" strokeWidth={2.4} />
     </span>
   );
+
+  // Logo image contenant DÉJÀ le nom : n'afficher que l'emblème (anti-redondance
+  // + garde-fou anti-débordement horizontal sur mobile). Reste cliquable.
+  if (logoTextHidden && logo) {
+    return (
+      <Link
+        href={href}
+        className={cn("group inline-flex items-center", className)}
+        aria-label={config.entreprise.nom}
+      >
+        {emblem}
+      </Link>
+    );
+  }
 
   const nameClass = cn(
     "font-display tracking-tight",

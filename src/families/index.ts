@@ -3,6 +3,8 @@ import { CLASSIC } from "./classic";
 import { EDITORIAL } from "./editorial";
 import { PRESTIGE } from "./prestige";
 import { LITTORAL } from "./littoral";
+import { EPURE } from "./epure";
+import { SIGNAL } from "./signal";
 import type { FamilyBlock, TemplateFamily } from "./types";
 
 export type { TemplateFamily, FamilyChrome, FamilyBlock } from "./types";
@@ -17,6 +19,8 @@ const FAMILIES: Record<string, TemplateFamily> = {
   editorial: EDITORIAL,
   prestige: PRESTIGE,
   littoral: LITTORAL,
+  epure: EPURE,
+  signal: SIGNAL,
 };
 
 export const DEFAULT_FAMILY = CLASSIC;

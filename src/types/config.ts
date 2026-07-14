@@ -197,6 +197,19 @@ export interface Branding {
    * sites. Ex. 1.35 pour un logo qui rend trop petit à la taille par défaut.
    */
   logoScale?: number;
+  /**
+   * Masque le WORDMARK texte (nom + tagline) dans l'en-tête quand un logo IMAGE
+   * est fourni : on n'affiche alors que l'emblème. À activer lorsque l'image du
+   * logo contient DÉJÀ le nom (sinon on répète le nom et, sur mobile, le bloc
+   * logo+nom+tagline peut déborder la largeur d'écran). Défaut : false.
+   */
+  logoTextHidden?: boolean;
+  /**
+   * Masque la TAGLINE (mais garde le nom) à côté du logo dans l'en-tête. Utile
+   * quand on veut afficher le nom près d'un logo image mais qu'une tagline longue
+   * déborderait sur mobile. Défaut : false.
+   */
+  logoTaglineHidden?: boolean;
   /** Petite ligne sous le nom (ex. "Nettoyage · Nîmes"). */
   tagline?: string;
   /**

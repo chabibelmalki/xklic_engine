@@ -1,0 +1,1915 @@
+{
+  "slug": "clean-habitat-pro",
+  "theme": "fraicheur-teal",
+  "stylePack": "signal-graphite",
+  "branding": {
+    "logoAlt": "Clean Habitat Pro — nettoyage professionnel à Saint-Nazaire",
+    "logoTextHidden": true,
+    "logoScale": 1.35,
+    "tagline": "Nettoyage professionnel · Saint-Nazaire",
+    "colors": {
+      "brand": "#0e7490",
+      "accent": "#f97316",
+      "neutral": "cool"
+    },
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/clean-habitat-pro/logo-7deea682.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/clean-habitat-pro/icon-e3e9e50c.png"
+  },
+  "entreprise": {
+    "nom": "Clean Habitat Pro",
+    "statut": "EI",
+    "siret": "10522984300013",
+    "ape": "81.21Z",
+    "apeLabel": "Nettoyage courant des bâtiments",
+    "tva": {
+      "regime": "franchise"
+    },
+    "siege": "61 route des Fréchets, 44600 Saint-Nazaire"
+  },
+  "seo": {
+    "schemaType": "CleaningService",
+    "ville": "Saint-Nazaire"
+  },
+  "geo": {
+    "lat": 47.2735,
+    "lng": -2.2135
+  },
+  "meta": {
+    "title": "Nettoyage professionnel à Saint-Nazaire",
+    "description": "Bureaux, cabinets médicaux, fin de chantier, vitres, moquettes et parties communes : nettoyage pro à Saint-Nazaire et 30 km autour. Devis gratuit, 7j/7.",
+    "keywords": [
+      "nettoyage professionnel Saint-Nazaire",
+      "entreprise de nettoyage Saint-Nazaire",
+      "nettoyage bureaux Saint-Nazaire",
+      "nettoyage après travaux Saint-Nazaire",
+      "nettoyage vitres Saint-Nazaire",
+      "nettoyage fin de chantier Loire-Atlantique",
+      "nettoyage parties communes Saint-Nazaire",
+      "nettoyage moquette Saint-Nazaire"
+    ]
+  },
+  "forms": {
+    "to": "lailailacleanhabitatpro@gmail.com",
+    "turnstile": true
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Accueil",
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "fiche",
+          "content": {
+            "eyebrow": "Nettoyage professionnel · Saint-Nazaire & estuaire",
+            "titre": "Le nettoyage professionnel",
+            "titreAccent": "qui ne laisse rien au hasard",
+            "accroche": "Bureaux, cabinets médicaux, fins de chantier, vitres, moquettes ou parties communes d'immeuble : à Saint-Nazaire et dans un rayon de 30 km, Clean Habitat Pro remet vos surfaces d'aplomb avec un matériel de professionnel et un résultat contrôlé, du premier passage à la finition.",
+            "trust": [
+              {
+                "icone": "Zap",
+                "label": "Intervention rapide, 7j/7 de 7h à 22h"
+              },
+              {
+                "icone": "ShieldCheck",
+                "label": "Entreprise déclarée, SIRET vérifiable"
+              },
+              {
+                "icone": "SprayCan",
+                "label": "Matériel et produits professionnels"
+              },
+              {
+                "icone": "FileCheck",
+                "label": "Devis gratuit, sans engagement"
+              }
+            ],
+            "card": {
+              "label": "Prestation sur mesure",
+              "prix": "Sur devis",
+              "points": [
+                "Chiffrage offert, souvent sous 24 à 48 h",
+                "Créneaux avant l'ouverture, le soir ou le samedi",
+                "Monobrosse, injection-extraction, perches à vitres",
+                "Saint-Nazaire, presqu'île et rive sud de la Loire"
+              ]
+            },
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Voir nos prestations",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "bento",
+          "content": {
+            "eyebrow": "Nos prestations",
+            "titre": "Sept spécialités, un seul interlocuteur",
+            "intro": "Du grand nettoyage ponctuel à l'entretien récurrent de vos communs, chaque prestation a sa méthode, son matériel et sa fiche dédiée. Ouvrez celle qui correspond à votre besoin.",
+            "items": [
+              {
+                "nom": "Grand nettoyage en profondeur",
+                "description": "Quand l'entretien courant ne suffit plus : dégraissage des cuisines, détartrage des sanitaires, dépoussiérage intégral des volumes et remise à niveau pièce par pièce.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
+              },
+              {
+                "nom": "Nettoyage après travaux",
+                "description": "Poussière de chantier, traces de plâtre, de colle et de peinture après une rénovation ou une construction : des lieux prêts à occuper.",
+                "href": "/nettoyage-apres-travaux",
+                "icone": "HardHat"
+              },
+              {
+                "nom": "Nettoyage de fin de bail",
+                "description": "Locataire sortant ou bailleur : remise au propre d'un logement vidé avant l'état des lieux de sortie.",
+                "href": "/nettoyage-fin-de-bail",
+                "icone": "KeyRound"
+              },
+              {
+                "nom": "Vitres, vérandas & terrasses",
+                "description": "Vitrages, vérandas, garde-corps et sols extérieurs rendus limpides, sans traces ni voile, dedans comme dehors.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Tapis & moquettes",
+                "description": "Injection-extraction, détachage ciblé et séchage maîtrisé pour raviver les fibres sans les fatiguer.",
+                "href": "/nettoyage-tapis-moquette",
+                "icone": "Layers"
+              },
+              {
+                "nom": "Bureaux & cabinets médicaux",
+                "description": "Espaces de travail et lieux de soin entretenus avec discrétion et le niveau d'hygiène qu'ils exigent.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              },
+              {
+                "nom": "Cages d'escalier & parties communes",
+                "description": "Halls, escaliers, ascenseurs et locaux techniques : un passage régulier qui valorise l'immeuble et rassure les occupants.",
+                "href": "/parties-communes",
+                "icone": "Building"
+              }
+            ],
+            "cta": {
+              "label": "Vérifier que votre secteur est couvert",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "bande-procedure",
+          "content": {
+            "eyebrow": "Notre méthode",
+            "titre": "De l'appel aux lieux rendus nets",
+            "items": [
+              {
+                "icone": "Phone",
+                "titre": "Prise de contact",
+                "texte": "Vous décrivez les surfaces, le type de local et l'échéance à tenir, par téléphone, WhatsApp ou formulaire."
+              },
+              {
+                "icone": "ClipboardCheck",
+                "titre": "Devis chiffré",
+                "texte": "Vous recevez une estimation gratuite, calée sur la réalité du terrain, que vous validez sans aucune obligation."
+              },
+              {
+                "icone": "CalendarClock",
+                "titre": "Planification",
+                "texte": "On fixe un créneau qui n'interrompt pas votre activité : avant l'ouverture, en soirée ou le week-end."
+              },
+              {
+                "icone": "CheckCheck",
+                "titre": "Contrôle final",
+                "texte": "Chaque zone est repassée au crible avant restitution des lieux : rien ne doit rester à reprendre."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "Saint-Nazaire et 30 km à la ronde",
+            "intro": "Notre base est à Saint-Nazaire ; de là, nous couvrons toute la presqu'île guérandaise, l'estuaire et les marais de Brière, ainsi que la rive sud de la Loire par le pont. Votre commune n'est pas citée ? Un appel, et l'on regarde ensemble.",
+            "rayonKm": 30,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=-2.55%2C47.10%2C-1.85%2C47.42&layer=mapnik&marker=47.2735%2C-2.2135",
+            "zones": [
+              {
+                "region": "Saint-Nazaire & presqu'île guérandaise",
+                "principale": "Saint-Nazaire",
+                "villes": [
+                  "Saint-Nazaire",
+                  "Pornichet",
+                  "Saint-André-des-Eaux",
+                  "La Baule-Escoublac",
+                  "Guérande",
+                  "Le Pouliguen",
+                  "Batz-sur-Mer",
+                  "Le Croisic",
+                  "La Turballe"
+                ]
+              },
+              {
+                "region": "Estuaire & marais de Brière",
+                "principale": "Montoir-de-Bretagne",
+                "villes": [
+                  "Montoir-de-Bretagne",
+                  "Trignac",
+                  "Donges",
+                  "Saint-Malo-de-Guersac",
+                  "Saint-Joachim",
+                  "Besné",
+                  "Pontchâteau",
+                  "Savenay",
+                  "Prinquiau"
+                ]
+              },
+              {
+                "region": "Rive sud de la Loire — pays de Retz",
+                "principale": "Saint-Brevin-les-Pins",
+                "villes": [
+                  "Saint-Brevin-les-Pins",
+                  "Saint-Père-en-Retz",
+                  "Corsept",
+                  "Paimbœuf",
+                  "Frossay",
+                  "Saint-Michel-Chef-Chef"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Ce qu'on nous demande souvent",
+            "items": [
+              {
+                "question": "Travaillez-vous pour les entreprises comme pour les particuliers ?",
+                "reponse": "Les deux. Nous entretenons aussi bien les bureaux, cabinets médicaux et parties communes d'immeubles que les logements de particuliers : grand nettoyage, vitres, moquettes ou remise en état après des travaux. Le devis s'ajuste au local et à la fréquence."
+              },
+              {
+                "question": "Sous combien de temps pouvez-vous intervenir ?",
+                "reponse": "Selon le planning et le degré d'urgence, souvent sous quelques jours — et plus vite quand une échéance l'impose : livraison de chantier, état des lieux, réouverture d'un local. Indiquez-nous la date à tenir dès le premier échange."
+              },
+              {
+                "question": "Fournissez-vous le matériel et les produits ?",
+                "reponse": "Oui, nous arrivons entièrement équipés : monobrosse, machine à injection-extraction, perches télescopiques pour les vitres et produits professionnels adaptés à chaque surface. Si votre site impose des produits particuliers, en milieu médical par exemple, nous nous y conformons."
+              },
+              {
+                "question": "Pouvez-vous travailler hors des heures d'ouverture ?",
+                "reponse": "Oui. Pour ne pas gêner votre activité, nous passons dès l'aube, en fin de journée ou pendant le week-end : notre amplitude s'étend de 7h à 22h, sept jours sur sept."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un local ou des surfaces à remettre au propre ?",
+            "sousTitre": "Décrivez-nous les lieux et l'échéance à tenir : vous recevez un chiffrage gratuit et sans obligation, souvent sous 24 à 48 heures.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            },
+            "lien": {
+              "label": "ou écrivez-nous sur WhatsApp →",
+              "href": "https://wa.me/33768546569"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Prestations",
+      "meta": {
+        "title": "Prestations de nettoyage à Saint-Nazaire",
+        "description": "Grand nettoyage, après travaux, vitres, moquettes, bureaux, parties communes : chaque prestation détaillée, avec sa méthode et ce qu'elle couvre, à Saint-Nazaire."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Le catalogue, fiche par fiche",
+            "titre": "Sept prestations, sept fiches détaillées",
+            "intro": "Cette page sert de sommaire. Chaque prestation ouvre une fiche complète : ce qu'elle couvre, comment se déroule l'intervention et pour quels lieux elle est pensée. Un doute entre deux formules ? Le repère plus bas éclaire les cas les plus courants, et au moindre flottement un appel suffit.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "bento",
+          "content": {
+            "eyebrow": "Tout le nettoyage, un seul prestataire",
+            "titre": "Nos prestations en détail",
+            "intro": "Chaque tuile ouvre la fiche de la prestation : lieux concernés, déroulé d'une intervention, matériel employé et questions fréquentes.",
+            "items": [
+              {
+                "nom": "Grand nettoyage en profondeur",
+                "description": "La fiche détaille notre progression pièce par pièce, du dégraissage au détartrage, et ce qu'il est réaliste d'obtenir selon l'état de départ.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
+              },
+              {
+                "nom": "Nettoyage après travaux",
+                "description": "Pour qui livre un chantier neuf ou rénové : les résidus traités, l'enchaînement des passes et la bonne entente avec vos autres corps de métier.",
+                "href": "/nettoyage-apres-travaux",
+                "icone": "HardHat"
+              },
+              {
+                "nom": "Nettoyage de fin de bail",
+                "description": "La méthode de remise au propre d'un logement à restituer, ce que scrute l'état des lieux de sortie et ce qu'il faut préparer.",
+                "href": "/nettoyage-fin-de-bail",
+                "icone": "KeyRound"
+              },
+              {
+                "nom": "Vitres, vérandas & terrasses",
+                "description": "Technique du mouillé-raclette aux perches en hauteur, traitement des vérandas et des sols extérieurs : le déroulé complet.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Tapis & moquettes",
+                "description": "Le principe de l'injection-extraction, le détachage préalable et les délais de séchage à prévoir avant de réoccuper les lieux.",
+                "href": "/nettoyage-tapis-moquette",
+                "icone": "Layers"
+              },
+              {
+                "nom": "Bureaux & cabinets médicaux",
+                "description": "Fréquences d'entretien, gestion des accès en dehors des heures, exigences d'hygiène propres aux lieux de soin : tout y est.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              },
+              {
+                "nom": "Cages d'escalier & parties communes",
+                "description": "Le contenu d'un passage type en copropriété, du hall aux locaux techniques, et le rythme conseillé selon la fréquentation.",
+                "href": "/parties-communes",
+                "icone": "Building"
+              }
+            ],
+            "cta": {
+              "label": "Voir notre zone d'intervention — 30 km autour de Saint-Nazaire",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Bien s'orienter",
+            "titre": "Quelle prestation pour votre situation ?",
+            "paragraphes": [
+              "Le point de départ, c'est la nature des lieux. Un local d'activité — bureau, cabinet, commerce — appelle un entretien régulier, calibré sur sa fréquentation et ses contraintes d'hygiène. Un immeuble d'habitation relève des parties communes, avec des passages planifiés qui gardent halls et escaliers présentables. Et un logement ou un espace qui a dérivé, encrassé ou poussiéreux, demande un grand nettoyage ponctuel pour repartir sur une base saine.",
+              "Vient ensuite l'événement déclencheur. Des travaux qui s'achèvent ou un bail qui se termine orientent vers la remise en état après chantier, où la poussière fine et les résidus de plâtre imposent un matériel dédié. Un besoin ciblé — des vitres qui ont perdu leur transparence, une moquette marquée — se traite en prestation à part entière, sans qu'il soit nécessaire d'engager tout le reste. Au moindre doute, décrivez-nous les lieux : on vous dira franchement laquelle est la bonne."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "bande-procedure",
+          "content": {
+            "eyebrow": "Un cadre commun",
+            "titre": "Le même sérieux, quelle que soit la prestation",
+            "items": [
+              {
+                "icone": "Phone",
+                "titre": "Votre demande",
+                "texte": "Vous nous décrivez les lieux, la surface et le résultat attendu."
+              },
+              {
+                "icone": "ClipboardCheck",
+                "titre": "Devis chiffré",
+                "texte": "Une estimation gratuite, précise, sans obligation de votre part."
+              },
+              {
+                "icone": "CalendarClock",
+                "titre": "Créneau calé",
+                "texte": "Un horaire ponctuel ou récurrent qui respecte votre activité."
+              },
+              {
+                "icone": "CheckCheck",
+                "titre": "Lieux vérifiés",
+                "texte": "Un contrôle zone par zone avant de vous rendre les clés."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un besoin précis en tête ?",
+            "sousTitre": "Dites-nous les surfaces et l'échéance : nous établissons un chiffrage gratuit, clair et rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            },
+            "lien": {
+              "label": "ou écrivez-nous sur WhatsApp →",
+              "href": "https://wa.me/33768546569"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "grand-nettoyage",
+      "label": "Grand nettoyage",
+      "navHidden": true,
+      "meta": {
+        "title": "Grand nettoyage à Saint-Nazaire",
+        "description": "Nettoyage en profondeur d'un logement ou d'un local encrassé à Saint-Nazaire et 30 km autour : dégraissage, détartrage, dépoussiérage intégral. Devis gratuit.",
+        "keywords": [
+          "grand nettoyage Saint-Nazaire",
+          "nettoyage en profondeur Saint-Nazaire",
+          "nettoyage complet logement Loire-Atlantique",
+          "dégraissage cuisine Saint-Nazaire"
+        ]
+      },
+      "service": {
+        "name": "Grand nettoyage",
+        "description": "Nettoyage en profondeur d'un logement ou d'un local qui a dépassé le stade de l'entretien courant, à Saint-Nazaire et alentour.",
+        "serviceType": "Grand nettoyage en profondeur"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Quand l'entretien courant ne suffit plus",
+            "titre": "Grand nettoyage à Saint-Nazaire",
+            "intro": "Un logement laissé longtemps sans soin, un local repris dans un état poussiéreux, une cuisine ou des sanitaires très encrassés : le grand nettoyage repart de zéro pour rendre des lieux sains et présentables. Pour une remise au propre liée à des travaux, voyez plutôt notre prestation après travaux.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Grand nettoyage"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Ce que couvre l'intervention",
+            "titre": "Une remise à niveau, pièce par pièce",
+            "paragraphes": [
+              "Le grand nettoyage s'attaque à ce que l'entretien hebdomadaire ne rattrape plus. On commence par le haut — plafonds, luminaires, dessus de meubles et d'armoires — pour faire tomber la poussière avant de traiter les surfaces basses. Les murs et interrupteurs sont dégraissés, les plinthes et radiateurs dépoussiérés, les vitrages nettoyés côté intérieur, et les sols lavés en profondeur, chaque revêtement recevant le produit qui lui convient.",
+              "Les points sensibles reçoivent un soin particulier. En cuisine, on dégraisse la crédence, le plan de travail, la hotte et les façades de meubles ; côté salle d'eau, on détartre la robinetterie, la douche, les carrelages et les sanitaires, puis on désinfecte. Le mobilier est essuyé, les poubelles vidées et nettoyées, les recoins habituellement oubliés passés en revue. À la fin, on refait le tour des lieux avec vous : le résultat doit être net partout, sans zone laissée de côté.",
+              "Cette prestation s'adresse autant à un particulier qu'à un professionnel : appartement repris après une longue occupation, maison à rafraîchir avant une vente ou une location, local commercial resté fermé, bureau à assainir. Le chiffrage dépend de la superficie, du degré d'encrassement et des équipements en place ; il est établi gratuitement, après description ou visite rapide des lieux."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "bande-procedure",
+          "content": {
+            "titre": "Comment se déroule votre grand nettoyage",
+            "items": [
+              {
+                "icone": "ClipboardCheck",
+                "titre": "État des lieux",
+                "texte": "On mesure la surface et le niveau d'encrassement pour un chiffrage juste, offert et sans suite obligée."
+              },
+              {
+                "icone": "SprayCan",
+                "titre": "Traitement de haut en bas",
+                "texte": "Plafonds, murs, vitrages puis sols : chaque pièce est reprise dans l'ordre, points gras et calcaire compris."
+              },
+              {
+                "icone": "CheckCheck",
+                "titre": "Vérification finale",
+                "texte": "On refait le tour à vos côtés pour ne laisser aucune surface en suspens avant de rendre les lieux."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Quelle différence entre grand nettoyage et entretien régulier ?",
+                "reponse": "L'entretien régulier maintient un état déjà correct, à intervalle rapproché. Le grand nettoyage, lui, est une remise à niveau ponctuelle : il rattrape un retard d'entretien, les dépôts anciens et les recoins oubliés, pour ramener les lieux à un état sain d'où repartir."
+              },
+              {
+                "question": "Intervenez-vous sur des locaux professionnels comme sur des logements ?",
+                "reponse": "Oui, dans les deux cas. Un appartement à rafraîchir, un local commercial resté fermé, un bureau encrassé ou une maison à préparer pour une vente : la méthode s'adapte à la nature des lieux et au type de surfaces à traiter."
+              },
+              {
+                "question": "Combien de temps prévoir pour un grand nettoyage ?",
+                "reponse": "Cela dépend de la surface, du nombre de pièces et de l'état de départ. Nous vous donnons une durée indicative au moment du devis, et adaptons l'équipe pour tenir votre échéance quand la date est serrée."
+              },
+              {
+                "question": "Faut-il vider les lieux avant votre passage ?",
+                "reponse": "Non, ce n'est pas indispensable. Dégager les plans de travail et le sol des objets fragiles nous fait gagner du temps, mais nous nettoyons autour du mobilier en place. Dites-nous simplement s'il y a des surfaces délicates à ménager."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "bento",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Nettoyage après travaux",
+                "description": "Les lieux sortent d'un chantier plutôt que d'un simple manque d'entretien ? La poussière fine a sa prestation dédiée.",
+                "href": "/nettoyage-apres-travaux",
+                "icone": "HardHat"
+              },
+              {
+                "nom": "Vitres, vérandas & terrasses",
+                "description": "Profitez du grand nettoyage pour retrouver des vitrages limpides, à l'intérieur comme à l'extérieur.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Tapis & moquettes",
+                "description": "Sols textiles marqués ? On les traite par injection-extraction pour parfaire la remise au propre.",
+                "href": "/nettoyage-tapis-moquette",
+                "icone": "Layers"
+              }
+            ],
+            "cta": {
+              "label": "Lieux à reprendre hors Saint-Nazaire ? Vérifiez notre périmètre",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un grand nettoyage à Saint-Nazaire à planifier ?",
+            "sousTitre": "Chiffrage gratuit et sans engagement, établi d'après vos surfaces. Réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-apres-travaux",
+      "label": "Après travaux",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage après travaux à Saint-Nazaire",
+        "description": "Après un chantier ou avant restitution d'un bail à Saint-Nazaire : poussière fine, plâtre, colle et peinture éliminés pour des lieux prêts à occuper. Devis gratuit.",
+        "keywords": [
+          "nettoyage après travaux Saint-Nazaire",
+          "nettoyage fin de chantier Saint-Nazaire",
+          "nettoyage après rénovation Loire-Atlantique",
+          "nettoyage fin de bail Saint-Nazaire"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage après travaux & fin de bail",
+        "description": "Nettoyage complet après un chantier, une rénovation ou avant restitution d'un logement, à Saint-Nazaire et alentour.",
+        "serviceType": "Nettoyage de fin de chantier"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Fin de chantier, rénovation & livraison neuf",
+            "titre": "Nettoyage après travaux à Saint-Nazaire",
+            "intro": "Un chantier qui s'achève laisse toujours sa signature : poussière fine partout, éclaboussures de peinture, résidus de colle, plâtre séché sur les sols. Avant une livraison de logement neuf, la fin d'une rénovation ou l'ouverture d'un local, nous débarrassons les lieux de toutes ces traces pour les rendre nets et prêts à occuper.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Après travaux"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "bande-procedure",
+          "content": {
+            "eyebrow": "Le déroulé",
+            "titre": "Un chantier propre en trois temps",
+            "items": [
+              {
+                "icone": "ClipboardCheck",
+                "titre": "Repérage",
+                "texte": "On évalue le volume de poussière et les résidus présents pour caler le matériel et chiffrer gratuitement."
+              },
+              {
+                "icone": "SprayCan",
+                "titre": "Décapage fin",
+                "texte": "Aspiration de la poussière, retrait des taches de plâtre, colle et peinture, dégraissage des menuiseries neuves."
+              },
+              {
+                "icone": "CheckCheck",
+                "titre": "Finition & remise",
+                "texte": "Vitrages, sols et sanitaires terminés, on vérifie chaque pièce avant de livrer des lieux prêts à occuper."
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Ce que nous traitons",
+            "titre": "La poussière de chantier a ses règles",
+            "paragraphes": [
+              "La poussière issue d'un chantier n'a rien de commun avec la poussière domestique : très fine, elle s'infiltre partout et se redépose plusieurs fois avant d'être maîtrisée. C'est pourquoi nous procédons du haut vers le bas et en plusieurs passes, avec des aspirateurs adaptés, plutôt que de simplement déplacer la poussière d'une surface à l'autre. Les menuiseries neuves, les plinthes, les radiateurs et les grilles de ventilation sont repris un à un.",
+              "Les résidus collants demandent un traitement ciblé. Points de peinture sur les vitres et les sols, traces de colle de revêtement, projections de plâtre ou d'enduit, étiquettes et films de protection oubliés : chaque type de résidu a sa méthode, choisie pour décoller sans rayer ni marquer les supports neufs. Les vitrages sont ensuite refaits pour retrouver toute leur transparence, et les sanitaires flambant installés sont détartrés et désinfectés.",
+              "Cette prestation s'adresse à ceux qui sortent d'un chantier : promoteurs et maîtres d'ouvrage livrant un logement neuf, artisans achevant une rénovation, propriétaires et professionnels rouvrant un local remis à neuf. Nous nous coordonnons volontiers avec vos entreprises pour intervenir une fois le dernier corps de métier parti, au moment juste. Si votre besoin est la remise au propre d'un logement à restituer en fin de location, sans travaux, c'est notre prestation de fin de bail qui s'applique."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Quand faut-il nous faire intervenir sur un chantier ?",
+                "reponse": "Une fois le dernier corps de métier passé et les gravats évacués. Nous intervenons sur des lieux vidés de leurs déchets de chantier ; si l'évacuation reste à faire, signalez-le, nous en tiendrons compte dans l'organisation et le devis."
+              },
+              {
+                "question": "Retirez-vous les taches de peinture et de colle sur les vitres et les sols ?",
+                "reponse": "Oui, c'est le cœur de cette prestation. Points de peinture, traces de colle, plâtre séché, films de protection : chaque résidu est traité avec la méthode qui décolle sans abîmer les supports neufs."
+              },
+              {
+                "question": "Nettoyez-vous aussi les chantiers de locaux professionnels et de commerces ?",
+                "reponse": "Oui. Bureaux, commerces, cabinets et locaux d'activité qui sortent de travaux relèvent de cette prestation : nous retirons la poussière fine et les résidus de chantier pour une ouverture ou une remise en service dans un local impeccable."
+              },
+              {
+                "question": "Vous coordonnez-vous avec les artisans encore présents ?",
+                "reponse": "Nous nous calons sur la fin réelle des travaux. Donnez-nous la date de sortie du dernier intervenant : nous programmons notre passage juste après, pour éviter qu'un nouveau chantier ne redépose de la poussière derrière nous."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Chantiers suivis à Saint-Nazaire et jusqu'à 30 km",
+            "intro": "Presqu'île, estuaire et rive sud de la Loire : nous rejoignons vos chantiers dans tout le bassin nazairien.",
+            "rayonKm": 30,
+            "zones": [
+              {
+                "region": "Saint-Nazaire & presqu'île",
+                "principale": "Saint-Nazaire",
+                "villes": [
+                  "Saint-Nazaire",
+                  "Pornichet",
+                  "La Baule-Escoublac",
+                  "Guérande",
+                  "Saint-André-des-Eaux",
+                  "Le Pouliguen"
+                ]
+              },
+              {
+                "region": "Estuaire & rive sud",
+                "principale": "Montoir-de-Bretagne",
+                "villes": [
+                  "Montoir-de-Bretagne",
+                  "Trignac",
+                  "Donges",
+                  "Savenay",
+                  "Saint-Brevin-les-Pins",
+                  "Saint-Père-en-Retz"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "bento",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Nettoyage de fin de bail",
+                "description": "Un logement à restituer sans lien avec des travaux ? La remise au propre locative a sa fiche dédiée.",
+                "href": "/nettoyage-fin-de-bail",
+                "icone": "KeyRound"
+              },
+              {
+                "nom": "Grand nettoyage en profondeur",
+                "description": "Au-delà de la poussière de chantier, une remise à niveau complète d'un local repris ou resté fermé.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
+              },
+              {
+                "nom": "Vitres, vérandas & terrasses",
+                "description": "Points de peinture et voile de chantier retirés des vitrages pour une transparence parfaite.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              }
+            ],
+            "cta": {
+              "label": "Chantier hors Saint-Nazaire ? Vérifiez notre secteur",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un chantier à livrer propre à Saint-Nazaire ?",
+            "sousTitre": "Donnez-nous la surface et la date de fin des travaux : chiffrage gratuit, intervention calée sur votre livraison.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-fin-de-bail",
+      "label": "Fin de bail",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de fin de bail à Saint-Nazaire",
+        "description": "Locataire sortant ou bailleur : remise au propre d'un logement avant l'état des lieux de sortie, à Saint-Nazaire et 30 km autour. Devis gratuit, réponse rapide.",
+        "keywords": [
+          "nettoyage fin de bail Saint-Nazaire",
+          "remise en état locative Saint-Nazaire",
+          "nettoyage état des lieux de sortie Loire-Atlantique",
+          "ménage fin de location Saint-Nazaire"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage de fin de bail",
+        "description": "Remise au propre d'un logement avant restitution en fin de location, à Saint-Nazaire et alentour.",
+        "serviceType": "Nettoyage de fin de bail"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Restitution de logement & état des lieux de sortie",
+            "titre": "Nettoyage de fin de bail à Saint-Nazaire",
+            "intro": "Rendre un logement en fin de location se joue souvent sur la propreté : c'est elle que compare l'état des lieux de sortie, et elle qui pèse sur le dépôt de garantie. Que vous soyez locataire sur le départ ou propriétaire récupérant votre bien, nous remettons le logement au propre de fond en comble avant la remise des clés.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Prestations", "href": "/services" },
+              { "label": "Fin de bail" }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Ce que couvre la remise au propre",
+            "titre": "Un logement restitué dans les règles",
+            "paragraphes": [
+              "L'état des lieux de sortie confronte le logement à celui décrit à l'entrée. Sur le volet propreté, la moindre cuisine grasse ou salle d'eau entartrée peut justifier une retenue sur le dépôt de garantie. Notre passage vise précisément ces points : nous reprenons le logement pièce par pièce pour qu'il soit rendu dans un état net, comparable à celui d'une entrée dans les lieux, et que la restitution se passe sans accroc.",
+              "Concrètement, la cuisine est dégraissée dans le détail — four, plaques, hotte, façades et intérieur des placards —, la salle de bains et les WC sont détartrés puis désinfectés, les sols lavés selon leur nature, les vitres et leurs encadrements nettoyés. On ne néglige ni les traces sur les murs et les interrupteurs, ni les plinthes, les radiateurs et les grilles de ventilation, souvent scrutés lors de l'état des lieux. Le logement se traite de préférence vide, une fois les meubles sortis.",
+              "La prestation s'adresse au locataire qui veut partir l'esprit léger, comme au bailleur, à l'agence ou au gestionnaire qui prépare une relocation rapide. Nous calons l'intervention sur la date de votre état des lieux et chiffrons gratuitement d'après la superficie et le niveau de saleté à reprendre. À noter : un bien qui sort de travaux relève, lui, du nettoyage après chantier, traité sur une fiche à part."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "bande-procedure",
+          "content": {
+            "titre": "Comment se déroule votre fin de bail",
+            "items": [
+              {
+                "icone": "CalendarClock",
+                "titre": "Calage sur l'échéance",
+                "texte": "Vous nous donnez la date de l'état des lieux ; on programme le passage juste avant, logement idéalement vidé."
+              },
+              {
+                "icone": "SprayCan",
+                "titre": "Reprise complète",
+                "texte": "Cuisine dégraissée, sanitaires détartrés, sols, vitres, murs et grilles : chaque point examiné en sortie est traité."
+              },
+              {
+                "icone": "KeyRound",
+                "titre": "Clés rendues sereinement",
+                "texte": "Le logement est net et présentable, prêt pour la comparaison avec l'état d'entrée et pour une relocation immédiate."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Ce nettoyage aide-t-il à récupérer le dépôt de garantie ?",
+                "reponse": "Il met toutes les chances de votre côté sur le volet propreté, l'un des motifs de retenue les plus fréquents. Un logement rendu net, comparable à l'état d'entrée, retire au bailleur l'argument d'un ménage à refaire ; nous ne pouvons en revanche rien sur l'usure normale ou les dégradations matérielles."
+              },
+              {
+                "question": "Le logement doit-il être vide avant votre venue ?",
+                "reponse": "C'est préférable : un logement vidé de ses meubles permet de traiter sols, plinthes et placards sans rien contourner, pour un résultat complet. Si quelques éléments restent en place, signalez-le à l'avance, nous adaptons l'intervention en conséquence."
+              },
+              {
+                "question": "Travaillez-vous pour le locataire comme pour le propriétaire ?",
+                "reponse": "Oui, indifféremment. Locataire qui rend son logement, propriétaire ou agence qui le récupère avant de relouer : la prestation reste la même. Nous nous calons simplement sur la date de l'état des lieux ou de la prochaine entrée."
+              },
+              {
+                "question": "Quelle différence avec le nettoyage après travaux ?",
+                "reponse": "La fin de bail concerne un logement habité qu'on restitue : graisse de cuisine, calcaire, poussière du quotidien. Le nettoyage après travaux traite, lui, les résidus d'un chantier — plâtre, peinture, colle. Si votre logement cumule les deux, précisez-le, nous ajustons le devis."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "bento",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Nettoyage après travaux",
+                "description": "Le logement sort d'une rénovation avant relocation ? Les résidus de chantier ont leur prestation dédiée.",
+                "href": "/nettoyage-apres-travaux",
+                "icone": "HardHat"
+              },
+              {
+                "nom": "Grand nettoyage en profondeur",
+                "description": "Logement resté longtemps sans entretien ? Une remise à niveau complète avant de le remettre sur le marché.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
+              },
+              {
+                "nom": "Vitres, vérandas & terrasses",
+                "description": "Vitrages rendus limpides, un point que l'état des lieux de sortie ne manque jamais de relever.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              }
+            ],
+            "cta": {
+              "label": "Logement à rendre hors Saint-Nazaire ? Voir notre secteur",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un logement à restituer à Saint-Nazaire ?",
+            "sousTitre": "Donnez-nous la date de votre état des lieux et la surface : chiffrage gratuit, intervention calée sur votre départ.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Vitres & vérandas",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de vitres à Saint-Nazaire",
+        "description": "Vitres, vérandas, garde-corps et terrasses rendus limpides à Saint-Nazaire et 30 km autour, sans traces ni voile, dedans comme dehors. Devis gratuit.",
+        "keywords": [
+          "nettoyage vitres Saint-Nazaire",
+          "lavage de vitres Saint-Nazaire",
+          "nettoyage véranda Loire-Atlantique",
+          "nettoyage terrasse Saint-Nazaire"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage de vitres, vérandas & terrasses",
+        "description": "Lavage des vitrages, vérandas, garde-corps et sols extérieurs à Saint-Nazaire et alentour, à l'intérieur comme à l'extérieur.",
+        "serviceType": "Nettoyage de vitres"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Vitrages, vérandas, garde-corps & sols extérieurs",
+            "titre": "Nettoyage de vitres à Saint-Nazaire",
+            "intro": "Sur le littoral nazairien, embruns salés et poussières laissent vite un voile terne sur les vitres. Nous rendons vos vitrages parfaitement transparents, dedans comme dehors, et prolongeons le soin aux vérandas, aux garde-corps vitrés et aux terrasses qui les accompagnent.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Vitres & vérandas"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Notre façon de faire",
+            "titre": "Des vitres nettes, sans trace ni auréole",
+            "paragraphes": [
+              "Une vitre propre ne se juge pas au produit employé mais au geste. Nous travaillons au mouillage puis à la raclette, en essuyant les bords, pour un rendu sans coulure ni trace de microfibre. Les encadrements, feuillures et rebords sont nettoyés au passage, car c'est souvent là que s'accumulent la poussière et les traces qui salissent à nouveau le vitrage quelques jours plus tard. En hauteur, une perche télescopique permet d'atteindre les surfaces difficiles en sécurité, sans échafaudage.",
+              "Les vérandas concentrent plusieurs difficultés à la fois : grandes surfaces vitrées, toiture souvent inaccessible du dedans, profilés qui retiennent la saleté, joints à ménager. Nous traitons l'ensemble — panneaux, structure et sol — pour restituer une pièce lumineuse. Le même soin s'applique aux garde-corps vitrés des balcons et aux baies, particulièrement exposés au sel marin dans le secteur de la presqu'île.",
+              "Cette prestation s'étend aux terrasses et sols extérieurs qui bordent ces surfaces vitrées : dalles, margelles, sols de balcon débarrassés des mousses, dépôts verts et salissures incrustées. Réalisée seule, en complément d'un grand nettoyage ou selon un rythme régulier pour une vitrine ou une véranda professionnelle, elle est chiffrée gratuitement d'après le nombre et l'accessibilité des surfaces."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Nettoyez-vous les vitres à l'intérieur et à l'extérieur ?",
+                "reponse": "Oui, les deux faces sont traitées : c'est indispensable pour un rendu réellement transparent. Pour les faces extérieures en hauteur, nous utilisons une perche télescopique qui permet d'atteindre les vitrages en sécurité, sans avoir à installer d'échafaudage."
+              },
+              {
+                "question": "Traitez-vous aussi la toiture et la structure d'une véranda ?",
+                "reponse": "Oui. Une véranda se nettoie dans son ensemble : panneaux latéraux, toiture accessible, profilés et sol. Nous ménageons les joints et les matériaux, et vous signalons en amont toute surface qui demanderait une intervention spécifique."
+              },
+              {
+                "question": "À quelle fréquence faire nettoyer ses vitres près du littoral ?",
+                "reponse": "Sur la côte, le sel et les embruns encrassent plus vite qu'à l'intérieur des terres. Pour une vitrine ou une véranda très exposée, un passage régulier — mensuel ou trimestriel — garde des surfaces nettes ; pour un particulier, un à deux nettoyages par an suffisent souvent."
+              },
+              {
+                "question": "Le nettoyage des terrasses est-il compris ?",
+                "reponse": "Il peut l'être, à la demande. Nous traitons les sols extérieurs attenants — dalles, margelles, sols de balcon — en retirant mousses et dépôts verts. Précisez ces surfaces lors du devis pour qu'elles soient intégrées au chiffrage."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "bento",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Grand nettoyage en profondeur",
+                "description": "Des vitres limpides prennent tout leur sens dans un intérieur repris de fond en comble.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
+              },
+              {
+                "nom": "Bureaux & cabinets médicaux",
+                "description": "Vitrines et cloisons vitrées de vos locaux entretenues au rythme qui vous convient.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              },
+              {
+                "nom": "Cages d'escalier & parties communes",
+                "description": "Baies des halls et fenêtres de paliers intégrées aux passages en copropriété.",
+                "href": "/parties-communes",
+                "icone": "Building"
+              }
+            ],
+            "cta": {
+              "label": "Vitres à faire hors Saint-Nazaire ? Vérifiez notre secteur",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Des vitres ou une véranda à raviver à Saint-Nazaire ?",
+            "sousTitre": "Comptez les surfaces, indiquez leur accès : nous chiffrons gratuitement et intervenons proprement.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-tapis-moquette",
+      "label": "Tapis & moquettes",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage tapis & moquette à Saint-Nazaire",
+        "description": "Injection-extraction, détachage et séchage maîtrisé pour tapis et moquettes à Saint-Nazaire et 30 km autour : fibres ravivées sans être fatiguées. Devis gratuit.",
+        "keywords": [
+          "nettoyage moquette Saint-Nazaire",
+          "nettoyage tapis Saint-Nazaire",
+          "injection extraction moquette Loire-Atlantique",
+          "shampoing moquette bureaux Saint-Nazaire"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage de tapis & moquettes",
+        "description": "Nettoyage en profondeur des tapis et moquettes par injection-extraction, à Saint-Nazaire et alentour.",
+        "serviceType": "Nettoyage de moquette"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Sols textiles ravivés en profondeur",
+            "titre": "Nettoyage de tapis et moquette à Saint-Nazaire",
+            "intro": "Une moquette de bureau piétinée, un tapis marqué par le passage ou une tache tenace : les sols textiles retiennent poussières et salissures que l'aspirateur ne suffit plus à déloger. Par injection-extraction, nous nettoyons la fibre en profondeur et lui rendons couleur et fraîcheur.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Tapis & moquettes"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "bande-procedure",
+          "content": {
+            "eyebrow": "Le process",
+            "titre": "Comment nous traitons vos sols textiles",
+            "items": [
+              {
+                "icone": "ClipboardCheck",
+                "titre": "Diagnostic de la fibre",
+                "texte": "On identifie la matière et les taches pour choisir produits et dosage sans risque pour le revêtement."
+              },
+              {
+                "icone": "Droplets",
+                "titre": "Détachage ciblé",
+                "texte": "Les marques localisées sont prétraitées avant le passage machine, là où l'aspirateur reste impuissant."
+              },
+              {
+                "icone": "SprayCan",
+                "titre": "Injection-extraction",
+                "texte": "La solution est injectée puis aspirée aussitôt, entraînant salissures et humidité pour un séchage maîtrisé."
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "La méthode en détail",
+            "titre": "L'injection-extraction, plutôt qu'un simple shampoing",
+            "paragraphes": [
+              "Nettoyer un sol textile en surface ne fait que déplacer le problème : la saleté redescend dans la fibre et ressort quelques jours plus tard. L'injection-extraction fonctionne autrement. La machine pulvérise une solution nettoyante au cœur de la fibre, puis l'aspire immédiatement avec les salissures dissoutes. Le textile est nettoyé en profondeur, et comme l'eau est réaspirée dans la foulée, il ne reste que faiblement humide — le séchage se compte en heures, pas en jours.",
+              "Tout commence par le diagnostic. La nature de la fibre — laine, synthétique, moquette rase ou bouclée — détermine le produit et le dosage : un traitement mal choisi peut ternir ou feutrer un tapis de valeur. Les taches sont repérées et prétraitées une à une avant le passage machine, car chaque type de salissure appelle sa réponse. Cette étape préalable fait souvent la différence entre une tache atténuée et une tache réellement partie.",
+              "La prestation convient aux moquettes de bureaux et d'espaces d'accueil, très sollicitées, comme aux tapis de particuliers auxquels on tient. Pour les professionnels, nous planifions le passage en dehors des heures d'activité afin que les surfaces soient sèches à la reprise. Le devis, gratuit, dépend de la surface, de l'état du revêtement et de son accessibilité ; nous vous indiquons le temps de séchage à prévoir avant de réoccuper les lieux."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Combien de temps la moquette met-elle à sécher ?",
+                "reponse": "Grâce à l'extraction immédiate de l'eau, la moquette reste faiblement humide : selon la ventilation et la matière, comptez généralement quelques heures. Pour un local professionnel, un passage en soirée laisse les surfaces sèches et praticables dès le lendemain matin."
+              },
+              {
+                "question": "Toutes les taches partent-elles vraiment ?",
+                "reponse": "La plupart s'atténuent nettement ou disparaissent après prétraitement. Certaines, très anciennes ou ayant altéré la fibre, laissent une marque résiduelle : nous sommes francs à ce sujet lors du diagnostic plutôt que de promettre un résultat que le textile ne permet pas."
+              },
+              {
+                "question": "Traitez-vous les moquettes de bureaux et les tapis de particuliers ?",
+                "reponse": "Oui, les deux. Pour les moquettes d'espaces professionnels fortement piétinées, nous intervenons hors heures d'activité ; pour les tapis de particuliers, souvent plus délicats, nous adaptons produits et dosage à la valeur et à la matière du textile."
+              },
+              {
+                "question": "À quelle fréquence entretenir une moquette professionnelle ?",
+                "reponse": "Un traitement en profondeur une à deux fois l'an suffit dans la plupart des bureaux, complété par l'aspiration régulière au quotidien. Dans un espace à très forte fréquentation, un passage plus rapproché préserve durablement l'aspect du revêtement."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "bento",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Bureaux & cabinets médicaux",
+                "description": "La moquette entretenue s'inscrit dans un contrat d'entretien plus large de vos locaux.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              },
+              {
+                "nom": "Grand nettoyage en profondeur",
+                "description": "Sols textiles ravivés au sein d'une remise à niveau complète du logement ou du local.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
+              },
+              {
+                "nom": "Cages d'escalier & parties communes",
+                "description": "Tapis de hall et paliers moquettés d'immeuble intégrés aux passages réguliers.",
+                "href": "/parties-communes",
+                "icone": "Building"
+              }
+            ],
+            "cta": {
+              "label": "Sols textiles à traiter hors Saint-Nazaire ? Voir la zone",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Une moquette ou des tapis à raviver à Saint-Nazaire ?",
+            "sousTitre": "Indiquez la surface et la matière : nous chiffrons gratuitement et vous donnons le temps de séchage à prévoir.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-bureaux",
+      "label": "Bureaux & cabinets",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de bureaux à Saint-Nazaire",
+        "description": "Entretien de bureaux, cabinets médicaux et locaux d'activité à Saint-Nazaire et 30 km autour : discret, rigoureux, hors heures d'ouverture. Devis gratuit.",
+        "keywords": [
+          "nettoyage bureaux Saint-Nazaire",
+          "entretien locaux professionnels Saint-Nazaire",
+          "nettoyage cabinet médical Loire-Atlantique",
+          "société de nettoyage entreprise Saint-Nazaire"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage de bureaux & cabinets médicaux",
+        "description": "Entretien régulier des bureaux, cabinets médicaux et locaux d'activité à Saint-Nazaire et alentour, avec le niveau d'hygiène requis.",
+        "serviceType": "Nettoyage de bureaux"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Espaces de travail & lieux de soin",
+            "titre": "Nettoyage de bureaux à Saint-Nazaire",
+            "intro": "Un local propre en dit long sur une entreprise, et devient une exigence stricte dans un cabinet de santé. Nous entretenons bureaux, open spaces, salles d'attente et cabinets médicaux avec discrétion et méthode, en nous adaptant à vos horaires pour ne jamais gêner l'accueil de vos clients ou de vos patients.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Bureaux & cabinets"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Notre engagement au quotidien",
+            "titre": "L'entretien régulier de vos locaux d'activité",
+            "paragraphes": [
+              "Un entretien de bureau efficace repose sur la régularité et la constance. Nous définissons avec vous un cahier des charges clair : postes de travail dépoussiérés, sols aspirés puis lavés, sanitaires désinfectés et consommables réapprovisionnés, points de contact — poignées, interrupteurs, rampes — essuyés, corbeilles vidées, cuisine ou coin repas remis en ordre. Chaque passage suit le même protocole, pour que vos équipes retrouvent des locaux dans un état identique jour après jour.",
+              "Les lieux de soin imposent un cran d'exigence supplémentaire. Dans un cabinet médical, paramédical ou dentaire, salle d'attente, salle de soin et sanitaires demandent une désinfection rigoureuse des surfaces et un respect des zones sensibles. Nous adaptons produits et fréquences à ces contraintes, et pouvons employer les protocoles ou produits que votre activité impose. La discrétion et le respect de la confidentialité des lieux font partie de la prestation.",
+              "Nous intervenons en dehors de vos heures d'ouverture — avant que vos collaborateurs n'arrivent, en fin de journée ou le samedi — avec une amplitude de 7h à 22h qui couvre la plupart des organisations. La fréquence se cale sur votre activité : quotidienne pour un cabinet à fort passage, quelques fois par semaine pour un bureau, ou ponctuelle pour une remise au propre. Le devis, gratuit, est établi après visite des locaux, seule façon de chiffrer justement selon les surfaces et le niveau attendu."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Intervenez-vous en dehors des heures d'ouverture ?",
+                "reponse": "Oui, c'est la règle pour un local d'activité. Nous passons avant l'arrivée de vos équipes, en soirée après la fermeture ou le week-end, dans une amplitude de 7h à 22h, pour un entretien invisible qui ne perturbe ni le travail ni l'accueil du public."
+              },
+              {
+                "question": "Prenez-vous en charge les exigences d'un cabinet médical ?",
+                "reponse": "Oui. Salles d'attente, salles de soin et sanitaires font l'objet d'une désinfection rigoureuse, avec respect des zones sensibles et de la confidentialité des lieux. Nous nous conformons aux protocoles et produits que votre activité de santé impose."
+              },
+              {
+                "question": "Peut-on convenir d'un entretien à fréquence fixe ?",
+                "reponse": "Oui. Nous établissons ensemble un cahier des charges et une fréquence — quotidienne, plusieurs fois par semaine ou hebdomadaire — puis chaque passage suit le même protocole, pour un résultat constant et prévisible d'une fois sur l'autre."
+              },
+              {
+                "question": "Comment est fixé le prix de l'entretien de bureaux ?",
+                "reponse": "Après une visite des locaux, qui reste gratuite : c'est la seule façon d'apprécier justement les surfaces, le type de sols, le nombre de sanitaires et le niveau attendu. Vous recevez ensuite une proposition claire, à la fréquence ou au passage, sans engagement."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "bento",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Tapis & moquettes",
+                "description": "Moquettes d'open space et d'accueil traitées en profondeur, en complément de l'entretien courant.",
+                "href": "/nettoyage-tapis-moquette",
+                "icone": "Layers"
+              },
+              {
+                "nom": "Vitres, vérandas & terrasses",
+                "description": "Vitrines, cloisons vitrées et baies de vos locaux gardées limpides au fil des passages.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Grand nettoyage en profondeur",
+                "description": "Remise à niveau ponctuelle d'un local repris ou resté fermé, avant de lancer l'entretien régulier.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
+              }
+            ],
+            "cta": {
+              "label": "Locaux à entretenir hors Saint-Nazaire ? Voir le secteur",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Des bureaux ou un cabinet à entretenir à Saint-Nazaire ?",
+            "sousTitre": "Organisons une visite gratuite de vos locaux : vous recevez une proposition claire, à la fréquence qui vous convient.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "parties-communes",
+      "label": "Parties communes",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de parties communes à Saint-Nazaire",
+        "description": "Halls, cages d'escalier, ascenseurs et locaux techniques d'immeubles entretenus à Saint-Nazaire et 30 km autour. Passages réguliers, devis gratuit.",
+        "keywords": [
+          "nettoyage parties communes Saint-Nazaire",
+          "nettoyage cage d'escalier Saint-Nazaire",
+          "entretien immeuble copropriété Loire-Atlantique",
+          "nettoyage hall immeuble Saint-Nazaire"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage de cages d'escalier & parties communes",
+        "description": "Entretien régulier des halls, escaliers, ascenseurs et locaux techniques d'immeubles à Saint-Nazaire et alentour.",
+        "serviceType": "Nettoyage de parties communes"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Halls, escaliers, ascenseurs & locaux techniques",
+            "titre": "Nettoyage de parties communes à Saint-Nazaire",
+            "intro": "Les communs sont la première image d'un immeuble : un hall net et une cage d'escalier entretenue rassurent les résidents et valorisent le bien. Pour les syndics, les bailleurs et les copropriétés, nous assurons des passages réguliers qui gardent l'ensemble présentable, du seuil d'entrée aux derniers paliers.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Parties communes"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Ce que comprend un passage",
+            "titre": "Un immeuble présentable, du hall aux paliers",
+            "paragraphes": [
+              "Un passage type suit l'immeuble de haut en bas. Le hall d'entrée est balayé puis lavé, les portes vitrées et l'interphone essuyés, les boîtes aux lettres dépoussiérées. Les escaliers sont nettoyés marche après marche, les rampes et mains courantes désinfectées — ce sont les points de contact les plus manipulés —, et les paliers remis au propre à chaque niveau. La cabine d'ascenseur, les miroirs et les boutons reçoivent le même soin, tout comme les vitres des fenêtres de cage accessibles.",
+              "Les locaux annexes ne sont pas oubliés. Local à poubelles rincé et désodorisé, local à vélos et caves balayés, sols du parking couvert entretenus si la copropriété le souhaite : ces espaces, souvent négligés, conditionnent pourtant l'impression générale et l'hygiène de l'immeuble. Nous adaptons le contenu de chaque passage au cahier des charges décidé avec le syndic ou le conseil syndical, et le tenons à l'identique dans le temps.",
+              "La fréquence se règle sur la taille de l'immeuble et sa fréquentation : hebdomadaire pour une petite copropriété, plusieurs fois par semaine pour une résidence à fort passage, avec des interventions renforcées après un déménagement ou des travaux dans les communs. Nous travaillons pour les syndics professionnels comme pour les copropriétés en gestion directe et les bailleurs, sur un secteur allant de Saint-Nazaire à toute la presqu'île. Le devis est gratuit, établi après visite de l'immeuble."
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "bento",
+          "content": {
+            "eyebrow": "Prestations liées",
+            "titre": "Compléter l'entretien de l'immeuble",
+            "items": [
+              {
+                "nom": "Vitres & fenêtres de cage",
+                "description": "Baies du hall et fenêtres de paliers rendues limpides, à l'intérieur comme à l'extérieur.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Après travaux dans les communs",
+                "description": "Ravalement, réfection d'un hall ou d'une cage : on retire la poussière de chantier avant la remise en service.",
+                "href": "/nettoyage-apres-travaux",
+                "icone": "HardHat"
+              },
+              {
+                "nom": "Tapis de hall & paliers moquettés",
+                "description": "Sols textiles des communs traités en profondeur par injection-extraction.",
+                "href": "/nettoyage-tapis-moquette",
+                "icone": "Layers"
+              }
+            ],
+            "cta": {
+              "label": "Immeuble à entretenir hors Saint-Nazaire ? Voir la zone",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Travaillez-vous avec les syndics et les copropriétés ?",
+                "reponse": "Oui, aussi bien avec les syndics professionnels qu'avec les copropriétés en gestion directe et les bailleurs. Nous établissons un cahier des charges avec le conseil syndical ou le gestionnaire, et assurons ensuite des passages réguliers tenus à l'identique."
+              },
+              {
+                "question": "À quelle fréquence faut-il nettoyer les parties communes ?",
+                "reponse": "Cela dépend de la taille de l'immeuble et de sa fréquentation : d'un passage hebdomadaire pour une petite copropriété à plusieurs par semaine pour une résidence très passante. Nous ajustons le rythme avec vous et le renforçons ponctuellement après un déménagement ou des travaux."
+              },
+              {
+                "question": "Le local à poubelles et l'ascenseur sont-ils compris ?",
+                "reponse": "Ils peuvent l'être selon le cahier des charges. Nous nettoyons couramment la cabine d'ascenseur, ses miroirs et boutons, ainsi que le local à poubelles rincé et désodorisé. Ces espaces sensibles pèsent beaucoup sur l'hygiène et l'image de l'immeuble."
+              },
+              {
+                "question": "Comment obtenir un devis pour un immeuble ?",
+                "reponse": "Après une visite gratuite des communs, qui nous permet d'apprécier le nombre d'étages, les surfaces et les annexes à traiter. Vous recevez une proposition détaillée par passage, que le syndic ou le conseil syndical peut présenter en assemblée."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un immeuble à entretenir à Saint-Nazaire ?",
+            "sousTitre": "Organisons une visite gratuite des communs : vous recevez une proposition détaillée, prête à présenter en copropriété.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "zone-intervention",
+      "label": "Zone d'intervention",
+      "navHidden": true,
+      "meta": {
+        "title": "Zone d'intervention — Saint-Nazaire, 30 km",
+        "description": "De Saint-Nazaire à La Baule, Guérande, Savenay ou Saint-Brevin : les communes où nous intervenons, jusqu'à 30 km autour de notre base. Devis gratuit partout.",
+        "keywords": [
+          "nettoyage La Baule",
+          "nettoyage Guérande",
+          "nettoyage Saint-Brevin-les-Pins",
+          "entreprise nettoyage presqu'île guérandaise"
+        ]
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Où nous nous déplaçons",
+            "titre": "Saint-Nazaire et 30 km autour",
+            "intro": "Notre base est à Saint-Nazaire. De là, nous rayonnons sur la presqu'île guérandaise, l'estuaire et les marais de Brière, et nous franchissons la Loire par le pont pour desservir la rive sud. Partout dans ce périmètre, le chiffrage reste offert."
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "Les communes desservies",
+            "intro": "Cette liste n'est pas figée : si votre commune borde notre secteur sans y figurer, un appel suffit à vérifier que nous pouvons vous rejoindre.",
+            "rayonKm": 30,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=-2.55%2C47.10%2C-1.85%2C47.42&layer=mapnik&marker=47.2735%2C-2.2135",
+            "zones": [
+              {
+                "region": "Saint-Nazaire & presqu'île guérandaise",
+                "principale": "Saint-Nazaire",
+                "villes": [
+                  "Saint-Nazaire",
+                  "Pornichet",
+                  "Saint-André-des-Eaux",
+                  "La Baule-Escoublac",
+                  "Guérande",
+                  "Le Pouliguen",
+                  "Batz-sur-Mer",
+                  "Le Croisic",
+                  "La Turballe"
+                ]
+              },
+              {
+                "region": "Estuaire & marais de Brière",
+                "principale": "Montoir-de-Bretagne",
+                "villes": [
+                  "Montoir-de-Bretagne",
+                  "Trignac",
+                  "Donges",
+                  "Saint-Malo-de-Guersac",
+                  "Saint-Joachim",
+                  "Besné",
+                  "Pontchâteau",
+                  "Savenay",
+                  "Prinquiau"
+                ]
+              },
+              {
+                "region": "Rive sud de la Loire — pays de Retz",
+                "principale": "Saint-Brevin-les-Pins",
+                "villes": [
+                  "Saint-Brevin-les-Pins",
+                  "Saint-Père-en-Retz",
+                  "Corsept",
+                  "Paimbœuf",
+                  "Frossay",
+                  "Saint-Michel-Chef-Chef"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Notre terrain",
+            "titre": "Un bassin, trois secteurs",
+            "paragraphes": [
+              "Saint-Nazaire est notre port d'attache : c'est là que se concentrent la plupart de nos passages, des immeubles du centre aux bureaux de la zone d'activité, en passant par les commerces et les logements. La ville industrielle et portuaire génère des besoins variés, du grand nettoyage de local à l'entretien récurrent de parties communes, et sa proximité nous permet d'y intervenir vite quand une échéance presse.",
+              "Vers l'ouest, la presqu'île guérandaise — Pornichet, La Baule, Guérande, Le Pouliguen, Le Croisic — mêle résidences de bord de mer, locations saisonnières et vérandas très exposées au sel. Nettoyage de vitres, remises au propre entre deux occupants et entretien de surfaces vitrées y tiennent une bonne place. L'air marin encrasse plus vite : nous en tenons compte dans le rythme que nous conseillons.",
+              "À l'est et au nord, l'estuaire et les marais de Brière — Montoir-de-Bretagne, Trignac, Donges, Savenay, Pontchâteau — ajoutent leur tissu d'entreprises, d'ateliers et de logements. Enfin, en franchissant le pont de Saint-Nazaire, nous desservons la rive sud et le pays de Retz — Saint-Brevin-les-Pins, Saint-Père-en-Retz, Paimbœuf, Saint-Michel-Chef-Chef — avec les mêmes prestations et le même devis gratuit qu'au nord de la Loire."
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Votre commune figure dans notre secteur ?",
+            "sousTitre": "Demandez un chiffrage gratuit : nous couvrons tout le bassin nazairien, presqu'île et rive sud comprises.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "a-propos",
+      "label": "À propos",
+      "meta": {
+        "title": "Notre entreprise de nettoyage à Saint-Nazaire",
+        "description": "Clean Habitat Pro, entreprise de nettoyage basée à Saint-Nazaire : professionnels et particuliers, du grand nettoyage à l'entretien de locaux. Notre approche.",
+        "keywords": [
+          "entreprise de nettoyage Saint-Nazaire",
+          "société de nettoyage Loire-Atlantique",
+          "nettoyage professionnel presqu'île guérandaise"
+        ]
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "À propos",
+            "titre": "Le propre bien fait, sans esbroufe"
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Clean Habitat Pro · Saint-Nazaire",
+            "titre": "Une entreprise de nettoyage au service du bassin nazairien",
+            "paragraphes": [
+              "Clean Habitat Pro est une entreprise de nettoyage installée à Saint-Nazaire, tournée vers les professionnels comme vers les particuliers. Notre métier tient en une idée simple : rendre des lieux réellement propres, avec le matériel qu'il faut et une méthode constante, plutôt que de passer vite fait pour donner le change. Bureaux, cabinets médicaux, parties communes d'immeubles, logements à remettre au propre, vitres, moquettes ou fins de chantier : nous couvrons tout le spectre du nettoyage des bâtiments.",
+              "Nous travaillons avec un équipement professionnel — monobrosse, machine à injection-extraction, perches télescopiques, produits adaptés à chaque support — parce qu'un résultat durable ne s'obtient pas avec du matériel d'appoint. Chaque intervention est cadrée : on définit ce qui doit être fait, on le fait dans l'ordre, et on contrôle le résultat avant de rendre les lieux. Pour les clients réguliers, ce cadre devient un cahier des charges tenu à l'identique d'un passage à l'autre.",
+              "Basés à Saint-Nazaire, nous intervenons dans un rayon d'une trentaine de kilomètres : toute la presqu'île guérandaise, l'estuaire, les marais de Brière et la rive sud de la Loire. La réactivité fait partie de notre engagement — un devis établi rapidement, une intervention calée sur votre échéance et une amplitude horaire large, de 7h à 22h, sept jours sur sept, pour s'adapter aux contraintes des professionnels comme des particuliers."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "bande-procedure",
+          "content": {
+            "eyebrow": "Ce qui guide notre travail",
+            "titre": "Quatre principes, à chaque intervention",
+            "items": [
+              {
+                "icone": "ShieldCheck",
+                "titre": "Rigueur",
+                "texte": "Un protocole défini, suivi dans l'ordre et contrôlé, pour un résultat constant d'une fois sur l'autre."
+              },
+              {
+                "icone": "SprayCan",
+                "titre": "Bon matériel",
+                "texte": "Machines et produits professionnels choisis selon chaque surface, pour un propre qui tient dans le temps."
+              },
+              {
+                "icone": "Zap",
+                "titre": "Réactivité",
+                "texte": "Devis rapide et intervention calée sur votre échéance, avec une amplitude de 7h à 22h, 7j/7."
+              },
+              {
+                "icone": "Eye",
+                "titre": "Transparence",
+                "texte": "Un chiffrage clair et sans engagement, et une parole franche sur ce qui est réalisable ou non."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Envie de nous confier vos surfaces ?",
+            "sousTitre": "Un devis gratuit, une réponse rapide, et un travail cadré du début à la fin.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "faq",
+      "label": "FAQ",
+      "meta": {
+        "title": "Questions fréquentes — nettoyage à Saint-Nazaire",
+        "description": "Délais, matériel, horaires, secteur couvert, devis : les réponses claires aux questions qu'on nous pose sur le nettoyage professionnel à Saint-Nazaire.",
+        "keywords": [
+          "questions nettoyage Saint-Nazaire",
+          "devis nettoyage professionnel Saint-Nazaire",
+          "entreprise nettoyage horaires Loire-Atlantique"
+        ]
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "FAQ",
+            "titre": "Vos questions, nos réponses"
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Tout comprendre avant de nous confier vos surfaces",
+            "items": [
+              {
+                "question": "Pour quels types de clients travaillez-vous ?",
+                "reponse": "Pour les professionnels comme pour les particuliers : entreprises et commerces, cabinets médicaux, syndics et copropriétés, bailleurs, mais aussi habitants ayant besoin d'un grand nettoyage, de vitres ou d'une remise en état. Le devis s'adapte à chaque situation."
+              },
+              {
+                "question": "Quelles prestations proposez-vous exactement ?",
+                "reponse": "Le grand nettoyage en profondeur, le nettoyage après travaux et fin de bail, les vitres, vérandas et terrasses, les tapis et moquettes par injection-extraction, l'entretien de bureaux et cabinets médicaux, et l'entretien des cages d'escalier et parties communes d'immeubles."
+              },
+              {
+                "question": "Dans quel secteur intervenez-vous ?",
+                "reponse": "À Saint-Nazaire et dans un rayon d'environ 30 km : presqu'île guérandaise (Pornichet, La Baule, Guérande, Le Croisic), estuaire et Brière (Montoir, Trignac, Donges, Savenay) et rive sud de la Loire (Saint-Brevin, Saint-Père-en-Retz, Paimbœuf)."
+              },
+              {
+                "question": "Quels sont vos horaires d'intervention ?",
+                "reponse": "Notre amplitude va de 7h à 22h, sept jours sur sept. Pour les locaux professionnels, nous privilégions les créneaux hors ouverture — dès l'aube, en fin de journée ou le dimanche — afin de ne pas gêner votre activité."
+              },
+              {
+                "question": "Apportez-vous votre propre matériel ?",
+                "reponse": "Oui, nous venons entièrement équipés en machines et produits professionnels : monobrosse, injection-extraction, perches à vitres. Si votre site exige des produits ou protocoles particuliers, notamment en milieu de soin, nous nous y conformons."
+              },
+              {
+                "question": "Le devis est-il vraiment gratuit et sans engagement ?",
+                "reponse": "Oui. Nous chiffrons gratuitement d'après vos surfaces, l'état des lieux et la fréquence souhaitée, après description ou visite. Vous validez ou non, en toute liberté : rien ne démarre sans votre accord."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Une question qui n'a pas sa réponse ici ?",
+            "sousTitre": "Appelez-nous ou écrivez : nous vous répondons rapidement et sans détour.",
+            "ctaPrimaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Nous contacter — nettoyage à Saint-Nazaire",
+        "description": "Téléphone, WhatsApp, e-mail ou formulaire : décrivez-nous vos surfaces à nettoyer à Saint-Nazaire ou alentour et recevez une estimation gratuite.",
+        "keywords": [
+          "contact nettoyage Saint-Nazaire",
+          "devis nettoyage Saint-Nazaire",
+          "entreprise nettoyage contact Loire-Atlantique"
+        ]
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Contact",
+            "titre": "Parlons de vos surfaces",
+            "intro": "Un local à entretenir, un grand nettoyage à programmer, des vitres ou une moquette à reprendre ? Appelez, écrivez ou passez par WhatsApp : décrivez-nous les lieux et l'échéance, on vous répond vite."
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Demande d'intervention",
+            "intro": "Ce qui nous aide le plus : la prestation visée, votre commune, la nature des lieux et une idée des surfaces. Le reste se précise de vive voix.",
+            "form": true,
+            "formMode": "demande-intervention",
+            "telephone": "07 68 54 65 69",
+            "whatsapp": "+33 7 68 54 65 69",
+            "email": "lailailacleanhabitatpro@gmail.com",
+            "horaires": [
+              {
+                "jour": "Tous les jours",
+                "heures": "7h – 22h"
+              }
+            ],
+            "services": [
+              "Grand nettoyage en profondeur",
+              "Nettoyage après travaux / fin de chantier",
+              "Nettoyage de fin de bail",
+              "Vitres, vérandas & terrasses",
+              "Tapis & moquettes",
+              "Bureaux & cabinets médicaux",
+              "Cages d'escalier & parties communes",
+              "Autre / je ne sais pas"
+            ],
+            "villes": [
+              "Saint-Nazaire",
+              "Pornichet",
+              "La Baule-Escoublac",
+              "Guérande",
+              "Saint-André-des-Eaux",
+              "Montoir-de-Bretagne",
+              "Trignac",
+              "Donges",
+              "Savenay",
+              "Pontchâteau",
+              "Saint-Brevin-les-Pins",
+              "Saint-Père-en-Retz",
+              "Paimbœuf"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "devis",
+      "label": "Devis gratuit",
+      "navHidden": true,
+      "meta": {
+        "title": "Devis de nettoyage gratuit à Saint-Nazaire",
+        "description": "Décrivez vos surfaces et votre échéance et recevez une estimation gratuite, sans engagement, à Saint-Nazaire et 30 km autour. Réponse rapide, 7j/7.",
+        "keywords": [
+          "devis nettoyage Saint-Nazaire",
+          "devis nettoyage bureaux Saint-Nazaire",
+          "estimation nettoyage gratuit Loire-Atlantique"
+        ]
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Devis gratuit",
+            "titre": "Recevez votre estimation gratuite",
+            "intro": "Quelques informations suffisent pour un premier chiffrage : la prestation, la commune, la nature des lieux et une idée des surfaces. Pas besoin de tout détailler : on affine ensemble ce qui reste à préciser.",
+            "ctaSecondaire": {
+              "label": "Voir nos prestations",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Votre demande de devis",
+            "intro": "Prestation, commune, type de local et surface approximative : avec ces éléments, nous chiffrons déjà sérieusement. Pour un local professionnel ou un immeuble, une courte visite affine la proposition.",
+            "form": true,
+            "formMode": "devis",
+            "telephone": "07 68 54 65 69",
+            "whatsapp": "+33 7 68 54 65 69",
+            "email": "lailailacleanhabitatpro@gmail.com",
+            "horaires": [
+              {
+                "jour": "Tous les jours",
+                "heures": "7h – 22h"
+              }
+            ],
+            "services": [
+              "Grand nettoyage en profondeur",
+              "Nettoyage après travaux / fin de chantier",
+              "Nettoyage de fin de bail",
+              "Vitres, vérandas & terrasses",
+              "Tapis & moquettes",
+              "Bureaux & cabinets médicaux",
+              "Cages d'escalier & parties communes",
+              "Autre / je ne sais pas"
+            ],
+            "villes": [
+              "Saint-Nazaire",
+              "Pornichet",
+              "La Baule-Escoublac",
+              "Guérande",
+              "Saint-André-des-Eaux",
+              "Montoir-de-Bretagne",
+              "Trignac",
+              "Donges",
+              "Savenay",
+              "Pontchâteau",
+              "Saint-Brevin-les-Pins",
+              "Saint-Père-en-Retz",
+              "Paimbœuf"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import {
   Libre_Baskerville,
   Bodoni_Moda,
   Cormorant_Garamond,
+  Space_Grotesk,
 } from "next/font/google";
 import "./globals.css";
 
@@ -99,6 +100,14 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
   preload: false,
 });
+// Sans géométrique technique (titres display) — pack signal-graphite (famille signal).
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  display: "swap",
+  preload: false,
+});
 
 const fontVars = [
   poppins,
@@ -114,6 +123,7 @@ const fontVars = [
   libreBaskerville,
   bodoni,
   cormorant,
+  spaceGrotesk,
 ]
   .map((f) => f.variable)
   .join(" ");
