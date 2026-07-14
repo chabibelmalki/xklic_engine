@@ -109,6 +109,10 @@
             "ctaSecondaire": {
               "label": "Explore our services",
               "href": "/services"
+            },
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/hero-menage-mir.jpg",
+              "alt": "Home cleaning: mopping the floor in a bright kitchen"
             }
           }
         },

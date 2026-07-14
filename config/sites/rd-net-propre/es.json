@@ -109,6 +109,10 @@
             "ctaSecondaire": {
               "label": "Descubrir nuestros servicios",
               "href": "/services"
+            },
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/hero-menage-mir.jpg",
+              "alt": "Limpieza a domicilio: fregado del suelo en una cocina luminosa"
             }
           }
         },

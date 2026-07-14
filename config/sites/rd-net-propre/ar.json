@@ -109,6 +109,10 @@
             "ctaSecondaire": {
               "label": "اكتشف خدماتنا",
               "href": "/services"
+            },
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/hero-menage-mir.jpg",
+              "alt": "تنظيف منزلي: مسح أرضية مطبخ مضيء بالممسحة"
             }
           }
         },

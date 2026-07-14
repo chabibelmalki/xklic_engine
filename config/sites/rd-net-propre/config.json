@@ -133,6 +133,10 @@
             "ctaSecondaire": {
               "label": "Découvrir nos prestations",
               "href": "/services"
+            },
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/hero-menage-mir.jpg",
+              "alt": "Ménage à domicile : lavage du sol à la serpillière dans une cuisine lumineuse"
             }
           }
         },

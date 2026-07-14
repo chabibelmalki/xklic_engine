@@ -1,23 +1,34 @@
+import Image from "next/image";
 import { Check, Star } from "lucide-react";
 import type { HeroContent, ServicesContent } from "@/types/config";
 import type { BlockComponentProps } from "@/blocks/types";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
-import { withBase } from "@/lib/utils";
+import { withBase, cn } from "@/lib/utils";
 import { resolveHeroSecondary } from "@/lib/hero-cta";
 import { findBlock } from "@/lib/pages";
 import { EditorialContainer } from "../../editorial/ui/Container";
 
 /**
- * HERO atelier — AUDACIEUX, jamais d'image en fond. Titre display XXL (Bricolage),
- * eyebrow en TAG, carte de prix en « STICKER » (bordure épaisse + ombre DURE
- * décalée de marque), badges en pastilles cerclées, puis un BANDEAU MARQUEE
- * pleine largeur (mots-clés des prestations qui défilent). Parti pris fort et
- * affirmé, à l'opposé des cartes lisses de classic. 100 % tokens, AA, SSR.
+ * HERO atelier — AUDACIEUX. Deux registres selon `content.image` :
+ *  - SANS image : fond lavis de marque, texte encre.
+ *  - AVEC image : photo PLEIN CADRE sous un voile de marque dégradé (plus dense à
+ *    gauche, sous le texte) → texte BLANC à contraste AA garanti, l'image respire
+ *    à droite derrière la carte-sticker.
+ * Dans les deux cas : eyebrow en TAG, carte de prix en « sticker » (bordure
+ * épaisse + ombre DURE décalée), badges en pastilles, puis un BANDEAU MARQUEE
+ * pleine largeur. Parti pris fort, distinct des cartes lisses de classic.
  */
+// Voile de lisibilité (vert-noir de marque). Plus dense à gauche (texte), l'image
+// reste visible à droite. Garantit l'AA du texte blanc quelle que soit la photo.
+const SCRIM =
+  "linear-gradient(108deg, rgba(9,28,22,0.86) 0%, rgba(9,28,22,0.66) 42%, rgba(9,28,22,0.50) 72%, rgba(9,28,22,0.42) 100%)";
+
 export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroContent>) {
   const c = block.content;
   const card = c.card;
+  const img = c.image;
+  const onImg = !!img;
   const ville = config.seo.ville;
   const titleHasVille = ville && c.titre.toLowerCase().includes(ville.toLowerCase());
   const showVilleSuffix = !c.titreAccent && !titleHasVille;
@@ -28,23 +39,56 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
   const words = (services?.items ?? []).map((s) => s.nom).slice(0, 6);
   const marquee = words.length ? words : [config.seo.ville, config.entreprise.nom];
 
+  const accentText = onImg ? "text-accent-400" : "text-brand-600";
+
   return (
-    <header className="relative overflow-hidden border-b-2 border-brand-800 bg-[color-mix(in_srgb,var(--brand-500)_7%,var(--bg))]">
+    <header
+      className={cn(
+        "relative isolate overflow-hidden border-b-2 border-brand-800",
+        !onImg && "bg-[color-mix(in_srgb,var(--brand-500)_7%,var(--bg))]",
+      )}
+    >
+      {onImg && (
+        <div className="absolute inset-0 -z-10">
+          <Image src={img.url} alt={img.alt ?? c.titre} fill priority sizes="100vw" className="object-cover" />
+          <div className="absolute inset-0" style={{ backgroundImage: SCRIM }} />
+        </div>
+      )}
+
       <EditorialContainer className="grid items-center gap-12 py-14 sm:py-20 lg:grid-cols-[1.1fr_0.9fr] lg:gap-14 lg:py-24">
         <div className="min-w-0">
           {c.eyebrow && (
-            <span className="mb-6 inline-flex items-center gap-2 rounded-[var(--radius-btn)] border-2 border-brand-800 bg-surface px-3 py-1.5 text-xs font-bold uppercase tracking-[0.14em] text-brand-800">
+            <span
+              className={cn(
+                "mb-6 inline-flex items-center gap-2 rounded-[var(--radius-btn)] border-2 px-3 py-1.5 text-xs font-bold uppercase tracking-[0.14em]",
+                onImg
+                  ? "border-white/40 bg-white/10 text-white backdrop-blur-sm"
+                  : "border-brand-800 bg-surface text-brand-800",
+              )}
+            >
               <Star className="size-3.5 fill-accent-500 text-accent-500" />
               {c.eyebrow}
             </span>
           )}
-          <h1 className="font-display text-[2.6rem] font-bold leading-[0.98] tracking-[-0.03em] text-ink sm:text-6xl lg:text-[4.4rem]">
+          <h1
+            className={cn(
+              "font-display text-[2.6rem] font-bold leading-[0.98] tracking-[-0.03em] sm:text-6xl lg:text-[4.4rem]",
+              onImg ? "text-white [text-wrap:balance]" : "text-ink",
+            )}
+          >
             {c.titre}
-            {c.titreAccent && <span className="text-brand-600"> {c.titreAccent}</span>}
-            {showVilleSuffix && <span className="text-brand-600"> à {ville}</span>}
+            {c.titreAccent && <span className={accentText}> {c.titreAccent}</span>}
+            {showVilleSuffix && <span className={accentText}> à {ville}</span>}
           </h1>
           {c.accroche && (
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">{c.accroche}</p>
+            <p
+              className={cn(
+                "mt-6 max-w-xl text-lg leading-relaxed",
+                onImg ? "text-white/90" : "text-ink-soft",
+              )}
+            >
+              {c.accroche}
+            </p>
           )}
           {(c.ctaPrimaire || secondary) && (
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -54,7 +98,11 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
                 </Button>
               )}
               {secondary && (
-                <Button href={withBase(basePath, secondary.href)} variant="outline" size="lg">
+                <Button
+                  href={withBase(basePath, secondary.href)}
+                  variant={onImg ? "white" : "outline"}
+                  size="lg"
+                >
                   {secondary.label}
                 </Button>
               )}
@@ -65,9 +113,14 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
               {c.trust.map((t) => (
                 <li
                   key={t.label}
-                  className="inline-flex items-center gap-2 rounded-full border-2 border-brand-200 bg-surface px-3.5 py-1.5 text-sm font-semibold text-brand-800"
+                  className={cn(
+                    "inline-flex items-center gap-2 rounded-full border-2 px-3.5 py-1.5 text-sm font-semibold",
+                    onImg
+                      ? "border-white/30 bg-white/10 text-white backdrop-blur-sm"
+                      : "border-brand-200 bg-surface text-brand-800",
+                  )}
                 >
-                  <Icon name={t.icone} className="size-4 text-brand-600" />
+                  <Icon name={t.icone} className={cn("size-4", onImg ? "text-accent-400" : "text-brand-600")} />
                   {t.label}
                 </li>
               ))}
@@ -130,7 +183,7 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
       </EditorialContainer>
 
       {/* BANDEAU MARQUEE — signature de la famille. */}
-      <div className="flex overflow-hidden border-t-2 border-brand-800 bg-brand-800 text-brand-contrast">
+      <div className="relative flex overflow-hidden border-t-2 border-brand-800 bg-brand-800 text-brand-contrast">
         <div className="epure-marquee-track flex shrink-0 items-center whitespace-nowrap py-3">
           {[0, 1].map((dup) => (
             <div key={dup} className="flex items-center" aria-hidden={dup === 1 ? true : undefined}>
