@@ -4,7 +4,7 @@
   "stylePack": "atelier-industriel",
   "branding": {
     "logoAlt": "O'Poulet Braisé — Le vrai goût du poulet",
-    "tagline": "Poulet braisé au feu de bois · Osny",
+    "tagline": "Poulet braisé à la broche · Osny",
     "logoDarkBadge": true,
     "colors": {
       "brand": "#d81818",
@@ -46,12 +46,12 @@
     "lng": 2.076791
   },
   "meta": {
-    "title": "Poulet braisé au feu de bois à Osny",
-    "description": "Poulet braisé au feu de bois, 100% maison et halal, à Osny (95). Entier, demi, cuisses, ailes et accompagnements. Commande et paiement en ligne, retrait ou livraison.",
+    "title": "Poulet braisé à la broche à Osny",
+    "description": "Poulet braisé à la broche, 100% maison et halal, à Osny (95). Entier, demi, cuisses, ailes et accompagnements. Commande et paiement en ligne, retrait ou livraison.",
     "keywords": [
       "poulet braisé Osny",
       "restaurant Osny 95",
-      "poulet au feu de bois",
+      "poulet rôti Osny",
       "poulet à emporter Osny",
       "poulet halal Osny",
       "livraison poulet Osny"
@@ -70,17 +70,17 @@
           "variant": "plein",
           "content": {
             "eyebrow": "Restaurant · Osny (95)",
-            "titre": "Poulet braisé au feu de bois",
+            "titre": "Poulet braisé à la broche",
             "titreAccent": "100% maison",
-            "accroche": "La recette traditionnelle, braisée lentement sur le bois : une viande fondante et parfumée. À emporter au centre commercial de l'Oseraie, à Osny.",
+            "accroche": "La recette traditionnelle, mariné maison et cuit lentement à la broche : une viande fondante et parfumée. À emporter au centre commercial de l'Oseraie, à Osny.",
             "image": {
               "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/o-poulet-braise/hero-flammes.jpg",
-              "alt": "Flammes de braise à travers la grille"
+              "alt": "Poulet braisé O'Poulet Braisé à Osny"
             },
             "trust": [
               {
                 "icone": "Flame",
-                "label": "Cuit au feu de bois"
+                "label": "Rôti à la broche"
               },
               {
                 "icone": "ChefHat",
@@ -105,10 +105,10 @@
           "type": "contenu",
           "content": {
             "eyebrow": "La maison",
-            "titre": "Une cuisson au feu de bois, un goût qui a du",
+            "titre": "Une cuisson lente à la broche, un goût qui a du",
             "titreAccent": "caractère",
             "paragraphes": [
-              "Chez O'Poulet Braisé, tout part du feu. Nos poulets sont braisés lentement sur le bois, pour une peau dorée et une chair qui garde tout son jus. Une cuisson patiente qui donne à la viande ce goût franc, légèrement fumé, qu'on ne retrouve pas ailleurs.",
+              "Chez O'Poulet Braisé, tout commence par la marinade, préparée maison. Nos poulets sont ensuite braisés lentement à la broche, pour une peau dorée et une chair qui garde tout son jus. Une cuisson patiente qui donne à la viande ce goût franc et généreux qu'on ne retrouve pas ailleurs.",
               "Ici, c'est 100% maison : marinade préparée sur place, accompagnements généreux, rien d'industriel. Riz thaï, bananes plantain, haricots verts ou pâtes — de quoi composer une assiette complète, à emporter ou à partager en famille.",
               "Une viande halal, une équipe qui prend le temps de bien faire, et une adresse simple et chaleureuse au centre commercial de l'Oseraie. Que ce soit pour un déjeuner sur le pouce ou un vrai repas, on vous régale à Osny."
             ]
@@ -207,8 +207,8 @@
       "slug": "a-propos",
       "label": "À propos",
       "meta": {
-        "title": "À propos — poulet braisé au feu de bois à Osny",
-        "description": "O'Poulet Braisé, votre spécialiste du poulet braisé au feu de bois à Osny : une cuisine 100% maison, une viande halal et le vrai goût du poulet, depuis 2024."
+        "title": "À propos — poulet braisé à la broche à Osny",
+        "description": "O'Poulet Braisé, votre spécialiste du poulet braisé à la broche à Osny : une cuisine 100% maison, une viande halal et le vrai goût du poulet, depuis 2024."
       },
       "blocks": [
         {
@@ -216,23 +216,23 @@
           "content": {
             "eyebrow": "La maison",
             "titre": "À propos d'O'Poulet Braisé",
-            "intro": "Une adresse dédiée au poulet braisé au feu de bois, à Osny — le vrai goût du poulet, sans raccourci."
+            "intro": "Une adresse dédiée au poulet braisé à la broche, à Osny — le vrai goût du poulet, sans raccourci."
           }
         },
         {
           "type": "contenu",
           "content": {
-            "titre": "Le feu de bois, une",
+            "titre": "La cuisson lente, une",
             "titreAccent": "exigence",
             "image": {
               "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/o-poulet-braise/braise-atelier.jpg",
-              "alt": "Morceaux de poulet braisés au-dessus des braises"
+              "alt": "Poulet braisé cuit à la broche chez O'Poulet Braisé"
             },
             "imagePosition": "right",
             "imageRatio": "4/3",
             "paragraphes": [
-              "O'Poulet Braisé est né d'une idée simple : rendre au poulet son vrai goût. Depuis 2024, au centre commercial de l'Oseraie, nous braisons nos poulets au feu de bois, comme on le faisait avant — sans four à convoyeur, sans raccourci. Le bois, la braise, le temps : c'est ce trio qui donne cette peau dorée et cette chair qui reste juteuse.",
-              "Tout est préparé maison. La marinade est faite sur place, les accompagnements sont cuisinés chaque jour, et la viande est halal. On ne cherche pas à aller vite : on cherche à bien faire, pour que chaque commande ait le même goût franc, légèrement fumé, qui fait revenir les habitués.",
+              "O'Poulet Braisé est né d'une idée simple : rendre au poulet son vrai goût. Depuis 2024, au centre commercial de l'Oseraie, nous braisons nos poulets lentement à la broche, comme on le faisait avant — sans raccourci. La marinade maison, la cuisson lente, le temps : c'est ce trio qui donne cette peau dorée et cette chair qui reste juteuse.",
+              "Tout est préparé maison. La marinade est faite sur place, les accompagnements sont cuisinés chaque jour, et la viande est halal. On ne cherche pas à aller vite : on cherche à bien faire, pour que chaque commande ait le même goût franc et généreux qui fait revenir les habitués.",
               "Ici, on aime les choses généreuses et sans chichi : un poulet à partager, un accompagnement qui tient au corps, un accueil simple. Que vous passiez pour un déjeuner rapide ou un repas de famille, l'idée reste la même — vous régaler."
             ]
           }
@@ -248,7 +248,7 @@
               },
               {
                 "question": "Comment le poulet est-il cuit ?",
-                "reponse": "Il est braisé lentement au feu de bois, après une marinade préparée maison. C'est cette cuisson au bois qui lui donne son goût franc et légèrement fumé."
+                "reponse": "Il est braisé lentement à la broche, après une marinade préparée maison. C'est cette cuisson lente qui lui donne son goût franc et généreux, avec une peau dorée et une chair juteuse."
               },
               {
                 "question": "Peut-on commander à emporter ou se faire livrer ?",
@@ -292,7 +292,7 @@
           "type": "catalogue",
           "content": {
             "titre": "Notre carte",
-            "intro": "Poulet braisé au feu de bois et accompagnements maison. Ajoutez vos plats au panier et réglez en ligne.",
+            "intro": "Poulet braisé à la broche et accompagnements maison. Ajoutez vos plats au panier et réglez en ligne.",
             "notes": [
               "Retrait sur place au centre commercial de l'Oseraie (Auchan), à Osny.",
               "Livraison possible dans un rayon de 5 km autour d'Osny.",
