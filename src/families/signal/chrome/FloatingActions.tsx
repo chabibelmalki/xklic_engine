@@ -22,7 +22,9 @@ export function SignalFloatingActions({
   if (!telephone && !whatsapp) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 lg:hidden">
+    // `data-floating-actions` : crochet commun à toutes les familles — la boutique
+    // masque ces boutons pendant l'étape paiement (voir globals.css [data-checkout]).
+    <div data-floating-actions className="fixed inset-x-0 bottom-0 z-40 lg:hidden">
       <div aria-hidden className="h-0.5 w-full bg-brand-gradient" />
       <div className="flex bg-bg">
         {whatsapp && (
