@@ -11,15 +11,21 @@ import {
   ArrowLeft,
   Loader2,
   CreditCard,
+  Check,
+  X,
+  Settings2,
+  Search,
+  Phone,
 } from "lucide-react";
 import type { CatalogueContent } from "@/types/config";
 import type { BlockComponentProps } from "./types";
+import { findBlock } from "@/lib/pages";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { Turnstile } from "@/components/ui/Turnstile";
-import { cn, formatEUR } from "@/lib/utils";
+import { cn, formatEUR, telHrefIntl } from "@/lib/utils";
 
 /**
  * Catalogue — boutique en ligne LIVE. Les produits, prix et stocks viennent du
@@ -29,8 +35,30 @@ import { cn, formatEUR } from "@/lib/utils";
  * Distinct du bloc `boutique` (articles statiques, sortie en demande de devis) :
  * ici le client PAIE. Le prix affiché est informatif — la source de vérité reste
  * le back-office, qui recalcule tout au moment du checkout.
+ *
+ * Produits à OPTIONS (menus, formules : « 2 accompagnements au choix ») : la
+ * carte ouvre un configurateur ; chaque composition distincte devient une ligne
+ * de panier à part. Le client n'envoie que des ids — les suppléments sont relus
+ * en base par le back-office.
  */
 
+interface ShopOptionChoice {
+  id: string;
+  name: string;
+  price_delta_cents: number;
+  /** Choix lié à un produit du catalogue (image + disponibilité en découlent). */
+  product_id?: string | null;
+  image?: string;
+  /** false si le produit lié est inactif/épuisé — choix non sélectionnable. */
+  available?: boolean;
+}
+interface ShopOptionGroup {
+  id: string;
+  name: string;
+  min: number;
+  max: number;
+  choices: ShopOptionChoice[];
+}
 interface ShopProduct {
   id: string;
   category_id: string | null;
@@ -38,8 +66,9 @@ interface ShopProduct {
   description: string;
   price_cents: number;
   images: string[];
-  stock: number;
+  stock: number | null; // null = stock illimité
   in_stock: boolean;
+  options?: ShopOptionGroup[];
 }
 interface ShopCategory {
   id: string;
@@ -59,7 +88,102 @@ interface ShopCatalog {
   delivery_methods: ShopDelivery[];
 }
 
+/** Choix retenus dans le configurateur : groupId → liste d'ids (répétitions OK). */
+type Selection = Record<string, string[]>;
+
+/** Une ligne de panier : un produit + UNE composition (les compositions
+ *  différentes du même produit font des lignes distinctes). */
+interface CartLine {
+  key: string;
+  productId: string;
+  sel: Selection;
+  qty: number;
+}
+
 const euros = (cents: number) => formatEUR(cents / 100);
+
+/** Stock exploitable côté UI : null = illimité. */
+const stockOf = (p: ShopProduct) => (p.stock == null ? Number.POSITIVE_INFINITY : p.stock);
+
+/** Normalise pour la recherche : minuscules + sans accents (« Poêlée » ~ « poelee »). */
+const norm = (s: string) =>
+  s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+
+/** Classe de fond correspondant au ton de la section (barre de recherche sticky). */
+function toneBgClass(tone?: string): string {
+  switch (tone) {
+    case "alt":
+      return "bg-alt";
+    case "surface":
+      return "bg-surface";
+    case "surface-2":
+      return "bg-surface-2";
+    case "brand":
+      return "bg-brand-50";
+    default:
+      return "bg-bg";
+  }
+}
+
+/** Clé stable d'une composition (produit + choix triés par groupe). */
+function selKey(productId: string, sel: Selection): string {
+  const parts = Object.keys(sel)
+    .filter((g) => sel[g].length > 0)
+    .sort()
+    .map((g) => `${g}=${[...sel[g]].sort().join(",")}`);
+  return `${productId}|${parts.join("|")}`;
+}
+
+/** Prix unitaire affiché = base + suppléments des choix (indicatif : le
+ *  back-office recalcule depuis la DB au paiement). */
+function unitPriceCents(p: ShopProduct, sel: Selection): number {
+  let total = p.price_cents;
+  for (const g of p.options ?? []) {
+    for (const id of sel[g.id] ?? []) {
+      const c = g.choices.find((x) => x.id === id);
+      if (c) total += c.price_delta_cents;
+    }
+  }
+  return total;
+}
+
+/** Composition valide = chaque groupe entre min et max choix. */
+function selValid(p: ShopProduct, sel: Selection): boolean {
+  return (p.options ?? []).every((g) => {
+    const n = (sel[g.id] ?? []).length;
+    return n >= g.min && n <= g.max;
+  });
+}
+
+/** Résumé lisible d'une composition, pour le panier (« Accompagnements : Riz… »). */
+function selSummary(p: ShopProduct, sel: Selection): string[] {
+  const out: string[] = [];
+  for (const g of p.options ?? []) {
+    const ids = sel[g.id] ?? [];
+    if (!ids.length) continue;
+    const names = ids.map((id) => g.choices.find((c) => c.id === id)?.name ?? "?");
+    out.push(`${g.name} : ${names.join(", ")}`);
+  }
+  return out;
+}
+
+/** Un choix est-il sélectionnable ? (libre = toujours ; lié = selon dispo produit) */
+const isAvail = (c: ShopOptionChoice) => c.available !== false;
+
+/** La composition référence-t-elle uniquement des groupes/choix encore existants,
+ *  disponibles et valides ? (le marchand a pu éditer le menu / un composant a pu
+ *  passer en rupture entre-temps) */
+function selStillValid(p: ShopProduct, sel: Selection): boolean {
+  for (const gid of Object.keys(sel)) {
+    const g = (p.options ?? []).find((x) => x.id === gid);
+    if (!g) return false;
+    for (const cid of sel[gid]) {
+      const c = g.choices.find((x) => x.id === cid);
+      if (!c || !isAvail(c)) return false;
+    }
+  }
+  return selValid(p, sel);
+}
 
 function ShopProductCard({
   product,
@@ -73,7 +197,8 @@ function ShopProductCard({
   onDec: () => void;
 }) {
   const out = !product.in_stock;
-  const maxed = qty >= product.stock;
+  const maxed = qty >= stockOf(product);
+  const hasOptions = (product.options?.length ?? 0) > 0;
   return (
     <article
       className={cn(
@@ -103,7 +228,7 @@ function ShopProductCard({
             Épuisé
           </span>
         )}
-        {!out && product.stock <= 3 && (
+        {!out && product.stock != null && product.stock <= 3 && (
           <span className="absolute start-3 top-3 rounded-full bg-accent-500 px-2.5 py-1 text-xs font-semibold text-accent-contrast shadow-sm">
             Plus que {product.stock}
           </span>
@@ -115,6 +240,12 @@ function ShopProductCard({
         {product.description && (
           <p className="mt-1.5 flex-1 text-sm leading-relaxed text-muted">{product.description}</p>
         )}
+        {hasOptions && (
+          <p className="mt-1.5 inline-flex items-center gap-1.5 text-xs font-medium text-brand-700">
+            <Settings2 className="size-3.5" />
+            {product.options!.map((g) => g.name).join(" · ")} au choix
+          </p>
+        )}
 
         <div className="mt-4 flex items-center justify-between gap-3 border-t border-border pt-4">
           <span className="font-display text-lg font-extrabold text-brand-700">
@@ -123,6 +254,19 @@ function ShopProductCard({
 
           {out ? (
             <span className="text-sm font-medium text-muted">Indisponible</span>
+          ) : hasOptions ? (
+            /* Produit à composer : le configurateur gère les quantités ; le
+               badge indique combien sont déjà au panier (toutes compositions). */
+            <div className="flex items-center gap-2">
+              {qty > 0 && (
+                <span className="grid size-7 place-items-center rounded-full bg-brand-600 text-xs font-bold text-brand-contrast">
+                  {qty}
+                </span>
+              )}
+              <Button type="button" onClick={onAdd} size="sm" variant={qty > 0 ? "outline" : undefined} disabled={maxed}>
+                <Plus className="size-4" /> {qty > 0 ? "Encore un" : "Composer"}
+              </Button>
+            </div>
           ) : qty > 0 ? (
             <div className="inline-flex items-center gap-1 rounded-full border border-border bg-surface p-1">
               <button
@@ -155,6 +299,369 @@ function ShopProductCard({
   );
 }
 
+/**
+ * Ligne compacte — layout « menu » (carte de restaurant) : vignette carrée à
+ * gauche, nom + description au centre, prix + action à droite. Dense : on voit
+ * beaucoup d'articles sans scroller. Même logique d'ajout que la carte.
+ */
+function ShopProductRow({
+  product,
+  qty,
+  onAdd,
+  onDec,
+}: {
+  product: ShopProduct;
+  qty: number;
+  onAdd: () => void;
+  onDec: () => void;
+}) {
+  const out = !product.in_stock;
+  const maxed = qty >= stockOf(product);
+  const hasOptions = (product.options?.length ?? 0) > 0;
+  const lowStock = !out && product.stock != null && product.stock <= 3;
+  return (
+    <article
+      className={cn(
+        "flex items-center gap-3 rounded-theme border bg-surface p-3 shadow-sm transition-colors sm:gap-4",
+        out
+          ? "border-border opacity-70"
+          : qty > 0
+            ? "border-brand-500 ring-1 ring-brand-500"
+            : "border-border hover:border-brand-200",
+      )}
+    >
+      <div className="relative size-16 shrink-0 overflow-hidden rounded-xl sm:size-[4.5rem]">
+        {product.images[0] ? (
+          <Image
+            src={product.images[0]}
+            alt={product.name}
+            fill
+            sizes="72px"
+            className="object-cover"
+          />
+        ) : (
+          <div className="grid h-full w-full place-items-center bg-gradient-to-br from-brand-50 to-brand-100 font-display text-2xl font-bold text-brand-700/70">
+            {(product.name || "?").slice(0, 1).toUpperCase()}
+          </div>
+        )}
+      </div>
+
+      <div className="flex min-w-0 flex-1 flex-col">
+        <h4 className="truncate font-display text-base font-bold text-ink">{product.name}</h4>
+        {product.description && (
+          <p className="mt-0.5 line-clamp-1 text-xs leading-relaxed text-muted">
+            {product.description}
+          </p>
+        )}
+        <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-0.5">
+          <span className="font-display text-sm font-extrabold text-brand-700">
+            {euros(product.price_cents)}
+          </span>
+          {hasOptions && (
+            <span className="inline-flex items-center gap-1 text-xs font-medium text-brand-700">
+              <Settings2 className="size-3" /> à composer
+            </span>
+          )}
+          {lowStock && (
+            <span className="text-xs font-medium text-accent-600">Plus que {product.stock}</span>
+          )}
+        </div>
+      </div>
+
+      <div className="shrink-0">
+        {out ? (
+          <span className="rounded-full bg-surface-2 px-3 py-1.5 text-xs font-semibold text-muted">
+            Épuisé
+          </span>
+        ) : hasOptions ? (
+          <div className="flex items-center gap-2">
+            {qty > 0 && (
+              <span className="grid size-6 place-items-center rounded-full bg-brand-600 text-xs font-bold text-brand-contrast">
+                {qty}
+              </span>
+            )}
+            <Button
+              type="button"
+              onClick={onAdd}
+              size="sm"
+              variant={qty > 0 ? "outline" : undefined}
+              disabled={maxed}
+            >
+              <Plus className="size-4" /> Composer
+            </Button>
+          </div>
+        ) : qty > 0 ? (
+          <div className="inline-flex items-center gap-1 rounded-full border border-border bg-surface p-1">
+            <button
+              type="button"
+              aria-label="Retirer un exemplaire"
+              onClick={onDec}
+              className="grid size-8 place-items-center rounded-full text-ink hover:bg-surface-2"
+            >
+              <Minus className="size-4" />
+            </button>
+            <span className="w-6 text-center text-sm font-bold tabular-nums text-ink">{qty}</span>
+            <button
+              type="button"
+              aria-label="Ajouter un exemplaire"
+              onClick={onAdd}
+              disabled={maxed}
+              className="grid size-8 place-items-center rounded-full text-ink hover:bg-surface-2 disabled:opacity-40"
+            >
+              <Plus className="size-4" />
+            </button>
+          </div>
+        ) : (
+          <button
+            type="button"
+            onClick={onAdd}
+            aria-label={`Ajouter ${product.name}`}
+            className="grid size-9 place-items-center rounded-full bg-brand-600 text-brand-contrast transition-transform hover:scale-105 active:scale-95"
+          >
+            <Plus className="size-5" />
+          </button>
+        )}
+      </div>
+    </article>
+  );
+}
+
+/**
+ * Configurateur d'un produit à options (modal) : un bloc par groupe — boutons
+ * exclusifs quand le groupe attend UN choix, compteurs sinon (répéter un choix
+ * est permis : 2× le même accompagnement). Prix mis à jour en direct.
+ */
+function ProductConfigurator({
+  product,
+  onConfirm,
+  onClose,
+}: {
+  product: ShopProduct;
+  onConfirm: (sel: Selection) => void;
+  onClose: () => void;
+}) {
+  const [sel, setSel] = useState<Selection>({});
+  const groups = product.options ?? [];
+  const valid = selValid(product, sel);
+  const price = unitPriceCents(product, sel);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
+
+  function countOf(g: ShopOptionGroup, choiceId: string): number {
+    return (sel[g.id] ?? []).filter((id) => id === choiceId).length;
+  }
+  function groupCount(g: ShopOptionGroup): number {
+    return (sel[g.id] ?? []).length;
+  }
+  function pickOne(g: ShopOptionGroup, choiceId: string) {
+    setSel((prev) => {
+      const cur = prev[g.id] ?? [];
+      // Groupe à choix unique : re-cliquer désélectionne (si facultatif).
+      if (cur[0] === choiceId && g.min === 0) return { ...prev, [g.id]: [] };
+      return { ...prev, [g.id]: [choiceId] };
+    });
+  }
+  function inc(g: ShopOptionGroup, choiceId: string) {
+    setSel((prev) => {
+      const cur = prev[g.id] ?? [];
+      if (cur.length >= g.max) return prev;
+      return { ...prev, [g.id]: [...cur, choiceId] };
+    });
+  }
+  function dec(g: ShopOptionGroup, choiceId: string) {
+    setSel((prev) => {
+      const cur = [...(prev[g.id] ?? [])];
+      const i = cur.indexOf(choiceId);
+      if (i === -1) return prev;
+      cur.splice(i, 1);
+      return { ...prev, [g.id]: cur };
+    });
+  }
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-end justify-center bg-ink/50 p-0 backdrop-blur-sm sm:items-center sm:p-6"
+      role="dialog"
+      aria-modal="true"
+      aria-label={`Composer ${product.name}`}
+      onClick={(e) => e.target === e.currentTarget && onClose()}
+    >
+      <div className="flex max-h-[92dvh] w-full max-w-lg flex-col overflow-hidden rounded-t-theme bg-surface shadow-2xl sm:rounded-theme">
+        <div className="flex items-start justify-between gap-3 border-b border-border p-5">
+          <div>
+            <h3 className="font-display text-lg font-bold text-ink">{product.name}</h3>
+            <p className="text-sm text-muted">Composez votre choix</p>
+          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Fermer"
+            className="grid size-9 shrink-0 place-items-center rounded-full text-muted hover:bg-surface-2 hover:text-ink"
+          >
+            <X className="size-5" />
+          </button>
+        </div>
+
+        <div className="flex-1 space-y-6 overflow-y-auto p-5">
+          {groups.map((g) => {
+            const n = groupCount(g);
+            const done = n >= g.min && n <= g.max;
+            const hint =
+              g.min === g.max
+                ? `Choisissez-en ${g.max}`
+                : g.min === 0
+                  ? `Jusqu'à ${g.max} (facultatif)`
+                  : `Entre ${g.min} et ${g.max}`;
+            return (
+              <fieldset key={g.id}>
+                <legend className="flex w-full items-center justify-between gap-3">
+                  <span className="font-display text-base font-bold text-ink">{g.name}</span>
+                  <span
+                    className={cn(
+                      "inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-semibold",
+                      done ? "bg-brand-50 text-brand-700" : "bg-surface-2 text-muted",
+                    )}
+                  >
+                    {done && n > 0 && <Check className="size-3.5" />}
+                    {g.max > 1 ? `${n}/${g.max} · ${hint}` : hint}
+                  </span>
+                </legend>
+                <div className="mt-3 space-y-2">
+                  {g.choices.map((c) => {
+                    const cnt = countOf(g, c.id);
+                    const selected = cnt > 0;
+                    const avail = isAvail(c);
+                    const groupFull = groupCount(g) >= g.max;
+                    const thumb = c.image ? (
+                      <span className="relative size-9 shrink-0 overflow-hidden rounded-lg">
+                        <Image src={c.image} alt="" fill sizes="36px" className="object-cover" />
+                      </span>
+                    ) : null;
+                    const nameEl = (
+                      <span className="flex min-w-0 items-center gap-2 font-medium text-ink">
+                        <span className="truncate">{c.name}</span>
+                        {c.price_delta_cents > 0 && (
+                          <span className="shrink-0 text-xs font-semibold text-muted">
+                            +{euros(c.price_delta_cents)}
+                          </span>
+                        )}
+                      </span>
+                    );
+                    return (
+                      <div
+                        key={c.id}
+                        className={cn(
+                          "flex items-center justify-between gap-3 rounded-xl border p-2.5 text-sm transition-colors",
+                          !avail
+                            ? "border-border opacity-55"
+                            : selected
+                              ? "border-brand-500 bg-brand-50/50 ring-1 ring-brand-500"
+                              : "border-border hover:border-brand-200",
+                        )}
+                      >
+                        {!avail ? (
+                          <>
+                            <span className="flex min-w-0 items-center gap-2.5">
+                              {thumb}
+                              {nameEl}
+                            </span>
+                            <span className="shrink-0 rounded-full bg-surface-2 px-2 py-0.5 text-xs font-semibold text-muted">
+                              Épuisé
+                            </span>
+                          </>
+                        ) : g.max === 1 ? (
+                          <button
+                            type="button"
+                            onClick={() => pickOne(g, c.id)}
+                            className="flex flex-1 items-center justify-between gap-3 text-start"
+                          >
+                            <span className="flex min-w-0 items-center gap-2.5">
+                              <span
+                                className={cn(
+                                  "grid size-4.5 shrink-0 place-items-center rounded-full border",
+                                  selected ? "border-brand-600 bg-brand-600" : "border-border",
+                                )}
+                              >
+                                {selected && <Check className="size-3 text-brand-contrast" />}
+                              </span>
+                              {thumb}
+                              {nameEl}
+                            </span>
+                          </button>
+                        ) : (
+                          <>
+                            <span className="flex min-w-0 items-center gap-2.5">
+                              {thumb}
+                              {nameEl}
+                            </span>
+                            {selected ? (
+                              <span className="inline-flex shrink-0 items-center gap-1 rounded-full border border-border bg-surface p-0.5">
+                                <button
+                                  type="button"
+                                  aria-label={`Retirer ${c.name}`}
+                                  onClick={() => dec(g, c.id)}
+                                  className="grid size-7 place-items-center rounded-full text-ink hover:bg-surface-2"
+                                >
+                                  <Minus className="size-3.5" />
+                                </button>
+                                <span className="w-5 text-center text-xs font-bold tabular-nums">{cnt}</span>
+                                <button
+                                  type="button"
+                                  aria-label={`Ajouter ${c.name}`}
+                                  onClick={() => inc(g, c.id)}
+                                  disabled={groupFull}
+                                  className="grid size-7 place-items-center rounded-full text-ink hover:bg-surface-2 disabled:opacity-40"
+                                >
+                                  <Plus className="size-3.5" />
+                                </button>
+                              </span>
+                            ) : (
+                              <button
+                                type="button"
+                                onClick={() => inc(g, c.id)}
+                                disabled={groupFull}
+                                className="shrink-0 rounded-full border border-border px-3 py-1.5 text-xs font-semibold text-ink transition-colors hover:border-brand-300 hover:text-brand-700 disabled:opacity-40"
+                              >
+                                Choisir
+                              </button>
+                            )}
+                          </>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </fieldset>
+            );
+          })}
+        </div>
+
+        <div className="border-t border-border p-5">
+          <Button
+            type="button"
+            size="lg"
+            disabled={!valid}
+            onClick={() => valid && onConfirm(sel)}
+            className="h-auto min-h-13 w-full whitespace-normal py-3 text-center leading-tight"
+          >
+            <ShoppingBag className="size-5" />
+            Ajouter au panier — {euros(price)}
+          </Button>
+          {!valid && (
+            <p className="mt-2 text-center text-xs text-muted">
+              Complétez les choix ci-dessus pour continuer.
+            </p>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function CatalogueLive({
   block,
   config,
@@ -166,15 +673,25 @@ export function CatalogueLive({
 
   const [catalog, setCatalog] = useState<ShopCatalog | null>(null);
   const [loadError, setLoadError] = useState(false);
-  const [cart, setCart] = useState<Record<string, number>>({});
+  const [cart, setCart] = useState<CartLine[]>([]);
+  const [configuring, setConfiguring] = useState<ShopProduct | null>(null);
   const [deliveryId, setDeliveryId] = useState<string>("");
   const [step, setStep] = useState<1 | 2>(1);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [query, setQuery] = useState("");
+  const [activeId, setActiveId] = useState<string | null>(null);
   const stepTopRef = useRef<HTMLDivElement>(null);
+  const catBarRef = useRef<HTMLDivElement>(null);
+  const chipsRef = useRef<HTMLDivElement>(null);
+  const sectionRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   const rawConf = c.confidentialiteHref ?? "/confidentialite";
   const confidentialiteHref = rawConf.startsWith("http") ? rawConf : `${basePath}${rawConf}`;
+
+  // Téléphone du site (bloc contact) : pour le lien discret « Appelez-nous » à
+  // l'étape paiement, où l'on masque les boutons flottants (voir data-checkout).
+  const contactPhone = findBlock<{ telephone?: string }>(config, "contact")?.content?.telephone;
 
   async function loadCatalog() {
     try {
@@ -183,12 +700,19 @@ export function CatalogueLive({
       const data = (await res.json()) as ShopCatalog;
       setCatalog(data);
       setLoadError(false);
-      // panier ↦ stock frais : on écrête les quantités devenues trop hautes
+      // panier ↦ catalogue frais : lignes dont le produit/la composition a
+      // disparu retirées, quantités écrêtées sur le stock CUMULÉ par produit.
       setCart((prev) => {
-        const next: Record<string, number> = {};
-        for (const [id, qty] of Object.entries(prev)) {
-          const p = data.products.find((x) => x.id === id);
-          if (p && p.in_stock) next[id] = Math.min(qty, p.stock);
+        const next: CartLine[] = [];
+        const used: Record<string, number> = {};
+        for (const line of prev) {
+          const p = data.products.find((x) => x.id === line.productId);
+          if (!p || !p.in_stock || !selStillValid(p, line.sel)) continue;
+          const left = stockOf(p) - (used[p.id] ?? 0);
+          const qty = Math.min(line.qty, left);
+          if (qty <= 0) continue;
+          used[p.id] = (used[p.id] ?? 0) + qty;
+          next.push({ ...line, qty });
         }
         return next;
       });
@@ -214,52 +738,91 @@ export function CatalogueLive({
   const products = useMemo(() => catalog?.products ?? [], [catalog]);
   const byId = useMemo(() => new Map(products.map((p) => [p.id, p])), [products]);
 
-  // Regroupement par catégorie (catégories nommées d'abord, puis le reste).
+  const anyImage = useMemo(() => products.some((p) => (p.images?.length ?? 0) > 0), [products]);
+  // Layout : explicite dans la config, sinon auto — « menu » compact si aucune
+  // photo (typique resto), sinon grille de cartes (boutique visuelle).
+  const layout: "cards" | "menu" = c.layout ?? (anyImage ? "cards" : "menu");
+
+  // Regroupement par catégorie + filtre recherche (nom / description, sans accents).
+  // Catégories nommées d'abord (dans l'ordre back-office), puis le reste.
   const groups = useMemo(() => {
     if (!catalog) return [];
-    const out: { name: string | null; items: ShopProduct[] }[] = [];
+    const q = norm(query.trim());
+    const match = (p: ShopProduct) =>
+      !q || norm(p.name).includes(q) || norm(p.description ?? "").includes(q);
+    const out: { id: string; name: string | null; items: ShopProduct[] }[] = [];
     for (const cat of catalog.categories) {
-      const items = products.filter((p) => p.category_id === cat.id);
-      if (items.length) out.push({ name: cat.name, items });
+      const items = products.filter((p) => p.category_id === cat.id && match(p));
+      if (items.length) out.push({ id: cat.id, name: cat.name, items });
     }
     const rest = products.filter(
-      (p) => !p.category_id || !catalog.categories.some((cc) => cc.id === p.category_id),
+      (p) =>
+        (!p.category_id || !catalog.categories.some((cc) => cc.id === p.category_id)) && match(p),
     );
-    if (rest.length) out.push({ name: out.length ? "Autres" : null, items: rest });
+    if (rest.length) out.push({ id: "__rest__", name: out.length ? "Autres" : null, items: rest });
     return out;
-  }, [catalog, products]);
+  }, [catalog, products, query]);
 
-  function addItem(id: string) {
-    const p = byId.get(id);
-    if (!p || !p.in_stock) return;
-    setCart((prev) => {
-      const qty = prev[id] ?? 0;
-      if (qty >= p.stock) return prev;
-      return { ...prev, [id]: qty + 1 };
-    });
+  // Onglets de catégories (scroll-spy) : seulement s'il y a plusieurs sections nommées.
+  const navCats = useMemo(() => groups.filter((g) => g.name), [groups]);
+  const showTabs = navCats.length > 1;
+
+  function jumpTo(id: string) {
+    const el = sectionRefs.current[id];
+    if (!el) return;
+    const headerH = window.matchMedia("(min-width: 1024px)").matches ? 80 : 64;
+    const barH = catBarRef.current?.offsetHeight ?? 0;
+    const y = window.scrollY + el.getBoundingClientRect().top - headerH - barH - 8;
+    window.scrollTo({ top: y, behavior: "smooth" });
+    setActiveId(id);
   }
-  function decItem(id: string) {
+
+  /** Quantité totale d'un produit dans le panier, toutes compositions. */
+  function productQty(productId: string): number {
+    return cart.reduce((n, l) => n + (l.productId === productId ? l.qty : 0), 0);
+  }
+
+  /** Ajoute une composition (ou +1 sur la ligne identique existante). */
+  function addLine(p: ShopProduct, sel: Selection) {
+    if (!p.in_stock || productQty(p.id) >= stockOf(p)) return;
+    const key = selKey(p.id, sel);
     setCart((prev) => {
-      const qty = (prev[id] ?? 0) - 1;
-      const next = { ...prev };
-      if (qty <= 0) delete next[id];
-      else next[id] = qty;
+      const i = prev.findIndex((l) => l.key === key);
+      if (i === -1) return [...prev, { key, productId: p.id, sel, qty: 1 }];
+      const next = [...prev];
+      next[i] = { ...next[i], qty: next[i].qty + 1 };
       return next;
     });
   }
-  function removeLine(id: string) {
-    setCart((prev) => {
-      const next = { ...prev };
-      delete next[id];
-      return next;
-    });
+
+  function onCardAdd(p: ShopProduct) {
+    if ((p.options?.length ?? 0) > 0) setConfiguring(p);
+    else addLine(p, {});
+  }
+  function incLine(key: string) {
+    const line = cart.find((l) => l.key === key);
+    const p = line && byId.get(line.productId);
+    if (!line || !p || productQty(p.id) >= stockOf(p)) return;
+    setCart((prev) => prev.map((l) => (l.key === key ? { ...l, qty: l.qty + 1 } : l)));
+  }
+  function decLine(key: string) {
+    setCart((prev) =>
+      prev.flatMap((l) => (l.key === key ? (l.qty <= 1 ? [] : [{ ...l, qty: l.qty - 1 }]) : [l])),
+    );
+  }
+  function removeLine(key: string) {
+    setCart((prev) => prev.filter((l) => l.key !== key));
+  }
+  /** − sur la CARTE d'un produit simple : décrémente sa ligne unique. */
+  function onCardDec(p: ShopProduct) {
+    decLine(selKey(p.id, {}));
   }
 
-  const lines = Object.entries(cart)
-    .map(([id, qty]) => ({ product: byId.get(id), qty }))
-    .filter((l): l is { product: ShopProduct; qty: number } => !!l.product);
+  const lines = cart
+    .map((l) => ({ ...l, product: byId.get(l.productId) }))
+    .filter((l): l is CartLine & { product: ShopProduct } => !!l.product);
   const itemCount = lines.reduce((n, l) => n + l.qty, 0);
-  const subtotal = lines.reduce((n, l) => n + l.product.price_cents * l.qty, 0);
+  const subtotal = lines.reduce((n, l) => n + unitPriceCents(l.product, l.sel) * l.qty, 0);
   const delivery = catalog?.delivery_methods.find((d) => d.id === deliveryId);
   const total = subtotal + (delivery?.price_cents ?? 0);
   const checkoutEnabled = catalog?.tenant.checkout_enabled ?? false;
@@ -269,6 +832,44 @@ export function CatalogueLive({
   useEffect(() => {
     if (step === 2) stepTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   }, [step]);
+
+  // Étape paiement : on masque les boutons flottants (appel / WhatsApp) du chrome
+  // pour ne pas concurrencer le « Payer » ni sortir du tunnel. Marqueur sur <html>,
+  // les FloatingActions se cachent via CSS (globals.css : :root[data-checkout]).
+  useEffect(() => {
+    const root = document.documentElement;
+    if (step === 2) root.setAttribute("data-checkout", "");
+    else root.removeAttribute("data-checkout");
+    return () => root.removeAttribute("data-checkout");
+  }, [step]);
+
+  // Scroll-spy : surligne l'onglet de la catégorie affichée en haut de liste.
+  useEffect(() => {
+    if (step !== 1 || !showTabs) return;
+    const obs = new IntersectionObserver(
+      (entries) => {
+        const vis = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        const id = vis[0]?.target.getAttribute("data-cat");
+        if (id) setActiveId(id);
+      },
+      { rootMargin: "-160px 0px -65% 0px", threshold: 0 },
+    );
+    for (const g of groups) {
+      const el = sectionRefs.current[g.id];
+      if (el) obs.observe(el);
+    }
+    return () => obs.disconnect();
+  }, [step, showTabs, groups]);
+
+  // Garde l'onglet actif visible dans la barre horizontale (mobile).
+  useEffect(() => {
+    if (!activeId || !chipsRef.current) return;
+    chipsRef.current
+      .querySelector<HTMLElement>(`[data-chip="${activeId}"]`)
+      ?.scrollIntoView({ inline: "center", block: "nearest", behavior: "smooth" });
+  }, [activeId]);
 
   async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -293,7 +894,13 @@ export function CatalogueLive({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           siteSlug: config.slug,
-          items: lines.map((l) => ({ productId: l.product.id, quantity: l.qty })),
+          items: lines.map((l) => ({
+            productId: l.product.id,
+            quantity: l.qty,
+            options: Object.entries(l.sel)
+              .filter(([, ids]) => ids.length > 0)
+              .map(([groupId, choiceIds]) => ({ groupId, choiceIds })),
+          })),
           deliveryMethodId: deliveryId,
           customer: { name, email, phone },
           successPath: `${basePath}/merci`,
@@ -308,8 +915,12 @@ export function CatalogueLive({
         code?: string;
       };
       if (!res.ok || !data.checkout_url) {
-        // stock devenu insuffisant entre-temps : on rafraîchit le catalogue
-        if (data.code === "out_of_stock" || data.code === "product_unavailable") {
+        // stock/menu modifié entre-temps : on rafraîchit le catalogue
+        if (
+          data.code === "out_of_stock" ||
+          data.code === "product_unavailable" ||
+          data.code === "options_invalid"
+        ) {
           void loadCatalog();
         }
         throw new Error(data.error ?? "Le paiement a échoué, réessayez.");
@@ -337,16 +948,21 @@ export function CatalogueLive({
       ) : (
         <ul className="mt-4 max-h-64 space-y-2 overflow-y-auto pe-1">
           {lines.map((l) => (
-            <li key={l.product.id} className="flex items-start justify-between gap-2 text-sm">
+            <li key={l.key} className="flex items-start justify-between gap-2 text-sm">
               <div className="min-w-0">
                 <p className="text-ink">{l.product.name}</p>
-                <p className="text-xs text-muted">{euros(l.product.price_cents * l.qty)}</p>
+                {selSummary(l.product, l.sel).map((s, i) => (
+                  <p key={i} className="text-xs leading-snug text-muted">
+                    {s}
+                  </p>
+                ))}
+                <p className="text-xs text-muted">{euros(unitPriceCents(l.product, l.sel) * l.qty)}</p>
               </div>
               <div className="flex shrink-0 items-center gap-1">
                 <button
                   type="button"
                   aria-label="Retirer un exemplaire"
-                  onClick={() => decItem(l.product.id)}
+                  onClick={() => decLine(l.key)}
                   className="grid size-6 place-items-center rounded-full hover:bg-surface-2"
                 >
                   <Minus className="size-3.5" />
@@ -355,7 +971,7 @@ export function CatalogueLive({
                 <button
                   type="button"
                   aria-label="Ajouter un exemplaire"
-                  onClick={() => addItem(l.product.id)}
+                  onClick={() => incLine(l.key)}
                   className="grid size-6 place-items-center rounded-full hover:bg-surface-2"
                 >
                   <Plus className="size-3.5" />
@@ -363,7 +979,7 @@ export function CatalogueLive({
                 <button
                   type="button"
                   aria-label="Retirer du panier"
-                  onClick={() => removeLine(l.product.id)}
+                  onClick={() => removeLine(l.key)}
                   className="ms-1 grid size-6 place-items-center rounded-full text-muted hover:bg-red-50 hover:text-red-500"
                 >
                   <Trash2 className="size-3.5" />
@@ -403,6 +1019,18 @@ export function CatalogueLive({
         </Reveal>
       )}
 
+      {/* Configurateur (produit à options) */}
+      {configuring && (
+        <ProductConfigurator
+          product={configuring}
+          onClose={() => setConfiguring(null)}
+          onConfirm={(sel) => {
+            addLine(configuring, sel);
+            setConfiguring(null);
+          }}
+        />
+      )}
+
       {/* Barre panier épinglée (mobile) */}
       {step === 1 && lines.length > 0 && (
         <button
@@ -438,38 +1066,124 @@ export function CatalogueLive({
         </p>
       ) : step === 1 ? (
         /* Étape 1 — catalogue live + panier */
-        <div className="mt-10 grid gap-8 pb-20 lg:grid-cols-[1fr_360px] lg:pb-0">
-          <div className="space-y-10">
-            {groups.map((group, gi) => (
-              <div key={gi}>
-                {group.name && (
-                  <Reveal>
-                    <div className="mb-5 border-s-2 border-brand-200 ps-4">
-                      <h3 className="font-display text-xl font-bold text-ink">{group.name}</h3>
-                    </div>
-                  </Reveal>
+        <div className="mt-10 grid grid-cols-1 gap-8 pb-20 lg:grid-cols-[minmax(0,1fr)_360px] lg:pb-0">
+          <div className="min-w-0">
+            {/* Barre sticky : recherche + onglets de catégories (scroll-spy) */}
+            <div
+              ref={catBarRef}
+              className={cn("sticky top-16 z-20 mb-6 pb-3 pt-2 lg:top-20", toneBgClass(tone))}
+            >
+              <div className="relative">
+                <Search className="pointer-events-none absolute start-3.5 top-1/2 size-4.5 -translate-y-1/2 text-muted" />
+                <input
+                  type="search"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  placeholder={c.searchPlaceholder ?? "Rechercher…"}
+                  aria-label="Rechercher un produit"
+                  className="w-full rounded-full border border-border bg-surface py-2.5 ps-11 pe-10 text-sm text-ink shadow-sm outline-none transition-colors placeholder:text-muted-2 focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
+                />
+                {query && (
+                  <button
+                    type="button"
+                    onClick={() => setQuery("")}
+                    aria-label="Effacer la recherche"
+                    className="absolute end-2.5 top-1/2 grid size-7 -translate-y-1/2 place-items-center rounded-full bg-surface-2 text-muted hover:text-ink"
+                  >
+                    <X className="size-4" />
+                  </button>
                 )}
-                <div className="grid gap-5 sm:grid-cols-2">
-                  {group.items.map((p, pi) => (
-                    <Reveal key={p.id} delay={(pi % 2) * 0.05}>
-                      <ShopProductCard
-                        product={p}
-                        qty={cart[p.id] ?? 0}
-                        onAdd={() => addItem(p.id)}
-                        onDec={() => decItem(p.id)}
-                      />
-                    </Reveal>
+              </div>
+              {showTabs && (
+                <div
+                  ref={chipsRef}
+                  className="mt-2.5 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+                >
+                  {navCats.map((g) => (
+                    <button
+                      key={g.id}
+                      type="button"
+                      data-chip={g.id}
+                      onClick={() => jumpTo(g.id)}
+                      className={cn(
+                        "shrink-0 whitespace-nowrap rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors",
+                        activeId === g.id
+                          ? "border-ink bg-ink text-surface"
+                          : "border-border bg-surface text-ink hover:border-brand-200",
+                      )}
+                    >
+                      {g.name}
+                    </button>
                   ))}
                 </div>
-              </div>
-            ))}
-            {c.notes?.length ? (
-              <ul className="space-y-1.5 text-sm text-muted">
-                {c.notes.map((n, i) => (
-                  <li key={i}>{n}</li>
+              )}
+            </div>
+
+            {groups.length === 0 ? (
+              <p className="rounded-theme border border-border bg-surface p-6 text-center text-sm text-muted">
+                Aucun résultat pour «&nbsp;{query.trim()}&nbsp;».{" "}
+                <button
+                  type="button"
+                  onClick={() => setQuery("")}
+                  className="font-semibold text-brand-700 hover:underline"
+                >
+                  Réinitialiser
+                </button>
+              </p>
+            ) : (
+              <div className="space-y-10">
+                {groups.map((group) => (
+                  <div
+                    key={group.id}
+                    ref={(el) => {
+                      sectionRefs.current[group.id] = el;
+                    }}
+                    data-cat={group.id}
+                  >
+                    {group.name && (
+                      <Reveal>
+                        <div className="mb-5 border-s-2 border-brand-200 ps-4">
+                          <h3 className="font-display text-xl font-bold text-ink">{group.name}</h3>
+                        </div>
+                      </Reveal>
+                    )}
+                    {layout === "menu" ? (
+                      <div className="space-y-3">
+                        {group.items.map((p) => (
+                          <ShopProductRow
+                            key={p.id}
+                            product={p}
+                            qty={productQty(p.id)}
+                            onAdd={() => onCardAdd(p)}
+                            onDec={() => onCardDec(p)}
+                          />
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="grid gap-5 sm:grid-cols-2">
+                        {group.items.map((p, pi) => (
+                          <Reveal key={p.id} delay={(pi % 2) * 0.05}>
+                            <ShopProductCard
+                              product={p}
+                              qty={productQty(p.id)}
+                              onAdd={() => onCardAdd(p)}
+                              onDec={() => onCardDec(p)}
+                            />
+                          </Reveal>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 ))}
-              </ul>
-            ) : null}
+                {c.notes?.length ? (
+                  <ul className="space-y-1.5 text-sm text-muted">
+                    {c.notes.map((n, i) => (
+                      <li key={i}>{n}</li>
+                    ))}
+                  </ul>
+                ) : null}
+              </div>
+            )}
           </div>
 
           <div className="lg:sticky lg:top-24 lg:self-start">
@@ -506,6 +1220,17 @@ export function CatalogueLive({
           >
             <ArrowLeft className="size-4" /> Modifier mon panier
           </button>
+
+          {contactPhone && (
+            <p className="mt-3">
+              <a
+                href={telHrefIntl(contactPhone)}
+                className="inline-flex items-center gap-1.5 text-xs text-muted transition-colors hover:text-brand-700"
+              >
+                <Phone className="size-3.5" /> Une question ? Appelez-nous au {contactPhone}
+              </a>
+            </p>
+          )}
 
           <div className="mt-6 grid gap-8 lg:grid-cols-[1fr_360px]">
             <div className="lg:order-1">

@@ -21,7 +21,10 @@ export function LittoralFloatingActions({
   if (!telephone && !whatsapp) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 flex border-t border-brand-100 bg-bg lg:hidden">
+    <div
+      data-floating-actions
+      className="fixed inset-x-0 bottom-0 z-40 flex border-t border-brand-100 bg-bg lg:hidden"
+    >
       {whatsapp && (
         <a
           href={`${waHref(whatsapp)}?text=${encodeURIComponent(strings.whatsappText)}`}

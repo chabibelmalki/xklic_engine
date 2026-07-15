@@ -22,6 +22,7 @@ import { verifyTurnstileToken } from "@/lib/turnstile";
 const SHOP_ERRORS: Record<string, string> = {
   out_of_stock: "Un article de votre panier n'est plus en stock. Actualisez la page.",
   product_unavailable: "Un article de votre panier n'est plus disponible. Actualisez la page.",
+  options_invalid: "La composition d'un article a changé. Actualisez la page et recomposez votre choix.",
   delivery_method_invalid: "Le mode de livraison choisi n'est plus proposé. Actualisez la page.",
   stripe_not_connected: "Le paiement en ligne n'est pas encore activé pour cette boutique.",
   stripe_not_configured: "Le paiement en ligne est momentanément indisponible.",
@@ -75,7 +76,14 @@ export async function POST(request: Request) {
     const res = await shopFetch(`/v1/public/tenants/${encodeURIComponent(tenant)}/checkout`, {
       method: "POST",
       body: JSON.stringify({
-        items: data.items.map((it) => ({ product_id: it.productId, quantity: it.quantity })),
+        items: data.items.map((it) => ({
+          product_id: it.productId,
+          quantity: it.quantity,
+          options: (it.options ?? []).map((o) => ({
+            group_id: o.groupId,
+            choice_ids: o.choiceIds,
+          })),
+        })),
         delivery_method_id: data.deliveryMethodId,
         customer: {
           name: data.customer.name,

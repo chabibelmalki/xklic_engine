@@ -499,7 +499,7 @@
       },
       {
         "type": "catalogue",
-        "role": "Boutique EN LIGNE (module e-commerce) : produits/prix/stock chargés en LIVE depuis le back-office, panier, paiement Stripe. Nécessite `shop.enabled` dans la config du site + tenant provisionné côté back-office. Pour la commande SANS paiement (devis), utiliser `boutique`.",
+        "role": "Boutique EN LIGNE (module e-commerce) : produits/prix/stock chargés en LIVE depuis le back-office, panier, paiement Stripe. Produits à OPTIONS (menus composés, formules : « 2 accompagnements au choix », suppléments) : configurateur automatique — les groupes de choix se définissent dans le back-office, rien à faire côté config. Nécessite `shop.enabled` dans la config du site + tenant provisionné côté back-office. Pour la commande SANS paiement (devis), utiliser `boutique`.",
         "variants": []
       },
       {

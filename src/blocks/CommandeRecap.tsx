@@ -21,6 +21,8 @@ interface OrderItem {
   unit_price_cents: number;
   quantity: number;
   total_cents: number;
+  /** Choix du client (menus/options) — snapshot posé par le back-office. */
+  selections?: { group: string; choices: { name: string; price_delta_cents: number }[] }[];
 }
 interface Order {
   number: number;
@@ -132,10 +134,15 @@ export function CommandeRecap({
             <ul className="mt-6 space-y-2 border-t border-border pt-5 text-sm">
               {order.items.map((it, i) => (
                 <li key={i} className="flex justify-between gap-3">
-                  <span className="text-ink">
+                  <span className="min-w-0 text-ink">
                     {it.name} <span className="text-muted">× {it.quantity}</span>
+                    {(it.selections ?? []).map((s, si) => (
+                      <span key={si} className="block text-xs leading-snug text-muted">
+                        {s.group} : {s.choices.map((ch) => ch.name).join(", ")}
+                      </span>
+                    ))}
                   </span>
-                  <span className="tabular-nums text-ink">{euros(it.total_cents)}</span>
+                  <span className="shrink-0 tabular-nums text-ink">{euros(it.total_cents)}</span>
                 </li>
               ))}
             </ul>

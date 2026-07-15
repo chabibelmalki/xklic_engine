@@ -1,0 +1,327 @@
+{
+  "slug": "o-poulet-braise",
+  "theme": "energie-corail",
+  "stylePack": "atelier-industriel",
+  "branding": {
+    "logoAlt": "O'Poulet Braisé — Le vrai goût du poulet",
+    "tagline": "Poulet braisé au feu de bois · Osny",
+    "logoDarkBadge": true,
+    "colors": {
+      "brand": "#d81818",
+      "accent": "#f5a300",
+      "neutral": "warm"
+    },
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/o-poulet-braise/logo-b8834c86.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/o-poulet-braise/logo-b8834c86.png"
+  },
+  "social": [
+    {
+      "platform": "google",
+      "url": "https://share.google/s6X7BDQa88MNWKEeL",
+      "label": "Notre fiche Google"
+    }
+  ],
+  "googleReviewUrl": "https://share.google/s6X7BDQa88MNWKEeL",
+  "entreprise": {
+    "nom": "O'Poulet Braisé",
+    "statut": "SAS",
+    "siret": "928 620 681 00017",
+    "tva": {
+      "regime": "reel",
+      "numero": "FR36928620681"
+    },
+    "ape": "56.10C",
+    "apeLabel": "Restauration de type rapide",
+    "capital": 1000,
+    "rcs": "Pontoise",
+    "dirigeant": "Deysi Armspach",
+    "siege": "Centre commercial de l'Oseraie, Chemin du Poirier Charles Guérin, 95520 Osny"
+  },
+  "seo": {
+    "schemaType": "Restaurant",
+    "ville": "Osny"
+  },
+  "geo": {
+    "lat": 49.077949,
+    "lng": 2.076791
+  },
+  "meta": {
+    "title": "Poulet braisé au feu de bois à Osny",
+    "description": "Poulet braisé au feu de bois, 100% maison et halal, à Osny (95). Entier, demi, cuisses, ailes et accompagnements. Commande et paiement en ligne, retrait ou livraison.",
+    "keywords": [
+      "poulet braisé Osny",
+      "restaurant Osny 95",
+      "poulet au feu de bois",
+      "poulet à emporter Osny",
+      "poulet halal Osny",
+      "livraison poulet Osny"
+    ]
+  },
+  "shop": {
+    "enabled": true
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Accueil",
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "plein",
+          "content": {
+            "eyebrow": "Restaurant · Osny (95)",
+            "titre": "Poulet braisé au feu de bois",
+            "titreAccent": "100% maison",
+            "accroche": "La recette traditionnelle, braisée lentement sur le bois : une viande fondante et parfumée. À emporter au centre commercial de l'Oseraie, à Osny.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/o-poulet-braise/hero-flammes.jpg",
+              "alt": "Flammes de braise à travers la grille"
+            },
+            "trust": [
+              {
+                "icone": "Flame",
+                "label": "Cuit au feu de bois"
+              },
+              {
+                "icone": "ChefHat",
+                "label": "100% maison"
+              },
+              {
+                "icone": "Star",
+                "label": "4,6/5 · 90 avis Google"
+              },
+              {
+                "icone": "BadgeCheck",
+                "label": "Viande halal"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Commander en ligne",
+              "href": "/boutique"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "La maison",
+            "titre": "Une cuisson au feu de bois, un goût qui a du",
+            "titreAccent": "caractère",
+            "paragraphes": [
+              "Chez O'Poulet Braisé, tout part du feu. Nos poulets sont braisés lentement sur le bois, pour une peau dorée et une chair qui garde tout son jus. Une cuisson patiente qui donne à la viande ce goût franc, légèrement fumé, qu'on ne retrouve pas ailleurs.",
+              "Ici, c'est 100% maison : marinade préparée sur place, accompagnements généreux, rien d'industriel. Riz thaï, bananes plantain, haricots verts ou pâtes — de quoi composer une assiette complète, à emporter ou à partager en famille.",
+              "Une viande halal, une équipe qui prend le temps de bien faire, et une adresse simple et chaleureuse au centre commercial de l'Oseraie. Que ce soit pour un déjeuner sur le pouce ou un vrai repas, on vous régale à Osny."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "Comment ça marche",
+            "titre": "Commander, c'est simple",
+            "items": [
+              {
+                "titre": "Choisissez vos plats",
+                "texte": "Parcourez la carte et composez votre commande en ligne, quand vous voulez.",
+                "icone": "Utensils"
+              },
+              {
+                "titre": "Payez en sécurité",
+                "texte": "Réglez en ligne par carte bancaire, paiement 100% sécurisé.",
+                "icone": "CreditCard"
+              },
+              {
+                "titre": "Retrait ou livraison",
+                "texte": "Récupérez votre commande sur place, ou faites-vous livrer autour d'Osny (5 km).",
+                "icone": "ShoppingBag"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "coordonnees-cartes",
+          "content": {
+            "titre": "Nous trouver",
+            "intro": "Au centre commercial de l'Oseraie, à Osny. Ouvert tous les jours sauf le dimanche.",
+            "telephone": "07 81 56 62 71",
+            "adresse": "Centre commercial de l'Oseraie (Auchan), 95520 Osny",
+            "horaires": [
+              {
+                "jour": "Lundi",
+                "heures": "10:00 – 20:30"
+              },
+              {
+                "jour": "Mardi",
+                "heures": "10:00 – 20:30"
+              },
+              {
+                "jour": "Mercredi",
+                "heures": "10:00 – 20:30"
+              },
+              {
+                "jour": "Jeudi",
+                "heures": "10:00 – 20:30"
+              },
+              {
+                "jour": "Vendredi",
+                "heures": "10:00 – 20:30"
+              },
+              {
+                "jour": "Samedi",
+                "heures": "10:00 – 20:30"
+              },
+              {
+                "jour": "Dimanche",
+                "heures": "Fermé"
+              }
+            ],
+            "mapEmbedUrl": "https://www.google.com/maps?q=49.077949,2.076791&z=16&output=embed",
+            "form": false,
+            "cta": {
+              "label": "Commander en ligne",
+              "href": "/boutique"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Une envie de poulet braisé ?",
+            "sousTitre": "Commandez en ligne en quelques clics — retrait sur place ou livraison autour d'Osny.",
+            "ctaPrimaire": {
+              "label": "Commander maintenant",
+              "href": "/boutique"
+            },
+            "ctaSecondaire": {
+              "label": "Appeler le resto",
+              "href": "tel:+33781566271"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "a-propos",
+      "label": "À propos",
+      "meta": {
+        "title": "À propos — poulet braisé au feu de bois à Osny",
+        "description": "O'Poulet Braisé, votre spécialiste du poulet braisé au feu de bois à Osny : une cuisine 100% maison, une viande halal et le vrai goût du poulet, depuis 2024."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "La maison",
+            "titre": "À propos d'O'Poulet Braisé",
+            "intro": "Une adresse dédiée au poulet braisé au feu de bois, à Osny — le vrai goût du poulet, sans raccourci."
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Le feu de bois, une",
+            "titreAccent": "exigence",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/o-poulet-braise/braise-atelier.jpg",
+              "alt": "Morceaux de poulet braisés au-dessus des braises"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3",
+            "paragraphes": [
+              "O'Poulet Braisé est né d'une idée simple : rendre au poulet son vrai goût. Depuis 2024, au centre commercial de l'Oseraie, nous braisons nos poulets au feu de bois, comme on le faisait avant — sans four à convoyeur, sans raccourci. Le bois, la braise, le temps : c'est ce trio qui donne cette peau dorée et cette chair qui reste juteuse.",
+              "Tout est préparé maison. La marinade est faite sur place, les accompagnements sont cuisinés chaque jour, et la viande est halal. On ne cherche pas à aller vite : on cherche à bien faire, pour que chaque commande ait le même goût franc, légèrement fumé, qui fait revenir les habitués.",
+              "Ici, on aime les choses généreuses et sans chichi : un poulet à partager, un accompagnement qui tient au corps, un accueil simple. Que vous passiez pour un déjeuner rapide ou un repas de famille, l'idée reste la même — vous régaler."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Le poulet est-il halal ?",
+                "reponse": "Oui, notre viande est halal."
+              },
+              {
+                "question": "Comment le poulet est-il cuit ?",
+                "reponse": "Il est braisé lentement au feu de bois, après une marinade préparée maison. C'est cette cuisson au bois qui lui donne son goût franc et légèrement fumé."
+              },
+              {
+                "question": "Peut-on commander à emporter ou se faire livrer ?",
+                "reponse": "Les deux. Vous pouvez commander et payer en ligne, puis récupérer votre commande sur place au centre commercial de l'Oseraie, ou vous faire livrer dans un rayon de 5 km autour d'Osny."
+              },
+              {
+                "question": "Où êtes-vous situés et à quels horaires ?",
+                "reponse": "Au centre commercial de l'Oseraie (Auchan), à Osny (95520). Ouvert du lundi au samedi de 10h00 à 20h30, fermé le dimanche."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Envie d'y goûter ?",
+            "sousTitre": "Composez votre commande en ligne — retrait sur place ou livraison autour d'Osny.",
+            "ctaPrimaire": { "label": "Commander en ligne", "href": "/boutique" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "boutique",
+      "label": "Commander",
+      "meta": {
+        "title": "Commander en ligne — poulet braisé à Osny",
+        "description": "Composez votre commande de poulet braisé en ligne, payez par carte et choisissez le retrait sur place ou la livraison autour d'Osny. Viande halal, 100% maison."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Boutique en ligne",
+            "titre": "Commander en ligne",
+            "intro": "Composez votre commande, payez en ligne et choisissez le retrait sur place ou la livraison autour d'Osny."
+          }
+        },
+        {
+          "type": "catalogue",
+          "content": {
+            "titre": "Notre carte",
+            "intro": "Poulet braisé au feu de bois et accompagnements maison. Ajoutez vos plats au panier et réglez en ligne.",
+            "notes": [
+              "Retrait sur place au centre commercial de l'Oseraie (Auchan), à Osny.",
+              "Livraison possible dans un rayon de 5 km autour d'Osny.",
+              "Viande halal · 100% maison."
+            ],
+            "submitLabel": "Payer ma commande",
+            "layout": "menu",
+            "searchPlaceholder": "Rechercher un plat…",
+            "confidentialiteHref": "/confidentialite",
+            "emptyMessage": "Notre carte en ligne arrive très bientôt. En attendant, appelez-nous au 07 81 56 62 71 pour commander."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "merci",
+      "label": "Merci",
+      "navHidden": true,
+      "noindex": true,
+      "blocks": [
+        {
+          "type": "commandeRecap",
+          "content": {
+            "titre": "Merci pour votre commande !",
+            "intro": "Votre commande est confirmée. Vous recevrez un e-mail de confirmation avec le récapitulatif.",
+            "retourHref": "/boutique"
+          }
+        }
+      ]
+    }
+  ]
+}

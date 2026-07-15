@@ -735,6 +735,15 @@ export interface CatalogueContent {
   submitLabel?: string;
   /** Message si le catalogue est vide (défaut : message générique). */
   emptyMessage?: string;
+  /** Placeholder de la barre de recherche (défaut : « Rechercher… »). */
+  searchPlaceholder?: string;
+  /**
+   * Disposition du catalogue :
+   * - `"cards"` : grille de grosses cartes photo (boutique visuelle : pâtissier…).
+   * - `"menu"` : lignes compactes façon carte de restaurant (dense, beaucoup d'articles).
+   * Non défini = auto : `menu` si aucun produit n'a de photo, sinon `cards`.
+   */
+  layout?: "cards" | "menu";
 }
 
 // --- commandeRecap (page « merci » : récapitulatif après paiement) ---

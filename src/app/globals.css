@@ -1322,3 +1322,10 @@ input[type="range"] {
   background-color: var(--accent-500);
   color: #ffffff;
 }
+
+/* Étape paiement de la boutique : on masque les boutons flottants (appel /
+   WhatsApp) pour ne pas concurrencer le « Payer » ni faire sortir du tunnel.
+   Le bloc CatalogueLive pose `data-checkout` sur <html> quand step === 2. */
+:root[data-checkout] [data-floating-actions] {
+  display: none;
+}

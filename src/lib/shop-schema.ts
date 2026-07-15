@@ -14,6 +14,20 @@ export const shopCheckoutSchema = z.object({
       z.object({
         productId: z.string().min(1),
         quantity: z.number().int().min(1).max(99),
+        /**
+         * Choix du client par groupe d'options (menus/formules) : ids DB
+         * uniquement — les prix des suppléments sont relus en base comme le
+         * reste. Répéter un id de choix = le prendre plusieurs fois.
+         */
+        options: z
+          .array(
+            z.object({
+              groupId: z.string().min(1).max(64),
+              choiceIds: z.array(z.string().min(1).max(64)).max(99),
+            }),
+          )
+          .max(10)
+          .optional(),
       }),
     )
     .min(1)

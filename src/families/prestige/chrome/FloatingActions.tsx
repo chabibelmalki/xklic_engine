@@ -24,7 +24,10 @@ export function PrestigeFloatingActions({
   if (!telephone && !whatsapp) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 flex border-t border-[var(--px-hairline)] bg-[var(--px-void)] lg:hidden">
+    <div
+      data-floating-actions
+      className="fixed inset-x-0 bottom-0 z-40 flex border-t border-[var(--px-hairline)] bg-[var(--px-void)] lg:hidden"
+    >
       {whatsapp && (
         <a
           href={`${waHref(whatsapp)}?text=${encodeURIComponent(strings.whatsappText)}`}

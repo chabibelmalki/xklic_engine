@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/Button";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { HeaderPhonePopover } from "./HeaderPhonePopover";
 import { cn, telHrefIntl, telIndicatif, telNeedsIndicatif } from "@/lib/utils";
-import { navPages, isMultiPage, resolvePages, findBlock } from "@/lib/pages";
+import { navPages, isMultiPage, resolvePages, getHomePage, findBlock } from "@/lib/pages";
 
 type NavItem = { href: string; label: string; active: boolean };
 
@@ -97,6 +97,22 @@ export function SiteHeader({
   const cta = ctaTarget(config, basePath, strings);
   const showLangs = locales.length > 1;
 
+  // En-tête IMMERSIF : quand le 1er bloc de la page courante est un hero plein
+  // cadre (`plein`/`fondu` avec image), le header se pose EN OVERLAY par-dessus
+  // (transparent + texte clair en haut de page, solide au scroll). Détecté par
+  // page => n'affecte que les sites/pages qui utilisent un hero plein.
+  const pages = resolvePages(config);
+  const currentPage = pages.find((p) => p.path === currentPath) ?? getHomePage(config);
+  const firstBlock = currentPage.blocks?.[0] as
+    | { type?: string; variant?: string; content?: { image?: unknown } }
+    | undefined;
+  const immersive =
+    firstBlock?.type === "hero" &&
+    (firstBlock.variant === "plein" || firstBlock.variant === "fondu") &&
+    !!firstBlock.content?.image;
+  // `overlay` = rendu clair actif (immersif ET en haut de page, menu fermé).
+  const overlay = immersive && !scrolled && !open;
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
     onScroll();
@@ -117,12 +133,21 @@ export function SiteHeader({
       className={cn(
         "sticky top-0 z-50 transition-all duration-300",
         scrolled || open
-          ? "border-b border-border bg-bg/85 backdrop-blur-lg"
-          : "border-b border-transparent bg-transparent",
+          ? immersive
+            ? "bg-bg/85 backdrop-blur-lg"
+            : "border-b border-border bg-bg/85 backdrop-blur-lg"
+          : immersive
+            ? "bg-gradient-to-b from-ink/55 via-ink/20 to-transparent"
+            : "border-b border-transparent bg-transparent",
       )}
     >
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-4 px-5 sm:px-8 lg:h-20">
-        <Logo config={config} href={basePath || "/"} className="min-w-0" />
+        <Logo
+          config={config}
+          href={basePath || "/"}
+          variant={overlay ? "light" : "default"}
+          className="min-w-0"
+        />
 
         <nav className="hidden items-center gap-1 lg:flex">
           {nav.map((item) => (
@@ -132,9 +157,13 @@ export function SiteHeader({
               aria-current={item.active ? "page" : undefined}
               className={cn(
                 "whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2",
-                item.active
-                  ? "bg-brand-50 text-brand-700"
-                  : "text-muted hover:bg-surface-2 hover:text-ink",
+                overlay
+                  ? item.active
+                    ? "text-white"
+                    : "text-white/85 hover:bg-white/10 hover:text-white"
+                  : item.active
+                    ? "bg-brand-50 text-brand-700"
+                    : "text-muted hover:bg-surface-2 hover:text-ink",
               )}
             >
               {item.label}
@@ -163,12 +192,22 @@ export function SiteHeader({
             ) : (
               <a
                 href={telHrefIntl(contact.telephone)}
-                className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap text-sm font-semibold text-ink transition-colors hover:text-brand-700"
+                className={cn(
+                  "inline-flex shrink-0 items-center gap-2 whitespace-nowrap text-sm font-semibold transition-colors",
+                  overlay ? "text-white hover:text-white/80" : "text-ink hover:text-brand-700",
+                )}
               >
-                <Phone className="size-4 shrink-0 text-brand-600" />
+                <Phone className={cn("size-4 shrink-0", overlay ? "text-white" : "text-brand-600")} />
                 <span className="inline-flex items-baseline gap-1.5 whitespace-nowrap">
                   {telNeedsIndicatif(contact.telephone) && (
-                    <span className="text-[0.78em] font-medium text-muted">{telIndicatif()}</span>
+                    <span
+                      className={cn(
+                        "text-[0.78em] font-medium",
+                        overlay ? "text-white/70" : "text-muted",
+                      )}
+                    >
+                      {telIndicatif()}
+                    </span>
                   )}
                   {contact.telephone}
                 </span>
@@ -184,7 +223,10 @@ export function SiteHeader({
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="grid size-10 shrink-0 place-items-center rounded-xl text-ink transition-colors hover:bg-surface-2 lg:hidden"
+          className={cn(
+            "grid size-10 shrink-0 place-items-center rounded-xl transition-colors lg:hidden",
+            overlay ? "text-white hover:bg-white/10" : "text-ink hover:bg-surface-2",
+          )}
           aria-label={open ? strings.header.closeMenu : strings.header.openMenu}
           aria-expanded={open}
           aria-controls="mobile-menu"

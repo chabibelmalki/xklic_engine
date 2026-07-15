@@ -22,7 +22,10 @@ export function FloatingActions({
   const waMessage = strings.whatsappText;
 
   return (
-    <div className="fixed bottom-5 end-5 z-40 flex flex-col gap-3 sm:bottom-6 sm:end-6 lg:hidden">
+    <div
+      data-floating-actions
+      className="fixed bottom-5 end-5 z-40 flex flex-col gap-3 sm:bottom-6 sm:end-6 lg:hidden"
+    >
       {whatsapp && (
         <a
           href={`${waHref(whatsapp)}?text=${encodeURIComponent(waMessage)}`}

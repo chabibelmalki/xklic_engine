@@ -303,7 +303,9 @@ export function Hero({ block, config, basePath = "", strings }: BlockComponentPr
   // ---- variant "plein" (image plein écran + overlay, texte clair) ----
   if (variant === "plein" && c.image) {
     return (
-      <header className="relative isolate overflow-hidden">
+      // -mt : le hero plein remonte SOUS l'en-tête sticky (header rendu en
+      // overlay transparent au-dessus). Le contenu reste ancré en bas (justify-end).
+      <header className="relative isolate -mt-16 overflow-hidden lg:-mt-20">
         <div className="absolute inset-0 -z-10">
           <Image
             src={c.image.url}
@@ -318,7 +320,7 @@ export function Hero({ block, config, basePath = "", strings }: BlockComponentPr
               la photo (parties claires comprises). */}
           <div className="absolute inset-0 bg-ink/20" />
         </div>
-        <Container className="flex min-h-[78vh] flex-col justify-end py-20 sm:min-h-[86vh]">
+        <Container className="flex min-h-[80vh] flex-col justify-end pt-28 pb-10 sm:min-h-[88vh]">
           <div className="max-w-2xl text-white">
             {(c.eyebrow || c.sousTitre) && (
               <Reveal>

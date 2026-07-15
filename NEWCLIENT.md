@@ -113,6 +113,64 @@ pas par habitude.
 
 ---
 
+## BOUTIQUE EN LIGNE (module e-commerce : catalogue live + paiement Stripe)
+
+Pour un client qui **vend en ligne** (restauration/click & collect, produits…) —
+signalé par `boutique_tier` au dossier. Retour d'expérience de la 1re boutique
+(`o-poulet-braise`, 2026-07-14) :
+
+**Côté config (engine)** — le strict minimum :
+- `shop: { enabled: true }` (top-level). `tenant` optionnel (défaut = `slug`).
+- Une page « commander » avec un bloc **`catalogue`** (boutique LIVE : panier +
+  Stripe hosted). NE PAS mettre les produits/prix dans la config : ils vivent
+  dans le **back-office** (source de vérité prix/stock), chargés en direct.
+- Une page **`merci`** (`navHidden: true` + `noindex: true`) avec un bloc
+  **`commandeRecap`** (lit `?session_id=` posé par Stripe sur la success URL).
+- `boutique` (statique, sortie « devis » sans paiement) ≠ `catalogue` (live +
+  paiement). Pour vendre vraiment : `catalogue`.
+
+**Menus composés / formules / add-ons (groupes d'options, 2026-07-15)** :
+- Un produit peut porter des **groupes de choix** (« 2 accompagnements au choix »,
+  « 1 boisson au choix », suppléments +X €) — définis dans la fiche produit du
+  back-office (« Choix pour le client »), génériques tous métiers.
+- Côté engine : **rien à configurer** — le bloc `catalogue` détecte les options et
+  ouvre un configurateur (compteurs, min/max, prix live) ; chaque composition fait
+  sa propre ligne de panier. Le back-office reste seul juge (validation min/max +
+  prix = base + suppléments recalculés en DB au checkout, code erreur
+  `options_invalid`). Les choix sont snapshotés sur la commande (admin, mail,
+  Stripe, page merci).
+- **Choix = un produit du catalogue** : un choix peut être lié à un produit vendu à
+  l'unité (ex. « Riz thaï ») plutôt qu'un libellé libre → réutilise nom + photo, et
+  **le choisir dans un menu décompte le stock du produit lié**. Le configurateur
+  affiche l'image et grise les choix épuisés (`available:false`). Le marchand lie via
+  l'autocomplétion de la fiche produit ; côté engine c'est transparent.
+
+**Côté back-office (à provisionner AVANT de livrer)** — c'est là que ça bloque :
+- Le tenant doit exister avec **produits + catégories + modes de livraison +
+  Stripe connecté**. Vérifier d'un `curl` :
+  `GET {BACKOFFICE_API_URL}/v1/public/tenants/<slug>/catalog` (header `X-API-Key`)
+  → regarder `products`, `delivery_methods`, `tenant.checkout_enabled`.
+- **Produits vides = boutique vide** : le bloc affiche alors le `emptyMessage` de
+  la config (prévois-en un utile, ex. « appelez-nous au … »). Le menu/les prix
+  sont saisis côté **admin back-office**, pas par l'engine.
+
+**Env engine (Vercel) — sinon la boutique casse en prod** :
+- `SHOP_API_URL=https://api.xklic.com` (en local `.env.local` pointe sur
+  `localhost:8080` → catalogue « momentanément indisponible » tant que l'API Go
+  locale ne tourne pas : c'est normal en dev).
+- `ENGINE_API_KEY` **valide** contre le back-office (⚠️ distincte de
+  `BACKOFFICE_API_KEY`; la valeur locale peut être un placeholder qui renvoie 401).
+- États du bloc `catalogue` : `loadError` → « indisponible » ; chargé + 0 produit
+  → `emptyMessage` ; sinon panier → `POST /api/shop/checkout` → Stripe.
+
+**Turnstile sur la boutique** : `forms.turnstile` n'a d'effet que si le tenant a
+un **widget assigné** côté back-office (sinon pas de sitekey) ET si le
+(sous-)domaine est **dans les hostnames du widget**. Pour un sous-domaine
+`.xklic.com` neuf, l'ajouter au widget (sinon 403 au checkout). Sans widget, laisser
+`forms.turnstile` absent : le honeypot protège déjà, le checkout marche.
+
+---
+
 ## RÈGLES PARTICULIÈRES
 
 - **Avis** : **vrais avis Google uniquement**, recopiés fidèlement (jamais reformulés).
@@ -207,6 +265,29 @@ Chaque point ci-dessous est une erreur RÉELLEMENT constatée en prod sur le par
 - `npm run canonicals:check` après chaque deploy touchant un site multilingue ou
   un domaine : vérifie que le canonical de chaque accueil (et de chaque langue)
   pointe le bon domaine.
+
+---
+
+## CONVENTIONS DE BLOCS (pièges vérifiés)
+
+- **Icônes** = noms **lucide en PascalCase** (`Flame`, `ChefHat`, `Star`,
+  `BadgeCheck`, `Utensils`, `CreditCard`, `ShoppingBag`…). Un nom inconnu ou en
+  kebab-case retombe **silencieusement** sur `Sparkles` (toutes les icônes se
+  ressemblent alors). Vaut pour `hero.trust[].icone`, `etapes[].icone`,
+  `services[].icone`.
+- **Hero — CTA secondaire** : ne peut PAS être un canal de contact
+  (`tel:`/`mailto:`/`wa.me`) — `resolveHeroSecondary` le remplace par un lien
+  « explore » vers une page interne (souvent un doublon du CTA primaire). Le
+  téléphone vit dans le **header** + le **bouton flottant** + le bloc `contact` ;
+  le bloc `cta` de bas de page, lui, accepte un `tel:`. Pour un hero à une seule
+  action, ne mets **que** `ctaPrimaire`.
+- **Hero variant `centre`** : le sous-titre descriptif se met dans **`accroche`**
+  (pas `sousTitre`, qui ne sert que de repli au badge quand `eyebrow` est absent).
+- **Hero plein cadre `plein`** (image de fond + texte blanc ancré en bas) : le hero
+  remonte SOUS l'en-tête, qui bascule **automatiquement en overlay** (transparent,
+  logo/nav/tél en blanc, sans bordure ; solide au scroll). Détecté quand le 1er bloc
+  de la page est un hero `plein`/`fondu` avec image → n'affecte que ces pages, le
+  reste du parc garde son en-tête habituel. Idéal restauration/immersif.
 
 ---
 
