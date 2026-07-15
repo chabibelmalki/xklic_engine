@@ -63,12 +63,12 @@
           "content": {
             "eyebrow": "Nettoyage professionnel · Saint-Nazaire & estuaire",
             "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/clean-habitat-pro/hero-menage-75a7c460.jpg",
-              "alt": "Femme faisant le ménage dans un intérieur lumineux à Saint-Nazaire"
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/clean-habitat-pro/visuel2-1140072b.jpg",
+              "alt": "Chariot de ménage professionnel dans un espace de bureaux lumineux"
             },
             "titre": "Le nettoyage professionnel",
             "titreAccent": "qui ne laisse rien au hasard",
-            "accroche": "Bureaux, cabinets médicaux, fins de chantier, vitres, moquettes ou parties communes d'immeuble : à Saint-Nazaire et dans un rayon de 30 km, Clean Habitat Pro remet vos surfaces d'aplomb avec un matériel de professionnel et un résultat contrôlé, du premier passage à la finition.",
+            "accroche": "Ménage à domicile chez les particuliers, bureaux, cabinets médicaux, fins de chantier, vitres, moquettes ou parties communes d'immeuble : à Saint-Nazaire et dans un rayon de 30 km, Clean Habitat Pro remet vos surfaces d'aplomb avec un matériel de professionnel et un résultat contrôlé, du premier passage à la finition.",
             "trust": [
               {
                 "icone": "Zap",
@@ -112,14 +112,20 @@
           "variant": "bento",
           "content": {
             "eyebrow": "Nos prestations",
-            "titre": "Sept spécialités, un seul interlocuteur",
-            "intro": "Du grand nettoyage ponctuel à l'entretien récurrent de vos communs, chaque prestation a sa méthode, son matériel et sa fiche dédiée. Ouvrez celle qui correspond à votre besoin.",
+            "titre": "Huit spécialités, un seul interlocuteur",
+            "intro": "Chez les particuliers comme chez les professionnels, du ménage à domicile régulier à l'entretien des communs : chaque prestation a sa méthode, son matériel et sa fiche dédiée. Ouvrez celle qui correspond à votre besoin.",
             "items": [
               {
                 "nom": "Grand nettoyage en profondeur",
                 "description": "Quand l'entretien courant ne suffit plus : dégraissage des cuisines, détartrage des sanitaires, dépoussiérage intégral des volumes et remise à niveau pièce par pièce.",
                 "href": "/grand-nettoyage",
                 "icone": "Sparkles"
+              },
+              {
+                "nom": "Ménage à domicile (particuliers)",
+                "description": "Entretien régulier ou ponctuel de votre logement : sols, sanitaires, cuisine, poussières et vitres intérieures, au rythme qui vous arrange.",
+                "href": "/menage-domicile",
+                "icone": "House"
               },
               {
                 "nom": "Nettoyage après travaux",
@@ -284,7 +290,7 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             },
             "lien": {
@@ -307,14 +313,14 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "Le catalogue, fiche par fiche",
-            "titre": "Sept prestations, sept fiches détaillées",
+            "titre": "Huit prestations, huit fiches détaillées",
             "intro": "Cette page sert de sommaire. Chaque prestation ouvre une fiche complète : ce qu'elle couvre, comment se déroule l'intervention et pour quels lieux elle est pensée. Un doute entre deux formules ? Le repère plus bas éclaire les cas les plus courants, et au moindre flottement un appel suffit.",
             "ctaPrimaire": {
               "label": "Demander un devis",
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             }
           }
@@ -332,6 +338,12 @@
                 "description": "La fiche détaille notre progression pièce par pièce, du dégraissage au détartrage, et ce qu'il est réaliste d'obtenir selon l'état de départ.",
                 "href": "/grand-nettoyage",
                 "icone": "Sparkles"
+              },
+              {
+                "nom": "Ménage à domicile (particuliers)",
+                "description": "Ce que couvre un passage type chez vous, les fréquences possibles et la façon dont on s'adapte à votre logement et à vos habitudes.",
+                "href": "/menage-domicile",
+                "icone": "House"
               },
               {
                 "nom": "Nettoyage après travaux",
@@ -428,12 +440,169 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             },
             "lien": {
               "label": "ou écrivez-nous sur WhatsApp →",
               "href": "https://wa.me/33768546569"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "menage-domicile",
+      "label": "Ménage à domicile",
+      "navHidden": true,
+      "meta": {
+        "title": "Ménage à domicile à Saint-Nazaire",
+        "description": "Entretien de votre logement à Saint-Nazaire et 30 km autour, régulier ou ponctuel : sols, cuisine, sanitaires, poussières. Au rythme qui vous convient. Devis gratuit.",
+        "keywords": [
+          "ménage à domicile Saint-Nazaire",
+          "nettoyage chez les particuliers Saint-Nazaire",
+          "aide ménagère Saint-Nazaire",
+          "entretien logement Loire-Atlantique"
+        ]
+      },
+      "service": {
+        "name": "Ménage à domicile",
+        "description": "Entretien régulier ou ponctuel du logement des particuliers, à Saint-Nazaire et alentour.",
+        "serviceType": "Ménage à domicile"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nettoyage chez les particuliers",
+            "titre": "Ménage à domicile à Saint-Nazaire",
+            "intro": "Vous cherchez quelqu'un de fiable pour entretenir votre logement, chaque semaine ou de temps en temps ? Nous intervenons chez les particuliers avec l'équipement et la rigueur que nous appliquons aux locaux professionnels — et vous retrouvez un intérieur net, sans avoir à y penser.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Prestations", "href": "/services" },
+              { "label": "Ménage à domicile" }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Ce que couvre un passage",
+            "titre": "Votre logement entretenu, à votre rythme",
+            "paragraphes": [
+              "Le ménage à domicile, c'est l'entretien courant de votre logement, assuré à intervalle régulier ou en passage ponctuel. Concrètement : les sols aspirés puis lavés, la cuisine nettoyée et dégraissée, la salle de bains et les WC désinfectés, les poussières faites sur les meubles et les surfaces, les vitrages intérieurs repris à la demande. On s'accorde d'abord sur le contenu exact du passage, puis on s'y tient — vous retrouvez le même résultat à chaque venue.",
+              "Ce qui change avec nous, c'est la méthode. Clean Habitat Pro entretient au quotidien des bureaux et des cabinets de santé : on arrive chez vous avec le même équipement professionnel et la même exigence, sans improvisation. Vous choisissez le rythme — chaque semaine, tous les quinze jours, une fois par mois — ou un passage unique avant une réception, après un déménagement, ou à la réouverture d'une résidence secondaire.",
+              "Nous intervenons chez les particuliers dans tout le bassin nazairien, jusqu'à une trentaine de kilomètres : maisons de la presqu'île, appartements du centre, logements de la rive sud. Le chiffrage est gratuit et s'établit d'après la surface, le nombre de pièces et la fréquence souhaitée. Si votre logement demande une remise à niveau avant de lancer un entretien suivi, c'est notre grand nettoyage qui s'applique en préalable."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "bande-procedure",
+          "content": {
+            "titre": "Comment se met en place votre ménage",
+            "items": [
+              {
+                "icone": "Phone",
+                "titre": "Votre besoin",
+                "texte": "Vous décrivez le logement, les pièces à traiter et le rythme que vous imaginez."
+              },
+              {
+                "icone": "ClipboardCheck",
+                "titre": "Contenu convenu",
+                "texte": "On fixe ensemble ce qui est fait à chaque venue, et le chiffrage gratuit qui va avec."
+              },
+              {
+                "icone": "CalendarClock",
+                "titre": "Un créneau à vous",
+                "texte": "On cale un horaire qui vous arrange, récurrent ou ponctuel selon votre choix."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "Le même soin, à chaque fois",
+                "texte": "Chaque passage suit le contenu convenu : un résultat constant, sans mauvaise surprise."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Peut-on choisir la fréquence des passages ?",
+                "reponse": "Oui : chaque semaine, tous les quinze jours, une fois par mois, ou en intervention unique. Rien n'est figé — si vos besoins évoluent, on ajuste le rythme en cours de route, il suffit de nous le signaler."
+              },
+              {
+                "question": "Faut-il être présent pendant le ménage ?",
+                "reponse": "Non, sauf si vous le préférez. Beaucoup de clients nous confient un accès et retrouvent simplement leur logement fait en rentrant. Nous travaillons en autonomie et avec discrétion, et vous signalons ce qui mérite votre attention."
+              },
+              {
+                "question": "Dois-je fournir les produits et le matériel ?",
+                "reponse": "Non, nous arrivons équipés de notre matériel et de nos produits professionnels. Si vous tenez à ce que l'on emploie les vôtres — allergies, surfaces délicates, préférence pour l'écologique — précisez-le au devis, nous nous y conformons."
+              },
+              {
+                "question": "Qu'est-ce qui est compris dans un passage type ?",
+                "reponse": "Sols aspirés et lavés, cuisine nettoyée et dégraissée, sanitaires désinfectés, poussières et surfaces reprises. Les extras — vitrages, intérieur du four, placards — se conviennent à l'avance et apparaissent noir sur blanc sur le devis."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "bento",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Grand nettoyage en profondeur",
+                "description": "Un logement à remettre à niveau avant de démarrer un entretien suivi ? C'est par là qu'on commence.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
+              },
+              {
+                "nom": "Vitres, vérandas & terrasses",
+                "description": "Vitrages, véranda et terrasse de la maison, en complément du ménage courant.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Tapis & moquettes",
+                "description": "Tapis du salon ou moquette des chambres traités en profondeur, une à deux fois par an.",
+                "href": "/nettoyage-tapis-moquette",
+                "icone": "Layers"
+              }
+            ],
+            "cta": {
+              "label": "Votre logement est-il dans notre secteur ? Vérifiez ici",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Envie d'un logement toujours net à Saint-Nazaire ?",
+            "sousTitre": "Donnez-nous la surface et le rythme voulu : chiffrage gratuit, sans engagement, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 68 54 65 69",
+              "href": "tel:+33768546569"
             }
           }
         }
@@ -483,7 +652,7 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             }
           }
@@ -592,7 +761,7 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             }
           }
@@ -643,7 +812,7 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             }
           }
@@ -788,7 +957,7 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             }
           }
@@ -831,7 +1000,7 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             }
           }
@@ -940,7 +1109,7 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             }
           }
@@ -991,7 +1160,7 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             }
           }
@@ -1076,7 +1245,7 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             }
           }
@@ -1127,7 +1296,7 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             }
           }
@@ -1237,7 +1406,7 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             }
           }
@@ -1288,7 +1457,7 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             }
           }
@@ -1298,6 +1467,12 @@
           "content": {
             "eyebrow": "Notre engagement au quotidien",
             "titre": "L'entretien régulier de vos locaux d'activité",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/clean-habitat-pro/visuel1-9ec877f6.jpg",
+              "alt": "Chariot de ménage professionnel dans un plateau de bureaux à Saint-Nazaire"
+            },
+            "imageRatio": "3/2",
+            "imageCard": true,
             "paragraphes": [
               "Un entretien de bureau efficace repose sur la régularité et la constance. Nous définissons avec vous un cahier des charges clair : postes de travail dépoussiérés, sols aspirés puis lavés, sanitaires désinfectés et consommables réapprovisionnés, points de contact — poignées, interrupteurs, rampes — essuyés, corbeilles vidées, cuisine ou coin repas remis en ordre. Chaque passage suit le même protocole, pour que vos équipes retrouvent des locaux dans un état identique jour après jour.",
               "Les lieux de soin imposent un cran d'exigence supplémentaire. Dans un cabinet médical, paramédical ou dentaire, salle d'attente, salle de soin et sanitaires demandent une désinfection rigoureuse des surfaces et un respect des zones sensibles. Nous adaptons produits et fréquences à ces contraintes, et pouvons employer les protocoles ou produits que votre activité impose. La discrétion et le respect de la confidentialité des lieux font partie de la prestation.",
@@ -1373,7 +1548,7 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             }
           }
@@ -1424,7 +1599,7 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             }
           }
@@ -1509,7 +1684,7 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             }
           }
@@ -1616,7 +1791,7 @@
               "href": "/devis"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             }
           }
@@ -1640,7 +1815,7 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "À propos",
-            "titre": "Le propre bien fait, sans esbroufe"
+            "titre": "Des résultats à la hauteur de vos attentes"
           }
         },
         {
@@ -1649,8 +1824,8 @@
             "eyebrow": "Clean Habitat Pro · Saint-Nazaire",
             "titre": "Une entreprise de nettoyage au service du bassin nazairien",
             "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/clean-habitat-pro/apropos-cf71aaf5.jpg",
-              "alt": "Intervention de nettoyage sur les vitrages d'un immeuble à Saint-Nazaire"
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/clean-habitat-pro/visuel3-a2555602.jpg",
+              "alt": "Chariot de ménage dans le hall vitré d'un immeuble de bureaux"
             },
             "imageRatio": "16/10",
             "imageCard": true,
@@ -1773,7 +1948,7 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "07 68 54 65 69",
+              "label": "+33 7 68 54 65 69",
               "href": "tel:+33768546569"
             }
           }
@@ -1809,7 +1984,7 @@
             "intro": "Ce qui nous aide le plus : la prestation visée, votre commune, la nature des lieux et une idée des surfaces. Le reste se précise de vive voix.",
             "form": true,
             "formMode": "demande-intervention",
-            "telephone": "07 68 54 65 69",
+            "telephone": "+33 7 68 54 65 69",
             "whatsapp": "+33 7 68 54 65 69",
             "email": "lailailacleanhabitatpro@gmail.com",
             "horaires": [
@@ -1819,6 +1994,7 @@
               }
             ],
             "services": [
+              "Ménage à domicile (particuliers)",
               "Grand nettoyage en profondeur",
               "Nettoyage après travaux / fin de chantier",
               "Nettoyage de fin de bail",
@@ -1882,7 +2058,7 @@
             "intro": "Prestation, commune, type de local et surface approximative : avec ces éléments, nous chiffrons déjà sérieusement. Pour un local professionnel ou un immeuble, une courte visite affine la proposition.",
             "form": true,
             "formMode": "devis",
-            "telephone": "07 68 54 65 69",
+            "telephone": "+33 7 68 54 65 69",
             "whatsapp": "+33 7 68 54 65 69",
             "email": "lailailacleanhabitatpro@gmail.com",
             "horaires": [
@@ -1892,6 +2068,7 @@
               }
             ],
             "services": [
+              "Ménage à domicile (particuliers)",
               "Grand nettoyage en profondeur",
               "Nettoyage après travaux / fin de chantier",
               "Nettoyage de fin de bail",
