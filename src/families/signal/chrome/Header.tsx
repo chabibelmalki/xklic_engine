@@ -5,7 +5,7 @@ import { Logo } from "@/components/layout/Logo";
 import { Button } from "@/components/ui/Button";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { HeaderPhonePopover } from "@/components/layout/HeaderPhonePopover";
-import { telHref, cn } from "@/lib/utils";
+import { telHref, telHrefIntl, telIndicatif, telNeedsIndicatif, cn } from "@/lib/utils";
 import { navPages, isMultiPage, resolvePages, findBlock } from "@/lib/pages";
 
 /**
@@ -117,14 +117,30 @@ export function SignalHeader({
               ariaLabel={strings.header.language}
             />
           )}
-          {contact?.telephone && (
-            <HeaderPhonePopover
-              telephone={contact.telephone}
-              callLabel={strings.header.callUs}
-              copyLabel={strings.header.copyNumber}
-              copiedLabel={strings.header.numberCopied}
-            />
-          )}
+          {/* Contrat commun : `icone-popup` => pastille + popover ; sinon (défaut
+              « texte ») le NUMÉRO en clair, cliquable. */}
+          {contact?.telephone &&
+            (contact.telephoneHeader === "icone-popup" ? (
+              <HeaderPhonePopover
+                telephone={contact.telephone}
+                callLabel={strings.header.callUs}
+                copyLabel={strings.header.copyNumber}
+                copiedLabel={strings.header.numberCopied}
+              />
+            ) : (
+              <a
+                href={telHrefIntl(contact.telephone)}
+                className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap text-sm font-semibold text-ink transition-colors hover:text-brand-700"
+              >
+                <Phone className="size-4 shrink-0 text-brand-600" />
+                <span className="inline-flex items-baseline gap-1.5 whitespace-nowrap">
+                  {telNeedsIndicatif(contact.telephone) && (
+                    <span className="text-[0.78em] font-medium text-muted">{telIndicatif()}</span>
+                  )}
+                  {contact.telephone}
+                </span>
+              </a>
+            ))}
           {cta && (
             <Button href={cta.href} size="sm">
               {cta.label}

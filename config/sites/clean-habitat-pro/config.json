@@ -49,7 +49,7 @@
     ]
   },
   "forms": {
-    "to": "lailailacleanhabitatpro@gmail.com",
+    "to": "Lailacleanhabitatpro@gmail.com",
     "turnstile": true
   },
   "pages": [
@@ -68,7 +68,7 @@
             },
             "titre": "Le nettoyage professionnel",
             "titreAccent": "qui ne laisse rien au hasard",
-            "accroche": "Ménage à domicile chez les particuliers, bureaux, cabinets médicaux, fins de chantier, vitres, moquettes ou parties communes d'immeuble : à Saint-Nazaire et dans un rayon de 30 km, Clean Habitat Pro remet vos surfaces d'aplomb avec un matériel de professionnel et un résultat contrôlé, du premier passage à la finition.",
+            "accroche": "Entreprise de nettoyage professionnel à Saint-Nazaire. Particuliers et professionnels : ménage, vitres, bureaux, cabinets médicaux, fins de chantier et entretien régulier. Devis gratuit.",
             "trust": [
               {
                 "icone": "Zap",
@@ -204,7 +204,7 @@
           "type": "zone",
           "mode": "carte",
           "content": {
-            "titre": "Saint-Nazaire et 30 km à la ronde",
+            "titre": "Intervention jusqu'à 30 km autour de Saint-Nazaire",
             "intro": "Notre base est à Saint-Nazaire ; de là, nous couvrons toute la presqu'île guérandaise, l'estuaire et les marais de Brière, ainsi que la rive sud de la Loire par le pont. Votre commune n'est pas citée ? Un appel, et l'on regarde ensemble.",
             "rayonKm": 30,
             "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=-2.55%2C47.10%2C-1.85%2C47.42&layer=mapnik&marker=47.2735%2C-2.2135",
@@ -1710,7 +1710,7 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "Où nous nous déplaçons",
-            "titre": "Saint-Nazaire et 30 km autour",
+            "titre": "Intervention jusqu'à 30 km autour de Saint-Nazaire",
             "intro": "Notre base est à Saint-Nazaire. De là, nous rayonnons sur la presqu'île guérandaise, l'estuaire et les marais de Brière, et nous franchissons la Loire par le pont pour desservir la rive sud. Partout dans ce périmètre, le chiffrage reste offert."
           }
         },
@@ -1986,7 +1986,7 @@
             "formMode": "demande-intervention",
             "telephone": "+33 7 68 54 65 69",
             "whatsapp": "+33 7 68 54 65 69",
-            "email": "lailailacleanhabitatpro@gmail.com",
+            "email": "Lailacleanhabitatpro@gmail.com",
             "horaires": [
               {
                 "jour": "Tous les jours",
@@ -2060,7 +2060,7 @@
             "formMode": "devis",
             "telephone": "+33 7 68 54 65 69",
             "whatsapp": "+33 7 68 54 65 69",
-            "email": "lailailacleanhabitatpro@gmail.com",
+            "email": "Lailacleanhabitatpro@gmail.com",
             "horaires": [
               {
                 "jour": "Tous les jours",
