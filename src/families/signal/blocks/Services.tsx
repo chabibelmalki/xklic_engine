@@ -100,7 +100,16 @@ export function Services({ block, basePath = "", tone, strings }: BlockComponent
 
         {c.cta && (
           <div className="mt-10">
-            <Button href={withBase(basePath, c.cta.href)} variant="outline" size="lg">
+            {/* Le `Button` partagé force `whitespace-nowrap` : un libellé de maillage
+                long (fréquent ici) débordait de l'écran en mobile. On autorise le
+                retour à la ligne + une hauteur libre, sans toucher au composant
+                partagé (twMerge fait gagner ces classes). */}
+            <Button
+              href={withBase(basePath, c.cta.href)}
+              variant="outline"
+              size="lg"
+              className="h-auto max-w-full whitespace-normal py-4 text-center"
+            >
               {c.cta.label}
             </Button>
           </div>
