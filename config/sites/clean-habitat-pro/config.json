@@ -50,7 +50,7 @@
     ]
   },
   "forms": {
-    "to": "Lailacleanhabitatpro@gmail.com",
+    "to": "contact@cleanhabitatpro.fr",
     "turnstile": true
   },
   "pages": [
@@ -1987,7 +1987,7 @@
             "formMode": "demande-intervention",
             "telephone": "+33 7 68 54 65 69",
             "whatsapp": "+33 7 68 54 65 69",
-            "email": "Lailacleanhabitatpro@gmail.com",
+            "email": "contact@cleanhabitatpro.fr",
             "horaires": [
               {
                 "jour": "Tous les jours",
@@ -2061,7 +2061,7 @@
             "formMode": "devis",
             "telephone": "+33 7 68 54 65 69",
             "whatsapp": "+33 7 68 54 65 69",
-            "email": "Lailacleanhabitatpro@gmail.com",
+            "email": "contact@cleanhabitatpro.fr",
             "horaires": [
               {
                 "jour": "Tous les jours",
