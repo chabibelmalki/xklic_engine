@@ -7,13 +7,11 @@
 export const SITE_SLUGS: string[] = [
   "ab-pro-service",
   "adelnet",
-  "atelier-douceur",
   "casa-clean-provence",
   "cbprestamultiservices",
   "clean-confiance-by-maman",
   "clean-habitat-pro",
   "mb-nettoyage",
-  "meca-atlas",
   "minhaj",
   "o-poulet-braise",
   "parfait-menage-26",
@@ -21,7 +19,6 @@ export const SITE_SLUGS: string[] = [
   "sanadclean",
   "taxi-concept",
   "taxi-excellence",
-  "vibe-coaching",
 ];
 
 /** Lookup O(1) pour le proxy. */
