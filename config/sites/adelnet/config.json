@@ -66,7 +66,7 @@
     ]
   },
   "forms": {
-    "to": "adelnet.contact@gmail.com",
+    "to": "contact@adel-net.fr",
     "turnstile": true
   },
   "pages": [
@@ -1030,7 +1030,7 @@
             "formMode": "demande-intervention",
             "telephone": "+33 7 60 15 38 53",
             "whatsapp": "+33 7 60 15 38 53",
-            "email": "adelnet.contact@gmail.com",
+            "email": "contact@adel-net.fr",
             "adresse": "20 place du Forum, 42000 Saint-Étienne",
             "horaires": [
               {
@@ -1102,7 +1102,7 @@
             "formMode": "devis",
             "telephone": "+33 7 60 15 38 53",
             "whatsapp": "+33 7 60 15 38 53",
-            "email": "adelnet.contact@gmail.com",
+            "email": "contact@adel-net.fr",
             "adresse": "20 place du Forum, 42000 Saint-Étienne",
             "horaires": [
               {
