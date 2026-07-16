@@ -98,7 +98,8 @@
             "ctaPrimaire": {
               "label": "Commander en ligne",
               "href": "/boutique"
-            }
+            },
+            "headerOverlay": true
           }
         },
         {

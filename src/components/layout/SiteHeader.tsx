@@ -98,18 +98,21 @@ export function SiteHeader({
   const showLangs = locales.length > 1;
 
   // En-tête IMMERSIF : quand le 1er bloc de la page courante est un hero plein
-  // cadre (`plein`/`fondu` avec image), le header se pose EN OVERLAY par-dessus
-  // (transparent + texte clair en haut de page, solide au scroll). Détecté par
-  // page => n'affecte que les sites/pages qui utilisent un hero plein.
+  // cadre (`plein`/`fondu` avec image) ET que la config l'a explicitement
+  // demandé (`content.headerOverlay`), le header se pose EN OVERLAY par-dessus
+  // (transparent + texte clair en haut de page, solide au scroll). OPT-IN : sans
+  // ce flag le header reste solide et lisible, quelle que soit la clarté de
+  // l'image. Détecté par page => n'affecte que la page/site concerné.
   const pages = resolvePages(config);
   const currentPage = pages.find((p) => p.path === currentPath) ?? getHomePage(config);
   const firstBlock = currentPage.blocks?.[0] as
-    | { type?: string; variant?: string; content?: { image?: unknown } }
+    | { type?: string; variant?: string; content?: { image?: unknown; headerOverlay?: boolean } }
     | undefined;
   const immersive =
     firstBlock?.type === "hero" &&
     (firstBlock.variant === "plein" || firstBlock.variant === "fondu") &&
-    !!firstBlock.content?.image;
+    !!firstBlock.content?.image &&
+    firstBlock.content?.headerOverlay === true;
   // `overlay` = rendu clair actif (immersif ET en haut de page, menu fermé).
   const overlay = immersive && !scrolled && !open;
 

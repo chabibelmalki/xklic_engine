@@ -103,7 +103,8 @@
             "ctaSecondaire": {
               "label": "Toute la flotte",
               "href": "/services"
-            }
+            },
+            "headerOverlay": true
           }
         },
         {

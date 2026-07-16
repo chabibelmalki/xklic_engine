@@ -293,6 +293,14 @@ export interface HeroContent {
    * texte). Défaut false = colonnes 1.1/0.9 (texte dominant). Voir Hero.tsx.
    */
   imageWide?: boolean;
+  /**
+   * En-tête IMMERSIF : quand true, le SiteHeader se pose EN OVERLAY par-dessus
+   * ce hero plein cadre (transparent + texte clair en haut de page, solide au
+   * scroll). OPT-IN explicite : sans ce flag le header reste solide et lisible,
+   * même sur un hero `plein`/`fondu` avec image (ex. image claire → texte blanc
+   * illisible). Voir `SiteHeader.tsx`.
+   */
+  headerOverlay?: boolean;
   /** Carte de prix flottante (variant "carte"). */
   card?: HeroCard;
   /** Badges de confiance avec icônes (sous les CTA). */
