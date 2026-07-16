@@ -63,7 +63,7 @@
     ]
   },
   "forms": {
-    "to": "casaclean.provence@gmail.com",
+    "to": "contact@casacleanprovence.fr",
     "turnstile": true
   },
   "pages": [
@@ -1016,7 +1016,7 @@
             "formMode": "demande-intervention",
             "telephone": "+33 6 41 87 53 27",
             "whatsapp": "+33 6 41 87 53 27",
-            "email": "casaclean.provence@gmail.com",
+            "email": "contact@casacleanprovence.fr",
             "adresse": "Rue de la République, 13130 Berre-l'Étang",
             "horaires": [
               {
@@ -1096,7 +1096,7 @@
             "formMode": "devis",
             "telephone": "+33 6 41 87 53 27",
             "whatsapp": "+33 6 41 87 53 27",
-            "email": "casaclean.provence@gmail.com",
+            "email": "contact@casacleanprovence.fr",
             "adresse": "Rue de la République, 13130 Berre-l'Étang",
             "horaires": [
               {
