@@ -23,6 +23,18 @@ import type { SiteConfig } from "@/types/config";
 
 const TIMEOUT_MS = 3_000;
 
+/**
+ * Cache-bust de la sitekey `/config`. La réponse est cachée 24 h dans le Data
+ * Cache Vercel, PERSISTANT entre déploiements et indexé par URL — un simple
+ * redeploy réutilise donc l'entrée périmée. Après une RÉASSIGNATION de widget
+ * côté back-office (tenant → autre widget), incrémenter ce numéro : la nouvelle
+ * URL = nouvelle clé de cache => refetch immédiat au prochain build (la page
+ * live rend la bonne sitekey sans attendre l'expiration 24 h). Le back-office
+ * ignore le paramètre (routé par path). Historique : 2 = réassignation
+ * rd-net-propre/ab-pro-service/clean-habitat-pro → « xklic 2 » (2026-07-16).
+ */
+const CONFIG_CACHE_BUST = 2;
+
 function backofficeBase(): string | null {
   return process.env.BACKOFFICE_API_URL?.trim().replace(/\/$/, "") || null;
 }
@@ -55,7 +67,7 @@ export async function getTurnstileSiteKey(config: SiteConfig): Promise<string | 
     // Pas d'AbortController : un `signal` désactive la mémoïsation + le Data Cache
     // de Next. La sitekey change rarement ⇒ réponse cachée (revalidation quotidienne).
     const res = await fetch(
-      `${base}/v1/public/tenants/${encodeURIComponent(tenantSlug(config))}/config`,
+      `${base}/v1/public/tenants/${encodeURIComponent(tenantSlug(config))}/config?cb=${CONFIG_CACHE_BUST}`,
       {
         headers: { "X-API-Key": key },
         next: { revalidate: 86_400 },
