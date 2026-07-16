@@ -1,5 +1,6 @@
 {
   "slug": "clean-habitat-pro",
+  "customDomains": ["cleanhabitatpro.fr", "www.cleanhabitatpro.fr"],
   "theme": "fraicheur-teal",
   "stylePack": "signal-graphite",
   "branding": {
