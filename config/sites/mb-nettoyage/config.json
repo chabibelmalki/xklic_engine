@@ -82,7 +82,7 @@
     ]
   },
   "forms": {
-    "to": "mb.nettoyage130@gmail.com",
+    "to": "contact@mbnettoyage-marseille.fr",
     "turnstile": true
   },
   "pages": [
@@ -874,7 +874,7 @@
             "telephone": "+33 7 66 65 14 29",
             "telephoneHeader": "icone-popup",
             "whatsapp": "+33 7 66 65 14 29",
-            "email": "mb.nettoyage130@gmail.com",
+            "email": "contact@mbnettoyage-marseille.fr",
             "adresse": "171 boulevard de Saint-Loup, 13011 Marseille",
             "horaires": [
               {
@@ -991,7 +991,7 @@
             "formMode": "devis",
             "telephone": "+33 7 66 65 14 29",
             "whatsapp": "+33 7 66 65 14 29",
-            "email": "mb.nettoyage130@gmail.com",
+            "email": "contact@mbnettoyage-marseille.fr",
             "adresse": "171 boulevard de Saint-Loup, 13011 Marseille",
             "horaires": [
               {
