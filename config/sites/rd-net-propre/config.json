@@ -8,7 +8,8 @@
       "fr",
       "en",
       "es",
-      "ar"
+      "ar",
+      "it"
     ]
   },
   "branding": {
@@ -39,7 +40,7 @@
     },
     {
       "platform": "whatsapp",
-      "url": "https://wa.me/33748322029"
+      "url": "https://wa.me/33758086189"
     }
   ],
   "entreprise": {
@@ -158,7 +159,7 @@
                 "nom": "Bureaux & locaux professionnels",
                 "icone": "Briefcase",
                 "priceHint": "dès 120 €",
-                "description": "Bureaux, restaurants et cuisines professionnelles nettoyés avant l'ouverture ou après la fermeture, sans perturber votre activité.",
+                "description": "Bureaux, restaurants, salles de sport et cuisines professionnelles nettoyés avant l'ouverture ou après la fermeture, sans perturber votre activité.",
                 "href": "/nettoyage-professionnels"
               },
               {
@@ -253,7 +254,7 @@
             "paragraphes": [
               "RD NET&PROPRE est née de l'envie d'apporter aux syndics, aux entreprises et aux familles d'Île-de-France un nettoyage vraiment tenu dans la durée, loin des prestations expédiées. Basés à Paris, nous rayonnons sur toute la région pour l'entretien courant comme pour les remises en état ponctuelles.",
               "Notre parti pris est simple : des intervenants réguliers plutôt qu'un roulement anonyme, un interlocuteur qui connaît vos lieux, et un contrôle systématique avant de quitter les lieux. C'est ce qui fait qu'un hall reste net semaine après semaine et qu'un bureau accueille vos équipes dans les meilleures conditions.",
-              "Nous parlons français, anglais, espagnol et arabe : chacun peut décrire son besoin dans sa langue et recevoir un devis clair, sans jargon."
+              "Nous parlons français, anglais, espagnol, arabe et italien : chacun peut décrire son besoin dans sa langue et recevoir un devis clair, sans jargon."
             ],
             "image": {
               "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/qui-sommes-nous.png",
@@ -378,12 +379,12 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "07 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
             },
             "lien": {
               "label": "ou écrivez-nous sur WhatsApp →",
-              "href": "https://wa.me/33748322029"
+              "href": "https://wa.me/33758086189"
             }
           },
           "variant": "encadre"
@@ -432,7 +433,7 @@
                 "nom": "Bureaux & locaux professionnels",
                 "icone": "Briefcase",
                 "priceHint": "dès 120 €",
-                "description": "Bureaux, restaurants et cuisines professionnelles, entretenus en dehors de vos heures d'ouverture, dans le respect des règles d'hygiène.",
+                "description": "Bureaux, restaurants, salles de sport et cuisines professionnelles, entretenus en dehors de vos heures d'ouverture, dans le respect des règles d'hygiène.",
                 "href": "/nettoyage-professionnels"
               },
               {
@@ -499,11 +500,101 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "07 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "realisations",
+      "label": "Réalisations",
+      "meta": {
+        "title": "Réalisations — nettoyage à Paris & Île-de-France",
+        "description": "Avant/après de nos chantiers franciliens : machine à boissons professionnelle dégraissée, brasserie parisienne remise en propreté. Des résultats concrets."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Réalisations",
+            "titre": "Des chantiers qui parlent d'eux-mêmes",
+            "intro": "Quelques interventions récentes en Île-de-France, du détail d'un équipement professionnel à la remise en propreté d'une grande brasserie parisienne. Toutes les photos viennent directement de nos chantiers."
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "Avant / Après",
+            "titre": "Une machine à boissons professionnelle, dégraissée à fond",
+            "intro": "Bac de récupération, distributeurs et carrosserie interne : résidus de boissons, dépôts collants et traces éliminés jusqu'au métal, pour un équipement sain et de nouveau nickel.",
+            "pastille": "Avant / Après",
+            "ratio": "3/4",
+            "avantApres": [
+              {
+                "avant": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/real-machine-avant.jpg",
+                  "alt": "Intérieur d'une machine à boissons encrassé par des résidus avant nettoyage"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/real-machine-apres.jpg",
+                  "alt": "Le même équipement après dégraissage complet, distributeurs propres"
+                },
+                "legende": "Bac et distributeurs d'une machine professionnelle : avant puis après dégraissage"
+              }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "Sur le terrain",
+            "titre": "Une brasserie parisienne remise en propreté",
+            "intro": "Sols, comptoir en acajou, miroirs et boiseries d'un établissement Art nouveau : un grand nettoyage mené hors service, de nuit, pour rouvrir impeccable au petit matin.",
+            "ratio": "3/4",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/real-brasserie-1.jpg",
+                  "alt": "Salle de brasserie Art nouveau aux boiseries et miroirs après nettoyage"
+                },
+                "titre": "Sols et boiseries ravivés"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/real-brasserie-2.jpg",
+                  "alt": "Comptoir et bar en acajou d'une brasserie parisienne entretenus"
+                },
+                "titre": "Comptoir et bar entretenus"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/real-brasserie-3.jpg",
+                  "alt": "Verrières et portes Art nouveau nettoyées dans une brasserie"
+                },
+                "titre": "Verrières Art nouveau nettoyées"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un lieu à sublimer à votre tour ?",
+            "sousTitre": "Décrivez-nous votre établissement ou votre logement : nous préparons un devis gratuit sous 24 h.",
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
+            }
+          }
         }
       ]
     },
@@ -546,8 +637,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "07 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           }
         },
@@ -620,8 +711,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "07 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
@@ -646,7 +737,7 @@
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Entreprises, commerces & restaurants",
+            "eyebrow": "Entreprises, commerces, restaurants & salles de sport",
             "titre": "Des locaux propres, sans perturber votre activité",
             "intro": "Un environnement de travail sain donne le ton à vos équipes et à vos clients. Nous entretenons vos bureaux et espaces professionnels avant l'ouverture ou après la fermeture.",
             "breadcrumb": [
@@ -667,17 +758,17 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "07 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           }
         },
         {
           "type": "contenu",
           "content": {
-            "titre": "Bureaux, restaurants et cuisines professionnelles",
+            "titre": "Bureaux, restaurants, salles de sport et cuisines professionnelles",
             "paragraphes": [
-              "Nous intervenons dans les espaces de travail de toutes tailles : plateaux de bureaux, cabinets, salles de réunion, sanitaires et espaces d'accueil. Le protocole couvre le vidage des corbeilles, le dépoussiérage des postes, le lavage des sols, la désinfection des points de contact et l'entretien des sanitaires, avec un réapprovisionnement des consommables si vous le souhaitez.",
+              "Nous intervenons dans les espaces de travail de toutes tailles : plateaux de bureaux, cabinets, salles de sport, salles de réunion, sanitaires et espaces d'accueil. Le protocole couvre le vidage des corbeilles, le dépoussiérage des postes, le lavage des sols, la désinfection des points de contact et l'entretien des sanitaires, avec un réapprovisionnement des consommables si vous le souhaitez.",
               "Pour la restauration, l'exigence monte d'un cran : dégraissage des surfaces, nettoyage des salles et des cuisines professionnelles dans le respect des règles d'hygiène, sols antidérapants traités avec les produits adaptés. Nous adaptons nos passages à votre service, tôt le matin ou tard le soir, pour ne jamais gêner l'accueil du public.",
               "La prestation démarre à 120 € et s'ajuste à la surface, à la fréquence et au niveau d'exigence. Un contrat récurrent garantit le même binôme et un résultat constant, semaine après semaine.",
               "Nous assurons aussi le nettoyage et la désinfection professionnelle des environnements sensibles : application des protocoles d'hygiène hospitaliers et bionettoyage, avec des méthodes et des produits adaptés à chaque surface. Une réponse pour les cabinets, laboratoires, salles de soins et tout local où l'exigence sanitaire est maximale."
@@ -742,8 +833,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "07 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
@@ -789,8 +880,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "07 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           }
         },
@@ -863,8 +954,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "07 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
@@ -910,8 +1001,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "07 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           }
         },
@@ -984,8 +1075,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "07 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
@@ -1031,8 +1122,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "07 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           }
         },
@@ -1105,8 +1196,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "07 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
@@ -1152,8 +1243,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "07 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           }
         },
@@ -1226,8 +1317,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "07 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
@@ -1299,7 +1390,7 @@
               {
                 "nom": "Bureaux & locaux pro",
                 "prix": "dès 120 €",
-                "description": "Bureaux, commerces, restaurants et cuisines pro.",
+                "description": "Bureaux, commerces, restaurants, salles de sport et cuisines pro.",
                 "inclus": [
                   "En dehors des heures d'ouverture",
                   "Contrat régulier possible"
@@ -1349,8 +1440,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "07 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
@@ -1437,8 +1528,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "07 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
@@ -1497,7 +1588,7 @@
               {
                 "icone": "Languages",
                 "titre": "Proximité",
-                "texte": "Un accueil en quatre langues et un interlocuteur qui vous répond vraiment, dans votre langue."
+                "texte": "Un accueil en cinq langues et un interlocuteur qui vous répond vraiment, dans votre langue."
               }
             ]
           },
@@ -1526,7 +1617,7 @@
       "label": "Contact",
       "meta": {
         "title": "Contact — nettoyage à Paris & Île-de-France",
-        "description": "Joignez-nous par téléphone, WhatsApp ou formulaire pour tout besoin de nettoyage en Île-de-France. Réponse et devis gratuit sous 24 h, en 4 langues."
+        "description": "Joignez-nous par téléphone, WhatsApp ou formulaire pour tout besoin de nettoyage en Île-de-France. Réponse et devis gratuit sous 24 h, en 5 langues."
       },
       "blocks": [
         {
@@ -1541,11 +1632,11 @@
           "type": "contact",
           "content": {
             "titre": "Demande de devis",
-            "intro": "Indiquez le service souhaité, votre commune et le moment envisagé : nous préparons votre estimation et vous la renvoyons sous 24 h. Deux lignes pour nous joindre : 07 48 32 20 29 et 07 58 08 61 83.",
+            "intro": "Indiquez le service souhaité, votre commune et le moment envisagé : nous préparons votre estimation et vous la renvoyons sous 24 h. Deux lignes pour nous joindre : 07 58 08 61 89 et 07 48 32 20 29.",
             "form": true,
             "formMode": "demande-intervention",
-            "telephone": "07 48 32 20 29",
-            "whatsapp": "+33 7 48 32 20 29",
+            "telephone": "07 58 08 61 89",
+            "whatsapp": "+33 7 58 08 61 89",
             "email": "rd.nettoyagepropre@gmail.com",
             "horaires": [
               {
@@ -1561,6 +1652,7 @@
               "Copropriété / parties communes",
               "Bureaux & locaux professionnels",
               "Restaurant / cuisine professionnelle",
+              "Salle de sport & espace de fitness",
               "Nettoyage de vitres",
               "Ménage à domicile",
               "Canapé, fauteuil & tapis",

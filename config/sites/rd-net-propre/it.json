@@ -1,0 +1,1441 @@
+{
+  "slug": "rd-net-propre",
+  "i18n": {
+    "default": "fr",
+    "languages": ["fr", "en", "es", "ar", "it"]
+  },
+  "branding": {
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/logo-d0f2181d.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/logo-d0f2181d.png",
+    "logoAlt": "RD NET&PROPRE — impresa di pulizie a Parigi",
+    "logoTwoTone": { "first": "#1c6b57", "rest": "#22302c" },
+    "tagline": "Pulizie professionali · Parigi & Île-de-France",
+    "colors": { "brand": "#1c6b57", "accent": "#c79a3f", "neutral": "warm" },
+    "logoScale": 1.35,
+    "logoTaglineHidden": true
+  },
+  "entreprise": {
+    "nom": "RD NET&PROPRE",
+    "statut": "EI",
+    "siret": "99339068100019",
+    "ape": "81.21Z",
+    "apeLabel": "Pulizia ordinaria degli edifici",
+    "tva": { "regime": "franchise" }
+  },
+  "seo": { "schemaType": "CleaningService", "ville": "Paris" },
+  "meta": {
+    "title": "Impresa di pulizie a Parigi & Île-de-France",
+    "description": "RD NET&PROPRE pulisce condomìni, uffici, vetri e abitazioni in tutta l'Île-de-France. Pulizie da 35 €/h, preventivo gratuito entro 24 h, 6 giorni su 7.",
+    "keywords": [
+      "impresa di pulizie Parigi",
+      "pulizia condomìni Île-de-France",
+      "pulizia uffici Parigi",
+      "pulizia vetri Parigi",
+      "pulizie domestiche Parigi",
+      "pulizia parti comuni",
+      "pulizia fine cantiere Parigi",
+      "impresa di pulizie Île-de-France"
+    ]
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Home",
+      "navHidden": true,
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "carte",
+          "content": {
+            "showSocial": true,
+            "eyebrow": "Impresa di pulizie · Parigi & Île-de-France",
+            "titre": "Spazi impeccabili, affidati a una squadra",
+            "titreAccent": "seria e discreta",
+            "accroche": "Condomìni, uffici, negozi e abitazioni: RD NET&PROPRE si prende cura dei vostri spazi con metodo, dall'atrio del palazzo al vetro dell'ufficio, in tutta l'Île-de-France.",
+            "trust": [
+              { "icone": "Building2", "label": "Condomìni & aziende" },
+              { "icone": "Clock", "label": "6 gg/7 · 8 – 22" },
+              { "icone": "ShieldCheck", "label": "Una squadra affidabile" },
+              { "icone": "MapPin", "label": "Tutta l'Île-de-France" }
+            ],
+            "card": {
+              "label": "Pulizie domestiche",
+              "prix": "35 €",
+              "unite": "/ ora",
+              "mention": "preventivo gratuito per le altre prestazioni",
+              "points": [
+                "Interventi dal lunedì al sabato, 8 – 22",
+                "Preventivo chiaro entro 24 h",
+                "Operatori fissi e discreti",
+                "Attrezzatura e prodotti forniti"
+              ],
+              "rating": { "label": "Al vostro servizio in tutta la regione" }
+            },
+            "ctaPrimaire": { "label": "Richiedi un preventivo gratuito", "href": "/contact" },
+            "ctaSecondaire": { "label": "Scopri i nostri servizi", "href": "/services" },
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/hero-menage-mir.jpg",
+              "alt": "Pulizie domestiche: lavaggio del pavimento con il mocio in una cucina luminosa"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "I nostri servizi",
+            "titre": "Un unico fornitore per ogni tipo di luogo",
+            "intro": "Dalla pulizia periodica delle parti comuni al ripristino dopo un cantiere, copriamo le esigenze di amministratori di condominio, aziende e privati dell'Île-de-France.",
+            "items": [
+              {
+                "nom": "Condomìni & parti comuni",
+                "icone": "Building2",
+                "priceHint": "su preventivo",
+                "description": "Atri, scale, pianerottoli, ascensori e vetri interni curati secondo una pianificazione regolare, con un referente unico per il vostro amministratore.",
+                "href": "/nettoyage-copropriete"
+              },
+              {
+                "nom": "Uffici & locali professionali",
+                "icone": "Briefcase",
+                "priceHint": "da 120 €",
+                "description": "Uffici, ristoranti, palestre e cucine professionali puliti prima dell'apertura o dopo la chiusura, senza intralciare la vostra attività.",
+                "href": "/nettoyage-professionnels"
+              },
+              {
+                "nom": "Pulizia dei vetri",
+                "icone": "Sparkles",
+                "priceHint": "da 100 €",
+                "description": "Vetrine, vetrate e finestre rese limpide da entrambi i lati, per negozi e privati.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Pulizie domestiche",
+                "icone": "Home",
+                "priceHint": "da 35 €/h",
+                "description": "La cura regolare o saltuaria della vostra casa, affidata sempre alla stessa persona, attenta alle vostre abitudini.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Divani, poltrone & tappeti",
+                "icone": "Sofa",
+                "priceHint": "da 70 €",
+                "description": "Tessuti rivitalizzati con iniezione-estrazione: sedute igienizzate, macchie trattate, tappeti lavati fibra per fibra.",
+                "href": "/nettoyage-textiles"
+              },
+              {
+                "nom": "Pulizia di fine cantiere",
+                "icone": "Hammer",
+                "priceHint": "da 300 €",
+                "description": "Dopo un cantiere o un trasloco, il luogo viene ripreso stanza per stanza, fino alla consegna delle chiavi.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Disinfezione & biopulizia",
+                "icone": "ShieldPlus",
+                "priceHint": "su preventivo",
+                "description": "Pulizia e disinfezione professionale: applicazione dei protocolli di igiene ospedaliera e biopulizia, con metodi e prodotti adeguati.",
+                "href": "/nettoyage-professionnels"
+              }
+            ],
+            "cta": { "label": "Vedi tutti i servizi", "href": "/services" }
+          },
+          "variant": "mosaique"
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "In immagini",
+            "titre": "Le pulizie RD NET&PROPRE in azione",
+            "intro": "Uno sguardo ai nostri interventi, dalle parti comuni del palazzo ai vetri degli uffici, fino ai divani rimessi a nuovo.",
+            "ratio": "4/3",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/service-menage.png",
+                  "alt": "La squadra RD NET&PROPRE aspira e lava il pavimento di un soggiorno luminoso"
+                },
+                "titre": "Pulizia e cura della casa"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/service-bureaux.png",
+                  "alt": "Ufficio pulito e ordinato dopo il passaggio di RD NET&PROPRE"
+                },
+                "titre": "Uffici & spazi professionali"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/service-canape.png",
+                  "alt": "Pulizia di un cuscino di divano con aspirazione in profondità"
+                },
+                "titre": "Divani, poltrone & tappeti"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/service-vitres-facade.png",
+                  "alt": "Tecnici puliscono i vetri della facciata di un palazzo in quota"
+                },
+                "titre": "Vetri & facciate di palazzi"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Chi siamo",
+            "titre": "Una giovane impresa dell'Île-de-France,",
+            "titreAccent": "esigente sul dettaglio",
+            "paragraphes": [
+              "RD NET&PROPRE nasce dal desiderio di offrire ad amministratori, aziende e famiglie dell'Île-de-France una pulizia che regge davvero nel tempo, lontana dai lavori fatti in fretta. Con base a Parigi, copriamo tutta la regione sia per la manutenzione ordinaria sia per i ripristini una tantum.",
+              "Il nostro approccio è semplice: operatori fissi anziché una rotazione anonima, un interlocutore che conosce i vostri spazi e un controllo sistematico prima di andarcene. È ciò che mantiene un atrio pulito settimana dopo settimana e permette a un ufficio di accogliere i team nelle migliori condizioni.",
+              "Parliamo francese, inglese, spagnolo, arabo e italiano: ognuno può descrivere la propria esigenza nella sua lingua e ricevere un preventivo chiaro, senza tecnicismi."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/qui-sommes-nous.png",
+              "alt": "Immagine RD NET&PROPRE — attrezzatura di pulizia professionale in un ufficio luminoso"
+            },
+            "imagePosition": "left",
+            "imageRatio": "16/10",
+            "imageCard": true,
+            "ctaPrimaire": { "label": "Facciamo conoscenza", "href": "/a-propos" }
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "Come lavoriamo",
+            "titre": "Dalla vostra telefonata a un luogo impeccabile",
+            "items": [
+              {
+                "icone": "Phone",
+                "titre": "Ci descrivete il luogo",
+                "texte": "Per telefono, WhatsApp o modulo, ci indicate il tipo di spazio, la superficie e la frequenza desiderata."
+              },
+              {
+                "icone": "FileText",
+                "titre": "Un preventivo chiaro entro 24 h",
+                "texte": "Vi rimandiamo una proposta dettagliata, con un prezzo fermo e la pianificazione degli interventi più adatta."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "L'intervento, poi il controllo",
+                "texte": "La squadra interviene con la propria attrezzatura e verifica ogni zona prima di andarsene. Il risultato si nota fin dal primo passaggio."
+              }
+            ]
+          },
+          "variant": "timeline-verticale"
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "Parigi come base, l'Île-de-France come terreno",
+            "intro": "Interveniamo a Parigi intra muros e negli otto dipartimenti dell'Île-de-France, dalla prima alla seconda cintura. Uno spostamento fino ai confini della regione non ci spaventa: diteci dove si trova il luogo.",
+            "rayonKm": 60,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=1.44%2C48.12%2C3.56%2C49.24&layer=mapnik&marker=48.8566%2C2.3522",
+            "zones": [
+              {
+                "region": "Parigi intra muros",
+                "principale": "Paris",
+                "villes": ["Parigi, dal 1° al 20° arrondissement"]
+              },
+              {
+                "region": "Prima cintura",
+                "principale": "Boulogne-Billancourt",
+                "villes": [
+                  "Boulogne-Billancourt",
+                  "Neuilly-sur-Seine",
+                  "Levallois-Perret",
+                  "Nanterre",
+                  "Courbevoie",
+                  "Montreuil",
+                  "Saint-Denis",
+                  "Aubervilliers",
+                  "Créteil",
+                  "Vitry-sur-Seine",
+                  "Ivry-sur-Seine"
+                ]
+              },
+              {
+                "region": "Seconda cintura",
+                "principale": "Versailles",
+                "villes": [
+                  "Versailles",
+                  "Argenteuil",
+                  "Cergy",
+                  "Évry-Courcouronnes",
+                  "Meaux",
+                  "Melun",
+                  "Sarcelles",
+                  "Saint-Germain-en-Laye"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Le domande che ci fanno più spesso",
+            "items": [
+              {
+                "question": "Lavorate più con i professionisti o con i privati?",
+                "reponse": "Con entrambi. Curiamo le parti comuni dei condomìni e i locali delle aziende, e ci prendiamo cura anche delle abitazioni dei privati. Ogni servizio ha la sua pagina dedicata con il dettaglio di ciò che è incluso."
+              },
+              {
+                "question": "In quanto tempo si può iniziare?",
+                "reponse": "Per un intervento saltuario, proponiamo spesso una data entro la settimana. Per un contratto ricorrente, definiamo insieme una pianificazione fissa. Il preventivo, invece, vi arriva entro 24 ore."
+              },
+              {
+                "question": "Bisogna fornire attrezzatura e prodotti?",
+                "reponse": "No, arriviamo attrezzati. Se preferite che usiamo prodotti specifici, per esempio per una superficie delicata o in presenza di bambini, basta segnalarlo al momento del preventivo."
+              },
+              {
+                "question": "In quali lingue si può contattarvi?",
+                "reponse": "In francese, inglese, spagnolo, arabo e italiano. Descrivete la vostra esigenza nella lingua che preferite, la risposta arriverà nella stessa."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un luogo da rimettere a nuovo?",
+            "sousTitre": "Telefono, WhatsApp o modulo online: la vostra stima gratuita arriva entro 24 ore.",
+            "ctaPrimaire": { "label": "Richiedi un preventivo gratuito", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 58 08 61 89", "href": "tel:+33758086189" },
+            "lien": { "label": "oppure scriveteci su WhatsApp →", "href": "https://wa.me/33758086189" }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Servizi",
+      "meta": {
+        "title": "Servizi di pulizia a Parigi & Île-de-France",
+        "description": "Condomìni, uffici, vetri, pulizie domestiche, tessuti e fine cantiere: il dettaglio di ogni servizio di pulizia RD NET&PROPRE in Île-de-France."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "I nostri servizi",
+            "titre": "Ogni luogo ha la sua pulizia",
+            "intro": "Adattiamo metodo, frequenza e prodotti alla natura dello spazio: un atrio di palazzo non si cura come un ufficio, né un divano come una vetrina. Ecco i nostri sei ambiti di intervento.",
+            "ctaPrimaire": { "label": "Richiedi un preventivo", "href": "/contact" },
+            "ctaSecondaire": { "label": "Vedi le tariffe", "href": "/tarifs" }
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Aziende & amministratori",
+            "titre": "Per i condomìni e le aziende",
+            "intro": "Interventi pianificati, un referente unico e resoconti chiari per chi gestisce edifici e locali.",
+            "items": [
+              {
+                "nom": "Condomìni & parti comuni",
+                "icone": "Building2",
+                "priceHint": "su preventivo",
+                "description": "Atri, vani scala, pianerottoli, ascensori e vetri interni: una cura regolare che valorizza il palazzo e rassicura i residenti.",
+                "href": "/nettoyage-copropriete"
+              },
+              {
+                "nom": "Uffici & locali professionali",
+                "icone": "Briefcase",
+                "priceHint": "da 120 €",
+                "description": "Uffici, ristoranti, palestre e cucine professionali, curati fuori dai vostri orari di apertura, nel rispetto delle norme igieniche.",
+                "href": "/nettoyage-professionnels"
+              },
+              {
+                "nom": "Pulizia dei vetri",
+                "icone": "Sparkles",
+                "priceHint": "da 100 €",
+                "description": "Vetrine dei negozi, facciate vetrate e finestre degli uffici pulite senza aloni, con le altezze gestite in sicurezza.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Disinfezione & biopulizia",
+                "icone": "ShieldPlus",
+                "priceHint": "su preventivo",
+                "description": "Pulizia e disinfezione professionale: applicazione dei protocolli di igiene ospedaliera e biopulizia, con metodi e prodotti adeguati.",
+                "href": "/nettoyage-professionnels"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Privati",
+            "titre": "Per la vostra casa e i vostri tessuti",
+            "intro": "La stessa cura del dettaglio, portata in casa: una manutenzione costante e mobili che ritrovano freschezza.",
+            "items": [
+              {
+                "nom": "Pulizie domestiche",
+                "icone": "Home",
+                "priceHint": "da 35 €/h",
+                "description": "Manutenzione settimanale o saltuaria: pavimenti, cucina, bagno e polveri seguiti secondo le vostre indicazioni, da un'operatrice fissa.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Divani, poltrone & tappeti",
+                "icone": "Sofa",
+                "priceHint": "da 70 €",
+                "description": "Iniezione-estrazione in profondità: i tessuti escono igienizzati, deodorati e asciutti in poche ore. Tappeti lavati in base alla fibra.",
+                "href": "/nettoyage-textiles"
+              },
+              {
+                "nom": "Pulizia di fine cantiere",
+                "icone": "Hammer",
+                "priceHint": "da 300 €",
+                "description": "Dopo lavori o prima di un sopralluogo: polvere di cantiere, tracce di vernice e pavimenti ripresi fino all'ultimo angolo.",
+                "href": "/remise-en-etat"
+              }
+            ],
+            "cta": { "label": "Stima il mio budget", "href": "/tarifs" }
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Non sapete in quale categoria rientra la vostra esigenza?",
+            "sousTitre": "Descriveteci il luogo e l'obiettivo: vi orientiamo verso il servizio giusto e mettiamo un prezzo a tutto.",
+            "ctaPrimaire": { "label": "Descrivi la mia esigenza", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 58 08 61 89", "href": "tel:+33758086189" }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "realisations",
+      "label": "Lavori realizzati",
+      "meta": {
+        "title": "Lavori realizzati — pulizie a Parigi & Île-de-France",
+        "description": "Prima/dopo dei nostri cantieri nell'Île-de-France: macchina per bevande professionale sgrassata, brasserie parigina rimessa a nuovo. Risultati concreti."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Lavori realizzati",
+            "titre": "Cantieri che parlano da soli",
+            "intro": "Alcuni interventi recenti nell'Île-de-France, dal dettaglio di un'attrezzatura professionale alla rimessa a nuovo di una grande brasserie parigina. Tutte le foto arrivano direttamente dai nostri cantieri."
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "Prima / Dopo",
+            "titre": "Una macchina per bevande professionale, sgrassata a fondo",
+            "intro": "Vaschetta di raccolta, erogatori e carrozzeria interna: residui di bevande, depositi appiccicosi e tracce eliminati fino al metallo, per un'attrezzatura sana e di nuovo perfetta.",
+            "pastille": "Prima / Dopo",
+            "ratio": "3/4",
+            "avantApres": [
+              {
+                "avant": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/real-machine-avant.jpg",
+                  "alt": "Interno di una macchina per bevande sporco di residui prima della pulizia"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/real-machine-apres.jpg",
+                  "alt": "La stessa attrezzatura dopo uno sgrassaggio completo, erogatori puliti"
+                },
+                "legende": "Vaschetta ed erogatori di una macchina professionale: prima e dopo lo sgrassaggio"
+              }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "Sul campo",
+            "titre": "Una brasserie parigina rimessa a nuovo",
+            "intro": "Pavimenti, bancone in mogano, specchi e boiserie di un locale Art Nouveau: una pulizia a fondo condotta fuori servizio, di notte, per riaprire impeccabile all'alba.",
+            "ratio": "3/4",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/real-brasserie-1.jpg",
+                  "alt": "Sala di brasserie Art Nouveau con boiserie e specchi dopo la pulizia"
+                },
+                "titre": "Pavimenti e boiserie ravvivati"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/real-brasserie-2.jpg",
+                  "alt": "Bancone e bar in mogano di una brasserie parigina curati"
+                },
+                "titre": "Bancone e bar curati"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/real-brasserie-3.jpg",
+                  "alt": "Vetrate e porte Art Nouveau pulite in una brasserie"
+                },
+                "titre": "Vetrate Art Nouveau pulite"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un luogo da valorizzare a vostra volta?",
+            "sousTitre": "Descriveteci il vostro locale o la vostra casa: prepariamo un preventivo gratuito entro 24 h.",
+            "ctaPrimaire": { "label": "Richiedi un preventivo gratuito", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 58 08 61 89", "href": "tel:+33758086189" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-copropriete",
+      "label": "Condomìni",
+      "navHidden": true,
+      "meta": {
+        "title": "Pulizia condomìni & parti comuni a Parigi",
+        "description": "Cura delle parti comuni in Île-de-France: atri, scale, pianerottoli, ascensori e vetri interni. Pianificazione regolare, referente unico, preventivo gratuito."
+      },
+      "service": {
+        "name": "Pulizia di condomìni & parti comuni",
+        "description": "Cura regolare delle parti comuni di edifici residenziali in Île-de-France.",
+        "serviceType": "Pulizia delle parti comuni",
+        "priceFrom": "Su preventivo"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Condomìni & edifici residenziali",
+            "titre": "Parti comuni sempre in ordine",
+            "intro": "Un palazzo ben tenuto si percepisce già dall'atrio. Curiamo le vostre parti comuni con un ritmo regolare, per residenti soddisfatti e un patrimonio preservato.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Servizi", "href": "/services" },
+              { "label": "Condomìni" }
+            ],
+            "ctaPrimaire": { "label": "Richiedi un preventivo", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 58 08 61 89", "href": "tel:+33758086189" }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Una cura pensata per amministratori e residenti",
+            "paragraphes": [
+              "La cura delle parti comuni è il cuore del nostro lavoro con i condomìni dell'Île-de-France. Ci occupiamo della scopatura e del lavaggio di atri, vani scala e pianerottoli, della spolveratura di corrimano, cassette della posta e interruttori, della pulizia delle cabine dell'ascensore e dei vetri interni; la gestione dei bidoni nei giorni di raccolta può aggiungersi secondo il contratto.",
+              "Ogni palazzo riceve una pianificazione fissa e, idealmente, gli stessi operatori da una settimana all'altra: conoscono gli angoli, le abitudini dell'edificio e segnalano all'amministratore ciò che merita attenzione. Mantenete un interlocutore unico, raggiungibile, e un resoconto chiaro di ciò che viene svolto.",
+              "La frequenza si adatta alla vita del condominio: passaggio settimanale, quindicinale o più volte a settimana per i palazzi ad alto transito. Prepariamo il preventivo dopo aver visto i luoghi, per un prezzo giusto e senza sorprese."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Domande dei gestori di edifici",
+            "items": [
+              {
+                "question": "Proponete contratti di manutenzione regolare?",
+                "reponse": "Sì, è la formula più diffusa in condominio: una pianificazione fissa, una frequenza concordata con l'amministratore o il consiglio, e una fatturazione mensile chiara. Gli interventi saltuari restano possibili per un'esigenza isolata."
+              },
+              {
+                "question": "Gestite l'uscita dei rifiuti e la pulizia del locale bidoni?",
+                "reponse": "È un'opzione frequente nei nostri contratti. Uscita e rientro dei bidoni nei giorni di raccolta, lavaggio del locale e disinfezione occasionale possono essere inclusi: lo indichiamo chiaramente nel preventivo."
+              },
+              {
+                "question": "Come segue l'amministratore la qualità dei passaggi?",
+                "reponse": "Avete un referente unico da noi e un resoconto degli interventi. Ogni osservazione di un residente ci arriva direttamente e correggiamo già dal passaggio successivo."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Altre esigenze per il vostro palazzo",
+            "items": [
+              {
+                "nom": "Pulizia dei vetri",
+                "icone": "Sparkles",
+                "description": "Atri vetrati, porte e finestre delle parti comuni resi limpidi.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Pulizia di fine cantiere",
+                "icone": "Hammer",
+                "description": "Parti comuni riprese dopo lavori o un danno.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Uffici & locali professionali",
+                "icone": "Briefcase",
+                "description": "Il locale del custode, una sala comune o l'ufficio di gestione.",
+                "href": "/nettoyage-professionnels"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Affidate le vostre parti comuni a una squadra fissa",
+            "sousTitre": "Inviateci l'indirizzo e il numero di piani: veniamo a vedere e prepariamo il preventivo del contratto.",
+            "ctaPrimaire": { "label": "Richiedi un preventivo", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 58 08 61 89", "href": "tel:+33758086189" }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-professionnels",
+      "label": "Uffici & aziende",
+      "navHidden": true,
+      "meta": {
+        "title": "Pulizia uffici & locali professionali a Parigi",
+        "description": "Pulizia di uffici, ristoranti e cucine professionali in Île-de-France, da 120 €. Interventi fuori orario, igiene curata, preventivo entro 24 h."
+      },
+      "service": {
+        "name": "Pulizia di uffici & locali professionali",
+        "description": "Cura di uffici, ristoranti e cucine professionali in Île-de-France.",
+        "serviceType": "Pulizia di locali professionali",
+        "priceFrom": 120
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Aziende, negozi, ristoranti & palestre",
+            "titre": "Locali puliti, senza intralciare la vostra attività",
+            "intro": "Un ambiente di lavoro sano dà il tono ai vostri team e ai vostri clienti. Curiamo i vostri uffici e spazi professionali prima dell'apertura o dopo la chiusura.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Servizi", "href": "/services" },
+              { "label": "Uffici & aziende" }
+            ],
+            "ctaPrimaire": { "label": "Richiedi un preventivo", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 58 08 61 89", "href": "tel:+33758086189" }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Uffici, ristoranti, palestre e cucine professionali",
+            "paragraphes": [
+              "Interveniamo in spazi di lavoro di ogni dimensione: open space, studi, sale riunioni, servizi igienici e aree di accoglienza. Il protocollo copre lo svuotamento dei cestini, la spolveratura delle postazioni, il lavaggio dei pavimenti, la disinfezione dei punti di contatto e la cura dei servizi igienici, con il riassortimento dei materiali di consumo se lo desiderate.",
+              "Per la ristorazione, l'esigenza sale di livello: sgrassaggio delle superfici, pulizia delle sale e delle cucine professionali nel rispetto delle norme igieniche, pavimenti antiscivolo trattati con i prodotti adeguati. Adattiamo i nostri passaggi al vostro servizio, di primo mattino o a tarda sera, per non disturbare mai l'accoglienza del pubblico.",
+              "Il servizio parte da 120 € e si adegua alla superficie, alla frequenza e al livello di esigenza. Un contratto ricorrente garantisce la stessa coppia di operatori e un risultato costante, settimana dopo settimana.",
+              "Curiamo anche la pulizia e la disinfezione professionale degli ambienti sensibili: applicazione dei protocolli di igiene ospedaliera e biopulizia, con metodi e prodotti adatti a ogni superficie. Una risposta per studi, laboratori, sale di cura e ogni locale in cui l'esigenza sanitaria è massima."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Domande di aziende e ristoratori",
+            "items": [
+              {
+                "question": "Potete intervenire fuori dagli orari di apertura?",
+                "reponse": "Sì, è anzi la regola per la maggior parte dei nostri clienti professionali. Di primo mattino, la sera o di notte a seconda della vostra attività: fissiamo i passaggi nelle vostre fasce libere per non disturbare mai clienti e collaboratori."
+              },
+              {
+                "question": "Rispettate i vincoli igienici in cucina professionale?",
+                "reponse": "Usiamo prodotti e metodi adatti alle superfici alimentari e allo sgrassaggio, e interveniamo secondo la logica delle norme igieniche della ristorazione. Il dettaglio delle zone trattate è indicato nel preventivo."
+              },
+              {
+                "question": "La pulizia degli uffici si fattura a ore o a forfait?",
+                "reponse": "Il più delle volte a forfait, calcolato su superficie e frequenza, per un budget prevedibile. Per un'esigenza saltuaria o una grande superficie, possiamo anche quotare a intervento."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Da abbinare per i vostri locali",
+            "items": [
+              {
+                "nom": "Pulizia dei vetri",
+                "icone": "Sparkles",
+                "description": "Vetrine e finestre degli uffici senza aloni, lato strada e lato cortile.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Pulizia di fine cantiere",
+                "icone": "Hammer",
+                "description": "Locale ripreso a fondo dopo un allestimento o prima di una riconsegna.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Divani & poltrone",
+                "icone": "Sofa",
+                "description": "Sedute di accoglienza e poltrone delle sale riunioni igienizzate.",
+                "href": "/nettoyage-textiles"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un preventivo per i vostri uffici o il vostro negozio?",
+            "sousTitre": "Indicate la superficie e i vostri orari: proponiamo una pianificazione e un prezzo fermo.",
+            "ctaPrimaire": { "label": "Richiedi un preventivo", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 58 08 61 89", "href": "tel:+33758086189" }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Vetri",
+      "navHidden": true,
+      "meta": {
+        "title": "Pulizia dei vetri a Parigi, da 100 €",
+        "description": "Pulizia dei vetri per professionisti e privati in Île-de-France, da 100 €. Vetrine, vetrate e finestre senza aloni, da entrambi i lati. Preventivo gratuito entro 24 h."
+      },
+      "service": {
+        "name": "Pulizia dei vetri",
+        "description": "Pulizia di vetri, vetrine e vetrate per professionisti e privati in Île-de-France.",
+        "serviceType": "Pulizia dei vetri",
+        "priceFrom": 100
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Professionisti & privati",
+            "titre": "Entra la luce, spariscono gli aloni",
+            "intro": "Vetri puliti cambiano tutto: una vetrina che invita a entrare, un ufficio più luminoso, un soggiorno trasformato. Laviamo le vostre superfici vetrate su entrambi i lati.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Servizi", "href": "/services" },
+              { "label": "Vetri" }
+            ],
+            "ctaPrimaire": { "label": "Richiedi un preventivo", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 58 08 61 89", "href": "tel:+33758086189" }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Vetrine, vetrate e finestre",
+            "paragraphes": [
+              "Puliamo i vetri di negozi e aziende come quelli delle abitazioni: vetrine e facciate, lucernari, vetrate scorrevoli, finestre a piccoli riquadri, telai e davanzali. Ogni superficie viene lavata su entrambi i lati, poi verificata in controluce per non lasciare né veli né colature.",
+              "Per le vetrine dei negozi, un passaggio regolare mantiene un'immagine curata che conta nel momento in cui il cliente esita a spingere la porta. Per i privati, una grande pulizia stagionale basta spesso a ritrovare luce in tutta la casa. Le superfici in quota sono trattate con l'attrezzatura adeguata, in sicurezza.",
+              "Il servizio parte da 100 € e dipende dal numero di aperture, dalla loro accessibilità e dalla frequenza. Prepariamo un preventivo preciso dopo un sopralluogo delle superfici da trattare."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Domande sulla pulizia dei vetri",
+            "items": [
+              {
+                "question": "Pulite le vetrine dei negozi in modo regolare?",
+                "reponse": "Sì. Molti commercianti scelgono un passaggio settimanale o quindicinale per mantenere una vetrina impeccabile in ogni momento. Interveniamo prima dell'apertura per non disturbare la clientela."
+              },
+              {
+                "question": "Raggiungete i vetri in quota?",
+                "reponse": "Trattiamo le superfici a un'altezza ragionevole con aste e l'attrezzatura adeguata. Per configurazioni complesse o grandi facciate, valutiamo l'accesso durante il preventivo e vi proponiamo la soluzione più sicura."
+              },
+              {
+                "question": "Telai e davanzali sono compresi?",
+                "reponse": "Sì, la pulizia include i montanti, i davanzali e le tracce sui telai: è ciò che distingue un vero lavaggio dei vetri da una semplice passata di spugna sul vetro."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Spesso richiesto insieme a",
+            "items": [
+              {
+                "nom": "Uffici & locali professionali",
+                "icone": "Briefcase",
+                "description": "La cura completa del locale, vetri compresi.",
+                "href": "/nettoyage-professionnels"
+              },
+              {
+                "nom": "Pulizie domestiche",
+                "icone": "Home",
+                "description": "I vetri integrati nella cura regolare della casa.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Condomìni & parti comuni",
+                "icone": "Building2",
+                "description": "Atri e porte vetrate degli edifici residenziali.",
+                "href": "/nettoyage-copropriete"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Voglia di vederci più chiaro?",
+            "sousTitre": "Contate le vostre finestre e vetrine, inviateci il numero: il preventivo segue entro 24 h.",
+            "ctaPrimaire": { "label": "Richiedi un preventivo", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 58 08 61 89", "href": "tel:+33758086189" }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "menage-domicile",
+      "label": "Pulizie domestiche",
+      "navHidden": true,
+      "meta": {
+        "title": "Pulizie domestiche a Parigi, da 35 €/h",
+        "description": "Pulizie domestiche in Île-de-France da 35 €/h: cura regolare o saltuaria, operatrice fissa, indicazioni rispettate, attrezzatura fornita. Preventivo gratuito entro 24 h."
+      },
+      "service": {
+        "name": "Pulizie domestiche",
+        "description": "Cura regolare o saltuaria della casa in Île-de-France, da 35 €/h.",
+        "serviceType": "Pulizie domestiche",
+        "priceFrom": 35
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Privati",
+            "titre": "Una casa curata, con la mente serena",
+            "intro": "Ritrovare una casa curata senza dedicarci il weekend: ecco ciò che vi offriamo, con un'operatrice fissa che conosce le vostre abitudini.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Servizi", "href": "/services" },
+              { "label": "Pulizie domestiche" }
+            ],
+            "ctaPrimaire": { "label": "Richiedi un preventivo", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 58 08 61 89", "href": "tel:+33758086189" }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "La cura della vostra casa, al vostro ritmo",
+            "paragraphes": [
+              "Che cerchiate un passaggio settimanale, una pulizia saltuaria o una grande pulizia stagionale, adattiamo il servizio alla vostra famiglia. Pavimenti, cucina, bagno, polveri, vetri interni e un leggero riordino: fissate le priorità al primo appuntamento, noi le annotiamo e le seguiamo a ogni visita.",
+              "Privilegiamo la stessa persona da una volta all'altra. È ciò che crea fiducia quando si consegnano le chiavi: la vostra operatrice finisce per conoscere la casa, le sue superfici delicate e le vostre preferenze di prodotti. In presenza di bambini o animali, adeguiamo naturalmente i prodotti utilizzati.",
+              "Le pulizie domestiche partono da 35 €/h, attrezzatura e prodotti forniti. Restate liberi di scegliere la frequenza e potete farla evolvere con le stagioni. Il preventivo è gratuito e senza impegno."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Domande sulle pulizie domestiche",
+            "items": [
+              {
+                "question": "Avrò sempre la stessa persona?",
+                "reponse": "È la nostra priorità: assegniamo un'operatrice fissa alla vostra casa, così da conoscere i vostri spazi e le vostre indicazioni. In caso di assenza, chi la sostituisce riceve in anticipo tutte le vostre note."
+              },
+              {
+                "question": "Posso prenotare una pulizia saltuaria anziché un contratto regolare?",
+                "reponse": "Certo. Grande pulizia di primavera, rimessa a nuovo prima di un ricevimento o dopo un periodo intenso: interveniamo in modo saltuario, senza obbligo di ricorrenza."
+              },
+              {
+                "question": "Offrite la detrazione fiscale sulle pulizie domestiche?",
+                "reponse": "Le pulizie presso un privato rientrano nei servizi alla persona, ma il vantaggio fiscale richiede una dichiarazione specifica. Vi diciamo con la massima trasparenza, al momento del preventivo, se il vostro servizio vi dà diritto o meno."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Per fare di più a casa vostra",
+            "items": [
+              {
+                "nom": "Divani, poltrone & tappeti",
+                "icone": "Sofa",
+                "description": "Ridare vita ai tessuti che la cura ordinaria non basta a ravvivare.",
+                "href": "/nettoyage-textiles"
+              },
+              {
+                "nom": "Pulizia dei vetri",
+                "icone": "Sparkles",
+                "description": "Una grande pulizia delle finestre per ritrovare luce.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Pulizia di fine cantiere",
+                "icone": "Hammer",
+                "description": "Una casa ripresa a fondo dopo lavori o prima di un trasloco.",
+                "href": "/remise-en-etat"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Voglia di tirare il fiato sulle pulizie?",
+            "sousTitre": "Indicate la superficie della vostra casa e la frequenza desiderata: stimiamo il budget entro 24 h.",
+            "ctaPrimaire": { "label": "Richiedi un preventivo", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 58 08 61 89", "href": "tel:+33758086189" }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-textiles",
+      "label": "Divani & tappeti",
+      "navHidden": true,
+      "meta": {
+        "title": "Pulizia divani & tappeti a Parigi, da 70 €",
+        "description": "Pulizia di divani, poltrone e tappeti in Île-de-France da 70 €. Iniezione-estrazione in profondità, macchie trattate, tessuti igienizzati e ad asciugatura rapida."
+      },
+      "service": {
+        "name": "Pulizia di divani, poltrone & tappeti",
+        "description": "Pulizia in profondità dei tessuti d'arredo tramite iniezione-estrazione, in Île-de-France.",
+        "serviceType": "Pulizia di tessuti d'arredo",
+        "priceFrom": 70
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Divani · Poltrone · Tappeti",
+            "titre": "I vostri tessuti ritrovano freschezza",
+            "intro": "Un divano spento, un tappeto segnato, un odore che si installa: l'iniezione-estrazione va a cercare lo sporco nel cuore della fibra, dove l'aspirapolvere si ferma.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Servizi", "href": "/services" },
+              { "label": "Divani & tappeti" }
+            ],
+            "ctaPrimaire": { "label": "Richiedi un preventivo", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 58 08 61 89", "href": "tel:+33758086189" }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "L'iniezione-estrazione, in profondità",
+            "paragraphes": [
+              "Il metodo consiste nel nebulizzare una soluzione detergente nel cuore del tessuto, per poi aspirarla subito insieme allo sporco disciolto. Risultato: le macchie sono trattate, gli acari e gli odori rimossi, e il tessuto esce igienizzato anziché semplicemente strofinato in superficie. L'asciugatura richiede in genere poche ore, a seconda dello spessore e dell'aerazione della stanza.",
+              "Interveniamo su divani in tessuto, poltrone, sedie imbottite, materassi e tappeti. Ogni materiale viene identificato prima di qualsiasi gesto: lana, cotone, sintetico o fibre delicate non richiedono lo stesso dosaggio né la stessa temperatura. Le macchie ostinate sono pretrattate a mano.",
+              "La pulizia di una poltrona o di un tappeto parte da 70 €, mentre i pezzi grandi e i divani angolari si quotano in base alla dimensione. Veniamo da voi con tutta l'attrezzatura: non c'è nulla da spostare."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Domande sulla pulizia dei tessuti",
+            "items": [
+              {
+                "question": "Quanto ci mette il divano ad asciugare?",
+                "reponse": "In genere da due a quattro ore, a seconda dello spessore dell'imbottitura e dell'aerazione della stanza. Regoliamo l'estrazione per togliere il massimo dell'umidità e accorciare l'asciugatura."
+              },
+              {
+                "question": "Vanno via tutte le macchie?",
+                "reponse": "La grande maggioranza si attenua nettamente, soprattutto se la macchia è recente. Alcuni segni vecchi o permanenti possono restare visibili: siamo onesti sul risultato atteso prima di intervenire."
+              },
+              {
+                "question": "Trattate anche materassi e tappeti delicati?",
+                "reponse": "Sì. Materassi, tappeti in lana o seta e fibre delicate sono puliti con un dosaggio e un metodo adatti al materiale, dopo una prova discreta su una zona poco visibile."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Nella stessa visita",
+            "items": [
+              {
+                "nom": "Pulizie domestiche",
+                "icone": "Home",
+                "description": "La cura completa della casa, oltre ai tessuti.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Pulizia dei vetri",
+                "icone": "Sparkles",
+                "description": "Finestre pulite per accompagnare la grande pulizia.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Uffici & locali professionali",
+                "icone": "Briefcase",
+                "description": "Sedute di accoglienza e poltrone delle sale riunioni igienizzate.",
+                "href": "/nettoyage-professionnels"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un divano o un tappeto da ravvivare?",
+            "sousTitre": "Inviateci una foto su WhatsApp: la stima sarà solo più precisa.",
+            "ctaPrimaire": { "label": "Richiedi un preventivo", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 58 08 61 89", "href": "tel:+33758086189" }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "remise-en-etat",
+      "label": "Fine cantiere",
+      "navHidden": true,
+      "meta": {
+        "title": "Pulizia di fine cantiere a Parigi, da 300 €",
+        "description": "Pulizia dopo lavori o trasloco in Île-de-France, da 300 €. Polvere di cantiere, tracce di vernice e pavimenti ripresi stanza per stanza. Preventivo entro 24 h."
+      },
+      "service": {
+        "name": "Pulizia di fine cantiere o dopo trasloco",
+        "description": "Pulizia completa di una casa o di un locale dopo lavori o prima di un sopralluogo, in Île-de-France.",
+        "serviceType": "Pulizia di fine cantiere",
+        "priceFrom": 300
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Dopo il cantiere · Dopo il trasloco",
+            "titre": "Dal cantiere alle chiavi, un luogo pronto da vivere",
+            "intro": "La fine dei lavori lascia sempre uno strato di polvere fine, tracce di vernice ed etichette ovunque. Riprendiamo il luogo da cima a fondo perché sia pronto a essere abitato o riconsegnato.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Servizi", "href": "/services" },
+              { "label": "Fine cantiere" }
+            ],
+            "ctaPrimaire": { "label": "Richiedi un preventivo", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 58 08 61 89", "href": "tel:+33758086189" }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Dopo i lavori o prima di un sopralluogo",
+            "paragraphes": [
+              "La pulizia di fine cantiere è un servizio a parte: non si improvvisa con una semplice pulizia. Eliminiamo la polvere di cantiere che si infiltra ovunque, i residui di gesso e colla, le tracce di vernice e adesivo su vetri e pavimenti, le etichette sugli infissi nuovi, poi laviamo tutte le superfici fino ai battiscopa e agli interruttori.",
+              "Questo servizio è adatto anche ai traslochi: una casa resa impeccabile prima del sopralluogo di uscita, o una nuova abitazione pulita prima di posarvi gli scatoloni. Per i professionisti, rimettiamo a nuovo un locale dopo un allestimento o prima di una riconsegna. Ogni stanza viene controllata con voi al termine dell'intervento.",
+              "La pulizia di fine cantiere parte da 300 € e dipende dalla superficie, dall'entità dei lavori e dallo stato di partenza. Un sopralluogo, o qualche foto, basta per preparare un preventivo preciso."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Domande sulla pulizia di fine cantiere",
+            "items": [
+              {
+                "question": "Che differenza c'è con una pulizia normale?",
+                "reponse": "La pulizia di fine cantiere affronta sporchi che la cura ordinaria non tratta: polvere fine di cantiere incrostata, schizzi di vernice, colla, calcare dei sanitari nuovi. Richiede prodotti specifici e molto più tempo per metro quadrato."
+              },
+              {
+                "question": "Intervenite prima di un sopralluogo di uscita?",
+                "reponse": "Sì, è una richiesta frequente. Restituiamo la casa in uno stato curato per affrontare il sopralluogo con serenità. Avvisateci della data limite così da fissare l'intervento in tempo."
+              },
+              {
+                "question": "Come ottenere un prezzo giusto per questo tipo di cantiere?",
+                "reponse": "Il meglio è un rapido sopralluogo, o qualche foto rappresentativa delle stanze. Adeguiamo il preventivo allo stato reale anziché a un forfait alla cieca, per evitare ogni brutta sorpresa."
+              }
+            ]
+          },
+          "variant": "deux-colonnes"
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Servizi collegati",
+            "items": [
+              {
+                "nom": "Pulizia dei vetri",
+                "icone": "Sparkles",
+                "description": "Tracce di vernice e adesivo rimosse dalle superfici vetrate.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Pulizie domestiche",
+                "icone": "Home",
+                "description": "Una cura regolare una volta rimessa a nuovo la casa.",
+                "href": "/menage-domicile"
+              },
+              {
+                "nom": "Condomìni & parti comuni",
+                "icone": "Building2",
+                "description": "Parti comuni riprese dopo lavori nel palazzo.",
+                "href": "/nettoyage-copropriete"
+              }
+            ]
+          },
+          "variant": "grille-icones"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un cantiere appena concluso?",
+            "sousTitre": "Inviateci la superficie e qualche foto: il preventivo parte entro 24 ore.",
+            "ctaPrimaire": { "label": "Richiedi un preventivo", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 58 08 61 89", "href": "tel:+33758086189" }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "tarifs",
+      "label": "Tariffe",
+      "meta": {
+        "title": "Tariffe pulizie a Parigi & Île-de-France",
+        "description": "Pulizie da 35 €/h, vetri da 100 €, divano da 70 €, uffici da 120 €, fine cantiere da 300 €. Stima il tuo budget online, preventivo fermo entro 24 h."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Tariffe & stima",
+            "titre": "Prezzi di partenza mostrati con chiarezza",
+            "intro": "Pulizie domestiche a 35 €/h, vetri da 100 €, divano da 70 €, uffici da 120 €, terrazza da 120 €, fine cantiere da 300 €, parti comuni di condominio su preventivo. Componete la vostra stima qui sotto, poi ricevete un prezzo fermo entro 24 h."
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Il nostro impegno sui prezzi",
+            "titre": "Prezzi chiari, senza brutte sorprese",
+            "paragraphes": [
+              "Mostriamo i nostri prezzi di partenza in piena trasparenza. L'importo finale dipende da tre elementi semplici: la superficie da trattare, la frequenza dei passaggi e lo stato del luogo quando iniziamo. Ciò che scriviamo sul preventivo è esattamente ciò che pagate.",
+              "Il preventivo è gratuito, dettagliato e senza impegno. Vi arriva entro 24 h, e restiamo raggiungibili per adeguarlo con voi se la vostra esigenza cambia strada facendo."
+            ]
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "grille",
+          "content": {
+            "titre": "Le nostre tariffe di partenza",
+            "intro": "Una panoramica onesta dei nostri prezzi minimi, servizio per servizio. Per un importo preciso, richiedete il vostro preventivo gratuito.",
+            "items": [
+              {
+                "nom": "Pulizie domestiche",
+                "prix": "35 €/h",
+                "description": "Cura regolare o saltuaria della vostra casa.",
+                "inclus": [
+                  "Operatrice fissa",
+                  "Attrezzatura e prodotti forniti",
+                  "Al vostro ritmo, dal lunedì al sabato"
+                ]
+              },
+              {
+                "nom": "Pulizia dei vetri",
+                "prix": "da 100 €",
+                "description": "Vetrine, vetrate e finestre, da entrambi i lati.",
+                "inclus": [
+                  "Telai e davanzali compresi",
+                  "Verifica in controluce"
+                ]
+              },
+              {
+                "nom": "Divani, poltrone & tappeti",
+                "prix": "da 70 €",
+                "description": "Iniezione-estrazione in profondità, a domicilio.",
+                "inclus": [
+                  "Macchie pretrattate a mano",
+                  "Asciugatura in poche ore"
+                ]
+              },
+              {
+                "nom": "Uffici & locali pro",
+                "prix": "da 120 €",
+                "description": "Uffici, negozi, ristoranti, palestre e cucine pro.",
+                "inclus": [
+                  "Fuori dagli orari di apertura",
+                  "Contratto regolare possibile"
+                ]
+              },
+              {
+                "nom": "Pulizia della terrazza",
+                "prix": "da 120 €",
+                "description": "Pavimentazioni e superfici esterne sgrassate e liberate dal muschio.",
+                "inclus": [
+                  "Pressione dosata secondo il materiale"
+                ]
+              },
+              {
+                "nom": "Pulizia di fine cantiere",
+                "prix": "da 300 €",
+                "description": "Dopo un cantiere o un trasloco.",
+                "inclus": [
+                  "Polvere di cantiere e tracce rimosse",
+                  "Controllo stanza per stanza"
+                ]
+              },
+              {
+                "nom": "Condomìni & parti comuni",
+                "prix": "Su preventivo",
+                "description": "Contratto di manutenzione regolare delle parti comuni.",
+                "inclus": [
+                  "Pianificazione fissa",
+                  "Un referente unico per l'amministratore"
+                ]
+              }
+            ],
+            "note": "Prezzi di partenza indicativi. Preventivo fermo rimandato entro 24 h dopo l'analisi della vostra richiesta.",
+            "cta": { "label": "Stima il mio preventivo gratuito", "href": "/contact" }
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un progetto più complesso?",
+            "sousTitre": "Grande volume, più sedi, esigenza ricorrente: descrivetelo, il preventivo resta gratuito.",
+            "ctaPrimaire": { "label": "Contattaci", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 58 08 61 89", "href": "tel:+33758086189" }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "zone-intervention",
+      "label": "Zona",
+      "navHidden": true,
+      "meta": {
+        "title": "Zona d'intervento — Parigi & Île-de-France",
+        "description": "RD NET&PROPRE interviene a Parigi e negli otto dipartimenti dell'Île-de-France: prima e seconda cintura. Condomìni, uffici e privati, preventivo entro 24 h."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Zona d'intervento",
+            "titre": "Tutta l'Île-de-France, da Parigi",
+            "intro": "La nostra base è parigina, ma il nostro terreno copre gli otto dipartimenti della regione. Ecco come organizziamo i nostri spostamenti, dalla capitale alla seconda cintura."
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "Tre cerchi, una stessa esigenza",
+            "intro": "Che il vostro luogo si trovi in un arrondissement parigino, nella prima cintura o ai confini della regione, applichiamo lo stesso metodo e lo stesso controllo. Il vostro comune non è in elenco? Chiedete: se è in Île-de-France, veniamo.",
+            "rayonKm": 60,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=1.44%2C48.12%2C3.56%2C49.24&layer=mapnik&marker=48.8566%2C2.3522",
+            "zones": [
+              {
+                "region": "Parigi intra muros (75)",
+                "principale": "Paris",
+                "villes": [
+                  "Parigi Centro",
+                  "Riva sinistra",
+                  "Riva destra",
+                  "I 20 arrondissement"
+                ]
+              },
+              {
+                "region": "Prima cintura (92 · 93 · 94)",
+                "principale": "Boulogne-Billancourt",
+                "villes": [
+                  "Boulogne-Billancourt",
+                  "Neuilly-sur-Seine",
+                  "Levallois-Perret",
+                  "Nanterre",
+                  "Courbevoie",
+                  "Montreuil",
+                  "Saint-Denis",
+                  "Aubervilliers",
+                  "Créteil",
+                  "Vitry-sur-Seine",
+                  "Ivry-sur-Seine"
+                ]
+              },
+              {
+                "region": "Seconda cintura (77 · 78 · 91 · 95)",
+                "principale": "Versailles",
+                "villes": [
+                  "Versailles",
+                  "Saint-Germain-en-Laye",
+                  "Argenteuil",
+                  "Cergy",
+                  "Sarcelles",
+                  "Évry-Courcouronnes",
+                  "Meaux",
+                  "Melun"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Il vostro luogo è da qualche parte su questa mappa?",
+            "sousTitre": "Indicateci il comune e il tipo di spazio: confermiamo lo spostamento e prepariamo il preventivo.",
+            "ctaPrimaire": { "label": "Richiedi un preventivo", "href": "/contact" },
+            "ctaSecondaire": { "label": "07 58 08 61 89", "href": "tel:+33758086189" }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "a-propos",
+      "label": "Chi siamo",
+      "navHidden": true,
+      "meta": {
+        "title": "Il nostro approccio alle pulizie in Île-de-France",
+        "description": "RD NET&PROPRE, impresa di pulizie con base a Parigi: operatori fissi, controllo sistematico e accoglienza multilingue al servizio dell'Île-de-France."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Chi siamo",
+            "titre": "RD NET&PROPRE, la pulizia presa sul serio",
+            "intro": "Un'impresa dell'Île-de-France che mette la regolarità, la discrezione e il controllo del risultato al centro di ogni intervento — per amministratori, aziende e privati."
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Il nostro modo di lavorare",
+            "paragraphes": [
+              "RD NET&PROPRE è un'impresa di pulizie con base a Parigi, al servizio di tutta l'Île-de-France. Abbiamo costruito il nostro approccio attorno a una convinzione: la pulizia non si giudica al momento in cui si va via, ma nel tempo. Un atrio che resta in ordine tra un passaggio e l'altro, un ufficio che accoglie i team senza rimproveri, una casa in cui ci si sente bene: ecco il vero risultato.",
+              "Per riuscirci, puntiamo su operatori fissi, formati e discreti, anziché su una rotazione anonima. Ogni cliente dispone di un referente che conosce i suoi spazi e le sue aspettative. E poiché lavoriamo spesso a casa delle persone o in spazi sensibili, la fiducia e il rispetto dei luoghi vengono prima di tutto.",
+              "Accogliamo i nostri clienti in francese, inglese, spagnolo, arabo e italiano: a Parigi come in periferia, ognuno deve poter spiegare la propria esigenza senza barriere e ricevere una risposta chiara."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "I nostri riferimenti",
+            "titre": "Quattro impegni a cui teniamo",
+            "items": [
+              {
+                "icone": "ShieldCheck",
+                "titre": "Fiducia",
+                "texte": "Operatori seri e discreti, rispettosi dei vostri spazi, delle vostre cose e della vostra privacy."
+              },
+              {
+                "icone": "Repeat",
+                "titre": "Regolarità",
+                "texte": "La stessa coppia da una volta all'altra, una pianificazione rispettata e un risultato costante nel tempo."
+              },
+              {
+                "icone": "SearchCheck",
+                "titre": "Controllo",
+                "texte": "Ogni zona viene verificata prima di lasciare i luoghi: nulla è lasciato al caso."
+              },
+              {
+                "icone": "Languages",
+                "titre": "Vicinanza",
+                "texte": "Un'accoglienza in cinque lingue e un interlocutore che vi risponde davvero, nella vostra lingua."
+              }
+            ]
+          },
+          "variant": "timeline-verticale"
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Volete affidarci un luogo?",
+            "sousTitre": "Parliamo della vostra esigenza: il confronto non impegna a nulla e il preventivo è gratuito.",
+            "ctaPrimaire": { "label": "Richiedi un preventivo", "href": "/contact" },
+            "ctaSecondaire": { "label": "Contattaci", "href": "/contact" }
+          },
+          "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contatti",
+      "meta": {
+        "title": "Contatti — pulizie a Parigi & Île-de-France",
+        "description": "Contattateci per telefono, WhatsApp o modulo per ogni esigenza di pulizia in Île-de-France. Risposta e preventivo gratuito entro 24 h, in 5 lingue."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Contatti",
+            "titre": "Parliamo del vostro luogo da pulire",
+            "intro": "Per telefono, su WhatsApp o tramite il modulo, contattateci come preferite. Descrivete il tipo di spazio, la superficie e la frequenza — il vostro preventivo parte entro 24 h."
+          }
+        },
+        {
+          "type": "contact",
+          "content": {
+            "titre": "Richiesta di preventivo",
+            "intro": "Indicate il servizio desiderato, il vostro comune e il momento previsto: prepariamo la vostra stima e ve la rimandiamo entro 24 h. Due linee per contattarci: 07 58 08 61 89 e 07 48 32 20 29.",
+            "form": true,
+            "formMode": "demande-intervention",
+            "telephone": "07 58 08 61 89",
+            "whatsapp": "+33 7 58 08 61 89",
+            "email": "rd.nettoyagepropre@gmail.com",
+            "horaires": [
+              { "jour": "Lun – Sab", "heures": "08:00 – 22:00" },
+              { "jour": "Domenica", "heures": "Chiuso" }
+            ],
+            "services": [
+              "Condominio / parti comuni",
+              "Uffici & locali professionali",
+              "Ristorante / cucina professionale",
+              "Palestra & spazio fitness",
+              "Pulizia dei vetri",
+              "Pulizie domestiche",
+              "Divano, poltrona & tappeto",
+              "Pulizia della terrazza",
+              "Fine cantiere (lavori / trasloco)",
+              "Altro / non lo so ancora"
+            ],
+            "villes": [
+              "Paris",
+              "Boulogne-Billancourt",
+              "Neuilly-sur-Seine",
+              "Levallois-Perret",
+              "Nanterre",
+              "Courbevoie",
+              "Montreuil",
+              "Saint-Denis",
+              "Aubervilliers",
+              "Créteil",
+              "Vitry-sur-Seine",
+              "Ivry-sur-Seine",
+              "Versailles",
+              "Argenteuil",
+              "Cergy",
+              "Altro comune dell'Île-de-France"
+            ],
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=1.44%2C48.12%2C3.56%2C49.24&layer=mapnik&marker=48.8566%2C2.3522",
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    }
+  ]
+}

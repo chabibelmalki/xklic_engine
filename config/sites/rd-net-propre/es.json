@@ -6,7 +6,8 @@
       "fr",
       "en",
       "es",
-      "ar"
+      "ar",
+      "it"
     ]
   },
   "branding": {
@@ -134,7 +135,7 @@
                 "nom": "Oficinas y locales profesionales",
                 "icone": "Briefcase",
                 "priceHint": "desde 120 €",
-                "description": "Oficinas, restaurantes y cocinas profesionales limpiados antes de abrir o después de cerrar, sin perturbar su actividad.",
+                "description": "Oficinas, restaurantes, gimnasios y cocinas profesionales limpiados antes de abrir o después de cerrar, sin perturbar su actividad.",
                 "href": "/nettoyage-professionnels"
               },
               {
@@ -229,7 +230,7 @@
             "paragraphes": [
               "RD NET&PROPRE nació del deseo de ofrecer a administradores, empresas y familias de la Isla de Francia una limpieza que de verdad se sostiene en el tiempo, lejos de los trabajos hechos con prisas. Con base en París, cubrimos toda la región tanto para el mantenimiento habitual como para las puestas a punto puntuales.",
               "Nuestra postura es sencilla: personal fijo en lugar de una rotación anónima, un interlocutor que conoce sus espacios y un control sistemático antes de irnos. Eso es lo que mantiene limpio un portal semana tras semana y permite que una oficina reciba a sus equipos en las mejores condiciones.",
-              "Atendemos a nuestros clientes en francés, inglés, español y árabe: cada uno puede describir su necesidad en su idioma y recibir un presupuesto claro, sin tecnicismos."
+              "Atendemos a nuestros clientes en francés, inglés, español, árabe e italiano: cada uno puede describir su necesidad en su idioma y recibir un presupuesto claro, sin tecnicismos."
             ],
             "image": {
               "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/qui-sommes-nous.png",
@@ -338,7 +339,7 @@
               },
               {
                 "question": "¿En qué idiomas se les puede contactar?",
-                "reponse": "En francés, inglés, español y árabe. Describa su necesidad en el idioma que prefiera y la respuesta llegará en el mismo."
+                "reponse": "En francés, inglés, español, árabe e italiano. Describa su necesidad en el idioma que prefiera y la respuesta llegará en el mismo."
               }
             ]
           },
@@ -354,12 +355,12 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "+33 7 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "+33 7 58 08 61 89",
+              "href": "tel:+33758086189"
             },
             "lien": {
               "label": "o escríbanos por WhatsApp →",
-              "href": "https://wa.me/33748322029"
+              "href": "https://wa.me/33758086189"
             }
           },
           "variant": "encadre"
@@ -408,7 +409,7 @@
                 "nom": "Oficinas y locales profesionales",
                 "icone": "Briefcase",
                 "priceHint": "desde 120 €",
-                "description": "Oficinas, restaurantes y cocinas profesionales, limpiados fuera de su horario de apertura, respetando las normas de higiene.",
+                "description": "Oficinas, restaurantes, gimnasios y cocinas profesionales, limpiados fuera de su horario de apertura, respetando las normas de higiene.",
                 "href": "/nettoyage-professionnels"
               },
               {
@@ -475,11 +476,101 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "+33 7 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "+33 7 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
+        }
+      ]
+    },
+    {
+      "slug": "realisations",
+      "label": "Realizaciones",
+      "meta": {
+        "title": "Realizaciones — limpieza en París & Isla de Francia",
+        "description": "Antes/después de nuestros trabajos en la región parisina: una máquina de bebidas profesional desengrasada, una brasserie parisina impecable. Resultados concretos."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Realizaciones",
+            "titre": "Trabajos que hablan por sí solos",
+            "intro": "Algunas intervenciones recientes en la Isla de Francia, del detalle de un equipo profesional a devolver a su esplendor una gran brasserie parisina. Todas las fotos vienen directamente de nuestros trabajos."
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "Antes / Después",
+            "titre": "Una máquina de bebidas profesional, desengrasada a fondo",
+            "intro": "Bandeja de goteo, dosificadores y carcasa interior: restos de bebidas, depósitos pegajosos y marcas eliminados hasta el metal, para un equipo sano y de nuevo impecable.",
+            "pastille": "Antes / Después",
+            "ratio": "3/4",
+            "avantApres": [
+              {
+                "avant": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/real-machine-avant.jpg",
+                  "alt": "Interior de una máquina de bebidas sucio con residuos antes de la limpieza"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/real-machine-apres.jpg",
+                  "alt": "El mismo equipo tras un desengrase completo, dosificadores limpios"
+                },
+                "legende": "Bandeja y dosificadores de una máquina profesional: antes y después del desengrase"
+              }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "Sobre el terreno",
+            "titre": "Una brasserie parisina devuelta a su esplendor",
+            "intro": "Suelos, barra de caoba, espejos y maderas de un local Art Nouveau: una limpieza a fondo realizada fuera de servicio, de noche, para reabrir impecable al amanecer.",
+            "ratio": "3/4",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/real-brasserie-1.jpg",
+                  "alt": "Sala de brasserie Art Nouveau con maderas y espejos tras la limpieza"
+                },
+                "titre": "Suelos y maderas revividos"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/real-brasserie-2.jpg",
+                  "alt": "Barra y mostrador de caoba de una brasserie parisina mantenidos"
+                },
+                "titre": "Barra y mostrador mantenidos"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/rd-net-propre/real-brasserie-3.jpg",
+                  "alt": "Cristaleras y puertas Art Nouveau limpiadas en una brasserie"
+                },
+                "titre": "Cristaleras Art Nouveau limpiadas"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "¿Un lugar para realzar a su vez?",
+            "sousTitre": "Cuéntenos su local o su vivienda: preparamos un presupuesto gratuito en 24 h.",
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto gratis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "07 58 08 61 89",
+              "href": "tel:+33758086189"
+            }
+          }
         }
       ]
     },
@@ -522,8 +613,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "+33 7 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "+33 7 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           }
         },
@@ -596,8 +687,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "+33 7 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "+33 7 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
@@ -622,7 +713,7 @@
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Empresas, comercios y restaurantes",
+            "eyebrow": "Empresas, comercios, restaurantes y gimnasios",
             "titre": "Locales limpios, sin perturbar su actividad",
             "intro": "Un entorno de trabajo sano marca el tono para sus equipos y sus clientes. Mantenemos sus oficinas y espacios profesionales antes de abrir o después de cerrar.",
             "breadcrumb": [
@@ -643,17 +734,17 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "+33 7 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "+33 7 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           }
         },
         {
           "type": "contenu",
           "content": {
-            "titre": "Oficinas, restaurantes y cocinas profesionales",
+            "titre": "Oficinas, restaurantes, gimnasios y cocinas profesionales",
             "paragraphes": [
-              "Intervenimos en espacios de trabajo de todos los tamaños: plantas de oficinas, consultas, salas de reunión, aseos y zonas de recepción. El protocolo cubre el vaciado de papeleras, el desempolvado de los puestos, el fregado de suelos, la desinfección de los puntos de contacto y el mantenimiento de los aseos, con reposición de consumibles si lo desea.",
+              "Intervenimos en espacios de trabajo de todos los tamaños: plantas de oficinas, consultas, gimnasios, salas de reunión, aseos y zonas de recepción. El protocolo cubre el vaciado de papeleras, el desempolvado de los puestos, el fregado de suelos, la desinfección de los puntos de contacto y el mantenimiento de los aseos, con reposición de consumibles si lo desea.",
               "En la restauración, la exigencia sube un nivel: desengrasado de superficies, limpieza de salas y cocinas profesionales respetando las normas de higiene, suelos antideslizantes tratados con los productos adecuados. Adaptamos nuestros pasos a su servicio, a primera hora o a última, para no estorbar nunca la atención al público.",
               "El servicio arranca en 120 € y se ajusta a la superficie, la frecuencia y el nivel de exigencia. Un contrato periódico garantiza el mismo equipo y un resultado constante, semana tras semana.",
               "También realizamos la limpieza y desinfección profesional de entornos sensibles: aplicación de protocolos de higiene hospitalaria y biolimpieza, con métodos y productos adaptados a cada superficie. Una respuesta para consultas, laboratorios, salas de cura y cualquier local donde la exigencia sanitaria es máxima."
@@ -718,8 +809,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "+33 7 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "+33 7 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
@@ -765,8 +856,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "+33 7 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "+33 7 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           }
         },
@@ -839,8 +930,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "+33 7 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "+33 7 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
@@ -886,8 +977,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "+33 7 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "+33 7 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           }
         },
@@ -960,8 +1051,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "+33 7 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "+33 7 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
@@ -1007,8 +1098,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "+33 7 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "+33 7 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           }
         },
@@ -1081,8 +1172,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "+33 7 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "+33 7 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
@@ -1128,8 +1219,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "+33 7 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "+33 7 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           }
         },
@@ -1202,8 +1293,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "+33 7 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "+33 7 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
@@ -1275,7 +1366,7 @@
               {
                 "nom": "Oficinas y locales profesionales",
                 "prix": "desde 120 €",
-                "description": "Oficinas, comercios, restaurantes y cocinas pro.",
+                "description": "Oficinas, comercios, restaurantes, gimnasios y cocinas pro.",
                 "inclus": [
                   "Fuera del horario de apertura",
                   "Contrato periódico posible"
@@ -1325,8 +1416,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "+33 7 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "+33 7 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
@@ -1413,8 +1504,8 @@
               "href": "/contact"
             },
             "ctaSecondaire": {
-              "label": "+33 7 48 32 20 29",
-              "href": "tel:+33748322029"
+              "label": "+33 7 58 08 61 89",
+              "href": "tel:+33758086189"
             }
           },
           "variant": "encadre"
@@ -1445,7 +1536,7 @@
             "paragraphes": [
               "RD NET&PROPRE es una empresa de limpieza con base en París, al servicio de toda la Isla de Francia. Construimos nuestro enfoque en torno a una convicción: la limpieza no se juzga en el momento de irse, sino a lo largo del tiempo. Un portal que sigue limpio entre dos pasos, una oficina que recibe a los equipos sin reproche, un hogar donde uno se siente bien: ese es el verdadero resultado.",
               "Para lograrlo, apostamos por personal fijo, formado y discreto, en lugar de una rotación anónima. Cada cliente cuenta con un responsable que conoce sus espacios y sus expectativas. Y como a menudo trabajamos en casa de la gente o en espacios sensibles, la confianza y el respeto por el lugar están por encima de todo.",
-              "Atendemos a nuestros clientes en francés, inglés, español y árabe: en París como en la corona, cada uno debe poder explicar su necesidad sin barreras y recibir una respuesta clara."
+              "Atendemos a nuestros clientes en francés, inglés, español, árabe e italiano: en París como en la corona, cada uno debe poder explicar su necesidad sin barreras y recibir una respuesta clara."
             ]
           }
         },
@@ -1473,7 +1564,7 @@
               {
                 "icone": "Languages",
                 "titre": "Cercanía",
-                "texte": "Una acogida en cuatro idiomas y un interlocutor que de verdad le responde, en su idioma."
+                "texte": "Una acogida en cinco idiomas y un interlocutor que de verdad le responde, en su idioma."
               }
             ]
           },
@@ -1502,7 +1593,7 @@
       "label": "Contacto",
       "meta": {
         "title": "Contacto — limpieza en París & Isla de Francia",
-        "description": "Teléfono, WhatsApp o formulario: describa su necesidad de limpieza en la Isla de Francia. Respuesta y presupuesto gratis en 24 h, en francés, inglés, español o árabe."
+        "description": "Teléfono, WhatsApp o formulario: describa su necesidad de limpieza en la Isla de Francia. Respuesta y presupuesto gratis en 24 h, en francés, inglés, español, árabe o italiano."
       },
       "blocks": [
         {
@@ -1517,11 +1608,11 @@
           "type": "contact",
           "content": {
             "titre": "Solicitud de presupuesto",
-            "intro": "Indique el servicio deseado, su municipio y el momento previsto: preparamos su estimación y se la devolvemos en 24 h. Dos líneas para contactarnos: 07 48 32 20 29 y 07 58 08 61 83.",
+            "intro": "Indique el servicio deseado, su municipio y el momento previsto: preparamos su estimación y se la devolvemos en 24 h. Dos líneas para contactarnos: 07 58 08 61 89 y 07 48 32 20 29.",
             "form": true,
             "formMode": "demande-intervention",
-            "telephone": "07 48 32 20 29",
-            "whatsapp": "+33 7 48 32 20 29",
+            "telephone": "07 58 08 61 89",
+            "whatsapp": "+33 7 58 08 61 89",
             "email": "rd.nettoyagepropre@gmail.com",
             "horaires": [
               {
@@ -1537,6 +1628,7 @@
               "Comunidad / zonas comunes",
               "Oficinas y locales profesionales",
               "Restaurante / cocina profesional",
+              "Gimnasio y espacio fitness",
               "Limpieza de cristales",
               "Limpieza a domicilio",
               "Sofá, sillón y alfombra",
