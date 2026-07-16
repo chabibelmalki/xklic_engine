@@ -55,7 +55,7 @@
     ]
   },
   "forms": {
-    "to": "Parfaitmenage26@gmail.com",
+    "to": "contact@parfaitmenage26.fr",
     "turnstile": true
   },
   "pages": [
@@ -667,7 +667,7 @@
             "formMode": "demande-intervention",
             "telephone": "+33 6 68 99 04 80",
             "whatsapp": "+33 6 68 99 04 80",
-            "email": "Parfaitmenage26@gmail.com",
+            "email": "contact@parfaitmenage26.fr",
             "adresse": "5 boulevard Pierre et Marie Curie, 26700 Pierrelatte",
             "horaires": [
               {
@@ -736,7 +736,7 @@
             "formMode": "devis",
             "telephone": "+33 6 68 99 04 80",
             "whatsapp": "+33 6 68 99 04 80",
-            "email": "Parfaitmenage26@gmail.com",
+            "email": "contact@parfaitmenage26.fr",
             "adresse": "5 boulevard Pierre et Marie Curie, 26700 Pierrelatte",
             "horaires": [
               {
