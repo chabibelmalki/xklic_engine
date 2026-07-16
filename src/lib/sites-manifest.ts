@@ -38,6 +38,7 @@ export const CUSTOM_DOMAINS: Readonly<Record<string, string>> = {
   "cbprestamultiservices.fr": "cbprestamultiservices",
   "mbnettoyage-marseille.fr": "mb-nettoyage",
   "parfaitmenage26.fr": "parfait-menage-26",
+  "rdnetpropre.fr": "rd-net-propre",
   "sanadclean.fr": "sanadclean",
   "taxi-excellence.fr": "taxi-excellence",
   "www.abproservice.be": "ab-pro-service",
@@ -46,6 +47,7 @@ export const CUSTOM_DOMAINS: Readonly<Record<string, string>> = {
   "www.cbprestamultiservices.fr": "cbprestamultiservices",
   "www.mbnettoyage-marseille.fr": "mb-nettoyage",
   "www.parfaitmenage26.fr": "parfait-menage-26",
+  "www.rdnetpropre.fr": "rd-net-propre",
   "www.sanadclean.fr": "sanadclean",
   "www.taxi-excellence.fr": "taxi-excellence",
 };
@@ -61,6 +63,7 @@ export const CANONICAL_DOMAIN: Readonly<Record<string, string>> = {
   "cbprestamultiservices": "cbprestamultiservices.fr",
   "mb-nettoyage": "mbnettoyage-marseille.fr",
   "parfait-menage-26": "parfaitmenage26.fr",
+  "rd-net-propre": "rdnetpropre.fr",
   "sanadclean": "sanadclean.fr",
   "taxi-excellence": "taxi-excellence.fr",
 };

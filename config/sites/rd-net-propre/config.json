@@ -1,5 +1,6 @@
 {
   "slug": "rd-net-propre",
+  "customDomains": ["rdnetpropre.fr", "www.rdnetpropre.fr"],
   "theme": "douceur-beige",
   "stylePack": "epure-clair",
   "i18n": {
