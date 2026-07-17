@@ -11,6 +11,7 @@ export const SITE_SLUGS: string[] = [
   "cbprestamultiservices",
   "clean-confiance-by-maman",
   "clean-habitat-pro",
+  "g-clean-propre-42",
   "mb-nettoyage",
   "minhaj",
   "o-poulet-braise",

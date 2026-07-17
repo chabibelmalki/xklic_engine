@@ -16,6 +16,8 @@ import {
   Space_Grotesk,
   Newsreader,
   Caveat,
+  Archivo_Black,
+  IBM_Plex_Mono,
 } from "next/font/google";
 import "./globals.css";
 
@@ -126,6 +128,22 @@ const caveat = Caveat({
   display: "swap",
   preload: false,
 });
+// Grotesque d'affiche, une seule graisse ultra-noire (titres) — pack riso-atelier.
+const archivoBlack = Archivo_Black({
+  variable: "--font-archivo-black",
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+  preload: false,
+});
+// Mono d'imprimeur : prix, horaires, index, étiquettes — pack riso-atelier.
+const plexMono = IBM_Plex_Mono({
+  variable: "--font-plex-mono",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  preload: false,
+});
 
 const fontVars = [
   poppins,
@@ -144,6 +162,8 @@ const fontVars = [
   spaceGrotesk,
   newsreader,
   caveat,
+  archivoBlack,
+  plexMono,
 ]
   .map((f) => f.variable)
   .join(" ");

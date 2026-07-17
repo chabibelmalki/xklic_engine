@@ -1,0 +1,982 @@
+{
+  "slug": "g-clean-propre-42",
+  "theme": "pop-violet",
+  "stylePack": "riso-atelier",
+  "branding": {
+    "tagline": "Aide ménagère · Le Coteau",
+    "logoAlt": "G Clean Propre 42 — aide ménagère au Coteau",
+    "colors": {
+      "brand": "#2a35cc",
+      "accent": "#ff48a6"
+    },
+    "logoTextHidden": true,
+    "logoScale": 1.3,
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/logo-55326c70.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/icon.png"
+  },
+  "entreprise": {
+    "nom": "G Clean Propre 42",
+    "statut": "micro",
+    "siret": "",
+    "tva": {
+      "regime": "franchise"
+    }
+  },
+  "seo": {
+    "schemaType": "HousekeepingService",
+    "ville": "Le Coteau"
+  },
+  "geo": {
+    "lat": 46.0206,
+    "lng": 4.0836
+  },
+  "meta": {
+    "title": "Aide ménagère au Coteau et dans le Roannais",
+    "description": "Ménage classique à 20 € de l'heure, vitres et magasins au forfait. Aide ménagère au Coteau et jusqu'à 30 km autour. Visite et devis gratuits.",
+    "keywords": [
+      "aide ménagère Le Coteau",
+      "ménage à domicile Le Coteau",
+      "femme de ménage Le Coteau",
+      "nettoyage de vitres Le Coteau",
+      "entretien de locaux Le Coteau",
+      "nettoyage magasin Le Coteau",
+      "aide ménagère Roannais",
+      "ménage Loire 42"
+    ]
+  },
+  "forms": {
+    "to": "khirani.ghita2020@gmail.com"
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Accueil",
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "carte",
+          "content": {
+            "eyebrow": "Aide ménagère · Le Coteau · Loire",
+            "titre": "Une maison impeccable au Coteau,",
+            "titreAccent": "sans y penser",
+            "accroche": "G Clean Propre 42 entretient votre logement, vos vitres et votre magasin, du Coteau jusqu'aux confins du Roannais. Un créneau fixe, la même personne à chaque passage, et une maison qui sent le propre quand vous rentrez.",
+            "card": {
+              "label": "Ménage classique",
+              "prix": "20 €",
+              "unite": "/ heure",
+              "mention": "Le tarif horaire du ménage à domicile, toute l'année. Ce qui se cale au devis, c'est la durée du passage et le rythme.",
+              "points": [
+                "Le premier passage sert à faire le tour et à caler vos priorités",
+                "Produits et matériel fournis, ou les vôtres si vous préférez",
+                "Créneau fixe : vous savez toujours quand on vient"
+              ]
+            },
+            "trust": [
+              {
+                "icone": "Repeat",
+                "label": "Toujours la même personne"
+              },
+              {
+                "icone": "Clock",
+                "label": "9h-12h30 · 14h-18h"
+              },
+              {
+                "icone": "MapPin",
+                "label": "30 km autour du Coteau"
+              },
+              {
+                "icone": "KeyRound",
+                "label": "Présent ou non, à vous de voir"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir les prestations",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Trois métiers",
+            "titre": "Ce qu'on fait chez vous",
+            "intro": "Trois prestations, pas trente. Chacune est faite en entier, avec le temps qu'il faut.",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "icone": "House",
+                "description": "L'entretien courant de votre logement : sols, poussière, cuisine, sanitaires, lits. Chaque semaine, un jour sur deux semaines, ou ponctuellement — le rythme se cale sur le vôtre.",
+                "priceHint": "20 €/h",
+                "href": "/menage-a-domicile"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "icone": "Droplets",
+                "description": "Vitres, baies, vérandas et miroirs, dedans comme dehors. Compté au forfait selon le nombre d'ouvrants, jamais à la surprise.",
+                "badge": "Au forfait",
+                "priceHint": "Forfait sur devis",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Entretien de locaux professionnels",
+                "icone": "Store",
+                "description": "Magasins, salons et petits bureaux du Roannais : passage avant l'ouverture ou après la fermeture, sans gêner votre activité.",
+                "badge": "Au forfait",
+                "priceHint": "Forfait sur devis",
+                "href": "/entretien-locaux-professionnels"
+              }
+            ],
+            "cta": {
+              "label": "Voir le détail des prestations et des tarifs",
+              "href": "/tarifs"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "Comment on démarre",
+            "titre": "De l'appel au premier passage",
+            "intro": "Quatre temps, sans paperasse inutile.",
+            "items": [
+              {
+                "icone": "MessageSquare",
+                "titre": "Vous appelez",
+                "texte": "Vous dites où vous habitez, la taille du logement et ce qui vous pèse le plus. Cinq minutes suffisent."
+              },
+              {
+                "icone": "Search",
+                "titre": "On passe voir",
+                "texte": "Visite rapide sur place pour évaluer le temps réel. C'est là qu'on se rend compte si votre demande tient en deux heures ou en quatre."
+              },
+              {
+                "icone": "Receipt",
+                "titre": "Vous recevez le chiffre",
+                "texte": "Un devis clair : la durée, le rythme, le prix. Vous le gardez sous le coude, vous répondez quand vous voulez."
+              },
+              {
+                "icone": "CalendarCheck",
+                "titre": "On cale le créneau",
+                "texte": "On fixe un jour et une heure qui ne bougent plus. Le premier passage est toujours le plus long : c'est celui qui remet tout à niveau."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Où on se déplace",
+            "intro": "Le Coteau est le point de départ. Tout ce qui tient dans 30 km autour est desservi, des deux côtés de la Loire.",
+            "rayonKm": 30,
+            "zones": [
+              {
+                "region": "Agglomération roannaise",
+                "principale": "Le Coteau",
+                "villes": [
+                  "Le Coteau",
+                  "Roanne",
+                  "Riorges",
+                  "Mably",
+                  "Perreux",
+                  "Commelle-Vernay",
+                  "Villerest",
+                  "Pouilly-les-Nonains",
+                  "Parigny"
+                ]
+              },
+              {
+                "region": "Côte roannaise et nord du département",
+                "villes": [
+                  "Renaison",
+                  "Saint-Haon-le-Châtel",
+                  "Saint-Germain-Lespinasse",
+                  "Briennon",
+                  "Pouilly-sous-Charlieu",
+                  "Charlieu"
+                ]
+              },
+              {
+                "region": "Sud et est du Roannais",
+                "villes": [
+                  "Régny",
+                  "Cordelle",
+                  "Saint-Symphorien-de-Lay",
+                  "Neulise",
+                  "Saint-Just-la-Pendue",
+                  "Balbigny"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Ce qu'on nous demande souvent",
+            "items": [
+              {
+                "question": "C'est vraiment 20 € de l'heure ?",
+                "reponse": "Oui, et c'est le taux du ménage classique à domicile toute l'année : il n'augmente pas au bout de quelques semaines. Ce qui se discute, ce n'est pas le taux mais la durée d'un passage et sa fréquence — c'est là que se joue votre budget, et c'est ce que la visite permet d'établir."
+              },
+              {
+                "question": "Faut-il que je sois là pendant la prestation ?",
+                "reponse": "Comme vous préférez. Beaucoup de clients travaillent pendant qu'on est chez eux, d'autres laissent un jeu de clés ou un code. Dans tous les cas, on convient de l'accès à l'avance et on s'y tient."
+              },
+              {
+                "question": "Qui fournit les produits et l'aspirateur ?",
+                "reponse": "On arrive équipé. Si vous tenez à vos propres produits, parce qu'un sol ou une surface le réclame, on utilise les vôtres sans supplément : dites-le au moment du devis."
+              },
+              {
+                "question": "Est-ce que vous venez jusqu'à Charlieu ou Balbigny ?",
+                "reponse": "Oui. Le rayon d'intervention va jusqu'à 30 km du Coteau, ce qui couvre l'agglomération roannaise, la Côte roannaise, le secteur de Charlieu et la descente vers Balbigny. Au-delà, appelez : on regarde au cas par cas."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Reprenez vos week-ends",
+            "sousTitre": "Un appel, une visite, un chiffre. Vous décidez ensuite, sans qu'on vous relance.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir les tarifs",
+              "href": "/tarifs"
+            }
+          }
+        },
+        {
+          "type": "contact",
+          "content": {
+            "titre": "Nous joindre",
+            "intro": "Le téléphone reste le plus simple, mais le formulaire fait très bien l'affaire.",
+            "telephone": "06 04 46 82 50",
+            "email": "khirani.ghita2020@gmail.com",
+            "adresse": "1 boulevard Charles Gallet, 42120 Le Coteau",
+            "horaires": [
+              {
+                "jour": "Lundi – Samedi",
+                "heures": "9h00 – 12h30 · 14h00 – 18h00"
+              }
+            ],
+            "form": true,
+            "formMode": "demande-intervention",
+            "formTitre": "Décrivez votre besoin",
+            "formIntro": "Surface, rythme souhaité, contraintes d'accès : plus c'est précis, plus le devis est juste.",
+            "services": [
+              "Ménage à domicile",
+              "Nettoyage de vitres",
+              "Entretien de locaux professionnels",
+              "Autre demande"
+            ],
+            "villes": [
+              "Le Coteau",
+              "Roanne",
+              "Riorges",
+              "Mably",
+              "Perreux",
+              "Commelle-Vernay",
+              "Villerest",
+              "Renaison",
+              "Charlieu",
+              "Autre commune"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Services",
+      "meta": {
+        "title": "Ménage et nettoyage au Coteau : nos prestations",
+        "description": "Ménage à domicile, vitres au forfait, entretien de magasins et de petits bureaux : le détail de chaque prestation au Coteau et dans le Roannais."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Prestations",
+            "titre": "Trois façons de nous confier le propre",
+            "intro": "Chacune a sa page, avec ce qui est compris, ce qui ne l'est pas, et comment le prix se construit.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services"
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Le détail, prestation par prestation",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "icone": "House",
+                "description": "L'entretien régulier du logement, du sol au plan de travail. La seule prestation facturée à l'heure : 20 €, sans variation dans l'année.",
+                "priceHint": "20 €/h",
+                "href": "/menage-a-domicile"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "icone": "Droplets",
+                "description": "Un forfait calculé sur le nombre d'ouvrants, pas au temps passé. Intérieur, extérieur, encadrements et rebords compris.",
+                "badge": "Au forfait",
+                "priceHint": "Forfait sur devis",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Entretien de locaux professionnels",
+                "icone": "Store",
+                "description": "Pour les commerces et bureaux du Roannais : un forfait mensuel, un passage hors horaires d'ouverture, une facture unique.",
+                "badge": "Au forfait",
+                "priceHint": "Forfait sur devis",
+                "href": "/entretien-locaux-professionnels"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Notre façon de travailler",
+            "titre": "Pourquoi trois prestations et pas trente",
+            "paragraphes": [
+              "Une aide ménagère qui promet tout finit par bâcler quelque chose. G Clean Propre 42 a fait le choix inverse : trois prestations, maîtrisées, avec le matériel adapté à chacune. Le ménage courant demande de la méthode et de la régularité. Les vitres demandent le bon outil et le bon geste, sinon la trace revient au premier rayon de soleil. Un local commercial demande de la discrétion et un horaire qui ne dérange pas la clientèle. Ce ne sont pas les mêmes métiers.",
+              "Le prix se construit toujours de la même manière : on regarde d'abord, on chiffre ensuite. Une visite sur place au Coteau ou dans les environs prend un quart d'heure et évite les mauvaises surprises des deux côtés. Vous savez combien de temps dure une prestation, ce qu'elle comprend, et à quel rythme elle revient.",
+              "Le reste tient en une habitude : c'est la même personne qui revient à chaque passage. Elle sait où sont les choses, ce à quoi vous tenez, ce qui vous agace. Au bout de trois passages, il n'y a plus rien à expliquer."
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un doute sur la prestation qu'il vous faut ?",
+            "sousTitre": "Décrivez la situation, on vous dira laquelle correspond — ou s'il en faut deux.",
+            "ctaPrimaire": {
+              "label": "Nous écrire",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "menage-a-domicile",
+      "label": "Ménage à domicile",
+      "navHidden": true,
+      "meta": {
+        "title": "Ménage à domicile au Coteau",
+        "description": "Entretien régulier de votre logement au Coteau : sols, cuisine, sanitaires, poussière. 20 € de l'heure, même intervenante à chaque passage."
+      },
+      "service": {
+        "name": "Ménage à domicile",
+        "serviceType": "Ménage et entretien du logement",
+        "description": "Entretien courant du logement au Coteau et dans le Roannais : sols, poussière, cuisine, sanitaires, changement des lits.",
+        "priceFrom": 20
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Prestation A",
+            "titre": "Ménage à domicile au Coteau",
+            "intro": "Le rendez-vous régulier qui fait que la maison ne se dégrade jamais vraiment.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage à domicile"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Ce que comprend un passage",
+            "paragraphes": [
+              "Un passage de ménage courant suit toujours le même ordre, parce que c'est celui qui évite de repasser deux fois au même endroit. On commence par ranger ce qui traîne et qui empêche de nettoyer, puis on fait les poussières en descendant du haut vers le bas : étagères, meubles, plinthes, interrupteurs. Les sols viennent en dernier, aspirateur puis serpillière, pièce par pièce.",
+              "La cuisine est traitée à part : plan de travail, façades de meubles, plaques, évier, extérieur des électroménagers, poubelle. La salle de bain et les WC suivent le même principe, avec détartrage des robinetteries et de la douche. Sur demande, on change les draps et on lance une machine — cela se cale au moment du devis, parce que cela prend du temps et que ce temps doit être compté.",
+              "Ce qui n'est pas compris dans le passage courant : le nettoyage des vitres, qui relève du forfait dédié, le décapage d'un logement laissé longtemps à l'abandon, et tout ce qui demande une échelle ou un déplacement de meuble lourd. Ces cas-là se chiffrent séparément, après visite.",
+              "Le rythme le plus courant est hebdomadaire ou tous les quinze jours. Un passage unique est possible — avant un état des lieux, après une réception —, mais il dure plus longtemps qu'un passage d'entretien : quand on part de loin, il faut rattraper le retard avant de pouvoir simplement maintenir."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions sur le ménage à domicile",
+            "items": [
+              {
+                "question": "Combien de temps dure un passage d'entretien ?",
+                "reponse": "Deux heures suffisent pour un appartement de deux pièces entretenu régulièrement. Comptez trois à quatre heures pour une maison familiale, davantage si le passage est le tout premier. La durée est fixée au devis, après la visite : c'est la seule façon de ne pas la sous-estimer."
+              },
+              {
+                "question": "Vous faites le repassage ?",
+                "reponse": "Ce n'est pas la prestation principale, mais cela peut s'ajouter au passage si le temps est prévu pour. Il faut le dire avant le devis : ajouter une heure de repassage à un créneau déjà calé au plus juste se ferait au détriment du reste."
+              },
+              {
+                "question": "Et si je dois annuler un passage ?",
+                "reponse": "Prévenez la veille et le créneau est simplement décalé, sans frais. Ce qui pose problème, ce sont les portes fermées sans nouvelle : le déplacement au Coteau ou à Charlieu a eu lieu quand même."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Les autres prestations",
+            "intro": "Souvent demandées en complément d'un contrat d'entretien.",
+            "items": [
+              {
+                "nom": "Nettoyage de vitres",
+                "icone": "Droplets",
+                "description": "Deux fois par an, en général : le ménage courant ne touche pas aux vitres.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Entretien de locaux professionnels",
+                "icone": "Store",
+                "description": "Si vous tenez aussi un commerce dans le Roannais.",
+                "href": "/entretien-locaux-professionnels"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "20 € de l'heure, toute l'année",
+            "sousTitre": "Le taux ne bouge pas. Reste à savoir combien de temps il faut chez vous : c'est ce que dit la visite.",
+            "ctaPrimaire": {
+              "label": "Lancer le devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir tous les tarifs",
+              "href": "/tarifs"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Nettoyage de vitres",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de vitres au Coteau",
+        "description": "Vitres, baies et vérandas nettoyées dedans-dehors au Coteau et dans le Roannais. Forfait calculé sur le nombre d'ouvrants, encadrements compris."
+      },
+      "service": {
+        "name": "Nettoyage de vitres",
+        "serviceType": "Nettoyage de vitres et surfaces vitrées",
+        "description": "Nettoyage de vitres, baies vitrées, vérandas et miroirs, intérieur et extérieur, au Coteau et dans le Roannais. Prestation au forfait.",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Prestation B",
+            "titre": "Nettoyage de vitres au Coteau",
+            "intro": "La prestation qui change une pièce sans qu'on sache dire pourquoi.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage de vitres"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Obtenir mon forfait",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Pourquoi un forfait plutôt qu'un tarif horaire",
+            "paragraphes": [
+              "Une vitre ne se compte pas en minutes. Un grand ouvrant accessible de plain-pied part vite ; six petits carreaux à petits bois prennent trois fois plus longtemps pour la même surface. Facturer à l'heure reviendrait à faire payer la difficulté au client, sans qu'il puisse l'anticiper. Le forfait se calcule donc sur ce qui est mesurable : le nombre d'ouvrants, leur type, et le fait qu'ils soient accessibles ou non depuis le sol.",
+              "Le forfait comprend toujours les deux faces, l'encadrement et le rebord. C'est ce dernier point qui fait la différence : une vitre nettoyée sans son rebord se resalit à la première pluie, parce que la poussière du dormant redescend sur le verre. On finit à la raclette et à la microfibre, sans produit qui laisse un voile au premier soleil rasant.",
+              "Sont concernés les fenêtres, les baies coulissantes, les portes vitrées, les vérandas et les miroirs fixes. Ce qui n'entre pas dans le forfait : tout ce qui demande une nacelle ou un travail en hauteur au-delà d'un escabeau domestique. Pour les vitrines de commerce, la prestation se cale plutôt dans un contrat d'entretien de local, avec un passage régulier.",
+              "Le bon rythme, dans le Roannais, tourne autour de deux passages par an : un au sortir de l'hiver, quand les pluies ont fini de tout marquer, un autre à l'automne. Les logements en bord de route ou proches des champs demandent parfois un troisième."
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Souvent pris ensemble",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "icone": "House",
+                "description": "L'entretien courant ne touche pas aux vitres : les deux prestations se complètent.",
+                "href": "/menage-a-domicile"
+              },
+              {
+                "nom": "Entretien de locaux professionnels",
+                "icone": "Store",
+                "description": "Vitrine et surfaces vitrées incluses dans le forfait du local.",
+                "href": "/entretien-locaux-professionnels"
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions sur les vitres",
+            "items": [
+              {
+                "question": "Comment est calculé mon forfait exactement ?",
+                "reponse": "Sur le nombre d'ouvrants et leur accessibilité. On compte les fenêtres, les baies et les portes vitrées lors de la visite, on note celles qui demandent un escabeau, et le chiffre tombe. Il ne bouge plus tant que rien ne change chez vous."
+              },
+              {
+                "question": "Vous nettoyez les vitres d'une véranda ?",
+                "reponse": "Oui, les parois et les ouvrants d'une véranda entrent dans le forfait, tant qu'ils restent atteignables depuis le sol ou un escabeau. La toiture vitrée, elle, dépend de sa hauteur et de sa pente : elle se regarde sur place avant d'être chiffrée."
+              },
+              {
+                "question": "Faut-il un temps particulier pour intervenir ?",
+                "reponse": "On évite le plein soleil sur une vitre brûlante, parce que le produit sèche avant d'être essuyé et laisse des traces. Un ciel couvert est idéal. C'est une contrainte de métier, pas une excuse : elle est prise en compte quand on fixe le créneau."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Combien pour vos vitres ?",
+            "sousTitre": "Dites-nous le nombre de fenêtres, on vous donne le forfait.",
+            "ctaPrimaire": {
+              "label": "Demander mon forfait",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "entretien-locaux-professionnels",
+      "label": "Locaux professionnels",
+      "navHidden": true,
+      "meta": {
+        "title": "Entretien de locaux professionnels au Coteau",
+        "description": "Magasins, salons et bureaux du Roannais : entretien au forfait, passage avant l'ouverture ou après la fermeture, sans gêner votre clientèle."
+      },
+      "service": {
+        "name": "Entretien de locaux professionnels",
+        "serviceType": "Nettoyage de commerces et de bureaux",
+        "description": "Entretien de magasins, salons et petits bureaux au Coteau et dans le Roannais, au forfait, hors horaires d'ouverture.",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Prestation C",
+            "titre": "Entretien de magasins et de bureaux",
+            "intro": "Un local propre à l'ouverture, sans que personne ne vous ait vu passer.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Locaux professionnels"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un forfait",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Ce que change un local commercial",
+            "paragraphes": [
+              "Un magasin ne se nettoie pas comme un salon de particulier. Le sol prend en une journée ce qu'un logement prend en une semaine : les clients entrent avec la pluie du Roannais sous les semelles. La poussière se dépose sur la marchandise, donc sur ce que vous vendez. Et surtout, rien ne peut se faire pendant que la clientèle est là.",
+              "Le passage se cale donc hors horaires : tôt le matin avant l'ouverture, ou le soir après la fermeture, selon ce qui vous arrange. Un jeu de clés ou un code d'alarme suffit. Le forfait comprend l'entretien des sols, les surfaces de vente et de contact, la vitrine côté intérieur, les sanitaires et l'espace de pause du personnel, ainsi que la sortie des poubelles si votre collecte l'impose.",
+              "Le rythme se décide selon le passage : trois fois par semaine pour un commerce de bouche ou un salon de coiffure, une à deux fois pour un bureau ou un cabinet où personne n'entre avec des chaussures sales. Une facture unique par mois, un montant qui ne varie pas : c'est ce qui permet de mettre l'entretien dans un budget sans avoir à le recalculer à chaque fois.",
+              "Les commerces du Coteau et de Roanne sont les plus faciles à servir tôt le matin. Pour les communes plus éloignées, comme Charlieu ou Balbigny, on regroupe plutôt le passage sur des créneaux fixes de fin de journée."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "Mise en place",
+            "titre": "Trois temps pour démarrer un contrat",
+            "items": [
+              {
+                "icone": "Search",
+                "titre": "Visite du local",
+                "texte": "Surface, revêtement de sol, fréquentation, contraintes d'accès et d'alarme. Un quart d'heure sur place, en dehors de vos heures de pointe."
+              },
+              {
+                "icone": "Receipt",
+                "titre": "Forfait mensuel",
+                "texte": "Un montant fixe pour un nombre de passages défini. Vous savez ce que l'entretien pèse dans vos charges avant de vous engager."
+              },
+              {
+                "icone": "KeyRound",
+                "titre": "Remise des accès",
+                "texte": "Clés ou code, et le premier passage est programmé. Ensuite, vous ne devriez plus avoir à y penser."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions des commerçants",
+            "items": [
+              {
+                "question": "Vous intervenez avant l'ouverture du magasin ?",
+                "reponse": "C'est le cas le plus fréquent. Le créneau est fixé une fois pour toutes, tôt le matin ou après la fermeture. Le but est simple : que vos clients ne croisent jamais le matériel de nettoyage."
+              },
+              {
+                "question": "La vitrine est-elle comprise dans le forfait du local ?",
+                "reponse": "La face intérieure, oui, elle fait partie du passage. La façade extérieure dépend de sa taille et de son exposition : sur une grande devanture, elle est chiffrée avec le forfait vitres, qui a ses propres contraintes de matériel."
+              },
+              {
+                "question": "Peut-on démarrer sans engagement de durée ?",
+                "reponse": "Oui. Le forfait porte sur un nombre de passages par mois, pas sur un nombre de mois. Si votre activité change de rythme, on ajuste le contrat ; si elle s'arrête, il s'arrête aussi."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Votre local, un forfait",
+            "sousTitre": "Dites-nous la surface et vos horaires d'ouverture, on cale la visite.",
+            "ctaPrimaire": {
+              "label": "Demander un forfait",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tarifs",
+      "label": "Tarifs",
+      "meta": {
+        "title": "Tarifs ménage et nettoyage au Coteau",
+        "description": "20 € de l'heure sur le ménage classique, vitres et locaux professionnels au forfait. Comment le prix se construit au Coteau et dans le Roannais."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Tarifs",
+            "titre": "Ce que ça coûte, et pourquoi",
+            "intro": "Un tarif horaire pour l'entretien courant, des forfaits pour le reste. Tout est arrêté au devis, après la visite.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Tarifs"
+              }
+            ]
+          }
+        },
+        {
+          "type": "tarifs",
+          "mode": "a-partir-de",
+          "content": {
+            "titre": "Les trois prestations",
+            "intro": "Les montants ci-dessous valent pour le Coteau et les communes situées dans les 30 km.",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "prix": 20,
+                "unite": "/h",
+                "populaire": true,
+                "description": "Le taux horaire du ménage classique à domicile, identique toute l'année. Seules la durée du passage et sa fréquence se décident au devis.",
+                "inclus": [
+                  "Sols, poussières, cuisine, sanitaires",
+                  "Produits et matériel fournis",
+                  "Même intervenante à chaque passage",
+                  "Créneau fixe, décalable la veille"
+                ]
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "prix": "Forfait sur devis",
+                "description": "Calculé sur le nombre d'ouvrants et leur accessibilité, pas au temps passé.",
+                "inclus": [
+                  "Intérieur et extérieur",
+                  "Encadrements et rebords",
+                  "Baies, vérandas et miroirs fixes",
+                  "Forfait stable tant que rien ne change"
+                ]
+              },
+              {
+                "nom": "Entretien de locaux professionnels",
+                "prix": "Forfait mensuel sur devis",
+                "description": "Un montant fixe par mois pour un nombre de passages défini, hors horaires d'ouverture.",
+                "inclus": [
+                  "Sols et surfaces de vente",
+                  "Sanitaires et espace de pause",
+                  "Vitrine côté intérieur",
+                  "Une seule facture par mois"
+                ]
+              }
+            ],
+            "note": "TVA non applicable, article 293 B du CGI. Les déplacements sont compris dans un rayon de 30 km autour du Coteau.",
+            "cta": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions de tarif",
+            "items": [
+              {
+                "question": "Pourquoi ne pas afficher un prix ferme pour les vitres ?",
+                "reponse": "Parce qu'il serait faux. Entre un studio à quatre fenêtres et une maison à baies coulissantes, l'écart est trop grand pour tenir dans un chiffre unique affiché sur un site. On préfère compter chez vous et annoncer un forfait qui, lui, ne bouge pas."
+              },
+              {
+                "question": "Le devis est-il payant ?",
+                "reponse": "Non, ni le devis ni la visite qui le précède. Vous n'êtes engagé qu'à partir du moment où vous validez le créneau du premier passage."
+              },
+              {
+                "question": "Comment se passe le règlement ?",
+                "reponse": "À la prestation pour un passage unique, en fin de mois pour un entretien régulier ou un contrat de local. Les modalités sont notées sur le devis pour qu'il n'y ait pas de malentendu."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Votre chiffre, en un appel",
+            "sousTitre": "La visite dure un quart d'heure et ne vous engage à rien.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "zone-intervention",
+      "label": "Zone d'intervention",
+      "meta": {
+        "title": "Zone d'intervention : Le Coteau et le Roannais",
+        "description": "Le Coteau, Roanne, Riorges, Renaison, Charlieu, Balbigny : les secteurs desservis par G Clean Propre 42 dans un rayon de 30 km."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Zone d'intervention",
+            "titre": "Le Coteau et 30 km autour",
+            "intro": "Trois secteurs, des deux côtés de la Loire, avec des façons de s'organiser un peu différentes.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Zone d'intervention"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Secteur par secteur",
+            "paragraphes": [
+              "L'agglomération roannaise est le cœur de l'activité. Le Coteau, Roanne juste en face du pont, Riorges, Mably, Perreux, Commelle-Vernay et Villerest sont à moins de dix minutes de route : ce sont les communes où un créneau peut être décalé dans la journée sans que cela pose problème, et où les passages de commerces avant ouverture sont les plus faciles à tenir.",
+              "La Côte roannaise et le nord du département demandent un peu plus d'anticipation. Renaison, Saint-Haon-le-Châtel, Saint-Germain-Lespinasse, Briennon, Pouilly-sous-Charlieu et Charlieu sont desservis, mais les créneaux y sont regroupés sur des demi-journées fixes plutôt qu'éparpillés. Les maisons de ce secteur, souvent avec de grandes surfaces vitrées ouvertes sur la campagne, sont celles qui demandent le plus régulièrement un passage vitres.",
+              "Le sud et l'est du Roannais — Régny, Cordelle, Saint-Symphorien-de-Lay, Neulise, Saint-Just-la-Pendue, Balbigny — marquent la limite des 30 km. On y intervient sur des rythmes plus espacés, typiquement tous les quinze jours, ou pour des prestations ponctuelles comme une remise en état avant état des lieux.",
+              "Si votre commune n'est pas citée mais que vous vous savez dans le rayon, appelez : la liste ci-dessus n'est pas fermée, elle décrit simplement les secteurs où l'on passe déjà."
+            ],
+            "ctaPrimaire": {
+              "label": "Vérifier pour ma commune",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Les communes desservies",
+            "rayonKm": 30,
+            "zones": [
+              {
+                "region": "Agglomération roannaise",
+                "principale": "Le Coteau",
+                "villes": [
+                  "Le Coteau",
+                  "Roanne",
+                  "Riorges",
+                  "Mably",
+                  "Perreux",
+                  "Commelle-Vernay",
+                  "Villerest",
+                  "Pouilly-les-Nonains",
+                  "Parigny"
+                ]
+              },
+              {
+                "region": "Côte roannaise et nord du département",
+                "villes": [
+                  "Renaison",
+                  "Saint-Haon-le-Châtel",
+                  "Saint-Germain-Lespinasse",
+                  "Briennon",
+                  "Pouilly-sous-Charlieu",
+                  "Charlieu"
+                ]
+              },
+              {
+                "region": "Sud et est du Roannais",
+                "villes": [
+                  "Régny",
+                  "Cordelle",
+                  "Saint-Symphorien-de-Lay",
+                  "Neulise",
+                  "Saint-Just-la-Pendue",
+                  "Balbigny"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Vous êtes dans le rayon ?",
+            "sousTitre": "Un appel suffit pour le savoir et caler une visite.",
+            "ctaPrimaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Contact et devis · Le Coteau",
+        "description": "Joindre G Clean Propre 42 au Coteau : téléphone, formulaire de demande, horaires 9h-12h30 et 14h-18h. Visite et devis sans engagement."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Contact",
+            "titre": "Parlons de votre besoin",
+            "intro": "Le devis part d'une visite rapide. Elle dure un quart d'heure et ne vous engage à rien.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Contact"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contact",
+          "content": {
+            "titre": "G Clean Propre 42",
+            "intro": "Basée au Coteau, joignable aux heures d'intervention. Si personne ne décroche, c'est qu'on a les mains prises : laissez un message, on rappelle.",
+            "telephone": "06 04 46 82 50",
+            "email": "khirani.ghita2020@gmail.com",
+            "adresse": "1 boulevard Charles Gallet, 42120 Le Coteau",
+            "horaires": [
+              {
+                "jour": "Lundi – Samedi",
+                "heures": "9h00 – 12h30 · 14h00 – 18h00"
+              }
+            ],
+            "form": true,
+            "formMode": "demande-intervention",
+            "formTitre": "Votre demande",
+            "formIntro": "Surface, rythme souhaité, contraintes d'accès : plus c'est précis, plus le devis est juste du premier coup.",
+            "services": [
+              "Ménage à domicile",
+              "Nettoyage de vitres",
+              "Entretien de locaux professionnels",
+              "Autre demande"
+            ],
+            "villes": [
+              "Le Coteau",
+              "Roanne",
+              "Riorges",
+              "Mably",
+              "Perreux",
+              "Commelle-Vernay",
+              "Villerest",
+              "Renaison",
+              "Charlieu",
+              "Autre commune"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    }
+  ]
+}

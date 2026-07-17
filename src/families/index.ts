@@ -6,6 +6,7 @@ import { LITTORAL } from "./littoral";
 import { EPURE } from "./epure";
 import { SIGNAL } from "./signal";
 import { FOYER } from "./foyer";
+import { RISO } from "./riso";
 import type { FamilyBlock, TemplateFamily } from "./types";
 
 export type { TemplateFamily, FamilyChrome, FamilyBlock } from "./types";
@@ -23,6 +24,7 @@ const FAMILIES: Record<string, TemplateFamily> = {
   epure: EPURE,
   signal: SIGNAL,
   foyer: FOYER,
+  riso: RISO,
 };
 
 export const DEFAULT_FAMILY = CLASSIC;

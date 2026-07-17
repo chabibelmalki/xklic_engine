@@ -656,6 +656,64 @@ input[type="range"] {
   line-height: 1.1;
 }
 
+/* ================== Riso · Atelier de sérigraphie ====================== */
+/* Affiche imprimée à l'encre : grotesque d'affiche mono-graisse (Archivo Black)
+   + mono d'imprimeur (IBM Plex Mono) pour TOUTE donnée (prix, horaires, index),
+   angles francs, aucune ombre portée (une encre ne projette pas d'ombre : le
+   relief vient de la SURIMPRESSION `multiply` et du décalage de repérage). */
+[data-pack="riso-atelier"] {
+  --pack-font-display: var(--font-archivo-black);
+  --pack-font-sans: var(--font-inter);
+  --pack-font-mono: var(--font-plex-mono);
+  --display-tracking: -0.02em;
+  --display-case: none;
+
+  /* Coupé au massicot : zéro arrondi nulle part. */
+  --radius-btn: 0rem;
+  --radius-card: 0rem;
+  --radius-image: 0rem;
+  --border-width: 2px;
+  --radius: 0rem;
+
+  /* Pas d'ombre douce : l'encre est plate. Repli quasi nul pour les blocs
+     empruntés à editorial, qui restent ainsi cohérents avec la famille. */
+  --shadow-card: 0 0 0 0 rgb(0 0 0 / 0);
+  --shadow-pop: 0 0 0 0 rgb(0 0 0 / 0);
+
+  --section-py: 6.5rem;
+  --content-max: 76rem;
+  --motion-distance: 16px;
+  --motion-duration: 0.5s;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+/* Archivo Black n'existe QU'EN 400 : forcer 700 déclencherait une fausse graisse
+   synthétisée par le navigateur (contours baveux). On fixe donc 400 partout. */
+[data-pack="riso-atelier"] h1.font-display,
+[data-pack="riso-atelier"] h2.font-display,
+[data-pack="riso-atelier"] h3.font-display,
+[data-pack="riso-atelier"] .pack-heading {
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+/* Mono d'imprimeur — étiquettes, index, prix, horaires. Chiffres tabulaires pour
+   que les prix s'alignent en colonne. Scopé au pack (ne fuit pas ailleurs). */
+[data-pack="riso-atelier"] .riso-mono {
+  font-family: var(--pack-font-mono), ui-monospace, "SFMono-Regular", monospace;
+  font-variant-numeric: tabular-nums;
+}
+/* TRAME d'impression (halftone) : la couche de points d'une sérigraphie. Prend
+   la couleur du texte courant → `text-white/25` sur un aplat foncé, `text-ink/15`
+   sur du papier. Décor pur, toujours posé sur un élément aria-hidden. */
+[data-pack="riso-atelier"] .riso-halftone {
+  background-image: radial-gradient(currentColor 1.1px, transparent 1.2px);
+  background-size: 0.5rem 0.5rem;
+}
+/* Trame large, pour les grands aplats (le point se voit, comme une affiche). */
+[data-pack="riso-atelier"] .riso-halftone-lg {
+  background-image: radial-gradient(currentColor 1.6px, transparent 1.8px);
+  background-size: 0.75rem 0.75rem;
+}
+
 /* ======================= Maison · Premium élégant ======================= */
 [data-pack="maison-premium"] {
   --pack-font-display: var(--font-playfair);

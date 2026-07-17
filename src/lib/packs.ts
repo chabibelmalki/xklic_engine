@@ -329,6 +329,32 @@ export const PACKS: StylePack[] = [
     },
   },
   {
+    id: "riso-atelier",
+    label: "Riso · Atelier de sérigraphie",
+    family: "riso",
+    // Le papier reste UNIFORME (aucune alternance de fond) : le rythme de la page
+    // vient des APLATS D'ENCRE pleine largeur (hero, cta, page-hero, footer) et du
+    // damier des services, pas d'un fond qui change de teinte. Entre deux sections
+    // de papier, un filet de coupe (`rule`) — le trait de massicot.
+    sectionStrategy: "flat",
+    sectionDivider: "rule",
+    ambiance:
+      "Parti pris FORT « atelier de sérigraphie / affiche de quartier » : grotesque d'affiche ultra-noire (Archivo Black) en capitales + mono d'imprimeur (IBM Plex Mono) pour TOUTE donnée (prix, horaires, index). Aplats d'encre saturés pleine page, surimpression multiply (deux encres en fabriquent une troisième), trame de points visible, décalage de repérage assumé sur les titres, barre de contrôle couleur, mires de repérage. Services en DAMIER encre/papier indexé par lettres, zéro carte, zéro arrondi, zéro ombre portée. Photos en duotone. Franc, imprimé, populaire.",
+    fonts: { display: "Archivo Black", sans: "Inter" },
+    variants: {
+      hero: ["carte"],
+      services: ["damier"],
+      etapes: ["cartes-numerotees"],
+      faq: ["deux-colonnes", "accordeon"],
+      tarifs: ["grille", "liste-simple"],
+      galerie: ["grille"],
+      zone: ["liste"],
+      contenu: ["texte-image"],
+      contact: ["split-form-carte"],
+      cta: ["bande"],
+    },
+  },
+  {
     id: "foyer-carnet",
     label: "Foyer · Carnet de maison chaleureux",
     family: "foyer",
