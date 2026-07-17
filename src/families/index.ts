@@ -7,6 +7,7 @@ import { EPURE } from "./epure";
 import { SIGNAL } from "./signal";
 import { FOYER } from "./foyer";
 import { RISO } from "./riso";
+import { CASCADE } from "./cascade";
 import type { FamilyBlock, TemplateFamily } from "./types";
 
 export type { TemplateFamily, FamilyChrome, FamilyBlock } from "./types";
@@ -25,6 +26,7 @@ const FAMILIES: Record<string, TemplateFamily> = {
   signal: SIGNAL,
   foyer: FOYER,
   riso: RISO,
+  cascade: CASCADE,
 };
 
 export const DEFAULT_FAMILY = CLASSIC;

@@ -355,6 +355,31 @@ export const PACKS: StylePack[] = [
     },
   },
   {
+    id: "cascade-hydro",
+    label: "Cascade · Hydro-fresh immersif",
+    family: "cascade",
+    // Corps clair « eau vive » : alternance blanc / lavis de marque très pâle
+    // (brand-tinted), reliée par des VAGUES entre sections (sectionDivider). Les
+    // blocs d'identité (hero/cta/pageHero) peignent leur propre dégradé bleu→vert.
+    sectionStrategy: "brand-tinted",
+    sectionDivider: "wave",
+    ambiance:
+      "Parti pris FORT « hydro-fresh immersif de jour » : grands dégradés bleu→vert LUMINEUX, cartes de VERRE GIVRÉ (glassmorphism), transitions en VAGUES, SCEAU circulaire de promesse (écho de la tagline), pilules ultra-arrondies, ombres douces lumineuses teintées marque, gouttelettes. Display géométrique (Sora). Frais, protecteur, éco — l'anti-nuit-marine de littoral.",
+    fonts: { display: "Sora", sans: "Inter" },
+    variants: {
+      hero: ["carte", "centre"],
+      services: ["grille-cartes", "grille-icones"],
+      etapes: ["timeline-verticale", "cartes-numerotees"],
+      faq: ["deux-colonnes", "accordeon"],
+      tarifs: ["grille", "liste-simple"],
+      galerie: ["grille", "masonry"],
+      zone: ["liste", "carte"],
+      contenu: ["texte-image"],
+      contact: ["split-form-carte"],
+      cta: ["bande"],
+    },
+  },
+  {
     id: "foyer-carnet",
     label: "Foyer · Carnet de maison chaleureux",
     family: "foyer",

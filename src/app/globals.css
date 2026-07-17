@@ -656,6 +656,56 @@ input[type="range"] {
   line-height: 1.1;
 }
 
+/* ================== Cascade · Hydro-fresh immersif ===================== */
+/* « Eau vive de jour » : dégradés bleu→vert lumineux (peints par les blocs
+   d'identité), cartes de VERRE GIVRÉ, transitions en VAGUES (sectionDivider),
+   pilules ultra-arrondies, ombres douces LUMINEUSES teintées marque, sceau
+   circulaire tournant. Display géométrique (Sora). Parti pris fort et distinct. */
+[data-pack="cascade-hydro"] {
+  --pack-font-display: var(--font-sora);
+  --pack-font-sans: var(--font-inter);
+  --display-tracking: -0.02em;
+  --display-case: none;
+
+  /* Ultra-arrondi « goutte » : pilules + cartes très douces (à l'opposé des
+     angles durs d'epure/riso/signal). */
+  --radius-btn: 9999px;
+  --radius-card: 1.6rem;
+  --radius-image: 1.75rem;
+  --border-width: 1px;
+  --radius: 1.1rem;
+
+  /* Ombres douces LUMINEUSES teintées marque (halo d'eau, pas un gris neutre). */
+  --shadow-card: 0 20px 44px -24px color-mix(in srgb, var(--brand-600) 50%, transparent);
+  --shadow-pop: 0 34px 72px -30px color-mix(in srgb, var(--brand-600) 55%, transparent);
+
+  --section-py: 6rem;
+  --content-max: 76rem;
+  --motion-distance: 22px;
+  --motion-duration: 0.65s;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+/* Titres display : Sora, bien gras et serré. */
+[data-pack="cascade-hydro"] h1.font-display,
+[data-pack="cascade-hydro"] h2.font-display,
+[data-pack="cascade-hydro"] .pack-heading {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+/* Sceau tournant (signature). Rotation lente ; coupée si reduced-motion. Scopé au
+   pack pour ne jamais fuir vers les autres familles. */
+@keyframes cascade-seal-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+[data-pack="cascade-hydro"] .cascade-seal-spin {
+  animation: cascade-seal-spin 44s linear infinite;
+  transform-origin: 50% 50%;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-pack="cascade-hydro"] .cascade-seal-spin { animation: none; }
+}
+
 /* ================== Riso · Atelier de sérigraphie ====================== */
 /* Affiche imprimée à l'encre : grotesque d'affiche mono-graisse (Archivo Black)
    + mono d'imprimeur (IBM Plex Mono) pour TOUTE donnée (prix, horaires, index),

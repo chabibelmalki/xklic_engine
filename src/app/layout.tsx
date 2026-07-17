@@ -18,6 +18,7 @@ import {
   Caveat,
   Archivo_Black,
   IBM_Plex_Mono,
+  Sora,
 } from "next/font/google";
 import "./globals.css";
 
@@ -144,6 +145,14 @@ const plexMono = IBM_Plex_Mono({
   display: "swap",
   preload: false,
 });
+// Sans géométrique à caractère (titres display) — pack cascade-hydro (famille cascade).
+const sora = Sora({
+  variable: "--font-sora",
+  subsets: ["latin"],
+  weight: ["500", "600", "700", "800"],
+  display: "swap",
+  preload: false,
+});
 
 const fontVars = [
   poppins,
@@ -164,6 +173,7 @@ const fontVars = [
   caveat,
   archivoBlack,
   plexMono,
+  sora,
 ]
   .map((f) => f.variable)
   .join(" ");

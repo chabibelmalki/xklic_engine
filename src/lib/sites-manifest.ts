@@ -12,6 +12,7 @@ export const SITE_SLUGS: string[] = [
   "clean-confiance-by-maman",
   "clean-habitat-pro",
   "g-clean-propre-42",
+  "hygifrance",
   "mb-nettoyage",
   "minhaj",
   "o-poulet-braise",
