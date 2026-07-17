@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { SiteConfig, ContactContent } from "@/types/config";
-import { legalName, siretToSiren } from "@/lib/legal";
+import { legalName, legalIdShort, activityCodeShort } from "@/lib/legal";
 import { telHref, waHref } from "@/lib/utils";
 import { resolvePages, isMultiPage, findBlock } from "@/lib/pages";
 import { resolveSocials } from "@/lib/social";
@@ -137,8 +137,8 @@ export function LittoralFooter({
 
         <div className="mt-14 flex flex-col gap-4 border-t border-white/15 pt-8 text-xs text-white/60 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {year} {legalName(e)} · SIREN {siretToSiren(e.siret)}
-            {e.ape ? ` · APE ${e.ape}` : ""}
+            © {year} {legalName(e)} · {legalIdShort(e).label} {legalIdShort(e).value}
+            {e.ape ? ` · ${activityCodeShort(e)} ${e.ape}` : ""}
           </p>
           <div className="flex flex-wrap gap-x-5 gap-y-2">
             {config.googleReviewUrl && (

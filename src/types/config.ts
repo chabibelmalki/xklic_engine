@@ -72,24 +72,45 @@ export type RegimeTVA = "franchise" | "reel" | "exonere";
 
 export interface TVA {
   /**
-   * `franchise` → "TVA non applicable, art. 293 B du CGI".
+   * `franchise` → France : "TVA non applicable, art. 293 B du CGI" ;
+   *               Belgique : régime de la franchise (petites entreprises).
    * `reel` → numéro de TVA intracommunautaire affiché.
    * `exonere` → activité exonérée (mention neutre).
+   * La formulation exacte dépend de `Entreprise.pays`.
    */
   regime: RegimeTVA;
   numero?: string;
 }
 
+/**
+ * Pays d'immatriculation de l'entreprise — pilote le FORMAT des mentions
+ * légales et du pied de page (identifiant légal, code d'activité, mention TVA).
+ * Absent → `FR` (rétro-compatible : tous les sites français existants sont
+ * inchangés). Ne JAMAIS deviner le pays à la longueur du numéro : "BE 1013.025.834"
+ * fait 14 caractères et serait pris à tort pour un SIRET français.
+ */
+export type Pays = "FR" | "BE";
+
 export interface Entreprise {
   /** Raison sociale / nom commercial affiché. */
   nom: string;
   statut: StatutJuridique;
+  /**
+   * Identifiant légal de l'entreprise. France : SIRET (14 chiffres) — un SIREN
+   * en est dérivé. Belgique : numéro d'entreprise BCE (10 chiffres, ex.
+   * "1013.025.834"), SANS le préfixe "BE" qui, lui, appartient au n° de TVA.
+   */
   siret: string;
   tva: TVA;
+  /** Pays d'immatriculation (défaut `FR`). Pilote le format légal. */
+  pays?: Pays;
 
-  /** Code APE/NAF (ex. "81.21Z"). Affiché en mentions légales et pied de page. */
+  /**
+   * Code d'activité. France : APE/NAF (ex. "81.21Z"). Belgique : NACE-BEL
+   * (ex. "81.210"). Le libellé affiché ("Code APE" / "Code NACE") suit `pays`.
+   */
   ape?: string;
-  /** Libellé du code APE (ex. "Nettoyage courant des bâtiments"). */
+  /** Libellé du code d'activité (ex. "Nettoyage courant des bâtiments"). */
   apeLabel?: string;
 
   // Spécifiques aux sociétés (SARL, SAS, SASU, EURL, SA…) :

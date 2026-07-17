@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { SiteConfig, ContactContent } from "@/types/config";
 import { Logo } from "@/components/layout/Logo";
-import { legalName, siretToSiren } from "@/lib/legal";
+import { legalName, legalIdShort, activityCodeShort } from "@/lib/legal";
 import { telHref, waHref } from "@/lib/utils";
 import { resolvePages, isMultiPage, findBlock } from "@/lib/pages";
 import { resolveSocials } from "@/lib/social";
@@ -138,12 +138,13 @@ export function RisoFooter({
         </div>
 
         <div className="riso-mono mt-14 flex flex-col gap-4 border-t-2 border-white/20 pt-8 text-xs text-white/55 sm:flex-row sm:items-center sm:justify-between">
-          {/* SIREN/APE affichés SEULEMENT s'ils existent : un dossier sans SIRET
-              imprimerait sinon un « SIREN » suivi de rien. */}
+          {/* Identifiant légal / code d'activité affichés SEULEMENT s'ils existent :
+              un dossier sans identifiant imprimerait sinon un libellé suivi de rien.
+              Le libellé s'adapte au pays (SIREN/APE en France, N° BCE/NACE en Belgique). */}
           <p>
             © {year} {legalName(e)}
-            {e.siret ? ` · SIREN ${siretToSiren(e.siret)}` : ""}
-            {e.ape ? ` · APE ${e.ape}` : ""}
+            {e.siret ? ` · ${legalIdShort(e).label} ${legalIdShort(e).value}` : ""}
+            {e.ape ? ` · ${activityCodeShort(e)} ${e.ape}` : ""}
           </p>
           <div className="flex flex-wrap gap-x-5 gap-y-2">
             {config.googleReviewUrl && (

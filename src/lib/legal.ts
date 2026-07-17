@@ -3,6 +3,7 @@ import type {
   Entreprise,
   StatutJuridique,
   ContactContent,
+  Pays,
 } from "@/types/config";
 import { formatEUR } from "@/lib/utils";
 import { findBlock } from "@/lib/pages";
@@ -45,7 +46,9 @@ const DICT = {
     forme: "Forme juridique",
     capital: "Capital social",
     ape: "Code APE",
+    nace: "Code NACE",
     rcs: "RCS",
+    rpm: "RPM",
     immatriculation: "Immatriculation",
     numEntreprise: "Numéro d'entreprise",
     siege: "Siège social",
@@ -60,6 +63,7 @@ const DICT = {
     site: "Site",
     immatMicro: "Entrepreneur individuel (micro-entreprise)",
     immatEI: "Entrepreneur individuel",
+    immatIndep: "Indépendant en personne physique",
     piText: (nom: string) =>
       `L'ensemble des contenus (textes, images, logo, mise en page) présents sur ce site sont la propriété de ${nom}, sauf mention contraire, et sont protégés par le droit d'auteur. Toute reproduction sans autorisation est interdite.`,
     donneesText: (email?: string) =>
@@ -96,7 +100,9 @@ const DICT = {
     forme: "Rechtsvorm",
     capital: "Maatschappelijk kapitaal",
     ape: "NACE-code",
+    nace: "NACE-code",
     rcs: "RCS",
+    rpm: "RPR",
     immatriculation: "Inschrijving",
     numEntreprise: "Ondernemingsnummer",
     siege: "Maatschappelijke zetel",
@@ -111,6 +117,7 @@ const DICT = {
     site: "Website",
     immatMicro: "Zelfstandige",
     immatEI: "Zelfstandige",
+    immatIndep: "Zelfstandige (natuurlijk persoon)",
     piText: (nom: string) =>
       `Alle inhoud (teksten, afbeeldingen, logo, opmaak) op deze site is eigendom van ${nom}, behoudens andersluidende vermelding, en wordt beschermd door het auteursrecht. Elke reproductie zonder toestemming is verboden.`,
     donneesText: (email?: string) =>
@@ -220,11 +227,43 @@ export function isCompany(e: Entreprise): boolean {
   return COMPANY_STATUTS.has(e.statut) || e.capital !== undefined;
 }
 
-/** Mention TVA conforme selon le régime. */
+// ----------------------------------------------------------------------------
+// Pays — pilote le FORMAT légal (identifiant, code d'activité, mention TVA)
+// ----------------------------------------------------------------------------
+
+/**
+ * Pays d'immatriculation retenu pour le formatage légal. On lit `entreprise.pays`
+ * quand il est renseigné (voie normale). À défaut, filet de sécurité pour une
+ * config belge non encore migrée : préfixe « BE » sur l'identifiant/TVA, ou forme
+ * juridique exclusivement belge (SRL/SPRL). On ne devine JAMAIS à la longueur du
+ * numéro (« BE 1013.025.834 » fait 14 caractères et serait pris pour un SIRET).
+ */
+export function paysOf(e: Entreprise): Pays {
+  if (e.pays) return e.pays;
+  const idish = `${e.siret ?? ""} ${e.tva?.numero ?? ""}`.toUpperCase();
+  if (/\bBE\s*\d/.test(idish)) return "BE";
+  if (e.statut === "SRL" || e.statut === "SPRL") return "BE";
+  return "FR";
+}
+
+/** Numéro d'entreprise belge (BCE/KBO) : 10 chiffres → « 0000.000.000 ». */
+export function formatBce(raw: string): string {
+  const d = raw.replace(/[^0-9]/g, "");
+  if (d.length !== 10) return raw.replace(/^\s*BE\s*/i, "").trim();
+  return `${d.slice(0, 4)}.${d.slice(4, 7)}.${d.slice(7)}`;
+}
+
+/** Mention TVA conforme selon le régime ET le pays. */
 export function tvaMention(e: Entreprise, locale?: string): string {
   const nl = lang(locale) === "nl";
+  const be = paysOf(e) === "BE";
   switch (e.tva.regime) {
     case "franchise":
+      if (be) {
+        return nl
+          ? "Vrijstellingsregeling van belasting voor kleine ondernemingen — btw niet van toepassing."
+          : "Régime de la franchise de la taxe pour les petites entreprises — TVA non applicable.";
+      }
       return nl
         ? "Kleineondernemingsregeling — btw niet van toepassing."
         : "TVA non applicable, article 293 B du CGI.";
@@ -234,7 +273,7 @@ export function tvaMention(e: Entreprise, locale?: string): string {
       return e.tva.numero
         ? nl
           ? `Btw-nummer: ${e.tva.numero}.`
-          : `N° de TVA intracommunautaire : ${e.tva.numero}.`
+          : `N° de TVA${be ? "" : " intracommunautaire"} : ${e.tva.numero}.`
         : nl
           ? "Btw-plichtig."
           : "Assujetti à la TVA.";
@@ -254,6 +293,21 @@ export function formatSiret(siret: string): string {
 export function siretToSiren(siret: string): string {
   const d = siret.replace(/\s/g, "");
   return d.length >= 9 ? `${d.slice(0, 3)} ${d.slice(3, 6)} ${d.slice(6, 9)}` : d;
+}
+
+/**
+ * Identifiant légal de l'entreprise pour le pied de page (libellé court + valeur).
+ * France → « SIREN 000 000 000 » ; Belgique → « N° BCE 0000.000.000 ».
+ */
+export function legalIdShort(e: Entreprise): { label: string; value: string } {
+  return paysOf(e) === "BE"
+    ? { label: "N° BCE", value: formatBce(e.siret) }
+    : { label: "SIREN", value: siretToSiren(e.siret) };
+}
+
+/** Libellé court du code d'activité pour le pied de page : « APE » (FR) / « NACE » (BE). */
+export function activityCodeShort(e: Entreprise): string {
+  return paysOf(e) === "BE" ? "NACE" : "APE";
 }
 
 export interface LegalRow {
@@ -285,6 +339,7 @@ export function buildMentionsLegales(config: SiteConfig, locale?: string): Menti
   const e = config.entreprise;
   const contact = findContact(config);
   const company = isCompany(e);
+  const be = paysOf(e) === "BE";
 
   // --- Éditeur ---
   const editeur: LegalRow[] = [{ label: t.denomination, value: e.nom }];
@@ -294,35 +349,38 @@ export function buildMentionsLegales(config: SiteConfig, locale?: string): Menti
     editeur.push({ label: t.capital, value: formatEUR(e.capital) });
   }
 
-  // Identifiant d'entreprise : SIRET/SIREN pour la France (14 chiffres) ;
-  // sinon (n° BCE belge à 10 chiffres, etc.) on affiche l'identifiant tel quel
-  // sous un libellé neutre, sans dériver un « SIREN » tronqué et faux.
-  if (e.siret.replace(/\s/g, "").length === 14) {
+  // Identifiant d'entreprise, piloté par le PAYS (jamais par la longueur de
+  // chaîne : « BE 1013.025.834 » fait 14 caractères et serait pris pour un SIRET).
+  // France → SIRET (14 chiffres) + SIREN dérivé ; Belgique → n° d'entreprise BCE.
+  if (be) {
+    editeur.push({ label: t.numEntreprise, value: formatBce(e.siret) });
+  } else {
     editeur.push({ label: "SIRET", value: formatSiret(e.siret) });
     editeur.push({ label: "SIREN", value: siretToSiren(e.siret) });
-  } else {
-    editeur.push({ label: t.numEntreprise, value: e.siret });
   }
 
   if (e.ape) {
     editeur.push({
-      label: t.ape,
+      label: be ? t.nace : t.ape,
       value: e.apeLabel ? `${e.ape} — ${e.apeLabel}` : e.ape,
     });
   }
 
   if (company && e.rcs) {
-    editeur.push({
-      label: t.rcs,
-      value: `${siretToSiren(e.siret)} R.C.S. ${e.rcs}`,
-    });
+    // France : RCS (SIREN + ville du greffe). Belgique : RPM/RPR (n° BCE +
+    // tribunal de l'entreprise). Le champ `rcs` porte la ville / le ressort.
+    editeur.push(
+      be
+        ? { label: t.rpm, value: `${formatBce(e.siret)} — ${e.rcs}` }
+        : { label: t.rcs, value: `${siretToSiren(e.siret)} R.C.S. ${e.rcs}` },
+    );
   }
   if (!company) {
-    // Micro/EI : pas de RCS pour une activité non commerciale immatriculée ;
-    // on précise le statut d'entrepreneur individuel.
+    // Personne physique : pas de RCS/RPM. France → entrepreneur individuel
+    // (micro le cas échéant) ; Belgique → indépendant en personne physique.
     editeur.push({
       label: t.immatriculation,
-      value: e.statut === "micro" ? t.immatMicro : t.immatEI,
+      value: be ? t.immatIndep : e.statut === "micro" ? t.immatMicro : t.immatEI,
     });
   }
 
