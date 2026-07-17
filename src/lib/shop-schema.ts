@@ -38,6 +38,24 @@ export const shopCheckoutSchema = z.object({
     email: z.string().trim().email().max(200),
     phone: z.string().trim().max(20).optional().or(z.literal("")),
   }),
+  /**
+   * Adresse de livraison. Facultative ici (le back-office l'exige selon le mode :
+   * requise pour un mode qui livre, ignorée pour un retrait) et REVALIDÉE contre
+   * la zone côté serveur. line1/complement sont libres ; city/postcode/country/
+   * region/lat/lon proviennent de l'autocomplétion géo (matching de zone).
+   */
+  address: z
+    .object({
+      line1: z.string().trim().max(200).optional().or(z.literal("")),
+      complement: z.string().trim().max(200).optional().or(z.literal("")),
+      city: z.string().trim().max(120).optional().or(z.literal("")),
+      postcode: z.string().trim().max(20).optional().or(z.literal("")),
+      country: z.string().trim().max(2).optional().or(z.literal("")),
+      region: z.string().trim().max(120).optional().or(z.literal("")),
+      lat: z.number().optional(),
+      lon: z.number().optional(),
+    })
+    .optional(),
   successPath: z
     .string()
     .startsWith("/")

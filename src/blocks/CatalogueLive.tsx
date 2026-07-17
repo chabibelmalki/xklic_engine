@@ -26,6 +26,12 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { Turnstile } from "@/components/ui/Turnstile";
 import { cn, formatEUR, telHrefIntl } from "@/lib/utils";
+import {
+  type DeliveryZone,
+  type GeoPlace,
+  isInZone,
+  isZoneRestricted,
+} from "@/lib/delivery-zone";
 
 /**
  * Catalogue — boutique en ligne LIVE. Les produits, prix et stocks viennent du
@@ -80,6 +86,8 @@ interface ShopDelivery {
   label: string;
   price_cents: number;
   details: string;
+  /** Zone de livraison (back-office). Filtre les communes proposées au checkout. */
+  zone?: DeliveryZone;
 }
 interface ShopCatalog {
   tenant: { name: string; checkout_enabled: boolean };
@@ -679,6 +687,15 @@ export function CatalogueLive({
   const [step, setStep] = useState<1 | 2>(1);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  // Adresse de livraison (étape 2, modes qui livrent). `commune` est résolue par
+  // l'autocomplétion géo (sert au matching de zone) ; line1/complement sont libres.
+  const [addrLine1, setAddrLine1] = useState("");
+  const [addrComplement, setAddrComplement] = useState("");
+  const [commune, setCommune] = useState<GeoPlace | null>(null);
+  const [communeQuery, setCommuneQuery] = useState("");
+  const [communeResults, setCommuneResults] = useState<GeoPlace[]>([]);
+  const [communeOpen, setCommuneOpen] = useState(false);
+  const [communeSearching, setCommuneSearching] = useState(false);
   const [query, setQuery] = useState("");
   const [activeId, setActiveId] = useState<string | null>(null);
   const stepTopRef = useRef<HTMLDivElement>(null);
@@ -826,8 +843,46 @@ export function CatalogueLive({
   const delivery = catalog?.delivery_methods.find((d) => d.id === deliveryId);
   const total = subtotal + (delivery?.price_cents ?? 0);
   const checkoutEnabled = catalog?.tenant.checkout_enabled ?? false;
+  // Un mode qui achemine (≠ retrait) réclame une adresse ; si sa zone est
+  // restreinte, on ne propose que les communes qui y tombent.
+  const needsAddress = !!delivery && delivery.kind !== "pickup";
+  const zoneRestricted = isZoneRestricted(delivery?.zone);
 
   if (step === 2 && lines.length === 0) setStep(1);
+
+  // Autocomplétion de la commune (debounce) : /api/shop/geo → communes filtrées
+  // sur la zone du mode choisi. Ne cherche que pour un mode qui livre. Tous les
+  // setState vivent dans le callback (jamais synchrones dans le corps de l'effet).
+  useEffect(() => {
+    if (!needsAddress) return;
+    const term = communeQuery.trim();
+    let cancelled = false;
+    const t = setTimeout(async () => {
+      if (term.length < 2 || (commune && commune.label === term)) {
+        setCommuneResults([]);
+        return;
+      }
+      setCommuneSearching(true);
+      try {
+        const res = await fetch(`/api/shop/geo?q=${encodeURIComponent(term)}`);
+        const data = (await res.json().catch(() => ({ places: [] }))) as { places?: GeoPlace[] };
+        if (cancelled) return;
+        const cities = (data.places ?? [])
+          .filter((p) => p.type === "city")
+          .filter((p) => isInZone(p, delivery?.zone));
+        setCommuneResults(cities);
+        setCommuneOpen(true);
+      } catch {
+        if (!cancelled) setCommuneResults([]);
+      } finally {
+        if (!cancelled) setCommuneSearching(false);
+      }
+    }, 250);
+    return () => {
+      cancelled = true;
+      clearTimeout(t);
+    };
+  }, [communeQuery, needsAddress, delivery, commune]);
 
   useEffect(() => {
     if (step === 2) stepTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -871,6 +926,17 @@ export function CatalogueLive({
       ?.scrollIntoView({ inline: "center", block: "nearest", behavior: "smooth" });
   }, [activeId]);
 
+  // Sélection d'un mode : invalide une commune déjà choisie mais hors de la
+  // nouvelle zone (on ne garde jamais une commune non livrable). Fait dans le
+  // handler plutôt qu'un effet (pas de setState en cascade dans un effet).
+  function selectDelivery(d: ShopDelivery) {
+    setDeliveryId(d.id);
+    if (commune && !isInZone(commune, d.zone)) {
+      setCommune(null);
+      setCommuneQuery("");
+    }
+  }
+
   async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setError(null);
@@ -886,6 +952,25 @@ export function CatalogueLive({
     const turnstileToken = String(fd.get("cf-turnstile-response") ?? "");
     if (turnstileSiteKey && !turnstileToken) return setError("Vérification anti-robot requise.");
     if (!deliveryId) return setError("Choisissez un mode de retrait/livraison.");
+    // Adresse requise pour les modes qui livrent (revalidée côté serveur).
+    if (needsAddress) {
+      if (!commune) return setError("Choisissez votre commune de livraison.");
+      if (zoneRestricted && !isInZone(commune, delivery?.zone))
+        return setError("Cette commune n'est pas dans la zone de livraison de ce mode.");
+      if (addrLine1.trim().length < 3) return setError("Indiquez votre adresse (n° et rue).");
+    }
+    const address = needsAddress
+      ? {
+          line1: addrLine1.trim(),
+          complement: addrComplement.trim(),
+          city: commune?.city || commune?.label || "",
+          postcode: commune?.postcode || "",
+          country: commune?.country || "",
+          region: commune?.region || "",
+          lat: commune?.lat ?? 0,
+          lon: commune?.lon ?? 0,
+        }
+      : undefined;
 
     setSubmitting(true);
     try {
@@ -903,6 +988,7 @@ export function CatalogueLive({
           })),
           deliveryMethodId: deliveryId,
           customer: { name, email, phone },
+          address,
           successPath: `${basePath}/merci`,
           cancelPath: `${basePath}/annulation`,
           company: String(fd.get("company") ?? ""),
@@ -1254,7 +1340,7 @@ export function CatalogueLive({
                           type="radio"
                           name="delivery"
                           checked={deliveryId === d.id}
-                          onChange={() => setDeliveryId(d.id)}
+                          onChange={() => selectDelivery(d)}
                           className="mt-0.5 size-4 text-brand-600 focus:ring-brand-500"
                         />
                         <span>
@@ -1268,6 +1354,106 @@ export function CatalogueLive({
                     </label>
                   ))}
                 </div>
+
+                {needsAddress && (
+                  <div className="mt-8">
+                    <h3 className="mb-1 font-display text-lg font-bold text-ink">
+                      Adresse de livraison
+                    </h3>
+                    <p className="mb-4 text-xs text-muted">
+                      {zoneRestricted
+                        ? "Seules les communes desservies par ce mode sont proposées."
+                        : "Indiquez où livrer votre commande."}
+                    </p>
+                    <div className="space-y-3">
+                      <div className="relative">
+                        <label
+                          htmlFor="shop-commune"
+                          className="block text-sm font-medium text-ink-soft"
+                        >
+                          Commune *
+                        </label>
+                        <input
+                          id="shop-commune"
+                          autoComplete="off"
+                          value={communeQuery}
+                          placeholder="Ville ou code postal…"
+                          onChange={(e) => {
+                            setCommuneQuery(e.target.value);
+                            setCommune(null);
+                            setCommuneOpen(true);
+                          }}
+                          onFocus={() => communeResults.length > 0 && setCommuneOpen(true)}
+                          onBlur={() => setTimeout(() => setCommuneOpen(false), 150)}
+                          className="mt-1.5 w-full rounded-xl border border-border bg-surface px-4 py-2.5 text-sm text-ink shadow-sm outline-none transition-colors placeholder:text-muted-2 focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
+                        />
+                        {commune && (
+                          <span className="mt-1 inline-flex items-center gap-1 text-xs font-medium text-brand-700">
+                            <Check className="size-3.5" /> {commune.label}
+                            {commune.sub ? ` · ${commune.sub}` : ""}
+                          </span>
+                        )}
+                        {communeOpen && !commune && communeQuery.trim().length >= 2 && (
+                          <div className="absolute z-30 mt-1 max-h-64 w-full overflow-auto rounded-xl border border-border bg-surface shadow-lg">
+                            {communeResults.length > 0 ? (
+                              communeResults.map((p) => (
+                                <button
+                                  key={`${p.osm_id ?? p.label}-${p.postcode ?? ""}`}
+                                  type="button"
+                                  onMouseDown={(e) => {
+                                    e.preventDefault();
+                                    setCommune(p);
+                                    setCommuneQuery(p.label);
+                                    setCommuneOpen(false);
+                                  }}
+                                  className="flex w-full items-center justify-between gap-2 px-4 py-2.5 text-left text-sm hover:bg-brand-50/60"
+                                >
+                                  <span className="font-medium text-ink">{p.label}</span>
+                                  {p.sub && <span className="text-xs text-muted">{p.sub}</span>}
+                                </button>
+                              ))
+                            ) : (
+                              <p className="px-4 py-3 text-sm text-muted">
+                                {communeSearching
+                                  ? "Recherche…"
+                                  : zoneRestricted
+                                    ? "Aucune commune desservie ne correspond."
+                                    : "Aucun résultat."}
+                              </p>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                      <div>
+                        <label htmlFor="shop-line1" className="block text-sm font-medium text-ink-soft">
+                          Adresse (n° et rue) *
+                        </label>
+                        <input
+                          id="shop-line1"
+                          autoComplete="street-address"
+                          value={addrLine1}
+                          onChange={(e) => setAddrLine1(e.target.value)}
+                          placeholder="12 avenue des Genottes"
+                          className="mt-1.5 w-full rounded-xl border border-border bg-surface px-4 py-2.5 text-sm text-ink shadow-sm outline-none transition-colors placeholder:text-muted-2 focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
+                        />
+                      </div>
+                      <div>
+                        <label
+                          htmlFor="shop-complement"
+                          className="block text-sm font-medium text-ink-soft"
+                        >
+                          Complément (étage, bâtiment, code…)
+                        </label>
+                        <input
+                          id="shop-complement"
+                          value={addrComplement}
+                          onChange={(e) => setAddrComplement(e.target.value)}
+                          className="mt-1.5 w-full rounded-xl border border-border bg-surface px-4 py-2.5 text-sm text-ink shadow-sm outline-none transition-colors placeholder:text-muted-2 focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                )}
 
                 <h3 className="mb-4 mt-8 font-display text-lg font-bold text-ink">Vos coordonnées</h3>
                 <form onSubmit={submit} noValidate className="space-y-3">
