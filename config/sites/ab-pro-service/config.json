@@ -150,10 +150,10 @@
                 "icone": "GlassWater"
               },
               {
-                "nom": "Nettoyage à domicile",
-                "description": "Un intérieur entretenu avec soin chez les particuliers : entretien courant, grand nettoyage ou remise au propre après un événement.",
-                "href": "/nettoyage-domicile",
-                "icone": "Home"
+                "nom": "Grand nettoyage & remise en état",
+                "description": "Logement ou local encrassé remis à niveau de fond en comble : dégraissage, détartrage et dépoussiérage pour repartir sur une base saine.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
               },
               {
                 "nom": "Après travaux & fin de chantier",
@@ -385,10 +385,10 @@
                 "icone": "GlassWater"
               },
               {
-                "nom": "Nettoyage à domicile",
-                "description": "Entretien courant ou grand nettoyage chez les particuliers : la fiche décrit les pièces traitées et les rythmes possibles.",
-                "href": "/nettoyage-domicile",
-                "icone": "Home"
+                "nom": "Grand nettoyage & remise en état",
+                "description": "Remise à niveau ponctuelle d'un lieu encrassé, chez les particuliers comme les pros : la fiche détaille le déroulé et ce qui est traité.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
               },
               {
                 "nom": "Après travaux & fin de chantier",
@@ -889,7 +889,8 @@
               "Commerces et locaux",
               "Parties communes / copropriété",
               "Lavage de vitres",
-              "Nettoyage à domicile",
+              "Grand nettoyage & remise en état",
+              "Après travaux / fin de chantier",
               "Intervention d'urgence (dégât des eaux)",
               "Autre / je ne sais pas"
             ],
@@ -956,7 +957,8 @@
               "Commerces et locaux",
               "Parties communes / copropriété",
               "Lavage de vitres",
-              "Nettoyage à domicile",
+              "Grand nettoyage & remise en état",
+              "Après travaux / fin de chantier",
               "Intervention d'urgence (dégât des eaux)",
               "Autre / je ne sais pas"
             ],
@@ -1477,10 +1479,10 @@
                 "icone": "GlassWater"
               },
               {
-                "nom": "Nettoyage à domicile",
-                "description": "Un occupant souhaite aussi l'entretien de son logement ? Nous proposons la prestation à domicile.",
-                "href": "/nettoyage-domicile",
-                "icone": "Home"
+                "nom": "Grand nettoyage & remise en état",
+                "description": "Un logement ou un local de l'immeuble à remettre à niveau en profondeur ? Notre grand nettoyage repart d'une base saine.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
               },
               {
                 "nom": "Intervention d'urgence",
@@ -1642,10 +1644,10 @@
                 "icone": "Store"
               },
               {
-                "nom": "Nettoyage à domicile",
-                "description": "Chez vous aussi, des vitres nettes changent l'ambiance : ajoutez-les à un entretien du logement.",
-                "href": "/nettoyage-domicile",
-                "icone": "Home"
+                "nom": "Grand nettoyage & remise en état",
+                "description": "Des vitres nettes dans un lieu à remettre à neuf ? Le grand nettoyage prolonge la remise en état, de fond en comble.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
               }
             ],
             "cta": {
@@ -1673,31 +1675,31 @@
       ]
     },
     {
-      "slug": "nettoyage-domicile",
-      "label": "Nettoyage à domicile",
+      "slug": "grand-nettoyage",
+      "label": "Grand nettoyage",
       "navHidden": true,
       "meta": {
-        "title": "Nettoyage à domicile à Charleroi",
-        "description": "Entretien soigné de votre intérieur à Charleroi et en Hainaut : ménage courant, grand nettoyage ou remise au propre ponctuelle. Devis gratuit et sans engagement.",
+        "title": "Grand nettoyage & remise en état à Charleroi",
+        "description": "Logement ou local encrassé à Charleroi et en Hainaut : nettoyage en profondeur de haut en bas, dégraissage et détartrage pour repartir sur une base saine. Devis gratuit.",
         "keywords": [
-          "nettoyage à domicile Charleroi",
-          "aide ménagère Charleroi",
-          "nettoyage maison Hainaut",
-          "grand nettoyage Charleroi"
+          "grand nettoyage Charleroi",
+          "nettoyage en profondeur Charleroi",
+          "remise en état Hainaut",
+          "nettoyage logement encrassé Charleroi"
         ]
       },
       "service": {
-        "name": "Nettoyage à domicile",
-        "description": "Entretien courant et grand nettoyage du logement des particuliers à Charleroi.",
-        "serviceType": "Nettoyage à domicile"
+        "name": "Grand nettoyage & remise en état",
+        "description": "Remise à niveau ponctuelle et en profondeur d'un lieu très encrassé à Charleroi, pour particuliers et professionnels.",
+        "serviceType": "Grand nettoyage en profondeur"
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Chez les particuliers",
-            "titre": "Nettoyage à domicile à Charleroi",
-            "intro": "Rentrer dans un intérieur net, sans y avoir passé son week-end : c'est ce que nous proposons aux particuliers de Charleroi et du Hainaut. Entretien courant, grand nettoyage de printemps ou remise au propre après un événement, nous adaptons la prestation à votre logement et à votre rythme.",
+            "eyebrow": "Nettoyage en profondeur",
+            "titre": "Grand nettoyage & remise en état à Charleroi",
+            "intro": "Quand l'entretien courant ne suffit plus, le grand nettoyage repart de zéro. Logement laissé de côté, local repris dans un état poussiéreux, cuisine ou sanitaires très encrassés : à Charleroi et dans le Hainaut, nous remettons les lieux à niveau, pièce par pièce, pour les rendre sains et de nouveau agréables — chez les particuliers comme chez les professionnels.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1708,7 +1710,7 @@
                 "href": "/services"
               },
               {
-                "label": "Nettoyage à domicile"
+                "label": "Grand nettoyage"
               }
             ],
             "ctaPrimaire": {
@@ -1724,10 +1726,10 @@
         {
           "type": "contenu",
           "content": {
-            "titre": "Votre intérieur entretenu comme il le mérite",
+            "titre": "Une remise à niveau complète, pièce par pièce",
             "paragraphes": [
-              "À domicile, nous couvrons l'ensemble des pièces de vie : dépoussiérage des surfaces et meubles, aspiration et lavage des sols, cuisine dégraissée et plans nettoyés, salle de bains et sanitaires désinfectés et détartrés. Le résultat, ce n'est pas seulement un logement propre, c'est du temps et de la charge mentale que vous récupérez pour ce qui compte vraiment.",
-              "Nous proposons un entretien régulier — hebdomadaire, tous les quinze jours ou mensuel — pour maintenir votre intérieur sans effort, mais aussi des interventions uniques : un grand nettoyage saisonnier, une remise au propre avant ou après une réception, ou un coup de frais avant l'arrivée d'invités. Vous choisissez si nous venons avec notre matériel et nos produits ou si nous utilisons les vôtres. Dans tous les cas, discrétion et respect de votre intérieur sont la règle, et le devis reste gratuit et clair."
+              "Un grand nettoyage vise tout ce qu'un entretien courant finit par laisser s'installer. Nous progressons du plafond vers le sol : sommets des meubles et des armoires dépoussiérés d'abord, murs et interrupteurs dégraissés, plinthes et radiateurs repris, vitrages faits côté intérieur, puis sols lavés à fond avec un produit choisi selon le revêtement. Les points sensibles reçoivent un soin appuyé : cuisine dégraissée jusqu'à la hotte et aux façades, puis détartrage de la robinetterie, de la douche, du carrelage et des sanitaires, suivi d'une désinfection.",
+              "Cette prestation est ponctuelle : elle vise à ramener un lieu à un état sain d'où repartir, pas à assurer un passage récurrent. Elle concerne autant un particulier — un appartement récupéré après des années d'occupation, une maison à remettre en valeur avant sa mise en vente ou en location — qu'un professionnel : local resté fermé, bureau ou commerce à assainir. Le devis se calcule sur la superficie à traiter, l'ampleur de l'encrassement et les équipements présents ; il est offert, après un échange ou un bref passage sur place. Si le lieu sort d'un chantier, c'est plutôt notre nettoyage après travaux qui prend le relais."
             ]
           }
         },
@@ -1735,27 +1737,51 @@
           "type": "services",
           "variant": "grille-icones",
           "content": {
-            "titre": "Ce que comprend un passage",
+            "titre": "Ce que couvre un grand nettoyage",
             "items": [
               {
-                "icone": "Sparkles",
-                "nom": "Pièces de vie",
-                "description": "Dépoussiérage, sols aspirés et lavés, surfaces essuyées dans le salon et les chambres."
+                "icone": "ChevronsDown",
+                "nom": "De haut en bas",
+                "description": "Plafonds, luminaires, murs et interrupteurs traités avant les surfaces basses et les sols."
+              },
+              {
+                "icone": "Flame",
+                "nom": "Cuisine dégraissée",
+                "description": "Plans, façades, hotte et électroménager débarrassés du gras accumulé."
               },
               {
                 "icone": "Droplets",
-                "nom": "Cuisine et sanitaires",
-                "description": "Plans dégraissés, éviers, salle de bains et WC désinfectés et détartrés."
+                "nom": "Sanitaires détartrés",
+                "description": "Douche, robinetterie, carrelages et WC détartrés puis désinfectés."
               },
               {
-                "icone": "CalendarCheck",
-                "nom": "À votre rythme",
-                "description": "Passage régulier ou intervention unique, selon vos besoins et votre disponibilité."
+                "icone": "Sparkles",
+                "nom": "Sols & vitres",
+                "description": "Sols lavés à fond selon le revêtement, vitrages repris côté intérieur."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "timeline-verticale",
+          "content": {
+            "titre": "Comment se déroule un grand nettoyage",
+            "items": [
+              {
+                "icone": "ClipboardList",
+                "titre": "État des lieux",
+                "texte": "Nous évaluons les volumes et l'ampleur de l'encrassement pour un devis juste, offert et sans engagement."
               },
               {
-                "icone": "ShieldCheck",
-                "nom": "En confiance",
-                "description": "Une intervenante discrète et soigneuse, attentive à votre intérieur comme à vos habitudes."
+                "icone": "SprayCan",
+                "titre": "Traitement de haut en bas",
+                "texte": "Chaque pièce est reprise dans l'ordre, du plafond aux sols, points gras et calcaire compris."
+              },
+              {
+                "icone": "CheckCheck",
+                "titre": "Vérification finale",
+                "texte": "On repasse chaque pièce ensemble : tout doit être irréprochable avant que vous ne récupériez les lieux."
               }
             ]
           }
@@ -1767,16 +1793,16 @@
             "titre": "Questions fréquentes",
             "items": [
               {
-                "question": "Puis-je réserver un seul grand nettoyage, sans abonnement ?",
-                "reponse": "Oui. Beaucoup de clients nous appellent pour une intervention unique : un grand nettoyage de printemps, une remise au propre avant une réception ou après des invités. Aucun engagement dans la durée n'est requis."
+                "question": "Le grand nettoyage remplace-t-il un entretien régulier ?",
+                "reponse": "Non, ce sont deux logiques distinctes. Le grand nettoyage est une remise à niveau ponctuelle, idéale pour repartir d'une base propre. Ensuite, un entretien régulier de vos bureaux, de votre commerce ou de votre immeuble prend le relais si vous le souhaitez."
               },
               {
-                "question": "Dois-je fournir les produits et le matériel ?",
-                "reponse": "Comme vous préférez. Nous pouvons arriver entièrement équipés, ou utiliser vos produits si vous y tenez. Nous adaptons dans tous les cas les produits aux surfaces de votre logement."
+                "question": "Sur quels lieux intervenez-vous ?",
+                "reponse": "Aussi bien un logement de particulier qu'un local professionnel : appartement, maison, bureau, commerce ou surface restée fermée. La méthode s'ajuste à l'état de départ et au type de surfaces à traiter."
               },
               {
-                "question": "Faut-il être présent pendant l'intervention ?",
-                "reponse": "Ce n'est pas obligatoire. Beaucoup de clients nous confient un accès convenu et retrouvent leur logement net à leur retour. Un message de notre part vous prévient dès que tout est bouclé."
+                "question": "Faut-il libérer les lieux avant votre venue ?",
+                "reponse": "Pas forcément. Un espace dégagé accélère le travail, mais nous contournons sans peine les meubles qui restent ; prévenez-nous simplement des surfaces délicates à protéger."
               }
             ]
           }
@@ -1789,22 +1815,22 @@
             "titre": "Prestations souvent associées",
             "items": [
               {
+                "nom": "Après travaux & fin de chantier",
+                "description": "Vos locaux sortent de travaux et non d'un long délaissement ? Les résidus de chantier relèvent d'une fiche à part.",
+                "href": "/nettoyage-apres-travaux",
+                "icone": "HardHat"
+              },
+              {
                 "nom": "Lavage de vitres",
-                "description": "Ajoutez le nettoyage des vitres de votre logement pour retrouver pleinement la lumière.",
+                "description": "Profitez du grand nettoyage pour retrouver des vitrages parfaitement transparents, dedans comme dehors.",
                 "href": "/nettoyage-vitres",
                 "icone": "GlassWater"
               },
               {
-                "nom": "Intervention d'urgence",
-                "description": "Un dégât des eaux chez vous ? Nous intervenons rapidement pour assainir et remettre en état.",
-                "href": "/nettoyage-urgence",
-                "icone": "Droplets"
-              },
-              {
-                "nom": "Parties communes et copropriétés",
-                "description": "Vous gérez aussi un immeuble ? Découvrez notre entretien des parties communes.",
-                "href": "/nettoyage-copropriete",
-                "icone": "Building"
+                "nom": "Nettoyage de bureaux",
+                "description": "Un plateau de bureaux à assainir, puis à entretenir régulièrement ? Nous prenons le relais.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
               }
             ],
             "cta": {
@@ -1817,7 +1843,7 @@
           "type": "cta",
           "variant": "encadre",
           "content": {
-            "titre": "Un devis pour l'entretien de votre logement ?",
+            "titre": "Un grand nettoyage à planifier à Charleroi ?",
             "sousTitre": "Devis gratuit et sans engagement. Réponse rapide.",
             "ctaPrimaire": {
               "label": "Demander un devis",
@@ -2095,10 +2121,10 @@
             "titre": "Prestations souvent associées",
             "items": [
               {
-                "nom": "Nettoyage à domicile",
-                "description": "Une fois le chantier nettoyé, un entretien régulier pour garder votre intérieur impeccable au fil des semaines.",
-                "href": "/nettoyage-domicile",
-                "icone": "Home"
+                "nom": "Grand nettoyage & remise en état",
+                "description": "Un lieu longtemps laissé sans soin, hors contexte de chantier ? Une remise à niveau complète, en profondeur.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
               },
               {
                 "nom": "Lavage de vitres",

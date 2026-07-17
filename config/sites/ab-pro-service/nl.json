@@ -128,10 +128,10 @@
                 "icone": "GlassWater"
               },
               {
-                "nom": "Schoonmaak aan huis",
-                "description": "Een zorgvuldig onderhouden interieur bij particulieren: gewoon onderhoud, grote schoonmaak of opfrissing na een gebeurtenis.",
-                "href": "/nettoyage-domicile",
-                "icone": "Home"
+                "nom": "Grote schoonmaak & opknapbeurt",
+                "description": "Een vervuilde woning of pand van boven naar onder weer op peil: ontvetten, ontkalken en ontstoffen om van een gezonde basis te herstarten.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
               },
               {
                 "nom": "Na werken & einde werf",
@@ -363,10 +363,10 @@
                 "icone": "GlassWater"
               },
               {
-                "nom": "Schoonmaak aan huis",
-                "description": "Gewoon onderhoud of grote schoonmaak bij particulieren: de fiche beschrijft de behandelde ruimtes en de mogelijke ritmes.",
-                "href": "/nettoyage-domicile",
-                "icone": "Home"
+                "nom": "Grote schoonmaak & opknapbeurt",
+                "description": "Eenmalige opknapbeurt van een vervuilde plaats, voor particulieren en pros: de fiche beschrijft het verloop en wat wordt behandeld.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
               },
               {
                 "nom": "Na werken & einde werf",
@@ -867,7 +867,8 @@
               "Winkels en panden",
               "Gemeenschappelijke delen / mede-eigendom",
               "Ramen wassen",
-              "Schoonmaak aan huis",
+              "Grote schoonmaak & opknapbeurt",
+              "Na werken / einde werf",
               "Noodinterventie (waterschade)",
               "Andere / ik weet het niet"
             ],
@@ -934,7 +935,8 @@
               "Winkels en panden",
               "Gemeenschappelijke delen / mede-eigendom",
               "Ramen wassen",
-              "Schoonmaak aan huis",
+              "Grote schoonmaak & opknapbeurt",
+              "Na werken / einde werf",
               "Noodinterventie (waterschade)",
               "Andere / ik weet het niet"
             ],
@@ -1455,10 +1457,10 @@
                 "icone": "GlassWater"
               },
               {
-                "nom": "Schoonmaak aan huis",
-                "description": "Wil een bewoner ook zijn woning laten onderhouden? Wij bieden de dienst aan huis aan.",
-                "href": "/nettoyage-domicile",
-                "icone": "Home"
+                "nom": "Grote schoonmaak & opknapbeurt",
+                "description": "Een woning of lokaal van het gebouw grondig op te knappen? Onze grote schoonmaak herstart vanaf een gezonde basis.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
               },
               {
                 "nom": "Noodinterventie",
@@ -1620,10 +1622,10 @@
                 "icone": "Store"
               },
               {
-                "nom": "Schoonmaak aan huis",
-                "description": "Ook thuis veranderen nette ramen de sfeer: voeg ze toe aan een onderhoud van de woning.",
-                "href": "/nettoyage-domicile",
-                "icone": "Home"
+                "nom": "Grote schoonmaak & opknapbeurt",
+                "description": "Nette ramen in een plaats die opnieuw als nieuw moet worden? De grote schoonmaak maakt de opknapbeurt compleet.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
               }
             ],
             "cta": {
@@ -1651,31 +1653,31 @@
       ]
     },
     {
-      "slug": "nettoyage-domicile",
-      "label": "Schoonmaak aan huis",
+      "slug": "grand-nettoyage",
+      "label": "Grote schoonmaak",
       "navHidden": true,
       "meta": {
-        "title": "Schoonmaak aan huis in Charleroi",
-        "description": "Verzorgd onderhoud van uw interieur in Charleroi en Henegouwen: gewone schoonmaak, grote beurt of opfrissing. Gratis en vrijblijvende offerte.",
+        "title": "Grote schoonmaak & opknapbeurt in Charleroi",
+        "description": "Vervuilde woning of pand in Charleroi en Henegouwen: schoonmaak in de diepte van boven naar onder, ontvetten en ontkalken om op een gezonde basis te herstarten. Gratis offerte.",
         "keywords": [
-          "schoonmaak aan huis Charleroi",
-          "huishoudhulp Charleroi",
-          "schoonmaak woning Henegouwen",
-          "grote schoonmaak Charleroi"
+          "grote schoonmaak Charleroi",
+          "dieptereiniging Charleroi",
+          "opknapbeurt Henegouwen",
+          "vervuilde woning schoonmaak Charleroi"
         ]
       },
       "service": {
-        "name": "Schoonmaak aan huis",
-        "description": "Gewoon onderhoud en grote schoonmaak van de woning van particulieren in Charleroi.",
-        "serviceType": "Schoonmaak aan huis"
+        "name": "Grote schoonmaak & opknapbeurt",
+        "description": "Eenmalige dieptereiniging van een vervuilde woning of pand in Charleroi, voor particulieren en professionals.",
+        "serviceType": "Dieptereiniging"
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Bij particulieren",
-            "titre": "Schoonmaak aan huis in Charleroi",
-            "intro": "Thuiskomen in een net interieur, zonder er uw weekend aan te besteden: dat bieden wij particulieren in Charleroi en Henegouwen. Gewoon onderhoud, grote voorjaarsschoonmaak of opfrissing na een gebeurtenis, wij stemmen de dienst af op uw woning en uw ritme.",
+            "eyebrow": "Schoonmaak in de diepte",
+            "titre": "Grote schoonmaak & opknapbeurt in Charleroi",
+            "intro": "Wanneer het gewone onderhoud niet meer volstaat, begint de grote schoonmaak van nul. Een woning die is blijven liggen, een pand dat stoffig werd overgenomen, een sterk vervuilde keuken of sanitair: in Charleroi en Henegouwen brengen wij de plaats ruimte per ruimte weer op peil, zodat ze gezond en opnieuw aangenaam wordt — voor particulieren en professionals.",
             "breadcrumb": [
               {
                 "label": "Home",
@@ -1686,7 +1688,7 @@
                 "href": "/services"
               },
               {
-                "label": "Schoonmaak aan huis"
+                "label": "Grote schoonmaak"
               }
             ],
             "ctaPrimaire": {
@@ -1702,10 +1704,10 @@
         {
           "type": "contenu",
           "content": {
-            "titre": "Uw interieur onderhouden zoals het verdient",
+            "titre": "Een volledige opknapbeurt, ruimte per ruimte",
             "paragraphes": [
-              "Aan huis nemen wij alle leefruimtes voor onze rekening: ontstoffen van oppervlakken en meubels, stofzuigen en dweilen van de vloeren, keuken ontvet en werkbladen gereinigd, badkamer en sanitair ontsmet en ontkalkt. Het resultaat is niet alleen een propere woning, het is tijd en mentale rust die u terugwint voor wat er echt toe doet.",
-              "Wij bieden een regelmatig onderhoud — wekelijks, tweewekelijks of maandelijks — om uw interieur moeiteloos op peil te houden, maar evengoed losse beurten: een grote seizoensschoonmaak, een opfrissing voor of na een feest, of een fris tintje voor de komst van gasten. U kiest of wij met eigen materiaal en producten komen dan wel de uwe gebruiken. In alle gevallen zijn discretie en respect voor uw interieur de regel, en blijft de offerte gratis en duidelijk."
+              "De grote schoonmaak pakt aan wat het gewone onderhoud niet meer bijhoudt. Wij werken van het plafond naar de vloer: bovenkanten van meubels en kasten eerst ontstoft, muren en schakelaars ontvet, plinten en radiatoren hernomen, ramen langs binnen gedaan en vloeren grondig gedweild met een product dat bij de ondergrond past. De gevoelige punten krijgen extra aandacht: keuken ontvet tot aan de dampkap en de fronten, daarna ontkalking van kranen, douche, tegels en sanitair, gevolgd door een ontsmetting.",
+              "Deze dienst is eenmalig: hij brengt een plaats terug naar een gezonde basis om van te herstarten, en vervangt geen terugkerende beurt. Hij richt zich zowel tot een particulier — een appartement teruggekregen na jaren bewoning, een woning op te frissen voor verkoop of verhuur — als tot een professional: een pand dat gesloten bleef, een kantoor of winkel te saneren. De raming hangt af van de oppervlakte, de graad van vervuiling en de aanwezige uitrusting; ze is gratis en wordt opgesteld na beschrijving of een snel plaatsbezoek. Komt de plaats uit een werf, dan neemt onze schoonmaak na werken het over."
             ]
           }
         },
@@ -1713,27 +1715,51 @@
           "type": "services",
           "variant": "grille-icones",
           "content": {
-            "titre": "Wat een beurt omvat",
+            "titre": "Wat een grote schoonmaak omvat",
             "items": [
               {
-                "icone": "Sparkles",
-                "nom": "Leefruimtes",
-                "description": "Ontstoffen, vloeren gestofzuigd en gedweild, oppervlakken afgenomen in woonkamer en slaapkamers."
+                "icone": "ChevronsDown",
+                "nom": "Van boven naar onder",
+                "description": "Plafonds, verlichting, muren en schakelaars behandeld vóór de lagere oppervlakken en de vloeren."
+              },
+              {
+                "icone": "Flame",
+                "nom": "Ontvette keuken",
+                "description": "Werkbladen, fronten, dampkap en toestellen ontdaan van het opgehoopte vet."
               },
               {
                 "icone": "Droplets",
-                "nom": "Keuken en sanitair",
-                "description": "Werkbladen ontvet, gootstenen, badkamer en toilet ontsmet en ontkalkt."
+                "nom": "Ontkalkt sanitair",
+                "description": "Douche, kranen, tegels en toilet ontkalkt en vervolgens ontsmet."
               },
               {
-                "icone": "CalendarCheck",
-                "nom": "In uw ritme",
-                "description": "Regelmatige beurt of eenmalige interventie, naargelang uw noden en beschikbaarheid."
+                "icone": "Sparkles",
+                "nom": "Vloeren & ramen",
+                "description": "Vloeren grondig gedweild volgens de ondergrond, ramen langs binnen hernomen."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "timeline-verticale",
+          "content": {
+            "titre": "Hoe verloopt een grote schoonmaak",
+            "items": [
+              {
+                "icone": "ClipboardList",
+                "titre": "Plaatsbeschrijving",
+                "texte": "Wij meten de oppervlakte en de graad van vervuiling voor een juiste raming, gratis en zonder verplichting."
               },
               {
-                "icone": "ShieldCheck",
-                "nom": "In vertrouwen",
-                "description": "Een discrete en zorgvuldige medewerker, met oog voor uw interieur en uw gewoontes."
+                "icone": "SprayCan",
+                "titre": "Behandeling van boven naar onder",
+                "texte": "Elke ruimte wordt in volgorde hernomen, van plafond tot vloer, vet en kalk inbegrepen."
+              },
+              {
+                "icone": "CheckCheck",
+                "titre": "Eindcontrole",
+                "texte": "Wij lopen alles met u na zodat geen enkel oppervlak blijft liggen voordat wij de plaats teruggeven."
               }
             ]
           }
@@ -1745,16 +1771,16 @@
             "titre": "Veelgestelde vragen",
             "items": [
               {
-                "question": "Kan ik één grote schoonmaak boeken, zonder abonnement?",
-                "reponse": "Ja. Veel klanten bellen ons voor een eenmalige interventie: een grote voorjaarsschoonmaak, een opfrissing voor een feest of na gasten. Geen enkele verbintenis op termijn is vereist."
+                "question": "Vervangt de grote schoonmaak een regelmatig onderhoud?",
+                "reponse": "Nee, dat zijn twee verschillende logica's. De grote schoonmaak is een eenmalige opknapbeurt, ideaal om van een propere basis te herstarten. Daarna neemt een regelmatig onderhoud van uw kantoren, winkel of gebouw het over als u dat wenst."
               },
               {
-                "question": "Moet ik de producten en het materiaal voorzien?",
-                "reponse": "Zoals u verkiest. Wij kunnen volledig uitgerust komen, of uw producten gebruiken als u daaraan houdt. In alle gevallen stemmen wij de producten af op de oppervlakken van uw woning."
+                "question": "Op welke plaatsen komt u tussen?",
+                "reponse": "Zowel een woning van een particulier als een professioneel pand: appartement, huis, kantoor, winkel of een ruimte die gesloten bleef. De methode past zich aan de begintoestand en het soort oppervlakken aan."
               },
               {
-                "question": "Moet ik aanwezig zijn tijdens de interventie?",
-                "reponse": "Dat is niet verplicht. Veel klanten geven ons een afgesproken toegang en vinden hun woning net terug bij hun thuiskomst. Wij geven u een seintje zodra het werk klaar is."
+                "question": "Moet ik de plaats vrijmaken voor uw komst?",
+                "reponse": "Niet noodzakelijk. Een vrije ruimte versnelt het werk, maar wij werken zonder probleem rond de meubels die blijven staan; meld ons enkel de kwetsbare oppervlakken om te beschermen."
               }
             ]
           }
@@ -1767,22 +1793,22 @@
             "titre": "Vaak gecombineerde diensten",
             "items": [
               {
+                "nom": "Na werken & einde werf",
+                "description": "Komt de plaats uit een werf in plaats van een gebrek aan onderhoud? Het bouwstof heeft zijn eigen dienst.",
+                "href": "/nettoyage-apres-travaux",
+                "icone": "HardHat"
+              },
+              {
                 "nom": "Ramen wassen",
-                "description": "Voeg het reinigen van de ramen van uw woning toe om het licht volop terug te winnen.",
+                "description": "Profiteer van de grote schoonmaak voor perfect heldere ramen, binnen en buiten.",
                 "href": "/nettoyage-vitres",
                 "icone": "GlassWater"
               },
               {
-                "nom": "Noodinterventie",
-                "description": "Waterschade bij u thuis? Wij komen snel om te saneren en te herstellen.",
-                "href": "/nettoyage-urgence",
-                "icone": "Droplets"
-              },
-              {
-                "nom": "Mede-eigendommen",
-                "description": "Beheert u ook een gebouw? Ontdek ons onderhoud van de gemeenschappelijke delen.",
-                "href": "/nettoyage-copropriete",
-                "icone": "Building"
+                "nom": "Kantoorschoonmaak",
+                "description": "Een kantoorverdieping te saneren en daarna regelmatig te onderhouden? Wij nemen het over.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
               }
             ],
             "cta": {
@@ -1795,7 +1821,7 @@
           "type": "cta",
           "variant": "encadre",
           "content": {
-            "titre": "Een offerte voor het onderhoud van uw woning?",
+            "titre": "Een grote schoonmaak te plannen in Charleroi?",
             "sousTitre": "Gratis en vrijblijvende offerte. Snel antwoord.",
             "ctaPrimaire": {
               "label": "Vraag een offerte",
@@ -2073,10 +2099,10 @@
             "titre": "Vaak gecombineerde diensten",
             "items": [
               {
-                "nom": "Schoonmaak aan huis",
-                "description": "Zodra de werf is opgekuist, een regelmatig onderhoud om uw interieur week na week onberispelijk te houden.",
-                "href": "/nettoyage-domicile",
-                "icone": "Home"
+                "nom": "Grote schoonmaak & opknapbeurt",
+                "description": "Voorbij de resten van de werf, een volledige opknapbeurt van een plaats die lang zonder onderhoud bleef.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
               },
               {
                 "nom": "Ramen wassen",
