@@ -26,7 +26,8 @@
   "entreprise": {
     "nom": "AB Pro Service",
     "statut": "SRL",
-    "siret": "BE 1013.025.834",
+    "pays": "BE",
+    "siret": "1013.025.834",
     "ape": "81.210",
     "apeLabel": "Gewone reiniging van gebouwen",
     "tva": {
@@ -131,6 +132,12 @@
                 "description": "Een zorgvuldig onderhouden interieur bij particulieren: gewoon onderhoud, grote schoonmaak of opfrissing na een gebeurtenis.",
                 "href": "/nettoyage-domicile",
                 "icone": "Home"
+              },
+              {
+                "nom": "Na werken & einde werf",
+                "description": "Fijn bouwstof, gips, verf en lijm verwijderd na een renovatie of nieuwbouw, voor ruimtes die klaar zijn om te betrekken.",
+                "href": "/nettoyage-apres-travaux",
+                "icone": "HardHat"
               },
               {
                 "nom": "Noodinterventie",
@@ -311,7 +318,7 @@
           "content": {
             "eyebrow": "De catalogus, dienst per dienst",
             "titre": "Alles wat wij onderhouden",
-            "intro": "Deze pagina verzamelt onze zes werkdomeinen. Elke kaart opent een volledige fiche: de betrokken locaties, het verloop van een typische beurt en wat inbegrepen is. Twijfelt u welke dienst u nodig heeft? Het overzicht hieronder wijst de weg, en een telefoontje doet de rest.",
+            "intro": "Deze pagina verzamelt onze zeven werkdomeinen. Elke kaart opent een volledige fiche: de betrokken locaties, het verloop van een typische beurt en wat inbegrepen is. Twijfelt u welke dienst u nodig heeft? Het overzicht hieronder wijst de weg, en een telefoontje doet de rest.",
             "ctaPrimaire": {
               "label": "Vraag een offerte",
               "href": "/devis"
@@ -326,7 +333,7 @@
           "type": "services",
           "variant": "grille-cartes",
           "content": {
-            "eyebrow": "Zes vakgebieden, dezelfde eis",
+            "eyebrow": "Zeven vakgebieden, dezelfde eis",
             "iconColors": true,
             "titre": "Onze diensten in detail",
             "intro": "Elke fiche verduidelijkt voor wie de dienst bedoeld is, hoe een interventie verloopt en wat ze precies dekt.",
@@ -362,6 +369,12 @@
                 "icone": "Home"
               },
               {
+                "nom": "Na werken & einde werf",
+                "description": "Einde werf, renovatie of nieuwbouw: de fiche beschrijft de behandelde resten en het verloop van een opknapbeurt.",
+                "href": "/nettoyage-apres-travaux",
+                "icone": "HardHat"
+              },
+              {
                 "nom": "Noodinterventie",
                 "description": "Waterschade of iets onvoorziens: onze manier om snel en netjes te saneren, per geval geraamd.",
                 "href": "/nettoyage-urgence",
@@ -382,7 +395,7 @@
             "titre": "Welke dienst voor uw situatie?",
             "paragraphes": [
               "Het eerste houvast is de aard van de locatie. Een professionele ruimte — kantoor, winkel, gebouw — vraagt een georganiseerd onderhoud, vaak regelmatig en buiten de drukte gepland: kies naargelang de oppervlakte voor kantoorschoonmaak, winkelonderhoud of de dienst voor mede-eigendommen. Een woning van een particulier valt onder de schoonmaak aan huis.",
-              "Het tweede houvast is de eenmalige behoefte die zich bovenop het gewone onderhoud voordoet. Ramen en etalages te laten blinken? Ramen wassen boekt u apart of voegt u toe aan een contract. Waterschade of een dringende opknapbeurt? De noodinterventie neemt het over, apart geraamd. Bij de minste twijfel: beschrijf ons de locatie, wij verwijzen u meteen naar de juiste formule."
+              "Het tweede houvast is de eenmalige behoefte die zich bovenop het gewone onderhoud voordoet. Ramen en etalages te laten blinken? Ramen wassen boekt u apart of voegt u toe aan een contract. Een werf die afloopt, een renovatie op te leveren? De schoonmaak na werken verwijdert fijn stof en resten voordat u de ruimtes weer betrekt. En bij waterschade of een dringende opknapbeurt neemt de noodinterventie het over, apart geraamd. Bij de minste twijfel: beschrijf ons de locatie, wij verwijzen u meteen naar de juiste formule."
             ]
           }
         },
@@ -1914,6 +1927,189 @@
             "ctaSecondaire": {
               "label": "Schrijf op WhatsApp",
               "href": "https://wa.me/32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-apres-travaux",
+      "label": "Na werken & einde werf",
+      "navHidden": true,
+      "meta": {
+        "title": "Schoonmaak na werken en einde werf in Charleroi",
+        "description": "Na een renovatie of nieuwbouw in Charleroi en Henegouwen: bouwstof, gips, verf en lijm verwijderd om u ruimtes op te leveren die klaar zijn om te betrekken. Gratis offerte.",
+        "keywords": [
+          "schoonmaak na werken Charleroi",
+          "opkuis einde werf Henegouwen",
+          "schoonmaak na renovatie Charleroi",
+          "eindschoonmaak werf Charleroi"
+        ]
+      },
+      "service": {
+        "name": "Schoonmaak na werken en einde werf",
+        "description": "Volledige schoonmaak na een werf, renovatie of nieuwbouw in Charleroi en omgeving.",
+        "serviceType": "Eindschoonmaak van werven"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Einde werf & renovatie",
+            "titre": "Schoonmaak na werken in Charleroi",
+            "intro": "Een afgeronde werf laat altijd zijn sporen na: fijn stof dat zich overal neerzet, verfspatten, resten gips en lijm. Voordat u de ruimtes weer in gebruik neemt, ontdoet AB Pro Service het gebouw van deze werfsporen, in Charleroi en heel Henegouwen, en levert u een nette ruimte op die klaar is om te betrekken.",
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Diensten",
+                "href": "/services"
+              },
+              {
+                "label": "Na werken & einde werf"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Bouwstof pakt u niet aan zoals gewoon stof",
+            "paragraphes": [
+              "Het heeft niets te maken met alledaags stof: werfstof is bijzonder fijn, dringt in de kleinste kier en zet zich meermaals opnieuw af voordat het echt onder controle is. Daarom werken wij van boven naar onder en in meerdere beurten, met aangepast materiaal, in plaats van het stof van het ene oppervlak naar het andere te verplaatsen. Nieuw schrijnwerk, plinten, radiatoren, verluchtingsroosters, bovenkanten van deuren en kasten: elk element wordt één voor één hernomen.",
+              "Dan blijven de klevende resten over. Verfpunten op ramen en vloeren, resten vloerlijm, spatten pleister of gips, vergeten etiketten en beschermfolie: elk type afzetting vraagt zijn eigen methode, gekozen om los te maken zonder een gloednieuw oppervlak te krassen. De ramen krijgen daarna hun transparantie terug en het pas geplaatste sanitair wordt ontkalkt en ontsmet. Wij stemmen ons af op het vertrek van de laatste vakman om op het juiste moment tussen te komen, zonder dat een laatste beurt opnieuw stof achterlaat."
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Wat wij op een werf behandelen",
+            "items": [
+              {
+                "icone": "Wind",
+                "nom": "Fijn stof",
+                "description": "Meervoudige stofafzuiging van vloeren, muren, schrijnwerk en hoeken waar de werfsluier zich neerzet."
+              },
+              {
+                "icone": "Paintbrush",
+                "nom": "Verf & pleister",
+                "description": "Verfpunten, spatten pleister en gips van ramen en vloeren verwijderd zonder de ondergrond te beschadigen."
+              },
+              {
+                "icone": "Scissors",
+                "nom": "Lijm & bescherming",
+                "description": "Lijmresten, plasticfolie en beschermetiketten losgemaakt van de nieuwe oppervlakken."
+              },
+              {
+                "icone": "GlassWater",
+                "nom": "Ramen & sanitair",
+                "description": "Ramen weer helder gemaakt, nieuwe kranen en sanitair ontkalkt en vervolgens ontsmet."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "timeline-verticale",
+          "content": {
+            "titre": "Hoe verloopt een eindschoonmaak van de werf",
+            "items": [
+              {
+                "icone": "ClipboardList",
+                "titre": "Verkenning",
+                "texte": "Wij schatten het volume stof en de aanwezige resten in om het materiaal te bepalen en gratis te ramen."
+              },
+              {
+                "icone": "SprayCan",
+                "titre": "Grondige ontkorsting",
+                "texte": "Afzuiging van de werfsluier, verwijderen van gips-, lijm- en verfvlekken, ontvetten van het schrijnwerk."
+              },
+              {
+                "icone": "CheckCheck",
+                "titre": "Controle en oplevering",
+                "texte": "Ramen, vloeren en sanitair afgewerkt, wij controleren elke ruimte voordat wij u de ruimtes klaar opleveren."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Veelgestelde vragen",
+            "items": [
+              {
+                "question": "Wanneer laat u ons het best op een werf tussenkomen?",
+                "reponse": "Zodra de laatste vakman weg is en het puin afgevoerd. Wij werken op ruimtes die vrij zijn van werfafval; blijft er grofvuil buiten te dragen, laat het ons weten, wij houden er rekening mee in de organisatie en de offerte."
+              },
+              {
+                "question": "Verwijdert u verf- en lijmvlekken op ramen en vloeren?",
+                "reponse": "Ja, dat is de kern van deze dienst. Verfpunten, vloerlijm, opgedroogd gips of beschermfolie: elke rest wordt behandeld met de methode die ze losmaakt zonder een nieuwe ondergrond te beschadigen."
+              },
+              {
+                "question": "Komt u ook tussen op werven van winkels en kantoren?",
+                "reponse": "Uiteraard. Een professionele ruimte die uit de werken komt, valt onder deze dienst: wij verwijderen het fijne stof en de resten voor een opening of heringebruikname in een onberispelijke ruimte."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Om verder te gaan",
+            "titre": "Vaak gecombineerde diensten",
+            "items": [
+              {
+                "nom": "Schoonmaak aan huis",
+                "description": "Zodra de werf is opgekuist, een regelmatig onderhoud om uw interieur week na week onberispelijk te houden.",
+                "href": "/nettoyage-domicile",
+                "icone": "Home"
+              },
+              {
+                "nom": "Ramen wassen",
+                "description": "Werfsluier verwijderd, een volledige ramenwas voor perfect heldere ramen.",
+                "href": "/nettoyage-vitres",
+                "icone": "GlassWater"
+              },
+              {
+                "nom": "Winkels en panden",
+                "description": "Een winkel of pand net ingericht? Wij nemen daarna het regelmatige onderhoud over.",
+                "href": "/nettoyage-commerces",
+                "icone": "Store"
+              }
+            ],
+            "cta": {
+              "label": "Ligt uw werf in ons gebied? Ga het na",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Een werf netjes op te leveren in Charleroi?",
+            "sousTitre": "Geef ons de oppervlakte en de einddatum van de werken: gratis offerte, interventie afgestemd op uw oplevering.",
+            "ctaPrimaire": {
+              "label": "Vraag een offerte",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
             }
           }
         }

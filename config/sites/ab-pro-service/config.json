@@ -40,7 +40,8 @@
   "entreprise": {
     "nom": "AB Pro Service",
     "statut": "SRL",
-    "siret": "BE 1013.025.834",
+    "pays": "BE",
+    "siret": "1013.025.834",
     "ape": "81.210",
     "apeLabel": "Nettoyage courant des bâtiments",
     "tva": {
@@ -153,6 +154,12 @@
                 "description": "Un intérieur entretenu avec soin chez les particuliers : entretien courant, grand nettoyage ou remise au propre après un événement.",
                 "href": "/nettoyage-domicile",
                 "icone": "Home"
+              },
+              {
+                "nom": "Après travaux & fin de chantier",
+                "description": "Poussière fine, plâtre, peinture et colle retirés après une rénovation ou une construction, pour des lieux prêts à occuper.",
+                "href": "/nettoyage-apres-travaux",
+                "icone": "HardHat"
               },
               {
                 "nom": "Intervention d'urgence",
@@ -333,7 +340,7 @@
           "content": {
             "eyebrow": "Le catalogue, prestation par prestation",
             "titre": "Tout ce que nous entretenons",
-            "intro": "Cette page réunit nos six domaines d'intervention. Chaque carte ouvre une fiche complète : les lieux concernés, le déroulé d'un passage type et ce qui est inclus. Un doute sur la prestation qui vous convient ? Le repère plus bas vous aiguille, et un appel lève le reste.",
+            "intro": "Cette page réunit nos sept domaines d'intervention. Chaque carte ouvre une fiche complète : les lieux concernés, le déroulé d'un passage type et ce qui est inclus. Un doute sur la prestation qui vous convient ? Le repère plus bas vous aiguille, et un appel lève le reste.",
             "ctaPrimaire": {
               "label": "Demander un devis",
               "href": "/devis"
@@ -348,7 +355,7 @@
           "type": "services",
           "variant": "grille-cartes",
           "content": {
-            "eyebrow": "Six métiers, une même exigence",
+            "eyebrow": "Sept métiers, une même exigence",
             "iconColors": true,
             "titre": "Nos prestations en détail",
             "intro": "Chaque fiche précise à qui s'adresse la prestation, comment se passe une intervention et ce qu'elle couvre exactement.",
@@ -384,6 +391,12 @@
                 "icone": "Home"
               },
               {
+                "nom": "Après travaux & fin de chantier",
+                "description": "Fin de chantier, rénovation ou construction neuve : la fiche détaille les résidus traités et le déroulé d'une remise au propre.",
+                "href": "/nettoyage-apres-travaux",
+                "icone": "HardHat"
+              },
+              {
                 "nom": "Intervention d'urgence",
                 "description": "Dégât des eaux ou imprévu : notre manière d'assainir vite et proprement, chiffrée au cas par cas.",
                 "href": "/nettoyage-urgence",
@@ -404,7 +417,7 @@
             "titre": "Quelle prestation pour votre situation ?",
             "paragraphes": [
               "Le premier repère, c'est la nature du lieu. Un espace professionnel — bureau, commerce, immeuble — appelle un entretien organisé, souvent régulier et calé en dehors de l'affluence : selon les surfaces, orientez-vous vers le nettoyage de bureaux, l'entretien de commerces ou la prestation copropriété. Un logement de particulier relève, lui, du nettoyage à domicile.",
-              "Le deuxième repère, c'est le besoin ponctuel qui se greffe sur l'entretien courant. Des vitres et devantures à faire briller ? Le lavage de vitres se réserve seul ou s'ajoute à un contrat. Un dégât des eaux ou une remise en état pressante ? L'intervention d'urgence prend le relais, chiffrée à part. Au moindre doute, décrivez-nous les lieux : nous vous orientons sans détour vers la bonne formule."
+              "Le deuxième repère, c'est le besoin ponctuel qui se greffe sur l'entretien courant. Des vitres et devantures à faire briller ? Le lavage de vitres se réserve seul ou s'ajoute à un contrat. Un chantier qui s'achève, une rénovation à réceptionner ? Le nettoyage après travaux retire poussière fine et résidus avant que vous ne repreniez les lieux. Et pour un dégât des eaux ou une remise en état pressante, l'intervention d'urgence prend le relais, chiffrée à part. Au moindre doute, décrivez-nous les lieux : nous vous orientons sans détour vers la bonne formule."
             ]
           }
         },
@@ -1936,6 +1949,189 @@
             "ctaSecondaire": {
               "label": "Écrire sur WhatsApp",
               "href": "https://wa.me/32492683823"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-apres-travaux",
+      "label": "Après travaux & fin de chantier",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage après travaux et fin de chantier à Charleroi",
+        "description": "Après une rénovation ou une construction à Charleroi et en Hainaut : poussière de chantier, plâtre, peinture et colle retirés pour vous livrer des lieux prêts à occuper. Devis gratuit.",
+        "keywords": [
+          "nettoyage après travaux Charleroi",
+          "nettoyage fin de chantier Hainaut",
+          "nettoyage après rénovation Charleroi",
+          "nettoyage fin de chantier Charleroi"
+        ]
+      },
+      "service": {
+        "name": "Nettoyage après travaux et fin de chantier",
+        "description": "Nettoyage complet après un chantier, une rénovation ou une construction neuve à Charleroi et alentour.",
+        "serviceType": "Nettoyage de fin de chantier"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Fin de chantier & rénovation",
+            "titre": "Nettoyage après travaux à Charleroi",
+            "intro": "Un chantier terminé laisse toujours sa trace : une poussière fine qui se dépose partout, des projections de peinture, des résidus de plâtre et de colle. Avant que vous ne repreniez les lieux, AB Pro Service débarrasse le bâtiment de ces marques de chantier, à Charleroi et dans tout le Hainaut, pour vous remettre un espace net et prêt à vivre.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Après travaux & fin de chantier"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "La poussière de chantier ne se traite pas comme les autres",
+            "paragraphes": [
+              "Rien à voir avec la poussière du quotidien : celle d'un chantier est très fine, elle s'insinue dans le moindre interstice et se redépose plusieurs fois avant d'être vraiment maîtrisée. Nous procédons donc de haut en bas et en plusieurs passes, avec un matériel adapté, plutôt que de la déplacer d'une surface à l'autre. Menuiseries neuves, plinthes, radiateurs, grilles d'aération, dessus de portes et d'armoires : chaque élément est repris un à un.",
+              "Restent les dépôts qui accrochent. Éclaboussures de peinture sur les vitrages et au sol, colle de revêtement, gouttes d'enduit ou de plâtre, adhésifs et bâches de protection laissés en place : à chaque matière sa technique, pensée pour décoller sans griffer un support neuf. Les vitrages redeviennent limpides et les sanitaires tout juste posés sont détartrés puis assainis. Nous calons notre venue sur le départ du dernier artisan, afin d'agir au moment précis où plus aucun passage ne viendra ressemer de la poussière."
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Ce que nous traitons sur un chantier",
+            "items": [
+              {
+                "icone": "Wind",
+                "nom": "Poussière fine",
+                "description": "Aspiration en plusieurs passes des sols, murs, menuiseries et recoins où le voile de chantier se dépose."
+              },
+              {
+                "icone": "Paintbrush",
+                "nom": "Peinture & enduits",
+                "description": "Points de peinture, projections d'enduit et de plâtre retirés des vitres et des sols sans marquer les supports."
+              },
+              {
+                "icone": "Scissors",
+                "nom": "Colle & protections",
+                "description": "Traces de colle, films plastiques et étiquettes de protection décollés des surfaces neuves."
+              },
+              {
+                "icone": "GlassWater",
+                "nom": "Vitres & sanitaires",
+                "description": "Vitrages rendus limpides, robinetterie et sanitaires neufs détartrés puis désinfectés."
+              }
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "timeline-verticale",
+          "content": {
+            "titre": "Comment se déroule un nettoyage de fin de chantier",
+            "items": [
+              {
+                "icone": "ClipboardList",
+                "titre": "Repérage",
+                "texte": "Nous estimons la quantité de poussière et les dépôts en présence afin d'ajuster l'équipement et de remettre un chiffrage gratuit."
+              },
+              {
+                "icone": "SprayCan",
+                "titre": "Décapage en profondeur",
+                "texte": "Aspiration du voile de chantier, élimination des projections de plâtre, de colle et de peinture, dépoussiérage des menuiseries neuves."
+              },
+              {
+                "icone": "CheckCheck",
+                "titre": "Contrôle et remise",
+                "texte": "Vitres, sols et sanitaires finalisés, nous vérifions chaque pièce avant de vous livrer des lieux prêts à occuper."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "À quel moment faut-il vous faire intervenir sur un chantier ?",
+                "reponse": "Une fois le dernier artisan parti et les gravats évacués. Nous intervenons dans des locaux débarrassés de tout déchet de chantier ; s'il reste des encombrants à évacuer, prévenez-nous, nous l'intégrons à l'organisation et au devis."
+              },
+              {
+                "question": "Faites-vous partir la peinture et la colle sur les vitrages et au sol ?",
+                "reponse": "Oui, c'est le cœur du travail. Gouttes de peinture, colle de revêtement, plâtre durci ou adhésif de protection : chacun reçoit le traitement qui le fait céder sans agresser une surface neuve."
+              },
+              {
+                "question": "Intervenez-vous aussi sur les chantiers de commerces et de bureaux ?",
+                "reponse": "Bien sûr. Un local professionnel fraîchement rénové entre dans ce cadre : nous chassons le voile de poussière et les dépôts pour rouvrir ou reprendre l'activité dans un espace irréprochable."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations souvent associées",
+            "items": [
+              {
+                "nom": "Nettoyage à domicile",
+                "description": "Une fois le chantier nettoyé, un entretien régulier pour garder votre intérieur impeccable au fil des semaines.",
+                "href": "/nettoyage-domicile",
+                "icone": "Home"
+              },
+              {
+                "nom": "Lavage de vitres",
+                "description": "Le voile de chantier retiré, un lavage de vitres complet pour retrouver des vitrages parfaitement transparents.",
+                "href": "/nettoyage-vitres",
+                "icone": "GlassWater"
+              },
+              {
+                "nom": "Commerces et locaux",
+                "description": "Un commerce ou un local fraîchement aménagé ? Nous prenons ensuite le relais de l'entretien régulier.",
+                "href": "/nettoyage-commerces",
+                "icone": "Store"
+              }
+            ],
+            "cta": {
+              "label": "Votre chantier est-il dans notre zone ? Vérifier",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Un chantier à livrer propre à Charleroi ?",
+            "sousTitre": "Indiquez-nous les surfaces et la date à laquelle le chantier se termine : devis gratuit, intervention calée sur votre livraison.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+32 492 68 38 23",
+              "href": "tel:+32492683823"
             }
           }
         }
