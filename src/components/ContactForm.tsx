@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { CheckCircle2, Loader2, Phone, MessageCircle } from "lucide-react";
+import { CheckCircle2, ChevronDown, Loader2, Phone, MessageCircle } from "lucide-react";
 import { contactSchema, type ContactInput, type ContactMode } from "@/lib/contact-schema";
 import type { UIStrings } from "@/i18n/ui";
 import { cn, telHref, waHref } from "@/lib/utils";
@@ -12,9 +12,28 @@ import { Button } from "@/components/ui/Button";
 import { Turnstile } from "@/components/ui/Turnstile";
 
 const labelClass = "block text-sm font-medium text-ink-soft";
-const inputClass =
-  "mt-1.5 w-full min-w-0 rounded-xl border border-border bg-surface px-4 py-2.5 text-sm text-ink shadow-sm outline-none transition-colors placeholder:text-muted-2 focus:border-brand-300 focus:ring-2 focus:ring-brand-100";
+const fieldClass =
+  "w-full min-w-0 rounded-xl border border-border bg-surface px-4 py-2.5 text-sm text-ink shadow-sm outline-none transition-colors placeholder:text-muted-2 focus:border-brand-300 focus:ring-2 focus:ring-brand-100";
+const inputClass = cn("mt-1.5", fieldClass);
+/** WebKit (Safari iOS) ignore le padding vertical d'un `<select>` laissé en
+ *  rendu natif (`menulist`) : le champ s'écrase et paraît plus fin que les
+ *  inputs voisins, alors que Blink (Chrome/Android) l'honore. On neutralise le
+ *  rendu natif — le chevron est alors dessiné par `SelectShell`. */
+const selectClass = cn(fieldClass, "appearance-none pr-10");
 const errorClass = "mt-1 text-xs font-medium text-red-500";
+
+/** Enveloppe un `<select>` en `appearance-none` pour lui redonner son chevron. */
+function SelectShell({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="relative mt-1.5">
+      {children}
+      <ChevronDown
+        aria-hidden
+        className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-2"
+      />
+    </div>
+  );
+}
 
 export interface ContactFormProps {
   mode?: ContactMode;
@@ -53,7 +72,6 @@ export function ContactForm({
   const [serverError, setServerError] = useState<string | null>(null);
   const [turnstileToken, setTurnstileToken] = useState<string>("");
 
-  const showEmail = mode === "simple" || mode === "contact" || mode === "devis";
   const showPhone = mode !== "simple";
   const showService = (mode === "demande-intervention" || mode === "devis") && !!services?.length;
   const showCity = mode === "devis" && !!villes?.length;
@@ -175,36 +193,41 @@ export function ContactForm({
           </div>
         )}
 
-        {showEmail && (
-          <div className={showPhone ? "" : "sm:col-span-2"}>
-            <label htmlFor="cf-email" className={labelClass}>
-              {s.emailLabel} {mode === "simple" || mode === "contact" ? "*" : ""}
-            </label>
-            <input
-              id="cf-email"
-              type="email"
-              className={inputClass}
-              placeholder={s.emailPlaceholder}
-              {...register("email")}
-            />
-            {errors.email && <p className={errorClass}>{errors.email.message}</p>}
-          </div>
-        )}
+        {/* L'email est proposé dans TOUS les modes, mais n'est requis qu'en
+            `simple`/`contact` : ailleurs c'est le téléphone qui l'est (cf. le
+            superRefine de `contactSchema`). Sans ce champ, les sites dont le CTA
+            « Demander un devis » retombe sur `/contact` (mode
+            `demande-intervention`, faute de page `/devis`) ne captaient aucun email. */}
+        <div className={showPhone ? "" : "sm:col-span-2"}>
+          <label htmlFor="cf-email" className={labelClass}>
+            {s.emailLabel} {mode === "simple" || mode === "contact" ? "*" : ""}
+          </label>
+          <input
+            id="cf-email"
+            type="email"
+            className={inputClass}
+            placeholder={s.emailPlaceholder}
+            {...register("email")}
+          />
+          {errors.email && <p className={errorClass}>{errors.email.message}</p>}
+        </div>
 
         {showCity && (
           <div>
             <label htmlFor="cf-city" className={labelClass}>
               {s.cityLabel}
             </label>
-            <select id="cf-city" className={inputClass} defaultValue="" {...register("city")}>
-              <option value="">{s.cityPlaceholder}</option>
-              {villes!.map((c) => (
-                <option key={c} value={c}>
-                  {c}
-                </option>
-              ))}
-              <option value="Autre commune">{s.otherCity}</option>
-            </select>
+            <SelectShell>
+              <select id="cf-city" className={selectClass} defaultValue="" {...register("city")}>
+                <option value="">{s.cityPlaceholder}</option>
+                {villes!.map((c) => (
+                  <option key={c} value={c}>
+                    {c}
+                  </option>
+                ))}
+                <option value="Autre commune">{s.otherCity}</option>
+              </select>
+            </SelectShell>
           </div>
         )}
 
@@ -213,14 +236,16 @@ export function ContactForm({
             <label htmlFor="cf-service" className={labelClass}>
               {s.serviceLabel}
             </label>
-            <select id="cf-service" className={inputClass} defaultValue="" {...register("service")}>
-              <option value="">{s.servicePlaceholder}</option>
-              {services!.map((s) => (
-                <option key={s} value={s}>
-                  {s}
-                </option>
-              ))}
-            </select>
+            <SelectShell>
+              <select id="cf-service" className={selectClass} defaultValue="" {...register("service")}>
+                <option value="">{s.servicePlaceholder}</option>
+                {services!.map((svc) => (
+                  <option key={svc} value={svc}>
+                    {svc}
+                  </option>
+                ))}
+              </select>
+            </SelectShell>
           </div>
         )}
 
