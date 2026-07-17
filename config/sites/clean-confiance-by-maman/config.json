@@ -31,7 +31,7 @@
     },
     {
       "platform": "whatsapp",
-      "url": "https://wa.me/33759848031"
+      "url": "https://wa.me/33758588277"
     }
   ],
   "entreprise": {
@@ -54,8 +54,8 @@
     "lng": -0.6386
   },
   "meta": {
-    "title": "Ménage & nettoyage à Blanquefort, dès 15 €/h",
-    "description": "Ménage régulier, vitres, grand ménage et remise en état à Blanquefort et 20 km autour. Ménage à domicile deux fois moins cher grâce au crédit d'impôt. Devis gratuit.",
+    "title": "Ménage & nettoyage à Blanquefort, dès 17,50 €/h",
+    "description": "Ménage régulier, vitres, grand ménage et remise en état à Blanquefort et 20 km autour. Deux fois moins cher grâce au crédit d'impôt. Devis gratuit.",
     "keywords": [
       "ménage Blanquefort",
       "femme de ménage Blanquefort",
@@ -87,10 +87,10 @@
             "imageRatio": "4/5",
             "card": {
               "label": "Ménage à domicile",
-              "prix": "15 €",
+              "prix": "17,50 €",
               "unite": "/ heure",
               "mention": "après crédit d'impôt de 50 %",
-              "prixBarre": "30 €/h",
+              "prixBarre": "35 €/h",
               "points": [
                 "Devis gratuit et sans engagement",
                 "Produits et matériel fournis",
@@ -132,7 +132,7 @@
                 "icone": "Home",
                 "nom": "Ménage à domicile",
                 "description": "Entretien régulier ou ponctuel de la maison et de l'appartement, avec le repassage en option. La prestation qui vous rend du temps.",
-                "priceHint": "dès 30 €/h · net 15 €/h",
+                "priceHint": "dès 35 €/h · net 17,50 €/h",
                 "badge": "Crédit d'impôt 50 %",
                 "href": "/menage-domicile"
               },
@@ -140,7 +140,7 @@
                 "icone": "Sun",
                 "nom": "Grand ménage",
                 "description": "Le grand nettoyage de printemps ou de fond : on décrasse ce que l'entretien courant ne touche jamais, pièce par pièce.",
-                "priceHint": "sur devis · base 30 €/h",
+                "priceHint": "sur devis · base 35 €/h",
                 "badge": "Crédit d'impôt 50 %",
                 "href": "/grand-menage"
               },
@@ -217,7 +217,7 @@
             "titre": "Votre ménage, moitié moins cher",
             "argumentaireTitre": "Le crédit d'impôt,",
             "argumentaireAccent": "sans prise de tête",
-            "argumentaire": "Confier son ménage à une intervenante à domicile donne droit, chaque année, à un crédit d'impôt égal à la moitié de la dépense. En clair, une heure payée 30 € ne pèse que 15 € sur votre budget, que vous soyez imposable ou non.",
+            "argumentaire": "Confier son ménage à une intervenante à domicile donne droit, chaque année, à un crédit d'impôt égal à la moitié de la dépense. En clair, une heure payée 35 € ne pèse que 17,50 € sur votre budget, que vous soyez imposable ou non.",
             "points": [
               "50 % du montant réglé vous est rendu",
               "Jusqu'à 12 000 € de dépenses par an",
@@ -231,8 +231,8 @@
             "max": 15,
             "step": 1,
             "defaut": 3,
-            "prixPlein": 30,
-            "prixNet": 15,
+            "prixPlein": 35,
+            "prixNet": 17.5,
             "facteurMensuel": 4.33,
             "plafondAnnuel": 12000,
             "note": "Estimation indicative. L'avantage fiscal de moitié s'applique aux interventions faites chez vous, retenues jusqu'à 12 000 € de dépenses annuelles, selon la réglementation applicable.",
@@ -336,7 +336,7 @@
             },
             "lien": {
               "label": "ou écrivez-moi sur WhatsApp →",
-              "href": "https://wa.me/33759848031"
+              "href": "https://wa.me/33758588277"
             }
           }
         }
@@ -347,7 +347,7 @@
       "label": "Prestations",
       "meta": {
         "title": "Prestations de ménage & nettoyage à Blanquefort",
-        "description": "Ménage à domicile, grand ménage, vitres, remise en état, bureaux et débarras Diogène : découvrez toutes les prestations de Clean & Confiance by Maman à Blanquefort."
+        "description": "Ménage à domicile, grand ménage, vitres, remise en état, bureaux et débarras Diogène : toutes nos prestations à Blanquefort et jusqu'à 20 km autour."
       },
       "blocks": [
         {
@@ -369,7 +369,7 @@
                 "icone": "Home",
                 "nom": "Ménage à domicile",
                 "description": "Entretien régulier ou ponctuel, repassage inclus en option. Le confort d'un intérieur toujours net.",
-                "priceHint": "dès 30 €/h · net 15 €/h",
+                "priceHint": "dès 35 €/h · net 17,50 €/h",
                 "badge": "Crédit d'impôt 50 %",
                 "href": "/menage-domicile"
               },
@@ -377,7 +377,7 @@
                 "icone": "Sun",
                 "nom": "Grand ménage",
                 "description": "Nettoyage de fond, de printemps ou avant réception : on remet tout à neuf, du haut des placards aux plinthes.",
-                "priceHint": "sur devis · base 30 €/h",
+                "priceHint": "sur devis · base 35 €/h",
                 "badge": "Crédit d'impôt 50 %",
                 "href": "/grand-menage"
               },
@@ -452,11 +452,11 @@
         "name": "Ménage à domicile",
         "description": "Entretien régulier ou ponctuel de la maison et de l'appartement, repassage en option, à Blanquefort et alentours.",
         "serviceType": "Ménage à domicile",
-        "priceFrom": 30
+        "priceFrom": 35
       },
       "meta": {
-        "title": "Ménage à domicile à Blanquefort, dès 15 €/h net",
-        "description": "Entretien régulier ou ponctuel de votre maison ou appartement à Blanquefort, repassage inclus en option. Comptez 30 €/h, ramenés à 15 €/h avec le crédit d'impôt."
+        "title": "Ménage à domicile à Blanquefort, dès 17,50 €/h net",
+        "description": "Entretien régulier ou ponctuel de votre maison à Blanquefort, repassage en option. Comptez 35 €/h, ramenés à 17,50 €/h avec le crédit d'impôt."
       },
       "blocks": [
         {
@@ -553,7 +553,7 @@
           "type": "cta",
           "content": {
             "titre": "Prêt à souffler un peu ?",
-            "sousTitre": "Ménage à domicile à 30 €/h, ramené à 15 €/h une fois l'avantage fiscal appliqué.",
+            "sousTitre": "Ménage à domicile à 35 €/h, ramené à 17,50 €/h une fois l'avantage fiscal appliqué.",
             "ctaPrimaire": {
               "label": "Obtenir mon devis",
               "href": "/contact"
@@ -578,7 +578,7 @@
       },
       "meta": {
         "title": "Grand ménage & nettoyage de printemps à Blanquefort",
-        "description": "Nettoyage de fond de la maison à Blanquefort : placards, plinthes, portes, électroménager, recoins oubliés. Éligible au crédit d'impôt de 50 %. Devis gratuit."
+        "description": "Nettoyage de fond de la maison à Blanquefort : placards, plinthes, portes, électroménager, recoins oubliés. Crédit d'impôt de 50 %. Devis gratuit."
       },
       "blocks": [
         {
@@ -619,7 +619,7 @@
             "paragraphes": [
               "Le grand ménage s'attaque à tout ce que l'on repousse d'une semaine sur l'autre. On dépoussière le haut des armoires et des cadres, on nettoie l'intérieur et l'extérieur des placards, on dégraisse la hotte et le four, on détartre la robinetterie et les joints, on lessive les portes, les plinthes et les interrupteurs.",
               "C'est la prestation idéale au changement de saison, avant une fête de famille, après une longue absence ou pour repartir sur des bases saines. On peut la mener en une fois sur une grande journée, ou pièce par pièce sur plusieurs passages si vous préférez lisser l'effort.",
-              "Chaque grand ménage est chiffré sur devis, sur une base horaire de 30 €, car le temps à prévoir varie selon la superficie et le degré d'encrassement. Comme il se déroule chez vous, cet entretien entre dans le champ du crédit d'impôt de 50 %."
+              "Chaque grand ménage est chiffré sur devis, sur une base horaire de 35 €, car le temps à prévoir varie selon la superficie et le degré d'encrassement. Comme il se déroule chez vous, cet entretien entre dans le champ du crédit d'impôt de 50 %."
             ]
           }
         },
@@ -1046,7 +1046,7 @@
             },
             "lien": {
               "label": "ou par WhatsApp, en privé →",
-              "href": "https://wa.me/33759848031"
+              "href": "https://wa.me/33758588277"
             }
           }
         }
@@ -1057,7 +1057,7 @@
       "label": "Tarifs",
       "meta": {
         "title": "Tarifs ménage & nettoyage à Blanquefort",
-        "description": "Les tarifs de départ de Clean & Confiance by Maman à Blanquefort : ménage dès 30 €/h (15 €/h net), vitres dès 90 €, remise en état dès 250 €. Devis gratuit."
+        "description": "Tarifs de départ à Blanquefort : ménage dès 35 €/h (17,50 €/h net), vitres dès 90 €, remise en état dès 250 €. Devis gratuit et sans engagement."
       },
       "blocks": [
         {
@@ -1076,9 +1076,9 @@
             "items": [
               {
                 "nom": "Ménage à domicile",
-                "prix": 30,
+                "prix": 35,
                 "unite": "/ h",
-                "description": "Régulier ou ponctuel, repassage en option. Soit 15 €/h après crédit d'impôt.",
+                "description": "Régulier ou ponctuel, repassage en option. Soit 17,50 €/h après crédit d'impôt.",
                 "populaire": true,
                 "inclus": [
                   "Sols, poussières, surfaces",
@@ -1089,7 +1089,7 @@
               {
                 "nom": "Grand ménage",
                 "prix": "Sur devis",
-                "unite": "base 30 €/h",
+                "unite": "base 35 €/h",
                 "description": "Nettoyage de fond, pièce par pièce, placards et électroménager compris."
               },
               {
@@ -1152,7 +1152,7 @@
       "label": "Crédit d'impôt 50 %",
       "meta": {
         "title": "Crédit d'impôt de 50 % sur votre ménage",
-        "description": "Le ménage à domicile à Blanquefort ouvre droit à un crédit d'impôt de 50 % : 30 €/h reviennent à 15 €/h. Fonctionnement, plafond de 12 000 € et conditions expliqués."
+        "description": "Le ménage à domicile à Blanquefort ouvre droit à 50 % de crédit d'impôt : 35 €/h reviennent à 17,50 €/h. Fonctionnement, plafond et conditions expliqués."
       },
       "blocks": [
         {
@@ -1166,9 +1166,9 @@
         {
           "type": "contenu",
           "content": {
-            "titre": "Comment 30 € deviennent 15 €",
+            "titre": "Comment 35 € deviennent 17,50 €",
             "paragraphes": [
-              "Le ménage, le repassage et l'entretien courant effectués chez vous font partie des services à la personne : à ce titre, ils vous font bénéficier d'un crédit d'impôt qui vous rend la moitié de ce que vous réglez. Une heure facturée 30 € ne vous coûte donc, au final, que 15 €.",
+              "Le ménage, le repassage et l'entretien courant effectués chez vous font partie des services à la personne : à ce titre, ils vous font bénéficier d'un crédit d'impôt qui vous rend la moitié de ce que vous réglez. Une heure facturée 35 € ne vous coûte donc, au final, que 17,50 €.",
               "Bonne nouvelle : c'est bien un crédit d'impôt, pas une simple réduction. Vous en profitez que vous soyez imposable ou non ; dans ce dernier cas, la somme vous est remboursée par l'administration fiscale. Le plafond des dépenses est de 12 000 € par an, majoré dans certaines situations familiales.",
               "Chaque année, je vous remets une attestation fiscale récapitulant les sommes versées : il vous suffit de les reporter sur votre déclaration de revenus. Rien de plus à faire. Cet avantage concerne les prestations réalisées à votre domicile de particulier ; il ne s'applique pas aux locaux professionnels ni aux prestations de débarras."
             ]
@@ -1194,8 +1194,8 @@
             "max": 15,
             "step": 1,
             "defaut": 4,
-            "prixPlein": 30,
-            "prixNet": 15,
+            "prixPlein": 35,
+            "prixNet": 17.5,
             "facteurMensuel": 4.33,
             "plafondAnnuel": 12000,
             "note": "Simulation indicative, hors situations particulières. L'avantage réel dépend de votre situation et du plafond annuel de 12 000 €, selon la réglementation en vigueur.",
@@ -1251,7 +1251,7 @@
       "label": "Zone d'intervention",
       "meta": {
         "title": "Zone d'intervention autour de Blanquefort",
-        "description": "Clean & Confiance by Maman intervient à Blanquefort et jusqu'à 20 km : Médoc (Le Taillan, Parempuyre, Ludon) et métropole bordelaise (Bordeaux, Bruges, Eysines)."
+        "description": "Intervention à Blanquefort et jusqu'à 20 km : Médoc (Le Taillan, Parempuyre, Ludon) et métropole bordelaise (Bordeaux, Bruges, Eysines, Mérignac)."
       },
       "blocks": [
         {
@@ -1333,7 +1333,7 @@
       "label": "À propos",
       "meta": {
         "title": "À propos de Clean & Confiance by Maman",
-        "description": "Micro-entreprise de ménage et nettoyage basée à Blanquefort, Clean & Confiance by Maman entretient maisons, appartements et locaux avec sérieux, soin et discrétion."
+        "description": "Micro-entreprise de ménage basée à Blanquefort, Clean & Confiance by Maman entretient maisons, appartements et locaux avec soin et discrétion."
       },
       "blocks": [
         {
@@ -1410,7 +1410,7 @@
       "navHidden": true,
       "meta": {
         "title": "Contact & devis gratuit à Blanquefort",
-        "description": "Contactez Clean & Confiance by Maman à Blanquefort pour un devis gratuit de ménage ou de nettoyage : téléphone, WhatsApp ou formulaire. Réponse rapide, sans engagement."
+        "description": "Demandez un devis gratuit de ménage ou de nettoyage à Blanquefort : par téléphone, WhatsApp ou via le formulaire. Réponse rapide, sans engagement."
       },
       "blocks": [
         {
@@ -1427,9 +1427,9 @@
           "content": {
             "titre": "Demander un devis gratuit",
             "intro": "Décrivez-moi votre logement ou votre local et ce dont vous avez besoin. Je reviens vers vous avec une proposition claire.",
-            "telephone": "07 59 84 80 31",
+            "telephone": "+33 7 58 58 82 77",
             "email": "contact@cleanconfiancebymaman.fr",
-            "whatsapp": "33759848031",
+            "whatsapp": "33758588277",
             "adresse": "51 Rue de Maurian, 33290 Blanquefort",
             "horaires": [
               { "jour": "Lundi au samedi", "heures": "7 h – 22 h" },
