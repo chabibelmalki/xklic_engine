@@ -263,7 +263,7 @@
             "adresse": "1 boulevard Charles Gallet, 42120 Le Coteau",
             "horaires": [
               {
-                "jour": "Lundi – Samedi",
+                "jour": "Lundi – Vendredi",
                 "heures": "9h00 – 12h30 · 14h00 – 18h00"
               }
             ],
@@ -947,7 +947,7 @@
             "adresse": "1 boulevard Charles Gallet, 42120 Le Coteau",
             "horaires": [
               {
-                "jour": "Lundi – Samedi",
+                "jour": "Lundi – Vendredi",
                 "heures": "9h00 – 12h30 · 14h00 – 18h00"
               }
             ],
