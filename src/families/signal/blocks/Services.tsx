@@ -26,11 +26,15 @@ export function Services({ block, basePath = "", tone, strings }: BlockComponent
         <div className="mt-12 grid gap-px overflow-hidden border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
           {c.items.map((s, i) => {
             const feature = i === 0;
-            // Tuile vedette de FIN : on élargit la dernière cellule à 2 colonnes
-            // UNIQUEMENT quand cela remplit exactement la grille lg (3 col) — la
-            // vedette de tête compte pour 2, donc (n + 2) doit être multiple de 3.
-            // Les grilles courtes (« prestations liées » à 3 items) restent uniformes.
-            const wideLast = i > 0 && i === c.items.length - 1 && (c.items.length + 2) % 3 === 0;
+            // Tuile de FIN élargie à 2 colonnes quand la grille lg (3 col) ne finit
+            // pas déjà sur une ligne pleine (la vedette de tête compte pour 2) — évite
+            // une tuile orpheline isolée (ex. 9 items). Réservé aux grandes grilles :
+            // les « prestations liées » (3 items) gardent leur rendu.
+            const wideLast =
+              i > 0 &&
+              i === c.items.length - 1 &&
+              c.items.length >= 5 &&
+              (c.items.length + 1) % 3 !== 0;
             const big = feature || wideLast;
             const inner = (
               <>

@@ -35,6 +35,13 @@
     "lat": 47.2735,
     "lng": -2.2135
   },
+  "social": [
+    {
+      "platform": "google",
+      "url": "https://www.google.com/maps/place/?q=place_id:ChIJCUqOiGhpBUgRSKTFezTepBQ"
+    }
+  ],
+  "googleReviewUrl": "https://g.page/r/CUikxXs03qQUEAI/review",
   "meta": {
     "title": "Nettoyage professionnel à Saint-Nazaire",
     "description": "Bureaux, cabinets médicaux, fin de chantier, vitres, moquettes et parties communes : nettoyage pro à Saint-Nazaire et 30 km autour. Devis gratuit, 7j/7.",
@@ -113,7 +120,7 @@
           "variant": "bento",
           "content": {
             "eyebrow": "Nos prestations",
-            "titre": "Huit spécialités, un seul interlocuteur",
+            "titre": "Neuf spécialités, un seul interlocuteur",
             "intro": "Chez les particuliers comme chez les professionnels, du ménage à domicile régulier à l'entretien des communs : chaque prestation a sa méthode, son matériel et sa fiche dédiée. Ouvrez celle qui correspond à votre besoin.",
             "items": [
               {
@@ -163,6 +170,12 @@
                 "description": "Halls, escaliers, ascenseurs et locaux techniques : un passage régulier qui valorise l'immeuble et rassure les occupants.",
                 "href": "/parties-communes",
                 "icone": "Building"
+              },
+              {
+                "nom": "Traitement de moisissure",
+                "description": "Murs, plafonds et joints envahis par les moisissures, fréquents avec l'humidité du littoral : on nettoie, on traite et on assainit les surfaces atteintes.",
+                "href": "/traitement-moisissure",
+                "icone": "Droplets"
               }
             ],
             "cta": {
@@ -314,7 +327,7 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "Le catalogue, fiche par fiche",
-            "titre": "Huit prestations, huit fiches détaillées",
+            "titre": "Neuf prestations, neuf fiches détaillées",
             "intro": "Cette page sert de sommaire. Chaque prestation ouvre une fiche complète : ce qu'elle couvre, comment se déroule l'intervention et pour quels lieux elle est pensée. Un doute entre deux formules ? Le repère plus bas éclaire les cas les plus courants, et au moindre flottement un appel suffit.",
             "ctaPrimaire": {
               "label": "Demander un devis",
@@ -381,6 +394,12 @@
                 "description": "Le contenu d'un passage type en copropriété, du hall aux locaux techniques, et le rythme conseillé selon la fréquentation.",
                 "href": "/parties-communes",
                 "icone": "Building"
+              },
+              {
+                "nom": "Traitement de moisissure",
+                "description": "Comment nous éliminons les moisissures des murs, plafonds et pièces humides, les produits employés et nos conseils pour éviter la réapparition.",
+                "href": "/traitement-moisissure",
+                "icone": "Droplets"
               }
             ],
             "cta": {
@@ -1693,6 +1712,158 @@
       ]
     },
     {
+      "slug": "traitement-moisissure",
+      "label": "Traitement de moisissure",
+      "navHidden": true,
+      "meta": {
+        "title": "Traitement de moisissure à Saint-Nazaire",
+        "description": "Élimination des moisissures sur murs, plafonds et pièces humides à Saint-Nazaire et 30 km autour : nettoyage, traitement antifongique, conseils anti-récidive. Devis gratuit.",
+        "keywords": [
+          "traitement moisissure Saint-Nazaire",
+          "enlever moisissure mur Saint-Nazaire",
+          "nettoyage moisissure salle de bain Loire-Atlantique",
+          "anti-moisissure logement humide Saint-Nazaire"
+        ]
+      },
+      "service": {
+        "name": "Traitement de moisissure",
+        "description": "Nettoyage et traitement antifongique des surfaces envahies par les moisissures, à Saint-Nazaire et alentour.",
+        "serviceType": "Traitement anti-moisissure"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Murs, plafonds & pièces humides",
+            "titre": "Traitement de moisissure à Saint-Nazaire",
+            "intro": "Sur le littoral nazairien, air marin et humidité favorisent l'apparition des moisissures : taches noires dans les angles de murs, joints de douche piqués, plafonds marqués dans les pièces peu ventilées. Nous nettoyons et traitons les surfaces atteintes pour assainir les lieux, et vous conseillons pour en limiter le retour.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Prestations", "href": "/services" },
+              { "label": "Traitement de moisissure" }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Notre intervention",
+            "titre": "Assainir les surfaces, puis prévenir le retour",
+            "paragraphes": [
+              "La moisissure s'installe partout où l'humidité stagne : angles mal ventilés, joints de salle d'eau, contours de fenêtres, plafonds des pièces d'eau, arrières de meubles collés au mur. Au-delà de l'aspect, elle finit par dégrader les revêtements et rend un intérieur malsain. Nous commençons par repérer l'étendue des zones touchées et la nature des supports — peinture, enduit, carrelage, joint — avant de choisir le bon traitement.",
+              "L'intervention se déroule en plusieurs temps : retrait mécanique des dépôts de surface, application d'un produit antifongique adapté au support pour détruire les spores en profondeur, puis désinfection de la zone. Les joints trop atteints sont signalés pour un remplacement. Nous employons des produits professionnels, protégeons les surfaces voisines et aérons la pièce, qui est rendue propre et assainie.",
+              "Un point de franchise : nous traitons la moisissure visible et assainissons les supports, mais si elle revient vite, c'est souvent le signe d'une source d'humidité persistante — ventilation insuffisante, infiltration, pont thermique — qui relève d'un autre métier. Nous vous le disons clairement et vous orientons. La prestation convient aux particuliers, aux locaux professionnels et aux logements loués ; le devis est gratuit, calé sur la surface atteinte et l'accès aux zones."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "bande-procedure",
+          "content": {
+            "titre": "Comment se déroule le traitement",
+            "items": [
+              {
+                "icone": "Search",
+                "titre": "Diagnostic",
+                "texte": "On repère les zones atteintes, la nature des supports et, si possible, l'origine de l'humidité, pour un chiffrage gratuit."
+              },
+              {
+                "icone": "SprayCan",
+                "titre": "Nettoyage & traitement",
+                "texte": "Retrait des dépôts, application d'un antifongique adapté au support, puis désinfection de la zone assainie."
+              },
+              {
+                "icone": "ShieldCheck",
+                "titre": "Conseils anti-récidive",
+                "texte": "On vous remet des gestes simples d'aération et d'entretien pour limiter la réapparition des moisissures."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "D'où viennent les moisissures dans un logement ?",
+                "reponse": "D'un excès d'humidité qui ne s'évacue pas : condensation dans les pièces d'eau, aération insuffisante, ponts thermiques, parfois une infiltration. Sur la côte, l'air chargé d'humidité accentue le phénomène. Le traitement nettoie et assainit les surfaces ; agir sur la source d'humidité évite que cela recommence."
+              },
+              {
+                "question": "Le traitement empêche-t-il définitivement le retour ?",
+                "reponse": "Sur les surfaces traitées, la moisissure est éliminée et le support assaini. Sa réapparition dépend surtout de l'humidité ambiante : si la cause persiste, elle peut revenir. C'est pourquoi nous vous remettons des conseils d'aération et, au besoin, vous orientons vers le professionnel qui traitera l'origine du problème."
+              },
+              {
+                "question": "Intervenez-vous dans les salles de bains et sur les joints ?",
+                "reponse": "Oui, ce sont les zones les plus courantes. Nous nettoyons et traitons les joints de douche, les silicones et les carrelages atteints. Quand un joint est trop dégradé pour être récupéré, nous vous le signalons afin qu'il soit refait, gage d'un résultat durable."
+              },
+              {
+                "question": "Les produits utilisés sont-ils dangereux pour la pièce ?",
+                "reponse": "Nous employons des produits antifongiques professionnels, appliqués avec méthode et en protégeant les surfaces alentour. La pièce est aérée pendant et après l'intervention, et vous est rendue saine. Signalez-nous toute contrainte particulière — allergies, présence d'enfants — au moment du devis."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "bento",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Grand nettoyage en profondeur",
+                "description": "Une pièce très encrassée en plus des moisissures ? On la reprend entièrement, du sol au plafond.",
+                "href": "/grand-nettoyage",
+                "icone": "Sparkles"
+              },
+              {
+                "nom": "Ménage à domicile (particuliers)",
+                "description": "Un entretien régulier et une bonne aération limitent le retour de l'humidité et des moisissures.",
+                "href": "/menage-domicile",
+                "icone": "House"
+              },
+              {
+                "nom": "Vitres, vérandas & terrasses",
+                "description": "Contours de fenêtres et vérandas, points sensibles à la condensation, nettoyés au passage.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              }
+            ],
+            "cta": {
+              "label": "Zone à traiter hors Saint-Nazaire ? Voir notre secteur",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Des moisissures à traiter à Saint-Nazaire ?",
+            "sousTitre": "Décrivez-nous les zones touchées : chiffrage gratuit, traitement assaini et conseils pour éviter que ça revienne.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 68 54 65 69",
+              "href": "tel:+33768546569"
+            }
+          }
+        }
+      ]
+    },
+    {
       "slug": "zone-intervention",
       "label": "Zone d'intervention",
       "navHidden": true,
@@ -2003,6 +2174,7 @@
               "Tapis & moquettes",
               "Bureaux & cabinets médicaux",
               "Cages d'escalier & parties communes",
+              "Traitement de moisissure",
               "Autre / je ne sais pas"
             ],
             "villes": [
@@ -2077,6 +2249,7 @@
               "Tapis & moquettes",
               "Bureaux & cabinets médicaux",
               "Cages d'escalier & parties communes",
+              "Traitement de moisissure",
               "Autre / je ne sais pas"
             ],
             "villes": [
