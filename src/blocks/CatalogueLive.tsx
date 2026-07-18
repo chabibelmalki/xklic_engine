@@ -200,11 +200,13 @@ function ShopProductCard({
   qty,
   onAdd,
   onDec,
+  onOpen,
 }: {
   product: ShopProduct;
   qty: number;
   onAdd: () => void;
   onDec: () => void;
+  onOpen: () => void;
 }) {
   const out = !product.in_stock;
   const maxed = qty >= stockOf(product);
@@ -219,7 +221,13 @@ function ShopProductCard({
         qty > 0 ? "border-brand-500 ring-1 ring-brand-500" : "border-border hover:border-brand-200",
       )}
     >
-      <div className="relative aspect-[4/3] w-full overflow-hidden">
+      {/* Photo cliquable : ouvre la fiche produit. */}
+      <button
+        type="button"
+        onClick={onOpen}
+        aria-label={`Voir ${product.name}`}
+        className="relative block aspect-[4/3] w-full overflow-hidden"
+      >
         {product.images[0] ? (
           <Image
             src={product.images[0]}
@@ -243,13 +251,18 @@ function ShopProductCard({
             Plus que {product.stock}
           </span>
         )}
-      </div>
+      </button>
 
       <div className="flex flex-1 flex-col p-5">
-        <h4 className="font-display text-lg font-bold text-ink">{product.name}</h4>
-        {product.description && (
-          <p className="mt-1.5 flex-1 text-sm leading-relaxed text-muted">{product.description}</p>
-        )}
+        {/* Titre + description cliquables : ouvrent la fiche produit. */}
+        <button type="button" onClick={onOpen} className="flex flex-1 flex-col text-start">
+          <h4 className="font-display text-lg font-bold text-ink transition-colors group-hover:text-brand-700">
+            {product.name}
+          </h4>
+          {product.description && (
+            <p className="mt-1.5 flex-1 text-sm leading-relaxed text-muted">{product.description}</p>
+          )}
+        </button>
         {hasOptions && (
           <p className="mt-1.5 inline-flex items-center gap-1.5 text-xs font-medium text-brand-700">
             <Settings2 className="size-3.5" />
@@ -319,11 +332,13 @@ function ShopProductRow({
   qty,
   onAdd,
   onDec,
+  onOpen,
 }: {
   product: ShopProduct;
   qty: number;
   onAdd: () => void;
   onDec: () => void;
+  onOpen: () => void;
 }) {
   const out = !product.in_stock;
   const maxed = qty >= stockOf(product);
@@ -340,43 +355,53 @@ function ShopProductRow({
             : "border-border hover:border-brand-200",
       )}
     >
-      <div className="relative size-16 shrink-0 overflow-hidden rounded-xl sm:size-[4.5rem]">
-        {product.images[0] ? (
-          <Image
-            src={product.images[0]}
-            alt={product.name}
-            fill
-            sizes="72px"
-            className="object-cover"
-          />
-        ) : (
-          <div className="grid h-full w-full place-items-center bg-gradient-to-br from-brand-50 to-brand-100 font-display text-2xl font-bold text-brand-700/70">
-            {(product.name || "?").slice(0, 1).toUpperCase()}
-          </div>
-        )}
-      </div>
-
-      <div className="flex min-w-0 flex-1 flex-col">
-        <h4 className="truncate font-display text-base font-bold text-ink">{product.name}</h4>
-        {product.description && (
-          <p className="mt-0.5 line-clamp-1 text-xs leading-relaxed text-muted">
-            {product.description}
-          </p>
-        )}
-        <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-0.5">
-          <span className="font-display text-sm font-extrabold text-brand-700">
-            {euros(product.price_cents)}
-          </span>
-          {hasOptions && (
-            <span className="inline-flex items-center gap-1 text-xs font-medium text-brand-700">
-              <Settings2 className="size-3" /> à composer
-            </span>
-          )}
-          {lowStock && (
-            <span className="text-xs font-medium text-accent-600">Plus que {product.stock}</span>
+      {/* Zone photo + texte cliquable : ouvre la fiche produit. */}
+      <button
+        type="button"
+        onClick={onOpen}
+        aria-label={`Voir ${product.name}`}
+        className="group flex min-w-0 flex-1 items-center gap-3 text-start sm:gap-4"
+      >
+        <div className="relative size-16 shrink-0 overflow-hidden rounded-xl sm:size-[4.5rem]">
+          {product.images[0] ? (
+            <Image
+              src={product.images[0]}
+              alt={product.name}
+              fill
+              sizes="72px"
+              className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+            />
+          ) : (
+            <div className="grid h-full w-full place-items-center bg-gradient-to-br from-brand-50 to-brand-100 font-display text-2xl font-bold text-brand-700/70">
+              {(product.name || "?").slice(0, 1).toUpperCase()}
+            </div>
           )}
         </div>
-      </div>
+
+        <div className="flex min-w-0 flex-1 flex-col">
+          <h4 className="truncate font-display text-base font-bold text-ink transition-colors group-hover:text-brand-700">
+            {product.name}
+          </h4>
+          {product.description && (
+            <p className="mt-0.5 line-clamp-1 text-xs leading-relaxed text-muted">
+              {product.description}
+            </p>
+          )}
+          <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-0.5">
+            <span className="font-display text-sm font-extrabold text-brand-700">
+              {euros(product.price_cents)}
+            </span>
+            {hasOptions && (
+              <span className="inline-flex items-center gap-1 text-xs font-medium text-brand-700">
+                <Settings2 className="size-3" /> à composer
+              </span>
+            )}
+            {lowStock && (
+              <span className="text-xs font-medium text-accent-600">Plus que {product.stock}</span>
+            )}
+          </div>
+        </div>
+      </button>
 
       <div className="shrink-0">
         {out ? (
@@ -672,6 +697,187 @@ function ProductConfigurator({
   );
 }
 
+/**
+ * Détail produit (modal) — ouvre au clic sur une carte ou une ligne de menu :
+ * grande photo (galerie si plusieurs), description complète, prix et badges de
+ * stock. L'action d'ajout est contextuelle : « Composer » (→ configurateur) pour
+ * un produit à options, sinon « Ajouter au panier » ; quand l'article est déjà
+ * au panier, on affiche le compteur pour ajuster sans quitter la fiche.
+ */
+function ProductDetail({
+  product,
+  qty,
+  onAdd,
+  onDec,
+  onClose,
+}: {
+  product: ShopProduct;
+  qty: number;
+  onAdd: () => void;
+  onDec: () => void;
+  onClose: () => void;
+}) {
+  const [imgIdx, setImgIdx] = useState(0);
+  const out = !product.in_stock;
+  const maxed = qty >= stockOf(product);
+  const hasOptions = (product.options?.length ?? 0) > 0;
+  const images = product.images ?? [];
+  const mainImage = images[imgIdx] ?? images[0];
+  const lowStock = !out && product.stock != null && product.stock <= 3;
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [onClose]);
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-end justify-center bg-ink/50 p-0 backdrop-blur-sm sm:items-center sm:p-6"
+      role="dialog"
+      aria-modal="true"
+      aria-label={product.name}
+      onClick={(e) => e.target === e.currentTarget && onClose()}
+    >
+      <div className="flex max-h-[92dvh] w-full max-w-lg flex-col overflow-hidden rounded-t-theme bg-surface shadow-2xl sm:rounded-theme">
+        {/* Photo + bouton fermer flottant */}
+        <div className="relative">
+          <div className="relative aspect-[4/3] w-full overflow-hidden bg-gradient-to-br from-brand-50 to-brand-100">
+            {mainImage ? (
+              <Image
+                src={mainImage}
+                alt={product.name}
+                fill
+                sizes="(max-width: 640px) 100vw, 512px"
+                className="object-cover"
+              />
+            ) : (
+              <div className="grid h-full w-full place-items-center text-7xl">
+                <span aria-hidden>🛍️</span>
+              </div>
+            )}
+            {out && (
+              <span className="absolute start-4 top-4 rounded-full bg-ink px-3 py-1 text-xs font-semibold text-surface shadow-sm">
+                Épuisé
+              </span>
+            )}
+            {lowStock && (
+              <span className="absolute start-4 top-4 rounded-full bg-accent-500 px-3 py-1 text-xs font-semibold text-accent-contrast shadow-sm">
+                Plus que {product.stock}
+              </span>
+            )}
+          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Fermer"
+            className="absolute end-3 top-3 grid size-9 place-items-center rounded-full bg-surface/90 text-ink shadow-md backdrop-blur transition-colors hover:bg-surface"
+          >
+            <X className="size-5" />
+          </button>
+        </div>
+
+        {/* Galerie (si plusieurs photos) */}
+        {images.length > 1 && (
+          <div className="flex gap-2 overflow-x-auto border-b border-border p-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {images.map((src, i) => (
+              <button
+                key={`${src}-${i}`}
+                type="button"
+                onClick={() => setImgIdx(i)}
+                aria-label={`Photo ${i + 1}`}
+                className={cn(
+                  "relative size-14 shrink-0 overflow-hidden rounded-lg border transition-colors",
+                  i === imgIdx ? "border-brand-500 ring-1 ring-brand-500" : "border-border hover:border-brand-200",
+                )}
+              >
+                <Image src={src} alt="" fill sizes="56px" className="object-cover" />
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* Détails */}
+        <div className="flex-1 overflow-y-auto p-5">
+          <div className="flex items-start justify-between gap-3">
+            <h3 className="font-display text-xl font-bold text-ink">{product.name}</h3>
+            <span className="shrink-0 font-display text-xl font-extrabold text-brand-700">
+              {euros(product.price_cents)}
+            </span>
+          </div>
+          {hasOptions && (
+            <p className="mt-2 inline-flex items-center gap-1.5 text-xs font-medium text-brand-700">
+              <Settings2 className="size-3.5" />
+              {product.options!.map((g) => g.name).join(" · ")} au choix
+            </p>
+          )}
+          {product.description && (
+            <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-muted">
+              {product.description}
+            </p>
+          )}
+        </div>
+
+        {/* Actions */}
+        <div className="border-t border-border p-5">
+          {out ? (
+            <Button type="button" size="lg" disabled className="w-full">
+              Indisponible
+            </Button>
+          ) : hasOptions ? (
+            <Button
+              type="button"
+              size="lg"
+              onClick={onAdd}
+              disabled={maxed}
+              className="h-auto min-h-13 w-full whitespace-normal py-3 text-center leading-tight"
+            >
+              <Settings2 className="size-5" />
+              Composer — à partir de {euros(product.price_cents)}
+            </Button>
+          ) : qty > 0 ? (
+            <div className="flex items-center gap-3">
+              <div className="inline-flex items-center gap-1 rounded-full border border-border bg-surface p-1">
+                <button
+                  type="button"
+                  aria-label="Retirer un exemplaire"
+                  onClick={onDec}
+                  className="grid size-9 place-items-center rounded-full text-ink hover:bg-surface-2"
+                >
+                  <Minus className="size-4" />
+                </button>
+                <span className="w-8 text-center text-sm font-bold tabular-nums text-ink">{qty}</span>
+                <button
+                  type="button"
+                  aria-label="Ajouter un exemplaire"
+                  onClick={onAdd}
+                  disabled={maxed}
+                  className="grid size-9 place-items-center rounded-full text-ink hover:bg-surface-2 disabled:opacity-40"
+                >
+                  <Plus className="size-4" />
+                </button>
+              </div>
+              <Button type="button" size="lg" onClick={onClose} className="flex-1">
+                <Check className="size-5" /> Continuer
+              </Button>
+            </div>
+          ) : (
+            <Button
+              type="button"
+              size="lg"
+              onClick={onAdd}
+              className="h-auto min-h-13 w-full whitespace-normal py-3 text-center leading-tight"
+            >
+              <ShoppingBag className="size-5" />
+              Ajouter au panier — {euros(product.price_cents)}
+            </Button>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function CatalogueLive({
   block,
   config,
@@ -685,6 +891,7 @@ export function CatalogueLive({
   const [loadError, setLoadError] = useState(false);
   const [cart, setCart] = useState<CartLine[]>([]);
   const [configuring, setConfiguring] = useState<ShopProduct | null>(null);
+  const [detailing, setDetailing] = useState<ShopProduct | null>(null);
   const [deliveryId, setDeliveryId] = useState<string>("");
   const [step, setStep] = useState<1 | 2>(1);
   const [submitting, setSubmitting] = useState(false);
@@ -1214,6 +1421,29 @@ export function CatalogueLive({
         />
       )}
 
+      {/* Fiche produit (clic sur une carte / ligne). Produit relu frais depuis le
+          catalogue pour rester synchro (stock, dispo) ; s'il a disparu, on ferme. */}
+      {(() => {
+        const p = detailing && byId.get(detailing.id);
+        if (!p) return null;
+        return (
+          <ProductDetail
+            product={p}
+            qty={productQty(p.id)}
+            onClose={() => setDetailing(null)}
+            onAdd={() => {
+              if ((p.options?.length ?? 0) > 0) {
+                setDetailing(null);
+                setConfiguring(p);
+              } else {
+                addLine(p, {});
+              }
+            }}
+            onDec={() => onCardDec(p)}
+          />
+        );
+      })()}
+
       {/* Barre panier épinglée (mobile) */}
       {step === 1 && lines.length > 0 && (
         <button
@@ -1339,6 +1569,7 @@ export function CatalogueLive({
                             qty={productQty(p.id)}
                             onAdd={() => onCardAdd(p)}
                             onDec={() => onCardDec(p)}
+                            onOpen={() => setDetailing(p)}
                           />
                         ))}
                       </div>
@@ -1351,6 +1582,7 @@ export function CatalogueLive({
                               qty={productQty(p.id)}
                               onAdd={() => onCardAdd(p)}
                               onDec={() => onCardDec(p)}
+                              onOpen={() => setDetailing(p)}
                             />
                           </Reveal>
                         ))}
