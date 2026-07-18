@@ -1,5 +1,6 @@
 {
   "slug": "o-poulet-braise",
+  "customDomains": ["opouletbraise-osny.fr", "www.opouletbraise-osny.fr"],
   "theme": "energie-corail",
   "stylePack": "atelier-industriel",
   "branding": {
