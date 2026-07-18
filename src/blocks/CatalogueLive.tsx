@@ -689,6 +689,12 @@ export function CatalogueLive({
   const [step, setStep] = useState<1 | 2>(1);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const errorRef = useRef<HTMLParagraphElement>(null);
+  // Nom ALÉATOIRE du honeypot anti-bot, posé après le montage (voir plus bas) :
+  // aucun gestionnaire de mots de passe / autofill ne remplit un champ au nom
+  // inconnu — ce qui bloquait silencieusement de vrais clients. Vide avant le
+  // montage ⇒ le champ n'est pas rendu (pas de mismatch d'hydratation).
+  const [hpName, setHpName] = useState("");
   // Adresse de livraison (étape 2, modes qui livrent). `commune` est résolue par
   // l'autocomplétion géo (sert au matching de zone) ; line1/complement sont libres.
   const [addrLine1, setAddrLine1] = useState("");
@@ -788,6 +794,20 @@ export function CatalogueLive({
       /* ignore */
     }
   }, [cart, cartKey]);
+
+  // Honeypot : nom aléatoire posé au montage (côté client uniquement). Un champ
+  // au nom imprévisible n'est rempli par aucun autofill/gestionnaire de mots de
+  // passe ; un bot qui remplit tout le remplira quand même.
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setHpName("hp_" + Math.random().toString(36).slice(2, 10));
+  }, []);
+
+  // Toute erreur de validation/paiement est ramenée à l'écran : fini le « rien ne
+  // se passe » quand le message s'affichait hors de vue au-dessus du bouton.
+  useEffect(() => {
+    if (error) errorRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [error]);
 
   const products = useMemo(() => catalog?.products ?? [], [catalog]);
   const byId = useMemo(() => new Map(products.map((p) => [p.id, p])), [products]);
@@ -1026,7 +1046,7 @@ export function CatalogueLive({
     if (name.length < 2) return setError("Indiquez votre nom.");
     if (!email.includes("@")) return setError("Indiquez un e-mail valide (reçu de commande).");
     if (!consent) return setError("Merci d'accepter la politique de confidentialité.");
-    if (String(fd.get("ref_code") ?? "")) return; // honeypot (champ caché, rempli seulement par un bot)
+    if (hpName && String(fd.get(hpName) ?? "")) return; // honeypot (champ caché à nom aléatoire)
     const turnstileToken = String(fd.get("cf-turnstile-response") ?? "");
     if (turnstileSiteKey && !turnstileToken) return setError("Vérification anti-robot requise.");
     if (!deliveryId) return setError("Choisissez un mode de retrait/livraison.");
@@ -1069,7 +1089,6 @@ export function CatalogueLive({
           address,
           successPath: `${basePath}/merci`,
           cancelPath: `${basePath}/annulation`,
-          ref_code: String(fd.get("ref_code") ?? ""),
           turnstileToken: turnstileToken || undefined,
         }),
       });
@@ -1618,19 +1637,21 @@ export function CatalogueLive({
 
                 <h3 className="mb-4 mt-8 font-display text-lg font-bold text-ink">Vos coordonnées</h3>
                 <form onSubmit={submit} noValidate className="space-y-3">
-                  {/* Honeypot anti-bot. Nom NEUTRE (pas "company"/"email"/… que
-                      l'autofill et les gestionnaires de mots de passe remplissent
-                      tout seuls — ce qui bloquait silencieusement de vrais clients)
-                      + data-*-ignore pour que 1Password/LastPass n'y touchent pas. */}
-                  <div className="sr-only" aria-hidden>
-                    <input
-                      tabIndex={-1}
-                      autoComplete="off"
-                      name="ref_code"
-                      data-1p-ignore
-                      data-lpignore="true"
-                    />
-                  </div>
+                  {/* Honeypot anti-bot à nom ALÉATOIRE (posé au montage) : aucun
+                      gestionnaire de mots de passe / autofill ne remplit un champ
+                      au nom inconnu — un nom fixe ("company", "ref_code"…) finissait
+                      par être rempli et bloquait silencieusement de vrais clients. */}
+                  {hpName && (
+                    <div className="sr-only" aria-hidden>
+                      <input
+                        tabIndex={-1}
+                        autoComplete="off"
+                        name={hpName}
+                        data-1p-ignore
+                        data-lpignore="true"
+                      />
+                    </div>
+                  )}
                   <div>
                     <label htmlFor="shop-name" className="block text-sm font-medium text-ink-soft">
                       Nom et prénom *
@@ -1687,7 +1708,12 @@ export function CatalogueLive({
                   <Turnstile siteKey={turnstileSiteKey} className="pt-1" />
 
                   {error && (
-                    <p className="rounded-xl bg-red-50 px-4 py-2.5 text-sm text-red-600">{error}</p>
+                    <p
+                      ref={errorRef}
+                      className="rounded-xl bg-red-50 px-4 py-2.5 text-sm text-red-600"
+                    >
+                      {error}
+                    </p>
                   )}
 
                   <Button
