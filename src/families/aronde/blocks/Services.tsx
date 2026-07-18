@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { ServicesContent } from "@/types/config";
 import type { BlockComponentProps } from "@/blocks/types";
 import { Button } from "@/components/ui/Button";
@@ -35,33 +36,52 @@ export function Services({
         <ArondeHeading kicker={c.eyebrow} title={c.titre ?? ""} lede={c.intro} />
 
         {withImages ? (
-          <div className="mt-14 grid gap-x-10 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
-            {items.map((s) => (
-              <article key={s.nom} className="group">
-                {s.image?.url && (
-                  <ArondeImage
-                    src={s.image.url}
-                    alt={s.image.alt ?? s.nom}
-                    ratio="4/3"
-                    sizes="(max-width: 640px) 100vw, 33vw"
-                  />
-                )}
-                <div className="mt-5">
-                  <div className="mb-3 h-[3px] w-10 bg-accent-500" />
-                  <div className="flex items-baseline justify-between gap-4">
-                    <h3 className="font-display text-xl font-bold text-ink">{s.nom}</h3>
-                    {s.priceHint && (
-                      <span className="shrink-0 text-sm font-semibold text-brand-700">
-                        {s.priceHint}
+          <div className="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+            {items.map((s) => {
+              const body = (
+                <>
+                  {s.image?.url && (
+                    <ArondeImage
+                      src={s.image.url}
+                      alt={s.image.alt ?? s.nom}
+                      ratio="4/3"
+                      sizes="(max-width: 640px) 100vw, 33vw"
+                    />
+                  )}
+                  <div className="mt-5">
+                    <div className="mb-3 h-[3px] w-10 bg-accent-500" />
+                    <div className="flex items-baseline justify-between gap-4">
+                      <h3 className="font-display text-xl font-bold text-ink">{s.nom}</h3>
+                      {s.priceHint && (
+                        <span className="shrink-0 text-sm font-semibold text-brand-700">
+                          {s.priceHint}
+                        </span>
+                      )}
+                    </div>
+                    {s.description && (
+                      <p className="mt-2 text-sm leading-relaxed text-muted">{s.description}</p>
+                    )}
+                    {s.href && (
+                      <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-800">
+                        {strings.services.details}
+                        <span aria-hidden className="transition-transform group-hover:translate-x-1">
+                          →
+                        </span>
                       </span>
                     )}
                   </div>
-                  {s.description && (
-                    <p className="mt-2 text-sm leading-relaxed text-muted">{s.description}</p>
-                  )}
-                </div>
-              </article>
-            ))}
+                </>
+              );
+              return s.href ? (
+                <Link key={s.nom} href={withBase(basePath, s.href)} className="group block">
+                  {body}
+                </Link>
+              ) : (
+                <article key={s.nom} className="group">
+                  {body}
+                </article>
+              );
+            })}
           </div>
         ) : withLinks ? (
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

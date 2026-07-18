@@ -103,37 +103,61 @@
                 "nom": "Pose de cuisine",
                 "description": "Cuisine complète montée et calée au niveau : caissons, plan de travail, façades et raccords à sec, prête à vivre.",
                 "href": "/pose-cuisine",
-                "icone": "CookingPot"
+                "icone": "CookingPot",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-cuisine.jpg",
+                  "alt": "Cuisine équipée en bois montée et posée"
+                }
               },
               {
                 "nom": "Pose de parquet",
                 "description": "Massif, contrecollé ou stratifié, posé collé, flottant ou cloué, avec plinthes et seuils ajustés au millimètre.",
                 "href": "/pose-parquet",
-                "icone": "Layers"
+                "icone": "Layers",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-parquet.jpg",
+                  "alt": "Parquet en chevrons aux tons chauds"
+                }
               },
               {
                 "nom": "Portes & fenêtres",
                 "description": "Menuiseries bois, PVC ou alu : fenêtres, baies vitrées et portes, en neuf comme en rénovation.",
                 "href": "/portes-fenetres",
-                "icone": "DoorOpen"
+                "icone": "DoorOpen",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-portes-fenetres.jpg",
+                  "alt": "Baie vitrée à cadres aluminium noirs"
+                }
               },
               {
                 "nom": "Aménagement intérieur",
                 "description": "Dressings, placards, meubles sous escalier et rangements sur mesure qui épousent chaque recoin.",
                 "href": "/amenagement-interieur",
-                "icone": "LayoutGrid"
+                "icone": "LayoutGrid",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-amenagement.jpg",
+                  "alt": "Dressing sur mesure en bois clair"
+                }
               },
               {
                 "nom": "Pose de volets",
                 "description": "Volets roulants ou battants, pose neuve, rénovation de coffre et motorisation des volets existants.",
                 "href": "/volets",
-                "icone": "Blinds"
+                "icone": "Blinds",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-volets.jpg",
+                  "alt": "Volets battants sur une façade"
+                }
               },
               {
                 "nom": "Porte blindée",
                 "description": "Bloc-porte blindé ou blindage d'une porte en place, serrure multipoint : votre entrée mise à l'abri.",
                 "href": "/porte-blindee",
-                "icone": "ShieldCheck"
+                "icone": "ShieldCheck",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-porte-blindee.jpg",
+                  "alt": "Porte d'entrée en bois massif"
+                }
               }
             ],
             "cta": {
@@ -308,37 +332,61 @@
                 "nom": "Pose de cuisine",
                 "description": "La fiche détaille le montage des caissons, la pose du plan de travail, l'ajustement des façades et les raccords laissés prêts à brancher.",
                 "href": "/pose-cuisine",
-                "icone": "CookingPot"
+                "icone": "CookingPot",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-cuisine.jpg",
+                  "alt": "Cuisine équipée en bois montée et posée"
+                }
               },
               {
                 "nom": "Pose de parquet",
                 "description": "Choix du type de parquet et de la méthode de pose, préparation du support, plinthes et seuils : tout le déroulé, pièce par pièce.",
                 "href": "/pose-parquet",
-                "icone": "Layers"
+                "icone": "Layers",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-parquet.jpg",
+                  "alt": "Parquet en chevrons aux tons chauds"
+                }
               },
               {
                 "nom": "Portes & fenêtres",
                 "description": "Bois, PVC ou alu, dépose de l'ancien, pose en tunnel ou en rénovation, réglage des ouvrants : la menuiserie extérieure passée en revue.",
                 "href": "/portes-fenetres",
-                "icone": "DoorOpen"
+                "icone": "DoorOpen",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-portes-fenetres.jpg",
+                  "alt": "Baie vitrée à cadres aluminium noirs"
+                }
               },
               {
                 "nom": "Aménagement intérieur",
                 "description": "Dressing, placards, bibliothèque, meuble sous escalier : comment on part de vos cotes pour dessiner un rangement qui remplit chaque recoin.",
                 "href": "/amenagement-interieur",
-                "icone": "LayoutGrid"
+                "icone": "LayoutGrid",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-amenagement.jpg",
+                  "alt": "Dressing sur mesure en bois clair"
+                }
               },
               {
                 "nom": "Pose de volets",
                 "description": "Roulants ou battants, coffre rénovation, motorisation : les solutions selon votre façade et le déroulé d'une pose sans casse.",
                 "href": "/volets",
-                "icone": "Blinds"
+                "icone": "Blinds",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-volets.jpg",
+                  "alt": "Volets battants sur une façade"
+                }
               },
               {
                 "nom": "Porte blindée",
                 "description": "Bloc-porte blindé ou blindage d'une porte existante, serrure multipoint et points de sécurité : ce que la fiche vous explique avant de choisir.",
                 "href": "/porte-blindee",
-                "icone": "ShieldCheck"
+                "icone": "ShieldCheck",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-porte-blindee.jpg",
+                  "alt": "Porte d'entrée en bois massif"
+                }
               }
             ],
             "cta": {
@@ -399,7 +447,13 @@
               "Menuiserie Beirouti est une entreprise artisanale spécialisée dans la menuiserie intérieure et extérieure, installée à Rive-de-Gier au cœur de la vallée du Gier. Cuisines, parquets, fenêtres, portes, volets et rangements : je réalise vos projets sur mesure, avec un travail soigné, des matériaux choisis pour durer et un accompagnement du premier échange jusqu'à la dernière finition.",
               "Ici, pas d'intermédiaire ni de sous-traitance dans le dos : c'est le même artisan qui prend vos cotes, vous conseille, fabrique, ajuste et pose. Cette continuité, c'est ce qui garantit une pose au cordeau, des jeux réguliers et des raccords propres — le genre de détail qui ne se voit pas quand il est bien fait, et qui saute aux yeux quand il est bâclé.",
               "Chaque logement est différent : un mur qui n'est jamais tout à fait droit, un sol qui plonge d'un centimètre, une trémie qui complique une pose. Mon métier, c'est justement d'absorber ces imperfections pour vous livrer un ensemble net et fonctionnel. Devis gratuit, matériaux de qualité, intervention rapide et respect de la parole donnée : voilà les engagements sur lesquels se construit la confiance, chantier après chantier."
-            ]
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/atelier.jpg",
+              "alt": "L'établi et les outils de l'atelier Beirouti à Rive-de-Gier"
+            },
+            "imageRatio": "3/2",
+            "imagePosition": "right"
           }
         },
         {
@@ -537,7 +591,13 @@
               "Une belle cuisine tient d'abord à sa pose. Avant le premier meuble, je vérifie l'aplomb des murs, la planéité du sol et l'emplacement exact des arrivées d'eau, d'évacuation et des prises. C'est ce repérage qui évite les mauvaises surprises : un meuble qui bâille, un plan de travail qui n'affleure pas, une plaque qui ne tombe pas en face de la hotte.",
               "Je monte ensuite les caissons, les fixe et les cale de niveau, puis pose le plan de travail avec les découpes nécessaires pour l'évier et la plaque de cuisson. Viennent les façades, les tiroirs et les poignées, réglés un à un pour des jeux réguliers. Je raccorde l'évier et laisse l'électroménager prêt à brancher — le raccordement électrique final et le gaz restant l'affaire de l'électricien ou du plombier. Que la cuisine vienne d'une grande enseigne en kit ou d'un cuisiniste, la pose suit la même exigence : d'équerre, de niveau, et propre.",
               "Comptez généralement d'une à trois journées selon la taille et la complexité de l'implantation. Pour que tout roule le jour J, l'idéal est que la pièce soit finie côté peinture et carrelage, et que les arrivées soient en place."
-            ]
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-cuisine.jpg",
+              "alt": "Cuisine équipée en bois montée et posée"
+            },
+            "imageRatio": "3/2",
+            "imagePosition": "right"
           }
         },
         {
@@ -667,7 +727,13 @@
               "La réussite d'un parquet se joue avant la première lame. Je contrôle d'abord la planéité et l'humidité du support : un sol qui creuse se ragrée, un carrelage sain se conserve, une dalle trop fraîche attend. Le parquet, lui, doit s'acclimater à la pièce, à plat et dans son emballage, avant d'être posé — c'est ce qui évite les lames qui tuilent ou qui jouent une fois la saison changée.",
               "Vient ensuite le choix de la pose, selon le produit et vos contraintes. La pose collée, stable et discrète côté bruit, convient bien sur chape et sur plancher chauffant. La pose flottante, rapide et propre, s'installe sur une sous-couche sans coller au sol. La pose clouée, plus traditionnelle, se réserve au massif sur lambourdes. Dans tous les cas, je soigne les coupes en périphérie, les raccords de seuil entre deux pièces et la reprise des plinthes, pour un ensemble net jusque dans les angles.",
               "Je pose aussi bien dans une pièce à vivre neuve qu'en rénovation, par-dessus un ancien revêtement quand son état le permet. Au relevé, je vous dis franchement ce qui est jouable chez vous et le sens de pose qui mettra la pièce en valeur."
-            ]
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-parquet.jpg",
+              "alt": "Parquet en chevrons aux tons chauds"
+            },
+            "imageRatio": "3/2",
+            "imagePosition": "left"
           }
         },
         {
@@ -890,7 +956,13 @@
               "Bois, PVC ou aluminium : aucun n'est meilleur dans l'absolu, tout dépend de l'usage. Le PVC offre un excellent rapport isolation-prix et ne demande presque pas d'entretien. L'aluminium, fin et rigide, permet de grandes surfaces vitrées et un style contemporain. Le bois, chaleureux et réparable, reste imbattable côté cachet, notamment en rénovation d'une façade ancienne. Au relevé, je vous explique ce que chaque option donnera chez vous, sans vous pousser vers le plus cher.",
               "Sur le chantier, deux cas se présentent. En rénovation, on conserve souvent le dormant existant s'il est sain : la nouvelle menuiserie se pose dessus, ce qui va vite et salit peu. En dépose totale, on retire tout l'ancien cadre jusqu'au bâti pour repartir sur des bases neuves, quand le dormant est abîmé ou qu'on veut gagner de la surface vitrée. Dans les deux cas, je règle chaque ouvrant, je calfeutre et je vérifie l'étanchéité : une fenêtre bien posée, c'est une fenêtre qui ferme d'un doigt et ne siffle pas au vent.",
               "Je travaille aussi bien sur une fenêtre isolée que sur un logement complet, et je coordonne volontiers la pose avec des volets assortis pour un ensemble cohérent."
-            ]
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-portes-fenetres.jpg",
+              "alt": "Baie vitrée à cadres aluminium noirs"
+            },
+            "imageRatio": "3/2",
+            "imagePosition": "right"
           }
         },
         {
@@ -1049,7 +1121,13 @@
               "Un meuble en kit se contente d'un mur droit et d'un angle carré. Le sur-mesure, lui, épouse la réalité de votre logement : une pente de toit, une niche, une longueur qui ne tombe jamais sur un module standard. C'est là que la menuiserie fait la différence — au lieu de perdre vingt centimètres à côté d'un caisson trop court, on va jusqu'au mur, du sol au plafond.",
               "Tout part d'un relevé sur place. Je mesure, je repère les contraintes — trappe de visite, prise à conserver, tuyau à contourner — et on définit ensemble l'usage : penderie, étagères, tiroirs, portes coulissantes ou battantes. Je vous propose une implantation, on ajuste, puis je fabrique et je pose. Le résultat s'intègre comme s'il avait toujours été là, avec des façades alignées et des jeux réguliers.",
               "Dressing de chambre, placard d'entrée, bibliothèque toute hauteur, rangement sous escalier, coin bureau intégré : si ça se dessine et se mesure, ça se fabrique. Au relevé, on regarde ce qui est réaliste chez vous et on cale le projet sur votre budget."
-            ]
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-amenagement.jpg",
+              "alt": "Dressing sur mesure en bois clair"
+            },
+            "imageRatio": "3/2",
+            "imagePosition": "left"
           }
         },
         {
@@ -1237,7 +1315,13 @@
               "Changer ses volets ne veut pas dire refaire sa façade. Dans la plupart des rénovations, on remplace le tablier d'un volet roulant ou on pose un coffre dit « rénovation » qui vient se loger sur le dormant existant, sans casser la maçonnerie ni reprendre les tableaux. Résultat : une pose rapide, propre, et un chantier terminé souvent dans la journée pour quelques ouvertures.",
               "Sur du battant, je vérifie l'aplomb des gonds, le jeu des vantaux et la quincaillerie — espagnolette, arrêts, crémone — pour des volets qui claquent juste et tiennent au vent. Côté motorisation, je peux électrifier des volets déjà posés ou installer d'emblée des tabliers motorisés, avec commande murale ou télécommande, pour ne plus avoir à sortir manœuvrer chaque matin.",
               "Au relevé, je regarde le type de pose possible chez vous selon la façade, l'exposition et l'état de l'existant, et je vous dis franchement si un simple remplacement de tablier suffit ou s'il vaut mieux repartir sur un coffre neuf."
-            ]
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-volets.jpg",
+              "alt": "Volets battants sur une façade"
+            },
+            "imageRatio": "3/2",
+            "imagePosition": "right"
           }
         },
         {
@@ -1372,7 +1456,13 @@
               "Sécuriser une entrée passe par deux approches. Le bloc-porte blindé remplace l'ensemble — vantail et dormant — par un bloc conçu d'usine pour résister à l'effraction : c'est la solution la plus complète, idéale quand la porte et son cadre sont fatigués. Le blindage de porte, lui, renforce une porte existante en bon état : on ajoute une tôle d'acier, on protège les points faibles et on remplace la serrure. Moins lourd à mettre en œuvre, il convient bien en appartement.",
               "Dans les deux cas, la serrure fait la différence. Une serrure multipoint verrouille la porte en plusieurs endroits du dormant — en haut, au centre, en bas — ce qui répartit l'effort et complique sérieusement toute tentative d'ouverture. On y ajoute selon les cas un cylindre de sûreté, une protection anti-perçage et un cornière anti-pince. Je vous explique au relevé le niveau de protection utile chez vous, sans surenchère.",
               "La pose demande de la précision : un bloc mal calé ferme mal et perd tout son intérêt. Je pose d'aplomb, je règle le vantail pour une fermeture douce et je vérifie chaque point de condamnation avant de vous remettre les clés."
-            ]
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-porte-blindee.jpg",
+              "alt": "Porte d'entrée en bois massif"
+            },
+            "imageRatio": "3/2",
+            "imagePosition": "left"
           }
         },
         {
