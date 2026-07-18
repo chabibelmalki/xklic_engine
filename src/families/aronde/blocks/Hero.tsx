@@ -51,9 +51,9 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
       <div aria-hidden className="aronde-grain absolute inset-0 -z-0 text-white/70" />
 
       <ArondeContainer wide className="relative z-10 py-28 sm:py-32">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-16">
           {/* Colonne discours */}
-          <div className="max-w-2xl">
+          <div className="min-w-0 max-w-2xl">
             {c.eyebrow && (
               <div className="mb-6 flex items-center gap-3">
                 <span className="size-2.5 shrink-0 rounded-[1px] bg-accent-500" />
@@ -62,7 +62,7 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
                 </span>
               </div>
             )}
-            <h1 className="font-display text-[2.7rem] font-bold leading-[1.03] tracking-[-0.01em] text-white sm:text-6xl lg:text-[4rem]">
+            <h1 className="font-display text-[2.35rem] font-bold leading-[1.05] tracking-[-0.01em] text-white break-words sm:text-6xl lg:text-[4rem]">
               {c.titre}
               {c.titreAccent && <span className="text-accent-500"> {c.titreAccent}</span>}
               {showVilleSuffix && <span className="text-accent-500"> à {ville}</span>}
@@ -90,7 +90,7 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
               Remplit la moitié droite en desktop ; passe sous le discours en mobile. */}
           <aside
             style={miterTR(30)}
-            className="relative border border-white/15 bg-[color-mix(in_srgb,var(--brand-50)_94%,#ffffff)] p-7 shadow-[var(--shadow-pop)] sm:p-9"
+            className="relative min-w-0 border border-white/15 bg-[color-mix(in_srgb,var(--brand-50)_94%,#ffffff)] p-7 shadow-[var(--shadow-pop)] sm:p-9"
           >
             <div className="mb-6 flex items-center gap-3 border-b border-brand-100 pb-5">
               <span className="grid size-9 shrink-0 place-items-center rounded-[3px] bg-brand-800 text-white">
