@@ -48,7 +48,9 @@ export async function POST(request: Request) {
   const data = parsed.data;
 
   // Honeypot : bot => on répond OK sans rien faire (même posture que /api/contact).
-  if (data.company && data.company.length > 0) {
+  // `ref_code` = champ actuel ; `company` = ancien nom, toléré le temps que les
+  // onglets déjà ouverts se rechargent (il n'est plus émis par le client à jour).
+  if ((data.ref_code && data.ref_code.length > 0) || (data.company && data.company.length > 0)) {
     return NextResponse.json({ ok: true });
   }
 

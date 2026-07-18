@@ -66,7 +66,11 @@ export const shopCheckoutSchema = z.object({
     .startsWith("/")
     .max(300)
     .refine((p) => !p.includes("//") && !p.includes(":"), "chemin relatif uniquement"),
-  /** Honeypot anti-bot (doit rester vide). */
+  /** Honeypot anti-bot (doit rester vide). Nom neutre : un champ nommé "company"
+   *  était rempli par l'autofill/les gestionnaires de mots de passe, bloquant de
+   *  vrais clients. On tolère encore l'ancienne clé le temps que les onglets
+   *  ouverts se rechargent. */
+  ref_code: z.string().optional(),
   company: z.string().optional(),
   turnstileToken: z.string().optional(),
 });

@@ -948,7 +948,7 @@ export function CatalogueLive({
     if (name.length < 2) return setError("Indiquez votre nom.");
     if (!email.includes("@")) return setError("Indiquez un e-mail valide (reçu de commande).");
     if (!consent) return setError("Merci d'accepter la politique de confidentialité.");
-    if (String(fd.get("company") ?? "")) return; // honeypot
+    if (String(fd.get("ref_code") ?? "")) return; // honeypot (champ caché, rempli seulement par un bot)
     const turnstileToken = String(fd.get("cf-turnstile-response") ?? "");
     if (turnstileSiteKey && !turnstileToken) return setError("Vérification anti-robot requise.");
     if (!deliveryId) return setError("Choisissez un mode de retrait/livraison.");
@@ -991,7 +991,7 @@ export function CatalogueLive({
           address,
           successPath: `${basePath}/merci`,
           cancelPath: `${basePath}/annulation`,
-          company: String(fd.get("company") ?? ""),
+          ref_code: String(fd.get("ref_code") ?? ""),
           turnstileToken: turnstileToken || undefined,
         }),
       });
@@ -1457,8 +1457,18 @@ export function CatalogueLive({
 
                 <h3 className="mb-4 mt-8 font-display text-lg font-bold text-ink">Vos coordonnées</h3>
                 <form onSubmit={submit} noValidate className="space-y-3">
+                  {/* Honeypot anti-bot. Nom NEUTRE (pas "company"/"email"/… que
+                      l'autofill et les gestionnaires de mots de passe remplissent
+                      tout seuls — ce qui bloquait silencieusement de vrais clients)
+                      + data-*-ignore pour que 1Password/LastPass n'y touchent pas. */}
                   <div className="sr-only" aria-hidden>
-                    <input tabIndex={-1} autoComplete="off" name="company" />
+                    <input
+                      tabIndex={-1}
+                      autoComplete="off"
+                      name="ref_code"
+                      data-1p-ignore
+                      data-lpignore="true"
+                    />
                   </div>
                   <div>
                     <label htmlFor="shop-name" className="block text-sm font-medium text-ink-soft">
