@@ -88,6 +88,8 @@ interface ShopDelivery {
   details: string;
   /** Zone de livraison (back-office). Filtre les communes proposées au checkout. */
   zone?: DeliveryZone;
+  /** Sous-total (centimes) à partir duquel la livraison devient gratuite. 0 = jamais. */
+  free_over_cents?: number;
 }
 interface ShopCatalog {
   tenant: { name: string; checkout_enabled: boolean };
@@ -752,6 +754,41 @@ export function CatalogueLive({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [config.slug]);
 
+  // ── Panier persistant : survit au rechargement de page (localStorage, par
+  // site). Restauré au montage puis réconcilié contre le catalogue frais par
+  // loadCatalog (lignes périmées retirées, stock écrêté). Clé par slug pour ne
+  // jamais mélanger deux boutiques du parc. ─────────────────────────────────
+  const cartKey = `xklic:cart:${config.slug}`;
+  useEffect(() => {
+    let saved: CartLine[] | null = null;
+    try {
+      const raw = localStorage.getItem(cartKey);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed) && parsed.length) saved = parsed as CartLine[];
+      }
+    } catch {
+      /* localStorage indisponible (navigation privée, quota) : panier éphémère */
+    }
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    if (saved) setCart(saved);
+  }, [cartKey]);
+
+  // Sauvegarde à chaque changement. On saute le tout premier rendu (panier vide
+  // initial) pour ne pas écraser la sauvegarde avant que la restauration ait eu lieu.
+  const cartPersistReady = useRef(false);
+  useEffect(() => {
+    if (!cartPersistReady.current) {
+      cartPersistReady.current = true;
+      return;
+    }
+    try {
+      localStorage.setItem(cartKey, JSON.stringify(cart));
+    } catch {
+      /* ignore */
+    }
+  }, [cart, cartKey]);
+
   const products = useMemo(() => catalog?.products ?? [], [catalog]);
   const byId = useMemo(() => new Map(products.map((p) => [p.id, p])), [products]);
 
@@ -841,7 +878,15 @@ export function CatalogueLive({
   const itemCount = lines.reduce((n, l) => n + l.qty, 0);
   const subtotal = lines.reduce((n, l) => n + unitPriceCents(l.product, l.sel) * l.qty, 0);
   const delivery = catalog?.delivery_methods.find((d) => d.id === deliveryId);
-  const total = subtotal + (delivery?.price_cents ?? 0);
+  // Frais de livraison effectifs : 0 si le mode a un seuil de gratuité atteint par
+  // le sous-total. Miroir du back-office (qui refait le calcul, source de vérité).
+  const effectiveDeliveryCents = (d?: ShopDelivery) => {
+    if (!d) return 0;
+    if (d.free_over_cents && d.free_over_cents > 0 && subtotal >= d.free_over_cents) return 0;
+    return d.price_cents;
+  };
+  const deliveryCents = effectiveDeliveryCents(delivery);
+  const total = subtotal + deliveryCents;
   const checkoutEnabled = catalog?.tenant.checkout_enabled ?? false;
   // Un mode qui achemine (≠ retrait) réclame une adresse ; si sa zone est
   // restreinte, on ne propose que les communes qui y tombent.
@@ -1084,7 +1129,7 @@ export function CatalogueLive({
           </div>
           <div className="flex justify-between text-muted">
             <span>{delivery?.label ?? "Livraison"}</span>
-            <span>{delivery && delivery.price_cents > 0 ? euros(delivery.price_cents) : "Gratuit"}</span>
+            <span>{deliveryCents > 0 ? euros(deliveryCents) : "Gratuit"}</span>
           </div>
           <div className="flex justify-between font-display text-base font-extrabold text-ink">
             <span>Total</span>
@@ -1346,10 +1391,17 @@ export function CatalogueLive({
                         <span>
                           <span className="font-semibold text-ink">{d.label}</span>
                           {d.details && <span className="block text-xs text-muted">{d.details}</span>}
+                          {d.free_over_cents != null && d.free_over_cents > 0 && (
+                            <span className="block text-xs font-medium text-brand-700">
+                              {subtotal >= d.free_over_cents
+                                ? "🎉 Livraison offerte"
+                                : `Gratuite dès ${euros(d.free_over_cents)} de commande`}
+                            </span>
+                          )}
                         </span>
                       </span>
                       <span className="shrink-0 font-semibold text-ink">
-                        {d.price_cents > 0 ? euros(d.price_cents) : "Gratuit"}
+                        {effectiveDeliveryCents(d) > 0 ? euros(d.price_cents) : "Gratuit"}
                       </span>
                     </label>
                   ))}
