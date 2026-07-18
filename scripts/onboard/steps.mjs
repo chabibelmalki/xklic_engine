@@ -500,9 +500,57 @@ function siteBusinessName(ctx) {
   }
 }
 
+// Cloudflare : un widget Turnstile accepte au plus 10 hostnames.
+const CF_WIDGET_CAP = 10;
+
+/**
+ * Choisit automatiquement le widget Turnstile où poser `hosts`, sans avoir à
+ * sonder les widgets à la main. Lit la liste des widgets back-office (nom +
+ * sitekey) puis l'état Cloudflare de chacun, et :
+ *   • si `hosts` y sont DÉJÀ tous autorisés → renvoie CE widget (idempotent) ;
+ *   • sinon → renvoie le widget le PLUS REMPLI qui a encore la place (packing
+ *     serré : garde les widgets vides pour de futurs lots) ;
+ *   • si aucun n'a la place → throw (créer « xklic N », cf. RUNBOOK-TURNSTILE-LOT2).
+ * Lecture seule (aucun effet de bord) : utilisable tel quel en dry-run.
+ * @param {string[]} hosts
+ * @returns {Promise<{ name:string, sitekey:string, used:number, already:boolean }>}
+ */
+async function pickTurnstileWidget(hosts) {
+  const widgets = await backoffice.listWidgets();
+  if (!widgets.length) throw new Error("aucun widget Turnstile connu du back-office (voir --list-widgets).");
+  // État Cloudflare de chaque widget (on ignore ceux illisibles côté CF).
+  const states = [];
+  for (const w of widgets) {
+    if (!w.sitekey) continue;
+    try {
+      const cw = await cloudflare.getWidget(w.sitekey);
+      states.push({ name: w.name, sitekey: w.sitekey, domains: cw.domains });
+    } catch (e) {
+      warn(`widget « ${w.name} » illisible côté Cloudflare (ignoré) : ${e.message}`);
+    }
+  }
+  if (!states.length) throw new Error("aucun widget Turnstile lisible côté Cloudflare.");
+  // 1) Idempotence : hosts déjà tous présents quelque part ?
+  const already = states.find((s) => hosts.every((h) => s.domains.includes(h)));
+  if (already) return { name: already.name, sitekey: already.sitekey, used: already.domains.length, already: true };
+  // 2) Place libre : ne compter que les hostnames MANQUANTS (l'un des deux peut déjà y être).
+  const withRoom = states
+    .map((s) => ({ ...s, missing: hosts.filter((h) => !s.domains.includes(h)).length }))
+    .filter((s) => s.domains.length + s.missing <= CF_WIDGET_CAP);
+  if (!withRoom.length) {
+    throw new Error(
+      `tous les widgets Turnstile sont pleins (${CF_WIDGET_CAP}/${CF_WIDGET_CAP}) — ` +
+        `créer un nouveau widget « xklic ${states.length + 1} » (RUNBOOK-TURNSTILE-LOT2.md).`,
+    );
+  }
+  // Best-fit : le plus rempli qui a encore la place (minimise le nombre de widgets).
+  withRoom.sort((a, b) => b.domains.length - a.domains.length);
+  const pick = withRoom[0];
+  return { name: pick.name, sitekey: pick.sitekey, used: pick.domains.length, already: false };
+}
+
 export async function turnstileStep(ctx) {
   const hosts = [ctx.apex, ctx.www];
-  const widget = ctx.widget || "xklic 1";
   const tenantSlug = siteTenantSlug(ctx);
 
   // Garde-fou slug : l'engine interroge /config avec tenantSlug ; il DOIT désigner
@@ -513,8 +561,32 @@ export async function turnstileStep(ctx) {
 
   // Sitekey/secret du widget (lot 2) : sitekey via --widget-sitekey ou env ;
   // secret UNIQUEMENT via env (.env.turnstile-widget), jamais en flag/commit.
-  const widgetSitekey = (ctx.widgetSitekey || process.env.TURNSTILE_WIDGET_SITEKEY || "").trim();
+  let widget = ctx.widget || "auto";
+  let widgetSitekey = (ctx.widgetSitekey || process.env.TURNSTILE_WIDGET_SITEKEY || "").trim();
   const widgetSecret = (process.env.TURNSTILE_WIDGET_SECRET || "").trim();
+
+  // Ciblage automatique : quand aucune sitekey n'est imposée à la main, on
+  // résout le widget nous-mêmes (plus besoin de tester les widgets un par un).
+  //   • widget == "auto" → on choisit celui qui a de la place ;
+  //   • widget nommé      → on retrouve juste sa sitekey pour le câbler côté Cloudflare.
+  // Requiert back-office (liste) + Cloudflare (capacité). Sinon repli sur « xklic 1 ».
+  let widgetResolved = false;
+  if (!widgetSitekey && backoffice.isConfigured() && cloudflare.isConfigured()) {
+    if (widget === "auto") {
+      const pick = await pickTurnstileWidget(hosts);
+      widget = pick.name;
+      widgetSitekey = pick.sitekey;
+      widgetResolved = true;
+      if (pick.already) skip(`widget « ${widget} » : hostnames déjà autorisés (${pick.used}/${CF_WIDGET_CAP})`);
+      else info(`widget auto-sélectionné : « ${widget} » (${pick.used}/${CF_WIDGET_CAP} utilisés — place libre)`);
+    } else {
+      const found = (await backoffice.listWidgets()).find((w) => w.name === widget);
+      if (found?.sitekey) { widgetSitekey = found.sitekey; widgetResolved = true; }
+    }
+  } else if (widget === "auto") {
+    // Config incomplète : impossible d'auto-sélectionner → défaut historique.
+    widget = "xklic 1";
+  }
 
   // 1) Cloudflare : hostnames sur le BON widget (celui de widgetSitekey si fourni).
   if (!cloudflare.isConfigured(widgetSitekey)) {
@@ -560,7 +632,7 @@ export async function turnstileStep(ctx) {
         warn(`provisionnement widget échoué : ${e.message}`);
       }
     }
-  } else if (widget !== "xklic 1") {
+  } else if (widget !== "xklic 1" && !widgetResolved) {
     warn(`widget « ${widget} » : ni --widget-sitekey ni TURNSTILE_WIDGET_SECRET fournis — il doit déjà exister côté back-office, sinon l'assignation échouera.`);
   }
 

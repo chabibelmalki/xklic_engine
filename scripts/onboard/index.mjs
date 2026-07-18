@@ -22,6 +22,7 @@ import { fileURLToPath } from "node:url";
 import { c, loadEnvLocal, bareHost, die, stepHeader, MissingTokenError } from "./util.mjs";
 import { STEPS, STEP_ORDER } from "./steps.mjs";
 import * as backoffice from "./backoffice.mjs";
+import * as cloudflare from "./cloudflare.mjs";
 
 const ONLY_TARGETS = Object.keys(STEPS); // inclut "gsc-human" (hors pipeline auto)
 
@@ -34,7 +35,7 @@ loadEnvLocal(ROOT, ".env.turnstile-widget");
 
 // --- parsing args ---------------------------------------------------------
 function parseArgs(argv) {
-  const out = { apply: false, only: null, slug: null, domain: null, humanToken: null, widget: "xklic 1", widgetSitekey: null, dossierRef: null, redirectTo: null, listWidgets: false };
+  const out = { apply: false, only: null, slug: null, domain: null, humanToken: null, widget: "auto", widgetSitekey: null, dossierRef: null, redirectTo: null, listWidgets: false };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--apply" || a === "--no-dry-run") out.apply = true;
@@ -72,7 +73,19 @@ async function main() {
       console.log(c.dim("Aucun widget Turnstile côté back-office."));
     } else {
       console.log(c.bold(`Widgets Turnstile (${widgets.length}) :`));
-      for (const w of widgets) console.log(`   • ${c.bold(w.name)}  ${c.dim(w.sitekey)}`);
+      const cfOk = cloudflare.isConfigured();
+      for (const w of widgets) {
+        let cap = "";
+        if (cfOk && w.sitekey) {
+          try {
+            const n = (await cloudflare.getWidget(w.sitekey)).domains.length;
+            cap = "  " + (n >= 10 ? c.red(`${n}/10 · plein`) : c.green(`${n}/10`));
+          } catch {
+            cap = c.dim("  (capacité ?)");
+          }
+        }
+        console.log(`   • ${c.bold(w.name)}  ${c.dim(w.sitekey)}${cap}`);
+      }
     }
     return;
   }
