@@ -222,7 +222,7 @@
             "items": [
               {
                 "question": "How do I book a taxi in Gigean?",
-                "reponse": "By phone or WhatsApp on 07 66 90 50 99, 24/7. Immediate ride subject to availability, or advance booking for a set time — an airport transfer, a medical appointment, an excursion."
+                "reponse": "By phone on 07 66 90 50 99 or on WhatsApp at 06 58 66 06 60, 24/7. Immediate ride subject to availability, or advance booking for a set time — an airport transfer, a medical appointment, an excursion."
               },
               {
                 "question": "Do you handle transfers to airports and stations?",
@@ -1171,7 +1171,7 @@
             "form": true,
             "formMode": "demande-intervention",
             "telephone": "07 66 90 50 99",
-            "whatsapp": "07 66 90 50 99",
+            "whatsapp": "06 58 66 06 60",
             "email": "contact@taxi-excellence.fr",
             "adresse": "Gigean (34770) · Hérault",
             "horaires": [
