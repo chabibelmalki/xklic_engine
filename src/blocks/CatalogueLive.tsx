@@ -893,6 +893,39 @@ export function CatalogueLive({
   const needsAddress = !!delivery && delivery.kind !== "pickup";
   const zoneRestricted = isZoneRestricted(delivery?.zone);
 
+  // ── Sélection des modes : on GROUPE par type (retrait / livraison — fini le
+  // retrait au milieu). Pour un type à UN seul mode : radio, comme aujourd'hui.
+  // Pour un type à PLUSIEURS modes (plusieurs points de retrait, ou plusieurs
+  // zones de livraison) : une seule entrée + un select, au lieu de N entrées
+  // indistinctes. ────────────────────────────────────────────────────────────
+  const pickups = catalog?.delivery_methods.filter((d) => d.kind === "pickup") ?? [];
+  const deliveries = catalog?.delivery_methods.filter((d) => d.kind !== "pickup") ?? [];
+  // Libellé lisible d'une livraison depuis sa zone (« Osny +5 km », « Paris »).
+  const zoneLabel = (d: ShopDelivery): string => {
+    const z = d.zone;
+    if (z?.worldwide) return "Partout";
+    if (!z?.rules || z.rules.length === 0) return "Livraison";
+    return z.rules
+      .map((r) => (r.type === "radius" ? `${r.label} +${r.radius_km ?? 0} km` : r.label))
+      .filter(Boolean)
+      .join(", ");
+  };
+  const priceLabel = (d: ShopDelivery) =>
+    effectiveDeliveryCents(d) > 0 ? euros(d.price_cents) : "Gratuit";
+  // Ce qui DISTINGUE deux modes d'un même type : un point de retrait par son
+  // adresse (details), une livraison par sa zone (+ prix).
+  const optionLabel = (d: ShopDelivery): string =>
+    d.kind === "pickup"
+      ? d.details?.trim() || d.label || "Retrait sur place"
+      : `${zoneLabel(d)} — ${priceLabel(d)}`;
+  const groupSelected = (items: ShopDelivery[]) => items.some((d) => d.id === deliveryId);
+  // Choisir un groupe (radio parent) : garde le mode déjà sélectionné du groupe
+  // s'il y en a un, sinon prend le premier.
+  const chooseGroup = (items: ShopDelivery[]) => {
+    const target = items.find((d) => d.id === deliveryId) ?? items[0];
+    if (target) selectDelivery(target);
+  };
+
   if (step === 2 && lines.length === 0) setStep(1);
 
   // Autocomplétion de la commune (debounce) : /api/shop/geo → communes filtrées
@@ -1367,44 +1400,120 @@ export function CatalogueLive({
             <div className="lg:order-1">
               <div className="rounded-theme border border-border bg-surface p-5 shadow-sm sm:p-6">
                 <h3 className="mb-4 font-display text-lg font-bold text-ink">
-                  Retrait ou livraison
+                  {pickups.length && deliveries.length
+                    ? "Retrait ou livraison"
+                    : deliveries.length
+                      ? "Livraison"
+                      : "Retrait"}
                 </h3>
                 <div className="space-y-2.5">
-                  {catalog.delivery_methods.map((d) => (
-                    <label
-                      key={d.id}
-                      className={cn(
-                        "flex cursor-pointer items-start justify-between gap-3 rounded-xl border p-3.5 text-sm transition-colors",
-                        deliveryId === d.id
-                          ? "border-brand-500 bg-brand-50/50 ring-1 ring-brand-500"
-                          : "border-border hover:border-brand-200",
-                      )}
-                    >
-                      <span className="flex items-start gap-3">
-                        <input
-                          type="radio"
-                          name="delivery"
-                          checked={deliveryId === d.id}
-                          onChange={() => selectDelivery(d)}
-                          className="mt-0.5 size-4 text-brand-600 focus:ring-brand-500"
-                        />
-                        <span>
-                          <span className="font-semibold text-ink">{d.label}</span>
-                          {d.details && <span className="block text-xs text-muted">{d.details}</span>}
-                          {d.free_over_cents != null && d.free_over_cents > 0 && (
-                            <span className="block text-xs font-medium text-brand-700">
-                              {subtotal >= d.free_over_cents
-                                ? "🎉 Livraison offerte"
-                                : `Gratuite dès ${euros(d.free_over_cents)} de commande`}
-                            </span>
+                  {/* Un groupe par type — retrait puis livraison. 1 mode → radio ;
+                      plusieurs → une entrée + un select (points de retrait / zones). */}
+                  {(
+                    [
+                      { items: pickups, title: "Retrait sur place", sub: "Choisissez votre point de retrait" },
+                      { items: deliveries, title: "Livraison", sub: "Choisissez votre zone de livraison" },
+                    ] as const
+                  ).map((g) => {
+                    if (g.items.length === 0) return null;
+
+                    // Un seul mode de ce type : radio direct (comme aujourd'hui).
+                    if (g.items.length === 1) {
+                      const d = g.items[0];
+                      return (
+                        <label
+                          key={d.id}
+                          className={cn(
+                            "flex cursor-pointer items-start justify-between gap-3 rounded-xl border p-3.5 text-sm transition-colors",
+                            deliveryId === d.id
+                              ? "border-brand-500 bg-brand-50/50 ring-1 ring-brand-500"
+                              : "border-border hover:border-brand-200",
                           )}
-                        </span>
-                      </span>
-                      <span className="shrink-0 font-semibold text-ink">
-                        {effectiveDeliveryCents(d) > 0 ? euros(d.price_cents) : "Gratuit"}
-                      </span>
-                    </label>
-                  ))}
+                        >
+                          <span className="flex items-start gap-3">
+                            <input
+                              type="radio"
+                              name="delivery"
+                              checked={deliveryId === d.id}
+                              onChange={() => selectDelivery(d)}
+                              className="mt-0.5 size-4 text-brand-600 focus:ring-brand-500"
+                            />
+                            <span>
+                              <span className="font-semibold text-ink">{g.title}</span>
+                              {d.kind !== "pickup" && (
+                                <span className="block text-xs text-muted">{zoneLabel(d)}</span>
+                              )}
+                              {d.details && (
+                                <span className="block text-xs text-muted">{d.details}</span>
+                              )}
+                              {d.free_over_cents != null && d.free_over_cents > 0 && (
+                                <span className="block text-xs font-medium text-brand-700">
+                                  {subtotal >= d.free_over_cents
+                                    ? "🎉 Livraison offerte"
+                                    : `Gratuite dès ${euros(d.free_over_cents)} de commande`}
+                                </span>
+                              )}
+                            </span>
+                          </span>
+                          <span className="shrink-0 font-semibold text-ink">{priceLabel(d)}</span>
+                        </label>
+                      );
+                    }
+
+                    // Plusieurs modes de ce type : UNE entrée + un select.
+                    const sel = groupSelected(g.items);
+                    return (
+                      <div
+                        key={g.title}
+                        className={cn(
+                          "rounded-xl border p-3.5 text-sm transition-colors",
+                          sel
+                            ? "border-brand-500 bg-brand-50/50 ring-1 ring-brand-500"
+                            : "border-border hover:border-brand-200",
+                        )}
+                      >
+                        <label className="flex cursor-pointer items-start gap-3">
+                          <input
+                            type="radio"
+                            name="delivery"
+                            checked={sel}
+                            onChange={() => chooseGroup(g.items)}
+                            className="mt-0.5 size-4 text-brand-600 focus:ring-brand-500"
+                          />
+                          <span>
+                            <span className="font-semibold text-ink">{g.title}</span>
+                            <span className="block text-xs text-muted">{g.sub}</span>
+                          </span>
+                        </label>
+
+                        {sel && (
+                          <div className="mt-3 pl-7">
+                            <select
+                              value={deliveryId}
+                              onChange={(e) => {
+                                const d = g.items.find((x) => x.id === e.target.value);
+                                if (d) selectDelivery(d);
+                              }}
+                              className="w-full rounded-xl border border-border bg-surface px-3 py-2.5 text-sm text-ink shadow-sm outline-none focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
+                            >
+                              {g.items.map((d) => (
+                                <option key={d.id} value={d.id}>
+                                  {optionLabel(d)}
+                                </option>
+                              ))}
+                            </select>
+                            {delivery?.free_over_cents != null && delivery.free_over_cents > 0 && (
+                              <span className="mt-1.5 block text-xs font-medium text-brand-700">
+                                {subtotal >= delivery.free_over_cents
+                                  ? "🎉 Livraison offerte pour cette commande"
+                                  : `Gratuite dès ${euros(delivery.free_over_cents)} de commande`}
+                              </span>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
 
                 {needsAddress && (
