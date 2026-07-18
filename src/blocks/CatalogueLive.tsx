@@ -26,6 +26,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { Turnstile } from "@/components/ui/Turnstile";
 import { cn, formatEUR, telHrefIntl } from "@/lib/utils";
+import { resolveAllergens } from "@/lib/allergens";
 import {
   type DeliveryZone,
   type GeoPlace,
@@ -57,6 +58,8 @@ interface ShopOptionChoice {
   image?: string;
   /** false si le produit lié est inactif/épuisé — choix non sélectionnable. */
   available?: boolean;
+  /** Allergènes du produit lié — résolus côté client au chargement du catalogue. */
+  allergens?: string[];
 }
 interface ShopOptionGroup {
   id: string;
@@ -75,6 +78,7 @@ interface ShopProduct {
   stock: number | null; // null = stock illimité
   in_stock: boolean;
   options?: ShopOptionGroup[];
+  allergens?: string[]; // clés d'allergènes déclarés (cf. lib/allergens)
 }
 interface ShopCategory {
   id: string;
@@ -195,6 +199,75 @@ function selStillValid(p: ShopProduct, sel: Selection): boolean {
   return selValid(p, sel);
 }
 
+/**
+ * Allergènes déclarés d'un produit. Deux variantes :
+ *  - "compact" (liste : carte / ligne menu) : pastilles d'icônes seules, le
+ *    libellé est en title (survol) — dense, ne surcharge pas la liste.
+ *  - "full" (fiche produit, configurateur) : puce icône + libellé, précédée d'un
+ *    intitulé « Allergènes ».
+ * Rend null si le produit n'en déclare aucun.
+ */
+/** Allergènes cumulés d'une composition : ceux du produit de base + ceux de
+ *  chaque choix sélectionné (dédupliqués, ordre canonique via resolveAllergens). */
+function composedAllergens(p: ShopProduct, sel: Selection): string[] {
+  const keys = new Set<string>(p.allergens ?? []);
+  for (const g of p.options ?? []) {
+    for (const id of sel[g.id] ?? []) {
+      g.choices.find((c) => c.id === id)?.allergens?.forEach((k) => keys.add(k));
+    }
+  }
+  return [...keys];
+}
+
+function AllergenList({
+  allergens,
+  variant = "compact",
+  label = "Allergènes",
+}: {
+  allergens?: string[];
+  variant?: "compact" | "full";
+  label?: string;
+}) {
+  const list = resolveAllergens(allergens);
+  if (!list.length) return null;
+
+  if (variant === "compact") {
+    return (
+      <ul
+        className="flex flex-wrap items-center gap-1"
+        aria-label={`Allergènes : ${list.map((a) => a.label).join(", ")}`}
+      >
+        {list.map((a) => (
+          <li
+            key={a.key}
+            title={a.label}
+            className="grid size-5 place-items-center rounded-full bg-surface-2 text-[11px] leading-none"
+          >
+            <span aria-hidden>{a.icon}</span>
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
+  return (
+    <div>
+      <p className="text-xs font-semibold uppercase tracking-wide text-muted">{label}</p>
+      <ul className="mt-1.5 flex flex-wrap gap-1.5">
+        {list.map((a) => (
+          <li
+            key={a.key}
+            className="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface-2 px-2.5 py-1 text-xs font-medium text-ink"
+          >
+            <span aria-hidden>{a.icon}</span>
+            {a.label}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 function ShopProductCard({
   product,
   qty,
@@ -269,6 +342,9 @@ function ShopProductCard({
             {product.options!.map((g) => g.name).join(" · ")} au choix
           </p>
         )}
+        <div className="mt-2">
+          <AllergenList allergens={product.allergens} />
+        </div>
 
         <div className="mt-4 flex items-center justify-between gap-3 border-t border-border pt-4">
           <span className="font-display text-lg font-extrabold text-brand-700">
@@ -399,6 +475,7 @@ function ShopProductRow({
             {lowStock && (
               <span className="text-xs font-medium text-accent-600">Plus que {product.stock}</span>
             )}
+            <AllergenList allergens={product.allergens} />
           </div>
         </div>
       </button>
@@ -479,6 +556,8 @@ function ProductConfigurator({
   const groups = product.options ?? [];
   const valid = selValid(product, sel);
   const price = unitPriceCents(product, sel);
+  // Allergènes cumulés de la composition en cours — recalculés à chaque choix.
+  const composed = composedAllergens(product, sel);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
@@ -541,6 +620,14 @@ function ProductConfigurator({
           </button>
         </div>
 
+        {/* Barre épinglée : allergènes cumulés de la composition. Hors du scroll
+            (flex-none) → toujours visible, se met à jour à chaque choix. */}
+        {composed.length ? (
+          <div className="flex-none border-b border-border bg-surface-2 px-5 py-3">
+            <AllergenList allergens={composed} variant="full" label="Allergènes de votre sélection" />
+          </div>
+        ) : null}
+
         <div className="flex-1 space-y-6 overflow-y-auto p-5">
           {groups.map((g) => {
             const n = groupCount(g);
@@ -577,13 +664,16 @@ function ProductConfigurator({
                       </span>
                     ) : null;
                     const nameEl = (
-                      <span className="flex min-w-0 items-center gap-2 font-medium text-ink">
-                        <span className="truncate">{c.name}</span>
-                        {c.price_delta_cents > 0 && (
-                          <span className="shrink-0 text-xs font-semibold text-muted">
-                            +{euros(c.price_delta_cents)}
-                          </span>
-                        )}
+                      <span className="flex min-w-0 flex-col gap-0.5">
+                        <span className="flex min-w-0 items-center gap-2 font-medium text-ink">
+                          <span className="truncate">{c.name}</span>
+                          {c.price_delta_cents > 0 && (
+                            <span className="shrink-0 text-xs font-semibold text-muted">
+                              +{euros(c.price_delta_cents)}
+                            </span>
+                          )}
+                        </span>
+                        {c.allergens?.length ? <AllergenList allergens={c.allergens} /> : null}
                       </span>
                     );
                     return (
@@ -811,6 +901,11 @@ function ProductDetail({
               {product.options!.map((g) => g.name).join(" · ")} au choix
             </p>
           )}
+          {product.allergens?.length ? (
+            <div className="mt-3">
+              <AllergenList allergens={product.allergens} variant="full" />
+            </div>
+          ) : null}
           {product.description && (
             <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-muted">
               {product.description}
@@ -930,6 +1025,18 @@ export function CatalogueLive({
       const res = await fetch(`/api/shop/catalog?site=${encodeURIComponent(config.slug)}`);
       if (!res.ok) throw new Error(String(res.status));
       const data = (await res.json()) as ShopCatalog;
+      // Résolution client des allergènes par choix d'option : chaque choix lié à
+      // un produit hérite des allergènes de ce produit (le catalogue les expose
+      // déjà par produit). Permet l'affichage par choix + le cumul « votre
+      // composition » dans le configurateur, sans dépendre du back-office.
+      const allergensByProduct = new Map(data.products.map((p) => [p.id, p.allergens ?? []]));
+      for (const p of data.products) {
+        for (const g of p.options ?? []) {
+          for (const ch of g.choices) {
+            if (ch.product_id) ch.allergens = allergensByProduct.get(ch.product_id) ?? [];
+          }
+        }
+      }
       setCatalog(data);
       setLoadError(false);
       // panier ↦ catalogue frais : lignes dont le produit/la composition a
