@@ -56,6 +56,14 @@ export function CommandeRecap({
         setState("none");
         return;
       }
+      // Paiement terminé (Stripe ne redirige ici qu'après succès ; une annulation
+      // va sur /annulation) : on vide le panier persistant de cette boutique pour
+      // ne pas le retrouver au retour. Même clé que CatalogueLive.
+      try {
+        localStorage.removeItem(`xklic:cart:${config.slug}`);
+      } catch {
+        /* localStorage indisponible : rien à vider */
+      }
       try {
         const res = await fetch(
           `/api/shop/order?site=${encodeURIComponent(config.slug)}&session_id=${encodeURIComponent(sessionId)}`,
@@ -119,7 +127,8 @@ export function CommandeRecap({
                 {c.titre ?? "Merci pour votre commande !"}
               </h3>
               <p className="mt-1 text-sm text-muted">
-                Commande <strong className="text-ink">#{order.number}</strong>
+                Nous avons bien reçu votre commande{" "}
+                <strong className="text-ink">#{order.number}</strong>
                 {order.status === "paid"
                   ? " — paiement confirmé."
                   : " — paiement en cours de confirmation."}
