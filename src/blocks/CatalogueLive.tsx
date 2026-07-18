@@ -809,25 +809,6 @@ export function CatalogueLive({
     if (error) errorRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
   }, [error]);
 
-  // DEBUG TEMPORAIRE : logge l'élément RÉELLEMENT cliqué (phase capture). Si un
-  // clic sur « Payer » remonte une autre cible (overlay, bouton flottant…), on
-  // tient le coupable qui intercepte le clic. À retirer une fois diagnostiqué.
-  useEffect(() => {
-    const h = (ev: MouseEvent) => {
-      const t = ev.target as HTMLElement | null;
-      const btn = t?.closest?.("button,a");
-      console.log(
-        "[checkout] clic →",
-        t?.tagName,
-        typeof t?.className === "string" ? t.className.slice(0, 70) : "",
-        btn ? `| bouton: "${(btn.textContent || "").trim().slice(0, 30)}"` : "| (aucun bouton)",
-        `@${ev.clientX},${ev.clientY}`,
-      );
-    };
-    document.addEventListener("click", h, true);
-    return () => document.removeEventListener("click", h, true);
-  }, []);
-
   const products = useMemo(() => catalog?.products ?? [], [catalog]);
   const byId = useMemo(() => new Map(products.map((p) => [p.id, p])), [products]);
 
@@ -1055,10 +1036,6 @@ export function CatalogueLive({
   }
 
   async function submit(e: React.FormEvent<HTMLFormElement>) {
-    // Debug temporaire : trace chaque étape du checkout en console (préfixe
-    // [checkout]) pour diagnostiquer un « rien ne se passe » chez le client.
-    const dbg = (...a: unknown[]) => console.log("[checkout]", ...a);
-    dbg("submit() appelé — le clic atteint bien le handler");
     e.preventDefault();
     setError(null);
     const fd = new FormData(e.currentTarget);
@@ -1066,58 +1043,20 @@ export function CatalogueLive({
     const email = String(fd.get("email") ?? "").trim();
     const phone = String(fd.get("phone") ?? "").trim();
     const consent = fd.get("consent") === "on";
-    dbg("valeurs", {
-      name,
-      email,
-      consent,
-      deliveryId,
-      needsAddress,
-      hpName,
-      honeypotValue: hpName ? fd.get(hpName) : "(pas de honeypot)",
-      commune: commune?.label ?? null,
-      addrLine1,
-    });
-    if (name.length < 2) {
-      dbg("STOP: nom manquant");
-      return setError("Indiquez votre nom.");
-    }
-    if (!email.includes("@")) {
-      dbg("STOP: email invalide");
-      return setError("Indiquez un e-mail valide (reçu de commande).");
-    }
-    if (!consent) {
-      dbg("STOP: consentement non coché");
-      return setError("Merci d'accepter la politique de confidentialité.");
-    }
-    if (hpName && String(fd.get(hpName) ?? "")) {
-      dbg("STOP: honeypot rempli (autofill ?) — champ", hpName, "=", fd.get(hpName));
-      return; // honeypot (champ caché à nom aléatoire)
-    }
+    if (name.length < 2) return setError("Indiquez votre nom.");
+    if (!email.includes("@")) return setError("Indiquez un e-mail valide (reçu de commande).");
+    if (!consent) return setError("Merci d'accepter la politique de confidentialité.");
+    if (hpName && fd.get(hpName)) return; // honeypot (case cochée = bot)
     const turnstileToken = String(fd.get("cf-turnstile-response") ?? "");
-    if (turnstileSiteKey && !turnstileToken) {
-      dbg("STOP: turnstile requis mais token absent");
-      return setError("Vérification anti-robot requise.");
-    }
-    if (!deliveryId) {
-      dbg("STOP: aucun mode de livraison sélectionné");
-      return setError("Choisissez un mode de retrait/livraison.");
-    }
+    if (turnstileSiteKey && !turnstileToken) return setError("Vérification anti-robot requise.");
+    if (!deliveryId) return setError("Choisissez un mode de retrait/livraison.");
     // Adresse requise pour les modes qui livrent (revalidée côté serveur).
     if (needsAddress) {
-      if (!commune) {
-        dbg("STOP: commune non choisie (mode qui livre)");
-        return setError("Choisissez votre commune de livraison.");
-      }
-      if (zoneRestricted && !isInZone(commune, delivery?.zone)) {
-        dbg("STOP: commune hors zone");
+      if (!commune) return setError("Choisissez votre commune de livraison.");
+      if (zoneRestricted && !isInZone(commune, delivery?.zone))
         return setError("Cette commune n'est pas dans la zone de livraison de ce mode.");
-      }
-      if (addrLine1.trim().length < 3) {
-        dbg("STOP: adresse (rue) trop courte");
-        return setError("Indiquez votre adresse (n° et rue).");
-      }
+      if (addrLine1.trim().length < 3) return setError("Indiquez votre adresse (n° et rue).");
     }
-    dbg("validations OK → envoi de la requête /api/shop/checkout");
     const address = needsAddress
       ? {
           line1: addrLine1.trim(),
@@ -1158,7 +1097,6 @@ export function CatalogueLive({
         error?: string;
         code?: string;
       };
-      dbg("réponse /api/shop/checkout", { status: res.status, ok: res.ok, data });
       if (!res.ok || !data.checkout_url) {
         // stock/menu modifié entre-temps : on rafraîchit le catalogue
         if (
@@ -1170,10 +1108,8 @@ export function CatalogueLive({
         }
         throw new Error(data.error ?? "Le paiement a échoué, réessayez.");
       }
-      dbg("redirection vers Stripe", data.checkout_url);
       window.location.assign(data.checkout_url);
     } catch (err) {
-      dbg("ERREUR fetch/redirection", err);
       setError(err instanceof Error ? err.message : "Le paiement a échoué, réessayez.");
       setSubmitting(false);
     }
@@ -1701,13 +1637,15 @@ export function CatalogueLive({
 
                 <h3 className="mb-4 mt-8 font-display text-lg font-bold text-ink">Vos coordonnées</h3>
                 <form onSubmit={submit} noValidate className="space-y-3">
-                  {/* Honeypot anti-bot à nom ALÉATOIRE (posé au montage) : aucun
-                      gestionnaire de mots de passe / autofill ne remplit un champ
-                      au nom inconnu — un nom fixe ("company", "ref_code"…) finissait
-                      par être rempli et bloquait silencieusement de vrais clients. */}
+                  {/* Honeypot anti-bot = CASE À COCHER cachée à nom aléatoire.
+                      L'autofill / les gestionnaires de mots de passe remplissent
+                      les champs TEXTE (même cachés, même à nom aléatoire — par
+                      proximité), mais jamais une case à cocher : un vrai client la
+                      laisse décochée, seul un bot qui coche tout la coche. */}
                   {hpName && (
                     <div className="sr-only" aria-hidden>
                       <input
+                        type="checkbox"
                         tabIndex={-1}
                         autoComplete="off"
                         name={hpName}
@@ -1784,9 +1722,6 @@ export function CatalogueLive({
                     type="submit"
                     size="lg"
                     disabled={submitting}
-                    onClick={() =>
-                      console.log("[checkout] clic sur le bouton Payer (disabled=" + submitting + ")")
-                    }
                     className="h-auto min-h-14 w-full whitespace-normal py-3 text-center leading-tight"
                   >
                     {submitting ? (
