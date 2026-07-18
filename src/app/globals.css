@@ -706,6 +706,52 @@ input[type="range"] {
   [data-pack="cascade-hydro"] .cascade-seal-spin { animation: none; }
 }
 
+/* ================== Aronde · Menuiserie d'assemblage =================== */
+/* Atelier d'ébéniste : slab serif robuste (Zilla Slab), coins à COUPE D'ONGLET
+   (miter, gérés par les blocs via clip-path), joints en QUEUE D'ARONDE entre les
+   moments sombres (espresso) et le corps crème, index chiffrés au fil de coupe.
+   Angles nets, ombres franches et basses (bois posé à plat). Parti pris fort. */
+[data-pack="aronde-atelier"] {
+  --pack-font-display: var(--font-zilla-slab);
+  --pack-font-sans: var(--font-inter);
+  --display-tracking: -0.01em;
+  --display-case: none;
+
+  /* Coins nets d'atelier (les panneaux ajoutent leur coupe d'onglet en clip-path). */
+  --radius-btn: 0.4rem;
+  --radius-card: 0.25rem;
+  --radius-image: 0.3rem;
+  --border-width: 1px;
+  --radius: 0.4rem;
+
+  /* Ombres franches et basses : le bois est posé à plat, il ne flotte pas. */
+  --shadow-card: 0 18px 40px -30px color-mix(in srgb, var(--brand-800) 55%, transparent);
+  --shadow-pop: 0 26px 60px -34px color-mix(in srgb, var(--brand-800) 60%, transparent);
+
+  --section-py: 6.5rem;
+  --content-max: 74rem;
+  --motion-distance: 16px;
+  --motion-duration: 0.6s;
+  --motion-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+/* Titres display : Zilla Slab, gras et posé (jamais aussi serré qu'epure/cascade). */
+[data-pack="aronde-atelier"] h1.font-display,
+[data-pack="aronde-atelier"] h2.font-display,
+[data-pack="aronde-atelier"] h3.font-display,
+[data-pack="aronde-atelier"] .pack-heading {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+/* Grain de bois discret (utilitaire scopé au pack) — fines stries chaudes
+   verticales, jamais fuité vers une autre famille. */
+[data-pack="aronde-atelier"] .aronde-grain {
+  background-image: repeating-linear-gradient(
+    90deg,
+    color-mix(in srgb, currentColor 6%, transparent) 0 1px,
+    transparent 1px 8px
+  );
+}
+
 /* ================== Riso · Atelier de sérigraphie ====================== */
 /* Affiche imprimée à l'encre : grotesque d'affiche mono-graisse (Archivo Black)
    + mono d'imprimeur (IBM Plex Mono) pour TOUTE donnée (prix, horaires, index),

@@ -404,6 +404,31 @@ export const PACKS: StylePack[] = [
       cta: ["encadre"],
     },
   },
+  {
+    id: "aronde-atelier",
+    label: "Aronde · Menuiserie d'assemblage",
+    family: "aronde",
+    // Corps clair « établi crème » : alternance blanc / lavis de bois très pâle
+    // (brand-tinted). Les blocs d'identité (hero/pageHero/cta/footer) peignent
+    // leur propre pan de bois espresso, assemblé au corps par une queue d'aronde.
+    sectionStrategy: "brand-tinted",
+    sectionDivider: "none",
+    ambiance:
+      "Parti pris FORT « atelier d'ébéniste / menuiserie d'assemblage » : slab serif robuste (Zilla Slab), corps clair crème ponctué de PANS DE BOIS espresso pleine largeur, assemblés au corps par une QUEUE D'ARONDE signature. Panneaux de services à COUPE D'ONGLET (coin taillé 45°), index chiffrés au fil de coupe, mortaises carrées pour les étapes, grain de bois discret, arête caramel. Angles nets, ombres franches et basses. Chaleureux, tactile, artisanal — distinct de tout le parc.",
+    fonts: { display: "Zilla Slab", sans: "Inter" },
+    variants: {
+      hero: ["plein"],
+      services: ["grille-cartes"],
+      etapes: ["timeline-verticale", "cartes-numerotees"],
+      faq: ["deux-colonnes", "accordeon"],
+      tarifs: ["liste-simple", "grille"],
+      galerie: ["grille", "masonry"],
+      zone: ["liste", "carte"],
+      contenu: ["texte-image"],
+      contact: ["split-form-carte"],
+      cta: ["bande"],
+    },
+  },
 ];
 
 export const DEFAULT_PACK: StylePackId = "base";

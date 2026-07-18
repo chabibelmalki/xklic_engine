@@ -7,6 +7,7 @@
 export const SITE_SLUGS: string[] = [
   "ab-pro-service",
   "adelnet",
+  "beirouti",
   "casa-clean-provence",
   "cbprestamultiservices",
   "clean-confiance-by-maman",

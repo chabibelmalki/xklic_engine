@@ -1,0 +1,1710 @@
+{
+  "slug": "beirouti",
+  "theme": "maison-ivoire",
+  "stylePack": "aronde-atelier",
+  "branding": {
+    "logoAlt": "Menuiserie Beirouti — menuiseries, pose, cuisines à Rive-de-Gier",
+    "logoTextHidden": true,
+    "tagline": "Menuiserie · pose · cuisines — Rive-de-Gier",
+    "colors": {
+      "brand": "#5a3e28",
+      "accent": "#c58542",
+      "neutral": "warm"
+    },
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/logo-573201bb.jpg",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/logo-573201bb.jpg"
+  },
+  "entreprise": {
+    "nom": "Menuiserie Beirouti",
+    "statut": "EI",
+    "siret": "10435609200015",
+    "ape": "43.32A",
+    "apeLabel": "Travaux de menuiserie bois et PVC",
+    "tva": {
+      "regime": "franchise"
+    },
+    "pays": "FR",
+    "dirigeant": "Tarik Beirouti",
+    "siege": "16 K rue du Béarn, Résidence Le Gier, 42800 Rive-de-Gier"
+  },
+  "seo": {
+    "schemaType": "GeneralContractor",
+    "ville": "Rive-de-Gier"
+  },
+  "geo": {
+    "lat": 45.5182852,
+    "lng": 4.5975489
+  },
+  "meta": {
+    "title": "Menuisier à Rive-de-Gier — cuisines, parquet, pose",
+    "description": "Pose de cuisines, parquet, portes, fenêtres, volets et aménagement sur mesure à Rive-de-Gier et 50 km autour. Relevé précis, finitions soignées, devis gratuit.",
+    "keywords": [
+      "menuisier Rive-de-Gier",
+      "pose de cuisine Rive-de-Gier",
+      "pose de parquet vallée du Gier",
+      "menuiseries PVC alu Rive-de-Gier",
+      "poseur de volets Rive-de-Gier",
+      "porte blindée Rive-de-Gier",
+      "aménagement intérieur sur mesure Loire"
+    ]
+  },
+  "forms": {
+    "to": "menuiseriebeirouti@gmail.com"
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Accueil",
+      "blocks": [
+        {
+          "type": "hero",
+          "content": {
+            "eyebrow": "Menuiserie · pose · cuisines",
+            "titre": "Vos intérieurs, assemblés",
+            "titreAccent": "au cordeau",
+            "accroche": "Menuiserie Beirouti conçoit et pose vos cuisines, parquets, fenêtres, portes et volets sur mesure à Rive-de-Gier et dans un rayon de 50 km. De la prise de cotes aux finitions, un seul artisan suit votre chantier du premier trait de crayon au dernier coup de niveau.",
+            "trust": [
+              {
+                "icone": "Ruler",
+                "label": "Sur mesure, du relevé à la pose"
+              },
+              {
+                "icone": "Hammer",
+                "label": "Travail soigné, finitions propres"
+              },
+              {
+                "icone": "BadgeCheck",
+                "label": "Devis gratuit et sans engagement"
+              },
+              {
+                "icone": "MapPin",
+                "label": "Rive-de-Gier & 50 km autour"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Découvrir nos prestations",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "eyebrow": "Nos prestations",
+            "titre": "Le bois, sous toutes ses coupes",
+            "intro": "Une main d'artisan pour toute la menuiserie de votre logement, intérieure comme extérieure. Chaque prestation ouvre sa fiche : ce qu'elle couvre, comment se déroule la pose et ce qu'il faut prévoir.",
+            "items": [
+              {
+                "nom": "Pose de cuisine",
+                "description": "Cuisine complète montée et calée au niveau : caissons, plan de travail, façades et raccords à sec, prête à vivre.",
+                "href": "/pose-cuisine",
+                "icone": "CookingPot"
+              },
+              {
+                "nom": "Pose de parquet",
+                "description": "Massif, contrecollé ou stratifié, posé collé, flottant ou cloué, avec plinthes et seuils ajustés au millimètre.",
+                "href": "/pose-parquet",
+                "icone": "Layers"
+              },
+              {
+                "nom": "Portes & fenêtres",
+                "description": "Menuiseries bois, PVC ou alu : fenêtres, baies vitrées et portes, en neuf comme en rénovation.",
+                "href": "/portes-fenetres",
+                "icone": "DoorOpen"
+              },
+              {
+                "nom": "Aménagement intérieur",
+                "description": "Dressings, placards, meubles sous escalier et rangements sur mesure qui épousent chaque recoin.",
+                "href": "/amenagement-interieur",
+                "icone": "LayoutGrid"
+              },
+              {
+                "nom": "Pose de volets",
+                "description": "Volets roulants ou battants, pose neuve, rénovation de coffre et motorisation des volets existants.",
+                "href": "/volets",
+                "icone": "Blinds"
+              },
+              {
+                "nom": "Porte blindée",
+                "description": "Bloc-porte blindé ou blindage d'une porte en place, serrure multipoint : votre entrée mise à l'abri.",
+                "href": "/porte-blindee",
+                "icone": "ShieldCheck"
+              }
+            ],
+            "cta": {
+              "label": "Votre commune est-elle desservie ?",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "timeline-verticale",
+          "content": {
+            "eyebrow": "Du relevé à la pose",
+            "titre": "Comment se déroule votre chantier",
+            "items": [
+              {
+                "icone": "ClipboardList",
+                "titre": "On échange sur votre projet",
+                "texte": "Par téléphone, WhatsApp ou formulaire, vous décrivez ce que vous avez en tête ; on cerne le besoin et on convient d'une visite."
+              },
+              {
+                "icone": "PencilRuler",
+                "titre": "Relevé des cotes sur place",
+                "texte": "Je viens mesurer, repérer les contraintes du support et vous conseiller les matériaux qui tiennent la route chez vous."
+              },
+              {
+                "icone": "FileText",
+                "titre": "Devis clair et gratuit",
+                "texte": "Vous recevez un chiffrage détaillé, poste par poste, sans engagement et sans mauvaise surprise le jour de la facture."
+              },
+              {
+                "icone": "Hammer",
+                "titre": "Fabrication et pose",
+                "texte": "On approvisionne, on ajuste et on pose au niveau, atelier propre laissé derrière nous et finitions vérifiées avec vous."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "À Rive-de-Gier et jusqu'à 50 km",
+            "intro": "Installé à Rive-de-Gier, je rayonne sur toute la vallée du Gier, la métropole stéphanoise, l'ouest lyonnais et le pays viennois. Votre commune n'est pas citée ? Appelez, on regarde la distance ensemble.",
+            "rayonKm": 50,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.05%2C45.20%2C5.15%2C45.85&layer=mapnik&marker=45.5182852%2C4.5975489",
+            "zones": [
+              {
+                "region": "Vallée du Gier — autour de Rive-de-Gier",
+                "principale": "Rive-de-Gier",
+                "villes": [
+                  "Rive-de-Gier",
+                  "Saint-Chamond",
+                  "L'Horme",
+                  "La Grand-Croix",
+                  "Lorette",
+                  "Saint-Paul-en-Jarez",
+                  "Génilac",
+                  "Châteauneuf",
+                  "Saint-Joseph",
+                  "Farnay",
+                  "Cellieu"
+                ]
+              },
+              {
+                "region": "Saint-Étienne Métropole",
+                "principale": "Saint-Étienne",
+                "villes": [
+                  "Saint-Étienne",
+                  "Saint-Priest-en-Jarez",
+                  "La Talaudière",
+                  "Sorbiers",
+                  "Le Chambon-Feugerolles",
+                  "Firminy",
+                  "Roche-la-Molière",
+                  "Villars"
+                ]
+              },
+              {
+                "region": "Ouest lyonnais & vallée du Rhône",
+                "principale": "Givors",
+                "villes": [
+                  "Givors",
+                  "Grigny",
+                  "Montagny",
+                  "Mornant",
+                  "Brignais",
+                  "Millery",
+                  "Vienne",
+                  "Chasse-sur-Rhône"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "liste-ouverte",
+          "content": {
+            "titre": "Ce qu'on nous demande souvent",
+            "items": [
+              {
+                "question": "Travaillez-vous pour les particuliers comme pour les professionnels ?",
+                "reponse": "Oui. J'interviens aussi bien chez les particuliers, en maison ou en appartement, que pour des artisans, commerçants et bailleurs qui ont besoin d'une pose propre et livrée dans les temps. Le devis s'adapte au chantier, pas l'inverse."
+              },
+              {
+                "question": "Fournissez-vous les matériaux ou dois-je les acheter ?",
+                "reponse": "Les deux fonctionnent. Je peux approvisionner cuisine, parquet, menuiseries et quincaillerie auprès de mes fournisseurs, ou poser un produit que vous avez déjà acheté. Dans ce cas, on vérifie ensemble les cotes et la compatibilité avant de commander quoi que ce soit."
+              },
+              {
+                "question": "Sous quel délai peut-on démarrer ?",
+                "reponse": "Après le relevé et votre accord sur le devis, on cale une date selon l'approvisionnement des matériaux et l'ampleur du chantier. Pour une petite pose, c'est souvent une question de jours ; pour une cuisine complète ou une série de fenêtres, on planifie la livraison au plus juste."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un projet de menuiserie en tête ?",
+            "sousTitre": "Décrivez-le en quelques lignes : je vous rappelle, je viens prendre les cotes et vous repartez avec un devis clair, offert.",
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            },
+            "lien": {
+              "label": "ou écrivez-moi sur WhatsApp →",
+              "href": "https://wa.me/33749087718"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Prestations",
+      "meta": {
+        "title": "Prestations de menuiserie à Rive-de-Gier",
+        "description": "Cuisines, parquet, portes et fenêtres, aménagement, volets, porte blindée : le détail de chaque prestation de pose sur mesure à Rive-de-Gier et 50 km autour."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Le catalogue, fiche par fiche",
+            "titre": "Six métiers du bois sous un seul toit",
+            "intro": "Cette page sert de sommaire. Chaque prestation a sa fiche détaillée : les cas concrets qu'elle couvre, le déroulé d'une pose et ce qu'il faut prévoir avant que j'arrive. Un doute entre deux options ? Un appel suffit à trancher.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "eyebrow": "Tout le bois, un seul artisan",
+            "titre": "Nos prestations en détail",
+            "intro": "De la cuisine équipée à la porte blindée, chaque carte ouvre la fiche complète : ce qui est inclus, le déroulé de la pose et les questions qu'on me pose le plus.",
+            "items": [
+              {
+                "nom": "Pose de cuisine",
+                "description": "La fiche détaille le montage des caissons, la pose du plan de travail, l'ajustement des façades et les raccords laissés prêts à brancher.",
+                "href": "/pose-cuisine",
+                "icone": "CookingPot"
+              },
+              {
+                "nom": "Pose de parquet",
+                "description": "Choix du type de parquet et de la méthode de pose, préparation du support, plinthes et seuils : tout le déroulé, pièce par pièce.",
+                "href": "/pose-parquet",
+                "icone": "Layers"
+              },
+              {
+                "nom": "Portes & fenêtres",
+                "description": "Bois, PVC ou alu, dépose de l'ancien, pose en tunnel ou en rénovation, réglage des ouvrants : la menuiserie extérieure passée en revue.",
+                "href": "/portes-fenetres",
+                "icone": "DoorOpen"
+              },
+              {
+                "nom": "Aménagement intérieur",
+                "description": "Dressing, placards, bibliothèque, meuble sous escalier : comment on part de vos cotes pour dessiner un rangement qui remplit chaque recoin.",
+                "href": "/amenagement-interieur",
+                "icone": "LayoutGrid"
+              },
+              {
+                "nom": "Pose de volets",
+                "description": "Roulants ou battants, coffre rénovation, motorisation : les solutions selon votre façade et le déroulé d'une pose sans casse.",
+                "href": "/volets",
+                "icone": "Blinds"
+              },
+              {
+                "nom": "Porte blindée",
+                "description": "Bloc-porte blindé ou blindage d'une porte existante, serrure multipoint et points de sécurité : ce que la fiche vous explique avant de choisir.",
+                "href": "/porte-blindee",
+                "icone": "ShieldCheck"
+              }
+            ],
+            "cta": {
+              "label": "Voir la zone d'intervention — 50 km autour de Rive-de-Gier",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Bien s'y retrouver",
+            "titre": "Quelle prestation pour votre projet ?",
+            "paragraphes": [
+              "Le point de départ, c'est ce que vous voulez changer. Une cuisine à installer, un sol à refaire, des fenêtres qui laissent passer le froid : chaque besoin a sa fiche, et chacune précise ce qui est réalisable chez vous selon l'état du support et la configuration des lieux.",
+              "Beaucoup de projets se combinent : on profite d'un parquet neuf pour reprendre les plinthes, d'un changement de fenêtres pour poser des volets assortis, d'une cuisine pour aménager un rangement sur mesure à côté. Quand plusieurs postes se croisent, je vous le dis au relevé : on regroupe les passages pour limiter la gêne et le coût. Et si vous hésitez encore, décrivez-moi la pièce telle qu'elle est — je vous oriente vers la bonne prestation sans vous vendre l'inutile."
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un besoin précis à chiffrer ?",
+            "sousTitre": "Dites-moi la pièce, les dimensions approximatives et le matériau envisagé : j'établis un devis gratuit et sans engagement.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "a-propos",
+      "label": "À propos",
+      "meta": {
+        "title": "Menuiserie Beirouti — l'artisan à Rive-de-Gier",
+        "description": "Tarik Beirouti, menuisier poseur à Rive-de-Gier, réalise vos projets sur mesure, intérieurs et extérieurs, avec un travail soigné et des matériaux de qualité."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "À propos",
+            "titre": "Le geste juste, la finition en plus"
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Menuiserie Beirouti · Rive-de-Gier",
+            "paragraphes": [
+              "Menuiserie Beirouti est une entreprise artisanale spécialisée dans la menuiserie intérieure et extérieure, installée à Rive-de-Gier au cœur de la vallée du Gier. Cuisines, parquets, fenêtres, portes, volets et rangements : je réalise vos projets sur mesure, avec un travail soigné, des matériaux choisis pour durer et un accompagnement du premier échange jusqu'à la dernière finition.",
+              "Ici, pas d'intermédiaire ni de sous-traitance dans le dos : c'est le même artisan qui prend vos cotes, vous conseille, fabrique, ajuste et pose. Cette continuité, c'est ce qui garantit une pose au cordeau, des jeux réguliers et des raccords propres — le genre de détail qui ne se voit pas quand il est bien fait, et qui saute aux yeux quand il est bâclé.",
+              "Chaque logement est différent : un mur qui n'est jamais tout à fait droit, un sol qui plonge d'un centimètre, une trémie qui complique une pose. Mon métier, c'est justement d'absorber ces imperfections pour vous livrer un ensemble net et fonctionnel. Devis gratuit, matériaux de qualité, intervention rapide et respect de la parole donnée : voilà les engagements sur lesquels se construit la confiance, chantier après chantier."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "timeline-verticale",
+          "content": {
+            "eyebrow": "Nos engagements",
+            "titre": "Ce qui guide chaque pose",
+            "items": [
+              {
+                "icone": "BadgeCheck",
+                "titre": "Devis gratuit",
+                "texte": "Un chiffrage clair et détaillé avant toute intervention, sans engagement ni frais cachés."
+              },
+              {
+                "icone": "Hammer",
+                "titre": "Travail soigné",
+                "texte": "Des poses ajustées au niveau, des jeux réguliers et un chantier laissé propre derrière moi."
+              },
+              {
+                "icone": "PackageOpen",
+                "titre": "Matériaux de qualité",
+                "texte": "Bois, PVC, alu et quincaillerie choisis chez des fournisseurs sérieux, pour tenir dans le temps."
+              },
+              {
+                "icone": "Clock",
+                "titre": "Intervention rapide",
+                "texte": "Une réponse sans traîner et des délais tenus, du relevé des cotes jusqu'à la pose."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Envie de me confier votre projet ?",
+            "sousTitre": "Un coup de fil ou un message, et on met votre menuiserie en route.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Me contacter",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "pose-cuisine",
+      "label": "Pose de cuisine",
+      "navHidden": true,
+      "meta": {
+        "title": "Pose de cuisine à Rive-de-Gier sur mesure",
+        "description": "Montage et pose de cuisine à Rive-de-Gier et 50 km autour : caissons, plan de travail, façades et raccords à sec, calés au niveau. Devis gratuit.",
+        "keywords": [
+          "pose de cuisine Rive-de-Gier",
+          "monteur de cuisine Loire",
+          "installation cuisine équipée vallée du Gier",
+          "poseur cuisine Saint-Chamond"
+        ]
+      },
+      "service": {
+        "name": "Pose de cuisine",
+        "description": "Montage et pose de cuisine équipée sur mesure à Rive-de-Gier et alentour.",
+        "serviceType": "Pose de cuisine équipée"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Cuisine équipée, montée et posée",
+            "titre": "Pose de cuisine à Rive-de-Gier",
+            "intro": "Vous avez choisi votre cuisine, ou vous partez d'une feuille blanche ? J'assemble les caissons, pose le plan de travail, ajuste les façades et laisse les arrivées prêtes à brancher, pour une cuisine calée au niveau et prête à vivre, à Rive-de-Gier et jusqu'à 50 km autour.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Pose de cuisine"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Ce que comprend la pose",
+            "items": [
+              {
+                "icone": "Wrench",
+                "nom": "Montage des caissons",
+                "description": "Assemblage et fixation des meubles hauts et bas, d'aplomb et alignés sur toute la longueur."
+              },
+              {
+                "icone": "Ruler",
+                "nom": "Plan de travail ajusté",
+                "description": "Découpe, jointoiement et pose du plan de travail, avec l'entaille pour l'évier et la plaque."
+              },
+              {
+                "icone": "LayoutGrid",
+                "nom": "Façades & réglages",
+                "description": "Pose des portes, tiroirs et poignées, réglage des jeux pour des lignes régulières."
+              },
+              {
+                "icone": "Cog",
+                "nom": "Raccords à sec",
+                "description": "Évier, siphon et raccordement à sec de l'électroménager, laissés prêts pour l'eau et l'électricité."
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Le déroulé",
+            "titre": "Une cuisine posée dans les règles",
+            "paragraphes": [
+              "Une belle cuisine tient d'abord à sa pose. Avant le premier meuble, je vérifie l'aplomb des murs, la planéité du sol et l'emplacement exact des arrivées d'eau, d'évacuation et des prises. C'est ce repérage qui évite les mauvaises surprises : un meuble qui bâille, un plan de travail qui n'affleure pas, une plaque qui ne tombe pas en face de la hotte.",
+              "Je monte ensuite les caissons, les fixe et les cale de niveau, puis pose le plan de travail avec les découpes nécessaires pour l'évier et la plaque de cuisson. Viennent les façades, les tiroirs et les poignées, réglés un à un pour des jeux réguliers. Je raccorde l'évier et laisse l'électroménager prêt à brancher — le raccordement électrique final et le gaz restant l'affaire de l'électricien ou du plombier. Que la cuisine vienne d'une grande enseigne en kit ou d'un cuisiniste, la pose suit la même exigence : d'équerre, de niveau, et propre.",
+              "Comptez généralement d'une à trois journées selon la taille et la complexité de l'implantation. Pour que tout roule le jour J, l'idéal est que la pièce soit finie côté peinture et carrelage, et que les arrivées soient en place."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Posez-vous une cuisine achetée en grande surface ou en kit ?",
+                "reponse": "Oui, c'est courant. Je monte et pose les cuisines en kit des grandes enseignes comme les modèles de cuisinistes. Vérifiez seulement que la commande est complète à la livraison : un caisson ou un plan manquant peut décaler la pose."
+              },
+              {
+                "question": "Gérez-vous le branchement de l'électroménager ?",
+                "reponse": "Je raccorde la partie plomberie à sec — évier, siphon, arrivée du lave-vaisselle — et je positionne les appareils. Le branchement électrique définitif, le gaz et toute mise aux normes relèvent d'un électricien ou d'un plombier, que je peux vous recommander au besoin."
+              },
+              {
+                "question": "La pièce doit-elle être prête avant la pose ?",
+                "reponse": "Dans l'idéal, oui : murs peints, sol posé et arrivées d'eau, d'évacuation et d'électricité tirées aux bons emplacements. Si ce n'est pas le cas, on en parle au relevé et on organise l'ordre des interventions."
+              },
+              {
+                "question": "Combien de temps dure la pose d'une cuisine complète ?",
+                "reponse": "En général d'une à trois journées, selon le nombre de meubles, la longueur du plan de travail et les découpes nécessaires. Je vous donne une durée ferme sur le devis, une fois les cotes prises."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Aménagement intérieur",
+                "description": "Un rangement, une crédence ou un cellier sur mesure à côté de la cuisine ? On dessine ça ensemble.",
+                "href": "/amenagement-interieur",
+                "icone": "LayoutGrid"
+              },
+              {
+                "nom": "Pose de parquet",
+                "description": "On profite du chantier cuisine pour reprendre le sol de la pièce à vivre attenante.",
+                "href": "/pose-parquet",
+                "icone": "Layers"
+              }
+            ],
+            "cta": {
+              "label": "Cuisine à poser hors Rive-de-Gier ? Vérifiez la zone",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Une cuisine à installer à Rive-de-Gier ?",
+            "sousTitre": "Devis gratuit et sans engagement. Réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "pose-parquet",
+      "label": "Pose de parquet",
+      "navHidden": true,
+      "meta": {
+        "title": "Pose de parquet à Rive-de-Gier & 50 km",
+        "description": "Parquet massif, contrecollé ou stratifié posé collé, flottant ou cloué à Rive-de-Gier et alentour. Support préparé, plinthes et seuils ajustés. Devis gratuit.",
+        "keywords": [
+          "pose de parquet Rive-de-Gier",
+          "parquet flottant vallée du Gier",
+          "parquet collé Loire",
+          "poseur parquet Saint-Étienne"
+        ]
+      },
+      "service": {
+        "name": "Pose de parquet",
+        "description": "Pose de parquet massif, contrecollé ou stratifié à Rive-de-Gier et alentour.",
+        "serviceType": "Pose de parquet"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Massif, contrecollé, stratifié",
+            "titre": "Pose de parquet à Rive-de-Gier",
+            "intro": "Un sol qui apporte chaleur et cachet, posé proprement et calé au millimètre. Je pose le parquet collé, flottant ou cloué selon le produit et le support, avec préparation du sol, plinthes et seuils soignés, à Rive-de-Gier et dans un rayon de 50 km.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Pose de parquet"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "La méthode",
+            "titre": "Un sol qui tient dans le temps",
+            "paragraphes": [
+              "La réussite d'un parquet se joue avant la première lame. Je contrôle d'abord la planéité et l'humidité du support : un sol qui creuse se ragrée, un carrelage sain se conserve, une dalle trop fraîche attend. Le parquet, lui, doit s'acclimater à la pièce, à plat et dans son emballage, avant d'être posé — c'est ce qui évite les lames qui tuilent ou qui jouent une fois la saison changée.",
+              "Vient ensuite le choix de la pose, selon le produit et vos contraintes. La pose collée, stable et discrète côté bruit, convient bien sur chape et sur plancher chauffant. La pose flottante, rapide et propre, s'installe sur une sous-couche sans coller au sol. La pose clouée, plus traditionnelle, se réserve au massif sur lambourdes. Dans tous les cas, je soigne les coupes en périphérie, les raccords de seuil entre deux pièces et la reprise des plinthes, pour un ensemble net jusque dans les angles.",
+              "Je pose aussi bien dans une pièce à vivre neuve qu'en rénovation, par-dessus un ancien revêtement quand son état le permet. Au relevé, je vous dis franchement ce qui est jouable chez vous et le sens de pose qui mettra la pièce en valeur."
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Ce que couvre la prestation",
+            "items": [
+              {
+                "icone": "Ruler",
+                "nom": "Préparation du support",
+                "description": "Contrôle de planéité et d'humidité, ragréage ou sous-couche selon l'état du sol."
+              },
+              {
+                "icone": "Layers",
+                "nom": "Pose collée, flottante ou clouée",
+                "description": "La méthode adaptée au parquet choisi et à votre support, plancher chauffant compris."
+              },
+              {
+                "icone": "Frame",
+                "nom": "Coupes & seuils",
+                "description": "Coupes de périphérie propres et barres de seuil ajustées entre les pièces."
+              },
+              {
+                "icone": "Hammer",
+                "nom": "Plinthes & finitions",
+                "description": "Pose ou repose des plinthes et reprise des finitions pour un rendu net."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "liste-ouverte",
+          "content": {
+            "titre": "Bon à savoir avant de poser",
+            "items": [
+              {
+                "question": "Quels types de parquet posez-vous ?",
+                "reponse": "Massif, contrecollé et stratifié. Selon le produit, je pose en collé, en flottant sur sous-couche ou en cloué sur lambourdes. Je vous oriente au relevé vers le couple parquet-pose qui convient à la pièce et à son usage."
+              },
+              {
+                "question": "Peut-on poser sur un ancien carrelage ?",
+                "reponse": "Souvent oui, si le carrelage est sain et bien collé. On vérifie la planéité ; un léger ragréage suffit parfois à rattraper les joints. Sur un support abîmé ou qui sonne creux, on en discute avant de décider."
+              },
+              {
+                "question": "Faut-il laisser le parquet s'acclimater ?",
+                "reponse": "Oui, c'est important. Le parquet reste 48 heures minimum dans la pièce où il sera posé, à plat, pour se mettre à la température et à l'hygrométrie du logement. Ce temps d'acclimatation évite bien des déconvenues après la pose."
+              },
+              {
+                "question": "Assurez-vous les plinthes et les seuils ?",
+                "reponse": "Oui, la pose inclut les finitions : coupes de périphérie, barres de seuil entre pièces et pose ou repose des plinthes. Un parquet bien fini, ce sont d'abord des bords nets et des raccords discrets."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Parquet posé à Rive-de-Gier et jusqu'à 50 km",
+            "intro": "Vallée du Gier, métropole stéphanoise et ouest lyonnais.",
+            "rayonKm": 50,
+            "zones": [
+              {
+                "region": "Vallée du Gier",
+                "principale": "Rive-de-Gier",
+                "villes": [
+                  "Rive-de-Gier",
+                  "Saint-Chamond",
+                  "La Grand-Croix",
+                  "Lorette",
+                  "L'Horme",
+                  "Génilac"
+                ]
+              },
+              {
+                "region": "Saint-Étienne & ouest lyonnais",
+                "principale": "Saint-Étienne",
+                "villes": [
+                  "Saint-Étienne",
+                  "Sorbiers",
+                  "Givors",
+                  "Grigny",
+                  "Mornant",
+                  "Vienne"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Aménagement intérieur",
+                "description": "Un placard ou une bibliothèque assortie au nouveau sol ? On l'intègre au projet.",
+                "href": "/amenagement-interieur",
+                "icone": "LayoutGrid"
+              },
+              {
+                "nom": "Portes & fenêtres",
+                "description": "On profite du sol neuf pour reprendre les seuils et les blocs-portes de la pièce.",
+                "href": "/portes-fenetres",
+                "icone": "DoorOpen"
+              }
+            ],
+            "cta": {
+              "label": "Sol à poser hors Rive-de-Gier ? Vérifiez la zone",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un parquet à poser à Rive-de-Gier ?",
+            "sousTitre": "Décrivez la pièce et le parquet visé : je chiffre gratuitement, sans engagement.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "portes-fenetres",
+      "label": "Portes & fenêtres",
+      "navHidden": true,
+      "meta": {
+        "title": "Portes & fenêtres à Rive-de-Gier — bois, PVC, alu",
+        "description": "Pose de fenêtres, baies vitrées et portes en bois, PVC ou alu à Rive-de-Gier et 50 km autour, en neuf comme en rénovation. Dépose et réglages inclus. Devis gratuit.",
+        "keywords": [
+          "pose de fenêtres Rive-de-Gier",
+          "menuiseries PVC alu vallée du Gier",
+          "baie vitrée Rive-de-Gier",
+          "changement fenêtres Saint-Chamond"
+        ]
+      },
+      "service": {
+        "name": "Pose de portes et fenêtres",
+        "description": "Pose de menuiseries bois, PVC et alu, fenêtres, baies et portes, à Rive-de-Gier et alentour.",
+        "serviceType": "Pose de menuiseries extérieures"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Bois, PVC, aluminium",
+            "titre": "Portes & fenêtres à Rive-de-Gier",
+            "intro": "Fenêtres, baies vitrées et portes posées d'aplomb et réglées au poil, en neuf comme en rénovation. Je vous conseille le matériau qui colle à votre budget et à votre isolation — bois, PVC ou alu — et je m'occupe de la dépose de l'ancien, à Rive-de-Gier et jusqu'à 50 km autour.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Portes & fenêtres"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Ce que je pose",
+            "items": [
+              {
+                "icone": "Frame",
+                "nom": "Fenêtres & baies",
+                "description": "Fenêtres à frappe, oscillo-battantes et baies coulissantes, en bois, PVC ou aluminium."
+              },
+              {
+                "icone": "DoorOpen",
+                "nom": "Portes d'entrée & de service",
+                "description": "Portes d'entrée, de garage de service et portes-fenêtres, adaptées à tous types d'habitations."
+              },
+              {
+                "icone": "Wrench",
+                "nom": "Dépose de l'ancien",
+                "description": "Dépose totale ou pose en rénovation sur le dormant existant, selon l'état du bâti."
+              },
+              {
+                "icone": "ShieldCheck",
+                "nom": "Réglage & étanchéité",
+                "description": "Réglage des ouvrants, calfeutrement et joints pour une fermeture nette et sans courant d'air."
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Le bon choix",
+            "titre": "Le matériau qui vous ressemble",
+            "paragraphes": [
+              "Bois, PVC ou aluminium : aucun n'est meilleur dans l'absolu, tout dépend de l'usage. Le PVC offre un excellent rapport isolation-prix et ne demande presque pas d'entretien. L'aluminium, fin et rigide, permet de grandes surfaces vitrées et un style contemporain. Le bois, chaleureux et réparable, reste imbattable côté cachet, notamment en rénovation d'une façade ancienne. Au relevé, je vous explique ce que chaque option donnera chez vous, sans vous pousser vers le plus cher.",
+              "Sur le chantier, deux cas se présentent. En rénovation, on conserve souvent le dormant existant s'il est sain : la nouvelle menuiserie se pose dessus, ce qui va vite et salit peu. En dépose totale, on retire tout l'ancien cadre jusqu'au bâti pour repartir sur des bases neuves, quand le dormant est abîmé ou qu'on veut gagner de la surface vitrée. Dans les deux cas, je règle chaque ouvrant, je calfeutre et je vérifie l'étanchéité : une fenêtre bien posée, c'est une fenêtre qui ferme d'un doigt et ne siffle pas au vent.",
+              "Je travaille aussi bien sur une fenêtre isolée que sur un logement complet, et je coordonne volontiers la pose avec des volets assortis pour un ensemble cohérent."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "timeline-verticale",
+          "content": {
+            "titre": "Comment se passe le remplacement",
+            "items": [
+              {
+                "icone": "PencilRuler",
+                "titre": "Relevé et conseil",
+                "texte": "Je mesure chaque ouverture, note l'état du dormant et vous oriente vers le matériau et le type de pose adaptés."
+              },
+              {
+                "icone": "Truck",
+                "titre": "Commande sur mesure",
+                "texte": "Les menuiseries sont fabriquées à vos cotes ; on fixe la date de pose dès qu'elles sont prêtes."
+              },
+              {
+                "icone": "Hammer",
+                "titre": "Dépose et pose",
+                "texte": "Dépose de l'ancien, pose d'aplomb, calfeutrement et évacuation des gravats le jour même."
+              },
+              {
+                "icone": "CheckCircle",
+                "titre": "Réglages et contrôle",
+                "texte": "Réglage des ouvrants et vérification de l'étanchéité, ouverture et fermeture testées avec vous."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Bois, PVC ou alu : lequel choisir ?",
+                "reponse": "Ça dépend de vos priorités. Le PVC pour le meilleur rapport isolation-prix, l'alu pour les grandes surfaces vitrées et un look moderne, le bois pour le cachet et la rénovation d'un bâti ancien. Je vous conseille au relevé selon votre budget, votre façade et l'exposition."
+              },
+              {
+                "question": "Déposez-vous les anciennes fenêtres ?",
+                "reponse": "Oui. Selon l'état du bâti, on pose en rénovation sur le dormant conservé, ou on procède à une dépose totale jusqu'au mur. J'évacue l'ancien et je laisse le chantier propre en fin de journée."
+              },
+              {
+                "question": "Posez-vous des baies coulissantes ?",
+                "reponse": "Oui, baies coulissantes et portes-fenêtres comprises, en PVC comme en alu. On vérifie la largeur de passage et le seuil, notamment pour un accès de plain-pied ou accessible."
+              },
+              {
+                "question": "Intervenez-vous en neuf comme en rénovation ?",
+                "reponse": "Les deux. Que ce soit sur une construction neuve, une extension ou le remplacement de menuiseries fatiguées, je pose une ouverture unique comme l'ensemble d'un logement."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Pose de volets",
+                "description": "Des volets roulants ou battants assortis à vos nouvelles fenêtres, posés dans la foulée.",
+                "href": "/volets",
+                "icone": "Blinds"
+              },
+              {
+                "nom": "Porte blindée",
+                "description": "On remplace la porte d'entrée par un bloc-porte blindé pendant qu'on y est.",
+                "href": "/porte-blindee",
+                "icone": "ShieldCheck"
+              }
+            ],
+            "cta": {
+              "label": "Menuiseries à changer hors Rive-de-Gier ? Vérifiez la zone",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Des fenêtres à remplacer à Rive-de-Gier ?",
+            "sousTitre": "Devis gratuit et sans engagement, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "amenagement-interieur",
+      "label": "Aménagement intérieur",
+      "navHidden": true,
+      "meta": {
+        "title": "Aménagement intérieur sur mesure à Rive-de-Gier",
+        "description": "Dressings, placards, meubles sous escalier et rangements sur mesure à Rive-de-Gier et 50 km autour. Conçus à vos cotes, posés au propre. Devis gratuit.",
+        "keywords": [
+          "aménagement intérieur Rive-de-Gier",
+          "dressing sur mesure vallée du Gier",
+          "placard sur mesure Loire",
+          "meuble sous escalier Saint-Chamond"
+        ]
+      },
+      "service": {
+        "name": "Aménagement intérieur",
+        "description": "Dressings, placards et rangements sur mesure à Rive-de-Gier et alentour.",
+        "serviceType": "Aménagement intérieur sur mesure"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Rangements & agencement sur mesure",
+            "titre": "Aménagement intérieur à Rive-de-Gier",
+            "intro": "Chaque logement a ses recoins perdus : un dessous d'escalier, un angle biscornu, une hauteur sous pente. Je conçois et pose dressings, placards, bibliothèques et meubles sur mesure qui remplissent l'espace au centimètre, à Rive-de-Gier et jusqu'à 50 km autour.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Aménagement intérieur"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Du sur-mesure, pas du standard",
+            "titre": "L'espace exploité au centimètre",
+            "paragraphes": [
+              "Un meuble en kit se contente d'un mur droit et d'un angle carré. Le sur-mesure, lui, épouse la réalité de votre logement : une pente de toit, une niche, une longueur qui ne tombe jamais sur un module standard. C'est là que la menuiserie fait la différence — au lieu de perdre vingt centimètres à côté d'un caisson trop court, on va jusqu'au mur, du sol au plafond.",
+              "Tout part d'un relevé sur place. Je mesure, je repère les contraintes — trappe de visite, prise à conserver, tuyau à contourner — et on définit ensemble l'usage : penderie, étagères, tiroirs, portes coulissantes ou battantes. Je vous propose une implantation, on ajuste, puis je fabrique et je pose. Le résultat s'intègre comme s'il avait toujours été là, avec des façades alignées et des jeux réguliers.",
+              "Dressing de chambre, placard d'entrée, bibliothèque toute hauteur, rangement sous escalier, coin bureau intégré : si ça se dessine et se mesure, ça se fabrique. Au relevé, on regarde ce qui est réaliste chez vous et on cale le projet sur votre budget."
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Ce que je réalise",
+            "items": [
+              {
+                "icone": "LayoutGrid",
+                "nom": "Dressings & placards",
+                "description": "Penderies, étagères et tiroirs, portes battantes ou coulissantes, du sol au plafond."
+              },
+              {
+                "icone": "Layers",
+                "nom": "Sous escalier & sous-pente",
+                "description": "Rangements qui exploitent les volumes perdus, trappes et contours intégrés proprement."
+              },
+              {
+                "icone": "Frame",
+                "nom": "Bibliothèques & meubles",
+                "description": "Bibliothèques toute hauteur, coins bureau et meubles d'appoint dessinés à vos cotes."
+              },
+              {
+                "icone": "PencilRuler",
+                "nom": "Étude et relevé",
+                "description": "Relevé sur place, proposition d'implantation et ajustements avant fabrication."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Concevez-vous les rangements à partir de zéro ?",
+                "reponse": "Oui. Je pars d'un relevé et de vos besoins pour proposer une implantation sur mesure, puis on affine ensemble avant fabrication. Vous n'êtes pas limité à des dimensions de catalogue."
+              },
+              {
+                "question": "Réalisez-vous des meubles sous escalier ?",
+                "reponse": "C'est une demande fréquente et l'un des espaces les plus rentables à aménager. Tiroirs, placards ou niches : on exploite chaque centimètre du volume, trappe de visite conservée si besoin."
+              },
+              {
+                "question": "Travaillez-vous à partir d'un plan que j'ai déjà ?",
+                "reponse": "Bien sûr. Si vous avez un croquis ou un plan d'architecte, je pars de là, je vérifie les cotes sur place et j'adapte à la réalité du chantier."
+              },
+              {
+                "question": "Peut-on assortir l'aménagement au reste du logement ?",
+                "reponse": "Oui, on choisit les teintes et les façades pour s'accorder à votre cuisine, vos portes ou votre parquet. L'idée, c'est un ensemble cohérent, pas une pièce rapportée."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Pose de cuisine",
+                "description": "Le rangement prolonge souvent la cuisine : cellier, crédence ou meuble d'appoint assorti.",
+                "href": "/pose-cuisine",
+                "icone": "CookingPot"
+              },
+              {
+                "nom": "Pose de parquet",
+                "description": "On harmonise le sol et les façades des rangements pour une pièce d'un seul tenant.",
+                "href": "/pose-parquet",
+                "icone": "Layers"
+              }
+            ],
+            "cta": {
+              "label": "Projet d'agencement hors Rive-de-Gier ? Vérifiez la zone",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un espace à aménager à Rive-de-Gier ?",
+            "sousTitre": "Envoyez-moi les grandes lignes et quelques mesures : je vous fais un devis gratuit.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "volets",
+      "label": "Pose de volets",
+      "navHidden": true,
+      "meta": {
+        "title": "Pose de volets à Rive-de-Gier — roulants & battants",
+        "description": "Volets roulants ou battants, pose neuve, rénovation de coffre et motorisation à Rive-de-Gier et 50 km autour. Pose sans casse quand c'est possible. Devis gratuit.",
+        "keywords": [
+          "pose de volets Rive-de-Gier",
+          "volet roulant vallée du Gier",
+          "motorisation volet Loire",
+          "volets battants Saint-Chamond"
+        ]
+      },
+      "service": {
+        "name": "Pose de volets",
+        "description": "Pose et rénovation de volets roulants et battants, motorisation, à Rive-de-Gier et alentour.",
+        "serviceType": "Pose de volets"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Roulants, battants, motorisés",
+            "titre": "Pose de volets à Rive-de-Gier",
+            "intro": "Des volets qui isolent, protègent et se manœuvrent sans effort. Je pose du volet roulant comme du battant, en neuf ou en rénovation de coffre, et je motorise les volets déjà en place, à Rive-de-Gier et dans un rayon de 50 km.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Pose de volets"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Ce que je pose",
+            "items": [
+              {
+                "icone": "Blinds",
+                "nom": "Volets roulants",
+                "description": "Pose en applique ou en rénovation de coffre, lames alu ou PVC, manœuvre manuelle ou motorisée."
+              },
+              {
+                "icone": "DoorClosed",
+                "nom": "Volets battants",
+                "description": "Battants bois, PVC ou alu, avec gonds, espagnolettes et arrêts, sur maison ou façade ancienne."
+              },
+              {
+                "icone": "Cog",
+                "nom": "Motorisation",
+                "description": "Motorisation de volets existants ou neufs, commande filaire ou télécommande."
+              },
+              {
+                "icone": "Wrench",
+                "nom": "Rénovation de coffre",
+                "description": "Remplacement d'un tablier fatigué ou d'un coffre ancien, sans toucher à la maçonnerie quand c'est possible."
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Le déroulé",
+            "titre": "Des volets posés sans tout casser",
+            "paragraphes": [
+              "Changer ses volets ne veut pas dire refaire sa façade. Dans la plupart des rénovations, on remplace le tablier d'un volet roulant ou on pose un coffre dit « rénovation » qui vient se loger sur le dormant existant, sans casser la maçonnerie ni reprendre les tableaux. Résultat : une pose rapide, propre, et un chantier terminé souvent dans la journée pour quelques ouvertures.",
+              "Sur du battant, je vérifie l'aplomb des gonds, le jeu des vantaux et la quincaillerie — espagnolette, arrêts, crémone — pour des volets qui claquent juste et tiennent au vent. Côté motorisation, je peux électrifier des volets déjà posés ou installer d'emblée des tabliers motorisés, avec commande murale ou télécommande, pour ne plus avoir à sortir manœuvrer chaque matin.",
+              "Au relevé, je regarde le type de pose possible chez vous selon la façade, l'exposition et l'état de l'existant, et je vous dis franchement si un simple remplacement de tablier suffit ou s'il vaut mieux repartir sur un coffre neuf."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Roulants ou battants : que posez-vous ?",
+                "reponse": "Les deux. Volets roulants en applique ou en rénovation de coffre, et volets battants en bois, PVC ou alu. On choisit selon votre façade, le style de la maison et l'usage que vous en avez."
+              },
+              {
+                "question": "Pouvez-vous motoriser mes volets existants ?",
+                "reponse": "Oui, quand le tablier et le coffre le permettent, je remplace la manœuvre manuelle par un moteur avec commande murale ou télécommande. Sinon, on regarde le remplacement du tablier par un modèle motorisé."
+              },
+              {
+                "question": "La pose abîme-t-elle la façade ?",
+                "reponse": "En rénovation, l'objectif est justement d'éviter ça : coffre rénovation ou remplacement de tablier se posent sur l'existant, sans casser la maçonnerie. Je vous confirme au relevé ce qui est possible chez vous."
+              }
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Volets posés à Rive-de-Gier et jusqu'à 50 km",
+            "intro": "Vallée du Gier, métropole stéphanoise et ouest lyonnais.",
+            "rayonKm": 50,
+            "zones": [
+              {
+                "region": "Vallée du Gier",
+                "principale": "Rive-de-Gier",
+                "villes": [
+                  "Rive-de-Gier",
+                  "Saint-Chamond",
+                  "Lorette",
+                  "La Grand-Croix",
+                  "Génilac",
+                  "Saint-Paul-en-Jarez"
+                ]
+              },
+              {
+                "region": "Autour de Saint-Étienne & Givors",
+                "principale": "Saint-Étienne",
+                "villes": [
+                  "Saint-Étienne",
+                  "La Talaudière",
+                  "Givors",
+                  "Grigny",
+                  "Mornant",
+                  "Chasse-sur-Rhône"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Des volets à poser ou motoriser ?",
+            "sousTitre": "Devis gratuit et sans engagement, réponse rapide.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "porte-blindee",
+      "label": "Porte blindée",
+      "navHidden": true,
+      "meta": {
+        "title": "Porte blindée à Rive-de-Gier — pose & sécurité",
+        "description": "Bloc-porte blindé ou blindage d'une porte existante, serrure multipoint, à Rive-de-Gier et 50 km autour. Une entrée mise à l'abri, posée proprement. Devis gratuit.",
+        "keywords": [
+          "porte blindée Rive-de-Gier",
+          "bloc-porte blindé vallée du Gier",
+          "blindage de porte Loire",
+          "serrure multipoint Saint-Chamond"
+        ]
+      },
+      "service": {
+        "name": "Pose de porte blindée",
+        "description": "Bloc-porte blindé et blindage de porte existante à Rive-de-Gier et alentour.",
+        "serviceType": "Pose de porte blindée"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Sécurité de l'entrée",
+            "titre": "Porte blindée à Rive-de-Gier",
+            "intro": "Votre porte d'entrée est le premier rempart du logement. Je pose des blocs-portes blindés complets et je blinde les portes existantes, avec serrure multipoint et points de sécurité, à Rive-de-Gier et jusqu'à 50 km autour.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Porte blindée"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Deux solutions",
+            "titre": "Bloc-porte blindé ou blindage de porte",
+            "paragraphes": [
+              "Sécuriser une entrée passe par deux approches. Le bloc-porte blindé remplace l'ensemble — vantail et dormant — par un bloc conçu d'usine pour résister à l'effraction : c'est la solution la plus complète, idéale quand la porte et son cadre sont fatigués. Le blindage de porte, lui, renforce une porte existante en bon état : on ajoute une tôle d'acier, on protège les points faibles et on remplace la serrure. Moins lourd à mettre en œuvre, il convient bien en appartement.",
+              "Dans les deux cas, la serrure fait la différence. Une serrure multipoint verrouille la porte en plusieurs endroits du dormant — en haut, au centre, en bas — ce qui répartit l'effort et complique sérieusement toute tentative d'ouverture. On y ajoute selon les cas un cylindre de sûreté, une protection anti-perçage et un cornière anti-pince. Je vous explique au relevé le niveau de protection utile chez vous, sans surenchère.",
+              "La pose demande de la précision : un bloc mal calé ferme mal et perd tout son intérêt. Je pose d'aplomb, je règle le vantail pour une fermeture douce et je vérifie chaque point de condamnation avant de vous remettre les clés."
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Ce que couvre la prestation",
+            "items": [
+              {
+                "icone": "ShieldCheck",
+                "nom": "Bloc-porte blindé",
+                "description": "Remplacement complet vantail + dormant par un bloc résistant à l'effraction."
+              },
+              {
+                "icone": "DoorClosed",
+                "nom": "Blindage de porte",
+                "description": "Renfort acier d'une porte existante saine, avec protection des points faibles."
+              },
+              {
+                "icone": "Lock",
+                "nom": "Serrure multipoint",
+                "description": "Verrouillage en plusieurs points, cylindre de sûreté et protections anti-effraction."
+              },
+              {
+                "icone": "CheckCircle",
+                "nom": "Réglage & remise des clés",
+                "description": "Pose d'aplomb, réglage du vantail et contrôle de chaque point de condamnation."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "liste-ouverte",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Quelle différence entre bloc-porte blindé et blindage de porte ?",
+                "reponse": "Le bloc-porte blindé remplace tout, vantail et dormant, par un ensemble conçu d'usine pour résister à l'effraction. Le blindage renforce votre porte actuelle avec une tôle d'acier et une nouvelle serrure. Le premier est plus complet, le second plus léger et adapté à un appartement en bon état."
+              },
+              {
+                "question": "Peut-on blinder une porte existante en appartement ?",
+                "reponse": "Oui, c'est même le cas le plus courant en immeuble. Si votre porte et son cadre sont sains, le blindage renforce le vantail, protège les points faibles et remplace la serrure par un modèle multipoint, sans changer toute la porte."
+              },
+              {
+                "question": "Posez-vous des serrures multipoints ?",
+                "reponse": "Oui, la serrure multipoint fait partie de la prestation. Elle verrouille la porte en plusieurs points du dormant et se complète, selon les cas, d'un cylindre de sûreté et de protections anti-perçage."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Portes & fenêtres",
+                "description": "On profite du chantier pour reprendre les autres menuiseries extérieures fatiguées.",
+                "href": "/portes-fenetres",
+                "icone": "DoorOpen"
+              },
+              {
+                "nom": "Pose de volets",
+                "description": "Volets et porte blindée : deux barrières qui protègent le logement, posées ensemble.",
+                "href": "/volets",
+                "icone": "Blinds"
+              }
+            ],
+            "cta": {
+              "label": "Entrée à sécuriser hors Rive-de-Gier ? Vérifiez la zone",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Une entrée à sécuriser à Rive-de-Gier ?",
+            "sousTitre": "Décrivez votre porte actuelle : je vous conseille la bonne solution et je chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "zone-intervention",
+      "label": "Zone d'intervention",
+      "navHidden": true,
+      "meta": {
+        "title": "Zone d'intervention — Rive-de-Gier et 50 km",
+        "description": "De Rive-de-Gier à Saint-Chamond, Saint-Étienne, Givors ou Vienne : les secteurs où j'interviens en menuiserie, jusqu'à 50 km de mon atelier. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Zone d'intervention",
+            "titre": "Je me déplace jusqu'à 50 km",
+            "intro": "Mon atelier est à Rive-de-Gier ; de là, je couvre toute la vallée du Gier, la métropole stéphanoise, l'ouest lyonnais et le pays viennois. Partout dans ce rayon, le chiffrage est offert et le relevé sans engagement."
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "carte",
+          "content": {
+            "titre": "Les secteurs desservis",
+            "intro": "Ces secteurs ne sont pas gravés dans le marbre : dès que votre commune tombe dans les 50 km, on s'organise. Un doute sur la distance ? Un simple appel le lève.",
+            "rayonKm": 50,
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.05%2C45.20%2C5.15%2C45.85&layer=mapnik&marker=45.5182852%2C4.5975489",
+            "zones": [
+              {
+                "region": "Vallée du Gier — autour de Rive-de-Gier",
+                "principale": "Rive-de-Gier",
+                "villes": [
+                  "Rive-de-Gier",
+                  "Saint-Chamond",
+                  "L'Horme",
+                  "La Grand-Croix",
+                  "Lorette",
+                  "Saint-Paul-en-Jarez",
+                  "Génilac",
+                  "Châteauneuf",
+                  "Saint-Joseph",
+                  "Farnay",
+                  "Cellieu",
+                  "Valfleury"
+                ]
+              },
+              {
+                "region": "Saint-Étienne Métropole",
+                "principale": "Saint-Étienne",
+                "villes": [
+                  "Saint-Étienne",
+                  "Saint-Priest-en-Jarez",
+                  "La Talaudière",
+                  "Sorbiers",
+                  "Le Chambon-Feugerolles",
+                  "Firminy",
+                  "Roche-la-Molière",
+                  "Villars",
+                  "Saint-Jean-Bonnefonds"
+                ]
+              },
+              {
+                "region": "Ouest lyonnais & pays viennois",
+                "principale": "Givors",
+                "villes": [
+                  "Givors",
+                  "Grigny",
+                  "Montagny",
+                  "Mornant",
+                  "Brignais",
+                  "Millery",
+                  "Vienne",
+                  "Chasse-sur-Rhône",
+                  "Pont-Évêque"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Là où j'interviens",
+            "titre": "Un territoire, quatre bassins",
+            "paragraphes": [
+              "Rive-de-Gier, c'est ma base : l'atelier est rue du Béarn, et c'est ici comme dans les communes voisines — Saint-Chamond, Lorette, La Grand-Croix, Génilac — que se concentrent mes chantiers. Maisons de ville, appartements, pavillons de la vallée : cuisines, parquets et menuiseries y forment le gros des demandes.",
+              "Vers l'ouest, je monte sur la métropole stéphanoise : Saint-Étienne, Saint-Priest-en-Jarez, La Talaudière, Sorbiers ou Firminy. Rénovations d'appartements et remplacements de fenêtres y sont fréquents, souvent en site occupé, ce qui demande une pose propre et rapide.",
+              "En descendant le Gier vers le Rhône, je dessers Givors, Grigny et l'ouest lyonnais jusqu'à Mornant et Brignais. Le pays viennois n'est qu'à un pont : Vienne, Chasse-sur-Rhône et Pont-Évêque entrent sans souci dans le périmètre. Partout, mêmes prestations et même devis gratuit — seule la distance peut jouer sur le déplacement, ce qu'on cale toujours avant de démarrer."
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Votre commune est dans le périmètre ?",
+            "sousTitre": "Demandez votre devis gratuit : je me déplace prendre les cotes.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "devis",
+      "label": "Devis gratuit",
+      "navHidden": true,
+      "meta": {
+        "title": "Devis menuiserie gratuit à Rive-de-Gier",
+        "description": "Décrivez votre projet — cuisine, parquet, fenêtres, volets, aménagement, porte blindée — et recevez un devis gratuit et sans engagement à Rive-de-Gier et 50 km autour."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Devis gratuit",
+            "titre": "Demandez votre devis en quelques lignes",
+            "intro": "Pas besoin de plans parfaits : dites-moi la pièce, les dimensions approximatives et le matériau envisagé. Je vous rappelle, je viens prendre les cotes et vous recevez un chiffrage clair, gratuit et sans engagement.",
+            "ctaSecondaire": {
+              "label": "Voir les prestations",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Votre demande de devis",
+            "intro": "Prestation, commune et quelques mesures suffisent pour démarrer. Le reste, on le précise de vive voix ou lors du relevé.",
+            "form": true,
+            "formMode": "devis",
+            "telephone": "+33 7 49 08 77 18",
+            "whatsapp": "+33 7 49 08 77 18",
+            "email": "menuiseriebeirouti@gmail.com",
+            "adresse": "16 K rue du Béarn, Résidence Le Gier, 42800 Rive-de-Gier",
+            "horaires": [
+              {
+                "jour": "Lun – Sam",
+                "heures": "9h – 20h"
+              }
+            ],
+            "services": [
+              "Pose de cuisine",
+              "Pose de parquet",
+              "Portes & fenêtres (bois / PVC / alu)",
+              "Aménagement intérieur",
+              "Pose de volets",
+              "Porte blindée",
+              "Autre / je ne sais pas"
+            ],
+            "villes": [
+              "Rive-de-Gier",
+              "Saint-Chamond",
+              "La Grand-Croix",
+              "Lorette",
+              "Génilac",
+              "Saint-Étienne",
+              "Sorbiers",
+              "Givors",
+              "Grigny",
+              "Mornant",
+              "Vienne",
+              "Chasse-sur-Rhône"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Contacter votre menuisier à Rive-de-Gier",
+        "description": "Téléphone, WhatsApp, e-mail ou formulaire : parlez-moi de votre projet de menuiserie à Rive-de-Gier ou alentour et recevez une réponse rapide. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Contact",
+            "titre": "Parlons de votre projet",
+            "intro": "Une cuisine à poser, des fenêtres à changer, un dressing à imaginer ? Appelez au 07 49 08 77 18 ou au 06 26 10 97 97, écrivez-moi ou passez par WhatsApp : je vous réponds rapidement, du lundi au samedi de 9h à 20h."
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "M'écrire",
+            "intro": "Le plus utile : la prestation souhaitée, la commune et un mot sur votre projet. On affine le reste ensemble.",
+            "form": true,
+            "formMode": "demande-intervention",
+            "telephone": "+33 7 49 08 77 18",
+            "whatsapp": "+33 7 49 08 77 18",
+            "email": "menuiseriebeirouti@gmail.com",
+            "adresse": "16 K rue du Béarn, Résidence Le Gier, 42800 Rive-de-Gier",
+            "horaires": [
+              {
+                "jour": "Lun – Sam",
+                "heures": "9h – 20h"
+              }
+            ],
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.560%2C45.500%2C4.635%2C45.537&layer=mapnik&marker=45.5182852%2C4.5975489",
+            "services": [
+              "Pose de cuisine",
+              "Pose de parquet",
+              "Portes & fenêtres (bois / PVC / alu)",
+              "Aménagement intérieur",
+              "Pose de volets",
+              "Porte blindée",
+              "Autre / je ne sais pas"
+            ],
+            "villes": [
+              "Rive-de-Gier",
+              "Saint-Chamond",
+              "La Grand-Croix",
+              "Lorette",
+              "Génilac",
+              "Saint-Étienne",
+              "Sorbiers",
+              "Givors",
+              "Grigny",
+              "Mornant",
+              "Vienne",
+              "Chasse-sur-Rhône"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    }
+  ]
+}

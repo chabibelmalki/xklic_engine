@@ -19,6 +19,7 @@ import {
   Archivo_Black,
   IBM_Plex_Mono,
   Sora,
+  Zilla_Slab,
 } from "next/font/google";
 import "./globals.css";
 
@@ -153,6 +154,14 @@ const sora = Sora({
   display: "swap",
   preload: false,
 });
+// Slab serif robuste « atelier bois » (titres display) — pack aronde-atelier (famille aronde).
+const zillaSlab = Zilla_Slab({
+  variable: "--font-zilla-slab",
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  display: "swap",
+  preload: false,
+});
 
 const fontVars = [
   poppins,
@@ -174,6 +183,7 @@ const fontVars = [
   archivoBlack,
   plexMono,
   sora,
+  zillaSlab,
 ]
   .map((f) => f.variable)
   .join(" ");
