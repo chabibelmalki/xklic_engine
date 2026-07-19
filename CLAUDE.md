@@ -199,3 +199,7 @@ du dossier parent).
   fait inventé, valider→déployer→vérifier live) + pièges par cas fréquent
   (changement de prix, prospect→client, etc.). **Vivant** — à suivre pour TOUTE
   modification d'un site en prod.
+- **`.claude/skills/xklic-design/SKILL.md`** — skill projet (chargée par Claude
+  Code) : design system du moteur — 3 axes theme/stylePack/famille, tokens CSS,
+  règles motion/animations scroll, checklist création de famille et
+  non-régression. **Vivant** — à charger avant TOUT travail visuel.

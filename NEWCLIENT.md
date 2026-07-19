@@ -88,6 +88,11 @@ avoir de tout sous tout.
 
 Toujours : mobile-first, contrastes AA, tout le texte via i18n.
 
+> 🎨 Référence design détaillée : la skill projet **`.claude/skills/xklic-design/`**
+> (tokens CSS, règles motion/animations scroll, checklist famille/pack,
+> non-régression parc). Claude Code la charge automatiquement ; à lire avant tout
+> parti pris visuel fort (nouvelle famille, nouveau pack, animations).
+
 ---
 
 ## SILOS DE SERVICES (activité de services)
