@@ -78,14 +78,6 @@
               {
                 "icone": "Scissors",
                 "label": "Patronage, prototypage, confection"
-              },
-              {
-                "icone": "MapPin",
-                "label": "Basé à Nîmes, atelier de confection au Maroc"
-              },
-              {
-                "icone": "Languages",
-                "label": "On vous répond en français et en anglais"
               }
             ],
             "ctaPrimaire": {
@@ -418,7 +410,12 @@
             "ctaPrimaire": {
               "label": "Demander un devis gratuit",
               "href": "/contact"
-            }
+            },
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-conseil.jpg",
+              "alt": "Bobines de fil, ciseaux et mètre ruban sur le plan de travail de l'atelier"
+            },
+            "imagePosition": "right"
           }
         },
         {
@@ -525,7 +522,12 @@
             "ctaPrimaire": {
               "label": "Demander un devis gratuit",
               "href": "/contact"
-            }
+            },
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-patronage.jpg",
+              "alt": "Épingle piquée dans un tissu maille pendant l'ajustement d'un prototype"
+            },
+            "imagePosition": "left"
           }
         },
         {
@@ -633,7 +635,12 @@
             "ctaPrimaire": {
               "label": "Demander un devis gratuit",
               "href": "/contact"
-            }
+            },
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-confection.jpg",
+              "alt": "Couturière assemblant une pièce à la machine dans l'atelier"
+            },
+            "imagePosition": "right"
           }
         },
         {
@@ -740,7 +747,12 @@
             "ctaPrimaire": {
               "label": "Demander un devis gratuit",
               "href": "/contact"
-            }
+            },
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle.jpg",
+              "alt": "Gros plan sur le pied presseur d'une machine à coudre pendant la vérification"
+            },
+            "imagePosition": "left"
           }
         },
         {

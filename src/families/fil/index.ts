@@ -18,7 +18,7 @@ import { Simulateur } from "../editorial/blocks/Simulateur";
 import { Contact } from "../editorial/blocks/Contact";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { FilFooter } from "./chrome/Footer";
-import { EditorialFloatingActions } from "../editorial/chrome/FloatingActions";
+import { FilFloatingActions } from "./ui/FloatingActions";
 
 /**
  * Famille FIL — ATELIER DE COUTURE / CONFECTION, née pour un atelier de
@@ -58,6 +58,6 @@ export const FIL: TemplateFamily = {
   Chrome: {
     Header: SiteHeader,
     Footer: FilFooter,
-    FloatingActions: EditorialFloatingActions,
+    FloatingActions: FilFloatingActions,
   },
 };

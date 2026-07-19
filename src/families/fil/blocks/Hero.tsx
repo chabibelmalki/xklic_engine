@@ -101,7 +101,9 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
       )}
 
       <FilContainer wide className="relative z-10 flex flex-1 flex-col pb-10 pt-32 sm:pb-12 sm:pt-40">
-        <h1 className="flex flex-1 flex-col justify-between font-display font-light">
+        {/* min-h mobile : garde les deux morceaux du titre aux extrêmes pour que
+            le fil ait de l'espace à traverser, même quand le bas est chargé. */}
+        <h1 className="flex min-h-[42svh] flex-1 flex-col justify-between font-display font-light sm:min-h-0">
           <span className="fil-halo fil-descend relative self-start text-[clamp(2.9rem,7.4vw,6.5rem)] leading-[1.04] tracking-[-0.015em] text-white [text-shadow:0_2px_26px_rgba(0,0,0,.4)]">
             {c.titre}
           </span>
@@ -118,8 +120,10 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
           </p>
         )}
 
-        <div className="fil-tarde flex flex-wrap items-end justify-between gap-6">
-          <div className="flex flex-wrap items-center gap-3.5">
+        {/* Mobile : colonne centrée (boutons PUIS teintes) ; desktop : boutons à
+            gauche, nuancier à droite. */}
+        <div className="fil-tarde flex flex-col items-center gap-6 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between">
+          <div className="flex flex-wrap items-center justify-center gap-3.5">
             {c.ctaPrimaire && (
               <Button href={withBase(basePath, c.ctaPrimaire.href)} variant="white" size="lg">
                 {c.ctaPrimaire.label}
@@ -144,7 +148,7 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
         </div>
 
         {trust.length > 0 && (
-          <ul className="fil-tarde mt-7 flex flex-wrap gap-x-7 gap-y-2.5 border-t border-white/20 pt-5">
+          <ul className="fil-tarde mt-7 flex flex-wrap justify-center gap-x-7 gap-y-2.5 border-t border-white/20 pt-5 sm:justify-start">
             {trust.map((t) => (
               <li key={t.label} className="flex items-center gap-2 text-sm font-medium text-white/85">
                 {t.icone && <Icon name={t.icone} className="size-4 text-accent-50" />}

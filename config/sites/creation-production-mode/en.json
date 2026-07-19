@@ -62,14 +62,6 @@
               {
                 "icone": "Scissors",
                 "label": "Pattern making, prototyping, garment production"
-              },
-              {
-                "icone": "MapPin",
-                "label": "Based in Nîmes, production workshop in Morocco"
-              },
-              {
-                "icone": "Languages",
-                "label": "We work in English and in French"
               }
             ],
             "ctaPrimaire": {
@@ -402,7 +394,12 @@
             "ctaPrimaire": {
               "label": "Get a free quote",
               "href": "/contact"
-            }
+            },
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-conseil.jpg",
+              "alt": "Thread spools, scissors and measuring tape on the workshop worktop"
+            },
+            "imagePosition": "right"
           }
         },
         {
@@ -509,7 +506,12 @@
             "ctaPrimaire": {
               "label": "Get a free quote",
               "href": "/contact"
-            }
+            },
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-patronage.jpg",
+              "alt": "Pin placed in a knit fabric while adjusting a prototype"
+            },
+            "imagePosition": "left"
           }
         },
         {
@@ -617,7 +619,12 @@
             "ctaPrimaire": {
               "label": "Get a free quote",
               "href": "/contact"
-            }
+            },
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-confection.jpg",
+              "alt": "Seamstress assembling a garment on a machine in the workshop"
+            },
+            "imagePosition": "right"
           }
         },
         {
@@ -724,7 +731,12 @@
             "ctaPrimaire": {
               "label": "Get a free quote",
               "href": "/contact"
-            }
+            },
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle.jpg",
+              "alt": "Close-up of a sewing machine presser foot during inspection"
+            },
+            "imagePosition": "left"
           }
         },
         {
