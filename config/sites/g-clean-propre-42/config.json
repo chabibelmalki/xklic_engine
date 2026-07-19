@@ -96,6 +96,10 @@
             "ctaSecondaire": {
               "label": "Voir les prestations",
               "href": "/services"
+            },
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/hero-accueil.jpg",
+              "alt": "Produits d'entretien ménager posés à plat"
             }
           }
         },
@@ -428,7 +432,12 @@
               "La cuisine est traitée à part : plan de travail, façades de meubles, plaques, évier, extérieur des électroménagers, poubelle. La salle de bain et les WC suivent le même principe, avec détartrage des robinetteries et de la douche. Sur demande, on change les draps et on lance une machine — cela se cale au moment du devis, parce que cela prend du temps et que ce temps doit être compté.",
               "Ce qui n'est pas compris dans le passage courant : le nettoyage des vitres, qui relève du forfait dédié, le décapage d'un logement laissé longtemps à l'abandon, et tout ce qui demande une échelle ou un déplacement de meuble lourd. Ces cas-là se chiffrent séparément, après visite.",
               "Le rythme le plus courant est hebdomadaire ou tous les quinze jours. Un passage unique est possible — avant un état des lieux, après une réception —, mais il dure plus longtemps qu'un passage d'entretien : quand on part de loin, il faut rattraper le retard avant de pouvoir simplement maintenir."
-            ]
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/service-menage.jpg",
+              "alt": "Aide ménagère essuyant un plan de travail à domicile"
+            },
+            "imagePosition": "right"
           }
         },
         {
@@ -538,7 +547,12 @@
               "Le forfait comprend toujours les deux faces, l'encadrement et le rebord. C'est ce dernier point qui fait la différence : une vitre nettoyée sans son rebord se resalit à la première pluie, parce que la poussière du dormant redescend sur le verre. On finit à la raclette et à la microfibre, sans produit qui laisse un voile au premier soleil rasant.",
               "Sont concernés les fenêtres, les baies coulissantes, les portes vitrées, les vérandas et les miroirs fixes. Ce qui n'entre pas dans le forfait : tout ce qui demande une nacelle ou un travail en hauteur au-delà d'un escabeau domestique. Pour les vitrines de commerce, la prestation se cale plutôt dans un contrat d'entretien de local, avec un passage régulier.",
               "Le bon rythme, dans le Roannais, tourne autour de deux passages par an : un au sortir de l'hiver, quand les pluies ont fini de tout marquer, un autre à l'automne. Les logements en bord de route ou proches des champs demandent parfois un troisième."
-            ]
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/service-vitres.jpg",
+              "alt": "Nettoyage d'une paroi vitrée à la raclette"
+            },
+            "imagePosition": "left"
           }
         },
         {
@@ -643,7 +657,12 @@
               "Le passage se cale donc hors horaires : tôt le matin avant l'ouverture, ou le soir après la fermeture, selon ce qui vous arrange. Un jeu de clés ou un code d'alarme suffit. Le forfait comprend l'entretien des sols, les surfaces de vente et de contact, la vitrine côté intérieur, les sanitaires et l'espace de pause du personnel, ainsi que la sortie des poubelles si votre collecte l'impose.",
               "Le rythme se décide selon le passage : trois fois par semaine pour un commerce de bouche ou un salon de coiffure, une à deux fois pour un bureau ou un cabinet où personne n'entre avec des chaussures sales. Une facture unique par mois, un montant qui ne varie pas : c'est ce qui permet de mettre l'entretien dans un budget sans avoir à le recalculer à chaque fois.",
               "Les commerces du Coteau et de Roanne sont les plus faciles à servir tôt le matin. Pour les communes plus éloignées, comme Charlieu ou Balbigny, on regroupe plutôt le passage sur des créneaux fixes de fin de journée."
-            ]
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/service-locaux.jpg",
+              "alt": "Entretien du sol d'un local commercial"
+            },
+            "imagePosition": "right"
           }
         },
         {
