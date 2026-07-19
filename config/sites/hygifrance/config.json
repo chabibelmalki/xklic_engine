@@ -177,16 +177,23 @@
         },
         {
           "type": "galerie",
-          "variant": "grille",
+          "variant": "avant-apres",
           "content": {
-            "eyebrow": "En images",
-            "titre": "Nos prestations en action",
-            "intro": "Visuels d'illustration, en attendant la mise en ligne de nos propres chantiers.",
-            "ratio": "4/3",
-            "images": [
-              { "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-sols.jpg", "alt": "Nettoyage des sols d'un logement" }, "titre": "Entretien de logement" },
-              { "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-bureaux.jpg", "alt": "Nettoyage de bureaux" }, "titre": "Bureaux & commerces" },
-              { "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-textile.jpg", "alt": "Nettoyage d'un canapé en textile" }, "titre": "Nettoyage textile" }
+            "eyebrow": "Avant / après",
+            "titre": "La différence, en un glissement",
+            "intro": "Quelques-unes de nos interventions. Faites glisser le curseur au centre de l'image, et voyez toutes nos réalisations sur la page dédiée.",
+            "ratio": "4/5",
+            "avantApres": [
+              {
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-avant.jpg", "alt": "Façade en pierre encrassée avant nettoyage" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-apres.jpg", "alt": "Façade en pierre ravivée après nettoyage" },
+                "legende": "Façade ravivée."
+              },
+              {
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/toiture-avant.jpg", "alt": "Toiture couverte de mousse avant nettoyage" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/toiture-apres.jpg", "alt": "Toiture démoussée après nettoyage" },
+                "legende": "Toiture démoussée."
+              }
             ]
           }
         },
@@ -418,6 +425,28 @@
           }
         },
         {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "Avant / après",
+            "titre": "Le résultat en un coup d'œil",
+            "intro": "Faites glisser le curseur au centre de l'image.",
+            "ratio": "4/5",
+            "avantApres": [
+              {
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/toiture-avant.jpg", "alt": "Toiture couverte de mousse avant nettoyage" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/toiture-apres.jpg", "alt": "Toiture démoussée après nettoyage" },
+                "legende": "Démoussage de toiture : les tuiles retrouvent leur teinte."
+              },
+              {
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-avant.jpg", "alt": "Façade en pierre encrassée avant nettoyage" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-apres.jpg", "alt": "Façade en pierre ravivée après nettoyage" },
+                "legende": "Façade ravivée, du soubassement aux balcons."
+              }
+            ]
+          }
+        },
+        {
           "type": "faq",
           "content": {
             "titre": "Nettoyage extérieur : vos questions",
@@ -494,6 +523,23 @@
               "Pour un syndic comme pour un bailleur, la propreté des parties communes est un sujet sensible : elle conditionne le confort des résidents, la réputation de l'immeuble et, à terme, la valeur des lots. Nous l'abordons comme un engagement dans la durée, pas comme un passage ponctuel.",
               "Nous établissons avec vous un cahier des charges précis : zones traitées, fréquence des passages, produits utilisés, points de contrôle. Un référent connaît votre immeuble et assure la continuité, y compris pendant les congés. Vous disposez d'un interlocuteur unique et d'un compte rendu clair.",
               "Halls, cages d'escalier, ascenseurs, locaux techniques, vitres et abords : tout est couvert dans un contrat adapté à votre budget. Nous intervenons aussi ponctuellement, par exemple après des travaux ou un dégât dans les communs."
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "Avant / après",
+            "titre": "Des communs remis à neuf",
+            "intro": "Faites glisser le curseur au centre de l'image.",
+            "ratio": "4/5",
+            "avantApres": [
+              {
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/parties-communes-avant.jpg", "alt": "Couloir d'immeuble encombré avant remise en état" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/parties-communes-apres.jpg", "alt": "Couloir d'immeuble propre après remise en état" },
+                "legende": "Couloir d'immeuble remis en état après travaux."
+              }
             ]
           }
         },
@@ -582,6 +628,23 @@
           }
         },
         {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "Avant / après",
+            "titre": "Un plateau transformé",
+            "intro": "Faites glisser le curseur au centre de l'image.",
+            "ratio": "16/9",
+            "avantApres": [
+              {
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/bureau-avant.jpg", "alt": "Plateau de bureaux à l'abandon avant nettoyage" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/bureau-apres.jpg", "alt": "Plateau de bureaux nettoyé après intervention" },
+                "legende": "Plateau de bureaux nettoyé de fond en comble, sols compris."
+              }
+            ]
+          }
+        },
+        {
           "type": "faq",
           "content": {
             "titre": "Bureaux & commerces : vos questions",
@@ -663,6 +726,23 @@
             "imagePosition": "left",
             "imageRatio": "4/3",
             "imageCard": true
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "Avant / après",
+            "titre": "Un canapé comme neuf",
+            "intro": "Faites glisser le curseur au centre de l'image.",
+            "ratio": "4/5",
+            "avantApres": [
+              {
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/textile-avant.jpg", "alt": "Canapé taché avant nettoyage textile" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/textile-apres.jpg", "alt": "Canapé détaché après nettoyage textile" },
+                "legende": "Canapé détaché et assaini par injection-extraction."
+              }
+            ]
           }
         },
         {
@@ -781,38 +861,53 @@
           "content": {
             "eyebrow": "En images",
             "titre": "Le résultat, avant et après",
-            "intro": "Faites glisser le curseur pour mesurer la différence. Ces visuels sont des exemples d'illustration ; nos propres chantiers viendront bientôt les remplacer."
+            "intro": "Faites glisser le curseur au centre de chaque image pour mesurer la différence, avant et après notre passage."
           }
         },
         {
           "type": "galerie",
           "variant": "avant-apres",
           "content": {
-            "eyebrow": "Comparateur",
+            "eyebrow": "Extérieur & communs",
             "titre": "Glissez pour comparer",
-            "intro": "L'effet d'un nettoyage complet sur un intérieur, du terne au lumineux.",
-            "ratio": "16/10",
+            "ratio": "4/5",
             "avantApres": [
               {
-                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/equipe-nettoyage.jpg", "alt": "Intérieur avant nettoyage complet" },
-                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-sols.jpg", "alt": "Intérieur après nettoyage complet" },
-                "legende": "Exemple d'illustration — intérieur ravivé après un nettoyage complet."
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/toiture-avant.jpg", "alt": "Toiture couverte de mousse avant nettoyage" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/toiture-apres.jpg", "alt": "Toiture démoussée après nettoyage" },
+                "legende": "Démoussage de toiture : les tuiles retrouvent leur teinte d'origine."
+              },
+              {
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-avant.jpg", "alt": "Façade en pierre encrassée avant nettoyage" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-apres.jpg", "alt": "Façade en pierre ravivée après nettoyage" },
+                "legende": "Façade ravivée, du soubassement aux balcons."
+              },
+              {
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/parties-communes-avant.jpg", "alt": "Couloir d'immeuble encombré avant remise en état" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/parties-communes-apres.jpg", "alt": "Couloir d'immeuble propre après remise en état" },
+                "legende": "Couloir d'immeuble remis en état après travaux."
+              },
+              {
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/textile-avant.jpg", "alt": "Canapé taché avant nettoyage textile" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/textile-apres.jpg", "alt": "Canapé détaché après nettoyage textile" },
+                "legende": "Canapé détaché et assaini par injection-extraction."
               }
             ]
           }
         },
         {
           "type": "galerie",
-          "variant": "grille",
+          "variant": "avant-apres",
           "content": {
-            "eyebrow": "Nos prestations",
-            "titre": "Nettoyage de bâtiments, en action",
-            "ratio": "4/3",
-            "images": [
-              { "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-bureaux.jpg", "alt": "Nettoyage de bureaux" }, "titre": "Bureaux & commerces" },
-              { "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-textile.jpg", "alt": "Nettoyage d'un canapé" }, "titre": "Nettoyage textile" },
-              { "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-locaux.jpg", "alt": "Remise en état de locaux" }, "titre": "Locaux & après-sinistre" },
-              { "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-interieur.jpg", "alt": "Nettoyage intérieur" }, "titre": "Entretien intérieur" }
+            "eyebrow": "Bureaux & locaux",
+            "titre": "Un plateau de bureaux transformé",
+            "ratio": "16/9",
+            "avantApres": [
+              {
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/bureau-avant.jpg", "alt": "Plateau de bureaux à l'abandon avant nettoyage" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/bureau-apres.jpg", "alt": "Plateau de bureaux nettoyé après intervention" },
+                "legende": "Plateau de bureaux nettoyé de fond en comble, sols compris."
+              }
             ]
           }
         },
@@ -964,9 +1059,9 @@
               "Nettoyage extérieur, parties communes, bureaux et commerces, textiles d'ameublement, syndrome de Diogène et interventions après sinistre : cette étendue nous oblige à être rigoureux sur chaque geste. Nous formons nos équipes à adapter la méthode au support et à laisser chaque lieu plus sain que nous l'avons trouvé.",
               "Derrière tout cela, une exigence simple : un devis clair et tenu, un interlocuteur unique, et un résultat contrôlé avec vous avant de partir. C'est là-dessus que nous voulons être jugés."
             ],
-            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-interieur.jpg", "alt": "Professionnelle HYGIFRANCE avec son matériel" },
+            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/a-propos.jpg", "alt": "Local et matériel professionnel HYGIFRANCE" },
             "imagePosition": "right",
-            "imageRatio": "4/5",
+            "imageRatio": "4/3",
             "imageCard": true,
             "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" }
           }
