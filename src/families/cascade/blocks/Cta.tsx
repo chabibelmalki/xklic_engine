@@ -15,7 +15,7 @@ import { Aura, BubbleField, WaveEdge } from "../ui/Decor";
 const GRADIENT =
   "linear-gradient(145deg, var(--brand-800) 0%, var(--brand-600) 46%, color-mix(in srgb, var(--accent-600) 80%, var(--brand-700)) 100%)";
 
-export function Cta({ block, basePath = "" }: BlockComponentProps<CtaContent>) {
+export function Cta({ block, config, basePath = "" }: BlockComponentProps<CtaContent>) {
   const c = block.content;
   return (
     <section className="relative isolate overflow-hidden text-white" style={{ background: GRADIENT }}>
@@ -24,7 +24,7 @@ export function Cta({ block, basePath = "" }: BlockComponentProps<CtaContent>) {
       <BubbleField />
 
       <CascadeSeal
-        label="Protéger · Préserver"
+        label={config.branding.tagline ?? config.entreprise.nom}
         seed="cta"
         tone="light"
         className="absolute -right-10 top-1/2 z-0 hidden size-64 -translate-y-1/2 opacity-25 lg:block"

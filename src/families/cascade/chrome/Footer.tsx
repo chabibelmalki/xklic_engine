@@ -57,7 +57,7 @@ export function CascadeFooter({
         style={{ background: "linear-gradient(90deg, var(--brand-500), var(--accent-500))" }}
       />
       <CascadeSeal
-        label="Protéger · Préserver"
+        label={config.branding.tagline ?? config.entreprise.nom}
         seed="footer"
         tone="brand"
         className="pointer-events-none absolute -right-16 -top-10 size-72 opacity-[0.07]"

@@ -109,7 +109,7 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
         {/* Colonne droite : carte de verre givré + sceau (signature). */}
         <div className="relative mx-auto w-full max-w-[23rem] lg:mx-0 lg:ms-auto">
           <CascadeSeal
-            label="Protéger · Préserver"
+            label={config.branding.tagline ?? config.entreprise.nom}
             seed="hero"
             tone="light"
             className="absolute -left-8 -top-10 z-30 hidden size-28 sm:block"

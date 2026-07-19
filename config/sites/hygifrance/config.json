@@ -3,29 +3,26 @@
   "theme": "fraicheur-teal",
   "stylePack": "cascade-hydro",
   "branding": {
-    "logoAlt": "HYGIFRANCE — nettoyage et entretien tous supports",
-    "tagline": "Protéger aujourd'hui · préserver demain",
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/logo-wordmark.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/logo-87f9931c.png",
+    "logoAlt": "HYGIFRANCE — l'entretien global de vos bâtiments",
+    "tagline": "L'entretien global de vos bâtiments",
+    "logoTextHidden": true,
+    "logoScale": 1.4,
     "colors": {
-      "brand": "#1f66c4",
-      "accent": "#3aae4e",
+      "brand": "#1c5c9e",
+      "accent": "#14a5bd",
       "neutral": "cool"
-    },
-    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/logo-87f9931c.png",
-    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/logo-87f9931c.png"
+    }
   },
   "social": [
-    {
-      "platform": "whatsapp",
-      "url": "https://wa.me/33750519190"
-    }
+    { "platform": "whatsapp", "url": "https://wa.me/33750519190" }
   ],
   "entreprise": {
     "nom": "HYGIFRANCE",
     "statut": "SAS",
     "siret": "10658606800012",
-    "tva": {
-      "regime": "franchise"
-    },
+    "tva": { "regime": "franchise" },
     "capital": 1000,
     "rcs": "Paris",
     "dirigeant": "Anouar El Mouchaouq",
@@ -35,20 +32,17 @@
     "schemaType": "LocalBusiness",
     "ville": "Lille"
   },
-  "geo": {
-    "lat": 50.6292,
-    "lng": 3.0573
-  },
+  "geo": { "lat": 50.6292, "lng": 3.0573 },
   "meta": {
-    "title": "Nettoyage & entretien tous supports à Lille",
-    "description": "HYGIFRANCE nettoie façades, intérieurs, véhicules, jardins et assure vos petits travaux à Lille et dans tout le Nord. Devis gratuit et sans engagement.",
+    "title": "Nettoyage & entretien de bâtiments à Lille",
+    "description": "Nettoyage de bâtiments à Lille et dans le Nord : extérieur, copropriétés, bureaux, textile, syndrome de Diogène et après-sinistre. Devis gratuit HYGIFRANCE.",
     "keywords": [
-      "nettoyage Lille",
-      "entretien Nord",
-      "nettoyage façade Lille",
-      "nettoyage haute pression Nord",
-      "entretien de jardin Lille",
-      "nettoyage véhicule Lille"
+      "nettoyage bâtiment Lille",
+      "nettoyage copropriété Lille",
+      "nettoyage bureaux Nord",
+      "syndrome de Diogène Lille",
+      "nettoyage après sinistre Nord",
+      "nettoyage canapé Lille"
     ]
   },
   "pages": [
@@ -60,36 +54,18 @@
           "type": "hero",
           "variant": "carte",
           "content": {
-            "eyebrow": "Nettoyage · Jardin · Petits travaux",
-            "titre": "Nettoyage & entretien tous supports",
+            "eyebrow": "Nettoyage de bâtiments · Lille & Nord",
+            "titre": "L'entretien global de vos bâtiments",
             "titreAccent": "à Lille & dans le Nord",
-            "accroche": "Façades, intérieurs, véhicules, espaces verts, petits travaux : HYGIFRANCE prend soin de vos surfaces aujourd'hui pour mieux les préserver demain.",
+            "accroche": "Copropriétés, bureaux, commerces, logements : un seul interlocuteur pour garder vos bâtiments propres, sains et accueillants, du sol au plafond.",
             "showPhone": true,
-            "ctaPrimaire": {
-              "label": "Demander un devis gratuit",
-              "href": "/devis"
-            },
-            "ctaSecondaire": {
-              "label": "Découvrir nos prestations",
-              "href": "/services"
-            },
+            "ctaPrimaire": { "label": "Demander un devis gratuit", "href": "/devis" },
+            "ctaSecondaire": { "label": "Voir nos prestations", "href": "/services" },
             "trust": [
-              {
-                "icone": "Leaf",
-                "label": "Approche éco-responsable"
-              },
-              {
-                "icone": "MapPin",
-                "label": "Lille & tout le Nord (59)"
-              },
-              {
-                "icone": "Building2",
-                "label": "Particuliers & professionnels"
-              },
-              {
-                "icone": "Droplets",
-                "label": "Haute pression & anti-mousse"
-              }
+              { "icone": "Building2", "label": "Copropriétés & professionnels" },
+              { "icone": "MapPin", "label": "Lille & tout le Nord (59)" },
+              { "icone": "ShieldCheck", "label": "Interventions après sinistre" },
+              { "icone": "Sparkles", "label": "Résultat contrôlé" }
             ],
             "card": {
               "label": "Votre projet",
@@ -97,9 +73,9 @@
               "unite": "gratuit",
               "mention": "Étude sur mesure, sans engagement.",
               "points": [
-                "Intervention ponctuelle ou entretien régulier",
-                "Particuliers, entreprises et collectivités",
-                "Une seule équipe pour tous vos besoins"
+                "Ponctuel ou contrat d'entretien régulier",
+                "Particuliers, syndics, entreprises",
+                "Un seul contact pour tout le bâtiment"
               ]
             }
           }
@@ -108,67 +84,82 @@
           "type": "services",
           "variant": "grille-cartes",
           "content": {
-            "eyebrow": "Cinq métiers, un seul interlocuteur",
+            "eyebrow": "Nos spécialités",
             "titre": "Ce que nous prenons en charge",
-            "intro": "Du toit au jardin, en passant par vos locaux et vos véhicules, HYGIFRANCE réunit sous un même toit tout ce qui garde vos espaces propres et fonctionnels.",
+            "intro": "Cinq savoir-faire complémentaires pour couvrir l'ensemble des besoins d'un bâtiment, de l'entretien courant aux chantiers les plus délicats.",
             "items": [
               {
+                "nom": "Syndrome de Diogène",
+                "icone": "HeartHandshake",
+                "description": "Remise en état de logements très encombrés ou insalubres, avec méthode, discrétion et respect des personnes.",
+                "priceHint": "Sur devis",
+                "href": "/syndrome-diogene"
+              },
+              {
                 "nom": "Nettoyage extérieur",
-                "icone": "SprayCan",
-                "description": "Façades, toitures, terrasses, bardages, panneaux solaires, gouttières : haute pression, anti-mousse et hydrofuge pour des surfaces protégées durablement.",
+                "icone": "Building2",
+                "description": "Toitures, gouttières, façades, bardages, terrasses, entrepôts, fin de chantier, fin de bail, avant et après déménagement.",
                 "priceHint": "Sur devis",
                 "href": "/nettoyage-exterieur"
               },
               {
-                "nom": "Nettoyage intérieur",
-                "icone": "Building2",
-                "description": "Bureaux, commerces, logements, copropriétés, fin de chantier, après sinistre, désinfection : des lieux sains et impeccables, ponctuellement ou toute l'année.",
+                "nom": "Parties communes & copropriétés",
+                "icone": "Building",
+                "description": "Halls, cages d'escalier, ascenseurs, locaux et vitres : un entretien régulier qui valorise l'immeuble.",
                 "priceHint": "Sur devis",
-                "href": "/nettoyage-interieur"
+                "href": "/parties-communes-coproprietes"
               },
               {
-                "nom": "Véhicules, engins & bateaux",
-                "icone": "Truck",
-                "description": "Voitures, utilitaires, camions, bus, engins de chantier, bateaux, camping-cars et flottes d'entreprise remis en état, dedans comme dehors.",
+                "nom": "Bureaux, commerces & cabinets",
+                "icone": "Briefcase",
+                "description": "Bureaux, commerces, cabinets médicaux et établissements scolaires entretenus autour de votre activité.",
                 "priceHint": "Sur devis",
-                "href": "/vehicules-engins-bateaux"
+                "href": "/bureaux-commerces"
               },
               {
-                "nom": "Entretien de jardin",
-                "icone": "Trees",
-                "description": "Tonte, taille, élagage, débroussaillage, désherbage, évacuation des déchets verts et remise en état : des extérieurs nets au fil des saisons.",
+                "nom": "Nettoyage textile",
+                "icone": "Sofa",
+                "description": "Injection-extraction en profondeur des canapés, tapis, matelas et sièges auto : taches, acariens et odeurs.",
                 "priceHint": "Sur devis",
-                "href": "/entretien-jardin"
-              },
-              {
-                "nom": "Bricolage & petits travaux",
-                "icone": "Wrench",
-                "description": "Montage de meubles, fixations, retouches, joints, robinetterie, plinthes, détecteurs de fumée : les petites mains qui font gagner du temps.",
-                "priceHint": "Sur devis",
-                "href": "/bricolage"
+                "href": "/nettoyage-textile"
               }
             ],
-            "cta": {
-              "label": "Voir le détail de chaque prestation",
-              "href": "/services"
-            }
+            "cta": { "label": "Voir toutes nos prestations", "href": "/services" }
           }
         },
         {
           "type": "contenu",
           "content": {
-            "eyebrow": "Notre façon de travailler",
-            "titre": "Propre, oui —",
-            "titreAccent": "et durable.",
+            "eyebrow": "Notre métier",
+            "titre": "Un bâtiment entretenu,",
+            "titreAccent": "un patrimoine préservé",
             "paragraphes": [
-              "HYGIFRANCE est né d'une conviction simple : un espace bien entretenu vieillit moins vite. Nous ne nous contentons pas de faire disparaître la saleté visible ; nous choisissons des méthodes qui préservent la matière — enduit d'une façade, tuile d'une toiture, vernis d'une coque, pelouse d'un jardin.",
-              "Concrètement, cela veut dire des dosages maîtrisés, une pression adaptée à chaque support, des traitements anti-mousse et hydrofuges qui espacent les interventions, et un tri systématique des déchets que nous évacuons. Moins de produit, moins de passages, moins de gaspillage : c'est notre lecture d'un nettoyage responsable.",
-              "Basés à Lille, nous intervenons dans tout le département du Nord, chez les particuliers comme auprès des entreprises, des commerces, des copropriétés et des collectivités. Un seul interlocuteur, un devis clair, et le même soin apporté à chaque chantier, qu'il dure une heure ou plusieurs jours."
+              "HYGIFRANCE s'est spécialisé dans l'entretien des bâtiments : ceux où l'on vit, ceux où l'on travaille, ceux que l'on gère. Notre conviction est simple : un immeuble propre inspire confiance, vieillit mieux et coûte moins cher à entretenir sur la durée.",
+              "Nous adaptons chaque intervention au lieu et à son usage. Un hall de copropriété ne se traite pas comme un cabinet médical ; une façade encrassée demande une autre approche qu'un canapé taché. Nos équipes arrivent équipées, protègent les abords et laissent chaque espace prêt à l'emploi.",
+              "Basés à Lille, nous couvrons l'ensemble du Nord. Un interlocuteur unique, un devis clair et le même niveau d'exigence, que la mission dure une heure ou s'inscrive dans un contrat d'entretien à l'année."
             ],
-            "ctaPrimaire": {
-              "label": "Faire connaissance",
-              "href": "/a-propos"
-            }
+            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/equipe-nettoyage.jpg", "alt": "Équipe HYGIFRANCE en intervention de nettoyage" },
+            "imagePosition": "right",
+            "imageRatio": "4/3",
+            "imageCard": true,
+            "ctaPrimaire": { "label": "Faire connaissance", "href": "/a-propos" }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Aussi disponible",
+            "titre": "Sinistre, humidité,",
+            "titreAccent": "situations difficiles",
+            "paragraphes": [
+              "Au-delà de l'entretien courant, nous intervenons dans l'urgence et sur les chantiers extrêmes : dégât des eaux, décontamination après incendie, sous-sols inondés, recherche de fuites, diagnostic d'humidité, nettoyage suite à décès. Nous travaillons volontiers avec les compagnies d'assurance.",
+              "Ces prestations demandent méthode, équipement adapté et beaucoup de tact. C'est un savoir-faire à part, que nous détaillons sur une page dédiée."
+            ],
+            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-locaux.jpg", "alt": "Remise en état de locaux après sinistre" },
+            "imagePosition": "left",
+            "imageRatio": "4/3",
+            "imageCard": true,
+            "ctaPrimaire": { "label": "Interventions après sinistre", "href": "/apres-sinistre" }
           }
         },
         {
@@ -177,26 +168,25 @@
             "eyebrow": "Simple de bout en bout",
             "titre": "Comment se déroule une intervention",
             "items": [
-              {
-                "icone": "PhoneCall",
-                "titre": "Vous nous décrivez le besoin",
-                "texte": "Par téléphone, WhatsApp ou formulaire, vous nous expliquez ce qui doit être nettoyé, entretenu ou réparé. Quelques photos suffisent souvent à cadrer le projet."
-              },
-              {
-                "icone": "ClipboardList",
-                "titre": "Nous établissons un devis gratuit",
-                "texte": "Nous évaluons la surface, l'état et l'accès, puis vous remettons un devis détaillé et sans engagement. Vous savez exactement ce qui est compris."
-              },
-              {
-                "icone": "CalendarCheck",
-                "titre": "Nous planifions et intervenons",
-                "texte": "Une date est fixée selon vos contraintes. Notre équipe arrive équipée, protège les abords et travaille proprement, avec le matériel adapté au support."
-              },
-              {
-                "icone": "ShieldCheck",
-                "titre": "Nous contrôlons le résultat",
-                "texte": "Avant de partir, nous vérifions chaque zone avec vous. Pour un entretien régulier, nous convenons ensemble d'un rythme de passage adapté."
-              }
+              { "icone": "PhoneCall", "titre": "Vous nous décrivez le besoin", "texte": "Par téléphone, WhatsApp ou via l'assistant en ligne, vous nous expliquez le bâtiment et la prestation. Quelques photos aident à tout cadrer." },
+              { "icone": "ClipboardList", "titre": "Nous chiffrons gratuitement", "texte": "Nous évaluons la surface, l'état et l'accès, puis vous remettons un devis détaillé et sans engagement. Vous savez exactement ce qui est compris." },
+              { "icone": "CalendarCheck", "titre": "Nous intervenons proprement", "texte": "Une date est fixée selon vos contraintes. L'équipe arrive équipée, protège les lieux et travaille avec le matériel adapté au support." },
+              { "icone": "ShieldCheck", "titre": "Nous contrôlons avec vous", "texte": "Avant de partir, nous vérifions chaque zone. Pour un entretien régulier, nous calons ensemble un rythme de passage adapté." }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "En images",
+            "titre": "Nos prestations en action",
+            "intro": "Visuels d'illustration, en attendant la mise en ligne de nos propres chantiers.",
+            "ratio": "4/3",
+            "images": [
+              { "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-sols.jpg", "alt": "Nettoyage des sols d'un logement" }, "titre": "Entretien de logement" },
+              { "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-bureaux.jpg", "alt": "Nettoyage de bureaux" }, "titre": "Bureaux & commerces" },
+              { "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-textile.jpg", "alt": "Nettoyage d'un canapé en textile" }, "titre": "Nettoyage textile" }
             ]
           }
         },
@@ -205,38 +195,10 @@
           "mode": "liste",
           "content": {
             "titre": "Une équipe qui se déplace dans tout le Nord",
-            "intro": "Depuis Lille, nous rayonnons sur la métropole et au-delà, jusqu'aux communes rurales du département.",
+            "intro": "Depuis Lille, nous rayonnons sur la métropole et au-delà, jusqu'aux communes plus rurales du département.",
             "zones": [
-              {
-                "region": "Métropole Européenne de Lille",
-                "principale": "Lille",
-                "villes": [
-                  "Lille",
-                  "Roubaix",
-                  "Tourcoing",
-                  "Villeneuve-d'Ascq",
-                  "Marcq-en-Barœul",
-                  "Lambersart",
-                  "Wattignies",
-                  "Ronchin",
-                  "Loos",
-                  "La Madeleine"
-                ]
-              },
-              {
-                "region": "Reste du Nord (59)",
-                "principale": "Douai",
-                "villes": [
-                  "Douai",
-                  "Armentières",
-                  "Seclin",
-                  "Halluin",
-                  "Comines",
-                  "Bailleul",
-                  "Orchies",
-                  "Pont-à-Marcq"
-                ]
-              }
+              { "region": "Métropole Européenne de Lille", "principale": "Lille", "villes": ["Lille", "Roubaix", "Tourcoing", "Villeneuve-d'Ascq", "Marcq-en-Barœul", "Lambersart", "Wattignies", "Ronchin", "Loos", "La Madeleine"] },
+              { "region": "Reste du Nord (59)", "principale": "Douai", "villes": ["Douai", "Armentières", "Seclin", "Halluin", "Comines", "Bailleul", "Orchies", "Pont-à-Marcq"] }
             ]
           }
         },
@@ -245,38 +207,20 @@
           "content": {
             "titre": "Les questions que l'on nous pose souvent",
             "items": [
-              {
-                "question": "Travaillez-vous pour les particuliers comme pour les entreprises ?",
-                "reponse": "Oui. Nous intervenons chez les particuliers, dans les entreprises, les commerces, les copropriétés et pour les collectivités. Chaque devis est adapté au type de lieu et au volume à traiter."
-              },
-              {
-                "question": "Faut-il tout regrouper ou puis-je demander une seule prestation ?",
-                "reponse": "Les deux sont possibles. Vous pouvez nous confier un nettoyage ponctuel unique comme regrouper plusieurs métiers (façade, jardin, intérieur) sur un même chantier pour simplifier l'organisation."
-              },
-              {
-                "question": "Le devis est-il vraiment gratuit ?",
-                "reponse": "Oui, l'étude de votre besoin et le devis sont gratuits et sans engagement. Nous détaillons ce qui est compris afin que vous décidiez en toute clarté, sans surprise."
-              },
-              {
-                "question": "Proposez-vous un entretien régulier ?",
-                "reponse": "Bien sûr. Au-delà des interventions ponctuelles, nous mettons en place des passages réguliers — hebdomadaires, mensuels ou saisonniers — pour vos locaux, vos extérieurs ou vos flottes de véhicules."
-              }
+              { "question": "Travaillez-vous avec les syndics et les entreprises ?", "reponse": "Oui, c'est le cœur de notre activité. Nous entretenons copropriétés, bureaux, commerces et locaux professionnels, avec un référent dédié et un cahier des charges précis pour chaque site." },
+              { "question": "Peut-on vous confier une seule intervention ponctuelle ?", "reponse": "Bien sûr. Un nettoyage unique de fin de chantier, une remise en état avant un état des lieux ou un canapé à raviver : chaque demande est chiffrée à part, sans obligation de contrat." },
+              { "question": "Le devis est-il gratuit ?", "reponse": "Oui, l'étude de votre bâtiment et le devis sont gratuits et sans engagement. Nous détaillons ce qui est compris pour que vous décidiez en toute clarté, sans surprise à la facturation." },
+              { "question": "Intervenez-vous en urgence après un sinistre ?", "reponse": "Oui. En cas de dégât des eaux, d'incendie ou d'inondation, nous nous organisons rapidement et pouvons échanger directement avec votre assurance pour la remise en état." }
             ]
           }
         },
         {
           "type": "cta",
           "content": {
-            "titre": "Un espace à remettre en état ?",
-            "sousTitre": "Décrivez-nous votre projet : nous vous rappelons avec un devis clair, gratuit et sans engagement.",
-            "ctaPrimaire": {
-              "label": "Demander mon devis",
-              "href": "/devis"
-            },
-            "ctaSecondaire": {
-              "label": "Nous appeler",
-              "href": "/contact"
-            }
+            "titre": "Un bâtiment à entretenir ou à remettre en état ?",
+            "sousTitre": "Expliquez-nous votre projet en quelques mots : vous recevez un devis détaillé, gratuit et sans la moindre obligation.",
+            "ctaPrimaire": { "label": "Demander mon devis", "href": "/devis" },
+            "ctaSecondaire": { "label": "Nous appeler", "href": "/contact" }
           }
         }
       ]
@@ -285,16 +229,16 @@
       "slug": "services",
       "label": "Services",
       "meta": {
-        "title": "Nos prestations de nettoyage & d'entretien",
-        "description": "Nettoyage extérieur, intérieur, de véhicules, entretien de jardin et petits travaux : découvrez tous les services HYGIFRANCE à Lille et dans le Nord."
+        "title": "Nos prestations de nettoyage de bâtiments",
+        "description": "Syndrome de Diogène, nettoyage extérieur, copropriétés, bureaux, textile et après-sinistre : découvrez tous les services HYGIFRANCE à Lille et dans le Nord."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Tout au même endroit",
-            "titre": "Cinq métiers pour garder vos espaces impeccables",
-            "intro": "HYGIFRANCE réunit le nettoyage, l'entretien des extérieurs et le petit bricolage. Choisissez la prestation qui vous concerne — ou combinez-les."
+            "titre": "Cinq spécialités pour vos bâtiments",
+            "intro": "De l'entretien courant des copropriétés aux chantiers les plus délicats, choisissez la prestation qui vous concerne — ou combinez-les."
           }
         },
         {
@@ -302,75 +246,116 @@
           "variant": "grille-cartes",
           "content": {
             "titre": "Nos domaines d'intervention",
-            "intro": "Chaque métier dispose de sa propre page, où sont précisés nos gestes et ce que le devis comprend.",
+            "intro": "Chaque spécialité a sa page dédiée, où sont précisés nos gestes et ce que le devis comprend.",
             "items": [
-              {
-                "nom": "Nettoyage extérieur",
-                "icone": "SprayCan",
-                "description": "Façades, toitures, terrasses, parkings, bardages, vitres, gouttières, panneaux solaires, mobilier de jardin, tombes, effacement de graffitis, anti-mousse et hydrofuge.",
-                "priceHint": "Sur devis",
-                "href": "/nettoyage-exterieur"
-              },
-              {
-                "nom": "Nettoyage intérieur",
-                "icone": "Building2",
-                "description": "Bureaux, logements, commerces, restaurants, entrepôts, cabinets, écoles, copropriétés, fin de chantier, après déménagement, après sinistre et désinfection.",
-                "priceHint": "Sur devis",
-                "href": "/nettoyage-interieur"
-              },
-              {
-                "nom": "Véhicules, engins & bateaux",
-                "icone": "Truck",
-                "description": "Voitures, utilitaires, camions, bus, engins de chantier, véhicules agricoles, bateaux, camping-cars, flottes, bennes et conteneurs.",
-                "priceHint": "Sur devis",
-                "href": "/vehicules-engins-bateaux"
-              },
-              {
-                "nom": "Entretien de jardin",
-                "icone": "Trees",
-                "description": "Tonte, taille de haies et d'arbustes, élagage, abattage, débroussaillage, désherbage, scarification, entretien des massifs et évacuation des déchets verts.",
-                "priceHint": "Sur devis",
-                "href": "/entretien-jardin"
-              },
-              {
-                "nom": "Bricolage & petits travaux",
-                "icone": "Wrench",
-                "description": "Montage de meubles, fixations, pose de luminaires et tringles, joints, retouches de peinture, robinetterie, plinthes et petites réparations.",
-                "priceHint": "Sur devis",
-                "href": "/bricolage"
-              }
+              { "nom": "Syndrome de Diogène", "icone": "HeartHandshake", "description": "Débarras, nettoyage en profondeur et désinfection des logements très encombrés, avec discrétion et respect.", "priceHint": "Sur devis", "href": "/syndrome-diogene" },
+              { "nom": "Nettoyage extérieur", "icone": "Building2", "description": "Toitures, gouttières, façades, bardages, terrasses, entrepôts, fin de chantier, fin de bail et déménagement.", "priceHint": "Sur devis", "href": "/nettoyage-exterieur" },
+              { "nom": "Parties communes & copropriétés", "icone": "Building", "description": "Halls, cages d'escalier, ascenseurs, locaux et vitres, en passages réguliers pour les syndics.", "priceHint": "Sur devis", "href": "/parties-communes-coproprietes" },
+              { "nom": "Bureaux, commerces & cabinets", "icone": "Briefcase", "description": "Bureaux, commerces, cabinets médicaux et écoles, entretenus en dehors ou pendant votre activité.", "priceHint": "Sur devis", "href": "/bureaux-commerces" },
+              { "nom": "Nettoyage textile", "icone": "Sofa", "description": "Canapés, tapis, matelas et sièges auto nettoyés en profondeur par injection-extraction.", "priceHint": "Sur devis", "href": "/nettoyage-textile" }
             ]
           }
         },
         {
           "type": "contenu",
           "content": {
-            "eyebrow": "Un interlocuteur unique",
-            "titre": "Pourquoi tout confier",
-            "titreAccent": "à la même équipe",
+            "eyebrow": "Interventions spécialisées",
+            "titre": "Sinistre & situations",
+            "titreAccent": "extrêmes",
             "paragraphes": [
-              "Faire appel à plusieurs prestataires, c'est multiplier les rendez-vous, les devis et les responsables. En regroupant vos besoins chez HYGIFRANCE, vous gagnez un seul contact, une seule facturation et une vision d'ensemble de vos espaces.",
-              "Cela permet aussi des économies concrètes : lorsqu'une équipe vient nettoyer une façade, elle peut dans la foulée dégager les gouttières, traiter la terrasse et tailler la haie. Un déplacement, plusieurs tâches réglées — c'est plus rapide et souvent moins cher."
+              "Certaines situations sortent de l'entretien classique : un dégât des eaux à assécher, un sous-sol inondé, une décontamination après incendie, une recherche de fuite, un diagnostic d'humidité ou un nettoyage suite à un décès. Nous les prenons en charge avec l'équipement et la rigueur qu'elles exigent, en lien avec votre assurance si besoin.",
+              "Ces prestations sont regroupées sur une page dédiée, pour les distinguer clairement de l'entretien courant."
             ],
-            "ctaPrimaire": {
-              "label": "Demander un devis",
-              "href": "/devis"
-            }
+            "ctaPrimaire": { "label": "Voir les interventions après sinistre", "href": "/apres-sinistre" }
           }
         },
         {
           "type": "cta",
           "content": {
-            "titre": "Vous ne savez pas dans quelle case ranger votre besoin ?",
+            "titre": "Vous ne savez pas dans quelle catégorie ranger votre besoin ?",
             "sousTitre": "Décrivez-le simplement : nous identifions la prestation qui convient et vous en donnons le prix.",
-            "ctaPrimaire": {
-              "label": "Poser ma question",
-              "href": "/contact"
-            },
-            "ctaSecondaire": {
-              "label": "Demander un devis",
-              "href": "/devis"
-            }
+            "ctaPrimaire": { "label": "Utiliser l'assistant devis", "href": "/devis" },
+            "ctaSecondaire": { "label": "Nous contacter", "href": "/contact" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "syndrome-diogene",
+      "label": "Syndrome de Diogène",
+      "navHidden": true,
+      "service": {
+        "name": "Nettoyage syndrome de Diogène",
+        "description": "Remise en état de logements encombrés ou insalubres à Lille et dans le Nord : débarras, nettoyage en profondeur, désinfection, dans la discrétion.",
+        "serviceType": "Nettoyage extrême et syndrome de Diogène",
+        "priceFrom": "Sur devis"
+      },
+      "meta": {
+        "title": "Nettoyage syndrome de Diogène à Lille",
+        "description": "Remise en état de logements très encombrés ou insalubres à Lille et dans le Nord : débarras, nettoyage en profondeur et désinfection, avec discrétion et respect."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nettoyage extrême",
+            "titre": "Syndrome de Diogène : reprendre pied, en douceur",
+            "intro": "Un logement submergé n'est jamais qu'une affaire de ménage. Nous intervenons avec méthode, discrétion et respect, sans jugement.",
+            "ctaPrimaire": { "label": "Demander un devis discret", "href": "/devis" },
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Syndrome de Diogène" }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Un accompagnement,",
+            "titreAccent": "pas seulement un nettoyage",
+            "paragraphes": [
+              "Le syndrome de Diogène conduit à une accumulation d'objets et de déchets qui rend un logement difficilement habitable. Derrière chaque intervention, il y a une personne et une histoire : notre première exigence est le respect. Nous avançons au rythme des occupants et de la famille, dans la plus grande discrétion, véhicules et tenues neutres si vous le souhaitez.",
+              "Concrètement, nous procédons par étapes : tri et débarras des encombrants, évacuation vers les filières adaptées, nettoyage en profondeur de toutes les surfaces, puis désinfection et désodorisation. Les sols, les murs, la cuisine et les sanitaires sont repris jusqu'à retrouver un intérieur sain et sécurisé.",
+              "Chaque situation est unique : la surface, le niveau d'encombrement et l'état sanitaire déterminent la durée et le prix, toujours établis sur devis. Nous pouvons coordonner l'intervention avec un proche, un tuteur, un bailleur social ou les services sociaux."
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Notre prise en charge",
+            "titre": "Ce que comprend l'intervention",
+            "items": [
+              { "nom": "Tri & débarras", "icone": "Boxes", "description": "Débarras des encombrants et des déchets, tri des objets à conserver avec les occupants ou la famille." },
+              { "nom": "Évacuation responsable", "icone": "Recycle", "description": "Enlèvement et acheminement des déchets vers les filières adaptées, dans le respect des règles." },
+              { "nom": "Nettoyage en profondeur", "icone": "SprayCan", "description": "Sols, murs, cuisine et sanitaires nettoyés à fond pour retrouver un logement réellement propre." },
+              { "nom": "Désinfection & désodorisation", "icone": "ShieldCheck", "description": "Traitement des surfaces de contact et élimination des odeurs pour un intérieur sain et sécurisé." },
+              { "nom": "Discrétion garantie", "icone": "EyeOff", "description": "Véhicules et tenues neutres possibles, intervention organisée en toute confidentialité." },
+              { "nom": "Coordination", "icone": "Users", "description": "Nous travaillons avec les proches, tuteurs, bailleurs ou services sociaux selon la situation." }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Syndrome de Diogène : vos questions",
+            "items": [
+              { "question": "Intervenez-vous en toute discrétion ?", "reponse": "Oui, c'est une priorité. Nous pouvons utiliser des véhicules et des tenues neutres, planifier l'intervention à un horaire discret et n'échanger qu'avec les personnes que vous nous indiquez." },
+              { "question": "Faut-il tout jeter ?", "reponse": "Non. Nous trions avec les occupants ou la famille pour préserver les objets importants, les papiers et les biens de valeur. Rien n'est évacué sans accord préalable." },
+              { "question": "Combien de temps dure une intervention ?", "reponse": "Cela dépend de la surface et du niveau d'encombrement : d'une journée à plusieurs jours. Nous vous donnons une estimation précise de la durée et du prix lors du devis." },
+              { "question": "Le crédit d'impôt s'applique-t-il ?", "reponse": "Le débarras et l'évacuation de déchets n'ouvrent pas droit au crédit d'impôt services à la personne. Selon la nature exacte de la prestation, nous vous précisons ce qui est éligible ou non, sans rien promettre à tort." }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Besoin d'aide pour un logement encombré ?",
+            "sousTitre": "Parlons-en en toute confidentialité. L'échange et le devis sont gratuits et sans engagement.",
+            "ctaPrimaire": { "label": "Demander un devis discret", "href": "/devis" },
+            "ctaSecondaire": { "label": "Nous appeler", "href": "/contact" }
           }
         }
       ]
@@ -380,50 +365,39 @@
       "label": "Nettoyage extérieur",
       "navHidden": true,
       "service": {
-        "name": "Nettoyage extérieur",
-        "description": "Nettoyage de façades, toitures, terrasses, bardages et surfaces extérieures à Lille et dans le Nord, avec traitements anti-mousse et hydrofuge.",
-        "serviceType": "Nettoyage de façade et de toiture",
+        "name": "Nettoyage extérieur de bâtiments",
+        "description": "Toitures, gouttières, façades, bardages, terrasses et remise en état de locaux à Lille et dans le Nord : fin de chantier, fin de bail, déménagement.",
+        "serviceType": "Nettoyage extérieur et remise en état",
         "priceFrom": "Sur devis"
       },
       "meta": {
-        "title": "Nettoyage extérieur façade & toiture à Lille",
-        "description": "Nettoyage haute pression de façades, toitures, terrasses et bardages à Lille. Anti-mousse et hydrofuge pour protéger durablement vos surfaces extérieures."
+        "title": "Nettoyage extérieur & façade à Lille",
+        "description": "Toitures, gouttières, façades, bardages, terrasses, entrepôts, fin de chantier et fin de bail à Lille et dans le Nord. Bâtiments nets, sur devis gratuit."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Nettoyage extérieur",
-            "titre": "Redonnez de l'éclat à vos façades et toitures",
-            "intro": "Salissures, mousses, traînées noires et pollution ternissent vos surfaces et les fragilisent. Nous les nettoyons en profondeur et les protégeons pour longtemps.",
-            "ctaPrimaire": {
-              "label": "Demander un devis",
-              "href": "/devis"
-            },
+            "titre": "L'enveloppe de vos bâtiments, comme neuve",
+            "intro": "Toitures, façades, terrasses, bardages : nous retirons mousses, salissures et traces, et remettons vos locaux en état avant ou après occupation.",
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
             "breadcrumb": [
-              {
-                "label": "Accueil",
-                "href": "/"
-              },
-              {
-                "label": "Services",
-                "href": "/services"
-              },
-              {
-                "label": "Nettoyage extérieur"
-              }
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Nettoyage extérieur" }
             ]
           }
         },
         {
           "type": "contenu",
           "content": {
-            "titre": "Un nettoyage qui nettoie —",
-            "titreAccent": "et qui protège",
+            "titre": "De la toiture",
+            "titreAccent": "au dernier carton",
             "paragraphes": [
-              "À l'extérieur, chaque support a ses règles. Une façade enduite ne se traite pas comme un bardage métallique ; une toiture en tuiles demande une pression maîtrisée pour ne pas déjointoyer, là où une terrasse en béton supporte un lavage plus énergique. Nous adaptons la méthode et la pression au matériau afin de retirer mousses, lichens et traînées sans l'abîmer.",
-              "Nous intervenons sur les façades, les toitures, les terrasses, les parkings et voiries, les bardages, les vitres extérieures, les gouttières, les panneaux solaires, le mobilier de jardin et jusqu'aux monuments funéraires. L'effacement de graffitis et le nettoyage haute pression complètent la palette.",
-              "Une fois la surface propre, deux traitements prolongent le résultat : l'anti-mousse, qui empêche les micro-organismes de revenir trop vite, et l'hydrofuge, qui rend le support déperlant et limite l'infiltration d'eau. Résultat : des passages plus espacés, une façade qui reste saine plus longtemps et un patrimoine mieux préservé."
+              "L'extérieur d'un bâtiment encaisse la pluie, la pollution et le temps. Une toiture se couvre de mousses, une façade se ternit, une gouttière se bouche, une terrasse verdit. Nous traitons chaque support avec la méthode et la pression qui lui conviennent, pour nettoyer sans abîmer.",
+              "Notre champ d'action couvre les toitures et gouttières, les façades et bardages, les terrasses, les accès et les entrepôts. Nous prenons aussi en charge les remises en état ponctuelles : nettoyage de fin de chantier, remise en propreté de fin de bail, ménage complet avant ou après un déménagement.",
+              "Que vous soyez un particulier, un commerçant, un syndic ou un professionnel de l'immobilier, nous vous remettons un devis clair après avoir évalué la surface, la hauteur, l'état et l'accès. Le résultat : un bâtiment sain, prêt à être habité, loué ou livré."
             ]
           }
         },
@@ -434,65 +408,12 @@
             "eyebrow": "Ce que nous traitons",
             "titre": "Toutes vos surfaces extérieures",
             "items": [
-              {
-                "nom": "Façades & bardages",
-                "icone": "Building",
-                "description": "Décrassage, démoussage et remise en propreté des façades enduites, pierre, brique ou bardage."
-              },
-              {
-                "nom": "Toitures & gouttières",
-                "icone": "Home",
-                "description": "Démoussage de toiture, curage des gouttières et évacuation des dépôts qui bouchent l'écoulement."
-              },
-              {
-                "nom": "Terrasses & sols",
-                "icone": "Grid3x3",
-                "description": "Terrasses, dalles, parkings, voiries et allées lavés à la pression adaptée au revêtement."
-              },
-              {
-                "nom": "Panneaux solaires",
-                "icone": "SunMedium",
-                "description": "Nettoyage doux des modules photovoltaïques pour restaurer le rendement sans rayer le verre."
-              },
-              {
-                "nom": "Anti-mousse & hydrofuge",
-                "icone": "ShieldCheck",
-                "description": "Traitements préventifs qui espacent les nettoyages et protègent le support de l'eau et des mousses."
-              },
-              {
-                "nom": "Graffitis & haute pression",
-                "icone": "SprayCan",
-                "description": "Effacement de tags et nettoyage haute pression des murs, sols et mobilier urbain."
-              }
-            ]
-          }
-        },
-        {
-          "type": "etapes",
-          "content": {
-            "eyebrow": "Notre méthode",
-            "titre": "Comment nous traitons une surface extérieure",
-            "items": [
-              {
-                "icone": "Search",
-                "titre": "Diagnostic du support",
-                "texte": "Nous identifions le matériau, son état et le type de salissure pour choisir la bonne pression et le bon traitement."
-              },
-              {
-                "icone": "Droplets",
-                "titre": "Nettoyage adapté",
-                "texte": "Haute pression, basse pression ou pulvérisation : nous retirons mousses, lichens et dépôts sans agresser la surface."
-              },
-              {
-                "icone": "Shield",
-                "titre": "Protection préventive",
-                "texte": "Selon le support, nous appliquons un anti-mousse et/ou un hydrofuge pour prolonger la propreté et limiter les infiltrations."
-              },
-              {
-                "icone": "CheckCheck",
-                "titre": "Vérification finale",
-                "texte": "Nous contrôlons chaque zone, dégageons les abords et vous remettons une surface nette, prête à durer."
-              }
+              { "nom": "Toitures & gouttières", "icone": "Home", "description": "Démoussage de toiture et curage des gouttières pour rétablir l'écoulement et protéger le bâti." },
+              { "nom": "Façades & bardages", "icone": "Building2", "description": "Décrassage et remise en propreté des façades enduites, briques, pierre ou bardage." },
+              { "nom": "Terrasses & accès", "icone": "Grid3x3", "description": "Terrasses, dalles, cours et allées lavées à la pression adaptée au revêtement." },
+              { "nom": "Entrepôts & locaux", "icone": "Warehouse", "description": "Nettoyage de grands volumes, entrepôts et locaux d'activité, sols et surfaces compris." },
+              { "nom": "Fin de chantier / bail", "icone": "HardHat", "description": "Retrait des résidus et remise en propreté pour livrer ou rendre un local impeccable." },
+              { "nom": "Avant / après déménagement", "icone": "PackageOpen", "description": "Ménage complet avant l'installation ou après le départ, prêt pour l'état des lieux." }
             ]
           }
         },
@@ -501,79 +422,50 @@
           "content": {
             "titre": "Nettoyage extérieur : vos questions",
             "items": [
-              {
-                "question": "La haute pression risque-t-elle d'abîmer ma façade ?",
-                "reponse": "Pas si elle est bien maîtrisée. Nous réglons la pression selon le matériau et privilégions la basse pression ou la pulvérisation sur les supports fragiles comme certaines toitures ou enduits anciens."
-              },
-              {
-                "question": "À quelle fréquence faut-il nettoyer une toiture ?",
-                "reponse": "Cela dépend de l'exposition et de l'environnement (arbres, humidité). En moyenne, un démoussage tous les quelques années suffit ; un traitement hydrofuge appliqué après nettoyage permet d'espacer nettement les passages."
-              },
-              {
-                "question": "L'hydrofuge change-t-il l'aspect de la surface ?",
-                "reponse": "Les hydrofuges que nous utilisons sont majoritairement incolores et laissent respirer le support : ils le rendent déperlant sans modifier sa couleur ni créer de film brillant, sauf demande spécifique d'effet."
-              },
-              {
-                "question": "Intervenez-vous en hauteur ?",
-                "reponse": "Oui, dans le respect des règles de sécurité. Selon la configuration, nous travaillons depuis le sol avec des perches, sur échafaudage ou nacelle. L'accès et la hauteur sont évalués lors du devis."
-              }
+              { "question": "La pression risque-t-elle d'abîmer ma façade ou ma toiture ?", "reponse": "Pas si elle est maîtrisée. Nous réglons la pression selon le matériau et privilégions les méthodes douces sur les supports fragiles, pour retirer les salissures sans les endommager." },
+              { "question": "Intervenez-vous en hauteur ?", "reponse": "Oui, dans le respect des règles de sécurité. Selon la configuration, nous travaillons depuis le sol avec des perches, sur échafaudage ou nacelle. La hauteur et l'accès sont évalués au devis." },
+              { "question": "Faites-vous le nettoyage de fin de bail pour un état des lieux ?", "reponse": "Oui. Nous remettons le logement ou le local en propreté avant l'état des lieux de sortie, afin de limiter les retenues sur le dépôt de garantie et de rendre un bien impeccable." },
+              { "question": "Gérez-vous les grands volumes comme les entrepôts ?", "reponse": "Oui, nous sommes équipés pour les grandes surfaces et les hauteurs sous plafond importantes. Nous adaptons le matériel et l'équipe au volume à traiter, chiffré au devis." }
             ]
           }
         },
         {
           "type": "cta",
           "content": {
-            "titre": "Façade grise ou toiture envahie de mousse ?",
+            "titre": "Façade grise, toiture envahie de mousse, local à rendre ?",
             "sousTitre": "Envoyez-nous quelques photos : nous estimons le travail et vous adressons un devis gratuit.",
-            "ctaPrimaire": {
-              "label": "Demander mon devis",
-              "href": "/devis"
-            },
-            "ctaSecondaire": {
-              "label": "Voir les autres prestations",
-              "href": "/services"
-            }
+            "ctaPrimaire": { "label": "Demander mon devis", "href": "/devis" },
+            "ctaSecondaire": { "label": "Voir les autres prestations", "href": "/services" }
           }
         }
       ]
     },
     {
-      "slug": "nettoyage-interieur",
-      "label": "Nettoyage intérieur",
+      "slug": "parties-communes-coproprietes",
+      "label": "Parties communes & copropriétés",
       "navHidden": true,
       "service": {
-        "name": "Nettoyage intérieur",
-        "description": "Nettoyage de bureaux, commerces, logements et copropriétés, remise en état après chantier ou sinistre et désinfection à Lille et dans le Nord.",
-        "serviceType": "Nettoyage de locaux et désinfection",
+        "name": "Nettoyage des parties communes et copropriétés",
+        "description": "Entretien des halls, cages d'escalier, ascenseurs, locaux et vitres des copropriétés à Lille et dans le Nord, en passages réguliers pour les syndics.",
+        "serviceType": "Entretien de copropriété et parties communes",
         "priceFrom": "Sur devis"
       },
       "meta": {
-        "title": "Nettoyage intérieur pro & désinfection à Lille",
-        "description": "Bureaux, commerces, logements, copropriétés, fin de chantier, après sinistre et désinfection à Lille et dans le Nord. Devis gratuit, ponctuel ou régulier."
+        "title": "Nettoyage de copropriété & parties communes",
+        "description": "Halls, cages d'escalier, ascenseurs, locaux et vitres : entretien régulier des copropriétés à Lille et dans le Nord pour syndics et bailleurs. Sur devis."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Nettoyage intérieur",
-            "titre": "Des lieux sains, dedans comme derrière les vitres",
-            "intro": "Bureaux, commerces, logements ou parties communes : nous rendons vos intérieurs impeccables, ponctuellement ou au fil de l'année.",
-            "ctaPrimaire": {
-              "label": "Demander un devis",
-              "href": "/devis"
-            },
+            "eyebrow": "Copropriétés & syndics",
+            "titre": "Des parties communes qui donnent le ton",
+            "intro": "Le hall est la première image d'un immeuble. Nous l'entretenons avec régularité, pour le confort des occupants et la valeur du patrimoine.",
+            "ctaPrimaire": { "label": "Demander un devis copropriété", "href": "/devis" },
             "breadcrumb": [
-              {
-                "label": "Accueil",
-                "href": "/"
-              },
-              {
-                "label": "Services",
-                "href": "/services"
-              },
-              {
-                "label": "Nettoyage intérieur"
-              }
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Parties communes & copropriétés" }
             ]
           }
         },
@@ -581,144 +473,163 @@
           "type": "services",
           "variant": "grille-cartes",
           "content": {
-            "eyebrow": "Tous vos espaces intérieurs",
+            "eyebrow": "Tout l'immeuble",
+            "titre": "Ce que nous entretenons",
+            "items": [
+              { "nom": "Halls & entrées", "icone": "DoorOpen", "description": "Sols, boîtes aux lettres, miroirs et surfaces vitrées des halls, pour une première impression soignée." },
+              { "nom": "Cages d'escalier", "icone": "Building", "description": "Marches, rampes, paliers et interrupteurs nettoyés étage par étage, à un rythme défini." },
+              { "nom": "Ascenseurs", "icone": "MoveVertical", "description": "Cabines, parois, sols et boutons désinfectés et remis en propreté régulièrement." },
+              { "nom": "Locaux & poubelles", "icone": "Trash2", "description": "Locaux à ordures, vélos et poussettes lavés et désinfectés pour supprimer dépôts et odeurs." },
+              { "nom": "Vitres communes", "icone": "Sparkles", "description": "Vitrages des parties communes, portes d'entrée et impostes rendus nets et lumineux." },
+              { "nom": "Contrat sur mesure", "icone": "CalendarCheck", "description": "Fréquence et prestations calées sur votre règlement et votre budget, avec un référent dédié." }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Un immeuble suivi,",
+            "titreAccent": "des occupants sereins",
+            "paragraphes": [
+              "Pour un syndic comme pour un bailleur, la propreté des parties communes est un sujet sensible : elle conditionne le confort des résidents, la réputation de l'immeuble et, à terme, la valeur des lots. Nous l'abordons comme un engagement dans la durée, pas comme un passage ponctuel.",
+              "Nous établissons avec vous un cahier des charges précis : zones traitées, fréquence des passages, produits utilisés, points de contrôle. Un référent connaît votre immeuble et assure la continuité, y compris pendant les congés. Vous disposez d'un interlocuteur unique et d'un compte rendu clair.",
+              "Halls, cages d'escalier, ascenseurs, locaux techniques, vitres et abords : tout est couvert dans un contrat adapté à votre budget. Nous intervenons aussi ponctuellement, par exemple après des travaux ou un dégât dans les communs."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Copropriétés : vos questions",
+            "items": [
+              { "question": "Proposez-vous un contrat d'entretien régulier ?", "reponse": "Oui. Nous mettons en place des passages récurrents — hebdomadaires, bihebdomadaires ou mensuels — définis dans un cahier des charges, avec un référent dédié à votre immeuble." },
+              { "question": "Travaillez-vous avec les syndics et bailleurs sociaux ?", "reponse": "Oui, ce sont des interlocuteurs habituels. Nous fournissons un devis clair, des prestations traçables et un compte rendu, adaptés aux exigences de gestion d'un parc immobilier." },
+              { "question": "Assurez-vous la continuité pendant les congés ?", "reponse": "Oui. L'organisation en équipe garantit la continuité du service toute l'année : un remplaçant connaît votre immeuble et maintient le même niveau d'entretien, sans interruption." },
+              { "question": "Nettoyez-vous les locaux à poubelles et les vitres ?", "reponse": "Oui, ils font partie de l'entretien des communs : lavage et désinfection des locaux à ordures, nettoyage des vitrages des halls et des portes d'entrée sont inclus selon le contrat." }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Votre copropriété mérite mieux qu'un hall négligé ?",
+            "sousTitre": "Confiez-nous l'entretien des communs : nous bâtissons un contrat clair et un devis adapté.",
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
+            "ctaSecondaire": { "label": "Nous contacter", "href": "/contact" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "bureaux-commerces",
+      "label": "Bureaux & commerces",
+      "navHidden": true,
+      "service": {
+        "name": "Nettoyage de bureaux, commerces et cabinets",
+        "description": "Entretien de bureaux, commerces, cabinets médicaux et établissements scolaires à Lille et dans le Nord, ponctuel ou régulier, autour de votre activité.",
+        "serviceType": "Nettoyage de locaux professionnels",
+        "priceFrom": "Sur devis"
+      },
+      "meta": {
+        "title": "Nettoyage de bureaux & commerces à Lille",
+        "description": "Bureaux, commerces, cabinets médicaux et établissements scolaires entretenus à Lille et dans le Nord, en dehors ou pendant votre activité. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Locaux professionnels",
+            "titre": "Des locaux à votre image, tous les jours",
+            "intro": "Bureaux, commerces, cabinets, écoles : un environnement propre rassure vos clients, protège vos équipes et valorise votre activité.",
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Bureaux & commerces" }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Nous nous adaptons",
+            "titreAccent": "à votre rythme",
+            "paragraphes": [
+              "Un local professionnel propre, c'est un client mis en confiance, des collaborateurs en meilleure santé et des équipements qui durent. Encore faut-il un entretien qui ne perturbe jamais l'activité : c'est notre priorité pour les bureaux, commerces, cabinets médicaux et établissements scolaires.",
+              "Nous calons nos passages sur vos horaires — tôt le matin, après la fermeture ou le week-end — et adaptons le protocole à chaque lieu. Un cabinet médical demande une désinfection rigoureuse des surfaces de contact ; un commerce, des vitrines et un sol impeccables ; une école, une attention particulière à l'hygiène des espaces partagés.",
+              "En contrat régulier ou en intervention ponctuelle, vous bénéficiez d'un référent, d'un cahier des charges clair et d'un matériel professionnel fourni. Vous n'avez rien à gérer : nous arrivons équipés et repartons en laissant des locaux prêts à accueillir."
+            ],
+            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-bureaux.jpg", "alt": "Nettoyage de bureaux professionnels" },
+            "imagePosition": "right",
+            "imageRatio": "4/3",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Selon votre lieu",
             "titre": "Là où nous intervenons",
             "items": [
-              {
-                "nom": "Bureaux & commerces",
-                "icone": "Briefcase",
-                "description": "Entretien de bureaux, boutiques, restaurants et entrepôts, en dehors ou pendant vos horaires selon vos contraintes."
-              },
-              {
-                "nom": "Logements & copropriétés",
-                "icone": "Home",
-                "description": "Maisons, appartements, parties communes, halls et cages d'escalier remis en propreté avec régularité."
-              },
-              {
-                "nom": "Fin de chantier",
-                "icone": "HardHat",
-                "description": "Dépoussiérage, retrait des résidus et nettoyage complet pour livrer un local prêt à emménager."
-              },
-              {
-                "nom": "Après déménagement",
-                "icone": "PackageOpen",
-                "description": "Nettoyage de fond avant l'état des lieux ou l'installation, sols, sanitaires et surfaces comprises."
-              },
-              {
-                "nom": "Après sinistre",
-                "icone": "Waves",
-                "description": "Remise en état après dégât des eaux, incendie ou autre sinistre, avec assèchement et désodorisation."
-              },
-              {
-                "nom": "Désinfection & vitres",
-                "icone": "SprayCan",
-                "description": "Désinfection des surfaces de contact et nettoyage des vitres intérieures pour des lieux réellement sains."
-              }
-            ]
-          }
-        },
-        {
-          "type": "contenu",
-          "content": {
-            "titre": "Le propre qui se voit —",
-            "titreAccent": "et celui qui compte",
-            "paragraphes": [
-              "Un intérieur propre, ce n'est pas seulement une surface qui brille : c'est un air plus sain, des points de contact désinfectés et des matériaux qui durent. Nous travaillons avec cette exigence, que ce soit pour l'entretien courant de vos locaux ou pour une remise en état exceptionnelle.",
-              "Nous prenons en charge les bureaux, maisons, appartements, commerces, restaurants, entrepôts, garages, cabinets médicaux, établissements scolaires, salles de sport, lieux publics et copropriétés. Après un chantier, un déménagement ou un sinistre, nous rétablissons des conditions saines : dépoussiérage complet, retrait des résidus, désinfection et nettoyage des vitres intérieures.",
-              "Pour les professionnels, nous calons nos passages sur votre activité afin de ne jamais la gêner. Pour les particuliers, nous nous adaptons à votre rythme. Dans tous les cas, la même équipe revient, connaît les lieux et sait exactement ce que vous attendez."
+              { "nom": "Bureaux", "icone": "Briefcase", "description": "Postes de travail, salles de réunion, sanitaires et espaces communs entretenus régulièrement." },
+              { "nom": "Commerces", "icone": "Store", "description": "Surfaces de vente, vitrines, sols et réserves nettoyés pour accueillir vos clients au mieux." },
+              { "nom": "Cabinets médicaux", "icone": "Stethoscope", "description": "Désinfection rigoureuse des surfaces de contact et des salles de soins, hygiène irréprochable." },
+              { "nom": "Établissements scolaires", "icone": "GraduationCap", "description": "Salles de classe, réfectoires et sanitaires, avec une attention aux espaces partagés." },
+              { "nom": "Vitres & vitrines", "icone": "Sparkles", "description": "Vitrages intérieurs et extérieurs, vitrines et cloisons vitrées rendus nets et lumineux." },
+              { "nom": "Contrat régulier", "icone": "CalendarCheck", "description": "Fréquence et prestations sur mesure, avec un référent et un protocole défini pour votre site." }
             ]
           }
         },
         {
           "type": "faq",
           "content": {
-            "titre": "Nettoyage intérieur : vos questions",
+            "titre": "Bureaux & commerces : vos questions",
             "items": [
-              {
-                "question": "Pouvez-vous intervenir en dehors des heures d'ouverture ?",
-                "reponse": "Oui. Pour les commerces et bureaux, nos passages peuvent être calés très tôt, après la fermeture ou le dimanche, de façon à laisser votre activité et vos clients tranquilles."
-              },
-              {
-                "question": "Quelle différence entre nettoyage et désinfection ?",
-                "reponse": "Le nettoyage retire les salissures visibles ; la désinfection cible les micro-organismes sur les surfaces de contact (poignées, interrupteurs, sanitaires). Nous combinons les deux quand la santé des occupants l'exige."
-              },
-              {
-                "question": "Fournissez-vous le matériel et les produits ?",
-                "reponse": "Oui, nous venons avec notre propre matériel professionnel et des produits choisis selon chaque support. De votre côté, il n'y a rien à sortir ni à acheter."
-              },
-              {
-                "question": "Proposez-vous un contrat d'entretien régulier ?",
-                "reponse": "Absolument. Nous mettons en place des prestations récurrentes — quotidiennes, hebdomadaires ou mensuelles — avec un cahier des charges précis et un référent dédié à votre site."
-              }
+              { "question": "Pouvez-vous intervenir en dehors des heures d'ouverture ?", "reponse": "Oui. Pour ne pas gêner votre activité ni votre clientèle, nos passages peuvent être programmés très tôt, après la fermeture ou le week-end, selon ce qui vous arrange." },
+              { "question": "Respectez-vous les protocoles d'hygiène des cabinets médicaux ?", "reponse": "Oui. Nous appliquons une désinfection rigoureuse des surfaces de contact et des salles de soins, avec des produits adaptés et un protocole conforme aux exigences d'un lieu de santé." },
+              { "question": "Fournissez-vous le matériel et les consommables ?", "reponse": "Nous venons avec notre matériel professionnel et nos produits. Les consommables (papier, savon) peuvent être inclus au contrat si vous le souhaitez, c'est précisé au devis." },
+              { "question": "Un contrat vous engage-t-il sur la durée ?", "reponse": "Nous proposons des contrats souples, sans durée excessive imposée. L'objectif est un partenariat durable fondé sur la qualité, pas un engagement dont on ne peut plus sortir." }
             ]
           }
         },
         {
           "type": "cta",
           "content": {
-            "titre": "Des locaux à entretenir régulièrement ?",
-            "sousTitre": "Parlons-en. Nous construisons une prestation sur mesure et un devis clair, sans engagement.",
-            "ctaPrimaire": {
-              "label": "Demander mon devis",
-              "href": "/devis"
-            },
-            "ctaSecondaire": {
-              "label": "Nous contacter",
-              "href": "/contact"
-            }
+            "titre": "Envie de locaux toujours impeccables ?",
+            "sousTitre": "Construisons ensemble une prestation sur mesure et un devis clair, sans engagement.",
+            "ctaPrimaire": { "label": "Demander mon devis", "href": "/devis" },
+            "ctaSecondaire": { "label": "Nous contacter", "href": "/contact" }
           }
         }
       ]
     },
     {
-      "slug": "vehicules-engins-bateaux",
-      "label": "Véhicules & engins",
+      "slug": "nettoyage-textile",
+      "label": "Nettoyage textile",
       "navHidden": true,
       "service": {
-        "name": "Nettoyage de véhicules, engins et bateaux",
-        "description": "Nettoyage de voitures, utilitaires, camions, bus, engins de chantier, bateaux, camping-cars et flottes d'entreprise à Lille et dans le Nord.",
-        "serviceType": "Nettoyage de véhicules et de bateaux",
+        "name": "Nettoyage textile",
+        "description": "Nettoyage en profondeur de canapés, tapis, matelas et sièges auto à Lille et dans le Nord par injection-extraction : taches, acariens et odeurs.",
+        "serviceType": "Nettoyage de textiles et d'ameublement",
         "priceFrom": "Sur devis"
       },
       "meta": {
-        "title": "Nettoyage véhicules, engins & bateaux — Nord",
-        "description": "Voitures, utilitaires, camions, bus, engins de chantier, bateaux, camping-cars et flottes nettoyés à Lille et dans le Nord. Intérieur et extérieur, sur devis."
+        "title": "Nettoyage canapé, tapis & matelas à Lille",
+        "description": "Canapés, tapis, matelas et sièges auto nettoyés en profondeur à Lille et dans le Nord par injection-extraction : taches, acariens et odeurs éliminés. Sur devis."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Véhicules · Engins · Bateaux",
-            "titre": "Du deux-roues au bus, du chantier à la coque",
-            "intro": "Nous remettons en état tout ce qui roule, transporte ou navigue : particuliers soigneux comme flottes professionnelles.",
-            "ctaPrimaire": {
-              "label": "Demander un devis",
-              "href": "/devis"
-            },
+            "eyebrow": "Nettoyage textile",
+            "titre": "Vos textiles, ravivés en profondeur",
+            "intro": "Canapés, tapis, matelas, sièges auto : l'injection-extraction déloge taches, acariens et odeurs que l'aspirateur laisse derrière lui.",
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
             "breadcrumb": [
-              {
-                "label": "Accueil",
-                "href": "/"
-              },
-              {
-                "label": "Services",
-                "href": "/services"
-              },
-              {
-                "label": "Véhicules & engins"
-              }
-            ]
-          }
-        },
-        {
-          "type": "contenu",
-          "content": {
-            "titre": "Un nettoyage qui va",
-            "titreAccent": "jusqu'aux détails",
-            "paragraphes": [
-              "Un véhicule propre se vend mieux, se conduit plus agréablement et révèle plus tôt les petits défauts. Nous nettoyons l'intérieur comme l'extérieur : carrosserie, jantes, vitres, plastiques, sellerie et coffres, avec des produits qui respectent chaque matière.",
-              "Notre champ d'action est large : voitures, utilitaires, camions, bus, engins de chantier, véhicules agricoles, bateaux, camping-cars, mais aussi bennes, poubelles et conteneurs. Pour les entreprises, nous gérons des flottes entières, sur place ou selon un planning défini, afin que vos véhicules restent présentables toute l'année.",
-              "Boue de chantier, sel marin, résidus de transport ou simple usage quotidien : à chaque salissure sa méthode. Nous adaptons pression, brosses et détergents au support pour un résultat net sans risque pour les surfaces ni pour l'environnement."
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Nettoyage textile" }
             ]
           }
         },
@@ -726,120 +637,95 @@
           "type": "services",
           "variant": "grille-cartes",
           "content": {
-            "eyebrow": "Ce que nous nettoyons",
-            "titre": "Tout ce qui roule ou navigue",
+            "eyebrow": "Ce que nous ravivons",
+            "titre": "Tous vos textiles d'ameublement",
             "items": [
-              {
-                "nom": "Voitures & utilitaires",
-                "icone": "Car",
-                "description": "Intérieur, extérieur, jantes et vitres : une remise en propreté complète pour votre véhicule du quotidien."
-              },
-              {
-                "nom": "Camions & bus",
-                "icone": "Bus",
-                "description": "Poids lourds et transports en commun nettoyés dedans comme dehors, à l'unité ou en flotte."
-              },
-              {
-                "nom": "Engins & agricole",
-                "icone": "Tractor",
-                "description": "Engins de chantier et matériel agricole débarrassés de la boue, de la poussière et des résidus tenaces."
-              },
-              {
-                "nom": "Bateaux & camping-cars",
-                "icone": "Ship",
-                "description": "Coques, ponts et cellules dessalés et dégraissés, avec des produits qui préservent gelcoat et finitions."
-              },
-              {
-                "nom": "Flottes d'entreprise",
-                "icone": "Truck",
-                "description": "Un planning d'entretien pour garder l'ensemble de vos véhicules propres et à votre image."
-              },
-              {
-                "nom": "Bennes & conteneurs",
-                "icone": "Trash2",
-                "description": "Bennes, poubelles et conteneurs lavés et désinfectés pour supprimer dépôts et mauvaises odeurs."
-              }
+              { "nom": "Canapés & fauteuils", "icone": "Sofa", "description": "Tissu ou microfibre : détachage et nettoyage en profondeur qui redonnent couleur et fraîcheur." },
+              { "nom": "Tapis & moquettes", "icone": "Layers", "description": "Fibres ravivées, taches traitées et acariens éliminés par injection-extraction." },
+              { "nom": "Matelas", "icone": "BedDouble", "description": "Assainissement des matelas contre acariens, transpiration et odeurs, pour un sommeil plus sain." },
+              { "nom": "Sièges auto", "icone": "Car", "description": "Sièges, banquettes et moquettes de véhicule dégraissés, détachés et désodorisés." },
+              { "nom": "Détachage ciblé", "icone": "Droplets", "description": "Traitement des taches tenaces (café, vin, encre) avec des produits adaptés à la fibre." },
+              { "nom": "Anti-acariens", "icone": "ShieldCheck", "description": "Traitement assainissant utile aux personnes sensibles, allergiques ou asthmatiques." }
             ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "L'injection-extraction,",
+            "titreAccent": "au-delà de la surface",
+            "paragraphes": [
+              "Un canapé ou un matelas emmagasine, saison après saison, poussières, transpiration, taches et acariens. Passer l'aspirateur ne touche que le dessus. Notre méthode va plus loin : un produit détachant est projeté sous pression jusque dans l'épaisseur du tissu, puis aussitôt réaspiré avec l'eau et les résidus décollés. La fibre est assainie en profondeur, et pas seulement rafraîchie en surface.",
+              "Nous adaptons le produit et le dosage à chaque matière — tissu, microfibre, laine, synthétique — pour détacher efficacement sans ternir ni décolorer. Un test discret est réalisé sur une zone peu visible avant de traiter l'ensemble.",
+              "Le résultat : des couleurs ravivées, des odeurs neutralisées et un intérieur plus sain, particulièrement appréciable pour les personnes allergiques. Le séchage est rapide, et vous retrouvez un mobilier comme rafraîchi. Nous intervenons à domicile comme dans vos locaux, sur devis."
+            ],
+            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-textile.jpg", "alt": "Nettoyage d'un canapé par injection-extraction" },
+            "imagePosition": "left",
+            "imageRatio": "4/3",
+            "imageCard": true
           }
         },
         {
           "type": "faq",
           "content": {
-            "titre": "Véhicules & engins : vos questions",
+            "titre": "Nettoyage textile : vos questions",
             "items": [
-              {
-                "question": "Vous déplacez-vous sur mon site ?",
-                "reponse": "Oui, pour les flottes, les engins et les gros porteurs, nous intervenons directement sur votre parking ou votre dépôt, dès lors qu'un point d'eau et un espace de travail sont accessibles."
-              },
-              {
-                "question": "Gérez-vous l'entretien d'une flotte complète ?",
-                "reponse": "Oui. Nous établissons un planning de passages adapté au nombre de véhicules et à leur usage, avec un tarif dégressif au volume défini dans le devis."
-              },
-              {
-                "question": "Nettoyez-vous les bennes et conteneurs ?",
-                "reponse": "Oui, nous lavons et désinfectons bennes, poubelles et conteneurs pour éliminer les dépôts incrustés et les odeurs, une prestation utile pour les collectivités et les syndics."
-              },
-              {
-                "question": "Vos produits sont-ils sans risque pour les surfaces ?",
-                "reponse": "Nous choisissons des détergents adaptés à chaque matériau — carrosserie, gelcoat, plastiques, sellerie — pour nettoyer efficacement sans ternir, rayer ni décolorer les finitions."
-              }
+              { "question": "Combien de temps sèche un canapé après nettoyage ?", "reponse": "Comptez généralement quelques heures. L'injection-extraction récupère l'essentiel de l'humidité ; une bonne aération accélère le séchage, et le textile est de nouveau utilisable le jour même dans la plupart des cas." },
+              { "question": "Toutes les taches partent-elles ?", "reponse": "La plupart des taches s'atténuent fortement ou disparaissent. Certaines, anciennes ou décolorantes, peuvent laisser une trace résiduelle : nous vous le disons honnêtement après un test avant de nous engager sur le résultat." },
+              { "question": "Le traitement est-il adapté aux personnes allergiques ?", "reponse": "Oui. En éliminant acariens et poussières incrustés, l'assainissement des matelas et canapés améliore nettement l'environnement des personnes sensibles, allergiques ou asthmatiques." },
+              { "question": "Vous déplacez-vous à domicile ?", "reponse": "Oui, nous intervenons chez vous comme dans vos locaux, avec notre propre matériel. Il suffit d'un accès à l'eau et à l'électricité ; le reste, nous l'apportons." }
             ]
           }
         },
         {
           "type": "cta",
           "content": {
-            "titre": "Un véhicule, un engin ou une flotte à remettre à neuf ?",
-            "sousTitre": "Dites-nous ce que vous avez à nettoyer : nous chiffrons rapidement et sans engagement.",
-            "ctaPrimaire": {
-              "label": "Demander mon devis",
-              "href": "/devis"
-            },
-            "ctaSecondaire": {
-              "label": "Voir les autres prestations",
-              "href": "/services"
-            }
+            "titre": "Un canapé, un tapis ou un matelas à raviver ?",
+            "sousTitre": "Envoyez-nous une photo et les dimensions : nous vous chiffrons l'intervention gratuitement.",
+            "ctaPrimaire": { "label": "Demander mon devis", "href": "/devis" },
+            "ctaSecondaire": { "label": "Voir les autres prestations", "href": "/services" }
           }
         }
       ]
     },
     {
-      "slug": "entretien-jardin",
-      "label": "Entretien de jardin",
+      "slug": "apres-sinistre",
+      "label": "Après sinistre",
       "navHidden": true,
       "service": {
-        "name": "Entretien de jardin",
-        "description": "Tonte, taille, élagage, débroussaillage, désherbage et évacuation des déchets verts à Lille et dans le Nord, en ponctuel ou à l'année.",
-        "serviceType": "Entretien de jardin et espaces verts",
+        "name": "Nettoyage après sinistre et interventions extrêmes",
+        "description": "Dégât des eaux, incendie, inondation, humidité, recherche de fuite et nettoyage suite à décès à Lille et dans le Nord, en lien avec les assurances.",
+        "serviceType": "Nettoyage après sinistre",
         "priceFrom": "Sur devis"
       },
       "meta": {
-        "title": "Entretien de jardin & espaces verts à Lille",
-        "description": "Tonte, taille de haies, élagage, débroussaillage, désherbage et évacuation des déchets verts à Lille et dans le Nord. Entretien ponctuel ou à l'année, sur devis."
+        "title": "Nettoyage après sinistre & dégât des eaux",
+        "description": "Dégât des eaux, incendie, sous-sol inondé, humidité, recherche de fuite et nettoyage suite à décès à Lille et dans le Nord. Interventions en lien avec l'assurance."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Entretien de jardin",
-            "titre": "Un extérieur net à chaque saison",
-            "intro": "Pelouse, haies, massifs, arbres : nous entretenons vos espaces verts et évacuons les déchets, ponctuellement ou tout au long de l'année.",
-            "ctaPrimaire": {
-              "label": "Demander un devis",
-              "href": "/devis"
-            },
+            "eyebrow": "Interventions spécialisées",
+            "titre": "Après le sinistre, la remise en état",
+            "intro": "Dégât des eaux, incendie, inondation : nous rétablissons des conditions saines et sûres, avec l'équipement adapté et le lien avec votre assurance.",
+            "ctaPrimaire": { "label": "Demander une intervention", "href": "/devis" },
             "breadcrumb": [
-              {
-                "label": "Accueil",
-                "href": "/"
-              },
-              {
-                "label": "Services",
-                "href": "/services"
-              },
-              {
-                "label": "Entretien de jardin"
-              }
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Après sinistre" }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Réagir vite,",
+            "titreAccent": "remettre d'aplomb",
+            "paragraphes": [
+              "Un sinistre laisse rarement le temps de la réflexion : l'eau s'infiltre, les odeurs s'installent, l'humidité fragilise les matériaux. Plus l'intervention est rapide, plus les dégâts sont limités. Nous nous organisons sans tarder pour assécher, nettoyer, décontaminer et assainir les lieux touchés.",
+              "Nos prestations couvrent le nettoyage après dégât des eaux, la décontamination après incendie, la remise en état de sous-sols inondés, le diagnostic d'humidité, la recherche de fuites, le nettoyage en profondeur et le nettoyage suite à un décès. Chaque situation exige méthode, équipement spécifique et beaucoup de tact.",
+              "Nous travaillons volontiers avec les compagnies d'assurance : devis détaillé, photos, suivi. Notre rôle est de vous décharger d'une épreuve en rendant le lieu de nouveau sain, sûr et habitable, dans le respect des personnes et des délais."
             ]
           }
         },
@@ -847,248 +733,96 @@
           "type": "services",
           "variant": "grille-cartes",
           "content": {
-            "eyebrow": "Au fil des saisons",
-            "titre": "Ce dont votre jardin a besoin",
+            "eyebrow": "Nos interventions",
+            "titre": "Ce que nous prenons en charge",
             "items": [
-              {
-                "nom": "Tonte & pelouse",
-                "icone": "Scissors",
-                "description": "Tonte régulière, finitions aux abords et ramassage de l'herbe pour une pelouse toujours nette."
-              },
-              {
-                "nom": "Taille & élagage",
-                "icone": "Shrub",
-                "description": "Taille de haies et d'arbustes, élagage et, si nécessaire, abattage d'arbres en sécurité."
-              },
-              {
-                "nom": "Débroussaillage",
-                "icone": "Sprout",
-                "description": "Remise en état des terrains enfrichés, débroussaillage et désherbage des zones envahies."
-              },
-              {
-                "nom": "Massifs & allées",
-                "icone": "Flower2",
-                "description": "Entretien des massifs, scarification, nettoyage des allées et des cours pour un ensemble soigné."
-              },
-              {
-                "nom": "Déchets verts",
-                "icone": "Recycle",
-                "description": "Ramassage des feuilles et évacuation des déchets verts vers les filières adaptées."
-              },
-              {
-                "nom": "Remise en état",
-                "icone": "Trees",
-                "description": "Reprise complète d'un jardin laissé à l'abandon, avant la mise en place d'un entretien régulier."
-              }
-            ]
-          }
-        },
-        {
-          "type": "contenu",
-          "content": {
-            "titre": "Un jardin entretenu,",
-            "titreAccent": "pas seulement tondu",
-            "paragraphes": [
-              "Entretenir un jardin, c'est bien plus que passer la tondeuse. C'est tailler au bon moment pour favoriser la reprise, désherber sans épuiser le sol, dégager les allées et gérer les déchets verts de façon responsable. Nous abordons chaque extérieur dans cette logique globale.",
-              "Notre intervention couvre la tonte de pelouse, la taille des haies et des arbustes, l'élagage, l'abattage, le débroussaillage, le désherbage, le ramassage des feuilles, l'évacuation des déchets verts, l'entretien des massifs, la scarification, l'arrosage, le nettoyage des allées et des cours ainsi que la remise en état des jardins laissés à l'abandon.",
-              "Que vous souhaitiez un coup de propre ponctuel avant une occasion ou un entretien saisonnier suivi, nous adaptons la fréquence et le contenu des passages. Les déchets verts sont systématiquement évacués et orientés vers les bonnes filières."
-            ]
-          }
-        },
-        {
-          "type": "etapes",
-          "content": {
-            "eyebrow": "Un jardin suivi",
-            "titre": "Comment nous entretenons vos extérieurs",
-            "items": [
-              {
-                "icone": "Eye",
-                "titre": "Nous observons l'existant",
-                "texte": "État de la pelouse, des haies, des arbres et des massifs : nous notons ce qui demande une intervention immédiate et ce qui se planifie."
-              },
-              {
-                "icone": "ListChecks",
-                "titre": "Nous proposons un programme",
-                "texte": "Ponctuel ou saisonnier, nous définissons les passages et leur contenu, avec un devis clair par intervention ou au forfait."
-              },
-              {
-                "icone": "Leaf",
-                "titre": "Nous entretenons et évacuons",
-                "texte": "Tonte, taille, désherbage puis nettoyage : nous laissons un extérieur net et emportons les déchets verts."
-              }
+              { "nom": "Dégât des eaux", "icone": "Droplets", "description": "Assèchement, nettoyage et assainissement des surfaces après une fuite ou une infiltration." },
+              { "nom": "Sous-sols inondés", "icone": "Waves", "description": "Évacuation de l'eau, nettoyage et traitement des caves et sous-sols après inondation." },
+              { "nom": "Décontamination incendie", "icone": "Flame", "description": "Retrait des suies, désodorisation et remise en état des surfaces après un incendie." },
+              { "nom": "Diagnostic d'humidité", "icone": "Thermometer", "description": "Identification des sources d'humidité pour orienter le traitement et éviter la récidive." },
+              { "nom": "Recherche de fuites", "icone": "Search", "description": "Localisation de l'origine d'une fuite d'eau afin d'agir à la source avant la remise en état." },
+              { "nom": "Nettoyage suite à décès", "icone": "HeartHandshake", "description": "Remise en état et désinfection dans la plus grande discrétion et le respect des familles." }
             ]
           }
         },
         {
           "type": "faq",
           "content": {
-            "titre": "Entretien de jardin : vos questions",
+            "titre": "Après sinistre : vos questions",
             "items": [
-              {
-                "question": "Évacuez-vous les déchets de taille et de tonte ?",
-                "reponse": "Oui, l'évacuation des déchets verts est comprise dans nos prestations et orientée vers les filières adaptées. Vous n'avez pas à gérer les allers-retours en déchèterie."
-              },
-              {
-                "question": "Intervenez-vous ponctuellement ou seulement à l'année ?",
-                "reponse": "Les deux. Nous réalisons aussi bien une remise en état ponctuelle avant un événement qu'un entretien régulier suivi sur l'ensemble de la saison."
-              },
-              {
-                "question": "Réalisez-vous l'élagage et l'abattage d'arbres ?",
-                "reponse": "Oui, dans les règles de sécurité. Après évaluation de la hauteur et de l'environnement, nous procédons à la taille, à l'élagage ou à l'abattage, puis évacuons les rémanents."
-              },
-              {
-                "question": "Un terrain très enfriché peut-il être repris ?",
-                "reponse": "Oui. Nous débroussaillons et remettons en état les terrains abandonnés, puis vous proposons, si vous le souhaitez, un entretien régulier pour qu'ils le restent."
-              }
+              { "question": "Intervenez-vous rapidement en cas d'urgence ?", "reponse": "Oui. Face à un dégât des eaux ou une inondation, nous nous organisons au plus vite : agir rapidement limite l'ampleur des dégâts et facilite la remise en état ainsi que la prise en charge." },
+              { "question": "Travaillez-vous avec mon assurance ?", "reponse": "Oui, régulièrement. Nous fournissons un devis détaillé, des photos et un suivi qui facilitent votre dossier. N'hésitez pas à nous mettre en relation avec votre gestionnaire de sinistre." },
+              { "question": "Traitez-vous les odeurs après un incendie ou une inondation ?", "reponse": "Oui. Au-delà du nettoyage visible, nous procédons à une désodorisation des surfaces et des volumes pour éliminer les odeurs de suie, d'humidité ou de moisissure incrustées." },
+              { "question": "Le nettoyage suite à un décès se fait-il discrètement ?", "reponse": "Toujours. Ces interventions sont menées avec la plus grande discrétion et le plus grand respect des proches, avec un équipement et un protocole adaptés à ces situations particulières." }
             ]
           }
         },
         {
           "type": "cta",
           "content": {
-            "titre": "Envie d'un jardin dont vous n'avez plus à vous soucier ?",
-            "sousTitre": "Confiez-nous son entretien : nous établissons un programme et un devis adaptés.",
-            "ctaPrimaire": {
-              "label": "Demander mon devis",
-              "href": "/devis"
-            },
-            "ctaSecondaire": {
-              "label": "Découvrir nos services",
-              "href": "/services"
-            }
+            "titre": "Un sinistre à gérer ?",
+            "sousTitre": "Contactez-nous : nous évaluons la situation et intervenons avec méthode, en lien avec votre assurance.",
+            "ctaPrimaire": { "label": "Demander une intervention", "href": "/devis" },
+            "ctaSecondaire": { "label": "Nous appeler", "href": "/contact" }
           }
         }
       ]
     },
     {
-      "slug": "bricolage",
-      "label": "Bricolage",
-      "navHidden": true,
-      "service": {
-        "name": "Bricolage et petits travaux",
-        "description": "Montage de meubles, fixations, retouches, joints, robinetterie et petites réparations à domicile à Lille et dans le Nord.",
-        "serviceType": "Petits travaux et bricolage à domicile",
-        "priceFrom": "Sur devis"
-      },
+      "slug": "realisations",
+      "label": "Réalisations",
       "meta": {
-        "title": "Bricolage & petits travaux à domicile — Lille",
-        "description": "Montage de meubles, fixations, joints, robinetterie, retouches de peinture et petites réparations à Lille et dans le Nord. Un artisan polyvalent, sur devis."
+        "title": "Réalisations & avant / après — Lille",
+        "description": "Découvrez en images le résultat de nos interventions de nettoyage de bâtiments à Lille et dans le Nord, avec des comparateurs avant / après."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Bricolage & petits travaux",
-            "titre": "Les petites mains qui vous font gagner du temps",
-            "intro": "Ces travaux qui traînent sur la liste depuis des semaines ? Nous les réglons en une visite, proprement et sans y penser à votre place.",
-            "ctaPrimaire": {
-              "label": "Demander un devis",
-              "href": "/devis"
-            },
-            "breadcrumb": [
+            "eyebrow": "En images",
+            "titre": "Le résultat, avant et après",
+            "intro": "Faites glisser le curseur pour mesurer la différence. Ces visuels sont des exemples d'illustration ; nos propres chantiers viendront bientôt les remplacer."
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "Comparateur",
+            "titre": "Glissez pour comparer",
+            "intro": "L'effet d'un nettoyage complet sur un intérieur, du terne au lumineux.",
+            "ratio": "16/10",
+            "avantApres": [
               {
-                "label": "Accueil",
-                "href": "/"
-              },
-              {
-                "label": "Services",
-                "href": "/services"
-              },
-              {
-                "label": "Bricolage"
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/equipe-nettoyage.jpg", "alt": "Intérieur avant nettoyage complet" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-sols.jpg", "alt": "Intérieur après nettoyage complet" },
+                "legende": "Exemple d'illustration — intérieur ravivé après un nettoyage complet."
               }
             ]
           }
         },
         {
-          "type": "contenu",
+          "type": "galerie",
+          "variant": "grille",
           "content": {
-            "titre": "Le coup de main",
-            "titreAccent": "qui manquait",
-            "paragraphes": [
-              "Tout le monde a chez soi une étagère à fixer, un meuble à monter, un joint à refaire ou un robinet qui goutte. Séparément, ce sont de petites choses ; ensemble, elles s'accumulent. Nous venons les régler en une intervention, avec l'outillage qu'il faut et le soin d'un travail fini.",
-              "Nous prenons en charge le montage et le démontage de meubles, la fixation d'étagères, de cadres et de miroirs, la pose de tringles et de luminaires, les petites réparations, la pose de joints, les retouches de peinture, le rebouchage de trous et de fissures, la pose d'accessoires de salle de bains, le montage de meubles de cuisine, l'installation de détecteurs de fumée, le remplacement de robinets, le débouchage de siphons et la pose de plinthes et de barres de seuil.",
-              "Après un chantier ou un aménagement, nous assurons aussi le nettoyage de fin de travaux, pour que vous profitiez d'un résultat propre du premier au dernier détail. Simple, rapide, sans avoir à courir après plusieurs artisans."
-            ]
-          }
-        },
-        {
-          "type": "services",
-          "variant": "grille-cartes",
-          "content": {
-            "eyebrow": "Ce que nous prenons en main",
-            "titre": "Les petits travaux du quotidien",
-            "items": [
-              {
-                "nom": "Montage de meubles",
-                "icone": "Hammer",
-                "description": "Montage et démontage de meubles, y compris cuisine, en suivant les notices ou vos plans."
-              },
-              {
-                "nom": "Fixations murales",
-                "icone": "Frame",
-                "description": "Étagères, cadres, miroirs, tringles et luminaires posés droits et solidement ancrés."
-              },
-              {
-                "nom": "Peinture & rebouchage",
-                "icone": "Paintbrush",
-                "description": "Retouches de peinture, rebouchage de trous et de fissures pour des murs sans défaut."
-              },
-              {
-                "nom": "Plomberie légère",
-                "icone": "Wrench",
-                "description": "Remplacement de robinets, débouchage de siphons et pose de joints pour stopper fuites et infiltrations."
-              },
-              {
-                "nom": "Sécurité & finitions",
-                "icone": "ShieldCheck",
-                "description": "Installation de détecteurs de fumée, pose de plinthes, de barres de seuil et d'accessoires de salle de bains."
-              },
-              {
-                "nom": "Nettoyage fin de travaux",
-                "icone": "SprayCan",
-                "description": "Dépoussiérage et remise en propreté après les travaux, pour un rendu net immédiatement utilisable."
-              }
-            ]
-          }
-        },
-        {
-          "type": "faq",
-          "content": {
-            "titre": "Bricolage : vos questions",
-            "items": [
-              {
-                "question": "Y a-t-il un travail trop petit pour vous déranger ?",
-                "reponse": "Non, aucune tâche n'est trop modeste. Fixer un seul cadre ou monter un meuble fait pleinement partie de nos interventions. Nous regroupons volontiers plusieurs petits travaux sur une même visite."
-              },
-              {
-                "question": "Faut-il que j'achète le matériel à l'avance ?",
-                "reponse": "Vous pouvez fournir vos meubles, luminaires ou accessoires. Pour la visserie, chevilles et petites fournitures, nous arrivons équipés ; les pièces spécifiques sont convenues ensemble au moment du devis."
-              },
-              {
-                "question": "Réalisez-vous de gros travaux de rénovation ?",
-                "reponse": "Notre cœur de métier, ce sont les petits travaux et la maintenance. Pour un chantier lourd (électricité complète, gros œuvre), nous vous le disons franchement et vous orientons vers le bon corps de métier."
-              },
-              {
-                "question": "Intervenez-vous chez les professionnels aussi ?",
-                "reponse": "Oui. Bureaux, commerces et copropriétés font régulièrement appel à nous pour la maintenance courante : fixations, retouches, remplacement de petits équipements et finitions."
-              }
+            "eyebrow": "Nos prestations",
+            "titre": "Nettoyage de bâtiments, en action",
+            "ratio": "4/3",
+            "images": [
+              { "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-bureaux.jpg", "alt": "Nettoyage de bureaux" }, "titre": "Bureaux & commerces" },
+              { "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-textile.jpg", "alt": "Nettoyage d'un canapé" }, "titre": "Nettoyage textile" },
+              { "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-locaux.jpg", "alt": "Remise en état de locaux" }, "titre": "Locaux & après-sinistre" },
+              { "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-interieur.jpg", "alt": "Nettoyage intérieur" }, "titre": "Entretien intérieur" }
             ]
           }
         },
         {
           "type": "cta",
           "content": {
-            "titre": "Une liste de petits travaux qui s'allonge ?",
-            "sousTitre": "Envoyez-la nous : nous la regroupons en une intervention et vous chiffrons l'ensemble.",
-            "ctaPrimaire": {
-              "label": "Demander mon devis",
-              "href": "/devis"
-            },
-            "ctaSecondaire": {
-              "label": "Voir toutes nos prestations",
-              "href": "/services"
-            }
+            "titre": "Envie du même résultat chez vous ?",
+            "sousTitre": "Décrivez-nous votre besoin : nous vous chiffrons l'intervention gratuitement.",
+            "ctaPrimaire": { "label": "Demander mon devis", "href": "/devis" },
+            "ctaSecondaire": { "label": "Voir nos prestations", "href": "/services" }
           }
         }
       ]
@@ -1107,10 +841,7 @@
             "eyebrow": "Tarifs",
             "titre": "Un prix juste, établi sur mesure",
             "intro": "Nos prestations sont trop variées pour tenir dans une grille unique. Nous préférons vous remettre un devis précis et gratuit, adapté à votre situation.",
-            "ctaPrimaire": {
-              "label": "Obtenir mon devis",
-              "href": "/devis"
-            }
+            "ctaPrimaire": { "label": "Obtenir mon devis", "href": "/devis" }
           }
         },
         {
@@ -1120,74 +851,27 @@
             "titre": "Payer pour ce dont",
             "titreAccent": "vous avez réellement besoin",
             "paragraphes": [
-              "Le prix d'un nettoyage de façade n'a rien à voir avec celui d'un montage de meuble ou de l'entretien d'un jardin. Même au sein d'un métier, tout dépend de la surface, de l'état, de l'accès et de la fréquence. Annoncer un tarif unique serait forcément faux — trop cher pour les uns, insuffisant pour les autres.",
+              "Le prix d'un démoussage de toiture n'a rien à voir avec celui d'un canapé à raviver ou d'un contrat d'entretien de copropriété. Même au sein d'une prestation, tout dépend de la surface, de l'état, de l'accès et de la fréquence. Annoncer un tarif unique serait forcément faux — trop cher pour les uns, insuffisant pour les autres.",
               "C'est pourquoi nous fonctionnons au devis. Vous nous décrivez votre besoin, avec quelques photos si possible ; nous évaluons le travail réel et vous remettons un montant clair, détaillé et sans engagement. Ce que vous voyez est ce que vous payez, sans supplément caché.",
-              "Pour un entretien régulier ou une flotte de véhicules, nous proposons des forfaits dégressifs : plus le volume et la récurrence sont importants, plus le tarif à l'unité diminue. Là encore, tout est écrit noir sur blanc avant de commencer."
+              "Pour un entretien régulier — copropriété, bureaux, commerce — nous proposons des forfaits dégressifs : plus la fréquence et le volume sont importants, plus le tarif à l'unité diminue. Là encore, tout est écrit noir sur blanc avant de commencer."
             ]
           }
         },
         {
           "type": "tarifs",
           "content": {
-            "titre": "Comment nous chiffrons chaque métier",
+            "titre": "Comment nous chiffrons chaque prestation",
             "intro": "Voici ce qui entre en compte dans votre devis, prestation par prestation.",
             "items": [
-              {
-                "nom": "Nettoyage extérieur",
-                "prix": "Sur devis",
-                "description": "Selon la surface, la hauteur, l'état et le traitement de protection choisi.",
-                "inclus": [
-                  "Diagnostic du support",
-                  "Nettoyage adapté à la pression",
-                  "Option anti-mousse / hydrofuge"
-                ]
-              },
-              {
-                "nom": "Nettoyage intérieur",
-                "prix": "Sur devis",
-                "description": "Selon la superficie, la fréquence et le niveau de remise en état attendu.",
-                "inclus": [
-                  "Matériel et produits fournis",
-                  "Ponctuel ou récurrent",
-                  "Désinfection en option"
-                ]
-              },
-              {
-                "nom": "Véhicules, engins & bateaux",
-                "prix": "Sur devis",
-                "description": "Selon le type de véhicule, le nombre et le niveau de salissure.",
-                "inclus": [
-                  "Intérieur et extérieur",
-                  "Sur site pour les flottes",
-                  "Forfait dégressif au volume"
-                ]
-              },
-              {
-                "nom": "Entretien de jardin",
-                "prix": "Sur devis",
-                "description": "Selon la surface, la nature des travaux et la fréquence des passages.",
-                "inclus": [
-                  "Évacuation des déchets verts",
-                  "Ponctuel ou saisonnier",
-                  "Programme sur mesure"
-                ]
-              },
-              {
-                "nom": "Bricolage & petits travaux",
-                "prix": "Sur devis",
-                "description": "Selon le nombre de tâches et le temps estimé sur place.",
-                "inclus": [
-                  "Regroupement des travaux",
-                  "Outillage fourni",
-                  "Nettoyage de fin de travaux"
-                ]
-              }
+              { "nom": "Syndrome de Diogène", "prix": "Sur devis", "description": "Selon la surface, le niveau d'encombrement et l'état sanitaire du logement.", "inclus": ["Tri et débarras", "Évacuation des déchets", "Nettoyage + désinfection"] },
+              { "nom": "Nettoyage extérieur", "prix": "Sur devis", "description": "Selon la surface, la hauteur, l'état et l'accès aux surfaces.", "inclus": ["Toitures & façades", "Terrasses & entrepôts", "Fin de chantier / bail"] },
+              { "nom": "Parties communes & copropriétés", "prix": "Sur devis", "description": "Selon le nombre d'étages, la surface et la fréquence des passages.", "inclus": ["Cahier des charges dédié", "Référent attitré", "Forfait dégressif"] },
+              { "nom": "Bureaux, commerces & cabinets", "prix": "Sur devis", "description": "Selon la superficie, la fréquence et le protocole d'hygiène requis.", "inclus": ["Matériel fourni", "Ponctuel ou régulier", "En dehors de l'activité"] },
+              { "nom": "Nettoyage textile", "prix": "Sur devis", "description": "Selon le nombre de pièces et leur état (canapé, tapis, matelas).", "inclus": ["Injection-extraction", "Détachage ciblé", "À domicile ou en local"] },
+              { "nom": "Après sinistre", "prix": "Sur devis", "description": "Selon la nature et l'ampleur du sinistre à traiter.", "inclus": ["Assèchement / décontamination", "Désodorisation", "Suivi assurance"] }
             ],
             "note": "Le déplacement et l'étude de votre besoin sont gratuits. Les devis sont sans engagement.",
-            "cta": {
-              "label": "Demander mon devis gratuit",
-              "href": "/devis"
-            }
+            "cta": { "label": "Demander mon devis gratuit", "href": "/devis" }
           }
         },
         {
@@ -1195,14 +879,8 @@
           "content": {
             "titre": "Prêt à connaître votre prix ?",
             "sousTitre": "Un devis clair vous attend, gratuit et sans la moindre obligation.",
-            "ctaPrimaire": {
-              "label": "Demander un devis",
-              "href": "/devis"
-            },
-            "ctaSecondaire": {
-              "label": "Nous appeler",
-              "href": "/contact"
-            }
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
+            "ctaSecondaire": { "label": "Nous appeler", "href": "/contact" }
           }
         }
       ]
@@ -1212,7 +890,7 @@
       "label": "Zone d'intervention",
       "meta": {
         "title": "Zone d'intervention dans le Nord (59)",
-        "description": "HYGIFRANCE intervient à Lille, dans la métropole et dans tout le département du Nord pour le nettoyage, l'entretien de jardin et les petits travaux."
+        "description": "HYGIFRANCE intervient à Lille, dans la métropole et dans tout le département du Nord pour le nettoyage et l'entretien de bâtiments."
       },
       "blocks": [
         {
@@ -1229,14 +907,11 @@
             "titre": "Proches de vous,",
             "titreAccent": "partout dans le Nord",
             "paragraphes": [
-              "Notre base lilloise nous place au cœur de la Métropole Européenne de Lille. Nous y intervenons quotidiennement, à Lille et dans les communes voisines comme Roubaix, Tourcoing, Villeneuve-d'Ascq, Marcq-en-Barœul, Lambersart, Loos, Ronchin ou Wattignies, aussi bien chez les particuliers que dans les entreprises et les copropriétés.",
-              "Au-delà de la métropole, nous nous déplaçons dans l'ensemble du département du Nord : le Douaisis, la Flandre autour d'Armentières, Bailleul et Halluin, le secteur de Seclin et de la Pévèle vers Orchies et Pont-à-Marcq. Les chantiers extérieurs, les flottes de véhicules et les entretiens de jardin nous amènent régulièrement hors des grands axes.",
+              "Notre base lilloise nous place au cœur de la Métropole Européenne de Lille. Nous y intervenons quotidiennement, à Lille et dans les communes voisines comme Roubaix, Tourcoing, Villeneuve-d'Ascq, Marcq-en-Barœul, Lambersart, Loos, Ronchin ou Wattignies, aussi bien pour les copropriétés que pour les entreprises et les particuliers.",
+              "Au-delà de la métropole, nous nous déplaçons dans l'ensemble du département du Nord : le Douaisis, la Flandre autour d'Armentières, Bailleul et Halluin, le secteur de Seclin et de la Pévèle vers Orchies et Pont-à-Marcq. Les chantiers extérieurs et les interventions après sinistre nous amènent régulièrement hors des grands axes.",
               "Vous n'êtes pas certain d'être dans notre zone ? Indiquez-nous simplement votre commune : si l'intervention est possible, nous vous le confirmons immédiatement avec le devis. Le déplacement est pris en compte de façon transparente dans notre chiffrage."
             ],
-            "ctaPrimaire": {
-              "label": "Vérifier ma commune",
-              "href": "/contact"
-            }
+            "ctaPrimaire": { "label": "Vérifier ma commune", "href": "/contact" }
           }
         },
         {
@@ -1246,48 +921,9 @@
             "titre": "Les secteurs que nous desservons",
             "intro": "Une liste non exhaustive : si votre commune n'y figure pas, demandez-nous.",
             "zones": [
-              {
-                "region": "Métropole Européenne de Lille",
-                "principale": "Lille",
-                "villes": [
-                  "Lille",
-                  "Roubaix",
-                  "Tourcoing",
-                  "Villeneuve-d'Ascq",
-                  "Marcq-en-Barœul",
-                  "Lambersart",
-                  "La Madeleine",
-                  "Loos",
-                  "Ronchin",
-                  "Wattignies",
-                  "Lomme",
-                  "Hellemmes"
-                ]
-              },
-              {
-                "region": "Flandre & Lys",
-                "principale": "Armentières",
-                "villes": [
-                  "Armentières",
-                  "Bailleul",
-                  "Halluin",
-                  "Comines",
-                  "Houplines",
-                  "Nieppe"
-                ]
-              },
-              {
-                "region": "Douaisis & Pévèle",
-                "principale": "Douai",
-                "villes": [
-                  "Douai",
-                  "Seclin",
-                  "Orchies",
-                  "Pont-à-Marcq",
-                  "Templeuve-en-Pévèle",
-                  "Cysoing"
-                ]
-              }
+              { "region": "Métropole Européenne de Lille", "principale": "Lille", "villes": ["Lille", "Roubaix", "Tourcoing", "Villeneuve-d'Ascq", "Marcq-en-Barœul", "Lambersart", "La Madeleine", "Loos", "Ronchin", "Wattignies", "Lomme", "Hellemmes"] },
+              { "region": "Flandre & Lys", "principale": "Armentières", "villes": ["Armentières", "Bailleul", "Halluin", "Comines", "Houplines", "Nieppe"] },
+              { "region": "Douaisis & Pévèle", "principale": "Douai", "villes": ["Douai", "Seclin", "Orchies", "Pont-à-Marcq", "Templeuve-en-Pévèle", "Cysoing"] }
             ]
           }
         },
@@ -1296,14 +932,8 @@
           "content": {
             "titre": "Votre commune est dans le Nord ?",
             "sousTitre": "Il y a de fortes chances que nous puissions intervenir. Demandez confirmation et devis.",
-            "ctaPrimaire": {
-              "label": "Demander un devis",
-              "href": "/devis"
-            },
-            "ctaSecondaire": {
-              "label": "Nous contacter",
-              "href": "/contact"
-            }
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" },
+            "ctaSecondaire": { "label": "Nous contacter", "href": "/contact" }
           }
         }
       ]
@@ -1312,16 +942,16 @@
       "slug": "a-propos",
       "label": "À propos",
       "meta": {
-        "title": "Notre approche du nettoyage éco — Nord",
-        "description": "HYGIFRANCE, entreprise de nettoyage et d'entretien basée à Lille : une équipe polyvalente, des méthodes qui protègent vos surfaces et l'environnement."
+        "title": "HYGIFRANCE, entretien de bâtiments — Nord",
+        "description": "HYGIFRANCE, entreprise de nettoyage de bâtiments basée à Lille : une équipe polyvalente, un interlocuteur unique et un même niveau d'exigence sur chaque chantier."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Qui sommes-nous",
-            "titre": "Protéger aujourd'hui, préserver demain",
-            "intro": "Ce n'est pas seulement notre signature : c'est la façon dont nous abordons chaque chantier, du plus petit au plus exigeant."
+            "titre": "L'entretien global de vos bâtiments",
+            "intro": "Ce n'est pas seulement notre signature : c'est la façon dont nous abordons chaque chantier, du hall de copropriété au chantier après sinistre."
           }
         },
         {
@@ -1330,14 +960,15 @@
             "titre": "Une équipe polyvalente,",
             "titreAccent": "une même exigence",
             "paragraphes": [
-              "HYGIFRANCE est une entreprise de nettoyage et d'entretien implantée à Lille. Nous avons choisi la polyvalence pour une raison simple : les besoins d'un particulier, d'un commerçant ou d'un syndic ne s'arrêtent presque jamais à une seule tâche. Plutôt que de vous renvoyer d'un prestataire à l'autre, nous prenons tout en charge.",
-              "Nettoyage des surfaces extérieures et intérieures, remise en état de véhicules et de bateaux, entretien des jardins, petits travaux de bricolage : cette étendue nous oblige à être rigoureux sur chaque geste. Nous formons nos équipes à adapter la méthode au support et à laisser chaque lieu plus sain que nous l'avons trouvé.",
-              "Derrière notre nom, il y a une conviction environnementale assumée. Nous dosons nos produits, adaptons la pression, privilégions les traitements qui espacent les interventions et trions les déchets que nous évacuons. Protéger vos surfaces et l'environnement, c'est la même démarche — et c'est là-dessus que nous voulons être jugés."
+              "HYGIFRANCE est une entreprise de nettoyage spécialisée dans l'entretien des bâtiments, implantée à Lille et active dans tout le Nord. Nous avons choisi de couvrir l'ensemble des besoins d'un bâtiment — de l'entretien courant des communs aux chantiers les plus délicats — plutôt que de vous renvoyer d'un prestataire à l'autre.",
+              "Nettoyage extérieur, parties communes, bureaux et commerces, textiles d'ameublement, syndrome de Diogène et interventions après sinistre : cette étendue nous oblige à être rigoureux sur chaque geste. Nous formons nos équipes à adapter la méthode au support et à laisser chaque lieu plus sain que nous l'avons trouvé.",
+              "Derrière tout cela, une exigence simple : un devis clair et tenu, un interlocuteur unique, et un résultat contrôlé avec vous avant de partir. C'est là-dessus que nous voulons être jugés."
             ],
-            "ctaPrimaire": {
-              "label": "Demander un devis",
-              "href": "/devis"
-            }
+            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-interieur.jpg", "alt": "Professionnelle HYGIFRANCE avec son matériel" },
+            "imagePosition": "right",
+            "imageRatio": "4/5",
+            "imageCard": true,
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/devis" }
           }
         },
         {
@@ -1346,21 +977,9 @@
             "eyebrow": "Nos engagements",
             "titre": "Ce sur quoi vous pouvez compter",
             "items": [
-              {
-                "icone": "Leaf",
-                "titre": "Des méthodes responsables",
-                "texte": "Dosages maîtrisés, pression adaptée, traitements durables et tri des déchets : nous nettoyons en préservant la matière et l'environnement."
-              },
-              {
-                "icone": "Handshake",
-                "titre": "Un devis clair et tenu",
-                "texte": "Le prix annoncé est le prix payé. Nous détaillons ce qui est compris et nous nous y tenons, sans supplément caché."
-              },
-              {
-                "icone": "Users",
-                "titre": "Un interlocuteur unique",
-                "texte": "Une seule équipe pour vos surfaces, vos véhicules, votre jardin et vos petits travaux : moins de coordination, plus de cohérence."
-              }
+              { "icone": "Handshake", "titre": "Un devis clair et tenu", "texte": "Le prix annoncé est le prix payé. Nous détaillons ce qui est compris et nous nous y tenons, sans supplément caché." },
+              { "icone": "Users", "titre": "Un interlocuteur unique", "texte": "Une seule équipe pour tout le bâtiment : moins de coordination pour vous, plus de cohérence dans le résultat." },
+              { "icone": "ShieldCheck", "titre": "Un résultat contrôlé", "texte": "Avant de partir, nous vérifions chaque zone avec vous. La qualité se constate sur place, pas sur une promesse." }
             ]
           }
         },
@@ -1369,14 +988,8 @@
           "content": {
             "titre": "Envie de travailler avec une équipe qui prend soin ?",
             "sousTitre": "Parlons de votre besoin. Le premier échange et le devis sont gratuits.",
-            "ctaPrimaire": {
-              "label": "Nous contacter",
-              "href": "/contact"
-            },
-            "ctaSecondaire": {
-              "label": "Demander un devis",
-              "href": "/devis"
-            }
+            "ctaPrimaire": { "label": "Nous contacter", "href": "/contact" },
+            "ctaSecondaire": { "label": "Demander un devis", "href": "/devis" }
           }
         }
       ]
@@ -1386,14 +999,14 @@
       "label": "Contact",
       "meta": {
         "title": "Contact & devis nettoyage à Lille",
-        "description": "Contactez HYGIFRANCE à Lille pour un nettoyage, un entretien de jardin ou de petits travaux dans le Nord. Par téléphone, WhatsApp ou formulaire, réponse rapide."
+        "description": "Contactez HYGIFRANCE à Lille pour l'entretien de vos bâtiments dans le Nord. Par téléphone, WhatsApp ou formulaire, réponse rapide et devis gratuit."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Contact",
-            "titre": "Parlons de votre projet",
+            "titre": "Parlons de votre bâtiment",
             "intro": "Par téléphone, sur WhatsApp ou via le formulaire — prenez le moyen que vous préférez. Nous vous répondons vite, devis à l'appui."
           }
         },
@@ -1401,33 +1014,24 @@
           "type": "contact",
           "content": {
             "titre": "Écrivez-nous",
-            "intro": "Décrivez votre besoin en quelques mots et joignez des photos si vous le pouvez : cela nous aide à chiffrer plus vite.",
+            "intro": "Décrivez votre besoin en quelques mots et joignez des photos si vous le pouvez : cela nous aide à chiffrer plus vite. Pour une demande détaillée, utilisez l'assistant devis.",
             "telephone": "+33 7 50 51 91 90",
             "whatsapp": "0750519190",
             "email": "anouar.fr79@gmail.com",
             "form": true,
             "formMode": "demande-intervention",
-            "formTitre": "Demander un devis gratuit",
+            "formTitre": "Nous contacter",
             "formIntro": "Réponse rapide, sans engagement.",
             "services": [
+              "Syndrome de Diogène",
               "Nettoyage extérieur",
-              "Nettoyage intérieur",
-              "Véhicules, engins & bateaux",
-              "Entretien de jardin",
-              "Bricolage & petits travaux",
+              "Parties communes & copropriétés",
+              "Bureaux, commerces & cabinets",
+              "Nettoyage textile",
+              "Après sinistre",
               "Plusieurs prestations"
             ],
-            "villes": [
-              "Lille",
-              "Roubaix",
-              "Tourcoing",
-              "Villeneuve-d'Ascq",
-              "Marcq-en-Barœul",
-              "Douai",
-              "Armentières",
-              "Seclin",
-              "Autre commune du Nord"
-            ],
+            "villes": ["Lille", "Roubaix", "Tourcoing", "Villeneuve-d'Ascq", "Marcq-en-Barœul", "Douai", "Armentières", "Seclin", "Autre commune du Nord"],
             "confidentialiteHref": "/confidentialite",
             "telephoneHeader": "icone-popup"
           }
@@ -1439,49 +1043,48 @@
       "label": "Devis gratuit",
       "navHidden": true,
       "meta": {
-        "title": "Devis gratuit nettoyage & entretien — Lille",
-        "description": "Demandez votre devis gratuit et sans engagement à HYGIFRANCE : nettoyage, entretien de jardin, véhicules et petits travaux à Lille et dans le Nord."
+        "title": "Devis gratuit nettoyage de bâtiments — Lille",
+        "description": "Demandez votre devis gratuit en quelques clics avec l'assistant HYGIFRANCE : sélectionnez vos prestations et précisez votre bâtiment à Lille et dans le Nord."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Devis gratuit",
-            "titre": "Votre devis, gratuit et sans engagement",
-            "intro": "Remplissez le formulaire : plus vous nous en dites, plus notre estimation sera précise. Photos bienvenues."
+            "titre": "Votre devis en trois étapes",
+            "intro": "Décrivez votre bâtiment, cochez les prestations souhaitées et laissez-nous vos coordonnées. Nous revenons vers vous rapidement, sans engagement."
           }
         },
         {
-          "type": "contact",
+          "type": "assistantDevis",
           "content": {
-            "titre": "Décrivez votre besoin",
-            "intro": "Prestation, adresse, surface approximative, délai souhaité : donnez-nous un maximum d'éléments.",
-            "telephone": "+33 7 50 51 91 90",
-            "whatsapp": "0750519190",
-            "email": "anouar.fr79@gmail.com",
-            "form": true,
-            "formMode": "demande-intervention",
-            "formTitre": "Recevoir mon devis",
+            "eyebrow": "Assistant devis",
+            "titre": "Composez votre demande",
+            "intro": "Plus vous nous en dites, plus notre estimation sera précise.",
+            "buildingTypes": [
+              "Maison",
+              "Appartement",
+              "Immeuble / copropriété",
+              "Bureau / local commercial",
+              "Cabinet médical",
+              "Établissement scolaire",
+              "Entrepôt / local industriel",
+              "Autre"
+            ],
             "services": [
-              "Nettoyage extérieur",
-              "Nettoyage intérieur",
-              "Véhicules, engins & bateaux",
-              "Entretien de jardin",
-              "Bricolage & petits travaux",
-              "Plusieurs prestations"
+              "Syndrome de Diogène",
+              "Nettoyage extérieur (toiture, façade, terrasse)",
+              "Parties communes & copropriété",
+              "Bureaux, commerces & cabinets",
+              "Nettoyage textile (canapé, tapis, matelas)",
+              "Fin de chantier / fin de bail",
+              "Après sinistre (dégât des eaux, incendie)",
+              "Vitres",
+              "Autre / je ne sais pas"
             ],
-            "villes": [
-              "Lille",
-              "Roubaix",
-              "Tourcoing",
-              "Villeneuve-d'Ascq",
-              "Marcq-en-Barœul",
-              "Douai",
-              "Armentières",
-              "Seclin",
-              "Autre commune du Nord"
-            ],
-            "confidentialiteHref": "/confidentialite"
+            "villes": ["Lille", "Roubaix", "Tourcoing", "Villeneuve-d'Ascq", "Marcq-en-Barœul", "Douai", "Armentières", "Seclin"],
+            "confidentialiteHref": "/confidentialite",
+            "submitLabel": "Envoyer ma demande"
           }
         }
       ]

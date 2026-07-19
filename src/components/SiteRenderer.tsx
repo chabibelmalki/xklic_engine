@@ -35,6 +35,7 @@ const SECTION_TYPES = new Set([
   "tarifs",
   "grilleTarifs",
   "serviceQuoteBuilder",
+  "assistantDevis",
   "zone",
   "faq",
   "galerie",

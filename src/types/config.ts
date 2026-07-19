@@ -967,6 +967,30 @@ export interface ServiceQuoteBuilderContent {
   submitLabel?: string;
 }
 
+// --- assistantDevis (assistant de demande de devis multi-étapes) ---
+/**
+ * Contenu du bloc `assistantDevis` : un ASSISTANT en plusieurs étapes (bâtiment →
+ * besoins/prestations cochées → coordonnées) qui envoie une demande de devis
+ * directement (POST /api/contact, mode "devis" — aucune donnée prix). Pensé pour
+ * les activités de services : l'utilisateur coche les prestations voulues et
+ * précise le contexte, tout est empaqueté dans le lead. 100 % config-driven.
+ */
+export interface AssistantDevisContent {
+  titre?: string;
+  intro?: string;
+  eyebrow?: string;
+  /** Types de bâtiment/bien proposés à l'étape 1 (ex. "Maison", "Immeuble", "Bureau"). */
+  buildingTypes?: string[];
+  /** Prestations cochables à l'étape 2 (au moins une requise). */
+  services: string[];
+  /** Communes proposées dans le sélecteur de ville. */
+  villes?: string[];
+  /** Lien vers la politique de confidentialité (consentement RGPD). */
+  confidentialiteHref?: string;
+  /** Libellé du bouton d'envoi final (défaut : « Envoyer ma demande »). */
+  submitLabel?: string;
+}
+
 // ----------------------------------------------------------------------------
 // Union de blocs
 // ----------------------------------------------------------------------------
@@ -983,6 +1007,7 @@ export interface BlockContentMap {
   tarifs: TarifsContent;
   grilleTarifs: GrilleTarifsContent;
   serviceQuoteBuilder: ServiceQuoteBuilderContent;
+  assistantDevis: AssistantDevisContent;
   produits: ProduitsContent;
   boutique: BoutiqueContent;
   catalogue: CatalogueContent;

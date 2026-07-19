@@ -10,6 +10,7 @@ import { SimulateurTaxi } from "./SimulateurTaxi";
 import { Tarifs } from "./Tarifs";
 import { GrilleTarifs } from "./GrilleTarifs";
 import { ServiceQuoteBuilder } from "./ServiceQuoteBuilder";
+import { AssistantDevis } from "./AssistantDevis";
 import { Produits } from "./Produits";
 import { Boutique } from "./Boutique";
 import { CatalogueLive } from "./CatalogueLive";
@@ -43,6 +44,7 @@ export const blockRegistry: Record<string, ComponentType<BlockComponentProps<any
   tarifs: Tarifs,
   grilleTarifs: GrilleTarifs,
   serviceQuoteBuilder: ServiceQuoteBuilder,
+  assistantDevis: AssistantDevis,
   produits: Produits,
   boutique: Boutique,
   catalogue: CatalogueLive,

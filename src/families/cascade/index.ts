@@ -4,6 +4,7 @@ import { Services } from "./blocks/Services";
 import { Etapes } from "./blocks/Etapes";
 import { Cta } from "./blocks/Cta";
 import { PageHero } from "./blocks/PageHero";
+import { Galerie } from "./blocks/Galerie";
 import { CascadeHeader } from "./chrome/Header";
 import { CascadeFooter } from "./chrome/Footer";
 import { CascadeFloatingActions } from "./chrome/FloatingActions";
@@ -16,7 +17,6 @@ import { Faq } from "../editorial/blocks/Faq";
 import { Zone } from "../editorial/blocks/Zone";
 import { Tarifs } from "../editorial/blocks/Tarifs";
 import { Contenu } from "../editorial/blocks/Contenu";
-import { Galerie } from "../editorial/blocks/Galerie";
 import { Simulateur } from "../editorial/blocks/Simulateur";
 import { Contact } from "../editorial/blocks/Contact";
 
