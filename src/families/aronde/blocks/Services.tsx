@@ -163,7 +163,12 @@ export function Services({
 
         {c.cta && (
           <div className="mt-12">
-            <Button href={withBase(basePath, c.cta.href)} variant="outline" size="lg">
+            <Button
+              href={withBase(basePath, c.cta.href)}
+              variant="outline"
+              size="lg"
+              className="h-auto min-h-14 w-full whitespace-normal py-3 text-center leading-snug sm:w-auto"
+            >
               {c.cta.label}
             </Button>
           </div>
