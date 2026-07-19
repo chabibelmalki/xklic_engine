@@ -18,6 +18,7 @@
  *       "email": "…", "telephone": "…", "adresse": "…", "siret": "…",
  *       "domaine": "sanadclean.fr",
  *       "facebook": "…", "instagram": "…", "tiktok": "…", "x": "…", "google": "…",
+ *       "google_review_url": "https://g.page/r/…/review",   // = googleReviewUrl de config.json
  *       "logo_urls": ["https://…"], "photo_urls": ["https://…"],
  *       "ville": "…", "pays": "…", "metier": "…", "ambiance": "…", "couleurs": ["…"]
  *       // … n'importe quel champ du dossier ; absent = pas touché (coalesce serveur)
