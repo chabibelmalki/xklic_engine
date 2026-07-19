@@ -46,7 +46,8 @@
     ]
   },
   "forms": {
-    "to": "contact@gcleanpropre42.fr"
+    "to": "contact@gcleanpropre42.fr",
+    "turnstile": true
   },
   "pages": [
     {
