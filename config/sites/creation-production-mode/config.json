@@ -1,0 +1,762 @@
+{
+  "slug": "creation-production-mode",
+  "theme": "pro-bleu-nuit",
+  "stylePack": "atelier-fil",
+  "branding": {
+    "tagline": "Atelier de confection · Nîmes · Maroc",
+    "logoAlt": "Création & Production Mode — atelier de confection pour marques et créateurs",
+    "colors": {
+      "brand": "#0b5773",
+      "accent": "#d8c3a5"
+    }
+  },
+  "entreprise": {
+    "nom": "Création & Production Mode",
+    "statut": "EI",
+    "siret": "99393606100015",
+    "dirigeant": "Leila Belhadi",
+    "ape": "47.91B",
+    "tva": {
+      "regime": "franchise"
+    }
+  },
+  "seo": {
+    "schemaType": "ProfessionalService",
+    "ville": "Nîmes"
+  },
+  "geo": {
+    "lat": 43.8205,
+    "lng": 4.357
+  },
+  "meta": {
+    "title": "Atelier de confection marques & créateurs — Nîmes",
+    "description": "Patronage, prototype, confection et contrôle qualité pour jeunes marques et professionnels. Atelier basé à Nîmes, confection au Maroc. Devis gratuit.",
+    "keywords": [
+      "atelier de confection",
+      "atelier de couture Nîmes",
+      "confection pour jeune marque",
+      "patronage et prototypage",
+      "façonnier textile",
+      "confection textile Maroc",
+      "production de vêtements pour marque",
+      "contrôle qualité textile"
+    ]
+  },
+  "forms": {
+    "to": "mine.active8@gmail.com"
+  },
+  "i18n": {
+    "default": "fr",
+    "languages": ["fr", "en"]
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Accueil",
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "plein",
+          "content": {
+            "titre": "De l'idée",
+            "titreAccent": "au produit fini.",
+            "headerOverlay": true,
+            "nuancier": {
+              "label": "Votre teinte —",
+              "couleurs": ["#0b5773", "#b0512e", "#2e5e4a", "#6d3a5d", "#37476e"]
+            },
+            "trust": [
+              {
+                "icone": "Scissors",
+                "label": "Patronage, prototypage, confection"
+              },
+              {
+                "icone": "MapPin",
+                "label": "Basé à Nîmes, atelier de confection au Maroc"
+              },
+              {
+                "icone": "Languages",
+                "label": "On vous répond en français et en anglais"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Découvrir l'atelier",
+              "href": "/prestations"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Ce que l'atelier fait pour vous",
+            "titre": "Quatre savoir-faire, un seul interlocuteur",
+            "intro": "Vous pouvez nous confier une étape précise ou l'ensemble du développement : chaque prestation se suffit, toutes se cousent ensemble.",
+            "items": [
+              {
+                "nom": "Conseil & développement",
+                "icone": "Lightbulb",
+                "description": "Cadrer votre projet avant d'engager le moindre mètre de tissu : matières, coupes, faisabilité.",
+                "href": "/conseil-developpement"
+              },
+              {
+                "nom": "Patronage & prototypage",
+                "icone": "Ruler",
+                "description": "Transformer vos modèles en patrons précis, puis en prototypes essayés et ajustés jusqu'à validation.",
+                "href": "/patronage-prototypage"
+              },
+              {
+                "nom": "Confection & production",
+                "icone": "Scissors",
+                "description": "Coupe, assemblage et finitions dans notre atelier au Maroc, fidèles au prototype que vous avez validé.",
+                "href": "/confection-production"
+              },
+              {
+                "nom": "Contrôle qualité & suivi",
+                "icone": "BadgeCheck",
+                "description": "Un suivi de production transparent et des pièces vérifiées avant de partir vers vos rayons.",
+                "href": "/controle-qualite"
+              }
+            ],
+            "cta": {
+              "label": "Voir le détail des prestations",
+              "href": "/prestations"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "Le fil conducteur",
+            "titre": "Six étapes, un seul fil",
+            "intro": "Votre projet avance le long d'un process maîtrisé, du premier échange jusqu'à l'expédition.",
+            "items": [
+              {
+                "icone": "MessagesSquare",
+                "titre": "Conseil",
+                "texte": "Nous écoutons votre projet, questionnons vos choix de matières et de coupes, et cadrons ensemble un développement réaliste."
+              },
+              {
+                "icone": "Ruler",
+                "titre": "Patronage",
+                "texte": "Vos modèles prennent forme sur le papier : patrons précis, gradations, gabarits de coupe prêts pour l'atelier."
+              },
+              {
+                "icone": "Shirt",
+                "titre": "Prototype",
+                "texte": "Une première pièce est confectionnée, essayée, ajustée — autant d'allers-retours que nécessaire avant de valider."
+              },
+              {
+                "icone": "Scissors",
+                "titre": "Confection",
+                "texte": "La production démarre dans notre atelier au Maroc : coupe, assemblage, finitions, dans le respect du prototype validé."
+              },
+              {
+                "icone": "ClipboardCheck",
+                "titre": "Suivi de production",
+                "texte": "Vous êtes tenu informé de l'avancement ; nous veillons aux délais et à la conformité tout au long de la série."
+              },
+              {
+                "icone": "PackageCheck",
+                "titre": "Contrôle qualité & finalisation",
+                "texte": "Chaque pièce est vérifiée avant expédition. Vous recevez un produit fini, prêt à porter votre étiquette."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Les questions qu'on nous pose",
+            "items": [
+              {
+                "question": "Je lance ma première marque : pouvez-vous m'accompagner ?",
+                "reponse": "C'est précisément pour cela que l'atelier existe. Vous n'avez pas besoin d'arriver avec un dossier technique complet : nous partons de votre idée, même à l'état de croquis, et nous la faisons avancer étape par étape — conseil, patronage, prototype, puis production. Vous validez chaque jalon avant que le suivant ne commence."
+              },
+              {
+                "question": "Où les pièces sont-elles confectionnées ?",
+                "reponse": "Le développement et les échanges se font depuis Nîmes ; la confection est réalisée dans notre atelier au Maroc. Cette organisation nous permet de proposer des prix raisonnables tout en gardant un contrôle qualité systématique avant chaque expédition."
+              },
+              {
+                "question": "Comment se passe la demande de devis ?",
+                "reponse": "Vous nous décrivez votre projet via le formulaire de contact, par téléphone ou par WhatsApp : type de pièces, quantités envisagées, délais souhaités. Le devis est gratuit et sans engagement — c'est aussi l'occasion d'un premier échange de conseil sur la faisabilité de votre collection."
+              },
+              {
+                "question": "Travaillez-vous avec des clients à l'étranger ?",
+                "reponse": "Oui. Nous répondons en français et en anglais, et l'ensemble du process — validation des patrons, photos du prototype, suivi de production — peut se faire à distance."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Donnons vie à vos créations.",
+            "sousTitre": "Parlez-nous de votre collection, de vos volumes et de vos délais : vous recevez un devis gratuit, sans engagement.",
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contact",
+          "content": {
+            "titre": "Parlons de votre projet",
+            "intro": "Décrivez-nous vos pièces, vos quantités et vos délais : vous recevez sous peu un devis gratuit, établi sur vos éléments.",
+            "telephone": "07 65 57 70 41",
+            "whatsapp": "0765577041",
+            "email": "mine.active8@gmail.com",
+            "adresse": "4 rue du Colisée, 30000 Nîmes",
+            "form": true,
+            "formType": "devis",
+            "formTitre": "Votre demande de devis",
+            "formIntro": "Gratuit et sans engagement. Une description détaillée nous permet de chiffrer au plus près.",
+            "services": [
+              "Conseil & développement",
+              "Patronage & prototypage",
+              "Confection & production",
+              "Contrôle qualité & suivi",
+              "Projet complet, de l'idée au produit fini"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slug": "prestations",
+      "label": "Prestations",
+      "meta": {
+        "title": "Prestations de l'atelier de confection",
+        "description": "Conseil, patronage, prototypage, confection et contrôle qualité : le détail des prestations de l'atelier, à la carte ou de l'idée au produit fini."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "L'atelier",
+            "titre": "Des prestations à la carte, ou de l'idée au produit fini",
+            "intro": "Certains clients nous confient une étape précise — un patronage, une série à confectionner. D'autres arrivent avec un croquis et repartent avec leur collection. Les deux chemins existent.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Prestations" }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Quatre savoir-faire",
+            "titre": "Choisissez votre point d'entrée",
+            "items": [
+              {
+                "nom": "Conseil & développement",
+                "icone": "Lightbulb",
+                "description": "L'étape qui évite les faux départs : choix des matières, faisabilité des coupes, cadrage du budget de développement. Vous repartez avec un plan clair avant d'engager la production.",
+                "priceHint": "Devis gratuit",
+                "href": "/conseil-developpement"
+              },
+              {
+                "nom": "Patronage & prototypage",
+                "icone": "Ruler",
+                "description": "Du croquis au patron gradé, puis au prototype essayé et retouché. Rien ne part en série tant que la pièce d'essai ne vous convient pas.",
+                "priceHint": "Devis gratuit",
+                "href": "/patronage-prototypage"
+              },
+              {
+                "nom": "Confection & production",
+                "icone": "Scissors",
+                "description": "Notre atelier au Maroc coupe, assemble et finit vos pièces en suivant le prototype validé — avec des prix raisonnables rendus possibles par cette organisation.",
+                "priceHint": "Devis gratuit",
+                "href": "/confection-production"
+              },
+              {
+                "nom": "Contrôle qualité & suivi",
+                "icone": "BadgeCheck",
+                "description": "Un point d'avancement régulier pendant la série, puis une vérification pièce par pièce avant expédition : vous savez toujours où en est votre production.",
+                "priceHint": "Inclus dans la production",
+                "href": "/controle-qualite"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Notre façon de travailler",
+            "titre": "Un seul fil, du premier échange à l'expédition",
+            "paragraphes": [
+              "Un développement textile qui déraille, c'est presque toujours une étape sautée : une série lancée sans prototype validé, un patron approximatif rattrapé à la machine, un contrôle qualité fait à l'arrivée plutôt qu'à la source. Notre méthode consiste à ne jamais sauter d'étape — mais à dimensionner chacune à votre projet. Une marque qui démarre n'a pas les mêmes besoins qu'un professionnel qui externalise une production déjà rodée.",
+              "Concrètement, chaque jalon se termine par votre validation : le plan de développement après le conseil, le patron après le patronage, la pièce d'essai après le prototypage. Ce n'est qu'une fois le prototype approuvé que la confection démarre dans notre atelier au Maroc, et le produit que vous recevez est conforme à ce que vous avez validé — c'est le rôle du contrôle qualité de le garantir.",
+              "Vous gardez un interlocuteur unique du début à la fin, joignable par téléphone, WhatsApp ou e-mail, en français comme en anglais. Les échanges à distance sont notre quotidien : validations sur photos, retours détaillés, points d'avancement réguliers pendant la production."
+            ],
+            "ctaPrimaire": {
+              "label": "Parler de votre projet",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une étape précise ou tout le chemin ?",
+            "sousTitre": "Décrivez-nous où en est votre projet : le devis est gratuit et vous éclaire dans les deux cas.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "conseil-developpement",
+      "label": "Conseil & développement",
+      "navHidden": true,
+      "meta": {
+        "title": "Conseil et développement de collection",
+        "description": "Cadrage de collection avant production : choix des matières, faisabilité des coupes, plan de développement. Le conseil qui évite les faux départs aux jeunes marques."
+      },
+      "service": {
+        "name": "Conseil & développement",
+        "serviceType": "Conseil en développement de collection textile",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Étape fondatrice",
+            "titre": "Conseil et développement de collection",
+            "intro": "Avant de couper le moindre tissu, il faut savoir exactement quoi produire, dans quelle matière, et à quel coût. C'est le travail de cette étape.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Prestations", "href": "/prestations" },
+              { "label": "Conseil & développement" }
+            ],
+            "ctaPrimaire": {
+              "label": "Cadrer mon projet",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "À quoi sert un cadrage quand on a déjà les idées",
+            "paragraphes": [
+              "La plupart des créateurs qui nous contactent savent très bien ce qu'ils veulent : ils ont les croquis, les références, parfois un moodboard complet. Ce qui manque rarement, c'est la vision ; ce qui manque souvent, c'est la traduction industrielle de cette vision. Quelle matière tombe comme sur l'image de référence, mais reste dans votre budget ? Cette coupe demande-t-elle une machine particulière ? Ce détail de finition tient-il en production, ou seulement sur une pièce unique cousue main ?",
+              "Le conseil consiste à passer votre projet au crible de ces questions, une par une, avant qu'elles ne deviennent des problèmes coûteux. Nous examinons chaque modèle, challengeons les choix qui poseront difficulté, proposons des alternatives quand une matière ou une construction risque de décevoir. Il nous arrive de déconseiller une pièce — c'est aussi ça, le rôle d'un atelier qui accompagne.",
+              "Vous repartez avec un plan de développement : la liste des modèles retenus, les matières pressenties, les étapes à venir et leur ordre. Ce document sert ensuite de fil rouge au patronage puis à la production — et si vous décidez de confier la suite à un autre atelier, il reste le vôtre.",
+              "Cette étape s'adresse d'abord aux jeunes marques qui préparent une première collection, mais les professionnels y recourent aussi pour arbitrer une nouvelle gamme ou industrialiser un modèle existant."
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions sur le conseil",
+            "items": [
+              {
+                "question": "Faut-il déjà avoir des croquis pour vous consulter ?",
+                "reponse": "Non. Des croquis aboutis accélèrent le travail, mais nous pouvons partir d'images de référence, de pièces existantes que vous voulez adapter, ou d'une idée décrite avec des mots. Le cadrage sert justement à transformer ce point de départ en plan concret."
+              },
+              {
+                "question": "Pouvez-vous me conseiller sur le choix des tissus ?",
+                "reponse": "Oui, c'est au cœur de l'étape : nous vous orientons vers des matières cohérentes avec le tombé recherché, l'usage de la pièce et votre budget, et nous vous signalons celles qui compliqueraient la confection ou fragiliseraient le produit fini."
+              },
+              {
+                "question": "Le conseil m'engage-t-il à produire chez vous ?",
+                "reponse": "Non. Le plan de développement vous appartient. La plupart de nos clients enchaînent naturellement sur le patronage puis la production à l'atelier, mais c'est une suite logique, pas une condition."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "La suite logique",
+            "items": [
+              {
+                "nom": "Patronage & prototypage",
+                "icone": "Ruler",
+                "description": "Le plan de développement validé se transforme en patrons, puis en pièce d'essai.",
+                "href": "/patronage-prototypage"
+              },
+              {
+                "nom": "Confection & production",
+                "icone": "Scissors",
+                "description": "Une fois le prototype approuvé, l'atelier prend le relais pour la série.",
+                "href": "/confection-production"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Posez votre projet sur la table.",
+            "sousTitre": "Un premier échange suffit souvent à savoir si votre collection est prête pour la production.",
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "patronage-prototypage",
+      "label": "Patronage & prototypage",
+      "navHidden": true,
+      "meta": {
+        "title": "Patronage et prototypage de vêtements",
+        "description": "Patrons précis, gradation et prototypes essayés puis ajustés jusqu'à validation : l'étape qui sécurise votre production avant le lancement de la série."
+      },
+      "service": {
+        "name": "Patronage & prototypage",
+        "serviceType": "Patronage, gradation et prototypage de vêtements",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Du papier au tissu",
+            "titre": "Patronage et prototypage",
+            "intro": "Le patron est la partition de votre vêtement : s'il est juste, tout ce qui suit l'est aussi. S'il est approximatif, la série entière en hérite.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Prestations", "href": "/prestations" },
+              { "label": "Patronage & prototypage" }
+            ],
+            "ctaPrimaire": {
+              "label": "Lancer mon patronage",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Pourquoi nous ne lançons jamais une série sans prototype",
+            "paragraphes": [
+              "Un vêtement se juge porté, pas dessiné. Entre le croquis et la pièce réelle, il y a des dizaines de décisions invisibles : l'aisance à donner à une emmanchure, la profondeur d'une pince, la tenue d'un col selon le thermocollant choisi. Le patronage fixe ces décisions noir sur blanc — chaque pièce du vêtement tracée à plat, avec ses valeurs de couture et ses crans de montage —, puis la gradation décline le modèle dans vos différentes tailles en respectant ses proportions.",
+              "Vient ensuite le prototype : une première pièce confectionnée dans les règles, que vous essayez, faites essayer, photographiez sous toutes les coutures. C'est le moment des retouches — remonter une taille, allonger une manche, revoir un tombé. Nous refaisons autant d'allers-retours que nécessaire : un prototype ajusté trois fois coûte toujours moins cher qu'une série ratée une fois.",
+              "Quand la pièce d'essai vous convient, vous la validez formellement. Elle devient alors la référence contractuelle de la production : c'est à elle que chaque pièce de la série sera comparée au contrôle qualité. Cette validation est la charnière de notre méthode — rien ne part en confection sans elle."
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions sur le patronage",
+            "items": [
+              {
+                "question": "J'ai déjà mes patrons : pouvez-vous produire directement ?",
+                "reponse": "Oui, si vos patrons sont exploitables en l'état. Nous les examinons avant de chiffrer : s'ils demandent une remise au propre ou une gradation, nous vous le disons et l'intégrons au devis plutôt que de découvrir le problème en cours de série."
+              },
+              {
+                "question": "Combien de retouches sont possibles sur le prototype ?",
+                "reponse": "Autant que la pièce en demande. L'objectif n'est pas de limiter les allers-retours mais d'arriver à un prototype que vous validez sans réserve, car c'est lui qui servira de référence à toute la production."
+              },
+              {
+                "question": "Puis-je suivre les essayages à distance ?",
+                "reponse": "Oui. Photos détaillées, vidéos du tombé, mesures relevées sur la pièce : la validation à distance fait partie de notre façon de travailler, en français comme en anglais."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Avant et après cette étape",
+            "items": [
+              {
+                "nom": "Conseil & développement",
+                "icone": "Lightbulb",
+                "description": "Si le projet mérite d'abord un cadrage : matières, faisabilité, plan de développement.",
+                "href": "/conseil-developpement"
+              },
+              {
+                "nom": "Confection & production",
+                "icone": "Scissors",
+                "description": "Le prototype validé part en série dans notre atelier au Maroc.",
+                "href": "/confection-production"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Votre modèle mérite un patron juste.",
+            "sousTitre": "Envoyez-nous vos croquis ou vos patrons existants : nous vous disons ce qu'il faut pour les amener en production.",
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "confection-production",
+      "label": "Confection & production",
+      "navHidden": true,
+      "meta": {
+        "title": "Confection et production textile au Maroc",
+        "description": "Coupe, assemblage et finitions dans notre atelier au Maroc, fidèles au prototype validé. Production suivie et prix raisonnables pour marques et professionnels."
+      },
+      "service": {
+        "name": "Confection & production",
+        "serviceType": "Confection et production de vêtements",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Le cœur de l'atelier",
+            "titre": "Confection et production",
+            "intro": "C'est ici que votre collection cesse d'être un projet : coupe, assemblage, finitions, dans notre atelier de confection au Maroc.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Prestations", "href": "/prestations" },
+              { "label": "Confection & production" }
+            ],
+            "ctaPrimaire": {
+              "label": "Chiffrer ma production",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Un atelier au Maroc, un pilotage depuis Nîmes",
+            "paragraphes": [
+              "Notre organisation repose sur deux ancrages complémentaires. À Nîmes, votre interlocutrice unique : c'est elle qui connaît votre projet depuis le premier échange, valide avec vous chaque jalon et vous rend compte de l'avancement. Au Maroc, l'atelier de confection : c'est là que vos pièces sont coupées, assemblées et finies, par des mains dont la couture est le métier.",
+              "Cette organisation n'est pas un compromis, c'est un choix assumé : elle permet des prix raisonnables sans rogner sur l'exécution. La contrepartie, nous la prenons à notre charge — un suivi de production rapproché et un contrôle qualité systématique, parce qu'une production à distance ne se pilote pas à l'aveugle.",
+              "La série démarre uniquement sur la base du prototype que vous avez validé : mêmes matières, mêmes mesures, mêmes finitions. En cours de production, vous recevez des points d'avancement réguliers ; en fin de série, chaque pièce passe au contrôle avant d'être expédiée. Ce que vous déballez correspond à ce que vous avez approuvé.",
+              "Jeunes marques comme professionnels nous confient leur confection : premières collections à lancer, gammes à renouveler ou production à externaliser. Chaque projet est chiffré sur devis, gratuitement, en fonction des pièces, des quantités et des délais."
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions sur la production",
+            "items": [
+              {
+                "question": "Comment gardez-vous la main sur une production à distance ?",
+                "reponse": "Par le prototype validé, qui sert de référence contractuelle à la série, par des points d'avancement réguliers pendant la confection, et par un contrôle qualité pièce par pièce avant expédition. Le suivi n'est pas une option chez nous : il fait partie de la production."
+              },
+              {
+                "question": "Qui fournit les tissus et les fournitures ?",
+                "reponse": "Les deux cas existent : vous pouvez fournir vos matières, ou nous confier leur sourcing lors du cadrage du projet. Ce point est arrêté au devis, pour que la série démarre sans zone grise."
+              },
+              {
+                "question": "Quels types de pièces confectionnez-vous ?",
+                "reponse": "L'atelier travaille le vêtement au sens large. Le plus simple est de nous décrire vos modèles : nous vous confirmons rapidement la faisabilité, et nous vous le disons tout aussi franchement si une pièce ne relève pas de notre savoir-faire."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Ce qui entoure la série",
+            "items": [
+              {
+                "nom": "Patronage & prototypage",
+                "icone": "Ruler",
+                "description": "L'étape obligatoire avant toute série : la pièce de référence que la production suivra.",
+                "href": "/patronage-prototypage"
+              },
+              {
+                "nom": "Contrôle qualité & suivi",
+                "icone": "BadgeCheck",
+                "description": "Le détail de ce que nous vérifions pendant et après la confection.",
+                "href": "/controle-qualite"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Votre série, cousue comme la pièce d'essai.",
+            "sousTitre": "Décrivez vos modèles, vos quantités et vos délais : le devis est gratuit.",
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "controle-qualite",
+      "label": "Contrôle qualité & suivi",
+      "navHidden": true,
+      "meta": {
+        "title": "Contrôle qualité et suivi de production textile",
+        "description": "Points d'avancement pendant la série, vérification pièce par pièce avant expédition, conformité au prototype validé : le filet de sécurité de votre production."
+      },
+      "service": {
+        "name": "Contrôle qualité & suivi",
+        "serviceType": "Contrôle qualité et suivi de production textile",
+        "priceFrom": "Inclus dans la production"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Le filet de sécurité",
+            "titre": "Contrôle qualité et suivi de production",
+            "intro": "Une belle série ne se constate pas à la réception : elle se construit pendant la confection. C'est le rôle du suivi — et du contrôle final.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Prestations", "href": "/prestations" },
+              { "label": "Contrôle qualité & suivi" }
+            ],
+            "ctaPrimaire": {
+              "label": "Sécuriser ma production",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Vérifier à la source plutôt que constater à l'arrivée",
+            "paragraphes": [
+              "Le pire moment pour découvrir un défaut, c'est en déballant les cartons. Une couture qui fronce, une taille qui ne correspond pas au barème, une finition différente de la pièce d'essai : à ce stade, chaque problème coûte du temps, de l'argent et parfois un lancement. Notre réponse tient en deux mots — suivre et vérifier — et elle est incluse dans toute production de l'atelier, pas vendue en supplément.",
+              "Le suivi commence dès le lancement de la série. Vous recevez des points d'avancement réguliers, appuyés sur ce qui sort réellement des machines, et nous surveillons de notre côté la conformité au prototype validé : matières, mesures, montage, finitions. Un écart repéré en cours de confection se corrige sur la série en cours ; le même écart découvert à la livraison se négocie — c'est toute la différence.",
+              "En fin de production, chaque pièce passe au contrôle final avant emballage : aspect général, coutures, mesures sur les points clés, finalisation prête à porter votre étiquette. Ce n'est qu'après ce passage que la série est expédiée. Le produit fini que vous recevez est celui que vous avez validé — c'est l'engagement qui clôt notre process, et la raison pour laquelle on nous confie des productions à distance."
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions sur le contrôle qualité",
+            "items": [
+              {
+                "question": "Le contrôle qualité est-il facturé en plus de la confection ?",
+                "reponse": "Non. Le suivi de production et le contrôle final font partie intégrante de toute série confectionnée à l'atelier : nous ne concevons pas de livrer des pièces qui n'ont pas été vérifiées."
+              },
+              {
+                "question": "Que se passe-t-il si une pièce ne passe pas le contrôle ?",
+                "reponse": "Elle est reprise avant expédition. C'est précisément l'intérêt de contrôler à l'atelier plutôt qu'à la réception : le défaut se corrige là où il est né, sans aller-retour de colis ni litige."
+              },
+              {
+                "question": "Sur quoi porte exactement la vérification finale ?",
+                "reponse": "Sur la conformité au prototype validé : les mesures aux points clés du vêtement, la régularité des coutures et des finitions, l'aspect général de la pièce et sa présentation finale, prête à rejoindre vos rayons."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "En amont du contrôle",
+            "items": [
+              {
+                "nom": "Confection & production",
+                "icone": "Scissors",
+                "description": "La série que le suivi encadre, coupée et assemblée dans notre atelier au Maroc.",
+                "href": "/confection-production"
+              },
+              {
+                "nom": "Patronage & prototypage",
+                "icone": "Ruler",
+                "description": "Le prototype validé : la référence à laquelle chaque pièce est comparée.",
+                "href": "/patronage-prototypage"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Produisez l'esprit tranquille.",
+            "sousTitre": "Confiez-nous votre série : elle sera suivie pendant la confection et vérifiée pièce par pièce avant de partir.",
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Contact & devis gratuit — atelier de confection",
+        "description": "Décrivez votre projet de collection ou de production : devis gratuit et sans engagement, réponse en français ou en anglais, par téléphone, WhatsApp ou e-mail."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Premier échange",
+            "titre": "Parlez-nous de votre projet",
+            "intro": "Quelques lignes sur vos pièces, vos quantités et vos délais suffisent pour démarrer. Le devis est gratuit et sans engagement.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Contact" }
+            ]
+          }
+        },
+        {
+          "type": "contact",
+          "content": {
+            "titre": "Devis gratuit",
+            "intro": "Formulaire, téléphone, WhatsApp ou e-mail : choisissez le canal qui vous convient, la réponse arrive au même endroit — chez votre interlocutrice unique.",
+            "telephone": "07 65 57 70 41",
+            "whatsapp": "0765577041",
+            "email": "mine.active8@gmail.com",
+            "adresse": "4 rue du Colisée, 30000 Nîmes",
+            "form": true,
+            "formType": "devis",
+            "formTitre": "Décrivez votre projet",
+            "formIntro": "Type de pièces, quantités envisagées, délais souhaités : chaque détail affine le chiffrage.",
+            "services": [
+              "Conseil & développement",
+              "Patronage & prototypage",
+              "Confection & production",
+              "Contrôle qualité & suivi",
+              "Projet complet, de l'idée au produit fini"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

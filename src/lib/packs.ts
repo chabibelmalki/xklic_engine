@@ -429,6 +429,32 @@ export const PACKS: StylePack[] = [
       cta: ["bande"],
     },
   },
+  {
+    id: "atelier-fil",
+    label: "Fil · Atelier de couture",
+    family: "fil",
+    // Corps clair « papier patron » : alternance blanc / lavis de lin très pâle
+    // (brand-tinted). Les blocs d'identité (hero/pageHero/cta/footer) peignent
+    // leur propre pan d'ENCRE brand-800, cousu au corps par un fil pointillé +
+    // nœud (la couture signature).
+    sectionStrategy: "brand-tinted",
+    sectionDivider: "none",
+    ambiance:
+      "Parti pris FORT « atelier de couture / confection » : le FIL COUSU en motif conducteur. Hero plein cadre dont la PHOTO ENTIÈRE est re-teintée aux couleurs de la marque (duotone), titre éclaté haut-gauche / bas-droite relié par une couture SVG qui se trace au chargement (aiguille comprise), timeline des étapes COUSUE AU SCROLL (le fil noue chaque étape), coutures pointillées + nœuds entre pans d'encre et corps « papier patron », cartes-échantillons épinglées, serif à empattements expressive (Fraunces) en graisse légère + italiques. Précis, tactile, premium — distinct de tout le parc.",
+    fonts: { display: "Fraunces", sans: "Inter" },
+    variants: {
+      hero: ["plein"],
+      services: ["grille-cartes"],
+      etapes: ["timeline-verticale"],
+      faq: ["deux-colonnes", "accordeon"],
+      tarifs: ["liste-simple", "grille"],
+      galerie: ["masonry", "grille"],
+      zone: ["liste"],
+      contenu: ["texte-image"],
+      contact: ["split-form-carte"],
+      cta: ["bande"],
+    },
+  },
 ];
 
 export const DEFAULT_PACK: StylePackId = "base";

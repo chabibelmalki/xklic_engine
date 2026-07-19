@@ -1,0 +1,749 @@
+{
+  "slug": "creation-production-mode",
+  "branding": {
+    "tagline": "Garment workshop · Nîmes · Morocco",
+    "logoAlt": "Création & Production Mode — garment manufacturing workshop for brands and designers",
+    "colors": {
+      "brand": "#0b5773",
+      "accent": "#d8c3a5"
+    }
+  },
+  "entreprise": {
+    "nom": "Création & Production Mode",
+    "statut": "EI",
+    "siret": "99393606100015",
+    "dirigeant": "Leila Belhadi",
+    "ape": "47.91B",
+    "tva": {
+      "regime": "franchise"
+    }
+  },
+  "seo": {
+    "schemaType": "ProfessionalService",
+    "ville": "Nîmes"
+  },
+  "meta": {
+    "title": "Garment manufacturing for brands and designers",
+    "description": "Pattern making, prototyping, garment production and quality control for young brands and professionals. Based in Nîmes, workshop in Morocco. Free quote.",
+    "keywords": [
+      "garment manufacturing workshop",
+      "clothing manufacturer for startups",
+      "small batch clothing production",
+      "pattern making and prototyping",
+      "clothing manufacturer Morocco",
+      "private label garment production",
+      "garment quality control",
+      "fashion brand production partner"
+    ]
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Home",
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "plein",
+          "content": {
+            "titre": "From the idea",
+            "titreAccent": "to the finished product.",
+            "headerOverlay": true,
+            "nuancier": {
+              "label": "Your shade —",
+              "couleurs": ["#0b5773", "#b0512e", "#2e5e4a", "#6d3a5d", "#37476e"]
+            },
+            "trust": [
+              {
+                "icone": "Scissors",
+                "label": "Pattern making, prototyping, garment production"
+              },
+              {
+                "icone": "MapPin",
+                "label": "Based in Nîmes, production workshop in Morocco"
+              },
+              {
+                "icone": "Languages",
+                "label": "We work in English and in French"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Get a free quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Discover the workshop",
+              "href": "/prestations"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "What the workshop does for you",
+            "titre": "Four crafts, one single point of contact",
+            "intro": "Entrust us with one precise step or the whole development: each service stands on its own, and they all stitch together.",
+            "items": [
+              {
+                "nom": "Consulting & development",
+                "icone": "Lightbulb",
+                "description": "Frame your project before a single metre of fabric is cut: materials, cuts, feasibility.",
+                "href": "/conseil-developpement"
+              },
+              {
+                "nom": "Pattern making & prototyping",
+                "icone": "Ruler",
+                "description": "Turn your designs into precise patterns, then into prototypes fitted and adjusted until you approve them.",
+                "href": "/patronage-prototypage"
+              },
+              {
+                "nom": "Garment production",
+                "icone": "Scissors",
+                "description": "Cutting, assembly and finishing in our Moroccan workshop, faithful to the prototype you signed off.",
+                "href": "/confection-production"
+              },
+              {
+                "nom": "Quality control & follow-up",
+                "icone": "BadgeCheck",
+                "description": "Transparent production tracking and pieces checked one by one before they head to your shelves.",
+                "href": "/controle-qualite"
+              }
+            ],
+            "cta": {
+              "label": "See all services in detail",
+              "href": "/prestations"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "content": {
+            "eyebrow": "The common thread",
+            "titre": "Six steps, one single thread",
+            "intro": "Your project moves along a controlled process, from the first conversation to shipping.",
+            "items": [
+              {
+                "icone": "MessagesSquare",
+                "titre": "Consulting",
+                "texte": "We listen to your project, question your choices of materials and cuts, and frame a realistic development together."
+              },
+              {
+                "icone": "Ruler",
+                "titre": "Pattern making",
+                "texte": "Your designs take shape on paper: precise patterns, grading, cutting templates ready for the workshop."
+              },
+              {
+                "icone": "Shirt",
+                "titre": "Prototype",
+                "texte": "A first piece is made, tried on and adjusted — as many rounds as needed before you approve it."
+              },
+              {
+                "icone": "Scissors",
+                "titre": "Production",
+                "texte": "The run starts in our Moroccan workshop: cutting, assembly and finishing, true to the approved prototype."
+              },
+              {
+                "icone": "ClipboardCheck",
+                "titre": "Production follow-up",
+                "texte": "You are kept informed of progress; we watch deadlines and conformity throughout the run."
+              },
+              {
+                "icone": "PackageCheck",
+                "titre": "Quality control & finishing",
+                "texte": "Every piece is checked before shipping. You receive a finished product, ready to carry your label."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions we often hear",
+            "items": [
+              {
+                "question": "I am launching my first brand: can you support me?",
+                "reponse": "That is exactly what the workshop exists for. You do not need to arrive with a complete technical file: we start from your idea, even at sketch stage, and move it forward step by step — consulting, pattern making, prototype, then production. You approve each milestone before the next one starts."
+              },
+              {
+                "question": "Where are the garments made?",
+                "reponse": "Development and communication are handled from Nîmes, in the south of France; production takes place in our workshop in Morocco. This setup lets us offer reasonable prices while keeping systematic quality control before every shipment."
+              },
+              {
+                "question": "How does the quote work?",
+                "reponse": "Describe your project through the contact form, by phone or on WhatsApp: type of pieces, quantities you have in mind, target deadlines. The quote is free and without commitment — and it doubles as a first consulting conversation about the feasibility of your collection."
+              },
+              {
+                "question": "Do you work with clients abroad?",
+                "reponse": "Yes. We reply in English and in French, and the whole process — pattern approvals, prototype photos, production follow-up — can be handled remotely."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Let's bring your designs to life.",
+            "sousTitre": "Tell us about your collection, your volumes and your deadlines: you get a free quote, no strings attached.",
+            "ctaPrimaire": {
+              "label": "Get a free quote",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contact",
+          "content": {
+            "titre": "Let's talk about your project",
+            "intro": "Describe your pieces, quantities and deadlines: we come back to you quickly with a free quote.",
+            "telephone": "07 65 57 70 41",
+            "whatsapp": "0765577041",
+            "email": "mine.active8@gmail.com",
+            "adresse": "4 rue du Colisée, 30000 Nîmes, France",
+            "form": true,
+            "formType": "devis",
+            "formTitre": "Your quote request",
+            "formIntro": "Free and without commitment. The more precise your description, the more accurate the quote.",
+            "services": [
+              "Consulting & development",
+              "Pattern making & prototyping",
+              "Garment production",
+              "Quality control & follow-up",
+              "Full project, from idea to finished product"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slug": "prestations",
+      "label": "Services",
+      "meta": {
+        "title": "Garment workshop services",
+        "description": "Consulting, pattern making, prototyping, production and quality control: the full detail of our services, à la carte or from idea to finished product."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "The workshop",
+            "titre": "Services à la carte, or from idea to finished product",
+            "intro": "Some clients hand us one precise step — a pattern, a run to produce. Others arrive with a sketch and leave with their collection. Both paths exist.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services" }
+            ],
+            "ctaPrimaire": {
+              "label": "Get a free quote",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "eyebrow": "Four crafts",
+            "titre": "Choose your entry point",
+            "items": [
+              {
+                "nom": "Consulting & development",
+                "icone": "Lightbulb",
+                "description": "The step that prevents false starts: choice of materials, feasibility of the cuts, framing of the development budget. You leave with a clear plan before committing to production.",
+                "priceHint": "Free quote",
+                "href": "/conseil-developpement"
+              },
+              {
+                "nom": "Pattern making & prototyping",
+                "icone": "Ruler",
+                "description": "From sketch to graded pattern, then to a prototype fitted and reworked. Nothing goes into production until the sample piece satisfies you.",
+                "priceHint": "Free quote",
+                "href": "/patronage-prototypage"
+              },
+              {
+                "nom": "Garment production",
+                "icone": "Scissors",
+                "description": "Our Moroccan workshop cuts, assembles and finishes your pieces following the approved prototype — with reasonable prices made possible by this setup.",
+                "priceHint": "Free quote",
+                "href": "/confection-production"
+              },
+              {
+                "nom": "Quality control & follow-up",
+                "icone": "BadgeCheck",
+                "description": "Regular progress updates during the run, then a piece-by-piece check before shipping: you always know where your production stands.",
+                "priceHint": "Included in production",
+                "href": "/controle-qualite"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "How we work",
+            "titre": "One thread, from first conversation to shipping",
+            "paragraphes": [
+              "When a garment development goes off the rails, it is almost always because a step was skipped: a run launched without an approved prototype, a rough pattern patched up at the sewing machine, quality checked on arrival instead of at the source. Our method is to never skip a step — but to size each one to your project. A brand taking its first steps does not have the same needs as a professional outsourcing a well-oiled production.",
+              "Concretely, every milestone ends with your sign-off: the development plan after consulting, the pattern after pattern making, the sample piece after prototyping. Only once the prototype is approved does production start in our Moroccan workshop, and the product you receive matches what you approved — guaranteeing that is exactly what quality control is for.",
+              "You keep a single point of contact from start to finish, reachable by phone, WhatsApp or email, in English as in French. Working remotely is our everyday routine: photo-based approvals, detailed feedback, regular progress updates throughout production."
+            ],
+            "ctaPrimaire": {
+              "label": "Tell us about your project",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "One precise step, or the whole journey?",
+            "sousTitre": "Tell us where your project stands: the quote is free and clarifies things either way.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "conseil-developpement",
+      "label": "Consulting & development",
+      "navHidden": true,
+      "meta": {
+        "title": "Collection consulting and development",
+        "description": "Collection framing before production: choice of materials, feasibility of the cuts, development plan. The consulting step that spares young brands false starts."
+      },
+      "service": {
+        "name": "Consulting & development",
+        "serviceType": "Fashion collection development consulting",
+        "priceFrom": "On quotation"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "The founding step",
+            "titre": "Collection consulting and development",
+            "intro": "Before cutting any fabric, you need to know exactly what to produce, in which material, and at what cost. That is what this step is for.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/prestations" },
+              { "label": "Consulting & development" }
+            ],
+            "ctaPrimaire": {
+              "label": "Frame my project",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Why frame a project when you already have the ideas",
+            "paragraphes": [
+              "Most designers who contact us know very well what they want: they have the sketches, the references, sometimes a full moodboard. What is rarely missing is the vision; what is often missing is its industrial translation. Which fabric drapes like the reference picture, yet stays within your budget? Does this cut require a specific machine? Will this finishing detail hold up in production, or only on a one-off piece sewn by hand?",
+              "Consulting means running your project through these questions, one by one, before they turn into costly problems. We examine each design, challenge the choices that will cause trouble, and suggest alternatives whenever a material or a construction is likely to disappoint. We sometimes advise against a piece — that too is what a supporting workshop is for.",
+              "You leave with a development plan: the shortlisted designs, the intended materials, the steps ahead and their order. That document then guides the pattern making and the production — and if you decide to take the next steps to another workshop, it remains yours.",
+              "This step is aimed first at young brands preparing their first collection, but professionals use it too, to arbitrate a new range or industrialise an existing design."
+            ],
+            "ctaPrimaire": {
+              "label": "Get a free quote",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions about consulting",
+            "items": [
+              {
+                "question": "Do I need finished sketches before consulting you?",
+                "reponse": "No. Polished sketches speed things up, but we can start from reference pictures, from existing garments you want to adapt, or from an idea described in plain words. Framing is precisely about turning that starting point into a concrete plan."
+              },
+              {
+                "question": "Can you advise me on fabric choices?",
+                "reponse": "Yes, it is at the heart of this step: we point you towards materials consistent with the drape you are after, the garment's use and your budget, and we flag the ones that would complicate production or weaken the finished product."
+              },
+              {
+                "question": "Does consulting commit me to producing with you?",
+                "reponse": "No. The development plan belongs to you. Most of our clients naturally move on to pattern making and production at the workshop, but that is a logical next step, not a condition."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "The logical next steps",
+            "items": [
+              {
+                "nom": "Pattern making & prototyping",
+                "icone": "Ruler",
+                "description": "The approved development plan turns into patterns, then into a sample piece.",
+                "href": "/patronage-prototypage"
+              },
+              {
+                "nom": "Garment production",
+                "icone": "Scissors",
+                "description": "Once the prototype is approved, the workshop takes over for the run.",
+                "href": "/confection-production"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Put your project on the table.",
+            "sousTitre": "A first conversation is often enough to know whether your collection is ready for production.",
+            "ctaPrimaire": {
+              "label": "Get a free quote",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "patronage-prototypage",
+      "label": "Pattern making & prototyping",
+      "navHidden": true,
+      "meta": {
+        "title": "Garment pattern making and prototyping",
+        "description": "Precise patterns, grading and prototypes fitted then adjusted until approved: the step that secures your production before the run is launched."
+      },
+      "service": {
+        "name": "Pattern making & prototyping",
+        "serviceType": "Garment pattern making, grading and prototyping",
+        "priceFrom": "On quotation"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "From paper to fabric",
+            "titre": "Pattern making and prototyping",
+            "intro": "The pattern is your garment's score: if it is right, everything that follows is too. If it is approximate, the whole run inherits it.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/prestations" },
+              { "label": "Pattern making & prototyping" }
+            ],
+            "ctaPrimaire": {
+              "label": "Start my pattern",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Why we never launch a run without a prototype",
+            "paragraphes": [
+              "A garment is judged worn, not drawn. Between the sketch and the actual piece lie dozens of invisible decisions: the ease to give an armhole, the depth of a dart, how a collar holds depending on the chosen interfacing. Pattern making pins these decisions down in black and white — every piece of the garment drafted flat, with its seam allowances and assembly notches — then grading declines the design across your size range while preserving its proportions.",
+              "Then comes the prototype: a first piece properly made, which you try on, have tried on, photograph from every seam. This is the moment for alterations — raising a waist, lengthening a sleeve, reworking a drape. We do as many rounds as needed: a prototype adjusted three times always costs less than a run gone wrong once.",
+              "When the sample piece satisfies you, you formally approve it. It then becomes the contractual reference for production: every piece of the run will be compared to it at quality control. This approval is the hinge of our method — nothing goes into production without it."
+            ],
+            "ctaPrimaire": {
+              "label": "Get a free quote",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions about pattern making",
+            "items": [
+              {
+                "question": "I already have my patterns: can you produce directly?",
+                "reponse": "Yes, if your patterns are usable as they are. We examine them before quoting: if they need cleaning up or grading, we tell you and include it in the quote rather than discovering the problem mid-run."
+              },
+              {
+                "question": "How many alterations are possible on the prototype?",
+                "reponse": "As many as the piece requires. The goal is not to cap the back-and-forth but to reach a prototype you approve without reservation, because it will serve as the reference for the whole production."
+              },
+              {
+                "question": "Can I follow the fittings remotely?",
+                "reponse": "Yes. Detailed photos, videos of the drape, measurements taken on the piece: remote approval is part of how we work, in English as in French."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Before and after this step",
+            "items": [
+              {
+                "nom": "Consulting & development",
+                "icone": "Lightbulb",
+                "description": "If the project deserves framing first: materials, feasibility, development plan.",
+                "href": "/conseil-developpement"
+              },
+              {
+                "nom": "Garment production",
+                "icone": "Scissors",
+                "description": "The approved prototype goes into production in our Moroccan workshop.",
+                "href": "/confection-production"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Your design deserves an accurate pattern.",
+            "sousTitre": "Send us your sketches or your existing patterns: we will tell you what it takes to bring them to production.",
+            "ctaPrimaire": {
+              "label": "Get a free quote",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "confection-production",
+      "label": "Garment production",
+      "navHidden": true,
+      "meta": {
+        "title": "Garment production in Morocco",
+        "description": "Cutting, assembly and finishing in our Moroccan workshop, faithful to the approved prototype. Tracked production and reasonable prices for brands and professionals."
+      },
+      "service": {
+        "name": "Garment production",
+        "serviceType": "Garment manufacturing and production",
+        "priceFrom": "On quotation"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "The heart of the workshop",
+            "titre": "Garment production",
+            "intro": "This is where your collection stops being a project: cutting, assembly, finishing, in our garment workshop in Morocco.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/prestations" },
+              { "label": "Garment production" }
+            ],
+            "ctaPrimaire": {
+              "label": "Price my production",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "A workshop in Morocco, steered from Nîmes",
+            "paragraphes": [
+              "Our organisation rests on two complementary anchors. In Nîmes, your single point of contact: she has known your project since the first conversation, approves every milestone with you and reports on progress. In Morocco, the garment workshop: that is where your pieces are cut, assembled and finished, by hands whose trade is sewing.",
+              "This setup is not a compromise, it is a deliberate choice: it allows reasonable prices without cutting corners on execution. The counterpart is on us — close production follow-up and systematic quality control, because a remote production cannot be steered blindfolded.",
+              "The run starts solely on the basis of the prototype you approved: same materials, same measurements, same finishings. During production you receive regular progress updates; at the end of the run, every piece is checked before shipping. What you unbox matches what you signed off.",
+              "Young brands and professionals alike entrust us with their production: first collections to launch, ranges to renew or manufacturing to outsource. Every project is priced on a quote, free of charge, based on the pieces, quantities and deadlines."
+            ],
+            "ctaPrimaire": {
+              "label": "Get a free quote",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions about production",
+            "items": [
+              {
+                "question": "How do you keep control over a remote production?",
+                "reponse": "Through the approved prototype, which serves as the contractual reference for the run, through regular progress updates during production, and through piece-by-piece quality control before shipping. Follow-up is not an option with us: it is part of the production."
+              },
+              {
+                "question": "Who supplies the fabrics and trims?",
+                "reponse": "Both cases exist: you can supply your materials, or entrust us with sourcing them when the project is framed. This point is settled at the quote, so the run starts with no grey area."
+              },
+              {
+                "question": "What kinds of pieces do you manufacture?",
+                "reponse": "The workshop works on garments in the broad sense. The simplest is to describe your designs: we quickly confirm feasibility, and we tell you just as frankly if a piece falls outside our craft."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Around the run",
+            "items": [
+              {
+                "nom": "Pattern making & prototyping",
+                "icone": "Ruler",
+                "description": "The mandatory step before any run: the reference piece the production will follow.",
+                "href": "/patronage-prototypage"
+              },
+              {
+                "nom": "Quality control & follow-up",
+                "icone": "BadgeCheck",
+                "description": "The detail of what we check during and after production.",
+                "href": "/controle-qualite"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Your run, sewn like the sample piece.",
+            "sousTitre": "Describe your designs, quantities and deadlines: the quote is free.",
+            "ctaPrimaire": {
+              "label": "Get a free quote",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "controle-qualite",
+      "label": "Quality control & follow-up",
+      "navHidden": true,
+      "meta": {
+        "title": "Garment quality control and follow-up",
+        "description": "Progress updates during the run, piece-by-piece checks before shipping, conformity to the approved prototype: your production's safety net."
+      },
+      "service": {
+        "name": "Quality control & follow-up",
+        "serviceType": "Garment quality control and production follow-up",
+        "priceFrom": "Included in production"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "The safety net",
+            "titre": "Quality control and production follow-up",
+            "intro": "A good run is not observed on delivery: it is built during production. That is what follow-up is for — and the final check.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/prestations" },
+              { "label": "Quality control & follow-up" }
+            ],
+            "ctaPrimaire": {
+              "label": "Secure my production",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Check at the source rather than discover on arrival",
+            "paragraphes": [
+              "The worst moment to discover a defect is while unboxing. A puckered seam, a size off the measurement chart, a finish different from the sample piece: at that stage, every problem costs time, money and sometimes a launch. Our answer holds in two words — track and check — and it is included in every production of the workshop, not sold as an extra.",
+              "Follow-up starts as soon as the run is launched. You receive regular progress updates, grounded in what actually comes off the machines, while we monitor conformity to the approved prototype: materials, measurements, assembly, finishings. A deviation caught during production gets corrected on the ongoing run; the same deviation discovered at delivery turns into a negotiation — that is the whole difference.",
+              "At the end of production, every piece goes through a final check before packing: overall appearance, seams, measurements at the garment's key points, finishing ready to carry your label. Only after that does the run ship. The finished product you receive is the one you approved — that is the commitment closing our process, and the reason clients entrust us with remote productions."
+            ],
+            "ctaPrimaire": {
+              "label": "Get a free quote",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions about quality control",
+            "items": [
+              {
+                "question": "Is quality control billed on top of production?",
+                "reponse": "No. Production follow-up and the final check are an integral part of every run made at the workshop: we would not conceive of shipping pieces that have not been verified."
+              },
+              {
+                "question": "What happens if a piece fails the check?",
+                "reponse": "It is reworked before shipping. That is precisely the point of checking at the workshop rather than on reception: the defect gets fixed where it was born, without parcel round-trips or disputes."
+              },
+              {
+                "question": "What exactly does the final check cover?",
+                "reponse": "Conformity to the approved prototype: measurements at the garment's key points, regularity of seams and finishings, the overall appearance of the piece and its final presentation, ready to reach your shelves."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Upstream of the check",
+            "items": [
+              {
+                "nom": "Garment production",
+                "icone": "Scissors",
+                "description": "The run that follow-up frames, cut and assembled in our Moroccan workshop.",
+                "href": "/confection-production"
+              },
+              {
+                "nom": "Pattern making & prototyping",
+                "icone": "Ruler",
+                "description": "The approved prototype: the reference every piece is compared to.",
+                "href": "/patronage-prototypage"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Produce with peace of mind.",
+            "sousTitre": "Entrust us with your run: it will be tracked during production and checked piece by piece before it ships.",
+            "ctaPrimaire": {
+              "label": "Get a free quote",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Contact & free quote — garment workshop",
+        "description": "Describe your collection or production project: free quote without commitment, answers in English or French, by phone, WhatsApp or email."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "First conversation",
+            "titre": "Tell us about your project",
+            "intro": "A few lines about your pieces, quantities and deadlines are enough to get started. The quote is free and without commitment.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Contact" }
+            ]
+          }
+        },
+        {
+          "type": "contact",
+          "content": {
+            "titre": "Free quote",
+            "intro": "Form, phone, WhatsApp or email: pick the channel that suits you, the answer lands in the same place — with your single point of contact.",
+            "telephone": "07 65 57 70 41",
+            "whatsapp": "0765577041",
+            "email": "mine.active8@gmail.com",
+            "adresse": "4 rue du Colisée, 30000 Nîmes, France",
+            "form": true,
+            "formType": "devis",
+            "formTitre": "Describe your project",
+            "formIntro": "Type of pieces, quantities in mind, target deadlines: the more precise, the more accurate the quote.",
+            "services": [
+              "Consulting & development",
+              "Pattern making & prototyping",
+              "Garment production",
+              "Quality control & follow-up",
+              "Full project, from idea to finished product"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -351,6 +351,14 @@ export interface HeroContent {
   payments?: string[];
   /** Libellé (i18n) au-dessus des vignettes de paiement (ex. "Paiement accepté"). */
   paymentsLabel?: string;
+  /**
+   * NUANCIER interactif (famille `fil` uniquement, ignoré ailleurs) : pastilles
+   * de teintes qui recolorent le site EN DIRECT (même génération de palette que
+   * `branding.colors`, rien n'est persisté). Argumentaire « votre marque a sa
+   * teinte » pour un prestataire dont les clients sont des marques. La PREMIÈRE
+   * couleur doit reprendre `branding.colors.brand` (état par défaut).
+   */
+  nuancier?: { label?: string; couleurs: string[] };
 }
 
 // --- services ---

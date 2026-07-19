@@ -752,6 +752,120 @@ input[type="range"] {
   );
 }
 
+/* ================== Fil · Atelier de couture =========================== */
+/* Atelier de couture/confection : serif expressive en graisse légère (Fraunces)
+   + italiques, corps clair « papier patron » cousu aux pans d'encre brand-800
+   par des FILS POINTILLÉS + nœuds, cartes-échantillons épinglées, ombres
+   douces et chaudes. Le fil (hero + timeline) est la signature. */
+[data-pack="atelier-fil"] {
+  --pack-font-display: var(--font-fraunces);
+  --pack-font-sans: var(--font-inter);
+  --display-tracking: -0.015em;
+  --display-case: none;
+
+  /* Douceur textile : cartes moulées, images arrondies, boutons pilule. */
+  --radius-btn: 999px;
+  --radius-card: 0.9rem;
+  --radius-image: 0.75rem;
+  --border-width: 1px;
+  --radius: 0.75rem;
+
+  /* Ombres douces teintées encre (le tissu tombe, il ne claque pas). */
+  --shadow-card: 0 22px 48px -30px color-mix(in srgb, var(--brand-800) 45%, transparent);
+  --shadow-pop: 0 30px 64px -32px color-mix(in srgb, var(--brand-800) 55%, transparent);
+
+  --section-py: 6.75rem;
+  --content-max: 72rem;
+  --motion-distance: 22px;
+  --motion-duration: 0.75s;
+  --motion-ease: cubic-bezier(0.22, 0.61, 0.25, 1);
+}
+/* Titres display : Fraunces posée EN DUR en graisse moyenne (la var composite
+   --font-display ignore silencieusement le pack sans règle explicite — cf.
+   marine/cotier). L'italique fait l'accent. */
+[data-pack="atelier-fil"] h1.font-display,
+[data-pack="atelier-fil"] h2.font-display,
+[data-pack="atelier-fil"] h3.font-display,
+[data-pack="atelier-fil"] .pack-heading,
+[data-pack="atelier-fil"] .font-display {
+  font-family: var(--pack-font-display), Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+/* Fil pointillé (point de couture) — utilitaire scopé, teinté par currentColor. */
+[data-pack="atelier-fil"] .fil-seam {
+  background-image: repeating-linear-gradient(
+    90deg,
+    currentColor 0 9px,
+    transparent 9px 16px
+  );
+}
+/* Grain textile discret (trame tissée currentColor, jamais fuitée ailleurs). */
+[data-pack="atelier-fil"] .fil-grain {
+  opacity: 0.5;
+  background-image:
+    repeating-linear-gradient(0deg, color-mix(in srgb, currentColor 4%, transparent) 0 1px, transparent 1px 4px),
+    repeating-linear-gradient(90deg, color-mix(in srgb, currentColor 3%, transparent) 0 1px, transparent 1px 4px);
+}
+/* Halo local derrière les titres du hero (lisibilité SANS scrim global fort). */
+[data-pack="atelier-fil"] .fil-halo::before {
+  content: "";
+  position: absolute;
+  inset: -2rem -3rem;
+  z-index: -1;
+  background: radial-gradient(
+    55% 68% at 50% 50%,
+    color-mix(in srgb, var(--brand-800) 52%, transparent),
+    transparent 74%
+  );
+}
+/* La couture du hero se trace au chargement (pathLength=1 côté SVG). */
+[data-pack="atelier-fil"] .fil-couture {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: fil-coudre 2.6s var(--motion-ease) 0.4s forwards;
+}
+[data-pack="atelier-fil"] .fil-aiguille {
+  opacity: 0;
+  animation: fil-apparait 0.7s ease 2.5s forwards;
+}
+/* Entrées orchestrées du hero : titre haut (descend), titre bas (monte), reste. */
+[data-pack="atelier-fil"] .fil-descend {
+  opacity: 0;
+  transform: translateY(-18px);
+  animation: fil-entre 1s var(--motion-ease) 0.15s forwards;
+}
+[data-pack="atelier-fil"] .fil-monte {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: fil-entre 1s var(--motion-ease) 0.45s forwards;
+}
+[data-pack="atelier-fil"] .fil-tarde {
+  opacity: 0;
+  animation: fil-apparait 1s var(--motion-ease) 0.9s forwards;
+}
+@keyframes fil-coudre {
+  to { stroke-dashoffset: 0; }
+}
+@keyframes fil-entre {
+  to { opacity: 1; transform: none; }
+}
+@keyframes fil-apparait {
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-pack="atelier-fil"] .fil-couture,
+  [data-pack="atelier-fil"] .fil-aiguille,
+  [data-pack="atelier-fil"] .fil-descend,
+  [data-pack="atelier-fil"] .fil-monte,
+  [data-pack="atelier-fil"] .fil-tarde {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    stroke-dashoffset: 0;
+  }
+}
+
 /* ================== Riso · Atelier de sérigraphie ====================== */
 /* Affiche imprimée à l'encre : grotesque d'affiche mono-graisse (Archivo Black)
    + mono d'imprimeur (IBM Plex Mono) pour TOUTE donnée (prix, horaires, index),
