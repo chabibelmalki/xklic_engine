@@ -138,7 +138,7 @@
               "Nous adaptons chaque intervention au lieu et à son usage. Un hall de copropriété ne se traite pas comme un cabinet médical ; une façade encrassée demande une autre approche qu'un canapé taché. Nos équipes arrivent équipées, protègent les abords et laissent chaque espace prêt à l'emploi.",
               "Basés à Lille, nous couvrons l'ensemble du Nord. Un interlocuteur unique, un devis clair et le même niveau d'exigence, que la mission dure une heure ou s'inscrive dans un contrat d'entretien à l'année."
             ],
-            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/equipe-nettoyage.jpg", "alt": "Équipe HYGIFRANCE en intervention de nettoyage" },
+            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/notre-metier.jpg", "alt": "Agent HYGIFRANCE entretenant le hall d'un bâtiment" },
             "imagePosition": "right",
             "imageRatio": "4/3",
             "imageCard": true,
@@ -155,7 +155,7 @@
               "Au-delà de l'entretien courant, nous intervenons dans l'urgence et sur les chantiers extrêmes : dégât des eaux, décontamination après incendie, sous-sols inondés, recherche de fuites, diagnostic d'humidité, nettoyage suite à décès. Nous travaillons volontiers avec les compagnies d'assurance.",
               "Ces prestations demandent méthode, équipement adapté et beaucoup de tact. C'est un savoir-faire à part, que nous détaillons sur une page dédiée."
             ],
-            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-locaux.jpg", "alt": "Remise en état de locaux après sinistre" },
+            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/aussi-disponible.jpg", "alt": "Intervention HYGIFRANCE après sinistre : assèchement et décontamination" },
             "imagePosition": "left",
             "imageRatio": "4/3",
             "imageCard": true,
@@ -341,6 +341,23 @@
               { "nom": "Désinfection & désodorisation", "icone": "ShieldCheck", "description": "Traitement des surfaces de contact et élimination des odeurs pour un intérieur sain et sécurisé." },
               { "nom": "Discrétion garantie", "icone": "EyeOff", "description": "Véhicules et tenues neutres possibles, intervention organisée en toute confidentialité." },
               { "nom": "Coordination", "icone": "Users", "description": "Nous travaillons avec les proches, tuteurs, bailleurs ou services sociaux selon la situation." }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "Avant / après",
+            "titre": "Une remise en état complète",
+            "intro": "Faites glisser le curseur au centre de l'image.",
+            "ratio": "4/5",
+            "avantApres": [
+              {
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/diogene-avant.jpg", "alt": "Studio encombré et insalubre avant intervention" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/diogene-apres.jpg", "alt": "Studio débarrassé et remis en état après intervention" },
+                "legende": "Débarras, nettoyage en profondeur et désinfection : le logement redevient habitable."
+              }
             ]
           }
         },
@@ -868,7 +885,7 @@
           "type": "galerie",
           "variant": "avant-apres",
           "content": {
-            "eyebrow": "Extérieur & communs",
+            "eyebrow": "Avant / après",
             "titre": "Glissez pour comparer",
             "ratio": "4/5",
             "avantApres": [
@@ -891,18 +908,12 @@
                 "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/textile-avant.jpg", "alt": "Canapé taché avant nettoyage textile" },
                 "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/textile-apres.jpg", "alt": "Canapé détaché après nettoyage textile" },
                 "legende": "Canapé détaché et assaini par injection-extraction."
-              }
-            ]
-          }
-        },
-        {
-          "type": "galerie",
-          "variant": "avant-apres",
-          "content": {
-            "eyebrow": "Bureaux & locaux",
-            "titre": "Un plateau de bureaux transformé",
-            "ratio": "16/9",
-            "avantApres": [
+              },
+              {
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/diogene-avant.jpg", "alt": "Studio encombré et insalubre avant intervention" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/diogene-apres.jpg", "alt": "Studio débarrassé et remis en état après intervention" },
+                "legende": "Logement libéré, nettoyé et assaini."
+              },
               {
                 "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/bureau-avant.jpg", "alt": "Plateau de bureaux à l'abandon avant nettoyage" },
                 "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/bureau-apres.jpg", "alt": "Plateau de bureaux nettoyé après intervention" },
