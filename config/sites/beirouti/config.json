@@ -50,7 +50,8 @@
     ]
   },
   "forms": {
-    "to": "contact@beirouti.fr"
+    "to": "contact@beirouti.fr",
+    "turnstile": true
   },
   "pages": [
     {
