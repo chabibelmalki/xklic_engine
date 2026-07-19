@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { ServicesContent, ServiceItem } from "@/types/config";
 import type { BlockComponentProps } from "@/blocks/types";
 import { Button } from "@/components/ui/Button";
@@ -20,21 +21,46 @@ function Carte({ item, basePath }: { item: ServiceItem; basePath: string }) {
       {/* Épingle. */}
       <span
         aria-hidden
-        className="absolute -top-[7px] left-1/2 size-3.5 -translate-x-1/2 rounded-full border-[2.5px] border-bg bg-brand-600 shadow-sm"
+        className="absolute -top-[7px] left-1/2 z-10 size-3.5 -translate-x-1/2 rounded-full border-[2.5px] border-bg bg-brand-600 shadow-sm"
       />
       {/* Liseré cousu. */}
-      <span aria-hidden className="fil-seam absolute left-8 right-8 top-0 h-px text-accent-500/80" />
+      <span aria-hidden className="fil-seam absolute left-8 right-8 top-0 z-10 h-px text-accent-500/80" />
+      {/* Photo « échantillon » : re-teintée par un voile de marque (cohérence
+          duotone avec le hero), remplace l'icône quand elle existe. */}
+      {item.image && (
+        <div className="relative -mx-7 -mt-7 mb-6 h-44 overflow-hidden rounded-t-[var(--radius-card)]">
+          <Image
+            src={item.image.url}
+            alt={item.image.alt ?? item.nom}
+            fill
+            sizes="(max-width: 640px) 100vw, 400px"
+            className="object-cover"
+            style={{ filter: "saturate(0.6)" }}
+          />
+          <span aria-hidden className="absolute inset-0 bg-brand-600 opacity-40 mix-blend-color" />
+          <span aria-hidden className="fil-seam absolute inset-x-0 bottom-0 h-px text-accent-500/80" />
+        </div>
+      )}
       <div className="flex items-start justify-between gap-3">
-        <span className="grid size-11 shrink-0 place-items-center rounded-[var(--radius)] bg-brand-50 text-brand-700">
-          <Icon name={item.icone} className="size-5" />
-        </span>
+        {!item.image && (
+          <span className="grid size-11 shrink-0 place-items-center rounded-[var(--radius)] bg-brand-50 text-brand-700">
+            <Icon name={item.icone} className="size-5" />
+          </span>
+        )}
         {item.badge && (
-          <span className="rounded-full bg-accent-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-accent-600">
+          <span className="ml-auto rounded-full bg-accent-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-accent-600">
             {item.badge}
           </span>
         )}
       </div>
-      <h3 className="mt-5 font-display text-xl text-ink sm:text-[1.35rem]">{item.nom}</h3>
+      <h3
+        className={cn(
+          "font-display text-xl text-ink sm:text-[1.35rem]",
+          item.image && !item.badge ? "mt-0" : "mt-5",
+        )}
+      >
+        {item.nom}
+      </h3>
       {item.description && (
         <p className="mt-2.5 text-sm leading-relaxed text-muted">{item.description}</p>
       )}

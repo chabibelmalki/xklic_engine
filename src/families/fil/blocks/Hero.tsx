@@ -3,7 +3,7 @@ import type { HeroContent } from "@/types/config";
 import type { BlockComponentProps } from "@/blocks/types";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
-import { withBase } from "@/lib/utils";
+import { cn, withBase } from "@/lib/utils";
 import { resolveHeroSecondary } from "@/lib/hero-cta";
 import { FilContainer } from "../ui/Container";
 import { FilNuancier } from "../ui/Nuancier";
@@ -25,8 +25,18 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
   const trust = c.trust ?? [];
   const split = Boolean(c.titreAccent);
 
+  // Avec photo + `headerOverlay`, le hero remonte SOUS l'en-tête sticky (rendu
+  // en overlay transparent par SiteHeader) — même mécanique que le hero `plein`
+  // historique. Sans image, le header reste solide : pas de remontée.
+  const immersive = Boolean(c.image && c.headerOverlay);
+
   return (
-    <header className="relative isolate flex min-h-[92svh] flex-col overflow-hidden bg-brand-800 text-white">
+    <header
+      className={cn(
+        "relative isolate flex min-h-[92svh] flex-col overflow-hidden bg-brand-800 text-white",
+        immersive && "-mt-16 lg:-mt-20",
+      )}
+    >
       {/* Fond : photo re-teintée, ou pan d'encre dégradé sans photo. */}
       {c.image ? (
         <div className="absolute inset-0 -z-10">

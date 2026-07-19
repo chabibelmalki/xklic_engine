@@ -819,6 +819,38 @@ input[type="range"] {
     transparent 74%
   );
 }
+/* Nav du chrome : soulignement COUSU au survol (fil pointillé qui se trace de
+   gauche à droite). Scopé aux liens de navigation du header (overlay comme
+   solide : currentColor suit la couleur du texte). */
+[data-pack="atelier-fil"] header nav a {
+  position: relative;
+}
+[data-pack="atelier-fil"] header nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 1px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    currentColor 0 5px,
+    transparent 5px 9px
+  );
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.45s var(--motion-ease);
+}
+[data-pack="atelier-fil"] header nav a:hover::after,
+[data-pack="atelier-fil"] header nav a[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-pack="atelier-fil"] header nav a::after {
+    transition: none;
+  }
+}
+
 /* La couture du hero se trace au chargement (pathLength=1 côté SVG). */
 [data-pack="atelier-fil"] .fil-couture {
   stroke-dasharray: 1;

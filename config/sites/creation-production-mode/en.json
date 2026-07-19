@@ -50,7 +50,13 @@
             "headerOverlay": true,
             "nuancier": {
               "label": "Your shade —",
-              "couleurs": ["#0b5773", "#b0512e", "#2e5e4a", "#6d3a5d", "#37476e"]
+              "couleurs": [
+                "#0b5773",
+                "#b0512e",
+                "#2e5e4a",
+                "#6d3a5d",
+                "#37476e"
+              ]
             },
             "trust": [
               {
@@ -73,6 +79,10 @@
             "ctaSecondaire": {
               "label": "Discover the workshop",
               "href": "/prestations"
+            },
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/hero-atelier.jpg",
+              "alt": "Seamstress at work on her machine in the workshop"
             }
           }
         },
@@ -87,25 +97,41 @@
                 "nom": "Consulting & development",
                 "icone": "Lightbulb",
                 "description": "Frame your project before a single metre of fabric is cut: materials, cuts, feasibility.",
-                "href": "/conseil-developpement"
+                "href": "/conseil-developpement",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-conseil.jpg",
+                  "alt": "Thread spools and sewing scissors on a worktop"
+                }
               },
               {
                 "nom": "Pattern making & prototyping",
                 "icone": "Ruler",
                 "description": "Turn your designs into precise patterns, then into prototypes fitted and adjusted until you approve them.",
-                "href": "/patronage-prototypage"
+                "href": "/patronage-prototypage",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-patronage.jpg",
+                  "alt": "Pin placed in a knit fabric during a fitting"
+                }
               },
               {
                 "nom": "Garment production",
                 "icone": "Scissors",
                 "description": "Cutting, assembly and finishing in our Moroccan workshop, faithful to the prototype you signed off.",
-                "href": "/confection-production"
+                "href": "/confection-production",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-confection.jpg",
+                  "alt": "Seamstress assembling a garment on a sewing machine"
+                }
               },
               {
                 "nom": "Quality control & follow-up",
                 "icone": "BadgeCheck",
                 "description": "Transparent production tracking and pieces checked one by one before they head to your shelves.",
-                "href": "/controle-qualite"
+                "href": "/controle-qualite",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle.jpg",
+                  "alt": "Close-up of a sewing machine presser foot"
+                }
               }
             ],
             "cta": {
@@ -228,8 +254,13 @@
             "titre": "Services à la carte, or from idea to finished product",
             "intro": "Some clients hand us one precise step — a pattern, a run to produce. Others arrive with a sketch and leave with their collection. Both paths exist.",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Services" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services"
+              }
             ],
             "ctaPrimaire": {
               "label": "Get a free quote",
@@ -248,28 +279,44 @@
                 "icone": "Lightbulb",
                 "description": "The step that prevents false starts: choice of materials, feasibility of the cuts, framing of the development budget. You leave with a clear plan before committing to production.",
                 "priceHint": "Free quote",
-                "href": "/conseil-developpement"
+                "href": "/conseil-developpement",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-conseil.jpg",
+                  "alt": "Thread spools and sewing scissors on a worktop"
+                }
               },
               {
                 "nom": "Pattern making & prototyping",
                 "icone": "Ruler",
                 "description": "From sketch to graded pattern, then to a prototype fitted and reworked. Nothing goes into production until the sample piece satisfies you.",
                 "priceHint": "Free quote",
-                "href": "/patronage-prototypage"
+                "href": "/patronage-prototypage",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-patronage.jpg",
+                  "alt": "Pin placed in a knit fabric during a fitting"
+                }
               },
               {
                 "nom": "Garment production",
                 "icone": "Scissors",
                 "description": "Our Moroccan workshop cuts, assembles and finishes your pieces following the approved prototype — with reasonable prices made possible by this setup.",
                 "priceHint": "Free quote",
-                "href": "/confection-production"
+                "href": "/confection-production",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-confection.jpg",
+                  "alt": "Seamstress assembling a garment on a sewing machine"
+                }
               },
               {
                 "nom": "Quality control & follow-up",
                 "icone": "BadgeCheck",
                 "description": "Regular progress updates during the run, then a piece-by-piece check before shipping: you always know where your production stands.",
                 "priceHint": "Included in production",
-                "href": "/controle-qualite"
+                "href": "/controle-qualite",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle.jpg",
+                  "alt": "Close-up of a sewing machine presser foot"
+                }
               }
             ]
           }
@@ -324,9 +371,17 @@
             "titre": "Collection consulting and development",
             "intro": "Before cutting any fabric, you need to know exactly what to produce, in which material, and at what cost. That is what this step is for.",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Services", "href": "/prestations" },
-              { "label": "Consulting & development" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/prestations"
+              },
+              {
+                "label": "Consulting & development"
+              }
             ],
             "ctaPrimaire": {
               "label": "Frame my project",
@@ -424,9 +479,17 @@
             "titre": "Pattern making and prototyping",
             "intro": "The pattern is your garment's score: if it is right, everything that follows is too. If it is approximate, the whole run inherits it.",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Services", "href": "/prestations" },
-              { "label": "Pattern making & prototyping" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/prestations"
+              },
+              {
+                "label": "Pattern making & prototyping"
+              }
             ],
             "ctaPrimaire": {
               "label": "Start my pattern",
@@ -523,9 +586,17 @@
             "titre": "Garment production",
             "intro": "This is where your collection stops being a project: cutting, assembly, finishing, in our garment workshop in Morocco.",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Services", "href": "/prestations" },
-              { "label": "Garment production" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/prestations"
+              },
+              {
+                "label": "Garment production"
+              }
             ],
             "ctaPrimaire": {
               "label": "Price my production",
@@ -623,9 +694,17 @@
             "titre": "Quality control and production follow-up",
             "intro": "A good run is not observed on delivery: it is built during production. That is what follow-up is for — and the final check.",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Services", "href": "/prestations" },
-              { "label": "Quality control & follow-up" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/prestations"
+              },
+              {
+                "label": "Quality control & follow-up"
+              }
             ],
             "ctaPrimaire": {
               "label": "Secure my production",
@@ -716,8 +795,13 @@
             "titre": "Tell us about your project",
             "intro": "A few lines about your pieces, quantities and deadlines are enough to get started. The quote is free and without commitment.",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Contact" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Contact"
+              }
             ]
           }
         },

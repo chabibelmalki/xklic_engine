@@ -47,7 +47,10 @@
   },
   "i18n": {
     "default": "fr",
-    "languages": ["fr", "en"]
+    "languages": [
+      "fr",
+      "en"
+    ]
   },
   "pages": [
     {
@@ -63,7 +66,13 @@
             "headerOverlay": true,
             "nuancier": {
               "label": "Votre teinte —",
-              "couleurs": ["#0b5773", "#b0512e", "#2e5e4a", "#6d3a5d", "#37476e"]
+              "couleurs": [
+                "#0b5773",
+                "#b0512e",
+                "#2e5e4a",
+                "#6d3a5d",
+                "#37476e"
+              ]
             },
             "trust": [
               {
@@ -86,6 +95,10 @@
             "ctaSecondaire": {
               "label": "Découvrir l'atelier",
               "href": "/prestations"
+            },
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/hero-atelier.jpg",
+              "alt": "Couturière au travail sur sa machine dans l'atelier"
             }
           }
         },
@@ -100,25 +113,41 @@
                 "nom": "Conseil & développement",
                 "icone": "Lightbulb",
                 "description": "Cadrer votre projet avant d'engager le moindre mètre de tissu : matières, coupes, faisabilité.",
-                "href": "/conseil-developpement"
+                "href": "/conseil-developpement",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-conseil.jpg",
+                  "alt": "Bobines de fil et ciseaux de couture posés sur un plan de travail"
+                }
               },
               {
                 "nom": "Patronage & prototypage",
                 "icone": "Ruler",
                 "description": "Transformer vos modèles en patrons précis, puis en prototypes essayés et ajustés jusqu'à validation.",
-                "href": "/patronage-prototypage"
+                "href": "/patronage-prototypage",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-patronage.jpg",
+                  "alt": "Épingle piquée dans un tissu maille lors d'un essayage"
+                }
               },
               {
                 "nom": "Confection & production",
                 "icone": "Scissors",
                 "description": "Coupe, assemblage et finitions dans notre atelier au Maroc, fidèles au prototype que vous avez validé.",
-                "href": "/confection-production"
+                "href": "/confection-production",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-confection.jpg",
+                  "alt": "Couturière assemblant une pièce à la machine à coudre"
+                }
               },
               {
                 "nom": "Contrôle qualité & suivi",
                 "icone": "BadgeCheck",
                 "description": "Un suivi de production transparent et des pièces vérifiées avant de partir vers vos rayons.",
-                "href": "/controle-qualite"
+                "href": "/controle-qualite",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle.jpg",
+                  "alt": "Gros plan sur le pied presseur d'une machine à coudre"
+                }
               }
             ],
             "cta": {
@@ -241,8 +270,13 @@
             "titre": "Des prestations à la carte, ou de l'idée au produit fini",
             "intro": "Certains clients nous confient une étape précise — un patronage, une série à confectionner. D'autres arrivent avec un croquis et repartent avec leur collection. Les deux chemins existent.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations"
+              }
             ],
             "ctaPrimaire": {
               "label": "Demander un devis gratuit",
@@ -261,28 +295,44 @@
                 "icone": "Lightbulb",
                 "description": "L'étape qui évite les faux départs : choix des matières, faisabilité des coupes, cadrage du budget de développement. Vous repartez avec un plan clair avant d'engager la production.",
                 "priceHint": "Devis gratuit",
-                "href": "/conseil-developpement"
+                "href": "/conseil-developpement",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-conseil.jpg",
+                  "alt": "Bobines de fil et ciseaux de couture posés sur un plan de travail"
+                }
               },
               {
                 "nom": "Patronage & prototypage",
                 "icone": "Ruler",
                 "description": "Du croquis au patron gradé, puis au prototype essayé et retouché. Rien ne part en série tant que la pièce d'essai ne vous convient pas.",
                 "priceHint": "Devis gratuit",
-                "href": "/patronage-prototypage"
+                "href": "/patronage-prototypage",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-patronage.jpg",
+                  "alt": "Épingle piquée dans un tissu maille lors d'un essayage"
+                }
               },
               {
                 "nom": "Confection & production",
                 "icone": "Scissors",
                 "description": "Notre atelier au Maroc coupe, assemble et finit vos pièces en suivant le prototype validé — avec des prix raisonnables rendus possibles par cette organisation.",
                 "priceHint": "Devis gratuit",
-                "href": "/confection-production"
+                "href": "/confection-production",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-confection.jpg",
+                  "alt": "Couturière assemblant une pièce à la machine à coudre"
+                }
               },
               {
                 "nom": "Contrôle qualité & suivi",
                 "icone": "BadgeCheck",
                 "description": "Un point d'avancement régulier pendant la série, puis une vérification pièce par pièce avant expédition : vous savez toujours où en est votre production.",
                 "priceHint": "Inclus dans la production",
-                "href": "/controle-qualite"
+                "href": "/controle-qualite",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle.jpg",
+                  "alt": "Gros plan sur le pied presseur d'une machine à coudre"
+                }
               }
             ]
           }
@@ -337,9 +387,17 @@
             "titre": "Conseil et développement de collection",
             "intro": "Avant de couper le moindre tissu, il faut savoir exactement quoi produire, dans quelle matière, et à quel coût. C'est le travail de cette étape.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations", "href": "/prestations" },
-              { "label": "Conseil & développement" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/prestations"
+              },
+              {
+                "label": "Conseil & développement"
+              }
             ],
             "ctaPrimaire": {
               "label": "Cadrer mon projet",
@@ -437,9 +495,17 @@
             "titre": "Patronage et prototypage",
             "intro": "Le patron est la partition de votre vêtement : s'il est juste, tout ce qui suit l'est aussi. S'il est approximatif, la série entière en hérite.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations", "href": "/prestations" },
-              { "label": "Patronage & prototypage" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/prestations"
+              },
+              {
+                "label": "Patronage & prototypage"
+              }
             ],
             "ctaPrimaire": {
               "label": "Lancer mon patronage",
@@ -536,9 +602,17 @@
             "titre": "Confection et production",
             "intro": "C'est ici que votre collection cesse d'être un projet : coupe, assemblage, finitions, dans notre atelier de confection au Maroc.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations", "href": "/prestations" },
-              { "label": "Confection & production" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/prestations"
+              },
+              {
+                "label": "Confection & production"
+              }
             ],
             "ctaPrimaire": {
               "label": "Chiffrer ma production",
@@ -636,9 +710,17 @@
             "titre": "Contrôle qualité et suivi de production",
             "intro": "Une belle série ne se constate pas à la réception : elle se construit pendant la confection. C'est le rôle du suivi — et du contrôle final.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Prestations", "href": "/prestations" },
-              { "label": "Contrôle qualité & suivi" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/prestations"
+              },
+              {
+                "label": "Contrôle qualité & suivi"
+              }
             ],
             "ctaPrimaire": {
               "label": "Sécuriser ma production",
@@ -729,8 +811,13 @@
             "titre": "Parlez-nous de votre projet",
             "intro": "Quelques lignes sur vos pièces, vos quantités et vos délais suffisent pour démarrer. Le devis est gratuit et sans engagement.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Contact" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Contact"
+              }
             ]
           }
         },
