@@ -74,36 +74,39 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
       {/* Grain textile discret (utilitaire scopé au pack). */}
       <div aria-hidden className="fil-grain absolute inset-0 -z-0 text-white/60" />
 
-      {/* La couture : le fil relie « l'idée » (haut-gauche) au « produit fini »
-          (bas-droite), aiguille en bout de course. Se trace au chargement. */}
-      {split && (
-        <svg
-          aria-hidden
-          className="absolute inset-0 z-0 h-full w-full overflow-visible"
-          viewBox="0 0 1440 800"
-          preserveAspectRatio="none"
-        >
-          <path
-            className="fil-couture"
-            pathLength={1}
-            d="M330,180 C520,290 640,130 800,250 C940,355 940,470 1058,540"
-            fill="none"
-            stroke="color-mix(in srgb, var(--accent-50) 92%, #fff)"
-            strokeWidth="2.4"
-            strokeLinecap="round"
-            style={{ filter: "drop-shadow(0 0 5px rgba(255,250,238,.85)) drop-shadow(0 2px 5px rgba(0,0,0,.45))" }}
-          />
-          <g className="fil-aiguille" transform="translate(1046,528) rotate(32)">
-            <path d="M0,0 L52,10 L0,20 Q10,10 0,0 Z" fill="color-mix(in srgb, var(--accent-50) 92%, #fff)" />
-            <circle cx="42" cy="10" r="2.6" fill="var(--brand-800)" />
-          </g>
-        </svg>
-      )}
-
       <FilContainer wide className="relative z-10 flex flex-1 flex-col pb-10 pt-32 sm:pb-12 sm:pt-40">
-        {/* min-h mobile : garde les deux morceaux du titre aux extrêmes pour que
-            le fil ait de l'espace à traverser, même quand le bas est chargé. */}
-        <h1 className="flex min-h-[42svh] flex-1 flex-col justify-between font-display font-light sm:min-h-0">
+        {/* Zone du titre éclaté. Le fil est scopé à CETTE zone (pas au hero
+            entier) : l'aiguille finit SUR « au produit fini », quel que soit ce
+            qui occupe le bas du hero (boutons, nuancier, badges). min-h mobile :
+            garde les deux morceaux aux extrêmes pour que le fil traverse. */}
+        <div className="relative flex min-h-[42svh] flex-1 flex-col sm:min-h-0">
+          {/* La couture : le fil relie « l'idée » (haut-gauche) au « produit
+              fini » (bas-droite), aiguille en bout de course, tracée au
+              chargement. */}
+          {split && (
+            <svg
+              aria-hidden
+              className="absolute inset-0 z-0 h-full w-full overflow-visible"
+              viewBox="0 0 1440 600"
+              preserveAspectRatio="none"
+            >
+              <path
+                className="fil-couture"
+                pathLength={1}
+                d="M330,150 C520,260 640,110 800,230 C930,330 940,400 1040,468"
+                fill="none"
+                stroke="color-mix(in srgb, var(--accent-50) 92%, #fff)"
+                strokeWidth="2.4"
+                strokeLinecap="round"
+                style={{ filter: "drop-shadow(0 0 5px rgba(255,250,238,.85)) drop-shadow(0 2px 5px rgba(0,0,0,.45))" }}
+              />
+              <g className="fil-aiguille" transform="translate(1028,456) rotate(32)">
+                <path d="M0,0 L52,10 L0,20 Q10,10 0,0 Z" fill="color-mix(in srgb, var(--accent-50) 92%, #fff)" />
+                <circle cx="42" cy="10" r="2.6" fill="var(--brand-800)" />
+              </g>
+            </svg>
+          )}
+          <h1 className="flex flex-1 flex-col justify-between font-display font-light">
           <span className="fil-halo fil-descend relative self-start text-[clamp(2.9rem,7.4vw,6.5rem)] leading-[1.04] tracking-[-0.015em] text-white [text-shadow:0_2px_26px_rgba(0,0,0,.4)]">
             {c.titre}
           </span>
@@ -113,6 +116,7 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
             </span>
           )}
         </h1>
+        </div>
 
         {c.accroche && (
           <p className="fil-tarde mb-6 max-w-xl text-base leading-relaxed text-white/85 sm:text-lg">
