@@ -1,5 +1,6 @@
 {
   "slug": "beirouti",
+  "customDomains": ["beirouti.fr", "www.beirouti.fr"],
   "theme": "maison-ivoire",
   "stylePack": "aronde-atelier",
   "branding": {

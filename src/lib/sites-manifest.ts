@@ -34,6 +34,7 @@ export const SITE_SLUG_SET: ReadonlySet<string> = new Set(SITE_SLUGS);
 export const CUSTOM_DOMAINS: Readonly<Record<string, string>> = {
   "abproservice.be": "ab-pro-service",
   "adel-net.fr": "adelnet",
+  "beirouti.fr": "beirouti",
   "casacleanprovence.fr": "casa-clean-provence",
   "cbprestamultiservices.fr": "cbprestamultiservices",
   "cleanconfiancebymaman.fr": "clean-confiance-by-maman",
@@ -47,6 +48,7 @@ export const CUSTOM_DOMAINS: Readonly<Record<string, string>> = {
   "taxi-excellence.fr": "taxi-excellence",
   "www.abproservice.be": "ab-pro-service",
   "www.adel-net.fr": "adelnet",
+  "www.beirouti.fr": "beirouti",
   "www.casacleanprovence.fr": "casa-clean-provence",
   "www.cbprestamultiservices.fr": "cbprestamultiservices",
   "www.cleanconfiancebymaman.fr": "clean-confiance-by-maman",
@@ -67,6 +69,7 @@ export const CUSTOM_DOMAINS: Readonly<Record<string, string>> = {
 export const CANONICAL_DOMAIN: Readonly<Record<string, string>> = {
   "ab-pro-service": "abproservice.be",
   "adelnet": "adel-net.fr",
+  "beirouti": "beirouti.fr",
   "casa-clean-provence": "www.casacleanprovence.fr",
   "cbprestamultiservices": "cbprestamultiservices.fr",
   "clean-confiance-by-maman": "cleanconfiancebymaman.fr",
