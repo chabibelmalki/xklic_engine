@@ -29,7 +29,6 @@
     "ape": "4932Z",
     "apeLabel": "Transports de voyageurs par taxis",
     "dirigeant": "Abdelkader Benaissa",
-    "siege": "73 allée Kléber, 34000 Montpellier",
     "tva": {
       "regime": "reel",
       "numero": "FR — à compléter"
@@ -174,9 +173,9 @@
           "type": "zone",
           "mode": "carte",
           "content": {
-            "titre": "De Montpellier, on rayonne sur tout l'Hérault",
-            "intro": "Notre base est à Montpellier ; nos taxis couvrent la métropole et l'ensemble du département, à toute heure. Votre commune n'est pas listée ? Appelez : on trouve une solution.",
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=2.55%2C43.20%2C4.20%2C43.95&layer=mapnik&marker=43.6108%2C3.8767",
+            "titre": "On rayonne sur tout l'Hérault",
+            "intro": "Nos taxis couvrent Montpellier, la métropole et l'ensemble du département, à toute heure. Votre commune n'est pas listée ? Appelez : on trouve une solution.",
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=2.55%2C43.20%2C4.20%2C43.95&layer=mapnik",
             "zones": [
               {
                 "region": "Montpellier & métropole",
@@ -1436,15 +1435,15 @@
       "label": "Zone desservie",
       "meta": {
         "title": "Taxi Montpellier & Hérault — zone desservie",
-        "description": "Taxi basé à Montpellier, actif dans tout l'Hérault : métropole, littoral, Sète, Lunel, Béziers, cœur d'Hérault. Prise en charge 24h/24, trajets étudiés."
+        "description": "Taxi actif dans tout l'Hérault : Montpellier et sa métropole, littoral, Sète, Lunel, Béziers, cœur d'Hérault. Prise en charge 24h/24, trajets étudiés."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Zone d'intervention",
-            "titre": "Basés à Montpellier, présents dans tout l'Hérault",
-            "intro": "Notre point d'ancrage est Montpellier ; nos courses, elles, vont partout dans le département. Voici comment nous couvrons chaque secteur.",
+            "titre": "Présents dans tout l'Hérault",
+            "intro": "Nos courses vont partout dans le département, de Montpellier à l'arrière-pays. Voici comment nous couvrons chaque secteur.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1476,7 +1475,7 @@
           "content": {
             "titre": "Les communes desservies",
             "intro": "La liste n'est pas fermée : une adresse hors de ces communes, ou hors département, se règle d'un coup de téléphone — chaque demande est étudiée.",
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=2.55%2C43.20%2C4.20%2C43.95&layer=mapnik&marker=43.6108%2C3.8767",
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=2.55%2C43.20%2C4.20%2C43.95&layer=mapnik",
             "zones": [
               {
                 "region": "Montpellier & métropole",
@@ -1600,14 +1599,13 @@
             "telephone": "06-58-660-660",
             "whatsapp": "06-58-660-660",
             "telephoneHeader": "texte",
-            "adresse": "73 allée Kléber, 34000 Montpellier",
             "horaires": [
               {
                 "jour": "Lun – Dim",
                 "heures": "24h/24"
               }
             ],
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=3.83%2C43.59%2C3.93%2C43.63&layer=mapnik&marker=43.6108%2C3.8767",
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=2.55%2C43.20%2C4.20%2C43.95&layer=mapnik",
             "services": [
               "Trajet taxi",
               "Transfert gare / aéroport",
@@ -1691,7 +1689,7 @@
               },
               {
                 "question": "Qui est TAXI CONCEPT ?",
-                "reponse": "Une entreprise de taxi montpelliéraine (EURL, siège au 73 allée Kléber), dirigée par Abdelkader Benaissa, qui fait rouler berline, van 7 places et véhicule PMR dans tout l'Hérault."
+                "reponse": "Une entreprise de taxi (EURL) dirigée par Abdelkader Benaissa, qui fait rouler berline, van 7 places et véhicule PMR dans tout l'Hérault."
               }
             ]
           }
