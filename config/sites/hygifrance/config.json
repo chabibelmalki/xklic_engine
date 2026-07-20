@@ -58,6 +58,8 @@
             "titre": "L'entretien global de vos bâtiments",
             "titreAccent": "à Lille & dans le Nord",
             "accroche": "Copropriétés, bureaux, commerces, logements : un seul interlocuteur pour garder vos bâtiments propres, sains et accueillants, du sol au plafond.",
+            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/hero-banner.jpg", "alt": "Agent HYGIFRANCE nettoyant le hall lumineux d'un bâtiment" },
+            "imageMode": "bandeau",
             "showPhone": true,
             "ctaPrimaire": { "label": "Demander un devis gratuit", "href": "/devis" },
             "ctaSecondaire": { "label": "Voir nos prestations", "href": "/services" },
@@ -122,6 +124,14 @@
                 "description": "Injection-extraction en profondeur des canapés, tapis, matelas et sièges auto : taches, acariens et odeurs.",
                 "priceHint": "Sur devis",
                 "href": "/nettoyage-textile"
+              },
+              {
+                "nom": "Sinistre & situations extrêmes",
+                "icone": "ShieldAlert",
+                "description": "Dégât des eaux, incendie, inondation, humidité, recherche de fuite, nettoyage suite à décès — en lien avec votre assurance.",
+                "priceHint": "En lien avec votre assurance",
+                "badge": "Urgence",
+                "href": "/apres-sinistre"
               }
             ],
             "cta": { "label": "Voir toutes nos prestations", "href": "/services" }
@@ -143,23 +153,6 @@
             "imageRatio": "4/3",
             "imageCard": true,
             "ctaPrimaire": { "label": "Faire connaissance", "href": "/a-propos" }
-          }
-        },
-        {
-          "type": "contenu",
-          "content": {
-            "eyebrow": "Aussi disponible",
-            "titre": "Sinistre, humidité,",
-            "titreAccent": "situations difficiles",
-            "paragraphes": [
-              "Au-delà de l'entretien courant, nous intervenons dans l'urgence et sur les chantiers extrêmes : dégât des eaux, décontamination après incendie, sous-sols inondés, recherche de fuites, diagnostic d'humidité, nettoyage suite à décès. Nous travaillons volontiers avec les compagnies d'assurance.",
-              "Ces prestations demandent méthode, équipement adapté et beaucoup de tact. C'est un savoir-faire à part, que nous détaillons sur une page dédiée."
-            ],
-            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/aussi-disponible.jpg", "alt": "Intervention HYGIFRANCE après sinistre : assèchement et décontamination" },
-            "imagePosition": "left",
-            "imageRatio": "4/3",
-            "imageCard": true,
-            "ctaPrimaire": { "label": "Interventions après sinistre", "href": "/apres-sinistre" }
           }
         },
         {
@@ -185,8 +178,8 @@
             "ratio": "4/5",
             "avantApres": [
               {
-                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-avant.jpg", "alt": "Façade en pierre encrassée avant nettoyage" },
-                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-apres.jpg", "alt": "Façade en pierre ravivée après nettoyage" },
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-v2-avant.jpg", "alt": "Façade en pierre encrassée avant nettoyage" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-v2-apres.jpg", "alt": "Façade en pierre ravivée après nettoyage" },
                 "legende": "Façade ravivée."
               },
               {
@@ -259,7 +252,8 @@
               { "nom": "Nettoyage extérieur", "icone": "Building2", "description": "Toitures, gouttières, façades, bardages, terrasses, entrepôts, fin de chantier, fin de bail et déménagement.", "priceHint": "Sur devis", "href": "/nettoyage-exterieur" },
               { "nom": "Parties communes & copropriétés", "icone": "Building", "description": "Halls, cages d'escalier, ascenseurs, locaux et vitres, en passages réguliers pour les syndics.", "priceHint": "Sur devis", "href": "/parties-communes-coproprietes" },
               { "nom": "Bureaux, commerces & cabinets", "icone": "Briefcase", "description": "Bureaux, commerces, cabinets médicaux et écoles, entretenus en dehors ou pendant votre activité.", "priceHint": "Sur devis", "href": "/bureaux-commerces" },
-              { "nom": "Nettoyage textile", "icone": "Sofa", "description": "Canapés, tapis, matelas et sièges auto nettoyés en profondeur par injection-extraction.", "priceHint": "Sur devis", "href": "/nettoyage-textile" }
+              { "nom": "Nettoyage textile", "icone": "Sofa", "description": "Canapés, tapis, matelas et sièges auto nettoyés en profondeur par injection-extraction.", "priceHint": "Sur devis", "href": "/nettoyage-textile" },
+              { "nom": "Sinistre & situations extrêmes", "icone": "ShieldAlert", "description": "Dégât des eaux, incendie, inondation, humidité, recherche de fuite, nettoyage suite à décès — en lien avec votre assurance.", "priceHint": "En lien avec votre assurance", "badge": "Urgence", "href": "/apres-sinistre" }
             ]
           }
         },
@@ -351,11 +345,11 @@
             "eyebrow": "Avant / après",
             "titre": "Une remise en état complète",
             "intro": "Faites glisser le curseur au centre de l'image.",
-            "ratio": "4/5",
+            "ratio": "4/3",
             "avantApres": [
               {
-                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/diogene-avant.jpg", "alt": "Studio encombré et insalubre avant intervention" },
-                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/diogene-apres.jpg", "alt": "Studio débarrassé et remis en état après intervention" },
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/diogene-v2-avant.jpg", "alt": "Studio encombré et insalubre avant intervention" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/diogene-v2-apres.jpg", "alt": "Studio débarrassé et remis en état après intervention" },
                 "legende": "Débarras, nettoyage en profondeur et désinfection : le logement redevient habitable."
               }
             ]
@@ -456,8 +450,8 @@
                 "legende": "Démoussage de toiture : les tuiles retrouvent leur teinte."
               },
               {
-                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-avant.jpg", "alt": "Façade en pierre encrassée avant nettoyage" },
-                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-apres.jpg", "alt": "Façade en pierre ravivée après nettoyage" },
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-v2-avant.jpg", "alt": "Façade en pierre encrassée avant nettoyage" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-v2-apres.jpg", "alt": "Façade en pierre ravivée après nettoyage" },
                 "legende": "Façade ravivée, du soubassement aux balcons."
               }
             ]
@@ -550,11 +544,11 @@
             "eyebrow": "Avant / après",
             "titre": "Des communs remis à neuf",
             "intro": "Faites glisser le curseur au centre de l'image.",
-            "ratio": "4/5",
+            "ratio": "4/3",
             "avantApres": [
               {
-                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/parties-communes-avant.jpg", "alt": "Couloir d'immeuble encombré avant remise en état" },
-                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/parties-communes-apres.jpg", "alt": "Couloir d'immeuble propre après remise en état" },
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/couloir-avant.jpg", "alt": "Couloir d'immeuble encombré avant remise en état" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/couloir-apres.jpg", "alt": "Couloir d'immeuble propre après remise en état" },
                 "legende": "Couloir d'immeuble remis en état après travaux."
               }
             ]
@@ -823,7 +817,11 @@
               "Un sinistre laisse rarement le temps de la réflexion : l'eau s'infiltre, les odeurs s'installent, l'humidité fragilise les matériaux. Plus l'intervention est rapide, plus les dégâts sont limités. Nous nous organisons sans tarder pour assécher, nettoyer, décontaminer et assainir les lieux touchés.",
               "Nos prestations couvrent le nettoyage après dégât des eaux, la décontamination après incendie, la remise en état de sous-sols inondés, le diagnostic d'humidité, la recherche de fuites, le nettoyage en profondeur et le nettoyage suite à un décès. Chaque situation exige méthode, équipement spécifique et beaucoup de tact.",
               "Nous travaillons volontiers avec les compagnies d'assurance : devis détaillé, photos, suivi. Notre rôle est de vous décharger d'une épreuve en rendant le lieu de nouveau sain, sûr et habitable, dans le respect des personnes et des délais."
-            ]
+            ],
+            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/aussi-disponible.jpg", "alt": "Intervention HYGIFRANCE après sinistre : assèchement et décontamination" },
+            "imagePosition": "right",
+            "imageRatio": "4/3",
+            "imageCard": true
           }
         },
         {
@@ -887,7 +885,7 @@
           "content": {
             "eyebrow": "Avant / après",
             "titre": "Glissez pour comparer",
-            "ratio": "4/5",
+            "ratio": "1/1",
             "avantApres": [
               {
                 "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/toiture-avant.jpg", "alt": "Toiture couverte de mousse avant nettoyage" },
@@ -895,13 +893,13 @@
                 "legende": "Démoussage de toiture : les tuiles retrouvent leur teinte d'origine."
               },
               {
-                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-avant.jpg", "alt": "Façade en pierre encrassée avant nettoyage" },
-                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-apres.jpg", "alt": "Façade en pierre ravivée après nettoyage" },
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-v2-avant.jpg", "alt": "Façade en pierre encrassée avant nettoyage" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/facade-v2-apres.jpg", "alt": "Façade en pierre ravivée après nettoyage" },
                 "legende": "Façade ravivée, du soubassement aux balcons."
               },
               {
-                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/parties-communes-avant.jpg", "alt": "Couloir d'immeuble encombré avant remise en état" },
-                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/parties-communes-apres.jpg", "alt": "Couloir d'immeuble propre après remise en état" },
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/couloir-avant.jpg", "alt": "Couloir d'immeuble encombré avant remise en état" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/couloir-apres.jpg", "alt": "Couloir d'immeuble propre après remise en état" },
                 "legende": "Couloir d'immeuble remis en état après travaux."
               },
               {
@@ -910,8 +908,8 @@
                 "legende": "Canapé détaché et assaini par injection-extraction."
               },
               {
-                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/diogene-avant.jpg", "alt": "Studio encombré et insalubre avant intervention" },
-                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/diogene-apres.jpg", "alt": "Studio débarrassé et remis en état après intervention" },
+                "avant": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/diogene-v2-avant.jpg", "alt": "Studio encombré et insalubre avant intervention" },
+                "apres": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/diogene-v2-apres.jpg", "alt": "Studio débarrassé et remis en état après intervention" },
                 "legende": "Logement libéré, nettoyé et assaini."
               },
               {

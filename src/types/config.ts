@@ -315,6 +315,14 @@ export interface HeroContent {
    */
   imageWide?: boolean;
   /**
+   * Mode d'affichage de `image`, pour les familles qui le supportent (ex.
+   * `cascade`) : `"bandeau"` = photo en FOND plein-cadre du hero, sous un voile
+   * de marque, texte clair par-dessus (pas de carte/colonne). Absent/`"carte"` =
+   * comportement par défaut de la famille (colonne image ou carte). Ignoré par
+   * les familles qui ne le gèrent pas.
+   */
+  imageMode?: "carte" | "bandeau";
+  /**
    * En-tête IMMERSIF : quand true, le SiteHeader se pose EN OVERLAY par-dessus
    * ce hero plein cadre (transparent + texte clair en haut de page, solide au
    * scroll). OPT-IN explicite : sans ce flag le header reste solide et lisible,
