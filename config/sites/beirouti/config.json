@@ -1,6 +1,9 @@
 {
   "slug": "beirouti",
-  "customDomains": ["beirouti.fr", "www.beirouti.fr"],
+  "customDomains": [
+    "beirouti.fr",
+    "www.beirouti.fr"
+  ],
   "theme": "maison-ivoire",
   "stylePack": "aronde-atelier",
   "branding": {
@@ -91,6 +94,23 @@
               "label": "Découvrir nos prestations",
               "href": "/services"
             }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Le savoir-faire",
+            "titre": "Le souci du détail, à chaque pièce",
+            "paragraphes": [
+              "Un intérieur réussi tient à des détails qu'on ne remarque pas quand ils sont bien faits : un alignement parfait, un joint régulier, une teinte qui s'accorde au reste. C'est là que se joue le métier.",
+              "De la cuisine au dressing, du parquet aux fenêtres, Beirouti conçoit et pose sur mesure à Rive-de-Gier et alentour, avec des matériaux choisis pour tenir dans le temps et une finition vérifiée pièce par pièce."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/accueil-realisation.png",
+              "alt": "Intérieur en bois sur mesure — habillage, escalier et agencement réalisés par Menuiserie Beirouti"
+            },
+            "imageRatio": "3/2",
+            "imagePosition": "right"
           }
         },
         {
