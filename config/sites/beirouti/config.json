@@ -63,13 +63,7 @@
       "blocks": [
         {
           "type": "hero",
-          "variant": "plein",
           "content": {
-            "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/hero-atelier.png",
-              "alt": "Atelier de menuiserie Beirouti à Rive-de-Gier : établi, outils et bois massif"
-            },
-            "headerOverlay": true,
             "eyebrow": "Menuiserie · pose · cuisines",
             "titre": "Vos intérieurs, assemblés",
             "titreAccent": "au cordeau",

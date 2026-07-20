@@ -25,16 +25,9 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
   const showVilleSuffix = !c.titreAccent && !titleHasVille;
   const secondary = resolveHeroSecondary(config, c.ctaSecondaire);
   const trust = c.trust ?? [];
-  // Overlay : le hero remonte SOUS l'en-tête sticky (rendu transparent par la
-  // famille) quand une image de fond + headerOverlay sont fournis.
-  const overlay = !!c.image && c.headerOverlay === true;
 
   return (
-    <header
-      className={`relative isolate flex min-h-[88svh] items-center overflow-hidden bg-brand-800 text-white${
-        overlay ? " -mt-20 sm:-mt-24" : ""
-      }`}
-    >
+    <header className="relative isolate flex min-h-[88svh] items-center overflow-hidden bg-brand-800 text-white">
       {c.image && (
         <div className="absolute inset-0 -z-10">
           <Image
