@@ -1,18 +1,25 @@
-import { Menu, Phone } from "lucide-react";
+"use client";
+
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { Menu, X, Phone } from "lucide-react";
 import type { SiteConfig, ContactContent } from "@/types/config";
 import type { UIStrings } from "@/i18n/ui";
 import { Logo } from "@/components/layout/Logo";
 import { Button } from "@/components/ui/Button";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { telHref, cn } from "@/lib/utils";
-import { navPages, isMultiPage, resolvePages, findBlock } from "@/lib/pages";
+import { navPages, isMultiPage, resolvePages, getHomePage, findBlock } from "@/lib/pages";
 
 /**
- * HEADER aronde — SERVER pur : barre CLAIRE d'atelier (fond `bg`) posée au-dessus
- * du pan espresso du hero. Arête caramel + fine QUEUE D'ARONDE en pied (via
- * bordure pointillée-carrée), nav MAJUSCULE espacée avec marqueur CARRÉ caramel
- * sur la page active, menu mobile natif `<details>` (zéro JS). Props identiques à
- * `SiteHeader` (contrat de famille).
+ * HEADER aronde — CLIENT (bascule overlay). Barre CLAIRE d'atelier par défaut
+ * (fond `bg`, arête espresso, nav MAJUSCULE espacée avec marqueur CARRÉ caramel,
+ * téléphone en clair). Quand le 1er bloc de la page est un hero plein cadre avec
+ * image + `headerOverlay`, le header se pose EN OVERLAY par-dessus (transparent,
+ * voile sombre en tête, logo/nav/tél en BLANC) puis redevient solide au scroll.
+ * Le logo raster (noir sur transparent) étant illisible sur le bois sombre, on
+ * rend le NOM en wordmark blanc en mode overlay (comme le footer). Props
+ * identiques à `SiteHeader` (contrat de famille).
  */
 
 type NavItem = { href: string; label: string; active: boolean };
@@ -76,21 +83,72 @@ export function ArondeHeader({
   defaultLocale: string;
   strings: UIStrings;
 }) {
+  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
   const nav = buildNav(config, basePath, currentPath, strings.nav);
   const contact = findBlock<ContactContent>(config, "contact")?.content;
   const cta = ctaTarget(config, basePath, strings);
   const showLangs = locales.length > 1;
 
+  // Overlay opt-in : 1er bloc de la page courante = hero plein cadre avec image
+  // + headerOverlay. Détecté par page → n'affecte que la page concernée.
+  const pages = resolvePages(config);
+  const currentPage = pages.find((p) => p.path === currentPath) ?? getHomePage(config);
+  const firstBlock = currentPage.blocks?.[0] as
+    | { type?: string; content?: { image?: unknown; headerOverlay?: boolean } }
+    | undefined;
+  const immersive =
+    firstBlock?.type === "hero" &&
+    !!firstBlock.content?.image &&
+    firstBlock.content?.headerOverlay === true;
+  const overlay = immersive && !scrolled && !open;
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
   return (
-    <header className="sticky top-0 z-50 border-b-2 border-brand-800 bg-bg/95 backdrop-blur-sm supports-[backdrop-filter]:bg-bg/80">
+    <header
+      className={cn(
+        "sticky top-0 z-50 transition-all duration-300",
+        scrolled || open
+          ? "border-b-2 border-brand-800 bg-bg/95 backdrop-blur-sm supports-[backdrop-filter]:bg-bg/80"
+          : immersive
+            ? "bg-gradient-to-b from-ink/55 via-ink/20 to-transparent"
+            : "border-b-2 border-brand-800 bg-bg/95 backdrop-blur-sm supports-[backdrop-filter]:bg-bg/80",
+      )}
+    >
       <div className="relative mx-auto flex h-20 w-full max-w-7xl items-center justify-between gap-8 px-6 sm:h-24 sm:px-10">
-        {/* Mobile : logo centré (absolu) ; desktop : à gauche dans le flux. */}
-        <Logo
-          config={config}
-          href={basePath || "/"}
-          layout="stacked"
-          className="min-w-0 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:static lg:translate-x-0 lg:translate-y-0"
-        />
+        {/* Logo : image (noir) sur header clair ; wordmark blanc en overlay. */}
+        {overlay ? (
+          <Link
+            href={basePath || "/"}
+            aria-label={config.entreprise.nom}
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:static lg:translate-x-0 lg:translate-y-0"
+          >
+            <span className="font-display text-xl font-bold tracking-tight text-white">
+              {config.entreprise.nom}
+            </span>
+          </Link>
+        ) : (
+          <Logo
+            config={config}
+            href={basePath || "/"}
+            layout="stacked"
+            className="min-w-0 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 lg:static lg:translate-x-0 lg:translate-y-0"
+          />
+        )}
 
         <nav className="hidden shrink-0 items-center gap-x-6 lg:flex xl:gap-x-8">
           {nav.map((item) => (
@@ -100,9 +158,13 @@ export function ArondeHeader({
               aria-current={item.active ? "page" : undefined}
               className={cn(
                 "relative whitespace-nowrap py-1 text-xs font-semibold uppercase tracking-[0.16em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
-                item.active
-                  ? "text-brand-800 after:absolute after:inset-x-0 after:-bottom-0.5 after:mx-auto after:h-1.5 after:w-1.5 after:rounded-[1px] after:bg-accent-500"
-                  : "text-muted hover:text-brand-800",
+                overlay
+                  ? item.active
+                    ? "text-white after:absolute after:inset-x-0 after:-bottom-0.5 after:mx-auto after:h-1.5 after:w-1.5 after:rounded-[1px] after:bg-accent-500"
+                    : "text-white/80 hover:text-white"
+                  : item.active
+                    ? "text-brand-800 after:absolute after:inset-x-0 after:-bottom-0.5 after:mx-auto after:h-1.5 after:w-1.5 after:rounded-[1px] after:bg-accent-500"
+                    : "text-muted hover:text-brand-800",
               )}
             >
               {item.label}
@@ -123,9 +185,12 @@ export function ArondeHeader({
           {contact?.telephone && (
             <a
               href={telHref(contact.telephone)}
-              className="inline-flex items-center gap-2 whitespace-nowrap text-sm font-semibold text-brand-800 transition-colors hover:text-brand-600"
+              className={cn(
+                "inline-flex items-center gap-2 whitespace-nowrap text-sm font-semibold transition-colors",
+                overlay ? "text-white hover:text-white/80" : "text-brand-800 hover:text-brand-600",
+              )}
             >
-              <Phone className="size-4 text-brand-600" />
+              <Phone className={cn("size-4", overlay ? "text-white" : "text-brand-600")} />
               {contact.telephone}
             </a>
           )}
@@ -136,57 +201,68 @@ export function ArondeHeader({
           )}
         </div>
 
-        {/* Menu mobile : <details> natif — zéro JS, accessible clavier. */}
-        <details className="group ml-auto lg:hidden [&_.open-i]:block [&_.close-i]:hidden [&[open]_.open-i]:hidden [&[open]_.close-i]:block">
-          <summary
-            aria-label={strings.header.openMenu}
-            className="grid size-10 shrink-0 cursor-pointer list-none place-items-center text-brand-800 [&::-webkit-details-marker]:hidden"
-          >
-            <Menu className="open-i size-6" />
-            <span className="close-i hidden text-2xl leading-none" aria-hidden>
-              ×
-            </span>
-          </summary>
-          <div className="absolute inset-x-0 top-full border-b-2 border-brand-800 bg-bg">
-            <nav className="flex flex-col gap-1 px-6 py-4">
-              {nav.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  aria-current={item.active ? "page" : undefined}
-                  className={cn(
-                    "border-b border-brand-100/70 py-3 text-sm font-semibold uppercase tracking-[0.14em] last:border-0",
-                    item.active ? "text-brand-700" : "text-ink",
-                  )}
-                >
-                  {item.label}
-                </a>
-              ))}
-              <div className="mt-4 flex flex-col gap-2.5">
-                {showLangs && (
-                  <LanguageSwitcher
-                    locales={locales}
-                    current={locale}
-                    defaultLocale={defaultLocale}
-                    basePath={basePath}
-                    ariaLabel={strings.header.language}
-                    className="self-start"
-                  />
-                )}
-                {contact?.telephone && (
-                  <Button href={telHref(contact.telephone)} variant="outline" size="lg">
-                    <Phone className="size-4" /> {contact.telephone}
-                  </Button>
-                )}
-                {cta && (
-                  <Button href={cta.href} variant="accent" size="lg">
-                    {cta.label}
-                  </Button>
-                )}
-              </div>
-            </nav>
+        {/* Menu mobile : bouton + panneau piloté par état (React) — le header
+            redevient solide quand le menu est ouvert. */}
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-label={open ? strings.header.closeMenu : strings.header.openMenu}
+          aria-expanded={open}
+          aria-controls="aronde-mobile-menu"
+          className={cn(
+            "ml-auto grid size-10 shrink-0 place-items-center rounded-[3px] transition-colors lg:hidden",
+            overlay ? "text-white hover:bg-white/10" : "text-brand-800 hover:bg-surface-2",
+          )}
+        >
+          {open ? <X className="size-6" /> : <Menu className="size-6" />}
+        </button>
+      </div>
+
+      <div
+        id="aronde-mobile-menu"
+        className={cn(
+          "overflow-hidden border-brand-800 bg-bg transition-[max-height] duration-300 ease-in-out lg:hidden",
+          open ? "max-h-[42rem] border-b-2" : "max-h-0",
+        )}
+      >
+        <nav className="flex flex-col gap-1 px-6 py-4">
+          {nav.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              onClick={() => setOpen(false)}
+              aria-current={item.active ? "page" : undefined}
+              className={cn(
+                "border-b border-brand-100/70 py-3 text-sm font-semibold uppercase tracking-[0.14em] last:border-0",
+                item.active ? "text-brand-700" : "text-ink",
+              )}
+            >
+              {item.label}
+            </a>
+          ))}
+          <div className="mt-4 flex flex-col gap-2.5">
+            {showLangs && (
+              <LanguageSwitcher
+                locales={locales}
+                current={locale}
+                defaultLocale={defaultLocale}
+                basePath={basePath}
+                ariaLabel={strings.header.language}
+                className="self-start"
+              />
+            )}
+            {contact?.telephone && (
+              <Button href={telHref(contact.telephone)} variant="outline" size="lg">
+                <Phone className="size-4" /> {contact.telephone}
+              </Button>
+            )}
+            {cta && (
+              <Button href={cta.href} variant="accent" size="lg" onClick={() => setOpen(false)}>
+                {cta.label}
+              </Button>
+            )}
           </div>
-        </details>
+        </nav>
       </div>
     </header>
   );
