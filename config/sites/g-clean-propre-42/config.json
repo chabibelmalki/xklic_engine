@@ -1,18 +1,11 @@
 {
   "slug": "g-clean-propre-42",
   "customDomains": ["gcleanpropre42.fr", "www.gcleanpropre42.fr"],
-  "theme": "pop-violet",
-  "stylePack": "riso-atelier",
+  "theme": "fraicheur-teal",
+  "stylePack": "azulejo-faience",
   "branding": {
     "tagline": "Aide ménagère · Le Coteau",
     "logoAlt": "G Clean Propre 42 — aide ménagère au Coteau",
-    "colors": {
-      "brand": "#2a35cc",
-      "accent": "#ff48a6"
-    },
-    "logoTextHidden": true,
-    "logoScale": 1.3,
-    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/logo-55326c70.png",
     "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/icon.png"
   },
   "entreprise": {

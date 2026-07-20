@@ -20,6 +20,7 @@ import {
   IBM_Plex_Mono,
   Sora,
   Zilla_Slab,
+  DM_Serif_Display,
 } from "next/font/google";
 import "./globals.css";
 
@@ -162,6 +163,15 @@ const zillaSlab = Zilla_Slab({
   display: "swap",
   preload: false,
 });
+// Serif haute contraste « faïence » (titres display, 400 seul) — pack azulejo-faience (famille azulejo).
+const dmSerif = DM_Serif_Display({
+  variable: "--font-dm-serif",
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+  display: "swap",
+  preload: false,
+});
 
 const fontVars = [
   poppins,
@@ -184,6 +194,7 @@ const fontVars = [
   plexMono,
   sora,
   zillaSlab,
+  dmSerif,
 ]
   .map((f) => f.variable)
   .join(" ");

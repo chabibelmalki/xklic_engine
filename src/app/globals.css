@@ -956,6 +956,70 @@ input[type="range"] {
   background-size: 0.75rem 0.75rem;
 }
 
+/* ======================= Azulejo · Faïence céramique ======================= */
+[data-pack="azulejo-faience"] {
+  --pack-font-display: var(--font-dm-serif);
+  --pack-font-sans: var(--font-inter);
+  --display-tracking: 0em;
+  --display-case: none;
+
+  /* Émail : coins arrondis DOUX (ni carré comme riso, ni pilule comme clair-frais). */
+  --radius-btn: 0.5rem;
+  --radius-card: 0.75rem;
+  --radius-image: 0.75rem;
+  --border-width: 1px;
+  --radius: 0.75rem;
+
+  /* Ombre d'émail : profonde mais très diffuse, teintée marque — jamais dure. */
+  --shadow-card: 0 18px 40px -30px color-mix(in srgb, var(--brand-800) 55%, transparent);
+  --shadow-pop: 0 28px 60px -32px color-mix(in srgb, var(--brand-800) 50%, transparent);
+
+  --section-py: 6.5rem;
+  --content-max: 74rem;
+  --motion-distance: 14px;
+  --motion-duration: 0.6s;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+/* DM Serif Display n'existe qu'en 400 : forcer 600/700 déclencherait une fausse
+   graisse synthétisée (contours baveux). On fixe 400 partout — la graisse du
+   serif suffit à l'élégance. Scopé au pack (ne fuit pas ailleurs). */
+[data-pack="azulejo-faience"] h1.font-display,
+[data-pack="azulejo-faience"] h2.font-display,
+[data-pack="azulejo-faience"] h3.font-display,
+[data-pack="azulejo-faience"] .pack-heading {
+  font-weight: 400;
+}
+/* MUR DE CARREAUX — grille de joints fins. Prend la couleur du texte courant
+   (`text-white/10` sur un pan émaillé, `text-brand-500/[0.07]` sur du blanc
+   cassé). Décor pur, toujours posé sur un élément aria-hidden. */
+[data-pack="azulejo-faience"] .azulejo-wall {
+  background-image:
+    linear-gradient(to right, currentColor 1px, transparent 1px),
+    linear-gradient(to bottom, currentColor 1px, transparent 1px);
+  background-size: 2.75rem 2.75rem;
+}
+/* FRISE de faïence — la bande de losanges (motif azulejo) en encre d'accent sur
+   la marque : la bordure d'un panneau de carreaux. Signature du chrome. */
+[data-pack="azulejo-faience"] .azulejo-frieze {
+  background-color: var(--brand-600);
+  background-image:
+    linear-gradient(135deg, var(--accent-500) 25%, transparent 25%),
+    linear-gradient(225deg, var(--accent-500) 25%, transparent 25%),
+    linear-gradient(45deg, var(--accent-500) 25%, transparent 25%),
+    linear-gradient(315deg, var(--accent-500) 25%, transparent 25%);
+  background-position:
+    -0.5rem 0,
+    -0.5rem 0,
+    0 0,
+    0 0;
+  background-size: 1rem 1rem;
+}
+/* ÉMAIL — reflet clair diagonal en haut d'un carreau (le sheen d'une glaçure).
+   Décor pur : le blanc translucide est un reflet neutre, pas une couleur de marque. */
+[data-pack="azulejo-faience"] .azulejo-glaze {
+  background-image: linear-gradient(155deg, rgb(255 255 255 / 0.3), transparent 42%);
+}
+
 /* ======================= Maison · Premium élégant ======================= */
 [data-pack="maison-premium"] {
   --pack-font-display: var(--font-playfair);

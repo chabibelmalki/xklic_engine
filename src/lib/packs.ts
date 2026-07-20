@@ -67,6 +67,26 @@ export const PACKS: StylePack[] = [
     variants: {},
   },
   {
+    id: "azulejo-faience",
+    label: "Azulejo · Faïence céramique",
+    sectionStrategy: "surface-alt",
+    sectionDivider: "none",
+    ambiance:
+      "Mur de faïence : carreaux émaillés clairs, joints fins, frises de losanges (motif azulejo), serif haute (DM Serif Display). Domestique, artisanal, net — sans saturation.",
+    fonts: { display: "DM Serif Display", sans: "Inter" },
+    family: "azulejo",
+    variants: {
+      hero: ["carte", "split", "centre"],
+      services: ["grille-cartes", "grille-icones"],
+      etapes: ["cartes-numerotees", "timeline-verticale"],
+      faq: ["accordeon", "deux-colonnes"],
+      contact: ["split-form-carte", "coordonnees-cartes"],
+      cta: ["encadre", "bande"],
+      tarifs: ["grille", "liste-simple"],
+      galerie: ["grille", "masonry"],
+    },
+  },
+  {
     id: "maison-premium",
     label: "Maison · Premium élégant",
     sectionStrategy: "striped",
