@@ -90,6 +90,7 @@
         {
           "type": "services",
           "content": {
+            "neutralPhoto": true,
             "eyebrow": "Ce que l'atelier fait pour vous",
             "titre": "Quatre savoir-faire, un seul interlocuteur",
             "intro": "Vous pouvez nous confier une étape précise ou l'ensemble du développement : chaque prestation se suffit, toutes se cousent ensemble.",
@@ -272,6 +273,7 @@
         {
           "type": "services",
           "content": {
+            "neutralPhoto": true,
             "eyebrow": "Quatre savoir-faire",
             "titre": "Choisissez votre point d'entrée",
             "items": [

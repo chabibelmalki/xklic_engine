@@ -421,6 +421,13 @@ export interface ServicesContent {
    * teinte de marque unique. Opt-in par bloc — défaut `false` (rendu inchangé).
    */
   iconColors?: boolean;
+  /**
+   * Familles qui re-teintent les photos des cartes aux couleurs de la marque
+   * (ex. `fil`) : `true` NEUTRALISE la teinte (photos en niveaux de gris, sans
+   * voile de marque). Opt-in — défaut `false` (duotone de marque). Ignoré par
+   * les familles qui ne re-teintent pas. Voir aussi `HeroContent.neutralPhoto`.
+   */
+  neutralPhoto?: boolean;
 }
 
 // --- etapes ("comment ça marche") ---

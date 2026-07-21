@@ -15,7 +15,7 @@ import { FilHeading } from "../ui/Heading";
  * douce) qui se soulève au survol. Grille 1/2/3 colonnes selon le nombre.
  * Couleurs 100 % tokens.
  */
-function Carte({ item, basePath }: { item: ServiceItem; basePath: string }) {
+function Carte({ item, basePath, neutralPhoto }: { item: ServiceItem; basePath: string; neutralPhoto?: boolean }) {
   const inner = (
     <>
       {/* Épingle. */}
@@ -26,7 +26,8 @@ function Carte({ item, basePath }: { item: ServiceItem; basePath: string }) {
       {/* Liseré cousu. */}
       <span aria-hidden className="fil-seam absolute left-8 right-8 top-0 z-10 h-px text-accent-500/80" />
       {/* Photo « échantillon » : re-teintée par un voile de marque (cohérence
-          duotone avec le hero), remplace l'icône quand elle existe. */}
+          duotone avec le hero), remplace l'icône quand elle existe.
+          `neutralPhoto` retire la teinte (photo neutre en niveaux de gris). */}
       {item.image && (
         <div className="relative -mx-7 -mt-7 mb-6 h-44 overflow-hidden rounded-t-[var(--radius-card)]">
           <Image
@@ -35,9 +36,11 @@ function Carte({ item, basePath }: { item: ServiceItem; basePath: string }) {
             fill
             sizes="(max-width: 640px) 100vw, 400px"
             className="object-cover"
-            style={{ filter: "saturate(0.6)" }}
+            style={{ filter: neutralPhoto ? "grayscale(1)" : "saturate(0.6)" }}
           />
-          <span aria-hidden className="absolute inset-0 bg-brand-600 opacity-40 mix-blend-color" />
+          {!neutralPhoto && (
+            <span aria-hidden className="absolute inset-0 bg-brand-600 opacity-40 mix-blend-color" />
+          )}
           <span aria-hidden className="fil-seam absolute inset-x-0 bottom-0 h-px text-accent-500/80" />
         </div>
       )}
@@ -108,7 +111,7 @@ export function Services({ block, tone, basePath = "" }: BlockComponentProps<Ser
         <FilHeading kicker={c.eyebrow ?? "Savoir-faire"} title={c.titre ?? "Nos prestations"} lede={c.intro} />
         <div className={cn("mt-14 grid grid-cols-1 gap-7", cols)}>
           {c.items.map((item) => (
-            <Carte key={item.nom} item={item} basePath={basePath} />
+            <Carte key={item.nom} item={item} basePath={basePath} neutralPhoto={c.neutralPhoto} />
           ))}
         </div>
         {c.cta && (

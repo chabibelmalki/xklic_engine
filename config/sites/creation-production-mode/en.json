@@ -72,6 +72,7 @@
         {
           "type": "services",
           "content": {
+            "neutralPhoto": true,
             "eyebrow": "What the workshop does for you",
             "titre": "Four crafts, one single point of contact",
             "intro": "Entrust us with one precise step or the whole development: each service stands on its own, and they all stitch together.",
@@ -254,6 +255,7 @@
         {
           "type": "services",
           "content": {
+            "neutralPhoto": true,
             "eyebrow": "Four crafts",
             "titre": "Choose your entry point",
             "items": [
