@@ -495,23 +495,91 @@
           }
         },
         {
-          "type": "contenu",
+          "type": "tarifs",
+          "variant": "grille",
           "content": {
-            "titre": "Why we never launch a run without a prototype",
-            "paragraphes": [
-              "A garment is judged worn, not drawn. Between the sketch and the actual piece lie dozens of invisible decisions: the ease to give an armhole, the depth of a dart, how a collar holds depending on the chosen interfacing. Pattern making pins these decisions down in black and white — every piece of the garment drafted flat, with its seam allowances and assembly notches — then grading declines the design across your size range while preserving its proportions.",
-              "Then comes the prototype: a first piece properly made, which you try on, have tried on, photograph from every seam. This is the moment for alterations — raising a waist, lengthening a sleeve, reworking a drape. We do as many rounds as needed: a prototype adjusted three times always costs less than a run gone wrong once.",
-              "When the sample piece satisfies you, you formally approve it. It then becomes the contractual reference for production: every piece of the run will be compared to it at quality control. This approval is the hinge of our method — nothing goes into production without it."
+            "titre": "Our pattern-making rates",
+            "intro": "A clear rate based on the complexity of the design. Every pattern is made to measure, ready for production.",
+            "items": [
+              {
+                "nom": "Simple designs",
+                "prix": 60,
+                "inclus": [
+                  "Shirt",
+                  "Trousers",
+                  "Skirt",
+                  "Hoodie"
+                ]
+              },
+              {
+                "nom": "Structured designs",
+                "prix": 100,
+                "populaire": true,
+                "inclus": [
+                  "Coat / trench",
+                  "Fitted coat",
+                  "Blazer / tailored jacket",
+                  "Bustier dress"
+                ]
+              },
+              {
+                "nom": "Ornate designs",
+                "prix": 70,
+                "inclus": [
+                  "Balloon-sleeve dress",
+                  "Embroidered kimono",
+                  "Loose kaftan dress",
+                  "Traditional dress (Djellaba or Abaya)"
+                ]
+              }
             ],
-            "ctaPrimaire": {
-              "label": "Get a free quote",
+            "note": "Indicative rates — a precise quote is drawn up according to the complexity of each design.",
+            "cta": {
+              "label": "Request a quote",
               "href": "/contact"
-            },
-            "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-patronage.jpg",
-              "alt": "Pin placed in a knit fabric while adjusting a prototype"
-            },
-            "imagePosition": "left"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "eyebrow": "Included in every service",
+            "titre": "Pattern-making services",
+            "items": [
+              {
+                "nom": "Pattern creation and development",
+                "icone": "PenTool"
+              },
+              {
+                "nom": "Garment modelling",
+                "icone": "Shirt"
+              },
+              {
+                "nom": "Size grading",
+                "icone": "Ruler"
+              },
+              {
+                "nom": "Pattern adjustment and correction after fitting",
+                "icone": "PencilRuler"
+              },
+              {
+                "nom": "Marker making",
+                "icone": "LayoutGrid"
+              },
+              {
+                "nom": "Fabric consumption optimisation",
+                "icone": "Scissors"
+              },
+              {
+                "nom": "Production file preparation",
+                "icone": "FileCog"
+              },
+              {
+                "nom": "Confidentiality of your designs",
+                "icone": "Lock"
+              }
+            ]
           }
         },
         {

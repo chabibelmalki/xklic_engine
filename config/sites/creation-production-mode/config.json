@@ -511,23 +511,91 @@
           }
         },
         {
-          "type": "contenu",
+          "type": "tarifs",
+          "variant": "grille",
           "content": {
-            "titre": "Pourquoi nous ne lançons jamais une série sans prototype",
-            "paragraphes": [
-              "Un vêtement se juge porté, pas dessiné. Entre le croquis et la pièce réelle, il y a des dizaines de décisions invisibles : l'aisance à donner à une emmanchure, la profondeur d'une pince, la tenue d'un col selon le thermocollant choisi. Le patronage fixe ces décisions noir sur blanc — chaque pièce du vêtement tracée à plat, avec ses valeurs de couture et ses crans de montage —, puis la gradation décline le modèle dans vos différentes tailles en respectant ses proportions.",
-              "Vient ensuite le prototype : une première pièce confectionnée dans les règles, que vous essayez, faites essayer, photographiez sous toutes les coutures. C'est le moment des retouches — remonter une taille, allonger une manche, revoir un tombé. Nous refaisons autant d'allers-retours que nécessaire : un prototype ajusté trois fois coûte toujours moins cher qu'une série ratée une fois.",
-              "Quand la pièce d'essai vous convient, vous la validez formellement. Elle devient alors la référence contractuelle de la production : c'est à elle que chaque pièce de la série sera comparée au contrôle qualité. Cette validation est la charnière de notre méthode — rien ne part en confection sans elle."
+            "titre": "Nos tarifs de patronage",
+            "intro": "Un tarif clair selon la complexité du modèle. Chaque patron est réalisé sur-mesure, prêt pour la production.",
+            "items": [
+              {
+                "nom": "Modèles simples",
+                "prix": 60,
+                "inclus": [
+                  "Chemise",
+                  "Pantalon",
+                  "Jupe",
+                  "Sweat à capuche"
+                ]
+              },
+              {
+                "nom": "Modèles structurés",
+                "prix": 100,
+                "populaire": true,
+                "inclus": [
+                  "Manteau / trench",
+                  "Manteau cintré",
+                  "Blazer / veste tailleur",
+                  "Robe bustier"
+                ]
+              },
+              {
+                "nom": "Modèles ornés",
+                "prix": 70,
+                "inclus": [
+                  "Robe manches ballon",
+                  "Kimono brodé",
+                  "Robe kaftan ample",
+                  "Robe traditionnelle (Djellaba ou Abaya)"
+                ]
+              }
             ],
-            "ctaPrimaire": {
-              "label": "Demander un devis gratuit",
+            "note": "Tarifs indicatifs — un devis précis est établi selon la complexité de chaque modèle.",
+            "cta": {
+              "label": "Demander un devis",
               "href": "/contact"
-            },
-            "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-patronage.jpg",
-              "alt": "Épingle piquée dans un tissu maille pendant l'ajustement d'un prototype"
-            },
-            "imagePosition": "left"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "eyebrow": "Inclus dans chaque prestation",
+            "titre": "Services de patronage",
+            "items": [
+              {
+                "nom": "Création et développement de patrons",
+                "icone": "PenTool"
+              },
+              {
+                "nom": "Modélisation de vêtements",
+                "icone": "Shirt"
+              },
+              {
+                "nom": "Gradation des tailles",
+                "icone": "Ruler"
+              },
+              {
+                "nom": "Modification et correction des patrons après essayage",
+                "icone": "PencilRuler"
+              },
+              {
+                "nom": "Réalisation des placements (marker making)",
+                "icone": "LayoutGrid"
+              },
+              {
+                "nom": "Optimisation de la consommation de tissu",
+                "icone": "Scissors"
+              },
+              {
+                "nom": "Préparation des fichiers de production",
+                "icone": "FileCog"
+              },
+              {
+                "nom": "Respect de la confidentialité des modèles",
+                "icone": "Lock"
+              }
+            ]
           }
         },
         {
