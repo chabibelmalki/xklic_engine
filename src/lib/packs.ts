@@ -87,6 +87,26 @@ export const PACKS: StylePack[] = [
     },
   },
   {
+    id: "eclat-lumiere",
+    label: "Éclat · Minimalisme lumineux",
+    sectionStrategy: "striped",
+    sectionDivider: "none",
+    ambiance:
+      "Minimalisme lumineux : fonds blancs, beaucoup d'air, structure en filets fins (zéro aplat lourd ni ombre dure), signature « étincelle », serif éditoriale (Instrument Serif) + sans géométrique (Manrope). Simple, clair, propre — avec du caractère.",
+    fonts: { display: "Instrument Serif", sans: "Manrope" },
+    family: "eclat",
+    variants: {
+      hero: ["carte", "split", "centre"],
+      services: ["grille-cartes", "grille-icones"],
+      etapes: ["cartes-numerotees", "timeline-verticale"],
+      faq: ["accordeon", "deux-colonnes"],
+      contact: ["split-form-carte", "coordonnees-cartes"],
+      cta: ["encadre", "bande"],
+      tarifs: ["liste-simple", "grille"],
+      galerie: ["grille", "masonry"],
+    },
+  },
+  {
     id: "maison-premium",
     label: "Maison · Premium élégant",
     sectionStrategy: "striped",

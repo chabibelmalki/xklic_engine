@@ -21,6 +21,8 @@ import {
   Sora,
   Zilla_Slab,
   DM_Serif_Display,
+  Instrument_Serif,
+  Manrope,
 } from "next/font/google";
 import "./globals.css";
 
@@ -173,6 +175,24 @@ const dmSerif = DM_Serif_Display({
   preload: false,
 });
 
+// Serif éditoriale à caractère (titres display, 400 + italique) — pack eclat-lumiere (famille eclat).
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-instrument-serif",
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+  display: "swap",
+  preload: false,
+});
+// Sans géométrique net (texte + labels) — pack eclat-lumiere.
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+  preload: false,
+});
+
 const fontVars = [
   poppins,
   inter,
@@ -195,6 +215,8 @@ const fontVars = [
   sora,
   zillaSlab,
   dmSerif,
+  instrumentSerif,
+  manrope,
 ]
   .map((f) => f.variable)
   .join(" ");

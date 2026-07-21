@@ -26,11 +26,14 @@ export function Logo({
   layout?: "inline" | "stacked";
   className?: string;
 }) {
-  const { logo, logoAlt, logoTwoTone, logoScale, logoTextHidden, logoTaglineHidden } =
+  const { logo, logoLight, logoAlt, logoTwoTone, logoScale, logoTextHidden, logoTaglineHidden } =
     config.branding;
   // Tagline masquable indépendamment (garder le nom, retirer la tagline).
   const tagline = logoTaglineHidden ? undefined : config.branding.tagline;
   const light = variant === "light";
+  // Sur fond clair/sombre (footer, header en overlay), on préfère la variante
+  // CLAIRE du logo si elle existe — un logo de couleur y manquerait de contraste.
+  const logoSrc = light && logoLight ? logoLight : logo;
   const stacked = layout === "stacked";
 
   // Échelle du logo PROPRE AU SITE (défaut 1 = rendu historique h-9/max-w-160).
@@ -60,11 +63,11 @@ export function Logo({
   // dans une pastille ronde blanche (opt-in `branding.logoDarkBadge`).
   const darkBadge = light && !!logo && !!config.branding.logoDarkBadge;
 
-  const emblem = logo ? (
+  const emblem = logoSrc ? (
     darkBadge ? (
       <span className="grid size-12 shrink-0 place-items-center rounded-full bg-white shadow-md ring-1 ring-black/5">
         <Image
-          src={logo}
+          src={logoSrc}
           alt={logoAlt ?? config.entreprise.nom}
           width={160}
           height={160}
@@ -74,7 +77,7 @@ export function Logo({
       </span>
     ) : (
       <Image
-        src={logo}
+        src={logoSrc}
         alt={logoAlt ?? config.entreprise.nom}
         width={160}
         height={44}
@@ -94,7 +97,7 @@ export function Logo({
 
   // Logo image contenant DÉJÀ le nom : n'afficher que l'emblème (anti-redondance
   // + garde-fou anti-débordement horizontal sur mobile). Reste cliquable.
-  if (logoTextHidden && logo) {
+  if (logoTextHidden && logoSrc) {
     return (
       <Link
         href={href}

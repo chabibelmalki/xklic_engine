@@ -11,6 +11,7 @@ import { CASCADE } from "./cascade";
 import { ARONDE } from "./aronde";
 import { FIL } from "./fil";
 import { AZULEJO } from "./azulejo";
+import { ECLAT } from "./eclat";
 import type { FamilyBlock, TemplateFamily } from "./types";
 
 export type { TemplateFamily, FamilyChrome, FamilyBlock } from "./types";
@@ -33,6 +34,7 @@ const FAMILIES: Record<string, TemplateFamily> = {
   aronde: ARONDE,
   fil: FIL,
   azulejo: AZULEJO,
+  eclat: ECLAT,
 };
 
 export const DEFAULT_FAMILY = CLASSIC;

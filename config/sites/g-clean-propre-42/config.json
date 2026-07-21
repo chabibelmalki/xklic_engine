@@ -1,12 +1,19 @@
 {
   "slug": "g-clean-propre-42",
-  "customDomains": ["gcleanpropre42.fr", "www.gcleanpropre42.fr"],
+  "customDomains": [
+    "gcleanpropre42.fr",
+    "www.gcleanpropre42.fr"
+  ],
   "theme": "fraicheur-teal",
-  "stylePack": "azulejo-faience",
+  "stylePack": "eclat-lumiere",
   "branding": {
     "tagline": "Aide ménagère · Le Coteau",
     "logoAlt": "G Clean Propre 42 — aide ménagère au Coteau",
-    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/icon-azulejo.png"
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/icon-gpt.png",
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/logo-gpt.png",
+    "logoTextHidden": true,
+    "logoScale": 1.4,
+    "logoLight": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/logo-gpt-white.png"
   },
   "entreprise": {
     "nom": "G Clean Propre 42",
@@ -49,7 +56,7 @@
       "blocks": [
         {
           "type": "hero",
-          "variant": "carte",
+          "variant": "fondu",
           "content": {
             "eyebrow": "Aide ménagère · Le Coteau · Loire",
             "titre": "Une maison impeccable au Coteau,",
@@ -93,9 +100,10 @@
               "href": "/services"
             },
             "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/hero-accueil.jpg",
-              "alt": "Produits d'entretien ménager posés à plat"
-            }
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/hero-menage.jpg",
+              "alt": "Intervenante en plein ménage dans un séjour lumineux"
+            },
+            "headerOverlay": true
           }
         },
         {
@@ -288,7 +296,8 @@
               "Charlieu",
               "Autre commune"
             ],
-            "confidentialiteHref": "/confidentialite"
+            "confidentialiteHref": "/confidentialite",
+            "whatsapp": "06 04 46 82 50"
           }
         }
       ]

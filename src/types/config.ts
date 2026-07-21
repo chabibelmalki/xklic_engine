@@ -201,6 +201,12 @@ export interface Branding {
   /** Texte alternatif du logo (sinon le nom de l'entreprise). */
   logoAlt?: string;
   /**
+   * Variante CLAIRE du logo (généralement une version blanche), utilisée quand le
+   * header est en OVERLAY transparent au-dessus d'un hero plein cadre — un logo
+   * de couleur y manquerait de contraste. Sinon le `logo` normal est utilisé.
+   */
+  logoLight?: string;
+  /**
    * Affiche le nom en wordmark DEUX TONS (couleurs de marque exactes) : 1er mot
    * dans `first`, le reste dans `rest`. Reproduit un logotype type « SANAD CLEAN ».
    * N'affecte que le rendu clair (header) ; le footer sombre garde le blanc.

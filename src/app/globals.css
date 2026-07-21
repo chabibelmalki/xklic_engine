@@ -1020,6 +1020,64 @@ input[type="range"] {
   background-image: linear-gradient(155deg, rgb(255 255 255 / 0.3), transparent 42%);
 }
 
+/* ======================= Éclat · Minimalisme lumineux ======================= */
+[data-pack="eclat-lumiere"] {
+  --pack-font-display: var(--font-instrument-serif);
+  --pack-font-sans: var(--font-manrope);
+  --display-tracking: -0.01em;
+  --display-case: none;
+
+  /* Coins doux ; la profondeur vient du VIDE et des filets, pas des ombres. */
+  --radius-btn: 0.6rem;
+  --radius-card: 1rem;
+  --radius-image: 1rem;
+  --border-width: 1px;
+  --radius: 1rem;
+
+  /* Ombres neutralisées : minimalisme lumineux. Seul le panneau de prix garde un
+     halo très diffus (--shadow-pop) pour se détacher ; tout le reste est en filet. */
+  --shadow-card: 0 0 0 0 rgb(0 0 0 / 0);
+  --shadow-pop: 0 30px 70px -46px color-mix(in srgb, var(--ink) 34%, transparent);
+
+  --section-py: 7.5rem;
+  --content-max: 72rem;
+  --motion-distance: 12px;
+  --motion-duration: 0.7s;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+/* Instrument Serif n'existe qu'en 400 : forcer 600/700 déclencherait une fausse
+   graisse synthétisée (contours baveux). On fixe 400 — la serif porte l'élégance.
+   Scopé au pack (ne fuit pas ailleurs). */
+[data-pack="eclat-lumiere"] h1.font-display,
+[data-pack="eclat-lumiere"] h2.font-display,
+[data-pack="eclat-lumiere"] h3.font-display,
+[data-pack="eclat-lumiere"] .pack-heading {
+  font-weight: 400;
+}
+/* SCINTILLEMENT de l'étincelle-reflet : très lent, décoratif, DÉBRAYABLE. N'anime
+   qu'opacity/transform (60 fps). Keyframe préfixée + scopée au pack. */
+@keyframes eclat-twinkle {
+  0%,
+  100% {
+    opacity: 0.85;
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05) rotate(6deg);
+  }
+}
+[data-pack="eclat-lumiere"] .eclat-twinkle {
+  transform-origin: center;
+  animation: eclat-twinkle 4s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-pack="eclat-lumiere"] .eclat-twinkle {
+    animation: none;
+  }
+}
+
+
 /* ======================= Maison · Premium élégant ======================= */
 [data-pack="maison-premium"] {
   --pack-font-display: var(--font-playfair);
