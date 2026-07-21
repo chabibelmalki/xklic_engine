@@ -1055,6 +1055,134 @@
       ]
     },
     {
+      "slug": "tarifs",
+      "label": "Tarifs",
+      "meta": {
+        "title": "Tarifs patronage & prototypage — atelier à Nîmes",
+        "description": "Grille tarifaire du patronage : modèles simples 60 €, structurés 100 €, ornés 70 €. Services inclus et devis sur mesure. Atelier à Nîmes."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Tarifs",
+            "titre": "Nos tarifs de patronage",
+            "intro": "Un tarif clair selon la complexité du modèle. Chaque patron est réalisé sur-mesure, prêt pour la production.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Tarifs"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "tarifs",
+          "variant": "grille",
+          "content": {
+            "items": [
+              {
+                "nom": "Modèles simples",
+                "prix": 60,
+                "inclus": [
+                  "Chemise",
+                  "Pantalon",
+                  "Jupe",
+                  "Sweat à capuche"
+                ]
+              },
+              {
+                "nom": "Modèles structurés",
+                "prix": 100,
+                "populaire": true,
+                "inclus": [
+                  "Manteau / trench",
+                  "Manteau cintré",
+                  "Blazer / veste tailleur",
+                  "Robe bustier"
+                ]
+              },
+              {
+                "nom": "Modèles ornés",
+                "prix": 70,
+                "inclus": [
+                  "Robe manches ballon",
+                  "Kimono brodé",
+                  "Robe kaftan ample",
+                  "Robe traditionnelle (Djellaba ou Abaya)"
+                ]
+              }
+            ],
+            "note": "Tarifs indicatifs — un devis précis est établi selon la complexité de chaque modèle.",
+            "cta": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "eyebrow": "Inclus dans chaque prestation",
+            "titre": "Services de patronage",
+            "items": [
+              {
+                "nom": "Création et développement de patrons",
+                "icone": "PenTool"
+              },
+              {
+                "nom": "Modélisation de vêtements",
+                "icone": "Shirt"
+              },
+              {
+                "nom": "Gradation des tailles",
+                "icone": "Ruler"
+              },
+              {
+                "nom": "Modification et correction des patrons après essayage",
+                "icone": "PencilRuler"
+              },
+              {
+                "nom": "Réalisation des placements (marker making)",
+                "icone": "LayoutGrid"
+              },
+              {
+                "nom": "Optimisation de la consommation de tissu",
+                "icone": "Scissors"
+              },
+              {
+                "nom": "Préparation des fichiers de production",
+                "icone": "FileCog"
+              },
+              {
+                "nom": "Respect de la confidentialité des modèles",
+                "icone": "Lock"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un modèle à chiffrer ?",
+            "sousTitre": "Envoyez-nous votre croquis ou votre cahier des charges : on établit un devis précis selon la complexité.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
       "slug": "contact",
       "label": "Contact",
       "meta": {

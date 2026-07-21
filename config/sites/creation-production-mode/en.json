@@ -1037,6 +1037,134 @@
       ]
     },
     {
+      "slug": "tarifs",
+      "label": "Pricing",
+      "meta": {
+        "title": "Pattern-making pricing — studio in Nîmes",
+        "description": "Pattern-making price grid: simple designs €60, structured €100, ornate €70. Included services and bespoke quotes. Studio in Nîmes."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Pricing",
+            "titre": "Our pattern-making rates",
+            "intro": "A clear rate based on the complexity of the design. Every pattern is made to measure, ready for production.",
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Pricing"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "tarifs",
+          "variant": "grille",
+          "content": {
+            "items": [
+              {
+                "nom": "Simple designs",
+                "prix": 60,
+                "inclus": [
+                  "Shirt",
+                  "Trousers",
+                  "Skirt",
+                  "Hoodie"
+                ]
+              },
+              {
+                "nom": "Structured designs",
+                "prix": 100,
+                "populaire": true,
+                "inclus": [
+                  "Coat / trench",
+                  "Fitted coat",
+                  "Blazer / tailored jacket",
+                  "Bustier dress"
+                ]
+              },
+              {
+                "nom": "Ornate designs",
+                "prix": 70,
+                "inclus": [
+                  "Balloon-sleeve dress",
+                  "Embroidered kimono",
+                  "Loose kaftan dress",
+                  "Traditional dress (Djellaba or Abaya)"
+                ]
+              }
+            ],
+            "note": "Indicative rates — a precise quote is drawn up according to the complexity of each design.",
+            "cta": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "eyebrow": "Included in every service",
+            "titre": "Pattern-making services",
+            "items": [
+              {
+                "nom": "Pattern creation and development",
+                "icone": "PenTool"
+              },
+              {
+                "nom": "Garment modelling",
+                "icone": "Shirt"
+              },
+              {
+                "nom": "Size grading",
+                "icone": "Ruler"
+              },
+              {
+                "nom": "Pattern adjustment and correction after fitting",
+                "icone": "PencilRuler"
+              },
+              {
+                "nom": "Marker making",
+                "icone": "LayoutGrid"
+              },
+              {
+                "nom": "Fabric consumption optimisation",
+                "icone": "Scissors"
+              },
+              {
+                "nom": "Production file preparation",
+                "icone": "FileCog"
+              },
+              {
+                "nom": "Confidentiality of your designs",
+                "icone": "Lock"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "A design to price up?",
+            "sousTitre": "Send us your sketch or your specifications: we'll draw up a precise quote based on complexity.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
       "slug": "contact",
       "label": "Contact",
       "meta": {
