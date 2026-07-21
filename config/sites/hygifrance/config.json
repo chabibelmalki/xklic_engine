@@ -5075,7 +5075,7 @@
         },
         {
           "type": "services",
-          "variant": "grille-icones",
+          "variant": "grille-cartes",
           "content": {
             "eyebrow": "Nos interventions",
             "titre": "Toutes vos surfaces extérieures",
@@ -5083,52 +5083,92 @@
               {
                 "nom": "Toitures & gouttières",
                 "description": "Démoussage de toiture et curage des gouttières.",
-                "icone": "Home"
+                "href": "/nettoyage-toiture-gouttieres",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-exterieurs.jpg",
+                  "alt": "Démoussage de toiture et curage de gouttière"
+                }
               },
               {
                 "nom": "Façades & bardages",
                 "description": "Décrassage et remise en propreté des façades et bardages.",
-                "icone": "Building2"
+                "href": "/nettoyage-facades-bardages",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-batiments.jpg",
+                  "alt": "Nettoyage d'une façade et d'un bardage"
+                }
               },
               {
                 "nom": "Ravalement",
                 "description": "Nettoyage en profondeur avant ou à la place d'un ravalement.",
-                "icone": "PaintRoller"
+                "href": "/nettoyage-avant-ravalement",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-mur.jpg",
+                  "alt": "Préparation d'une façade avant ravalement"
+                }
               },
               {
                 "nom": "Graffitis",
                 "description": "Effacement des tags et protection anti-graffiti.",
-                "icone": "SprayCan"
+                "href": "/nettoyage-graffitis",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-graffiti.jpg",
+                  "alt": "Mur couvert de graffitis à effacer"
+                }
               },
               {
                 "nom": "Débroussaillage",
                 "description": "Nettoyage et débroussaillage des abords et terrains.",
-                "icone": "Scissors"
+                "href": "/debroussaillage",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-menage.jpg",
+                  "alt": "Débroussaillage et nettoyage d'un terrain"
+                }
               },
               {
                 "nom": "Panneaux solaires",
                 "description": "Nettoyage des panneaux pour préserver leur rendement.",
-                "icone": "Sun"
+                "href": "/nettoyage-panneaux-solaires",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/ext-solaire.jpg",
+                  "alt": "Nettoyage de panneaux solaires sur un toit"
+                }
               },
               {
                 "nom": "Piscines & abris",
                 "description": "Nettoyage des piscines, margelles et abris.",
-                "icone": "Waves"
+                "href": "/nettoyage-piscines-abris",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-exterieurs.jpg",
+                  "alt": "Nettoyage d'une piscine et de ses abords"
+                }
               },
               {
                 "nom": "Terrains & gravats",
                 "description": "Nettoyage de terrains et évacuation de gravats.",
-                "icone": "Truck"
+                "href": "/nettoyage-terrains-gravats",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/deb-storage.jpg",
+                  "alt": "Évacuation de gravats sur un terrain"
+                }
               },
               {
                 "nom": "Murs extérieurs",
                 "description": "Décrassage des murs, clôtures et surfaces extérieures.",
-                "icone": "BrickWall"
+                "href": "/nettoyage-murs-exterieurs",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-graffiti.jpg",
+                  "alt": "Nettoyage d'un mur extérieur encrassé"
+                }
               },
               {
                 "nom": "Ouvrages & monuments",
                 "description": "Nettoyage soigné des ouvrages et bâtiments anciens.",
-                "icone": "Landmark"
+                "href": "/nettoyage-ouvrages-monuments",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-batiments.jpg",
+                  "alt": "Nettoyage soigné d'un monument ancien"
+                }
               }
             ]
           }
@@ -5157,6 +5197,676 @@
           "type": "cta",
           "content": {
             "titre": "Façade grise, toiture envahie de mousse ?",
+            "sousTitre": "Envoyez-nous une photo ou l'adresse : on évalue et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-toiture-gouttieres",
+      "label": "Toitures & gouttières",
+      "navHidden": true,
+      "meta": {
+        "title": "Démoussage toiture & gouttières à Lille",
+        "description": "Démoussage de toiture et curage de gouttières à Lille et dans le Nord : retrait des mousses, traitement anti-mousse, travail en hauteur. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Extérieurs",
+            "titre": "Démoussage de toiture et gouttières à Lille",
+            "intro": "Toiture envahie, gouttières bouchées : on démousse et on cure pour protéger le bâtiment.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Extérieurs",
+                "href": "/nettoyage-exterieur"
+              },
+              {
+                "label": "Toitures & gouttières"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Protéger la toiture, évacuer l'eau",
+            "paragraphes": [
+              "Une toiture envahie par la mousse et des gouttières bouchées finissent par abîmer le bâtiment : infiltrations, débordements, dégradation des tuiles. Nous intervenons à Lille et dans le Nord pour démousser et curer.",
+              "Nettoyage, retrait des mousses, curage des gouttières et, si vous le souhaitez, traitement anti-mousse pour espacer les interventions. Le tout avec le matériel de sécurité adapté au travail en hauteur."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-exterieurs.jpg",
+              "alt": "Démoussage de toiture et curage de gouttière"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une surface extérieure à traiter ?",
+            "sousTitre": "Envoyez-nous une photo ou l'adresse : on évalue et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-facades-bardages",
+      "label": "Façades & bardages",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de façades & bardages à Lille",
+        "description": "Nettoyage de façades et bardages à Lille et dans le Nord : enduit, béton, brique, métal. Décrassage adapté au support, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Extérieurs",
+            "titre": "Nettoyage de façades et bardages à Lille",
+            "intro": "Façade grise, bardage encrassé : on redonne de la propreté sans abîmer le support.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Extérieurs",
+                "href": "/nettoyage-exterieur"
+              },
+              {
+                "label": "Façades & bardages"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Une façade qui rajeunit le bâtiment",
+            "paragraphes": [
+              "Une façade encaisse pluie, pollution et mousses : elle grise, se salit et vieillit le bâtiment. Nous la nettoyons à Lille et dans le Nord, sur enduit, béton, brique ou bardage métallique.",
+              "Nous choisissons produit et pression selon le support, pour décrasser sans l'abîmer. Le résultat se voit tout de suite et protège la façade pour les saisons suivantes."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-batiments.jpg",
+              "alt": "Nettoyage d'une façade et d'un bardage"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une surface extérieure à traiter ?",
+            "sousTitre": "Envoyez-nous une photo ou l'adresse : on évalue et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-avant-ravalement",
+      "label": "Ravalement",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage avant ravalement à Lille",
+        "description": "Nettoyage de façade avant ravalement à Lille et dans le Nord : retrait des mousses et salissures, préparation ou alternative au ravalement. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Extérieurs",
+            "titre": "Nettoyage avant ravalement à Lille",
+            "intro": "Avant de ravaler, une façade doit être propre. Parfois, un bon nettoyage suffit même à l'éviter.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Extérieurs",
+                "href": "/nettoyage-exterieur"
+              },
+              {
+                "label": "Ravalement"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Préparer ou éviter le ravalement",
+            "paragraphes": [
+              "Un ravalement commence toujours par une façade propre : le nettoyage retire mousses, salissures et parties non adhérentes pour une bonne accroche des traitements. Nous préparons vos façades à Lille et dans le Nord.",
+              "Souvent, un nettoyage soigné redonne à lui seul un vrai coup de neuf et permet de repousser un ravalement coûteux. Nous vous conseillons honnêtement après une visite."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-mur.jpg",
+              "alt": "Préparation d'une façade avant ravalement"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une surface extérieure à traiter ?",
+            "sousTitre": "Envoyez-nous une photo ou l'adresse : on évalue et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-graffitis",
+      "label": "Graffitis",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de graffitis à Lille — anti-tags",
+        "description": "Nettoyage de graffitis à Lille et dans le Nord : retrait des tags sur façades et murs, protection anti-graffiti. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Extérieurs",
+            "titre": "Nettoyage de graffitis à Lille",
+            "intro": "Tags sur façade ou mur ? On les efface et on peut protéger pour la suite.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Extérieurs",
+                "href": "/nettoyage-exterieur"
+              },
+              {
+                "label": "Graffitis"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Effacer les tags, protéger la surface",
+            "paragraphes": [
+              "Un tag sur une façade ou un mur nuit à l'image d'un bâtiment ou d'un commerce, et invite souvent d'autres dégradations. Nous les effaçons à Lille et dans le Nord, sur la plupart des supports.",
+              "Retrait des graffitis avec la méthode adaptée à la surface, puis, sur demande, application d'une protection anti-graffiti qui facilitera les prochains nettoyages."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-graffiti.jpg",
+              "alt": "Mur couvert de graffitis à effacer"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une surface extérieure à traiter ?",
+            "sousTitre": "Envoyez-nous une photo ou l'adresse : on évalue et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "debroussaillage",
+      "label": "Débroussaillage",
+      "navHidden": true,
+      "meta": {
+        "title": "Débroussaillage à Lille — terrains & abords",
+        "description": "Débroussaillage et nettoyage de terrains à Lille et dans le Nord : végétation, déchets, ronces, évacuation. Terrain dégagé, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Extérieurs",
+            "titre": "Débroussaillage à Lille",
+            "intro": "Terrain, abords, friche : on débroussaille et on nettoie pour dégager l'espace.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Extérieurs",
+                "href": "/nettoyage-exterieur"
+              },
+              {
+                "label": "Débroussaillage"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Dégager et assainir le terrain",
+            "paragraphes": [
+              "Un terrain ou des abords laissés à l'abandon deviennent vite une friche : végétation envahissante, déchets, ronces. Nous débroussaillons et nettoyons à Lille et dans le Nord.",
+              "Débroussaillage, ramassage, évacuation des déchets verts : nous rendons le terrain dégagé et net, avant une vente, des travaux ou simplement pour l'entretenir."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-menage.jpg",
+              "alt": "Débroussaillage et nettoyage d'un terrain"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une surface extérieure à traiter ?",
+            "sousTitre": "Envoyez-nous une photo ou l'adresse : on évalue et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-panneaux-solaires",
+      "label": "Panneaux solaires",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de panneaux solaires à Lille — rendement",
+        "description": "Nettoyage de panneaux solaires (photovoltaïques) à Lille et dans le Nord : retrait des dépôts sans rayure, rendement préservé. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Extérieurs",
+            "titre": "Nettoyage de panneaux solaires à Lille",
+            "intro": "Des panneaux propres produisent plus. On les nettoie sans les rayer.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Extérieurs",
+                "href": "/nettoyage-exterieur"
+              },
+              {
+                "label": "Panneaux solaires"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Préserver le rendement",
+            "paragraphes": [
+              "Poussière, pollen, fientes et mousses réduisent le rendement des panneaux solaires, parfois nettement. Un nettoyage régulier protège votre production. Nous intervenons à Lille et dans le Nord.",
+              "Nous nettoyons les panneaux avec de l'eau et des outils adaptés, sans produit agressif ni rayure, dans le respect des consignes du fabricant. Le rendement s'en ressent."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/ext-solaire.jpg",
+              "alt": "Nettoyage de panneaux solaires sur un toit"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une surface extérieure à traiter ?",
+            "sousTitre": "Envoyez-nous une photo ou l'adresse : on évalue et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-piscines-abris",
+      "label": "Piscines & abris",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de piscines & abris à Lille",
+        "description": "Nettoyage de piscines, margelles et abris à Lille et dans le Nord : remise en état avant la saison. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Extérieurs",
+            "titre": "Nettoyage de piscines et abris à Lille",
+            "intro": "Bassin, margelles, abri : on remet la piscine en état avant la saison.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Extérieurs",
+                "href": "/nettoyage-exterieur"
+              },
+              {
+                "label": "Piscines & abris"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Une piscine prête pour l'été",
+            "paragraphes": [
+              "Avant la belle saison, une piscine et ses abords demandent un vrai nettoyage : bassin, margelles, plages, abri. Nous nous en chargeons à Lille et dans le Nord.",
+              "Retrait des dépôts, nettoyage des margelles et de l'abri, remise en propreté des plages : vous retrouvez une piscine nette, prête à être remise en eau et à en profiter."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-exterieurs.jpg",
+              "alt": "Nettoyage d'une piscine et de ses abords"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une surface extérieure à traiter ?",
+            "sousTitre": "Envoyez-nous une photo ou l'adresse : on évalue et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-terrains-gravats",
+      "label": "Terrains & gravats",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage terrains & évacuation gravats à Lille",
+        "description": "Nettoyage de terrains et évacuation de gravats à Lille et dans le Nord : ramassage, tri, évacuation. Terrain dégagé, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Extérieurs",
+            "titre": "Nettoyage de terrains et évacuation de gravats à Lille",
+            "intro": "Terrain à nettoyer, gravats à évacuer : on dégage et on emmène tout.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Extérieurs",
+                "href": "/nettoyage-exterieur"
+              },
+              {
+                "label": "Terrains & gravats"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Faire place nette",
+            "paragraphes": [
+              "Après des travaux ou sur un terrain laissé à l'abandon, gravats et déchets encombrent l'espace. Nous nettoyons et évacuons à Lille et dans le Nord.",
+              "Ramassage, tri, évacuation vers les bonnes filières : nous rendons le terrain dégagé et propre, prêt pour la suite — construction, vente ou aménagement."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/deb-storage.jpg",
+              "alt": "Évacuation de gravats sur un terrain"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une surface extérieure à traiter ?",
+            "sousTitre": "Envoyez-nous une photo ou l'adresse : on évalue et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-murs-exterieurs",
+      "label": "Murs extérieurs",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de murs extérieurs à Lille",
+        "description": "Nettoyage de murs extérieurs et clôtures à Lille et dans le Nord : retrait des mousses et salissures, adapté au support. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Extérieurs",
+            "titre": "Nettoyage de murs extérieurs à Lille",
+            "intro": "Murs, clôtures, surfaces extérieures : on retire mousses et salissures.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Extérieurs",
+                "href": "/nettoyage-exterieur"
+              },
+              {
+                "label": "Murs extérieurs"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Des surfaces extérieures nettes",
+            "paragraphes": [
+              "Murs de clôture, murets, surfaces extérieures se couvrent de mousses, de traces vertes et de salissures qui les vieillissent. Nous les nettoyons à Lille et dans le Nord, sans abîmer le support.",
+              "Nous ajustons produit et pression selon le matériau — pierre, béton, enduit — pour un rendu net et durable, à l'unité ou dans le cadre d'un entretien plus large."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-graffiti.jpg",
+              "alt": "Nettoyage d'un mur extérieur encrassé"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une surface extérieure à traiter ?",
+            "sousTitre": "Envoyez-nous une photo ou l'adresse : on évalue et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-ouvrages-monuments",
+      "label": "Ouvrages & monuments",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage d'ouvrages & monuments à Lille",
+        "description": "Nettoyage d'ouvrages et de monuments à Lille et dans le Nord : patrimoine, statues, bâtiments anciens, méthodes douces. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Extérieurs",
+            "titre": "Nettoyage d'ouvrages et de monuments à Lille",
+            "intro": "Patrimoine et ouvrages anciens demandent des méthodes douces. On les nettoie avec soin.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Extérieurs",
+                "href": "/nettoyage-exterieur"
+              },
+              {
+                "label": "Ouvrages & monuments"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Le soin qu'exige le patrimoine",
+            "paragraphes": [
+              "Un monument, une statue, un ouvrage ancien ne se nettoient pas comme une façade récente : les matériaux sont fragiles et demandent des méthodes douces. Nous intervenons avec soin à Lille et dans le Nord.",
+              "Diagnostic du support, choix d'une méthode adaptée, nettoyage progressif : nous redonnons de la propreté au patrimoine sans le dénaturer ni l'abîmer."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-batiments.jpg",
+              "alt": "Nettoyage soigné d'un monument ancien"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une surface extérieure à traiter ?",
             "sousTitre": "Envoyez-nous une photo ou l'adresse : on évalue et on chiffre gratuitement.",
             "ctaPrimaire": {
               "label": "Devis gratuit",
