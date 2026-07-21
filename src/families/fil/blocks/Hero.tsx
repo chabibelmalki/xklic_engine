@@ -142,10 +142,10 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
           >
           <span
             className={cn(
-              "fil-halo fil-descend relative self-start text-[clamp(2.6rem,6.4vw,5.25rem)] leading-[1.12] tracking-normal",
+              "fil-descend relative self-start text-[clamp(2.6rem,6.4vw,5.25rem)] leading-[1.12] tracking-normal",
               light
-                ? "text-brand-800 [text-shadow:0_1px_12px_rgba(255,255,255,.7)]"
-                : "text-white [text-shadow:0_2px_26px_rgba(0,0,0,.4)]",
+                ? "fil-halo-light text-brand-800 [text-shadow:0_1px_10px_rgba(255,255,255,.9)]"
+                : "fil-halo text-white [text-shadow:0_2px_26px_rgba(0,0,0,.4)]",
             )}
           >
             {c.titre}
@@ -153,10 +153,10 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
           {split && (
             <span
               className={cn(
-                "fil-halo fil-monte relative mb-[4vh] self-end text-right text-[clamp(2.6rem,6.4vw,5.25rem)] leading-[1.12] tracking-normal",
+                "fil-monte relative mb-[4vh] self-end text-right text-[clamp(2.6rem,6.4vw,5.25rem)] leading-[1.12] tracking-normal",
                 light
-                  ? "text-brand-600 [text-shadow:0_1px_12px_rgba(255,255,255,.7)]"
-                  : "text-accent-50 [text-shadow:0_2px_26px_rgba(0,0,0,.4)]",
+                  ? "fil-halo-light text-brand-700 [text-shadow:0_1px_10px_rgba(255,255,255,.9)]"
+                  : "fil-halo text-accent-50 [text-shadow:0_2px_26px_rgba(0,0,0,.4)]",
               )}
             >
               {c.titreAccent}

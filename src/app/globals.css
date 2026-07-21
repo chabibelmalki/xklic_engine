@@ -819,6 +819,19 @@ input[type="range"] {
     transparent 74%
   );
 }
+/* Hero CLAIR (neutralPhoto) : lueur BLANCHE (le halo terracotta étoufferait le
+   texte terracotta). Détache le texte coloré de la photo. */
+[data-pack="atelier-fil"] .fil-halo-light::before {
+  content: "";
+  position: absolute;
+  inset: -1.5rem -2.5rem;
+  z-index: -1;
+  background: radial-gradient(
+    55% 68% at 50% 50%,
+    color-mix(in srgb, #fff 82%, transparent),
+    transparent 72%
+  );
+}
 /* Nav du chrome : soulignement COUSU au survol (fil pointillé qui se trace de
    gauche à droite). Scopé aux liens de navigation du header (overlay comme
    solide : currentColor suit la couleur du texte). */
