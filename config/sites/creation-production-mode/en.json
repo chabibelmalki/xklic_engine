@@ -851,6 +851,112 @@
       ]
     },
     {
+      "slug": "realisations",
+      "label": "Our work",
+      "meta": {
+        "title": "Our work — clothing manufacturing studio in Nîmes",
+        "description": "Portfolio of the Création & Production Mode studio: from sketch to finished garment — pattern-making, prototyping, manufacturing and finishing."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Portfolio",
+            "titre": "Our work",
+            "intro": "From sketch to delivered piece: a look at the work carried out with our clients, step by step.",
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Our work"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "Portfolio",
+            "titre": "Step by step",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-atelier.png",
+                  "alt": "Workshop bench with pattern, scissors and fabric rolls"
+                },
+                "titre": "In the workshop",
+                "description": "Choosing the fabrics and tracing the pattern, before the first cut."
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-prototype.png",
+                  "alt": "Folded beige blazer with tape measure and thread spool"
+                },
+                "titre": "Approved prototype",
+                "description": "Bespoke pattern-making, adjusted to the perfect cut."
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-finition.png",
+                  "alt": "Hand-sewn hem on linen fabric"
+                },
+                "titre": "Hand finishing",
+                "description": "Every piece is checked before shipping, stitch by stitch."
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-robe.png",
+                  "alt": "Finished terracotta midi dress worn by a model"
+                },
+                "titre": "Midi dress — finished piece",
+                "description": "Made in a textured fabric, from sketch to delivered piece."
+              }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "titre": "From sketch to finished product",
+            "intro": "The same dress, from design to realisation.",
+            "pastille": "Sketch / Finished",
+            "avantApres": [
+              {
+                "avant": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-croquis.png",
+                  "alt": "Technical sketch of a midi dress with measurements"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-robe.png",
+                  "alt": "Finished terracotta midi dress worn by a model"
+                },
+                "legende": "Slide to compare — from sketch to finished piece."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Got a project in mind?",
+            "sousTitre": "Let's talk: send us your sketch or your idea, and we'll reply with a clear quote.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
       "slug": "contact",
       "label": "Contact",
       "meta": {

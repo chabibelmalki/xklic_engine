@@ -869,6 +869,112 @@
       ]
     },
     {
+      "slug": "realisations",
+      "label": "Réalisations",
+      "meta": {
+        "title": "Nos réalisations — atelier de confection à Nîmes",
+        "description": "Portfolio de l'atelier Création & Production Mode : du croquis au vêtement fini — patronage, prototypage, confection et finitions. Nîmes & Maroc."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Portfolio",
+            "titre": "Nos réalisations",
+            "intro": "Du croquis à la pièce livrée : un aperçu du travail mené avec nos clients, étape par étape.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Réalisations"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "Portfolio",
+            "titre": "Étape par étape",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-atelier.png",
+                  "alt": "Établi d'atelier avec patron, ciseaux et rouleaux de tissu"
+                },
+                "titre": "Dans l'atelier",
+                "description": "Sélection des matières et traçage du patron, avant la première coupe."
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-prototype.png",
+                  "alt": "Blazer beige plié avec mètre-ruban et bobine de fil"
+                },
+                "titre": "Prototype validé",
+                "description": "Patronage sur-mesure, ajusté jusqu'à la coupe parfaite."
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-finition.png",
+                  "alt": "Ourlet cousu main sur un tissu de lin"
+                },
+                "titre": "Finition à la main",
+                "description": "Chaque pièce est vérifiée avant expédition, point par point."
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-robe.png",
+                  "alt": "Robe midi terracotta finie portée par un mannequin"
+                },
+                "titre": "Robe midi — pièce finie",
+                "description": "Confection en tissu texturé, du croquis à la pièce livrée."
+              }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "titre": "Du croquis au produit fini",
+            "intro": "La même robe, de sa conception à sa réalisation.",
+            "pastille": "Croquis / Pièce finie",
+            "avantApres": [
+              {
+                "avant": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-croquis.png",
+                  "alt": "Croquis technique d'une robe midi avec mesures"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-robe.png",
+                  "alt": "Robe midi terracotta finie portée par un mannequin"
+                },
+                "legende": "Glissez pour comparer — du croquis à la pièce finie."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un projet en tête ?",
+            "sousTitre": "Parlons-en : envoyez-nous votre croquis ou votre idée, on vous répond avec un devis clair.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
       "slug": "contact",
       "label": "Contact",
       "meta": {
