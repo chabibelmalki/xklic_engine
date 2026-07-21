@@ -126,6 +126,7 @@ export const UI = {
     },
     tarifs: {
       defaultTitle: "Nos tarifs",
+      popular: "Le plus demandé",
     },
     produits: {
       defaultTitle: "Notre carte",
@@ -288,6 +289,7 @@ export const UI = {
     },
     tarifs: {
       defaultTitle: "Our pricing",
+      popular: "Most requested",
     },
     produits: {
       defaultTitle: "Our menu",
@@ -450,6 +452,7 @@ export const UI = {
     },
     tarifs: {
       defaultTitle: "أسعارنا",
+      popular: "الأكثر طلبًا",
     },
     produits: {
       defaultTitle: "قائمتنا",
@@ -612,6 +615,7 @@ export const UI = {
     },
     tarifs: {
       defaultTitle: "Nuestros precios",
+      popular: "El más solicitado",
     },
     produits: {
       defaultTitle: "Nuestra carta",
