@@ -1066,8 +1066,8 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "Tarifs",
-            "titre": "Nos tarifs de patronage",
-            "intro": "Un tarif clair selon la complexité du modèle. Chaque patron est réalisé sur-mesure, prêt pour la production.",
+            "titre": "Nos tarifs",
+            "intro": "Des repères de prix clairs, établis selon la complexité de chaque projet. Le devis final reste toujours sur mesure.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -1124,7 +1124,9 @@
             "cta": {
               "label": "Demander un devis",
               "href": "/contact"
-            }
+            },
+            "titre": "Tarifs de patronage et prototypage",
+            "intro": "Un tarif clair selon la complexité du modèle. Chaque patron est réalisé sur-mesure, prêt pour la production."
           }
         },
         {
@@ -1172,8 +1174,8 @@
         {
           "type": "cta",
           "content": {
-            "titre": "Un modèle à chiffrer ?",
-            "sousTitre": "Envoyez-nous votre croquis ou votre cahier des charges : on établit un devis précis selon la complexité.",
+            "titre": "Besoin d'autre chose ?",
+            "sousTitre": "Confection, contrôle qualité ou une demande sur mesure : décrivez-nous votre projet, on vous répond avec un devis clair.",
             "ctaPrimaire": {
               "label": "Demander un devis",
               "href": "/contact"

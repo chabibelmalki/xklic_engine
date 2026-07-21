@@ -1048,8 +1048,8 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "Pricing",
-            "titre": "Our pattern-making rates",
-            "intro": "A clear rate based on the complexity of the design. Every pattern is made to measure, ready for production.",
+            "titre": "Our rates",
+            "intro": "Clear price references, set according to the complexity of each project. The final quote is always bespoke.",
             "breadcrumb": [
               {
                 "label": "Home",
@@ -1106,7 +1106,9 @@
             "cta": {
               "label": "Request a quote",
               "href": "/contact"
-            }
+            },
+            "titre": "Pattern-making & prototyping rates",
+            "intro": "A clear rate based on the complexity of the design. Every pattern is made to measure, ready for production."
           }
         },
         {
@@ -1154,8 +1156,8 @@
         {
           "type": "cta",
           "content": {
-            "titre": "A design to price up?",
-            "sousTitre": "Send us your sketch or your specifications: we'll draw up a precise quote based on complexity.",
+            "titre": "Need something else?",
+            "sousTitre": "Manufacturing, quality control or a bespoke request: tell us about your project and we'll reply with a clear quote.",
             "ctaPrimaire": {
               "label": "Request a quote",
               "href": "/contact"
