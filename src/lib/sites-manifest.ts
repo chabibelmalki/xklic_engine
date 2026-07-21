@@ -15,6 +15,7 @@ export const SITE_SLUGS: string[] = [
   "creation-production-mode",
   "g-clean-propre-42",
   "hygifrance",
+  "m-e-r-i-international",
   "mb-nettoyage",
   "minhaj",
   "o-poulet-braise",

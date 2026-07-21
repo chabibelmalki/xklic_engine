@@ -107,6 +107,31 @@ export const PACKS: StylePack[] = [
     },
   },
   {
+    id: "escale-transit",
+    label: "Escale · Salle des opérations internationales",
+    family: "escale",
+    // Corps clair « salle de contrôle de jour » : alternance blanc / lavis de
+    // marque très pâle (brand-tinted). Les blocs d'identité (hero/pageHero/cta/
+    // footer) peignent leur propre PANNEAU DE NUIT au graticule de méridiens.
+    sectionStrategy: "brand-tinted",
+    sectionDivider: "none",
+    ambiance:
+      "Parti pris FORT « salle des opérations internationales / tableau des départs » : display d'affichage ultra-condensé en capitales (Bebas Neue) + MONO d'afficheur (Space Mono) pour TOUTE donnée (téléphone, horaires, codes, index, fil d'ariane). Panneaux de NUIT pleine largeur parcourus du GRATICULE DE MÉRIDIENS (quadrillage de globe), intitulés posés dans des VOLETS split-flap à couture centrale, prestations éditées en ORDRES DE MISSION (talon numéroté + couture perforée + corps), moniteur de supervision qui encadre la photo, et un VOYANT vert « en service » qui bat lentement. Angles nets, ombres basses et franches. Opérationnel, mobile, disponible en continu — distinct de tout le parc.",
+    fonts: { display: "Bebas Neue", sans: "Inter" },
+    variants: {
+      hero: ["carte"],
+      services: ["grille-cartes"],
+      etapes: ["cartes-numerotees", "timeline-verticale"],
+      faq: ["deux-colonnes", "accordeon"],
+      tarifs: ["liste-simple", "grille"],
+      galerie: ["grille", "masonry"],
+      zone: ["liste", "carte"],
+      contenu: ["texte-image"],
+      contact: ["split-form-carte"],
+      cta: ["bande"],
+    },
+  },
+  {
     id: "maison-premium",
     label: "Maison · Premium élégant",
     sectionStrategy: "striped",

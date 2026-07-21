@@ -319,7 +319,11 @@
               "Le syndrome de Diogène conduit à une accumulation d'objets et de déchets qui rend un logement difficilement habitable. Derrière chaque intervention, il y a une personne et une histoire : notre première exigence est le respect. Nous avançons au rythme des occupants et de la famille, dans la plus grande discrétion, véhicules et tenues neutres si vous le souhaitez.",
               "Concrètement, nous procédons par étapes : tri et débarras des encombrants, évacuation vers les filières adaptées, nettoyage en profondeur de toutes les surfaces, puis désinfection et désodorisation. Les sols, les murs, la cuisine et les sanitaires sont repris jusqu'à retrouver un intérieur sain et sécurisé.",
               "Chaque situation est unique : la surface, le niveau d'encombrement et l'état sanitaire déterminent la durée et le prix, toujours établis sur devis. Nous pouvons coordonner l'intervention avec un proche, un tuteur, un bailleur social ou les services sociaux."
-            ]
+            ],
+            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/svc-diogene.jpg", "alt": "Intervention HYGIFRANCE en équipement de protection dans un logement insalubre" },
+            "imagePosition": "right",
+            "imageRatio": "3/2",
+            "imageCard": true
           }
         },
         {
@@ -416,7 +420,11 @@
               "L'extérieur d'un bâtiment encaisse la pluie, la pollution et le temps. Une toiture se couvre de mousses, une façade se ternit, une gouttière se bouche, une terrasse verdit. Nous traitons chaque support avec la méthode et la pression qui lui conviennent, pour nettoyer sans abîmer.",
               "Notre champ d'action couvre les toitures et gouttières, les façades et bardages, les terrasses, les accès et les entrepôts. Nous prenons aussi en charge les remises en état ponctuelles : nettoyage de fin de chantier, remise en propreté de fin de bail, ménage complet avant ou après un déménagement.",
               "Que vous soyez un particulier, un commerçant, un syndic ou un professionnel de l'immobilier, nous vous remettons un devis clair après avoir évalué la surface, la hauteur, l'état et l'accès. Le résultat : un bâtiment sain, prêt à être habité, loué ou livré."
-            ]
+            ],
+            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/svc-exterieur.jpg", "alt": "Nettoyage haute pression d'une façade par HYGIFRANCE" },
+            "imagePosition": "left",
+            "imageRatio": "3/2",
+            "imageCard": true
           }
         },
         {
@@ -534,7 +542,11 @@
               "Pour un syndic comme pour un bailleur, la propreté des parties communes est un sujet sensible : elle conditionne le confort des résidents, la réputation de l'immeuble et, à terme, la valeur des lots. Nous l'abordons comme un engagement dans la durée, pas comme un passage ponctuel.",
               "Nous établissons avec vous un cahier des charges précis : zones traitées, fréquence des passages, produits utilisés, points de contrôle. Un référent connaît votre immeuble et assure la continuité, y compris pendant les congés. Vous disposez d'un interlocuteur unique et d'un compte rendu clair.",
               "Halls, cages d'escalier, ascenseurs, locaux techniques, vitres et abords : tout est couvert dans un contrat adapté à votre budget. Nous intervenons aussi ponctuellement, par exemple après des travaux ou un dégât dans les communs."
-            ]
+            ],
+            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/svc-parties-communes.jpg", "alt": "Agent HYGIFRANCE lavant l'escalier des parties communes d'un immeuble" },
+            "imagePosition": "right",
+            "imageRatio": "4/3",
+            "imageCard": true
           }
         },
         {
@@ -616,9 +628,9 @@
               "Nous calons nos passages sur vos horaires — tôt le matin, après la fermeture ou le week-end — et adaptons le protocole à chaque lieu. Un cabinet médical demande une désinfection rigoureuse des surfaces de contact ; un commerce, des vitrines et un sol impeccables ; une école, une attention particulière à l'hygiène des espaces partagés.",
               "En contrat régulier ou en intervention ponctuelle, vous bénéficiez d'un référent, d'un cahier des charges clair et d'un matériel professionnel fourni. Vous n'avez rien à gérer : nous arrivons équipés et repartons en laissant des locaux prêts à accueillir."
             ],
-            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/nettoyage-bureaux.jpg", "alt": "Nettoyage de bureaux professionnels" },
+            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/svc-bureaux.jpg", "alt": "Matériel de nettoyage HYGIFRANCE dans des bureaux lumineux" },
             "imagePosition": "right",
-            "imageRatio": "4/3",
+            "imageRatio": "3/2",
             "imageCard": true
           }
         },

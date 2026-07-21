@@ -956,6 +956,112 @@ input[type="range"] {
   background-size: 0.75rem 0.75rem;
 }
 
+/* ============ Escale · Salle des opérations internationales ============== */
+/* Tableau des départs : display d'affichage ultra-condensé (Bebas Neue, une
+   seule graisse) + mono d'afficheur (Space Mono) pour TOUTE donnée. Angles
+   nets mais pas coupés au massicot (un panneau a un chanfrein), ombres basses
+   et franches, teintées marque. */
+[data-pack="escale-transit"] {
+  --pack-font-display: var(--font-bebas);
+  --pack-font-sans: var(--font-inter);
+  --pack-font-mono: var(--font-space-mono);
+  --display-tracking: 0.015em;
+  --display-case: uppercase;
+
+  /* Chanfrein de panneau : quasi net, jamais arrondi. */
+  --radius-btn: 0.15rem;
+  --radius-card: 0.2rem;
+  --radius-image: 0.2rem;
+  --border-width: 1.5px;
+  --radius: 0.2rem;
+
+  /* Ombre d'objet posé sur un plan de travail : une arête basse franche + une
+     diffusion courte teintée marque. Pas de halo mou. */
+  --shadow-card:
+    0 2px 0 0 color-mix(in srgb, var(--brand-800) 10%, transparent),
+    0 14px 28px -22px color-mix(in srgb, var(--brand-800) 55%, transparent);
+  --shadow-pop:
+    0 3px 0 0 color-mix(in srgb, var(--brand-800) 12%, transparent),
+    0 26px 52px -28px color-mix(in srgb, var(--brand-800) 60%, transparent);
+
+  --section-py: 6rem;
+  --content-max: 78rem;
+  --motion-distance: 14px;
+  --motion-duration: 0.55s;
+  --motion-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+/* Bebas Neue n'existe QU'EN 400 : forcer 600/700 déclencherait une fausse graisse
+   synthétisée par le navigateur (contours baveux). On fixe 400 partout et on
+   ouvre légèrement l'interlettrage, comme sur un afficheur. Scopé au pack. */
+[data-pack="escale-transit"] h1.font-display,
+[data-pack="escale-transit"] h2.font-display,
+[data-pack="escale-transit"] h3.font-display,
+[data-pack="escale-transit"] .pack-heading {
+  font-weight: 400;
+  letter-spacing: 0.015em;
+}
+/* MONO D'AFFICHEUR — téléphone, horaires, codes, index, fil d'ariane. Chiffres
+   tabulaires (les données s'alignent en colonne) + capitales espacées. Scopé au
+   pack (ne fuit pas ailleurs). */
+[data-pack="escale-transit"] .escale-mono {
+  font-family: var(--pack-font-mono), ui-monospace, "SFMono-Regular", monospace;
+  font-variant-numeric: tabular-nums;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+/* VOLET (split-flap) — la couture centrale d'une case d'afficheur : un cheveu
+   sombre qui traverse la case à mi-hauteur, comme la charnière d'un volet.
+   Décor pur (le noir translucide est une ombre de charnière, pas une couleur de
+   marque). */
+[data-pack="escale-transit"] .escale-flap {
+  background-image: linear-gradient(
+    to bottom,
+    transparent calc(50% - 1px),
+    rgb(0 0 0 / 0.28) calc(50% - 1px),
+    rgb(0 0 0 / 0.28) 50%,
+    transparent 50%
+  );
+}
+/* COUTURE PERFORÉE — le pointillé de détachement d'un billet, entre le talon et
+   le corps d'un ordre de mission. Verticale (`.escale-perf`) et horizontale
+   (`.escale-perf-h`). Prend la couleur de bordure du thème. */
+[data-pack="escale-transit"] .escale-perf {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--border) 0 5px,
+    transparent 5px 10px
+  );
+}
+[data-pack="escale-transit"] .escale-perf-h {
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--border) 0 5px,
+    transparent 5px 10px
+  );
+}
+/* VOYANT « en service » — la pastille d'accent bat lentement, comme une diode de
+   supervision. Uniquement `transform`/`opacity` (60 fps) et INERTE sous
+   `prefers-reduced-motion: reduce` (la pastille reste allumée, fixe). */
+@media (prefers-reduced-motion: no-preference) {
+  [data-pack="escale-transit"] .escale-live {
+    animation: escale-live-pulse 2.4s var(--motion-ease) infinite;
+  }
+}
+@keyframes escale-live-pulse {
+  0% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  70% {
+    opacity: 0;
+    transform: scale(2.4);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.4);
+  }
+}
+
 /* ======================= Azulejo · Faïence céramique ======================= */
 [data-pack="azulejo-faience"] {
   --pack-font-display: var(--font-dm-serif);
@@ -1076,7 +1182,6 @@ input[type="range"] {
     animation: none;
   }
 }
-
 
 /* ======================= Maison · Premium élégant ======================= */
 [data-pack="maison-premium"] {

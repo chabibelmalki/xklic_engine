@@ -1,0 +1,1250 @@
+{
+  "slug": "m-e-r-i-international",
+  "theme": "pro-bleu-nuit",
+  "stylePack": "escale-transit",
+  "branding": {
+    "logoAlt": "M.E.R.I INTERNATIONAL — nettoyage professionnel à Manage",
+    "tagline": "Nettoyage · Manage · 24h/24",
+    "logoDarkBadge": true,
+    "logoScale": 1.2,
+    "colors": {
+      "brand": "#1668B3",
+      "accent": "#2FA24A",
+      "neutral": "cool"
+    },
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/logo-507ab912.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/logo-507ab912.png"
+  },
+  "entreprise": {
+    "nom": "M.E.R.I INTERNATIONAL",
+    "statut": "SRL",
+    "siret": "",
+    "pays": "BE",
+    "tva": {
+      "regime": "reel"
+    }
+  },
+  "seo": {
+    "schemaType": "HousekeepingService",
+    "ville": "Manage"
+  },
+  "geo": {
+    "lat": 50.5031,
+    "lng": 4.2394
+  },
+  "meta": {
+    "title": "Nettoyage professionnel à Manage",
+    "description": "Société de nettoyage à Manage : bureaux, hôtellerie, vitres, remise en état et particuliers. Équipe mobile en Wallonie, joignable 24h/24 et 7j/7.",
+    "keywords": [
+      "nettoyage Manage",
+      "société de nettoyage Wallonie",
+      "nettoyage de bureaux Manage",
+      "nettoyage hôtellerie Wallonie",
+      "nettoyage de vitres Manage",
+      "remise en état Wallonie"
+    ]
+  },
+  "i18n": {
+    "default": "fr",
+    "languages": [
+      "fr",
+      "en",
+      "es",
+      "ar"
+    ]
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Accueil",
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "carte",
+          "content": {
+            "eyebrow": "Centre d'opérations · Manage",
+            "titre": "Nettoyage professionnel à Manage,",
+            "titreAccent": "à toute heure",
+            "accroche": "Bureaux, hôtels et hébergements, surfaces vitrées, remises en état et domiciles privés. Une équipe mobile basée à Manage qui se déplace partout en Wallonie et vous répond en français, arabe, espagnol ou anglais.",
+            "badges": [
+              "Bureaux & commerces",
+              "Hôtellerie & séjours",
+              "Vitres & vérandas",
+              "Remise en état",
+              "Particuliers"
+            ],
+            "trust": [
+              {
+                "icone": "Clock",
+                "label": "Joignable 24h/24, 7j/7"
+              },
+              {
+                "icone": "Globe",
+                "label": "Wallonie et mobilité internationale"
+              },
+              {
+                "icone": "Languages",
+                "label": "FR · AR · ES · EN"
+              }
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/vitres-bureaux.png",
+              "alt": "Agent M.E.R.I INTERNATIONAL nettoyant une cloison vitrée dans un bureau"
+            },
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Voir nos prestations",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Prestations",
+            "titre": "Cinq terrains, une seule équipe",
+            "intro": "Chaque intervention est cadrée avant le premier passage : périmètre exact, fréquence, produits utilisés et créneau horaire. Vous savez ce qui est fait, quand, et par qui.",
+            "items": [
+              {
+                "nom": "Bureaux et locaux commerciaux",
+                "icone": "Building2",
+                "description": "Entretien régulier ou ponctuel des espaces de travail, sanitaires, salles de réunion et parties communes — avant l'ouverture ou après la fermeture.",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Hôtellerie et séjours courts",
+                "icone": "BedDouble",
+                "description": "Remise à blanc des chambres, gîtes et appartements loués à la nuitée, avec rotation rapide entre un départ et l'arrivée suivante.",
+                "href": "/nettoyage-hotellerie"
+              },
+              {
+                "nom": "Vitres, vérandas et miroirs",
+                "icone": "PanelsTopLeft",
+                "description": "Baies vitrées, vérandas, cloisons intérieures et miroirs repris sans trace ni coulure, châssis et rebords compris.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Remise en état",
+                "icone": "Hammer",
+                "description": "Fin de chantier, sortie de bail ou local resté fermé trop longtemps : on repart du support brut jusqu'à la finition.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Chez les particuliers",
+                "icone": "House",
+                "description": "Entretien courant du logement, grand nettoyage saisonnier et remise au propre avant ou après un événement de famille.",
+                "href": "/nettoyage-particuliers"
+              }
+            ],
+            "cta": {
+              "label": "Voir le détail des prestations",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "Déroulé",
+            "titre": "De l'appel au contrôle final",
+            "intro": "Quatre temps, toujours les mêmes, que le chantier dure deux heures ou six mois.",
+            "items": [
+              {
+                "icone": "PhoneCall",
+                "titre": "Vous nous joignez",
+                "texte": "Par téléphone ou WhatsApp, à l'heure qui vous arrange. Nous notons le type de local, la surface approximative et le degré d'urgence."
+              },
+              {
+                "icone": "ClipboardCheck",
+                "titre": "Visite et devis",
+                "texte": "Nous passons voir les lieux quand c'est utile, puis vous recevez un devis écrit détaillant le périmètre, la fréquence et le prix."
+              },
+              {
+                "icone": "CalendarCheck",
+                "titre": "Intervention planifiée",
+                "texte": "Le créneau est fixé avec vous, y compris de nuit, le week-end ou un jour férié. L'équipe arrive avec son matériel et ses produits."
+              },
+              {
+                "icone": "FileCheck",
+                "titre": "Contrôle et ajustement",
+                "texte": "Nous repassons sur le rendu avec vous. Si un point ne convient pas, il est repris ; le cahier des charges est corrigé pour la suite."
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "eyebrow": "Qui nous sommes",
+            "titre": "Une équipe qui ne s'arrête pas",
+            "titreAccent": "à 17 heures",
+            "paragraphes": [
+              "M.E.R.I INTERNATIONAL est née d'un constat simple : la plupart des locaux professionnels ne peuvent être nettoyés ni pendant les heures d'ouverture, ni selon un planning rigide. Un hôtel enchaîne les départs et les arrivées le même matin ; un bureau ne se libère qu'après le dernier collaborateur ; un chantier se termine la veille de la remise des clés.",
+              "Nous avons donc construit l'entreprise autour de la disponibilité. Nos équipes sont joignables 24 heures sur 24 et 7 jours sur 7, et se déplacent dans toute la Wallonie depuis Manage. Pour les clients qui en font la demande, nous nous rendons également hors des frontières belges : la mobilité internationale fait partie de notre organisation, pas d'une promesse commerciale.",
+              "Nos agents travaillent en français, en arabe, en espagnol et en anglais. C'est un atout concret dans l'hôtellerie et pour les propriétaires étrangers qui gèrent un bien à distance : les consignes se donnent dans votre langue, les comptes rendus aussi.",
+              "Nous fournissons notre matériel et nos produits, et nous adaptons les protocoles au support : un sol en marbre d'un hall d'accueil, un plan de travail d'appartement meublé et une véranda ne se traitent pas de la même manière."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/hall-accueil.png",
+              "alt": "Entretien du sol d'un hall d'accueil par une agente M.E.R.I INTERNATIONAL"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3",
+            "ctaPrimaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Où nous intervenons",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "En intervention",
+            "titre": "Sur le terrain",
+            "intro": "Quelques images de nos équipes et de notre matériel, prises sur des interventions professionnelles.",
+            "ratio": "4/3",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/vitres-bureaux.png",
+                  "alt": "Nettoyage d'une cloison vitrée dans un plateau de bureaux"
+                },
+                "titre": "Cloisons vitrées de bureaux",
+                "description": "Reprise des vitrages intérieurs et des poignées, sans trace au contre-jour."
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/hall-accueil.png",
+                  "alt": "Lavage du sol d'un hall d'accueil en marbre"
+                },
+                "titre": "Hall d'accueil",
+                "description": "Entretien des sols durs d'une réception, méthode adaptée au marbre."
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/materiel-produits.png",
+                  "alt": "Matériel et produits d'entretien M.E.R.I INTERNATIONAL"
+                },
+                "titre": "Matériel fourni",
+                "description": "Nous venons équipés : micro-fibres codées par zone et produits adaptés au support."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Ce qu'on nous demande le plus souvent",
+            "items": [
+              {
+                "question": "Intervenez-vous vraiment la nuit et le week-end ?",
+                "reponse": "Oui. Nos plannings sont construits autour de vos contraintes, pas l'inverse : nous travaillons de nuit dans les bureaux et les commerces, tôt le matin dans l'hôtellerie, et le dimanche ou un jour férié lorsque c'est le seul créneau possible."
+              },
+              {
+                "question": "Le devis est-il payant ?",
+                "reponse": "Non, l'estimation est gratuite et sans engagement. Selon la taille du local, nous chiffrons soit directement par téléphone à partir de vos informations, soit après une visite sur place qui ne vous coûte rien."
+              },
+              {
+                "question": "Faut-il fournir le matériel et les produits ?",
+                "reponse": "Non, nous arrivons avec notre propre équipement et nos consommables. Si votre site impose des produits particuliers — norme interne, allergie, surface fragile — nous utilisons les vôtres ou nous approvisionnons la référence demandée."
+              },
+              {
+                "question": "Dans quelles langues peut-on vous parler ?",
+                "reponse": "Nos agents s'expriment en français, en arabe, en espagnol et en anglais. Les consignes d'accès, les comptes rendus et les échanges avec les gestionnaires étrangers se font dans la langue qui vous arrange."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un local à remettre au propre ?",
+            "sousTitre": "Décrivez-nous la situation : nous vous répondons avec un créneau et un prix, même si l'appel arrive à trois heures du matin.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Appeler maintenant",
+              "href": "tel:+32472131069"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Prestations",
+      "meta": {
+        "title": "Prestations de nettoyage en Wallonie",
+        "description": "Nettoyage de bureaux, d'hôtels et de logements, vitrerie, remise en état et entretien chez les particuliers, partout en Wallonie depuis Manage."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Catalogue d'interventions",
+            "titre": "Nos prestations de nettoyage",
+            "intro": "Cinq domaines distincts, avec chacun ses méthodes, son matériel et son rythme. Choisissez celui qui correspond à votre situation.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations"
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Détail",
+            "titre": "Choisissez votre terrain",
+            "intro": "Chaque fiche précise ce qui est inclus, ce qui ne l'est pas, et comment nous procédons concrètement.",
+            "items": [
+              {
+                "nom": "Bureaux et locaux commerciaux",
+                "icone": "Building2",
+                "description": "Contrats récurrents ou passages ponctuels, avec un cahier des charges écrit et un référent unique pour votre site.",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Hôtellerie et séjours courts",
+                "icone": "BedDouble",
+                "description": "Chambres, gîtes et meublés de tourisme remis à blanc entre deux réservations, linge et réassort compris si vous le souhaitez.",
+                "href": "/nettoyage-hotellerie"
+              },
+              {
+                "nom": "Vitres, vérandas et miroirs",
+                "icone": "PanelsTopLeft",
+                "description": "Vitrerie intérieure et extérieure accessible, vérandas complètes, verrières et grandes surfaces réfléchissantes.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Remise en état",
+                "icone": "Hammer",
+                "description": "Après travaux, après sinistre léger, avant état des lieux : décapage des résidus, dégraissage complet et finition.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Chez les particuliers",
+                "icone": "House",
+                "description": "Entretien du domicile à la fréquence de votre choix, ou grand nettoyage ponctuel après un déménagement ou une fête.",
+                "href": "/nettoyage-particuliers"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "eyebrow": "Méthode",
+            "titre": "Ce qui ne change jamais,",
+            "titreAccent": "quel que soit le chantier",
+            "paragraphes": [
+              "Avant toute chose, nous établissons un périmètre écrit. C'est le document qui évite les malentendus : il liste pièce par pièce ce qui est traité, à quelle fréquence, et ce qui reste explicitement en dehors de la prestation. Vous le validez avant que nous commencions.",
+              "Nous travaillons ensuite avec un jeu de micro-fibres codées par zone, pour ne jamais faire circuler un chiffon de sanitaire vers un plan de travail. Les produits sont choisis selon le support et non selon l'habitude : un inox, un parquet vitrifié et une pierre naturelle appellent trois traitements différents.",
+              "Enfin, chaque site a un référent chez nous. C'est la même personne que vous appelez pour signaler un point à reprendre, décaler un passage ou ajouter une pièce au périmètre — sans repasser par un standard ni réexpliquer votre dossier."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/materiel-produits.png",
+              "alt": "Seau, micro-fibres et produits d'entretien préparés avant une intervention"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Vous hésitez sur la prestation ?",
+            "sousTitre": "Expliquez-nous votre situation en deux phrases : nous vous dirons quelle formule correspond et ce qu'elle implique.",
+            "ctaPrimaire": {
+              "label": "Poser ma question",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-bureaux",
+      "label": "Bureaux et locaux commerciaux",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de bureaux à Manage",
+        "description": "Entretien de bureaux, commerces et parties communes en Wallonie : passages hors heures d'ouverture, cahier des charges écrit et référent unique."
+      },
+      "service": {
+        "name": "Nettoyage de bureaux et de locaux commerciaux",
+        "description": "Entretien régulier ou ponctuel d'espaces professionnels en Wallonie, planifié en dehors des heures d'ouverture.",
+        "serviceType": "Nettoyage de bureaux",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Professionnel",
+            "titre": "Nettoyage de bureaux et de locaux commerciaux",
+            "intro": "Des passages calés sur vos horaires, un périmètre écrit, et une équipe qui connaît votre site plutôt qu'un roulement d'intérimaires.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Bureaux et locaux commerciaux"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Ce que couvre l'entretien de vos locaux",
+            "paragraphes": [
+              "L'intervention type dans un plateau de bureaux comprend le vidage et le tri des corbeilles, l'aspiration et le lavage des sols, l'essuyage des bureaux libérés, la désinfection des points de contact — poignées, interrupteurs, boutons d'ascenseur, machines à café — ainsi que l'entretien complet des sanitaires avec réassort du papier et du savon si vous nous confiez les consommables.",
+              "Les salles de réunion sont remises en configuration neutre : tables essuyées, chaises réalignées, tableaux effacés, traces de doigts reprises sur les cloisons vitrées. Les cuisines et espaces de pause reçoivent un dégraissage des plans de travail, de l'évier et de l'extérieur des appareils.",
+              "Restent en dehors du forfait courant, sauf demande explicite : le rangement des documents et effets personnels, l'intérieur des armoires fermées, le nettoyage des postes informatiques au-delà d'un dépoussiérage prudent, et les vitrages extérieurs en hauteur nécessitant une nacelle. Ces points peuvent être ajoutés au périmètre, mais ils sont chiffrés à part pour rester lisibles.",
+              "La fréquence se décide avec vous : quotidienne pour un open space très fréquenté, deux à trois passages hebdomadaires pour une PME, ou une intervention mensuelle de fond pour un local peu occupé. Dans tous les cas, nous passons soit avant que vos collaborateurs arrivent, soit une fois le dernier parti : personne ne travaille au milieu du matériel."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "Mise en place",
+            "titre": "Comment démarre un contrat",
+            "items": [
+              {
+                "icone": "Search",
+                "titre": "État des lieux",
+                "texte": "Nous parcourons le site avec vous, relevons les surfaces, les revêtements et les contraintes d'accès ou d'alarme."
+              },
+              {
+                "icone": "ClipboardCheck",
+                "titre": "Cahier des charges",
+                "texte": "Vous recevez le périmètre écrit, pièce par pièce, avec la fréquence et le prix. Rien ne démarre avant votre accord."
+              },
+              {
+                "icone": "KeyRound",
+                "titre": "Accès et clés",
+                "texte": "Badges, codes ou clés sont consignés et remis à un nombre restreint d'agents, tous identifiés sur votre dossier."
+              },
+              {
+                "icone": "Timer",
+                "titre": "Passages réguliers",
+                "texte": "L'équipe intervient sur le créneau convenu. Un point est fait avec vous après les premières semaines pour caler les détails."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions sur l'entretien de bureaux",
+            "items": [
+              {
+                "question": "Pouvez-vous intervenir après la fermeture, quand les locaux sont vides ?",
+                "reponse": "C'est même le cas le plus courant. Nous récupérons un jeu de clés ou un badge, la procédure d'alarme est notée dans votre dossier, et l'équipe passe en soirée ou très tôt le matin. Vous retrouvez des locaux prêts en arrivant."
+              },
+              {
+                "question": "Qui fournit le papier toilette et le savon ?",
+                "reponse": "Les deux options existent. Soit vous gérez vos consommables et nous assurons uniquement le réassort dans les distributeurs, soit nous les achetons pour vous et ils apparaissent en ligne distincte sur la facture, au prix coûtant majoré de la manutention."
+              },
+              {
+                "question": "Est-ce toujours la même équipe qui vient ?",
+                "reponse": "Oui, dans la mesure du possible. Un site est attribué à un binôme référent qui connaît vos particularités. En cas de congé ou de maladie, le remplaçant est briefé sur votre cahier des charges avant son premier passage."
+              },
+              {
+                "question": "Que se passe-t-il si un point n'a pas été fait correctement ?",
+                "reponse": "Vous appelez votre référent et nous repassons sur le point concerné sans refacturation. Si l'oubli se répète, c'est généralement que le périmètre était ambigu : nous le reprécisons par écrit pour que le problème ne revienne pas."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Aussi pour vos locaux",
+            "titre": "Prestations complémentaires",
+            "items": [
+              {
+                "nom": "Vitres et cloisons vitrées",
+                "icone": "PanelsTopLeft",
+                "description": "Vitrages intérieurs, façades accessibles et cloisons de bureau reprises sans trace.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Remise en état",
+                "icone": "Hammer",
+                "description": "Avant emménagement dans de nouveaux locaux ou après des travaux d'aménagement.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Hôtellerie et séjours courts",
+                "icone": "BedDouble",
+                "description": "Si votre activité comprend de l'hébergement ou des logements de fonction.",
+                "href": "/nettoyage-hotellerie"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Chiffrons votre site",
+            "sousTitre": "Donnez-nous la surface approximative et le nombre de postes de travail : vous aurez une fourchette dans la journée.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-hotellerie",
+      "label": "Hôtellerie et séjours courts",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage hôtelier et locations à Manage",
+        "description": "Remise à blanc de chambres, gîtes et meublés de tourisme en Wallonie : rotation rapide entre deux réservations, linge et réassort, 7j/7 et jours fériés."
+      },
+      "service": {
+        "name": "Nettoyage hôtelier et de logements de courte durée",
+        "description": "Remise à blanc de chambres d'hôtel, gîtes et appartements loués à la nuitée, entre un départ et l'arrivée suivante.",
+        "serviceType": "Nettoyage hôtelier",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Hébergement",
+            "titre": "Hôtellerie, gîtes et locations de courte durée",
+            "intro": "Le créneau entre un départ à 10 h et une arrivée à 15 h ne pardonne aucun retard. C'est exactement le métier pour lequel nous sommes organisés.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Hôtellerie et séjours courts"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Organiser les rotations",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "La remise à blanc entre deux réservations",
+            "paragraphes": [
+              "Une chambre ou un logement remis à blanc, chez nous, signifie que le voyageur suivant ne trouve aucune trace du précédent. Cela couvre le décapage complet de la salle de bains, le détartrage de la robinetterie et de la douche, la désinfection des sanitaires, le changement intégral du linge de lit et de toilette, le nettoyage des sols, le dépoussiérage des surfaces hautes et le vidage des poubelles avec remplacement des sacs.",
+              "En cuisine ou en kitchenette, nous vidons et nettoyons le réfrigérateur, dégraissons les plaques, la hotte accessible et le micro-ondes, lavons la vaisselle laissée sur place et vérifions que l'inventaire annoncé est complet. Les oublis des voyageurs sont mis de côté et signalés, jamais jetés sans votre accord.",
+              "Nous assurons également le réassort des consommables que vous nous confiez : papier, savon, capsules de café, sacs-poubelle, produits d'accueil. Un relevé vous est transmis quand un stock arrive en fin de course, pour éviter la rupture un vendredi soir.",
+              "Pour les propriétaires qui gèrent leur bien à distance, souvent depuis l'étranger, nous envoyons après chaque rotation un compte rendu photo des pièces principales. Toute dégradation constatée est documentée le jour même, ce qui vous laisse la possibilité d'agir auprès de la plateforme de réservation dans les délais."
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "Standard attendu",
+            "titre": "Le niveau de finition",
+            "ratio": "4/3",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/hall-accueil.png",
+                  "alt": "Entretien des sols d'un hall de réception"
+                },
+                "titre": "Parties communes",
+                "description": "Réception et couloirs traités avant les heures d'affluence."
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/materiel-produits.png",
+                  "alt": "Matériel et produits préparés pour une rotation de logement"
+                },
+                "titre": "Chariot de rotation",
+                "description": "Un chariot par logement, préparé à l'avance pour tenir le créneau."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions sur les rotations d'hébergement",
+            "items": [
+              {
+                "question": "Tenez-vous le créneau serré entre un départ et une arrivée le même jour ?",
+                "reponse": "Oui — c'est précisément pour ce créneau que notre organisation a été pensée. Le passage est calé sur vos horaires de check-out et de check-in, et le nombre d'agents envoyés est calculé pour que le logement soit prêt avant l'arrivée, même en pleine saison."
+              },
+              {
+                "question": "Gérez-vous le linge de lit et les serviettes ?",
+                "reponse": "Nous assurons le change complet à chaque rotation. Vous pouvez nous confier un stock de linge sur place que nous faisons tourner, ou travailler avec votre blanchisseur habituel : dans ce cas nous préparons les sacs de linge sale et réceptionnons le linge propre."
+              },
+              {
+                "question": "Intervenez-vous les dimanches et jours fériés ?",
+                "reponse": "Oui. Les week-ends et les jours fériés sont précisément les moments où les réservations s'enchaînent le plus. Nos plannings couvrent ces journées sans majoration surprise : les conditions sont fixées dans le devis initial."
+              },
+              {
+                "question": "Que faites-vous si le logement est rendu dans un état anormal ?",
+                "reponse": "Nous photographions l'état constaté avant d'intervenir et vous prévenons immédiatement. Si la remise en état dépasse largement une rotation standard, nous vous proposons un complément chiffré avant de continuer, jamais après coup."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "À combiner",
+            "titre": "Autres prestations utiles",
+            "items": [
+              {
+                "nom": "Vitres et vérandas",
+                "icone": "PanelsTopLeft",
+                "description": "Baies vitrées des chambres et espaces communs, vérandas de petit-déjeuner.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Remise en état",
+                "icone": "Hammer",
+                "description": "Avant l'ouverture de saison ou après des travaux de rénovation.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Bureaux et locaux",
+                "icone": "Building2",
+                "description": "Back-office, réception et locaux administratifs de l'établissement.",
+                "href": "/nettoyage-bureaux"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Combien de logements à couvrir ?",
+            "sousTitre": "Indiquez le nombre de biens et vos horaires de check-in : nous construisons le planning de rotation avec vous.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Vitres, vérandas et miroirs",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de vitres à Manage",
+        "description": "Vitrerie en Wallonie : baies vitrées, vérandas, verrières, cloisons de bureau et miroirs nettoyés sans trace, châssis et rebords compris. Devis gratuit."
+      },
+      "service": {
+        "name": "Nettoyage de vitres, vérandas et miroirs",
+        "description": "Vitrerie intérieure et extérieure accessible pour les particuliers et les professionnels de Wallonie.",
+        "serviceType": "Nettoyage de vitres",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Surfaces vitrées",
+            "titre": "Vitres, baies vitrées, vérandas et miroirs",
+            "intro": "Une vitre mal reprise se voit au premier contre-jour. Le résultat se juge à la lumière rasante, pas au moment où on essuie.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Vitres, vérandas et miroirs"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Faire chiffrer mes vitrages",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "Du châssis au vitrage, la surface complète",
+            "paragraphes": [
+              "Nettoyer une vitre ne se limite pas au verre. Nous commençons par dépoussiérer et laver les châssis, les rainures et les rebords, car c'est de là que repart la coulure qui salira le vitrage propre à la première pluie. Les joints sont repris, les glissières de baie coulissante désencombrées, et les poignées désinfectées au passage.",
+              "Le vitrage lui-même est traité à la raclette après mouillage, technique qui laisse nettement moins de traces que l'essuyage au chiffon sec sur les grandes surfaces. Pour les verres anciens, les vitrages sérigraphiés ou les miroirs de salle de bains marqués par le calcaire, nous adaptons le produit et la pression plutôt que de forcer au risque de rayer.",
+              "Les vérandas font l'objet d'un traitement spécifique : toiture accessible, montants d'aluminium ou de PVC, gouttières intérieures et parois. Le vert de mousse et les dépôts organiques qui s'installent sur les faces extérieures demandent un produit différent de celui utilisé à l'intérieur.",
+              "Nous intervenons sur tout ce qui est accessible depuis le sol, une échelle ou un escabeau, en intérieur comme en extérieur. Les façades vitrées nécessitant une nacelle ou des travaux sur corde relèvent d'entreprises spécialisées en travaux en hauteur : nous vous le disons franchement plutôt que d'accepter un chantier que nous ne pourrions pas sécuriser."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/vitres-bureaux.png",
+              "alt": "Nettoyage à la micro-fibre d'une cloison vitrée de bureau"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions sur la vitrerie",
+            "items": [
+              {
+                "question": "À quelle fréquence faut-il faire nettoyer ses vitres ?",
+                "reponse": "Pour un logement, deux passages par an suffisent généralement, au printemps et à l'entrée de l'hiver. Une vitrine commerciale ou un bureau en bord de route demande un rythme mensuel, parfois hebdomadaire quand la circulation dépose beaucoup de poussière grasse."
+              },
+              {
+                "question": "Travaillez-vous en hauteur ?",
+                "reponse": "Nous couvrons tout ce qui reste accessible en sécurité depuis le sol, un escabeau ou une perche télescopique, ce qui inclut la grande majorité des maisons, vérandas et rez-de-chaussée commerciaux. Au-delà, une nacelle est nécessaire et le chantier sort de notre périmètre."
+              },
+              {
+                "question": "Le nettoyage des vitres peut-il se faire par temps de gel ou de pluie ?",
+                "reponse": "Le gel est rédhibitoire en extérieur : l'eau prend sur le verre et le résultat est mauvais. Une pluie fine ne gêne pas réellement le rendu une fois la vitre traitée, mais nous préférons décaler plutôt que de vous livrer un travail qui ne tiendra pas."
+              },
+              {
+                "question": "Traitez-vous aussi les miroirs et les surfaces réfléchissantes ?",
+                "reponse": "Oui, miroirs de salle de bains, murs miroirs de salle de sport ou de commerce, portes vitrées et inox brillants. Ces supports marquent au moindre doigt et demandent une finition à la micro-fibre sèche après le lavage."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Souvent associé",
+            "titre": "À combiner avec",
+            "items": [
+              {
+                "nom": "Bureaux et commerces",
+                "icone": "Building2",
+                "description": "Vitrerie intégrée au contrat d'entretien régulier de vos locaux.",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Chez les particuliers",
+                "icone": "House",
+                "description": "Vitres reprises pendant le grand nettoyage saisonnier du logement.",
+                "href": "/nettoyage-particuliers"
+              },
+              {
+                "nom": "Remise en état",
+                "icone": "Hammer",
+                "description": "Décollage des étiquettes, du film de protection et des projections de peinture.",
+                "href": "/remise-en-etat"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Combien de vitrages à reprendre ?",
+            "sousTitre": "Comptez approximativement vos fenêtres et baies, précisez s'il y a une véranda : le chiffrage se fait vite.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "remise-en-etat",
+      "label": "Remise en état",
+      "navHidden": true,
+      "meta": {
+        "title": "Remise en état de locaux en Wallonie",
+        "description": "Nettoyage de fin de chantier, sortie de bail et locaux laissés à l'abandon : décapage des résidus, dégraissage complet et finition avant état des lieux."
+      },
+      "service": {
+        "name": "Remise en état après travaux ou avant état des lieux",
+        "description": "Nettoyage lourd de fin de chantier, de sortie de location ou de local resté longtemps inoccupé, en Wallonie.",
+        "serviceType": "Nettoyage de fin de chantier",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nettoyage lourd",
+            "titre": "Remise en état de locaux et de logements",
+            "intro": "Quand l'entretien courant ne suffit plus : poussière de plâtre incrustée, traces de colle, calcaire ancien, local resté fermé pendant des mois.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Remise en état"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Faire évaluer le chantier",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Repartir du support, pas de la surface",
+            "paragraphes": [
+              "Une remise en état n'a rien à voir avec un entretien renforcé. Après des travaux, la poussière de plâtre et de découpe s'est déposée partout, y compris sur les surfaces hautes, dans les rainures de châssis, derrière les radiateurs et à l'intérieur des placards. Un simple passage la remet en suspension et elle retombe le lendemain : il faut la capter, pas la déplacer.",
+              "Nous procédons du haut vers le bas et du fond vers la sortie. Aspiration des volumes et des recoins, décollage des résidus de colle, d'adhésif et de film de protection, retrait des projections de peinture et d'enduit sur les sols durs et les vitrages, dégraissage des menuiseries, puis lavage des sols en plusieurs passes jusqu'à ce que l'eau de rinçage reste claire.",
+              "Dans un logement en sortie de bail, l'objectif est différent mais la logique reste la même : reprendre ce qu'un état des lieux relève systématiquement. Sanitaires détartrés en profondeur, joints repris, four et plaques dégraissés, hotte démontée quand elle est démontable, intérieur des placards et des tiroirs lavé, traces de fixation nettoyées sur les murs.",
+              "Nous vous disons ce qui relève du nettoyage et ce qui relève de la réparation. Une rayure profonde dans un parquet, un joint de silicone moisi ou une peinture écaillée ne se règlent pas au produit : mieux vaut le savoir avant l'état des lieux que le découvrir devant le propriétaire."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "Déroulé du chantier",
+            "titre": "Quatre passes successives",
+            "items": [
+              {
+                "icone": "Trash2",
+                "titre": "Évacuation",
+                "texte": "Retrait des déchets restants, des protections de sol et des emballages laissés par les corps de métier."
+              },
+              {
+                "icone": "Wind",
+                "titre": "Dépoussiérage complet",
+                "texte": "Aspiration du haut vers le bas : plafonds accessibles, murs, gaines, châssis, radiateurs, intérieurs de placards."
+              },
+              {
+                "icone": "SprayCan",
+                "titre": "Décapage et dégraissage",
+                "texte": "Colles, adhésifs, projections de peinture et calcaire ancien traités support par support, sans agresser les finitions."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "Finition et contrôle",
+                "texte": "Lavage des sols en plusieurs passes, reprise des vitrages, puis tour complet avec vous avant la remise des clés."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions sur la remise en état",
+            "items": [
+              {
+                "question": "Combien de temps faut-il pour un chantier de fin de travaux ?",
+                "reponse": "Cela dépend surtout du volume de poussière et de la nature des résidus, pas seulement de la surface. Un appartement rénové de deux chambres demande généralement une à deux journées à deux agents ; un plateau de bureaux fraîchement aménagé se planifie sur plusieurs jours."
+              },
+              {
+                "question": "Intervenez-vous avant un état des lieux de sortie ?",
+                "reponse": "Oui, c'est une demande fréquente. Nous ciblons les points que les états des lieux relèvent le plus souvent : sanitaires, électroménager, intérieurs de rangements, traces sur les murs et vitrages. Prévoyez l'intervention deux à trois jours avant le rendez-vous, jamais la veille au soir."
+              },
+              {
+                "question": "Évacuez-vous les gravats et les encombrants ?",
+                "reponse": "Nous évacuons les déchets courants liés au nettoyage et les petits volumes. Les gravats de chantier, le mobilier lourd et les encombrants relèvent d'une collecte spécialisée : nous vous orientons vers la bonne solution plutôt que d'improviser un transport non conforme."
+              },
+              {
+                "question": "Un local à l'abandon depuis longtemps peut-il être récupéré ?",
+                "reponse": "Dans la plupart des cas, oui, mais nous préférons voir les lieux avant de nous engager. Humidité installée, moisissures étendues ou nuisibles relèvent de traitements spécifiques qui dépassent le nettoyage, et nous vous le signalons dès la visite."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Ensuite",
+            "titre": "Et après la remise en état",
+            "items": [
+              {
+                "nom": "Bureaux et locaux commerciaux",
+                "icone": "Building2",
+                "description": "Prendre le relais en entretien régulier une fois les locaux occupés.",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Vitres et vérandas",
+                "icone": "PanelsTopLeft",
+                "description": "Reprise complète des vitrages marqués par le chantier.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Hôtellerie et séjours courts",
+                "icone": "BedDouble",
+                "description": "Mise en service d'un hébergement avant sa première réservation.",
+                "href": "/nettoyage-hotellerie"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un chantier à faire évaluer ?",
+            "sousTitre": "Envoyez-nous quelques photos des lieux : nous vous donnons une estimation et un délai réaliste.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-particuliers",
+      "label": "Chez les particuliers",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage à domicile à Manage",
+        "description": "Entretien du logement en Wallonie : ménage régulier, grand nettoyage saisonnier, remise au propre après déménagement ou événement. Devis gratuit."
+      },
+      "service": {
+        "name": "Nettoyage chez les particuliers",
+        "description": "Entretien courant et grands nettoyages ponctuels au domicile des particuliers, en Wallonie.",
+        "serviceType": "Nettoyage à domicile",
+        "priceFrom": "Sur devis"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Domicile",
+            "titre": "Nettoyage chez les particuliers",
+            "intro": "Un entretien régulier à la fréquence qui vous convient, ou un grand nettoyage ponctuel quand la maison en a besoin.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Chez les particuliers"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "Chez vous, selon votre rythme",
+            "paragraphes": [
+              "L'entretien courant d'un logement couvre les pièces de vie et les chambres — sols aspirés et lavés, surfaces dépoussiérées, lits refaits si vous le souhaitez — ainsi que les pièces d'eau, qui demandent le plus d'attention : douche et baignoire détartrées, sanitaires désinfectés, robinetterie reprise, miroirs sans trace.",
+              "La cuisine fait l'objet d'un passage systématique sur le plan de travail, l'évier, la plaque de cuisson et l'extérieur des appareils. Le four, l'intérieur du réfrigérateur et la hotte ne sont pas inclus dans le passage courant, mais nous les intégrons volontiers à intervalles réguliers ou lors d'un grand nettoyage.",
+              "Le grand nettoyage saisonnier va nettement plus loin : plinthes, portes et poignées, dessus d'armoires, radiateurs, intérieurs de placards et de tiroirs, vitres et châssis, luminaires accessibles. C'est la formule à choisir avant une réception de famille, après un déménagement, ou simplement une à deux fois par an pour repartir sur une base propre.",
+              "Nous fixons ensemble ce qui est fait à chaque passage. Certains foyers veulent tout, d'autres préfèrent concentrer notre temps sur les pièces d'eau et la cuisine et garder le rangement pour eux : les deux approches nous vont, du moment qu'elles sont écrites noir sur blanc."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/materiel-produits.png",
+              "alt": "Produits et micro-fibres posés sur un plan de travail avant l'entretien d'un logement"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions des particuliers",
+            "items": [
+              {
+                "question": "Faut-il être présent pendant l'intervention ?",
+                "reponse": "Pas nécessairement. Beaucoup de clients nous confient une clé, surtout pour les passages en journée. La première intervention se fait en général en votre présence, le temps de faire le tour du logement et de préciser vos attentes pièce par pièce."
+              },
+              {
+                "question": "Puis-je demander un passage unique plutôt qu'un abonnement ?",
+                "reponse": "Oui, sans aucun problème. Un grand nettoyage ponctuel après un déménagement, avant une fête ou à la sortie de l'hiver se commande à l'unité. Rien ne vous engage à poursuivre, et le tarif d'un passage isolé vous est annoncé à l'avance."
+              },
+              {
+                "question": "Utilisez-vous des produits agressifs ?",
+                "reponse": "Nous adaptons le produit au support et à votre foyer. Si vous avez de jeunes enfants, des animaux ou une sensibilité particulière, dites-le nous : nous privilégions alors des formules douces et nous évitons les parfums marqués, sans perdre en efficacité sur les points sensibles."
+              },
+              {
+                "question": "Intervenez-vous en soirée ou le week-end pour les particuliers ?",
+                "reponse": "Oui, comme pour nos clients professionnels. Si vos horaires de travail rendent impossible un passage en journée, nous calons l'intervention en fin de journée ou le samedi, en fonction des disponibilités de l'équipe sur votre commune."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Également",
+            "titre": "D'autres besoins à la maison",
+            "items": [
+              {
+                "nom": "Vitres, vérandas et miroirs",
+                "icone": "PanelsTopLeft",
+                "description": "Fenêtres, baies et véranda reprises en profondeur, châssis compris.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Remise en état",
+                "icone": "Hammer",
+                "description": "Après des travaux à la maison ou avant un état des lieux de sortie.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Hébergement de courte durée",
+                "icone": "BedDouble",
+                "description": "Si vous louez une chambre ou un appartement à des voyageurs.",
+                "href": "/nettoyage-hotellerie"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Parlons de votre logement",
+            "sousTitre": "Surface, nombre de pièces d'eau et fréquence souhaitée suffisent pour établir une première estimation.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "zone-intervention",
+      "label": "Zone d'intervention",
+      "meta": {
+        "title": "Zone d'intervention en Wallonie",
+        "description": "Basés à Manage, nous couvrons le Centre, le bassin de Charleroi, le Brabant wallon et Bruxelles, avec des déplacements possibles hors de Belgique."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Couverture",
+            "titre": "Où nous intervenons",
+            "intro": "Manage est notre point de départ. Le rayon d'action réel dépend du type de chantier : un entretien récurrent demande de la proximité, une remise en état ponctuelle beaucoup moins.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Zone d'intervention"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Quatre bassins, et au-delà si nécessaire",
+            "paragraphes": [
+              "La région du Centre constitue notre terrain quotidien. Depuis Manage, nous rayonnons sur La Louvière, Seneffe, Chapelle-lez-Herlaimont, Morlanwelz, Le Rœulx et Binche sans contrainte de délai. C'est la zone où nous acceptons les contrats d'entretien à passage quotidien, parce que nos équipes peuvent enchaîner plusieurs sites dans la même demi-journée.",
+              "Le bassin de Charleroi et le Hainaut central viennent ensuite : Charleroi, Courcelles, Fleurus, Pont-à-Celles, Soignies et Braine-le-Comte. Nous y assurons aussi bien des contrats récurrents que des interventions ponctuelles, avec un délai de mise en place légèrement plus long pour les prestations à haute fréquence.",
+              "Vers le nord, le Brabant wallon et l'agglomération bruxelloise sont couverts principalement pour l'hôtellerie, les logements de courte durée et les remises en état — des chantiers plus longs, où le trajet pèse peu dans l'organisation. Nivelles, Tubize et Bruxelles font partie de nos destinations régulières.",
+              "Enfin, la mobilité internationale fait partie de notre fonctionnement. Pour un chantier de remise en état, une ouverture de site ou une mission ponctuelle chez un client qui nous connaît déjà, nous nous déplaçons hors de Belgique. Ces missions se cadrent au cas par cas : durée, hébergement de l'équipe et frais de déplacement sont chiffrés dans le devis, sans mauvaise surprise."
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Communes desservies",
+            "intro": "Cette liste n'est pas limitative : si votre commune n'y figure pas, posez-nous la question.",
+            "zones": [
+              {
+                "region": "Région du Centre — autour de Manage",
+                "principale": "Manage",
+                "villes": [
+                  "Manage",
+                  "La Louvière",
+                  "Seneffe",
+                  "Chapelle-lez-Herlaimont",
+                  "Morlanwelz",
+                  "Le Rœulx",
+                  "Binche",
+                  "Écaussinnes"
+                ]
+              },
+              {
+                "region": "Bassin de Charleroi et Hainaut central",
+                "principale": "Charleroi",
+                "villes": [
+                  "Charleroi",
+                  "Courcelles",
+                  "Fleurus",
+                  "Pont-à-Celles",
+                  "Soignies",
+                  "Braine-le-Comte"
+                ]
+              },
+              {
+                "region": "Brabant wallon et Bruxelles",
+                "principale": "Nivelles",
+                "villes": [
+                  "Nivelles",
+                  "Tubize",
+                  "Bruxelles"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Votre commune n'est pas listée ?",
+            "sousTitre": "Dites-nous où se trouve le chantier et de quoi il s'agit : nous vous répondrons franchement sur notre capacité à intervenir.",
+            "ctaPrimaire": {
+              "label": "Poser la question",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Contact et devis gratuit",
+        "description": "Joignez M.E.R.I INTERNATIONAL 24h/24 et 7j/7 par téléphone, WhatsApp ou formulaire. Devis gratuit pour vos locaux, votre hébergement ou votre logement."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Joignables en continu",
+            "titre": "Nous contacter",
+            "intro": "Téléphone, WhatsApp ou formulaire : les trois arrivent au même endroit. Plus votre message est précis, plus notre réponse le sera.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Contact"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Demander un devis",
+            "intro": "Indiquez le type de local, sa surface approximative et le créneau qui vous arrange. Nous revenons vers vous avec une estimation.",
+            "telephone": "+32 472 13 10 69",
+            "whatsapp": "+32 472 13 10 69",
+            "email": "meri.inter@outlook.com",
+            "horaires": [
+              {
+                "jour": "Du lundi au dimanche",
+                "heures": "24h/24"
+              }
+            ],
+            "form": true,
+            "formMode": "demande-intervention",
+            "formTitre": "Décrivez votre besoin",
+            "services": [
+              "Bureaux et locaux commerciaux",
+              "Hôtellerie et séjours courts",
+              "Vitres, vérandas et miroirs",
+              "Remise en état",
+              "Chez les particuliers"
+            ],
+            "villes": [
+              "Manage",
+              "La Louvière",
+              "Seneffe",
+              "Chapelle-lez-Herlaimont",
+              "Morlanwelz",
+              "Binche",
+              "Charleroi",
+              "Courcelles",
+              "Soignies",
+              "Braine-le-Comte",
+              "Nivelles",
+              "Bruxelles"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    }
+  ]
+}

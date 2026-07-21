@@ -1,0 +1,1096 @@
+{
+  "slug": "m-e-r-i-international",
+  "i18n": { "default": "fr", "languages": ["fr", "en", "es", "ar"] },
+  "branding": {
+    "logoAlt": "M.E.R.I INTERNATIONAL — limpieza profesional en Manage",
+    "tagline": "Limpieza · Manage · 24 h",
+    "logoDarkBadge": true,
+    "logoScale": 1.2,
+    "colors": { "brand": "#1668B3", "accent": "#2FA24A", "neutral": "cool" },
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/logo-507ab912.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/logo-507ab912.png"
+  },
+  "entreprise": {
+    "nom": "M.E.R.I INTERNATIONAL",
+    "statut": "SRL",
+    "siret": "",
+    "pays": "BE",
+    "tva": { "regime": "reel" }
+  },
+  "seo": { "schemaType": "HousekeepingService", "ville": "Manage" },
+  "meta": {
+    "title": "Limpieza profesional en Manage",
+    "description": "Empresa de limpieza en Manage: oficinas, hostelería, cristales, puesta a punto y particulares. Equipo móvil en Valonia, localizable las 24 horas.",
+    "keywords": [
+      "limpieza Manage",
+      "empresa de limpieza Valonia",
+      "limpieza de oficinas Manage",
+      "limpieza hostelería Valonia",
+      "limpieza de cristales Manage",
+      "puesta a punto Valonia"
+    ]
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Inicio",
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "carte",
+          "content": {
+            "eyebrow": "Centro de operaciones · Manage",
+            "titre": "Limpieza profesional en Manage,",
+            "titreAccent": "a cualquier hora",
+            "accroche": "Oficinas, hoteles y alojamientos, superficies acristaladas, puestas a punto y domicilios particulares. Un equipo móvil con base en Manage que se desplaza por toda Valonia y le atiende en francés, árabe, español o inglés.",
+            "badges": [
+              "Oficinas y comercios",
+              "Hostelería y estancias cortas",
+              "Cristales y verandas",
+              "Puesta a punto",
+              "Particulares"
+            ],
+            "trust": [
+              { "icone": "Clock", "label": "Localizables 24 horas, los 7 días" },
+              { "icone": "Globe", "label": "Valonia y movilidad internacional" },
+              { "icone": "Languages", "label": "FR · AR · ES · EN" }
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/vitres-bureaux.png",
+              "alt": "Operaria de M.E.R.I INTERNATIONAL limpiando una mampara de cristal en una oficina"
+            },
+            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" },
+            "ctaSecondaire": { "label": "Ver nuestros servicios", "href": "/services" }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Servicios",
+            "titre": "Cinco especialidades, un solo equipo",
+            "intro": "Cada intervención se define antes del primer paso: perímetro exacto, frecuencia, productos utilizados y franja horaria. Usted sabe qué se hace, cuándo y quién lo hace.",
+            "items": [
+              {
+                "nom": "Oficinas y locales comerciales",
+                "icone": "Building2",
+                "description": "Mantenimiento regular o puntual de espacios de trabajo, aseos, salas de reunión y zonas comunes, antes de abrir o después de cerrar.",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Hostelería y estancias cortas",
+                "icone": "BedDouble",
+                "description": "Puesta a cero de habitaciones, casas rurales y apartamentos alquilados por noches, con rotación rápida entre una salida y la siguiente entrada.",
+                "href": "/nettoyage-hotellerie"
+              },
+              {
+                "nom": "Cristales, verandas y espejos",
+                "icone": "PanelsTopLeft",
+                "description": "Ventanales, verandas, mamparas interiores y espejos sin marcas ni churretes, incluidos marcos y alféizares.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Puesta a punto",
+                "icone": "Hammer",
+                "description": "Fin de obra, salida de alquiler o local cerrado demasiado tiempo: partimos del soporte desnudo hasta el acabado.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "En casa de particulares",
+                "icone": "House",
+                "description": "Mantenimiento corriente del hogar, gran limpieza de temporada y puesta a punto antes o después de una celebración.",
+                "href": "/nettoyage-particuliers"
+              }
+            ],
+            "cta": { "label": "Ver el detalle de los servicios", "href": "/services" }
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "Cómo funciona",
+            "titre": "De la llamada al control final",
+            "intro": "Cuatro tiempos, siempre los mismos, dure el trabajo dos horas o seis meses.",
+            "items": [
+              {
+                "icone": "PhoneCall",
+                "titre": "Usted nos contacta",
+                "texte": "Por teléfono o WhatsApp, a la hora que le venga bien. Anotamos el tipo de local, la superficie aproximada y el grado de urgencia."
+              },
+              {
+                "icone": "ClipboardCheck",
+                "titre": "Visita y presupuesto",
+                "texte": "Vamos a ver el lugar cuando resulta útil y después recibe un presupuesto escrito con el perímetro, la frecuencia y el precio."
+              },
+              {
+                "icone": "CalendarCheck",
+                "titre": "Intervención planificada",
+                "texte": "La franja se fija con usted, incluso de noche, en fin de semana o festivo. El equipo llega con su material y sus productos."
+              },
+              {
+                "icone": "FileCheck",
+                "titre": "Control y ajuste",
+                "texte": "Repasamos el resultado con usted. Lo que no convence se rehace y el pliego se corrige para las siguientes visitas."
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "eyebrow": "Quiénes somos",
+            "titre": "Un equipo que no para",
+            "titreAccent": "a las cinco de la tarde",
+            "paragraphes": [
+              "M.E.R.I INTERNATIONAL nace de una constatación sencilla: la mayoría de los locales profesionales no pueden limpiarse ni durante el horario de apertura ni con una planificación rígida. Un hotel encadena salidas y entradas la misma mañana; una oficina solo se libera cuando se marcha la última persona; una obra termina la víspera de la entrega de llaves.",
+              "Por eso construimos la empresa alrededor de la disponibilidad. Nuestros equipos están localizables 24 horas al día, 7 días a la semana, y se desplazan por toda Valonia desde Manage. Para los clientes que lo solicitan, también trabajamos fuera de las fronteras belgas: la movilidad internacional forma parte de nuestra organización, no es una promesa comercial.",
+              "Nuestro personal trabaja en francés, árabe, español e inglés. Es una ventaja concreta en hostelería y para los propietarios extranjeros que gestionan un inmueble a distancia: las instrucciones se dan en su idioma y los informes también.",
+              "Aportamos nuestro material y nuestros productos, y adaptamos los protocolos al soporte: el suelo de mármol de un vestíbulo, la encimera de un apartamento amueblado y una veranda no se tratan de la misma manera."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/hall-accueil.png",
+              "alt": "Operaria de M.E.R.I INTERNATIONAL fregando el suelo de un vestíbulo de recepción"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3",
+            "ctaPrimaire": { "label": "Contactar", "href": "/contact" },
+            "ctaSecondaire": { "label": "Dónde intervenimos", "href": "/zone-intervention" }
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "Sobre el terreno",
+            "titre": "En intervención",
+            "intro": "Algunas imágenes de nuestros equipos y de nuestro material, tomadas en intervenciones profesionales.",
+            "ratio": "4/3",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/vitres-bureaux.png",
+                  "alt": "Limpieza de una mampara de cristal en una planta de oficinas"
+                },
+                "titre": "Mamparas de cristal",
+                "description": "Repaso de los acristalamientos interiores y las manillas, sin marcas a contraluz."
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/hall-accueil.png",
+                  "alt": "Fregado del suelo de mármol de un vestíbulo"
+                },
+                "titre": "Vestíbulo de recepción",
+                "description": "Mantenimiento de suelos duros en una recepción, con método adaptado al mármol."
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/materiel-produits.png",
+                  "alt": "Material y productos de limpieza de M.E.R.I INTERNATIONAL"
+                },
+                "titre": "Material incluido",
+                "description": "Llegamos equipados: microfibras codificadas por zona y productos adaptados a cada soporte."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Lo que más nos preguntan",
+            "items": [
+              {
+                "question": "¿Trabajan realmente de noche y los fines de semana?",
+                "reponse": "Sí. Nuestros horarios se construyen en torno a sus limitaciones, no al revés: trabajamos de noche en oficinas y comercios, muy temprano en hostelería, y en domingo o festivo cuando es la única franja posible."
+              },
+              {
+                "question": "¿El presupuesto tiene coste?",
+                "reponse": "No, la estimación es gratuita y sin compromiso. Según el tamaño del local, lo calculamos directamente por teléfono a partir de sus datos o tras una visita presencial que no le cuesta nada."
+              },
+              {
+                "question": "¿Hay que aportar el material y los productos?",
+                "reponse": "No, llegamos con nuestro propio equipamiento y consumibles. Si su centro exige productos concretos —norma interna, alergia, superficie delicada— utilizamos los suyos o compramos la referencia que nos indique."
+              },
+              {
+                "question": "¿En qué idiomas podemos hablar con ustedes?",
+                "reponse": "Nuestro personal se expresa en francés, árabe, español e inglés. Las instrucciones de acceso, los informes y los intercambios con gestores extranjeros se hacen en el idioma que le resulte cómodo."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "¿Un local que poner a punto?",
+            "sousTitre": "Cuéntenos la situación: le respondemos con una franja horaria y un precio, aunque la llamada entre a las tres de la madrugada.",
+            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" },
+            "ctaSecondaire": { "label": "Llamar ahora", "href": "tel:+32472131069" }
+          }
+        }
+      ]
+    },
+
+    {
+      "slug": "services",
+      "label": "Servicios",
+      "meta": {
+        "title": "Servicios de limpieza en Valonia",
+        "description": "Limpieza de oficinas y hoteles, cristales, puesta a punto tras obras y mantenimiento del hogar, en toda Valonia desde nuestra base en Manage."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Catálogo de intervenciones",
+            "titre": "Nuestros servicios de limpieza",
+            "intro": "Cinco ámbitos distintos, cada uno con sus métodos, su material y su ritmo. Elija el que corresponde a su situación.",
+            "breadcrumb": [{ "label": "Inicio", "href": "/" }, { "label": "Servicios" }]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Detalle",
+            "titre": "Elija su ámbito",
+            "intro": "Cada ficha precisa qué está incluido, qué no lo está y cómo procedemos concretamente.",
+            "items": [
+              {
+                "nom": "Oficinas y locales comerciales",
+                "icone": "Building2",
+                "description": "Contratos recurrentes o pasos puntuales, con un pliego escrito y un único responsable para su centro.",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Hostelería y estancias cortas",
+                "icone": "BedDouble",
+                "description": "Habitaciones, casas rurales y pisos turísticos preparados entre dos reservas, con ropa de cama y reposición si lo desea.",
+                "href": "/nettoyage-hotellerie"
+              },
+              {
+                "nom": "Cristales, verandas y espejos",
+                "icone": "PanelsTopLeft",
+                "description": "Acristalamiento interior y exterior accesible, verandas completas, lucernarios y grandes superficies reflectantes.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Puesta a punto",
+                "icone": "Hammer",
+                "description": "Tras obras, tras un siniestro leve o antes de un inventario: decapado de residuos, desengrase completo y acabado.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "En casa de particulares",
+                "icone": "House",
+                "description": "Mantenimiento del domicilio con la frecuencia que elija, o gran limpieza puntual tras una mudanza o una fiesta.",
+                "href": "/nettoyage-particuliers"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "eyebrow": "Método",
+            "titre": "Lo que nunca cambia,",
+            "titreAccent": "sea cual sea el trabajo",
+            "paragraphes": [
+              "Antes que nada establecemos un perímetro escrito. Es el documento que evita malentendidos: enumera estancia por estancia qué se trata, con qué frecuencia y qué queda expresamente fuera del servicio. Usted lo valida antes de que empecemos.",
+              "Después trabajamos con un juego de microfibras codificadas por zona, para que un paño de aseo no llegue nunca a una encimera. Los productos se eligen según el soporte y no por costumbre: un acero inoxidable, un parqué vitrificado y una piedra natural piden tres tratamientos diferentes.",
+              "Por último, cada centro tiene un responsable de nuestro lado. Es la misma persona a la que llama para señalar un punto a repasar, mover una visita o añadir una estancia al perímetro, sin pasar por una centralita ni volver a explicar su expediente."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/materiel-produits.png",
+              "alt": "Cubo, microfibras y productos de limpieza preparados antes de una intervención"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "¿Duda sobre qué servicio necesita?",
+            "sousTitre": "Explíquenos su situación en dos frases: le diremos qué fórmula corresponde y qué implica.",
+            "ctaPrimaire": { "label": "Hacer mi consulta", "href": "/contact" }
+          }
+        }
+      ]
+    },
+
+    {
+      "slug": "nettoyage-bureaux",
+      "label": "Oficinas y locales comerciales",
+      "navHidden": true,
+      "meta": {
+        "title": "Limpieza de oficinas en Manage",
+        "description": "Mantenimiento de oficinas, comercios y zonas comunes en Valonia: pasos fuera del horario de apertura, pliego de condiciones escrito y responsable único."
+      },
+      "service": {
+        "name": "Limpieza de oficinas y locales comerciales",
+        "description": "Mantenimiento regular o puntual de espacios profesionales en Valonia, planificado fuera del horario de apertura.",
+        "serviceType": "Limpieza de oficinas",
+        "priceFrom": "Según presupuesto"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Profesional",
+            "titre": "Limpieza de oficinas y locales comerciales",
+            "intro": "Pasos ajustados a sus horarios, un perímetro escrito y un equipo que conoce su centro en lugar de una rotación de personal temporal.",
+            "breadcrumb": [
+              { "label": "Inicio", "href": "/" },
+              { "label": "Servicios", "href": "/services" },
+              { "label": "Oficinas y locales comerciales" }
+            ],
+            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Qué cubre el mantenimiento de sus locales",
+            "paragraphes": [
+              "La intervención tipo en una planta de oficinas incluye el vaciado y la separación de papeleras, la aspiración y el fregado de suelos, el repaso de las mesas despejadas, la desinfección de los puntos de contacto —manillas, interruptores, botones de ascensor, cafeteras— y el mantenimiento completo de los aseos con reposición de papel y jabón si nos confía los consumibles.",
+              "Las salas de reunión se devuelven a una configuración neutra: mesas repasadas, sillas alineadas, pizarras borradas, huellas retiradas de las mamparas de cristal. Las cocinas y zonas de descanso reciben un desengrase de encimeras, fregadero y exterior de los electrodomésticos.",
+              "Quedan fuera del paquete corriente, salvo petición expresa: ordenar documentos y efectos personales, el interior de armarios cerrados, la limpieza de equipos informáticos más allá de un desempolvado prudente, y los acristalamientos exteriores en altura que exijan plataforma elevadora. Todo ello puede añadirse al perímetro, pero se presupuesta aparte para que el documento siga siendo legible.",
+              "La frecuencia se decide con usted: diaria para un espacio abierto muy transitado, dos o tres pasos semanales para una pyme, o una intervención mensual a fondo para un local poco ocupado. En todos los casos pasamos antes de que lleguen sus colaboradores o cuando se ha marchado el último: nadie trabaja rodeado de nuestro material."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "Puesta en marcha",
+            "titre": "Cómo arranca un contrato",
+            "items": [
+              {
+                "icone": "Search",
+                "titre": "Visita técnica",
+                "texte": "Recorremos el centro con usted, medimos superficies y anotamos revestimientos, accesos y procedimiento de alarma."
+              },
+              {
+                "icone": "ClipboardCheck",
+                "titre": "Pliego de condiciones",
+                "texte": "Recibe el perímetro escrito, estancia por estancia, con la frecuencia y el precio. Nada empieza sin su acuerdo."
+              },
+              {
+                "icone": "KeyRound",
+                "titre": "Accesos y llaves",
+                "texte": "Tarjetas, códigos o llaves quedan registrados y se entregan a un número reducido de operarios, identificados en su expediente."
+              },
+              {
+                "icone": "Timer",
+                "titre": "Pasos regulares",
+                "texte": "El equipo interviene en la franja acordada. Hacemos un balance con usted tras las primeras semanas para afinar los detalles."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Preguntas sobre la limpieza de oficinas",
+            "items": [
+              {
+                "question": "¿Pueden intervenir tras el cierre, con los locales vacíos?",
+                "reponse": "Es incluso el caso más habitual. Recogemos un juego de llaves o una tarjeta, el procedimiento de alarma queda anotado en su expediente y el equipo pasa por la tarde o muy temprano. Usted encuentra los locales listos al llegar."
+              },
+              {
+                "question": "¿Quién suministra el papel higiénico y el jabón?",
+                "reponse": "Existen las dos opciones. O gestiona usted sus consumibles y nosotros solo reponemos los dispensadores, o los compramos nosotros y aparecen en una línea aparte de la factura, a precio de coste más la manipulación."
+              },
+              {
+                "question": "¿Viene siempre el mismo equipo?",
+                "reponse": "Sí, en la medida de lo posible. Cada centro se asigna a una pareja de referencia que conoce sus particularidades. En caso de vacaciones o baja, la persona sustituta recibe la información de su pliego antes de su primer paso."
+              },
+              {
+                "question": "¿Qué ocurre si algo no se ha hecho correctamente?",
+                "reponse": "Llama a su responsable y volvemos sobre ese punto sin coste adicional. Si el olvido se repite, suele significar que el perímetro era ambiguo: lo reescribimos para que el problema no vuelva."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "También para sus locales",
+            "titre": "Servicios complementarios",
+            "items": [
+              {
+                "nom": "Cristales y mamparas",
+                "icone": "PanelsTopLeft",
+                "description": "Acristalamientos interiores, fachadas accesibles y mamparas de oficina sin marcas.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Puesta a punto",
+                "icone": "Hammer",
+                "description": "Antes de instalarse en nuevos locales o después de obras de acondicionamiento.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Hostelería y estancias cortas",
+                "icone": "BedDouble",
+                "description": "Si su actividad incluye alojamiento o viviendas de empresa.",
+                "href": "/nettoyage-hotellerie"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Presupuestemos su centro",
+            "sousTitre": "Indíquenos la superficie aproximada y el número de puestos de trabajo: tendrá una horquilla el mismo día.",
+            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" }
+          }
+        }
+      ]
+    },
+
+    {
+      "slug": "nettoyage-hotellerie",
+      "label": "Hostelería y estancias cortas",
+      "navHidden": true,
+      "meta": {
+        "title": "Limpieza hotelera y de alquileres en Manage",
+        "description": "Puesta a cero de habitaciones, casas rurales y pisos turísticos en Valonia: rotación rápida entre reservas, ropa de cama y reposición, los siete días."
+      },
+      "service": {
+        "name": "Limpieza hotelera y de alojamientos de corta duración",
+        "description": "Puesta a cero de habitaciones de hotel, casas rurales y apartamentos alquilados por noches, entre una salida y la siguiente entrada.",
+        "serviceType": "Limpieza hotelera",
+        "priceFrom": "Según presupuesto"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Alojamiento",
+            "titre": "Hostelería, casas rurales y alquileres de corta duración",
+            "intro": "La franja entre una salida a las 10 h y una entrada a las 15 h no perdona ningún retraso. Es exactamente el oficio para el que estamos organizados.",
+            "breadcrumb": [
+              { "label": "Inicio", "href": "/" },
+              { "label": "Servicios", "href": "/services" },
+              { "label": "Hostelería y estancias cortas" }
+            ],
+            "ctaPrimaire": { "label": "Organizar las rotaciones", "href": "/contact" }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "La puesta a cero entre dos reservas",
+            "paragraphes": [
+              "Una habitación o un alojamiento puesto a cero significa, para nosotros, que el siguiente viajero no encuentra ningún rastro del anterior. Eso abarca el decapado completo del baño, la eliminación de cal en grifería y ducha, la desinfección de los sanitarios, el cambio íntegro de la ropa de cama y de baño, la limpieza de suelos, el desempolvado de superficies altas y el vaciado de papeleras con reposición de bolsas.",
+              "En cocina o cocina americana vaciamos y limpiamos el frigorífico, desengrasamos las placas, la campana accesible y el microondas, fregamos la vajilla que haya quedado y comprobamos que el inventario anunciado esté completo. Los olvidos de los viajeros se apartan y se comunican, nunca se tiran sin su consentimiento.",
+              "También nos encargamos de reponer los consumibles que nos confíe: papel, jabón, cápsulas de café, bolsas de basura, productos de bienvenida. Le enviamos un aviso cuando una existencia está por agotarse, para evitar la rotura un viernes por la tarde.",
+              "Para los propietarios que gestionan su inmueble a distancia, a menudo desde el extranjero, enviamos tras cada rotación un informe fotográfico de las estancias principales. Cualquier desperfecto detectado se documenta el mismo día, lo que le deja margen para reclamar a la plataforma de reservas dentro de plazo."
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "Estándar esperado",
+            "titre": "El nivel de acabado",
+            "ratio": "4/3",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/hall-accueil.png",
+                  "alt": "Mantenimiento de suelos en un vestíbulo de recepción"
+                },
+                "titre": "Zonas comunes",
+                "description": "Recepción y pasillos tratados antes de las horas de mayor afluencia."
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/materiel-produits.png",
+                  "alt": "Material y productos preparados para una rotación de alojamiento"
+                },
+                "titre": "Carro de rotación",
+                "description": "Un carro por alojamiento, preparado con antelación para cumplir la franja."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Preguntas sobre las rotaciones de alojamiento",
+            "items": [
+              {
+                "question": "¿Cumplen la franja ajustada entre una salida y una entrada el mismo día?",
+                "reponse": "Sí: precisamente para esa franja se pensó nuestra organización. El paso se ajusta a sus horarios de salida y entrada, y el número de operarios enviados se calcula para que el alojamiento esté listo antes de la llegada, incluso en plena temporada."
+              },
+              {
+                "question": "¿Gestionan la ropa de cama y las toallas?",
+                "reponse": "Aseguramos el cambio completo en cada rotación. Puede dejarnos un stock de ropa en el propio alojamiento que nosotros rotamos, o seguir con su lavandería habitual: en ese caso preparamos las bolsas de ropa sucia y recibimos la limpia."
+              },
+              {
+                "question": "¿Intervienen los domingos y festivos?",
+                "reponse": "Sí. Los fines de semana y festivos son justamente los momentos en que más se encadenan las reservas. Nuestra planificación cubre esos días sin recargos sorpresa: las condiciones se fijan en el presupuesto inicial."
+              },
+              {
+                "question": "¿Qué hacen si el alojamiento se devuelve en un estado anormal?",
+                "reponse": "Fotografiamos el estado encontrado antes de intervenir y le avisamos de inmediato. Si la puesta a punto excede claramente una rotación estándar, le proponemos un suplemento presupuestado antes de continuar, nunca después."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Para combinar",
+            "titre": "Otros servicios útiles",
+            "items": [
+              {
+                "nom": "Cristales y verandas",
+                "icone": "PanelsTopLeft",
+                "description": "Ventanales de las habitaciones y verandas de desayuno.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Puesta a punto",
+                "icone": "Hammer",
+                "description": "Antes de la apertura de temporada o tras obras de reforma.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Oficinas y locales",
+                "icone": "Building2",
+                "description": "Back office, recepción y locales administrativos del establecimiento.",
+                "href": "/nettoyage-bureaux"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "¿Cuántos alojamientos hay que cubrir?",
+            "sousTitre": "Indique el número de inmuebles y sus horarios de entrada: construimos con usted el calendario de rotaciones.",
+            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" }
+          }
+        }
+      ]
+    },
+
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Cristales, verandas y espejos",
+      "navHidden": true,
+      "meta": {
+        "title": "Limpieza de cristales en Manage",
+        "description": "Cristalería en Valonia: ventanales, verandas, lucernarios, mamparas de oficina y espejos sin marcas, incluidos marcos y alféizares. Presupuesto gratuito."
+      },
+      "service": {
+        "name": "Limpieza de cristales, verandas y espejos",
+        "description": "Cristalería interior y exterior accesible para particulares y profesionales de Valonia.",
+        "serviceType": "Limpieza de cristales",
+        "priceFrom": "Según presupuesto"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Superficies acristaladas",
+            "titre": "Cristales, ventanales, verandas y espejos",
+            "intro": "Un cristal mal repasado se nota al primer contraluz. El resultado se juzga con luz rasante, no en el momento en que se seca.",
+            "breadcrumb": [
+              { "label": "Inicio", "href": "/" },
+              { "label": "Servicios", "href": "/services" },
+              { "label": "Cristales, verandas y espejos" }
+            ],
+            "ctaPrimaire": { "label": "Presupuestar mis cristales", "href": "/contact" }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "Del marco al cristal, la superficie completa",
+            "paragraphes": [
+              "Limpiar un cristal no se limita al vidrio. Empezamos por desempolvar y lavar los marcos, las ranuras y los alféizares, porque de ahí sale el churrete que ensuciará el cristal limpio a la primera lluvia. Se repasan las juntas, se despejan los carriles de las correderas y se desinfectan las manillas de paso.",
+              "El vidrio se trata con haragán tras mojarlo, técnica que deja bastantes menos marcas que el secado con paño en superficies grandes. Para vidrios antiguos, acristalamientos serigrafiados o espejos de baño marcados por la cal, adaptamos el producto y la presión en lugar de forzar con riesgo de rayar.",
+              "Las verandas reciben un tratamiento específico: cubierta accesible, montantes de aluminio o PVC, canalones interiores y paredes. El verdín y los depósitos orgánicos que se instalan en las caras exteriores exigen un producto distinto del utilizado en el interior.",
+              "Intervenimos en todo lo accesible desde el suelo, una escalera o un taburete, tanto en interior como en exterior. Las fachadas acristaladas que requieren plataforma elevadora o trabajos verticales corresponden a empresas especializadas en altura: se lo decimos con franqueza en vez de aceptar un trabajo que no podríamos asegurar."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/vitres-bureaux.png",
+              "alt": "Limpieza con microfibra de una mampara de cristal de oficina"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Preguntas sobre cristalería",
+            "items": [
+              {
+                "question": "¿Con qué frecuencia hay que limpiar los cristales?",
+                "reponse": "En una vivienda, dos pasos al año suelen bastar: en primavera y a la entrada del invierno. Un escaparate o una oficina a pie de carretera pide un ritmo mensual, a veces semanal cuando el tráfico deposita mucho polvo graso."
+              },
+              {
+                "question": "¿Trabajan en altura?",
+                "reponse": "Cubrimos todo lo que sigue siendo accesible con seguridad desde el suelo, un taburete o una pértiga telescópica, lo que incluye la gran mayoría de viviendas, verandas y bajos comerciales. Más allá hace falta plataforma elevadora y el trabajo sale de nuestro ámbito."
+              },
+              {
+                "question": "¿Se pueden limpiar cristales con helada o lluvia?",
+                "reponse": "La helada lo impide en exterior: el agua cuaja sobre el vidrio y el resultado es malo. Una lluvia fina no afecta realmente al acabado una vez tratado el cristal, pero preferimos aplazar antes que entregarle un trabajo que no aguantará."
+              },
+              {
+                "question": "¿Tratan también espejos y superficies reflectantes?",
+                "reponse": "Sí: espejos de baño, paredes de espejo en gimnasios o comercios, puertas acristaladas e inoxidables brillantes. Estos soportes se marcan con el mínimo dedo y exigen un acabado con microfibra seca tras el lavado."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "A menudo asociado",
+            "titre": "Combinar con",
+            "items": [
+              {
+                "nom": "Oficinas y comercios",
+                "icone": "Building2",
+                "description": "Cristalería integrada en el contrato de mantenimiento regular de sus locales.",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "En casa de particulares",
+                "icone": "House",
+                "description": "Cristales repasados durante la gran limpieza de temporada del hogar.",
+                "href": "/nettoyage-particuliers"
+              },
+              {
+                "nom": "Puesta a punto",
+                "icone": "Hammer",
+                "description": "Retirada de etiquetas, film protector y salpicaduras de pintura.",
+                "href": "/remise-en-etat"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "¿Cuántos cristales hay que repasar?",
+            "sousTitre": "Cuente aproximadamente sus ventanas y ventanales, indique si hay veranda: el presupuesto sale rápido.",
+            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" }
+          }
+        }
+      ]
+    },
+
+    {
+      "slug": "remise-en-etat",
+      "label": "Puesta a punto",
+      "navHidden": true,
+      "meta": {
+        "title": "Puesta a punto de locales en Valonia",
+        "description": "Limpieza de fin de obra, salida de alquiler y locales abandonados: decapado de residuos, desengrase completo y acabado antes del inventario de salida."
+      },
+      "service": {
+        "name": "Puesta a punto tras obras o antes de inventario",
+        "description": "Limpieza pesada de fin de obra, de salida de alquiler o de local mucho tiempo desocupado, en Valonia.",
+        "serviceType": "Limpieza de fin de obra",
+        "priceFrom": "Según presupuesto"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Limpieza pesada",
+            "titre": "Puesta a punto de locales y viviendas",
+            "intro": "Cuando el mantenimiento corriente ya no basta: polvo de yeso incrustado, restos de cola, cal antigua, local cerrado durante meses.",
+            "breadcrumb": [
+              { "label": "Inicio", "href": "/" },
+              { "label": "Servicios", "href": "/services" },
+              { "label": "Puesta a punto" }
+            ],
+            "ctaPrimaire": { "label": "Evaluar la obra", "href": "/contact" }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Partir del soporte, no de la superficie",
+            "paragraphes": [
+              "Una puesta a punto no tiene nada que ver con un mantenimiento reforzado. Tras unas obras, el polvo de yeso y de corte se ha depositado por todas partes, incluidas las superficies altas, las ranuras de los marcos, detrás de los radiadores y dentro de los armarios. Un simple paso lo pone de nuevo en suspensión y vuelve a caer al día siguiente: hay que captarlo, no desplazarlo.",
+              "Procedemos de arriba abajo y del fondo hacia la salida. Aspiración de volúmenes y rincones, despegado de restos de cola, adhesivo y film protector, retirada de salpicaduras de pintura y enlucido en suelos duros y cristales, desengrase de carpinterías, y después fregado de suelos en varias pasadas hasta que el agua de aclarado salga limpia.",
+              "En una vivienda en salida de alquiler el objetivo es distinto pero la lógica se mantiene: repasar lo que un inventario detecta sistemáticamente. Sanitarios descalcificados a fondo, juntas repasadas, horno y placas desengrasados, campana desmontada cuando es desmontable, interior de armarios y cajones lavado, marcas de fijación limpiadas en las paredes.",
+              "Le decimos qué corresponde a limpieza y qué corresponde a reparación. Una raya profunda en un parqué, una junta de silicona con moho o una pintura desconchada no se resuelven con producto: más vale saberlo antes del inventario que descubrirlo delante del propietario."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "Desarrollo",
+            "titre": "Cuatro pasadas sucesivas",
+            "items": [
+              {
+                "icone": "Trash2",
+                "titre": "Evacuación",
+                "texte": "Retirada de los residuos restantes, de las protecciones de suelo y de los embalajes dejados por los gremios."
+              },
+              {
+                "icone": "Wind",
+                "titre": "Desempolvado completo",
+                "texte": "Aspiración de arriba abajo: techos accesibles, paredes, conductos, marcos, radiadores, interiores de armarios."
+              },
+              {
+                "icone": "SprayCan",
+                "titre": "Decapado y desengrase",
+                "texte": "Colas, adhesivos, salpicaduras de pintura y cal antigua tratados soporte por soporte, sin agredir los acabados."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "Acabado y control",
+                "texte": "Fregado de suelos en varias pasadas, repaso de cristales y después vuelta completa con usted antes de entregar las llaves."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Preguntas sobre la puesta a punto",
+            "items": [
+              {
+                "question": "¿Cuánto tiempo lleva una obra de fin de trabajos?",
+                "reponse": "Depende sobre todo del volumen de polvo y de la naturaleza de los residuos, no solo de la superficie. Un piso reformado de dos dormitorios pide en general una o dos jornadas con dos operarios; una planta de oficinas recién acondicionada se planifica en varios días."
+              },
+              {
+                "question": "¿Intervienen antes de un inventario de salida?",
+                "reponse": "Sí, es una petición frecuente. Apuntamos a los puntos que los inventarios detectan con más frecuencia: sanitarios, electrodomésticos, interiores de armarios, marcas en paredes y cristales. Prevea la intervención dos o tres días antes de la cita, nunca la víspera por la noche."
+              },
+              {
+                "question": "¿Retiran escombros y voluminosos?",
+                "reponse": "Evacuamos los residuos corrientes ligados a la limpieza y los pequeños volúmenes. Los escombros de obra, el mobiliario pesado y los voluminosos exigen una recogida especializada: le orientamos hacia la solución adecuada en lugar de improvisar un transporte no conforme."
+              },
+              {
+                "question": "¿Se puede recuperar un local abandonado desde hace tiempo?",
+                "reponse": "En la mayoría de los casos sí, pero preferimos ver el lugar antes de comprometernos. Humedad instalada, moho extendido o plagas exigen tratamientos específicos que exceden la limpieza, y se lo indicamos ya en la visita."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Después",
+            "titre": "Y tras la puesta a punto",
+            "items": [
+              {
+                "nom": "Oficinas y locales comerciales",
+                "icone": "Building2",
+                "description": "Tomar el relevo en mantenimiento regular una vez ocupados los locales.",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Cristales y verandas",
+                "icone": "PanelsTopLeft",
+                "description": "Recuperación completa de los acristalamientos marcados por la obra.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Hostelería y estancias cortas",
+                "icone": "BedDouble",
+                "description": "Puesta en servicio de un alojamiento antes de su primera reserva.",
+                "href": "/nettoyage-hotellerie"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "¿Una obra que evaluar?",
+            "sousTitre": "Envíenos algunas fotos del lugar: le damos una estimación y un plazo realista.",
+            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" }
+          }
+        }
+      ]
+    },
+
+    {
+      "slug": "nettoyage-particuliers",
+      "label": "En casa de particulares",
+      "navHidden": true,
+      "meta": {
+        "title": "Limpieza a domicilio en Manage",
+        "description": "Mantenimiento del hogar en Valonia: limpieza regular, gran limpieza de temporada, puesta a punto tras mudanza o celebración. Presupuesto sin compromiso."
+      },
+      "service": {
+        "name": "Limpieza en casa de particulares",
+        "description": "Mantenimiento corriente y grandes limpiezas puntuales en domicilios particulares de Valonia.",
+        "serviceType": "Limpieza a domicilio",
+        "priceFrom": "Según presupuesto"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Domicilio",
+            "titre": "Limpieza en casa de particulares",
+            "intro": "Un mantenimiento regular con la frecuencia que le convenga, o una gran limpieza puntual cuando la casa lo necesita.",
+            "breadcrumb": [
+              { "label": "Inicio", "href": "/" },
+              { "label": "Servicios", "href": "/services" },
+              { "label": "En casa de particulares" }
+            ],
+            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "En su casa, a su ritmo",
+            "paragraphes": [
+              "El mantenimiento corriente de una vivienda cubre las zonas de estar y los dormitorios —suelos aspirados y fregados, superficies desempolvadas, camas hechas si lo desea— así como las zonas húmedas, que piden la mayor atención: ducha y bañera descalcificadas, sanitarios desinfectados, grifería repasada, espejos sin marcas.",
+              "La cocina recibe un paso sistemático por la encimera, el fregadero, la placa de cocción y el exterior de los electrodomésticos. El horno, el interior del frigorífico y la campana no entran en el paso corriente, pero los integramos de buena gana a intervalos regulares o en una gran limpieza.",
+              "La gran limpieza de temporada va bastante más lejos: rodapiés, puertas y manillas, parte alta de los armarios, radiadores, interiores de armarios y cajones, cristales y marcos, luminarias accesibles. Es la fórmula que elegir antes de una reunión familiar, tras una mudanza, o simplemente una o dos veces al año para volver a una base limpia.",
+              "Fijamos juntos qué se hace en cada paso. Algunos hogares lo quieren todo; otros prefieren concentrar nuestro tiempo en las zonas húmedas y la cocina y reservarse el orden. Ambos enfoques nos valen, siempre que queden por escrito."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/materiel-produits.png",
+              "alt": "Productos y microfibras sobre una encimera antes del mantenimiento de una vivienda"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Preguntas de los particulares",
+            "items": [
+              {
+                "question": "¿Hay que estar presente durante la intervención?",
+                "reponse": "No necesariamente. Muchos clientes nos confían una llave, sobre todo para los pasos diurnos. La primera intervención suele hacerse con usted presente, el tiempo de recorrer la vivienda y precisar sus expectativas estancia por estancia."
+              },
+              {
+                "question": "¿Puedo pedir un paso único en lugar de un abono?",
+                "reponse": "Sí, sin ningún problema. Una gran limpieza puntual tras una mudanza, antes de una fiesta o al salir del invierno se contrata por unidad. Nada le obliga a continuar, y el precio de un paso aislado se le anuncia por adelantado."
+              },
+              {
+                "question": "¿Utilizan productos agresivos?",
+                "reponse": "Adaptamos el producto al soporte y a su hogar. Si tiene niños pequeños, animales o alguna sensibilidad particular, dígalo: privilegiamos entonces fórmulas suaves y evitamos los perfumes marcados, sin perder eficacia en los puntos sensibles."
+              },
+              {
+                "question": "¿Intervienen por la tarde o el fin de semana para particulares?",
+                "reponse": "Sí, igual que para nuestros clientes profesionales. Si sus horarios de trabajo impiden un paso diurno, fijamos la intervención al final del día o el sábado, según la disponibilidad del equipo en su municipio."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "También",
+            "titre": "Otras necesidades en casa",
+            "items": [
+              {
+                "nom": "Cristales, verandas y espejos",
+                "icone": "PanelsTopLeft",
+                "description": "Ventanas, ventanales y veranda repasados a fondo, marcos incluidos.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Puesta a punto",
+                "icone": "Hammer",
+                "description": "Tras obras en casa o antes de un inventario de salida.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Alquiler de corta duración",
+                "icone": "BedDouble",
+                "description": "Si alquila una habitación o un piso a viajeros.",
+                "href": "/nettoyage-hotellerie"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Hablemos de su vivienda",
+            "sousTitre": "Superficie, número de zonas húmedas y frecuencia deseada bastan para una primera estimación.",
+            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" }
+          }
+        }
+      ]
+    },
+
+    {
+      "slug": "zone-intervention",
+      "label": "Zona de intervención",
+      "meta": {
+        "title": "Zona de intervención en Valonia",
+        "description": "Con base en Manage, cubrimos la región del Centro, la cuenca de Charleroi, el Brabante Valón y Bruselas, con desplazamientos posibles fuera de Bélgica."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Cobertura",
+            "titre": "Dónde intervenimos",
+            "intro": "Manage es nuestro punto de partida. El radio real depende del tipo de trabajo: un mantenimiento recurrente pide proximidad; una puesta a punto puntual, mucho menos.",
+            "breadcrumb": [{ "label": "Inicio", "href": "/" }, { "label": "Zona de intervención" }]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Cuatro cuencas, y más allá si hace falta",
+            "paragraphes": [
+              "La región del Centro constituye nuestro terreno diario. Desde Manage irradiamos hacia La Louvière, Seneffe, Chapelle-lez-Herlaimont, Morlanwelz, Le Rœulx y Binche sin limitación de plazo. Es la zona donde aceptamos contratos de mantenimiento con paso diario, porque nuestros equipos pueden encadenar varios centros en la misma media jornada.",
+              "Después llega la cuenca de Charleroi y el Henao central: Charleroi, Courcelles, Fleurus, Pont-à-Celles, Soignies y Braine-le-Comte. Allí atendemos tanto contratos recurrentes como intervenciones puntuales, con un plazo de puesta en marcha algo mayor para los servicios de alta frecuencia.",
+              "Hacia el norte, el Brabante Valón y el área de Bruselas se cubren sobre todo para hostelería, alojamientos de corta duración y puestas a punto: trabajos más largos, en los que el trayecto pesa poco en la organización. Nivelles, Tubize y Bruselas figuran entre nuestros destinos habituales.",
+              "Por último, la movilidad internacional forma parte de nuestro funcionamiento. Para una puesta a punto, una apertura de centro o una misión puntual con un cliente que ya nos conoce, nos desplazamos fuera de Bélgica. Estas misiones se definen caso por caso: duración, alojamiento del equipo y gastos de desplazamiento se presupuestan, sin malas sorpresas."
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Municipios atendidos",
+            "intro": "Esta lista no es limitativa: si su municipio no figura en ella, pregúntenos.",
+            "zones": [
+              {
+                "region": "Región del Centro — alrededor de Manage",
+                "principale": "Manage",
+                "villes": [
+                  "Manage",
+                  "La Louvière",
+                  "Seneffe",
+                  "Chapelle-lez-Herlaimont",
+                  "Morlanwelz",
+                  "Le Rœulx",
+                  "Binche",
+                  "Écaussinnes"
+                ]
+              },
+              {
+                "region": "Cuenca de Charleroi y Henao central",
+                "principale": "Charleroi",
+                "villes": [
+                  "Charleroi",
+                  "Courcelles",
+                  "Fleurus",
+                  "Pont-à-Celles",
+                  "Soignies",
+                  "Braine-le-Comte"
+                ]
+              },
+              {
+                "region": "Brabante Valón y Bruselas",
+                "principale": "Nivelles",
+                "villes": ["Nivelles", "Tubize", "Bruselas"]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "¿Su municipio no aparece?",
+            "sousTitre": "Díganos dónde está el trabajo y de qué se trata: le responderemos con franqueza sobre nuestra capacidad de intervenir.",
+            "ctaPrimaire": { "label": "Hacer la consulta", "href": "/contact" }
+          }
+        }
+      ]
+    },
+
+    {
+      "slug": "contact",
+      "label": "Contacto",
+      "meta": {
+        "title": "Contacto y presupuesto gratuito",
+        "description": "Contacte con M.E.R.I INTERNATIONAL 24 horas al día por teléfono, WhatsApp o formulario. Presupuesto gratuito para sus locales, alojamiento o vivienda."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Localizables en continuo",
+            "titre": "Contactar",
+            "intro": "Teléfono, WhatsApp o formulario: los tres llegan al mismo sitio. Cuanto más preciso sea su mensaje, más precisa será nuestra respuesta.",
+            "breadcrumb": [{ "label": "Inicio", "href": "/" }, { "label": "Contacto" }]
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Pedir presupuesto",
+            "intro": "Indique el tipo de local, su superficie aproximada y la franja que le convenga. Volvemos hacia usted con una estimación.",
+            "telephone": "+32 472 13 10 69",
+            "whatsapp": "+32 472 13 10 69",
+            "email": "meri.inter@outlook.com",
+            "horaires": [{ "jour": "De lunes a domingo", "heures": "24 horas" }],
+            "form": true,
+            "formMode": "demande-intervention",
+            "formTitre": "Describa su necesidad",
+            "services": [
+              "Oficinas y locales comerciales",
+              "Hostelería y estancias cortas",
+              "Cristales, verandas y espejos",
+              "Puesta a punto",
+              "En casa de particulares"
+            ],
+            "villes": [
+              "Manage",
+              "La Louvière",
+              "Seneffe",
+              "Chapelle-lez-Herlaimont",
+              "Morlanwelz",
+              "Binche",
+              "Charleroi",
+              "Courcelles",
+              "Soignies",
+              "Braine-le-Comte",
+              "Nivelles",
+              "Bruselas"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    }
+  ]
+}

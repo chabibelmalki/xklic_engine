@@ -1,0 +1,1096 @@
+{
+  "slug": "m-e-r-i-international",
+  "i18n": { "default": "fr", "languages": ["fr", "en", "es", "ar"] },
+  "branding": {
+    "logoAlt": "M.E.R.I INTERNATIONAL — professional cleaning in Manage",
+    "tagline": "Cleaning · Manage · 24/7",
+    "logoDarkBadge": true,
+    "logoScale": 1.2,
+    "colors": { "brand": "#1668B3", "accent": "#2FA24A", "neutral": "cool" },
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/logo-507ab912.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/logo-507ab912.png"
+  },
+  "entreprise": {
+    "nom": "M.E.R.I INTERNATIONAL",
+    "statut": "SRL",
+    "siret": "",
+    "pays": "BE",
+    "tva": { "regime": "reel" }
+  },
+  "seo": { "schemaType": "HousekeepingService", "ville": "Manage" },
+  "meta": {
+    "title": "Professional cleaning in Manage",
+    "description": "Cleaning company in Manage: offices, hotels, windows, post-work clean-up and private homes. Mobile team across Wallonia, reachable 24 hours a day.",
+    "keywords": [
+      "cleaning Manage",
+      "cleaning company Wallonia",
+      "office cleaning Manage",
+      "hotel cleaning Wallonia",
+      "window cleaning Manage",
+      "post-work cleaning Wallonia"
+    ]
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Home",
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "carte",
+          "content": {
+            "eyebrow": "Operations desk · Manage",
+            "titre": "Professional cleaning in Manage,",
+            "titreAccent": "around the clock",
+            "accroche": "Offices, hotels and holiday lets, glazed surfaces, post-work clean-ups and private homes. A mobile team based in Manage that travels across Wallonia and answers you in French, Arabic, Spanish or English.",
+            "badges": [
+              "Offices & retail",
+              "Hotels & short stays",
+              "Windows & verandas",
+              "Post-work clean-up",
+              "Private homes"
+            ],
+            "trust": [
+              { "icone": "Clock", "label": "Reachable 24 hours a day, 7 days a week" },
+              { "icone": "Globe", "label": "Wallonia and international mobility" },
+              { "icone": "Languages", "label": "FR · AR · ES · EN" }
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/vitres-bureaux.png",
+              "alt": "M.E.R.I INTERNATIONAL cleaner wiping a glass office partition"
+            },
+            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" },
+            "ctaSecondaire": { "label": "See our services", "href": "/services" }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Services",
+            "titre": "Five specialities, one team",
+            "intro": "Every job is scoped before the first visit: exact perimeter, frequency, products used and time slot. You know what gets done, when, and by whom.",
+            "items": [
+              {
+                "nom": "Offices and commercial premises",
+                "icone": "Building2",
+                "description": "Regular or one-off upkeep of workspaces, washrooms, meeting rooms and shared areas — before opening or after closing time.",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Hotels and short stays",
+                "icone": "BedDouble",
+                "description": "Full turnaround of hotel rooms, holiday cottages and flats let by the night, between one departure and the next arrival.",
+                "href": "/nettoyage-hotellerie"
+              },
+              {
+                "nom": "Windows, verandas and mirrors",
+                "icone": "PanelsTopLeft",
+                "description": "Bay windows, verandas, internal partitions and mirrors left streak-free, frames and sills included.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Post-work clean-up",
+                "icone": "Hammer",
+                "description": "End of building works, end of tenancy or premises shut for too long: we start from the bare surface and work up to the finish.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Private homes",
+                "icone": "House",
+                "description": "Routine housekeeping, seasonal deep cleans and a fresh start before or after a family gathering.",
+                "href": "/nettoyage-particuliers"
+              }
+            ],
+            "cta": { "label": "See all services in detail", "href": "/services" }
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "How it runs",
+            "titre": "From your call to the final check",
+            "intro": "Four steps, always the same, whether the job lasts two hours or six months.",
+            "items": [
+              {
+                "icone": "PhoneCall",
+                "titre": "You get in touch",
+                "texte": "By phone or WhatsApp, at whatever hour suits you. We note the type of premises, the approximate floor area and how urgent it is."
+              },
+              {
+                "icone": "ClipboardCheck",
+                "titre": "Visit and quote",
+                "texte": "We come and look at the site where that helps, then you receive a written quote setting out the perimeter, the frequency and the price."
+              },
+              {
+                "icone": "CalendarCheck",
+                "titre": "Scheduled visit",
+                "texte": "The slot is agreed with you, including at night, at weekends or on a public holiday. The team arrives with its own equipment and products."
+              },
+              {
+                "icone": "FileCheck",
+                "titre": "Check and adjust",
+                "texte": "We walk through the result with you. Anything that falls short is redone, and the specification is corrected for the next visit."
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "eyebrow": "Who we are",
+            "titre": "A team that does not stop",
+            "titreAccent": "at five o'clock",
+            "paragraphes": [
+              "M.E.R.I INTERNATIONAL grew out of a simple observation: most professional premises can be cleaned neither during opening hours nor on a rigid schedule. A hotel handles departures and arrivals on the same morning; an office only frees up once the last person has left; a building site finishes the day before the keys are handed over.",
+              "So we built the company around availability. Our teams can be reached 24 hours a day, 7 days a week, and travel throughout Wallonia from Manage. For clients who ask for it, we also work beyond the Belgian border: international mobility is part of how we are organised, not a marketing promise.",
+              "Our cleaners work in French, Arabic, Spanish and English. That is a concrete advantage in hospitality and for foreign owners managing a property from a distance: instructions are given in your language, and so are the reports.",
+              "We bring our own equipment and products, and we adapt the method to the surface: the marble floor of a reception area, the worktop of a furnished flat and a veranda are not treated the same way."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/hall-accueil.png",
+              "alt": "M.E.R.I INTERNATIONAL cleaner mopping the floor of a reception hall"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3",
+            "ctaPrimaire": { "label": "Get in touch", "href": "/contact" },
+            "ctaSecondaire": { "label": "Where we operate", "href": "/zone-intervention" }
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "On site",
+            "titre": "Out in the field",
+            "intro": "A few pictures of our teams and equipment, taken on professional assignments.",
+            "ratio": "4/3",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/vitres-bureaux.png",
+                  "alt": "Cleaning a glass partition in an open-plan office"
+                },
+                "titre": "Glass office partitions",
+                "description": "Internal glazing and handles gone over, with no streaks in backlight."
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/hall-accueil.png",
+                  "alt": "Washing the marble floor of a reception hall"
+                },
+                "titre": "Reception hall",
+                "description": "Hard floor care in a lobby, with a method suited to marble."
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/materiel-produits.png",
+                  "alt": "M.E.R.I INTERNATIONAL cleaning equipment and products"
+                },
+                "titre": "Equipment supplied",
+                "description": "We arrive fully equipped: colour-coded microfibres and products matched to each surface."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "What people ask us most",
+            "items": [
+              {
+                "question": "Do you really work at night and at weekends?",
+                "reponse": "Yes. Our schedules are built around your constraints rather than the other way round: we work at night in offices and shops, very early in the morning in hospitality, and on Sundays or public holidays when that is the only workable slot."
+              },
+              {
+                "question": "Is the quote chargeable?",
+                "reponse": "No, the estimate is free and comes with no obligation. Depending on the size of the premises, we either price it over the phone from your description, or after a site visit that costs you nothing."
+              },
+              {
+                "question": "Do we need to provide equipment and products?",
+                "reponse": "No, we arrive with our own equipment and consumables. If your site requires particular products — an internal standard, an allergy, a delicate surface — we use yours or source the brand you ask for."
+              },
+              {
+                "question": "Which languages can we speak to you in?",
+                "reponse": "Our cleaners speak French, Arabic, Spanish and English. Access instructions, reports and discussions with foreign managers all happen in whichever language suits you."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Premises that need putting right?",
+            "sousTitre": "Describe the situation and we will come back with a time slot and a price, even if the call comes in at three in the morning.",
+            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" },
+            "ctaSecondaire": { "label": "Call now", "href": "tel:+32472131069" }
+          }
+        }
+      ]
+    },
+
+    {
+      "slug": "services",
+      "label": "Services",
+      "meta": {
+        "title": "Cleaning services across Wallonia",
+        "description": "Office and hotel cleaning, window care, post-work clean-up and domestic housekeeping, delivered anywhere in Wallonia from our base in Manage."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "What we take on",
+            "titre": "Our cleaning services",
+            "intro": "Five distinct fields, each with its own methods, equipment and rhythm. Pick the one that matches your situation.",
+            "breadcrumb": [{ "label": "Home", "href": "/" }, { "label": "Services" }]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "In detail",
+            "titre": "Choose your field",
+            "intro": "Each page sets out what is included, what is not, and how we actually go about it.",
+            "items": [
+              {
+                "nom": "Offices and commercial premises",
+                "icone": "Building2",
+                "description": "Recurring contracts or one-off visits, with a written specification and a single point of contact for your site.",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Hotels and short stays",
+                "icone": "BedDouble",
+                "description": "Rooms, cottages and tourist flats turned around between bookings, with linen and restocking if you want them.",
+                "href": "/nettoyage-hotellerie"
+              },
+              {
+                "nom": "Windows, verandas and mirrors",
+                "icone": "PanelsTopLeft",
+                "description": "Internal and reachable external glazing, complete verandas, glass roofs and large reflective surfaces.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Post-work clean-up",
+                "icone": "Hammer",
+                "description": "After building works, after minor damage, before an inventory check: residue stripped off, full degreasing and finishing.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Private homes",
+                "icone": "House",
+                "description": "Housekeeping at the frequency you choose, or a one-off deep clean after a move or a celebration.",
+                "href": "/nettoyage-particuliers"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "eyebrow": "Method",
+            "titre": "What never changes,",
+            "titreAccent": "whatever the job",
+            "paragraphes": [
+              "Before anything else we draw up a written perimeter. That document is what prevents misunderstandings: it lists room by room what is treated, how often, and what is explicitly left out of the service. You approve it before we start.",
+              "We then work with a set of colour-coded microfibres, so a cloth used in a washroom never travels to a worktop. Products are chosen for the surface rather than out of habit: stainless steel, sealed parquet and natural stone each call for a different treatment.",
+              "Finally, every site has a named contact on our side. It is the same person you call to flag something to redo, move a visit or add a room to the perimeter — with no switchboard in between and no need to explain your file again."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/materiel-produits.png",
+              "alt": "Bucket, microfibres and cleaning products prepared before a job"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Not sure which service you need?",
+            "sousTitre": "Describe your situation in two sentences and we will tell you which option fits and what it involves.",
+            "ctaPrimaire": { "label": "Ask us", "href": "/contact" }
+          }
+        }
+      ]
+    },
+
+    {
+      "slug": "nettoyage-bureaux",
+      "label": "Offices and commercial premises",
+      "navHidden": true,
+      "meta": {
+        "title": "Office cleaning in Manage",
+        "description": "Upkeep of offices, shops and shared areas in Wallonia: visits outside opening hours, a written specification and one named contact. Free quote."
+      },
+      "service": {
+        "name": "Office and commercial premises cleaning",
+        "description": "Regular or one-off upkeep of professional spaces in Wallonia, scheduled outside opening hours.",
+        "serviceType": "Office cleaning",
+        "priceFrom": "On quote"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Business",
+            "titre": "Office and commercial premises cleaning",
+            "intro": "Visits timed around your hours, a written perimeter, and a team that knows your site instead of a rotation of temporary staff.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Offices and commercial premises" }
+            ],
+            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "What upkeep of your premises covers",
+            "paragraphes": [
+              "A standard visit to an open-plan office covers emptying and sorting the bins, vacuuming and washing the floors, wiping down cleared desks, disinfecting contact points — handles, switches, lift buttons, coffee machines — and full washroom care, with paper and soap restocked if you leave the consumables with us.",
+              "Meeting rooms are reset to a neutral state: tables wiped, chairs realigned, boards cleared, fingerprints taken off the glass partitions. Kitchens and break areas get their worktops, sink and the outside of appliances degreased.",
+              "Left out of the standard package unless you ask otherwise: tidying documents and personal belongings, the inside of closed cabinets, cleaning computer equipment beyond careful dusting, and external glazing at height that requires a platform lift. These can all be added to the perimeter, but they are priced separately so the quote stays readable.",
+              "Frequency is decided with you: daily for a busy open-plan floor, two or three visits a week for a small business, or a monthly deep clean for lightly used premises. In every case we come either before your staff arrive or once the last person has gone, so nobody works around our equipment."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "Getting started",
+            "titre": "How a contract begins",
+            "items": [
+              {
+                "icone": "Search",
+                "titre": "Site survey",
+                "texte": "We walk the site with you, measuring surfaces and noting floor coverings, access constraints and alarm procedures."
+              },
+              {
+                "icone": "ClipboardCheck",
+                "titre": "Written specification",
+                "texte": "You receive the perimeter room by room, with frequency and price. Nothing starts before you have agreed to it."
+              },
+              {
+                "icone": "KeyRound",
+                "titre": "Access and keys",
+                "texte": "Badges, codes or keys are logged and issued to a small number of cleaners, all named on your file."
+              },
+              {
+                "icone": "Timer",
+                "titre": "Regular visits",
+                "texte": "The team works the agreed slot. We review it with you after the first few weeks to fine-tune the details."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions about office cleaning",
+            "items": [
+              {
+                "question": "Can you come after closing, when the premises are empty?",
+                "reponse": "That is in fact the most common arrangement. We hold a set of keys or a badge, the alarm procedure is recorded on your file, and the team comes in the evening or very early in the morning. You walk into premises that are ready."
+              },
+              {
+                "question": "Who supplies the toilet paper and soap?",
+                "reponse": "Either option works. You can manage your own consumables and we simply keep the dispensers topped up, or we buy them for you and they appear as a separate line on the invoice, at cost plus handling."
+              },
+              {
+                "question": "Is it always the same team that comes?",
+                "reponse": "Yes, as far as possible. Each site is assigned to a pair of regular cleaners who know its quirks. If someone is on leave or off sick, the stand-in is briefed on your specification before their first visit."
+              },
+              {
+                "question": "What happens if something has not been done properly?",
+                "reponse": "You call your named contact and we come back to that point at no extra charge. If the same thing is missed repeatedly, it usually means the perimeter was ambiguous, so we rewrite that part to stop it recurring."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Also for your premises",
+            "titre": "Complementary services",
+            "items": [
+              {
+                "nom": "Windows and glass partitions",
+                "icone": "PanelsTopLeft",
+                "description": "Internal glazing, reachable facades and office partitions left streak-free.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Post-work clean-up",
+                "icone": "Hammer",
+                "description": "Before moving into new premises or after fit-out works.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Hotels and short stays",
+                "icone": "BedDouble",
+                "description": "If your business includes accommodation or staff housing.",
+                "href": "/nettoyage-hotellerie"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Let us price your site",
+            "sousTitre": "Give us the approximate floor area and the number of workstations and you will have a range the same day.",
+            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" }
+          }
+        }
+      ]
+    },
+
+    {
+      "slug": "nettoyage-hotellerie",
+      "label": "Hotels and short stays",
+      "navHidden": true,
+      "meta": {
+        "title": "Hotel and holiday let cleaning in Manage",
+        "description": "Turnaround cleaning for hotel rooms, cottages and tourist flats in Wallonia: fast changeovers between bookings, linen and restocking, seven days a week."
+      },
+      "service": {
+        "name": "Hotel and short-stay accommodation cleaning",
+        "description": "Full turnaround of hotel rooms, holiday cottages and flats let by the night, between one departure and the next arrival.",
+        "serviceType": "Hotel cleaning",
+        "priceFrom": "On quote"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Accommodation",
+            "titre": "Hotels, cottages and short-term lets",
+            "intro": "The window between a 10 a.m. checkout and a 3 p.m. arrival forgives no delay. That is exactly the job we are set up for.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Hotels and short stays" }
+            ],
+            "ctaPrimaire": { "label": "Plan your turnarounds", "href": "/contact" }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "The turnaround between two bookings",
+            "paragraphes": [
+              "A room or flat turned around, in our terms, means the next traveller finds no trace of the previous one. That covers a full strip-down of the bathroom, descaling the taps and shower, disinfecting the sanitary ware, a complete change of bed and bath linen, floor cleaning, dusting of high surfaces and emptying the bins with fresh liners.",
+              "In a kitchen or kitchenette we empty and clean the fridge, degrease the hob, the reachable extractor hood and the microwave, wash up anything left behind and check that the advertised inventory is complete. Items forgotten by guests are set aside and reported, never thrown away without your say-so.",
+              "We also handle restocking of any consumables you leave with us: paper, soap, coffee capsules, bin liners, welcome products. You get a note when a stock is running low, so you are not caught short on a Friday evening.",
+              "For owners managing their property remotely, often from abroad, we send a photo report of the main rooms after each turnaround. Any damage found is documented the same day, which leaves you time to raise it with the booking platform within the deadline."
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "The standard",
+            "titre": "The level of finish",
+            "ratio": "4/3",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/hall-accueil.png",
+                  "alt": "Floor care in a reception hall"
+                },
+                "titre": "Shared areas",
+                "description": "Reception and corridors handled before the busy hours."
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/materiel-produits.png",
+                  "alt": "Equipment and products prepared for a property turnaround"
+                },
+                "titre": "Turnaround trolley",
+                "description": "One trolley per property, prepared in advance to hold the schedule."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions about accommodation turnarounds",
+            "items": [
+              {
+                "question": "Can you hold the tight window between a departure and an arrival on the same day?",
+                "reponse": "Yes — that window is precisely what our organisation was designed for. The visit is timed against your checkout and check-in hours, and the number of cleaners sent is calculated so the property is ready before the guest arrives, even in peak season."
+              },
+              {
+                "question": "Do you handle bed linen and towels?",
+                "reponse": "We change everything at each turnaround. You can leave a stock of linen on site that we rotate, or keep working with your usual laundry: in that case we bag up the dirty linen and take delivery of the clean batch."
+              },
+              {
+                "question": "Do you work on Sundays and public holidays?",
+                "reponse": "Yes. Weekends and public holidays are exactly when bookings come thickest. Our schedules cover those days with no surprise surcharge: the terms are set out in the original quote."
+              },
+              {
+                "question": "What do you do if a property is left in an unusual state?",
+                "reponse": "We photograph what we find before touching anything and alert you immediately. If putting it right goes well beyond a standard turnaround, we send you a priced supplement before continuing, never after the fact."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Worth combining",
+            "titre": "Other useful services",
+            "items": [
+              {
+                "nom": "Windows and verandas",
+                "icone": "PanelsTopLeft",
+                "description": "Bay windows in guest rooms and breakfast verandas.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Post-work clean-up",
+                "icone": "Hammer",
+                "description": "Before the season opens or after renovation works.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Offices and premises",
+                "icone": "Building2",
+                "description": "Back office, reception desk and administrative rooms.",
+                "href": "/nettoyage-bureaux"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "How many properties to cover?",
+            "sousTitre": "Tell us the number of units and your check-in times, and we will build the turnaround schedule with you.",
+            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" }
+          }
+        }
+      ]
+    },
+
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Windows, verandas and mirrors",
+      "navHidden": true,
+      "meta": {
+        "title": "Window cleaning in Manage",
+        "description": "Glass care in Wallonia: bay windows, verandas, glass roofs, office partitions and mirrors left streak-free, frames and sills included. Free quote."
+      },
+      "service": {
+        "name": "Window, veranda and mirror cleaning",
+        "description": "Internal and reachable external glass cleaning for households and businesses in Wallonia.",
+        "serviceType": "Window cleaning",
+        "priceFrom": "On quote"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Glazed surfaces",
+            "titre": "Windows, bay windows, verandas and mirrors",
+            "intro": "A badly finished pane shows at the first backlight. The result is judged in raking light, not at the moment you wipe it.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Windows, verandas and mirrors" }
+            ],
+            "ctaPrimaire": { "label": "Price my glazing", "href": "/contact" }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "From the frame to the pane, the whole surface",
+            "paragraphes": [
+              "Cleaning a window is not just about the glass. We start by dusting and washing the frames, the grooves and the sills, because that is where the run-off comes from that will dirty a clean pane at the first rain. Seals are gone over, sliding door tracks cleared, and handles disinfected along the way.",
+              "The glass itself is squeegeed after wetting, a technique that leaves noticeably fewer marks than dry wiping on large surfaces. For old glass, screen-printed panes or bathroom mirrors marked by limescale, we adapt the product and the pressure rather than forcing it and risking a scratch.",
+              "Verandas get their own treatment: reachable roof panels, aluminium or PVC uprights, internal gutters and walls. The green algae and organic deposits that settle on outward-facing surfaces need a different product from the one used inside.",
+              "We cover everything reachable from the ground, a ladder or a step-stool, inside and out. Glazed facades needing a platform lift or rope access belong to firms specialised in work at height: we say so plainly rather than accepting a job we could not carry out safely."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/vitres-bureaux.png",
+              "alt": "Microfibre cleaning of a glass office partition"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions about glass cleaning",
+            "items": [
+              {
+                "question": "How often should windows be cleaned?",
+                "reponse": "For a home, twice a year is usually enough — in spring and going into winter. A shop window or an office on a busy road needs a monthly rhythm, sometimes weekly where traffic deposits a lot of greasy dust."
+              },
+              {
+                "question": "Do you work at height?",
+                "reponse": "We cover everything that stays safely reachable from the ground, a step-stool or a telescopic pole, which takes in the vast majority of houses, verandas and ground-floor shopfronts. Beyond that a platform lift is needed and the job falls outside what we do."
+              },
+              {
+                "question": "Can windows be cleaned in frost or rain?",
+                "reponse": "Frost rules out outdoor work: the water sets on the glass and the result is poor. Light rain does not really affect the finish once a pane has been treated, but we would rather postpone than hand you work that will not hold."
+              },
+              {
+                "question": "Do you also handle mirrors and reflective surfaces?",
+                "reponse": "Yes — bathroom mirrors, mirrored walls in gyms or shops, glazed doors and polished stainless steel. These surfaces show every fingerprint and need a dry microfibre finish after washing."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Often paired with",
+            "titre": "Combine it with",
+            "items": [
+              {
+                "nom": "Offices and shops",
+                "icone": "Building2",
+                "description": "Glass care built into the regular maintenance contract for your premises.",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Private homes",
+                "icone": "House",
+                "description": "Windows covered as part of the seasonal deep clean of your home.",
+                "href": "/nettoyage-particuliers"
+              },
+              {
+                "nom": "Post-work clean-up",
+                "icone": "Hammer",
+                "description": "Removing labels, protective film and paint splashes.",
+                "href": "/remise-en-etat"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "How much glazing needs doing?",
+            "sousTitre": "Roughly count your windows and bays, and say whether there is a veranda: pricing is quick from there.",
+            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" }
+          }
+        }
+      ]
+    },
+
+    {
+      "slug": "remise-en-etat",
+      "label": "Post-work clean-up",
+      "navHidden": true,
+      "meta": {
+        "title": "Post-work deep cleaning in Wallonia",
+        "description": "End-of-works cleaning, end-of-tenancy preparation and neglected premises: residue stripped away, full degreasing and finishing before the inventory check."
+      },
+      "service": {
+        "name": "Post-work and end-of-tenancy deep cleaning",
+        "description": "Heavy cleaning after building works, at the end of a tenancy or in premises left empty for a long time, in Wallonia.",
+        "serviceType": "Post-construction cleaning",
+        "priceFrom": "On quote"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Heavy cleaning",
+            "titre": "Putting premises and homes back in order",
+            "intro": "When routine upkeep is no longer enough: plaster dust ground in everywhere, adhesive marks, old limescale, premises shut up for months.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Post-work clean-up" }
+            ],
+            "ctaPrimaire": { "label": "Have the job assessed", "href": "/contact" }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Starting from the surface, not the surface dust",
+            "paragraphes": [
+              "A deep clean-up has nothing to do with intensive upkeep. After building works, plaster and cutting dust has settled everywhere, including on high surfaces, in frame grooves, behind radiators and inside cupboards. A single pass puts it back into the air and it lands again the next day: it has to be captured, not moved around.",
+              "We work from the top down and from the back of the space towards the exit. Vacuuming of volumes and corners, lifting off glue, tape and protective film residue, removing paint and filler splashes from hard floors and glazing, degreasing joinery, then washing the floors in several passes until the rinse water runs clear.",
+              "In a home at the end of a tenancy the aim is different but the logic holds: go over what an inventory check always picks up. Sanitary ware thoroughly descaled, seals gone over, oven and hob degreased, extractor hood taken apart where it can be, insides of cupboards and drawers washed, fixing marks cleaned off the walls.",
+              "We tell you what counts as cleaning and what counts as repair. A deep scratch in parquet, mouldy silicone sealant or flaking paint will not yield to a product: better to know before the inventory check than to find out in front of the landlord."
+            ]
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "How the job runs",
+            "titre": "Four successive passes",
+            "items": [
+              {
+                "icone": "Trash2",
+                "titre": "Clearing out",
+                "texte": "Removing leftover waste, floor protection and packaging left behind by the trades."
+              },
+              {
+                "icone": "Wind",
+                "titre": "Full dust removal",
+                "texte": "Vacuuming from the top down: reachable ceilings, walls, ducts, frames, radiators, cupboard interiors."
+              },
+              {
+                "icone": "SprayCan",
+                "titre": "Stripping and degreasing",
+                "texte": "Glue, tape, paint splashes and old limescale treated surface by surface, without attacking the finishes."
+              },
+              {
+                "icone": "Sparkles",
+                "titre": "Finishing and check",
+                "texte": "Floors washed in several passes, glazing gone over, then a full walk-through with you before the keys change hands."
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions about deep clean-ups",
+            "items": [
+              {
+                "question": "How long does an end-of-works job take?",
+                "reponse": "It depends mainly on the amount of dust and the nature of the residue, not just on floor area. A renovated two-bedroom flat usually takes one to two days with two cleaners; a newly fitted office floor is planned over several days."
+              },
+              {
+                "question": "Do you work ahead of an end-of-tenancy inventory?",
+                "reponse": "Yes, that is a frequent request. We target what inventory checks pick up most often: sanitary ware, appliances, the inside of storage, marks on walls and glazing. Book the visit two or three days before the appointment, never the evening before."
+              },
+              {
+                "question": "Do you remove rubble and bulky waste?",
+                "reponse": "We take away ordinary cleaning waste and small volumes. Building rubble, heavy furniture and bulky items call for specialist collection: we point you to the right solution rather than improvising a transport that would not be compliant."
+              },
+              {
+                "question": "Can premises abandoned for a long time be recovered?",
+                "reponse": "In most cases yes, but we prefer to see the place before committing. Established damp, widespread mould or pests call for specific treatments that go beyond cleaning, and we flag that at the survey stage."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Afterwards",
+            "titre": "Once the clean-up is done",
+            "items": [
+              {
+                "nom": "Offices and commercial premises",
+                "icone": "Building2",
+                "description": "Taking over regular upkeep once the premises are occupied.",
+                "href": "/nettoyage-bureaux"
+              },
+              {
+                "nom": "Windows and verandas",
+                "icone": "PanelsTopLeft",
+                "description": "Full recovery of glazing marked by the works.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Hotels and short stays",
+                "icone": "BedDouble",
+                "description": "Bringing accommodation into service before its first booking.",
+                "href": "/nettoyage-hotellerie"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "A job to assess?",
+            "sousTitre": "Send us a few photos of the place and we will give you a realistic estimate and lead time.",
+            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" }
+          }
+        }
+      ]
+    },
+
+    {
+      "slug": "nettoyage-particuliers",
+      "label": "Private homes",
+      "navHidden": true,
+      "meta": {
+        "title": "Home cleaning in Manage",
+        "description": "Housekeeping in Wallonia: regular cleaning, seasonal deep cleans and a fresh start after a move or a celebration. Free quote, no obligation."
+      },
+      "service": {
+        "name": "Cleaning for private households",
+        "description": "Routine housekeeping and one-off deep cleans in private homes across Wallonia.",
+        "serviceType": "Domestic cleaning",
+        "priceFrom": "On quote"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "At home",
+            "titre": "Cleaning for private households",
+            "intro": "Regular upkeep at whatever frequency suits you, or a one-off deep clean when the house calls for it.",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Private homes" }
+            ],
+            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "In your home, at your rhythm",
+            "paragraphes": [
+              "Routine upkeep of a home covers the living rooms and bedrooms — floors vacuumed and washed, surfaces dusted, beds made if you wish — along with the wet rooms, which take the most attention: shower and bath descaled, sanitary ware disinfected, taps gone over, mirrors left streak-free.",
+              "The kitchen gets a systematic pass on the worktop, the sink, the hob and the outside of the appliances. The oven, the inside of the fridge and the extractor hood are not part of the routine visit, but we are happy to fold them in at regular intervals or during a deep clean.",
+              "The seasonal deep clean goes considerably further: skirting boards, doors and handles, tops of cupboards, radiators, insides of storage and drawers, windows and frames, reachable light fittings. That is the option to pick before a family gathering, after a move, or simply once or twice a year to reset to a clean baseline.",
+              "We agree together what happens at each visit. Some households want everything; others prefer us to concentrate on the wet rooms and the kitchen and keep the tidying for themselves. Both suit us, as long as it is written down."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/materiel-produits.png",
+              "alt": "Products and microfibres set out on a worktop before cleaning a home"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions from households",
+            "items": [
+              {
+                "question": "Do I need to be there during the visit?",
+                "reponse": "Not necessarily. Many clients leave us a key, especially for daytime visits. The first visit usually happens with you present, so we can walk the home together and pin down your expectations room by room."
+              },
+              {
+                "question": "Can I book a single visit rather than a subscription?",
+                "reponse": "Yes, absolutely. A one-off deep clean after a move, before a party or at the end of winter can be booked on its own. Nothing commits you to continuing, and the price of a single visit is given upfront."
+              },
+              {
+                "question": "Do you use harsh products?",
+                "reponse": "We match the product to the surface and to your household. If you have young children, pets or a particular sensitivity, tell us: we then favour gentle formulations and avoid strong fragrances, without losing effectiveness where it matters."
+              },
+              {
+                "question": "Do you come in the evening or at weekends for private clients?",
+                "reponse": "Yes, just as we do for business clients. If your working hours rule out a daytime visit, we schedule it at the end of the day or on a Saturday, depending on team availability in your municipality."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Also",
+            "titre": "Other needs at home",
+            "items": [
+              {
+                "nom": "Windows, verandas and mirrors",
+                "icone": "PanelsTopLeft",
+                "description": "Windows, bays and veranda gone over thoroughly, frames included.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Post-work clean-up",
+                "icone": "Hammer",
+                "description": "After works at home or ahead of an end-of-tenancy check.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Short-term letting",
+                "icone": "BedDouble",
+                "description": "If you rent out a room or a flat to travellers.",
+                "href": "/nettoyage-hotellerie"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Let's talk about your home",
+            "sousTitre": "Floor area, number of wet rooms and the frequency you want are enough for a first estimate.",
+            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" }
+          }
+        }
+      ]
+    },
+
+    {
+      "slug": "zone-intervention",
+      "label": "Coverage",
+      "meta": {
+        "title": "Service area across Wallonia",
+        "description": "Based in Manage, we cover the Centre region, the Charleroi basin, Walloon Brabant and Brussels, with travel outside Belgium where the job calls for it."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Coverage",
+            "titre": "Where we operate",
+            "intro": "Manage is our starting point. The real reach depends on the type of job: recurring upkeep needs proximity, a one-off deep clean much less so.",
+            "breadcrumb": [{ "label": "Home", "href": "/" }, { "label": "Coverage" }]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Four areas, and beyond where needed",
+            "paragraphes": [
+              "The Centre region is our daily ground. From Manage we cover La Louvière, Seneffe, Chapelle-lez-Herlaimont, Morlanwelz, Le Rœulx and Binche with no timing constraint. This is where we take on upkeep contracts with daily visits, because our teams can chain several sites within the same half-day.",
+              "Next comes the Charleroi basin and central Hainaut: Charleroi, Courcelles, Fleurus, Pont-à-Celles, Soignies and Braine-le-Comte. We handle both recurring contracts and one-off jobs there, with a slightly longer lead time to set up high-frequency work.",
+              "To the north, Walloon Brabant and the Brussels area are covered mainly for hospitality, short-term lets and deep clean-ups — longer jobs, where travel weighs little in the planning. Nivelles, Tubize and Brussels are regular destinations for us.",
+              "Finally, international mobility is part of how we work. For a deep clean-up, a site opening or a one-off assignment with a client who already knows us, we travel outside Belgium. These jobs are scoped case by case: duration, accommodation for the team and travel costs are priced in the quote, with no unpleasant surprises."
+            ]
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "content": {
+            "titre": "Municipalities covered",
+            "intro": "This list is not exhaustive: if your municipality is not on it, just ask.",
+            "zones": [
+              {
+                "region": "Centre region — around Manage",
+                "principale": "Manage",
+                "villes": [
+                  "Manage",
+                  "La Louvière",
+                  "Seneffe",
+                  "Chapelle-lez-Herlaimont",
+                  "Morlanwelz",
+                  "Le Rœulx",
+                  "Binche",
+                  "Écaussinnes"
+                ]
+              },
+              {
+                "region": "Charleroi basin and central Hainaut",
+                "principale": "Charleroi",
+                "villes": [
+                  "Charleroi",
+                  "Courcelles",
+                  "Fleurus",
+                  "Pont-à-Celles",
+                  "Soignies",
+                  "Braine-le-Comte"
+                ]
+              },
+              {
+                "region": "Walloon Brabant and Brussels",
+                "principale": "Nivelles",
+                "villes": ["Nivelles", "Tubize", "Brussels"]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Your municipality not listed?",
+            "sousTitre": "Tell us where the job is and what it involves, and we will give you a straight answer on whether we can take it.",
+            "ctaPrimaire": { "label": "Ask the question", "href": "/contact" }
+          }
+        }
+      ]
+    },
+
+    {
+      "slug": "contact",
+      "label": "Contact",
+      "meta": {
+        "title": "Contact and free quote",
+        "description": "Reach M.E.R.I INTERNATIONAL 24/7 by phone, WhatsApp or form. Free quote for your premises, your rental accommodation or your home in Wallonia."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Reachable round the clock",
+            "titre": "Get in touch",
+            "intro": "Phone, WhatsApp or the form: all three land in the same place. The more precise your message, the more precise our answer.",
+            "breadcrumb": [{ "label": "Home", "href": "/" }, { "label": "Contact" }]
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Request a quote",
+            "intro": "Tell us the type of premises, the approximate floor area and the slot that suits you. We will come back with an estimate.",
+            "telephone": "+32 472 13 10 69",
+            "whatsapp": "+32 472 13 10 69",
+            "email": "meri.inter@outlook.com",
+            "horaires": [{ "jour": "Monday to Sunday", "heures": "24 hours a day" }],
+            "form": true,
+            "formMode": "demande-intervention",
+            "formTitre": "Describe what you need",
+            "services": [
+              "Offices and commercial premises",
+              "Hotels and short stays",
+              "Windows, verandas and mirrors",
+              "Post-work clean-up",
+              "Private homes"
+            ],
+            "villes": [
+              "Manage",
+              "La Louvière",
+              "Seneffe",
+              "Chapelle-lez-Herlaimont",
+              "Morlanwelz",
+              "Binche",
+              "Charleroi",
+              "Courcelles",
+              "Soignies",
+              "Braine-le-Comte",
+              "Nivelles",
+              "Brussels"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    }
+  ]
+}

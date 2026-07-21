@@ -21,6 +21,8 @@ import {
   Sora,
   Zilla_Slab,
   DM_Serif_Display,
+  Bebas_Neue,
+  Space_Mono,
   Instrument_Serif,
   Manrope,
 } from "next/font/google";
@@ -175,6 +177,24 @@ const dmSerif = DM_Serif_Display({
   preload: false,
 });
 
+// Display d'affichage ultra-condensé, capitales, une seule graisse (titres) —
+// pack escale-transit (famille escale).
+const bebasNeue = Bebas_Neue({
+  variable: "--font-bebas",
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+  preload: false,
+});
+// Mono d'afficheur : téléphone, horaires, codes, index, fil d'ariane — pack
+// escale-transit.
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+  preload: false,
+});
 // Serif éditoriale à caractère (titres display, 400 + italique) — pack eclat-lumiere (famille eclat).
 const instrumentSerif = Instrument_Serif({
   variable: "--font-instrument-serif",
@@ -215,6 +235,8 @@ const fontVars = [
   sora,
   zillaSlab,
   dmSerif,
+  bebasNeue,
+  spaceMono,
   instrumentSerif,
   manrope,
 ]
