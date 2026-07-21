@@ -657,6 +657,9 @@ export interface GalerieAvantApresItem {
    */
   avantImages?: ImageRef[];
   apresImages?: ImageRef[];
+  /** Libellés des pastilles du comparateur (variant "comparateur"). Défaut: Avant/Après. */
+  avantLabel?: string;
+  apresLabel?: string;
   legende?: string;
 }
 

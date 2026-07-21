@@ -959,10 +959,10 @@
         },
         {
           "type": "galerie",
-          "variant": "grille",
+          "variant": "bento",
           "content": {
-            "eyebrow": "Portfolio",
-            "titre": "Step by step",
+            "eyebrow": "In pictures",
+            "titre": "The portfolio",
             "images": [
               {
                 "image": {
@@ -1001,11 +1001,10 @@
         },
         {
           "type": "galerie",
-          "variant": "avant-apres",
+          "variant": "comparateur",
           "content": {
             "titre": "From sketch to finished product",
             "intro": "The same dress, from design to realisation.",
-            "pastille": "Sketch / Finished",
             "avantApres": [
               {
                 "avant": {
@@ -1016,9 +1015,12 @@
                   "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-robe.png",
                   "alt": "Finished terracotta midi dress worn by a model"
                 },
-                "legende": "Slide to compare — from sketch to finished piece."
+                "legende": "Slide to compare — from sketch to finished piece.",
+                "avantLabel": "Sketch",
+                "apresLabel": "Finished"
               }
-            ]
+            ],
+            "eyebrow": "The process"
           }
         },
         {

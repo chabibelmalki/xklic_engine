@@ -10,7 +10,9 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { ImageCycle } from "@/components/ui/ImageCycle";
 import { MutedVideo } from "@/components/ui/MutedVideo";
+import { BeforeAfterSlider } from "@/components/ui/BeforeAfterSlider";
 import { localeDir } from "@/lib/i18n";
+import { cn } from "@/lib/utils";
 
 function ratioClass(ratio?: string, fallback = "aspect-[4/3]") {
   switch (ratio) {
@@ -33,7 +35,7 @@ function ratioClass(ratio?: string, fallback = "aspect-[4/3]") {
  */
 export function Galerie({ block, tone, locale, strings }: BlockComponentProps<GalerieContent>) {
   const c = block.content;
-  const variant = (block.variant as GalerieVariant | "montage" | "masonry") ?? "grille";
+  const variant = (block.variant as GalerieVariant | "montage" | "masonry" | "bento" | "comparateur") ?? "grille";
   const images: GalerieImageItem[] = c.images ?? [];
   const groupes = c.groupes ?? [];
   const lightboxOn = c.lightbox !== false && variant !== "avant-apres" && images.length > 0;
@@ -150,6 +152,58 @@ export function Galerie({ block, tone, locale, strings }: BlockComponentProps<Ga
             </Reveal>
           ))}
         </div>
+      ) : variant === "comparateur" ? (
+        <div className="mt-12 space-y-10">
+          {(c.avantApres ?? []).map((pair, i) =>
+            pair.avant && pair.apres ? (
+              <Reveal key={i}>
+                <figure className="mx-auto max-w-2xl">
+                  <BeforeAfterSlider
+                    before={pair.avant}
+                    after={pair.apres}
+                    beforeLabel={pair.avantLabel ?? strings.galerie.before}
+                    afterLabel={pair.apresLabel ?? strings.galerie.after}
+                    ratioClassName={ratioClass(c.ratio, "aspect-[3/4]")}
+                  />
+                  {pair.legende && (
+                    <figcaption className="mt-4 text-center text-sm text-muted">{pair.legende}</figcaption>
+                  )}
+                </figure>
+              </Reveal>
+            ) : null,
+          )}
+        </div>
+      ) : variant === "bento" ? (
+        <Reveal>
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-[repeat(2,minmax(220px,1fr))]">
+            {images.slice(0, 4).map((it, i) => (
+              <figure
+                key={i}
+                className={cn(
+                  "flex h-full flex-col overflow-hidden rounded-theme border border-border bg-surface shadow-sm",
+                  i === 0 && "lg:row-span-2",
+                  i === 3 && "sm:col-span-2 lg:col-span-2",
+                )}
+              >
+                <div className="relative min-h-[180px] flex-1">
+                  <Image
+                    src={it.image.url}
+                    alt={it.image.alt ?? it.titre ?? ""}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                    className="object-cover"
+                  />
+                </div>
+                {(it.titre || it.description) && (
+                  <figcaption className="p-4">
+                    {it.titre && <p className="font-display font-semibold text-ink">{it.titre}</p>}
+                    {it.description && <p className="mt-1 text-sm text-muted">{it.description}</p>}
+                  </figcaption>
+                )}
+              </figure>
+            ))}
+          </div>
+        </Reveal>
       ) : groupes.length > 0 ? (
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {groupes.map((g, i) => (
