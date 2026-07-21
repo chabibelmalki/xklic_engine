@@ -322,10 +322,10 @@ export interface HeroContent {
   imageOverlay?: "fort" | "moyen" | "leger";
   /**
    * Familles à photo RE-TEINTÉE aux couleurs de la marque (duotone, ex. `fil`) :
-   * `true` NEUTRALISE la teinte — la photo passe en niveaux de gris + voile
-   * sombre NEUTRE (au lieu de la teinte de marque) pour la lisibilité. Opt-in ;
-   * défaut false = duotone de marque (signature de la famille). Ignoré par les
-   * familles qui ne re-teintent pas la photo.
+   * `true` affiche la photo en COULEURS NATURELLES — ni teinte de marque, ni
+   * voile/overlay, ni niveaux de gris. Opt-in ; défaut false = duotone de marque
+   * (signature de la famille). Ignoré par les familles qui ne re-teintent pas la
+   * photo. NB : sans voile, la lisibilité d'un texte superposé dépend du cliché.
    */
   neutralPhoto?: boolean;
   /**
@@ -423,9 +423,9 @@ export interface ServicesContent {
   iconColors?: boolean;
   /**
    * Familles qui re-teintent les photos des cartes aux couleurs de la marque
-   * (ex. `fil`) : `true` NEUTRALISE la teinte (photos en niveaux de gris, sans
-   * voile de marque). Opt-in — défaut `false` (duotone de marque). Ignoré par
-   * les familles qui ne re-teintent pas. Voir aussi `HeroContent.neutralPhoto`.
+   * (ex. `fil`) : `true` affiche les photos en COULEURS NATURELLES (ni voile de
+   * marque, ni niveaux de gris). Opt-in — défaut `false` (duotone de marque).
+   * Ignoré par les familles qui ne re-teintent pas. Voir `HeroContent.neutralPhoto`.
    */
   neutralPhoto?: boolean;
 }

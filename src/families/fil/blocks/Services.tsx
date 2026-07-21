@@ -36,7 +36,7 @@ function Carte({ item, basePath, neutralPhoto }: { item: ServiceItem; basePath: 
             fill
             sizes="(max-width: 640px) 100vw, 400px"
             className="object-cover"
-            style={{ filter: neutralPhoto ? "grayscale(1)" : "saturate(0.6)" }}
+            style={{ filter: neutralPhoto ? undefined : "saturate(0.6)" }}
           />
           {!neutralPhoto && (
             <span aria-hidden className="absolute inset-0 bg-brand-600 opacity-40 mix-blend-color" />
