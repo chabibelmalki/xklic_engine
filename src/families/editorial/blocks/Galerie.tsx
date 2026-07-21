@@ -1,7 +1,10 @@
+import Image from "next/image";
 import type { GalerieContent, GalerieImageItem } from "@/types/config";
 import type { BlockComponentProps } from "@/blocks/types";
+import { cn } from "@/lib/utils";
 import { ImageCycle } from "@/components/ui/ImageCycle";
 import { MutedVideo } from "@/components/ui/MutedVideo";
+import { BeforeAfterSlider } from "@/components/ui/BeforeAfterSlider";
 import { EditorialSection } from "../ui/Section";
 import { EditorialContainer } from "../ui/Container";
 import { EditorialHeading } from "../ui/Heading";
@@ -88,6 +91,55 @@ export function Galerie({ block, tone, strings }: BlockComponentProps<GalerieCon
                 )}
               </figure>
             ))}
+          </div>
+        ) : variant === "comparateur" ? (
+          <div className="mt-12 space-y-10">
+            {(c.avantApres ?? []).map((pair, i) =>
+              pair.avant && pair.apres ? (
+                <figure key={i} className="mx-auto max-w-2xl">
+                  <BeforeAfterSlider
+                    before={pair.avant}
+                    after={pair.apres}
+                    beforeLabel={pair.avantLabel ?? strings.galerie.before}
+                    afterLabel={pair.apresLabel ?? strings.galerie.after}
+                    ratioClassName={ratioClass(c.ratio ?? "3/4")}
+                  />
+                  {pair.legende && (
+                    <figcaption className="mt-4 text-center text-sm text-muted">{pair.legende}</figcaption>
+                  )}
+                </figure>
+              ) : null,
+            )}
+          </div>
+        ) : variant === "bento" ? (
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {images.slice(0, 4).map((it, i) => {
+              const cell = [
+                { pos: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3", img: "h-72 lg:h-full lg:flex-1 lg:min-h-0" },
+                { pos: "lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2", img: "h-56" },
+                { pos: "lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2", img: "h-56" },
+                { pos: "sm:col-span-2 lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:row-end-3", img: "h-64" },
+              ][i];
+              return (
+                <figure key={i} className={cn("flex flex-col", cell.pos)}>
+                  <div className={cn("relative w-full overflow-hidden bg-ink/5", cell.img)}>
+                    <Image
+                      src={it.image.url}
+                      alt={it.image.alt ?? it.titre ?? "Réalisation"}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 33vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  {(it.titre || it.description) && (
+                    <figcaption className="mt-3 border-t border-border pt-3">
+                      {it.titre && <p className="font-display text-base font-semibold text-ink">{it.titre}</p>}
+                      {it.description && <p className="mt-1 text-sm text-muted">{it.description}</p>}
+                    </figcaption>
+                  )}
+                </figure>
+              );
+            })}
           </div>
         ) : groupes.length > 0 ? (
           <div className="mt-12 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">

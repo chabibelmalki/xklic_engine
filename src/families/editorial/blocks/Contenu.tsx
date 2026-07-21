@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { ContenuContent } from "@/types/config";
 import type { BlockComponentProps } from "@/blocks/types";
 import { Button } from "@/components/ui/Button";
+import { MutedVideo } from "@/components/ui/MutedVideo";
 import { withBase, cn } from "@/lib/utils";
 import { EditorialSection } from "../ui/Section";
 import { EditorialContainer } from "../ui/Container";
@@ -52,7 +53,7 @@ export function Contenu({ block, tone, basePath }: BlockComponentProps<ContenuCo
     </div>
   );
 
-  if (!c.image) {
+  if (!c.image && !c.video) {
     return (
       <EditorialSection tone={tone}>
         <EditorialContainer>{texte}</EditorialContainer>
@@ -74,7 +75,23 @@ export function Contenu({ block, tone, basePath }: BlockComponentProps<ContenuCo
         ? "lg:grid-cols-[1.08fr_0.92fr]"
         : "lg:grid-cols-[0.92fr_1.08fr]"
       : "lg:grid-cols-2";
-  const visuel = fillImage ? (
+  const visuel = c.video ? (
+    <div className="mx-auto w-full max-w-sm">
+      <div
+        className={cn(
+          "relative aspect-[9/16] overflow-hidden bg-ink/5",
+          imageCard && cardClass,
+        )}
+      >
+        <MutedVideo
+          src={c.video.url}
+          poster={c.video.poster}
+          ariaLabel={c.video.alt ?? c.titre ?? ""}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      </div>
+    </div>
+  ) : fillImage ? (
     <div
       className={cn(
         "relative aspect-[4/3] overflow-hidden bg-surface-2 lg:aspect-auto lg:h-full lg:min-h-[420px]",
@@ -82,8 +99,8 @@ export function Contenu({ block, tone, basePath }: BlockComponentProps<ContenuCo
       )}
     >
       <Image
-        src={c.image.url}
-        alt={c.image.alt ?? c.titre ?? ""}
+        src={c.image?.url ?? ""}
+        alt={c.image?.alt ?? c.titre ?? ""}
         fill
         sizes="(max-width: 1024px) 100vw, 48vw"
         className="object-cover"
@@ -91,8 +108,8 @@ export function Contenu({ block, tone, basePath }: BlockComponentProps<ContenuCo
     </div>
   ) : (
     <EditorialImage
-      src={c.image.url}
-      alt={c.image.alt ?? c.titre ?? ""}
+      src={c.image?.url ?? ""}
+      alt={c.image?.alt ?? c.titre ?? ""}
       ratio={c.imageRatio ?? "4/5"}
       sizes="(max-width: 1024px) 100vw, 48vw"
       className={imageCard ? cardClass : undefined}
