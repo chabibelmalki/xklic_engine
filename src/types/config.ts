@@ -237,6 +237,11 @@ export interface Branding {
    * déborderait sur mobile. Défaut : false.
    */
   logoTaglineHidden?: boolean;
+  /**
+   * Affiche la TAGLINE (slogan) SOUS un logo « wordmark » (`logoTextHidden:true`),
+   * qui n'affiche normalement que l'emblème. Opt-in — défaut : false.
+   */
+  showTaglineUnderLogo?: boolean;
   /** Petite ligne sous le nom (ex. "Nettoyage · Nîmes"). */
   tagline?: string;
   /**
@@ -328,6 +333,11 @@ export interface HeroContent {
    * les familles qui ne le gèrent pas.
    */
   imageMode?: "carte" | "bandeau";
+  /**
+   * Hero `bandeau` PLUS GRAND : impose une hauteur minimale importante (photo de
+   * fond plus imposante). Opt-in — défaut : false. Ignoré hors mode bandeau.
+   */
+  bannerTall?: boolean;
   /**
    * En-tête IMMERSIF : quand true, le SiteHeader se pose EN OVERLAY par-dessus
    * ce hero plein cadre (transparent + texte clair en haut de page, solide au

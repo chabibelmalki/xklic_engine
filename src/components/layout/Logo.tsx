@@ -26,7 +26,7 @@ export function Logo({
   layout?: "inline" | "stacked";
   className?: string;
 }) {
-  const { logo, logoLight, logoAlt, logoTwoTone, logoScale, logoTextHidden, logoTaglineHidden } =
+  const { logo, logoLight, logoAlt, logoTwoTone, logoScale, logoTextHidden, logoTaglineHidden, showTaglineUnderLogo } =
     config.branding;
   // Tagline masquable indépendamment (garder le nom, retirer la tagline).
   const tagline = logoTaglineHidden ? undefined : config.branding.tagline;
@@ -97,14 +97,31 @@ export function Logo({
 
   // Logo image contenant DÉJÀ le nom : n'afficher que l'emblème (anti-redondance
   // + garde-fou anti-débordement horizontal sur mobile). Reste cliquable.
+  // Opt-in `showTaglineUnderLogo` : affiche le slogan sous le wordmark.
   if (logoTextHidden && logoSrc) {
+    const underline =
+      showTaglineUnderLogo && tagline ? (
+        <span
+          className={cn(
+            "text-[10px] font-medium uppercase tracking-[0.18em]",
+            light ? "text-white/60" : "text-muted-2",
+          )}
+        >
+          {tagline}
+        </span>
+      ) : null;
     return (
       <Link
         href={href}
-        className={cn("group inline-flex items-center", className)}
+        className={cn(
+          "group inline-flex leading-none",
+          underline ? "flex-col items-start gap-1.5" : "items-center",
+          className,
+        )}
         aria-label={config.entreprise.nom}
       >
         {emblem}
+        {underline}
       </Link>
     );
   }

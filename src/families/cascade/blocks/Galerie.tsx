@@ -50,6 +50,11 @@ export function Galerie({ block, tone, strings }: BlockComponentProps<GalerieCon
             {(c.avantApres ?? []).map((pair, i) =>
               pair.avant && pair.apres ? (
                 <figure key={i}>
+                  {pair.legende && (
+                    <figcaption className="mb-4 font-display text-base font-semibold leading-snug text-ink">
+                      {pair.legende}
+                    </figcaption>
+                  )}
                   <BeforeAfterSlider
                     before={{ url: pair.avant.url, alt: pair.avant.alt }}
                     after={{ url: pair.apres.url, alt: pair.apres.alt }}
@@ -57,11 +62,6 @@ export function Galerie({ block, tone, strings }: BlockComponentProps<GalerieCon
                     afterLabel={strings.galerie.after}
                     ratioClassName={ratioClass(c.ratio ?? "4/3")}
                   />
-                  {pair.legende && (
-                    <figcaption className="mt-4 border-t border-border pt-4 text-sm text-muted">
-                      {pair.legende}
-                    </figcaption>
-                  )}
                 </figure>
               ) : null,
             )}

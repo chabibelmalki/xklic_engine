@@ -129,7 +129,14 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
       )}
 
       {banner ? (
-        <CascadeContainer className="relative z-20 pb-24 pt-16 sm:pt-24 lg:pb-32 lg:pt-28">
+        <CascadeContainer
+          className={cn(
+            "relative z-20",
+            c.bannerTall
+              ? "flex min-h-[78vh] flex-col justify-end pb-24 pt-32 lg:min-h-[86vh] lg:pb-32 lg:pt-40"
+              : "pb-24 pt-16 sm:pt-24 lg:pb-32 lg:pt-28",
+          )}
+        >
           {textCol}
         </CascadeContainer>
       ) : (
