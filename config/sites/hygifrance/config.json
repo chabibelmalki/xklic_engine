@@ -3924,7 +3924,7 @@
         },
         {
           "type": "services",
-          "variant": "grille-icones",
+          "variant": "grille-cartes",
           "content": {
             "eyebrow": "Nos interventions",
             "titre": "Nos prestations pour les pros",
@@ -3932,72 +3932,128 @@
               {
                 "nom": "Bureaux & cabinets",
                 "description": "Entretien régulier des espaces de travail et sanitaires.",
-                "icone": "Briefcase"
+                "href": "/nettoyage-bureaux-cabinets",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-pro.jpg",
+                  "alt": "Entretien de bureaux professionnels"
+                }
               },
               {
                 "nom": "Parties communes & copropriétés",
                 "description": "Halls, escaliers, ascenseurs et locaux communs des immeubles.",
-                "icone": "Building"
+                "href": "/nettoyage-parties-communes",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-mur.jpg",
+                  "alt": "Entretien des parties communes d'un immeuble"
+                }
               },
               {
                 "nom": "Immeubles",
                 "description": "Entretien complet d'immeubles résidentiels ou tertiaires.",
-                "icone": "Building2"
+                "href": "/nettoyage-immeubles",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-batiments.jpg",
+                  "alt": "Entretien complet d'un immeuble"
+                }
               },
               {
                 "nom": "Magasins & commerces",
                 "description": "Surfaces de vente et vitrines nettes à l'ouverture.",
-                "icone": "Store"
+                "href": "/nettoyage-magasins-commerces",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-vitres.jpg",
+                  "alt": "Vitrine et surface de vente d'un commerce"
+                }
               },
               {
                 "nom": "Nettoyage industriel",
                 "description": "Nettoyage de sites, ateliers et grands volumes.",
-                "icone": "Factory"
+                "href": "/nettoyage-industriel",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-batiments.jpg",
+                  "alt": "Nettoyage d'un site industriel"
+                }
               },
               {
                 "nom": "Parkings & garages",
                 "description": "Balayage, lavage et dégraissage des parkings.",
-                "icone": "CarFront"
+                "href": "/nettoyage-parkings-garages",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-exterieurs.jpg",
+                  "alt": "Nettoyage d'un parking"
+                }
               },
               {
                 "nom": "Événementiel",
                 "description": "Remise en état avant et après un événement.",
-                "icone": "PartyPopper"
+                "href": "/nettoyage-evenementiel",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-menage.jpg",
+                  "alt": "Remise en état après un événement"
+                }
               },
               {
                 "nom": "Cuisines professionnelles",
                 "description": "Dégraissage et désinfection des cuisines et labos.",
-                "icone": "ChefHat"
+                "href": "/nettoyage-cuisines-professionnelles",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-gants.jpg",
+                  "alt": "Désinfection d'une cuisine professionnelle"
+                }
               },
               {
                 "nom": "Moquettes",
                 "description": "Injection-extraction des moquettes de bureaux.",
-                "icone": "Rows3"
+                "href": "/nettoyage-moquettes",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-canape.jpg",
+                  "alt": "Nettoyage d'une moquette par injection-extraction"
+                }
               },
               {
                 "nom": "Chambres froides",
                 "description": "Nettoyage et désinfection des chambres froides.",
-                "icone": "Snowflake"
+                "href": "/nettoyage-chambres-froides",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-gants.jpg",
+                  "alt": "Nettoyage et désinfection d'une chambre froide"
+                }
               },
               {
                 "nom": "Destruction d'archives",
                 "description": "Évacuation et destruction sécurisée d'archives.",
-                "icone": "FileX"
+                "href": "/destruction-archives",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/deb-storage.jpg",
+                  "alt": "Archives et cartons à évacuer et détruire"
+                }
               },
               {
                 "nom": "Vitrerie d'immeuble",
                 "description": "Nettoyage des vitres et surfaces vitrées en hauteur.",
-                "icone": "PanelsTopLeft"
+                "href": "/vitrerie-immeuble",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-vitres.jpg",
+                  "alt": "Nettoyage des vitres d'un immeuble"
+                }
               },
               {
                 "nom": "Fin de chantier",
                 "description": "Remise en propreté des locaux avant livraison.",
-                "icone": "HardHat"
+                "href": "/fin-de-chantier-pro",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-vide.jpg",
+                  "alt": "Local professionnel nettoyé après travaux"
+                }
               },
               {
                 "nom": "Fientes de pigeons",
                 "description": "Décontamination et protection des locaux et façades.",
-                "icone": "Bird"
+                "href": "/fientes-pigeons-professionnel",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-pigeons.jpg",
+                  "alt": "Décontamination de fientes de pigeons sur un local"
+                }
               }
             ]
           }
@@ -4027,6 +4083,944 @@
           "content": {
             "titre": "Un local ou un immeuble à entretenir ?",
             "sousTitre": "Donnez-nous la surface et vos contraintes : on cale une visite et un devis clair.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-bureaux-cabinets",
+      "label": "Bureaux & cabinets",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de bureaux & cabinets à Lille",
+        "description": "Nettoyage de bureaux et cabinets à Lille et dans le Nord : entretien régulier hors horaires, sols, sanitaires, salles de réunion. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Services professionnels",
+            "titre": "Nettoyage de bureaux et cabinets à Lille",
+            "intro": "Des espaces de travail nets, entretenus hors de vos horaires, par une équipe fiable.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Services professionnels",
+                "href": "/services-professionnels"
+              },
+              {
+                "label": "Bureaux & cabinets"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Un entretien fiable et discret",
+            "paragraphes": [
+              "Bureaux, cabinets, espaces de travail : la propreté se voit et compte pour vos équipes comme pour vos clients. Nous entretenons vos locaux à Lille et dans le Nord, avant l'ouverture ou après la fermeture.",
+              "Sols, surfaces de contact, sanitaires, salles de réunion : un cahier des charges clair, une équipe qui connaît vos lieux, une facture unique. Vous n'y pensez plus."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-pro.jpg",
+              "alt": "Entretien de bureaux professionnels"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local ou un immeuble à entretenir ?",
+            "sousTitre": "Donnez-nous la surface et vos contraintes : on cale une visite et un devis clair, sans engagement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-parties-communes",
+      "label": "Parties communes & copropriétés",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de parties communes à Lille — copropriétés",
+        "description": "Nettoyage de parties communes et copropriétés à Lille et dans le Nord : halls, escaliers, ascenseurs, locaux poubelles. Syndics & bailleurs, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Services professionnels",
+            "titre": "Nettoyage de parties communes à Lille",
+            "intro": "Halls, escaliers, ascenseurs : des communs propres valorisent l'immeuble et le quotidien des occupants.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Services professionnels",
+                "href": "/services-professionnels"
+              },
+              {
+                "label": "Parties communes & copropriétés"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Des communs toujours nets",
+            "paragraphes": [
+              "Les parties communes sont la vitrine d'une copropriété : halls, escaliers, paliers, ascenseurs, locaux poubelles. Un entretien régulier fait toute la différence. Nous intervenons à Lille et dans le Nord, pour syndics et bailleurs.",
+              "Passages fixes, produits adaptés, suivi régulier : nous maintenons des communs propres et sûrs, avec un interlocuteur unique pour l'ensemble de l'immeuble."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-mur.jpg",
+              "alt": "Entretien des parties communes d'un immeuble"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local ou un immeuble à entretenir ?",
+            "sousTitre": "Donnez-nous la surface et vos contraintes : on cale une visite et un devis clair, sans engagement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-immeubles",
+      "label": "Immeubles",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage d'immeubles à Lille — résidentiel & tertiaire",
+        "description": "Nettoyage d'immeubles à Lille et dans le Nord : entretien complet des communs, vitres, abords, locaux techniques. Contrat unique, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Services professionnels",
+            "titre": "Nettoyage d'immeubles à Lille",
+            "intro": "Résidentiel ou tertiaire, on prend en charge l'entretien complet de l'immeuble.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Services professionnels",
+                "href": "/services-professionnels"
+              },
+              {
+                "label": "Immeubles"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "L'immeuble entretenu de A à Z",
+            "paragraphes": [
+              "Un immeuble demande un entretien coordonné : communs, vitres, abords, locaux techniques. Plutôt que de multiplier les prestataires, nous prenons l'ensemble en charge à Lille et dans le Nord.",
+              "Un seul contrat, une seule facture, un suivi régulier : l'immeuble reste propre et bien tenu, sans que la gestion vous pèse."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-batiments.jpg",
+              "alt": "Entretien complet d'un immeuble"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local ou un immeuble à entretenir ?",
+            "sousTitre": "Donnez-nous la surface et vos contraintes : on cale une visite et un devis clair, sans engagement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-magasins-commerces",
+      "label": "Magasins & commerces",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de magasins & commerces à Lille",
+        "description": "Nettoyage de magasins et commerces à Lille et dans le Nord : surfaces de vente, vitrines, sanitaires, hors horaires. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Services professionnels",
+            "titre": "Nettoyage de magasins et commerces à Lille",
+            "intro": "Surfaces de vente et vitrines nettes dès l'ouverture, sans croiser vos clients.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Services professionnels",
+                "href": "/services-professionnels"
+              },
+              {
+                "label": "Magasins & commerces"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Un commerce impeccable à l'ouverture",
+            "paragraphes": [
+              "En commerce, la propreté fait partie de l'accueil : sol de la surface de vente, vitrine, sanitaires, tout se voit. Nous entretenons vos espaces à Lille et dans le Nord, tôt le matin ou après la fermeture.",
+              "Le créneau est fixé une fois pour toutes : vos clients ne croisent jamais le matériel, et le magasin ouvre chaque jour dans les meilleures conditions."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-vitres.jpg",
+              "alt": "Vitrine et surface de vente d'un commerce"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local ou un immeuble à entretenir ?",
+            "sousTitre": "Donnez-nous la surface et vos contraintes : on cale une visite et un devis clair, sans engagement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-industriel",
+      "label": "Nettoyage industriel",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage industriel à Lille — sites & ateliers",
+        "description": "Nettoyage industriel à Lille et dans le Nord : ateliers, sites de production, grands volumes, sols techniques. Adapté à votre activité, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Services professionnels",
+            "titre": "Nettoyage industriel à Lille",
+            "intro": "Ateliers, sites, grands volumes : un nettoyage à la mesure de vos installations.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Services professionnels",
+                "href": "/services-professionnels"
+              },
+              {
+                "label": "Nettoyage industriel"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "À l'échelle de vos installations",
+            "paragraphes": [
+              "Un site industriel a ses contraintes : grands volumes, sols techniques, machines, sécurité. Le nettoyage demande le bon matériel et une organisation adaptée. Nous intervenons à Lille et dans le Nord.",
+              "Sols, structures, zones de production : nous adaptons méthode et fréquence à votre activité, en respectant vos règles de sécurité et vos horaires."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-batiments.jpg",
+              "alt": "Nettoyage d'un site industriel"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local ou un immeuble à entretenir ?",
+            "sousTitre": "Donnez-nous la surface et vos contraintes : on cale une visite et un devis clair, sans engagement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-parkings-garages",
+      "label": "Parkings & garages",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de parkings & garages à Lille",
+        "description": "Nettoyage de parkings et garages à Lille et dans le Nord : balayage, lavage des sols, dégraissage. Propres et sûrs, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Services professionnels",
+            "titre": "Nettoyage de parkings et garages à Lille",
+            "intro": "Balayage, lavage, dégraissage : des parkings propres et sûrs pour vos usagers.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Services professionnels",
+                "href": "/services-professionnels"
+              },
+              {
+                "label": "Parkings & garages"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Des parkings nets et sûrs",
+            "paragraphes": [
+              "Un parking accumule poussières, déchets, traces d'huile et taches. Au-delà de l'image, la propreté touche à la sécurité. Nous entretenons parkings et garages à Lille et dans le Nord.",
+              "Balayage mécanisé, lavage des sols, dégraissage des zones tachées : nous adaptons l'intervention à la fréquentation et à vos créneaux d'accès."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-exterieurs.jpg",
+              "alt": "Nettoyage d'un parking"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local ou un immeuble à entretenir ?",
+            "sousTitre": "Donnez-nous la surface et vos contraintes : on cale une visite et un devis clair, sans engagement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-evenementiel",
+      "label": "Événementiel",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage événementiel à Lille",
+        "description": "Nettoyage événementiel à Lille et dans le Nord : préparation, passages pendant et remise en état après votre événement. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Services professionnels",
+            "titre": "Nettoyage événementiel à Lille",
+            "intro": "Avant, pendant ou après votre événement, on assure la propreté des lieux.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Services professionnels",
+                "href": "/services-professionnels"
+              },
+              {
+                "label": "Événementiel"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "La propreté de votre événement",
+            "paragraphes": [
+              "Un événement rime avec affluence et donc avec nettoyage : préparation des lieux, passages pendant, remise en état après. Nous vous accompagnons à Lille et dans le Nord.",
+              "Salles, sanitaires, abords : nous intervenons avant l'accueil du public et une fois la manifestation terminée, pour rendre les lieux impeccables et à l'heure."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-menage.jpg",
+              "alt": "Remise en état après un événement"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local ou un immeuble à entretenir ?",
+            "sousTitre": "Donnez-nous la surface et vos contraintes : on cale une visite et un devis clair, sans engagement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-cuisines-professionnelles",
+      "label": "Cuisines professionnelles",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de cuisines professionnelles à Lille",
+        "description": "Nettoyage de cuisines professionnelles à Lille et dans le Nord : dégraissage, désinfection, hygiène alimentaire. Conforme aux contrôles, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Services professionnels",
+            "titre": "Nettoyage de cuisines professionnelles à Lille",
+            "intro": "Dégraissage et désinfection aux normes d'hygiène, pour une cuisine irréprochable.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Services professionnels",
+                "href": "/services-professionnels"
+              },
+              {
+                "label": "Cuisines professionnelles"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "L'hygiène au cœur de la cuisine",
+            "paragraphes": [
+              "Une cuisine professionnelle exige un niveau d'hygiène strict : graisses cuites, surfaces de contact, sols, équipements. Nous assurons son nettoyage en profondeur à Lille et dans le Nord.",
+              "Dégraissage, désinfection, traitement des points sensibles : nous travaillons selon les exigences du secteur, pour une cuisine saine et conforme aux contrôles."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-gants.jpg",
+              "alt": "Désinfection d'une cuisine professionnelle"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local ou un immeuble à entretenir ?",
+            "sousTitre": "Donnez-nous la surface et vos contraintes : on cale une visite et un devis clair, sans engagement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-moquettes",
+      "label": "Moquettes",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de moquettes à Lille — injection-extraction",
+        "description": "Nettoyage de moquettes de bureaux et commerces à Lille et dans le Nord par injection-extraction. Ravivées et vite sèches, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Services professionnels",
+            "titre": "Nettoyage de moquettes à Lille",
+            "intro": "Moquettes de bureaux ou de commerces ravivées en profondeur, sans les détremper.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Services professionnels",
+                "href": "/services-professionnels"
+              },
+              {
+                "label": "Moquettes"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Des moquettes comme neuves",
+            "paragraphes": [
+              "Une moquette de bureau ou de commerce encaisse le passage, la poussière et les taches. L'aspirateur ne suffit plus : il faut un nettoyage en profondeur. Nous intervenons à Lille et dans le Nord par injection-extraction.",
+              "La solution est injectée puis aspirée avec la saleté : la moquette ressort ravivée et sèche vite, sans gêner la reprise de l'activité."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-canape.jpg",
+              "alt": "Nettoyage d'une moquette par injection-extraction"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local ou un immeuble à entretenir ?",
+            "sousTitre": "Donnez-nous la surface et vos contraintes : on cale une visite et un devis clair, sans engagement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-chambres-froides",
+      "label": "Chambres froides",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de chambres froides à Lille",
+        "description": "Nettoyage et désinfection de chambres froides à Lille et dans le Nord : parois, sols, joints, aux normes d'hygiène. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Services professionnels",
+            "titre": "Nettoyage de chambres froides à Lille",
+            "intro": "Nettoyage et désinfection aux normes, pour préserver vos denrées et vos contrôles.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Services professionnels",
+                "href": "/services-professionnels"
+              },
+              {
+                "label": "Chambres froides"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "La chaîne du froid, propre",
+            "paragraphes": [
+              "Une chambre froide demande un nettoyage rigoureux : c'est un enjeu d'hygiène et de conservation. Nous la nettoyons et la désinfectons à Lille et dans le Nord, selon les exigences du secteur.",
+              "Parois, sols, joints, points sensibles : nous traitons l'ensemble aux normes, pour préserver vos denrées et passer sereinement vos contrôles."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-gants.jpg",
+              "alt": "Nettoyage et désinfection d'une chambre froide"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local ou un immeuble à entretenir ?",
+            "sousTitre": "Donnez-nous la surface et vos contraintes : on cale une visite et un devis clair, sans engagement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "destruction-archives",
+      "label": "Destruction d'archives",
+      "navHidden": true,
+      "meta": {
+        "title": "Destruction d'archives à Lille — sécurisée",
+        "description": "Destruction d'archives à Lille et dans le Nord : évacuation et destruction sécurisée de documents confidentiels. Espace libéré, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Services professionnels",
+            "titre": "Destruction d'archives à Lille",
+            "intro": "Évacuation et destruction sécurisée de vos archives, en toute confidentialité.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Services professionnels",
+                "href": "/services-professionnels"
+              },
+              {
+                "label": "Destruction d'archives"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Vos archives, éliminées en sécurité",
+            "paragraphes": [
+              "Des archives qui s'entassent occupent de l'espace et posent une question de confidentialité. Nous en assurons l'évacuation et la destruction sécurisée à Lille et dans le Nord.",
+              "Enlèvement, transport et destruction dans les règles : vos documents sensibles sont éliminés en toute confidentialité, et vous récupérez de l'espace."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/deb-storage.jpg",
+              "alt": "Archives et cartons à évacuer et détruire"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local ou un immeuble à entretenir ?",
+            "sousTitre": "Donnez-nous la surface et vos contraintes : on cale une visite et un devis clair, sans engagement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "vitrerie-immeuble",
+      "label": "Vitrerie d'immeuble",
+      "navHidden": true,
+      "meta": {
+        "title": "Vitrerie d'immeuble à Lille — nettoyage de vitres",
+        "description": "Nettoyage des vitres d'immeuble à Lille et dans le Nord : halls, cages d'escalier, surfaces vitrées, travail en hauteur. Sans trace, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Services professionnels",
+            "titre": "Vitrerie d'immeuble à Lille",
+            "intro": "Vitres, baies et surfaces vitrées, même en hauteur, nettoyées sans trace.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Services professionnels",
+                "href": "/services-professionnels"
+              },
+              {
+                "label": "Vitrerie d'immeuble"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "La lumière retrouvée, à tous les étages",
+            "paragraphes": [
+              "Les surfaces vitrées d'un immeuble — halls, cages d'escalier, façades vitrées — se salissent vite et se voient de loin. Nous les nettoyons à Lille et dans le Nord, y compris en hauteur.",
+              "Avec le matériel et les sécurités adaptés, nous rendons les vitres nettes sans trace, sur un rythme régulier ou ponctuel selon vos besoins."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-vitres.jpg",
+              "alt": "Nettoyage des vitres d'un immeuble"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local ou un immeuble à entretenir ?",
+            "sousTitre": "Donnez-nous la surface et vos contraintes : on cale une visite et un devis clair, sans engagement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "fin-de-chantier-pro",
+      "label": "Fin de chantier",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage fin de chantier pro à Lille",
+        "description": "Nettoyage de fin de chantier de locaux professionnels à Lille et dans le Nord : poussières, résidus, vitres, sols. Livraison propre, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Services professionnels",
+            "titre": "Nettoyage de fin de chantier à Lille",
+            "intro": "Locaux pro remis en propreté après travaux, prêts à être livrés ou occupés.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Services professionnels",
+                "href": "/services-professionnels"
+              },
+              {
+                "label": "Fin de chantier"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Livrer des locaux impeccables",
+            "paragraphes": [
+              "Après des travaux dans un local professionnel, tout est à reprendre : poussières fines, résidus, traces sur les vitres et les sols. Avant la livraison ou l'installation, nous remettons tout au propre à Lille et dans le Nord.",
+              "Nous retirons l'ensemble des résidus de chantier, pour des locaux prêts à accueillir vos équipes ou à être remis au client, dans les délais."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-vide.jpg",
+              "alt": "Local professionnel nettoyé après travaux"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local ou un immeuble à entretenir ?",
+            "sousTitre": "Donnez-nous la surface et vos contraintes : on cale une visite et un devis clair, sans engagement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "fientes-pigeons-professionnel",
+      "label": "Fientes de pigeons",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage fientes de pigeons (pro) à Lille",
+        "description": "Nettoyage et décontamination de fientes de pigeons sur locaux professionnels à Lille et dans le Nord : façades, toitures, protection anti-retour. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Services professionnels",
+            "titre": "Nettoyage de fientes de pigeons (locaux pro) à Lille",
+            "intro": "Façades, toitures, locaux techniques : on décontamine et on protège contre les pigeons.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Services professionnels",
+                "href": "/services-professionnels"
+              },
+              {
+                "label": "Fientes de pigeons"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Assainir et protéger vos locaux",
+            "paragraphes": [
+              "Sur un bâtiment professionnel, les fientes de pigeons dégradent les surfaces et posent un risque sanitaire pour vos équipes et vos clients. Nous décontaminons à Lille et dans le Nord.",
+              "Retrait des dépôts, désinfection, puis conseil en dispositifs anti-pigeons pour éviter le retour : nous assainissons durablement vos façades, toitures et locaux techniques."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-pigeons.jpg",
+              "alt": "Décontamination de fientes de pigeons sur un local"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local ou un immeuble à entretenir ?",
+            "sousTitre": "Donnez-nous la surface et vos contraintes : on cale une visite et un devis clair, sans engagement.",
             "ctaPrimaire": {
               "label": "Devis gratuit",
               "href": "/devis"
