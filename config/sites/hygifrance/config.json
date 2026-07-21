@@ -628,7 +628,7 @@
               "Nous calons nos passages sur vos horaires — tôt le matin, après la fermeture ou le week-end — et adaptons le protocole à chaque lieu. Un cabinet médical demande une désinfection rigoureuse des surfaces de contact ; un commerce, des vitrines et un sol impeccables ; une école, une attention particulière à l'hygiène des espaces partagés.",
               "En contrat régulier ou en intervention ponctuelle, vous bénéficiez d'un référent, d'un cahier des charges clair et d'un matériel professionnel fourni. Vous n'avez rien à gérer : nous arrivons équipés et repartons en laissant des locaux prêts à accueillir."
             ],
-            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/svc-bureaux.jpg", "alt": "Matériel de nettoyage HYGIFRANCE dans des bureaux lumineux" },
+            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/svc-bureaux-v2.jpg", "alt": "Agent HYGIFRANCE nettoyant un poste de travail en open space" },
             "imagePosition": "right",
             "imageRatio": "3/2",
             "imageCard": true
@@ -957,6 +957,7 @@
             "eyebrow": "Tarifs",
             "titre": "Un prix juste, établi sur mesure",
             "intro": "Nos prestations sont trop variées pour tenir dans une grille unique. Nous préférons vous remettre un devis précis et gratuit, adapté à votre situation.",
+            "image": { "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/hero-tarifs.jpg", "alt": "Matériel de nettoyage et devis sur un bureau" },
             "ctaPrimaire": { "label": "Obtenir mon devis", "href": "/devis" }
           }
         },

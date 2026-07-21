@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronRight, ChevronLeft, Droplet } from "lucide-react";
 import type { PageHeroContent } from "@/types/config";
 import type { BlockComponentProps } from "@/blocks/types";
@@ -7,7 +8,7 @@ import { withBase } from "@/lib/utils";
 import { resolveHeroSecondary } from "@/lib/hero-cta";
 import { localeDir } from "@/lib/i18n";
 import { CascadeContainer } from "../ui/Container";
-import { Aura, WaveEdge } from "../ui/Decor";
+import { Aura, WaveEdge, BANNER_SCRIM } from "../ui/Decor";
 
 /**
  * En-tête de page intérieure — cascade : bandeau dégradé bleu→vert (plus compact
@@ -22,9 +23,28 @@ export function PageHero({ block, config, basePath = "", locale, strings }: Bloc
   const GRADIENT =
     "linear-gradient(140deg, var(--brand-800) 0%, var(--brand-600) 52%, color-mix(in srgb, var(--accent-600) 72%, var(--brand-700)) 100%)";
 
+  const img = c.image;
+
   return (
-    <section className="relative isolate overflow-hidden text-white" style={{ background: GRADIENT }}>
-      <Aura />
+    <section
+      className="relative isolate overflow-hidden text-white"
+      style={img ? undefined : { background: GRADIENT }}
+    >
+      {img ? (
+        <div aria-hidden className="absolute inset-0 -z-10">
+          <Image
+            src={img.url}
+            alt={img.alt ?? c.titre}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0" style={{ background: BANNER_SCRIM }} />
+        </div>
+      ) : (
+        <Aura />
+      )}
       <CascadeContainer className="relative z-20 pb-24 pt-12 sm:pb-28 sm:pt-16 lg:pt-20">
         <nav aria-label={strings.pageHero.breadcrumbAria} className="mb-8">
           <ol className="flex flex-wrap items-center gap-1.5 text-xs uppercase tracking-[0.12em] text-white/70">

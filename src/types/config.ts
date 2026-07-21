@@ -897,6 +897,12 @@ export interface PageHeroContent {
   eyebrow?: string;
   titre: string;
   intro?: string;
+  /**
+   * Photo de FOND du bandeau, pour les familles qui le supportent (ex.
+   * `cascade`) : l'image occupe tout l'en-tête sous un voile de marque, texte
+   * clair par-dessus. Absente => bandeau en dégradé. Ignorée ailleurs.
+   */
+  image?: ImageRef;
   /** Fil d'ariane. Si absent, généré depuis la page courante (Accueil › Page). */
   breadcrumb?: { label: string; href?: string }[];
   ctaPrimaire?: CTA;

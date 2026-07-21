@@ -9,7 +9,7 @@ import { resolveHeroSecondary } from "@/lib/hero-cta";
 import { findBlock } from "@/lib/pages";
 import { CascadeContainer } from "../ui/Container";
 import { CascadeSeal } from "../ui/Seal";
-import { Aura, BubbleField, WaveEdge } from "../ui/Decor";
+import { Aura, BubbleField, WaveEdge, BANNER_SCRIM } from "../ui/Decor";
 
 /**
  * HERO cascade — IMMERSIF & LUMINEUX. Deux modes selon `content` :
@@ -23,11 +23,6 @@ import { Aura, BubbleField, WaveEdge } from "../ui/Decor";
  */
 const GRADIENT =
   "linear-gradient(145deg, var(--brand-800) 0%, var(--brand-600) 44%, color-mix(in srgb, var(--accent-600) 78%, var(--brand-700)) 100%)";
-
-// Voile de marque du mode bandeau : dense (navy) à gauche/haut où vit le texte,
-// s'estompe vers la droite/bas où la photo respire. Garantit l'AA du texte blanc.
-const BANNER_SCRIM =
-  "linear-gradient(105deg, color-mix(in srgb, var(--brand-800) 92%, transparent) 0%, color-mix(in srgb, var(--brand-800) 74%, transparent) 44%, color-mix(in srgb, var(--brand-700) 40%, transparent) 72%, color-mix(in srgb, var(--brand-600) 8%, transparent) 100%)";
 
 export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroContent>) {
   const c = block.content;

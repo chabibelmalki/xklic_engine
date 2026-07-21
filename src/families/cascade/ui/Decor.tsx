@@ -9,6 +9,14 @@ import { cn } from "@/lib/utils";
  *  - <BubbleField/> : gouttelettes dispersées (fines bulles claires).
  */
 
+/**
+ * Voile de marque des BANDEAUX PHOTO (hero d'accueil, en-tête de page) : dense
+ * (navy) à gauche/haut où vit le texte, s'estompe vers la droite/bas où la photo
+ * respire. Garantit l'AA du texte blanc sur n'importe quelle photo, même claire.
+ */
+export const BANNER_SCRIM =
+  "linear-gradient(105deg, color-mix(in srgb, var(--brand-800) 92%, transparent) 0%, color-mix(in srgb, var(--brand-800) 74%, transparent) 44%, color-mix(in srgb, var(--brand-700) 40%, transparent) 72%, color-mix(in srgb, var(--brand-600) 8%, transparent) 100%)";
+
 export function WaveEdge({
   position = "bottom",
   fill = "var(--bg)",
