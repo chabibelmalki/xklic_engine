@@ -1611,40 +1611,64 @@
         },
         {
           "type": "services",
-          "variant": "grille-icones",
+          "variant": "grille-cartes",
           "content": {
             "eyebrow": "Nos interventions",
             "titre": "Nos interventions post-sinistre",
             "items": [
               {
                 "nom": "Après incendie",
-                "description": "Retrait des suies, dégraissage et remise en propreté des surfaces.",
-                "icone": "Flame"
+                "description": "Retrait des suies, nettoyage et traitement de l'odeur après un incendie.",
+                "href": "/nettoyage-apres-incendie",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sin-incendie.jpg",
+                  "alt": "Intérieur d'une pièce après un incendie"
+                }
               },
               {
                 "nom": "Après dégât des eaux",
-                "description": "Nettoyage, assèchement et prévention des moisissures.",
-                "icone": "Droplets"
+                "description": "Extraction, nettoyage et assèchement après une fuite ou une inondation.",
+                "href": "/nettoyage-apres-degat-des-eaux",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-sinistre.jpg",
+                  "alt": "Extraction de l'eau et nettoyage après un dégât des eaux"
+                }
               },
               {
                 "nom": "Fumées & suie",
                 "description": "Traitement des dépôts de fumée sur murs, plafonds et mobilier.",
-                "icone": "CloudFog"
+                "href": "/nettoyage-fumees-suie",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sin-incendie.jpg",
+                  "alt": "Dépôts de fumée et de suie sur un mur"
+                }
               },
               {
                 "nom": "Assèchement",
-                "description": "Séchage des zones touchées pour éviter l'humidité durable.",
-                "icone": "Wind"
+                "description": "Séchage en profondeur des zones touchées pour éviter l'humidité durable.",
+                "href": "/assechement-apres-sinistre",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-sinistre.jpg",
+                  "alt": "Matériel d'assèchement dans une pièce touchée par l'eau"
+                }
               },
               {
                 "nom": "Traitement des odeurs",
-                "description": "Désodorisation en profondeur des locaux sinistrés.",
-                "icone": "AirVent"
+                "description": "Désodorisation en profondeur des locaux sinistrés, à la source.",
+                "href": "/traitement-odeurs-apres-sinistre",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-gants.jpg",
+                  "alt": "Traitement et désodorisation d'une pièce"
+                }
               },
               {
                 "nom": "Coordination assurance",
                 "description": "Constat, devis détaillé et échange avec votre assureur.",
-                "icone": "FileCheck"
+                "href": "/coordination-assurance-sinistre",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sin-assurance.jpg",
+                  "alt": "Personne remplissant un dossier d'assurance"
+                }
               }
             ]
           }
@@ -1674,6 +1698,408 @@
           "content": {
             "titre": "Un local sinistré à remettre en état ?",
             "sousTitre": "Décrivez-nous la situation : on se déplace, on chiffre, et on agit vite.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-apres-incendie",
+      "label": "Après incendie",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage après incendie à Lille — suie & odeurs",
+        "description": "Nettoyage après incendie à Lille et dans le Nord : retrait des suies, murs et plafonds, traitement de l'odeur de brûlé. Intervention rapide, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Après sinistre",
+            "titre": "Nettoyage après incendie à Lille",
+            "intro": "La suie s'incruste et l'odeur de brûlé s'installe vite. Plus on intervient tôt, mieux on sauve.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Après sinistre",
+                "href": "/apres-sinistre"
+              },
+              {
+                "label": "Après incendie"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Effacer les traces du feu",
+            "paragraphes": [
+              "Après un incendie, même circonscrit, la suie recouvre les surfaces, pénètre les matériaux et l'odeur de brûlé imprègne tout. Chaque jour qui passe rend les dégâts plus difficiles à reprendre. Nous intervenons rapidement à Lille et dans le Nord pour stopper cette dégradation.",
+              "Dégraissage et retrait des suies, nettoyage des murs, plafonds et sols, traitement de l'odeur : nous rendons le local sain et de nouveau présentable. Un devis clair est établi et peut servir votre dossier d'assurance."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sin-incendie.jpg",
+              "alt": "Intérieur d'une pièce après un incendie"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local sinistré à remettre en état ?",
+            "sousTitre": "On se déplace vite, on chiffre gratuitement et on peut échanger avec votre assurance.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-apres-degat-des-eaux",
+      "label": "Après dégât des eaux",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage après dégât des eaux à Lille — assèchement",
+        "description": "Nettoyage après dégât des eaux à Lille et dans le Nord : extraction, assèchement, désinfection, prévention des moisissures. Intervention rapide, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Après sinistre",
+            "titre": "Nettoyage après dégât des eaux à Lille",
+            "intro": "Une fuite ou une inondation laisse humidité et risque de moisissures. On assèche et on assainit vite.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Après sinistre",
+                "href": "/apres-sinistre"
+              },
+              {
+                "label": "Après dégât des eaux"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Assécher et assainir",
+            "paragraphes": [
+              "Un dégât des eaux ne s'arrête pas quand l'eau est partie : l'humidité s'installe dans les sols, les murs et les cloisons, et les moisissures suivent. Nous intervenons à Lille et dans le Nord pour extraire l'eau, nettoyer et prévenir ces désordres.",
+              "Extraction, nettoyage, assèchement et désinfection : nous traitons la zone touchée avec le matériel adapté, puis vérifions que tout est sec avant de partir. L'objectif est d'éviter des dégâts durables et coûteux."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-sinistre.jpg",
+              "alt": "Extraction de l'eau et nettoyage après un dégât des eaux"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local sinistré à remettre en état ?",
+            "sousTitre": "On se déplace vite, on chiffre gratuitement et on peut échanger avec votre assurance.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-fumees-suie",
+      "label": "Fumées & suie",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage fumées & suie à Lille",
+        "description": "Nettoyage des dépôts de fumée et de suie à Lille et dans le Nord : murs, plafonds, mobilier, traitement de l'odeur. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Après sinistre",
+            "titre": "Nettoyage des fumées et de la suie à Lille",
+            "intro": "Même sans gros incendie, un départ de feu dépose une pellicule grasse et odorante sur tout. On la retire.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Après sinistre",
+                "href": "/apres-sinistre"
+              },
+              {
+                "label": "Fumées & suie"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Retirer la pellicule de suie",
+            "paragraphes": [
+              "Un simple départ de feu, un appareil qui a chauffé ou de la fumée passée d'un logement à l'autre suffisent à déposer une fine couche grasse et noire sur les murs, les plafonds et le mobilier. Elle salit, sent le brûlé et attaque les surfaces. Nous la traitons à Lille et dans le Nord.",
+              "Le nettoyage de la suie demande les bons produits pour ne pas l'étaler : nous dégraissons méthodiquement les surfaces et neutralisons l'odeur, jusqu'à retrouver des lieux nets et respirables."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sin-incendie.jpg",
+              "alt": "Dépôts de fumée et de suie sur un mur"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local sinistré à remettre en état ?",
+            "sousTitre": "On se déplace vite, on chiffre gratuitement et on peut échanger avec votre assurance.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "assechement-apres-sinistre",
+      "label": "Assèchement",
+      "navHidden": true,
+      "meta": {
+        "title": "Assèchement après sinistre à Lille — dégât des eaux",
+        "description": "Assèchement après dégât des eaux à Lille et dans le Nord : séchage en profondeur des sols et murs, prévention des moisissures. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Après sinistre",
+            "titre": "Assèchement après sinistre à Lille",
+            "intro": "Sécher en profondeur évite les moisissures et les mauvaises odeurs. C'est une étape à ne pas négliger.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Après sinistre",
+                "href": "/apres-sinistre"
+              },
+              {
+                "label": "Assèchement"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Sécher pour préserver le bâti",
+            "paragraphes": [
+              "Après un dégât des eaux, l'humidité résiduelle dans les sols, les murs et les cloisons est invisible mais bien réelle. Si elle n'est pas traitée, elle favorise moisissures, odeurs et dégradation des matériaux. Nous assurons l'assèchement à Lille et dans le Nord.",
+              "Nous ciblons les zones touchées et séchons en profondeur avec le matériel adapté, puis contrôlons le résultat. Un séchage bien mené protège votre bâtiment et évite des réparations lourdes plus tard."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-sinistre.jpg",
+              "alt": "Matériel d'assèchement dans une pièce touchée par l'eau"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local sinistré à remettre en état ?",
+            "sousTitre": "On se déplace vite, on chiffre gratuitement et on peut échanger avec votre assurance.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "traitement-odeurs-apres-sinistre",
+      "label": "Traitement des odeurs",
+      "navHidden": true,
+      "meta": {
+        "title": "Traitement des odeurs après sinistre à Lille",
+        "description": "Désodorisation après sinistre à Lille et dans le Nord : odeurs de brûlé, d'humidité, de renfermé traitées à la source. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Après sinistre",
+            "titre": "Traitement des odeurs après sinistre à Lille",
+            "intro": "Brûlé, humidité, renfermé : après un sinistre, l'odeur reste. On la traite à la source, pas en surface.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Après sinistre",
+                "href": "/apres-sinistre"
+              },
+              {
+                "label": "Traitement des odeurs"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Neutraliser l'odeur, pas la masquer",
+            "paragraphes": [
+              "Après un incendie ou un dégât des eaux, une odeur tenace s'installe — brûlé, humidité, renfermé. La masquer avec un parfum ne suffit pas : elle revient. Nous traitons la source de l'odeur à Lille et dans le Nord.",
+              "Nettoyage des supports imprégnés, désinfection et désodorisation en profondeur : nous nous attaquons à ce qui produit l'odeur, jusqu'à retrouver un air sain dans les locaux."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-gants.jpg",
+              "alt": "Traitement et désodorisation d'une pièce"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local sinistré à remettre en état ?",
+            "sousTitre": "On se déplace vite, on chiffre gratuitement et on peut échanger avec votre assurance.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "coordination-assurance-sinistre",
+      "label": "Coordination assurance",
+      "navHidden": true,
+      "meta": {
+        "title": "Coordination assurance après sinistre à Lille",
+        "description": "Coordination avec votre assurance après sinistre à Lille et dans le Nord : devis détaillé, documentation de l'intervention, échange avec l'expert. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Après sinistre",
+            "titre": "Coordination avec votre assurance à Lille",
+            "intro": "Un sinistre, c'est déjà assez de stress. On documente l'intervention et on facilite votre dossier.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Après sinistre",
+                "href": "/apres-sinistre"
+              },
+              {
+                "label": "Coordination assurance"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Vous simplifier les démarches",
+            "paragraphes": [
+              "Après un sinistre, gérer l'assurance en plus du reste est épuisant. Nous établissons un devis détaillé et documentons l'intervention — état des lieux, photos, description des travaux — pour appuyer votre déclaration à Lille et dans le Nord.",
+              "Si vous le souhaitez, nous échangeons directement avec votre assureur ou votre expert pour clarifier ce qui est nécessaire. L'idée est simple : que vous ayez le moins possible à porter."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sin-assurance.jpg",
+              "alt": "Personne remplissant un dossier d'assurance"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un local sinistré à remettre en état ?",
+            "sousTitre": "On se déplace vite, on chiffre gratuitement et on peut échanger avec votre assurance.",
             "ctaPrimaire": {
               "label": "Devis gratuit",
               "href": "/devis"
