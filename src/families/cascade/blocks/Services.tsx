@@ -56,7 +56,7 @@ export function Services({ block, tone, basePath = "", strings }: BlockComponent
                 </>
               );
               const cls =
-                "group flex h-full gap-4 rounded-[var(--radius-btn)] border border-border bg-[color-mix(in_srgb,var(--brand-500)_4%,var(--bg))] p-4 transition-colors hover:border-brand-300";
+                "group flex h-full items-start gap-4 rounded-[var(--radius-card)] border border-border bg-[color-mix(in_srgb,var(--brand-500)_4%,var(--bg))] p-5 transition-colors hover:border-brand-300";
               return s.href ? (
                 <li key={s.nom}>
                   <a href={withBase(basePath, s.href)} className={cls}>
