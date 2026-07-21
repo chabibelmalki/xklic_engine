@@ -98,6 +98,10 @@
               {
                 "icone": "Sparkles",
                 "label": "Résultat contrôlé"
+              },
+              {
+                "icone": "Globe",
+                "label": "Scène de crime & Diogène : toute la France & la Belgique"
               }
             ],
             "card": {
@@ -738,7 +742,7 @@
           "content": {
             "titre": "Une remise en état encadrée",
             "paragraphes": [
-              "Après une intervention judiciaire, les lieux ne peuvent pas être nettoyés comme un logement ordinaire : traces biologiques, produits, risques sanitaires demandent une équipe formée, un équipement de protection et un protocole de décontamination strict. Nous intervenons à Lille et dans tout le Nord, en toute confidentialité.",
+              "Après une intervention judiciaire, les lieux ne peuvent pas être nettoyés comme un logement ordinaire : traces biologiques, produits, risques sanitaires demandent une équipe formée, un équipement de protection et un protocole de décontamination strict. Pour ce type d'intervention, nous ne nous limitons pas au Nord : nous nous déplaçons dans toute la France et toute la Belgique, où que vous soyez et en toute confidentialité.",
               "Nous prenons tout en charge : nettoyage, désinfection, désodorisation puis remise en état, jusqu'à ce que rien ne rappelle ce qui s'est passé. Un seul interlocuteur, un devis clair, et la coordination avec les familles ou les assurances si vous le souhaitez."
             ],
             "image": {
@@ -6694,7 +6698,7 @@
             "titre": "Un accompagnement,",
             "titreAccent": "pas seulement un nettoyage",
             "paragraphes": [
-              "Le syndrome de Diogène conduit à une accumulation d'objets et de déchets qui rend un logement difficilement habitable. Derrière chaque intervention, il y a une personne et une histoire : notre première exigence est le respect. Nous avançons au rythme des occupants et de la famille, dans la plus grande discrétion, véhicules et tenues neutres si vous le souhaitez.",
+              "Le syndrome de Diogène conduit à une accumulation d'objets et de déchets qui rend un logement difficilement habitable. Derrière chaque intervention, il y a une personne et une histoire : notre première exigence est le respect. Nous avançons au rythme des occupants et de la famille, dans la plus grande discrétion, véhicules et tenues neutres si vous le souhaitez. Pour ces situations, nous intervenons bien au-delà du Nord : nous nous déplaçons dans toute la France et toute la Belgique.",
               "Concrètement, nous procédons par étapes : tri et débarras des encombrants, évacuation vers les filières adaptées, nettoyage en profondeur de toutes les surfaces, puis désinfection et désodorisation. Les sols, les murs, la cuisine et les sanitaires sont repris jusqu'à retrouver un intérieur sain et sécurisé.",
               "Chaque situation est unique : la surface, le niveau d'encombrement et l'état sanitaire déterminent la durée et le prix, toujours établis sur devis. Nous pouvons coordonner l'intervention avec un proche, un tuteur, un bailleur social ou les services sociaux."
             ],
@@ -6945,6 +6949,7 @@
             "paragraphes": [
               "Notre base lilloise nous place au cœur de la Métropole Européenne de Lille. Nous y intervenons quotidiennement, à Lille et dans les communes voisines comme Roubaix, Tourcoing, Villeneuve-d'Ascq, Marcq-en-Barœul, Lambersart, Loos, Ronchin ou Wattignies, aussi bien pour les copropriétés que pour les entreprises et les particuliers.",
               "Au-delà de la métropole, nous nous déplaçons dans l'ensemble du département du Nord : le Douaisis, la Flandre autour d'Armentières, Bailleul et Halluin, le secteur de Seclin et de la Pévèle vers Orchies et Pont-à-Marcq. Les chantiers extérieurs et les interventions après sinistre nous amènent régulièrement hors des grands axes.",
+              "Deux interventions font exception à cet ancrage régional : le nettoyage après scène de crime et le syndrome de Diogène. Pour ces situations rares, qui exigent une équipe spécialement formée, nous nous déplaçons dans toute la France et toute la Belgique. Où que vous soyez, nous venons à vous, en toute discrétion.",
               "Vous n'êtes pas certain d'être dans notre zone ? Indiquez-nous simplement votre commune : si l'intervention est possible, nous vous le confirmons immédiatement avec le devis. Le déplacement est pris en compte de façon transparente dans notre chiffrage."
             ],
             "ctaPrimaire": {
