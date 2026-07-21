@@ -5922,7 +5922,7 @@
         },
         {
           "type": "services",
-          "variant": "grille-icones",
+          "variant": "grille-cartes",
           "content": {
             "eyebrow": "Nos interventions",
             "titre": "Ce que nous traitons",
@@ -5930,47 +5930,83 @@
               {
                 "nom": "Entrepôts & hangars",
                 "description": "Nettoyage de grands volumes, sols et structures.",
-                "icone": "Warehouse"
+                "href": "/nettoyage-entrepots-hangars",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-batiments.jpg",
+                  "alt": "Nettoyage d'un entrepôt de grand volume"
+                }
               },
               {
                 "nom": "Bardages",
                 "description": "Décrassage des bardages métalliques et composites.",
-                "icone": "Building2"
+                "href": "/nettoyage-bardages",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-exterieurs.jpg",
+                  "alt": "Décrassage d'un bardage métallique"
+                }
               },
               {
                 "nom": "Enseignes & devantures",
                 "description": "Nettoyage des enseignes et devantures de magasins.",
-                "icone": "Store"
+                "href": "/nettoyage-enseignes-devantures",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-vitres.jpg",
+                  "alt": "Nettoyage d'une enseigne et d'une devanture"
+                }
               },
               {
                 "nom": "Bâtiments anciens & monuments",
                 "description": "Nettoyage soigné du patrimoine et des monuments.",
-                "icone": "Landmark"
+                "href": "/nettoyage-batiments-anciens",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-batiments.jpg",
+                  "alt": "Nettoyage d'un bâtiment ancien"
+                }
               },
               {
                 "nom": "Traitement humidité",
                 "description": "Diagnostic et traitement des zones humides.",
-                "icone": "Droplets"
+                "href": "/traitement-humidite",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-sinistre.jpg",
+                  "alt": "Traitement d'une zone humide dans un bâtiment"
+                }
               },
               {
                 "nom": "Traitement moisissure",
                 "description": "Élimination des moisissures et prévention.",
-                "icone": "CloudFog"
+                "href": "/traitement-moisissure",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-gants.jpg",
+                  "alt": "Élimination de moisissures sur un mur"
+                }
               },
               {
                 "nom": "Traitement des odeurs",
                 "description": "Désodorisation en profondeur des bâtiments.",
-                "icone": "AirVent"
+                "href": "/traitement-odeurs-batiment",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-ppe.jpg",
+                  "alt": "Désodorisation professionnelle d'un bâtiment"
+                }
               },
               {
                 "nom": "Remontées capillaires",
                 "description": "Traitement des remontées d'humidité par les murs.",
-                "icone": "Waves"
+                "href": "/traitement-remontees-capillaires",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-mur.jpg",
+                  "alt": "Traitement de remontées d'humidité au bas d'un mur"
+                }
               },
               {
                 "nom": "Bâtiments agricoles",
                 "description": "Nettoyage et désinfection des bâtiments agricoles.",
-                "icone": "Tractor"
+                "href": "/nettoyage-batiments-agricoles",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-exterieurs.jpg",
+                  "alt": "Nettoyage d'un bâtiment agricole"
+                }
               }
             ]
           }
@@ -5999,6 +6035,609 @@
           "type": "cta",
           "content": {
             "titre": "Un bâtiment à traiter ou à nettoyer ?",
+            "sousTitre": "Décrivez-nous le bâti et le problème : on se déplace et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-entrepots-hangars",
+      "label": "Entrepôts & hangars",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage d'entrepôts & hangars à Lille",
+        "description": "Nettoyage d'entrepôts et hangars à Lille et dans le Nord : grands volumes, sols techniques, structures, travail en hauteur. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Bâtiments",
+            "titre": "Nettoyage d'entrepôts et hangars à Lille",
+            "intro": "Grands volumes, sols techniques, structures : un nettoyage à la bonne échelle.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Bâtiments",
+                "href": "/batiments"
+              },
+              {
+                "label": "Entrepôts & hangars"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Le grand volume, bien nettoyé",
+            "paragraphes": [
+              "Un entrepôt ou un hangar pose des défis particuliers : surfaces immenses, sols techniques, hauteur, sécurité. Nous adaptons matériel et organisation à cette échelle, à Lille et dans le Nord.",
+              "Sols, structures, quais, zones de stockage : nous intervenons sur un rythme régulier ou pour une remise en état ponctuelle, en respectant votre activité et vos règles de sécurité."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-batiments.jpg",
+              "alt": "Nettoyage d'un entrepôt de grand volume"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un bâtiment à traiter ou nettoyer ?",
+            "sousTitre": "Décrivez-nous le bâti et le problème : on se déplace et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-bardages",
+      "label": "Bardages",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de bardages à Lille",
+        "description": "Nettoyage de bardages métalliques et composites à Lille et dans le Nord : décrassage adapté au revêtement, grandes surfaces. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Bâtiments",
+            "titre": "Nettoyage de bardages à Lille",
+            "intro": "Bardages métalliques ou composites encrassés : on les décrasse sans les abîmer.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Bâtiments",
+                "href": "/batiments"
+              },
+              {
+                "label": "Bardages"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Un bardage propre et durable",
+            "paragraphes": [
+              "Un bardage encaisse pluie, pollution et poussières industrielles : il se ternit, se salit et vieillit le bâtiment. Nous le nettoyons à Lille et dans le Nord, sur métal comme sur composite.",
+              "Nous ajustons produit et pression pour décrasser sans endommager le revêtement ni ses joints. Le bâtiment retrouve une allure nette, y compris sur de grandes surfaces."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-exterieurs.jpg",
+              "alt": "Décrassage d'un bardage métallique"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un bâtiment à traiter ou nettoyer ?",
+            "sousTitre": "Décrivez-nous le bâti et le problème : on se déplace et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-enseignes-devantures",
+      "label": "Enseignes & devantures",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage d'enseignes & devantures à Lille",
+        "description": "Nettoyage d'enseignes, devantures et stores de commerces à Lille et dans le Nord : sans trace, travail en hauteur. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Bâtiments",
+            "titre": "Nettoyage d'enseignes et devantures à Lille",
+            "intro": "Une enseigne et une devanture propres, c'est la première impression du commerce.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Bâtiments",
+                "href": "/batiments"
+              },
+              {
+                "label": "Enseignes & devantures"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "La vitrine de votre commerce",
+            "paragraphes": [
+              "Enseigne, devanture, store : c'est ce que voit le client avant même d'entrer. Encrassées, elles donnent une mauvaise image. Nous les nettoyons à Lille et dans le Nord.",
+              "Nettoyage de l'enseigne, de la devanture et des surfaces vitrées, sans trace, en hauteur si nécessaire. Votre commerce donne toujours une bonne première impression."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-vitres.jpg",
+              "alt": "Nettoyage d'une enseigne et d'une devanture"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un bâtiment à traiter ou nettoyer ?",
+            "sousTitre": "Décrivez-nous le bâti et le problème : on se déplace et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-batiments-anciens",
+      "label": "Bâtiments anciens & monuments",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de bâtiments anciens à Lille",
+        "description": "Nettoyage de bâtiments anciens et façades patrimoniales à Lille et dans le Nord : pierre, brique, méthodes douces. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Bâtiments",
+            "titre": "Nettoyage de bâtiments anciens à Lille",
+            "intro": "Le bâti ancien demande des méthodes douces. On le nettoie avec respect du matériau.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Bâtiments",
+                "href": "/batiments"
+              },
+              {
+                "label": "Bâtiments anciens & monuments"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Respecter le bâti ancien",
+            "paragraphes": [
+              "Un bâtiment ancien — pierre, brique, façade patrimoniale — ne supporte pas les méthodes agressives. Le nettoyage doit préserver le matériau. Nous intervenons avec soin à Lille et dans le Nord.",
+              "Diagnostic du support, méthode douce et progressive : nous retirons mousses, noircissures et salissures sans dénaturer ni fragiliser le bâti."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-batiments.jpg",
+              "alt": "Nettoyage d'un bâtiment ancien"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un bâtiment à traiter ou nettoyer ?",
+            "sousTitre": "Décrivez-nous le bâti et le problème : on se déplace et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "traitement-humidite",
+      "label": "Traitement humidité",
+      "navHidden": true,
+      "meta": {
+        "title": "Traitement de l'humidité à Lille — bâtiments",
+        "description": "Traitement de l'humidité dans les bâtiments à Lille et dans le Nord : diagnostic, assainissement des zones touchées, solution durable. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Bâtiments",
+            "titre": "Traitement de l'humidité à Lille",
+            "intro": "L'humidité abîme le bâti et la santé. On en traite la cause, pas seulement les traces.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Bâtiments",
+                "href": "/batiments"
+              },
+              {
+                "label": "Traitement humidité"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "S'attaquer à la source de l'humidité",
+            "paragraphes": [
+              "L'humidité dans un bâtiment n'est jamais anodine : elle dégrade les murs, favorise les moisissures et pèse sur la santé. Au-delà du nettoyage, il faut en comprendre l'origine. Nous intervenons à Lille et dans le Nord.",
+              "Après diagnostic, nous traitons la cause quand c'est possible et assainissons les zones touchées. L'objectif est durable : un bâtiment sain, pas un simple rafraîchissement de surface."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-sinistre.jpg",
+              "alt": "Traitement d'une zone humide dans un bâtiment"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un bâtiment à traiter ou nettoyer ?",
+            "sousTitre": "Décrivez-nous le bâti et le problème : on se déplace et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "traitement-moisissure",
+      "label": "Traitement moisissure",
+      "navHidden": true,
+      "meta": {
+        "title": "Traitement des moisissures à Lille",
+        "description": "Traitement des moisissures à Lille et dans le Nord : élimination, désinfection, prévention du retour. Bâtiment sain, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Bâtiments",
+            "titre": "Traitement des moisissures à Lille",
+            "intro": "Taches noires, odeurs, allergies : on élimine les moisissures et on prévient leur retour.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Bâtiments",
+                "href": "/batiments"
+              },
+              {
+                "label": "Traitement moisissure"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Éliminer les moisissures durablement",
+            "paragraphes": [
+              "Les moisissures ne sont pas qu'une question d'esthétique : elles dégradent les surfaces et peuvent affecter la santé, surtout des plus fragiles. Nous les traitons à Lille et dans le Nord.",
+              "Élimination des moisissures, désinfection, puis conseil sur les causes (humidité, ventilation) pour éviter qu'elles reviennent. Un traitement qui vise le fond, pas seulement la surface."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-gants.jpg",
+              "alt": "Élimination de moisissures sur un mur"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un bâtiment à traiter ou nettoyer ?",
+            "sousTitre": "Décrivez-nous le bâti et le problème : on se déplace et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "traitement-odeurs-batiment",
+      "label": "Traitement des odeurs",
+      "navHidden": true,
+      "meta": {
+        "title": "Traitement des odeurs (bâtiments) à Lille",
+        "description": "Désodorisation de bâtiments à Lille et dans le Nord : odeurs d'humidité, de tabac, d'animaux, de renfermé traitées à la source. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Bâtiments",
+            "titre": "Traitement des odeurs (bâtiments) à Lille",
+            "intro": "Odeurs persistantes dans un local ? On les traite à la source, pas au parfum.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Bâtiments",
+                "href": "/batiments"
+              },
+              {
+                "label": "Traitement des odeurs"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Retrouver un air sain",
+            "paragraphes": [
+              "Une odeur persistante dans un bâtiment — humidité, tabac, animaux, renfermé — ne se règle pas avec un désodorisant : elle revient. Nous en traitons la source à Lille et dans le Nord.",
+              "Nettoyage des supports imprégnés, désinfection et désodorisation en profondeur : nous neutralisons l'odeur là où elle se forme, pour un air de nouveau respirable."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-ppe.jpg",
+              "alt": "Désodorisation professionnelle d'un bâtiment"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un bâtiment à traiter ou nettoyer ?",
+            "sousTitre": "Décrivez-nous le bâti et le problème : on se déplace et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "traitement-remontees-capillaires",
+      "label": "Remontées capillaires",
+      "navHidden": true,
+      "meta": {
+        "title": "Traitement des remontées capillaires à Lille",
+        "description": "Traitement des remontées capillaires à Lille et dans le Nord : diagnostic, assainissement du bas des murs, solution durable. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Bâtiments",
+            "titre": "Traitement des remontées capillaires à Lille",
+            "intro": "L'humidité qui monte par les murs abîme le bas des murs. On la diagnostique et on la traite.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Bâtiments",
+                "href": "/batiments"
+              },
+              {
+                "label": "Remontées capillaires"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Stopper l'humidité qui monte",
+            "paragraphes": [
+              "Les remontées capillaires font monter l'humidité du sol dans les murs : salpêtre, enduits qui cloquent, bas de murs dégradés. C'est un désordre courant du bâti ancien. Nous l'abordons à Lille et dans le Nord.",
+              "Après un diagnostic, nous nettoyons et assainissons les zones touchées et vous orientons vers la bonne solution de fond, pour un traitement durable plutôt qu'un simple ravalement de surface."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-mur.jpg",
+              "alt": "Traitement de remontées d'humidité au bas d'un mur"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un bâtiment à traiter ou nettoyer ?",
+            "sousTitre": "Décrivez-nous le bâti et le problème : on se déplace et on chiffre gratuitement.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-batiments-agricoles",
+      "label": "Bâtiments agricoles",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de bâtiments agricoles à Lille",
+        "description": "Nettoyage et désinfection de bâtiments agricoles à Lille et dans le Nord : étables, hangars, silos, hygiène et santé animale. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Bâtiments",
+            "titre": "Nettoyage de bâtiments agricoles à Lille",
+            "intro": "Étables, hangars, silos : un nettoyage et une désinfection à la mesure de l'exploitation.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Bâtiments",
+                "href": "/batiments"
+              },
+              {
+                "label": "Bâtiments agricoles"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "L'hygiène de l'exploitation",
+            "paragraphes": [
+              "Un bâtiment agricole — étable, hangar, silo, local d'élevage — demande un nettoyage et une désinfection réguliers, essentiels pour l'hygiène et la santé animale. Nous intervenons à Lille et dans le Nord.",
+              "Grands volumes, sols techniques, points sensibles : nous adaptons matériel et produits aux contraintes de l'exploitation, dans le respect de vos règles sanitaires."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-exterieurs.jpg",
+              "alt": "Nettoyage d'un bâtiment agricole"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un bâtiment à traiter ou nettoyer ?",
             "sousTitre": "Décrivez-nous le bâti et le problème : on se déplace et on chiffre gratuitement.",
             "ctaPrimaire": {
               "label": "Devis gratuit",
