@@ -816,11 +816,22 @@
             "titre": "Remise en état de logement au Coteau",
             "intro": "Quand un logement a été laissé de côté trop longtemps, il faut d'abord tout remettre à niveau avant de pouvoir simplement l'entretenir.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Remise en état" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Remise en état"
+              }
             ],
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -831,7 +842,13 @@
               "La remise en état n'est pas un ménage plus long, c'est un autre travail. On s'attaque à ce que l'entretien courant laisse s'installer avec les années : calcaire incrusté, graisses cuites sur la crédence, moisissures dans les joints, traces sur les murs et les plinthes. Chaque surface est reprise une à une, du plafond vers le sol.",
               "Ce type d'intervention se prépare. Selon l'état et la taille du logement, il faut compter d'une à plusieurs journées, parfois à deux intervenantes. Le prix part de 250 € pour un studio et se cale sur ce qu'on découvre lors de la visite, jamais à l'aveugle.",
               "Fin de bail, entrée dans un nouveau logement, succession, retour après des travaux : ce sont les situations les plus fréquentes. À la fin, l'espace est prêt à être habité — ou rendu sans mauvaise surprise sur l'état des lieux. Comme elle se déroule chez vous, elle entre dans le crédit d'impôt : comptez la moitié en moins sur la note finale."
-            ]
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/service-remise-en-etat.jpg",
+              "alt": "Pièce vide, propre et lumineuse après une remise en état"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
           }
         },
         {
@@ -859,8 +876,18 @@
           "content": {
             "titre": "Souvent enchaîné avec",
             "items": [
-              { "nom": "Ménage à domicile", "icone": "House", "description": "Une fois le logement repris, l'entretien régulier prend le relais.", "href": "/menage-a-domicile" },
-              { "nom": "Nettoyage de vitres", "icone": "Droplets", "description": "Les vitres, souvent oubliées, finissent le travail.", "href": "/nettoyage-vitres" }
+              {
+                "nom": "Ménage à domicile",
+                "icone": "House",
+                "description": "Une fois le logement repris, l'entretien régulier prend le relais.",
+                "href": "/menage-a-domicile"
+              },
+              {
+                "nom": "Nettoyage de vitres",
+                "icone": "Droplets",
+                "description": "Les vitres, souvent oubliées, finissent le travail.",
+                "href": "/nettoyage-vitres"
+              }
             ]
           }
         },
@@ -869,7 +896,10 @@
           "content": {
             "titre": "Un logement à remettre d'aplomb ?",
             "sousTitre": "Décrivez l'état des lieux, on cale une visite et on chiffre sans vous engager.",
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
           }
         }
       ]
@@ -896,11 +926,22 @@
             "titre": "Nettoyage de canapé au Coteau",
             "intro": "Un canapé se salit lentement, sans qu'on le voie venir — jusqu'au jour où un coussin retourné rappelle sa vraie couleur.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Canapé & fauteuil" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Canapé & fauteuil"
+              }
             ],
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -911,7 +952,13 @@
               "On travaille à l'injection-extraction : une solution nettoyante est envoyée au cœur des fibres, puis aspirée dans la foulée avec la saleté qu'elle a décollée. La mousse et le rembourrage ne sont jamais gorgés d'eau, ce qui évite les auréoles et les odeurs de renfermé au séchage.",
               "Taches de repas, traces de mains, poils d'animaux, transpiration : la plupart s'en vont en un seul passage. Les tissus fragiles ou anciens sont testés dans un coin discret avant de commencer. Comptez quelques heures de séchage, fenêtre entrouverte, avant de réinstaller les coussins.",
               "Le tarif dépend de la pièce : 60 € pour un fauteuil, jusqu'à 150 € pour un canapé d'angle. Fait chez vous, ce nettoyage est éligible au crédit d'impôt : la facture est allégée de moitié."
-            ]
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/service-canape.jpg",
+              "alt": "Nettoyage d'un canapé en tissu à l'embout aspirateur"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
           }
         },
         {
@@ -939,8 +986,18 @@
           "content": {
             "titre": "Souvent pris ensemble",
             "items": [
-              { "nom": "Ménage à domicile", "icone": "House", "description": "L'entretien courant du logement, en complément des textiles.", "href": "/menage-a-domicile" },
-              { "nom": "Terrasse & extérieur", "icone": "Leaf", "description": "Le mobilier et les sols extérieurs, remis à neuf pour la saison.", "href": "/nettoyage-terrasse" }
+              {
+                "nom": "Ménage à domicile",
+                "icone": "House",
+                "description": "L'entretien courant du logement, en complément des textiles.",
+                "href": "/menage-a-domicile"
+              },
+              {
+                "nom": "Terrasse & extérieur",
+                "icone": "Leaf",
+                "description": "Le mobilier et les sols extérieurs, remis à neuf pour la saison.",
+                "href": "/nettoyage-terrasse"
+              }
             ]
           }
         },
@@ -949,7 +1006,10 @@
           "content": {
             "titre": "Un canapé à raviver ?",
             "sousTitre": "Dites-nous le nombre de places et la matière, on vous donne le forfait.",
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
           }
         }
       ]
@@ -976,11 +1036,22 @@
             "titre": "Nettoyage de terrasse au Coteau",
             "intro": "Après l'hiver, une terrasse se couvre d'un voile vert et gris qui la rend glissante et terne. Un passage suffit à la rouvrir.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Terrasse & extérieur" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Terrasse & extérieur"
+              }
             ],
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -991,7 +1062,13 @@
               "Mousses, lichens et dépôts noirs s'installent partout où l'humidité stagne à l'ombre : dalles, margelles de piscine, terrasses en pierre ou en bois. On les retire avec le matériel et le dosage adaptés au revêtement, sans décaper la surface ni faire éclater les joints.",
               "Le bois est brossé dans le sens de la fibre, la pierre traitée pour ne pas la marquer, le carrelage rincé sans tout éclabousser autour. Là où c'est utile, un produit anti-repousse ralentit le retour des mousses et permet de tenir la belle saison.",
               "La prestation se chiffre à la surface : 90 € jusqu'à 20 m², davantage au-delà. Chez un particulier, la terrasse peut entrer dans le crédit d'impôt ; l'éligibilité exacte est confirmée sur le devis."
-            ]
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/service-terrasse.jpg",
+              "alt": "Terrasse en bois propre donnant sur un jardin"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
           }
         },
         {
@@ -1019,8 +1096,18 @@
           "content": {
             "titre": "À voir aussi",
             "items": [
-              { "nom": "Nettoyage de vitres", "icone": "Droplets", "description": "Les baies qui donnent sur la terrasse, remises au clair.", "href": "/nettoyage-vitres" },
-              { "nom": "Canapé & fauteuil", "icone": "Sofa", "description": "Le mobilier de salon ravivé, dedans comme dehors.", "href": "/nettoyage-canape" }
+              {
+                "nom": "Nettoyage de vitres",
+                "icone": "Droplets",
+                "description": "Les baies qui donnent sur la terrasse, remises au clair.",
+                "href": "/nettoyage-vitres"
+              },
+              {
+                "nom": "Canapé & fauteuil",
+                "icone": "Sofa",
+                "description": "Le mobilier de salon ravivé, dedans comme dehors.",
+                "href": "/nettoyage-canape"
+              }
             ]
           }
         },
@@ -1029,7 +1116,10 @@
           "content": {
             "titre": "Une terrasse à rouvrir ?",
             "sousTitre": "Donnez-nous la surface et le type de sol, on cale une visite.",
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
           }
         }
       ]
@@ -1056,11 +1146,22 @@
             "titre": "Nettoyage syndrome de Diogène au Coteau",
             "intro": "Certains logements se sont refermés sur des années d'accumulation. Les rouvrir demande de la méthode, du matériel et aucun jugement.",
             "breadcrumb": [
-              { "label": "Accueil", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Syndrome de Diogène" }
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Syndrome de Diogène"
+              }
             ],
-            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -1071,7 +1172,13 @@
               "Une intervention de ce type suit toujours trois temps : le tri et l'évacuation de ce qui encombre, un nettoyage désinfectant de fond, puis la remise en ordre des surfaces retrouvées. On avance pièce par pièce, en respectant ce que la personne souhaite conserver.",
               "Le travail se fait en tenue et matériel adaptés, car ces logements présentent souvent des risques sanitaires : déjections, denrées abîmées, nuisibles. La discrétion est totale — ni voisinage prévenu, ni véhicule marqué. Quand une famille ou un service social accompagne la personne, on se coordonne avec eux.",
               "Chaque situation est unique : le devis part de 600 € et se fixe après une visite, selon le volume à évacuer et l'état des lieux. Menée au domicile de la personne, elle entre dans le crédit d'impôt à hauteur de la moitié du montant."
-            ]
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/g-clean-propre-42/service-diogene.jpg",
+              "alt": "Intervenant professionnel passant l'aspirateur dans un séjour"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
           }
         },
         {
@@ -1099,8 +1206,18 @@
           "content": {
             "titre": "Souvent enchaîné avec",
             "items": [
-              { "nom": "Remise en état", "icone": "SprayCan", "description": "Une fois le logement vidé, on le remet à niveau surface par surface.", "href": "/remise-en-etat" },
-              { "nom": "Ménage à domicile", "icone": "House", "description": "Puis l'entretien régulier, pour que la situation ne se réinstalle pas.", "href": "/menage-a-domicile" }
+              {
+                "nom": "Remise en état",
+                "icone": "SprayCan",
+                "description": "Une fois le logement vidé, on le remet à niveau surface par surface.",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Ménage à domicile",
+                "icone": "House",
+                "description": "Puis l'entretien régulier, pour que la situation ne se réinstalle pas.",
+                "href": "/menage-a-domicile"
+              }
             ]
           }
         },
@@ -1109,7 +1226,10 @@
           "content": {
             "titre": "Une situation à débloquer, pour vous ou un proche ?",
             "sousTitre": "Un appel discret suffit pour en parler et convenir d'une visite.",
-            "ctaPrimaire": { "label": "Nous contacter", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Nous contacter",
+              "href": "/contact"
+            }
           }
         }
       ]
@@ -1198,10 +1318,22 @@
                     "nom": "Grand nettoyage de printemps",
                     "type": "tiers",
                     "tiers": [
-                      { "label": "Studio / T1", "prix": 150 },
-                      { "label": "T2", "prix": 220 },
-                      { "label": "T3", "prix": 290 },
-                      { "label": "T4", "prix": 380 }
+                      {
+                        "label": "Studio / T1",
+                        "prix": 150
+                      },
+                      {
+                        "label": "T2",
+                        "prix": 220
+                      },
+                      {
+                        "label": "T3",
+                        "prix": 290
+                      },
+                      {
+                        "label": "T4",
+                        "prix": 380
+                      }
                     ]
                   }
                 ]
@@ -1217,10 +1349,26 @@
                     "nom": "Remise en état",
                     "type": "tiers",
                     "tiers": [
-                      { "label": "Studio / T1", "prix": 250, "prefixe": "dès" },
-                      { "label": "T2", "prix": 350, "prefixe": "dès" },
-                      { "label": "T3", "prix": 450, "prefixe": "dès" },
-                      { "label": "T4 et +", "prix": 600, "prefixe": "dès" }
+                      {
+                        "label": "Studio / T1",
+                        "prix": 250,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "T2",
+                        "prix": 350,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "T3",
+                        "prix": 450,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "T4 et +",
+                        "prix": 600,
+                        "prefixe": "dès"
+                      }
                     ]
                   }
                 ]
@@ -1236,9 +1384,21 @@
                     "nom": "Vitrerie",
                     "type": "tiers",
                     "tiers": [
-                      { "label": "Appartement", "prix": 90, "prefixe": "dès" },
-                      { "label": "Maison", "prix": 140, "prefixe": "dès" },
-                      { "label": "Villa", "prix": 180, "prefixe": "dès" }
+                      {
+                        "label": "Appartement",
+                        "prix": 90,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "Maison",
+                        "prix": 140,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "Villa",
+                        "prix": 180,
+                        "prefixe": "dès"
+                      }
                     ]
                   }
                 ]
@@ -1254,10 +1414,22 @@
                     "nom": "Textiles",
                     "type": "tiers",
                     "tiers": [
-                      { "label": "Fauteuil", "prix": 60 },
-                      { "label": "Canapé 2 places", "prix": 90 },
-                      { "label": "Canapé 3 places", "prix": 120 },
-                      { "label": "Canapé d'angle", "prix": 150 }
+                      {
+                        "label": "Fauteuil",
+                        "prix": 60
+                      },
+                      {
+                        "label": "Canapé 2 places",
+                        "prix": 90
+                      },
+                      {
+                        "label": "Canapé 3 places",
+                        "prix": 120
+                      },
+                      {
+                        "label": "Canapé d'angle",
+                        "prix": 150
+                      }
                     ]
                   }
                 ]
@@ -1273,9 +1445,19 @@
                     "nom": "Terrasse",
                     "type": "tiers",
                     "tiers": [
-                      { "label": "Jusqu'à 20 m²", "prix": 90 },
-                      { "label": "20 à 50 m²", "prix": 120 },
-                      { "label": "Plus de 50 m²", "prix": 150, "prefixe": "dès" }
+                      {
+                        "label": "Jusqu'à 20 m²",
+                        "prix": 90
+                      },
+                      {
+                        "label": "20 à 50 m²",
+                        "prix": 120
+                      },
+                      {
+                        "label": "Plus de 50 m²",
+                        "prix": 150,
+                        "prefixe": "dès"
+                      }
                     ]
                   }
                 ]
@@ -1291,10 +1473,26 @@
                     "nom": "Nettoyage extrême",
                     "type": "tiers",
                     "tiers": [
-                      { "label": "Studio / T1", "prix": 600, "prefixe": "dès" },
-                      { "label": "T2", "prix": 800, "prefixe": "dès" },
-                      { "label": "T3", "prix": 1000, "prefixe": "dès" },
-                      { "label": "T4 et +", "prix": 1200, "prefixe": "dès" }
+                      {
+                        "label": "Studio / T1",
+                        "prix": 600,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "T2",
+                        "prix": 800,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "T3",
+                        "prix": 1000,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "T4 et +",
+                        "prix": 1200,
+                        "prefixe": "dès"
+                      }
                     ]
                   }
                 ]
@@ -1310,9 +1508,21 @@
                     "nom": "Locaux professionnels",
                     "type": "tiers",
                     "tiers": [
-                      { "label": "Jusqu'à 50 m²", "prix": 90, "prefixe": "dès" },
-                      { "label": "50 à 100 m²", "prix": 120, "prefixe": "dès" },
-                      { "label": "Plus de 100 m²", "prix": 150, "prefixe": "dès" }
+                      {
+                        "label": "Jusqu'à 50 m²",
+                        "prix": 90,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "50 à 100 m²",
+                        "prix": 120,
+                        "prefixe": "dès"
+                      },
+                      {
+                        "label": "Plus de 100 m²",
+                        "prix": 150,
+                        "prefixe": "dès"
+                      }
                     ]
                   }
                 ]
