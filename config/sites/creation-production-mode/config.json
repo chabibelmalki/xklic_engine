@@ -109,8 +109,8 @@
                 "description": "Transformer vos modèles en patrons précis, puis en prototypes essayés et ajustés jusqu'à validation.",
                 "href": "/patronage-prototypage",
                 "image": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-patronage.jpg",
-                  "alt": "Épingle piquée dans un tissu maille lors d'un essayage"
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-patronage-v2.png",
+                  "alt": "Tracé d'un patron à la règle, avec croquis de mode et échantillons de tissu sur l'établi"
                 }
               },
               {
@@ -129,8 +129,8 @@
                 "description": "Un suivi de production transparent et des pièces vérifiées avant de partir vers vos rayons.",
                 "href": "/controle-qualite",
                 "image": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle.jpg",
-                  "alt": "Gros plan sur le pied presseur d'une machine à coudre"
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle-v2.jpg",
+                  "alt": "Vérification des étiquettes de marque et de la fiche technique d'un vêtement"
                 }
               }
             ],
@@ -292,8 +292,8 @@
                 "priceHint": "Devis gratuit",
                 "href": "/patronage-prototypage",
                 "image": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-patronage.jpg",
-                  "alt": "Épingle piquée dans un tissu maille lors d'un essayage"
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-patronage-v2.png",
+                  "alt": "Tracé d'un patron à la règle, avec croquis de mode et échantillons de tissu sur l'établi"
                 }
               },
               {
@@ -314,8 +314,8 @@
                 "priceHint": "Inclus dans la production",
                 "href": "/controle-qualite",
                 "image": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle.jpg",
-                  "alt": "Gros plan sur le pied presseur d'une machine à coudre"
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle-v2.jpg",
+                  "alt": "Vérification des étiquettes de marque et de la fiche technique d'un vêtement"
                 }
               }
             ]
@@ -809,8 +809,8 @@
               "href": "/contact"
             },
             "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle.jpg",
-              "alt": "Gros plan sur le pied presseur d'une machine à coudre pendant la vérification"
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle-v2.jpg",
+              "alt": "Vérification des étiquettes de marque et de la fiche technique d'un vêtement"
             },
             "imagePosition": "left"
           }

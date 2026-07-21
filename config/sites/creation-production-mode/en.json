@@ -91,8 +91,8 @@
                 "description": "Turn your designs into precise patterns, then into prototypes fitted and adjusted until you approve them.",
                 "href": "/patronage-prototypage",
                 "image": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-patronage.jpg",
-                  "alt": "Pin placed in a knit fabric during a fitting"
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-patronage-v2.png",
+                  "alt": "Drawing a pattern with a ruler, with fashion sketches and fabric swatches on the workbench"
                 }
               },
               {
@@ -111,8 +111,8 @@
                 "description": "Transparent production tracking and pieces checked one by one before they head to your shelves.",
                 "href": "/controle-qualite",
                 "image": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle.jpg",
-                  "alt": "Close-up of a sewing machine presser foot"
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle-v2.jpg",
+                  "alt": "Checking brand labels and a garment's technical spec sheet"
                 }
               }
             ],
@@ -274,8 +274,8 @@
                 "priceHint": "Free quote",
                 "href": "/patronage-prototypage",
                 "image": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-patronage.jpg",
-                  "alt": "Pin placed in a knit fabric during a fitting"
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-patronage-v2.png",
+                  "alt": "Drawing a pattern with a ruler, with fashion sketches and fabric swatches on the workbench"
                 }
               },
               {
@@ -296,8 +296,8 @@
                 "priceHint": "Included in production",
                 "href": "/controle-qualite",
                 "image": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle.jpg",
-                  "alt": "Close-up of a sewing machine presser foot"
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle-v2.jpg",
+                  "alt": "Checking brand labels and a garment's technical spec sheet"
                 }
               }
             ]
@@ -791,8 +791,8 @@
               "href": "/contact"
             },
             "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle.jpg",
-              "alt": "Close-up of a sewing machine presser foot during inspection"
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/service-controle-v2.jpg",
+              "alt": "Checking brand labels and a garment's technical spec sheet"
             },
             "imagePosition": "left"
           }
