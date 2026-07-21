@@ -1,6 +1,10 @@
 {
   "slug": "hygifrance",
   "servicesMegaMenu": true,
+  "i18n": {
+    "default": "fr",
+    "languages": ["fr", "en", "nl"]
+  },
   "theme": "fraicheur-teal",
   "stylePack": "cascade-hydro",
   "branding": {
