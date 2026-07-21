@@ -328,7 +328,7 @@
         },
         {
           "type": "services",
-          "variant": "grille-cartes",
+          "variant": "grille-icones",
           "content": {
             "eyebrow": "Notre prise en charge",
             "titre": "Ce que comprend l'intervention",
@@ -429,7 +429,7 @@
         },
         {
           "type": "services",
-          "variant": "grille-cartes",
+          "variant": "grille-icones",
           "content": {
             "eyebrow": "Ce que nous traitons",
             "titre": "Toutes vos surfaces extérieures",
@@ -519,7 +519,7 @@
         },
         {
           "type": "services",
-          "variant": "grille-cartes",
+          "variant": "grille-icones",
           "content": {
             "eyebrow": "Tout l'immeuble",
             "titre": "Ce que nous entretenons",
@@ -636,7 +636,7 @@
         },
         {
           "type": "services",
-          "variant": "grille-cartes",
+          "variant": "grille-icones",
           "content": {
             "eyebrow": "Selon votre lieu",
             "titre": "Là où nous intervenons",
@@ -721,7 +721,7 @@
         },
         {
           "type": "services",
-          "variant": "grille-cartes",
+          "variant": "grille-icones",
           "content": {
             "eyebrow": "Ce que nous ravivons",
             "titre": "Tous vos textiles d'ameublement",
@@ -838,7 +838,7 @@
         },
         {
           "type": "services",
-          "variant": "grille-cartes",
+          "variant": "grille-icones",
           "content": {
             "eyebrow": "Nos interventions",
             "titre": "Ce que nous prenons en charge",
