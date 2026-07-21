@@ -93,20 +93,30 @@ export function Services({ block, tone, basePath = "", strings }: BlockComponent
                       />
                     </div>
                   )}
-                  <div className="flex items-start justify-between gap-3">
-                    <span
-                      className="grid size-14 shrink-0 place-items-center rounded-2xl text-white shadow-[0_10px_24px_-10px_color-mix(in_srgb,var(--brand-600)_60%,transparent)]"
-                      style={{ background: "linear-gradient(140deg, var(--brand-500), var(--accent-600))" }}
-                    >
-                      <Icon name={s.icone} className="size-7" />
-                    </span>
-                    {s.badge && (
+                  {!s.image?.url ? (
+                    <div className="flex items-start justify-between gap-3">
+                      <span
+                        className="grid size-14 shrink-0 place-items-center rounded-2xl text-white shadow-[0_10px_24px_-10px_color-mix(in_srgb,var(--brand-600)_60%,transparent)]"
+                        style={{ background: "linear-gradient(140deg, var(--brand-500), var(--accent-600))" }}
+                      >
+                        <Icon name={s.icone} className="size-7" />
+                      </span>
+                      {s.badge && (
+                        <span className="rounded-full bg-accent-50 px-3 py-1 text-xs font-semibold text-accent-600">
+                          {s.badge}
+                        </span>
+                      )}
+                    </div>
+                  ) : s.badge ? (
+                    <div className="flex justify-end">
                       <span className="rounded-full bg-accent-50 px-3 py-1 text-xs font-semibold text-accent-600">
                         {s.badge}
                       </span>
-                    )}
-                  </div>
-                  <h3 className="mt-5 font-display text-xl font-bold tracking-tight text-ink">{s.nom}</h3>
+                    </div>
+                  ) : null}
+                  <h3 className={cn("font-display text-xl font-bold tracking-tight text-ink", (!s.image?.url || s.badge) && "mt-5")}>
+                    {s.nom}
+                  </h3>
                   {s.description && (
                     <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">{s.description}</p>
                   )}
