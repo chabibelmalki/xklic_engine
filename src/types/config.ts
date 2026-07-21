@@ -321,6 +321,14 @@ export interface HeroContent {
    */
   imageOverlay?: "fort" | "moyen" | "leger";
   /**
+   * Familles à photo RE-TEINTÉE aux couleurs de la marque (duotone, ex. `fil`) :
+   * `true` NEUTRALISE la teinte — la photo passe en niveaux de gris + voile
+   * sombre NEUTRE (au lieu de la teinte de marque) pour la lisibilité. Opt-in ;
+   * défaut false = duotone de marque (signature de la famille). Ignoré par les
+   * familles qui ne re-teintent pas la photo.
+   */
+  neutralPhoto?: boolean;
+  /**
    * Variant "split" : agrandit la colonne image (image plus grande que le
    * texte). Défaut false = colonnes 1.1/0.9 (texte dominant). Voir Hero.tsx.
    */

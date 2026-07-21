@@ -47,17 +47,22 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
             priority
             sizes="100vw"
             className="object-cover"
-            style={{ filter: "saturate(0.55) contrast(1.04)" }}
+            style={{ filter: c.neutralPhoto ? "grayscale(1) contrast(1.03)" : "saturate(0.55) contrast(1.04)" }}
           />
-          {/* Teinte de marque : la photo entière prend la couleur du client. */}
-          <div aria-hidden className="absolute inset-0 bg-brand-600 opacity-85 mix-blend-color" />
-          {/* Scrim léger : lisibilité sans éteindre l'image. */}
+          {/* Teinte de marque : la photo entière prend la couleur du client.
+              `neutralPhoto` la retire (photo neutre en niveaux de gris). */}
+          {!c.neutralPhoto && (
+            <div aria-hidden className="absolute inset-0 bg-brand-600 opacity-85 mix-blend-color" />
+          )}
+          {/* Scrim léger : lisibilité sans éteindre l'image. En mode neutre, voile
+              gris NEUTRE (au lieu du brand-800) pour ne pas re-colorer la photo. */}
           <div
             aria-hidden
             className="absolute inset-0"
             style={{
-              background:
-                "linear-gradient(to top, color-mix(in srgb, var(--brand-800) 85%, #000) 0%, color-mix(in srgb, var(--brand-800) 40%, transparent) 30%, color-mix(in srgb, var(--brand-800) 12%, transparent) 55%, color-mix(in srgb, var(--brand-800) 42%, transparent) 100%)",
+              background: c.neutralPhoto
+                ? "linear-gradient(to top, rgba(23,23,23,0.86) 0%, rgba(23,23,23,0.42) 30%, rgba(23,23,23,0.12) 55%, rgba(23,23,23,0.44) 100%)"
+                : "linear-gradient(to top, color-mix(in srgb, var(--brand-800) 85%, #000) 0%, color-mix(in srgb, var(--brand-800) 40%, transparent) 30%, color-mix(in srgb, var(--brand-800) 12%, transparent) 55%, color-mix(in srgb, var(--brand-800) 42%, transparent) 100%)",
             }}
           />
         </div>

@@ -48,6 +48,7 @@
             "titre": "From the idea",
             "titreAccent": "to the finished product.",
             "headerOverlay": true,
+            "neutralPhoto": true,
             "trust": [
               {
                 "icone": "Scissors",

@@ -66,6 +66,7 @@
             "titre": "De l'idée",
             "titreAccent": "au produit fini.",
             "headerOverlay": true,
+            "neutralPhoto": true,
             "trust": [
               {
                 "icone": "Scissors",
