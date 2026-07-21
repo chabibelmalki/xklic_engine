@@ -527,80 +527,136 @@
         },
         {
           "type": "services",
-          "variant": "grille-icones",
+          "variant": "grille-cartes",
           "content": {
             "eyebrow": "Nos interventions",
             "titre": "Ce que nous prenons en charge",
             "items": [
               {
                 "nom": "Scène de crime",
-                "description": "Remise en état après intervention judiciaire, dans le respect des lieux.",
-                "icone": "ShieldAlert"
+                "description": "Remise en état des lieux après une intervention judiciaire, dans la discrétion.",
+                "href": "/nettoyage-scene-de-crime",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-ppe.jpg",
+                  "alt": "Agent en combinaison nettoyant et désinfectant une surface"
+                }
               },
               {
-                "nom": "Nettoyage après décès",
-                "description": "Prise en charge des lieux après un décès, avec discrétion et humanité.",
-                "icone": "HeartHandshake"
+                "nom": "Après décès",
+                "description": "Prise en charge d'un logement après un décès, avec respect et discrétion.",
+                "href": "/nettoyage-apres-deces",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-ppe.jpg",
+                  "alt": "Agent en combinaison intervenant dans un logement"
+                }
               },
               {
                 "nom": "Tentative de suicide",
-                "description": "Intervention rapide et respectueuse, décontamination complète.",
-                "icone": "HeartPulse"
+                "description": "Intervention rapide et discrète pour effacer les traces et soulager les proches.",
+                "href": "/nettoyage-apres-tentative-suicide",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-ppe.jpg",
+                  "alt": "Agent en tenue de protection nettoyant une pièce"
+                }
               },
               {
                 "nom": "Accident domestique",
-                "description": "Nettoyage et désinfection après un accident à domicile.",
-                "icone": "Bandage"
+                "description": "Nettoyage et désinfection des traces après un accident à la maison.",
+                "href": "/nettoyage-apres-accident-domestique",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-gants.jpg",
+                  "alt": "Mains gantées désinfectant une surface"
+                }
               },
               {
                 "nom": "Logement insalubre",
-                "description": "Remise en état de logements très dégradés, du sol au plafond.",
-                "icone": "Home"
+                "description": "Remise en état complète d'un logement très dégradé, du sol au plafond.",
+                "href": "/nettoyage-logement-insalubre",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-encombrement.jpg",
+                  "alt": "Logement très encombré avant remise en état"
+                }
               },
               {
                 "nom": "Syndrome de Diogène",
-                "description": "Accompagnement spécifique de l'accumulation extrême (voir la page dédiée).",
-                "icone": "Boxes"
+                "description": "Accompagnement de l'accumulation extrême, sans jugement.",
+                "href": "/syndrome-diogene",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-encombrement.jpg",
+                  "alt": "Logement très encombré (syndrome de Diogène)"
+                }
               },
               {
                 "nom": "Incurie",
-                "description": "Nettoyage de fond d'un logement laissé sans entretien prolongé.",
-                "icone": "Trash2"
+                "description": "Grand nettoyage d'un logement laissé sans entretien prolongé.",
+                "href": "/nettoyage-incurie",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-encombrement.jpg",
+                  "alt": "Intérieur négligé avant nettoyage de fond"
+                }
               },
               {
                 "nom": "Syllogomanie",
-                "description": "Traitement de l'accumulation compulsive d'objets.",
-                "icone": "Layers"
+                "description": "Traitement de l'accumulation compulsive, dans le respect de la personne.",
+                "href": "/nettoyage-syllogomanie",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-encombrement.jpg",
+                  "alt": "Pièce saturée d'objets accumulés"
+                }
               },
               {
                 "nom": "Après nuisibles",
-                "description": "Nettoyage et désinfection après infestation (rongeurs, insectes).",
-                "icone": "Bug"
+                "description": "Nettoyage et désinfection après infestation de rongeurs ou d'insectes.",
+                "href": "/nettoyage-apres-nuisibles",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-gants.jpg",
+                  "alt": "Désinfection d'une surface après infestation"
+                }
               },
               {
                 "nom": "Fientes de pigeons",
-                "description": "Retrait, décontamination et protection contre les fientes.",
-                "icone": "Bird"
+                "description": "Retrait, décontamination et protection contre les fientes de pigeons.",
+                "href": "/nettoyage-fientes-pigeons",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-pigeons.jpg",
+                  "alt": "Pigeons perchés sur un bâtiment"
+                }
               },
               {
                 "nom": "Après squat",
                 "description": "Remise en état complète d'un bien occupé illégalement.",
-                "icone": "DoorClosed"
+                "href": "/nettoyage-apres-squat",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-vide.jpg",
+                  "alt": "Logement vidé et remis en propreté"
+                }
               },
               {
                 "nom": "Après cambriolage",
-                "description": "Remise en ordre et nettoyage des lieux après effraction.",
-                "icone": "Lock"
+                "description": "Remise en ordre et nettoyage des lieux après une effraction.",
+                "href": "/nettoyage-apres-cambriolage",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-vide.jpg",
+                  "alt": "Logement remis en ordre après effraction"
+                }
               },
               {
                 "nom": "Vandalisme",
-                "description": "Effacement des dégradations et remise en propreté.",
-                "icone": "SprayCan"
+                "description": "Effacement des dégradations et remise en propreté après vandalisme.",
+                "href": "/nettoyage-apres-vandalisme",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-graffiti.jpg",
+                  "alt": "Mur couvert de graffitis à nettoyer"
+                }
               },
               {
                 "nom": "Après expulsion",
-                "description": "Débarras et nettoyage d'un logement après expulsion.",
-                "icone": "PackageOpen"
+                "description": "Débarras et nettoyage d'un logement après une expulsion.",
+                "href": "/nettoyage-apres-expulsion",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-vide.jpg",
+                  "alt": "Logement vidé après une expulsion"
+                }
               }
             ]
           }
@@ -630,6 +686,877 @@
           "content": {
             "titre": "Une situation difficile à gérer ?",
             "sousTitre": "Appelez-nous ou demandez un devis : on vous répond avec tact, et on s'occupe de tout.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-scene-de-crime",
+      "label": "Scène de crime",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage après scène de crime à Lille — intervention discrète",
+        "description": "Nettoyage et décontamination après scène de crime à Lille et dans le Nord : équipe formée, protocole strict, discrétion totale. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nettoyage extrême",
+            "titre": "Nettoyage après scène de crime à Lille",
+            "intro": "Une fois les constatations terminées, il reste à remettre les lieux en état. C'est notre métier, mené avec méthode et discrétion.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage extrême",
+                "href": "/nettoyage-extreme"
+              },
+              {
+                "label": "Scène de crime"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Une remise en état encadrée",
+            "paragraphes": [
+              "Après une intervention judiciaire, les lieux ne peuvent pas être nettoyés comme un logement ordinaire : traces biologiques, produits, risques sanitaires demandent une équipe formée, un équipement de protection et un protocole de décontamination strict. Nous intervenons à Lille et dans tout le Nord, en toute confidentialité.",
+              "Nous prenons tout en charge : nettoyage, désinfection, désodorisation puis remise en état, jusqu'à ce que rien ne rappelle ce qui s'est passé. Un seul interlocuteur, un devis clair, et la coordination avec les familles ou les assurances si vous le souhaitez."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-ppe.jpg",
+              "alt": "Agent en combinaison nettoyant et désinfectant une surface"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une intervention à organiser ?",
+            "sousTitre": "Un appel discret suffit pour en parler. On se déplace, on chiffre gratuitement, et on s'occupe de tout.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-apres-deces",
+      "label": "Après décès",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage après décès à Lille — intervention respectueuse",
+        "description": "Nettoyage après décès à Lille et dans le Nord : décontamination, désinfection, odeurs, remise en état. Discrétion et respect. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nettoyage extrême",
+            "titre": "Nettoyage après décès à Lille",
+            "intro": "Prendre en charge un logement après un décès est une épreuve. Nous vous en déchargeons avec tact et respect.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage extrême",
+                "href": "/nettoyage-extreme"
+              },
+              {
+                "label": "Après décès"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Avec tact et professionnalisme",
+            "paragraphes": [
+              "Un décès survenu à domicile, surtout lorsqu'il est resté ignoré un certain temps, laisse des traces qui relèvent d'un nettoyage spécialisé. Nous intervenons à Lille et dans le Nord avec l'équipement adapté et, surtout, le respect que la situation impose.",
+              "Décontamination, désinfection, traitement des odeurs et remise en état : chaque étape est menée discrètement. Nous pouvons échanger avec la famille, le bailleur ou le notaire pour vous épargner les démarches au pire moment."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-ppe.jpg",
+              "alt": "Agent en combinaison intervenant dans un logement"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une intervention à organiser ?",
+            "sousTitre": "Un appel discret suffit pour en parler. On se déplace, on chiffre gratuitement, et on s'occupe de tout.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-apres-tentative-suicide",
+      "label": "Tentative de suicide",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage après tentative de suicide à Lille — discret",
+        "description": "Nettoyage et décontamination après tentative de suicide à Lille et dans le Nord. Intervention rapide, discrète, sans jugement. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nettoyage extrême",
+            "titre": "Nettoyage après tentative de suicide à Lille",
+            "intro": "Face à un moment aussi difficile, nous intervenons vite et sans jugement pour effacer les traces et soulager les proches.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage extrême",
+                "href": "/nettoyage-extreme"
+              },
+              {
+                "label": "Tentative de suicide"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Une intervention rapide et humaine",
+            "paragraphes": [
+              "Ce type de situation demande une réaction rapide et une équipe qui sait rester à sa place. Nous nous déplaçons à Lille et dans le Nord pour nettoyer et décontaminer les lieux, afin que la famille n'ait pas à y faire face.",
+              "L'intervention est menée en tenue adaptée, dans la plus grande discrétion : ni véhicule marqué, ni voisinage informé. À la fin, la pièce est saine, propre, et ne porte plus la trace de l'événement."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-ppe.jpg",
+              "alt": "Agent en tenue de protection nettoyant une pièce"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une intervention à organiser ?",
+            "sousTitre": "Un appel discret suffit pour en parler. On se déplace, on chiffre gratuitement, et on s'occupe de tout.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-apres-accident-domestique",
+      "label": "Accident domestique",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage après accident domestique à Lille",
+        "description": "Nettoyage et désinfection après un accident domestique à Lille et dans le Nord. Intervention rapide et discrète, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nettoyage extrême",
+            "titre": "Nettoyage après accident domestique à Lille",
+            "intro": "Un accident à la maison peut laisser des traces qu'on ne souhaite pas nettoyer soi-même. On s'en occupe pour vous.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage extrême",
+                "href": "/nettoyage-extreme"
+              },
+              {
+                "label": "Accident domestique"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Nettoyer sans avoir à le faire soi-même",
+            "paragraphes": [
+              "Chute, blessure, incident domestique : certaines traces sont difficiles à affronter et demandent une désinfection sérieuse. Nous intervenons à Lille et dans le Nord pour nettoyer, désinfecter et rendre la pièce de nouveau saine.",
+              "Nous travaillons avec des produits adaptés et le bon équipement, rapidement et discrètement. Vous récupérez un intérieur propre, sans avoir eu à gérer le plus pénible."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-gants.jpg",
+              "alt": "Mains gantées désinfectant une surface"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une intervention à organiser ?",
+            "sousTitre": "Un appel discret suffit pour en parler. On se déplace, on chiffre gratuitement, et on s'occupe de tout.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-logement-insalubre",
+      "label": "Logement insalubre",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de logement insalubre à Lille — remise en état",
+        "description": "Nettoyage de logement insalubre à Lille et dans le Nord : débarras, nettoyage de fond, désinfection, odeurs. Sans jugement, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nettoyage extrême",
+            "titre": "Nettoyage de logement insalubre à Lille",
+            "intro": "Un logement très dégradé peut redevenir sain. Nous le remettons en état, du sol au plafond, sans jugement.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage extrême",
+                "href": "/nettoyage-extreme"
+              },
+              {
+                "label": "Logement insalubre"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Redonner un logement habitable",
+            "paragraphes": [
+              "Un logement laissé sans entretien prolongé s'encrasse, se dégrade et devient parfois insalubre : accumulation, saleté incrustée, odeurs, nuisibles. Nous reprenons l'ensemble à Lille et dans le Nord, pièce par pièce, jusqu'à un espace de nouveau habitable.",
+              "Tri et évacuation si besoin, nettoyage de fond, désinfection, traitement des odeurs : nous adaptons l'intervention à l'état réel des lieux, constaté lors d'une visite. Le tout avec discrétion et sans porter de jugement sur la situation."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-encombrement.jpg",
+              "alt": "Logement très encombré avant remise en état"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une intervention à organiser ?",
+            "sousTitre": "Un appel discret suffit pour en parler. On se déplace, on chiffre gratuitement, et on s'occupe de tout.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-incurie",
+      "label": "Incurie",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage en situation d'incurie à Lille",
+        "description": "Nettoyage d'un logement en situation d'incurie à Lille et dans le Nord : nettoyage de fond, désinfection, remise en ordre. Bienveillance, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nettoyage extrême",
+            "titre": "Nettoyage en situation d'incurie à Lille",
+            "intro": "L'incurie s'installe lentement et se soigne aussi par un grand nettoyage. Nous intervenons avec méthode et bienveillance.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage extrême",
+                "href": "/nettoyage-extreme"
+              },
+              {
+                "label": "Incurie"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Reprendre le logement en profondeur",
+            "paragraphes": [
+              "L'incurie — l'incapacité durable à entretenir son logement — laisse un intérieur très dégradé qui dépasse le ménage classique. Nous intervenons à Lille et dans le Nord pour reprendre le logement en profondeur, sans jugement.",
+              "Nous procédons par étapes : dégagement, nettoyage de fond, désinfection et remise en ordre. Lorsqu'un proche ou un accompagnant social suit la personne, nous avançons main dans la main avec lui, à son rythme."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-encombrement.jpg",
+              "alt": "Intérieur négligé avant nettoyage de fond"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une intervention à organiser ?",
+            "sousTitre": "Un appel discret suffit pour en parler. On se déplace, on chiffre gratuitement, et on s'occupe de tout.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-syllogomanie",
+      "label": "Syllogomanie",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage syllogomanie (accumulation) à Lille",
+        "description": "Débarras et nettoyage en cas de syllogomanie à Lille et dans le Nord : tri accompagné, évacuation, remise en ordre. En douceur, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nettoyage extrême",
+            "titre": "Nettoyage et débarras en cas de syllogomanie à Lille",
+            "intro": "L'accumulation compulsive envahit l'espace de vie. Nous aidons à le retrouver, pas à pas et sans brusquer.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage extrême",
+                "href": "/nettoyage-extreme"
+              },
+              {
+                "label": "Syllogomanie"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Retrouver de l'espace, en douceur",
+            "paragraphes": [
+              "La syllogomanie, ou accumulation compulsive, remplit peu à peu le logement jusqu'à en condamner l'usage. La reprise demande du tact autant que de la méthode. Nous intervenons à Lille et dans le Nord, en respectant ce que la personne souhaite conserver.",
+              "Tri accompagné, évacuation, nettoyage de fond puis remise en ordre : chaque étape avance au rythme convenu, souvent avec la famille ou un accompagnant. L'objectif est de rendre le logement sûr et vivable, sans passer en force."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-encombrement.jpg",
+              "alt": "Pièce saturée d'objets accumulés"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une intervention à organiser ?",
+            "sousTitre": "Un appel discret suffit pour en parler. On se déplace, on chiffre gratuitement, et on s'occupe de tout.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-apres-nuisibles",
+      "label": "Après nuisibles",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage après nuisibles à Lille — déjections & désinfection",
+        "description": "Nettoyage et désinfection après nuisibles à Lille et dans le Nord : déjections, souillures, odeurs. Lieux assainis, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nettoyage extrême",
+            "titre": "Nettoyage après nuisibles à Lille",
+            "intro": "Une fois les nuisibles partis, restent les traces : déjections, odeurs, contamination. On assainit tout.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage extrême",
+                "href": "/nettoyage-extreme"
+              },
+              {
+                "label": "Après nuisibles"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Assainir après une infestation",
+            "paragraphes": [
+              "Rongeurs, insectes ou autres nuisibles laissent derrière eux des déjections, des souillures et un risque sanitaire réel. Après leur élimination, il faut nettoyer et désinfecter en profondeur. Nous nous en chargeons à Lille et dans le Nord.",
+              "Retrait des souillures, désinfection des surfaces, traitement des odeurs : nous rendons les lieux sains et sûrs. L'intervention complète idéalement une action de dératisation ou de désinsectisation."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-gants.jpg",
+              "alt": "Désinfection d'une surface après infestation"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une intervention à organiser ?",
+            "sousTitre": "Un appel discret suffit pour en parler. On se déplace, on chiffre gratuitement, et on s'occupe de tout.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-fientes-pigeons",
+      "label": "Fientes de pigeons",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de fientes de pigeons à Lille — façades & combles",
+        "description": "Nettoyage et décontamination de fientes de pigeons à Lille et dans le Nord : façades, terrasses, combles, locaux. Protection anti-retour, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nettoyage extrême",
+            "titre": "Nettoyage de fientes de pigeons à Lille",
+            "intro": "Les fientes de pigeons salissent, dégradent et présentent un risque sanitaire. On nettoie, on décontamine, on protège.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage extrême",
+                "href": "/nettoyage-extreme"
+              },
+              {
+                "label": "Fientes de pigeons"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Nettoyer et empêcher le retour",
+            "paragraphes": [
+              "Les fientes de pigeons ne sont pas qu'un problème d'esthétique : elles attaquent les matériaux et présentent un risque pour la santé. Sur une façade, une terrasse, un comble ou un local, nous retirons les dépôts et décontaminons à Lille et dans le Nord.",
+              "Après le nettoyage et la désinfection, nous pouvons conseiller des dispositifs anti-pigeons pour éviter que le problème ne revienne. Une intervention en hauteur est possible, avec le matériel de sécurité adapté."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-pigeons.jpg",
+              "alt": "Pigeons perchés sur un bâtiment"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une intervention à organiser ?",
+            "sousTitre": "Un appel discret suffit pour en parler. On se déplace, on chiffre gratuitement, et on s'occupe de tout.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-apres-squat",
+      "label": "Après squat",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage après squat à Lille — remise en état complète",
+        "description": "Nettoyage après squat à Lille et dans le Nord : débarras, nettoyage de fond, désinfection, remise en état. Bien prêt à relouer, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nettoyage extrême",
+            "titre": "Nettoyage après squat à Lille",
+            "intro": "Un bien occupé illégalement est souvent laissé dans un état difficile. On le remet à neuf pour que vous puissiez le récupérer.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage extrême",
+                "href": "/nettoyage-extreme"
+              },
+              {
+                "label": "Après squat"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Remettre le bien en état",
+            "paragraphes": [
+              "Après le départ d'occupants illégaux, un logement ou un local se retrouve fréquemment dégradé, encombré et souillé. Nous prenons tout en charge à Lille et dans le Nord : débarras, nettoyage de fond, désinfection et remise en état.",
+              "L'objectif est simple : vous rendre un bien propre, sain et prêt à être reloué, vendu ou réoccupé. Nous établissons un devis clair après une visite, utile aussi pour vos démarches."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-vide.jpg",
+              "alt": "Logement vidé et remis en propreté"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une intervention à organiser ?",
+            "sousTitre": "Un appel discret suffit pour en parler. On se déplace, on chiffre gratuitement, et on s'occupe de tout.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-apres-cambriolage",
+      "label": "Après cambriolage",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage après cambriolage à Lille",
+        "description": "Nettoyage et remise en ordre après cambriolage à Lille et dans le Nord. Intervention rapide, appui assurance, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nettoyage extrême",
+            "titre": "Nettoyage après cambriolage à Lille",
+            "intro": "Après une effraction, remettre de l'ordre aide à tourner la page. On s'en occupe rapidement.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage extrême",
+                "href": "/nettoyage-extreme"
+              },
+              {
+                "label": "Après cambriolage"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Remettre de l'ordre après l'effraction",
+            "paragraphes": [
+              "Un cambriolage laisse souvent un logement sens dessus dessous, parfois avec des dégâts matériels et des traces à nettoyer. Nous intervenons rapidement à Lille et dans le Nord pour remettre les lieux en ordre.",
+              "Nettoyage, remise en place, traitement des traces d'effraction : nous vous aidons à retrouver un intérieur normal au plus vite. Un devis peut appuyer votre dossier d'assurance."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-vide.jpg",
+              "alt": "Logement remis en ordre après effraction"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une intervention à organiser ?",
+            "sousTitre": "Un appel discret suffit pour en parler. On se déplace, on chiffre gratuitement, et on s'occupe de tout.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-apres-vandalisme",
+      "label": "Vandalisme",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage après vandalisme à Lille — tags & dégradations",
+        "description": "Nettoyage après vandalisme à Lille et dans le Nord : retrait de graffitis, surfaces dégradées, protection anti-graffiti. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nettoyage extrême",
+            "titre": "Nettoyage après vandalisme à Lille",
+            "intro": "Tags, dégradations, casse : on efface les traces du vandalisme et on protège pour la suite.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage extrême",
+                "href": "/nettoyage-extreme"
+              },
+              {
+                "label": "Vandalisme"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Effacer les dégradations",
+            "paragraphes": [
+              "Graffitis, surfaces dégradées, mobilier abîmé : le vandalisme laisse des marques visibles qui pèsent sur l'image d'un bâtiment ou d'un commerce. Nous intervenons à Lille et dans le Nord pour effacer ces traces.",
+              "Retrait des tags, nettoyage des surfaces et, si vous le souhaitez, application d'une protection anti-graffiti pour faciliter les prochains nettoyages. Rapide et soigné, sur façade comme en intérieur."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-graffiti.jpg",
+              "alt": "Mur couvert de graffitis à nettoyer"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une intervention à organiser ?",
+            "sousTitre": "Un appel discret suffit pour en parler. On se déplace, on chiffre gratuitement, et on s'occupe de tout.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-apres-expulsion",
+      "label": "Après expulsion",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage après expulsion à Lille — débarras & remise en état",
+        "description": "Nettoyage et débarras après expulsion à Lille et dans le Nord : logement vidé, nettoyé, désinfecté et prêt à relouer. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nettoyage extrême",
+            "titre": "Nettoyage après expulsion à Lille",
+            "intro": "Récupérer un logement après une expulsion demande souvent un débarras et un grand nettoyage. On s'en charge.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Nettoyage extrême",
+                "href": "/nettoyage-extreme"
+              },
+              {
+                "label": "Après expulsion"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Rendre le logement reloable",
+            "paragraphes": [
+              "Après une expulsion, un logement est fréquemment laissé encombré et dégradé. Pour un propriétaire ou un bailleur, il faut le remettre en état avant de reloger. Nous prenons le relais à Lille et dans le Nord.",
+              "Débarras des biens laissés, nettoyage de fond et désinfection : nous rendons le logement propre, sain et prêt à être reloué. Un devis clair est établi après visite."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-vide.jpg",
+              "alt": "Logement vidé après une expulsion"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une intervention à organiser ?",
+            "sousTitre": "Un appel discret suffit pour en parler. On se déplace, on chiffre gratuitement, et on s'occupe de tout.",
             "ctaPrimaire": {
               "label": "Devis gratuit",
               "href": "/devis"
