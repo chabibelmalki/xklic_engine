@@ -48,16 +48,6 @@
             "titre": "From the idea",
             "titreAccent": "to the finished product.",
             "headerOverlay": true,
-            "nuancier": {
-              "label": "Your shade —",
-              "couleurs": [
-                "#0b5773",
-                "#b0512e",
-                "#2e5e4a",
-                "#6d3a5d",
-                "#37476e"
-              ]
-            },
             "trust": [
               {
                 "icone": "Scissors",
@@ -73,8 +63,8 @@
               "href": "/prestations"
             },
             "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/hero-atelier.jpg",
-              "alt": "Seamstress at work on her machine in the workshop"
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/hero-atelier.png",
+              "alt": "Designer adjusting a terracotta dress on a mannequin in the studio"
             }
           }
         },

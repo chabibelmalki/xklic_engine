@@ -1,14 +1,16 @@
 {
   "slug": "creation-production-mode",
-  "theme": "pro-bleu-nuit",
+  "theme": "douceur-beige",
   "stylePack": "atelier-fil",
   "branding": {
     "tagline": "Atelier de confection · Nîmes · Maroc",
     "logoAlt": "Création & Production Mode — atelier de confection pour marques et créateurs",
     "colors": {
-      "brand": "#0b5773",
-      "accent": "#d8c3a5"
-    }
+      "brand": "#b0512e",
+      "accent": "#c3b4a2"
+    },
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/logo-ad620325.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/logo-ad620325.png"
   },
   "entreprise": {
     "nom": "Création & Production Mode",
@@ -64,16 +66,6 @@
             "titre": "De l'idée",
             "titreAccent": "au produit fini.",
             "headerOverlay": true,
-            "nuancier": {
-              "label": "Votre teinte —",
-              "couleurs": [
-                "#0b5773",
-                "#b0512e",
-                "#2e5e4a",
-                "#6d3a5d",
-                "#37476e"
-              ]
-            },
             "trust": [
               {
                 "icone": "Scissors",
@@ -89,8 +81,8 @@
               "href": "/prestations"
             },
             "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/hero-atelier.jpg",
-              "alt": "Couturière au travail sur sa machine dans l'atelier"
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/hero-atelier.png",
+              "alt": "Créatrice ajustant une robe terracotta sur un mannequin dans l'atelier"
             }
           }
         },
