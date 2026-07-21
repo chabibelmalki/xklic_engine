@@ -1,7 +1,9 @@
-import { Menu, Phone } from "lucide-react";
+import { Menu, Phone, ChevronDown } from "lucide-react";
 import type { SiteConfig, ContactContent } from "@/types/config";
 import type { UIStrings } from "@/i18n/ui";
 import { Logo } from "@/components/layout/Logo";
+import { ServicesMega } from "./ServicesMega";
+import { buildServicesMega } from "./services-menu";
 import { Button } from "@/components/ui/Button";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { HeaderPhonePopover } from "@/components/layout/HeaderPhonePopover";
@@ -69,6 +71,7 @@ export function CascadeHeader({
   strings: UIStrings;
 }) {
   const nav = buildNav(config, basePath, currentPath, strings.nav);
+  const mega = config.servicesMegaMenu && isMultiPage(config) ? buildServicesMega(config, basePath) : null;
   const contact = findBlock<ContactContent>(config, "contact")?.content;
   const cta = ctaTarget(config, basePath, strings);
   const showLangs = locales.length > 1;
@@ -79,19 +82,29 @@ export function CascadeHeader({
         <Logo config={config} href={basePath || "/"} className="min-w-0" />
 
         <nav className="hidden shrink-0 items-center gap-x-1 lg:flex">
-          {nav.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              aria-current={item.active ? "page" : undefined}
-              className={cn(
-                "whitespace-nowrap rounded-full px-3.5 py-2 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
-                item.active ? "bg-brand-50 text-brand-700" : "text-ink-soft hover:bg-brand-50 hover:text-brand-700",
-              )}
-            >
-              {item.label}
-            </a>
-          ))}
+          {nav.map((item) =>
+            mega && item.href === mega.href ? (
+              <ServicesMega
+                key={item.href}
+                label={item.label}
+                data={mega}
+                active={item.active}
+                overviewLabel={item.label}
+              />
+            ) : (
+              <a
+                key={item.href}
+                href={item.href}
+                aria-current={item.active ? "page" : undefined}
+                className={cn(
+                  "whitespace-nowrap rounded-full px-3.5 py-2 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
+                  item.active ? "bg-brand-50 text-brand-700" : "text-ink-soft hover:bg-brand-50 hover:text-brand-700",
+                )}
+              >
+                {item.label}
+              </a>
+            ),
+          )}
         </nav>
 
         <div className="hidden shrink-0 items-center gap-3 lg:flex">
@@ -137,19 +150,53 @@ export function CascadeHeader({
               style={{ background: "linear-gradient(90deg, var(--brand-500), var(--accent-500))" }}
             />
             <nav className="flex flex-col gap-1 px-6 py-4">
-              {nav.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  aria-current={item.active ? "page" : undefined}
-                  className={cn(
-                    "border-b border-border/60 py-3 text-sm font-semibold last:border-0",
-                    item.active ? "text-brand-700" : "text-ink",
-                  )}
-                >
-                  {item.label}
-                </a>
-              ))}
+              {nav.map((item) =>
+                mega && item.href === mega.href ? (
+                  <details
+                    key={item.href}
+                    className="border-b border-border/60 last:border-0 [&[open]_.chev]:rotate-180"
+                  >
+                    <summary className="flex cursor-pointer list-none items-center justify-between py-3 text-sm font-semibold text-ink [&::-webkit-details-marker]:hidden">
+                      {item.label}
+                      <ChevronDown className="chev size-4 shrink-0 text-muted transition-transform" />
+                    </summary>
+                    <div className="pb-2">
+                      <a href={mega.href} className="block py-2 ps-3 text-sm font-semibold text-brand-700">
+                        {item.label}
+                      </a>
+                      {mega.categories.map((c) => (
+                        <details key={c.href} className="border-t border-border/40 [&[open]_.chev2]:rotate-180">
+                          <summary className="flex cursor-pointer list-none items-center justify-between py-2 ps-3 text-sm font-medium text-ink [&::-webkit-details-marker]:hidden">
+                            {c.label}
+                            <ChevronDown className="chev2 size-4 shrink-0 text-muted transition-transform" />
+                          </summary>
+                          <ul className="pb-1 ps-6">
+                            {c.items.map((s) => (
+                              <li key={s.href}>
+                                <a href={s.href} className="block py-1.5 text-sm text-ink-soft">
+                                  {s.label}
+                                </a>
+                              </li>
+                            ))}
+                          </ul>
+                        </details>
+                      ))}
+                    </div>
+                  </details>
+                ) : (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    aria-current={item.active ? "page" : undefined}
+                    className={cn(
+                      "border-b border-border/60 py-3 text-sm font-semibold last:border-0",
+                      item.active ? "text-brand-700" : "text-ink",
+                    )}
+                  >
+                    {item.label}
+                  </a>
+                ),
+              )}
               <div className="mt-4 flex flex-col gap-2.5">
                 {showLangs && (
                   <LanguageSwitcher

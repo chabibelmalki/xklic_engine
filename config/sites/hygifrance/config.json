@@ -1,5 +1,6 @@
 {
   "slug": "hygifrance",
+  "servicesMegaMenu": true,
   "theme": "fraicheur-teal",
   "stylePack": "cascade-hydro",
   "branding": {

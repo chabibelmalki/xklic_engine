@@ -1179,6 +1179,14 @@ export interface SiteConfig {
    * un site hors-portfolio mais à garder visible (ex. minhaj) porte `demo` seul.
    */
   noindexSite?: boolean;
+  /**
+   * Active le MÉGA-MENU « Services » dans l'en-tête (familles qui le supportent,
+   * ex. cascade) : panneau à onglets = catégories, avec leurs sous-services.
+   * Déduit des données (page /services → pages-catégories → sous-services). Opt-in
+   * explicite — défaut : false (lien simple). Pour les sites dont les sous-services
+   * ont chacun une page dédiée. Champ technique (hérité par les locales).
+   */
+  servicesMegaMenu?: boolean;
   theme: ThemeId;
   /**
    * Style pack (design system complet : typo, formes, ombres, motion, fond,
