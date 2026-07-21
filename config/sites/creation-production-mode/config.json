@@ -2,6 +2,7 @@
   "slug": "creation-production-mode",
   "theme": "douceur-beige",
   "stylePack": "atelier-fil",
+  "whiteHeader": true,
   "branding": {
     "tagline": "Atelier de confection · Nîmes · Maroc",
     "logoAlt": "Création & Production Mode — atelier de confection pour marques et créateurs",
@@ -46,13 +47,6 @@
   },
   "forms": {
     "to": "mine.active8@gmail.com"
-  },
-  "i18n": {
-    "default": "fr",
-    "languages": [
-      "fr",
-      "en"
-    ]
   },
   "pages": [
     {
@@ -223,6 +217,7 @@
             "titre": "Parlons de votre projet",
             "intro": "Décrivez-nous vos pièces, vos quantités et vos délais : vous recevez sous peu un devis gratuit, établi sur vos éléments.",
             "telephone": "07 65 57 70 41",
+            "telephoneHeader": "icone-popup",
             "whatsapp": "0765577041",
             "email": "mine.active8@gmail.com",
             "adresse": "4 rue du Colisée, 30000 Nîmes",
@@ -912,7 +907,8 @@
             "video": {
               "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/atelier-video.mp4",
               "poster": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-atelier.png",
-              "alt": "Vidéo de confection dans l'atelier"
+              "alt": "Vidéo de confection dans l'atelier",
+              "autoplay": true
             },
             "imagePosition": "right",
             "imageRatio": "9/16"
@@ -930,7 +926,8 @@
             "video": {
               "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/production-video.mp4",
               "poster": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-finition.png",
-              "alt": "Vidéo des finitions couture"
+              "alt": "Vidéo des finitions couture",
+              "autoplay": true
             },
             "imagePosition": "left",
             "imageRatio": "9/16"
@@ -1218,6 +1215,7 @@
             "titre": "Devis gratuit",
             "intro": "Formulaire, téléphone, WhatsApp ou e-mail : choisissez le canal qui vous convient, la réponse arrive au même endroit — chez votre interlocutrice unique.",
             "telephone": "07 65 57 70 41",
+            "telephoneHeader": "icone-popup",
             "whatsapp": "0765577041",
             "email": "mine.active8@gmail.com",
             "adresse": "4 rue du Colisée, 30000 Nîmes",

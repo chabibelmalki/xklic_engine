@@ -92,6 +92,7 @@ export function Contenu({ block, tone, basePath }: BlockComponentProps<ContenuCo
               src={c.video.url}
               poster={c.video.poster}
               ariaLabel={c.video.alt ?? c.titre ?? ""}
+              autoPlayInView={c.video.autoplay}
               className="absolute inset-0 h-full w-full object-cover"
             />
           ) : c.image ? (

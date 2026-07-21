@@ -136,14 +136,18 @@ export function SiteHeader({
     };
   }, [open]);
 
+  // Fond de l'en-tête SOLIDE (au scroll / menu ouvert) : blanc si `whiteHeader`
+  // (le `--bg` du thème peut paraître grisâtre), sinon la couleur de fond du thème.
+  const solidBg = config.whiteHeader ? "bg-white/90" : "bg-bg/85";
+
   return (
     <header
       className={cn(
         "sticky top-0 z-50 transition-all duration-300",
         scrolled || open
           ? immersive
-            ? "bg-bg/85 backdrop-blur-lg"
-            : "border-b border-border bg-bg/85 backdrop-blur-lg"
+            ? `${solidBg} backdrop-blur-lg`
+            : `border-b border-border ${solidBg} backdrop-blur-lg`
           : immersive
             ? lightHero
               ? "bg-gradient-to-b from-white/85 via-white/40 to-transparent"
@@ -249,7 +253,8 @@ export function SiteHeader({
       <div
         id="mobile-menu"
         className={cn(
-          "overflow-hidden border-border bg-bg transition-[max-height] duration-300 ease-in-out lg:hidden",
+          "overflow-hidden border-border transition-[max-height] duration-300 ease-in-out lg:hidden",
+          config.whiteHeader ? "bg-white" : "bg-bg",
           open ? "max-h-[42rem] border-t" : "max-h-0",
         )}
       >

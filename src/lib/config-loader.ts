@@ -61,6 +61,7 @@ function inheritTechnical(variant: SiteConfig, base: SiteConfig): SiteConfig {
   variant.demo = base.demo;
   variant.noindexSite = base.noindexSite;
   variant.servicesMegaMenu = base.servicesMegaMenu;
+  variant.whiteHeader = base.whiteHeader;
   variant.geo = base.geo;
   variant.forms = base.forms;
   variant.googleReviewUrl = base.googleReviewUrl;

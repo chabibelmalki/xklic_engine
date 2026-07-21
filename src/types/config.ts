@@ -271,6 +271,13 @@ export interface VideoRef {
   /** Image d'aperçu affichée avant lecture (poster). Recommandée. */
   poster?: string;
   alt?: string;
+  /**
+   * Lecture AUTOMATIQUE (muette, en boucle) quand la vidéo est visible à l'écran,
+   * pause quand on la quitte. Opt-in — défaut false (lecture au clic seulement).
+   * Respecte `prefers-reduced-motion`. Familles qui rendent la vidéo via
+   * `MutedVideo` (ex. bloc `contenu`).
+   */
+  autoplay?: boolean;
 }
 
 // --- hero ---
@@ -1202,6 +1209,13 @@ export interface SiteConfig {
    * ont chacun une page dédiée. Champ technique (hérité par les locales).
    */
   servicesMegaMenu?: boolean;
+  /**
+   * En-tête au fond BLANC (au lieu de la couleur de fond `--bg` du thème, qui
+   * peut paraître grisâtre/teintée). Concerne l'état solide (au scroll) et le
+   * menu ouvert du `SiteHeader`. Opt-in — défaut false. Champ technique (hérité
+   * par les locales).
+   */
+  whiteHeader?: boolean;
   theme: ThemeId;
   /**
    * Style pack (design system complet : typo, formes, ombres, motion, fond,
