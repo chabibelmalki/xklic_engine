@@ -216,11 +216,13 @@ export function statutShort(statut: StatutJuridique): string {
 }
 
 /**
- * Raison sociale complète façon pied de page :
- * "SANAD CLEAN — Souad Tazya (EI)". Sans dirigeant, on s'en tient au nom.
+ * Nom affiché en pied de page / entités publiques : UNIQUEMENT le nom commercial
+ * (`e.nom`). On n'expose PAS le nom du dirigeant ici — il reste présent là où la
+ * loi l'exige, sur la page mentions légales (représentant + directeur de la
+ * publication, construits directement depuis `e.dirigeant`).
  */
 export function legalName(e: Entreprise): string {
-  return e.dirigeant ? `${e.nom} — ${e.dirigeant} (${statutShort(e.statut)})` : e.nom;
+  return e.nom;
 }
 
 export function isCompany(e: Entreprise): boolean {
