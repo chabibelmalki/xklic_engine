@@ -55,12 +55,12 @@
     "title": "Reiniging & onderhoud van gebouwen in Lille",
     "description": "Reiniging van gebouwen in Lille en het Noorden: buitenreiniging, mede-eigendommen, kantoren, textiel, diogenessyndroom en schadeherstel. Gratis offerte HYGIFRANCE.",
     "keywords": [
-      "nettoyage bâtiment Lille",
-      "nettoyage copropriété Lille",
-      "nettoyage bureaux Nord",
-      "syndrome de Diogène Lille",
-      "nettoyage après sinistre Nord",
-      "nettoyage canapé Lille"
+      "gebouwreiniging Lille",
+      "reiniging mede-eigendom Lille",
+      "kantoorreiniging Nord",
+      "Diogenessyndroom Lille",
+      "reiniging na schade Nord",
+      "zetelreiniging Lille"
     ]
   },
   "pages": [
@@ -7144,14 +7144,14 @@
             "formTitre": "Contacteer ons",
             "formIntro": "Snel antwoord, vrijblijvend.",
             "services": [
-              "Nettoyage extrême",
-              "Après sinistre",
-              "Débarras",
-              "Ménage",
-              "Services professionnels",
-              "Extérieurs",
-              "Bâtiments",
-              "Autre demande"
+              "Extreme reiniging",
+              "Schadeherstel",
+              "Ontruiming",
+              "Huishoudelijke schoonmaak",
+              "Professionele diensten",
+              "Buitenreiniging",
+              "Gebouwen",
+              "Andere aanvraag"
             ],
             "villes": [
               "Lille",
@@ -7194,23 +7194,23 @@
             "titre": "Stel uw aanvraag samen",
             "intro": "Hoe meer u ons vertelt, hoe nauwkeuriger onze schatting.",
             "buildingTypes": [
-              "Maison",
+              "Huis",
               "Appartement",
-              "Immeuble / copropriété",
-              "Bureau / local commercial",
-              "Cabinet médical",
-              "Établissement scolaire",
-              "Entrepôt / local industriel",
-              "Autre"
+              "Gebouw / mede-eigendom",
+              "Kantoor / handelspand",
+              "Dokterspraktijk",
+              "School",
+              "Magazijn / industrieel pand",
+              "Andere"
             ],
             "services": [
-              "Nettoyage extrême",
-              "Après sinistre",
-              "Débarras",
-              "Ménage",
-              "Services professionnels",
-              "Extérieurs",
-              "Bâtiments"
+              "Extreme reiniging",
+              "Schadeherstel",
+              "Ontruiming",
+              "Huishoudelijke schoonmaak",
+              "Professionele diensten",
+              "Buitenreiniging",
+              "Gebouwen"
             ],
             "villes": [
               "Lille",

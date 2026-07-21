@@ -55,12 +55,12 @@
     "title": "Building cleaning & maintenance in Lille",
     "description": "Building cleaning in Lille and the Nord: outdoor, co-ownerships, offices, textiles, Diogenes syndrome and disaster restoration. Free HYGIFRANCE quote.",
     "keywords": [
-      "nettoyage bâtiment Lille",
-      "nettoyage copropriété Lille",
-      "nettoyage bureaux Nord",
-      "syndrome de Diogène Lille",
-      "nettoyage après sinistre Nord",
-      "nettoyage canapé Lille"
+      "building cleaning Lille",
+      "co-ownership cleaning Lille",
+      "office cleaning Nord",
+      "Diogenes syndrome Lille",
+      "disaster cleaning Nord",
+      "sofa cleaning Lille"
     ]
   },
   "pages": [
@@ -7144,14 +7144,14 @@
             "formTitre": "Contact us",
             "formIntro": "Quick reply, no obligation.",
             "services": [
-              "Nettoyage extrême",
-              "Après sinistre",
-              "Débarras",
-              "Ménage",
-              "Services professionnels",
-              "Extérieurs",
-              "Bâtiments",
-              "Autre demande"
+              "Extreme cleaning",
+              "Disaster restoration",
+              "Clearance",
+              "Housekeeping",
+              "Professional services",
+              "Outdoor cleaning",
+              "Buildings",
+              "Other request"
             ],
             "villes": [
               "Lille",
@@ -7194,23 +7194,23 @@
             "titre": "Put together your request",
             "intro": "The more you tell us, the more accurate our estimate will be.",
             "buildingTypes": [
-              "Maison",
-              "Appartement",
-              "Immeuble / copropriété",
-              "Bureau / local commercial",
-              "Cabinet médical",
-              "Établissement scolaire",
-              "Entrepôt / local industriel",
-              "Autre"
+              "House",
+              "Apartment",
+              "Building / co-ownership",
+              "Office / commercial premises",
+              "Medical practice",
+              "School",
+              "Warehouse / industrial premises",
+              "Other"
             ],
             "services": [
-              "Nettoyage extrême",
-              "Après sinistre",
-              "Débarras",
-              "Ménage",
-              "Services professionnels",
-              "Extérieurs",
-              "Bâtiments"
+              "Extreme cleaning",
+              "Disaster restoration",
+              "Clearance",
+              "Housekeeping",
+              "Professional services",
+              "Outdoor cleaning",
+              "Buildings"
             ],
             "villes": [
               "Lille",
