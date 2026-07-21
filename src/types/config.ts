@@ -832,6 +832,11 @@ export interface AvisContent {
   /** Mention sous la grille (ex. "témoignages à titre d'exemple"). */
   disclaimer?: string;
   /**
+   * Bouton sous les avis (ex. « Laisser un avis » → `/avis`, la page QR, ou le
+   * lien Google direct). Absent => aucun bouton (rendu historique).
+   */
+  cta?: CTA;
+  /**
    * Étoiles par carte en version COMPACTE : une seule étoile + la note chiffrée
    * (ex. « ★ 5,0 ») au lieu d'une rangée de 5 étoiles. Réduit la répétition
    * visuelle quand tous les avis sont notés pareil. Défaut : rangée complète.

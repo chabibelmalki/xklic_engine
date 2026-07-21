@@ -284,6 +284,53 @@
           }
         },
         {
+          "type": "avis",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "Google-reviews",
+            "titre": "Wat onze klanten zeggen",
+            "noteGlobale": 5,
+            "nombre": 6,
+            "items": [
+              {
+                "auteur": "Elisabeth",
+                "note": 5,
+                "texte": "Equipe très professionnelle. Le travail est soigné et le service irréprochable. Je recommande vivement !"
+              },
+              {
+                "auteur": "Mahassine Elbab",
+                "note": 5,
+                "texte": "Très satisfait de la prestation. L’équipe est intervenue avec sérieux, ponctualité et professionnalisme. Les parties communes de notre immeuble ont été nettoyées avec soin et le résultat est impeccable. Le personnel est agréable, efficace et à l’écoute. Je recommande cette société de nettoyage sans hésitation pour la qualité de son travail. Merci Ibtissam"
+              },
+              {
+                "auteur": "myriam choukri",
+                "note": 5,
+                "texte": "Je recommande vivement cette société de nettoyage rien n’as dire service au top et ponctuelle ☺️"
+              },
+              {
+                "auteur": "valerie baio",
+                "note": 5,
+                "texte": "Société à l’écoute du client. Nettoyage impeccable"
+              },
+              {
+                "auteur": "Nath Dewin",
+                "note": 5,
+                "texte": "Personne de confiance et travail de qualité , je recommande fortement"
+              },
+              {
+                "auteur": "Oussama ABBADI",
+                "note": 5,
+                "texte": "Un service inpecable et perssones très professionnel et très serviable je recomande👍👍"
+              }
+            ],
+            "disclaimer": "Authentieke reviews die onze klanten op onze Google-pagina publiceerden.",
+            "cta": {
+              "label": "Een review achterlaten",
+              "href": "/avis"
+            }
+          }
+        },
+        {
           "type": "cta",
           "variant": "bande",
           "content": {
@@ -850,7 +897,7 @@
           "content": {
             "titre": "Aanvraag tot interventie",
             "intro": "Geef ons het type locatie, de geschatte oppervlakte, de gemeente en de gewenste frequentie: daarmee kunnen we al een ernstige raming maken.",
-            "mapEmbedUrl": "https://maps.google.com/maps?q=50.424955,4.4407406&z=15&hl=nl&output=embed",
+            "mapEmbedUrl": "https://maps.google.com/maps?q=50.424955,4.4407406(AB%20Pro%20Service)&z=16&hl=nl&output=embed",
             "form": true,
             "formMode": "demande-intervention",
             "telephone": "+32 492 68 38 23",

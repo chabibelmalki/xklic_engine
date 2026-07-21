@@ -33,10 +33,10 @@
     },
     {
       "platform": "google",
-      "url": "https://share.google/JQnJVFCwxfxOgJNvB"
+      "url": "https://share.google/dBLfWRDveJwkxBLaf"
     }
   ],
-  "googleReviewUrl": "https://g.page/r/Ceg-Pvpu13VTEAI/review",
+  "googleReviewUrl": "https://g.page/r/Ceg-Pvpu13VTEBM/review",
   "entreprise": {
     "nom": "AB Pro Service",
     "statut": "SRL",
@@ -303,6 +303,53 @@
                 "reponse": "Décrivez-nous les lieux et le rythme voulu ; nous établissons un devis gratuit et détaillé, au besoin après une courte visite pour être au plus juste. Vous décidez ensuite, sans pression."
               }
             ]
+          }
+        },
+        {
+          "type": "avis",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "Avis Google",
+            "titre": "Ce que disent nos clients",
+            "noteGlobale": 5,
+            "nombre": 6,
+            "items": [
+              {
+                "auteur": "Elisabeth",
+                "note": 5,
+                "texte": "Equipe très professionnelle. Le travail est soigné et le service irréprochable. Je recommande vivement !"
+              },
+              {
+                "auteur": "Mahassine Elbab",
+                "note": 5,
+                "texte": "Très satisfait de la prestation. L’équipe est intervenue avec sérieux, ponctualité et professionnalisme. Les parties communes de notre immeuble ont été nettoyées avec soin et le résultat est impeccable. Le personnel est agréable, efficace et à l’écoute. Je recommande cette société de nettoyage sans hésitation pour la qualité de son travail. Merci Ibtissam"
+              },
+              {
+                "auteur": "myriam choukri",
+                "note": 5,
+                "texte": "Je recommande vivement cette société de nettoyage rien n’as dire service au top et ponctuelle ☺️"
+              },
+              {
+                "auteur": "valerie baio",
+                "note": 5,
+                "texte": "Société à l’écoute du client. Nettoyage impeccable"
+              },
+              {
+                "auteur": "Nath Dewin",
+                "note": 5,
+                "texte": "Personne de confiance et travail de qualité , je recommande fortement"
+              },
+              {
+                "auteur": "Oussama ABBADI",
+                "note": 5,
+                "texte": "Un service inpecable et perssones très professionnel et très serviable je recomande👍👍"
+              }
+            ],
+            "disclaimer": "Avis authentiques publiés par nos clients sur notre fiche Google.",
+            "cta": {
+              "label": "Laisser un avis",
+              "href": "/avis"
+            }
           }
         },
         {
@@ -872,7 +919,7 @@
           "content": {
             "titre": "Demande d'intervention",
             "intro": "Précisez-nous le type de lieu, la surface approximative, la commune et la fréquence souhaitée : avec cela, nous chiffrons déjà sérieusement.",
-            "mapEmbedUrl": "https://maps.google.com/maps?q=50.424955,4.4407406&z=15&hl=fr&output=embed",
+            "mapEmbedUrl": "https://maps.google.com/maps?q=50.424955,4.4407406(AB%20Pro%20Service)&z=16&hl=fr&output=embed",
             "form": true,
             "formMode": "demande-intervention",
             "telephone": "+32 492 68 38 23",

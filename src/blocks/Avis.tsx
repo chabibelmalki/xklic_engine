@@ -5,6 +5,8 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Stars } from "@/components/ui/Stars";
 import { Reveal } from "@/components/ui/Reveal";
+import { Button } from "@/components/ui/Button";
+import { withBase } from "@/lib/utils";
 
 /** Note d'une carte : rangée de 5 étoiles, ou version compacte « ★ 5,0 ». */
 function CardNote({ note, compact }: { note: number; compact?: boolean }) {
@@ -39,7 +41,7 @@ function AvisCard({ a, compact, className = "" }: { a: AvisItem; compact?: boole
  * défilante en scroll-snap) · "vedette" (1 témoignage en grand + le reste en
  * appoint). La note globale alimente aussi le JSON-LD.
  */
-export function Avis({ block, tone, strings }: BlockComponentProps<AvisContent>) {
+export function Avis({ block, tone, strings, basePath = "" }: BlockComponentProps<AvisContent>) {
   const c = block.content;
   const variant = block.variant ?? "grille";
 
@@ -67,9 +69,27 @@ export function Avis({ block, tone, strings }: BlockComponentProps<AvisContent>)
     </>
   );
 
-  const disclaimer = c.disclaimer ? (
-    <p className="mt-6 text-center text-xs text-muted-2">{c.disclaimer}</p>
-  ) : null;
+  const disclaimer = (
+    <>
+      {c.disclaimer && (
+        <p className="mt-6 text-center text-xs text-muted-2">{c.disclaimer}</p>
+      )}
+      {c.cta && (
+        <Reveal>
+          <div className="mt-8 text-center">
+            <Button
+              href={withBase(basePath, c.cta.href)}
+              size="lg"
+              className="max-w-full whitespace-normal text-center"
+            >
+              <Star className="size-5" fill="currentColor" strokeWidth={0} />
+              {c.cta.label}
+            </Button>
+          </div>
+        </Reveal>
+      )}
+    </>
+  );
 
   if (variant === "carrousel") {
     return (
