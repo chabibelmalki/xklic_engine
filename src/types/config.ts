@@ -677,6 +677,8 @@ export interface GalerieImageItem {
   image: ImageRef;
   titre?: string;
   description?: string;
+  /** Cadrage de l'image (object-position) : "top" | "center" | "bottom"… (variant "bento"). */
+  objectPosition?: string;
 }
 export interface GalerieContent {
   titre?: string;

@@ -115,11 +115,13 @@ export function Galerie({ block, tone, strings }: BlockComponentProps<GalerieCon
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {images.slice(0, 4).map((it, i) => {
               const cell = [
-                { pos: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3", img: "h-72 lg:h-full lg:flex-1 lg:min-h-0" },
-                { pos: "lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2", img: "h-56" },
-                { pos: "lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2", img: "h-56" },
-                { pos: "sm:col-span-2 lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:row-end-3", img: "h-64" },
+                { pos: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3", img: "h-72 lg:h-full lg:flex-1 lg:min-h-0", obj: "object-center" },
+                { pos: "lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2", img: "h-56", obj: "object-center" },
+                { pos: "lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-2", img: "h-56", obj: "object-center" },
+                { pos: "sm:col-span-2 lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:row-end-3", img: "h-64", obj: "object-top" },
               ][i];
+              // Le focus peut être surchargé par image via `objectPosition` (top/center/bottom…).
+              const objClass = it.objectPosition ? `object-${it.objectPosition}` : cell.obj;
               return (
                 <figure key={i} className={cn("flex flex-col", cell.pos)}>
                   <div className={cn("relative w-full overflow-hidden bg-ink/5", cell.img)}>
@@ -128,7 +130,7 @@ export function Galerie({ block, tone, strings }: BlockComponentProps<GalerieCon
                       alt={it.image.alt ?? it.titre ?? "Réalisation"}
                       fill
                       sizes="(max-width: 1024px) 100vw, 33vw"
-                      className="object-cover"
+                      className={cn("object-cover", objClass)}
                     />
                   </div>
                   {(it.titre || it.description) && (
