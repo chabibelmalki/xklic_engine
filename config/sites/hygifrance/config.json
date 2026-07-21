@@ -2154,7 +2154,7 @@
         },
         {
           "type": "services",
-          "variant": "grille-icones",
+          "variant": "grille-cartes",
           "content": {
             "eyebrow": "Nos interventions",
             "titre": "Ce que nous débarrassons",
@@ -2162,37 +2162,65 @@
               {
                 "nom": "Caves & garages",
                 "description": "Vidage complet des caves, garages et espaces de stockage.",
-                "icone": "Warehouse"
+                "href": "/debarras-cave-garage",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/deb-storage.jpg",
+                  "alt": "Cave ou garage encombré à débarrasser"
+                }
               },
               {
                 "nom": "Maison / appartement",
                 "description": "Débarras d'un logement entier, pièce par pièce.",
-                "icone": "Home"
+                "href": "/debarras-maison-appartement",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-debarras.jpg",
+                  "alt": "Logement en cours de débarras"
+                }
               },
               {
                 "nom": "Après décès",
                 "description": "Débarras respectueux d'un logement après un décès.",
-                "icone": "HeartHandshake"
+                "href": "/debarras-apres-deces",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-vide.jpg",
+                  "alt": "Logement vidé et remis en ordre après un décès"
+                }
               },
               {
                 "nom": "Après succession",
                 "description": "Vidage d'un bien en vue d'une vente ou d'un partage.",
-                "icone": "ScrollText"
+                "href": "/debarras-apres-succession",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/deb-storage.jpg",
+                  "alt": "Mobilier et objets à débarrasser lors d'une succession"
+                }
               },
               {
                 "nom": "Logement insalubre",
                 "description": "Débarras des logements très encombrés ou dégradés.",
-                "icone": "Trash2"
+                "href": "/debarras-logement-insalubre",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-encombrement.jpg",
+                  "alt": "Logement très encombré avant débarras"
+                }
               },
               {
                 "nom": "Après sinistre",
                 "description": "Évacuation des biens endommagés après un sinistre.",
-                "icone": "PackageX"
+                "href": "/debarras-apres-sinistre",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-sinistre.jpg",
+                  "alt": "Évacuation de biens endommagés après un sinistre"
+                }
               },
               {
                 "nom": "Bureaux & locaux",
                 "description": "Débarras de mobilier et d'archives de locaux professionnels.",
-                "icone": "Briefcase"
+                "href": "/debarras-bureaux-locaux",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-debarras.jpg",
+                  "alt": "Débarras de mobilier et d'archives de bureaux"
+                }
               }
             ]
           }
@@ -2222,6 +2250,475 @@
           "content": {
             "titre": "Un espace à vider ?",
             "sousTitre": "Dites-nous le volume et l'accès : on vous donne un prix clair, tout compris.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "debarras-cave-garage",
+      "label": "Caves & garages",
+      "navHidden": true,
+      "meta": {
+        "title": "Débarras cave & garage à Lille",
+        "description": "Débarras de caves, garages et box à Lille et dans le Nord : vidage complet, tri, évacuation. Espace rendu vide et propre, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Débarras",
+            "titre": "Débarras de cave et de garage à Lille",
+            "intro": "Cave, garage, box : ces espaces se remplissent d'années d'objets. On les vide entièrement.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Débarras",
+                "href": "/debarras"
+              },
+              {
+                "label": "Caves & garages"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Vider et évacuer, sans que vous portiez",
+            "paragraphes": [
+              "Une cave ou un garage se remplit peu à peu de tout ce qu'on ne sait pas où ranger, jusqu'à devenir inutilisable. Reste ensuite à tout sortir, souvent par des accès étroits. Nous nous en chargeons entièrement à Lille et dans le Nord.",
+              "Nous trions avec vous ce qui se garde, se donne ou se jette, puis nous évacuons vers les bonnes filières. Vous récupérez un espace vide et balayé, prêt à être réutilisé."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/deb-storage.jpg",
+              "alt": "Cave ou garage encombré à débarrasser"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un espace à vider ?",
+            "sousTitre": "Dites-nous le volume et l'accès : on vous donne un prix clair, tout compris, après une visite.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "debarras-maison-appartement",
+      "label": "Maison / appartement",
+      "navHidden": true,
+      "meta": {
+        "title": "Débarras maison & appartement à Lille",
+        "description": "Débarras de maison ou d'appartement à Lille et dans le Nord : logement entier vidé pièce par pièce, tri et évacuation. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Débarras",
+            "titre": "Débarras de maison et d'appartement à Lille",
+            "intro": "Un logement entier à vider ? On s'occupe de tout, pièce par pièce, jusqu'à l'espace nu.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Débarras",
+                "href": "/debarras"
+              },
+              {
+                "label": "Maison / appartement"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Un logement entier pris en charge",
+            "paragraphes": [
+              "Vider un logement complet demande du temps, de l'organisation et de la manutention. Que ce soit avant une vente, une location ou des travaux, nous prenons le relais à Lille et dans le Nord, pièce par pièce.",
+              "Tri, évacuation et recyclage : vous n'avez rien à porter. Nous vous rendons un logement vide et balayé, dans les délais convenus."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-debarras.jpg",
+              "alt": "Logement en cours de débarras"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un espace à vider ?",
+            "sousTitre": "Dites-nous le volume et l'accès : on vous donne un prix clair, tout compris, après une visite.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "debarras-apres-deces",
+      "label": "Après décès",
+      "navHidden": true,
+      "meta": {
+        "title": "Débarras après décès à Lille — respectueux",
+        "description": "Débarras d'un logement après décès à Lille et dans le Nord : tri respectueux des effets, évacuation, logement rendu net. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Débarras",
+            "titre": "Débarras après décès à Lille",
+            "intro": "Vider le logement d'un proche est éprouvant. On le fait avec respect, à votre rythme.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Débarras",
+                "href": "/debarras"
+              },
+              {
+                "label": "Après décès"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Avec respect et à votre rythme",
+            "paragraphes": [
+              "Après un décès, le débarras du logement s'ajoute à la douleur et aux démarches. Nous le prenons en charge à Lille et dans le Nord, avec tact, en respectant ce que la famille souhaite conserver.",
+              "Nous mettons de côté les effets à garder, trions le reste et évacuons proprement. Le logement est rendu vide et net, prêt pour la suite — vente, restitution ou succession."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-vide.jpg",
+              "alt": "Logement vidé et remis en ordre après un décès"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un espace à vider ?",
+            "sousTitre": "Dites-nous le volume et l'accès : on vous donne un prix clair, tout compris, après une visite.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "debarras-apres-succession",
+      "label": "Après succession",
+      "navHidden": true,
+      "meta": {
+        "title": "Débarras après succession à Lille",
+        "description": "Débarras après succession à Lille et dans le Nord : bien vidé avant vente ou partage, tri, valorisation possible. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Débarras",
+            "titre": "Débarras après succession à Lille",
+            "intro": "Un bien à vider avant partage ou vente ? On s'en occupe entièrement et rapidement.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Débarras",
+                "href": "/debarras"
+              },
+              {
+                "label": "Après succession"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Préparer le bien pour la suite",
+            "paragraphes": [
+              "Lors d'une succession, il faut souvent vider un bien avant de le vendre ou de le partager. C'est un travail lourd, parfois chargé émotionnellement. Nous le prenons en charge à Lille et dans le Nord.",
+              "Nous trions, mettons de côté ce qui doit l'être, et évacuons le reste. Ce qui a de la valeur peut venir en déduction du devis. Le bien est rendu vide, prêt à être vendu ou remis."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/deb-storage.jpg",
+              "alt": "Mobilier et objets à débarrasser lors d'une succession"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un espace à vider ?",
+            "sousTitre": "Dites-nous le volume et l'accès : on vous donne un prix clair, tout compris, après une visite.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "debarras-logement-insalubre",
+      "label": "Logement insalubre",
+      "navHidden": true,
+      "meta": {
+        "title": "Débarras de logement insalubre à Lille",
+        "description": "Débarras d'un logement insalubre à Lille et dans le Nord : vidage, nettoyage de fond, désinfection. Sans jugement, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Débarras",
+            "titre": "Débarras de logement insalubre à Lille",
+            "intro": "Un logement saturé et dégradé ? On le vide et on l'assainit, sans jugement.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Débarras",
+                "href": "/debarras"
+              },
+              {
+                "label": "Logement insalubre"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Vider, puis assainir",
+            "paragraphes": [
+              "Un logement très encombré et insalubre demande plus qu'un simple débarras : tri, évacuation, mais aussi nettoyage et désinfection. Nous intervenons à Lille et dans le Nord, en tenue adaptée, sans porter de jugement.",
+              "Après le vidage, nous pouvons enchaîner sur un nettoyage de fond et une désinfection pour rendre le logement de nouveau habitable. Tout est cadré lors d'une visite."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-encombrement.jpg",
+              "alt": "Logement très encombré avant débarras"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un espace à vider ?",
+            "sousTitre": "Dites-nous le volume et l'accès : on vous donne un prix clair, tout compris, après une visite.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "debarras-apres-sinistre",
+      "label": "Après sinistre",
+      "navHidden": true,
+      "meta": {
+        "title": "Débarras après sinistre à Lille",
+        "description": "Débarras après sinistre à Lille et dans le Nord : évacuation des biens endommagés après incendie ou dégât des eaux. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Débarras",
+            "titre": "Débarras après sinistre à Lille",
+            "intro": "Incendie, dégât des eaux : les biens abîmés doivent partir avant la remise en état. On évacue.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Débarras",
+                "href": "/debarras"
+              },
+              {
+                "label": "Après sinistre"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Faire place nette pour reconstruire",
+            "paragraphes": [
+              "Après un incendie ou un dégât des eaux, mobilier et affaires endommagés encombrent les lieux et retardent la remise en état. Nous évacuons ces biens à Lille et dans le Nord, rapidement.",
+              "Tri de ce qui peut être sauvé, évacuation du reste : nous faisons place nette pour que le nettoyage et les travaux puissent commencer. Un devis clair appuie votre dossier d'assurance."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-sinistre.jpg",
+              "alt": "Évacuation de biens endommagés après un sinistre"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un espace à vider ?",
+            "sousTitre": "Dites-nous le volume et l'accès : on vous donne un prix clair, tout compris, après une visite.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "debarras-bureaux-locaux",
+      "label": "Bureaux & locaux",
+      "navHidden": true,
+      "meta": {
+        "title": "Débarras de bureaux & locaux à Lille",
+        "description": "Débarras de bureaux et locaux professionnels à Lille et dans le Nord : mobilier, matériel, archives. Hors horaires possible, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Débarras",
+            "titre": "Débarras de bureaux et de locaux à Lille",
+            "intro": "Déménagement, fermeture, réaménagement : on débarrasse mobilier et archives, sans gêner l'activité.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Débarras",
+                "href": "/debarras"
+              },
+              {
+                "label": "Bureaux & locaux"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Libérer vos locaux proprement",
+            "paragraphes": [
+              "Un local professionnel qui change, ferme ou se réaménage doit être vidé de son mobilier, de son matériel et parfois de ses archives. Nous nous en chargeons à Lille et dans le Nord, en dehors de vos heures si besoin.",
+              "Enlèvement du mobilier, évacuation, destruction sécurisée des archives sur demande : nous libérons vos locaux proprement, dans les délais, avec une seule facture."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-debarras.jpg",
+              "alt": "Débarras de mobilier et d'archives de bureaux"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un espace à vider ?",
+            "sousTitre": "Dites-nous le volume et l'accès : on vous donne un prix clair, tout compris, après une visite.",
             "ctaPrimaire": {
               "label": "Devis gratuit",
               "href": "/devis"
