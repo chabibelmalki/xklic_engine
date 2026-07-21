@@ -18,6 +18,10 @@ import { FilNuancier } from "../ui/Nuancier";
  * les titres (jamais d'assombrissement global excessif : la photo reste
  * visible). Nuancier interactif OPT-IN (`content.nuancier`). Conçu pour
  * `headerOverlay: true`. Ignore `block.variant`. Contrastes AA.
+ *
+ * MODE CLAIR (`content.neutralPhoto`) : photo en couleurs NATURELLES sous un
+ * VOILE BLANC, titre/accent FONCÉS et colorés (brand), CTA de marque, fil brand.
+ * Pour les clichés clairs où le texte blanc du duotone ne ressortait pas.
  */
 export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroContent>) {
   const c = block.content;
@@ -29,11 +33,16 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
   // en overlay transparent par SiteHeader) — même mécanique que le hero `plein`
   // historique. Sans image, le header reste solide : pas de remontée.
   const immersive = Boolean(c.image && c.headerOverlay);
+  // Mode CLAIR (opt-in `neutralPhoto` avec photo) : voile BLANC sur la photo
+  // naturelle, texte FONCÉ/coloré et CTA de marque — au lieu du duotone sombre à
+  // texte blanc. Pour les clichés clairs où le texte blanc ne ressortait pas.
+  const light = Boolean(c.image && c.neutralPhoto);
 
   return (
     <header
       className={cn(
-        "relative isolate flex min-h-[92svh] flex-col overflow-hidden bg-brand-800 text-white",
+        "relative isolate flex min-h-[92svh] flex-col overflow-hidden",
+        light ? "bg-white text-ink" : "bg-brand-800 text-white",
         immersive && "-mt-16 lg:-mt-20",
       )}
     >
@@ -49,10 +58,19 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
             className="object-cover"
             style={{ filter: c.neutralPhoto ? undefined : "saturate(0.55) contrast(1.04)" }}
           />
-          {/* Teinte de marque : la photo entière prend la couleur du client.
-              `neutralPhoto` = photo en couleurs NATURELLES : ni teinte de marque,
-              ni voile. (La lisibilité du texte se règle ensuite si besoin.) */}
-          {!c.neutralPhoto && (
+          {/* `neutralPhoto` (mode clair) : photo en couleurs NATURELLES sous un
+              VOILE BLANC (texte foncé lisible). Sinon : teinte de marque (duotone)
+              + scrim sombre (texte blanc). */}
+          {light ? (
+            <div
+              aria-hidden
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(to top, rgba(255,255,255,0.82) 0%, rgba(255,255,255,0.44) 32%, rgba(255,255,255,0.44) 60%, rgba(255,255,255,0.76) 100%)",
+              }}
+            />
+          ) : (
             <>
               <div aria-hidden className="absolute inset-0 bg-brand-600 opacity-85 mix-blend-color" />
               {/* Scrim léger : lisibilité sans éteindre l'image. */}
@@ -78,7 +96,7 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
         />
       )}
       {/* Grain textile discret (utilitaire scopé au pack). */}
-      <div aria-hidden className="fil-grain absolute inset-0 -z-0 text-white/60" />
+      <div aria-hidden className={cn("fil-grain absolute inset-0 -z-0", light ? "text-ink/25" : "text-white/60")} />
 
       <FilContainer wide className="relative z-10 flex flex-1 flex-col pb-10 pt-32 sm:pb-12 sm:pt-40">
         {/* Zone du titre éclaté. Le fil est scopé à CETTE zone (pas au hero
@@ -101,23 +119,41 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
                 pathLength={1}
                 d="M330,150 C520,260 640,110 800,230 C930,330 940,400 1040,468"
                 fill="none"
-                stroke="color-mix(in srgb, var(--accent-50) 92%, #fff)"
+                stroke={light ? "var(--brand-600)" : "color-mix(in srgb, var(--accent-50) 92%, #fff)"}
                 strokeWidth="2.4"
                 strokeLinecap="round"
-                style={{ filter: "drop-shadow(0 0 5px rgba(255,250,238,.85)) drop-shadow(0 2px 5px rgba(0,0,0,.45))" }}
+                style={{
+                  filter: light
+                    ? "drop-shadow(0 1px 3px rgba(255,255,255,.8))"
+                    : "drop-shadow(0 0 5px rgba(255,250,238,.85)) drop-shadow(0 2px 5px rgba(0,0,0,.45))",
+                }}
               />
               <g className="fil-aiguille" transform="translate(1028,456) rotate(32)">
-                <path d="M0,0 L52,10 L0,20 Q10,10 0,0 Z" fill="color-mix(in srgb, var(--accent-50) 92%, #fff)" />
-                <circle cx="42" cy="10" r="2.6" fill="var(--brand-800)" />
+                <path d="M0,0 L52,10 L0,20 Q10,10 0,0 Z" fill={light ? "var(--brand-600)" : "color-mix(in srgb, var(--accent-50) 92%, #fff)"} />
+                <circle cx="42" cy="10" r="2.6" fill={light ? "#fff" : "var(--brand-800)"} />
               </g>
             </svg>
           )}
           <h1 className="flex flex-1 flex-col justify-between font-display font-light">
-          <span className="fil-halo fil-descend relative self-start text-[clamp(2.9rem,7.4vw,6.5rem)] leading-[1.04] tracking-[-0.015em] text-white [text-shadow:0_2px_26px_rgba(0,0,0,.4)]">
+          <span
+            className={cn(
+              "fil-halo fil-descend relative self-start text-[clamp(2.9rem,7.4vw,6.5rem)] leading-[1.04] tracking-[-0.015em]",
+              light
+                ? "text-brand-800 [text-shadow:0_1px_12px_rgba(255,255,255,.7)]"
+                : "text-white [text-shadow:0_2px_26px_rgba(0,0,0,.4)]",
+            )}
+          >
             {c.titre}
           </span>
           {split && (
-            <span className="fil-halo fil-monte relative mb-[4vh] self-end text-right text-[clamp(2.9rem,7.4vw,6.5rem)] italic leading-[1.04] tracking-[-0.015em] text-accent-50 [text-shadow:0_2px_26px_rgba(0,0,0,.4)]">
+            <span
+              className={cn(
+                "fil-halo fil-monte relative mb-[4vh] self-end text-right text-[clamp(2.9rem,7.4vw,6.5rem)] italic leading-[1.04] tracking-[-0.015em]",
+                light
+                  ? "text-brand-600 [text-shadow:0_1px_12px_rgba(255,255,255,.7)]"
+                  : "text-accent-50 [text-shadow:0_2px_26px_rgba(0,0,0,.4)]",
+              )}
+            >
               {c.titreAccent}
             </span>
           )}
@@ -125,7 +161,7 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
         </div>
 
         {c.accroche && (
-          <p className="fil-tarde mb-6 max-w-xl text-base leading-relaxed text-white/85 sm:text-lg">
+          <p className={cn("fil-tarde mb-6 max-w-xl text-base leading-relaxed sm:text-lg", light ? "text-ink-soft" : "text-white/85")}>
             {c.accroche}
           </p>
         )}
@@ -135,14 +171,19 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
         <div className="fil-tarde flex flex-col items-center gap-6 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between">
           <div className="flex flex-wrap items-center justify-center gap-3.5">
             {c.ctaPrimaire && (
-              <Button href={withBase(basePath, c.ctaPrimaire.href)} variant="white" size="lg">
+              <Button href={withBase(basePath, c.ctaPrimaire.href)} variant={light ? "primary" : "white"} size="lg">
                 {c.ctaPrimaire.label}
               </Button>
             )}
             {secondary && (
               <a
                 href={withBase(basePath, secondary.href)}
-                className="btn inline-flex h-14 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-white/55 px-8 text-base font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/10"
+                className={cn(
+                  "btn inline-flex h-14 items-center justify-center gap-2 whitespace-nowrap rounded-full border px-8 text-base font-semibold transition-all duration-200 hover:-translate-y-0.5",
+                  light
+                    ? "border-ink/25 text-ink hover:bg-ink/5"
+                    : "border-white/55 text-white hover:bg-white/10",
+                )}
               >
                 {secondary.label}
               </a>
@@ -158,10 +199,10 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
         </div>
 
         {trust.length > 0 && (
-          <ul className="fil-tarde mt-7 flex flex-wrap justify-center gap-x-7 gap-y-2.5 border-t border-white/20 pt-5 sm:justify-start">
+          <ul className={cn("fil-tarde mt-7 flex flex-wrap justify-center gap-x-7 gap-y-2.5 border-t pt-5 sm:justify-start", light ? "border-ink/15" : "border-white/20")}>
             {trust.map((t) => (
-              <li key={t.label} className="flex items-center gap-2 text-sm font-medium text-white/85">
-                {t.icone && <Icon name={t.icone} className="size-4 text-accent-50" />}
+              <li key={t.label} className={cn("flex items-center gap-2 text-sm font-medium", light ? "text-ink-soft" : "text-white/85")}>
+                {t.icone && <Icon name={t.icone} className={cn("size-4", light ? "text-brand-600" : "text-accent-50")} />}
                 {t.label}
               </li>
             ))}
