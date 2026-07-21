@@ -869,6 +869,84 @@
       ]
     },
     {
+      "slug": "atelier",
+      "label": "Atelier",
+      "meta": {
+        "title": "L'atelier en vidéo — Création & Production Mode",
+        "description": "Découvrez notre atelier de confection en vidéo : fabrication en cours et finitions. Confection au Maroc, pilotage à Nîmes."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "L'atelier",
+            "titre": "L'atelier en vidéo",
+            "intro": "Deux vidéos tournées chez nous : la confection en cours et les finitions. La meilleure façon de voir comment vos pièces prennent forme.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Atelier"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "En direct de l'atelier",
+            "titre": "Dans l'atelier",
+            "paragraphes": [
+              "Coupe, assemblage, montage : nos machines tournent au rythme de vos séries, petites ou grandes. Chaque étape est menée avec le même soin, de la première couture au dernier point.",
+              "On filme rarement ce moment — le voici, sans montage inutile : le geste, la matière, la cadence."
+            ],
+            "video": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/atelier-video.mp4",
+              "poster": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-atelier.png",
+              "alt": "Vidéo de confection dans l'atelier"
+            },
+            "imagePosition": "right",
+            "imageRatio": "9/16"
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Finitions",
+            "titre": "Un atelier au Maroc, un pilotage depuis Nîmes",
+            "paragraphes": [
+              "La confection se fait dans notre atelier au Maroc, où une main-d'œuvre qualifiée assure des finitions soignées. Le pilotage — patronage, prototype, contrôle qualité — reste à Nîmes, au plus près de vous.",
+              "Un seul interlocuteur en France, une production maîtrisée : vous suivez l'avancement sans multiplier les intermédiaires."
+            ],
+            "video": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/production-video.mp4",
+              "poster": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-finition.png",
+              "alt": "Vidéo des finitions couture"
+            },
+            "imagePosition": "left",
+            "imageRatio": "9/16"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Envie de voir votre modèle prendre vie ?",
+            "sousTitre": "Envoyez-nous votre croquis ou votre cahier des charges : on vous répond avec un devis clair.",
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
       "slug": "realisations",
       "label": "Réalisations",
       "meta": {

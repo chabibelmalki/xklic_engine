@@ -851,6 +851,84 @@
       ]
     },
     {
+      "slug": "atelier",
+      "label": "Studio",
+      "meta": {
+        "title": "The studio on video — Création & Production Mode",
+        "description": "See our clothing studio on video: manufacturing in progress and finishing. Manufacturing in Morocco, managed from Nîmes."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "The studio",
+            "titre": "The studio on video",
+            "intro": "Two videos filmed on site: manufacturing in progress and the finishing touches. The best way to see how your pieces take shape.",
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Studio"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a free quote",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Live from the studio",
+            "titre": "Inside the studio",
+            "paragraphes": [
+              "Cutting, assembling, sewing: our machines run to the rhythm of your production runs, small or large. Every step is carried out with the same care, from the first seam to the last stitch.",
+              "This is a moment rarely filmed — here it is, with no needless editing: the gesture, the fabric, the pace."
+            ],
+            "video": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/atelier-video.mp4",
+              "poster": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-atelier.png",
+              "alt": "Video of garment making in the studio"
+            },
+            "imagePosition": "right",
+            "imageRatio": "9/16"
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Finishing",
+            "titre": "A studio in Morocco, managed from Nîmes",
+            "paragraphes": [
+              "Manufacturing takes place in our studio in Morocco, where a skilled workforce ensures careful finishing. The management — pattern-making, prototyping, quality control — stays in Nîmes, close to you.",
+              "A single point of contact in France, production under control: you follow progress without piling up middlemen."
+            ],
+            "video": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/production-video.mp4",
+              "poster": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/real-finition.png",
+              "alt": "Video of couture finishing"
+            },
+            "imagePosition": "left",
+            "imageRatio": "9/16"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Want to see your design come to life?",
+            "sousTitre": "Send us your sketch or your specifications: we'll reply with a clear quote.",
+            "ctaPrimaire": {
+              "label": "Request a free quote",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
       "slug": "realisations",
       "label": "Our work",
       "meta": {

@@ -923,6 +923,12 @@ export interface ContenuContent {
   /** Corps de texte : un élément = un paragraphe. */
   paragraphes: string[];
   image?: ImageRef;
+  /**
+   * Vidéo affichée dans le cadre média À LA PLACE de l'image (mp4/webm, rendue
+   * `MutedVideo` : muette, contrôles natifs). Prioritaire sur `image`. Même
+   * mise en page deux colonnes que l'image (imagePosition / imageRatio).
+   */
+  video?: VideoRef;
   /** Côté de l'image en desktop. Défaut : "right". */
   imagePosition?: "left" | "right";
   /**

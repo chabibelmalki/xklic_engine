@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { MutedVideo } from "@/components/ui/MutedVideo";
 import type { ContenuContent } from "@/types/config";
 import type { BlockComponentProps } from "./types";
 import { Section } from "@/components/ui/Section";
@@ -19,6 +20,8 @@ function ratioClass(ratio?: string) {
       return "aspect-[16/10]";
     case "4/5":
       return "aspect-[4/5]";
+    case "9/16":
+      return "aspect-[9/16]";
     default:
       return "aspect-[4/5]";
   }
@@ -69,8 +72,8 @@ export function Contenu({ block, tone, basePath }: BlockComponentProps<ContenuCo
     </div>
   );
 
-  // ---- sans image : prose centrée ----
-  if (!c.image) {
+  // ---- sans image ni vidéo : prose centrée ----
+  if (!c.image && !c.video) {
     return (
       <Section tone={tone} containerClassName="max-w-3xl">
         <Reveal>{texte}</Reveal>
@@ -84,13 +87,22 @@ export function Contenu({ block, tone, basePath }: BlockComponentProps<ContenuCo
       <div className="relative mx-auto max-w-md lg:max-w-none">
         <div className="pack-halo absolute -inset-4 -z-10 rounded-[2.5rem] bg-brand-200/40 blur-2xl" />
         <div className={`pack-image relative ${ratioClass(c.imageRatio)} overflow-hidden border border-white/60`}>
-          <Image
-            src={c.image.url}
-            alt={c.image.alt ?? c.titre ?? ""}
-            fill
-            sizes="(max-width: 1024px) 100vw, 45vw"
-            className="object-cover"
-          />
+          {c.video ? (
+            <MutedVideo
+              src={c.video.url}
+              poster={c.video.poster}
+              ariaLabel={c.video.alt ?? c.titre ?? ""}
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          ) : c.image ? (
+            <Image
+              src={c.image.url}
+              alt={c.image.alt ?? c.titre ?? ""}
+              fill
+              sizes="(max-width: 1024px) 100vw, 45vw"
+              className="object-cover"
+            />
+          ) : null}
         </div>
       </div>
     </Reveal>
