@@ -106,15 +106,20 @@ export function SiteHeader({
   const pages = resolvePages(config);
   const currentPage = pages.find((p) => p.path === currentPath) ?? getHomePage(config);
   const firstBlock = currentPage.blocks?.[0] as
-    | { type?: string; variant?: string; content?: { image?: unknown; headerOverlay?: boolean } }
+    | { type?: string; variant?: string; content?: { image?: unknown; headerOverlay?: boolean; neutralPhoto?: boolean } }
     | undefined;
   const immersive =
     firstBlock?.type === "hero" &&
     (firstBlock.variant === "plein" || firstBlock.variant === "fondu") &&
     !!firstBlock.content?.image &&
     firstBlock.content?.headerOverlay === true;
-  // `overlay` = rendu clair actif (immersif ET en haut de page, menu fermé).
+  // Hero CLAIR (`content.neutralPhoto`) : photo sous voile BLANC → en overlay le
+  // header doit passer en texte FONCÉ (sinon blanc sur blanc, menus invisibles).
+  const lightHero = immersive && firstBlock?.content?.neutralPhoto === true;
+  // `overlay` = état transparent (immersif, haut de page, menu fermé).
   const overlay = immersive && !scrolled && !open;
+  // `lightText` = texte CLAIR (blanc) : uniquement en overlay SUR hero sombre.
+  const lightText = overlay && !lightHero;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -140,7 +145,9 @@ export function SiteHeader({
             ? "bg-bg/85 backdrop-blur-lg"
             : "border-b border-border bg-bg/85 backdrop-blur-lg"
           : immersive
-            ? "bg-gradient-to-b from-ink/55 via-ink/20 to-transparent"
+            ? lightHero
+              ? "bg-gradient-to-b from-white/85 via-white/40 to-transparent"
+              : "bg-gradient-to-b from-ink/55 via-ink/20 to-transparent"
             : "border-b border-transparent bg-transparent",
       )}
     >
@@ -148,7 +155,7 @@ export function SiteHeader({
         <Logo
           config={config}
           href={basePath || "/"}
-          variant={overlay ? "light" : "default"}
+          variant={lightText ? "light" : "default"}
           className="min-w-0"
         />
 
@@ -160,7 +167,7 @@ export function SiteHeader({
               aria-current={item.active ? "page" : undefined}
               className={cn(
                 "whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2",
-                overlay
+                lightText
                   ? item.active
                     ? "text-white"
                     : "text-white/85 hover:bg-white/10 hover:text-white"
@@ -197,16 +204,16 @@ export function SiteHeader({
                 href={telHrefIntl(contact.telephone)}
                 className={cn(
                   "inline-flex shrink-0 items-center gap-2 whitespace-nowrap text-sm font-semibold transition-colors",
-                  overlay ? "text-white hover:text-white/80" : "text-ink hover:text-brand-700",
+                  lightText ? "text-white hover:text-white/80" : "text-ink hover:text-brand-700",
                 )}
               >
-                <Phone className={cn("size-4 shrink-0", overlay ? "text-white" : "text-brand-600")} />
+                <Phone className={cn("size-4 shrink-0", lightText ? "text-white" : "text-brand-600")} />
                 <span className="inline-flex items-baseline gap-1.5 whitespace-nowrap">
                   {telNeedsIndicatif(contact.telephone) && (
                     <span
                       className={cn(
                         "text-[0.78em] font-medium",
-                        overlay ? "text-white/70" : "text-muted",
+                        lightText ? "text-white/70" : "text-muted",
                       )}
                     >
                       {telIndicatif()}
@@ -228,7 +235,7 @@ export function SiteHeader({
           onClick={() => setOpen((v) => !v)}
           className={cn(
             "grid size-10 shrink-0 place-items-center rounded-xl transition-colors lg:hidden",
-            overlay ? "text-white hover:bg-white/10" : "text-ink hover:bg-surface-2",
+            lightText ? "text-white hover:bg-white/10" : "text-ink hover:bg-surface-2",
           )}
           aria-label={open ? strings.header.closeMenu : strings.header.openMenu}
           aria-expanded={open}
