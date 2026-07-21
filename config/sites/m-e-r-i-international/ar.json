@@ -1,12 +1,24 @@
 {
   "slug": "m-e-r-i-international",
-  "i18n": { "default": "fr", "languages": ["fr", "en", "es", "ar"] },
+  "i18n": {
+    "default": "fr",
+    "languages": [
+      "fr",
+      "en",
+      "es",
+      "ar"
+    ]
+  },
   "branding": {
     "logoAlt": "M.E.R.I INTERNATIONAL — تنظيف احترافي في ماناج",
     "tagline": "تنظيف · ماناج · 24/24",
     "logoDarkBadge": true,
     "logoScale": 1.2,
-    "colors": { "brand": "#1668B3", "accent": "#2FA24A", "neutral": "cool" },
+    "colors": {
+      "brand": "#1668B3",
+      "accent": "#2FA24A",
+      "neutral": "cool"
+    },
     "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/logo-507ab912.png",
     "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/logo-507ab912.png"
   },
@@ -15,9 +27,14 @@
     "statut": "SRL",
     "siret": "",
     "pays": "BE",
-    "tva": { "regime": "reel" }
+    "tva": {
+      "regime": "reel"
+    }
   },
-  "seo": { "schemaType": "HousekeepingService", "ville": "Manage" },
+  "seo": {
+    "schemaType": "HousekeepingService",
+    "ville": "Manage"
+  },
   "meta": {
     "title": "تنظيف احترافي في ماناج",
     "description": "شركة تنظيف في ماناج: مكاتب، فنادق، زجاج، ترميم بعد الأشغال ومنازل خاصة. فريق متنقّل في والونيا، متاح على مدار 24 ساعة طوال أيام الأسبوع.",
@@ -39,7 +56,7 @@
           "type": "hero",
           "variant": "carte",
           "content": {
-            "eyebrow": "مركز العمليات · ماناج",
+            "eyebrow": "مقرّنا في ماناج",
             "titre": "تنظيف احترافي في ماناج،",
             "titreAccent": "في أي ساعة",
             "accroche": "مكاتب وفنادق وأماكن إقامة وأسطح زجاجية وأعمال ترميم ومنازل خاصة. فريق متنقّل مقرّه ماناج، يتنقّل في كامل والونيا ويجيبكم بالفرنسية أو العربية أو الإسبانية أو الإنجليزية.",
@@ -51,16 +68,31 @@
               "أفراد"
             ],
             "trust": [
-              { "icone": "Clock", "label": "متاحون 24 ساعة، 7 أيام في الأسبوع" },
-              { "icone": "Globe", "label": "والونيا مع تنقّل دولي" },
-              { "icone": "Languages", "label": "FR · AR · ES · EN" }
+              {
+                "icone": "Clock",
+                "label": "متاحون 24 ساعة، 7 أيام في الأسبوع"
+              },
+              {
+                "icone": "Globe",
+                "label": "والونيا مع تنقّل دولي"
+              },
+              {
+                "icone": "Languages",
+                "label": "FR · AR · ES · EN"
+              }
             ],
             "image": {
               "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/vitres-bureaux.png",
               "alt": "عاملة من M.E.R.I INTERNATIONAL تنظّف حاجزًا زجاجيًا في مكتب"
             },
-            "ctaPrimaire": { "label": "اطلب عرض سعر", "href": "/contact" },
-            "ctaSecondaire": { "label": "اطّلع على خدماتنا", "href": "/services" }
+            "ctaPrimaire": {
+              "label": "اطلب عرض سعر",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "اطّلع على خدماتنا",
+              "href": "/services"
+            }
           }
         },
         {
@@ -69,7 +101,7 @@
           "content": {
             "eyebrow": "الخدمات",
             "titre": "خمسة مجالات، فريق واحد",
-            "intro": "كل تدخّل يُحدَّد قبل أول زيارة: النطاق الدقيق، وتيرة العمل، المنتجات المستعملة والتوقيت. تعرفون ما يُنجَز، ومتى، وعلى يد من.",
+            "intro": "كل خدمة تُحدَّد قبل أول زيارة: النطاق الدقيق، وتيرة العمل، المنتجات المستعملة والتوقيت. تعرفون ما يُنجَز، ومتى، وعلى يد من.",
             "items": [
               {
                 "nom": "مكاتب ومحلات تجارية",
@@ -102,7 +134,10 @@
                 "href": "/nettoyage-particuliers"
               }
             ],
-            "cta": { "label": "تفاصيل جميع الخدمات", "href": "/services" }
+            "cta": {
+              "label": "تفاصيل جميع الخدمات",
+              "href": "/services"
+            }
           }
         },
         {
@@ -125,7 +160,7 @@
               },
               {
                 "icone": "CalendarCheck",
-                "titre": "تدخّل مُبرمج",
+                "titre": "زيارة مُبرمجة",
                 "texte": "يُحدَّد التوقيت معكم، بما في ذلك ليلًا أو في عطلة نهاية الأسبوع أو يوم عطلة. يصل الفريق بمعدّاته ومنتجاته."
               },
               {
@@ -155,17 +190,23 @@
             },
             "imagePosition": "right",
             "imageRatio": "4/3",
-            "ctaPrimaire": { "label": "اتصلوا بنا", "href": "/contact" },
-            "ctaSecondaire": { "label": "أين نتدخّل", "href": "/zone-intervention" }
+            "ctaPrimaire": {
+              "label": "اتصلوا بنا",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "أين نتدخّل",
+              "href": "/zone-intervention"
+            }
           }
         },
         {
           "type": "galerie",
           "variant": "grille",
           "content": {
-            "eyebrow": "في الميدان",
-            "titre": "أثناء التدخّل",
-            "intro": "بعض الصور لفرقنا ومعدّاتنا، ملتقطة خلال تدخّلات مهنية.",
+            "eyebrow": "أثناء العمل",
+            "titre": "فرقنا أثناء العمل",
+            "intro": "بعض الصور لفرقنا ومعدّاتنا، ملتقطة خلال خدماتنا لدى عملائنا.",
             "ratio": "4/3",
             "images": [
               {
@@ -226,13 +267,18 @@
           "content": {
             "titre": "لديكم مكان يحتاج إلى تنظيف؟",
             "sousTitre": "صِفوا لنا الوضع: نجيبكم بتوقيت وسعر، حتى لو وصل الاتصال على الساعة الثالثة فجرًا.",
-            "ctaPrimaire": { "label": "اطلب عرض سعر", "href": "/contact" },
-            "ctaSecondaire": { "label": "اتصل الآن", "href": "tel:+32472131069" }
+            "ctaPrimaire": {
+              "label": "اطلب عرض سعر",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "اتصل الآن",
+              "href": "tel:+32472131069"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "services",
       "label": "الخدمات",
@@ -244,10 +290,18 @@
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "قائمة التدخّلات",
+            "eyebrow": "خدماتنا",
             "titre": "خدماتنا في التنظيف",
             "intro": "خمسة مجالات متمايزة، لكل منها أساليبه ومعدّاته وإيقاعه. اختاروا ما يناسب وضعكم.",
-            "breadcrumb": [{ "label": "الرئيسية", "href": "/" }, { "label": "الخدمات" }]
+            "breadcrumb": [
+              {
+                "label": "الرئيسية",
+                "href": "/"
+              },
+              {
+                "label": "الخدمات"
+              }
+            ]
           }
         },
         {
@@ -255,7 +309,7 @@
           "variant": "grille-cartes",
           "content": {
             "eyebrow": "التفاصيل",
-            "titre": "اختاروا مجالكم",
+            "titre": "اختاروا خدمتكم",
             "intro": "كل صفحة توضّح ما هو مشمول وما هو غير مشمول، وكيف نشتغل عمليًا.",
             "items": [
               {
@@ -317,12 +371,14 @@
           "content": {
             "titre": "مترددون في اختيار الخدمة؟",
             "sousTitre": "اشرحوا لنا وضعكم في جملتين: سنخبركم بالصيغة المناسبة وبما تتطلّبه.",
-            "ctaPrimaire": { "label": "اطرح سؤالك", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "اطرح سؤالك",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "nettoyage-bureaux",
       "label": "مكاتب ومحلات تجارية",
@@ -345,11 +401,22 @@
             "titre": "تنظيف المكاتب والمحلات التجارية",
             "intro": "تدخّلات مضبوطة على أوقاتكم، نطاق مكتوب، وفريق يعرف موقعكم بدل تعاقب عمّال مؤقتين.",
             "breadcrumb": [
-              { "label": "الرئيسية", "href": "/" },
-              { "label": "الخدمات", "href": "/services" },
-              { "label": "مكاتب ومحلات تجارية" }
+              {
+                "label": "الرئيسية",
+                "href": "/"
+              },
+              {
+                "label": "الخدمات",
+                "href": "/services"
+              },
+              {
+                "label": "مكاتب ومحلات تجارية"
+              }
             ],
-            "ctaPrimaire": { "label": "اطلب عرض سعر", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "اطلب عرض سعر",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -453,12 +520,14 @@
           "content": {
             "titre": "لنحدّد سعر موقعكم",
             "sousTitre": "أعطونا المساحة التقريبية وعدد مناصب العمل: ستحصلون على تقدير في اليوم نفسه.",
-            "ctaPrimaire": { "label": "اطلب عرض سعر", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "اطلب عرض سعر",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "nettoyage-hotellerie",
       "label": "الفنادق والإقامات القصيرة",
@@ -481,11 +550,22 @@
             "titre": "فنادق وبيوت عطلات وإيجارات قصيرة المدة",
             "intro": "الفترة بين مغادرة على العاشرة ووصول على الثالثة لا تحتمل أي تأخير. وهذا بالضبط ما نُظِّمنا من أجله.",
             "breadcrumb": [
-              { "label": "الرئيسية", "href": "/" },
-              { "label": "الخدمات", "href": "/services" },
-              { "label": "الفنادق والإقامات القصيرة" }
+              {
+                "label": "الرئيسية",
+                "href": "/"
+              },
+              {
+                "label": "الخدمات",
+                "href": "/services"
+              },
+              {
+                "label": "الفنادق والإقامات القصيرة"
+              }
             ],
-            "ctaPrimaire": { "label": "نظّموا التناوب", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "نظّموا التناوب",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -586,12 +666,14 @@
           "content": {
             "titre": "كم عدد المساكن المطلوب تغطيتها؟",
             "sousTitre": "أخبرونا بعدد العقارات وبأوقات الوصول لديكم: نبني معكم جدول التناوب.",
-            "ctaPrimaire": { "label": "اطلب عرض سعر", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "اطلب عرض سعر",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "nettoyage-vitres",
       "label": "الزجاج والشرفات الزجاجية والمرايا",
@@ -614,11 +696,22 @@
             "titre": "زجاج ونوافذ كبيرة وشرفات زجاجية ومرايا",
             "intro": "الزجاج الرديء التنظيف يظهر عند أول إضاءة معاكسة. النتيجة تُحكَم في الضوء المائل، لا لحظة المسح.",
             "breadcrumb": [
-              { "label": "الرئيسية", "href": "/" },
-              { "label": "الخدمات", "href": "/services" },
-              { "label": "الزجاج والشرفات الزجاجية والمرايا" }
+              {
+                "label": "الرئيسية",
+                "href": "/"
+              },
+              {
+                "label": "الخدمات",
+                "href": "/services"
+              },
+              {
+                "label": "الزجاج والشرفات الزجاجية والمرايا"
+              }
             ],
-            "ctaPrimaire": { "label": "سعّروا زجاجي", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "سعّروا زجاجي",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -699,12 +792,14 @@
           "content": {
             "titre": "كم لوحًا زجاجيًا يحتاج المعالجة؟",
             "sousTitre": "أحصوا تقريبًا نوافذكم وواجهاتكم الزجاجية، وأشيروا إن كانت هناك شرفة زجاجية: التسعير يتم بسرعة.",
-            "ctaPrimaire": { "label": "اطلب عرض سعر", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "اطلب عرض سعر",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "remise-en-etat",
       "label": "الترميم بعد الأشغال",
@@ -727,11 +822,22 @@
             "titre": "ترميم المحلات والمساكن",
             "intro": "حين لا تعود الصيانة الاعتيادية كافية: غبار الجبس المتشبّع، وآثار الغراء، والكلس القديم، ومحل بقي مغلقًا شهورًا.",
             "breadcrumb": [
-              { "label": "الرئيسية", "href": "/" },
-              { "label": "الخدمات", "href": "/services" },
-              { "label": "الترميم بعد الأشغال" }
+              {
+                "label": "الرئيسية",
+                "href": "/"
+              },
+              {
+                "label": "الخدمات",
+                "href": "/services"
+              },
+              {
+                "label": "الترميم بعد الأشغال"
+              }
             ],
-            "ctaPrimaire": { "label": "قيّموا الورشة", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "قيّموا الورشة",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -835,12 +941,14 @@
           "content": {
             "titre": "ورشة تحتاج تقييمًا؟",
             "sousTitre": "أرسلوا لنا بعض صور المكان: نعطيكم تقديرًا وأجلًا واقعيًا.",
-            "ctaPrimaire": { "label": "اطلب عرض سعر", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "اطلب عرض سعر",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "nettoyage-particuliers",
       "label": "لدى الأفراد",
@@ -863,11 +971,22 @@
             "titre": "التنظيف لدى الأفراد",
             "intro": "صيانة منتظمة بالوتيرة التي تناسبكم، أو تنظيف شامل ظرفي حين يحتاجه البيت.",
             "breadcrumb": [
-              { "label": "الرئيسية", "href": "/" },
-              { "label": "الخدمات", "href": "/services" },
-              { "label": "لدى الأفراد" }
+              {
+                "label": "الرئيسية",
+                "href": "/"
+              },
+              {
+                "label": "الخدمات",
+                "href": "/services"
+              },
+              {
+                "label": "لدى الأفراد"
+              }
             ],
-            "ctaPrimaire": { "label": "اطلب عرض سعر", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "اطلب عرض سعر",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -948,12 +1067,14 @@
           "content": {
             "titre": "لنتحدّث عن مسكنكم",
             "sousTitre": "المساحة وعدد الفضاءات الرطبة والوتيرة المرغوبة تكفي لتقدير أولي.",
-            "ctaPrimaire": { "label": "اطلب عرض سعر", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "اطلب عرض سعر",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "zone-intervention",
       "label": "منطقة التدخّل",
@@ -968,7 +1089,15 @@
             "eyebrow": "التغطية",
             "titre": "أين نتدخّل",
             "intro": "ماناج هي نقطة انطلاقنا. أما نطاق العمل الفعلي فيتوقّف على نوع الورش: الصيانة المتكرّرة تتطلّب القرب، والترميم الظرفي أقل من ذلك بكثير.",
-            "breadcrumb": [{ "label": "الرئيسية", "href": "/" }, { "label": "منطقة التدخّل" }]
+            "breadcrumb": [
+              {
+                "label": "الرئيسية",
+                "href": "/"
+              },
+              {
+                "label": "منطقة التدخّل"
+              }
+            ]
           }
         },
         {
@@ -1019,7 +1148,11 @@
               {
                 "region": "برابانت الوالوني وبروكسل",
                 "principale": "Nivelles",
-                "villes": ["Nivelles", "Tubize", "Bruxelles"]
+                "villes": [
+                  "Nivelles",
+                  "Tubize",
+                  "Bruxelles"
+                ]
               }
             ]
           }
@@ -1030,12 +1163,14 @@
           "content": {
             "titre": "بلديتكم غير مذكورة؟",
             "sousTitre": "أخبرونا بمكان الورشة وبطبيعتها: سنجيبكم بصراحة عن قدرتنا على التدخّل.",
-            "ctaPrimaire": { "label": "اطرح السؤال", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "اطرح السؤال",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "contact",
       "label": "اتصل بنا",
@@ -1050,7 +1185,15 @@
             "eyebrow": "متاحون باستمرار",
             "titre": "اتصلوا بنا",
             "intro": "الهاتف أو واتساب أو النموذج: الثلاثة تصل إلى المكان نفسه. وكلما كانت رسالتكم أدقّ، كان جوابنا أدقّ.",
-            "breadcrumb": [{ "label": "الرئيسية", "href": "/" }, { "label": "اتصل بنا" }]
+            "breadcrumb": [
+              {
+                "label": "الرئيسية",
+                "href": "/"
+              },
+              {
+                "label": "اتصل بنا"
+              }
+            ]
           }
         },
         {
@@ -1062,7 +1205,12 @@
             "telephone": "+32 472 13 10 69",
             "whatsapp": "+32 472 13 10 69",
             "email": "meri.inter@outlook.com",
-            "horaires": [{ "jour": "من الاثنين إلى الأحد", "heures": "24 ساعة على 24" }],
+            "horaires": [
+              {
+                "jour": "من الاثنين إلى الأحد",
+                "heures": "24 ساعة على 24"
+              }
+            ],
             "form": true,
             "formMode": "demande-intervention",
             "formTitre": "صِف حاجتك",

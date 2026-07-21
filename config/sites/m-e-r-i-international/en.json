@@ -1,12 +1,24 @@
 {
   "slug": "m-e-r-i-international",
-  "i18n": { "default": "fr", "languages": ["fr", "en", "es", "ar"] },
+  "i18n": {
+    "default": "fr",
+    "languages": [
+      "fr",
+      "en",
+      "es",
+      "ar"
+    ]
+  },
   "branding": {
     "logoAlt": "M.E.R.I INTERNATIONAL — professional cleaning in Manage",
     "tagline": "Cleaning · Manage · 24/7",
     "logoDarkBadge": true,
     "logoScale": 1.2,
-    "colors": { "brand": "#1668B3", "accent": "#2FA24A", "neutral": "cool" },
+    "colors": {
+      "brand": "#1668B3",
+      "accent": "#2FA24A",
+      "neutral": "cool"
+    },
     "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/logo-507ab912.png",
     "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/logo-507ab912.png"
   },
@@ -15,9 +27,14 @@
     "statut": "SRL",
     "siret": "",
     "pays": "BE",
-    "tva": { "regime": "reel" }
+    "tva": {
+      "regime": "reel"
+    }
   },
-  "seo": { "schemaType": "HousekeepingService", "ville": "Manage" },
+  "seo": {
+    "schemaType": "HousekeepingService",
+    "ville": "Manage"
+  },
   "meta": {
     "title": "Professional cleaning in Manage",
     "description": "Cleaning company in Manage: offices, hotels, windows, post-work clean-up and private homes. Mobile team across Wallonia, reachable 24 hours a day.",
@@ -39,7 +56,7 @@
           "type": "hero",
           "variant": "carte",
           "content": {
-            "eyebrow": "Operations desk · Manage",
+            "eyebrow": "Based in Manage",
             "titre": "Professional cleaning in Manage,",
             "titreAccent": "around the clock",
             "accroche": "Offices, hotels and holiday lets, glazed surfaces, post-work clean-ups and private homes. A mobile team based in Manage that travels across Wallonia and answers you in French, Arabic, Spanish or English.",
@@ -51,16 +68,31 @@
               "Private homes"
             ],
             "trust": [
-              { "icone": "Clock", "label": "Reachable 24 hours a day, 7 days a week" },
-              { "icone": "Globe", "label": "Wallonia and international mobility" },
-              { "icone": "Languages", "label": "FR · AR · ES · EN" }
+              {
+                "icone": "Clock",
+                "label": "Reachable 24 hours a day, 7 days a week"
+              },
+              {
+                "icone": "Globe",
+                "label": "Wallonia and international mobility"
+              },
+              {
+                "icone": "Languages",
+                "label": "FR · AR · ES · EN"
+              }
             ],
             "image": {
               "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/vitres-bureaux.png",
               "alt": "M.E.R.I INTERNATIONAL cleaner wiping a glass office partition"
             },
-            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" },
-            "ctaSecondaire": { "label": "See our services", "href": "/services" }
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "See our services",
+              "href": "/services"
+            }
           }
         },
         {
@@ -102,7 +134,10 @@
                 "href": "/nettoyage-particuliers"
               }
             ],
-            "cta": { "label": "See all services in detail", "href": "/services" }
+            "cta": {
+              "label": "See all services in detail",
+              "href": "/services"
+            }
           }
         },
         {
@@ -155,8 +190,14 @@
             },
             "imagePosition": "right",
             "imageRatio": "4/3",
-            "ctaPrimaire": { "label": "Get in touch", "href": "/contact" },
-            "ctaSecondaire": { "label": "Where we operate", "href": "/zone-intervention" }
+            "ctaPrimaire": {
+              "label": "Get in touch",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Where we operate",
+              "href": "/zone-intervention"
+            }
           }
         },
         {
@@ -164,8 +205,8 @@
           "variant": "grille",
           "content": {
             "eyebrow": "On site",
-            "titre": "Out in the field",
-            "intro": "A few pictures of our teams and equipment, taken on professional assignments.",
+            "titre": "Our teams at work",
+            "intro": "A few pictures of our teams and equipment, taken during jobs at our clients' sites.",
             "ratio": "4/3",
             "images": [
               {
@@ -226,13 +267,18 @@
           "content": {
             "titre": "Premises that need putting right?",
             "sousTitre": "Describe the situation and we will come back with a time slot and a price, even if the call comes in at three in the morning.",
-            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" },
-            "ctaSecondaire": { "label": "Call now", "href": "tel:+32472131069" }
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Call now",
+              "href": "tel:+32472131069"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "services",
       "label": "Services",
@@ -247,7 +293,15 @@
             "eyebrow": "What we take on",
             "titre": "Our cleaning services",
             "intro": "Five distinct fields, each with its own methods, equipment and rhythm. Pick the one that matches your situation.",
-            "breadcrumb": [{ "label": "Home", "href": "/" }, { "label": "Services" }]
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services"
+              }
+            ]
           }
         },
         {
@@ -255,7 +309,7 @@
           "variant": "grille-cartes",
           "content": {
             "eyebrow": "In detail",
-            "titre": "Choose your field",
+            "titre": "Choose your service",
             "intro": "Each page sets out what is included, what is not, and how we actually go about it.",
             "items": [
               {
@@ -317,12 +371,14 @@
           "content": {
             "titre": "Not sure which service you need?",
             "sousTitre": "Describe your situation in two sentences and we will tell you which option fits and what it involves.",
-            "ctaPrimaire": { "label": "Ask us", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Ask us",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "nettoyage-bureaux",
       "label": "Offices and commercial premises",
@@ -345,11 +401,22 @@
             "titre": "Office and commercial premises cleaning",
             "intro": "Visits timed around your hours, a written perimeter, and a team that knows your site instead of a rotation of temporary staff.",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Offices and commercial premises" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Offices and commercial premises"
+              }
             ],
-            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -453,12 +520,14 @@
           "content": {
             "titre": "Let us price your site",
             "sousTitre": "Give us the approximate floor area and the number of workstations and you will have a range the same day.",
-            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "nettoyage-hotellerie",
       "label": "Hotels and short stays",
@@ -481,11 +550,22 @@
             "titre": "Hotels, cottages and short-term lets",
             "intro": "The window between a 10 a.m. checkout and a 3 p.m. arrival forgives no delay. That is exactly the job we are set up for.",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Hotels and short stays" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Hotels and short stays"
+              }
             ],
-            "ctaPrimaire": { "label": "Plan your turnarounds", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Plan your turnarounds",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -586,12 +666,14 @@
           "content": {
             "titre": "How many properties to cover?",
             "sousTitre": "Tell us the number of units and your check-in times, and we will build the turnaround schedule with you.",
-            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "nettoyage-vitres",
       "label": "Windows, verandas and mirrors",
@@ -614,11 +696,22 @@
             "titre": "Windows, bay windows, verandas and mirrors",
             "intro": "A badly finished pane shows at the first backlight. The result is judged in raking light, not at the moment you wipe it.",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Windows, verandas and mirrors" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Windows, verandas and mirrors"
+              }
             ],
-            "ctaPrimaire": { "label": "Price my glazing", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Price my glazing",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -699,12 +792,14 @@
           "content": {
             "titre": "How much glazing needs doing?",
             "sousTitre": "Roughly count your windows and bays, and say whether there is a veranda: pricing is quick from there.",
-            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "remise-en-etat",
       "label": "Post-work clean-up",
@@ -727,11 +822,22 @@
             "titre": "Putting premises and homes back in order",
             "intro": "When routine upkeep is no longer enough: plaster dust ground in everywhere, adhesive marks, old limescale, premises shut up for months.",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Post-work clean-up" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Post-work clean-up"
+              }
             ],
-            "ctaPrimaire": { "label": "Have the job assessed", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Have the job assessed",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -835,12 +941,14 @@
           "content": {
             "titre": "A job to assess?",
             "sousTitre": "Send us a few photos of the place and we will give you a realistic estimate and lead time.",
-            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "nettoyage-particuliers",
       "label": "Private homes",
@@ -863,11 +971,22 @@
             "titre": "Cleaning for private households",
             "intro": "Regular upkeep at whatever frequency suits you, or a one-off deep clean when the house calls for it.",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Services", "href": "/services" },
-              { "label": "Private homes" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Private homes"
+              }
             ],
-            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -948,12 +1067,14 @@
           "content": {
             "titre": "Let's talk about your home",
             "sousTitre": "Floor area, number of wet rooms and the frequency you want are enough for a first estimate.",
-            "ctaPrimaire": { "label": "Request a quote", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "zone-intervention",
       "label": "Coverage",
@@ -968,7 +1089,15 @@
             "eyebrow": "Coverage",
             "titre": "Where we operate",
             "intro": "Manage is our starting point. The real reach depends on the type of job: recurring upkeep needs proximity, a one-off deep clean much less so.",
-            "breadcrumb": [{ "label": "Home", "href": "/" }, { "label": "Coverage" }]
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Coverage"
+              }
+            ]
           }
         },
         {
@@ -1019,7 +1148,11 @@
               {
                 "region": "Walloon Brabant and Brussels",
                 "principale": "Nivelles",
-                "villes": ["Nivelles", "Tubize", "Brussels"]
+                "villes": [
+                  "Nivelles",
+                  "Tubize",
+                  "Brussels"
+                ]
               }
             ]
           }
@@ -1030,12 +1163,14 @@
           "content": {
             "titre": "Your municipality not listed?",
             "sousTitre": "Tell us where the job is and what it involves, and we will give you a straight answer on whether we can take it.",
-            "ctaPrimaire": { "label": "Ask the question", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Ask the question",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "contact",
       "label": "Contact",
@@ -1050,7 +1185,15 @@
             "eyebrow": "Reachable round the clock",
             "titre": "Get in touch",
             "intro": "Phone, WhatsApp or the form: all three land in the same place. The more precise your message, the more precise our answer.",
-            "breadcrumb": [{ "label": "Home", "href": "/" }, { "label": "Contact" }]
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Contact"
+              }
+            ]
           }
         },
         {
@@ -1062,7 +1205,12 @@
             "telephone": "+32 472 13 10 69",
             "whatsapp": "+32 472 13 10 69",
             "email": "meri.inter@outlook.com",
-            "horaires": [{ "jour": "Monday to Sunday", "heures": "24 hours a day" }],
+            "horaires": [
+              {
+                "jour": "Monday to Sunday",
+                "heures": "24 hours a day"
+              }
+            ],
             "form": true,
             "formMode": "demande-intervention",
             "formTitre": "Describe what you need",

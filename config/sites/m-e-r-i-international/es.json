@@ -1,12 +1,24 @@
 {
   "slug": "m-e-r-i-international",
-  "i18n": { "default": "fr", "languages": ["fr", "en", "es", "ar"] },
+  "i18n": {
+    "default": "fr",
+    "languages": [
+      "fr",
+      "en",
+      "es",
+      "ar"
+    ]
+  },
   "branding": {
     "logoAlt": "M.E.R.I INTERNATIONAL — limpieza profesional en Manage",
     "tagline": "Limpieza · Manage · 24 h",
     "logoDarkBadge": true,
     "logoScale": 1.2,
-    "colors": { "brand": "#1668B3", "accent": "#2FA24A", "neutral": "cool" },
+    "colors": {
+      "brand": "#1668B3",
+      "accent": "#2FA24A",
+      "neutral": "cool"
+    },
     "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/logo-507ab912.png",
     "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/logo-507ab912.png"
   },
@@ -15,9 +27,14 @@
     "statut": "SRL",
     "siret": "",
     "pays": "BE",
-    "tva": { "regime": "reel" }
+    "tva": {
+      "regime": "reel"
+    }
   },
-  "seo": { "schemaType": "HousekeepingService", "ville": "Manage" },
+  "seo": {
+    "schemaType": "HousekeepingService",
+    "ville": "Manage"
+  },
   "meta": {
     "title": "Limpieza profesional en Manage",
     "description": "Empresa de limpieza en Manage: oficinas, hostelería, cristales, puesta a punto y particulares. Equipo móvil en Valonia, localizable las 24 horas.",
@@ -39,7 +56,7 @@
           "type": "hero",
           "variant": "carte",
           "content": {
-            "eyebrow": "Centro de operaciones · Manage",
+            "eyebrow": "Con base en Manage",
             "titre": "Limpieza profesional en Manage,",
             "titreAccent": "a cualquier hora",
             "accroche": "Oficinas, hoteles y alojamientos, superficies acristaladas, puestas a punto y domicilios particulares. Un equipo móvil con base en Manage que se desplaza por toda Valonia y le atiende en francés, árabe, español o inglés.",
@@ -51,16 +68,31 @@
               "Particulares"
             ],
             "trust": [
-              { "icone": "Clock", "label": "Localizables 24 horas, los 7 días" },
-              { "icone": "Globe", "label": "Valonia y movilidad internacional" },
-              { "icone": "Languages", "label": "FR · AR · ES · EN" }
+              {
+                "icone": "Clock",
+                "label": "Localizables 24 horas, los 7 días"
+              },
+              {
+                "icone": "Globe",
+                "label": "Valonia y movilidad internacional"
+              },
+              {
+                "icone": "Languages",
+                "label": "FR · AR · ES · EN"
+              }
             ],
             "image": {
               "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/vitres-bureaux.png",
               "alt": "Operaria de M.E.R.I INTERNATIONAL limpiando una mampara de cristal en una oficina"
             },
-            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" },
-            "ctaSecondaire": { "label": "Ver nuestros servicios", "href": "/services" }
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Ver nuestros servicios",
+              "href": "/services"
+            }
           }
         },
         {
@@ -69,7 +101,7 @@
           "content": {
             "eyebrow": "Servicios",
             "titre": "Cinco especialidades, un solo equipo",
-            "intro": "Cada intervención se define antes del primer paso: perímetro exacto, frecuencia, productos utilizados y franja horaria. Usted sabe qué se hace, cuándo y quién lo hace.",
+            "intro": "Cada prestación se define antes del primer paso: perímetro exacto, frecuencia, productos utilizados y franja horaria. Usted sabe qué se hace, cuándo y quién lo hace.",
             "items": [
               {
                 "nom": "Oficinas y locales comerciales",
@@ -102,7 +134,10 @@
                 "href": "/nettoyage-particuliers"
               }
             ],
-            "cta": { "label": "Ver el detalle de los servicios", "href": "/services" }
+            "cta": {
+              "label": "Ver el detalle de los servicios",
+              "href": "/services"
+            }
           }
         },
         {
@@ -125,7 +160,7 @@
               },
               {
                 "icone": "CalendarCheck",
-                "titre": "Intervención planificada",
+                "titre": "Paso planificado",
                 "texte": "La franja se fija con usted, incluso de noche, en fin de semana o festivo. El equipo llega con su material y sus productos."
               },
               {
@@ -155,17 +190,23 @@
             },
             "imagePosition": "right",
             "imageRatio": "4/3",
-            "ctaPrimaire": { "label": "Contactar", "href": "/contact" },
-            "ctaSecondaire": { "label": "Dónde intervenimos", "href": "/zone-intervention" }
+            "ctaPrimaire": {
+              "label": "Contactar",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Dónde intervenimos",
+              "href": "/zone-intervention"
+            }
           }
         },
         {
           "type": "galerie",
           "variant": "grille",
           "content": {
-            "eyebrow": "Sobre el terreno",
-            "titre": "En intervención",
-            "intro": "Algunas imágenes de nuestros equipos y de nuestro material, tomadas en intervenciones profesionales.",
+            "eyebrow": "En acción",
+            "titre": "Nuestros equipos en acción",
+            "intro": "Algunas imágenes de nuestros equipos y de nuestro material, tomadas durante nuestros servicios.",
             "ratio": "4/3",
             "images": [
               {
@@ -226,13 +267,18 @@
           "content": {
             "titre": "¿Un local que poner a punto?",
             "sousTitre": "Cuéntenos la situación: le respondemos con una franja horaria y un precio, aunque la llamada entre a las tres de la madrugada.",
-            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" },
-            "ctaSecondaire": { "label": "Llamar ahora", "href": "tel:+32472131069" }
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            },
+            "ctaSecondaire": {
+              "label": "Llamar ahora",
+              "href": "tel:+32472131069"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "services",
       "label": "Servicios",
@@ -244,10 +290,18 @@
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Catálogo de intervenciones",
+            "eyebrow": "Nuestros servicios",
             "titre": "Nuestros servicios de limpieza",
             "intro": "Cinco ámbitos distintos, cada uno con sus métodos, su material y su ritmo. Elija el que corresponde a su situación.",
-            "breadcrumb": [{ "label": "Inicio", "href": "/" }, { "label": "Servicios" }]
+            "breadcrumb": [
+              {
+                "label": "Inicio",
+                "href": "/"
+              },
+              {
+                "label": "Servicios"
+              }
+            ]
           }
         },
         {
@@ -255,7 +309,7 @@
           "variant": "grille-cartes",
           "content": {
             "eyebrow": "Detalle",
-            "titre": "Elija su ámbito",
+            "titre": "Elija su servicio",
             "intro": "Cada ficha precisa qué está incluido, qué no lo está y cómo procedemos concretamente.",
             "items": [
               {
@@ -317,12 +371,14 @@
           "content": {
             "titre": "¿Duda sobre qué servicio necesita?",
             "sousTitre": "Explíquenos su situación en dos frases: le diremos qué fórmula corresponde y qué implica.",
-            "ctaPrimaire": { "label": "Hacer mi consulta", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Hacer mi consulta",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "nettoyage-bureaux",
       "label": "Oficinas y locales comerciales",
@@ -345,11 +401,22 @@
             "titre": "Limpieza de oficinas y locales comerciales",
             "intro": "Pasos ajustados a sus horarios, un perímetro escrito y un equipo que conoce su centro en lugar de una rotación de personal temporal.",
             "breadcrumb": [
-              { "label": "Inicio", "href": "/" },
-              { "label": "Servicios", "href": "/services" },
-              { "label": "Oficinas y locales comerciales" }
+              {
+                "label": "Inicio",
+                "href": "/"
+              },
+              {
+                "label": "Servicios",
+                "href": "/services"
+              },
+              {
+                "label": "Oficinas y locales comerciales"
+              }
             ],
-            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -453,12 +520,14 @@
           "content": {
             "titre": "Presupuestemos su centro",
             "sousTitre": "Indíquenos la superficie aproximada y el número de puestos de trabajo: tendrá una horquilla el mismo día.",
-            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "nettoyage-hotellerie",
       "label": "Hostelería y estancias cortas",
@@ -481,11 +550,22 @@
             "titre": "Hostelería, casas rurales y alquileres de corta duración",
             "intro": "La franja entre una salida a las 10 h y una entrada a las 15 h no perdona ningún retraso. Es exactamente el oficio para el que estamos organizados.",
             "breadcrumb": [
-              { "label": "Inicio", "href": "/" },
-              { "label": "Servicios", "href": "/services" },
-              { "label": "Hostelería y estancias cortas" }
+              {
+                "label": "Inicio",
+                "href": "/"
+              },
+              {
+                "label": "Servicios",
+                "href": "/services"
+              },
+              {
+                "label": "Hostelería y estancias cortas"
+              }
             ],
-            "ctaPrimaire": { "label": "Organizar las rotaciones", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Organizar las rotaciones",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -586,12 +666,14 @@
           "content": {
             "titre": "¿Cuántos alojamientos hay que cubrir?",
             "sousTitre": "Indique el número de inmuebles y sus horarios de entrada: construimos con usted el calendario de rotaciones.",
-            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "nettoyage-vitres",
       "label": "Cristales, verandas y espejos",
@@ -614,11 +696,22 @@
             "titre": "Cristales, ventanales, verandas y espejos",
             "intro": "Un cristal mal repasado se nota al primer contraluz. El resultado se juzga con luz rasante, no en el momento en que se seca.",
             "breadcrumb": [
-              { "label": "Inicio", "href": "/" },
-              { "label": "Servicios", "href": "/services" },
-              { "label": "Cristales, verandas y espejos" }
+              {
+                "label": "Inicio",
+                "href": "/"
+              },
+              {
+                "label": "Servicios",
+                "href": "/services"
+              },
+              {
+                "label": "Cristales, verandas y espejos"
+              }
             ],
-            "ctaPrimaire": { "label": "Presupuestar mis cristales", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Presupuestar mis cristales",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -699,12 +792,14 @@
           "content": {
             "titre": "¿Cuántos cristales hay que repasar?",
             "sousTitre": "Cuente aproximadamente sus ventanas y ventanales, indique si hay veranda: el presupuesto sale rápido.",
-            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "remise-en-etat",
       "label": "Puesta a punto",
@@ -727,11 +822,22 @@
             "titre": "Puesta a punto de locales y viviendas",
             "intro": "Cuando el mantenimiento corriente ya no basta: polvo de yeso incrustado, restos de cola, cal antigua, local cerrado durante meses.",
             "breadcrumb": [
-              { "label": "Inicio", "href": "/" },
-              { "label": "Servicios", "href": "/services" },
-              { "label": "Puesta a punto" }
+              {
+                "label": "Inicio",
+                "href": "/"
+              },
+              {
+                "label": "Servicios",
+                "href": "/services"
+              },
+              {
+                "label": "Puesta a punto"
+              }
             ],
-            "ctaPrimaire": { "label": "Evaluar la obra", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Evaluar la obra",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -835,12 +941,14 @@
           "content": {
             "titre": "¿Una obra que evaluar?",
             "sousTitre": "Envíenos algunas fotos del lugar: le damos una estimación y un plazo realista.",
-            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "nettoyage-particuliers",
       "label": "En casa de particulares",
@@ -863,11 +971,22 @@
             "titre": "Limpieza en casa de particulares",
             "intro": "Un mantenimiento regular con la frecuencia que le convenga, o una gran limpieza puntual cuando la casa lo necesita.",
             "breadcrumb": [
-              { "label": "Inicio", "href": "/" },
-              { "label": "Servicios", "href": "/services" },
-              { "label": "En casa de particulares" }
+              {
+                "label": "Inicio",
+                "href": "/"
+              },
+              {
+                "label": "Servicios",
+                "href": "/services"
+              },
+              {
+                "label": "En casa de particulares"
+              }
             ],
-            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            }
           }
         },
         {
@@ -948,12 +1067,14 @@
           "content": {
             "titre": "Hablemos de su vivienda",
             "sousTitre": "Superficie, número de zonas húmedas y frecuencia deseada bastan para una primera estimación.",
-            "ctaPrimaire": { "label": "Pedir presupuesto", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Pedir presupuesto",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "zone-intervention",
       "label": "Zona de intervención",
@@ -968,7 +1089,15 @@
             "eyebrow": "Cobertura",
             "titre": "Dónde intervenimos",
             "intro": "Manage es nuestro punto de partida. El radio real depende del tipo de trabajo: un mantenimiento recurrente pide proximidad; una puesta a punto puntual, mucho menos.",
-            "breadcrumb": [{ "label": "Inicio", "href": "/" }, { "label": "Zona de intervención" }]
+            "breadcrumb": [
+              {
+                "label": "Inicio",
+                "href": "/"
+              },
+              {
+                "label": "Zona de intervención"
+              }
+            ]
           }
         },
         {
@@ -1019,7 +1148,11 @@
               {
                 "region": "Brabante Valón y Bruselas",
                 "principale": "Nivelles",
-                "villes": ["Nivelles", "Tubize", "Bruselas"]
+                "villes": [
+                  "Nivelles",
+                  "Tubize",
+                  "Bruselas"
+                ]
               }
             ]
           }
@@ -1030,12 +1163,14 @@
           "content": {
             "titre": "¿Su municipio no aparece?",
             "sousTitre": "Díganos dónde está el trabajo y de qué se trata: le responderemos con franqueza sobre nuestra capacidad de intervenir.",
-            "ctaPrimaire": { "label": "Hacer la consulta", "href": "/contact" }
+            "ctaPrimaire": {
+              "label": "Hacer la consulta",
+              "href": "/contact"
+            }
           }
         }
       ]
     },
-
     {
       "slug": "contact",
       "label": "Contacto",
@@ -1050,7 +1185,15 @@
             "eyebrow": "Localizables en continuo",
             "titre": "Contactar",
             "intro": "Teléfono, WhatsApp o formulario: los tres llegan al mismo sitio. Cuanto más preciso sea su mensaje, más precisa será nuestra respuesta.",
-            "breadcrumb": [{ "label": "Inicio", "href": "/" }, { "label": "Contacto" }]
+            "breadcrumb": [
+              {
+                "label": "Inicio",
+                "href": "/"
+              },
+              {
+                "label": "Contacto"
+              }
+            ]
           }
         },
         {
@@ -1062,7 +1205,12 @@
             "telephone": "+32 472 13 10 69",
             "whatsapp": "+32 472 13 10 69",
             "email": "meri.inter@outlook.com",
-            "horaires": [{ "jour": "De lunes a domingo", "heures": "24 horas" }],
+            "horaires": [
+              {
+                "jour": "De lunes a domingo",
+                "heures": "24 horas"
+              }
+            ],
             "form": true,
             "formMode": "demande-intervention",
             "formTitre": "Describa su necesidad",

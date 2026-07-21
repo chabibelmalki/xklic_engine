@@ -62,7 +62,7 @@
           "type": "hero",
           "variant": "carte",
           "content": {
-            "eyebrow": "Centre d'opérations · Manage",
+            "eyebrow": "Basés à Manage",
             "titre": "Nettoyage professionnel à Manage,",
             "titreAccent": "à toute heure",
             "accroche": "Bureaux, hôtels et hébergements, surfaces vitrées, remises en état et domiciles privés. Une équipe mobile basée à Manage qui se déplace partout en Wallonie et vous répond en français, arabe, espagnol ou anglais.",
@@ -106,8 +106,8 @@
           "variant": "grille-cartes",
           "content": {
             "eyebrow": "Prestations",
-            "titre": "Cinq terrains, une seule équipe",
-            "intro": "Chaque intervention est cadrée avant le premier passage : périmètre exact, fréquence, produits utilisés et créneau horaire. Vous savez ce qui est fait, quand, et par qui.",
+            "titre": "Cinq métiers, une seule équipe",
+            "intro": "Chaque prestation est cadrée avant le premier passage : périmètre exact, fréquence, produits utilisés et créneau horaire. Vous savez ce qui est fait, quand, et par qui.",
             "items": [
               {
                 "nom": "Bureaux et locaux commerciaux",
@@ -166,7 +166,7 @@
               },
               {
                 "icone": "CalendarCheck",
-                "titre": "Intervention planifiée",
+                "titre": "Passage planifié",
                 "texte": "Le créneau est fixé avec vous, y compris de nuit, le week-end ou un jour férié. L'équipe arrive avec son matériel et ses produits."
               },
               {
@@ -210,9 +210,9 @@
           "type": "galerie",
           "variant": "grille",
           "content": {
-            "eyebrow": "En intervention",
-            "titre": "Sur le terrain",
-            "intro": "Quelques images de nos équipes et de notre matériel, prises sur des interventions professionnelles.",
+            "eyebrow": "Au travail",
+            "titre": "Nos équipes en action",
+            "intro": "Quelques images de nos équipes et de notre matériel, prises lors de prestations chez nos clients.",
             "ratio": "4/3",
             "images": [
               {
@@ -296,7 +296,7 @@
         {
           "type": "pageHero",
           "content": {
-            "eyebrow": "Catalogue d'interventions",
+            "eyebrow": "Nos prestations",
             "titre": "Nos prestations de nettoyage",
             "intro": "Cinq domaines distincts, avec chacun ses méthodes, son matériel et son rythme. Choisissez celui qui correspond à votre situation.",
             "breadcrumb": [
@@ -315,7 +315,7 @@
           "variant": "grille-cartes",
           "content": {
             "eyebrow": "Détail",
-            "titre": "Choisissez votre terrain",
+            "titre": "Choisissez votre prestation",
             "intro": "Chaque fiche précise ce qui est inclus, ce qui ne l'est pas, et comment nous procédons concrètement.",
             "items": [
               {
