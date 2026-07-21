@@ -2773,7 +2773,7 @@
         },
         {
           "type": "services",
-          "variant": "grille-icones",
+          "variant": "grille-cartes",
           "content": {
             "eyebrow": "Nos interventions",
             "titre": "Toutes vos demandes de ménage",
@@ -2781,72 +2781,128 @@
               {
                 "nom": "Ménage à domicile",
                 "description": "Entretien régulier du logement, au rythme qui vous convient.",
-                "icone": "Home"
+                "href": "/menage-a-domicile",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-menage.jpg",
+                  "alt": "Ménage à domicile dans un intérieur clair"
+                }
               },
               {
                 "nom": "Nettoyage urgent",
                 "description": "Intervention rapide pour une remise en propreté de dernière minute.",
-                "icone": "Zap"
+                "href": "/nettoyage-urgent",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-gants.jpg",
+                  "alt": "Nettoyage rapide et soigné d'une pièce"
+                }
               },
               {
                 "nom": "Fin de chantier",
-                "description": "Retrait des poussières et résidus après travaux.",
-                "icone": "HardHat"
+                "description": "Retrait des poussières et résidus de travaux, local remis à neuf.",
+                "href": "/nettoyage-fin-de-chantier",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-vide.jpg",
+                  "alt": "Logement propre après des travaux"
+                }
               },
               {
                 "nom": "Déménagement",
                 "description": "Ménage complet avant l'installation ou après le départ.",
-                "icone": "PackageOpen"
+                "href": "/nettoyage-demenagement",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-debarras.jpg",
+                  "alt": "Cartons et ménage lors d'un déménagement"
+                }
               },
               {
                 "nom": "Grand nettoyage",
                 "description": "Remise à neuf de fond en comble, pièce par pièce.",
-                "icone": "Sparkles"
+                "href": "/grand-nettoyage",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-menage.jpg",
+                  "alt": "Grand nettoyage de fond d'un logement"
+                }
               },
               {
                 "nom": "Nettoyage de printemps",
                 "description": "Le grand ménage saisonnier, recoins compris.",
-                "icone": "Flower2"
+                "href": "/nettoyage-de-printemps",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-mur.jpg",
+                  "alt": "Grand ménage saisonnier d'un intérieur"
+                }
               },
               {
                 "nom": "Vitres",
                 "description": "Fenêtres, baies et vérandas nettoyées sans trace.",
-                "icone": "PanelsTopLeft"
+                "href": "/nettoyage-vitres",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-vitres.jpg",
+                  "alt": "Nettoyage de vitres sans trace"
+                }
               },
               {
                 "nom": "Terrasses & balcons",
                 "description": "Dallages et sols extérieurs lavés et dégraissés.",
-                "icone": "Grid3x3"
+                "href": "/nettoyage-terrasses-balcons",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-exterieurs.jpg",
+                  "alt": "Nettoyage d'une terrasse extérieure"
+                }
               },
               {
                 "nom": "Rénovation marbre",
                 "description": "Ponçage et cristallisation des sols en marbre.",
-                "icone": "Gem"
+                "href": "/renovation-marbre",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-sol.jpg",
+                  "alt": "Rénovation et lustrage d'un sol en marbre"
+                }
               },
               {
                 "nom": "Rénovation parquet",
                 "description": "Remise en état des parquets ternis ou marqués.",
-                "icone": "Layers"
+                "href": "/renovation-parquet",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-sol.jpg",
+                  "alt": "Rénovation d'un parquet ancien"
+                }
               },
               {
                 "nom": "Lessivage murs & plafonds",
                 "description": "Nettoyage des murs et plafonds encrassés ou jaunis.",
-                "icone": "PaintRoller"
+                "href": "/lessivage-murs-plafonds",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-mur.jpg",
+                  "alt": "Lessivage d'un mur encrassé"
+                }
               },
               {
                 "nom": "Après animaux",
                 "description": "Nettoyage et désodorisation après la présence d'animaux.",
-                "icone": "PawPrint"
+                "href": "/nettoyage-apres-animaux",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-gants.jpg",
+                  "alt": "Nettoyage et désodorisation après la présence d'animaux"
+                }
               },
               {
                 "nom": "Canapés & textiles",
                 "description": "Canapés, matelas et moquettes nettoyés par injection-extraction.",
-                "icone": "Sofa"
+                "href": "/nettoyage-canapes-textiles",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-canape.jpg",
+                  "alt": "Nettoyage d'un canapé par injection-extraction"
+                }
               },
               {
                 "nom": "Maison inhabitée",
                 "description": "Remise en propreté d'un bien resté fermé longtemps.",
-                "icone": "DoorClosed"
+                "href": "/nettoyage-maison-inhabitee",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-vide.jpg",
+                  "alt": "Remise en propreté d'un logement resté fermé"
+                }
               }
             ]
           }
@@ -2876,6 +2932,944 @@
           "content": {
             "titre": "Besoin d'un ménage régulier ou d'un grand nettoyage ?",
             "sousTitre": "Dites-nous la surface et le rythme : on vous répond avec un devis clair.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "menage-a-domicile",
+      "label": "Ménage à domicile",
+      "navHidden": true,
+      "meta": {
+        "title": "Ménage à domicile à Lille — entretien régulier",
+        "description": "Ménage à domicile à Lille et dans le Nord : entretien régulier ou ponctuel, sols, cuisine, sanitaires. Même intervenant, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Ménage",
+            "titre": "Ménage à domicile à Lille",
+            "intro": "L'entretien régulier qui garde la maison agréable, au rythme qui vous convient.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage",
+                "href": "/menage"
+              },
+              {
+                "label": "Ménage à domicile"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Un intérieur toujours net",
+            "paragraphes": [
+              "L'entretien courant fait toute la différence : sols, cuisine, sanitaires, poussières, une maison suivie ne se dégrade jamais vraiment. Nous intervenons à Lille et dans le Nord, chaque semaine, tous les quinze jours ou ponctuellement.",
+              "Nous arrivons équipés, avec la même personne autant que possible, sur un créneau fixe. Vous rentrez chez vous et tout est propre — sans y avoir pensé."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-menage.jpg",
+              "alt": "Ménage à domicile dans un intérieur clair"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un ménage à confier ?",
+            "sousTitre": "Dites-nous votre besoin et le rythme : on vous répond avec un devis clair.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-urgent",
+      "label": "Nettoyage urgent",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage urgent à Lille — intervention rapide",
+        "description": "Nettoyage urgent à Lille et dans le Nord : intervention dans la journée pour une remise en propreté de dernière minute. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Ménage",
+            "titre": "Nettoyage urgent à Lille",
+            "intro": "Une visite imprévue, un état des lieux, un imprévu : on intervient vite et bien.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage",
+                "href": "/menage"
+              },
+              {
+                "label": "Nettoyage urgent"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Quand il faut que ce soit propre, vite",
+            "paragraphes": [
+              "Certaines situations n'attendent pas : une location à rendre demain, une visite de dernière minute, un imprévu à gérer. Nous nous efforçons d'intervenir dans la journée à Lille et dans le Nord.",
+              "Rapidité ne veut pas dire bâclé : nous ciblons l'essentiel avec méthode pour un rendu net dans le temps imparti."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-gants.jpg",
+              "alt": "Nettoyage rapide et soigné d'une pièce"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un ménage à confier ?",
+            "sousTitre": "Dites-nous votre besoin et le rythme : on vous répond avec un devis clair.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-fin-de-chantier",
+      "label": "Fin de chantier",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage fin de chantier à Lille",
+        "description": "Nettoyage de fin de chantier à Lille et dans le Nord : poussières, résidus, vitres, sols. Local livré impeccable, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Ménage",
+            "titre": "Nettoyage de fin de chantier à Lille",
+            "intro": "Après les travaux, place au propre : poussières, résidus, traces, on remet tout à neuf.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage",
+                "href": "/menage"
+              },
+              {
+                "label": "Fin de chantier"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Livrer un local impeccable",
+            "paragraphes": [
+              "Un chantier laisse partout une fine poussière, des résidus de colle, de peinture ou de plâtre, des traces sur les vitres. Avant de livrer ou d'emménager, il faut tout reprendre. Nous nous en chargeons à Lille et dans le Nord.",
+              "Sols, surfaces, vitres, sanitaires : nous retirons l'ensemble des résidus de travaux pour un local prêt à être utilisé ou remis au client."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-vide.jpg",
+              "alt": "Logement propre après des travaux"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un ménage à confier ?",
+            "sousTitre": "Dites-nous votre besoin et le rythme : on vous répond avec un devis clair.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-demenagement",
+      "label": "Déménagement",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage déménagement à Lille — entrée & sortie",
+        "description": "Nettoyage de déménagement à Lille et dans le Nord : logement rendu propre pour l'état des lieux ou nettoyé avant l'emménagement. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Ménage",
+            "titre": "Nettoyage déménagement / emménagement à Lille",
+            "intro": "Avant de partir ou en arrivant, un logement propre change tout. On s'en occupe.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage",
+                "href": "/menage"
+              },
+              {
+                "label": "Déménagement"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Partir ou arriver au propre",
+            "paragraphes": [
+              "Rendre un logement impeccable pour l'état des lieux, ou emménager dans un intérieur déjà net : dans les deux cas, un grand nettoyage s'impose. Nous intervenons à Lille et dans le Nord, avant ou après le déménagement.",
+              "Sols, placards, sanitaires, vitres : nous reprenons tout, pour un logement rendu sans reproche ou prêt à accueillir vos affaires."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-debarras.jpg",
+              "alt": "Cartons et ménage lors d'un déménagement"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un ménage à confier ?",
+            "sousTitre": "Dites-nous votre besoin et le rythme : on vous répond avec un devis clair.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "grand-nettoyage",
+      "label": "Grand nettoyage",
+      "navHidden": true,
+      "meta": {
+        "title": "Grand nettoyage à Lille — remise à neuf",
+        "description": "Grand nettoyage à Lille et dans le Nord : remise à neuf de fond en comble, recoins compris. Cuisine, sanitaires, vitres. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Ménage",
+            "titre": "Grand nettoyage à Lille",
+            "intro": "De temps en temps, un logement mérite une remise à neuf complète, recoins compris.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage",
+                "href": "/menage"
+              },
+              {
+                "label": "Grand nettoyage"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "La remise à neuf, de fond en comble",
+            "paragraphes": [
+              "Le grand nettoyage va plus loin que l'entretien courant : on reprend les recoins, on décrasse ce qui s'est accumulé, on redonne de l'éclat. Idéal une à deux fois par an, à Lille et dans le Nord.",
+              "Cuisine dégraissée, sanitaires détartrés, vitres, plinthes, dessus de meubles : rien n'est oublié. Le logement retrouve un vrai coup de neuf."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-menage.jpg",
+              "alt": "Grand nettoyage de fond d'un logement"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un ménage à confier ?",
+            "sousTitre": "Dites-nous votre besoin et le rythme : on vous répond avec un devis clair.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-de-printemps",
+      "label": "Nettoyage de printemps",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de printemps à Lille",
+        "description": "Nettoyage de printemps à Lille et dans le Nord : grand ménage saisonnier, lessivage, vitres, recoins. Intérieur net et lumineux, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Ménage",
+            "titre": "Nettoyage de printemps à Lille",
+            "intro": "Le grand ménage de saison pour repartir sur du propre, du sol au plafond.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage",
+                "href": "/menage"
+              },
+              {
+                "label": "Nettoyage de printemps"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Repartir sur du frais",
+            "paragraphes": [
+              "Au sortir de l'hiver, un grand ménage saisonnier fait un bien fou : on aère, on décrasse, on remet tout d'aplomb. Nous nous en chargeons à Lille et dans le Nord.",
+              "Lessivage, vitres, recoins, textiles : nous reprenons ce que l'entretien courant laisse de côté, pour un intérieur net et lumineux."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-mur.jpg",
+              "alt": "Grand ménage saisonnier d'un intérieur"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un ménage à confier ?",
+            "sousTitre": "Dites-nous votre besoin et le rythme : on vous répond avec un devis clair.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Vitres",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de vitres à Lille — sans trace",
+        "description": "Nettoyage de vitres à Lille et dans le Nord : fenêtres, baies, vérandas, miroirs, dedans-dehors, encadrements compris. Sans trace, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Ménage",
+            "titre": "Nettoyage de vitres à Lille",
+            "intro": "Fenêtres, baies, vérandas : de la lumière retrouvée, sans trace ni coulure.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage",
+                "href": "/menage"
+              },
+              {
+                "label": "Vitres"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Des vitres qui laissent passer la lumière",
+            "paragraphes": [
+              "Des vitres propres changent une pièce sans qu'on sache dire pourquoi. Fenêtres, baies, vérandas, miroirs : nous les nettoyons dedans-dehors à Lille et dans le Nord, encadrements et rebords compris.",
+              "Finition à la raclette pour un séchage net, sans laisser de voile gras quand la lumière rase la vitre. Le résultat tient dans le temps."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-vitres.jpg",
+              "alt": "Nettoyage de vitres sans trace"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un ménage à confier ?",
+            "sousTitre": "Dites-nous votre besoin et le rythme : on vous répond avec un devis clair.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-terrasses-balcons",
+      "label": "Terrasses & balcons",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage terrasses & balcons à Lille",
+        "description": "Nettoyage de terrasses et balcons à Lille et dans le Nord : dalles, bois, pierre, retrait des mousses. Sans abîmer, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Ménage",
+            "titre": "Nettoyage de terrasses et balcons à Lille",
+            "intro": "Dalles, bois, balcons : on retire mousses et saletés pour profiter de l'extérieur.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage",
+                "href": "/menage"
+              },
+              {
+                "label": "Terrasses & balcons"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Rendre l'extérieur agréable",
+            "paragraphes": [
+              "Terrasses, balcons, dallages accumulent mousses, saletés et dépôts qui les rendent glissants et ternes. Nous les nettoyons à Lille et dans le Nord, avec la méthode adaptée à chaque support.",
+              "Bois, pierre, carrelage : nous ajustons produit et pression pour nettoyer sans abîmer. Vous retrouvez un extérieur propre, prêt à en profiter."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/service-exterieurs.jpg",
+              "alt": "Nettoyage d'une terrasse extérieure"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un ménage à confier ?",
+            "sousTitre": "Dites-nous votre besoin et le rythme : on vous répond avec un devis clair.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "renovation-marbre",
+      "label": "Rénovation marbre",
+      "navHidden": true,
+      "meta": {
+        "title": "Rénovation de marbre à Lille — ponçage & cristallisation",
+        "description": "Rénovation de sols en marbre à Lille et dans le Nord : ponçage, cristallisation, lustrage. Éclat retrouvé et protégé, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Ménage",
+            "titre": "Rénovation de marbre à Lille",
+            "intro": "Un marbre terni retrouve son éclat par ponçage et cristallisation. On s'en occupe.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage",
+                "href": "/menage"
+              },
+              {
+                "label": "Rénovation marbre"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Redonner son éclat au marbre",
+            "paragraphes": [
+              "Le marbre est superbe mais fragile : il se raye, se ternit et perd de son brillant avec le temps et le passage. Nous le rénovons à Lille et dans le Nord par ponçage puis cristallisation.",
+              "Le résultat parle de lui-même : une surface de nouveau lisse, profonde et brillante, protégée pour durer."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-sol.jpg",
+              "alt": "Rénovation et lustrage d'un sol en marbre"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un ménage à confier ?",
+            "sousTitre": "Dites-nous votre besoin et le rythme : on vous répond avec un devis clair.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "renovation-parquet",
+      "label": "Rénovation parquet",
+      "navHidden": true,
+      "meta": {
+        "title": "Rénovation de parquet à Lille",
+        "description": "Rénovation de parquet à Lille et dans le Nord : remise en état des parquets ternis ou marqués, sans remplacement. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Ménage",
+            "titre": "Rénovation de parquet à Lille",
+            "intro": "Un parquet marqué ou terni peut revivre. On le remet en état, sans le remplacer.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage",
+                "href": "/menage"
+              },
+              {
+                "label": "Rénovation parquet"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Faire revivre le parquet",
+            "paragraphes": [
+              "Un parquet ancien, rayé ou grisé n'a pas forcément besoin d'être remplacé : bien souvent, une remise en état suffit à lui redonner vie. Nous intervenons à Lille et dans le Nord.",
+              "Nettoyage en profondeur, remise en état et protection : le parquet retrouve sa teinte et sa chaleur, à moindre coût qu'un changement."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-sol.jpg",
+              "alt": "Rénovation d'un parquet ancien"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un ménage à confier ?",
+            "sousTitre": "Dites-nous votre besoin et le rythme : on vous répond avec un devis clair.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "lessivage-murs-plafonds",
+      "label": "Lessivage murs & plafonds",
+      "navHidden": true,
+      "meta": {
+        "title": "Lessivage murs & plafonds à Lille",
+        "description": "Lessivage de murs et plafonds à Lille et dans le Nord : surfaces jaunies ou encrassées ravivées, préparation avant peinture. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Ménage",
+            "titre": "Lessivage de murs et plafonds à Lille",
+            "intro": "Murs jaunis, plafonds encrassés : un bon lessivage redonne de la clarté, sans repeindre.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage",
+                "href": "/menage"
+              },
+              {
+                "label": "Lessivage murs & plafonds"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "De la clarté sans repeindre",
+            "paragraphes": [
+              "Avec le temps, murs et plafonds jaunissent, se couvrent de poussière grasse ou de traces. Souvent, un lessivage soigné suffit à retrouver de la clarté sans avoir à repeindre. Nous le faisons à Lille et dans le Nord.",
+              "Nous lessivons méthodiquement, du haut vers le bas, avec les produits adaptés au support. Utile aussi avant une mise en peinture, pour une meilleure accroche."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-mur.jpg",
+              "alt": "Lessivage d'un mur encrassé"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un ménage à confier ?",
+            "sousTitre": "Dites-nous votre besoin et le rythme : on vous répond avec un devis clair.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-apres-animaux",
+      "label": "Après animaux",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage après animaux à Lille — poils & odeurs",
+        "description": "Nettoyage après animaux à Lille et dans le Nord : poils, odeurs, salissures, désodorisation. Intérieur sain, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Ménage",
+            "titre": "Nettoyage après animaux à Lille",
+            "intro": "Poils, odeurs, traces : on remet le logement au propre après le passage des animaux.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage",
+                "href": "/menage"
+              },
+              {
+                "label": "Après animaux"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Un intérieur sain de nouveau",
+            "paragraphes": [
+              "La présence d'animaux laisse des traces : poils partout, odeurs installées, parfois salissures. Que ce soit un entretien régulier ou une remise en état, nous intervenons à Lille et dans le Nord.",
+              "Nettoyage en profondeur, désodorisation et désinfection si besoin : nous rendons le logement sain et agréable, sans odeur résiduelle."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-gants.jpg",
+              "alt": "Nettoyage et désodorisation après la présence d'animaux"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un ménage à confier ?",
+            "sousTitre": "Dites-nous votre besoin et le rythme : on vous répond avec un devis clair.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-canapes-textiles",
+      "label": "Canapés & textiles",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage canapés & textiles à Lille — injection-extraction",
+        "description": "Nettoyage de canapés, matelas et moquettes à Lille et dans le Nord par injection-extraction. Taches et odeurs éliminées, devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Ménage",
+            "titre": "Nettoyage de canapés et textiles à Lille",
+            "intro": "Canapés, matelas, moquettes : on ravive les textiles en profondeur, sans les détremper.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage",
+                "href": "/menage"
+              },
+              {
+                "label": "Canapés & textiles"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Des textiles comme neufs",
+            "paragraphes": [
+              "Un canapé, un matelas ou une moquette accumulent poussière, taches et odeurs qu'un simple aspirateur ne retire pas. Nous les nettoyons par injection-extraction à Lille et dans le Nord.",
+              "La solution est envoyée au cœur des fibres puis aspirée avec la saleté : les textiles ressortent ravivés, sans être gorgés d'eau. Quelques heures de séchage suffisent."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/men-canape.jpg",
+              "alt": "Nettoyage d'un canapé par injection-extraction"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un ménage à confier ?",
+            "sousTitre": "Dites-nous votre besoin et le rythme : on vous répond avec un devis clair.",
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-maison-inhabitee",
+      "label": "Maison inhabitée",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage maison inhabitée à Lille",
+        "description": "Nettoyage d'une maison inhabitée à Lille et dans le Nord : bien resté fermé aéré et remis au propre, odeurs traitées. Devis gratuit."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Ménage",
+            "titre": "Nettoyage de maison inhabitée à Lille",
+            "intro": "Un bien resté fermé longtemps a besoin d'être aéré et remis au propre. On s'en charge.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage",
+                "href": "/menage"
+              },
+              {
+                "label": "Maison inhabitée"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Réveiller un logement endormi",
+            "paragraphes": [
+              "Un logement resté vide et fermé longtemps prend la poussière, l'humidité et parfois une odeur de renfermé. Avant de le vendre, le louer ou l'habiter, une remise en propreté s'impose. Nous intervenons à Lille et dans le Nord.",
+              "Aération, dépoussiérage complet, nettoyage des sols et sanitaires, traitement des odeurs : le logement retrouve un air sain et accueillant."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/sub-vide.jpg",
+              "alt": "Remise en propreté d'un logement resté fermé"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3"
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un ménage à confier ?",
+            "sousTitre": "Dites-nous votre besoin et le rythme : on vous répond avec un devis clair.",
             "ctaPrimaire": {
               "label": "Devis gratuit",
               "href": "/devis"
