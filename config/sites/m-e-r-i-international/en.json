@@ -1076,6 +1076,116 @@
       ]
     },
     {
+      "slug": "a-propos",
+      "label": "About",
+      "meta": {
+        "title": "About M.E.R.I INTERNATIONAL — cleaning in Manage",
+        "description": "M.E.R.I INTERNATIONAL, a cleaning company based in Manage: a mobile, multilingual team reachable 24/7 across Wallonia. Our approach and commitments."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "About",
+            "titre": "Cleaning that fits any schedule",
+            "intro": "M.E.R.I INTERNATIONAL is a cleaning company based in Manage, built for places that never really stop: hotels, offices, work sites and short-stay rentals.",
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "About"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "eyebrow": "Our approach",
+            "titre": "An operation built around your schedule",
+            "paragraphes": [
+              "The name says it all. “International”, because our staff work in French, Arabic, Spanish and English, and travel beyond Wallonia when a client asks: instructions are given in your language, and reports come back in the same one.",
+              "We impose no standard time slot. An office floor is cleaned once the last employee has left; a hotel, between one checkout and the next arrival; a work site, the day before the keys are handed over. Our schedule fits yours — nights, weekends and public holidays included.",
+              "Before the first visit, everything is put in writing: what is cleaned, how often, with which products and in which time slot. And the same contact follows your account over time, not a different person at every call."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/materiel-produits.png",
+              "alt": "Cleaning equipment and products prepared by an M.E.R.I INTERNATIONAL team"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3",
+            "ctaPrimaire": {
+              "label": "Our services",
+              "href": "/services"
+            },
+            "ctaSecondaire": {
+              "label": "Where we work",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "eyebrow": "Our commitments",
+            "titre": "What you can count on",
+            "items": [
+              {
+                "nom": "Reachable 24/7",
+                "icone": "Clock",
+                "description": "Seven days a week, public holidays included: an emergency or a last-minute change doesn't wait until Monday morning."
+              },
+              {
+                "nom": "A team that comes back",
+                "icone": "Users",
+                "description": "As far as possible, the same staff on your site: they know the place, your priorities and how to get in."
+              },
+              {
+                "nom": "A written brief",
+                "icone": "ClipboardCheck",
+                "description": "Scope, frequency and products set down in black and white, then adjusted with you after the first visits."
+              },
+              {
+                "nom": "Four languages",
+                "icone": "Languages",
+                "description": "French, Arabic, Spanish and English: a real asset in hospitality and for owners managing a property from afar."
+              },
+              {
+                "nom": "Equipment and products supplied",
+                "icone": "SprayCan",
+                "description": "We arrive fully equipped, with protocols adapted to each surface: marble, wood, stainless steel, glass."
+              },
+              {
+                "nom": "Discretion and trust",
+                "icone": "ShieldCheck",
+                "description": "Keys entrusted, visits outside your presence, sensitive sites: confidentiality is part of the job."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "A place to hand over?",
+            "sousTitre": "Tell us the type of site and your schedule constraints: you'll get a clear proposal, with no obligation.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
       "slug": "zone-intervention",
       "label": "Coverage",
       "meta": {

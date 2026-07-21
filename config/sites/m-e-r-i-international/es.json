@@ -1076,6 +1076,116 @@
       ]
     },
     {
+      "slug": "a-propos",
+      "label": "Sobre nosotros",
+      "meta": {
+        "title": "Sobre M.E.R.I INTERNATIONAL — limpieza en Manage",
+        "description": "M.E.R.I INTERNATIONAL, empresa de limpieza con base en Manage: un equipo móvil, multilingüe y disponible 24h en Valonia. Nuestro enfoque y compromisos."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Sobre nosotros",
+            "titre": "Limpieza sin límite de horario",
+            "intro": "M.E.R.I INTERNATIONAL es una empresa de limpieza con base en Manage, pensada para los lugares que nunca se detienen del todo: hoteles, oficinas, obras y alojamientos de alquiler por noche.",
+            "breadcrumb": [
+              {
+                "label": "Inicio",
+                "href": "/"
+              },
+              {
+                "label": "Sobre nosotros"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Solicitar presupuesto",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "eyebrow": "Nuestro enfoque",
+            "titre": "Una organización adaptada a su ritmo",
+            "paragraphes": [
+              "El nombre lo dice todo. «International», porque nuestro personal trabaja en francés, árabe, español e inglés, y se desplaza más allá de Valonia cuando un cliente lo pide: las instrucciones se dan en su idioma y los informes vuelven en el mismo.",
+              "No imponemos ninguna franja horaria estándar. Una planta de oficinas se limpia cuando se va el último empleado; un hotel, entre una salida y la llegada siguiente; una obra, la víspera de la entrega de llaves. Nuestra planificación se adapta a la suya, noches, fines de semana y festivos incluidos.",
+              "Antes del primer paso, todo queda por escrito: qué se limpia, con qué frecuencia, con qué productos y en qué franja. Y es el mismo interlocutor quien sigue su expediente con el tiempo, no una persona distinta en cada llamada."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/materiel-produits.png",
+              "alt": "Material y productos de limpieza preparados por un equipo de M.E.R.I INTERNATIONAL"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3",
+            "ctaPrimaire": {
+              "label": "Nuestros servicios",
+              "href": "/services"
+            },
+            "ctaSecondaire": {
+              "label": "Dónde intervenimos",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "eyebrow": "Nuestros compromisos",
+            "titre": "Aquello con lo que puede contar",
+            "items": [
+              {
+                "nom": "Disponibles 24h",
+                "icone": "Clock",
+                "description": "Siete días a la semana, festivos incluidos: una urgencia o un imprevisto no espera al lunes por la mañana."
+              },
+              {
+                "nom": "Un equipo que regresa",
+                "icone": "Users",
+                "description": "En la medida de lo posible, el mismo personal en su sitio: conocen el lugar, sus prioridades y los accesos."
+              },
+              {
+                "nom": "Pliego por escrito",
+                "icone": "ClipboardCheck",
+                "description": "Perímetro, frecuencia y productos anotados con claridad, y luego ajustados con usted tras los primeros pasos."
+              },
+              {
+                "nom": "Cuatro idiomas",
+                "icone": "Languages",
+                "description": "Francés, árabe, español e inglés: una ventaja real en hostelería y para los propietarios que gestionan su bien a distancia."
+              },
+              {
+                "nom": "Material y productos incluidos",
+                "icone": "SprayCan",
+                "description": "Llegamos equipados, con protocolos adaptados a cada superficie: mármol, madera, acero inoxidable, cristal."
+              },
+              {
+                "nom": "Discreción y confianza",
+                "icone": "ShieldCheck",
+                "description": "Llaves confiadas, pasos sin presencia, sitios sensibles: la confidencialidad forma parte del servicio."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "¿Un local que confiar?",
+            "sousTitre": "Díganos el tipo de sitio y sus limitaciones de horario: recibirá una propuesta clara y sin compromiso.",
+            "ctaPrimaire": {
+              "label": "Solicitar presupuesto",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
       "slug": "zone-intervention",
       "label": "Zona de intervención",
       "meta": {

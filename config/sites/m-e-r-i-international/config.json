@@ -1082,6 +1082,116 @@
       ]
     },
     {
+      "slug": "a-propos",
+      "label": "À propos",
+      "meta": {
+        "title": "À propos de M.E.R.I INTERNATIONAL — nettoyage à Manage",
+        "description": "M.E.R.I INTERNATIONAL, société de nettoyage basée à Manage : équipe mobile, multilingue et joignable 24h/24 en Wallonie. Notre approche et nos engagements."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "À propos",
+            "titre": "Le nettoyage, sans contrainte d'horaire",
+            "intro": "M.E.R.I INTERNATIONAL est une société de nettoyage basée à Manage, pensée pour les lieux qui ne s'arrêtent jamais vraiment : hôtels, bureaux, chantiers et logements loués à la nuitée.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "À propos"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "eyebrow": "Notre approche",
+            "titre": "Une organisation calée sur votre rythme",
+            "paragraphes": [
+              "Le nom dit l'essentiel. « International », parce que nos agents travaillent en français, en arabe, en espagnol et en anglais, et se déplacent au-delà de la Wallonie quand un client le demande : les consignes se donnent dans votre langue, les comptes rendus reviennent dans la même.",
+              "Nous n'imposons aucun créneau standard. Un plateau de bureaux se nettoie une fois le dernier collaborateur parti ; un hôtel, entre un départ et l'arrivée suivante ; un chantier, la veille de la remise des clés. Notre planning se cale sur le vôtre — nuit, week-end et jours fériés compris.",
+              "Avant le premier passage, tout est posé par écrit : ce qui est nettoyé, à quelle fréquence, avec quels produits et sur quel créneau. Et c'est le même interlocuteur qui suit votre dossier dans le temps, pas une personne différente à chaque appel."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/m-e-r-i-international/materiel-produits.png",
+              "alt": "Matériel et produits d'entretien préparés par une équipe M.E.R.I INTERNATIONAL"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/3",
+            "ctaPrimaire": {
+              "label": "Nos prestations",
+              "href": "/services"
+            },
+            "ctaSecondaire": {
+              "label": "Où nous intervenons",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "eyebrow": "Nos engagements",
+            "titre": "Ce sur quoi vous pouvez compter",
+            "items": [
+              {
+                "nom": "Joignables 24h/24",
+                "icone": "Clock",
+                "description": "7 jours sur 7, jours fériés compris : une urgence ou un imprévu n'attend pas le lundi matin."
+              },
+              {
+                "nom": "Une équipe qui revient",
+                "icone": "Users",
+                "description": "Autant que possible, les mêmes agents sur votre site : ils connaissent les lieux, vos priorités et vos accès."
+              },
+              {
+                "nom": "Cahier des charges écrit",
+                "icone": "ClipboardCheck",
+                "description": "Périmètre, fréquence et produits notés noir sur blanc, puis ajustés avec vous après les premiers passages."
+              },
+              {
+                "nom": "Quatre langues",
+                "icone": "Languages",
+                "description": "Français, arabe, espagnol et anglais : un vrai atout en hôtellerie et pour les propriétaires qui gèrent leur bien à distance."
+              },
+              {
+                "nom": "Matériel et produits fournis",
+                "icone": "SprayCan",
+                "description": "Nous arrivons équipés, avec des protocoles adaptés à chaque support : marbre, bois, inox, vitrage."
+              },
+              {
+                "nom": "Discrétion et confiance",
+                "icone": "ShieldCheck",
+                "description": "Clés confiées, passages hors présence, sites sensibles : la confidentialité fait partie de la prestation."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un local à confier ?",
+            "sousTitre": "Dites-nous le type de site et vos contraintes d'horaire : vous recevez une proposition claire, sans engagement.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/contact"
+            }
+          }
+        }
+      ]
+    },
+    {
       "slug": "zone-intervention",
       "label": "Zone d'intervention",
       "meta": {
