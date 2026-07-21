@@ -61,7 +61,7 @@
             "eyebrow": "Aide ménagère · Le Coteau · Loire",
             "titre": "Une maison impeccable au Coteau,",
             "titreAccent": "sans y penser",
-            "accroche": "G Clean Propre 42 entretient votre logement, vos vitres et votre magasin, du Coteau jusqu'aux confins du Roannais. Un créneau fixe, la même personne à chaque passage, et une maison qui sent le propre quand vous rentrez.",
+            "accroche": "G Clean Propre 42 prend soin de votre intérieur, de vos vitres à votre canapé, du grand ménage à la terrasse, du Coteau jusqu'aux confins du Roannais. Un créneau fixe, la même personne à chaque passage, et une maison qui sent le propre quand vous rentrez.",
             "card": {
               "label": "Ménage classique",
               "prix": "20 €",
@@ -109,9 +109,9 @@
         {
           "type": "services",
           "content": {
-            "eyebrow": "Trois métiers",
+            "eyebrow": "Nos prestations",
             "titre": "Ce qu'on fait chez vous",
-            "intro": "Trois prestations, pas trente. Chacune est faite en entier, avec le temps qu'il faut.",
+            "intro": "Du ménage courant au grand nettoyage, des vitres au canapé, de la terrasse au débarras : tout le propre de la maison avec une seule personne de confiance — et 50 % déduits de vos impôts sur ce qui se fait chez vous.",
             "items": [
               {
                 "nom": "Ménage à domicile",
@@ -135,6 +135,38 @@
                 "badge": "Au forfait",
                 "priceHint": "Forfait sur devis",
                 "href": "/entretien-locaux-professionnels"
+              },
+              {
+                "nom": "Remise en état",
+                "icone": "SprayCan",
+                "description": "Un logement repris à fond avant un emménagement, une vente ou une fin de bail : on rattrape ce que l'entretien courant ne peut plus faire seul.",
+                "badge": "Au forfait",
+                "priceHint": "dès 250 €",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Canapé & fauteuil",
+                "icone": "Sofa",
+                "description": "Canapés, fauteuils et matelas nettoyés en profondeur, sans les gorger d'eau : les taches et les odeurs s'en vont, la matière respire de nouveau.",
+                "badge": "Au forfait",
+                "priceHint": "dès 60 €",
+                "href": "/nettoyage-canape"
+              },
+              {
+                "nom": "Terrasse & extérieur",
+                "icone": "Leaf",
+                "description": "Dalles, margelles et sols extérieurs délivrés des mousses et du gris de l'hiver, de quoi rouvrir la terrasse dès les beaux jours.",
+                "badge": "Au forfait",
+                "priceHint": "dès 90 €",
+                "href": "/nettoyage-terrasse"
+              },
+              {
+                "nom": "Syndrome de Diogène",
+                "icone": "Recycle",
+                "description": "Débarras, désinfection et remise en ordre d'un logement très encombré, menés avec méthode, discrétion et sans le moindre jugement.",
+                "badge": "Au forfait",
+                "priceHint": "dès 600 €",
+                "href": "/syndrome-diogene"
               }
             ],
             "cta": {
@@ -280,7 +312,11 @@
             "formIntro": "Surface, rythme souhaité, contraintes d'accès : plus c'est précis, plus le devis est juste.",
             "services": [
               "Ménage à domicile",
+              "Remise en état",
               "Nettoyage de vitres",
+              "Canapé & fauteuil",
+              "Terrasse & extérieur",
+              "Syndrome de Diogène",
               "Entretien de locaux professionnels",
               "Autre demande"
             ],
@@ -314,8 +350,8 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "Prestations",
-            "titre": "Trois façons de nous confier le propre",
-            "intro": "Chacune a sa page, avec ce qui est compris, ce qui ne l'est pas, et comment le prix se construit.",
+            "titre": "Tout le propre de la maison, une seule personne",
+            "intro": "Chaque prestation a sa page : ce qui est compris, comment le prix se construit, et quand le crédit d'impôt de 50 % s'applique.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -354,6 +390,38 @@
                 "badge": "Au forfait",
                 "priceHint": "Forfait sur devis",
                 "href": "/entretien-locaux-professionnels"
+              },
+              {
+                "nom": "Remise en état",
+                "icone": "SprayCan",
+                "description": "Le grand coup de propre d'un logement laissé de côté : calcaire, graisses, moisissures et traces repris surface par surface, avant emménagement, vente ou état des lieux.",
+                "badge": "Au forfait",
+                "priceHint": "dès 250 €",
+                "href": "/remise-en-etat"
+              },
+              {
+                "nom": "Canapé & fauteuil",
+                "icone": "Sofa",
+                "description": "Assises, fauteuils et matelas nettoyés à l'injection-extraction : la saleté est décollée puis aspirée dans la foulée, sans détremper le rembourrage.",
+                "badge": "Au forfait",
+                "priceHint": "dès 60 €",
+                "href": "/nettoyage-canape"
+              },
+              {
+                "nom": "Terrasse & extérieur",
+                "icone": "Leaf",
+                "description": "Dalles, pierre et bois débarrassés des mousses avec le dosage adapté à chaque support, sans décaper ni faire éclater les joints.",
+                "badge": "Au forfait",
+                "priceHint": "dès 90 €",
+                "href": "/nettoyage-terrasse"
+              },
+              {
+                "nom": "Syndrome de Diogène",
+                "icone": "Recycle",
+                "description": "Tri, évacuation, désinfection puis remise en ordre d'un logement saturé, en tenue adaptée et dans une discrétion totale.",
+                "badge": "Au forfait",
+                "priceHint": "dès 600 €",
+                "href": "/syndrome-diogene"
               }
             ]
           }
@@ -362,11 +430,11 @@
           "type": "contenu",
           "content": {
             "eyebrow": "Notre façon de travailler",
-            "titre": "Pourquoi trois prestations et pas trente",
+            "titre": "Une gamme complète, une seule personne de confiance",
             "paragraphes": [
-              "Une aide ménagère qui promet tout finit par bâcler quelque chose. G Clean Propre 42 a fait le choix inverse : trois prestations, maîtrisées, avec le matériel adapté à chacune. Le ménage courant demande de la méthode et de la régularité. Les vitres demandent le bon outil et le bon geste, sinon la trace revient au premier rayon de soleil. Un local commercial demande de la discrétion et un horaire qui ne dérange pas la clientèle. Ce ne sont pas les mêmes métiers.",
-              "Le prix se construit toujours de la même manière : on regarde d'abord, on chiffre ensuite. Une visite sur place au Coteau ou dans les environs prend un quart d'heure et évite les mauvaises surprises des deux côtés. Vous savez combien de temps dure une prestation, ce qu'elle comprend, et à quel rythme elle revient.",
-              "Le reste tient en une habitude : c'est la même personne qui revient à chaque passage. Elle sait où sont les choses, ce à quoi vous tenez, ce qui vous agace. Au bout de trois passages, il n'y a plus rien à expliquer."
+              "Appeler un prestataire pour le ménage, un autre pour les vitres, un troisième pour la terrasse, c'est multiplier les rendez-vous, les clés confiées et les factures. G Clean Propre 42 réunit tout : la personne qui connaît déjà votre logement est celle qui revient pour le grand nettoyage, le canapé ou la remise en état.",
+              "Chaque prestation garde pourtant son métier et son matériel. Le ménage courant demande de la régularité ; les vitres, le bon geste ; un canapé, une machine à injection-extraction ; une terrasse, un dosage qui n'attaque pas le support. On ne bâcle rien sous prétexte de tout faire : chaque intervention est menée avec l'outil qu'elle réclame.",
+              "Le prix se construit toujours pareil : on constate d'abord, on chiffre ensuite, sans facturer le devis. Et pour tout ce qui se passe à votre domicile, la moitié du prix vous est remboursée via le crédit d'impôt — un point qu'on détaille au moment de chiffrer."
             ],
             "ctaPrimaire": {
               "label": "Demander un devis",
@@ -727,11 +795,331 @@
       ]
     },
     {
+      "slug": "remise-en-etat",
+      "label": "Remise en état",
+      "navHidden": true,
+      "meta": {
+        "title": "Remise en état de logement au Coteau",
+        "description": "Grand nettoyage de remise en état au Coteau et dans le Roannais : calcaire, graisses, moisissures et traces repris de fond en comble. Dès 250 €, crédit d'impôt de 50 %."
+      },
+      "service": {
+        "name": "Remise en état",
+        "serviceType": "Nettoyage de remise en état de logement",
+        "description": "Remise en état complète d'un logement au Coteau et dans le Roannais : décapage, désincrustation et nettoyage en profondeur avant emménagement, vente ou état des lieux.",
+        "priceFrom": 250
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Remise en état",
+            "titre": "Remise en état de logement au Coteau",
+            "intro": "Quand un logement a été laissé de côté trop longtemps, il faut d'abord tout remettre à niveau avant de pouvoir simplement l'entretenir.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Remise en état" }
+            ],
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Reprendre un logement de zéro",
+            "paragraphes": [
+              "La remise en état n'est pas un ménage plus long, c'est un autre travail. On s'attaque à ce que l'entretien courant laisse s'installer avec les années : calcaire incrusté, graisses cuites sur la crédence, moisissures dans les joints, traces sur les murs et les plinthes. Chaque surface est reprise une à une, du plafond vers le sol.",
+              "Ce type d'intervention se prépare. Selon l'état et la taille du logement, il faut compter d'une à plusieurs journées, parfois à deux intervenantes. Le prix part de 250 € pour un studio et se cale sur ce qu'on découvre lors de la visite, jamais à l'aveugle.",
+              "Fin de bail, entrée dans un nouveau logement, succession, retour après des travaux : ce sont les situations les plus fréquentes. À la fin, l'espace est prêt à être habité — ou rendu sans mauvaise surprise sur l'état des lieux. Comme elle se déroule chez vous, elle entre dans le crédit d'impôt : comptez la moitié en moins sur la note finale."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions sur la remise en état",
+            "items": [
+              {
+                "question": "Quelle différence avec un grand ménage ?",
+                "reponse": "Un grand ménage part d'un logement déjà entretenu et le pousse à fond. La remise en état repart de bien plus loin : elle décroche le calcaire ancien, dégraisse ce qui a cuit, traite les moisissures. C'est un décapage, pas un simple passage appuyé."
+              },
+              {
+                "question": "Combien de temps faut-il prévoir ?",
+                "reponse": "D'une demi-journée pour un studio à plusieurs jours pour une grande maison négligée. La durée exacte est fixée après la visite, car elle dépend moins de la surface que de l'état réel des lieux."
+              },
+              {
+                "question": "Intervenez-vous pour un état des lieux de sortie ?",
+                "reponse": "Oui, c'est l'une des demandes les plus courantes au Coteau et à Roanne. On remet le logement dans l'état attendu par le bailleur pour éviter les retenues sur le dépôt de garantie."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Souvent enchaîné avec",
+            "items": [
+              { "nom": "Ménage à domicile", "icone": "House", "description": "Une fois le logement repris, l'entretien régulier prend le relais.", "href": "/menage-a-domicile" },
+              { "nom": "Nettoyage de vitres", "icone": "Droplets", "description": "Les vitres, souvent oubliées, finissent le travail.", "href": "/nettoyage-vitres" }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un logement à remettre d'aplomb ?",
+            "sousTitre": "Décrivez l'état des lieux, on cale une visite et on chiffre sans vous engager.",
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-canape",
+      "label": "Canapé & fauteuil",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de canapé et matelas au Coteau",
+        "description": "Nettoyage de canapés, fauteuils et matelas à l'injection-extraction au Coteau et dans le Roannais. Taches et odeurs éliminées sans détremper. Dès 60 €, crédit d'impôt de 50 %."
+      },
+      "service": {
+        "name": "Canapé & fauteuil",
+        "serviceType": "Nettoyage de textiles et d'assises",
+        "description": "Nettoyage en profondeur de canapés, fauteuils et matelas par injection-extraction, au Coteau et dans le Roannais, à domicile.",
+        "priceFrom": 60
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Canapé & fauteuil",
+            "titre": "Nettoyage de canapé au Coteau",
+            "intro": "Un canapé se salit lentement, sans qu'on le voie venir — jusqu'au jour où un coussin retourné rappelle sa vraie couleur.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Canapé & fauteuil" }
+            ],
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Le nettoyage en profondeur, sans détremper",
+            "paragraphes": [
+              "On travaille à l'injection-extraction : une solution nettoyante est envoyée au cœur des fibres, puis aspirée dans la foulée avec la saleté qu'elle a décollée. La mousse et le rembourrage ne sont jamais gorgés d'eau, ce qui évite les auréoles et les odeurs de renfermé au séchage.",
+              "Taches de repas, traces de mains, poils d'animaux, transpiration : la plupart s'en vont en un seul passage. Les tissus fragiles ou anciens sont testés dans un coin discret avant de commencer. Comptez quelques heures de séchage, fenêtre entrouverte, avant de réinstaller les coussins.",
+              "Le tarif dépend de la pièce : 60 € pour un fauteuil, jusqu'à 150 € pour un canapé d'angle. Fait chez vous, ce nettoyage est éligible au crédit d'impôt : la facture est allégée de moitié."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions sur le nettoyage de canapé",
+            "items": [
+              {
+                "question": "Mon canapé sera-t-il trempé après le passage ?",
+                "reponse": "Non. L'injection-extraction aspire l'eau au fur et à mesure : le textile ressort humide, pas détrempé. Quelques heures d'aération suffisent avant de le réutiliser."
+              },
+              {
+                "question": "Les taches anciennes partent-elles vraiment ?",
+                "reponse": "La plupart, oui. Certaines taches très anciennes ou déjà fixées par la chaleur peuvent s'atténuer sans disparaître complètement : on est honnête là-dessus dès la visite, avant de chiffrer."
+              },
+              {
+                "question": "Nettoyez-vous aussi les matelas ?",
+                "reponse": "Oui, matelas et têtes de lit se nettoient de la même manière. C'est souvent demandé en même temps qu'un canapé, ou dans le cadre d'une remise en état."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Souvent pris ensemble",
+            "items": [
+              { "nom": "Ménage à domicile", "icone": "House", "description": "L'entretien courant du logement, en complément des textiles.", "href": "/menage-a-domicile" },
+              { "nom": "Terrasse & extérieur", "icone": "Leaf", "description": "Le mobilier et les sols extérieurs, remis à neuf pour la saison.", "href": "/nettoyage-terrasse" }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Un canapé à raviver ?",
+            "sousTitre": "Dites-nous le nombre de places et la matière, on vous donne le forfait.",
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-terrasse",
+      "label": "Terrasse & extérieur",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage de terrasse au Coteau et dans le Roannais",
+        "description": "Démoussage de terrasses, dalles, pierre et bois au Coteau et dans le Roannais, avec le dosage adapté à chaque support. Dès 90 €, éligible au crédit d'impôt à domicile."
+      },
+      "service": {
+        "name": "Terrasse & extérieur",
+        "serviceType": "Nettoyage et démoussage de surfaces extérieures",
+        "description": "Nettoyage de terrasses, dallages et sols extérieurs au Coteau et dans le Roannais : retrait des mousses et dépôts, traitement adapté au revêtement.",
+        "priceFrom": 90
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Terrasse & extérieur",
+            "titre": "Nettoyage de terrasse au Coteau",
+            "intro": "Après l'hiver, une terrasse se couvre d'un voile vert et gris qui la rend glissante et terne. Un passage suffit à la rouvrir.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Terrasse & extérieur" }
+            ],
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Débarrasser sans abîmer le support",
+            "paragraphes": [
+              "Mousses, lichens et dépôts noirs s'installent partout où l'humidité stagne à l'ombre : dalles, margelles de piscine, terrasses en pierre ou en bois. On les retire avec le matériel et le dosage adaptés au revêtement, sans décaper la surface ni faire éclater les joints.",
+              "Le bois est brossé dans le sens de la fibre, la pierre traitée pour ne pas la marquer, le carrelage rincé sans tout éclabousser autour. Là où c'est utile, un produit anti-repousse ralentit le retour des mousses et permet de tenir la belle saison.",
+              "La prestation se chiffre à la surface : 90 € jusqu'à 20 m², davantage au-delà. Chez un particulier, la terrasse peut entrer dans le crédit d'impôt ; l'éligibilité exacte est confirmée sur le devis."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions sur la terrasse",
+            "items": [
+              {
+                "question": "Utilisez-vous un nettoyeur haute pression ?",
+                "reponse": "Seulement quand le support le supporte. Sur un carrelage extérieur solide, oui ; sur du bois ou une pierre tendre, la haute pression abîme, donc on privilégie le brossage et un produit adapté."
+              },
+              {
+                "question": "Le résultat tient-il toute l'année ?",
+                "reponse": "Une terrasse nettoyée reste nette plusieurs mois. Dans un secteur humide ou ombragé du Roannais, un traitement anti-repousse prolonge nettement l'effet avant que les mousses ne reviennent."
+              },
+              {
+                "question": "Traitez-vous les terrasses en bois ?",
+                "reponse": "Oui, le bois fait partie des supports que l'on traite le plus, avec un brossage dans le sens des lames et un produit qui nettoie sans le griser davantage."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "À voir aussi",
+            "items": [
+              { "nom": "Nettoyage de vitres", "icone": "Droplets", "description": "Les baies qui donnent sur la terrasse, remises au clair.", "href": "/nettoyage-vitres" },
+              { "nom": "Canapé & fauteuil", "icone": "Sofa", "description": "Le mobilier de salon ravivé, dedans comme dehors.", "href": "/nettoyage-canape" }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une terrasse à rouvrir ?",
+            "sousTitre": "Donnez-nous la surface et le type de sol, on cale une visite.",
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "syndrome-diogene",
+      "label": "Syndrome de Diogène",
+      "navHidden": true,
+      "meta": {
+        "title": "Nettoyage syndrome de Diogène au Coteau",
+        "description": "Débarras, désinfection et remise en ordre d'un logement encombré au Coteau et dans le Roannais, en toute discrétion. Dès 600 € sur devis, crédit d'impôt de 50 % à domicile."
+      },
+      "service": {
+        "name": "Syndrome de Diogène",
+        "serviceType": "Nettoyage et débarras de logement insalubre",
+        "description": "Intervention syndrome de Diogène au Coteau et dans le Roannais : tri, évacuation, désinfection et remise en ordre d'un logement très encombré, avec discrétion.",
+        "priceFrom": 600
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Syndrome de Diogène",
+            "titre": "Nettoyage syndrome de Diogène au Coteau",
+            "intro": "Certains logements se sont refermés sur des années d'accumulation. Les rouvrir demande de la méthode, du matériel et aucun jugement.",
+            "breadcrumb": [
+              { "label": "Accueil", "href": "/" },
+              { "label": "Services", "href": "/services" },
+              { "label": "Syndrome de Diogène" }
+            ],
+            "ctaPrimaire": { "label": "Demander un devis", "href": "/contact" }
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "titre": "Débarrasser, désinfecter, remettre en ordre",
+            "paragraphes": [
+              "Une intervention de ce type suit toujours trois temps : le tri et l'évacuation de ce qui encombre, un nettoyage désinfectant de fond, puis la remise en ordre des surfaces retrouvées. On avance pièce par pièce, en respectant ce que la personne souhaite conserver.",
+              "Le travail se fait en tenue et matériel adaptés, car ces logements présentent souvent des risques sanitaires : déjections, denrées abîmées, nuisibles. La discrétion est totale — ni voisinage prévenu, ni véhicule marqué. Quand une famille ou un service social accompagne la personne, on se coordonne avec eux.",
+              "Chaque situation est unique : le devis part de 600 € et se fixe après une visite, selon le volume à évacuer et l'état des lieux. Menée au domicile de la personne, elle entre dans le crédit d'impôt à hauteur de la moitié du montant."
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "content": {
+            "titre": "Questions sur l'intervention",
+            "items": [
+              {
+                "question": "Intervenez-vous en toute discrétion ?",
+                "reponse": "Oui, c'est une condition du service. Aucun signe distinctif sur le véhicule, aucune information donnée au voisinage : ce qui se passe dans le logement ne regarde que vous."
+              },
+              {
+                "question": "Vous occupez-vous de l'évacuation des déchets ?",
+                "reponse": "Oui, le tri et l'évacuation font partie de l'intervention. Les encombrants et déchets sont acheminés vers les filières adaptées ; le volume à sortir entre dans le devis."
+              },
+              {
+                "question": "Peut-on organiser l'intervention avec un proche ou un tuteur ?",
+                "reponse": "Bien sûr. Nous échangeons volontiers avec un membre de la famille, un curateur ou un travailleur social pour caler l'accès, le rythme et ce qui doit être préservé."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "content": {
+            "titre": "Souvent enchaîné avec",
+            "items": [
+              { "nom": "Remise en état", "icone": "SprayCan", "description": "Une fois le logement vidé, on le remet à niveau surface par surface.", "href": "/remise-en-etat" },
+              { "nom": "Ménage à domicile", "icone": "House", "description": "Puis l'entretien régulier, pour que la situation ne se réinstalle pas.", "href": "/menage-a-domicile" }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "content": {
+            "titre": "Une situation à débloquer, pour vous ou un proche ?",
+            "sousTitre": "Un appel discret suffit pour en parler et convenir d'une visite.",
+            "ctaPrimaire": { "label": "Nous contacter", "href": "/contact" }
+          }
+        }
+      ]
+    },
+    {
       "slug": "tarifs",
       "label": "Tarifs",
       "meta": {
         "title": "Tarifs ménage et nettoyage au Coteau",
-        "description": "20 € de l'heure sur le ménage classique, vitres et locaux professionnels au forfait. Comment le prix se construit au Coteau et dans le Roannais."
+        "description": "Ménage à 20 € de l'heure, vitres, canapés, terrasses, remise en état et locaux au forfait. La moitié déductible de vos impôts sur le travail fait chez vous, au Coteau et dans le Roannais."
       },
       "blocks": [
         {
@@ -739,7 +1127,7 @@
           "content": {
             "eyebrow": "Tarifs",
             "titre": "Ce que ça coûte, et pourquoi",
-            "intro": "Un tarif horaire pour l'entretien courant, des forfaits pour le reste. Tout est arrêté au devis, après la visite.",
+            "intro": "Un tarif horaire pour l'entretien courant, des forfaits pour tout le reste, et 50 % déduits de vos impôts sur les prestations réalisées chez vous. Le montant définitif est arrêté au devis, après la visite.",
             "breadcrumb": [
               {
                 "label": "Accueil",
@@ -752,53 +1140,184 @@
           }
         },
         {
-          "type": "tarifs",
-          "mode": "a-partir-de",
+          "type": "serviceQuoteBuilder",
           "content": {
-            "titre": "Les trois prestations",
-            "intro": "Les montants ci-dessous valent pour le Coteau et les communes situées dans les 30 km.",
-            "items": [
+            "eyebrow": "Estimation en ligne",
+            "titre": "Chiffrez votre prestation",
+            "intro": "Sélectionnez une prestation, ajustez, et le montant se calcule sous vos yeux. Ce chiffre reste indicatif : le devis ferme est arrêté après la visite, toujours gratuite.",
+            "credit": true,
+            "creditRate": 0.5,
+            "creditCeiling": 12000,
+            "creditLabelOff": "Plein tarif",
+            "creditLabelOn": "Après crédit d'impôt de 50 %",
+            "telephone": "06 04 46 82 50",
+            "whatsapp": "06 04 46 82 50",
+            "confidentialiteHref": "/confidentialite",
+            "villes": [
+              "Le Coteau",
+              "Roanne",
+              "Riorges",
+              "Mably",
+              "Perreux",
+              "Commelle-Vernay",
+              "Villerest",
+              "Pouilly-les-Nonains",
+              "Renaison",
+              "Saint-Germain-Lespinasse",
+              "Briennon",
+              "Pouilly-sous-Charlieu",
+              "Charlieu",
+              "Régny",
+              "Saint-Symphorien-de-Lay",
+              "Neulise",
+              "Saint-Just-la-Pendue",
+              "Balbigny"
+            ],
+            "notes": [
+              "🚗 Déplacement compris jusqu'à 30 km autour du Coteau.",
+              "📋 Devis détaillé renvoyé sous 24 h, gratuit et sans engagement.",
+              "ℹ️ Les 50 % de crédit d'impôt s'appliquent aux interventions chez un particulier. Pour un débarras, une terrasse ou une remise en état, on vous confirme au cas par cas ce qui ouvre droit à la déduction."
+            ],
+            "categories": [
               {
-                "nom": "Ménage à domicile",
-                "prix": 20,
-                "unite": "/h",
-                "populaire": true,
-                "description": "Le taux horaire du ménage classique à domicile, identique toute l'année. Seules la durée du passage et sa fréquence se décident au devis.",
-                "inclus": [
-                  "Sols, poussières, cuisine, sanitaires",
-                  "Produits et matériel fournis",
-                  "Même intervenante à chaque passage",
-                  "Créneau fixe, décalable la veille"
+                "id": "menage",
+                "emoji": "🧹",
+                "titre": "Ménage & entretien",
+                "description": "L'entretien courant du logement au fil des semaines, ou le grand nettoyage d'une pièce reprise à zéro.",
+                "creditImpot": true,
+                "prestations": [
+                  {
+                    "nom": "Ménage régulier",
+                    "type": "horaire",
+                    "tauxHoraire": 20,
+                    "heuresMin": 1,
+                    "heuresMax": 40,
+                    "heuresDefaut": 2
+                  },
+                  {
+                    "nom": "Grand nettoyage de printemps",
+                    "type": "tiers",
+                    "tiers": [
+                      { "label": "Studio / T1", "prix": 150 },
+                      { "label": "T2", "prix": 220 },
+                      { "label": "T3", "prix": 290 },
+                      { "label": "T4", "prix": 380 }
+                    ]
+                  }
                 ]
               },
               {
-                "nom": "Nettoyage de vitres",
-                "prix": "Forfait sur devis",
-                "description": "Calculé sur le nombre d'ouvrants et leur accessibilité, pas au temps passé.",
-                "inclus": [
-                  "Intérieur et extérieur",
-                  "Encadrements et rebords",
-                  "Baies, vérandas et miroirs fixes",
-                  "Forfait stable tant que rien ne change"
+                "id": "remise-en-etat",
+                "emoji": "🏠",
+                "titre": "Remise en état",
+                "description": "Un logement entièrement repris avant un emménagement, une vente ou un état des lieux de sortie.",
+                "creditImpot": true,
+                "prestations": [
+                  {
+                    "nom": "Remise en état",
+                    "type": "tiers",
+                    "tiers": [
+                      { "label": "Studio / T1", "prix": 250, "prefixe": "dès" },
+                      { "label": "T2", "prix": 350, "prefixe": "dès" },
+                      { "label": "T3", "prix": 450, "prefixe": "dès" },
+                      { "label": "T4 et +", "prix": 600, "prefixe": "dès" }
+                    ]
+                  }
                 ]
               },
               {
-                "nom": "Entretien de locaux professionnels",
-                "prix": "Forfait mensuel sur devis",
-                "description": "Un montant fixe par mois pour un nombre de passages défini, hors horaires d'ouverture.",
-                "inclus": [
-                  "Sols et surfaces de vente",
-                  "Sanitaires et espace de pause",
-                  "Vitrine côté intérieur",
-                  "Une seule facture par mois"
+                "id": "vitres",
+                "emoji": "🪟",
+                "titre": "Nettoyage de vitres",
+                "description": "Fenêtres, baies coulissantes et vérandas rendues nettes, dedans comme dehors, rebords compris.",
+                "creditImpot": true,
+                "prestations": [
+                  {
+                    "nom": "Vitrerie",
+                    "type": "tiers",
+                    "tiers": [
+                      { "label": "Appartement", "prix": 90, "prefixe": "dès" },
+                      { "label": "Maison", "prix": 140, "prefixe": "dès" },
+                      { "label": "Villa", "prix": 180, "prefixe": "dès" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "canape",
+                "emoji": "🛋️",
+                "titre": "Canapé & fauteuil",
+                "description": "Canapés, fauteuils et matelas nettoyés en profondeur par injection-extraction, sans les détremper.",
+                "creditImpot": true,
+                "prestations": [
+                  {
+                    "nom": "Textiles",
+                    "type": "tiers",
+                    "tiers": [
+                      { "label": "Fauteuil", "prix": 60 },
+                      { "label": "Canapé 2 places", "prix": 90 },
+                      { "label": "Canapé 3 places", "prix": 120 },
+                      { "label": "Canapé d'angle", "prix": 150 }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "terrasse",
+                "emoji": "🌿",
+                "titre": "Terrasse & extérieur",
+                "description": "Dallages, margelles et sols extérieurs débarrassés des mousses et du voile gris de l'hiver.",
+                "creditImpot": true,
+                "prestations": [
+                  {
+                    "nom": "Terrasse",
+                    "type": "tiers",
+                    "tiers": [
+                      { "label": "Jusqu'à 20 m²", "prix": 90 },
+                      { "label": "20 à 50 m²", "prix": 120 },
+                      { "label": "Plus de 50 m²", "prix": 150, "prefixe": "dès" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "diogene",
+                "emoji": "♻️",
+                "titre": "Syndrome de Diogène",
+                "description": "Débarras, désinfection et remise en ordre d'un logement très encombré, dans la plus grande discrétion.",
+                "creditImpot": true,
+                "prestations": [
+                  {
+                    "nom": "Nettoyage extrême",
+                    "type": "tiers",
+                    "tiers": [
+                      { "label": "Studio / T1", "prix": 600, "prefixe": "dès" },
+                      { "label": "T2", "prix": 800, "prefixe": "dès" },
+                      { "label": "T3", "prix": 1000, "prefixe": "dès" },
+                      { "label": "T4 et +", "prix": 1200, "prefixe": "dès" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "bureaux",
+                "emoji": "🏢",
+                "titre": "Locaux professionnels",
+                "description": "L'entretien régulier de vos commerces et bureaux du Roannais, en dehors des heures d'ouverture.",
+                "creditImpot": false,
+                "prestations": [
+                  {
+                    "nom": "Locaux professionnels",
+                    "type": "tiers",
+                    "tiers": [
+                      { "label": "Jusqu'à 50 m²", "prix": 90, "prefixe": "dès" },
+                      { "label": "50 à 100 m²", "prix": 120, "prefixe": "dès" },
+                      { "label": "Plus de 100 m²", "prix": 150, "prefixe": "dès" }
+                    ]
+                  }
                 ]
               }
-            ],
-            "note": "TVA non applicable, article 293 B du CGI. Les déplacements sont compris dans un rayon de 30 km autour du Coteau.",
-            "cta": {
-              "label": "Demander un devis",
-              "href": "/contact"
-            }
+            ]
           }
         },
         {
@@ -806,6 +1325,10 @@
           "content": {
             "titre": "Questions de tarif",
             "items": [
+              {
+                "question": "Comment fonctionne le crédit d'impôt de 50 % ?",
+                "reponse": "Tout ce qui est fait chez vous — ménage, vitres, canapé, terrasse — donne droit à un avantage fiscal : la moitié de la somme versée vous revient, remboursée par l'État dans la limite du plafond annuel. Une facture de 40 € revient ainsi à 20 € nets, que vous payiez des impôts ou non. Seul l'entretien d'un local professionnel reste hors du dispositif."
+              },
               {
                 "question": "Pourquoi ne pas afficher un prix ferme pour les vitres ?",
                 "reponse": "Parce qu'il serait faux. Entre un studio à quatre fenêtres et une maison à baies coulissantes, l'écart est trop grand pour tenir dans un chiffre unique affiché sur un site. On préfère compter chez vous et annoncer un forfait qui, lui, ne bouge pas."
@@ -980,7 +1503,11 @@
             "formIntro": "Surface, rythme souhaité, contraintes d'accès : plus c'est précis, plus le devis est juste du premier coup.",
             "services": [
               "Ménage à domicile",
+              "Remise en état",
               "Nettoyage de vitres",
+              "Canapé & fauteuil",
+              "Terrasse & extérieur",
+              "Syndrome de Diogène",
               "Entretien de locaux professionnels",
               "Autre demande"
             ],
