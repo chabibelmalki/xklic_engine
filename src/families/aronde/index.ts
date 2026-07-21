@@ -4,6 +4,7 @@ import { PageHero } from "./blocks/PageHero";
 import { Services } from "./blocks/Services";
 import { Etapes } from "./blocks/Etapes";
 import { Cta } from "./blocks/Cta";
+import { Galerie } from "./blocks/Galerie";
 // Blocs utilitaires : réutilisés depuis `editorial` (contrat identique, 100 %
 // tokens → ils suivent la palette + le pack d'aronde). Même approche que
 // `littoral` / `foyer` : l'énergie va sur les blocs d'identité (hero/pageHero/
@@ -12,7 +13,6 @@ import { Faq } from "../editorial/blocks/Faq";
 import { Zone } from "../editorial/blocks/Zone";
 import { Tarifs } from "../editorial/blocks/Tarifs";
 import { Contenu } from "../editorial/blocks/Contenu";
-import { Galerie } from "../editorial/blocks/Galerie";
 import { Simulateur } from "../editorial/blocks/Simulateur";
 import { Contact } from "../editorial/blocks/Contact";
 import { ArondeHeader } from "./chrome/Header";

@@ -7,9 +7,9 @@
   "theme": "maison-ivoire",
   "stylePack": "aronde-atelier",
   "branding": {
-    "logoAlt": "Menuiserie Beirouti — menuiseries, pose, cuisines à Rive-de-Gier",
+    "logoAlt": "Menuiserie Beirouti — menuiseries, pose et cuisines à Lyon et Rive-de-Gier",
     "logoTextHidden": true,
-    "tagline": "Menuiserie · pose · cuisines — Rive-de-Gier",
+    "tagline": "Menuiserie · pose · cuisines — Lyon & Rive-de-Gier",
     "colors": {
       "brand": "#5a3e28",
       "accent": "#c58542",
@@ -40,16 +40,17 @@
     "lng": 4.5975489
   },
   "meta": {
-    "title": "Menuisier à Rive-de-Gier — cuisines, parquet, pose",
-    "description": "Pose de cuisines, parquet, portes, fenêtres, volets et aménagement sur mesure à Rive-de-Gier et 50 km autour. Relevé précis, finitions soignées, devis gratuit.",
+    "title": "Menuisier à Lyon & Rive-de-Gier — cuisines, parquet",
+    "description": "Pose de cuisines, parquets, portes, fenêtres, volets et chambres sur mesure à Lyon, dans tout le Rhône et toute la Loire. Devis gratuit, finitions soignées.",
     "keywords": [
+      "menuisier Lyon",
       "menuisier Rive-de-Gier",
-      "pose de cuisine Rive-de-Gier",
-      "pose de parquet vallée du Gier",
-      "menuiseries PVC alu Rive-de-Gier",
-      "poseur de volets Rive-de-Gier",
-      "porte blindée Rive-de-Gier",
-      "aménagement intérieur sur mesure Loire"
+      "pose de cuisine Lyon",
+      "pose de parquet Rhône",
+      "montage chambre à coucher Lyon",
+      "menuiseries PVC alu Loire",
+      "monteur de meubles Lyon",
+      "menuisier Vienne"
     ]
   },
   "forms": {
@@ -67,7 +68,7 @@
             "eyebrow": "Menuiserie · pose · cuisines",
             "titre": "Vos intérieurs, assemblés",
             "titreAccent": "au cordeau",
-            "accroche": "Menuiserie Beirouti conçoit et pose vos cuisines, parquets, fenêtres, portes et volets sur mesure à Rive-de-Gier et dans un rayon de 50 km. De la prise de cotes aux finitions, un seul artisan suit votre chantier du premier trait de crayon au dernier coup de niveau.",
+            "accroche": "Menuiserie Beirouti conçoit et pose vos cuisines, parquets, fenêtres, portes, volets et chambres sur mesure à Lyon, dans tout le Rhône et toute la Loire. De la prise de cotes aux finitions, un seul artisan suit votre chantier.",
             "trust": [
               {
                 "icone": "Ruler",
@@ -83,7 +84,7 @@
               },
               {
                 "icone": "MapPin",
-                "label": "Rive-de-Gier & 50 km autour"
+                "label": "Lyon, Rhône & Loire"
               }
             ],
             "ctaPrimaire": {
@@ -93,7 +94,10 @@
             "ctaSecondaire": {
               "label": "Découvrir nos prestations",
               "href": "/services"
-            }
+            },
+            "badges": [
+              "Plus de 25 ans d'expérience"
+            ]
           }
         },
         {
@@ -127,8 +131,8 @@
                 "href": "/pose-cuisine",
                 "icone": "CookingPot",
                 "image": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-cuisine.jpg",
-                  "alt": "Cuisine équipée en bois montée et posée"
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-cuisine-1.jpg",
+                  "alt": "Pose de cuisine"
                 }
               },
               {
@@ -137,8 +141,8 @@
                 "href": "/pose-parquet",
                 "icone": "Layers",
                 "image": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-parquet.jpg",
-                  "alt": "Parquet en chevrons aux tons chauds"
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-parquet-2.jpg",
+                  "alt": "Pose de parquet"
                 }
               },
               {
@@ -147,8 +151,8 @@
                 "href": "/portes-fenetres",
                 "icone": "DoorOpen",
                 "image": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-portes-fenetres.jpg",
-                  "alt": "Baie vitrée à cadres aluminium noirs"
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-fenetres-2.jpg",
+                  "alt": "Portes & fenêtres"
                 }
               },
               {
@@ -157,8 +161,8 @@
                 "href": "/amenagement-interieur",
                 "icone": "LayoutGrid",
                 "image": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-amenagement.jpg",
-                  "alt": "Dressing sur mesure en bois clair"
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-amenagement-1.jpg",
+                  "alt": "Aménagement intérieur"
                 }
               },
               {
@@ -179,6 +183,16 @@
                 "image": {
                   "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-porte-blindee.jpg",
                   "alt": "Porte d'entrée en bois massif"
+                }
+              },
+              {
+                "nom": "Chambres & lits pont",
+                "icone": "Package",
+                "href": "/montage-chambre",
+                "description": "Armoires, lits pont et têtes de lit montés, alignés et fixés au mur en toute sécurité.",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-chambre-1.jpg",
+                  "alt": "Chambre avec armoire-pont et lits montée par Menuiserie Beirouti"
                 }
               }
             ],
@@ -222,54 +236,63 @@
           "type": "zone",
           "mode": "carte",
           "content": {
-            "titre": "À Rive-de-Gier et jusqu'à 50 km",
-            "intro": "Installé à Rive-de-Gier, je rayonne sur toute la vallée du Gier, la métropole stéphanoise, l'ouest lyonnais et le pays viennois. Votre commune n'est pas citée ? Appelez, on regarde la distance ensemble.",
-            "rayonKm": 50,
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.05%2C45.20%2C5.15%2C45.85&layer=mapnik&marker=45.5182852%2C4.5975489",
+            "titre": "Lyon, le Rhône et toute la Loire",
+            "intro": "Deux ancrages : Lyon, d'où nous rayonnons sur l'ensemble du Rhône et le pays viennois, et Rive-de-Gier, notre atelier, qui couvre toute la Loire. Une adresse entre les deux ? Elle est très probablement desservie.",
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.05%2C45.20%2C5.15%2C45.90&layer=mapnik&marker=45.5182852%2C4.5975489",
             "zones": [
               {
-                "region": "Vallée du Gier — autour de Rive-de-Gier",
+                "region": "Lyon & tout le Rhône (69)",
+                "principale": "Lyon",
+                "villes": [
+                  "Lyon",
+                  "Villeurbanne",
+                  "Vénissieux",
+                  "Bron",
+                  "Saint-Priest",
+                  "Oullins",
+                  "Sainte-Foy-lès-Lyon",
+                  "Caluire-et-Cuire",
+                  "Écully",
+                  "Tassin-la-Demi-Lune",
+                  "Givors",
+                  "Grigny",
+                  "Brignais",
+                  "Mornant",
+                  "Millery",
+                  "Montagny"
+                ]
+              },
+              {
+                "region": "Vienne & pays viennois",
+                "principale": "Vienne",
+                "villes": [
+                  "Vienne",
+                  "Pont-Évêque",
+                  "Chasse-sur-Rhône",
+                  "Seyssuel",
+                  "Estrablin",
+                  "Chuzelles"
+                ]
+              },
+              {
+                "region": "Rive-de-Gier & toute la Loire (42)",
                 "principale": "Rive-de-Gier",
                 "villes": [
                   "Rive-de-Gier",
                   "Saint-Chamond",
+                  "Saint-Étienne",
                   "L'Horme",
                   "La Grand-Croix",
                   "Lorette",
                   "Saint-Paul-en-Jarez",
                   "Génilac",
-                  "Châteauneuf",
-                  "Saint-Joseph",
-                  "Farnay",
-                  "Cellieu"
-                ]
-              },
-              {
-                "region": "Saint-Étienne Métropole",
-                "principale": "Saint-Étienne",
-                "villes": [
-                  "Saint-Étienne",
-                  "Saint-Priest-en-Jarez",
-                  "La Talaudière",
-                  "Sorbiers",
-                  "Le Chambon-Feugerolles",
                   "Firminy",
+                  "Le Chambon-Feugerolles",
                   "Roche-la-Molière",
-                  "Villars"
-                ]
-              },
-              {
-                "region": "Ouest lyonnais & vallée du Rhône",
-                "principale": "Givors",
-                "villes": [
-                  "Givors",
-                  "Grigny",
-                  "Montagny",
-                  "Mornant",
-                  "Brignais",
-                  "Millery",
-                  "Vienne",
-                  "Chasse-sur-Rhône"
+                  "Sorbiers",
+                  "La Talaudière",
+                  "Montbrison",
+                  "Roanne"
                 ]
               }
             ]
@@ -356,8 +379,8 @@
                 "href": "/pose-cuisine",
                 "icone": "CookingPot",
                 "image": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-cuisine.jpg",
-                  "alt": "Cuisine équipée en bois montée et posée"
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-cuisine-1.jpg",
+                  "alt": "Pose de cuisine"
                 }
               },
               {
@@ -366,8 +389,8 @@
                 "href": "/pose-parquet",
                 "icone": "Layers",
                 "image": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-parquet.jpg",
-                  "alt": "Parquet en chevrons aux tons chauds"
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-parquet-2.jpg",
+                  "alt": "Pose de parquet"
                 }
               },
               {
@@ -376,8 +399,8 @@
                 "href": "/portes-fenetres",
                 "icone": "DoorOpen",
                 "image": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-portes-fenetres.jpg",
-                  "alt": "Baie vitrée à cadres aluminium noirs"
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-fenetres-2.jpg",
+                  "alt": "Portes & fenêtres"
                 }
               },
               {
@@ -386,8 +409,8 @@
                 "href": "/amenagement-interieur",
                 "icone": "LayoutGrid",
                 "image": {
-                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-amenagement.jpg",
-                  "alt": "Dressing sur mesure en bois clair"
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-amenagement-1.jpg",
+                  "alt": "Aménagement intérieur"
                 }
               },
               {
@@ -408,6 +431,16 @@
                 "image": {
                   "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-porte-blindee.jpg",
                   "alt": "Porte d'entrée en bois massif"
+                }
+              },
+              {
+                "nom": "Chambres & lits pont",
+                "icone": "Package",
+                "href": "/montage-chambre",
+                "description": "Montage d'une chambre livrée en kit : assemblage, pont au-dessus du couchage, réglage des portes et ancrage mural.",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-chambre-1.jpg",
+                  "alt": "Chambre avec armoire-pont et lits montée par Menuiserie Beirouti"
                 }
               }
             ],
@@ -434,6 +467,190 @@
           "content": {
             "titre": "Un besoin précis à chiffrer ?",
             "sousTitre": "Dites-moi la pièce, les dimensions approximatives et le matériau envisagé : j'établis un devis gratuit et sans engagement.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "realisations",
+      "label": "Réalisations",
+      "meta": {
+        "title": "Réalisations — chantiers de menuiserie en images",
+        "description": "Cuisines, parquets, fenêtres, aménagements et chambres réellement posés par Menuiserie Beirouti à Lyon, Rive-de-Gier et alentour. Photos de chantiers."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Nos chantiers",
+            "titre": "Nos réalisations en images",
+            "intro": "Toutes les photos de cette page proviennent de chantiers réellement réalisés par l'atelier. Aucun visuel de catalogue : ce sont nos poses, chez nos clients.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "avant-apres",
+          "content": {
+            "eyebrow": "Avant / après",
+            "titre": "La transformation, curseur en main",
+            "intro": "Faites glisser la poignée sur l'image pour passer de l'état d'origine au résultat posé.",
+            "ratio": "3/4",
+            "avantApres": [
+              {
+                "avant": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-fenetres-avant.jpg",
+                  "alt": "Avant : ancienne fenêtre et sol d'origine"
+                },
+                "apres": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-fenetres-apres.jpg",
+                  "alt": "Après : grande baie vitrée aluminium posée"
+                },
+                "legende": "Remplacement d'une fenêtre par une baie vitrée aluminium — faites glisser la poignée."
+              }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "Galerie",
+            "titre": "Chantiers récents",
+            "ratio": "4/3",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-cuisine-1.jpg",
+                  "alt": "Cuisine posée par Menuiserie Beirouti"
+                },
+                "titre": "Pose de cuisine"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-cuisine-2.jpg",
+                  "alt": "Cuisine posée par Menuiserie Beirouti"
+                },
+                "titre": "Pose de cuisine"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-cuisine-3.jpg",
+                  "alt": "Cuisine posée par Menuiserie Beirouti"
+                },
+                "titre": "Pose de cuisine"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-cuisine-4.jpg",
+                  "alt": "Cuisine posée par Menuiserie Beirouti"
+                },
+                "titre": "Pose de cuisine"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-cuisine-5.jpg",
+                  "alt": "Cuisine posée par Menuiserie Beirouti"
+                },
+                "titre": "Pose de cuisine"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-cuisine-6.jpg",
+                  "alt": "Cuisine posée par Menuiserie Beirouti"
+                },
+                "titre": "Pose de cuisine"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-cuisine-7.jpg",
+                  "alt": "Cuisine posée par Menuiserie Beirouti"
+                },
+                "titre": "Pose de cuisine"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-parquet-1.jpg",
+                  "alt": "Parquet posé par Menuiserie Beirouti"
+                },
+                "titre": "Pose de parquet"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-parquet-2.jpg",
+                  "alt": "Parquet posé par Menuiserie Beirouti"
+                },
+                "titre": "Pose de parquet"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-parquet-3.jpg",
+                  "alt": "Parquet posé par Menuiserie Beirouti"
+                },
+                "titre": "Pose de parquet"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-parquet-4.jpg",
+                  "alt": "Parquet posé par Menuiserie Beirouti"
+                },
+                "titre": "Pose de parquet"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-parquet-5.jpg",
+                  "alt": "Parquet posé par Menuiserie Beirouti"
+                },
+                "titre": "Pose de parquet"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-fenetres-1.jpg",
+                  "alt": "Menuiserie posée par Menuiserie Beirouti"
+                },
+                "titre": "Portes & fenêtres"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-fenetres-2.jpg",
+                  "alt": "Menuiserie posée par Menuiserie Beirouti"
+                },
+                "titre": "Portes & fenêtres"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-amenagement-1.jpg",
+                  "alt": "Aménagement sur mesure"
+                },
+                "titre": "Aménagement intérieur"
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-chambre-1.jpg",
+                  "alt": "Chambre avec armoire-pont et lits montée par Menuiserie Beirouti"
+                },
+                "titre": "Chambre & lit pont"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un projet du même genre ?",
+            "sousTitre": "Décrivez-le en quelques lignes : je viens prendre les cotes et je chiffre gratuitement.",
             "ctaPrimaire": {
               "label": "Demander un devis",
               "href": "/devis"
@@ -615,11 +832,65 @@
               "Comptez généralement d'une à trois journées selon la taille et la complexité de l'implantation. Pour que tout roule le jour J, l'idéal est que la pièce soit finie côté peinture et carrelage, et que les arrivées soient en place."
             ],
             "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-cuisine.jpg",
-              "alt": "Cuisine équipée en bois montée et posée"
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-cuisine-2.jpg",
+              "alt": "Cuisine équipée posée par Menuiserie Beirouti"
             },
-            "imageRatio": "3/2",
+            "imageRatio": "4/3",
             "imagePosition": "right"
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "En images",
+            "titre": "Cuisines posées",
+            "intro": "Des chantiers réellement réalisés par l'atelier, photographiés sur place.",
+            "ratio": "4/3",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-cuisine-1.jpg",
+                  "alt": "Cuisine réalisée par Menuiserie Beirouti"
+                }
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-cuisine-2.jpg",
+                  "alt": "Cuisine réalisée par Menuiserie Beirouti"
+                }
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-cuisine-3.jpg",
+                  "alt": "Cuisine réalisée par Menuiserie Beirouti"
+                }
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-cuisine-4.jpg",
+                  "alt": "Cuisine réalisée par Menuiserie Beirouti"
+                }
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-cuisine-5.jpg",
+                  "alt": "Cuisine réalisée par Menuiserie Beirouti"
+                }
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-cuisine-6.jpg",
+                  "alt": "Cuisine réalisée par Menuiserie Beirouti"
+                }
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-cuisine-7.jpg",
+                  "alt": "Cuisine réalisée par Menuiserie Beirouti"
+                }
+              }
+            ]
           }
         },
         {
@@ -751,10 +1022,10 @@
               "Je pose aussi bien dans une pièce à vivre neuve qu'en rénovation, par-dessus un ancien revêtement quand son état le permet. Au relevé, je vous dis franchement ce qui est jouable chez vous et le sens de pose qui mettra la pièce en valeur."
             ],
             "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-parquet.jpg",
-              "alt": "Parquet en chevrons aux tons chauds"
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-parquet-1.jpg",
+              "alt": "Parquet posé dans une pièce à vivre"
             },
-            "imageRatio": "3/2",
+            "imageRatio": "4/3",
             "imagePosition": "left"
           }
         },
@@ -788,6 +1059,48 @@
           }
         },
         {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "En images",
+            "titre": "Parquets posés",
+            "intro": "Des chantiers réellement réalisés par l'atelier, photographiés sur place.",
+            "ratio": "4/3",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-parquet-1.jpg",
+                  "alt": "Parquet posé par Menuiserie Beirouti"
+                }
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-parquet-2.jpg",
+                  "alt": "Parquet posé par Menuiserie Beirouti"
+                }
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-parquet-3.jpg",
+                  "alt": "Parquet posé par Menuiserie Beirouti"
+                }
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-parquet-4.jpg",
+                  "alt": "Parquet posé par Menuiserie Beirouti"
+                }
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-parquet-5.jpg",
+                  "alt": "Parquet posé par Menuiserie Beirouti"
+                }
+              }
+            ]
+          }
+        },
+        {
           "type": "faq",
           "variant": "liste-ouverte",
           "content": {
@@ -816,32 +1129,62 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "Parquet posé à Rive-de-Gier et jusqu'à 50 km",
-            "intro": "Vallée du Gier, métropole stéphanoise et ouest lyonnais.",
-            "rayonKm": 50,
+            "titre": "De Lyon à Saint-Étienne, en passant par Vienne",
+            "intro": "Rhône (69), Loire (42) et pays viennois.",
             "zones": [
               {
-                "region": "Vallée du Gier",
+                "region": "Lyon & tout le Rhône (69)",
+                "principale": "Lyon",
+                "villes": [
+                  "Lyon",
+                  "Villeurbanne",
+                  "Vénissieux",
+                  "Bron",
+                  "Saint-Priest",
+                  "Oullins",
+                  "Sainte-Foy-lès-Lyon",
+                  "Caluire-et-Cuire",
+                  "Écully",
+                  "Tassin-la-Demi-Lune",
+                  "Givors",
+                  "Grigny",
+                  "Brignais",
+                  "Mornant",
+                  "Millery",
+                  "Montagny"
+                ]
+              },
+              {
+                "region": "Vienne & pays viennois",
+                "principale": "Vienne",
+                "villes": [
+                  "Vienne",
+                  "Pont-Évêque",
+                  "Chasse-sur-Rhône",
+                  "Seyssuel",
+                  "Estrablin",
+                  "Chuzelles"
+                ]
+              },
+              {
+                "region": "Rive-de-Gier & toute la Loire (42)",
                 "principale": "Rive-de-Gier",
                 "villes": [
                   "Rive-de-Gier",
                   "Saint-Chamond",
+                  "Saint-Étienne",
+                  "L'Horme",
                   "La Grand-Croix",
                   "Lorette",
-                  "L'Horme",
-                  "Génilac"
-                ]
-              },
-              {
-                "region": "Saint-Étienne & ouest lyonnais",
-                "principale": "Saint-Étienne",
-                "villes": [
-                  "Saint-Étienne",
+                  "Saint-Paul-en-Jarez",
+                  "Génilac",
+                  "Firminy",
+                  "Le Chambon-Feugerolles",
+                  "Roche-la-Molière",
                   "Sorbiers",
-                  "Givors",
-                  "Grigny",
-                  "Mornant",
-                  "Vienne"
+                  "La Talaudière",
+                  "Montbrison",
+                  "Roanne"
                 ]
               }
             ]
@@ -957,6 +1300,11 @@
                 "description": "Portes d'entrée, de garage de service et portes-fenêtres, adaptées à tous types d'habitations."
               },
               {
+                "icone": "DoorClosed",
+                "nom": "Portes intérieures & de chambre",
+                "description": "Portes de chambre, de placard ou de salle de bains : bloc-porte complet ou vantail seul, réglé au poil."
+              },
+              {
                 "icone": "Wrench",
                 "nom": "Dépose de l'ancien",
                 "description": "Dépose totale ou pose en rénovation sur le dormant existant, selon l'état du bâti."
@@ -977,13 +1325,14 @@
             "paragraphes": [
               "Bois, PVC ou aluminium : aucun n'est meilleur dans l'absolu, tout dépend de l'usage. Le PVC offre un excellent rapport isolation-prix et ne demande presque pas d'entretien. L'aluminium, fin et rigide, permet de grandes surfaces vitrées et un style contemporain. Le bois, chaleureux et réparable, reste imbattable côté cachet, notamment en rénovation d'une façade ancienne. Au relevé, je vous explique ce que chaque option donnera chez vous, sans vous pousser vers le plus cher.",
               "Sur le chantier, deux cas se présentent. En rénovation, on conserve souvent le dormant existant s'il est sain : la nouvelle menuiserie se pose dessus, ce qui va vite et salit peu. En dépose totale, on retire tout l'ancien cadre jusqu'au bâti pour repartir sur des bases neuves, quand le dormant est abîmé ou qu'on veut gagner de la surface vitrée. Dans les deux cas, je règle chaque ouvrant, je calfeutre et je vérifie l'étanchéité : une fenêtre bien posée, c'est une fenêtre qui ferme d'un doigt et ne siffle pas au vent.",
+              "Nous ne nous arrêtons pas à l'extérieur : les portes intérieures font partie du métier. Portes de chambre, de placard ou de salle de bains, bloc-porte complet ou simple remplacement de vantail sur huisserie existante — on ajuste les jeux, on règle les paumelles et on pose la quincaillerie pour une porte qui ferme au doigt, sans frotter ni claquer.",
               "Je travaille aussi bien sur une fenêtre isolée que sur un logement complet, et je coordonne volontiers la pose avec des volets assortis pour un ensemble cohérent."
             ],
             "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-portes-fenetres.jpg",
-              "alt": "Baie vitrée à cadres aluminium noirs"
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-fenetres-1.jpg",
+              "alt": "Menuiserie extérieure posée par Menuiserie Beirouti"
             },
-            "imageRatio": "3/2",
+            "imageRatio": "4/3",
             "imagePosition": "right"
           }
         },
@@ -1012,6 +1361,30 @@
                 "icone": "CheckCircle",
                 "titre": "Réglages et contrôle",
                 "texte": "Réglage des ouvrants et vérification de l'étanchéité, ouverture et fermeture testées avec vous."
+              }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "En images",
+            "titre": "Menuiseries posées",
+            "intro": "Des chantiers réellement réalisés par l'atelier, photographiés sur place.",
+            "ratio": "4/3",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-fenetres-1.jpg",
+                  "alt": "Fenêtre posée par Menuiserie Beirouti"
+                }
+              },
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-fenetres-2.jpg",
+                  "alt": "Fenêtre posée par Menuiserie Beirouti"
+                }
               }
             ]
           }
@@ -1145,10 +1518,10 @@
               "Dressing de chambre, placard d'entrée, bibliothèque toute hauteur, rangement sous escalier, coin bureau intégré : si ça se dessine et se mesure, ça se fabrique. Au relevé, on regarde ce qui est réaliste chez vous et on cale le projet sur votre budget."
             ],
             "image": {
-              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/service-amenagement.jpg",
-              "alt": "Dressing sur mesure en bois clair"
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-amenagement-1.jpg",
+              "alt": "Aménagement intérieur sur mesure en bois"
             },
-            "imageRatio": "3/2",
+            "imageRatio": "4/3",
             "imagePosition": "left"
           }
         },
@@ -1177,6 +1550,24 @@
                 "icone": "PencilRuler",
                 "nom": "Étude et relevé",
                 "description": "Relevé sur place, proposition d'implantation et ajustements avant fabrication."
+              }
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "En images",
+            "titre": "Aménagements réalisés",
+            "intro": "Des chantiers réellement réalisés par l'atelier, photographiés sur place.",
+            "ratio": "4/3",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-amenagement-1.jpg",
+                  "alt": "Aménagement sur mesure réalisé par Menuiserie Beirouti"
+                }
               }
             ]
           }
@@ -1238,6 +1629,189 @@
           "content": {
             "titre": "Un espace à aménager à Rive-de-Gier ?",
             "sousTitre": "Envoyez-moi les grandes lignes et quelques mesures : je vous fais un devis gratuit.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "montage-chambre",
+      "label": "Chambres & lits pont",
+      "navHidden": true,
+      "meta": {
+        "title": "Montage de chambre à coucher — Lyon & Loire",
+        "description": "Montage et pose de chambres à coucher : armoires, lits pont, têtes de lit et rangements, fixés d'aplomb à Lyon, Rive-de-Gier et alentour. Devis gratuit.",
+        "keywords": [
+          "montage chambre à coucher Lyon",
+          "pose lit pont Rive-de-Gier",
+          "montage armoire en kit Loire",
+          "monteur de meubles Lyon"
+        ]
+      },
+      "service": {
+        "name": "Montage et pose de chambres à coucher",
+        "description": "Montage et pose de chambres à coucher, armoires et lits pont à Lyon, Rive-de-Gier et alentour.",
+        "serviceType": "Montage de meubles de chambre"
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Armoires, lits pont, rangements",
+            "titre": "Montage de chambres à coucher",
+            "intro": "Vous avez choisi votre chambre — armoire, lit pont, tête de lit, chevets — et il faut maintenant la monter et la fixer proprement. C'est exactement ce que nous faisons, à Lyon comme à Rive-de-Gier : un ensemble d'aplomb, aligné et sécurisé au mur.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Chambres & lits pont"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "+33 7 49 08 77 18",
+              "href": "tel:+33749087718"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-icones",
+          "content": {
+            "titre": "Ce que nous montons",
+            "items": [
+              {
+                "icone": "Package",
+                "nom": "Armoires & dressings en kit",
+                "description": "Montage complet, portes battantes ou coulissantes, réglage des façades."
+              },
+              {
+                "icone": "Layers",
+                "nom": "Lits pont & ponts de lit",
+                "description": "L'ensemble armoire + pont enjambant le lit, assemblé et calé au millimètre."
+              },
+              {
+                "icone": "Frame",
+                "nom": "Têtes de lit & chevets",
+                "description": "Pose de la tête de lit, des chevets et des modules de rangement associés."
+              },
+              {
+                "icone": "ShieldCheck",
+                "nom": "Fixation murale sécurisée",
+                "description": "Chaque meuble haut est ancré au mur selon le support — plâtre, brique ou béton."
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "content": {
+            "eyebrow": "Le déroulé",
+            "titre": "Une chambre montée, pas juste déballée",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-chambre-1.jpg",
+              "alt": "Chambre avec armoire-pont et lits montée par Menuiserie Beirouti"
+            },
+            "imageRatio": "4/3",
+            "imagePosition": "right",
+            "paragraphes": [
+              "Une chambre en kit, c'est des dizaines de panneaux, de ferrures et de vis — et une notice qui suppose des murs parfaitement droits. Dans la réalité, un mur ondule, un sol penche d'un centimètre, une plinthe empêche le meuble de venir à fond. Notre travail consiste justement à absorber ces écarts pour que l'ensemble paraisse droit et aligné.",
+              "Nous assemblons les caissons, montons le pont au-dessus du couchage, posons les portes et réglons leurs jeux un à un. Les meubles hauts sont systématiquement ancrés au mur avec la fixation adaptée au support — c'est un point de sécurité non négociable, en particulier dans une chambre d'enfant.",
+              "Nous montons aussi bien une chambre complète livrée en colis qu'un meuble isolé à ajuster. Comptez généralement une demi-journée à une journée selon le nombre de modules. L'emballage est évacué et la pièce rendue propre."
+            ]
+          }
+        },
+        {
+          "type": "galerie",
+          "variant": "grille",
+          "content": {
+            "eyebrow": "En images",
+            "titre": "Chambres montées",
+            "ratio": "4/3",
+            "intro": "Un chantier réellement réalisé par l'atelier.",
+            "images": [
+              {
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/beirouti/real-chambre-1.jpg",
+                  "alt": "Chambre avec armoire-pont et lits montée par Menuiserie Beirouti"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions fréquentes",
+            "items": [
+              {
+                "question": "Montez-vous une chambre achetée en grande surface ?",
+                "reponse": "Oui, c'est le cas le plus courant : chambres et armoires en kit de toutes les enseignes. Vérifiez simplement que tous les colis sont livrés et complets avant notre passage, un panneau manquant bloque le montage."
+              },
+              {
+                "question": "Qu'est-ce qu'un lit pont exactement ?",
+                "reponse": "C'est un ensemble où deux armoires encadrent le couchage et sont reliées par un module de rangement qui enjambe le lit. Très efficace dans les petites chambres, il demande un montage précis car tout doit tomber juste du premier coup."
+              },
+              {
+                "question": "Fixez-vous les meubles au mur ?",
+                "reponse": "Systématiquement pour tout meuble haut. Nous adaptons la cheville au support — plaque de plâtre, brique creuse, béton — car c'est ce qui empêche un basculement, notamment dans une chambre d'enfant."
+              },
+              {
+                "question": "Faut-il vider la pièce avant votre venue ?",
+                "reponse": "Un espace dégagé au sol suffit pour poser les panneaux et travailler. Si l'ancien mobilier doit partir, dites-le au devis : on prévoit le démontage dans le temps annoncé."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "cartes",
+          "content": {
+            "eyebrow": "Pour aller plus loin",
+            "titre": "Prestations liées",
+            "items": [
+              {
+                "nom": "Aménagement intérieur",
+                "icone": "LayoutGrid",
+                "href": "/amenagement-interieur",
+                "description": "Besoin d'un dressing sur mesure plutôt que d'un meuble en kit ? On le dessine à vos cotes."
+              },
+              {
+                "nom": "Portes & fenêtres",
+                "icone": "DoorOpen",
+                "href": "/portes-fenetres",
+                "description": "On profite du chantier pour reprendre la porte de la chambre."
+              }
+            ],
+            "cta": {
+              "label": "Chambre à monter hors Rive-de-Gier ? Voir la zone",
+              "href": "/zone-intervention"
+            }
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "encadre",
+          "content": {
+            "titre": "Une chambre à monter ?",
+            "sousTitre": "Devis gratuit et sans engagement, réponse rapide.",
             "ctaPrimaire": {
               "label": "Demander un devis",
               "href": "/devis"
@@ -1371,32 +1945,62 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "Volets posés à Rive-de-Gier et jusqu'à 50 km",
-            "intro": "Vallée du Gier, métropole stéphanoise et ouest lyonnais.",
-            "rayonKm": 50,
+            "titre": "De Lyon à Saint-Étienne, en passant par Vienne",
+            "intro": "Rhône (69), Loire (42) et pays viennois.",
             "zones": [
               {
-                "region": "Vallée du Gier",
+                "region": "Lyon & tout le Rhône (69)",
+                "principale": "Lyon",
+                "villes": [
+                  "Lyon",
+                  "Villeurbanne",
+                  "Vénissieux",
+                  "Bron",
+                  "Saint-Priest",
+                  "Oullins",
+                  "Sainte-Foy-lès-Lyon",
+                  "Caluire-et-Cuire",
+                  "Écully",
+                  "Tassin-la-Demi-Lune",
+                  "Givors",
+                  "Grigny",
+                  "Brignais",
+                  "Mornant",
+                  "Millery",
+                  "Montagny"
+                ]
+              },
+              {
+                "region": "Vienne & pays viennois",
+                "principale": "Vienne",
+                "villes": [
+                  "Vienne",
+                  "Pont-Évêque",
+                  "Chasse-sur-Rhône",
+                  "Seyssuel",
+                  "Estrablin",
+                  "Chuzelles"
+                ]
+              },
+              {
+                "region": "Rive-de-Gier & toute la Loire (42)",
                 "principale": "Rive-de-Gier",
                 "villes": [
                   "Rive-de-Gier",
                   "Saint-Chamond",
-                  "Lorette",
-                  "La Grand-Croix",
-                  "Génilac",
-                  "Saint-Paul-en-Jarez"
-                ]
-              },
-              {
-                "region": "Autour de Saint-Étienne & Givors",
-                "principale": "Saint-Étienne",
-                "villes": [
                   "Saint-Étienne",
+                  "L'Horme",
+                  "La Grand-Croix",
+                  "Lorette",
+                  "Saint-Paul-en-Jarez",
+                  "Génilac",
+                  "Firminy",
+                  "Le Chambon-Feugerolles",
+                  "Roche-la-Molière",
+                  "Sorbiers",
                   "La Talaudière",
-                  "Givors",
-                  "Grigny",
-                  "Mornant",
-                  "Chasse-sur-Rhône"
+                  "Montbrison",
+                  "Roanne"
                 ]
               }
             ]
@@ -1586,73 +2190,79 @@
       "label": "Zone d'intervention",
       "navHidden": true,
       "meta": {
-        "title": "Zone d'intervention — Rive-de-Gier et 50 km",
-        "description": "De Rive-de-Gier à Saint-Chamond, Saint-Étienne, Givors ou Vienne : les secteurs où j'interviens en menuiserie, jusqu'à 50 km de mon atelier. Devis gratuit."
+        "title": "Zone d'intervention — Lyon, Rhône & Loire",
+        "description": "Menuisier à Lyon et dans tout le Rhône, à Vienne, à Rive-de-Gier et dans toute la Loire : les secteurs où nous posons cuisines, parquets et menuiseries."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Zone d'intervention",
-            "titre": "Je me déplace jusqu'à 50 km",
-            "intro": "Mon atelier est à Rive-de-Gier ; de là, je couvre toute la vallée du Gier, la métropole stéphanoise, l'ouest lyonnais et le pays viennois. Partout dans ce rayon, le chiffrage est offert et le relevé sans engagement."
+            "titre": "Lyon, le Rhône, la Loire et Vienne",
+            "intro": "Notre atelier est à Rive-de-Gier, à mi-chemin entre Saint-Étienne et Lyon. Cette position nous place à moins d'une heure de la quasi-totalité du Rhône et de la Loire, Vienne comprise."
           }
         },
         {
           "type": "zone",
           "mode": "carte",
           "content": {
-            "titre": "Les secteurs desservis",
-            "intro": "Ces secteurs ne sont pas gravés dans le marbre : dès que votre commune tombe dans les 50 km, on s'organise. Un doute sur la distance ? Un simple appel le lève.",
-            "rayonKm": 50,
-            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.05%2C45.20%2C5.15%2C45.85&layer=mapnik&marker=45.5182852%2C4.5975489",
+            "titre": "Lyon, le Rhône et toute la Loire",
+            "intro": "Deux ancrages : Lyon, d'où nous rayonnons sur l'ensemble du Rhône et le pays viennois, et Rive-de-Gier, notre atelier, qui couvre toute la Loire. Une adresse entre les deux ? Elle est très probablement desservie.",
+            "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=4.05%2C45.20%2C5.15%2C45.90&layer=mapnik&marker=45.5182852%2C4.5975489",
             "zones": [
               {
-                "region": "Vallée du Gier — autour de Rive-de-Gier",
+                "region": "Lyon & tout le Rhône (69)",
+                "principale": "Lyon",
+                "villes": [
+                  "Lyon",
+                  "Villeurbanne",
+                  "Vénissieux",
+                  "Bron",
+                  "Saint-Priest",
+                  "Oullins",
+                  "Sainte-Foy-lès-Lyon",
+                  "Caluire-et-Cuire",
+                  "Écully",
+                  "Tassin-la-Demi-Lune",
+                  "Givors",
+                  "Grigny",
+                  "Brignais",
+                  "Mornant",
+                  "Millery",
+                  "Montagny"
+                ]
+              },
+              {
+                "region": "Vienne & pays viennois",
+                "principale": "Vienne",
+                "villes": [
+                  "Vienne",
+                  "Pont-Évêque",
+                  "Chasse-sur-Rhône",
+                  "Seyssuel",
+                  "Estrablin",
+                  "Chuzelles"
+                ]
+              },
+              {
+                "region": "Rive-de-Gier & toute la Loire (42)",
                 "principale": "Rive-de-Gier",
                 "villes": [
                   "Rive-de-Gier",
                   "Saint-Chamond",
+                  "Saint-Étienne",
                   "L'Horme",
                   "La Grand-Croix",
                   "Lorette",
                   "Saint-Paul-en-Jarez",
                   "Génilac",
-                  "Châteauneuf",
-                  "Saint-Joseph",
-                  "Farnay",
-                  "Cellieu",
-                  "Valfleury"
-                ]
-              },
-              {
-                "region": "Saint-Étienne Métropole",
-                "principale": "Saint-Étienne",
-                "villes": [
-                  "Saint-Étienne",
-                  "Saint-Priest-en-Jarez",
-                  "La Talaudière",
-                  "Sorbiers",
-                  "Le Chambon-Feugerolles",
                   "Firminy",
+                  "Le Chambon-Feugerolles",
                   "Roche-la-Molière",
-                  "Villars",
-                  "Saint-Jean-Bonnefonds"
-                ]
-              },
-              {
-                "region": "Ouest lyonnais & pays viennois",
-                "principale": "Givors",
-                "villes": [
-                  "Givors",
-                  "Grigny",
-                  "Montagny",
-                  "Mornant",
-                  "Brignais",
-                  "Millery",
-                  "Vienne",
-                  "Chasse-sur-Rhône",
-                  "Pont-Évêque"
+                  "Sorbiers",
+                  "La Talaudière",
+                  "Montbrison",
+                  "Roanne"
                 ]
               }
             ]
@@ -1662,11 +2272,11 @@
           "type": "contenu",
           "content": {
             "eyebrow": "Là où j'interviens",
-            "titre": "Un territoire, quatre bassins",
+            "titre": "Deux départements, un même artisan",
             "paragraphes": [
-              "Rive-de-Gier, c'est ma base : l'atelier est rue du Béarn, et c'est ici comme dans les communes voisines — Saint-Chamond, Lorette, La Grand-Croix, Génilac — que se concentrent mes chantiers. Maisons de ville, appartements, pavillons de la vallée : cuisines, parquets et menuiseries y forment le gros des demandes.",
-              "Vers l'ouest, je monte sur la métropole stéphanoise : Saint-Étienne, Saint-Priest-en-Jarez, La Talaudière, Sorbiers ou Firminy. Rénovations d'appartements et remplacements de fenêtres y sont fréquents, souvent en site occupé, ce qui demande une pose propre et rapide.",
-              "En descendant le Gier vers le Rhône, je dessers Givors, Grigny et l'ouest lyonnais jusqu'à Mornant et Brignais. Le pays viennois n'est qu'à un pont : Vienne, Chasse-sur-Rhône et Pont-Évêque entrent sans souci dans le périmètre. Partout, mêmes prestations et même devis gratuit — seule la distance peut jouer sur le déplacement, ce qu'on cale toujours avant de démarrer."
+              "Lyon et sa métropole concentrent aujourd'hui une grande part de nos chantiers : appartements haussmanniens à réagencer, cuisines à installer à Villeurbanne, Bron ou Vénissieux, parquets à reprendre à Sainte-Foy-lès-Lyon ou Caluire. Nous intervenons dans tout le Rhône, jusqu'aux communes de l'ouest lyonnais comme Brignais, Mornant ou Écully.",
+              "Juste au sud, le pays viennois prolonge naturellement ce périmètre : Vienne, Pont-Évêque, Chasse-sur-Rhône et Seyssuel sont à quelques minutes de la vallée du Gier.",
+              "Côté Loire, Rive-de-Gier reste notre base et notre secteur historique. De Saint-Chamond à Saint-Étienne, de Firminy à Montbrison, nous couvrons l'ensemble du département — y compris le Roannais sur projet planifié. Partout, mêmes prestations, même exigence de finition, et un déplacement calé avec vous avant de démarrer."
             ]
           }
         },
@@ -1732,23 +2342,26 @@
               "Pose de parquet",
               "Portes & fenêtres (bois / PVC / alu)",
               "Aménagement intérieur",
+              "Chambres & lits pont",
               "Pose de volets",
               "Porte blindée",
               "Autre / je ne sais pas"
             ],
             "villes": [
-              "Rive-de-Gier",
-              "Saint-Chamond",
-              "La Grand-Croix",
-              "Lorette",
-              "Génilac",
-              "Saint-Étienne",
-              "Sorbiers",
+              "Lyon",
+              "Villeurbanne",
+              "Vénissieux",
+              "Bron",
+              "Oullins",
               "Givors",
-              "Grigny",
+              "Brignais",
               "Mornant",
               "Vienne",
-              "Chasse-sur-Rhône"
+              "Chasse-sur-Rhône",
+              "Rive-de-Gier",
+              "Saint-Chamond",
+              "Saint-Étienne",
+              "Firminy"
             ],
             "confidentialiteHref": "/confidentialite"
           }
@@ -1795,23 +2408,26 @@
               "Pose de parquet",
               "Portes & fenêtres (bois / PVC / alu)",
               "Aménagement intérieur",
+              "Chambres & lits pont",
               "Pose de volets",
               "Porte blindée",
               "Autre / je ne sais pas"
             ],
             "villes": [
-              "Rive-de-Gier",
-              "Saint-Chamond",
-              "La Grand-Croix",
-              "Lorette",
-              "Génilac",
-              "Saint-Étienne",
-              "Sorbiers",
+              "Lyon",
+              "Villeurbanne",
+              "Vénissieux",
+              "Bron",
+              "Oullins",
               "Givors",
-              "Grigny",
+              "Brignais",
               "Mornant",
               "Vienne",
-              "Chasse-sur-Rhône"
+              "Chasse-sur-Rhône",
+              "Rive-de-Gier",
+              "Saint-Chamond",
+              "Saint-Étienne",
+              "Firminy"
             ],
             "confidentialiteHref": "/confidentialite"
           }

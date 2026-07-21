@@ -84,6 +84,15 @@ export function Hero({ block, config, basePath = "" }: BlockComponentProps<HeroC
                 )}
               </div>
             )}
+            {/* STICKER d'expérience — tampon caramel incliné (badges[0]). */}
+            {c.badges?.[0] && (
+              <div className="mt-10 inline-flex -rotate-3 items-center gap-2.5 rounded-[3px] bg-accent-500 px-5 py-3 shadow-[var(--shadow-pop)]">
+                <Icon name="Award" className="size-5 text-accent-contrast" />
+                <span className="font-display text-base font-bold uppercase tracking-[0.08em] text-accent-contrast">
+                  {c.badges[0]}
+                </span>
+              </div>
+            )}
           </div>
 
           {/* Plaque d'atelier — cartouche crème à coupe d'onglet posé sur le bois.
