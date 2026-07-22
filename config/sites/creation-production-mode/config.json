@@ -10,8 +10,8 @@
       "brand": "#b0512e",
       "accent": "#c3b4a2"
     },
-    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/logo-ad620325.png",
-    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/logo-ad620325.png"
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/logo-8d706a98.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/logo-8d706a98.png"
   },
   "entreprise": {
     "nom": "Création & Production Mode",
@@ -73,7 +73,7 @@
             },
             "ctaSecondaire": {
               "label": "Découvrir l'atelier",
-              "href": "/prestations"
+              "href": "/atelier"
             },
             "image": {
               "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/hero-atelier.png",
