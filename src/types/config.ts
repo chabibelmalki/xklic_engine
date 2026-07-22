@@ -901,7 +901,11 @@ export interface ContactContent {
   telephone?: string;
   email?: string;
   whatsapp?: string;
-  adresse?: string;
+  /**
+   * Adresse affichée. Absente => repli automatique sur `entreprise.siege`
+   * (voir `resolveAdresse`). `false` => masquage explicite, sans repli.
+   */
+  adresse?: string | false;
   horaires?: Horaire[];
   cta?: CTA;
   /** Affiche un formulaire de contact/demande opérationnel (POST /api/contact). */

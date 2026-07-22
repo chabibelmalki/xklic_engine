@@ -9,6 +9,7 @@ import { siteOrigin } from "@/lib/urls";
 import { findBlock, type ResolvedPage } from "@/lib/pages";
 import { allZoneVilles } from "@/lib/zone";
 import { socialSameAs, resolveSocials } from "@/lib/social";
+import { resolveAdresse } from "@/lib/adresse";
 
 /**
  * JSON-LD par site ET par page. Le `@type` du LocalBusiness vient de
@@ -149,7 +150,7 @@ export function buildJsonLd(config: SiteConfig, page?: ResolvedPage): object[] {
     url: origin,
     image: absUrl(origin, heroImage(config)),
     logo: absUrl(origin, config.branding.logo),
-    address: postalAddress(config, contact?.adresse),
+    address: postalAddress(config, resolveAdresse(config, contact ?? undefined)),
   };
 
   if (contact?.telephone) business.telephone = contact.telephone;

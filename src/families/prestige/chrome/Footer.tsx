@@ -5,6 +5,7 @@ import { legalName, legalIdShort, activityCodeShort } from "@/lib/legal";
 import { telHrefIntl, telIndicatif, telNeedsIndicatif, waHref } from "@/lib/utils";
 import { resolvePages, isMultiPage, findBlock } from "@/lib/pages";
 import { resolveSocials } from "@/lib/social";
+import { resolveAdresse } from "@/lib/adresse";
 import { SocialLinks } from "@/components/layout/SocialLinks";
 import { ui } from "@/i18n/ui";
 import { PrestigeContainer } from "../ui/Container";
@@ -27,6 +28,7 @@ export function PrestigeFooter({
   const e = config.entreprise;
   const contact = findBlock<ContactContent>(config, "contact")?.content;
   const socials = resolveSocials(config);
+  const adresse = resolveAdresse(config, contact);
   const t = ui(locale);
   const year = new Date().getFullYear();
 
@@ -109,7 +111,7 @@ export function PrestigeFooter({
                   </a>
                 </li>
               )}
-              {contact?.adresse && <li>{contact.adresse}</li>}
+              {adresse && <li>{adresse}</li>}
               {contact?.email && (
                 <li>
                   <a href={`mailto:${contact.email}`} className="break-all hover:text-white">

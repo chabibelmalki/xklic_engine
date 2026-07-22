@@ -6,6 +6,7 @@ import { statutLabel, legalName, legalIdShort, activityCodeShort } from "@/lib/l
 import { telHrefIntl, telIndicatif, telNeedsIndicatif, waHref } from "@/lib/utils";
 import { resolvePages, isMultiPage, findBlock } from "@/lib/pages";
 import { resolveSocials } from "@/lib/social";
+import { resolveAdresse } from "@/lib/adresse";
 import { SocialLinks } from "./SocialLinks";
 import { ui } from "@/i18n/ui";
 
@@ -24,6 +25,7 @@ export function SiteFooter({
   const contact = findBlock<ContactContent>(config, "contact")?.content;
   const services = findBlock<ServicesContent>(config, "services")?.content;
   const socials = resolveSocials(config);
+  const adresse = resolveAdresse(config, contact);
   const t = ui(locale);
   const year = new Date().getFullYear();
 
@@ -133,10 +135,10 @@ export function SiteFooter({
               {t.footer.contactHeading}
             </h3>
             <ul className="mt-4 space-y-3 text-sm">
-              {contact?.adresse && (
+              {adresse && (
                 <li className="flex items-start gap-3">
                   <MapPin className="mt-0.5 size-4 shrink-0 text-brand-400" />
-                  <span className="text-white/55">{contact.adresse}</span>
+                  <span className="text-white/55">{adresse}</span>
                 </li>
               )}
               {contact?.telephone && (

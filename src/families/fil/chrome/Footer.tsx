@@ -4,6 +4,7 @@ import { legalName, legalIdShort, activityCodeShort } from "@/lib/legal";
 import { telHref, waHref } from "@/lib/utils";
 import { resolvePages, isMultiPage, findBlock } from "@/lib/pages";
 import { resolveSocials } from "@/lib/social";
+import { resolveAdresse } from "@/lib/adresse";
 import { SocialLinks } from "@/components/layout/SocialLinks";
 import { ui } from "@/i18n/ui";
 import { FilContainer } from "../ui/Container";
@@ -29,6 +30,7 @@ export function FilFooter({
   const e = config.entreprise;
   const contact = findBlock<ContactContent>(config, "contact")?.content;
   const socials = resolveSocials(config);
+  const adresse = resolveAdresse(config, contact);
   const t = ui(locale);
   const year = new Date().getFullYear();
 
@@ -103,7 +105,7 @@ export function FilFooter({
               {t.footer.contactHeading}
             </h3>
             <ul className="mt-5 space-y-3 text-sm text-white/75">
-              {contact?.adresse && <li>{contact.adresse}</li>}
+              {adresse && <li>{adresse}</li>}
               {contact?.telephone && (
                 <li>
                   <a href={telHref(contact.telephone)} className="hover:text-accent-50">

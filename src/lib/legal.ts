@@ -441,7 +441,9 @@ export function buildConfidentialite(config: SiteConfig, locale?: string): Menti
   const t = DICT[lang(locale)];
   const e = config.entreprise;
   const contact = findContact(config);
-  const adresse = e.siege ?? contact?.adresse;
+  // Mentions obligatoires : le siège prime toujours ; `adresse: false` (masquage
+  // d'affichage) ne doit pas se glisser ici.
+  const adresse = e.siege ?? (contact?.adresse || undefined);
   const responsable = [legalName(e), adresse].filter(Boolean).join(", ");
   const email = contact?.email;
 

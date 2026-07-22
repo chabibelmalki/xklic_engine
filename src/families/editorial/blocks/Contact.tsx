@@ -8,6 +8,7 @@ import { telHref, waHref, withBase } from "@/lib/utils";
 import { EditorialSection } from "../ui/Section";
 import { EditorialContainer } from "../ui/Container";
 import { EditorialHeading } from "../ui/Heading";
+import { resolveAdresse } from "@/lib/adresse";
 
 /**
  * Contact — éditorial : coordonnées à PLAT (liste à filets, pas de carte à ombre)
@@ -27,15 +28,17 @@ export function Contact({
   const rawConf = c.confidentialiteHref ?? "/confidentialite";
   const confidentialiteHref = rawConf.startsWith("http") ? rawConf : `${basePath}${rawConf}`;
 
+  const adresse = resolveAdresse(config, c);
+
   const rows = [
     c.telephone && { icon: Phone, label: c.telephone, href: telHref(c.telephone) },
     c.whatsapp && { icon: MessageCircle, label: strings.contact.whatsapp, href: waHref(c.whatsapp) },
     c.email && { icon: Mail, label: c.email, href: `mailto:${c.email}` },
-    c.adresse && {
+    adresse && {
       icon: MapPin,
-      label: c.adresse,
+      label: adresse,
       // Cliquer l'adresse ouvre Google Maps sur cette adresse (nouvel onglet).
-      href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(c.adresse)}`,
+      href: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(adresse)}`,
     },
   ].filter(Boolean) as { icon: typeof Phone; label: string; href?: string }[];
 

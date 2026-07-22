@@ -11,6 +11,7 @@ import { formatEUR } from "@/lib/utils";
 import { indexablePages, findBlock } from "@/lib/pages";
 import { localizedPath, htmlLang } from "@/lib/i18n";
 import { allZoneVilles } from "@/lib/zone";
+import { resolveAdresse } from "@/lib/adresse";
 
 /**
  * Entrées du sitemap : STRICTEMENT `indexablePages` (lib/pages.ts, source de
@@ -134,7 +135,8 @@ export function buildLlmsTxt(config: SiteConfig): string {
     lines.push("## Contact");
     if (contact.telephone) lines.push(`- Téléphone : ${contact.telephone}`);
     if (contact.email) lines.push(`- E-mail : ${contact.email}`);
-    if (contact.adresse) lines.push(`- Adresse : ${contact.adresse}`);
+    const adresse = resolveAdresse(config, contact);
+    if (adresse) lines.push(`- Adresse : ${adresse}`);
     if (contact.horaires?.length)
       lines.push(`- Horaires : ${contact.horaires.map((h) => `${h.jour} ${h.heures}`).join("; ")}`);
   }
