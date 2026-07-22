@@ -47,7 +47,8 @@
     ]
   },
   "forms": {
-    "to": "contact@creationproductionmode.fr"
+    "to": "contact@creationproductionmode.fr",
+    "turnstile": true
   },
   "pages": [
     {
