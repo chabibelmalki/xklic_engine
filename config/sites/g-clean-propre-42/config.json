@@ -33,7 +33,7 @@
   },
   "meta": {
     "title": "Aide ménagère au Coteau et dans le Roannais",
-    "description": "Ménage classique à 20 € de l'heure, vitres et magasins au forfait. Aide ménagère au Coteau et jusqu'à 30 km autour. Visite et devis gratuits.",
+    "description": "Ménage classique à 25 € de l'heure, vitres et magasins au forfait. Aide ménagère au Coteau et jusqu'à 30 km autour. Visite et devis gratuits.",
     "keywords": [
       "aide ménagère Le Coteau",
       "ménage à domicile Le Coteau",
@@ -64,7 +64,7 @@
             "accroche": "G Clean Propre 42 prend soin de votre intérieur, de vos vitres à votre canapé, du grand ménage à la terrasse, du Coteau jusqu'aux confins du Roannais. Un créneau fixe, la même personne à chaque passage, et une maison qui sent le propre quand vous rentrez.",
             "card": {
               "label": "Ménage classique",
-              "prix": "20 €",
+              "prix": "25 €",
               "unite": "/ heure",
               "mention": "Le tarif horaire du ménage à domicile, toute l'année. Ce qui se cale au devis, c'est la durée du passage et le rythme.",
               "points": [
@@ -117,7 +117,7 @@
                 "nom": "Ménage à domicile",
                 "icone": "House",
                 "description": "L'entretien courant de votre logement : sols, poussière, cuisine, sanitaires, lits. Chaque semaine, un jour sur deux semaines, ou ponctuellement — le rythme se cale sur le vôtre.",
-                "priceHint": "20 €/h",
+                "priceHint": "25 €/h",
                 "href": "/menage-a-domicile"
               },
               {
@@ -259,7 +259,7 @@
             "titre": "Ce qu'on nous demande souvent",
             "items": [
               {
-                "question": "C'est vraiment 20 € de l'heure ?",
+                "question": "C'est vraiment 25 € de l'heure ?",
                 "reponse": "Oui, et c'est le taux du ménage classique à domicile toute l'année : il n'augmente pas au bout de quelques semaines. Ce qui se discute, ce n'est pas le taux mais la durée d'un passage et sa fréquence — c'est là que se joue votre budget, et c'est ce que la visite permet d'établir."
               },
               {
@@ -371,8 +371,8 @@
               {
                 "nom": "Ménage à domicile",
                 "icone": "House",
-                "description": "L'entretien régulier du logement, du sol au plan de travail. La seule prestation facturée à l'heure : 20 €, sans variation dans l'année.",
-                "priceHint": "20 €/h",
+                "description": "L'entretien régulier du logement, du sol au plan de travail. La seule prestation facturée à l'heure : 25 €, sans variation dans l'année.",
+                "priceHint": "25 €/h",
                 "href": "/menage-a-domicile"
               },
               {
@@ -461,13 +461,13 @@
       "navHidden": true,
       "meta": {
         "title": "Ménage à domicile au Coteau",
-        "description": "Entretien régulier de votre logement au Coteau : sols, cuisine, sanitaires, poussière. 20 € de l'heure, même intervenante à chaque passage."
+        "description": "Entretien régulier de votre logement au Coteau : sols, cuisine, sanitaires, poussière. 25 € de l'heure, même intervenante à chaque passage."
       },
       "service": {
         "name": "Ménage à domicile",
         "serviceType": "Ménage et entretien du logement",
         "description": "Entretien courant du logement au Coteau et dans le Roannais : sols, poussière, cuisine, sanitaires, changement des lits.",
-        "priceFrom": 20
+        "priceFrom": 25
       },
       "blocks": [
         {
@@ -556,7 +556,7 @@
         {
           "type": "cta",
           "content": {
-            "titre": "20 € de l'heure, toute l'année",
+            "titre": "25 € de l'heure, toute l'année",
             "sousTitre": "Le taux ne bouge pas. Reste à savoir combien de temps il faut chez vous : c'est ce que dit la visite.",
             "ctaPrimaire": {
               "label": "Lancer le devis",
@@ -1239,7 +1239,7 @@
       "label": "Tarifs",
       "meta": {
         "title": "Tarifs ménage et nettoyage au Coteau",
-        "description": "Ménage à 20 € de l'heure, vitres, canapés, terrasses, remise en état et locaux au forfait. La moitié déductible de vos impôts sur le travail fait chez vous, au Coteau et dans le Roannais."
+        "description": "Ménage à 25 € de l'heure, vitres, canapés, terrasses, remise en état et locaux au forfait. La moitié déductible de vos impôts sur le travail fait chez vous, au Coteau et dans le Roannais."
       },
       "blocks": [
         {
