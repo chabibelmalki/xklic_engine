@@ -1,5 +1,6 @@
 {
   "slug": "creation-production-mode",
+  "customDomains": ["creationproductionmode.fr", "www.creationproductionmode.fr"],
   "theme": "douceur-beige",
   "stylePack": "atelier-fil",
   "whiteHeader": true,
