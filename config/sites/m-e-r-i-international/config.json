@@ -1,5 +1,6 @@
 {
   "slug": "m-e-r-i-international",
+  "customDomains": ["meri-international.be", "www.meri-international.be"],
   "theme": "pro-bleu-nuit",
   "stylePack": "cascade-hydro",
   "branding": {
@@ -43,6 +44,10 @@
       "nettoyage de vitres Manage",
       "remise en état Wallonie"
     ]
+  },
+  "forms": {
+    "to": "contact@meri-international.be",
+    "turnstile": true
   },
   "i18n": {
     "default": "fr",
