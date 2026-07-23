@@ -3,15 +3,19 @@
   "servicesMegaMenu": true,
   "i18n": {
     "default": "fr",
-    "languages": ["fr", "en", "nl"]
+    "languages": [
+      "fr",
+      "en",
+      "nl"
+    ]
   },
   "theme": "fraicheur-teal",
   "stylePack": "cascade-hydro",
   "branding": {
-    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/logo-wordmark.png",
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/logo-03b7a021.png",
     "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/logo-87f9931c.png",
-    "logoAlt": "HYGIFRANCE — l'entretien global de vos bâtiments",
-    "tagline": "Votre satisfaction, notre priorité",
+    "logoAlt": "HYGIFRANCE — l'expertise fait la différence",
+    "tagline": "L'expertise fait la différence",
     "logoTextHidden": true,
     "logoScale": 1.4,
     "colors": {
@@ -49,14 +53,14 @@
   },
   "meta": {
     "title": "Nettoyage & entretien de bâtiments à Lille",
-    "description": "Nettoyage de bâtiments à Lille et dans le Nord : extérieur, copropriétés, bureaux, textile, syndrome de Diogène et après-sinistre. Devis gratuit HYGIFRANCE.",
+    "description": "Nettoyage de bâtiments en Hauts-de-France (Nord 59 et Pas-de-Calais 62) : extérieur, copropriétés, bureaux, textile, Diogène et après-sinistre. Devis gratuit.",
     "keywords": [
-      "nettoyage bâtiment Lille",
+      "nettoyage bâtiment Hauts-de-France",
       "nettoyage copropriété Lille",
-      "nettoyage bureaux Nord",
+      "nettoyage bureaux Nord 59",
+      "nettoyage Pas-de-Calais 62",
       "syndrome de Diogène Lille",
-      "nettoyage après sinistre Nord",
-      "nettoyage canapé Lille"
+      "nettoyage après sinistre Hauts-de-France"
     ]
   },
   "pages": [
@@ -68,9 +72,9 @@
           "type": "hero",
           "variant": "carte",
           "content": {
-            "eyebrow": "Nettoyage de bâtiments · Lille & Nord",
+            "eyebrow": "Nettoyage de bâtiments · Hauts-de-France",
             "titre": "L'entretien global de vos bâtiments",
-            "titreAccent": "à Lille & dans le Nord",
+            "titreAccent": "en Hauts-de-France",
             "accroche": "Copropriétés, bureaux, commerces, logements : un seul interlocuteur pour garder vos bâtiments propres, sains et accueillants, du sol au plafond.",
             "image": {
               "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/hygifrance/hero-banner-8184f599.jpg",
@@ -291,37 +295,43 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "Une équipe qui se déplace dans tout le Nord",
-            "intro": "Depuis Lille, nous rayonnons sur la métropole et au-delà, jusqu'aux communes plus rurales du département.",
+            "titre": "Une équipe qui couvre les Hauts-de-France",
+            "intro": "Depuis Lille, nous intervenons sur l'ensemble du Nord (59) et du Pas-de-Calais (62).",
             "zones": [
               {
-                "region": "Métropole Européenne de Lille",
+                "region": "Nord (59)",
                 "principale": "Lille",
                 "villes": [
                   "Lille",
                   "Roubaix",
                   "Tourcoing",
                   "Villeneuve-d'Ascq",
+                  "Dunkerque",
+                  "Valenciennes",
+                  "Douai",
+                  "Cambrai",
+                  "Maubeuge",
+                  "Wattrelos",
                   "Marcq-en-Barœul",
-                  "Lambersart",
-                  "Wattignies",
-                  "Ronchin",
-                  "Loos",
-                  "La Madeleine"
+                  "Lambersart"
                 ]
               },
               {
-                "region": "Reste du Nord (59)",
-                "principale": "Douai",
+                "region": "Pas-de-Calais (62)",
+                "principale": "Arras",
                 "villes": [
-                  "Douai",
-                  "Armentières",
-                  "Seclin",
-                  "Halluin",
-                  "Comines",
-                  "Bailleul",
-                  "Orchies",
-                  "Pont-à-Marcq"
+                  "Calais",
+                  "Arras",
+                  "Boulogne-sur-Mer",
+                  "Lens",
+                  "Liévin",
+                  "Béthune",
+                  "Hénin-Beaumont",
+                  "Saint-Omer",
+                  "Bruay-la-Buissière",
+                  "Carvin",
+                  "Outreau",
+                  "Avion"
                 ]
               }
             ]
@@ -373,7 +383,7 @@
       "label": "Services",
       "meta": {
         "title": "Nos prestations de nettoyage de bâtiments",
-        "description": "Syndrome de Diogène, nettoyage extérieur, copropriétés, bureaux, textile et après-sinistre : découvrez tous les services HYGIFRANCE à Lille et dans le Nord."
+        "description": "Syndrome de Diogène, nettoyage extérieur, copropriétés, bureaux, textile et après-sinistre : découvrez tous les services HYGIFRANCE à Lille et en Hauts-de-France."
       },
       "blocks": [
         {
@@ -496,7 +506,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage extrême à Lille — décès, insalubrité, scène de crime",
-        "description": "Nettoyage extrême à Lille et dans le Nord : après décès, scène de crime, logement insalubre, incurie, après nuisibles. Équipe formée, discrète, devis gratuit."
+        "description": "Nettoyage extrême à Lille et en Hauts-de-France : après décès, scène de crime, logement insalubre, incurie, après nuisibles. Équipe formée, discrète, devis gratuit."
       },
       "blocks": [
         {
@@ -529,7 +539,7 @@
           "content": {
             "titre": "Un métier à part, encadré de bout en bout",
             "paragraphes": [
-              "Certaines situations ne se nettoient pas comme un logement ordinaire : elles demandent une équipe formée aux risques biologiques, un équipement de protection et un protocole de décontamination. À Lille et dans tout le Nord, nous intervenons vite, en toute confidentialité, sans jamais laisser de trace de notre passage.",
+              "Certaines situations ne se nettoient pas comme un logement ordinaire : elles demandent une équipe formée aux risques biologiques, un équipement de protection et un protocole de décontamination. À Lille et dans toute la région Hauts-de-France, nous intervenons vite, en toute confidentialité, sans jamais laisser de trace de notre passage.",
               "Chaque intervention est cadrée avant de commencer : évacuation, désinfection, désodorisation puis remise en état. Nous coordonnons quand il le faut avec les familles, les syndics, les assurances ou les services sociaux, pour vous décharger d'une situation déjà lourde."
             ]
           }
@@ -709,7 +719,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage après scène de crime à Lille — intervention discrète",
-        "description": "Nettoyage et décontamination après scène de crime à Lille et dans le Nord : équipe formée, protocole strict, discrétion totale. Devis gratuit."
+        "description": "Nettoyage et décontamination après scène de crime à Lille et en Hauts-de-France : équipe formée, protocole strict, discrétion totale. Devis gratuit."
       },
       "blocks": [
         {
@@ -776,7 +786,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage après décès à Lille — intervention respectueuse",
-        "description": "Nettoyage après décès à Lille et dans le Nord : décontamination, désinfection, odeurs, remise en état. Discrétion et respect. Devis gratuit."
+        "description": "Nettoyage après décès à Lille et en Hauts-de-France : décontamination, désinfection, odeurs, remise en état. Discrétion et respect. Devis gratuit."
       },
       "blocks": [
         {
@@ -813,7 +823,7 @@
           "content": {
             "titre": "Avec tact et professionnalisme",
             "paragraphes": [
-              "Un décès survenu à domicile, surtout lorsqu'il est resté ignoré un certain temps, laisse des traces qui relèvent d'un nettoyage spécialisé. Nous intervenons à Lille et dans le Nord avec l'équipement adapté et, surtout, le respect que la situation impose.",
+              "Un décès survenu à domicile, surtout lorsqu'il est resté ignoré un certain temps, laisse des traces qui relèvent d'un nettoyage spécialisé. Nous intervenons à Lille et en Hauts-de-France avec l'équipement adapté et, surtout, le respect que la situation impose.",
               "Décontamination, désinfection, traitement des odeurs et remise en état : chaque étape est menée discrètement. Nous pouvons échanger avec la famille, le bailleur ou le notaire pour vous épargner les démarches au pire moment."
             ],
             "image": {
@@ -843,7 +853,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage après tentative de suicide à Lille — discret",
-        "description": "Nettoyage et décontamination après tentative de suicide à Lille et dans le Nord. Intervention rapide, discrète, sans jugement. Devis gratuit."
+        "description": "Nettoyage et décontamination après tentative de suicide à Lille et en Hauts-de-France. Intervention rapide, discrète, sans jugement. Devis gratuit."
       },
       "blocks": [
         {
@@ -880,7 +890,7 @@
           "content": {
             "titre": "Une intervention rapide et humaine",
             "paragraphes": [
-              "Ce type de situation demande une réaction rapide et une équipe qui sait rester à sa place. Nous nous déplaçons à Lille et dans le Nord pour nettoyer et décontaminer les lieux, afin que la famille n'ait pas à y faire face.",
+              "Ce type de situation demande une réaction rapide et une équipe qui sait rester à sa place. Nous nous déplaçons à Lille et en Hauts-de-France pour nettoyer et décontaminer les lieux, afin que la famille n'ait pas à y faire face.",
               "L'intervention est menée en tenue adaptée, dans la plus grande discrétion : ni véhicule marqué, ni voisinage informé. À la fin, la pièce est saine, propre, et ne porte plus la trace de l'événement."
             ],
             "image": {
@@ -910,7 +920,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage après accident domestique à Lille",
-        "description": "Nettoyage et désinfection après un accident domestique à Lille et dans le Nord. Intervention rapide et discrète, devis gratuit."
+        "description": "Nettoyage et désinfection après un accident domestique à Lille et en Hauts-de-France. Intervention rapide et discrète, devis gratuit."
       },
       "blocks": [
         {
@@ -947,7 +957,7 @@
           "content": {
             "titre": "Nettoyer sans avoir à le faire soi-même",
             "paragraphes": [
-              "Chute, blessure, incident domestique : certaines traces sont difficiles à affronter et demandent une désinfection sérieuse. Nous intervenons à Lille et dans le Nord pour nettoyer, désinfecter et rendre la pièce de nouveau saine.",
+              "Chute, blessure, incident domestique : certaines traces sont difficiles à affronter et demandent une désinfection sérieuse. Nous intervenons à Lille et en Hauts-de-France pour nettoyer, désinfecter et rendre la pièce de nouveau saine.",
               "Nous travaillons avec des produits adaptés et le bon équipement, rapidement et discrètement. Vous récupérez un intérieur propre, sans avoir eu à gérer le plus pénible."
             ],
             "image": {
@@ -977,7 +987,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de logement insalubre à Lille — remise en état",
-        "description": "Nettoyage de logement insalubre à Lille et dans le Nord : débarras, nettoyage de fond, désinfection, odeurs. Sans jugement, devis gratuit."
+        "description": "Nettoyage de logement insalubre à Lille et en Hauts-de-France : débarras, nettoyage de fond, désinfection, odeurs. Sans jugement, devis gratuit."
       },
       "blocks": [
         {
@@ -1014,7 +1024,7 @@
           "content": {
             "titre": "Redonner un logement habitable",
             "paragraphes": [
-              "Un logement laissé sans entretien prolongé s'encrasse, se dégrade et devient parfois insalubre : accumulation, saleté incrustée, odeurs, nuisibles. Nous reprenons l'ensemble à Lille et dans le Nord, pièce par pièce, jusqu'à un espace de nouveau habitable.",
+              "Un logement laissé sans entretien prolongé s'encrasse, se dégrade et devient parfois insalubre : accumulation, saleté incrustée, odeurs, nuisibles. Nous reprenons l'ensemble à Lille et en Hauts-de-France, pièce par pièce, jusqu'à un espace de nouveau habitable.",
               "Tri et évacuation si besoin, nettoyage de fond, désinfection, traitement des odeurs : nous adaptons l'intervention à l'état réel des lieux, constaté lors d'une visite. Le tout avec discrétion et sans porter de jugement sur la situation."
             ],
             "image": {
@@ -1044,7 +1054,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage en situation d'incurie à Lille",
-        "description": "Nettoyage d'un logement en situation d'incurie à Lille et dans le Nord : nettoyage de fond, désinfection, remise en ordre. Bienveillance, devis gratuit."
+        "description": "Nettoyage d'un logement en situation d'incurie à Lille et en Hauts-de-France : nettoyage de fond, désinfection, remise en ordre. Bienveillance, devis gratuit."
       },
       "blocks": [
         {
@@ -1081,7 +1091,7 @@
           "content": {
             "titre": "Reprendre le logement en profondeur",
             "paragraphes": [
-              "L'incurie — l'incapacité durable à entretenir son logement — laisse un intérieur très dégradé qui dépasse le ménage classique. Nous intervenons à Lille et dans le Nord pour reprendre le logement en profondeur, sans jugement.",
+              "L'incurie — l'incapacité durable à entretenir son logement — laisse un intérieur très dégradé qui dépasse le ménage classique. Nous intervenons à Lille et en Hauts-de-France pour reprendre le logement en profondeur, sans jugement.",
               "Nous procédons par étapes : dégagement, nettoyage de fond, désinfection et remise en ordre. Lorsqu'un proche ou un accompagnant social suit la personne, nous avançons main dans la main avec lui, à son rythme."
             ],
             "image": {
@@ -1111,7 +1121,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage syllogomanie (accumulation) à Lille",
-        "description": "Débarras et nettoyage en cas de syllogomanie à Lille et dans le Nord : tri accompagné, évacuation, remise en ordre. En douceur, devis gratuit."
+        "description": "Débarras et nettoyage en cas de syllogomanie à Lille et en Hauts-de-France : tri accompagné, évacuation, remise en ordre. En douceur, devis gratuit."
       },
       "blocks": [
         {
@@ -1148,7 +1158,7 @@
           "content": {
             "titre": "Retrouver de l'espace, en douceur",
             "paragraphes": [
-              "La syllogomanie, ou accumulation compulsive, remplit peu à peu le logement jusqu'à en condamner l'usage. La reprise demande du tact autant que de la méthode. Nous intervenons à Lille et dans le Nord, en respectant ce que la personne souhaite conserver.",
+              "La syllogomanie, ou accumulation compulsive, remplit peu à peu le logement jusqu'à en condamner l'usage. La reprise demande du tact autant que de la méthode. Nous intervenons à Lille et en Hauts-de-France, en respectant ce que la personne souhaite conserver.",
               "Tri accompagné, évacuation, nettoyage de fond puis remise en ordre : chaque étape avance au rythme convenu, souvent avec la famille ou un accompagnant. L'objectif est de rendre le logement sûr et vivable, sans passer en force."
             ],
             "image": {
@@ -1178,7 +1188,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage après nuisibles à Lille — déjections & désinfection",
-        "description": "Nettoyage et désinfection après nuisibles à Lille et dans le Nord : déjections, souillures, odeurs. Lieux assainis, devis gratuit."
+        "description": "Nettoyage et désinfection après nuisibles à Lille et en Hauts-de-France : déjections, souillures, odeurs. Lieux assainis, devis gratuit."
       },
       "blocks": [
         {
@@ -1215,7 +1225,7 @@
           "content": {
             "titre": "Assainir après une infestation",
             "paragraphes": [
-              "Rongeurs, insectes ou autres nuisibles laissent derrière eux des déjections, des souillures et un risque sanitaire réel. Après leur élimination, il faut nettoyer et désinfecter en profondeur. Nous nous en chargeons à Lille et dans le Nord.",
+              "Rongeurs, insectes ou autres nuisibles laissent derrière eux des déjections, des souillures et un risque sanitaire réel. Après leur élimination, il faut nettoyer et désinfecter en profondeur. Nous nous en chargeons à Lille et en Hauts-de-France.",
               "Retrait des souillures, désinfection des surfaces, traitement des odeurs : nous rendons les lieux sains et sûrs. L'intervention complète idéalement une action de dératisation ou de désinsectisation."
             ],
             "image": {
@@ -1245,7 +1255,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de fientes de pigeons à Lille — façades & combles",
-        "description": "Nettoyage et décontamination de fientes de pigeons à Lille et dans le Nord : façades, terrasses, combles, locaux. Protection anti-retour, devis gratuit."
+        "description": "Nettoyage et décontamination de fientes de pigeons à Lille et en Hauts-de-France : façades, terrasses, combles, locaux. Protection anti-retour, devis gratuit."
       },
       "blocks": [
         {
@@ -1282,7 +1292,7 @@
           "content": {
             "titre": "Nettoyer et empêcher le retour",
             "paragraphes": [
-              "Les fientes de pigeons ne sont pas qu'un problème d'esthétique : elles attaquent les matériaux et présentent un risque pour la santé. Sur une façade, une terrasse, un comble ou un local, nous retirons les dépôts et décontaminons à Lille et dans le Nord.",
+              "Les fientes de pigeons ne sont pas qu'un problème d'esthétique : elles attaquent les matériaux et présentent un risque pour la santé. Sur une façade, une terrasse, un comble ou un local, nous retirons les dépôts et décontaminons à Lille et en Hauts-de-France.",
               "Après le nettoyage et la désinfection, nous pouvons conseiller des dispositifs anti-pigeons pour éviter que le problème ne revienne. Une intervention en hauteur est possible, avec le matériel de sécurité adapté."
             ],
             "image": {
@@ -1312,7 +1322,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage après squat à Lille — remise en état complète",
-        "description": "Nettoyage après squat à Lille et dans le Nord : débarras, nettoyage de fond, désinfection, remise en état. Bien prêt à relouer, devis gratuit."
+        "description": "Nettoyage après squat à Lille et en Hauts-de-France : débarras, nettoyage de fond, désinfection, remise en état. Bien prêt à relouer, devis gratuit."
       },
       "blocks": [
         {
@@ -1349,7 +1359,7 @@
           "content": {
             "titre": "Remettre le bien en état",
             "paragraphes": [
-              "Après le départ d'occupants illégaux, un logement ou un local se retrouve fréquemment dégradé, encombré et souillé. Nous prenons tout en charge à Lille et dans le Nord : débarras, nettoyage de fond, désinfection et remise en état.",
+              "Après le départ d'occupants illégaux, un logement ou un local se retrouve fréquemment dégradé, encombré et souillé. Nous prenons tout en charge à Lille et en Hauts-de-France : débarras, nettoyage de fond, désinfection et remise en état.",
               "L'objectif est simple : vous rendre un bien propre, sain et prêt à être reloué, vendu ou réoccupé. Nous établissons un devis clair après une visite, utile aussi pour vos démarches."
             ],
             "image": {
@@ -1379,7 +1389,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage après cambriolage à Lille",
-        "description": "Nettoyage et remise en ordre après cambriolage à Lille et dans le Nord. Intervention rapide, appui assurance, devis gratuit."
+        "description": "Nettoyage et remise en ordre après cambriolage à Lille et en Hauts-de-France. Intervention rapide, appui assurance, devis gratuit."
       },
       "blocks": [
         {
@@ -1416,7 +1426,7 @@
           "content": {
             "titre": "Remettre de l'ordre après l'effraction",
             "paragraphes": [
-              "Un cambriolage laisse souvent un logement sens dessus dessous, parfois avec des dégâts matériels et des traces à nettoyer. Nous intervenons rapidement à Lille et dans le Nord pour remettre les lieux en ordre.",
+              "Un cambriolage laisse souvent un logement sens dessus dessous, parfois avec des dégâts matériels et des traces à nettoyer. Nous intervenons rapidement à Lille et en Hauts-de-France pour remettre les lieux en ordre.",
               "Nettoyage, remise en place, traitement des traces d'effraction : nous vous aidons à retrouver un intérieur normal au plus vite. Un devis peut appuyer votre dossier d'assurance."
             ],
             "image": {
@@ -1446,7 +1456,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage après vandalisme à Lille — tags & dégradations",
-        "description": "Nettoyage après vandalisme à Lille et dans le Nord : retrait de graffitis, surfaces dégradées, protection anti-graffiti. Devis gratuit."
+        "description": "Nettoyage après vandalisme à Lille et en Hauts-de-France : retrait de graffitis, surfaces dégradées, protection anti-graffiti. Devis gratuit."
       },
       "blocks": [
         {
@@ -1483,7 +1493,7 @@
           "content": {
             "titre": "Effacer les dégradations",
             "paragraphes": [
-              "Graffitis, surfaces dégradées, mobilier abîmé : le vandalisme laisse des marques visibles qui pèsent sur l'image d'un bâtiment ou d'un commerce. Nous intervenons à Lille et dans le Nord pour effacer ces traces.",
+              "Graffitis, surfaces dégradées, mobilier abîmé : le vandalisme laisse des marques visibles qui pèsent sur l'image d'un bâtiment ou d'un commerce. Nous intervenons à Lille et en Hauts-de-France pour effacer ces traces.",
               "Retrait des tags, nettoyage des surfaces et, si vous le souhaitez, application d'une protection anti-graffiti pour faciliter les prochains nettoyages. Rapide et soigné, sur façade comme en intérieur."
             ],
             "image": {
@@ -1513,7 +1523,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage après expulsion à Lille — débarras & remise en état",
-        "description": "Nettoyage et débarras après expulsion à Lille et dans le Nord : logement vidé, nettoyé, désinfecté et prêt à relouer. Devis gratuit."
+        "description": "Nettoyage et débarras après expulsion à Lille et en Hauts-de-France : logement vidé, nettoyé, désinfecté et prêt à relouer. Devis gratuit."
       },
       "blocks": [
         {
@@ -1550,7 +1560,7 @@
           "content": {
             "titre": "Rendre le logement reloable",
             "paragraphes": [
-              "Après une expulsion, un logement est fréquemment laissé encombré et dégradé. Pour un propriétaire ou un bailleur, il faut le remettre en état avant de reloger. Nous prenons le relais à Lille et dans le Nord.",
+              "Après une expulsion, un logement est fréquemment laissé encombré et dégradé. Pour un propriétaire ou un bailleur, il faut le remettre en état avant de reloger. Nous prenons le relais à Lille et en Hauts-de-France.",
               "Débarras des biens laissés, nettoyage de fond et désinfection : nous rendons le logement propre, sain et prêt à être reloué. Un devis clair est établi après visite."
             ],
             "image": {
@@ -1580,7 +1590,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage après sinistre à Lille — incendie & dégât des eaux",
-        "description": "Nettoyage après sinistre à Lille et dans le Nord : après incendie, dégât des eaux, suie, assèchement et odeurs. Intervention rapide, coordination assurance, devis gratuit."
+        "description": "Nettoyage après sinistre à Lille et en Hauts-de-France : après incendie, dégât des eaux, suie, assèchement et odeurs. Intervention rapide, coordination assurance, devis gratuit."
       },
       "blocks": [
         {
@@ -1613,7 +1623,7 @@
           "content": {
             "titre": "Du désastre à la remise en état",
             "paragraphes": [
-              "Après un incendie ou un dégât des eaux, le plus dur commence : suie incrustée, odeurs tenaces, humidité qui s'installe. Plus on attend, plus les dégâts s'aggravent. Nous intervenons rapidement à Lille et dans le Nord pour stopper la dégradation et repartir sur des bases saines.",
+              "Après un incendie ou un dégât des eaux, le plus dur commence : suie incrustée, odeurs tenaces, humidité qui s'installe. Plus on attend, plus les dégâts s'aggravent. Nous intervenons rapidement à Lille et en Hauts-de-France pour stopper la dégradation et repartir sur des bases saines.",
               "Nettoyage des surfaces, retrait des résidus, assèchement, traitement des odeurs : chaque étape est menée avec le matériel adapté. Nous documentons l'intervention et pouvons nous coordonner avec votre assurance pour simplifier votre dossier."
             ]
           }
@@ -1721,7 +1731,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage après incendie à Lille — suie & odeurs",
-        "description": "Nettoyage après incendie à Lille et dans le Nord : retrait des suies, murs et plafonds, traitement de l'odeur de brûlé. Intervention rapide, devis gratuit."
+        "description": "Nettoyage après incendie à Lille et en Hauts-de-France : retrait des suies, murs et plafonds, traitement de l'odeur de brûlé. Intervention rapide, devis gratuit."
       },
       "blocks": [
         {
@@ -1758,7 +1768,7 @@
           "content": {
             "titre": "Effacer les traces du feu",
             "paragraphes": [
-              "Après un incendie, même circonscrit, la suie recouvre les surfaces, pénètre les matériaux et l'odeur de brûlé imprègne tout. Chaque jour qui passe rend les dégâts plus difficiles à reprendre. Nous intervenons rapidement à Lille et dans le Nord pour stopper cette dégradation.",
+              "Après un incendie, même circonscrit, la suie recouvre les surfaces, pénètre les matériaux et l'odeur de brûlé imprègne tout. Chaque jour qui passe rend les dégâts plus difficiles à reprendre. Nous intervenons rapidement à Lille et en Hauts-de-France pour stopper cette dégradation.",
               "Dégraissage et retrait des suies, nettoyage des murs, plafonds et sols, traitement de l'odeur : nous rendons le local sain et de nouveau présentable. Un devis clair est établi et peut servir votre dossier d'assurance."
             ],
             "image": {
@@ -1788,7 +1798,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage après dégât des eaux à Lille — assèchement",
-        "description": "Nettoyage après dégât des eaux à Lille et dans le Nord : extraction, assèchement, désinfection, prévention des moisissures. Intervention rapide, devis gratuit."
+        "description": "Nettoyage après dégât des eaux à Lille et en Hauts-de-France : extraction, assèchement, désinfection, prévention des moisissures. Intervention rapide, devis gratuit."
       },
       "blocks": [
         {
@@ -1825,7 +1835,7 @@
           "content": {
             "titre": "Assécher et assainir",
             "paragraphes": [
-              "Un dégât des eaux ne s'arrête pas quand l'eau est partie : l'humidité s'installe dans les sols, les murs et les cloisons, et les moisissures suivent. Nous intervenons à Lille et dans le Nord pour extraire l'eau, nettoyer et prévenir ces désordres.",
+              "Un dégât des eaux ne s'arrête pas quand l'eau est partie : l'humidité s'installe dans les sols, les murs et les cloisons, et les moisissures suivent. Nous intervenons à Lille et en Hauts-de-France pour extraire l'eau, nettoyer et prévenir ces désordres.",
               "Extraction, nettoyage, assèchement et désinfection : nous traitons la zone touchée avec le matériel adapté, puis vérifions que tout est sec avant de partir. L'objectif est d'éviter des dégâts durables et coûteux."
             ],
             "image": {
@@ -1855,7 +1865,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage fumées & suie à Lille",
-        "description": "Nettoyage des dépôts de fumée et de suie à Lille et dans le Nord : murs, plafonds, mobilier, traitement de l'odeur. Devis gratuit."
+        "description": "Nettoyage des dépôts de fumée et de suie à Lille et en Hauts-de-France : murs, plafonds, mobilier, traitement de l'odeur. Devis gratuit."
       },
       "blocks": [
         {
@@ -1892,7 +1902,7 @@
           "content": {
             "titre": "Retirer la pellicule de suie",
             "paragraphes": [
-              "Un simple départ de feu, un appareil qui a chauffé ou de la fumée passée d'un logement à l'autre suffisent à déposer une fine couche grasse et noire sur les murs, les plafonds et le mobilier. Elle salit, sent le brûlé et attaque les surfaces. Nous la traitons à Lille et dans le Nord.",
+              "Un simple départ de feu, un appareil qui a chauffé ou de la fumée passée d'un logement à l'autre suffisent à déposer une fine couche grasse et noire sur les murs, les plafonds et le mobilier. Elle salit, sent le brûlé et attaque les surfaces. Nous la traitons à Lille et en Hauts-de-France.",
               "Le nettoyage de la suie demande les bons produits pour ne pas l'étaler : nous dégraissons méthodiquement les surfaces et neutralisons l'odeur, jusqu'à retrouver des lieux nets et respirables."
             ],
             "image": {
@@ -1922,7 +1932,7 @@
       "navHidden": true,
       "meta": {
         "title": "Assèchement après sinistre à Lille — dégât des eaux",
-        "description": "Assèchement après dégât des eaux à Lille et dans le Nord : séchage en profondeur des sols et murs, prévention des moisissures. Devis gratuit."
+        "description": "Assèchement après dégât des eaux à Lille et en Hauts-de-France : séchage en profondeur des sols et murs, prévention des moisissures. Devis gratuit."
       },
       "blocks": [
         {
@@ -1959,7 +1969,7 @@
           "content": {
             "titre": "Sécher pour préserver le bâti",
             "paragraphes": [
-              "Après un dégât des eaux, l'humidité résiduelle dans les sols, les murs et les cloisons est invisible mais bien réelle. Si elle n'est pas traitée, elle favorise moisissures, odeurs et dégradation des matériaux. Nous assurons l'assèchement à Lille et dans le Nord.",
+              "Après un dégât des eaux, l'humidité résiduelle dans les sols, les murs et les cloisons est invisible mais bien réelle. Si elle n'est pas traitée, elle favorise moisissures, odeurs et dégradation des matériaux. Nous assurons l'assèchement à Lille et en Hauts-de-France.",
               "Nous ciblons les zones touchées et séchons en profondeur avec le matériel adapté, puis contrôlons le résultat. Un séchage bien mené protège votre bâtiment et évite des réparations lourdes plus tard."
             ],
             "image": {
@@ -1989,7 +1999,7 @@
       "navHidden": true,
       "meta": {
         "title": "Traitement des odeurs après sinistre à Lille",
-        "description": "Désodorisation après sinistre à Lille et dans le Nord : odeurs de brûlé, d'humidité, de renfermé traitées à la source. Devis gratuit."
+        "description": "Désodorisation après sinistre à Lille et en Hauts-de-France : odeurs de brûlé, d'humidité, de renfermé traitées à la source. Devis gratuit."
       },
       "blocks": [
         {
@@ -2026,7 +2036,7 @@
           "content": {
             "titre": "Neutraliser l'odeur, pas la masquer",
             "paragraphes": [
-              "Après un incendie ou un dégât des eaux, une odeur tenace s'installe — brûlé, humidité, renfermé. La masquer avec un parfum ne suffit pas : elle revient. Nous traitons la source de l'odeur à Lille et dans le Nord.",
+              "Après un incendie ou un dégât des eaux, une odeur tenace s'installe — brûlé, humidité, renfermé. La masquer avec un parfum ne suffit pas : elle revient. Nous traitons la source de l'odeur à Lille et en Hauts-de-France.",
               "Nettoyage des supports imprégnés, désinfection et désodorisation en profondeur : nous nous attaquons à ce qui produit l'odeur, jusqu'à retrouver un air sain dans les locaux."
             ],
             "image": {
@@ -2056,7 +2066,7 @@
       "navHidden": true,
       "meta": {
         "title": "Coordination assurance après sinistre à Lille",
-        "description": "Coordination avec votre assurance après sinistre à Lille et dans le Nord : devis détaillé, documentation de l'intervention, échange avec l'expert. Devis gratuit."
+        "description": "Coordination avec votre assurance après sinistre à Lille et en Hauts-de-France : devis détaillé, documentation de l'intervention, échange avec l'expert. Devis gratuit."
       },
       "blocks": [
         {
@@ -2093,7 +2103,7 @@
           "content": {
             "titre": "Vous simplifier les démarches",
             "paragraphes": [
-              "Après un sinistre, gérer l'assurance en plus du reste est épuisant. Nous établissons un devis détaillé et documentons l'intervention — état des lieux, photos, description des travaux — pour appuyer votre déclaration à Lille et dans le Nord.",
+              "Après un sinistre, gérer l'assurance en plus du reste est épuisant. Nous établissons un devis détaillé et documentons l'intervention — état des lieux, photos, description des travaux — pour appuyer votre déclaration à Lille et en Hauts-de-France.",
               "Si vous le souhaitez, nous échangeons directement avec votre assureur ou votre expert pour clarifier ce qui est nécessaire. L'idée est simple : que vous ayez le moins possible à porter."
             ],
             "image": {
@@ -2123,7 +2133,7 @@
       "navHidden": true,
       "meta": {
         "title": "Débarras à Lille — maison, cave, succession, bureaux",
-        "description": "Débarras à Lille et dans le Nord : caves, maison, appartement, après décès, succession, logement insalubre, bureaux. Tri, évacuation, devis gratuit."
+        "description": "Débarras à Lille et en Hauts-de-France : caves, maison, appartement, après décès, succession, logement insalubre, bureaux. Tri, évacuation, devis gratuit."
       },
       "blocks": [
         {
@@ -2156,7 +2166,7 @@
           "content": {
             "titre": "Un débarras net, du tri à l'évacuation",
             "paragraphes": [
-              "Un débarras, ce n'est pas seulement sortir des objets : c'est trier ce qui se garde, se donne ou se jette, puis acheminer chaque chose vers la bonne filière. Nous nous en chargeons de A à Z à Lille et dans le Nord, sur un logement encombré comme sur un local professionnel.",
+              "Un débarras, ce n'est pas seulement sortir des objets : c'est trier ce qui se garde, se donne ou se jette, puis acheminer chaque chose vers la bonne filière. Nous nous en chargeons de A à Z à Lille et en Hauts-de-France, sur un logement encombré comme sur un local professionnel.",
               "Vous n'avez rien à porter. Nous convenons de l'accès, nous évacuons, et nous vous rendons un espace vide et balayé — prêt pour la suite : vente, location, travaux ou simplement tourner la page."
             ]
           }
@@ -2273,7 +2283,7 @@
       "navHidden": true,
       "meta": {
         "title": "Débarras cave & garage à Lille",
-        "description": "Débarras de caves, garages et box à Lille et dans le Nord : vidage complet, tri, évacuation. Espace rendu vide et propre, devis gratuit."
+        "description": "Débarras de caves, garages et box à Lille et en Hauts-de-France : vidage complet, tri, évacuation. Espace rendu vide et propre, devis gratuit."
       },
       "blocks": [
         {
@@ -2310,7 +2320,7 @@
           "content": {
             "titre": "Vider et évacuer, sans que vous portiez",
             "paragraphes": [
-              "Une cave ou un garage se remplit peu à peu de tout ce qu'on ne sait pas où ranger, jusqu'à devenir inutilisable. Reste ensuite à tout sortir, souvent par des accès étroits. Nous nous en chargeons entièrement à Lille et dans le Nord.",
+              "Une cave ou un garage se remplit peu à peu de tout ce qu'on ne sait pas où ranger, jusqu'à devenir inutilisable. Reste ensuite à tout sortir, souvent par des accès étroits. Nous nous en chargeons entièrement à Lille et en Hauts-de-France.",
               "Nous trions avec vous ce qui se garde, se donne ou se jette, puis nous évacuons vers les bonnes filières. Vous récupérez un espace vide et balayé, prêt à être réutilisé."
             ],
             "image": {
@@ -2340,7 +2350,7 @@
       "navHidden": true,
       "meta": {
         "title": "Débarras maison & appartement à Lille",
-        "description": "Débarras de maison ou d'appartement à Lille et dans le Nord : logement entier vidé pièce par pièce, tri et évacuation. Devis gratuit."
+        "description": "Débarras de maison ou d'appartement à Lille et en Hauts-de-France : logement entier vidé pièce par pièce, tri et évacuation. Devis gratuit."
       },
       "blocks": [
         {
@@ -2377,7 +2387,7 @@
           "content": {
             "titre": "Un logement entier pris en charge",
             "paragraphes": [
-              "Vider un logement complet demande du temps, de l'organisation et de la manutention. Que ce soit avant une vente, une location ou des travaux, nous prenons le relais à Lille et dans le Nord, pièce par pièce.",
+              "Vider un logement complet demande du temps, de l'organisation et de la manutention. Que ce soit avant une vente, une location ou des travaux, nous prenons le relais à Lille et en Hauts-de-France, pièce par pièce.",
               "Tri, évacuation et recyclage : vous n'avez rien à porter. Nous vous rendons un logement vide et balayé, dans les délais convenus."
             ],
             "image": {
@@ -2407,7 +2417,7 @@
       "navHidden": true,
       "meta": {
         "title": "Débarras après décès à Lille — respectueux",
-        "description": "Débarras d'un logement après décès à Lille et dans le Nord : tri respectueux des effets, évacuation, logement rendu net. Devis gratuit."
+        "description": "Débarras d'un logement après décès à Lille et en Hauts-de-France : tri respectueux des effets, évacuation, logement rendu net. Devis gratuit."
       },
       "blocks": [
         {
@@ -2444,7 +2454,7 @@
           "content": {
             "titre": "Avec respect et à votre rythme",
             "paragraphes": [
-              "Après un décès, le débarras du logement s'ajoute à la douleur et aux démarches. Nous le prenons en charge à Lille et dans le Nord, avec tact, en respectant ce que la famille souhaite conserver.",
+              "Après un décès, le débarras du logement s'ajoute à la douleur et aux démarches. Nous le prenons en charge à Lille et en Hauts-de-France, avec tact, en respectant ce que la famille souhaite conserver.",
               "Nous mettons de côté les effets à garder, trions le reste et évacuons proprement. Le logement est rendu vide et net, prêt pour la suite — vente, restitution ou succession."
             ],
             "image": {
@@ -2474,7 +2484,7 @@
       "navHidden": true,
       "meta": {
         "title": "Débarras après succession à Lille",
-        "description": "Débarras après succession à Lille et dans le Nord : bien vidé avant vente ou partage, tri, valorisation possible. Devis gratuit."
+        "description": "Débarras après succession à Lille et en Hauts-de-France : bien vidé avant vente ou partage, tri, valorisation possible. Devis gratuit."
       },
       "blocks": [
         {
@@ -2511,7 +2521,7 @@
           "content": {
             "titre": "Préparer le bien pour la suite",
             "paragraphes": [
-              "Lors d'une succession, il faut souvent vider un bien avant de le vendre ou de le partager. C'est un travail lourd, parfois chargé émotionnellement. Nous le prenons en charge à Lille et dans le Nord.",
+              "Lors d'une succession, il faut souvent vider un bien avant de le vendre ou de le partager. C'est un travail lourd, parfois chargé émotionnellement. Nous le prenons en charge à Lille et en Hauts-de-France.",
               "Nous trions, mettons de côté ce qui doit l'être, et évacuons le reste. Ce qui a de la valeur peut venir en déduction du devis. Le bien est rendu vide, prêt à être vendu ou remis."
             ],
             "image": {
@@ -2541,7 +2551,7 @@
       "navHidden": true,
       "meta": {
         "title": "Débarras de logement insalubre à Lille",
-        "description": "Débarras d'un logement insalubre à Lille et dans le Nord : vidage, nettoyage de fond, désinfection. Sans jugement, devis gratuit."
+        "description": "Débarras d'un logement insalubre à Lille et en Hauts-de-France : vidage, nettoyage de fond, désinfection. Sans jugement, devis gratuit."
       },
       "blocks": [
         {
@@ -2578,7 +2588,7 @@
           "content": {
             "titre": "Vider, puis assainir",
             "paragraphes": [
-              "Un logement très encombré et insalubre demande plus qu'un simple débarras : tri, évacuation, mais aussi nettoyage et désinfection. Nous intervenons à Lille et dans le Nord, en tenue adaptée, sans porter de jugement.",
+              "Un logement très encombré et insalubre demande plus qu'un simple débarras : tri, évacuation, mais aussi nettoyage et désinfection. Nous intervenons à Lille et en Hauts-de-France, en tenue adaptée, sans porter de jugement.",
               "Après le vidage, nous pouvons enchaîner sur un nettoyage de fond et une désinfection pour rendre le logement de nouveau habitable. Tout est cadré lors d'une visite."
             ],
             "image": {
@@ -2608,7 +2618,7 @@
       "navHidden": true,
       "meta": {
         "title": "Débarras après sinistre à Lille",
-        "description": "Débarras après sinistre à Lille et dans le Nord : évacuation des biens endommagés après incendie ou dégât des eaux. Devis gratuit."
+        "description": "Débarras après sinistre à Lille et en Hauts-de-France : évacuation des biens endommagés après incendie ou dégât des eaux. Devis gratuit."
       },
       "blocks": [
         {
@@ -2645,7 +2655,7 @@
           "content": {
             "titre": "Faire place nette pour reconstruire",
             "paragraphes": [
-              "Après un incendie ou un dégât des eaux, mobilier et affaires endommagés encombrent les lieux et retardent la remise en état. Nous évacuons ces biens à Lille et dans le Nord, rapidement.",
+              "Après un incendie ou un dégât des eaux, mobilier et affaires endommagés encombrent les lieux et retardent la remise en état. Nous évacuons ces biens à Lille et en Hauts-de-France, rapidement.",
               "Tri de ce qui peut être sauvé, évacuation du reste : nous faisons place nette pour que le nettoyage et les travaux puissent commencer. Un devis clair appuie votre dossier d'assurance."
             ],
             "image": {
@@ -2675,7 +2685,7 @@
       "navHidden": true,
       "meta": {
         "title": "Débarras de bureaux & locaux à Lille",
-        "description": "Débarras de bureaux et locaux professionnels à Lille et dans le Nord : mobilier, matériel, archives. Hors horaires possible, devis gratuit."
+        "description": "Débarras de bureaux et locaux professionnels à Lille et en Hauts-de-France : mobilier, matériel, archives. Hors horaires possible, devis gratuit."
       },
       "blocks": [
         {
@@ -2712,7 +2722,7 @@
           "content": {
             "titre": "Libérer vos locaux proprement",
             "paragraphes": [
-              "Un local professionnel qui change, ferme ou se réaménage doit être vidé de son mobilier, de son matériel et parfois de ses archives. Nous nous en chargeons à Lille et dans le Nord, en dehors de vos heures si besoin.",
+              "Un local professionnel qui change, ferme ou se réaménage doit être vidé de son mobilier, de son matériel et parfois de ses archives. Nous nous en chargeons à Lille et en Hauts-de-France, en dehors de vos heures si besoin.",
               "Enlèvement du mobilier, évacuation, destruction sécurisée des archives sur demande : nous libérons vos locaux proprement, dans les délais, avec une seule facture."
             ],
             "image": {
@@ -2742,7 +2752,7 @@
       "navHidden": true,
       "meta": {
         "title": "Ménage & grand nettoyage à Lille — domicile, vitres, textiles",
-        "description": "Ménage à Lille et dans le Nord : entretien à domicile, grand nettoyage, fin de chantier, vitres, marbre, parquet, canapés et textiles. Régulier ou ponctuel, devis gratuit."
+        "description": "Ménage à Lille et en Hauts-de-France : entretien à domicile, grand nettoyage, fin de chantier, vitres, marbre, parquet, canapés et textiles. Régulier ou ponctuel, devis gratuit."
       },
       "blocks": [
         {
@@ -2775,7 +2785,7 @@
           "content": {
             "titre": "Du quotidien à la remise à neuf",
             "paragraphes": [
-              "Le ménage couvre un large besoin : l'entretien régulier qui garde un logement agréable, mais aussi les grands nettoyages ponctuels — après des travaux, avant un emménagement, au retour des beaux jours. Nous nous adaptons à votre rythme et à votre budget, à Lille et dans le Nord.",
+              "Le ménage couvre un large besoin : l'entretien régulier qui garde un logement agréable, mais aussi les grands nettoyages ponctuels — après des travaux, avant un emménagement, au retour des beaux jours. Nous nous adaptons à votre rythme et à votre budget, à Lille et en Hauts-de-France.",
               "Sols, cuisine, sanitaires, vitres, textiles : chaque prestation est cadrée avant de commencer, avec les produits adaptés à chaque surface. Vous savez ce qui est fait, à quelle fréquence, et par la même équipe autant que possible."
             ]
           }
@@ -2955,7 +2965,7 @@
       "navHidden": true,
       "meta": {
         "title": "Ménage à domicile à Lille — entretien régulier",
-        "description": "Ménage à domicile à Lille et dans le Nord : entretien régulier ou ponctuel, sols, cuisine, sanitaires. Même intervenant, devis gratuit."
+        "description": "Ménage à domicile à Lille et en Hauts-de-France : entretien régulier ou ponctuel, sols, cuisine, sanitaires. Même intervenant, devis gratuit."
       },
       "blocks": [
         {
@@ -2992,7 +3002,7 @@
           "content": {
             "titre": "Un intérieur toujours net",
             "paragraphes": [
-              "L'entretien courant fait toute la différence : sols, cuisine, sanitaires, poussières, une maison suivie ne se dégrade jamais vraiment. Nous intervenons à Lille et dans le Nord, chaque semaine, tous les quinze jours ou ponctuellement.",
+              "L'entretien courant fait toute la différence : sols, cuisine, sanitaires, poussières, une maison suivie ne se dégrade jamais vraiment. Nous intervenons à Lille et en Hauts-de-France, chaque semaine, tous les quinze jours ou ponctuellement.",
               "Nous arrivons équipés, avec la même personne autant que possible, sur un créneau fixe. Vous rentrez chez vous et tout est propre — sans y avoir pensé."
             ],
             "image": {
@@ -3022,7 +3032,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage urgent à Lille — intervention rapide",
-        "description": "Nettoyage urgent à Lille et dans le Nord : intervention dans la journée pour une remise en propreté de dernière minute. Devis gratuit."
+        "description": "Nettoyage urgent à Lille et en Hauts-de-France : intervention dans la journée pour une remise en propreté de dernière minute. Devis gratuit."
       },
       "blocks": [
         {
@@ -3059,7 +3069,7 @@
           "content": {
             "titre": "Quand il faut que ce soit propre, vite",
             "paragraphes": [
-              "Certaines situations n'attendent pas : une location à rendre demain, une visite de dernière minute, un imprévu à gérer. Nous nous efforçons d'intervenir dans la journée à Lille et dans le Nord.",
+              "Certaines situations n'attendent pas : une location à rendre demain, une visite de dernière minute, un imprévu à gérer. Nous nous efforçons d'intervenir dans la journée à Lille et en Hauts-de-France.",
               "Rapidité ne veut pas dire bâclé : nous ciblons l'essentiel avec méthode pour un rendu net dans le temps imparti."
             ],
             "image": {
@@ -3089,7 +3099,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage fin de chantier à Lille",
-        "description": "Nettoyage de fin de chantier à Lille et dans le Nord : poussières, résidus, vitres, sols. Local livré impeccable, devis gratuit."
+        "description": "Nettoyage de fin de chantier à Lille et en Hauts-de-France : poussières, résidus, vitres, sols. Local livré impeccable, devis gratuit."
       },
       "blocks": [
         {
@@ -3126,7 +3136,7 @@
           "content": {
             "titre": "Livrer un local impeccable",
             "paragraphes": [
-              "Un chantier laisse partout une fine poussière, des résidus de colle, de peinture ou de plâtre, des traces sur les vitres. Avant de livrer ou d'emménager, il faut tout reprendre. Nous nous en chargeons à Lille et dans le Nord.",
+              "Un chantier laisse partout une fine poussière, des résidus de colle, de peinture ou de plâtre, des traces sur les vitres. Avant de livrer ou d'emménager, il faut tout reprendre. Nous nous en chargeons à Lille et en Hauts-de-France.",
               "Sols, surfaces, vitres, sanitaires : nous retirons l'ensemble des résidus de travaux pour un local prêt à être utilisé ou remis au client."
             ],
             "image": {
@@ -3156,7 +3166,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage déménagement à Lille — entrée & sortie",
-        "description": "Nettoyage de déménagement à Lille et dans le Nord : logement rendu propre pour l'état des lieux ou nettoyé avant l'emménagement. Devis gratuit."
+        "description": "Nettoyage de déménagement à Lille et en Hauts-de-France : logement rendu propre pour l'état des lieux ou nettoyé avant l'emménagement. Devis gratuit."
       },
       "blocks": [
         {
@@ -3193,7 +3203,7 @@
           "content": {
             "titre": "Partir ou arriver au propre",
             "paragraphes": [
-              "Rendre un logement impeccable pour l'état des lieux, ou emménager dans un intérieur déjà net : dans les deux cas, un grand nettoyage s'impose. Nous intervenons à Lille et dans le Nord, avant ou après le déménagement.",
+              "Rendre un logement impeccable pour l'état des lieux, ou emménager dans un intérieur déjà net : dans les deux cas, un grand nettoyage s'impose. Nous intervenons à Lille et en Hauts-de-France, avant ou après le déménagement.",
               "Sols, placards, sanitaires, vitres : nous reprenons tout, pour un logement rendu sans reproche ou prêt à accueillir vos affaires."
             ],
             "image": {
@@ -3223,7 +3233,7 @@
       "navHidden": true,
       "meta": {
         "title": "Grand nettoyage à Lille — remise à neuf",
-        "description": "Grand nettoyage à Lille et dans le Nord : remise à neuf de fond en comble, recoins compris. Cuisine, sanitaires, vitres. Devis gratuit."
+        "description": "Grand nettoyage à Lille et en Hauts-de-France : remise à neuf de fond en comble, recoins compris. Cuisine, sanitaires, vitres. Devis gratuit."
       },
       "blocks": [
         {
@@ -3260,7 +3270,7 @@
           "content": {
             "titre": "La remise à neuf, de fond en comble",
             "paragraphes": [
-              "Le grand nettoyage va plus loin que l'entretien courant : on reprend les recoins, on décrasse ce qui s'est accumulé, on redonne de l'éclat. Idéal une à deux fois par an, à Lille et dans le Nord.",
+              "Le grand nettoyage va plus loin que l'entretien courant : on reprend les recoins, on décrasse ce qui s'est accumulé, on redonne de l'éclat. Idéal une à deux fois par an, à Lille et en Hauts-de-France.",
               "Cuisine dégraissée, sanitaires détartrés, vitres, plinthes, dessus de meubles : rien n'est oublié. Le logement retrouve un vrai coup de neuf."
             ],
             "image": {
@@ -3290,7 +3300,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de printemps à Lille",
-        "description": "Nettoyage de printemps à Lille et dans le Nord : grand ménage saisonnier, lessivage, vitres, recoins. Intérieur net et lumineux, devis gratuit."
+        "description": "Nettoyage de printemps à Lille et en Hauts-de-France : grand ménage saisonnier, lessivage, vitres, recoins. Intérieur net et lumineux, devis gratuit."
       },
       "blocks": [
         {
@@ -3327,7 +3337,7 @@
           "content": {
             "titre": "Repartir sur du frais",
             "paragraphes": [
-              "Au sortir de l'hiver, un grand ménage saisonnier fait un bien fou : on aère, on décrasse, on remet tout d'aplomb. Nous nous en chargeons à Lille et dans le Nord.",
+              "Au sortir de l'hiver, un grand ménage saisonnier fait un bien fou : on aère, on décrasse, on remet tout d'aplomb. Nous nous en chargeons à Lille et en Hauts-de-France.",
               "Lessivage, vitres, recoins, textiles : nous reprenons ce que l'entretien courant laisse de côté, pour un intérieur net et lumineux."
             ],
             "image": {
@@ -3357,7 +3367,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de vitres à Lille — sans trace",
-        "description": "Nettoyage de vitres à Lille et dans le Nord : fenêtres, baies, vérandas, miroirs, dedans-dehors, encadrements compris. Sans trace, devis gratuit."
+        "description": "Nettoyage de vitres à Lille et en Hauts-de-France : fenêtres, baies, vérandas, miroirs, dedans-dehors, encadrements compris. Sans trace, devis gratuit."
       },
       "blocks": [
         {
@@ -3394,7 +3404,7 @@
           "content": {
             "titre": "Des vitres qui laissent passer la lumière",
             "paragraphes": [
-              "Des vitres propres changent une pièce sans qu'on sache dire pourquoi. Fenêtres, baies, vérandas, miroirs : nous les nettoyons dedans-dehors à Lille et dans le Nord, encadrements et rebords compris.",
+              "Des vitres propres changent une pièce sans qu'on sache dire pourquoi. Fenêtres, baies, vérandas, miroirs : nous les nettoyons dedans-dehors à Lille et en Hauts-de-France, encadrements et rebords compris.",
               "Finition à la raclette pour un séchage net, sans laisser de voile gras quand la lumière rase la vitre. Le résultat tient dans le temps."
             ],
             "image": {
@@ -3424,7 +3434,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage terrasses & balcons à Lille",
-        "description": "Nettoyage de terrasses et balcons à Lille et dans le Nord : dalles, bois, pierre, retrait des mousses. Sans abîmer, devis gratuit."
+        "description": "Nettoyage de terrasses et balcons à Lille et en Hauts-de-France : dalles, bois, pierre, retrait des mousses. Sans abîmer, devis gratuit."
       },
       "blocks": [
         {
@@ -3461,7 +3471,7 @@
           "content": {
             "titre": "Rendre l'extérieur agréable",
             "paragraphes": [
-              "Terrasses, balcons, dallages accumulent mousses, saletés et dépôts qui les rendent glissants et ternes. Nous les nettoyons à Lille et dans le Nord, avec la méthode adaptée à chaque support.",
+              "Terrasses, balcons, dallages accumulent mousses, saletés et dépôts qui les rendent glissants et ternes. Nous les nettoyons à Lille et en Hauts-de-France, avec la méthode adaptée à chaque support.",
               "Bois, pierre, carrelage : nous ajustons produit et pression pour nettoyer sans abîmer. Vous retrouvez un extérieur propre, prêt à en profiter."
             ],
             "image": {
@@ -3491,7 +3501,7 @@
       "navHidden": true,
       "meta": {
         "title": "Rénovation de marbre à Lille — ponçage & cristallisation",
-        "description": "Rénovation de sols en marbre à Lille et dans le Nord : ponçage, cristallisation, lustrage. Éclat retrouvé et protégé, devis gratuit."
+        "description": "Rénovation de sols en marbre à Lille et en Hauts-de-France : ponçage, cristallisation, lustrage. Éclat retrouvé et protégé, devis gratuit."
       },
       "blocks": [
         {
@@ -3528,7 +3538,7 @@
           "content": {
             "titre": "Redonner son éclat au marbre",
             "paragraphes": [
-              "Le marbre est superbe mais fragile : il se raye, se ternit et perd de son brillant avec le temps et le passage. Nous le rénovons à Lille et dans le Nord par ponçage puis cristallisation.",
+              "Le marbre est superbe mais fragile : il se raye, se ternit et perd de son brillant avec le temps et le passage. Nous le rénovons à Lille et en Hauts-de-France par ponçage puis cristallisation.",
               "Le résultat parle de lui-même : une surface de nouveau lisse, profonde et brillante, protégée pour durer."
             ],
             "image": {
@@ -3558,7 +3568,7 @@
       "navHidden": true,
       "meta": {
         "title": "Rénovation de parquet à Lille",
-        "description": "Rénovation de parquet à Lille et dans le Nord : remise en état des parquets ternis ou marqués, sans remplacement. Devis gratuit."
+        "description": "Rénovation de parquet à Lille et en Hauts-de-France : remise en état des parquets ternis ou marqués, sans remplacement. Devis gratuit."
       },
       "blocks": [
         {
@@ -3595,7 +3605,7 @@
           "content": {
             "titre": "Faire revivre le parquet",
             "paragraphes": [
-              "Un parquet ancien, rayé ou grisé n'a pas forcément besoin d'être remplacé : bien souvent, une remise en état suffit à lui redonner vie. Nous intervenons à Lille et dans le Nord.",
+              "Un parquet ancien, rayé ou grisé n'a pas forcément besoin d'être remplacé : bien souvent, une remise en état suffit à lui redonner vie. Nous intervenons à Lille et en Hauts-de-France.",
               "Nettoyage en profondeur, remise en état et protection : le parquet retrouve sa teinte et sa chaleur, à moindre coût qu'un changement."
             ],
             "image": {
@@ -3625,7 +3635,7 @@
       "navHidden": true,
       "meta": {
         "title": "Lessivage murs & plafonds à Lille",
-        "description": "Lessivage de murs et plafonds à Lille et dans le Nord : surfaces jaunies ou encrassées ravivées, préparation avant peinture. Devis gratuit."
+        "description": "Lessivage de murs et plafonds à Lille et en Hauts-de-France : surfaces jaunies ou encrassées ravivées, préparation avant peinture. Devis gratuit."
       },
       "blocks": [
         {
@@ -3662,7 +3672,7 @@
           "content": {
             "titre": "De la clarté sans repeindre",
             "paragraphes": [
-              "Avec le temps, murs et plafonds jaunissent, se couvrent de poussière grasse ou de traces. Souvent, un lessivage soigné suffit à retrouver de la clarté sans avoir à repeindre. Nous le faisons à Lille et dans le Nord.",
+              "Avec le temps, murs et plafonds jaunissent, se couvrent de poussière grasse ou de traces. Souvent, un lessivage soigné suffit à retrouver de la clarté sans avoir à repeindre. Nous le faisons à Lille et en Hauts-de-France.",
               "Nous lessivons méthodiquement, du haut vers le bas, avec les produits adaptés au support. Utile aussi avant une mise en peinture, pour une meilleure accroche."
             ],
             "image": {
@@ -3692,7 +3702,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage après animaux à Lille — poils & odeurs",
-        "description": "Nettoyage après animaux à Lille et dans le Nord : poils, odeurs, salissures, désodorisation. Intérieur sain, devis gratuit."
+        "description": "Nettoyage après animaux à Lille et en Hauts-de-France : poils, odeurs, salissures, désodorisation. Intérieur sain, devis gratuit."
       },
       "blocks": [
         {
@@ -3729,7 +3739,7 @@
           "content": {
             "titre": "Un intérieur sain de nouveau",
             "paragraphes": [
-              "La présence d'animaux laisse des traces : poils partout, odeurs installées, parfois salissures. Que ce soit un entretien régulier ou une remise en état, nous intervenons à Lille et dans le Nord.",
+              "La présence d'animaux laisse des traces : poils partout, odeurs installées, parfois salissures. Que ce soit un entretien régulier ou une remise en état, nous intervenons à Lille et en Hauts-de-France.",
               "Nettoyage en profondeur, désodorisation et désinfection si besoin : nous rendons le logement sain et agréable, sans odeur résiduelle."
             ],
             "image": {
@@ -3759,7 +3769,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage canapés & textiles à Lille — injection-extraction",
-        "description": "Nettoyage de canapés, matelas et moquettes à Lille et dans le Nord par injection-extraction. Taches et odeurs éliminées, devis gratuit."
+        "description": "Nettoyage de canapés, matelas et moquettes à Lille et en Hauts-de-France par injection-extraction. Taches et odeurs éliminées, devis gratuit."
       },
       "blocks": [
         {
@@ -3796,7 +3806,7 @@
           "content": {
             "titre": "Des textiles comme neufs",
             "paragraphes": [
-              "Un canapé, un matelas ou une moquette accumulent poussière, taches et odeurs qu'un simple aspirateur ne retire pas. Nous les nettoyons par injection-extraction à Lille et dans le Nord.",
+              "Un canapé, un matelas ou une moquette accumulent poussière, taches et odeurs qu'un simple aspirateur ne retire pas. Nous les nettoyons par injection-extraction à Lille et en Hauts-de-France.",
               "La solution est envoyée au cœur des fibres puis aspirée avec la saleté : les textiles ressortent ravivés, sans être gorgés d'eau. Quelques heures de séchage suffisent."
             ],
             "image": {
@@ -3826,7 +3836,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage maison inhabitée à Lille",
-        "description": "Nettoyage d'une maison inhabitée à Lille et dans le Nord : bien resté fermé aéré et remis au propre, odeurs traitées. Devis gratuit."
+        "description": "Nettoyage d'une maison inhabitée à Lille et en Hauts-de-France : bien resté fermé aéré et remis au propre, odeurs traitées. Devis gratuit."
       },
       "blocks": [
         {
@@ -3863,7 +3873,7 @@
           "content": {
             "titre": "Réveiller un logement endormi",
             "paragraphes": [
-              "Un logement resté vide et fermé longtemps prend la poussière, l'humidité et parfois une odeur de renfermé. Avant de le vendre, le louer ou l'habiter, une remise en propreté s'impose. Nous intervenons à Lille et dans le Nord.",
+              "Un logement resté vide et fermé longtemps prend la poussière, l'humidité et parfois une odeur de renfermé. Avant de le vendre, le louer ou l'habiter, une remise en propreté s'impose. Nous intervenons à Lille et en Hauts-de-France.",
               "Aération, dépoussiérage complet, nettoyage des sols et sanitaires, traitement des odeurs : le logement retrouve un air sain et accueillant."
             ],
             "image": {
@@ -3893,7 +3903,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage professionnel à Lille — bureaux, immeubles, industrie",
-        "description": "Nettoyage de locaux professionnels à Lille et dans le Nord : bureaux, copropriétés, immeubles, commerces, industrie, cuisines, moquettes. Contrat ou ponctuel, devis gratuit."
+        "description": "Nettoyage de locaux professionnels à Lille et en Hauts-de-France : bureaux, copropriétés, immeubles, commerces, industrie, cuisines, moquettes. Contrat ou ponctuel, devis gratuit."
       },
       "blocks": [
         {
@@ -4106,7 +4116,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de bureaux & cabinets à Lille",
-        "description": "Nettoyage de bureaux et cabinets à Lille et dans le Nord : entretien régulier hors horaires, sols, sanitaires, salles de réunion. Devis gratuit."
+        "description": "Nettoyage de bureaux et cabinets à Lille et en Hauts-de-France : entretien régulier hors horaires, sols, sanitaires, salles de réunion. Devis gratuit."
       },
       "blocks": [
         {
@@ -4143,7 +4153,7 @@
           "content": {
             "titre": "Un entretien fiable et discret",
             "paragraphes": [
-              "Bureaux, cabinets, espaces de travail : la propreté se voit et compte pour vos équipes comme pour vos clients. Nous entretenons vos locaux à Lille et dans le Nord, avant l'ouverture ou après la fermeture.",
+              "Bureaux, cabinets, espaces de travail : la propreté se voit et compte pour vos équipes comme pour vos clients. Nous entretenons vos locaux à Lille et en Hauts-de-France, avant l'ouverture ou après la fermeture.",
               "Sols, surfaces de contact, sanitaires, salles de réunion : un cahier des charges clair, une équipe qui connaît vos lieux, une facture unique. Vous n'y pensez plus."
             ],
             "image": {
@@ -4173,7 +4183,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de parties communes à Lille — copropriétés",
-        "description": "Nettoyage de parties communes et copropriétés à Lille et dans le Nord : halls, escaliers, ascenseurs, locaux poubelles. Syndics & bailleurs, devis gratuit."
+        "description": "Nettoyage de parties communes et copropriétés à Lille et en Hauts-de-France : halls, escaliers, ascenseurs, locaux poubelles. Syndics & bailleurs, devis gratuit."
       },
       "blocks": [
         {
@@ -4210,7 +4220,7 @@
           "content": {
             "titre": "Des communs toujours nets",
             "paragraphes": [
-              "Les parties communes sont la vitrine d'une copropriété : halls, escaliers, paliers, ascenseurs, locaux poubelles. Un entretien régulier fait toute la différence. Nous intervenons à Lille et dans le Nord, pour syndics et bailleurs.",
+              "Les parties communes sont la vitrine d'une copropriété : halls, escaliers, paliers, ascenseurs, locaux poubelles. Un entretien régulier fait toute la différence. Nous intervenons à Lille et en Hauts-de-France, pour syndics et bailleurs.",
               "Passages fixes, produits adaptés, suivi régulier : nous maintenons des communs propres et sûrs, avec un interlocuteur unique pour l'ensemble de l'immeuble."
             ],
             "image": {
@@ -4240,7 +4250,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage d'immeubles à Lille — résidentiel & tertiaire",
-        "description": "Nettoyage d'immeubles à Lille et dans le Nord : entretien complet des communs, vitres, abords, locaux techniques. Contrat unique, devis gratuit."
+        "description": "Nettoyage d'immeubles à Lille et en Hauts-de-France : entretien complet des communs, vitres, abords, locaux techniques. Contrat unique, devis gratuit."
       },
       "blocks": [
         {
@@ -4277,7 +4287,7 @@
           "content": {
             "titre": "L'immeuble entretenu de A à Z",
             "paragraphes": [
-              "Un immeuble demande un entretien coordonné : communs, vitres, abords, locaux techniques. Plutôt que de multiplier les prestataires, nous prenons l'ensemble en charge à Lille et dans le Nord.",
+              "Un immeuble demande un entretien coordonné : communs, vitres, abords, locaux techniques. Plutôt que de multiplier les prestataires, nous prenons l'ensemble en charge à Lille et en Hauts-de-France.",
               "Un seul contrat, une seule facture, un suivi régulier : l'immeuble reste propre et bien tenu, sans que la gestion vous pèse."
             ],
             "image": {
@@ -4307,7 +4317,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de magasins & commerces à Lille",
-        "description": "Nettoyage de magasins et commerces à Lille et dans le Nord : surfaces de vente, vitrines, sanitaires, hors horaires. Devis gratuit."
+        "description": "Nettoyage de magasins et commerces à Lille et en Hauts-de-France : surfaces de vente, vitrines, sanitaires, hors horaires. Devis gratuit."
       },
       "blocks": [
         {
@@ -4344,7 +4354,7 @@
           "content": {
             "titre": "Un commerce impeccable à l'ouverture",
             "paragraphes": [
-              "En commerce, la propreté fait partie de l'accueil : sol de la surface de vente, vitrine, sanitaires, tout se voit. Nous entretenons vos espaces à Lille et dans le Nord, tôt le matin ou après la fermeture.",
+              "En commerce, la propreté fait partie de l'accueil : sol de la surface de vente, vitrine, sanitaires, tout se voit. Nous entretenons vos espaces à Lille et en Hauts-de-France, tôt le matin ou après la fermeture.",
               "Le créneau est fixé une fois pour toutes : vos clients ne croisent jamais le matériel, et le magasin ouvre chaque jour dans les meilleures conditions."
             ],
             "image": {
@@ -4374,7 +4384,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage industriel à Lille — sites & ateliers",
-        "description": "Nettoyage industriel à Lille et dans le Nord : ateliers, sites de production, grands volumes, sols techniques. Adapté à votre activité, devis gratuit."
+        "description": "Nettoyage industriel à Lille et en Hauts-de-France : ateliers, sites de production, grands volumes, sols techniques. Adapté à votre activité, devis gratuit."
       },
       "blocks": [
         {
@@ -4411,7 +4421,7 @@
           "content": {
             "titre": "À l'échelle de vos installations",
             "paragraphes": [
-              "Un site industriel a ses contraintes : grands volumes, sols techniques, machines, sécurité. Le nettoyage demande le bon matériel et une organisation adaptée. Nous intervenons à Lille et dans le Nord.",
+              "Un site industriel a ses contraintes : grands volumes, sols techniques, machines, sécurité. Le nettoyage demande le bon matériel et une organisation adaptée. Nous intervenons à Lille et en Hauts-de-France.",
               "Sols, structures, zones de production : nous adaptons méthode et fréquence à votre activité, en respectant vos règles de sécurité et vos horaires."
             ],
             "image": {
@@ -4441,7 +4451,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de parkings & garages à Lille",
-        "description": "Nettoyage de parkings et garages à Lille et dans le Nord : balayage, lavage des sols, dégraissage. Propres et sûrs, devis gratuit."
+        "description": "Nettoyage de parkings et garages à Lille et en Hauts-de-France : balayage, lavage des sols, dégraissage. Propres et sûrs, devis gratuit."
       },
       "blocks": [
         {
@@ -4478,7 +4488,7 @@
           "content": {
             "titre": "Des parkings nets et sûrs",
             "paragraphes": [
-              "Un parking accumule poussières, déchets, traces d'huile et taches. Au-delà de l'image, la propreté touche à la sécurité. Nous entretenons parkings et garages à Lille et dans le Nord.",
+              "Un parking accumule poussières, déchets, traces d'huile et taches. Au-delà de l'image, la propreté touche à la sécurité. Nous entretenons parkings et garages à Lille et en Hauts-de-France.",
               "Balayage mécanisé, lavage des sols, dégraissage des zones tachées : nous adaptons l'intervention à la fréquentation et à vos créneaux d'accès."
             ],
             "image": {
@@ -4508,7 +4518,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage événementiel à Lille",
-        "description": "Nettoyage événementiel à Lille et dans le Nord : préparation, passages pendant et remise en état après votre événement. Devis gratuit."
+        "description": "Nettoyage événementiel à Lille et en Hauts-de-France : préparation, passages pendant et remise en état après votre événement. Devis gratuit."
       },
       "blocks": [
         {
@@ -4545,7 +4555,7 @@
           "content": {
             "titre": "La propreté de votre événement",
             "paragraphes": [
-              "Un événement rime avec affluence et donc avec nettoyage : préparation des lieux, passages pendant, remise en état après. Nous vous accompagnons à Lille et dans le Nord.",
+              "Un événement rime avec affluence et donc avec nettoyage : préparation des lieux, passages pendant, remise en état après. Nous vous accompagnons à Lille et en Hauts-de-France.",
               "Salles, sanitaires, abords : nous intervenons avant l'accueil du public et une fois la manifestation terminée, pour rendre les lieux impeccables et à l'heure."
             ],
             "image": {
@@ -4575,7 +4585,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de cuisines professionnelles à Lille",
-        "description": "Nettoyage de cuisines professionnelles à Lille et dans le Nord : dégraissage, désinfection, hygiène alimentaire. Conforme aux contrôles, devis gratuit."
+        "description": "Nettoyage de cuisines professionnelles à Lille et en Hauts-de-France : dégraissage, désinfection, hygiène alimentaire. Conforme aux contrôles, devis gratuit."
       },
       "blocks": [
         {
@@ -4612,7 +4622,7 @@
           "content": {
             "titre": "L'hygiène au cœur de la cuisine",
             "paragraphes": [
-              "Une cuisine professionnelle exige un niveau d'hygiène strict : graisses cuites, surfaces de contact, sols, équipements. Nous assurons son nettoyage en profondeur à Lille et dans le Nord.",
+              "Une cuisine professionnelle exige un niveau d'hygiène strict : graisses cuites, surfaces de contact, sols, équipements. Nous assurons son nettoyage en profondeur à Lille et en Hauts-de-France.",
               "Dégraissage, désinfection, traitement des points sensibles : nous travaillons selon les exigences du secteur, pour une cuisine saine et conforme aux contrôles."
             ],
             "image": {
@@ -4642,7 +4652,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de moquettes à Lille — injection-extraction",
-        "description": "Nettoyage de moquettes de bureaux et commerces à Lille et dans le Nord par injection-extraction. Ravivées et vite sèches, devis gratuit."
+        "description": "Nettoyage de moquettes de bureaux et commerces à Lille et en Hauts-de-France par injection-extraction. Ravivées et vite sèches, devis gratuit."
       },
       "blocks": [
         {
@@ -4679,7 +4689,7 @@
           "content": {
             "titre": "Des moquettes comme neuves",
             "paragraphes": [
-              "Une moquette de bureau ou de commerce encaisse le passage, la poussière et les taches. L'aspirateur ne suffit plus : il faut un nettoyage en profondeur. Nous intervenons à Lille et dans le Nord par injection-extraction.",
+              "Une moquette de bureau ou de commerce encaisse le passage, la poussière et les taches. L'aspirateur ne suffit plus : il faut un nettoyage en profondeur. Nous intervenons à Lille et en Hauts-de-France par injection-extraction.",
               "La solution est injectée puis aspirée avec la saleté : la moquette ressort ravivée et sèche vite, sans gêner la reprise de l'activité."
             ],
             "image": {
@@ -4709,7 +4719,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de chambres froides à Lille",
-        "description": "Nettoyage et désinfection de chambres froides à Lille et dans le Nord : parois, sols, joints, aux normes d'hygiène. Devis gratuit."
+        "description": "Nettoyage et désinfection de chambres froides à Lille et en Hauts-de-France : parois, sols, joints, aux normes d'hygiène. Devis gratuit."
       },
       "blocks": [
         {
@@ -4746,7 +4756,7 @@
           "content": {
             "titre": "La chaîne du froid, propre",
             "paragraphes": [
-              "Une chambre froide demande un nettoyage rigoureux : c'est un enjeu d'hygiène et de conservation. Nous la nettoyons et la désinfectons à Lille et dans le Nord, selon les exigences du secteur.",
+              "Une chambre froide demande un nettoyage rigoureux : c'est un enjeu d'hygiène et de conservation. Nous la nettoyons et la désinfectons à Lille et en Hauts-de-France, selon les exigences du secteur.",
               "Parois, sols, joints, points sensibles : nous traitons l'ensemble aux normes, pour préserver vos denrées et passer sereinement vos contrôles."
             ],
             "image": {
@@ -4776,7 +4786,7 @@
       "navHidden": true,
       "meta": {
         "title": "Destruction d'archives à Lille — sécurisée",
-        "description": "Destruction d'archives à Lille et dans le Nord : évacuation et destruction sécurisée de documents confidentiels. Espace libéré, devis gratuit."
+        "description": "Destruction d'archives à Lille et en Hauts-de-France : évacuation et destruction sécurisée de documents confidentiels. Espace libéré, devis gratuit."
       },
       "blocks": [
         {
@@ -4813,7 +4823,7 @@
           "content": {
             "titre": "Vos archives, éliminées en sécurité",
             "paragraphes": [
-              "Des archives qui s'entassent occupent de l'espace et posent une question de confidentialité. Nous en assurons l'évacuation et la destruction sécurisée à Lille et dans le Nord.",
+              "Des archives qui s'entassent occupent de l'espace et posent une question de confidentialité. Nous en assurons l'évacuation et la destruction sécurisée à Lille et en Hauts-de-France.",
               "Enlèvement, transport et destruction dans les règles : vos documents sensibles sont éliminés en toute confidentialité, et vous récupérez de l'espace."
             ],
             "image": {
@@ -4843,7 +4853,7 @@
       "navHidden": true,
       "meta": {
         "title": "Vitrerie d'immeuble à Lille — nettoyage de vitres",
-        "description": "Nettoyage des vitres d'immeuble à Lille et dans le Nord : halls, cages d'escalier, surfaces vitrées, travail en hauteur. Sans trace, devis gratuit."
+        "description": "Nettoyage des vitres d'immeuble à Lille et en Hauts-de-France : halls, cages d'escalier, surfaces vitrées, travail en hauteur. Sans trace, devis gratuit."
       },
       "blocks": [
         {
@@ -4880,7 +4890,7 @@
           "content": {
             "titre": "La lumière retrouvée, à tous les étages",
             "paragraphes": [
-              "Les surfaces vitrées d'un immeuble — halls, cages d'escalier, façades vitrées — se salissent vite et se voient de loin. Nous les nettoyons à Lille et dans le Nord, y compris en hauteur.",
+              "Les surfaces vitrées d'un immeuble — halls, cages d'escalier, façades vitrées — se salissent vite et se voient de loin. Nous les nettoyons à Lille et en Hauts-de-France, y compris en hauteur.",
               "Avec le matériel et les sécurités adaptés, nous rendons les vitres nettes sans trace, sur un rythme régulier ou ponctuel selon vos besoins."
             ],
             "image": {
@@ -4910,7 +4920,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage fin de chantier pro à Lille",
-        "description": "Nettoyage de fin de chantier de locaux professionnels à Lille et dans le Nord : poussières, résidus, vitres, sols. Livraison propre, devis gratuit."
+        "description": "Nettoyage de fin de chantier de locaux professionnels à Lille et en Hauts-de-France : poussières, résidus, vitres, sols. Livraison propre, devis gratuit."
       },
       "blocks": [
         {
@@ -4947,7 +4957,7 @@
           "content": {
             "titre": "Livrer des locaux impeccables",
             "paragraphes": [
-              "Après des travaux dans un local professionnel, tout est à reprendre : poussières fines, résidus, traces sur les vitres et les sols. Avant la livraison ou l'installation, nous remettons tout au propre à Lille et dans le Nord.",
+              "Après des travaux dans un local professionnel, tout est à reprendre : poussières fines, résidus, traces sur les vitres et les sols. Avant la livraison ou l'installation, nous remettons tout au propre à Lille et en Hauts-de-France.",
               "Nous retirons l'ensemble des résidus de chantier, pour des locaux prêts à accueillir vos équipes ou à être remis au client, dans les délais."
             ],
             "image": {
@@ -4977,7 +4987,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage fientes de pigeons (pro) à Lille",
-        "description": "Nettoyage et décontamination de fientes de pigeons sur locaux professionnels à Lille et dans le Nord : façades, toitures, protection anti-retour. Devis gratuit."
+        "description": "Nettoyage et décontamination de fientes de pigeons sur locaux professionnels à Lille et en Hauts-de-France : façades, toitures, protection anti-retour. Devis gratuit."
       },
       "blocks": [
         {
@@ -5014,7 +5024,7 @@
           "content": {
             "titre": "Assainir et protéger vos locaux",
             "paragraphes": [
-              "Sur un bâtiment professionnel, les fientes de pigeons dégradent les surfaces et posent un risque sanitaire pour vos équipes et vos clients. Nous décontaminons à Lille et dans le Nord.",
+              "Sur un bâtiment professionnel, les fientes de pigeons dégradent les surfaces et posent un risque sanitaire pour vos équipes et vos clients. Nous décontaminons à Lille et en Hauts-de-France.",
               "Retrait des dépôts, désinfection, puis conseil en dispositifs anti-pigeons pour éviter le retour : nous assainissons durablement vos façades, toitures et locaux techniques."
             ],
             "image": {
@@ -5044,7 +5054,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage extérieur & façade à Lille — toiture, ravalement",
-        "description": "Nettoyage extérieur à Lille et dans le Nord : démoussage de toiture, façades, ravalement, graffitis, panneaux solaires, piscines, terrains. Devis gratuit."
+        "description": "Nettoyage extérieur à Lille et en Hauts-de-France : démoussage de toiture, façades, ravalement, graffitis, panneaux solaires, piscines, terrains. Devis gratuit."
       },
       "blocks": [
         {
@@ -5077,7 +5087,7 @@
           "content": {
             "titre": "De la toiture au sol, dehors",
             "paragraphes": [
-              "L'extérieur d'un bâtiment encaisse tout : pluie, pollution, mousses, temps qui passe. Une toiture envahie ou une façade grise vieillissent le bâtiment et peuvent l'abîmer durablement. Nous redonnons de la propreté à l'ensemble, du toit au sol, à Lille et dans le Nord.",
+              "L'extérieur d'un bâtiment encaisse tout : pluie, pollution, mousses, temps qui passe. Une toiture envahie ou une façade grise vieillissent le bâtiment et peuvent l'abîmer durablement. Nous redonnons de la propreté à l'ensemble, du toit au sol, à Lille et en Hauts-de-France.",
               "Démoussage, décrassage, traitement adapté à chaque support : nous choisissons la bonne méthode pour nettoyer sans abîmer. Le résultat se voit tout de suite, et il protège votre bâtiment pour les saisons à venir."
             ]
           }
@@ -5221,7 +5231,7 @@
       "navHidden": true,
       "meta": {
         "title": "Démoussage toiture & gouttières à Lille",
-        "description": "Démoussage de toiture et curage de gouttières à Lille et dans le Nord : retrait des mousses, traitement anti-mousse, travail en hauteur. Devis gratuit."
+        "description": "Démoussage de toiture et curage de gouttières à Lille et en Hauts-de-France : retrait des mousses, traitement anti-mousse, travail en hauteur. Devis gratuit."
       },
       "blocks": [
         {
@@ -5258,7 +5268,7 @@
           "content": {
             "titre": "Protéger la toiture, évacuer l'eau",
             "paragraphes": [
-              "Une toiture envahie par la mousse et des gouttières bouchées finissent par abîmer le bâtiment : infiltrations, débordements, dégradation des tuiles. Nous intervenons à Lille et dans le Nord pour démousser et curer.",
+              "Une toiture envahie par la mousse et des gouttières bouchées finissent par abîmer le bâtiment : infiltrations, débordements, dégradation des tuiles. Nous intervenons à Lille et en Hauts-de-France pour démousser et curer.",
               "Nettoyage, retrait des mousses, curage des gouttières et, si vous le souhaitez, traitement anti-mousse pour espacer les interventions. Le tout avec le matériel de sécurité adapté au travail en hauteur."
             ],
             "image": {
@@ -5288,7 +5298,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de façades & bardages à Lille",
-        "description": "Nettoyage de façades et bardages à Lille et dans le Nord : enduit, béton, brique, métal. Décrassage adapté au support, devis gratuit."
+        "description": "Nettoyage de façades et bardages à Lille et en Hauts-de-France : enduit, béton, brique, métal. Décrassage adapté au support, devis gratuit."
       },
       "blocks": [
         {
@@ -5325,7 +5335,7 @@
           "content": {
             "titre": "Une façade qui rajeunit le bâtiment",
             "paragraphes": [
-              "Une façade encaisse pluie, pollution et mousses : elle grise, se salit et vieillit le bâtiment. Nous la nettoyons à Lille et dans le Nord, sur enduit, béton, brique ou bardage métallique.",
+              "Une façade encaisse pluie, pollution et mousses : elle grise, se salit et vieillit le bâtiment. Nous la nettoyons à Lille et en Hauts-de-France, sur enduit, béton, brique ou bardage métallique.",
               "Nous choisissons produit et pression selon le support, pour décrasser sans l'abîmer. Le résultat se voit tout de suite et protège la façade pour les saisons suivantes."
             ],
             "image": {
@@ -5355,7 +5365,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage avant ravalement à Lille",
-        "description": "Nettoyage de façade avant ravalement à Lille et dans le Nord : retrait des mousses et salissures, préparation ou alternative au ravalement. Devis gratuit."
+        "description": "Nettoyage de façade avant ravalement à Lille et en Hauts-de-France : retrait des mousses et salissures, préparation ou alternative au ravalement. Devis gratuit."
       },
       "blocks": [
         {
@@ -5392,7 +5402,7 @@
           "content": {
             "titre": "Préparer ou éviter le ravalement",
             "paragraphes": [
-              "Un ravalement commence toujours par une façade propre : le nettoyage retire mousses, salissures et parties non adhérentes pour une bonne accroche des traitements. Nous préparons vos façades à Lille et dans le Nord.",
+              "Un ravalement commence toujours par une façade propre : le nettoyage retire mousses, salissures et parties non adhérentes pour une bonne accroche des traitements. Nous préparons vos façades à Lille et en Hauts-de-France.",
               "Souvent, un nettoyage soigné redonne à lui seul un vrai coup de neuf et permet de repousser un ravalement coûteux. Nous vous conseillons honnêtement après une visite."
             ],
             "image": {
@@ -5422,7 +5432,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de graffitis à Lille — anti-tags",
-        "description": "Nettoyage de graffitis à Lille et dans le Nord : retrait des tags sur façades et murs, protection anti-graffiti. Devis gratuit."
+        "description": "Nettoyage de graffitis à Lille et en Hauts-de-France : retrait des tags sur façades et murs, protection anti-graffiti. Devis gratuit."
       },
       "blocks": [
         {
@@ -5459,7 +5469,7 @@
           "content": {
             "titre": "Effacer les tags, protéger la surface",
             "paragraphes": [
-              "Un tag sur une façade ou un mur nuit à l'image d'un bâtiment ou d'un commerce, et invite souvent d'autres dégradations. Nous les effaçons à Lille et dans le Nord, sur la plupart des supports.",
+              "Un tag sur une façade ou un mur nuit à l'image d'un bâtiment ou d'un commerce, et invite souvent d'autres dégradations. Nous les effaçons à Lille et en Hauts-de-France, sur la plupart des supports.",
               "Retrait des graffitis avec la méthode adaptée à la surface, puis, sur demande, application d'une protection anti-graffiti qui facilitera les prochains nettoyages."
             ],
             "image": {
@@ -5489,7 +5499,7 @@
       "navHidden": true,
       "meta": {
         "title": "Débroussaillage à Lille — terrains & abords",
-        "description": "Débroussaillage et nettoyage de terrains à Lille et dans le Nord : végétation, déchets, ronces, évacuation. Terrain dégagé, devis gratuit."
+        "description": "Débroussaillage et nettoyage de terrains à Lille et en Hauts-de-France : végétation, déchets, ronces, évacuation. Terrain dégagé, devis gratuit."
       },
       "blocks": [
         {
@@ -5526,7 +5536,7 @@
           "content": {
             "titre": "Dégager et assainir le terrain",
             "paragraphes": [
-              "Un terrain ou des abords laissés à l'abandon deviennent vite une friche : végétation envahissante, déchets, ronces. Nous débroussaillons et nettoyons à Lille et dans le Nord.",
+              "Un terrain ou des abords laissés à l'abandon deviennent vite une friche : végétation envahissante, déchets, ronces. Nous débroussaillons et nettoyons à Lille et en Hauts-de-France.",
               "Débroussaillage, ramassage, évacuation des déchets verts : nous rendons le terrain dégagé et net, avant une vente, des travaux ou simplement pour l'entretenir."
             ],
             "image": {
@@ -5556,7 +5566,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de panneaux solaires à Lille — rendement",
-        "description": "Nettoyage de panneaux solaires (photovoltaïques) à Lille et dans le Nord : retrait des dépôts sans rayure, rendement préservé. Devis gratuit."
+        "description": "Nettoyage de panneaux solaires (photovoltaïques) à Lille et en Hauts-de-France : retrait des dépôts sans rayure, rendement préservé. Devis gratuit."
       },
       "blocks": [
         {
@@ -5593,7 +5603,7 @@
           "content": {
             "titre": "Préserver le rendement",
             "paragraphes": [
-              "Poussière, pollen, fientes et mousses réduisent le rendement des panneaux solaires, parfois nettement. Un nettoyage régulier protège votre production. Nous intervenons à Lille et dans le Nord.",
+              "Poussière, pollen, fientes et mousses réduisent le rendement des panneaux solaires, parfois nettement. Un nettoyage régulier protège votre production. Nous intervenons à Lille et en Hauts-de-France.",
               "Nous nettoyons les panneaux avec de l'eau et des outils adaptés, sans produit agressif ni rayure, dans le respect des consignes du fabricant. Le rendement s'en ressent."
             ],
             "image": {
@@ -5623,7 +5633,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de piscines & abris à Lille",
-        "description": "Nettoyage de piscines, margelles et abris à Lille et dans le Nord : remise en état avant la saison. Devis gratuit."
+        "description": "Nettoyage de piscines, margelles et abris à Lille et en Hauts-de-France : remise en état avant la saison. Devis gratuit."
       },
       "blocks": [
         {
@@ -5660,7 +5670,7 @@
           "content": {
             "titre": "Une piscine prête pour l'été",
             "paragraphes": [
-              "Avant la belle saison, une piscine et ses abords demandent un vrai nettoyage : bassin, margelles, plages, abri. Nous nous en chargeons à Lille et dans le Nord.",
+              "Avant la belle saison, une piscine et ses abords demandent un vrai nettoyage : bassin, margelles, plages, abri. Nous nous en chargeons à Lille et en Hauts-de-France.",
               "Retrait des dépôts, nettoyage des margelles et de l'abri, remise en propreté des plages : vous retrouvez une piscine nette, prête à être remise en eau et à en profiter."
             ],
             "image": {
@@ -5690,7 +5700,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage terrains & évacuation gravats à Lille",
-        "description": "Nettoyage de terrains et évacuation de gravats à Lille et dans le Nord : ramassage, tri, évacuation. Terrain dégagé, devis gratuit."
+        "description": "Nettoyage de terrains et évacuation de gravats à Lille et en Hauts-de-France : ramassage, tri, évacuation. Terrain dégagé, devis gratuit."
       },
       "blocks": [
         {
@@ -5727,7 +5737,7 @@
           "content": {
             "titre": "Faire place nette",
             "paragraphes": [
-              "Après des travaux ou sur un terrain laissé à l'abandon, gravats et déchets encombrent l'espace. Nous nettoyons et évacuons à Lille et dans le Nord.",
+              "Après des travaux ou sur un terrain laissé à l'abandon, gravats et déchets encombrent l'espace. Nous nettoyons et évacuons à Lille et en Hauts-de-France.",
               "Ramassage, tri, évacuation vers les bonnes filières : nous rendons le terrain dégagé et propre, prêt pour la suite — construction, vente ou aménagement."
             ],
             "image": {
@@ -5757,7 +5767,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de murs extérieurs à Lille",
-        "description": "Nettoyage de murs extérieurs et clôtures à Lille et dans le Nord : retrait des mousses et salissures, adapté au support. Devis gratuit."
+        "description": "Nettoyage de murs extérieurs et clôtures à Lille et en Hauts-de-France : retrait des mousses et salissures, adapté au support. Devis gratuit."
       },
       "blocks": [
         {
@@ -5794,7 +5804,7 @@
           "content": {
             "titre": "Des surfaces extérieures nettes",
             "paragraphes": [
-              "Murs de clôture, murets, surfaces extérieures se couvrent de mousses, de traces vertes et de salissures qui les vieillissent. Nous les nettoyons à Lille et dans le Nord, sans abîmer le support.",
+              "Murs de clôture, murets, surfaces extérieures se couvrent de mousses, de traces vertes et de salissures qui les vieillissent. Nous les nettoyons à Lille et en Hauts-de-France, sans abîmer le support.",
               "Nous ajustons produit et pression selon le matériau — pierre, béton, enduit — pour un rendu net et durable, à l'unité ou dans le cadre d'un entretien plus large."
             ],
             "image": {
@@ -5824,7 +5834,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage d'ouvrages & monuments à Lille",
-        "description": "Nettoyage d'ouvrages et de monuments à Lille et dans le Nord : patrimoine, statues, bâtiments anciens, méthodes douces. Devis gratuit."
+        "description": "Nettoyage d'ouvrages et de monuments à Lille et en Hauts-de-France : patrimoine, statues, bâtiments anciens, méthodes douces. Devis gratuit."
       },
       "blocks": [
         {
@@ -5861,7 +5871,7 @@
           "content": {
             "titre": "Le soin qu'exige le patrimoine",
             "paragraphes": [
-              "Un monument, une statue, un ouvrage ancien ne se nettoient pas comme une façade récente : les matériaux sont fragiles et demandent des méthodes douces. Nous intervenons avec soin à Lille et dans le Nord.",
+              "Un monument, une statue, un ouvrage ancien ne se nettoient pas comme une façade récente : les matériaux sont fragiles et demandent des méthodes douces. Nous intervenons avec soin à Lille et en Hauts-de-France.",
               "Diagnostic du support, choix d'une méthode adaptée, nettoyage progressif : nous redonnons de la propreté au patrimoine sans le dénaturer ni l'abîmer."
             ],
             "image": {
@@ -5891,7 +5901,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage & traitement de bâtiments à Lille — humidité, façades",
-        "description": "Nettoyage et traitement de bâtiments à Lille et dans le Nord : entrepôts, bardages, enseignes, monuments, humidité, moisissures, remontées capillaires. Devis gratuit."
+        "description": "Nettoyage et traitement de bâtiments à Lille et en Hauts-de-France : entrepôts, bardages, enseignes, monuments, humidité, moisissures, remontées capillaires. Devis gratuit."
       },
       "blocks": [
         {
@@ -5924,7 +5934,7 @@
           "content": {
             "titre": "Traiter le bâtiment, pas seulement le nettoyer",
             "paragraphes": [
-              "Un bâtiment ne se limite pas à ses surfaces visibles : humidité, moisissures, remontées capillaires, odeurs tenaces s'installent et l'abîment de l'intérieur. Au-delà du nettoyage, nous traitons ces pathologies à Lille et dans le Nord, sur du bâti récent comme ancien.",
+              "Un bâtiment ne se limite pas à ses surfaces visibles : humidité, moisissures, remontées capillaires, odeurs tenaces s'installent et l'abîment de l'intérieur. Au-delà du nettoyage, nous traitons ces pathologies à Lille et en Hauts-de-France, sur du bâti récent comme ancien.",
               "Grands volumes, bardages, enseignes, monuments : nous adaptons le matériel à l'échelle et à la nature du support. L'objectif est double — rendre le bâtiment propre, et le préserver dans la durée."
             ]
           }
@@ -6059,7 +6069,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage d'entrepôts & hangars à Lille",
-        "description": "Nettoyage d'entrepôts et hangars à Lille et dans le Nord : grands volumes, sols techniques, structures, travail en hauteur. Devis gratuit."
+        "description": "Nettoyage d'entrepôts et hangars à Lille et en Hauts-de-France : grands volumes, sols techniques, structures, travail en hauteur. Devis gratuit."
       },
       "blocks": [
         {
@@ -6096,7 +6106,7 @@
           "content": {
             "titre": "Le grand volume, bien nettoyé",
             "paragraphes": [
-              "Un entrepôt ou un hangar pose des défis particuliers : surfaces immenses, sols techniques, hauteur, sécurité. Nous adaptons matériel et organisation à cette échelle, à Lille et dans le Nord.",
+              "Un entrepôt ou un hangar pose des défis particuliers : surfaces immenses, sols techniques, hauteur, sécurité. Nous adaptons matériel et organisation à cette échelle, à Lille et en Hauts-de-France.",
               "Sols, structures, quais, zones de stockage : nous intervenons sur un rythme régulier ou pour une remise en état ponctuelle, en respectant votre activité et vos règles de sécurité."
             ],
             "image": {
@@ -6126,7 +6136,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de bardages à Lille",
-        "description": "Nettoyage de bardages métalliques et composites à Lille et dans le Nord : décrassage adapté au revêtement, grandes surfaces. Devis gratuit."
+        "description": "Nettoyage de bardages métalliques et composites à Lille et en Hauts-de-France : décrassage adapté au revêtement, grandes surfaces. Devis gratuit."
       },
       "blocks": [
         {
@@ -6163,7 +6173,7 @@
           "content": {
             "titre": "Un bardage propre et durable",
             "paragraphes": [
-              "Un bardage encaisse pluie, pollution et poussières industrielles : il se ternit, se salit et vieillit le bâtiment. Nous le nettoyons à Lille et dans le Nord, sur métal comme sur composite.",
+              "Un bardage encaisse pluie, pollution et poussières industrielles : il se ternit, se salit et vieillit le bâtiment. Nous le nettoyons à Lille et en Hauts-de-France, sur métal comme sur composite.",
               "Nous ajustons produit et pression pour décrasser sans endommager le revêtement ni ses joints. Le bâtiment retrouve une allure nette, y compris sur de grandes surfaces."
             ],
             "image": {
@@ -6193,7 +6203,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage d'enseignes & devantures à Lille",
-        "description": "Nettoyage d'enseignes, devantures et stores de commerces à Lille et dans le Nord : sans trace, travail en hauteur. Devis gratuit."
+        "description": "Nettoyage d'enseignes, devantures et stores de commerces à Lille et en Hauts-de-France : sans trace, travail en hauteur. Devis gratuit."
       },
       "blocks": [
         {
@@ -6230,7 +6240,7 @@
           "content": {
             "titre": "La vitrine de votre commerce",
             "paragraphes": [
-              "Enseigne, devanture, store : c'est ce que voit le client avant même d'entrer. Encrassées, elles donnent une mauvaise image. Nous les nettoyons à Lille et dans le Nord.",
+              "Enseigne, devanture, store : c'est ce que voit le client avant même d'entrer. Encrassées, elles donnent une mauvaise image. Nous les nettoyons à Lille et en Hauts-de-France.",
               "Nettoyage de l'enseigne, de la devanture et des surfaces vitrées, sans trace, en hauteur si nécessaire. Votre commerce donne toujours une bonne première impression."
             ],
             "image": {
@@ -6260,7 +6270,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de bâtiments anciens à Lille",
-        "description": "Nettoyage de bâtiments anciens et façades patrimoniales à Lille et dans le Nord : pierre, brique, méthodes douces. Devis gratuit."
+        "description": "Nettoyage de bâtiments anciens et façades patrimoniales à Lille et en Hauts-de-France : pierre, brique, méthodes douces. Devis gratuit."
       },
       "blocks": [
         {
@@ -6297,7 +6307,7 @@
           "content": {
             "titre": "Respecter le bâti ancien",
             "paragraphes": [
-              "Un bâtiment ancien — pierre, brique, façade patrimoniale — ne supporte pas les méthodes agressives. Le nettoyage doit préserver le matériau. Nous intervenons avec soin à Lille et dans le Nord.",
+              "Un bâtiment ancien — pierre, brique, façade patrimoniale — ne supporte pas les méthodes agressives. Le nettoyage doit préserver le matériau. Nous intervenons avec soin à Lille et en Hauts-de-France.",
               "Diagnostic du support, méthode douce et progressive : nous retirons mousses, noircissures et salissures sans dénaturer ni fragiliser le bâti."
             ],
             "image": {
@@ -6327,7 +6337,7 @@
       "navHidden": true,
       "meta": {
         "title": "Traitement de l'humidité à Lille — bâtiments",
-        "description": "Traitement de l'humidité dans les bâtiments à Lille et dans le Nord : diagnostic, assainissement des zones touchées, solution durable. Devis gratuit."
+        "description": "Traitement de l'humidité dans les bâtiments à Lille et en Hauts-de-France : diagnostic, assainissement des zones touchées, solution durable. Devis gratuit."
       },
       "blocks": [
         {
@@ -6364,7 +6374,7 @@
           "content": {
             "titre": "S'attaquer à la source de l'humidité",
             "paragraphes": [
-              "L'humidité dans un bâtiment n'est jamais anodine : elle dégrade les murs, favorise les moisissures et pèse sur la santé. Au-delà du nettoyage, il faut en comprendre l'origine. Nous intervenons à Lille et dans le Nord.",
+              "L'humidité dans un bâtiment n'est jamais anodine : elle dégrade les murs, favorise les moisissures et pèse sur la santé. Au-delà du nettoyage, il faut en comprendre l'origine. Nous intervenons à Lille et en Hauts-de-France.",
               "Après diagnostic, nous traitons la cause quand c'est possible et assainissons les zones touchées. L'objectif est durable : un bâtiment sain, pas un simple rafraîchissement de surface."
             ],
             "image": {
@@ -6394,7 +6404,7 @@
       "navHidden": true,
       "meta": {
         "title": "Traitement des moisissures à Lille",
-        "description": "Traitement des moisissures à Lille et dans le Nord : élimination, désinfection, prévention du retour. Bâtiment sain, devis gratuit."
+        "description": "Traitement des moisissures à Lille et en Hauts-de-France : élimination, désinfection, prévention du retour. Bâtiment sain, devis gratuit."
       },
       "blocks": [
         {
@@ -6431,7 +6441,7 @@
           "content": {
             "titre": "Éliminer les moisissures durablement",
             "paragraphes": [
-              "Les moisissures ne sont pas qu'une question d'esthétique : elles dégradent les surfaces et peuvent affecter la santé, surtout des plus fragiles. Nous les traitons à Lille et dans le Nord.",
+              "Les moisissures ne sont pas qu'une question d'esthétique : elles dégradent les surfaces et peuvent affecter la santé, surtout des plus fragiles. Nous les traitons à Lille et en Hauts-de-France.",
               "Élimination des moisissures, désinfection, puis conseil sur les causes (humidité, ventilation) pour éviter qu'elles reviennent. Un traitement qui vise le fond, pas seulement la surface."
             ],
             "image": {
@@ -6461,7 +6471,7 @@
       "navHidden": true,
       "meta": {
         "title": "Traitement des odeurs (bâtiments) à Lille",
-        "description": "Désodorisation de bâtiments à Lille et dans le Nord : odeurs d'humidité, de tabac, d'animaux, de renfermé traitées à la source. Devis gratuit."
+        "description": "Désodorisation de bâtiments à Lille et en Hauts-de-France : odeurs d'humidité, de tabac, d'animaux, de renfermé traitées à la source. Devis gratuit."
       },
       "blocks": [
         {
@@ -6498,7 +6508,7 @@
           "content": {
             "titre": "Retrouver un air sain",
             "paragraphes": [
-              "Une odeur persistante dans un bâtiment — humidité, tabac, animaux, renfermé — ne se règle pas avec un désodorisant : elle revient. Nous en traitons la source à Lille et dans le Nord.",
+              "Une odeur persistante dans un bâtiment — humidité, tabac, animaux, renfermé — ne se règle pas avec un désodorisant : elle revient. Nous en traitons la source à Lille et en Hauts-de-France.",
               "Nettoyage des supports imprégnés, désinfection et désodorisation en profondeur : nous neutralisons l'odeur là où elle se forme, pour un air de nouveau respirable."
             ],
             "image": {
@@ -6528,7 +6538,7 @@
       "navHidden": true,
       "meta": {
         "title": "Traitement des remontées capillaires à Lille",
-        "description": "Traitement des remontées capillaires à Lille et dans le Nord : diagnostic, assainissement du bas des murs, solution durable. Devis gratuit."
+        "description": "Traitement des remontées capillaires à Lille et en Hauts-de-France : diagnostic, assainissement du bas des murs, solution durable. Devis gratuit."
       },
       "blocks": [
         {
@@ -6565,7 +6575,7 @@
           "content": {
             "titre": "Stopper l'humidité qui monte",
             "paragraphes": [
-              "Les remontées capillaires font monter l'humidité du sol dans les murs : salpêtre, enduits qui cloquent, bas de murs dégradés. C'est un désordre courant du bâti ancien. Nous l'abordons à Lille et dans le Nord.",
+              "Les remontées capillaires font monter l'humidité du sol dans les murs : salpêtre, enduits qui cloquent, bas de murs dégradés. C'est un désordre courant du bâti ancien. Nous l'abordons à Lille et en Hauts-de-France.",
               "Après un diagnostic, nous nettoyons et assainissons les zones touchées et vous orientons vers la bonne solution de fond, pour un traitement durable plutôt qu'un simple ravalement de surface."
             ],
             "image": {
@@ -6595,7 +6605,7 @@
       "navHidden": true,
       "meta": {
         "title": "Nettoyage de bâtiments agricoles à Lille",
-        "description": "Nettoyage et désinfection de bâtiments agricoles à Lille et dans le Nord : étables, hangars, silos, hygiène et santé animale. Devis gratuit."
+        "description": "Nettoyage et désinfection de bâtiments agricoles à Lille et en Hauts-de-France : étables, hangars, silos, hygiène et santé animale. Devis gratuit."
       },
       "blocks": [
         {
@@ -6632,7 +6642,7 @@
           "content": {
             "titre": "L'hygiène de l'exploitation",
             "paragraphes": [
-              "Un bâtiment agricole — étable, hangar, silo, local d'élevage — demande un nettoyage et une désinfection réguliers, essentiels pour l'hygiène et la santé animale. Nous intervenons à Lille et dans le Nord.",
+              "Un bâtiment agricole — étable, hangar, silo, local d'élevage — demande un nettoyage et une désinfection réguliers, essentiels pour l'hygiène et la santé animale. Nous intervenons à Lille et en Hauts-de-France.",
               "Grands volumes, sols techniques, points sensibles : nous adaptons matériel et produits aux contraintes de l'exploitation, dans le respect de vos règles sanitaires."
             ],
             "image": {
@@ -6662,13 +6672,13 @@
       "navHidden": true,
       "service": {
         "name": "Nettoyage syndrome de Diogène",
-        "description": "Remise en état de logements encombrés ou insalubres à Lille et dans le Nord : débarras, nettoyage en profondeur, désinfection, dans la discrétion.",
+        "description": "Remise en état de logements encombrés ou insalubres à Lille et en Hauts-de-France : débarras, nettoyage en profondeur, désinfection, dans la discrétion.",
         "serviceType": "Nettoyage extrême et syndrome de Diogène",
         "priceFrom": "Sur devis"
       },
       "meta": {
         "title": "Nettoyage syndrome de Diogène à Lille",
-        "description": "Remise en état de logements très encombrés ou insalubres à Lille et dans le Nord : débarras, nettoyage en profondeur et désinfection, avec discrétion et respect."
+        "description": "Remise en état de logements très encombrés ou insalubres à Lille et en Hauts-de-France : débarras, nettoyage en profondeur et désinfection, avec discrétion et respect."
       },
       "blocks": [
         {
@@ -6824,7 +6834,7 @@
       "label": "Réalisations",
       "meta": {
         "title": "Réalisations & avant / après — Lille",
-        "description": "Découvrez en images le résultat de nos interventions de nettoyage de bâtiments à Lille et dans le Nord, avec des comparateurs avant / après."
+        "description": "Découvrez en images le résultat de nos interventions de nettoyage de bâtiments à Lille et en Hauts-de-France, avec des comparateurs avant / après."
       },
       "blocks": [
         {
@@ -6933,27 +6943,27 @@
       "slug": "zone-intervention",
       "label": "Zone d'intervention",
       "meta": {
-        "title": "Zone d'intervention dans le Nord (59)",
-        "description": "HYGIFRANCE intervient à Lille, dans la métropole et dans tout le département du Nord pour le nettoyage et l'entretien de bâtiments."
+        "title": "Zone d'intervention Nord (59) & Pas-de-Calais (62)",
+        "description": "HYGIFRANCE intervient dans toute la région Hauts-de-France, sur les départements du Nord (59) et du Pas-de-Calais (62), pour le nettoyage et l'entretien de bâtiments."
       },
       "blocks": [
         {
           "type": "pageHero",
           "content": {
             "eyebrow": "Où nous intervenons",
-            "titre": "Lille comme point de départ, le Nord comme terrain",
-            "intro": "Nous rayonnons depuis Lille sur toute la métropole et le département, en ville comme à la campagne."
+            "titre": "Toute la région Hauts-de-France",
+            "intro": "Basés à Lille, nous couvrons les deux départements : le Nord (59) et le Pas-de-Calais (62), du littoral au bassin minier."
           }
         },
         {
           "type": "contenu",
           "content": {
-            "titre": "Proches de vous,",
-            "titreAccent": "partout dans le Nord",
+            "titre": "Deux départements,",
+            "titreAccent": "une seule équipe",
             "paragraphes": [
-              "Notre base lilloise nous place au cœur de la Métropole Européenne de Lille. Nous y intervenons quotidiennement, à Lille et dans les communes voisines comme Roubaix, Tourcoing, Villeneuve-d'Ascq, Marcq-en-Barœul, Lambersart, Loos, Ronchin ou Wattignies, aussi bien pour les copropriétés que pour les entreprises et les particuliers.",
-              "Au-delà de la métropole, nous nous déplaçons dans l'ensemble du département du Nord : le Douaisis, la Flandre autour d'Armentières, Bailleul et Halluin, le secteur de Seclin et de la Pévèle vers Orchies et Pont-à-Marcq. Les chantiers extérieurs et les interventions après sinistre nous amènent régulièrement hors des grands axes.",
-              "Deux interventions font exception à cet ancrage régional : le nettoyage après scène de crime et le syndrome de Diogène. Pour ces situations rares, qui exigent une équipe spécialement formée, nous nous déplaçons dans toute la France et toute la Belgique. Où que vous soyez, nous venons à vous, en toute discrétion.",
+              "Notre base lilloise nous place au cœur de la Métropole Européenne de Lille. Nous y intervenons quotidiennement, à Lille comme à Roubaix, Tourcoing, Villeneuve-d'Ascq, Marcq-en-Barœul ou Lambersart, aussi bien pour les copropriétés que pour les entreprises et les particuliers.",
+              "Le Nord ne s'arrête pas à la métropole : nous nous déplaçons vers Dunkerque et le littoral, le Valenciennois, le Douaisis, le Cambrésis, l'Avesnois et la Flandre intérieure autour d'Hazebrouck et Bailleul.",
+              "Nous couvrons également tout le Pas-de-Calais : Arras et l'Artois, le bassin minier de Lens, Liévin, Béthune et Hénin-Beaumont, l'Audomarois autour de Saint-Omer, ainsi que la Côte d'Opale de Calais à Boulogne-sur-Mer et Berck.",
               "Vous n'êtes pas certain d'être dans notre zone ? Indiquez-nous simplement votre commune : si l'intervention est possible, nous vous le confirmons immédiatement avec le devis. Le déplacement est pris en compte de façon transparente dans notre chiffrage."
             ],
             "ctaPrimaire": {
@@ -6966,49 +6976,96 @@
           "type": "zone",
           "mode": "liste",
           "content": {
-            "titre": "Les secteurs que nous desservons",
-            "intro": "Une liste non exhaustive : si votre commune n'y figure pas, demandez-nous.",
+            "titre": "Les communes que nous desservons",
+            "intro": "Une liste non exhaustive, département par département : si votre commune n'y figure pas, demandez-nous.",
             "zones": [
               {
-                "region": "Métropole Européenne de Lille",
+                "region": "Nord (59)",
                 "principale": "Lille",
                 "villes": [
                   "Lille",
                   "Roubaix",
                   "Tourcoing",
                   "Villeneuve-d'Ascq",
+                  "Dunkerque",
+                  "Valenciennes",
+                  "Douai",
+                  "Cambrai",
+                  "Maubeuge",
+                  "Wattrelos",
                   "Marcq-en-Barœul",
                   "Lambersart",
-                  "La Madeleine",
-                  "Loos",
-                  "Ronchin",
-                  "Wattignies",
-                  "Lomme",
-                  "Hellemmes"
-                ]
-              },
-              {
-                "region": "Flandre & Lys",
-                "principale": "Armentières",
-                "villes": [
                   "Armentières",
-                  "Bailleul",
+                  "Hazebrouck",
+                  "Loos",
                   "Halluin",
-                  "Comines",
-                  "Houplines",
-                  "Nieppe"
+                  "Wasquehal",
+                  "Croix",
+                  "Hem",
+                  "Roncq",
+                  "Seclin",
+                  "La Madeleine",
+                  "Mons-en-Barœul",
+                  "Faches-Thumesnil",
+                  "Ronchin",
+                  "Coudekerque-Branche",
+                  "Grande-Synthe",
+                  "Denain",
+                  "Saint-Amand-les-Eaux",
+                  "Bailleul",
+                  "Fourmies",
+                  "Caudry",
+                  "Jeumont",
+                  "Orchies",
+                  "Le Quesnoy",
+                  "Avesnes-sur-Helpe",
+                  "Hautmont",
+                  "Louvroil",
+                  "Anzin"
                 ]
               },
               {
-                "region": "Douaisis & Pévèle",
-                "principale": "Douai",
+                "region": "Pas-de-Calais (62)",
+                "principale": "Arras",
                 "villes": [
-                  "Douai",
-                  "Seclin",
-                  "Orchies",
-                  "Pont-à-Marcq",
-                  "Templeuve-en-Pévèle",
-                  "Cysoing"
+                  "Calais",
+                  "Arras",
+                  "Boulogne-sur-Mer",
+                  "Lens",
+                  "Liévin",
+                  "Béthune",
+                  "Hénin-Beaumont",
+                  "Saint-Omer",
+                  "Bruay-la-Buissière",
+                  "Carvin",
+                  "Outreau",
+                  "Avion",
+                  "Berck",
+                  "Étaples",
+                  "Nœux-les-Mines",
+                  "Longuenesse",
+                  "Aire-sur-la-Lys",
+                  "Lillers",
+                  "Le Portel",
+                  "Courrières",
+                  "Méricourt",
+                  "Auchel",
+                  "Wingles",
+                  "Libercourt",
+                  "Montigny-en-Gohelle",
+                  "Sallaumines",
+                  "Vendin-le-Vieil",
+                  "Rouvroy",
+                  "Oignies",
+                  "Marles-les-Mines",
+                  "Desvres",
+                  "Hesdin",
+                  "Ardres",
+                  "Wimereux",
+                  "Cucq",
+                  "Saint-Martin-Boulogne",
+                  "Rang-du-Fliers",
+                  "Isbergues"
                 ]
               }
             ]
@@ -7017,7 +7074,7 @@
         {
           "type": "cta",
           "content": {
-            "titre": "Votre commune est dans le Nord ?",
+            "titre": "Votre commune est dans le 59 ou le 62 ?",
             "sousTitre": "Il y a de fortes chances que nous puissions intervenir. Demandez confirmation et devis.",
             "ctaPrimaire": {
               "label": "Demander un devis",
@@ -7043,8 +7100,8 @@
           "type": "pageHero",
           "content": {
             "eyebrow": "Qui sommes-nous",
-            "titre": "L'entretien global de vos bâtiments",
-            "intro": "Ce n'est pas seulement notre signature : c'est la façon dont nous abordons chaque chantier, du hall de copropriété au chantier après sinistre."
+            "titre": "L'expertise fait la différence",
+            "intro": "Ce n'est pas seulement notre signature : c'est ce qui se voit sur chaque chantier, du hall de copropriété à la remise en état après sinistre."
           }
         },
         {
@@ -7053,7 +7110,7 @@
             "titre": "Une équipe polyvalente,",
             "titreAccent": "une même exigence",
             "paragraphes": [
-              "HYGIFRANCE est une entreprise de nettoyage spécialisée dans l'entretien des bâtiments, implantée à Lille et active dans tout le Nord. Nous avons choisi de couvrir l'ensemble des besoins d'un bâtiment — de l'entretien courant des communs aux chantiers les plus délicats — plutôt que de vous renvoyer d'un prestataire à l'autre.",
+              "HYGIFRANCE est une entreprise de nettoyage spécialisée dans l'entretien des bâtiments, implantée à Lille et active dans toute la région Hauts-de-France. Nous avons choisi de couvrir l'ensemble des besoins d'un bâtiment — de l'entretien courant des communs aux chantiers les plus délicats — plutôt que de vous renvoyer d'un prestataire à l'autre.",
               "Nettoyage extérieur, parties communes, bureaux et commerces, textiles d'ameublement, syndrome de Diogène et interventions après sinistre : cette étendue nous oblige à être rigoureux sur chaque geste. Nous formons nos équipes à adapter la méthode au support et à laisser chaque lieu plus sain que nous l'avons trouvé.",
               "Derrière tout cela, une exigence simple : un devis clair et tenu, un interlocuteur unique, et un résultat contrôlé avec vous avant de partir. C'est là-dessus que nous voulons être jugés."
             ],
@@ -7116,7 +7173,7 @@
       "label": "Contact",
       "meta": {
         "title": "Contact & devis nettoyage à Lille",
-        "description": "Contactez HYGIFRANCE à Lille pour l'entretien de vos bâtiments dans le Nord. Par téléphone, WhatsApp ou formulaire, réponse rapide et devis gratuit."
+        "description": "Contactez HYGIFRANCE à Lille pour l'entretien de vos bâtiments en Hauts-de-France. Par téléphone, WhatsApp ou formulaire, réponse rapide et devis gratuit."
       },
       "blocks": [
         {
@@ -7154,11 +7211,16 @@
               "Roubaix",
               "Tourcoing",
               "Villeneuve-d'Ascq",
-              "Marcq-en-Barœul",
+              "Dunkerque",
+              "Valenciennes",
               "Douai",
-              "Armentières",
-              "Seclin",
-              "Autre commune du Nord"
+              "Arras",
+              "Lens",
+              "Béthune",
+              "Calais",
+              "Boulogne-sur-Mer",
+              "Saint-Omer",
+              "Autre commune (59 / 62)"
             ],
             "confidentialiteHref": "/confidentialite",
             "telephoneHeader": "icone-popup"
@@ -7172,7 +7234,7 @@
       "navHidden": true,
       "meta": {
         "title": "Devis gratuit nettoyage de bâtiments — Lille",
-        "description": "Demandez votre devis gratuit en quelques clics avec l'assistant HYGIFRANCE : sélectionnez vos prestations et précisez votre bâtiment à Lille et dans le Nord."
+        "description": "Demandez votre devis gratuit en quelques clics avec l'assistant HYGIFRANCE : sélectionnez vos prestations et précisez votre bâtiment à Lille et en Hauts-de-France."
       },
       "blocks": [
         {
@@ -7213,10 +7275,16 @@
               "Roubaix",
               "Tourcoing",
               "Villeneuve-d'Ascq",
-              "Marcq-en-Barœul",
+              "Dunkerque",
+              "Valenciennes",
               "Douai",
-              "Armentières",
-              "Seclin"
+              "Arras",
+              "Lens",
+              "Béthune",
+              "Calais",
+              "Boulogne-sur-Mer",
+              "Saint-Omer",
+              "Autre commune (59 / 62)"
             ],
             "confidentialiteHref": "/confidentialite",
             "submitLabel": "Envoyer ma demande"
