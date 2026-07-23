@@ -5,6 +5,7 @@ import { Etapes } from "./blocks/Etapes";
 import { Cta } from "./blocks/Cta";
 import { PageHero } from "./blocks/PageHero";
 import { Galerie } from "./blocks/Galerie";
+import { Zone } from "./blocks/Zone";
 import { CascadeHeader } from "./chrome/Header";
 import { CascadeFooter } from "./chrome/Footer";
 import { CascadeFloatingActions } from "./chrome/FloatingActions";
@@ -14,7 +15,6 @@ import { CascadeFloatingActions } from "./chrome/FloatingActions";
 // d'identité (hero/services/etapes/cta/pageHero + chrome), le reste est couvert
 // SANS aucun fallback `classic` (zéro page « fade »).
 import { Faq } from "../editorial/blocks/Faq";
-import { Zone } from "../editorial/blocks/Zone";
 import { Tarifs } from "../editorial/blocks/Tarifs";
 import { Contenu } from "../editorial/blocks/Contenu";
 import { Simulateur } from "../editorial/blocks/Simulateur";
