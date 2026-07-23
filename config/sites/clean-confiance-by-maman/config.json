@@ -1430,6 +1430,7 @@
             "telephone": "+33 7 58 58 82 77",
             "email": "contact@cleanconfiancebymaman.fr",
             "whatsapp": "33758588277",
+            "adresse": "51 Rue de Maurian, 33290 Blanquefort",
             "horaires": [
               { "jour": "Lundi au samedi", "heures": "7 h – 22 h" },
               { "jour": "Dimanche", "heures": "Fermé" }
