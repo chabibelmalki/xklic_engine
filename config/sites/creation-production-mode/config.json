@@ -14,6 +14,16 @@
     "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/logo-8d706a98.png",
     "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/creation-production-mode/logo-8d706a98.png"
   },
+  "social": [
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/creation_production_mode"
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://www.tiktok.com/@creation_production_mode"
+    }
+  ],
   "entreprise": {
     "nom": "Création & Production Mode",
     "statut": "EI",
