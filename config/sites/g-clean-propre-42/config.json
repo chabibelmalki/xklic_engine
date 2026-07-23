@@ -1309,7 +1309,7 @@
                   {
                     "nom": "Ménage régulier",
                     "type": "horaire",
-                    "tauxHoraire": 20,
+                    "tauxHoraire": 25,
                     "heuresMin": 1,
                     "heuresMax": 40,
                     "heuresDefaut": 2
