@@ -51,7 +51,8 @@
     ]
   },
   "forms": {
-    "to": "contact@nailys-proprete.fr"
+    "to": "contact@nailys-proprete.fr",
+    "turnstile": true
   },
   "i18n": {
     "default": "fr",
