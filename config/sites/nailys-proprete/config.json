@@ -1,5 +1,6 @@
 {
   "slug": "nailys-proprete",
+  "customDomains": ["nailys-proprete.fr", "www.nailys-proprete.fr"],
   "theme": "vitrail-foret",
   "stylePack": "verriere-nancy",
   "branding": {
