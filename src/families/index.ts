@@ -13,6 +13,7 @@ import { FIL } from "./fil";
 import { AZULEJO } from "./azulejo";
 import { ESCALE } from "./escale";
 import { ECLAT } from "./eclat";
+import { VERRIERE } from "./verriere";
 import type { FamilyBlock, TemplateFamily } from "./types";
 
 export type { TemplateFamily, FamilyChrome, FamilyBlock } from "./types";
@@ -37,6 +38,7 @@ const FAMILIES: Record<string, TemplateFamily> = {
   azulejo: AZULEJO,
   escale: ESCALE,
   eclat: ECLAT,
+  verriere: VERRIERE,
 };
 
 export const DEFAULT_FAMILY = CLASSIC;

@@ -25,6 +25,7 @@ import {
   Space_Mono,
   Instrument_Serif,
   Manrope,
+  Yeseva_One,
 } from "next/font/google";
 import "./globals.css";
 
@@ -212,6 +213,15 @@ const manrope = Manrope({
   display: "swap",
   preload: false,
 });
+// Display Art nouveau : haute contraste, terminaisons bulbeuses (titres, 400 seul)
+// — pack verriere-nancy (famille verriere).
+const yesevaOne = Yeseva_One({
+  variable: "--font-yeseva",
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+  preload: false,
+});
 
 const fontVars = [
   poppins,
@@ -239,6 +249,7 @@ const fontVars = [
   spaceMono,
   instrumentSerif,
   manrope,
+  yesevaOne,
 ]
   .map((f) => f.variable)
   .join(" ");

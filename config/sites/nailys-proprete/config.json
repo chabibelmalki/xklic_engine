@@ -1,0 +1,2091 @@
+{
+  "slug": "nailys-proprete",
+  "theme": "vitrail-foret",
+  "stylePack": "verriere-nancy",
+  "branding": {
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/logo.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/icon.png",
+    "logoAlt": "Nailys Propreté — nettoyage et entretien à Nancy",
+    "logoDarkBadge": true,
+    "logoScale": 1.15,
+    "tagline": "Nettoyage & entretien · Nancy",
+    "logoTwoTone": {
+      "first": "#1a4230",
+      "rest": "#bd9750"
+    }
+  },
+  "entreprise": {
+    "nom": "Nailys Propreté",
+    "statut": "EI",
+    "siret": "10632189600016",
+    "ape": "81.21Z",
+    "apeLabel": "Nettoyage courant des bâtiments",
+    "tva": {
+      "regime": "franchise"
+    },
+    "siege": "20 rue de Saverne, 54000 Nancy"
+  },
+  "seo": {
+    "schemaType": "HousekeepingService",
+    "ville": "Nancy"
+  },
+  "geo": {
+    "lat": 48.6975,
+    "lng": 6.1755
+  },
+  "meta": {
+    "title": "Ménage et nettoyage à Nancy",
+    "description": "Ménage à domicile, locations Airbnb, bureaux, vitres, repassage, canapés et fins de chantier à Nancy et 20 km autour. Tous les jours de 9h à 17h, devis gratuit.",
+    "keywords": [
+      "ménage à domicile Nancy",
+      "entreprise de nettoyage Nancy",
+      "femme de ménage Nancy",
+      "nettoyage Airbnb Nancy",
+      "nettoyage bureaux Nancy",
+      "nettoyage vitres Nancy",
+      "repassage à domicile Nancy",
+      "nettoyage canapé matelas Nancy",
+      "nettoyage fin de chantier Nancy",
+      "nettoyage parties communes Nancy"
+    ]
+  },
+  "forms": {
+    "to": "nailys.nettoyage@gmail.com"
+  },
+  "i18n": {
+    "default": "fr",
+    "languages": ["fr", "en"]
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Accueil",
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "carte",
+          "content": {
+            "eyebrow": "Nancy et 20 km alentour",
+            "titre": "Un intérieur tenu,",
+            "titreAccent": "sans y penser",
+            "accroche": "Nailys Propreté entretient les logements, les meublés de courte durée et les locaux professionnels de l'agglomération nancéienne. Un passage ponctuel pour rattraper le retard, ou une régularité qui s'installe : vous dites ce dont vous avez besoin, nous nous occupons du reste.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/hero.jpg",
+              "alt": "Intervenante de ménage remettant en ordre les coussins d'un salon clair"
+            },
+            "card": {
+              "label": "Chiffrage offert",
+              "prix": "Sur mesure",
+              "mention": "Le prix dépend de la surface, de l'état de départ et de la fréquence : nous l'annonçons avant d'intervenir, jamais après.",
+              "points": [
+                "Réponse le jour même en semaine comme le week-end",
+                "Aucun abonnement imposé, aucune durée d'engagement",
+                "Matériel et produits fournis, adaptés à chaque surface",
+                "Paiement par virement, espèces ou CESU"
+              ]
+            },
+            "trust": [
+              {
+                "icone": "CalendarCheck",
+                "label": "Ouvert 7 jours sur 7, de 9h à 17h"
+              },
+              {
+                "icone": "BadgeCheck",
+                "label": "Entreprise immatriculée, SIRET vérifiable"
+              },
+              {
+                "icone": "Repeat",
+                "label": "Toujours la même personne chez vous"
+              },
+              {
+                "icone": "MapPin",
+                "label": "Nancy, Grand Nancy et 20 km à la ronde"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Obtenir mon devis gratuit",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Parcourir les prestations",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Ce que nous prenons en charge",
+            "titre": "Huit métiers du propre, une seule interlocutrice",
+            "intro": "Chaque prestation a ses gestes, son matériel et son rythme. Ouvrez celle qui vous concerne : vous y trouverez le déroulé réel, les postes inclus, ceux qui restent à part, et nos limites assumées.",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "description": "L'entretien de votre logement, une fois ou toutes les semaines : sols, cuisine, sanitaires, poussières et rangement léger, au rythme qui vous convient.",
+                "href": "/menage-domicile",
+                "icone": "House",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/menage-domicile.jpg",
+                  "alt": "Dépoussiérage d'un meuble de salon dans un appartement nancéien"
+                }
+              },
+              {
+                "nom": "Locations Airbnb & meublés",
+                "description": "Remise à blanc entre deux séjours : lits refaits au carré, linge changé, salle d'eau impeccable et réassort des consommables avant l'arrivée suivante.",
+                "href": "/nettoyage-airbnb",
+                "icone": "BedDouble",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/airbnb.jpg",
+                  "alt": "Lit refait avec du linge propre dans un meublé de tourisme lumineux"
+                }
+              },
+              {
+                "nom": "Bureaux & locaux professionnels",
+                "description": "Cabinets, commerces et petits bureaux entretenus hors présence de clientèle, tôt le matin ou une fois le rideau baissé.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/bureaux.jpg",
+                  "alt": "Plan de travail de bureau dépoussiéré, entouré de plantes vertes"
+                }
+              },
+              {
+                "nom": "Vitres & surfaces vitrées",
+                "description": "Fenêtres, baies, vérandas et miroirs lavés des deux côtés, encadrements et rails compris, jusqu'à la transparence sans voile ni trace.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/vitres.jpg",
+                  "alt": "Nettoyage d'une baie vitrée au produit et à la microfibre"
+                }
+              },
+              {
+                "nom": "Repassage",
+                "description": "Chemises, draps et pièces délicates repassés puis pliés ou mis sur cintre, chez vous, pendant ou en dehors d'une prestation de ménage.",
+                "href": "/repassage",
+                "icone": "Shirt",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/repassage.jpg",
+                  "alt": "Repassage d'un vêtement sur une table à repasser"
+                }
+              },
+              {
+                "nom": "Canapés, matelas & textiles",
+                "description": "Injection-extraction et détachage ciblé pour redonner de la fraîcheur aux assises, aux couchages et aux tapis fatigués par l'usage.",
+                "href": "/canape-matelas",
+                "icone": "Sofa",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/canape-matelas.jpg",
+                  "alt": "Aspiration en profondeur de l'assise d'un fauteuil en tissu vert"
+                }
+              },
+              {
+                "nom": "Fin de chantier",
+                "description": "Poussière de plâtre, traces de colle, résidus de peinture et gravats fins évacués pour rendre un logement neuf réellement habitable.",
+                "href": "/nettoyage-fin-de-chantier",
+                "icone": "HardHat",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/fin-de-chantier.jpg",
+                  "alt": "Aspirateur de chantier dans un appartement fraîchement rénové"
+                }
+              },
+              {
+                "nom": "Escaliers & parties communes",
+                "description": "Halls, paliers, cages d'escalier et locaux à poubelles d'immeubles nancéiens, entretenus au passage régulier pour les copropriétés et les bailleurs.",
+                "href": "/parties-communes",
+                "icone": "Building",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/parties-communes.jpg",
+                  "alt": "Cage d'escalier ancienne à rampe de ferronnerie et marches de marbre"
+                }
+              }
+            ],
+            "cta": {
+              "label": "Voir le détail de chaque prestation",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "Comment ça se passe",
+            "titre": "De votre appel au premier passage",
+            "intro": "Quatre temps, sans paperasse inutile et sans visite commerciale déguisée.",
+            "items": [
+              {
+                "titre": "Vous décrivez",
+                "texte": "Par téléphone, WhatsApp ou formulaire : le type de lieu, sa surface approximative et ce que vous attendez. Quelques photos suffisent souvent.",
+                "icone": "MessageSquare"
+              },
+              {
+                "titre": "Nous chiffrons",
+                "texte": "Vous recevez un montant clair et le temps estimé sur place. Si le lieu mérite d'être vu, nous passons sans que cela vous engage.",
+                "icone": "ClipboardCheck"
+              },
+              {
+                "titre": "Nous intervenons",
+                "texte": "À la date convenue, avec le matériel et les produits. Vous n'avez rien à sortir de vos placards, rien à préparer.",
+                "icone": "SprayCan"
+              },
+              {
+                "titre": "Vous vérifiez",
+                "texte": "Un tour du propriétaire ensemble, ou des photos si vous êtes absent. Une reprise si un point n'est pas au niveau attendu.",
+                "icone": "Eye"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "eyebrow": "Notre façon de faire",
+            "titre": "Le soin d'une maison,",
+            "titreAccent": "pas la cadence d'une usine",
+            "paragraphes": [
+              "Une prestation de ménage se juge à ce qu'on ne voit pas au premier coup d'œil : le dessous des meubles, l'arrière des robinetteries, les plinthes, les interrupteurs, les joints de douche. C'est là que nous passons le temps que d'autres économisent, parce que c'est précisément ce qui fait la différence entre un logement « rangé » et un logement propre.",
+              "Nous travaillons avec notre propre matériel et des produits choisis surface par surface : ce qui convient à un plan de travail en stratifié n'a rien à faire sur du parquet huilé ou sur un miroir. Les microfibres sont séparées par zone pour éviter de promener les salissures d'une pièce à l'autre, en particulier entre la cuisine et la salle de bains.",
+              "Quand une prestation devient régulière, c'est la même personne qui revient. Elle finit par connaître votre logement mieux que vous : là où la poussière s'accumule le plus vite, la fenêtre qui coince, le placard qu'il ne faut pas ouvrir. Cette continuité vaut mieux que n'importe quelle procédure écrite, et c'est aussi ce qui permet de vous confier un jeu de clés en confiance.",
+              "Enfin, nous préférons annoncer nos limites plutôt que de tout promettre : la désinsectisation, en particulier le traitement des punaises de lit et des blattes, relève d'une entreprise spécialisée et agréée. Nous ne la pratiquons pas, et nous vous le disons dès le premier échange."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/methode.jpg",
+              "alt": "Lavage des sols à la frange microfibre dans un séjour"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/5",
+            "imageCard": true,
+            "ctaPrimaire": {
+              "label": "En savoir plus sur nous",
+              "href": "/a-propos"
+            }
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "variant": "liste",
+          "content": {
+            "titre": "Où nous nous déplaçons",
+            "intro": "Nancy intra-muros, l'ensemble de la Métropole du Grand Nancy et les communes situées jusqu'à une vingtaine de kilomètres, le long du sillon lorrain comme dans la vallée de la Meurthe.",
+            "rayonKm": 20,
+            "zones": [
+              {
+                "region": "Nancy — les quartiers",
+                "principale": "Nancy",
+                "villes": [
+                  "Ville-Vieille",
+                  "Charles III · Centre-ville",
+                  "Saint-Léon",
+                  "Trois-Maisons",
+                  "Boudonville",
+                  "Poincaré · Foch",
+                  "Haussonville · Blandan",
+                  "Mon Désert · Saurupt",
+                  "Rives de Meurthe",
+                  "Beauregard"
+                ]
+              },
+              {
+                "region": "Première couronne du Grand Nancy",
+                "principale": "Vandœuvre-lès-Nancy",
+                "villes": [
+                  "Vandœuvre-lès-Nancy",
+                  "Villers-lès-Nancy",
+                  "Laxou",
+                  "Maxéville",
+                  "Malzéville",
+                  "Saint-Max",
+                  "Essey-lès-Nancy",
+                  "Tomblaine",
+                  "Jarville-la-Malgrange",
+                  "Dommartemont"
+                ]
+              },
+              {
+                "region": "Sud de l'agglomération",
+                "principale": "Ludres",
+                "villes": [
+                  "Heillecourt",
+                  "Houdemont",
+                  "Fléville-devant-Nancy",
+                  "Ludres",
+                  "Laneuveville-devant-Nancy",
+                  "Richardménil",
+                  "Neuves-Maisons",
+                  "Chaligny",
+                  "Messein"
+                ]
+              },
+              {
+                "region": "Nord et vallée de la Meurthe",
+                "principale": "Frouard",
+                "villes": [
+                  "Frouard",
+                  "Pompey",
+                  "Champigneulles",
+                  "Custines",
+                  "Liverdun",
+                  "Seichamps",
+                  "Pulnoy",
+                  "Saulxures-lès-Nancy",
+                  "Saint-Nicolas-de-Port",
+                  "Varangéville",
+                  "Dombasle-sur-Meurthe"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Les questions qu'on nous pose avant de réserver",
+            "items": [
+              {
+                "question": "Faut-il que je sois présent pendant l'intervention ?",
+                "reponse": "Non. Beaucoup de nos clients nous confient un jeu de clés ou un code d'accès, et découvrent le résultat en rentrant. Pour un premier passage, votre présence au début reste utile : dix minutes suffisent pour faire le tour et signaler ce à quoi vous tenez. Ensuite, vous organisez comme vous le souhaitez."
+              },
+              {
+                "question": "Dois-je fournir l'aspirateur et les produits ?",
+                "reponse": "Nous venons équipés : aspirateur, balai vapeur, microfibres et produits adaptés à chaque type de surface sont compris dans le tarif. Si vous préférez que nous utilisions vos propres produits — allergie, parquet fragile, choix personnel —, dites-le simplement : nous nous adaptons sans supplément."
+              },
+              {
+                "question": "Peut-on faire appel à vous une seule fois ?",
+                "reponse": "Oui, et c'est fréquent : un grand ménage avant l'arrivée de la famille, une remise en état après un déménagement, un rattrapage après une période chargée. Il n'y a ni abonnement ni durée minimale. Si l'envie vous vient ensuite d'installer un rythme régulier, on en reparle à ce moment-là."
+              },
+              {
+                "question": "Intervenez-vous contre les punaises de lit ou les cafards ?",
+                "reponse": "Non, et c'est volontaire. La désinsectisation demande un agrément, des produits réglementés et un protocole de suivi qui ne relèvent pas de notre métier. Nous vous orienterons vers une entreprise spécialisée. En revanche, une fois le traitement fait, nous pouvons prendre en charge la remise au propre du logement."
+              },
+              {
+                "question": "Quels moyens de paiement acceptez-vous ?",
+                "reponse": "Le virement bancaire, les espèces et le CESU. La facture est établie à chaque intervention, avec le détail des heures et de la prestation, ce qui vous laisse une trace claire pour votre suivi ou pour votre copropriété."
+              },
+              {
+                "question": "À quelle vitesse pouvez-vous venir ?",
+                "reponse": "Nous répondons aux demandes dans la journée, week-end compris, entre 9h et 17h. Selon le planning de la semaine, un premier passage peut souvent être calé sous 48 à 72 heures. Pour un besoin urgent — état des lieux imminent, arrivée de voyageurs —, appelez plutôt que d'écrire : c'est plus rapide."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Reprenons votre intérieur en main",
+            "sousTitre": "Décrivez-nous le lieu et le besoin : vous saurez le prix avant que quiconque ait franchi votre porte.",
+            "ctaPrimaire": {
+              "label": "Demander un devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Appeler le 06 69 29 90 22",
+              "href": "tel:0669299022"
+            }
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Nous joindre",
+            "intro": "Une question, une date à bloquer, un chiffrage à obtenir : le plus simple reste le téléphone. Le formulaire fonctionne tout aussi bien si vous préférez écrire.",
+            "telephone": "06 69 29 90 22",
+            "whatsapp": "0669299022",
+            "email": "nailys.nettoyage@gmail.com",
+            "adresse": "20 rue de Saverne, 54000 Nancy",
+            "horaires": [
+              {
+                "jour": "Du lundi au dimanche",
+                "heures": "9h – 17h"
+              }
+            ],
+            "form": true,
+            "formMode": "demande-intervention",
+            "formTitre": "Décrivez votre besoin",
+            "formIntro": "Quelques lignes suffisent pour que nous puissions vous répondre avec un prix, pas avec une brochure.",
+            "services": [
+              "Ménage à domicile",
+              "Location Airbnb ou meublé",
+              "Bureaux ou local professionnel",
+              "Vitres et surfaces vitrées",
+              "Repassage",
+              "Canapé, matelas ou tapis",
+              "Fin de chantier",
+              "Escaliers et parties communes",
+              "Autre demande"
+            ],
+            "villes": [
+              "Nancy",
+              "Vandœuvre-lès-Nancy",
+              "Villers-lès-Nancy",
+              "Laxou",
+              "Maxéville",
+              "Malzéville",
+              "Saint-Max",
+              "Essey-lès-Nancy",
+              "Tomblaine",
+              "Jarville-la-Malgrange",
+              "Heillecourt",
+              "Ludres",
+              "Frouard",
+              "Pompey",
+              "Champigneulles",
+              "Seichamps",
+              "Saint-Nicolas-de-Port",
+              "Dombasle-sur-Meurthe",
+              "Neuves-Maisons",
+              "Autre commune"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Prestations",
+      "meta": {
+        "title": "Nos prestations de nettoyage à Nancy",
+        "description": "Ménage, Airbnb, bureaux, vitres, repassage, canapés, fin de chantier, parties communes : huit prestations détaillées à Nancy et dans un rayon de 20 km."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Le catalogue complet",
+            "titre": "Toutes nos prestations de nettoyage à Nancy",
+            "intro": "Du logement particulier au local professionnel, voici précisément ce que nous savons faire — et à quel moment chaque prestation devient la bonne réponse.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/methode.jpg",
+              "alt": "Entretien des sols d'un séjour"
+            },
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "Deux familles de besoins,",
+            "titreAccent": "une même exigence",
+            "paragraphes": [
+              "D'un côté l'habitat : votre logement, celui que vous louez à la nuitée, celui que vous venez de rénover ou que vous quittez. De l'autre le professionnel : un cabinet, une boutique, un bureau, les communs d'un immeuble. Les gestes se ressemblent, mais ni les horaires, ni les contraintes, ni les priorités ne sont les mêmes.",
+              "Chez un particulier, l'enjeu est le confort et la confiance : on entre dans un espace intime, on manipule des affaires personnelles, on travaille souvent en présence des occupants ou de leurs animaux. Dans un local professionnel, l'enjeu est la continuité : intervenir avant l'ouverture ou après la fermeture, ne rien déplacer qui ne doit l'être, et laisser un lieu prêt à accueillir du public sans que personne n'ait vu passer quiconque.",
+              "Certaines prestations se combinent naturellement. Un ménage régulier absorbe volontiers le repassage. Une remise à blanc de meublé s'accompagne souvent d'un passage sur les vitres. Une fin de chantier appelle presque toujours un rafraîchissement des textiles restés sur place. Dites-nous l'ensemble, nous chiffrons l'ensemble."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/bureaux.jpg",
+              "alt": "Bureau entretenu à Nancy, plan de travail dégagé et plantes"
+            },
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Huit fiches détaillées",
+            "titre": "Choisissez votre prestation",
+            "intro": "Chaque fiche précise le déroulé, ce qui est compris, ce qui ne l'est pas, et les questions les plus fréquentes sur ce point précis.",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "description": "Entretien courant ou grand nettoyage, ponctuel ou récurrent, dans les maisons et appartements de l'agglomération.",
+                "href": "/menage-domicile",
+                "icone": "House"
+              },
+              {
+                "nom": "Locations Airbnb & meublés",
+                "description": "Rotation entre deux voyageurs, gestion du linge et réassort, avec un compte rendu photo à l'appui.",
+                "href": "/nettoyage-airbnb",
+                "icone": "BedDouble"
+              },
+              {
+                "nom": "Bureaux & locaux professionnels",
+                "description": "Passages calés sur vos horaires, hors présence de clientèle, pour les petites structures nancéiennes.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              },
+              {
+                "nom": "Vitres & surfaces vitrées",
+                "description": "Vitrages intérieurs et extérieurs accessibles, vérandas, miroirs et garde-corps, encadrements compris.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Repassage",
+                "description": "Au domicile, en complément d'un ménage ou en prestation isolée, linge plié ou mis sur cintre.",
+                "href": "/repassage",
+                "icone": "Shirt"
+              },
+              {
+                "nom": "Canapés, matelas & textiles",
+                "description": "Aspiration profonde, injection-extraction et détachage des assises, couchages et tapis.",
+                "href": "/canape-matelas",
+                "icone": "Sofa"
+              },
+              {
+                "nom": "Fin de chantier",
+                "description": "Sortie de travaux, du dégrossissage à la finition avant remise des clés ou emménagement.",
+                "href": "/nettoyage-fin-de-chantier",
+                "icone": "HardHat"
+              },
+              {
+                "nom": "Escaliers & parties communes",
+                "description": "Halls, paliers et cages d'escalier des copropriétés, au passage hebdomadaire ou mensuel.",
+                "href": "/parties-communes",
+                "icone": "Building"
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Avant de choisir",
+            "items": [
+              {
+                "question": "Comment savoir quelle prestation demander ?",
+                "reponse": "Ne cherchez pas trop : décrivez le lieu et ce qui vous dérange, nous traduirons. Un « mon appartement est à refaire de fond en comble » devient un grand nettoyage ponctuel ; un « je n'ai plus le temps le samedi » devient un entretien récurrent. Le vocabulaire du métier est notre affaire, pas la vôtre."
+              },
+              {
+                "question": "Peut-on cumuler plusieurs prestations le même jour ?",
+                "reponse": "Oui, et c'est souvent plus économique qu'en deux visites séparées, puisque le déplacement et l'installation du matériel ne sont comptés qu'une fois. Le seul point d'attention est la durée : un ménage complet suivi d'un traitement de canapé demande une demi-journée entière, à caler à l'avance."
+              },
+              {
+                "question": "Travaillez-vous pour des professionnels comme pour des particuliers ?",
+                "reponse": "Les deux. Les particuliers représentent l'essentiel des interventions à domicile ; les professionnels nous confient plutôt des locaux de petite et moyenne surface, des cabinets et des communs d'immeuble. Les modalités de facturation diffèrent, la méthode reste identique."
+              },
+              {
+                "question": "Que se passe-t-il si le résultat ne me convient pas ?",
+                "reponse": "Signalez-le dans les vingt-quatre heures, avec une photo si vous êtes à distance. Nous revenons reprendre le point concerné sans le facturer. C'est plus simple pour tout le monde qu'une discussion sur une facture, et c'est ce qui nous permet de garder nos clients d'une année sur l'autre."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Une prestation vous correspond ?",
+            "sousTitre": "Envoyez-nous les grandes lignes, vous aurez un montant en retour, sans relance commerciale derrière.",
+            "ctaPrimaire": {
+              "label": "Obtenir mon devis",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Voir la zone couverte",
+              "href": "/zone-intervention"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "menage-domicile",
+      "label": "Ménage à domicile",
+      "navHidden": true,
+      "service": {
+        "name": "Ménage à domicile",
+        "serviceType": "Ménage à domicile",
+        "description": "Entretien courant ou grand nettoyage des logements particuliers à Nancy et dans un rayon de 20 km, en passage ponctuel ou récurrent.",
+        "priceFrom": "Sur devis"
+      },
+      "meta": {
+        "title": "Ménage à domicile à Nancy",
+        "description": "Entretien de maison ou d'appartement à Nancy : passage ponctuel ou hebdomadaire, sols, cuisine, sanitaires et vitres intérieures. Devis gratuit, 7j/7."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Particuliers",
+            "titre": "Ménage à domicile à Nancy",
+            "intro": "Rattraper un retard qui s'est installé, ou ne plus jamais y penser grâce à un passage régulier : deux demandes différentes, une même façon de travailler.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/menage-domicile.jpg",
+              "alt": "Dépoussiérage d'un meuble dans un logement à Nancy"
+            },
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Ménage à domicile"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Demander un devis gratuit",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "Ce que comprend un passage chez vous",
+            "paragraphes": [
+              "Un entretien courant couvre l'ensemble des pièces de vie : aspiration et lavage des sols, dépoussiérage des meubles, des étagères et des plinthes, nettoyage des surfaces de cuisine, du plan de travail, de la plaque de cuisson et de l'évier, désinfection des sanitaires, lavage des miroirs et des vitres intérieures accessibles, sortie des poubelles et remise en ordre légère des pièces communes.",
+              "Un grand nettoyage va plus loin, et se justifie une à deux fois par an ou après une longue absence : dégraissage complet des façades de meubles et de la hotte, détartrage des robinetteries et des parois de douche, lavage des portes et des poignées, nettoyage derrière et sous les meubles déplaçables, décrassage des interrupteurs, des radiateurs et des rails de fenêtre. Comptez le double de temps par rapport à un passage courant.",
+              "Ce que nous ne faisons pas est tout aussi clair : nous ne montons pas sur des échelles au-delà d'un marchepied, nous ne manipulons pas d'objets de valeur ni de collections fragiles, nous ne nous occupons ni du jardin ni des animaux, et nous ne réalisons aucun traitement contre les nuisibles. Le rangement en profondeur des affaires personnelles reste également à votre main : nous remettons en ordre, nous ne trions pas.",
+              "La fréquence se décide avec vous. Un studio occupé par une personne seule se tient très bien avec un passage toutes les deux semaines ; une maison familiale avec enfants et animaux demande généralement un rythme hebdomadaire pour ne pas repartir de zéro à chaque fois."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/methode.jpg",
+              "alt": "Lavage des sols d'un salon à la frange microfibre"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "L'ordre des gestes",
+            "titre": "Pourquoi nous procédons toujours du haut vers le bas",
+            "items": [
+              {
+                "titre": "Aération et tri du matériel",
+                "texte": "Les fenêtres s'ouvrent, les microfibres sont réparties par zone : une couleur pour la cuisine, une autre pour la salle d'eau, jamais l'inverse.",
+                "icone": "Wind"
+              },
+              {
+                "titre": "Les hauteurs d'abord",
+                "texte": "Luminaires, dessus de meubles, étagères : tout ce qui est en hauteur est dépoussiéré avant que les sols ne soient traités.",
+                "icone": "Layers"
+              },
+              {
+                "titre": "Les pièces d'eau",
+                "texte": "Cuisine et sanitaires demandent des produits spécifiques et un temps de pose réel : c'est le poste où l'on ne gagne rien à aller vite.",
+                "icone": "Droplets"
+              },
+              {
+                "titre": "Les sols en dernier",
+                "texte": "Aspiration puis lavage, en reculant vers la sortie, pour ne pas repasser sur ce qui vient d'être fait.",
+                "icone": "Footprints"
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions sur le ménage à domicile",
+            "items": [
+              {
+                "question": "Combien de temps faut-il pour un appartement de 60 m² ?",
+                "reponse": "Comptez deux heures pour un entretien courant sur un logement déjà suivi, et trois à quatre heures pour un premier passage ou un grand nettoyage. La surface compte moins que le nombre de pièces d'eau et l'état de départ : deux salles de bains allongent davantage la durée que vingt mètres carrés supplémentaires de séjour."
+              },
+              {
+                "question": "Puis-je changer la fréquence en cours de route ?",
+                "reponse": "Sans difficulté. Beaucoup de foyers passent en hebdomadaire à la rentrée puis reviennent à un rythme bimensuel l'été. Prévenez-nous une semaine à l'avance pour que nous puissions réorganiser la tournée, et le tarif suit la nouvelle fréquence dès le passage suivant."
+              },
+              {
+                "question": "Est-ce un problème si j'ai un chat ou un chien ?",
+                "reponse": "Aucun, à condition de nous le dire avant : les poils changent la façon d'aspirer et le temps nécessaire, et certains animaux supportent mal l'aspirateur. Si le vôtre est craintif, mieux vaut l'isoler dans une pièce pendant l'intervention, nous la ferons en dernier."
+              },
+              {
+                "question": "Nettoyez-vous l'intérieur du four et du réfrigérateur ?",
+                "reponse": "Oui, mais ce sont des postes à demander explicitement : ils ne sont pas compris dans un entretien courant car ils demandent chacun trente à quarante-cinq minutes de dégraissage ou de désinfection. Signalez-le au moment du devis, ils seront intégrés au temps prévu."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Souvent demandé avec",
+            "intro": "Ces prestations se greffent naturellement sur un entretien à domicile.",
+            "items": [
+              {
+                "nom": "Repassage",
+                "description": "Ajouté à la fin du passage, sur le temps que vous décidez d'y consacrer.",
+                "href": "/repassage",
+                "icone": "Shirt"
+              },
+              {
+                "nom": "Vitres & surfaces vitrées",
+                "description": "Les vitrages extérieurs, que l'entretien courant ne couvre pas.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Canapés, matelas & textiles",
+                "description": "Une à deux fois par an, pour ce que l'aspirateur ne suffit plus à assainir.",
+                "href": "/canape-matelas",
+                "icone": "Sofa"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Combien pour votre logement ?",
+            "sousTitre": "Donnez-nous le nombre de pièces et la fréquence envisagée : la réponse arrive dans la journée.",
+            "ctaPrimaire": {
+              "label": "Demander mon devis",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-airbnb",
+      "label": "Locations Airbnb",
+      "navHidden": true,
+      "service": {
+        "name": "Nettoyage de location Airbnb et meublé de tourisme",
+        "serviceType": "Nettoyage de meublé de tourisme",
+        "description": "Remise à blanc entre deux séjours pour les locations de courte durée à Nancy : linge, salle d'eau, cuisine, réassort et compte rendu photo.",
+        "priceFrom": "Sur devis"
+      },
+      "meta": {
+        "title": "Ménage Airbnb et location courte durée à Nancy",
+        "description": "Rotation entre deux voyageurs à Nancy : lits refaits, linge changé, salle d'eau et cuisine remises à blanc, réassort et photos avant l'arrivée suivante."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Hôtes & conciergeries",
+            "titre": "Ménage Airbnb et meublés de courte durée à Nancy",
+            "intro": "Entre un départ à 11h et une arrivée à 15h, tout doit être joué. C'est un métier de créneau autant qu'un métier de propreté.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/airbnb.jpg",
+              "alt": "Lit refait dans un meublé de tourisme à Nancy"
+            },
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Locations Airbnb"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Organiser mes rotations",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "La rotation, geste par geste",
+            "paragraphes": [
+              "Une remise à blanc n'est pas un ménage ordinaire : c'est une remise en scène. Le logement doit retrouver exactement l'état des photos de l'annonce, sans quoi la note s'en ressent. Nous décapons les lits, changeons le linge de couchage et de toilette, refaisons les couchages au carré, plions les serviettes de la même manière à chaque fois, et replaçons chaque objet à sa position d'origine.",
+              "La salle d'eau et la cuisine concentrent l'essentiel des commentaires négatifs des voyageurs : parois de douche détartrées, siphons dégagés, joints vérifiés, réfrigérateur vidé et désinfecté, vaisselle contrôlée pièce par pièce, plaque et micro-ondes dégraissés. Les poubelles partent, les sacs sont remplacés, les sols sont lavés en dernier.",
+              "Nous assurons aussi le réassort des consommables que vous fournissez — papier toilette, savon, capsules, sel, sacs — et nous vous signalons ce qui manque avant que vous ne receviez la remarque. Chaque rotation se termine par une série de photos horodatées envoyées sur WhatsApp : vous voyez le logement prêt, même à trois cents kilomètres de là.",
+              "Enfin, nous relevons ce qui ne va pas : une ampoule grillée, une chasse d'eau capricieuse, une tache sur un drap, un objet cassé ou disparu. Repéré à la rotation, un problème se règle avant l'arrivée suivante ; découvert par un voyageur, il devient un commentaire public."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/hero.jpg",
+              "alt": "Remise en place des coussins dans un meublé"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Pour compléter la rotation",
+            "intro": "Deux prestations que les hôtes ajoutent le plus souvent, entre deux saisons.",
+            "items": [
+              {
+                "nom": "Canapés, matelas & textiles",
+                "description": "Un traitement en profondeur des couchages et des assises entre deux saisons de location.",
+                "href": "/canape-matelas",
+                "icone": "Sofa"
+              },
+              {
+                "nom": "Vitres & surfaces vitrées",
+                "description": "Des vitrages nets changent radicalement la lumière sur les photos de l'annonce.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Fin de chantier",
+                "description": "Après un rafraîchissement du bien, avant la remise en ligne de l'annonce.",
+                "href": "/nettoyage-fin-de-chantier",
+                "icone": "HardHat"
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions des hôtes",
+            "items": [
+              {
+                "question": "Gérez-vous le linge, ou dois-je le fournir ?",
+                "reponse": "Le plus courant est que vous disposiez de deux à trois jeux par couchage : nous changeons, nous lançons la machine sur place si le logement en est équipé, et nous laissons le jeu propre suivant prêt à l'emploi. Sans machine dans le bien, il faut prévoir un prestataire de blanchisserie ; nous nous chargeons alors du dépôt et de la reprise si le point de collecte est sur notre trajet."
+              },
+              {
+                "question": "Pouvez-vous intervenir le dimanche et les jours fériés ?",
+                "reponse": "Oui, nous travaillons tous les jours de 9h à 17h, ce qui couvre la quasi-totalité des créneaux de rotation. Les départs et arrivées de week-end sont d'ailleurs le gros de l'activité sur ce type de bien à Nancy, notamment lors des grands événements de l'agglomération."
+              },
+              {
+                "question": "Comment accédez-vous au logement ?",
+                "reponse": "Boîte à clés, serrure connectée ou jeu de clés confié : les trois fonctionnent. Nous notons le code d'accès et le mode d'ouverture dans la fiche du bien, et nous vous prévenons systématiquement si un voyageur a laissé la porte ouverte ou si le code ne fonctionne plus."
+              },
+              {
+                "question": "Que faites-vous si le logement est laissé en très mauvais état ?",
+                "reponse": "Nous photographions avant de toucher à quoi que ce soit, nous vous appelons, et nous vous disons combien de temps supplémentaire la remise en état demande. C'est vous qui décidez si nous poursuivons. Ces photos vous servent ensuite auprès de la plateforme pour une demande d'indemnisation."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Un bien à faire tourner à Nancy ?",
+            "sousTitre": "Indiquez la surface, le nombre de couchages et le rythme des réservations : nous calons un forfait par rotation.",
+            "ctaPrimaire": {
+              "label": "Demander un forfait",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-bureaux",
+      "label": "Bureaux & locaux pro",
+      "navHidden": true,
+      "service": {
+        "name": "Nettoyage de bureaux et locaux professionnels",
+        "serviceType": "Nettoyage de bureaux",
+        "description": "Entretien de bureaux, cabinets et commerces à Nancy, avant ouverture ou après fermeture, sans interférer avec l'activité.",
+        "priceFrom": "Sur devis"
+      },
+      "meta": {
+        "title": "Nettoyage de bureaux et locaux pro à Nancy",
+        "description": "Bureaux, cabinets et commerces entretenus à Nancy avant l'ouverture ou après la fermeture. Passages réguliers, discrétion, devis gratuit sous 48 h."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Professionnels",
+            "titre": "Nettoyage de bureaux et de locaux professionnels à Nancy",
+            "intro": "Un local propre ne se remarque pas ; un local négligé, si. Notre travail consiste à rester invisible tout en étant évident.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/bureaux.jpg",
+              "alt": "Poste de travail entretenu dans un bureau nancéien"
+            },
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Bureaux & locaux pro"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Étudier mon local",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "Des passages calés sur votre activité",
+            "paragraphes": [
+              "Nous intervenons dans des structures de taille humaine : cabinets libéraux, professions de santé, études, agences, salons, petits commerces et plateaux de bureaux jusqu'à une centaine de mètres carrés. Le passage se cale avant l'ouverture, sur la pause méridienne ou après la fermeture — jamais devant la clientèle, et jamais au milieu d'une réunion.",
+              "Le contenu d'un passage type : vidage et désinfection des corbeilles, dépoussiérage des postes de travail sans déplacer les documents, nettoyage des écrans et des périphériques sur demande, désinfection des points de contact — poignées, interrupteurs, rampes, boutons d'ascenseur —, entretien des sanitaires avec réassort du consommable, lavage des sols et remise en ordre de l'accueil et de la salle d'attente.",
+              "Les cabinets recevant du public demandent une attention supplémentaire sur les surfaces touchées par tous : accoudoirs des fauteuils de salle d'attente, tablettes, jouets, distributeurs. Nous adaptons les produits et la fréquence en conséquence, et nous n'utilisons pas de parfum d'ambiance dans les lieux de soin.",
+              "Côté organisation, vous avez un interlocuteur unique et un calendrier fixe. Les périodes de fermeture — congés, jours fériés, vacances scolaires — sont anticipées ensemble, et une intervention exceptionnelle reste possible avant une visite importante ou après des travaux."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/vitres.jpg",
+              "alt": "Nettoyage des surfaces vitrées d'un local professionnel"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "Mise en place",
+            "titre": "Quatre semaines pour que ça tourne tout seul",
+            "items": [
+              {
+                "titre": "Visite du local",
+                "texte": "Sur place, gratuitement : surfaces, revêtements, contraintes d'accès, horaires possibles et attentes prioritaires.",
+                "icone": "ClipboardCheck"
+              },
+              {
+                "titre": "Proposition chiffrée",
+                "texte": "Un cahier des charges court et lisible, avec la durée de chaque passage et son prix, sans clause cachée.",
+                "icone": "FileCheck"
+              },
+              {
+                "titre": "Premier passage renforcé",
+                "texte": "La première intervention est plus longue : elle remet le local à niveau pour que les suivantes soient de l'entretien.",
+                "icone": "Sparkles"
+              },
+              {
+                "titre": "Rythme de croisière",
+                "texte": "Les passages s'enchaînent au calendrier convenu. Un point est fait au bout d'un mois pour ajuster ce qui doit l'être.",
+                "icone": "Repeat"
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions des professionnels",
+            "items": [
+              {
+                "question": "Faut-il vous laisser les clés du local ?",
+                "reponse": "C'est le cas le plus fréquent pour les interventions hors horaires d'ouverture, et cela suppose une relation de confiance qui se construit. Rien ne vous oblige à le faire dès le premier passage : beaucoup de clients commencent par des interventions en présence d'un salarié, puis nous confient un accès une fois le rythme installé."
+              },
+              {
+                "question": "Fournissez-vous le papier et le savon des sanitaires ?",
+                "reponse": "Nous pouvons assurer le réassort à partir de votre stock, ou prendre en charge l'achat et le refacturer au réel, sans marge. La seconde formule évite les ruptures un vendredi soir, mais elle demande un point de stockage dans le local."
+              },
+              {
+                "question": "Intervenez-vous ponctuellement, sans engagement dans la durée ?",
+                "reponse": "Oui : une remise en état avant une inauguration, un passage après des travaux, un renfort avant un contrôle. La régularité reste plus économique au mètre carré, mais rien n'oblige à s'engager pour tester la prestation."
+              },
+              {
+                "question": "Êtes-vous couverte pour intervenir dans mes locaux ?",
+                "reponse": "L'entreprise est immatriculée et son SIRET figure sur chaque facture ainsi qu'en pied de ce site, ce qui vous permet de la vérifier vous-même. L'attestation d'assurance responsabilité civile professionnelle vous est remise sur simple demande, avant la signature."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Autour du local",
+            "intro": "Ce que les gérants nous demandent en complément du passage courant.",
+            "items": [
+              {
+                "nom": "Vitres & surfaces vitrées",
+                "description": "Vitrines et cloisons vitrées, qui font l'essentiel de la première impression.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Escaliers & parties communes",
+                "description": "Quand le local partage un hall ou une cage d'escalier avec d'autres occupants.",
+                "href": "/parties-communes",
+                "icone": "Building"
+              },
+              {
+                "nom": "Fin de chantier",
+                "description": "Après un réaménagement, avant la réouverture au public.",
+                "href": "/nettoyage-fin-de-chantier",
+                "icone": "HardHat"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Faisons le tour de votre local",
+            "sousTitre": "La visite et le chiffrage sont offerts, et ne débouchent sur aucune relance si la proposition ne vous convient pas.",
+            "ctaPrimaire": {
+              "label": "Prendre rendez-vous",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Vitres",
+      "navHidden": true,
+      "service": {
+        "name": "Nettoyage de vitres",
+        "serviceType": "Nettoyage de vitres",
+        "description": "Lavage des vitrages, vérandas, miroirs et garde-corps accessibles à Nancy, encadrements et rails compris.",
+        "priceFrom": "Sur devis"
+      },
+      "meta": {
+        "title": "Nettoyage de vitres à Nancy",
+        "description": "Fenêtres, baies, vérandas et miroirs lavés des deux côtés à Nancy, encadrements et rails compris. Sans trace ni voile, chez les particuliers et les pros."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Particuliers & professionnels",
+            "titre": "Nettoyage de vitres à Nancy",
+            "intro": "Une vitre propre ne se voit pas : c'est la lumière qui change dans la pièce. C'est le geste dont l'effet est le plus immédiat.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/vitres.jpg",
+              "alt": "Lavage d'une baie vitrée à Nancy"
+            },
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Vitres"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Chiffrer mes vitres",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "Jusqu'où va le lavage",
+            "paragraphes": [
+              "Nous lavons les vitrages des deux faces lorsque l'extérieur est atteignable depuis l'intérieur ou depuis un sol stable : fenêtres oscillo-battantes, baies coulissantes, portes-fenêtres, fenêtres de toit accessibles, vérandas, verrières basses, miroirs, cloisons vitrées et garde-corps en verre. Les encadrements, les traverses, les poignées et les rails de coulissement sont repris à chaque fois : c'est là que se loge le noir qui redescend ensuite sur la vitre propre.",
+              "La méthode est classique parce qu'elle reste la meilleure : mouilleur, raclette et essuyage des angles à la microfibre, plutôt qu'un produit en aérosol qui laisse un film. Sur les vitrages très encrassés — sortie d'hiver, façade sur rue passante, local resté fermé — un premier passage de dégrossissage est nécessaire avant le lavage proprement dit.",
+              "Nous ne montons pas sur les toitures, nous n'utilisons ni nacelle ni cordes, et nous ne travaillons pas en hauteur au-delà d'un marchepied ou d'une perche télescopique depuis le sol. Concrètement, les façades d'immeuble en étage sortent de notre périmètre : elles relèvent d'une entreprise équipée pour le travail en hauteur, et nous vous le dirons franchement plutôt que de prendre le risque.",
+              "Le rythme dépend surtout de l'exposition. Une vitre donnant sur une rue circulante de Nancy se salit deux à trois fois plus vite qu'une baie ouvrant sur un jardin abrité. Deux passages par an suffisent dans la plupart des logements, quatre pour une vitrine commerciale."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/menage-domicile.jpg",
+              "alt": "Entretien des surfaces d'un intérieur lumineux"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions sur les vitres",
+            "items": [
+              {
+                "question": "Comment se calcule le prix d'un lavage de vitres ?",
+                "reponse": "Au nombre de vantaux plutôt qu'au mètre carré, car c'est le nombre d'ouvrants et leur accessibilité qui déterminent le temps passé. Une grande baie coulissante se lave plus vite que six petites fenêtres à petits bois. Donnez-nous un décompte approximatif des fenêtres et leur type, cela suffit pour un chiffrage fiable."
+              },
+              {
+                "question": "Faut-il éviter de laver les vitres en plein soleil ?",
+                "reponse": "Oui, et nous en tenons compte dans l'ordre de passage : sur une surface chaude, l'eau s'évapore avant d'être raclée et laisse des traces. Nous commençons par les façades exposées tôt le matin, puis nous suivons l'ombre. C'est une des raisons pour lesquelles une intervention en plein été se cale plutôt en début de journée."
+              },
+              {
+                "question": "Prenez-vous en charge les volets et les stores ?",
+                "reponse": "Les volets roulants et leurs coffres, oui, sur la partie visible et accessible. Les stores intérieurs à lamelles sont possibles mais demandés à part : c'est un travail long, lamelle par lamelle, qui double facilement la durée d'une intervention sur une pièce."
+              },
+              {
+                "question": "Que faire si une vitre garde un voile après lavage ?",
+                "reponse": "Un voile persistant vient presque toujours du vitrage lui-même : rayures fines, calcaire incrusté par un arrosage automatique, ou dépôt ancien qu'un seul passage ne suffit pas à lever. Nous vous le signalons sur place, et nous proposons un traitement dédié plutôt que de laisser croire que la vitre est irrécupérable."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Prestations voisines",
+            "intro": "Les vitres se demandent rarement seules.",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "description": "Les vitrages intérieurs accessibles sont déjà compris dans l'entretien courant.",
+                "href": "/menage-domicile",
+                "icone": "House"
+              },
+              {
+                "nom": "Bureaux & locaux professionnels",
+                "description": "Vitrines et cloisons vitrées entretenues au même rythme que le local.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              },
+              {
+                "nom": "Fin de chantier",
+                "description": "Les vitres sortent des travaux couvertes d'un film de plâtre à décaper.",
+                "href": "/nettoyage-fin-de-chantier",
+                "icone": "HardHat"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Combien de fenêtres à reprendre ?",
+            "sousTitre": "Un décompte approximatif nous suffit pour vous annoncer un prix ferme.",
+            "ctaPrimaire": {
+              "label": "Obtenir un chiffrage",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "repassage",
+      "label": "Repassage",
+      "navHidden": true,
+      "service": {
+        "name": "Repassage à domicile",
+        "serviceType": "Repassage",
+        "description": "Repassage du linge courant et des pièces délicates au domicile, à Nancy, seul ou en complément d'une prestation de ménage.",
+        "priceFrom": "Sur devis"
+      },
+      "meta": {
+        "title": "Repassage à domicile à Nancy",
+        "description": "Chemises, draps et pièces délicates repassés puis pliés ou mis sur cintre, chez vous à Nancy. En complément du ménage ou en prestation seule."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Particuliers",
+            "titre": "Repassage à domicile à Nancy",
+            "intro": "La corvée que tout le monde repousse, et la seule dont on récupère le temps entier : une pile de linge attend rarement moins de deux heures.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/repassage.jpg",
+              "alt": "Repassage d'un vêtement à domicile"
+            },
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Repassage"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Ajouter le repassage",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "Comment nous traitons votre linge",
+            "paragraphes": [
+              "Le repassage se fait chez vous, avec votre table et votre fer — c'est ce qui garantit que rien ne quitte le domicile et qu'aucune pièce ne se perd. Si votre matériel est fatigué ou si vous n'en avez pas, dites-le au moment du devis : nous venons avec le nôtre, centrale vapeur comprise.",
+              "Chaque pièce est traitée selon son étiquette et sa matière. Le coton et le lin passent à haute température avec de la vapeur ; la soie, la viscose et les synthétiques réclament un fer tiède et une pattemouille. Les chemises sont reprises dans l'ordre qui évite de refroisser ce qui vient d'être fait : col, empiècement, poignets, manches, dos, devants. Les plis marqués — pantalons de costume, jupes plissées — sont respectés.",
+              "À la fin, vous choisissez : plié en piles par catégorie et par personne, ou suspendu sur cintres si vous les fournissez. Le linge de maison suit la même logique — draps et housses de couette pliés au format de vos étagères, torchons et serviettes empilés à part.",
+              "Deux limites à connaître : nous ne repassons pas les pièces déjà tachées ou abîmées sans vous l'avoir signalé, car la chaleur fixe définitivement une tache, et nous écartons les vêtements portant une mention « ne pas repasser » plutôt que de prendre le risque de les marquer. Ces pièces vous sont rendues à part, avec l'explication."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/hero.jpg",
+              "alt": "Linge de maison plié et rangé"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions sur le repassage",
+            "items": [
+              {
+                "question": "Le repassage se facture-t-il à la pièce ou à l'heure ?",
+                "reponse": "À l'heure, car c'est la seule mesure honnête : une chemise en lin froissée demande cinq fois le temps d'un tee-shirt sorti d'un sèche-linge. Vous fixez le temps que vous souhaitez y consacrer, nous traitons le maximum de pièces dans cette enveloppe, en commençant par ce que vous jugez prioritaire."
+              },
+              {
+                "question": "Puis-je demander uniquement du repassage, sans ménage ?",
+                "reponse": "Oui. Certains foyers nous réservent deux heures toutes les deux semaines uniquement pour la corbeille de linge. C'est une prestation à part entière, avec la même régularité et la même personne, sans obligation de souscrire à autre chose."
+              },
+              {
+                "question": "Faut-il que le linge soit déjà lavé et sec ?",
+                "reponse": "Oui, c'est indispensable : nous ne prenons pas en charge le lavage ni le séchage. Sortez la corbeille avant notre arrivée, et signalez les pièces à traiter en premier si vous en avez besoin rapidement. Un linge encore humide sera écarté plutôt que repassé de force."
+              },
+              {
+                "question": "Et si une pièce est brûlée ou marquée pendant la prestation ?",
+                "reponse": "Cela n'arrive pas si les étiquettes sont respectées, et c'est précisément pourquoi nous les lisons. Dans l'hypothèse d'un dommage de notre fait, l'assurance responsabilité civile professionnelle de l'entreprise a vocation à intervenir : signalez-le immédiatement, avant lavage de la pièce."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "À combiner avec",
+            "intro": "Le repassage se glisse presque toujours dans une prestation plus large.",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "description": "La formule la plus courante : entretien du logement puis repassage sur le temps restant.",
+                "href": "/menage-domicile",
+                "icone": "House"
+              },
+              {
+                "nom": "Locations Airbnb & meublés",
+                "description": "Le linge de couchage repassé change complètement la perception d'un meublé.",
+                "href": "/nettoyage-airbnb",
+                "icone": "BedDouble"
+              },
+              {
+                "nom": "Canapés, matelas & textiles",
+                "description": "Pour le textile qui ne passe ni au fer ni en machine.",
+                "href": "/canape-matelas",
+                "icone": "Sofa"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Une corbeille qui déborde ?",
+            "sousTitre": "Dites-nous le volume et le rythme souhaité, nous calons un créneau récurrent.",
+            "ctaPrimaire": {
+              "label": "Réserver un créneau",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "canape-matelas",
+      "label": "Canapés & matelas",
+      "navHidden": true,
+      "service": {
+        "name": "Nettoyage de canapés, matelas et textiles",
+        "serviceType": "Nettoyage de textiles d'ameublement",
+        "description": "Aspiration profonde, injection-extraction et détachage des canapés, fauteuils, matelas et tapis à Nancy et alentour.",
+        "priceFrom": "Sur devis"
+      },
+      "meta": {
+        "title": "Nettoyage de canapé et matelas à Nancy",
+        "description": "Canapés, fauteuils, matelas et tapis traités en injection-extraction à Nancy : détachage ciblé, séchage maîtrisé, fibres ravivées sans être fatiguées."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Textiles d'ameublement",
+            "titre": "Nettoyage de canapés, matelas et tapis à Nancy",
+            "intro": "Un textile absorbe pendant des années ce que l'aspirateur ne récupère plus. Le résultat se voit, mais il se sent surtout.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/canape-matelas.jpg",
+              "alt": "Traitement en profondeur d'une assise de fauteuil en tissu"
+            },
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Canapés & matelas"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Faire traiter mes textiles",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "Le protocole",
+            "titre": "Quatre passages sur la même pièce",
+            "items": [
+              {
+                "titre": "Test de la fibre",
+                "texte": "Sur une zone cachée, pour vérifier la réaction du tissu à l'eau et au produit avant de traiter l'ensemble.",
+                "icone": "Eye"
+              },
+              {
+                "titre": "Aspiration profonde",
+                "texte": "Retrait des particules sèches, des poils et du sable : traiter un textile poussiéreux à l'eau reviendrait à faire de la boue.",
+                "icone": "Wind"
+              },
+              {
+                "titre": "Détachage ciblé",
+                "texte": "Chaque tache selon sa nature — grasse, protéinée, tannique — avec le produit qui lui correspond, jamais un détergent unique.",
+                "icone": "Droplets"
+              },
+              {
+                "titre": "Injection-extraction",
+                "texte": "L'eau est injectée puis immédiatement réaspirée avec les salissures, en laissant le moins d'humidité possible dans la mousse.",
+                "icone": "Repeat"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "Ce qu'on peut espérer, et ce qu'on ne peut pas",
+            "paragraphes": [
+              "Un canapé en tissu, un fauteuil, une tête de lit capitonnée, un matelas, un tapis ou une moquette se traitent bien : les fibres se redressent, les odeurs s'estompent, et les zones de contact les plus sombres — accoudoirs, appuie-tête, assise centrale — retrouvent une teinte proche du reste de la pièce. C'est particulièrement net sur un couchage utilisé quotidiennement depuis plusieurs années.",
+              "En revanche, une tache installée depuis longtemps et déjà frottée avec un produit du commerce peut avoir teint la fibre en profondeur : dans ce cas, on atténue sans effacer, et nous vous le disons avant de commencer plutôt qu'après. De même, un tissu déjà usé ne redevient pas neuf ; le nettoyage assainit, il ne restaure pas une trame élimée.",
+              "Le cuir et le simili ne se traitent pas en injection-extraction : ils demandent un nettoyage doux puis un nourrissant adapté, que nous réalisons séparément. Les tissus marqués « nettoyage à sec uniquement » sont écartés, car l'eau y provoque des auréoles irrattrapables.",
+              "Comptez quatre à huit heures de séchage selon l'épaisseur de la mousse, l'aération de la pièce et la saison. Prévoyez de ne pas dormir sur un matelas traité le soir même : le mieux est une intervention en matinée, fenêtres ouvertes. Enfin, ce traitement n'a aucun effet sur les punaises de lit, qui relèvent d'une désinsectisation par une entreprise agréée."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/airbnb.jpg",
+              "alt": "Couchage remis en état dans une chambre lumineuse"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions sur les textiles",
+            "items": [
+              {
+                "question": "À quelle fréquence faire traiter un canapé ?",
+                "reponse": "Une fois par an suffit dans un foyer sans animal ni jeune enfant. Avec un chien qui monte sur l'assise, ou dans un logement où l'on mange devant la télévision, deux passages annuels se justifient. Entre deux, une aspiration hebdomadaire avec l'embout textile prolonge nettement l'effet du traitement."
+              },
+              {
+                "question": "Le traitement supprime-t-il les odeurs d'animal ?",
+                "reponse": "Il les réduit fortement, car l'essentiel de l'odeur vient des résidus organiques logés dans la fibre et la mousse, que l'extraction retire. Si l'urine a traversé jusqu'à la mousse, en revanche, un nettoyage de surface ne suffira pas : il faut alors traiter en profondeur, ce qui allonge le séchage, et le résultat reste incertain."
+              },
+              {
+                "question": "Intervenez-vous sur les tapis et les moquettes ?",
+                "reponse": "Oui, avec le même matériel. Les tapis à poils longs et les tapis d'orient demandent plus de précaution et un temps de séchage plus long ; les tapis en fibres naturelles comme le sisal ou le jonc de mer sont écartés, l'eau les déformant durablement."
+              },
+              {
+                "question": "Puis-je faire traiter plusieurs pièces le même jour ?",
+                "reponse": "C'est même conseillé : le matériel est déjà installé et le déplacement n'est compté qu'une fois, ce qui rend le deuxième et le troisième élément nettement moins chers que le premier. Un canapé, deux matelas et un tapis tiennent dans une demi-journée."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "À voir aussi",
+            "intro": "Ce que les mêmes clients nous confient au même moment.",
+            "items": [
+              {
+                "nom": "Ménage à domicile",
+                "description": "Traiter les textiles au cours d'un grand nettoyage annuel a du sens.",
+                "href": "/menage-domicile",
+                "icone": "House"
+              },
+              {
+                "nom": "Locations Airbnb & meublés",
+                "description": "Un couchage assaini entre deux saisons de location, c'est une note préservée.",
+                "href": "/nettoyage-airbnb",
+                "icone": "BedDouble"
+              },
+              {
+                "nom": "Bureaux & locaux professionnels",
+                "description": "Fauteuils de salle d'attente et moquettes de bureau, hors heures d'ouverture.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Une photo, un devis",
+            "sousTitre": "Envoyez un cliché du canapé ou du matelas par WhatsApp : c'est souvent tout ce qu'il nous faut pour chiffrer.",
+            "ctaPrimaire": {
+              "label": "Envoyer une demande",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-fin-de-chantier",
+      "label": "Fin de chantier",
+      "navHidden": true,
+      "service": {
+        "name": "Nettoyage de fin de chantier",
+        "serviceType": "Nettoyage après travaux",
+        "description": "Remise au propre des logements et locaux à la sortie des travaux à Nancy : poussière de plâtre, résidus de colle, peinture et gravats fins.",
+        "priceFrom": "Sur devis"
+      },
+      "meta": {
+        "title": "Nettoyage de fin de chantier à Nancy",
+        "description": "Sortie de travaux à Nancy : poussière de plâtre, traces de colle et de peinture, vitres et sols repris en deux passages pour un logement livrable."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Après travaux",
+            "titre": "Nettoyage de fin de chantier à Nancy",
+            "intro": "Entre la dernière couche de peinture et le premier carton, il reste une étape que personne n'a envie de faire — et qu'on ne peut pas sauter.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/fin-de-chantier.jpg",
+              "alt": "Aspirateur de chantier dans un logement rénové à Nancy"
+            },
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Fin de chantier"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Chiffrer ma sortie de travaux",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "Deux passages, jamais un seul",
+            "paragraphes": [
+              "La poussière de plâtre et de ponçage a une particularité : elle retombe. Un chantier nettoyé en une seule fois paraît impeccable le soir même et redevient gris le lendemain matin, parce que les particules en suspension mettent des heures à se déposer. Nous procédons donc toujours en deux temps : un dégrossissage complet, puis une finition après un délai d'au moins vingt-quatre heures.",
+              "Le dégrossissage évacue les gravats fins, les chutes de matériaux, les protections plastiques et les adhésifs de masquage, aspire les sols et les murs à l'aspirateur de chantier, décolle les étiquettes des menuiseries neuves et retire les grosses projections de peinture, de colle, d'enduit et de silicone sur les sols, les vitrages et les sanitaires.",
+              "La finition reprend tout ce qui a reçu la poussière retombée : plinthes, appuis de fenêtre, rails de coulissement, radiateurs, interrupteurs, poignées, intérieur des placards neufs, sanitaires, robinetteries et vitrages des deux côtés. Les sols sont lavés en dernier, avec le produit adapté au revêtement neuf — un parquet stratifié fraîchement posé ne se traite pas comme un carrelage.",
+              "Nous n'évacuons pas les déchets volumineux ni les gravats lourds : ni déchetterie, ni benne, ni démontage. Ce poste relève de votre entreprise de travaux ou d'un service de débarras. Nous prenons le chantier au stade où il ne reste que la poussière et les traces."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/vitres.jpg",
+              "alt": "Reprise des vitrages après travaux"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions sur la sortie de chantier",
+            "items": [
+              {
+                "question": "Quand faut-il nous appeler dans le déroulé des travaux ?",
+                "reponse": "Une fois que tous les corps de métier ont terminé, y compris les retouches de peinture et la pose des plinthes. Un nettoyage lancé alors qu'un artisan doit encore repasser est de l'argent perdu. En revanche, réservez le créneau tôt : les fins de chantier se concentrent en fin de mois, quand les baux commencent."
+              },
+              {
+                "question": "Combien de temps pour un appartement rénové entièrement ?",
+                "reponse": "Sur un deux-pièces sorti d'une rénovation complète, comptez une journée pour le dégrossissage et une demi-journée pour la finition. Le facteur décisif n'est pas la surface mais la quantité de ponçage réalisée : un chantier avec reprise des plafonds génère plusieurs fois plus de poussière qu'un simple rafraîchissement."
+              },
+              {
+                "question": "Retirez-vous les traces de peinture sur le parquet ?",
+                "reponse": "Les projections fraîches ou récentes, oui, mécaniquement et sans solvant agressif. Une peinture glycéro sèche depuis des semaines sur un parquet huilé est un autre sujet : la retirer risque d'attaquer la finition. Nous testons sur une zone discrète et nous vous montrons le résultat avant de généraliser."
+              },
+              {
+                "question": "Intervenez-vous pour des professionnels du bâtiment ?",
+                "reponse": "Oui, et c'est un usage fréquent : l'artisan ou le maître d'œuvre nous confie la livraison propre du chantier, ce qui lui évite de mobiliser ses équipes sur une tâche qui n'est pas la leur. La facturation se fait alors à l'entreprise, avec un chiffrage établi sur plan ou après une visite rapide."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Après le chantier",
+            "intro": "L'enchaînement le plus fréquent une fois le logement livré.",
+            "items": [
+              {
+                "nom": "Vitres & surfaces vitrées",
+                "description": "Le poste le plus marqué par les travaux : film de plâtre, étiquettes, projections.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Locations Airbnb & meublés",
+                "description": "Pour un bien rénové destiné à la location courte durée, avant la remise en ligne.",
+                "href": "/nettoyage-airbnb",
+                "icone": "BedDouble"
+              },
+              {
+                "nom": "Ménage à domicile",
+                "description": "L'entretien courant qui prend le relais une fois l'emménagement fait.",
+                "href": "/menage-domicile",
+                "icone": "House"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Votre chantier se termine bientôt ?",
+            "sousTitre": "Réservez le créneau à l'avance : les sorties de travaux se bousculent en fin de mois.",
+            "ctaPrimaire": {
+              "label": "Bloquer une date",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "parties-communes",
+      "label": "Parties communes",
+      "navHidden": true,
+      "service": {
+        "name": "Nettoyage d'escaliers et de parties communes",
+        "serviceType": "Nettoyage de parties communes",
+        "description": "Entretien des halls, paliers, cages d'escalier et locaux techniques d'immeubles à Nancy, pour copropriétés, syndics et bailleurs.",
+        "priceFrom": "Sur devis"
+      },
+      "meta": {
+        "title": "Nettoyage d'escaliers et parties communes",
+        "description": "Halls, paliers, cages d'escalier et locaux à poubelles d'immeubles nancéiens entretenus au passage régulier. Copropriétés, syndics et bailleurs."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Copropriétés & bailleurs",
+            "titre": "Escaliers et parties communes d'immeuble à Nancy",
+            "intro": "Le hall est la première pièce que voient les visiteurs et les acheteurs potentiels. C'est aussi celle dont personne ne se sent responsable.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/parties-communes.jpg",
+              "alt": "Cage d'escalier ancienne à rampe de ferronnerie dans un immeuble nancéien"
+            },
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Prestations",
+                "href": "/services"
+              },
+              {
+                "label": "Parties communes"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Chiffrer notre immeuble",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "Le tour d'un immeuble nancéien",
+            "paragraphes": [
+              "Un passage couvre le hall d'entrée et son sas, la boîte aux lettres et son environnement, les marches et contremarches de la cage d'escalier, les paliers de chaque niveau, les rampes et garde-corps, les vitrages de cage et les impostes accessibles, les portes palières côté commun, l'ascenseur — sol, parois, miroir, boutons —, ainsi que le local à poubelles et le local vélos lorsqu'ils existent.",
+              "Nancy compte beaucoup d'immeubles anciens, avec des cages d'escalier à marches de pierre ou de bois, des rampes en ferronnerie et parfois des sols en carreaux de ciment. Ces matériaux ne supportent pas les mêmes produits qu'un immeuble récent : une pierre calcaire est attaquée par un détergent acide, un parquet de palier n'aime pas l'eau stagnante, et un carreau de ciment ancien se ternit définitivement avec un produit trop alcalin. Nous les traitons en conséquence.",
+              "Le local à poubelles fait souvent la différence dans le ressenti des occupants. Nous sortons et rentrons les conteneurs aux jours de collecte si c'est prévu au contrat, nous lavons et désodorisons le local, et nous signalons les dépôts sauvages qui s'y accumulent — encombrants, cartons non pliés — pour que le syndic puisse agir.",
+              "La fréquence se choisit selon la taille de l'immeuble et son occupation : hebdomadaire pour une copropriété de vingt lots ou une résidence étudiante, bimensuelle pour un petit immeuble de six appartements. Un compte rendu est transmis au syndic ou au conseil syndical à chaque passage, ce qui évite les discussions en assemblée générale."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/methode.jpg",
+              "alt": "Lavage d'un sol en parties communes"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions des syndics et des conseils syndicaux",
+            "items": [
+              {
+                "question": "Comment est établi le prix pour un immeuble ?",
+                "reponse": "Sur la base du nombre de niveaux, de la surface des communs, de la présence d'un ascenseur et d'un local à poubelles, et de la fréquence retenue. Une visite sur place est nécessaire : un immeuble de quatre étages sans ascenseur ne demande pas le même temps qu'un bâtiment de même hauteur avec deux cages."
+              },
+              {
+                "question": "Pouvez-vous présenter votre offre en assemblée générale ?",
+                "reponse": "Nous fournissons un devis détaillé et lisible que le conseil syndical peut projeter et comparer poste par poste avec les autres propositions. Une présentation en séance est possible si le syndic le souhaite, mais l'essentiel tient dans le document : durée du passage, périmètre exact et prix mensuel."
+              },
+              {
+                "question": "Qui fournit l'eau et l'électricité pendant le passage ?",
+                "reponse": "L'immeuble, comme c'est l'usage : un point d'eau accessible dans les communs et une prise sont nécessaires. Si le bâtiment n'en dispose pas — cas fréquent dans le bâti ancien du centre de Nancy —, dites-le nous : nous adaptons le matériel, ce qui change la durée et donc le chiffrage."
+              },
+              {
+                "question": "Que faites-vous en cas de dégradation ou de tag ?",
+                "reponse": "Nous le photographions et le signalons au gestionnaire le jour même. Un tag frais sur une surface lisse part parfois au nettoyage courant ; sur une pierre poreuse ou un enduit, il relève d'un traitement anti-graffiti spécialisé, que nous ne réalisons pas."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Autour de l'immeuble",
+            "intro": "Ce que les gestionnaires nous confient en plus des communs.",
+            "items": [
+              {
+                "nom": "Vitres & surfaces vitrées",
+                "description": "Vitrages de cage, impostes et portes d'entrée, à un rythme plus espacé.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Fin de chantier",
+                "description": "Après un ravalement ou une réfection des communs, avant la réception.",
+                "href": "/nettoyage-fin-de-chantier",
+                "icone": "HardHat"
+              },
+              {
+                "nom": "Bureaux & locaux professionnels",
+                "description": "Quand l'immeuble abrite aussi des cabinets ou des bureaux.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Votre immeuble mérite mieux",
+            "sousTitre": "Nous passons voir les communs et nous remettons un devis comparable, poste par poste.",
+            "ctaPrimaire": {
+              "label": "Demander une visite",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "zone-intervention",
+      "label": "Zone d'intervention",
+      "meta": {
+        "title": "Zone d'intervention autour de Nancy",
+        "description": "Nancy, le Grand Nancy et les communes jusqu'à 20 km : Vandœuvre, Laxou, Villers, Maxéville, Essey, Ludres, Frouard, Neuves-Maisons et alentour."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Meurthe-et-Moselle",
+            "titre": "Où nous intervenons autour de Nancy",
+            "intro": "Une vingtaine de kilomètres autour de la place Stanislas : assez large pour couvrir toute la métropole, assez resserré pour arriver à l'heure.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/parties-communes.jpg",
+              "alt": "Architecture d'un immeuble ancien nancéien"
+            },
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Zone d'intervention"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "Un secteur volontairement resserré",
+            "paragraphes": [
+              "Nous aurions pu annoncer « toute la Meurthe-et-Moselle » et laisser croire à une couverture qui n'existe pas. Nous préférons un rayon d'une vingtaine de kilomètres autour de Nancy, tenu réellement : c'est ce qui permet d'enchaîner deux interventions dans une même demi-journée sans faire attendre personne, et de repasser rapidement si une reprise s'impose.",
+              "Dans Nancy même, l'essentiel de l'activité se concentre sur les logements anciens du centre et de la Ville-Vieille, les immeubles des quartiers Saint-Léon et Poincaré, et les appartements plus récents des Rives de Meurthe. Le stationnement y étant ce qu'il est, nous prévoyons systématiquement une marge de trajet : mieux vaut arriver dix minutes en avance que faire patienter un voyageur devant une porte close.",
+              "La première couronne — Vandœuvre-lès-Nancy, Villers-lès-Nancy, Laxou, Maxéville, Malzéville, Saint-Max, Essey-lès-Nancy, Tomblaine, Jarville-la-Malgrange — est desservie aux mêmes conditions que Nancy, sans supplément de déplacement. Au sud, nous descendons jusqu'à Ludres, Neuves-Maisons et Richardménil ; au nord, jusqu'à Frouard, Pompey, Champigneulles, Custines et Liverdun ; à l'est, jusqu'à Saint-Nicolas-de-Port et Dombasle-sur-Meurthe.",
+              "Au-delà de cette limite, ce n'est pas un refus de principe : appelez-nous. Selon le jour, le volume de la prestation et la tournée déjà prévue, un déplacement plus lointain reste envisageable, avec une participation aux frais de trajet annoncée à l'avance."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/hero.jpg",
+              "alt": "Intervention d'entretien dans un logement de l'agglomération"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "variant": "liste",
+          "content": {
+            "titre": "Les communes desservies",
+            "intro": "Regroupées par secteur, telles que nous organisons réellement les tournées.",
+            "rayonKm": 20,
+            "zones": [
+              {
+                "region": "Nancy — les quartiers",
+                "principale": "Nancy",
+                "villes": [
+                  "Ville-Vieille",
+                  "Charles III · Centre-ville",
+                  "Saint-Léon",
+                  "Trois-Maisons",
+                  "Boudonville",
+                  "Poincaré · Foch",
+                  "Haussonville · Blandan",
+                  "Mon Désert · Saurupt",
+                  "Rives de Meurthe",
+                  "Beauregard",
+                  "Buthegnémont",
+                  "Le Placieux"
+                ]
+              },
+              {
+                "region": "Première couronne du Grand Nancy",
+                "principale": "Vandœuvre-lès-Nancy",
+                "villes": [
+                  "Vandœuvre-lès-Nancy",
+                  "Villers-lès-Nancy",
+                  "Laxou",
+                  "Maxéville",
+                  "Malzéville",
+                  "Saint-Max",
+                  "Essey-lès-Nancy",
+                  "Tomblaine",
+                  "Jarville-la-Malgrange",
+                  "Dommartemont",
+                  "Art-sur-Meurthe"
+                ]
+              },
+              {
+                "region": "Sud de l'agglomération",
+                "principale": "Ludres",
+                "villes": [
+                  "Heillecourt",
+                  "Houdemont",
+                  "Fléville-devant-Nancy",
+                  "Ludres",
+                  "Laneuveville-devant-Nancy",
+                  "Richardménil",
+                  "Neuves-Maisons",
+                  "Chaligny",
+                  "Messein",
+                  "Vandœuvre — Brabois"
+                ]
+              },
+              {
+                "region": "Nord et vallée de la Meurthe",
+                "principale": "Frouard",
+                "villes": [
+                  "Frouard",
+                  "Pompey",
+                  "Champigneulles",
+                  "Custines",
+                  "Liverdun",
+                  "Seichamps",
+                  "Pulnoy",
+                  "Saulxures-lès-Nancy",
+                  "Saint-Nicolas-de-Port",
+                  "Varangéville",
+                  "Dombasle-sur-Meurthe"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Votre commune n'est pas listée ?",
+            "sousTitre": "Posez la question : selon la tournée du jour, le déplacement reste souvent possible.",
+            "ctaPrimaire": {
+              "label": "Nous écrire",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Appeler le 06 69 29 90 22",
+              "href": "tel:0669299022"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "a-propos",
+      "label": "À propos",
+      "meta": {
+        "title": "Notre façon de travailler à Nancy",
+        "description": "Une entreprise nancéienne de nettoyage à taille humaine : la même intervenante à chaque passage, un périmètre assumé et des limites annoncées."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "L'entreprise",
+            "titre": "Une entreprise nancéienne, à taille volontairement humaine",
+            "intro": "Pas de plateau téléphonique, pas de roulement d'intervenants, pas de contrat de vingt pages : quelqu'un qui décroche, qui vient, et qui revient.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/methode.jpg",
+              "alt": "Entretien soigné d'un intérieur à Nancy"
+            },
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "À propos"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "Ce qui nous distingue",
+            "titreAccent": "tient en trois choses",
+            "paragraphes": [
+              "La première est la continuité. Chez la plupart des prestataires, la personne change d'une semaine à l'autre, et il faut réexpliquer à chaque fois que le parquet de la chambre ne supporte pas l'eau ou que le chat ne doit pas sortir. Ici, c'est la même intervenante qui revient. Elle connaît le logement, ses habitudes, ses fragilités, et cela se voit dans le résultat autant que dans le temps passé.",
+              "La deuxième est la franchise sur le périmètre. Nous faisons le nettoyage et l'entretien, du logement particulier au local professionnel, et nous ne prétendons pas faire le reste. Ni désinsectisation — punaises de lit et blattes relèvent d'entreprises agréées —, ni travail en hauteur sur cordes ou nacelle, ni débarras avec évacuation en déchetterie. Une demande hors périmètre reçoit une réponse claire et, quand c'est possible, une orientation utile.",
+              "La troisième est le prix annoncé avant. Le devis est gratuit, il ne débouche sur aucune relance, et il indique la durée estimée en plus du montant. S'il faut plus de temps que prévu parce que l'état de départ était pire qu'annoncé, nous appelons avant de continuer : personne ne découvre un dépassement sur la facture.",
+              "L'entreprise est immatriculée sous le numéro SIRET repris en pied de page et sur chaque facture, exerce sous le code d'activité 81.21Z — nettoyage courant des bâtiments — et intervient depuis Nancy sur l'ensemble de la métropole. Les paiements se font par virement, en espèces ou en CESU."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/canape-matelas.jpg",
+              "alt": "Soin apporté au textile d'ameublement"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "Nos engagements",
+            "titre": "Ce sur quoi vous pouvez compter",
+            "items": [
+              {
+                "titre": "Une réponse dans la journée",
+                "texte": "Sept jours sur sept, de 9h à 17h. Un message laissé le dimanche matin ne reste pas sans réponse jusqu'au lundi.",
+                "icone": "Clock"
+              },
+              {
+                "titre": "Le matériel fourni",
+                "texte": "Aspirateur, vapeur, microfibres et produits sont compris. Vos placards restent fermés, votre budget entretien aussi.",
+                "icone": "SprayCan"
+              },
+              {
+                "titre": "La discrétion",
+                "texte": "Ce que nous voyons chez vous n'en sort pas. C'est la condition de base pour confier ses clés à quelqu'un.",
+                "icone": "ShieldCheck"
+              },
+              {
+                "titre": "La reprise si besoin",
+                "texte": "Un point signalé sous vingt-quatre heures est repris sans facturation supplémentaire, sans discussion.",
+                "icone": "Handshake"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Faisons connaissance",
+            "sousTitre": "Un premier échange de cinq minutes suffit à savoir si nous sommes le bon prestataire pour vous.",
+            "ctaPrimaire": {
+              "label": "Prendre contact",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Voir les prestations",
+              "href": "/services"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "devis",
+      "label": "Devis gratuit",
+      "meta": {
+        "title": "Devis gratuit pour votre ménage à Nancy",
+        "description": "Décrivez le lieu et le besoin, recevez un montant et une durée estimée. Chiffrage offert, sans engagement, à Nancy et 20 km autour, 7j/7."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Chiffrage offert",
+            "titre": "Demander un devis",
+            "intro": "Un prix annoncé avant l'intervention, une durée estimée, et aucune relance derrière si vous ne donnez pas suite.",
+            "breadcrumb": [
+              {
+                "label": "Accueil",
+                "href": "/"
+              },
+              {
+                "label": "Devis gratuit"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "Ce qui nous aide à chiffrer juste",
+            "paragraphes": [
+              "Trois informations font l'essentiel du devis : la nature du lieu — logement, meublé de location, local professionnel, immeuble —, sa taille approximative en nombre de pièces, et l'état de départ. Un logement suivi régulièrement et un logement laissé de côté depuis six mois ne demandent pas la même chose, même à surface identique.",
+              "La fréquence pèse ensuite lourdement sur le tarif horaire. Un passage unique intègre le temps de découverte, l'installation du matériel et la remise à niveau initiale ; un passage récurrent, une fois le rythme pris, va nettement plus vite pour un résultat équivalent. C'est pourquoi un entretien hebdomadaire revient toujours moins cher, à l'heure, qu'une intervention isolée.",
+              "Deux ou trois photos prises au téléphone valent mieux qu'une longue description, surtout pour un canapé, un matelas ou une sortie de chantier. Envoyez-les par WhatsApp au 06 69 29 90 22 : dans la majorité des cas, cela suffit pour vous répondre avec un montant ferme, sans que personne ait besoin de se déplacer.",
+              "Pour les locaux professionnels et les copropriétés, une visite reste préférable, et elle est gratuite. Elle dure une vingtaine de minutes, ne débouche sur aucune signature immédiate, et permet de remettre un document comparable poste par poste avec d'autres propositions."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/bureaux.jpg",
+              "alt": "Espace de travail entretenu, prêt à accueillir"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Votre demande",
+            "intro": "Remplissez ce qui vous semble utile : nous reviendrons vers vous pour le reste. Pour une urgence, le téléphone reste le plus rapide.",
+            "telephone": "06 69 29 90 22",
+            "whatsapp": "0669299022",
+            "email": "nailys.nettoyage@gmail.com",
+            "adresse": "20 rue de Saverne, 54000 Nancy",
+            "horaires": [
+              {
+                "jour": "Du lundi au dimanche",
+                "heures": "9h – 17h"
+              }
+            ],
+            "form": true,
+            "formMode": "demande-intervention",
+            "formTitre": "Décrivez le lieu et le besoin",
+            "formIntro": "Plus le contexte est précis, plus le montant annoncé sera proche du montant final.",
+            "services": [
+              "Ménage à domicile",
+              "Location Airbnb ou meublé",
+              "Bureaux ou local professionnel",
+              "Vitres et surfaces vitrées",
+              "Repassage",
+              "Canapé, matelas ou tapis",
+              "Fin de chantier",
+              "Escaliers et parties communes",
+              "Autre demande"
+            ],
+            "villes": [
+              "Nancy",
+              "Vandœuvre-lès-Nancy",
+              "Villers-lès-Nancy",
+              "Laxou",
+              "Maxéville",
+              "Malzéville",
+              "Saint-Max",
+              "Essey-lès-Nancy",
+              "Tomblaine",
+              "Jarville-la-Malgrange",
+              "Heillecourt",
+              "Ludres",
+              "Frouard",
+              "Pompey",
+              "Champigneulles",
+              "Seichamps",
+              "Saint-Nicolas-de-Port",
+              "Dombasle-sur-Meurthe",
+              "Neuves-Maisons",
+              "Autre commune"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    }
+  ]
+}

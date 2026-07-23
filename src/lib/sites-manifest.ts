@@ -18,6 +18,7 @@ export const SITE_SLUGS: string[] = [
   "m-e-r-i-international",
   "mb-nettoyage",
   "minhaj",
+  "nailys-proprete",
   "o-poulet-braise",
   "parfait-menage-26",
   "rd-net-propre",

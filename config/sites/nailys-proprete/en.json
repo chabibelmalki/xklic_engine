@@ -1,0 +1,2082 @@
+{
+  "slug": "nailys-proprete",
+  "i18n": {
+    "default": "fr",
+    "languages": ["fr", "en"]
+  },
+  "branding": {
+    "logo": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/logo.png",
+    "icon": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/icon.png",
+    "logoAlt": "Nailys Propreté — cleaning and upkeep in Nancy",
+    "logoDarkBadge": true,
+    "logoScale": 1.15,
+    "tagline": "Cleaning & upkeep · Nancy",
+    "logoTwoTone": {
+      "first": "#1a4230",
+      "rest": "#bd9750"
+    }
+  },
+  "entreprise": {
+    "nom": "Nailys Propreté",
+    "statut": "EI",
+    "siret": "10632189600016",
+    "ape": "81.21Z",
+    "apeLabel": "General building cleaning",
+    "tva": {
+      "regime": "franchise"
+    },
+    "siege": "20 rue de Saverne, 54000 Nancy"
+  },
+  "seo": {
+    "schemaType": "HousekeepingService",
+    "ville": "Nancy"
+  },
+  "meta": {
+    "title": "House cleaning and upkeep in Nancy",
+    "description": "Home cleaning, Airbnb turnovers, offices, windows, ironing, upholstery and post-works clean-ups in Nancy and 20 km around. Open daily 9am–5pm, free quote.",
+    "keywords": [
+      "house cleaning Nancy",
+      "cleaning company Nancy",
+      "English speaking cleaner Nancy",
+      "Airbnb cleaning Nancy",
+      "office cleaning Nancy",
+      "window cleaning Nancy",
+      "ironing service Nancy",
+      "sofa mattress cleaning Nancy",
+      "post construction cleaning Nancy",
+      "communal areas cleaning Nancy"
+    ]
+  },
+  "pages": [
+    {
+      "slug": "",
+      "label": "Home",
+      "blocks": [
+        {
+          "type": "hero",
+          "variant": "carte",
+          "content": {
+            "eyebrow": "Nancy and 20 km around",
+            "titre": "A home that stays in order,",
+            "titreAccent": "without you thinking about it",
+            "accroche": "Nailys Propreté looks after homes, short-let apartments and business premises across the Nancy area. A one-off visit to catch up, or a rhythm that settles in for good: you say what you need, we take care of the rest.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/hero.jpg",
+              "alt": "Cleaner plumping the cushions of a bright living room"
+            },
+            "card": {
+              "label": "Quote at no charge",
+              "prix": "Tailored",
+              "mention": "The price follows the floor area, the starting condition and how often we come. We tell you before we set foot inside, never afterwards.",
+              "points": [
+                "An answer the same day, weekends included",
+                "No subscription, no minimum commitment",
+                "Equipment and products supplied, matched to each surface",
+                "Payment by bank transfer, cash or CESU voucher"
+              ]
+            },
+            "trust": [
+              {
+                "icone": "CalendarCheck",
+                "label": "Open seven days a week, 9am to 5pm"
+              },
+              {
+                "icone": "BadgeCheck",
+                "label": "Registered business, SIRET you can check"
+              },
+              {
+                "icone": "Repeat",
+                "label": "Always the same person in your home"
+              },
+              {
+                "icone": "MapPin",
+                "label": "Nancy, Grand Nancy and 20 km around"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Get my free quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Browse the services",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "What we take on",
+            "titre": "Eight cleaning trades, one person to talk to",
+            "intro": "Every service has its own gestures, tools and tempo. Open the one that concerns you: you will find how it actually unfolds, what is included, what stays outside, and the limits we own up to.",
+            "items": [
+              {
+                "nom": "Home cleaning",
+                "description": "Looking after your home, once or every week: floors, kitchen, bathrooms, dusting and light tidying, at whatever pace suits you.",
+                "href": "/menage-domicile",
+                "icone": "House",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/menage-domicile.jpg",
+                  "alt": "Dusting a living-room unit in a Nancy flat"
+                }
+              },
+              {
+                "nom": "Airbnb & short lets",
+                "description": "Turnover between two stays: beds made crisply, linen changed, bathroom spotless and consumables restocked before the next arrival.",
+                "href": "/nettoyage-airbnb",
+                "icone": "BedDouble",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/airbnb.jpg",
+                  "alt": "Freshly made bed in a bright holiday rental"
+                }
+              },
+              {
+                "nom": "Offices & business premises",
+                "description": "Practices, shops and small offices cleaned away from your customers, early in the morning or once the shutters are down.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/bureaux.jpg",
+                  "alt": "Dusted office desk surrounded by green plants"
+                }
+              },
+              {
+                "nom": "Windows & glazing",
+                "description": "Windows, bays, conservatories and mirrors washed on both faces, frames and runners included, down to streak-free clarity.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/vitres.jpg",
+                  "alt": "Washing a glazed bay with spray and microfibre"
+                }
+              },
+              {
+                "nom": "Ironing",
+                "description": "Shirts, bed linen and delicate pieces pressed then folded or hung, in your home, during or outside a cleaning visit.",
+                "href": "/repassage",
+                "icone": "Shirt",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/repassage.jpg",
+                  "alt": "Pressing a garment on an ironing board"
+                }
+              },
+              {
+                "nom": "Sofas, mattresses & fabrics",
+                "description": "Hot-water extraction and targeted stain work to bring life back to seats, bedding and rugs worn down by daily use.",
+                "href": "/canape-matelas",
+                "icone": "Sofa",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/canape-matelas.jpg",
+                  "alt": "Deep vacuuming the seat of a green fabric armchair"
+                }
+              },
+              {
+                "nom": "Post-construction clean",
+                "description": "Plaster dust, adhesive marks, paint splashes and fine rubble cleared so a newly finished home is genuinely liveable.",
+                "href": "/nettoyage-fin-de-chantier",
+                "icone": "HardHat",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/fin-de-chantier.jpg",
+                  "alt": "Site vacuum cleaner in a freshly renovated flat"
+                }
+              },
+              {
+                "nom": "Stairwells & communal areas",
+                "description": "Entrance halls, landings, stairwells and bin rooms in Nancy buildings, kept up by regular rounds for owners and landlords.",
+                "href": "/parties-communes",
+                "icone": "Building",
+                "image": {
+                  "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/parties-communes.jpg",
+                  "alt": "Period stairwell with wrought-iron railing and marble steps"
+                }
+              }
+            ],
+            "cta": {
+              "label": "See every service in detail",
+              "href": "/services"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "How it works",
+            "titre": "From your call to the first visit",
+            "intro": "Four steps, no pointless paperwork and no sales visit in disguise.",
+            "items": [
+              {
+                "titre": "You describe",
+                "texte": "By phone, WhatsApp or the form: the kind of place, its rough size and what you expect. A few photographs will often do.",
+                "icone": "MessageSquare"
+              },
+              {
+                "titre": "We price it",
+                "texte": "You receive a clear figure and the time it should take on site. If the place deserves a look, we come by, and that commits you to nothing.",
+                "icone": "ClipboardCheck"
+              },
+              {
+                "titre": "We come in",
+                "texte": "On the agreed date, with tools and products. Nothing to pull out of your cupboards, nothing to prepare.",
+                "icone": "SprayCan"
+              },
+              {
+                "titre": "You check",
+                "texte": "A walk round together, or photographs if you are away. We come back over any point that falls short of what was agreed.",
+                "icone": "Eye"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "eyebrow": "The way we work",
+            "titre": "The care of a household,",
+            "titreAccent": "not the pace of a factory",
+            "paragraphes": [
+              "A cleaning job is judged on what you do not see at first glance: under the furniture, behind the taps, the skirting boards, the light switches, the shower seals. That is where we spend the time others save, because it is exactly what separates a home that is tidy from a home that is clean.",
+              "We bring our own equipment and choose products surface by surface: what suits a laminate worktop has no business on oiled parquet or on a mirror. Microfibre cloths are kept apart by zone so that soil is never carried from one room to the next, particularly between the kitchen and the bathroom.",
+              "Once a visit becomes regular, the same person comes back. In time she knows your home better than you do: where the dust gathers fastest, which window sticks, which cupboard should stay shut. That continuity is worth more than any written procedure, and it is also what makes handing over a set of keys a reasonable thing to do.",
+              "Finally, we would rather state our limits than promise everything. Pest control, and in particular the treatment of bedbugs and cockroaches, belongs to licensed specialist firms. We do not carry it out, and we say so from the first conversation."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/methode.jpg",
+              "alt": "Mopping the floor of a living room with a microfibre pad"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/5",
+            "imageCard": true,
+            "ctaPrimaire": {
+              "label": "More about us",
+              "href": "/a-propos"
+            }
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "variant": "liste",
+          "content": {
+            "titre": "Where we travel",
+            "intro": "Nancy itself, the whole Grand Nancy metropolitan area and the towns within roughly twenty kilometres, along the Lorraine corridor and down the Meurthe valley.",
+            "rayonKm": 20,
+            "zones": [
+              {
+                "region": "Nancy — the districts",
+                "principale": "Nancy",
+                "villes": [
+                  "Ville-Vieille",
+                  "Charles III · City centre",
+                  "Saint-Léon",
+                  "Trois-Maisons",
+                  "Boudonville",
+                  "Poincaré · Foch",
+                  "Haussonville · Blandan",
+                  "Mon Désert · Saurupt",
+                  "Rives de Meurthe",
+                  "Beauregard"
+                ]
+              },
+              {
+                "region": "Inner ring of Grand Nancy",
+                "principale": "Vandœuvre-lès-Nancy",
+                "villes": [
+                  "Vandœuvre-lès-Nancy",
+                  "Villers-lès-Nancy",
+                  "Laxou",
+                  "Maxéville",
+                  "Malzéville",
+                  "Saint-Max",
+                  "Essey-lès-Nancy",
+                  "Tomblaine",
+                  "Jarville-la-Malgrange",
+                  "Dommartemont"
+                ]
+              },
+              {
+                "region": "South of the conurbation",
+                "principale": "Ludres",
+                "villes": [
+                  "Heillecourt",
+                  "Houdemont",
+                  "Fléville-devant-Nancy",
+                  "Ludres",
+                  "Laneuveville-devant-Nancy",
+                  "Richardménil",
+                  "Neuves-Maisons",
+                  "Chaligny",
+                  "Messein"
+                ]
+              },
+              {
+                "region": "North and the Meurthe valley",
+                "principale": "Frouard",
+                "villes": [
+                  "Frouard",
+                  "Pompey",
+                  "Champigneulles",
+                  "Custines",
+                  "Liverdun",
+                  "Seichamps",
+                  "Pulnoy",
+                  "Saulxures-lès-Nancy",
+                  "Saint-Nicolas-de-Port",
+                  "Varangéville",
+                  "Dombasle-sur-Meurthe"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "What people ask before booking",
+            "items": [
+              {
+                "question": "Do I need to be there while you work?",
+                "reponse": "No. Many of our clients leave us a set of keys or an entry code and discover the result when they get home. For a first visit your presence at the start is useful: ten minutes are enough to walk round and point out what matters to you. After that, organise it however you like."
+              },
+              {
+                "question": "Do I have to provide the vacuum and the products?",
+                "reponse": "We arrive equipped: vacuum cleaner, steam mop, microfibre cloths and products suited to each type of surface are covered by the price. If you would rather we used your own products — an allergy, fragile parquet, personal preference — just say so, and we adapt at no extra cost."
+              },
+              {
+                "question": "Can I book you only once?",
+                "reponse": "Yes, and it happens often: a deep clean before the family arrives, putting a place back in order after a move, catching up after a busy stretch. There is no subscription and no minimum term. If you later feel like settling into a rhythm, we talk about it then."
+              },
+              {
+                "question": "Do you treat bedbugs or cockroaches?",
+                "reponse": "No, and that is deliberate. Pest control requires a licence, regulated products and a follow-up protocol that are not part of our trade. We will point you towards a specialist firm. Once the treatment is done, however, we are happy to handle putting the home back in order."
+              },
+              {
+                "question": "How can I pay?",
+                "reponse": "Bank transfer, cash and CESU vouchers. An invoice is issued for every visit, itemising hours and work carried out, which leaves you a clear record for your own accounts or for your building's management."
+              },
+              {
+                "question": "How quickly can you come?",
+                "reponse": "We answer enquiries the same day, weekends included, between 9am and 5pm. Depending on the week's schedule, a first visit can usually be fitted in within two or three days. For something urgent — an imminent inventory, guests arriving — phone rather than write: it is faster."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Let's get your home back under control",
+            "sousTitre": "Tell us about the place and what you need: you will know the price before anyone has stepped through your door.",
+            "ctaPrimaire": {
+              "label": "Request a quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Call 06 69 29 90 22",
+              "href": "tel:0669299022"
+            }
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Get in touch",
+            "intro": "A question, a date to lock in, a figure to obtain: the telephone is still the simplest route. The form works just as well if you prefer to write.",
+            "telephone": "06 69 29 90 22",
+            "whatsapp": "0669299022",
+            "email": "nailys.nettoyage@gmail.com",
+            "adresse": "20 rue de Saverne, 54000 Nancy",
+            "horaires": [
+              {
+                "jour": "Monday to Sunday",
+                "heures": "9am – 5pm"
+              }
+            ],
+            "form": true,
+            "formMode": "demande-intervention",
+            "formTitre": "Describe what you need",
+            "formIntro": "A few lines are enough for us to come back to you with a price rather than a brochure.",
+            "services": [
+              "Home cleaning",
+              "Airbnb or short let",
+              "Office or business premises",
+              "Windows and glazing",
+              "Ironing",
+              "Sofa, mattress or rug",
+              "Post-construction clean",
+              "Stairwells and communal areas",
+              "Something else"
+            ],
+            "villes": [
+              "Nancy",
+              "Vandœuvre-lès-Nancy",
+              "Villers-lès-Nancy",
+              "Laxou",
+              "Maxéville",
+              "Malzéville",
+              "Saint-Max",
+              "Essey-lès-Nancy",
+              "Tomblaine",
+              "Jarville-la-Malgrange",
+              "Heillecourt",
+              "Ludres",
+              "Frouard",
+              "Pompey",
+              "Champigneulles",
+              "Seichamps",
+              "Saint-Nicolas-de-Port",
+              "Dombasle-sur-Meurthe",
+              "Neuves-Maisons",
+              "Another town"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "services",
+      "label": "Services",
+      "meta": {
+        "title": "Our cleaning services in Nancy",
+        "description": "Homes, Airbnb, offices, windows, ironing, upholstery, post-works and communal areas: eight services set out in detail in Nancy and 20 km around."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "The full range",
+            "titre": "Every cleaning service we offer in Nancy",
+            "intro": "From private homes to business premises, here is exactly what we know how to do — and when each service becomes the right answer.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/methode.jpg",
+              "alt": "Floor care in a living room"
+            },
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a free quote",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "Two families of need,",
+            "titreAccent": "one standard",
+            "paragraphes": [
+              "On one side, housing: the home you live in, the one you let by the night, the one you have just renovated or are about to leave. On the other, business: a practice, a shop, an office, the shared areas of a building. The gestures are similar, but the hours, the constraints and the priorities are not.",
+              "In a private home the stakes are comfort and trust: you step into an intimate space, handle personal belongings, and often work with the occupants or their pets present. In business premises the stake is continuity: coming in before opening or after closing, moving nothing that should not be moved, and leaving a place ready to receive the public without anyone having seen a soul.",
+              "Some services naturally go together. Regular cleaning readily absorbs the ironing. A short-let turnover often calls for a pass over the windows. A post-works clean almost always leads to freshening the fabrics left on site. Tell us the whole picture and we will price the whole picture."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/bureaux.jpg",
+              "alt": "A maintained office in Nancy, clear desk and plants"
+            },
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "eyebrow": "Eight detailed pages",
+            "titre": "Pick your service",
+            "intro": "Each page sets out how the work unfolds, what is included, what is not, and the questions most often asked about that particular job.",
+            "items": [
+              {
+                "nom": "Home cleaning",
+                "description": "Routine upkeep or a deep clean, one-off or recurring, in houses and flats across the conurbation.",
+                "href": "/menage-domicile",
+                "icone": "House"
+              },
+              {
+                "nom": "Airbnb & short lets",
+                "description": "Turnover between two guests, linen handling and restocking, with a photo report to back it up.",
+                "href": "/nettoyage-airbnb",
+                "icone": "BedDouble"
+              },
+              {
+                "nom": "Offices & business premises",
+                "description": "Visits scheduled around your hours, away from customers, for small Nancy organisations.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              },
+              {
+                "nom": "Windows & glazing",
+                "description": "Reachable glazing inside and out, conservatories, mirrors and glass balustrades, frames included.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Ironing",
+                "description": "In your home, alongside a cleaning visit or on its own, folded or hung as you prefer.",
+                "href": "/repassage",
+                "icone": "Shirt"
+              },
+              {
+                "nom": "Sofas, mattresses & fabrics",
+                "description": "Deep vacuuming, hot-water extraction and stain work on seating, bedding and rugs.",
+                "href": "/canape-matelas",
+                "icone": "Sofa"
+              },
+              {
+                "nom": "Post-construction clean",
+                "description": "Coming out of building work, from the rough pass to the finish before handover or move-in.",
+                "href": "/nettoyage-fin-de-chantier",
+                "icone": "HardHat"
+              },
+              {
+                "nom": "Stairwells & communal areas",
+                "description": "Halls, landings and stairwells in shared buildings, on a weekly or monthly round.",
+                "href": "/parties-communes",
+                "icone": "Building"
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Before you choose",
+            "items": [
+              {
+                "question": "How do I know which service to ask for?",
+                "reponse": "Do not overthink it: describe the place and what bothers you, and we will translate. \"My flat needs doing from top to bottom\" becomes a one-off deep clean; \"I no longer have my Saturdays\" becomes regular upkeep. The trade vocabulary is our problem, not yours."
+              },
+              {
+                "question": "Can several services be combined on the same day?",
+                "reponse": "Yes, and it usually costs less than two separate visits, since travel and setting up the equipment are counted only once. The one thing to watch is duration: a full clean followed by upholstery treatment takes a whole half-day and needs booking ahead."
+              },
+              {
+                "question": "Do you work for businesses as well as households?",
+                "reponse": "Both. Households make up most of the work carried out in homes; businesses tend to entrust us with small and medium premises, professional practices and shared building areas. The invoicing arrangements differ, the method does not."
+              },
+              {
+                "question": "What happens if I am not satisfied with the result?",
+                "reponse": "Tell us within twenty-four hours, with a photograph if you are away. We come back over the point in question at no charge. That is simpler for everyone than an argument about an invoice, and it is what keeps our clients with us from one year to the next."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Found the service you need?",
+            "sousTitre": "Send us the broad outline and a figure comes back, with no sales follow-up behind it.",
+            "ctaPrimaire": {
+              "label": "Get my quote",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "See the area covered",
+              "href": "/zone-intervention"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "menage-domicile",
+      "label": "Home cleaning",
+      "navHidden": true,
+      "service": {
+        "name": "Home cleaning",
+        "serviceType": "Home cleaning",
+        "description": "Routine upkeep or deep cleaning of private homes in Nancy and within 20 km, as a one-off or on a recurring basis.",
+        "priceFrom": "On quotation"
+      },
+      "meta": {
+        "title": "Home cleaning in Nancy",
+        "description": "Upkeep of houses and flats in Nancy: one-off or weekly visits covering floors, kitchen, bathrooms and interior glazing. Free quote, seven days a week."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Households",
+            "titre": "Home cleaning in Nancy",
+            "intro": "Catching up on a backlog that has crept in, or never thinking about it again thanks to a regular visit: two different requests, one way of working.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/menage-domicile.jpg",
+              "alt": "Dusting furniture in a Nancy home"
+            },
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Home cleaning"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Request a free quote",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "What a visit to your home covers",
+            "paragraphes": [
+              "Routine upkeep covers every living space: vacuuming and washing floors, dusting furniture, shelves and skirting boards, cleaning kitchen surfaces, the worktop, the hob and the sink, disinfecting bathrooms, washing mirrors and reachable interior glazing, taking out the bins and putting the shared rooms lightly back in order.",
+              "A deep clean goes further, and earns its place once or twice a year or after a long absence: full degreasing of cupboard fronts and the extractor hood, descaling taps and shower screens, washing doors and handles, cleaning behind and under movable furniture, scrubbing switches, radiators and window runners. Allow roughly twice the time of a routine visit.",
+              "What we do not do is just as clear: we do not climb beyond a step stool, we do not handle valuables or fragile collections, we look after neither the garden nor the pets, and we carry out no pest treatment. Deep sorting of personal belongings also stays in your hands: we put things back in order, we do not decide what to keep.",
+              "The frequency is settled with you. A studio flat occupied by one person holds up perfectly well with a visit every fortnight; a family house with children and pets usually calls for a weekly rhythm so that we are not starting from scratch each time."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/methode.jpg",
+              "alt": "Washing a living-room floor with a microfibre mop"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "The order of things",
+            "titre": "Why we always work from the top down",
+            "items": [
+              {
+                "titre": "Air and sort the kit",
+                "texte": "Windows go open and microfibre cloths are split by zone: one colour for the kitchen, another for the bathroom, never the other way round.",
+                "icone": "Wind"
+              },
+              {
+                "titre": "High surfaces first",
+                "texte": "Light fittings, tops of cupboards, shelves: everything up high is dusted before any floor is touched.",
+                "icone": "Layers"
+              },
+              {
+                "titre": "The wet rooms",
+                "texte": "Kitchens and bathrooms need specific products and real contact time: this is the stage where rushing gains you nothing.",
+                "icone": "Droplets"
+              },
+              {
+                "titre": "Floors last",
+                "texte": "Vacuum then wash, working backwards towards the door, so that nothing just finished is walked over again.",
+                "icone": "Footprints"
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions about home cleaning",
+            "items": [
+              {
+                "question": "How long does a 60 m² flat take?",
+                "reponse": "Allow two hours for routine upkeep in a home we already look after, and three to four hours for a first visit or a deep clean. Floor area matters less than the number of wet rooms and the starting condition: two bathrooms stretch the visit further than twenty extra square metres of living room."
+              },
+              {
+                "question": "Can I change the frequency later on?",
+                "reponse": "Easily. Plenty of households switch to weekly in September and drop back to fortnightly over the summer. Let us know a week ahead so the round can be reorganised, and the rate follows the new frequency from the very next visit."
+              },
+              {
+                "question": "Is it a problem if I have a cat or a dog?",
+                "reponse": "Not at all, provided you tell us beforehand: pet hair changes how we vacuum and how long it takes, and some animals cope badly with the machine. If yours is nervous, it is better to shut it in one room during the visit, and we will do that room last."
+              },
+              {
+                "question": "Do you clean inside the oven and the fridge?",
+                "reponse": "Yes, but they have to be asked for explicitly: they are not part of routine upkeep because each one takes thirty to forty-five minutes of degreasing or disinfecting. Mention them when we quote and they will be built into the time set aside."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Often booked alongside",
+            "intro": "These services graft naturally onto regular home upkeep.",
+            "items": [
+              {
+                "nom": "Ironing",
+                "description": "Added at the end of the visit, for whatever time you decide to devote to it.",
+                "href": "/repassage",
+                "icone": "Shirt"
+              },
+              {
+                "nom": "Windows & glazing",
+                "description": "The outer faces of the glazing, which routine upkeep does not cover.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Sofas, mattresses & fabrics",
+                "description": "Once or twice a year, for what a vacuum cleaner can no longer freshen.",
+                "href": "/canape-matelas",
+                "icone": "Sofa"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "What would your home cost?",
+            "sousTitre": "Give us the number of rooms and the frequency you have in mind: the answer arrives the same day.",
+            "ctaPrimaire": {
+              "label": "Request my quote",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-airbnb",
+      "label": "Airbnb & short lets",
+      "navHidden": true,
+      "service": {
+        "name": "Airbnb and holiday rental cleaning",
+        "serviceType": "Holiday rental cleaning",
+        "description": "Turnover cleaning between two stays for short-let properties in Nancy: linen, bathroom, kitchen, restocking and a photo report.",
+        "priceFrom": "On quotation"
+      },
+      "meta": {
+        "title": "Airbnb and short-let cleaning in Nancy",
+        "description": "Turnover between two guests in Nancy: beds remade, linen changed, bathroom and kitchen reset, consumables restocked and photos before the next arrival."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Hosts & property managers",
+            "titre": "Airbnb and short-let cleaning in Nancy",
+            "intro": "Between an 11am checkout and a 3pm arrival, everything has to be settled. This is a trade of tight windows as much as a trade of cleanliness.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/airbnb.jpg",
+              "alt": "Made-up bed in a Nancy holiday rental"
+            },
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Airbnb & short lets"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Set up my turnovers",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "The turnover, gesture by gesture",
+            "paragraphes": [
+              "A turnover is not ordinary cleaning; it is resetting a stage. The property has to match the photographs in the listing exactly, or the rating suffers. We strip the beds, change bed and bath linen, remake the sleeping areas crisply, fold the towels the same way every single time, and put every object back in its original position.",
+              "Bathrooms and kitchens account for most negative guest comments: shower screens descaled, wastes cleared, seals checked, fridge emptied and disinfected, crockery inspected piece by piece, hob and microwave degreased. Bins go out, liners are replaced, floors are washed last of all.",
+              "We also restock the consumables you supply — toilet paper, soap, coffee capsules, salt, bin bags — and flag what is running low before you get the remark. Every turnover ends with a series of time-stamped photographs sent over WhatsApp: you see the property ready, even from three hundred kilometres away.",
+              "Finally, we report what is wrong: a blown bulb, a temperamental flush, a mark on a sheet, an object broken or missing. Spotted at turnover, a problem is fixed before the next arrival; discovered by a guest, it becomes a public review."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/hero.jpg",
+              "alt": "Cushions being reset in a furnished rental"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "To round out the turnover",
+            "intro": "Two services hosts most often add between seasons.",
+            "items": [
+              {
+                "nom": "Sofas, mattresses & fabrics",
+                "description": "A deep treatment of bedding and seating between two letting seasons.",
+                "href": "/canape-matelas",
+                "icone": "Sofa"
+              },
+              {
+                "nom": "Windows & glazing",
+                "description": "Clear glazing transforms the light in the photographs of your listing.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Post-construction clean",
+                "description": "After refreshing the property, before the listing goes back online.",
+                "href": "/nettoyage-fin-de-chantier",
+                "icone": "HardHat"
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions from hosts",
+            "items": [
+              {
+                "question": "Do you handle the linen, or should I supply it?",
+                "reponse": "The usual arrangement is that you keep two or three sets per bed: we swap them over, run the machine on site if the property has one, and leave the next clean set ready to go. Without a machine in the property you will need a laundry service; we can then handle drop-off and collection if the point is on our route."
+              },
+              {
+                "question": "Can you come on Sundays and public holidays?",
+                "reponse": "Yes, we work every day from 9am to 5pm, which covers virtually every turnover window. Weekend checkouts and arrivals are in fact the bulk of the work on this kind of property in Nancy, particularly around the city's larger events."
+              },
+              {
+                "question": "How do you get into the property?",
+                "reponse": "Key safe, smart lock or a set of keys handed over: all three work. We record the access code and the opening method in the property's file, and we always tell you if a guest has left the door unlocked or if the code has stopped working."
+              },
+              {
+                "question": "What if the property is left in a very poor state?",
+                "reponse": "We photograph everything before touching a thing, we call you, and we tell you how much extra time putting it right will take. You decide whether we carry on. Those photographs then support any claim you make to the platform."
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "A property to turn over in Nancy?",
+            "sousTitre": "Give us the floor area, the number of beds and how busy the calendar is, and we will set a price per turnover.",
+            "ctaPrimaire": {
+              "label": "Ask for a turnover price",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-bureaux",
+      "label": "Offices & premises",
+      "navHidden": true,
+      "service": {
+        "name": "Office and business premises cleaning",
+        "serviceType": "Office cleaning",
+        "description": "Cleaning of offices, professional practices and shops in Nancy, before opening or after closing, without disturbing the business.",
+        "priceFrom": "On quotation"
+      },
+      "meta": {
+        "title": "Office and business cleaning in Nancy",
+        "description": "Offices, practices and shops maintained in Nancy before opening or after closing. Regular visits, discretion, free quotation within 48 hours."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Businesses",
+            "titre": "Office and business premises cleaning in Nancy",
+            "intro": "Clean premises go unnoticed; neglected ones do not. Our job is to stay invisible while being perfectly obvious.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/bureaux.jpg",
+              "alt": "A maintained workstation in a Nancy office"
+            },
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Offices & premises"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Have my premises assessed",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "Visits scheduled around your business",
+            "paragraphes": [
+              "We work in organisations of a human size: professional practices, healthcare rooms, notaries, agencies, salons, small shops and office floors of up to around a hundred square metres. The visit is set before opening, over the lunch break or after closing — never in front of customers, and never in the middle of a meeting.",
+              "What a typical visit covers: emptying and disinfecting bins, dusting workstations without moving documents, cleaning screens and peripherals on request, disinfecting contact points such as handles, switches, handrails and lift buttons, servicing the washrooms with restocking, washing floors and putting reception and the waiting area back in order.",
+              "Practices open to the public need extra attention on the surfaces everyone touches: waiting-room armrests, side tables, toys, dispensers. We adapt products and frequency accordingly, and we use no air fragrance in healthcare settings.",
+              "On the practical side you have one contact and a fixed calendar. Closure periods — holidays, bank holidays, school breaks — are anticipated together, and a one-off visit remains possible ahead of an important appointment or after building work."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/vitres.jpg",
+              "alt": "Cleaning the glazed surfaces of business premises"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "Getting started",
+            "titre": "Four weeks until it runs by itself",
+            "items": [
+              {
+                "titre": "Visiting the premises",
+                "texte": "On site, free of charge: surfaces, floor coverings, access constraints, workable hours and what matters most to you.",
+                "icone": "ClipboardCheck"
+              },
+              {
+                "titre": "A costed proposal",
+                "texte": "A short, readable specification giving the length of each visit and its price, with no hidden clause.",
+                "icone": "FileCheck"
+              },
+              {
+                "titre": "A stronger first visit",
+                "texte": "The opening visit runs longer: it brings the premises up to standard so the following ones are genuine upkeep.",
+                "icone": "Sparkles"
+              },
+              {
+                "titre": "Cruising speed",
+                "texte": "Visits follow the agreed calendar. We review it after a month and adjust whatever needs adjusting.",
+                "icone": "Repeat"
+              }
+            ]
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions from business owners",
+            "items": [
+              {
+                "question": "Do I have to leave you the keys?",
+                "reponse": "That is the most common arrangement for work outside opening hours, and it assumes a level of trust that has to be built. Nothing obliges you to do it from the first visit: many clients start with a member of staff present, then hand over access once the rhythm has settled."
+              },
+              {
+                "question": "Do you supply the washroom paper and soap?",
+                "reponse": "We can restock from your own stores, or handle the purchase and pass it on at cost with no mark-up. The second option avoids running out on a Friday evening, but it does require somewhere to store supplies on site."
+              },
+              {
+                "question": "Can you come once only, with no long-term commitment?",
+                "reponse": "Yes: putting premises right before an opening, a visit after building work, reinforcement ahead of an inspection. Regular visits work out cheaper per square metre, but nothing forces you to commit in order to try the service."
+              },
+              {
+                "question": "Are you insured to work on my premises?",
+                "reponse": "The business is registered and its SIRET number appears on every invoice as well as at the foot of this site, so you can verify it yourself. The professional liability insurance certificate is provided on request, before anything is signed."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Around the premises",
+            "intro": "What managers ask for on top of the routine visit.",
+            "items": [
+              {
+                "nom": "Windows & glazing",
+                "description": "Shop fronts and glazed partitions, which carry most of the first impression.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Stairwells & communal areas",
+                "description": "When the premises share a hall or a stairwell with other occupants.",
+                "href": "/parties-communes",
+                "icone": "Building"
+              },
+              {
+                "nom": "Post-construction clean",
+                "description": "After a refit, before reopening to the public.",
+                "href": "/nettoyage-fin-de-chantier",
+                "icone": "HardHat"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Let's walk round your premises",
+            "sousTitre": "The visit and the costing are free, and lead to no follow-up call if the proposal does not suit you.",
+            "ctaPrimaire": {
+              "label": "Book a visit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-vitres",
+      "label": "Windows",
+      "navHidden": true,
+      "service": {
+        "name": "Window cleaning",
+        "serviceType": "Window cleaning",
+        "description": "Washing reachable glazing, conservatories, mirrors and glass balustrades in Nancy, frames and runners included.",
+        "priceFrom": "On quotation"
+      },
+      "meta": {
+        "title": "Window cleaning in Nancy",
+        "description": "Windows, bays, conservatories and mirrors washed on both faces in Nancy, frames and runners included. Streak-free, for households and businesses."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Households & businesses",
+            "titre": "Window cleaning in Nancy",
+            "intro": "A clean window is not something you see: it is the light in the room that changes. It is the job whose effect is the most immediate.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/vitres.jpg",
+              "alt": "Washing a glazed bay in Nancy"
+            },
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Windows"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Price up my windows",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "How far the washing goes",
+            "paragraphes": [
+              "We wash glazing on both faces wherever the outside can be reached from indoors or from stable ground: tilt-and-turn windows, sliding bays, French doors, reachable roof windows, conservatories, low glass roofs, mirrors, glazed partitions and glass balustrades. Frames, transoms, handles and sliding runners are done every time: that is where the grime hides before running back down onto clean glass.",
+              "The method is the traditional one because it remains the best: applicator, squeegee and corner drying with microfibre, rather than an aerosol product that leaves a film. On heavily soiled glazing — coming out of winter, a frontage on a busy street, premises left shut up — a first rough pass is needed before the wash proper.",
+              "We do not climb onto roofs, we use neither cherry pickers nor ropes, and we do not work at height beyond a step stool or a telescopic pole used from the ground. In practice, upper-storey building façades fall outside our scope: they belong to a firm equipped for work at height, and we will say so plainly rather than take the risk.",
+              "How often depends mostly on exposure. Glass facing a busy Nancy street soils two to three times faster than a bay opening onto a sheltered garden. Twice a year is enough in most homes, four times for a shop front."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/menage-domicile.jpg",
+              "alt": "Surface care in a bright interior"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions about windows",
+            "items": [
+              {
+                "question": "How is window cleaning priced?",
+                "reponse": "By the number of opening panes rather than by square metre, because it is the count of openings and how reachable they are that drives the time spent. One large sliding bay washes faster than six small Georgian-bar windows. Give us a rough count of the windows and their type, and that is enough for a dependable figure."
+              },
+              {
+                "question": "Should windows not be washed in full sun?",
+                "reponse": "Correct, and we take it into account in the running order: on a hot surface the water evaporates before it can be squeegeed and leaves marks. We start with the façades exposed early in the morning and then follow the shade. That is one reason a summer visit tends to be booked first thing."
+              },
+              {
+                "question": "Do you take on shutters and blinds?",
+                "reponse": "Roller shutters and their casings, yes, on the visible and reachable parts. Interior slatted blinds are possible but quoted separately: it is slow work, slat by slat, which easily doubles the time spent on a room."
+              },
+              {
+                "question": "What if a pane still looks hazy after washing?",
+                "reponse": "A haze that will not shift almost always comes from the glass itself: fine scratches, limescale burned in by a garden sprinkler, or an old deposit that one pass cannot lift. We tell you on the spot and suggest a dedicated treatment rather than letting you believe the pane is beyond saving."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Neighbouring services",
+            "intro": "Windows are rarely asked for on their own.",
+            "items": [
+              {
+                "nom": "Home cleaning",
+                "description": "Reachable interior glazing is already part of routine upkeep.",
+                "href": "/menage-domicile",
+                "icone": "House"
+              },
+              {
+                "nom": "Offices & business premises",
+                "description": "Shop fronts and glazed partitions kept up at the same rhythm as the premises.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              },
+              {
+                "nom": "Post-construction clean",
+                "description": "Glazing comes out of building work under a film of plaster to be stripped.",
+                "href": "/nettoyage-fin-de-chantier",
+                "icone": "HardHat"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "How many windows need doing?",
+            "sousTitre": "A rough count is all we need to give you a firm price.",
+            "ctaPrimaire": {
+              "label": "Get a costing",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "repassage",
+      "label": "Ironing",
+      "navHidden": true,
+      "service": {
+        "name": "Ironing at home",
+        "serviceType": "Ironing",
+        "description": "Ironing everyday laundry and delicate pieces at your home in Nancy, on its own or alongside a cleaning visit.",
+        "priceFrom": "On quotation"
+      },
+      "meta": {
+        "title": "Ironing service at home in Nancy",
+        "description": "Shirts, bed linen and delicate pieces pressed then folded or hung, in your home in Nancy. Alongside a cleaning visit or as a service on its own."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Households",
+            "titre": "Ironing at home in Nancy",
+            "intro": "The chore everyone puts off, and the only one whose time you get back whole: a pile of laundry rarely waits for less than two hours.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/repassage.jpg",
+              "alt": "Pressing a garment at home"
+            },
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Ironing"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Add ironing",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "How we handle your laundry",
+            "paragraphes": [
+              "Ironing is done in your home, on your board and with your iron — which is what guarantees that nothing leaves the house and no item goes astray. If your equipment is tired, or you have none, say so when we quote: we bring our own, steam generator included.",
+              "Each piece is treated according to its label and its fibre. Cotton and linen take high heat with steam; silk, viscose and synthetics call for a warm iron and a pressing cloth. Shirts are worked in the order that avoids creasing what has just been done: collar, yoke, cuffs, sleeves, back, fronts. Deliberate creases — suit trousers, pleated skirts — are respected.",
+              "At the end, you choose: folded into piles by category and by person, or hung on hangers if you provide them. Household linen follows the same logic — sheets and duvet covers folded to the size of your shelves, tea towels and bath towels stacked separately.",
+              "Two limits worth knowing: we do not iron items that are already stained or damaged without telling you first, because heat sets a stain permanently, and we set aside garments labelled \"do not iron\" rather than risk marking them. Those pieces come back to you separately, with the explanation."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/hero.jpg",
+              "alt": "Household linen folded and put away"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions about ironing",
+            "items": [
+              {
+                "question": "Is ironing charged per item or per hour?",
+                "reponse": "Per hour, because it is the only honest measure: a creased linen shirt takes five times as long as a t-shirt straight out of a tumble dryer. You set the time you want to devote to it, and we work through as many pieces as that allows, starting with whatever you consider a priority."
+              },
+              {
+                "question": "Can I book ironing only, without cleaning?",
+                "reponse": "Yes. Some households book us two hours every fortnight purely for the laundry basket. It is a service in its own right, with the same regularity and the same person, and no obligation to take anything else."
+              },
+              {
+                "question": "Does the laundry need to be washed and dry already?",
+                "reponse": "Yes, that is essential: we do not take on washing or drying. Put the basket out before we arrive, and flag anything you need back quickly. Laundry that is still damp will be set aside rather than forced under the iron."
+              },
+              {
+                "question": "What if an item is scorched or marked during the visit?",
+                "reponse": "It does not happen when labels are respected, which is precisely why we read them. Should damage occur through our own doing, the company's professional liability insurance is there to cover it: report it straight away, before the item is washed."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Goes well with",
+            "intro": "Ironing almost always slips into a wider visit.",
+            "items": [
+              {
+                "nom": "Home cleaning",
+                "description": "The most common arrangement: the home is done first, ironing takes the time left.",
+                "href": "/menage-domicile",
+                "icone": "House"
+              },
+              {
+                "nom": "Airbnb & short lets",
+                "description": "Pressed bed linen completely changes how a furnished rental is perceived.",
+                "href": "/nettoyage-airbnb",
+                "icone": "BedDouble"
+              },
+              {
+                "nom": "Sofas, mattresses & fabrics",
+                "description": "For the textiles that go neither under an iron nor into a machine.",
+                "href": "/canape-matelas",
+                "icone": "Sofa"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Basket overflowing?",
+            "sousTitre": "Tell us the volume and the rhythm you would like, and we will fix a recurring slot.",
+            "ctaPrimaire": {
+              "label": "Book a slot",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "canape-matelas",
+      "label": "Sofas & mattresses",
+      "navHidden": true,
+      "service": {
+        "name": "Sofa, mattress and fabric cleaning",
+        "serviceType": "Upholstery cleaning",
+        "description": "Deep vacuuming, hot-water extraction and stain treatment for sofas, armchairs, mattresses and rugs in Nancy and around.",
+        "priceFrom": "On quotation"
+      },
+      "meta": {
+        "title": "Sofa and mattress cleaning in Nancy",
+        "description": "Sofas, armchairs, mattresses and rugs treated by hot-water extraction in Nancy: targeted stain work, controlled drying, fibres revived not worn out."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Soft furnishings",
+            "titre": "Sofa, mattress and rug cleaning in Nancy",
+            "intro": "Fabric absorbs for years what a vacuum cleaner can no longer retrieve. You can see the result, but above all you can smell it.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/canape-matelas.jpg",
+              "alt": "Deep treatment of a fabric armchair seat"
+            },
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Sofas & mattresses"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Have my fabrics treated",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "The protocol",
+            "titre": "Four passes over the same piece",
+            "items": [
+              {
+                "titre": "Fibre test",
+                "texte": "On a hidden area, to check how the fabric reacts to water and product before the whole piece is treated.",
+                "icone": "Eye"
+              },
+              {
+                "titre": "Deep vacuuming",
+                "texte": "Removing dry particles, hair and grit: treating dusty fabric with water would simply make mud.",
+                "icone": "Wind"
+              },
+              {
+                "titre": "Targeted stain work",
+                "texte": "Every stain according to its nature — greasy, protein, tannin — with the product that matches it, never one universal detergent.",
+                "icone": "Droplets"
+              },
+              {
+                "titre": "Hot-water extraction",
+                "texte": "Water is injected then immediately drawn back out with the soil, leaving as little moisture as possible in the foam.",
+                "icone": "Repeat"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "What to hope for, and what not to",
+            "paragraphes": [
+              "Fabric sofas, armchairs, upholstered headboards, mattresses, rugs and fitted carpet all respond well: fibres stand back up, odours fade, and the darkest contact zones — armrests, headrests, the middle of the seat — return to a shade close to the rest of the piece. It is particularly striking on bedding used every night for several years.",
+              "A stain that has been there a long time and already rubbed with a supermarket product may, on the other hand, have dyed the fibre right through: in that case we soften it without erasing it, and we tell you before starting rather than afterwards. Likewise, worn fabric does not become new again; cleaning freshens, it does not restore a threadbare weave.",
+              "Leather and faux leather are not treated by extraction: they need gentle cleaning followed by a suitable conditioner, which we carry out separately. Fabrics marked \"dry clean only\" are set aside, because water leaves rings on them that cannot be recovered.",
+              "Allow four to eight hours of drying depending on the thickness of the foam, how well the room airs and the season. Plan not to sleep on a mattress treated the same evening: a morning visit with the windows open is best. Finally, this treatment has no effect whatsoever on bedbugs, which require pest control by a licensed firm."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/airbnb.jpg",
+              "alt": "Bedding restored in a bright bedroom"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions about soft furnishings",
+            "items": [
+              {
+                "question": "How often should a sofa be treated?",
+                "reponse": "Once a year is enough in a household with no pets and no small children. With a dog that climbs onto the seat, or in a home where people eat in front of the television, twice a year is justified. Between treatments, weekly vacuuming with the upholstery head noticeably extends the benefit."
+              },
+              {
+                "question": "Does the treatment remove pet odours?",
+                "reponse": "It reduces them a great deal, because most of the smell comes from organic residue lodged in the fibre and the foam, which extraction pulls out. If urine has soaked through into the foam, however, surface cleaning will not be enough: deep treatment is then needed, drying takes longer, and the outcome remains uncertain."
+              },
+              {
+                "question": "Do you work on rugs and fitted carpet?",
+                "reponse": "Yes, with the same equipment. Long-pile rugs and oriental rugs call for more caution and a longer drying time; rugs in natural fibres such as sisal or seagrass are set aside, since water distorts them permanently."
+              },
+              {
+                "question": "Can several pieces be treated on the same day?",
+                "reponse": "It is actually recommended: the equipment is already set up and travel is counted only once, which makes the second and third items appreciably cheaper than the first. A sofa, two mattresses and a rug fit comfortably into a half-day."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Also worth a look",
+            "intro": "What the same clients entrust to us at the same moment.",
+            "items": [
+              {
+                "nom": "Home cleaning",
+                "description": "Treating the fabrics during an annual deep clean makes good sense.",
+                "href": "/menage-domicile",
+                "icone": "House"
+              },
+              {
+                "nom": "Airbnb & short lets",
+                "description": "Freshened bedding between two letting seasons protects the rating.",
+                "href": "/nettoyage-airbnb",
+                "icone": "BedDouble"
+              },
+              {
+                "nom": "Offices & business premises",
+                "description": "Waiting-room chairs and office carpet, outside opening hours.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "One photo, one price",
+            "sousTitre": "Send a snap of the sofa or mattress over WhatsApp: that is usually all we need to quote.",
+            "ctaPrimaire": {
+              "label": "Send an enquiry",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "nettoyage-fin-de-chantier",
+      "label": "Post-construction",
+      "navHidden": true,
+      "service": {
+        "name": "Post-construction cleaning",
+        "serviceType": "After-builders cleaning",
+        "description": "Putting homes and premises back in order at the end of building work in Nancy: plaster dust, adhesive residue, paint and fine rubble.",
+        "priceFrom": "On quotation"
+      },
+      "meta": {
+        "title": "Post-construction cleaning in Nancy",
+        "description": "Coming out of building work in Nancy: plaster dust, glue and paint marks, glazing and floors taken back in two passes for a home ready to hand over."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "After building work",
+            "titre": "Post-construction cleaning in Nancy",
+            "intro": "Between the last coat of paint and the first packing box there is one stage nobody wants to do — and that cannot be skipped.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/fin-de-chantier.jpg",
+              "alt": "Site vacuum in a renovated home in Nancy"
+            },
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Post-construction"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Price my handover clean",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "Two passes, never just one",
+            "paragraphes": [
+              "Plaster and sanding dust has one particular property: it falls back down. A site cleaned in a single go looks immaculate that evening and turns grey again by the next morning, because airborne particles take hours to settle. So we always work in two stages: a complete rough pass, then a finishing pass at least twenty-four hours later.",
+              "The rough pass clears fine rubble, offcuts, plastic sheeting and masking tape, vacuums floors and walls with a site vacuum, peels the labels off new joinery, and lifts the larger splashes of paint, glue, filler and silicone from floors, glazing and sanitary ware.",
+              "The finishing pass goes back over everything that has received the settled dust: skirting boards, window sills, sliding runners, radiators, switches, handles, the inside of new cupboards, sanitary ware, taps and glazing on both faces. Floors are washed last, with the product suited to the new covering — freshly laid laminate is not treated like tiling.",
+              "We do not remove bulky waste or heavy rubble: no tip runs, no skips, no dismantling. That belongs to your building contractor or to a house-clearance service. We take on the site at the stage where only dust and marks remain."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/vitres.jpg",
+              "alt": "Taking back the glazing after building work"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "accordeon",
+          "content": {
+            "titre": "Questions about handover cleans",
+            "items": [
+              {
+                "question": "When in the works should we call you?",
+                "reponse": "Once every trade has finished, touch-up paintwork and skirting boards included. A clean launched while a tradesman still has to come back is money thrown away. Book the slot early, though: handover cleans bunch up at the end of the month, when tenancies begin."
+              },
+              {
+                "question": "How long for a fully renovated flat?",
+                "reponse": "For a one-bedroom flat coming out of a full renovation, allow a day for the rough pass and half a day for the finish. The deciding factor is not the floor area but how much sanding was done: a job involving ceiling work throws out several times more dust than a simple refresh."
+              },
+              {
+                "question": "Do you get paint off parquet?",
+                "reponse": "Fresh or recent splashes, yes, mechanically and without harsh solvent. Oil-based paint dried onto oiled parquet for weeks is another matter: lifting it risks attacking the finish. We test on a discreet area and show you the result before going any further."
+              },
+              {
+                "question": "Do you work for building trade professionals?",
+                "reponse": "Yes, and it is a common arrangement: the tradesman or project manager entrusts us with handing the site over clean, which saves tying up their own team on work that is not theirs. Invoicing then goes to the company, with a figure based on plans or a quick visit."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "After the works",
+            "intro": "What most often follows once the property is handed over.",
+            "items": [
+              {
+                "nom": "Windows & glazing",
+                "description": "The area most affected by building work: plaster film, labels, splashes.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Airbnb & short lets",
+                "description": "For a renovated property destined for short letting, before the listing goes live.",
+                "href": "/nettoyage-airbnb",
+                "icone": "BedDouble"
+              },
+              {
+                "nom": "Home cleaning",
+                "description": "The routine upkeep that takes over once you have moved in.",
+                "href": "/menage-domicile",
+                "icone": "House"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Are your works nearly finished?",
+            "sousTitre": "Book the slot ahead of time: handover cleans pile up at the end of the month.",
+            "ctaPrimaire": {
+              "label": "Hold a date",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "parties-communes",
+      "label": "Communal areas",
+      "navHidden": true,
+      "service": {
+        "name": "Stairwell and communal area cleaning",
+        "serviceType": "Communal area cleaning",
+        "description": "Upkeep of halls, landings, stairwells and service rooms in Nancy buildings, for owners' associations, managing agents and landlords.",
+        "priceFrom": "On quotation"
+      },
+      "meta": {
+        "title": "Stairwell and communal area cleaning",
+        "description": "Halls, landings, stairwells and bin rooms in Nancy buildings kept up on a regular round. For owners' associations, managing agents and landlords."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Owners' associations & landlords",
+            "titre": "Stairwells and communal areas in Nancy buildings",
+            "intro": "The entrance hall is the first room visitors and prospective buyers see. It is also the one nobody feels responsible for.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/parties-communes.jpg",
+              "alt": "Period stairwell with a wrought-iron railing in a Nancy building"
+            },
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Services",
+                "href": "/services"
+              },
+              {
+                "label": "Communal areas"
+              }
+            ],
+            "ctaPrimaire": {
+              "label": "Price up our building",
+              "href": "/devis"
+            }
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "The round of a Nancy building",
+            "paragraphes": [
+              "One round covers the entrance hall and its lobby, the letterboxes and the area around them, the treads and risers of the stairwell, the landings on every floor, handrails and balustrades, stairwell glazing and reachable transoms, flat doors on the communal side, the lift — floor, walls, mirror, buttons — as well as the bin room and the bicycle store where they exist.",
+              "Nancy has a great many period buildings, with stairwells in stone or timber, wrought-iron railings and sometimes cement-tile floors. These materials do not tolerate the same products as a modern block: limestone is attacked by an acid detergent, a timber landing dislikes standing water, and an old cement tile is permanently dulled by an over-alkaline product. We treat them accordingly.",
+              "The bin room is often what shapes how residents feel about the building. We put the containers out and bring them back in on collection days where the contract provides for it, we wash and deodorise the room, and we report the fly-tipping that builds up there — bulky items, unflattened cardboard — so the managing agent can act.",
+              "Frequency follows the size of the building and how it is occupied: weekly for a twenty-unit block or a student residence, fortnightly for a small building of six flats. A report goes to the managing agent or the residents' committee after every round, which heads off arguments at the annual general meeting."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/methode.jpg",
+              "alt": "Washing a floor in a communal area"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "faq",
+          "variant": "deux-colonnes",
+          "content": {
+            "titre": "Questions from agents and residents' committees",
+            "items": [
+              {
+                "question": "How is the price for a building worked out?",
+                "reponse": "On the number of floors, the area of the communal parts, whether there is a lift and a bin room, and the frequency chosen. A site visit is necessary: a four-storey building without a lift does not take the same time as a block of the same height with two stairwells."
+              },
+              {
+                "question": "Can you present your offer at the general meeting?",
+                "reponse": "We provide a detailed, readable quotation that the residents' committee can project and compare line by line with other proposals. Attending in person is possible if the managing agent wishes, but the essentials are in the document: length of the round, exact scope and monthly price."
+              },
+              {
+                "question": "Who provides water and electricity during the round?",
+                "reponse": "The building does, as is customary: an accessible water point in the communal parts and a socket are needed. If the building has neither — common in the older stock of central Nancy — tell us: we adapt the equipment, which changes the duration and therefore the price."
+              },
+              {
+                "question": "What do you do about damage or graffiti?",
+                "reponse": "We photograph it and report it to the manager the same day. Fresh graffiti on a smooth surface sometimes comes off during routine cleaning; on porous stone or render it needs specialist anti-graffiti treatment, which we do not carry out."
+              }
+            ]
+          }
+        },
+        {
+          "type": "services",
+          "variant": "grille-cartes",
+          "content": {
+            "titre": "Around the building",
+            "intro": "What managers entrust to us beyond the communal parts.",
+            "items": [
+              {
+                "nom": "Windows & glazing",
+                "description": "Stairwell glazing, transoms and entrance doors, on a wider interval.",
+                "href": "/nettoyage-vitres",
+                "icone": "Wind"
+              },
+              {
+                "nom": "Post-construction clean",
+                "description": "After a façade or communal-area refurbishment, before handover.",
+                "href": "/nettoyage-fin-de-chantier",
+                "icone": "HardHat"
+              },
+              {
+                "nom": "Offices & business premises",
+                "description": "When the building also houses practices or offices.",
+                "href": "/nettoyage-bureaux",
+                "icone": "Building2"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Your building deserves better",
+            "sousTitre": "We come and look at the communal parts and hand back a quotation you can compare line by line.",
+            "ctaPrimaire": {
+              "label": "Request a visit",
+              "href": "/devis"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "zone-intervention",
+      "label": "Area covered",
+      "meta": {
+        "title": "Where we work around Nancy",
+        "description": "Nancy, Grand Nancy and towns within 20 km: Vandœuvre, Laxou, Villers, Maxéville, Essey, Ludres, Frouard, Neuves-Maisons and the surrounding area."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Meurthe-et-Moselle",
+            "titre": "Where we work around Nancy",
+            "intro": "Roughly twenty kilometres around the place Stanislas: wide enough to cover the whole metropolitan area, tight enough to arrive on time.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/parties-communes.jpg",
+              "alt": "Architecture of a period building in Nancy"
+            },
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Area covered"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "A deliberately tight patch",
+            "paragraphes": [
+              "We could have announced \"the whole of Meurthe-et-Moselle\" and let people believe in coverage that does not exist. We prefer a radius of about twenty kilometres around Nancy, genuinely held: that is what allows two visits to follow one another in the same half-day without keeping anyone waiting, and to come back quickly if something needs redoing.",
+              "Within Nancy itself, most of the work is in the period flats of the centre and the Ville-Vieille, the buildings of the Saint-Léon and Poincaré districts, and the newer apartments along the Rives de Meurthe. Parking being what it is, we always build in a travel margin: better to arrive ten minutes early than leave a guest waiting outside a locked door.",
+              "The inner ring — Vandœuvre-lès-Nancy, Villers-lès-Nancy, Laxou, Maxéville, Malzéville, Saint-Max, Essey-lès-Nancy, Tomblaine, Jarville-la-Malgrange — is served on the same terms as Nancy, with no travel surcharge. To the south we go down to Ludres, Neuves-Maisons and Richardménil; to the north as far as Frouard, Pompey, Champigneulles, Custines and Liverdun; to the east to Saint-Nicolas-de-Port and Dombasle-sur-Meurthe.",
+              "Beyond that line it is not a refusal on principle: call us. Depending on the day, the size of the job and the round already planned, a longer trip may well be possible, with a contribution to travel costs stated in advance."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/hero.jpg",
+              "alt": "A cleaning visit in a home in the conurbation"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "zone",
+          "mode": "liste",
+          "variant": "liste",
+          "content": {
+            "titre": "The towns we serve",
+            "intro": "Grouped by sector, exactly as the rounds are actually organised.",
+            "rayonKm": 20,
+            "zones": [
+              {
+                "region": "Nancy — the districts",
+                "principale": "Nancy",
+                "villes": [
+                  "Ville-Vieille",
+                  "Charles III · City centre",
+                  "Saint-Léon",
+                  "Trois-Maisons",
+                  "Boudonville",
+                  "Poincaré · Foch",
+                  "Haussonville · Blandan",
+                  "Mon Désert · Saurupt",
+                  "Rives de Meurthe",
+                  "Beauregard",
+                  "Buthegnémont",
+                  "Le Placieux"
+                ]
+              },
+              {
+                "region": "Inner ring of Grand Nancy",
+                "principale": "Vandœuvre-lès-Nancy",
+                "villes": [
+                  "Vandœuvre-lès-Nancy",
+                  "Villers-lès-Nancy",
+                  "Laxou",
+                  "Maxéville",
+                  "Malzéville",
+                  "Saint-Max",
+                  "Essey-lès-Nancy",
+                  "Tomblaine",
+                  "Jarville-la-Malgrange",
+                  "Dommartemont",
+                  "Art-sur-Meurthe"
+                ]
+              },
+              {
+                "region": "South of the conurbation",
+                "principale": "Ludres",
+                "villes": [
+                  "Heillecourt",
+                  "Houdemont",
+                  "Fléville-devant-Nancy",
+                  "Ludres",
+                  "Laneuveville-devant-Nancy",
+                  "Richardménil",
+                  "Neuves-Maisons",
+                  "Chaligny",
+                  "Messein",
+                  "Vandœuvre — Brabois"
+                ]
+              },
+              {
+                "region": "North and the Meurthe valley",
+                "principale": "Frouard",
+                "villes": [
+                  "Frouard",
+                  "Pompey",
+                  "Champigneulles",
+                  "Custines",
+                  "Liverdun",
+                  "Seichamps",
+                  "Pulnoy",
+                  "Saulxures-lès-Nancy",
+                  "Saint-Nicolas-de-Port",
+                  "Varangéville",
+                  "Dombasle-sur-Meurthe"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Your town is not on the list?",
+            "sousTitre": "Ask anyway: depending on the day's round, the journey is often still possible.",
+            "ctaPrimaire": {
+              "label": "Write to us",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "Call 06 69 29 90 22",
+              "href": "tel:0669299022"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "a-propos",
+      "label": "About",
+      "meta": {
+        "title": "How we work in Nancy",
+        "description": "A Nancy cleaning business kept deliberately small: the same person at every visit, a scope we own up to and limits stated out loud."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "The business",
+            "titre": "A Nancy business, deliberately kept small",
+            "intro": "No call centre, no rotating staff, no twenty-page contract: someone who answers, who comes, and who comes back.",
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/methode.jpg",
+              "alt": "Careful upkeep of an interior in Nancy"
+            },
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "About"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "What sets us apart",
+            "titreAccent": "comes down to three things",
+            "paragraphes": [
+              "The first is continuity. With most providers the person changes from one week to the next, and you have to explain all over again that the bedroom parquet cannot take water or that the cat must not get out. Here, the same person comes back. She knows the home, its habits and its weak points, and that shows in the result as much as in the time it takes.",
+              "The second is being straight about scope. We do cleaning and upkeep, from private homes to business premises, and we do not pretend to do the rest. No pest control — bedbugs and cockroaches belong to licensed firms — no work at height on ropes or platforms, no house clearance with tip runs. A request outside that scope gets a clear answer and, where we can, a useful pointer.",
+              "The third is the price stated up front. The quotation is free, it triggers no follow-up calls, and it gives the estimated duration alongside the figure. If it turns out to need more time because the starting condition was worse than described, we call before carrying on: nobody discovers an overrun on the invoice.",
+              "The business is registered under the SIRET number shown in the footer and on every invoice, trades under activity code 81.21Z — general building cleaning — and works out of Nancy across the whole metropolitan area. Payment is by bank transfer, cash or CESU voucher."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/canape-matelas.jpg",
+              "alt": "Care given to soft furnishings"
+            },
+            "imagePosition": "left",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "etapes",
+          "variant": "cartes-numerotees",
+          "content": {
+            "eyebrow": "Our commitments",
+            "titre": "What you can count on",
+            "items": [
+              {
+                "titre": "An answer the same day",
+                "texte": "Seven days a week, 9am to 5pm. A message left on a Sunday morning does not sit unanswered until Monday.",
+                "icone": "Clock"
+              },
+              {
+                "titre": "Equipment supplied",
+                "texte": "Vacuum, steam, microfibre and products are covered. Your cupboards stay shut, and so does your cleaning budget.",
+                "icone": "SprayCan"
+              },
+              {
+                "titre": "Discretion",
+                "texte": "What we see in your home stays there. That is the basic condition for trusting anyone with your keys.",
+                "icone": "ShieldCheck"
+              },
+              {
+                "titre": "We come back if needed",
+                "texte": "Anything raised within twenty-four hours is put right at no extra charge and without discussion.",
+                "icone": "Handshake"
+              }
+            ]
+          }
+        },
+        {
+          "type": "cta",
+          "variant": "bande",
+          "content": {
+            "titre": "Let's get acquainted",
+            "sousTitre": "A first five-minute conversation is enough to know whether we are the right fit for you.",
+            "ctaPrimaire": {
+              "label": "Get in touch",
+              "href": "/devis"
+            },
+            "ctaSecondaire": {
+              "label": "See the services",
+              "href": "/services"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "devis",
+      "label": "Free quote",
+      "meta": {
+        "title": "Free quote for your cleaning in Nancy",
+        "description": "Describe the place and the need, receive a figure and an estimated duration. Free costing, no commitment, in Nancy and 20 km around, seven days a week."
+      },
+      "blocks": [
+        {
+          "type": "pageHero",
+          "content": {
+            "eyebrow": "Costing at no charge",
+            "titre": "Request a quote",
+            "intro": "A price stated before the work, an estimated duration, and no follow-up calls if you decide not to go ahead.",
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Free quote"
+              }
+            ]
+          }
+        },
+        {
+          "type": "contenu",
+          "variant": "texte-image",
+          "content": {
+            "titre": "What helps us price it accurately",
+            "paragraphes": [
+              "Three pieces of information make up most of a quotation: the kind of place — home, holiday let, business premises, apartment building —, its rough size in number of rooms, and the starting condition. A home looked after regularly and one left to itself for six months do not call for the same work, even at identical floor area.",
+              "Frequency then weighs heavily on the hourly rate. A one-off visit includes discovery time, setting up the equipment and the initial catching up; a recurring visit, once the rhythm has settled, moves considerably faster for an equivalent result. That is why weekly upkeep always works out cheaper per hour than an isolated job.",
+              "Two or three photographs taken on a phone are worth more than a long description, especially for a sofa, a mattress or a handover clean. Send them over WhatsApp to 06 69 29 90 22: in most cases that is enough for us to reply with a firm figure, with nobody needing to travel.",
+              "For business premises and apartment buildings a visit is still preferable, and it is free. It takes about twenty minutes, involves signing nothing on the spot, and allows us to hand over a document you can compare line by line with other proposals."
+            ],
+            "image": {
+              "url": "https://xklic-media.s3.fr-par.scw.cloud/sites/nailys-proprete/bureaux.jpg",
+              "alt": "A maintained workspace, ready to receive"
+            },
+            "imagePosition": "right",
+            "imageRatio": "4/5",
+            "imageCard": true
+          }
+        },
+        {
+          "type": "contact",
+          "variant": "split-form-carte",
+          "content": {
+            "titre": "Your enquiry",
+            "intro": "Fill in whatever seems useful: we will come back to you for the rest. For anything urgent, the telephone is still fastest.",
+            "telephone": "06 69 29 90 22",
+            "whatsapp": "0669299022",
+            "email": "nailys.nettoyage@gmail.com",
+            "adresse": "20 rue de Saverne, 54000 Nancy",
+            "horaires": [
+              {
+                "jour": "Monday to Sunday",
+                "heures": "9am – 5pm"
+              }
+            ],
+            "form": true,
+            "formMode": "demande-intervention",
+            "formTitre": "Describe the place and the need",
+            "formIntro": "The more precise the context, the closer the figure we state will be to the final one.",
+            "services": [
+              "Home cleaning",
+              "Airbnb or short let",
+              "Office or business premises",
+              "Windows and glazing",
+              "Ironing",
+              "Sofa, mattress or rug",
+              "Post-construction clean",
+              "Stairwells and communal areas",
+              "Something else"
+            ],
+            "villes": [
+              "Nancy",
+              "Vandœuvre-lès-Nancy",
+              "Villers-lès-Nancy",
+              "Laxou",
+              "Maxéville",
+              "Malzéville",
+              "Saint-Max",
+              "Essey-lès-Nancy",
+              "Tomblaine",
+              "Jarville-la-Malgrange",
+              "Heillecourt",
+              "Ludres",
+              "Frouard",
+              "Pompey",
+              "Champigneulles",
+              "Seichamps",
+              "Saint-Nicolas-de-Port",
+              "Dombasle-sur-Meurthe",
+              "Neuves-Maisons",
+              "Another town"
+            ],
+            "confidentialiteHref": "/confidentialite"
+          }
+        }
+      ]
+    }
+  ]
+}

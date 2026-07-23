@@ -373,6 +373,39 @@
   --radius: 0.9rem;
 }
 
+/* ---------- vitrail-foret : vert forêt profond + laiton sur papier ivoire ----------
+   Palette RELEVÉE sur la carte de visite du client (échantillonnage) : le vert
+   #1a4230 du wordmark et de la pastille, le laiton #bd9750 du toit et des filets,
+   le papier crème #faf6f2 du carton. L'ivoire du fond fait que l'emblème (fond
+   crème non détouré) se fond dans l'en-tête sans rectangle visible. */
+[data-theme="vitrail-foret"] {
+  --brand-50: #f2f7f3;
+  --brand-100: #e0ece4;
+  --brand-200: #c1d8c9;
+  --brand-300: #95bba3;
+  --brand-400: #5f9473;
+  --brand-500: #38714f;
+  --brand-600: #22553a;
+  --brand-700: #1a4230;
+  --brand-800: #122e21;
+  --brand-contrast: #fbf8f1;
+  --accent-50: #faf2e0;
+  --accent-500: #bd9750;
+  --accent-600: #9a7838;
+  /* Or clair : le texte posé dessus doit être l'encre verte, pas du blanc. */
+  --accent-contrast: #16281c;
+  --ink: #22291f;
+  --ink-soft: #43503f;
+  --muted: #5f6a5c;
+  --muted-2: #7c8578;
+  --bg: #faf6f2;
+  --alt: #f2ece1;
+  --surface: #ffffff;
+  --surface-2: #f6f0e6;
+  --border: #e3dccd;
+  --radius: 1.1rem;
+}
+
 /* ---------- noir-cuivre : thème SOMBRE (noir chaud + cuivre / rose-gold) ----------
    Seul thème dark du moteur. L'échelle brand est « inversée pour le sombre » :
    50→200 = fonds cuivrés profonds (tints, bordures), 600→800 = cuivres CLAIRS
@@ -1193,6 +1226,115 @@ input[type="range"] {
 @media (prefers-reduced-motion: reduce) {
   [data-pack="eclat-lumiere"] .eclat-twinkle {
     animation: none;
+  }
+}
+
+/* ==================== Verrière · Vitrail & ferronnerie ====================
+   Registre « École de Nancy » : la page est une VERRIÈRE. Panneaux de verre à
+   sommet CINTRÉ sertis d'un plomb vert + filet de laiton, résille de cames sur
+   les photos, bande de rivets de ferronnerie en filet de chrome, et le COUP DE
+   FOUET (courbe-signature Art nouveau) tracé au scroll en CSS natif.
+   Volontairement DISTINCT d'azulejo (losanges droits, céramique), de fil
+   (couture, duotone), d'aronde (bois, angles nets) : ici tout est courbe,
+   végétal et serti. 100 % tokens (thème/branding.colors), zéro couleur en dur. */
+[data-pack="verriere-nancy"] {
+  --pack-font-display: var(--font-yeseva);
+  --pack-font-sans: var(--font-inter);
+  --display-tracking: -0.005em;
+  --display-case: none;
+
+  /* Le cintre se fait au border-radius (voir `.verriere-arc`) ; le reste garde
+     des coins doux, jamais de pilule ni d'angle dur. */
+  --radius-btn: 0.65rem;
+  --radius-card: 0.85rem;
+  --radius-image: 0.85rem;
+  --border-width: 1px;
+  --radius: 0.85rem;
+
+  /* Ombre de verre : basse et diffuse, teintée vert profond — jamais de noir pur. */
+  --shadow-card: 0 14px 34px -24px color-mix(in srgb, var(--brand-800) 58%, transparent);
+  --shadow-pop: 0 26px 60px -30px color-mix(in srgb, var(--brand-800) 52%, transparent);
+
+  --section-py: 6.5rem;
+  --content-max: 74rem;
+  --motion-distance: 16px;
+  --motion-duration: 0.65s;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Matière de la famille (verre / plomb / laiton), DÉRIVÉE des tokens
+     sémantiques : la verrière suit donc la palette du site, quelle qu'elle soit. */
+  --vn-plomb: var(--brand-700);
+  --vn-laiton: var(--accent-500);
+  /* Longueur du tracé du coup de fouet (majorant : le chemin fait ~210 unités). */
+  --vn-trace: 240;
+}
+/* Yeseva One n'existe qu'en 400 : forcer 600/700 synthétiserait une fausse
+   graisse (contours baveux). Scopé au pack (ne fuit pas ailleurs). */
+[data-pack="verriere-nancy"] h1.font-display,
+[data-pack="verriere-nancy"] h2.font-display,
+[data-pack="verriere-nancy"] h3.font-display,
+[data-pack="verriere-nancy"] .pack-heading {
+  font-weight: 400;
+}
+
+/* ARC — le sommet cintré d'un panneau de vitrail (arc surbaissé elliptique).
+   Les enfants portent leur propre padding haut pour ne pas être rognés. */
+[data-pack="verriere-nancy"] .verriere-arc {
+  border-radius: 50% 50% var(--radius-card) var(--radius-card) /
+    26% 26% var(--radius-card) var(--radius-card);
+}
+
+/* SERTISSURE — trait de plomb à l'extérieur, filet de laiton en rappel dedans. */
+[data-pack="verriere-nancy"] .verriere-plomb {
+  border: 2px solid var(--vn-plomb);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--vn-laiton) 55%, transparent);
+}
+
+/* VERRE — le lavis d'un panneau : deux teintes de lumière qui se croisent. */
+[data-pack="verriere-nancy"] .verriere-verre {
+  background-color: var(--surface);
+  background-image:
+    linear-gradient(170deg, color-mix(in srgb, var(--brand-500) 10%, transparent), transparent 58%),
+    linear-gradient(20deg, color-mix(in srgb, var(--accent-500) 8%, transparent), transparent 46%);
+}
+
+/* RÉSILLE — la grille de cames de plomb posée sur une photo (décor pur). */
+[data-pack="verriere-nancy"] .verriere-resille {
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--vn-plomb) 42%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--vn-plomb) 42%, transparent) 1px, transparent 1px);
+  background-size: 3.5rem 3.5rem;
+}
+
+/* FERRONNERIE — rivets de laiton sur fer forgé : le filet de chrome (bas
+   d'en-tête, haut des actions flottantes, arêtes des panneaux profonds). */
+[data-pack="verriere-nancy"] .verriere-ferro {
+  background-color: var(--vn-plomb);
+  background-image: radial-gradient(circle at 50% 50%, var(--vn-laiton) 22%, transparent 23%);
+  background-size: 1.15rem 100%;
+}
+
+/* COUP DE FOUET — la courbe-signature, TRACÉE AU SCROLL en CSS natif
+   (scroll-driven animations, zéro JS). Progressive enhancement STRICT : sans
+   support `animation-timeline`, ou en mouvement réduit, le trait est simplement
+   déjà dessiné (aucun contenu masqué, rien à hydrater). N'anime que
+   `stroke-dashoffset` (composited, 60 fps). */
+@keyframes verriere-tracer {
+  from {
+    stroke-dashoffset: var(--vn-trace);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    [data-pack="verriere-nancy"] .verriere-trace {
+      stroke-dasharray: var(--vn-trace);
+      animation: verriere-tracer linear both;
+      animation-timeline: view();
+      animation-range: entry 15% cover 40%;
+    }
   }
 }
 

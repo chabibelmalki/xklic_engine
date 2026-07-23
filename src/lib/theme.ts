@@ -19,6 +19,7 @@ export const THEMES: { id: ThemeId; label: string }[] = [
   { id: "noir-cuivre", label: "Noir cuivre (sombre)" },
   { id: "pop-violet", label: "Pop violet" },
   { id: "bleu-azur", label: "Bleu azur" },
+  { id: "vitrail-foret", label: "Vitrail forêt (vert profond & laiton sur ivoire)" },
 ];
 
 export const DEFAULT_THEME: ThemeId = "pro-bleu-nuit";

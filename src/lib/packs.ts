@@ -520,6 +520,32 @@ export const PACKS: StylePack[] = [
       cta: ["bande"],
     },
   },
+  {
+    id: "verriere-nancy",
+    label: "Verrière · Vitrail & ferronnerie",
+    family: "verriere",
+    // Corps « papier ivoire » : alternance crème / blanc (surface-alt), reliée
+    // par une ARCADE entre chaque section (sectionDivider `arch`, inédit dans le
+    // parc). Les blocs d'identité peignent leurs propres panneaux de verre teinté.
+    sectionStrategy: "surface-alt",
+    sectionDivider: "arch",
+    ambiance:
+      "Parti pris FORT « École de Nancy / Art nouveau » : la page est une VERRIÈRE. Panneaux de VITRAIL à sommet CINTRÉ sertis d'un plomb vert et d'un filet de laiton, médaillons circulaires en ferronnerie, COUP DE FOUET (la courbe-signature Art nouveau) tracé AU SCROLL en CSS natif sous chaque titre, motif d'OMBELLE végétale en puce de kicker et en filigrane, volutes de ferronnerie aux angles des panneaux profonds. Display Art nouveau haute contraste (Yeseva One). Végétal, ouvragé, artisanal — l'ancrage nancéien plutôt que le clean-tech générique.",
+    fonts: { display: "Yeseva One", sans: "Inter" },
+    variants: {
+      hero: ["carte"],
+      services: ["grille-cartes"],
+      etapes: ["cartes-numerotees"],
+      faq: ["deux-colonnes", "accordeon"],
+      tarifs: ["liste-simple", "grille"],
+      galerie: ["grille", "masonry"],
+      zone: ["liste"],
+      contenu: ["texte-image"],
+      simulateur: ["carte"],
+      contact: ["split-form-carte"],
+      cta: ["bande"],
+    },
+  },
 ];
 
 export const DEFAULT_PACK: StylePackId = "base";
