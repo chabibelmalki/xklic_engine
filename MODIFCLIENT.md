@@ -109,7 +109,7 @@ une modification terminée.
 | Ajouter une prestation | C'est un silo complet (réflexe 4), pas une carte de plus sur la home. FAQ et textes uniques (réflexe 2). |
 | Redesign / changement de blocs | Répliquer la structure dans toutes les locales (réflexe 1) ; re-vérifier H1 unique et og:image après coup. |
 | Changer domaine / langues | `customDomains` apex en premier, UNIQUEMENT dans config.json ; onboard pour le câblage ; `canonicals:check` après deploy ; propriété GSC du nouveau domaine (étape `gsc`). |
-| Retoucher les horaires/adresse | Format parsable pour le JSON-LD : jours « Lun - Ven », heures « 8h30 - 18h » (sinon omis) ; adresse = vraie voie postale ou rien. |
+| Retoucher les horaires/adresse | Horaires : format parsable pour le JSON-LD, jours « Lun - Ven », heures « 8h30 - 18h » (sinon omis). Adresse : ne pas écrire `contact.adresse` — `resolveAdresse()` la déduit du statut (société → repli sur `entreprise.siege` ; **EI / micro-entrepreneur → rien**, le siège est le domicile). Ne la renseigner que pour un lieu recevant du public ou un libellé de zone ; `false` pour masquer. Cf. NEWCLIENT.md § Données. |
 | Passer un prospect en client | Retirer `noindexSite` (PAS `demo` si hors portfolio), câbler `customDomains` + onboard, propriété GSC, `canonicals:check`, et relire la checklist SEO de NEWCLIENT.md en entier. |
 | Ajouter des avis | Vrais avis Google uniquement, fidèles, jamais dirigeant/famille ; `googleReviewUrl` renseigné → page /avis + hasMap automatiques. |
 

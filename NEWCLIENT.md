@@ -252,8 +252,22 @@ Chaque point ci-dessous est une erreur RÉELLEMENT constatée en prod sur le par
 - Liens croisés entre pages service sœurs (« autres prestations »).
 
 **Données**
-- `contact.adresse` = une **vraie voie postale** ou rien (le JSON-LD filtre
-  désormais les accroches type « 22 communes autour de… », mais l'UI l'affiche).
+- `contact.adresse` : **ne l'écris pas par défaut.** L'adresse affichée est
+  résolue par `resolveAdresse()` (`src/lib/adresse.ts`) et se déduit du **statut
+  juridique**, sans rien à recopier :
+  - **société** (SARL, SAS, SASU, EURL, SA, SCI, SRL/SPRL belge… ou `capital`
+    renseigné) → repli automatique sur `entreprise.siege`, dont la publicité est
+    déjà acquise au RCS / à la BCE. **Laisse la clé absente.**
+  - **personne physique** (EI, micro-entrepreneur / auto-entrepreneur, et
+    équivalents belges) → **aucune adresse affichée**, jamais de repli : le siège
+    est presque toujours le **domicile du dirigeant**. Laisse la clé absente.
+    Les mentions légales continuent d'afficher le siège, comme la loi l'exige.
+  - Ne renseigne `contact.adresse` que si l'adresse est un **lieu qui reçoit du
+    public** (boutique, atelier, agence) ou un simple **libellé de zone** — c'est
+    un acte délibéré, y compris pour une personne physique. Une vraie voie
+    postale ou un libellé de zone ; le JSON-LD filtre les accroches type
+    « 22 communes autour de… », mais l'UI, elle, les affiche.
+  - `"adresse": false` = masquage explicite, même pour une société.
 - `social[]` = des **URLs** (WhatsApp → `https://wa.me/336…`, jamais un numéro
   brut) ; ajouter le lien Google Maps de la fiche (`platform: "google"`) quand
   il existe → `hasMap` (sinon dérivé de `googleReviewUrl`).
